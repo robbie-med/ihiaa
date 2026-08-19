@@ -158,7 +158,7 @@ Return JSON with exactly these keys:
  "pearls": [
    {"text":"one specific, actionable teaching point in 1-2 sentences",
     "verbatim":"the EXACT contiguous span from the transcript this came from",
-    "type":"dosing|pitfall|red_flag|exam_technique|dx_criteria|guideline|judgment"}
+    "type":"dosing|pitfall|red_flag|exam_technique|dx_criteria|practice|judgment"}
  ]
 }
 

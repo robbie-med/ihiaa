@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>HPI Lecture Corpus</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<meta name="theme-color" content="#1c1c1f">
+<meta name="description" content="Searchable, cross-linked archive of Hope Partnerships International residency lectures.">
 <style>
   :root{
     --bg:#fbfaf8; --panel:#fff; --ink:#1a1a1c; --muted:#6b6b73; --line:#e5e2dc;
@@ -83,24 +87,24 @@
 
 <script>
 const UI = {
-  en:{clusters:"Clusters",search:"Search",pearls:"Pearls",topics:"Topics",speakers:"Speakers",episodes:"Episodes",
+  en:{map:"Map",clusters:"Clusters",search:"Search",pearls:"Pearls",topics:"Topics",speakers:"Speakers",episodes:"Episodes",
       about:"About",hits:"results",no:"No matches.",listen:"Listen at",src:"Source",
       abstract:"Abstract",keyp:"Key teaching points",transcript:"Transcript",
       showq:"show source quote",hideq:"hide source quote",talks:"lectures",
       mt:"Machine-translated — verify against the English source.",
       ph:"Search transcripts, pearls, topics…"},
-  ko:{clusters:"군집",search:"검색",pearls:"핵심 요점",topics:"주제",speakers:"강연자",episodes:"강의",
+  ko:{map:"개념도",clusters:"군집",search:"검색",pearls:"핵심 요점",topics:"주제",speakers:"강연자",episodes:"강의",
       about:"정보",hits:"건",no:"검색 결과가 없습니다.",listen:"재생 위치",src:"출처",
       abstract:"요약",keyp:"핵심 교육 요점",transcript:"전사본",
       showq:"원문 인용 보기",hideq:"인용 숨기기",talks:"개 강의",
       mt:"기계 번역입니다 — 영어 원문을 확인하세요.",ph:"전사본, 요점, 주제 검색…"},
-  fr:{clusters:"Groupes",search:"Recherche",pearls:"Perles",topics:"Thèmes",speakers:"Intervenants",episodes:"Cours",
+  fr:{map:"Carte",clusters:"Groupes",search:"Recherche",pearls:"Perles",topics:"Thèmes",speakers:"Intervenants",episodes:"Cours",
       about:"À propos",hits:"résultats",no:"Aucun résultat.",listen:"Écouter à",src:"Source",
       abstract:"Résumé",keyp:"Points clés",transcript:"Transcription",
       showq:"voir la citation",hideq:"masquer la citation",talks:"cours",
       mt:"Traduction automatique — vérifiez la source anglaise.",
       ph:"Rechercher transcriptions, perles, thèmes…"},
-  de:{clusters:"Cluster",search:"Suche",pearls:"Merksätze",topics:"Themen",speakers:"Referenten",episodes:"Vorträge",
+  de:{map:"Karte",clusters:"Cluster",search:"Suche",pearls:"Merksätze",topics:"Themen",speakers:"Referenten",episodes:"Vorträge",
       about:"Info",hits:"Treffer",no:"Keine Treffer.",listen:"Anhören bei",src:"Quelle",
       abstract:"Zusammenfassung",keyp:"Kernaussagen",transcript:"Transkript",
       showq:"Zitat anzeigen",hideq:"Zitat ausblenden",talks:"Vorträge",
@@ -108,6 +112,8 @@ const UI = {
       ph:"Transkripte, Merksätze, Themen durchsuchen…"}
 };
 let D=null, LANG="en", TAB="pearls", SEL=null;
+const OPEN={};
+function togS(t){OPEN[t]=!OPEN[t];render();}
 const T=k=>(UI[LANG]||UI.en)[k]||UI.en[k];
 const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const mmss=s=>{s=Math.max(0,Math.round(s));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
@@ -128,7 +134,7 @@ function tr(obj, field, slug){
 function render(){
   document.getElementById("q").placeholder=T("ph");
   const nav=document.getElementById("nav");
-  nav.innerHTML=["pearls","clusters","topics","speakers","episodes","about"]
+  nav.innerHTML=["pearls","clusters","map","topics","speakers","episodes","about"]
     .map(t=>`<button data-t="${t}" class="${TAB===t?'on':''}">${T(t)}</button>`).join("");
   nav.querySelectorAll("button").forEach(b=>b.onclick=()=>{TAB=b.dataset.t;SEL=null;render()});
   const q=document.getElementById("q").value.trim();
@@ -138,7 +144,7 @@ function render(){
   if(SEL&&SEL.kind==="episode") return v.innerHTML=episodeView(SEL.id);
   if(SEL&&SEL.kind==="topic")   return v.innerHTML=topicView(SEL.id);
   if(SEL&&SEL.kind==="speaker") return v.innerHTML=speakerView(SEL.id);
-  v.innerHTML=({pearls:pearlsView,clusters:clustersView,topics:topicsView,
+  v.innerHTML=({pearls:pearlsView,clusters:clustersView,map:mapView,topics:topicsView,
                 speakers:speakersView,episodes:episodesView,about:aboutView})[TAB]();
 }
 
@@ -161,41 +167,97 @@ function tq(el){const q=el.closest(".card").querySelector(".quote");
   q.classList.toggle("show");el.textContent=q.classList.contains("show")?T("hideq"):T("showq")}
 
 function pearlsView(){
+  // Collapsed by default: with ~4900 pearls the flat list buried the fact that
+  // there are distinct kinds. Headers show the categories at a glance; a section
+  // renders its cards only once opened, which also keeps the DOM small.
   const by={};D.pearls.forEach(p=>(by[p.type]=by[p.type]||[]).push(p));
-  return Object.entries(by).sort((a,b)=>b[1].length-a[1].length).map(([t,ps])=>
-    `<h3 style="margin:22px 0 9px">${esc(t)} <span class="muted small">(${ps.length})</span></h3>`
-    +ps.map(pearlCard).join("")).join("")||`<p class="muted">${T("no")}</p>`;
+  const order=Object.entries(by).sort((a,b)=>b[1].length-a[1].length);
+  const LBL={dosing:"Dosing",pitfall:"Pitfalls",red_flag:"Red flags",
+             exam_technique:"Exam technique",dx_criteria:"Diagnostic criteria",
+             practice:"Practice",judgment:"Clinical judgment"};
+  return `<div class="banner">${D.pearls.length} pearls in ${order.length} categories —
+      click a category to open it. Graded A–C by rule; D-grade excluded.</div>`
+   +order.map(([t,ps])=>{
+     const open=!!OPEN[t];
+     const best=ps.filter(p=>p.grade==="A").length;
+     return `<div class="card" style="padding:0;overflow:hidden">
+       <div onclick="togS('${t}')" style="cursor:pointer;padding:13px 16px;display:flex;
+            align-items:center;gap:10px;user-select:none">
+         <span style="font-size:13px;width:12px;color:var(--muted)">${open?"▾":"▸"}</span>
+         <b>${esc(LBL[t]||t)}</b>
+         <span class="chip">${ps.length}</span>
+         ${best?`<span class="chip" style="background:#15803d;color:#fff">${best} A</span>`:""}
+       </div>
+       ${open?`<div style="padding:0 12px 12px">${ps.map(pearlCard).join("")}</div>`:""}
+     </div>`;}).join("");
 }
-// Groups of pearls that say nearly the same thing. Conflicts float to the top:
-// two attendings giving opposing guidance is the most useful thing here, so it
-// is surfaced rather than silently reconciled. Both sides always shown.
 function clustersView(){
-  const cs=D.clusters||[];
-  if(!cs.length) return `<div class="banner">No pearl clusters yet — clustering needs
-    several lectures covering overlapping topics. Run
-    <code>python3 scripts/cluster_pearls.py</code> after the backfill.</div>`;
+  const cs=(D.clusters||[]).filter(c=>c.size>1);
+  if(!cs.length) return `<div class="banner">No clusters yet.</div>`;
   const byId={}; D.pearls.forEach(p=>byId[p.pearl_id]=p);
-  const nconf=cs.filter(c=>c.has_conflict).length;
-  return `<div class="banner"><b>${cs.length}</b> clusters of near-identical teaching points
-      · <b>${nconf}</b> containing a contradiction.
-      Grouped by meaning, then judged pairwise — similarity alone cannot tell
-      “always do X” from “never do X”.</div>`
-   +cs.map(c=>{
-     const ps=c.pearl_ids.map(id=>byId[id]).filter(Boolean);
-     const tag=c.has_conflict?`<span class="chip type" style="background:#b91c1c">conflict</span>`
-              :c.has_duplicate?`<span class="chip type">duplicate</span>`
-              :`<span class="chip type" style="background:#15803d">consensus</span>`;
-     return `<div class="card">${tag}
-       <span class="chip">${c.size} pearls</span>
-       <span class="chip">${esc(c.speakers.join(", "))}</span>
-       ${ps.map(p=>`<div style="margin:9px 0 0">• ${esc(tr(p,"text"))}
-          <span class="meta">— ${esc(p.speaker)} ·
-          <span class="ts" onclick="seek('${p.episode}',${p.t})">${mmss(p.t)}</span></span></div>`).join("")}
-       ${(c.relations||[]).map(r=>`<div class="meta" style="margin-top:7px">
-          <b>${esc(r.verdict)}</b> (sim ${r.sim}) — ${esc(r.why)}</div>`).join("")}
-     </div>`;
-   }).join("");
+  const VC={conflict:"#b91c1c",duplicate:"#6b7280",consensus:"#15803d",related:"#0369a1"};
+  const nconf=cs.filter(c=>c.verdict==="conflict").length;
+  const rows=cs.map((c,i)=>{
+    const open=!!OPEN["c"+i];
+    const ps=c.pearl_ids.map(id=>byId[id]).filter(Boolean);
+    return `<div class="card" style="padding:0;overflow:hidden">
+      <div onclick="togS('c${i}')" style="cursor:pointer;padding:10px 14px;display:flex;
+           gap:10px;align-items:center;user-select:none;font-size:13.5px">
+        <span style="width:10px;color:var(--muted)">${open?"▾":"▸"}</span>
+        <span class="chip" style="background:${VC[c.verdict]};color:#fff;font-weight:600;
+              min-width:74px;text-align:center">${c.verdict}</span>
+        <b style="flex:1">${esc(c.label)}</b>
+        <span class="chip">${c.size}</span>
+        <span class="chip" style="max-width:190px;overflow:hidden;text-overflow:ellipsis"
+              >${esc(c.speakers.join(", "))}</span>
+      </div>
+      ${open?`<div style="padding:0 12px 12px">${ps.map(pearlCard).join("")}</div>`:""}
+    </div>`;}).join("");
+  return `<div class="banner"><b>${cs.length}</b> groups of pearls that say nearly the same
+      thing · <b>${nconf}</b> contain a contradiction. Grouped by embedding similarity, then
+      each close pair judged. Labels are the vocabulary the pearls share.</div>${rows}`;
 }
+
+// Concept map. Layout is precomputed at build time (scripts/build_graph.py) so the
+// page never runs a force simulation -- it is instant, and identical for everyone.
+let G=null, GDOM=null;
+function mapView(){
+  if(!G){ fetch("graph.json").then(r=>r.json()).then(g=>{G=g;render();});
+          return `<p class="muted">loading concept map…</p>`; }
+  const shown=G.nodes.filter(n=>!GDOM||n.domain===GDOM);
+  const ids=new Set(shown.map(n=>n.id));
+  const links=G.links.filter(l=>ids.has(l.s)&&ids.has(l.t));
+  const pos={}; G.nodes.forEach(n=>pos[n.id]=n);
+  const r=n=>Math.max(4,Math.min(26,3.2*Math.sqrt(n.n)));
+  const legend=G.domains.map(([d,c])=>
+    `<span class="chip t" onclick="setDom('${d.replace(/'/g,"")}')"
+      style="background:${G.colors[d]||'#6b7280'};color:#fff;${GDOM&&GDOM!==d?'opacity:.35':''}">${esc(d)} ${c}</span>`).join("");
+  return `<div class="banner"><b>${G.nodes.length}</b> concepts taught in ${G.min_episodes}+ lectures.
+      Lines join concepts taught together; thicker lines mean more shared lectures.
+      Circle size = how many lectures cover it. Click a concept to open it.</div>
+    <div style="margin:10px 0">${legend}
+      ${GDOM?`<span class="chip t" onclick="setDom(null)"><b>clear filter</b></span>`:""}</div>
+    <div class="card" style="padding:6px;overflow:auto">
+    <svg viewBox="0 0 ${G.w} ${G.h}" style="width:100%;height:auto;min-height:420px" role="img">
+      <g stroke-linecap="round">
+      ${links.map(l=>{const a=pos[l.s],b=pos[l.t];
+        const br=l.kind==="branch";
+        return `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}"
+          stroke="${br?(a.color||'#888'):'currentColor'}"
+          stroke-opacity="${br?0.75:Math.min(0.32,0.06+l.w*0.05)}"
+          stroke-width="${br?2.2:Math.min(3,0.5+l.w*0.35)}"/>`;}).join("")}
+      </g>
+      ${shown.map(n=>`<g style="cursor:pointer" onclick="go('topic','${n.slug}')">
+          <title>${esc(n.label)} — ${n.n} lectures (${esc(n.domain)})</title>
+          <circle cx="${n.x}" cy="${n.y}" r="${r(n)}" fill="${n.color}"
+                  fill-opacity=".85" stroke="var(--panel)" stroke-width="1.5"/>
+          ${n.n>=6?`<text x="${n.x}" y="${n.y-r(n)-4}" text-anchor="middle"
+             font-size="13" fill="currentColor" opacity=".85">${esc(n.label.slice(0,26))}</text>`:""}
+        </g>`).join("")}
+    </svg></div>`;
+}
+function setDom(d){GDOM=d;render();}
+
 function topicsView(){
   return `<div class="grid">`+D.topics.map(t=>
     `<div class="card" style="cursor:pointer" onclick="go('topic','${t.slug}')">
@@ -260,38 +322,72 @@ function episodeView(slug){
     <h3>${T("transcript")}</h3><div class="card">${body}</div>`;
 }
 function aboutView(){
-  const e=D.episodes[0]||{};
-  return `<div class="card"><b>Provenance &amp; models</b>
-    <div class="scroll"><table>
-      <tr><th>stage</th><th>model</th></tr>
-      <tr><td>transcription</td><td>${esc(e.stt_model||"—")}</td></tr>
-      <tr><td>terminology repair</td><td>${esc(e.enrich_model||"—")}</td></tr>
-      <tr><td>enrichment / pearls</td><td>${esc(e.enrich_model||"—")}</td></tr>
-      <tr><td>embeddings</td><td>${esc(e.embed_model||"—")} @ ${e.embed_dims||"—"}d</td></tr>
-    </table></div></div>
-   <div class="banner"><b>Unverified teaching material.</b> Transcripts are machine-generated and
-     machine-corrected. Every pearl links to the exact moment it was said — verify doses and
-     numbers against the source audio before acting on them.</div>
-   <div class="card"><b>ASR corrections applied</b>
-     <p class="small muted">Every terminology repair is logged. The raw transcript is always
-     retained, so any correction can be audited or reverted.</p>
-     <div class="scroll"><table><tr><th>episode</th><th>from</th><th>to</th><th>n</th></tr>
-     ${Object.values(EPC).flatMap(det=>(det.fixes||[]).map(f=>
-       `<tr><td>${esc(det.slug)}</td><td>${esc(f.from)}</td><td><b>${esc(f.to)}</b></td><td>${f.n}</td></tr>`)).join("")}
-     </table></div>
-     ${Object.keys(EPC).length<D.episodes.length
-       ? `<a href="#" onclick="loadAll();return false">load all episodes to see every correction</a>`:""}</div>
-   ${Object.values(EPC).some(d=>(d.fixes_rejected||[]).length)?`<div class="card">
-     <b>Corrections rejected as unsafe</b>
-     <p class="small muted">Proposed repairs the pipeline refused to apply — too short to match
-     safely, or matching implausibly often (e.g. <code>"d" → "deep vein thrombosis"</code>,
-     which would have fired 1500 times).</p>
-     <div class="scroll"><table><tr><th>from</th><th>to</th><th>why</th></tr>
-     ${Object.values(EPC).flatMap(d=>(d.fixes_rejected||[]).map(f=>
-       `<tr><td>${esc(f.from)}</td><td>${esc(f.to)}</td><td>${esc(f.why||"")}</td></tr>`)).join("")}
-     </table></div></div>`:""}`;
-}
+  const e=D.episodes[0]||{}; const s=D.stats;
+  const row=(a,b)=>`<tr><td style="white-space:nowrap"><b>${a}</b></td><td>${b}</td></tr>`;
+  return `
+  <div class="banner"><b>Unverified teaching material.</b> Transcripts are machine-generated
+    and machine-corrected, and pearls are machine-extracted. Every pearl links to the exact
+    second it was spoken — verify doses and numbers against the source audio before acting
+    on them. This is a study aid, not a clinical reference.</div>
 
+  <div class="card"><b>What this is</b>
+    <p>${s.n_episodes} lectures (${s.hours} hours, ${s.words.toLocaleString()} words) from the
+    Hope Partnerships International residency lecture series, transcribed and cross-linked so
+    they can be searched, compared and cited. Lectures are public and the speaking physicians
+    consent to publication.
+    <a href="https://hopepartners.podbean.com/" target="_blank" rel="noopener">Original feed ↗</a></p></div>
+
+  <div class="card"><b>How it was built</b>
+   <div class="scroll"><table>
+    ${row("1 · Fetch","The public RSS feed is polled and each episode keyed on its GUID, which is stable across re-uploads. Audio is extracted from the source video with ffmpeg to 24 kbps mono; the video is deleted immediately, so no media is retained beyond the audio track.")}
+    ${row("2 · Transcribe","Deepgram <code>nova-3-medical</code>, a clinically-tuned model, with word-level timestamps, speaker diarization and keyterm boosting on drug names. Word timings are what make every pearl deep-linkable.")}
+    ${row("3 · Repair","ASR still mangles drug names. A language model proposes corrections but never rewrites the text: it returns a list of replacements, applied deterministically with word-boundary matching, a minimum token length and a per-fix hit ceiling. The raw transcript is always retained, and every applied and rejected fix is logged below.")}
+    ${row("4 · Enrich","A language model extracts an abstract, key points, topics and candidate pearls, and must quote the exact transcript span each pearl came from.")}
+    ${row("5 · Anchor","Each pearl's quoted span is located in the word-timed transcript — exact match first, then a bounded fuzzy search. A pearl whose source cannot be located is <b>dropped</b>, never shown with a guessed timestamp. This is the rule the whole design rests on: no unanchored clinical claim.")}
+    ${row("6 · Grade","Pure rules, no model. Five signals — specific, actionable, harm, non-obvious, plus an institution-local <b>veto</b> that forces grade D (medication storage, paging, scheduling, room names). Reproducible by construction rather than by measurement; an earlier model-based grader was discarded after scoring only 53% agreement with itself. Grade D is excluded from this site; C is shown but ranked below A and B.")}
+    ${row("7 · Index","Concepts are resolved against <b>MeSH</b>, the US National Library of Medicine vocabulary that indexes PubMed. Domain and hierarchy come from MeSH tree numbers, and each concept keeps a stable MeSH identifier that survives reprocessing. 90% of concepts appearing in three or more lectures resolve; the remainder fall back to a keyword table.")}
+    ${row("8 · Cluster","Pearls are embedded and grouped by cosine similarity, then each close pair is judged as duplicate, consensus, complement or conflict — similarity alone cannot separate “always do X” from “never do X”. Contradictions between attendings are surfaced with both sides kept, attributed and dated, never silently reconciled.")}
+    ${row("9 · Publish","A static site with no backend. The index loads once; transcripts load per episode on demand. The concept-map layout is solved at build time, so it is identical for every visitor and the page runs no physics simulation.")}
+   </table></div></div>
+
+  <div class="card"><b>Models and vocabulary</b>
+   <div class="scroll"><table>
+    <tr><th>stage</th><th>used</th></tr>
+    <tr><td>transcription</td><td>${esc(e.stt_model||"—")}</td></tr>
+    <tr><td>terminology repair, enrichment, clustering</td><td>${esc(e.enrich_model||"—")}</td></tr>
+    <tr><td>embeddings</td><td>${esc(e.embed_model||"—")} @ ${e.embed_dims||"—"}d</td></tr>
+    <tr><td>grading</td><td>deterministic rules — no model</td></tr>
+    <tr><td>concept vocabulary</td><td>MeSH 2025 (NLM, public domain)</td></tr>
+   </table></div></div>
+
+  <div class="card"><b>Known limitations</b>
+   <ul>
+    <li>One lecture is missing: its source recording has a degenerate audio track (~1 kbps at the origin) and cannot be transcribed.</li>
+    <li>Speaker names come from episode titles and are not yet reconciled, so one physician may appear under more than one name.</li>
+    <li>Topic labels are model-generated; most appear in only one lecture, so the concept map shows only those taught in three or more.</li>
+    <li>MeSH classifies drugs by chemical class rather than by indication, so medications group under Pharmacology rather than the specialty that prescribes them.</li>
+    <li>Pearl grading is lexical. It rewards concrete language and cannot judge whether a claim is clinically correct.</li>
+   </ul></div>
+
+  <div class="card"><b>ASR corrections applied</b>
+    <p class="small muted">Every terminology repair is logged. The raw transcript is retained,
+    so any correction can be audited or reverted.</p>
+    <div class="scroll"><table><tr><th>episode</th><th>from</th><th>to</th><th>n</th></tr>
+    ${Object.values(EPC).flatMap(det=>(det.fixes||[]).map(f=>
+      `<tr><td>${esc(det.slug)}</td><td>${esc(f.from)}</td><td><b>${esc(f.to)}</b></td><td>${f.n}</td></tr>`)).join("")}
+    </table></div>
+    ${Object.keys(EPC).length<D.episodes.length
+      ? `<a href="#" onclick="loadAll();return false">load all episodes to see every correction</a>`:""}</div>
+  ${Object.values(EPC).some(d=>(d.fixes_rejected||[]).length)?`<div class="card">
+    <b>Corrections rejected as unsafe</b>
+    <p class="small muted">Repairs the pipeline refused to apply — too short to match safely,
+    or matching implausibly often (e.g. <code>"d" → "deep vein thrombosis"</code>, which would
+    have fired 1500 times).</p>
+    <div class="scroll"><table><tr><th>from</th><th>to</th><th>why</th></tr>
+    ${Object.values(EPC).flatMap(d=>(d.fixes_rejected||[]).map(f=>
+      `<tr><td>${esc(f.from)}</td><td>${esc(f.to)}</td><td>${esc(f.why||"")}</td></tr>`)).join("")}
+    </table></div></div>`:""}`;
+}
 function searchView(q){
   const rx=new RegExp("("+q.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")","ig");
   const hi=s=>esc(s).replace(rx,"<mark>$1</mark>");
@@ -344,7 +440,7 @@ fetch("data.json").then(r=>r.json()).then(d=>{
   const s=d.stats;
   document.getElementById("stats").innerHTML=
     `${s.n_episodes} lectures · ${s.hours} h · ${s.n_pearls} pearls · ${s.n_topics} topics`;
-  document.getElementById("sub").textContent="proof of concept";
+  
   const sel=document.getElementById("lang");
   sel.innerHTML=Object.entries(d.langs).map(([k,v])=>`<option value="${k}">${v}</option>`).join("");
   sel.onchange=()=>{LANG=sel.value;render()};
@@ -354,6 +450,6 @@ fetch("data.json").then(r=>r.json()).then(d=>{
      <a href="https://hopepartners.podbean.com/" target="_blank" rel="noopener">original feed ↗</a>`;
   render();
 }).catch(e=>{document.getElementById("view").innerHTML=
-  `<div class="banner">Could not load <code>data.json</code> — run <code>python3 scripts/build_site.py</code>, then serve this folder.</div>`});
+  `<div class="banner">Failed to start: ${esc(e && e.message || String(e))}</div>`});
 </script>
 </body></html>

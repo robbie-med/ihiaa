@@ -161,11 +161,33 @@ def main() -> int:
                         "sim": round(s, 3), "verdict": v.get("verdict", ""),
                         "why": v.get("why", "")})
         kinds = {r["verdict"] for r in rel}
+        # Label the cluster from the vocabulary its pearls SHARE, rather than
+        # showing the longest member verbatim. A shared-term label is short,
+        # says what the cluster is about, and is computed the same way every run.
+        import re as _re
+        _stop = set("""the a an and or of to in for with without on at by from is are was
+        were be been being this that these those it its as if then than when while
+        because there here what which who how why not no do does did can could should
+        would may might will have has had about into over under more most less least
+        very just also so such other another each any all some patient patients use
+        used using consider start check give avoid treat""".split())
+        cnt = Counter()
+        for i in g:
+            for w in set(_re.findall(r"[a-z][a-z-]{3,}", pearls[i]["text"].lower())):
+                if w not in _stop:
+                    cnt[w] += 1
+        shared = [w for w, c in cnt.most_common() if c >= max(2, len(g) // 2)][:3]
+        label = " · ".join(shared) if shared else pearls[g[0]]["text"][:60]
+
         out.append({
             "pearl_ids": [pearls[i]["pearl_id"] for i in g],
             "speakers": sorted({pearls[i]["speaker"] for i in g}),
             "size": len(g),
-            "label": max((pearls[i]["text"] for i in g), key=len)[:110],
+            "label": label,
+            "verdict": ("conflict" if "conflict" in kinds else
+                        "duplicate" if "duplicate" in kinds else
+                        "consensus" if "consensus" in kinds else "related"),
+            "n_conflict": sum(1 for r in rel if r["verdict"] == "conflict"),
             "has_conflict": "conflict" in kinds,
             "has_duplicate": "duplicate" in kinds,
             "relations": rel,
