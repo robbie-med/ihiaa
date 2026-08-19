@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HPI Lecture Corpus</title>
+<style>
+  :root{
+    --bg:#fbfaf8; --panel:#fff; --ink:#1a1a1c; --muted:#6b6b73; --line:#e5e2dc;
+    --accent:#7c2d12; --accent2:#b45309; --chip:#f3efe9; --shadow:0 1px 3px rgba(0,0,0,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#141416;--panel:#1c1c1f;--ink:#eceaea;--muted:#9a9aa2;--line:#2e2e33;
+          --accent:#fb923c;--accent2:#fdba74;--chip:#26262b;--shadow:0 1px 3px rgba(0,0,0,.3);}
+  }
+  :root[data-theme=dark]{--bg:#141416;--panel:#1c1c1f;--ink:#eceaea;--muted:#9a9aa2;--line:#2e2e33;
+          --accent:#fb923c;--accent2:#fdba74;--chip:#26262b;--shadow:0 1px 3px rgba(0,0,0,.3);}
+  :root[data-theme=light]{--bg:#fbfaf8;--panel:#fff;--ink:#1a1a1c;--muted:#6b6b73;--line:#e5e2dc;
+          --accent:#7c2d12;--accent2:#b45309;--chip:#f3efe9;--shadow:0 1px 3px rgba(0,0,0,.06);}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.6 ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif;}
+  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+  header{border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:20}
+  .htop{display:flex;align-items:center;gap:14px;padding:14px 0;flex-wrap:wrap}
+  h1{font-size:19px;margin:0;letter-spacing:-.2px}
+  h1 span{color:var(--muted);font-weight:400}
+  .stats{color:var(--muted);font-size:12.5px;margin-left:auto;text-align:right}
+  nav{display:flex;gap:4px;flex-wrap:wrap;padding-bottom:10px}
+  nav button{background:none;border:0;padding:7px 13px;border-radius:7px;cursor:pointer;
+             color:var(--muted);font:inherit;font-size:14px}
+  nav button.on{background:var(--accent);color:#fff}
+  nav button:hover:not(.on){background:var(--chip);color:var(--ink)}
+  #q{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:9px;
+     background:var(--panel);color:var(--ink);font:inherit;margin:16px 0 6px}
+  #q:focus{outline:2px solid var(--accent);border-color:transparent}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+        padding:15px 17px;margin-bottom:11px;box-shadow:var(--shadow)}
+  .chip{display:inline-block;background:var(--chip);color:var(--muted);border-radius:5px;
+        padding:2px 8px;font-size:11.5px;margin:2px 5px 2px 0;white-space:nowrap}
+  .chip.t{cursor:pointer} .chip.t:hover{background:var(--accent);color:#fff}
+  .type{background:var(--accent);color:#fff;font-weight:600;letter-spacing:.3px;text-transform:uppercase}
+  .meta{color:var(--muted);font-size:12.5px;margin-top:7px}
+  .ts{font-variant-numeric:tabular-nums;cursor:pointer;color:var(--accent);font-weight:600}
+  .quote{border-left:3px solid var(--line);padding:7px 0 7px 12px;margin:9px 0 0;
+         color:var(--muted);font-size:13.5px;font-style:italic;display:none}
+  .quote.show{display:block}
+  .toggle{font-size:12px;color:var(--muted);cursor:pointer;user-select:none}
+  .toggle:hover{color:var(--accent)}
+  .muted{color:var(--muted)} .small{font-size:12.5px}
+  .grid{display:grid;gap:11px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+  .seg{padding:3px 0;display:flex;gap:11px;align-items:baseline}
+  .seg:hover{background:var(--chip);border-radius:5px}
+  .banner{background:var(--chip);border:1px solid var(--line);border-left:3px solid var(--accent2);
+          border-radius:8px;padding:11px 14px;margin:16px 0;font-size:13px}
+  mark{background:var(--accent2);color:#fff;border-radius:3px;padding:0 2px}
+  .lang{background:var(--panel);border:1px solid var(--line);color:var(--ink);
+        border-radius:7px;padding:6px 9px;font:inherit;font-size:13px}
+  audio{width:100%;margin-top:10px}
+  footer{color:var(--muted);font-size:12px;padding:26px 0;border-top:1px solid var(--line);margin-top:34px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  td,th{text-align:left;padding:6px 9px;border-bottom:1px solid var(--line)}
+  .scroll{overflow-x:auto}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="htop">
+    <h1>HPI Lecture Corpus <span id="sub"></span></h1>
+    <select class="lang" id="lang" title="Interface language"></select>
+    <div class="stats" id="stats"></div>
+  </div>
+  <nav id="nav"></nav>
+</div></header>
+
+<div class="wrap">
+  <input id="q" placeholder="Search transcripts, pearls, topics…" autocomplete="off">
+  <div id="hint" class="muted small" style="margin-bottom:14px"></div>
+  <main id="view"></main>
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const UI = {
+  en:{clusters:"Clusters",search:"Search",pearls:"Pearls",topics:"Topics",speakers:"Speakers",episodes:"Episodes",
+      about:"About",hits:"results",no:"No matches.",listen:"Listen at",src:"Source",
+      abstract:"Abstract",keyp:"Key teaching points",transcript:"Transcript",
+      showq:"show source quote",hideq:"hide source quote",talks:"lectures",
+      mt:"Machine-translated — verify against the English source.",
+      ph:"Search transcripts, pearls, topics…"},
+  ko:{clusters:"군집",search:"검색",pearls:"핵심 요점",topics:"주제",speakers:"강연자",episodes:"강의",
+      about:"정보",hits:"건",no:"검색 결과가 없습니다.",listen:"재생 위치",src:"출처",
+      abstract:"요약",keyp:"핵심 교육 요점",transcript:"전사본",
+      showq:"원문 인용 보기",hideq:"인용 숨기기",talks:"개 강의",
+      mt:"기계 번역입니다 — 영어 원문을 확인하세요.",ph:"전사본, 요점, 주제 검색…"},
+  fr:{clusters:"Groupes",search:"Recherche",pearls:"Perles",topics:"Thèmes",speakers:"Intervenants",episodes:"Cours",
+      about:"À propos",hits:"résultats",no:"Aucun résultat.",listen:"Écouter à",src:"Source",
+      abstract:"Résumé",keyp:"Points clés",transcript:"Transcription",
+      showq:"voir la citation",hideq:"masquer la citation",talks:"cours",
+      mt:"Traduction automatique — vérifiez la source anglaise.",
+      ph:"Rechercher transcriptions, perles, thèmes…"},
+  de:{clusters:"Cluster",search:"Suche",pearls:"Merksätze",topics:"Themen",speakers:"Referenten",episodes:"Vorträge",
+      about:"Info",hits:"Treffer",no:"Keine Treffer.",listen:"Anhören bei",src:"Quelle",
+      abstract:"Zusammenfassung",keyp:"Kernaussagen",transcript:"Transkript",
+      showq:"Zitat anzeigen",hideq:"Zitat ausblenden",talks:"Vorträge",
+      mt:"Maschinell übersetzt — bitte mit dem englischen Original abgleichen.",
+      ph:"Transkripte, Merksätze, Themen durchsuchen…"}
+};
+let D=null, LANG="en", TAB="pearls", SEL=null;
+const T=k=>(UI[LANG]||UI.en)[k]||UI.en[k];
+const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const mmss=s=>{s=Math.max(0,Math.round(s));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
+const AUDIO=(sl)=>`../data/audio/${sl}.m4a`;
+
+// Pick translated text when present, else fall back to English.
+function tr(obj, field, slug){
+  if(LANG==="en") return obj[field];
+  const ep=D.episodes.find(e=>e.slug===(slug||obj.episode||obj.slug));
+  const t=ep&&ep.i18n&&ep.i18n[LANG];
+  if(!t) return obj[field];
+  if(field==="abstract"&&t.abstract) return t.abstract;
+  if(field==="key_points"&&t.key_points) return t.key_points;
+  if(field==="text"&&t.pearls&&obj.pearl_id&&t.pearls[obj.pearl_id]) return t.pearls[obj.pearl_id];
+  return obj[field];
+}
+
+function render(){
+  document.getElementById("q").placeholder=T("ph");
+  const nav=document.getElementById("nav");
+  nav.innerHTML=["pearls","clusters","topics","speakers","episodes","about"]
+    .map(t=>`<button data-t="${t}" class="${TAB===t?'on':''}">${T(t)}</button>`).join("");
+  nav.querySelectorAll("button").forEach(b=>b.onclick=()=>{TAB=b.dataset.t;SEL=null;render()});
+  const q=document.getElementById("q").value.trim();
+  const v=document.getElementById("view");
+  document.getElementById("hint").textContent="";
+  if(q) return v.innerHTML=searchView(q);
+  if(SEL&&SEL.kind==="episode") return v.innerHTML=episodeView(SEL.id);
+  if(SEL&&SEL.kind==="topic")   return v.innerHTML=topicView(SEL.id);
+  if(SEL&&SEL.kind==="speaker") return v.innerHTML=speakerView(SEL.id);
+  v.innerHTML=({pearls:pearlsView,clusters:clustersView,topics:topicsView,
+                speakers:speakersView,episodes:episodesView,about:aboutView})[TAB]();
+}
+
+function pearlCard(p){
+  const ep=D.episodes.find(e=>e.slug===p.episode)||{};
+  return `<div class="card">
+    <span class="chip type">${esc(p.type)}</span>
+    <div style="margin-top:7px">${esc(tr(p,"text"))}</div>
+    <div class="meta">
+      <b>${esc(p.speaker)}</b> · <a href="#" onclick="go('episode','${p.episode}');return false">${esc(ep.title||p.episode)}</a>
+      · <span class="ts" onclick="seek('${p.episode}',${p.t})">${mmss(p.t)}</span>
+      · <a href="${esc(ep.link||'#')}" target="_blank" rel="noopener">${T("src")} ↗</a>
+      · <span class="toggle" onclick="tq(this)">${T("showq")}</span>
+    </div>
+    <div class="quote">“${esc(p.verbatim)}”</div></div>`;
+}
+function tq(el){const q=el.closest(".card").querySelector(".quote");
+  q.classList.toggle("show");el.textContent=q.classList.contains("show")?T("hideq"):T("showq")}
+
+function pearlsView(){
+  const by={};D.pearls.forEach(p=>(by[p.type]=by[p.type]||[]).push(p));
+  return Object.entries(by).sort((a,b)=>b[1].length-a[1].length).map(([t,ps])=>
+    `<h3 style="margin:22px 0 9px">${esc(t)} <span class="muted small">(${ps.length})</span></h3>`
+    +ps.map(pearlCard).join("")).join("")||`<p class="muted">${T("no")}</p>`;
+}
+// Groups of pearls that say nearly the same thing. Conflicts float to the top:
+// two attendings giving opposing guidance is the most useful thing here, so it
+// is surfaced rather than silently reconciled. Both sides always shown.
+function clustersView(){
+  const cs=D.clusters||[];
+  if(!cs.length) return `<div class="banner">No pearl clusters yet — clustering needs
+    several lectures covering overlapping topics. Run
+    <code>python3 scripts/cluster_pearls.py</code> after the backfill.</div>`;
+  const byId={}; D.pearls.forEach(p=>byId[p.pearl_id]=p);
+  const nconf=cs.filter(c=>c.has_conflict).length;
+  return `<div class="banner"><b>${cs.length}</b> clusters of near-identical teaching points
+      · <b>${nconf}</b> containing a contradiction.
+      Grouped by meaning, then judged pairwise — similarity alone cannot tell
+      “always do X” from “never do X”.</div>`
+   +cs.map(c=>{
+     const ps=c.pearl_ids.map(id=>byId[id]).filter(Boolean);
+     const tag=c.has_conflict?`<span class="chip type" style="background:#b91c1c">conflict</span>`
+              :c.has_duplicate?`<span class="chip type">duplicate</span>`
+              :`<span class="chip type" style="background:#15803d">consensus</span>`;
+     return `<div class="card">${tag}
+       <span class="chip">${c.size} pearls</span>
+       <span class="chip">${esc(c.speakers.join(", "))}</span>
+       ${ps.map(p=>`<div style="margin:9px 0 0">• ${esc(tr(p,"text"))}
+          <span class="meta">— ${esc(p.speaker)} ·
+          <span class="ts" onclick="seek('${p.episode}',${p.t})">${mmss(p.t)}</span></span></div>`).join("")}
+       ${(c.relations||[]).map(r=>`<div class="meta" style="margin-top:7px">
+          <b>${esc(r.verdict)}</b> (sim ${r.sim}) — ${esc(r.why)}</div>`).join("")}
+     </div>`;
+   }).join("");
+}
+function topicsView(){
+  return `<div class="grid">`+D.topics.map(t=>
+    `<div class="card" style="cursor:pointer" onclick="go('topic','${t.slug}')">
+      <b>${esc(t.label)}</b><div class="meta">${t.episodes.length} ${T("talks")} · ${esc(t.kind)}</div>
+     </div>`).join("")+`</div>`;
+}
+function topicView(slug){
+  const t=D.topics.find(x=>x.slug===slug);if(!t)return T("no");
+  const eps=t.episodes.map(s=>D.episodes.find(e=>e.slug===s)).filter(Boolean);
+  const ps=D.pearls.filter(p=>t.episodes.includes(p.episode));
+  return `<h2>${esc(t.label)}</h2><p class="muted small">${eps.length} ${T("talks")} · ${ps.length} ${T("pearls")}</p>`
+    +eps.map(e=>`<div class="card"><a href="#" onclick="go('episode','${e.slug}');return false"><b>${esc(e.title)}</b></a>
+       <div class="meta">${esc(e.speaker)} · ${esc(e.pubDate||"")}</div></div>`).join("")
+    +`<h3 style="margin-top:22px">${T("pearls")}</h3>`+ps.map(pearlCard).join("");
+}
+function speakersView(){
+  return `<div class="grid">`+D.speakers.map(s=>
+    `<div class="card" style="cursor:pointer" onclick="go('speaker','${esc(s.name)}')">
+      <b>${esc(s.name)}</b><div class="meta">${s.episodes.length} ${T("talks")}</div></div>`).join("")+`</div>`;
+}
+function speakerView(name){
+  const eps=D.episodes.filter(e=>e.speaker===name);
+  const ps=D.pearls.filter(p=>p.speaker===name);
+  return `<h2>${esc(name)}</h2><p class="muted small">${eps.length} ${T("talks")} · ${ps.length} ${T("pearls")}</p>`
+   +eps.map(e=>`<div class="card"><a href="#" onclick="go('episode','${e.slug}');return false"><b>${esc(e.title)}</b></a>
+     <div class="meta">${esc(e.pubDate||"")}</div></div>`).join("")
+   +ps.map(pearlCard).join("");
+}
+function episodesView(){
+  return D.episodes.map(e=>`<div class="card">
+    <a href="#" onclick="go('episode','${e.slug}');return false"><b>${esc(e.title)}</b></a>
+    <div class="meta">${esc(e.speaker)} · ${mmss(e.duration_sec)} · ${esc(e.pubDate||"")}
+      · <a href="${esc(e.link)}" target="_blank" rel="noopener">${T("src")} ↗</a></div>
+    <div class="small" style="margin-top:8px">${esc((tr(e,"abstract",e.slug)||"").slice(0,260))}</div></div>`).join("");
+}
+// Per-episode detail (transcript/segments/vectors) is fetched on demand and
+// cached, so the initial load stays small as the corpus grows.
+const EPC={};
+function loadEp(slug){
+  if(EPC[slug]) return Promise.resolve(EPC[slug]);
+  return fetch(`ep/${slug}.json`).then(r=>r.json()).then(d=>(EPC[slug]=d));
+}
+function episodeView(slug){
+  const e=D.episodes.find(x=>x.slug===slug);if(!e)return T("no");
+  const ps=D.pearls.filter(p=>p.episode===slug);
+  const kp=tr(e,"key_points",slug)||[];
+  const mt=(LANG!=="en"&&e.i18n&&e.i18n[LANG])?`<div class="banner">${T("mt")}</div>`:"";
+  const det=EPC[slug];
+  if(!det) loadEp(slug).then(()=>{ if(SEL&&SEL.id===slug) render(); });
+  const body=det
+    ? det.segments.map(s=>`<div class="seg"><span class="ts" onclick="seek('${slug}',${s.t})">${mmss(s.t)}</span>
+        <span>${esc(s.text)}</span></div>`).join("")
+    : `<span class="muted">…</span>`;
+  return `<h2>${esc(e.title)}</h2>
+    <p class="muted small">${esc(e.speaker)} · ${mmss(e.duration_sec)} · ${esc(e.pubDate||"")}
+      · <a href="${esc(e.link)}" target="_blank" rel="noopener">${T("src")} ↗</a></p>
+    ${mt}
+    <audio id="au-${slug}" controls preload="none" src="${AUDIO(slug)}"></audio>
+    <div class="card"><b>${T("abstract")}</b><p>${esc(tr(e,"abstract",slug))}</p>
+      <b>${T("keyp")}</b><ul>${kp.map(k=>`<li>${esc(k)}</li>`).join("")}</ul></div>
+    <h3>${T("pearls")} <span class="muted small">(${ps.length})</span></h3>${ps.map(pearlCard).join("")}
+    <h3>${T("transcript")}</h3><div class="card">${body}</div>`;
+}
+function aboutView(){
+  const e=D.episodes[0]||{};
+  return `<div class="card"><b>Provenance &amp; models</b>
+    <div class="scroll"><table>
+      <tr><th>stage</th><th>model</th></tr>
+      <tr><td>transcription</td><td>${esc(e.stt_model||"—")}</td></tr>
+      <tr><td>terminology repair</td><td>${esc(e.enrich_model||"—")}</td></tr>
+      <tr><td>enrichment / pearls</td><td>${esc(e.enrich_model||"—")}</td></tr>
+      <tr><td>embeddings</td><td>${esc(e.embed_model||"—")} @ ${e.embed_dims||"—"}d</td></tr>
+    </table></div></div>
+   <div class="banner"><b>Unverified teaching material.</b> Transcripts are machine-generated and
+     machine-corrected. Every pearl links to the exact moment it was said — verify doses and
+     numbers against the source audio before acting on them.</div>
+   <div class="card"><b>ASR corrections applied</b>
+     <p class="small muted">Every terminology repair is logged. The raw transcript is always
+     retained, so any correction can be audited or reverted.</p>
+     <div class="scroll"><table><tr><th>episode</th><th>from</th><th>to</th><th>n</th></tr>
+     ${Object.values(EPC).flatMap(det=>(det.fixes||[]).map(f=>
+       `<tr><td>${esc(det.slug)}</td><td>${esc(f.from)}</td><td><b>${esc(f.to)}</b></td><td>${f.n}</td></tr>`)).join("")}
+     </table></div>
+     ${Object.keys(EPC).length<D.episodes.length
+       ? `<a href="#" onclick="loadAll();return false">load all episodes to see every correction</a>`:""}</div>
+   ${Object.values(EPC).some(d=>(d.fixes_rejected||[]).length)?`<div class="card">
+     <b>Corrections rejected as unsafe</b>
+     <p class="small muted">Proposed repairs the pipeline refused to apply — too short to match
+     safely, or matching implausibly often (e.g. <code>"d" → "deep vein thrombosis"</code>,
+     which would have fired 1500 times).</p>
+     <div class="scroll"><table><tr><th>from</th><th>to</th><th>why</th></tr>
+     ${Object.values(EPC).flatMap(d=>(d.fixes_rejected||[]).map(f=>
+       `<tr><td>${esc(f.from)}</td><td>${esc(f.to)}</td><td>${esc(f.why||"")}</td></tr>`)).join("")}
+     </table></div></div>`:""}`;
+}
+
+function searchView(q){
+  const rx=new RegExp("("+q.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")","ig");
+  const hi=s=>esc(s).replace(rx,"<mark>$1</mark>");
+  const ps=D.pearls.filter(p=>(p.text+" "+p.verbatim).toLowerCase().includes(q.toLowerCase()));
+  const ts=D.topics.filter(t=>t.label.toLowerCase().includes(q.toLowerCase()));
+  let out=[];
+  if(ts.length) out.push(`<h3>${T("topics")}</h3>`+ts.map(t=>
+    `<span class="chip t" onclick="go('topic','${t.slug}')">${esc(t.label)} (${t.episodes.length})</span>`).join(""));
+  if(ps.length) out.push(`<h3>${T("pearls")} <span class="muted small">(${ps.length})</span></h3>`+ps.map(pearlCard).join(""));
+  // Abstracts and key points live in the index, so they always search instantly.
+  const ab=D.episodes.filter(e=>((e.abstract||"")+" "+(e.key_points||[]).join(" "))
+      .toLowerCase().includes(q.toLowerCase()));
+  if(ab.length) out.push(`<h3>${T("episodes")}</h3>`+ab.map(e=>
+    `<div class="card"><a href="#" onclick="go('episode','${e.slug}');return false"><b>${esc(e.title)}</b></a>
+     <div class="small" style="margin-top:6px">${hi((e.abstract||"").slice(0,240))}</div></div>`).join(""));
+
+  // Full transcripts are per-episode files. Search whatever is already cached,
+  // and let the reader opt in to pulling the rest rather than silently
+  // downloading the whole corpus on every keystroke.
+  let th=[];
+  Object.values(EPC).forEach(det=>{
+    const e=D.episodes.find(x=>x.slug===det.slug)||{};
+    (det.segments||[]).forEach(s=>{
+      if(s.text.toLowerCase().includes(q.toLowerCase()))
+        th.push(`<div class="card"><div>${hi(s.text)}</div><div class="meta">
+          <a href="#" onclick="go('episode','${e.slug}');return false">${esc(e.title||det.slug)}</a>
+          · <span class="ts" onclick="seek('${e.slug}',${s.t})">${mmss(s.t)}</span></div></div>`);
+    });
+  });
+  const nload=D.episodes.length-Object.keys(EPC).length;
+  if(th.length) out.push(`<h3>${T("transcript")} <span class="muted small">(${th.length})</span></h3>`+th.slice(0,80).join(""));
+  if(nload>0) out.push(`<div class="banner">Full-text search covers ${Object.keys(EPC).length}
+    of ${D.episodes.length} transcripts loaded so far.
+    <a href="#" onclick="loadAll();return false"><b>Load remaining ${nload}</b></a></div>`);
+  return out.length?out.join(""):`<p class="muted">${T("no")}</p>`;
+}
+
+function loadAll(){
+  Promise.all(D.episodes.map(e=>loadEp(e.slug))).then(render);
+}
+function go(kind,id){SEL={kind,id};document.getElementById("q").value="";render();window.scrollTo(0,0)}
+function seek(slug,t){
+  if(!(SEL&&SEL.kind==="episode"&&SEL.id===slug)) go("episode",slug);
+  setTimeout(()=>{const a=document.getElementById("au-"+slug);
+    if(a){a.currentTime=t;a.play().catch(()=>{});a.scrollIntoView({block:"center"});}},60);
+}
+
+fetch("data.json").then(r=>r.json()).then(d=>{
+  D=d;
+  const s=d.stats;
+  document.getElementById("stats").innerHTML=
+    `${s.n_episodes} lectures · ${s.hours} h · ${s.n_pearls} pearls · ${s.n_topics} topics`;
+  document.getElementById("sub").textContent="proof of concept";
+  const sel=document.getElementById("lang");
+  sel.innerHTML=Object.entries(d.langs).map(([k,v])=>`<option value="${k}">${v}</option>`).join("");
+  sel.onchange=()=>{LANG=sel.value;render()};
+  document.getElementById("q").oninput=render;
+  document.getElementById("foot").innerHTML=
+    `Hope Partnerships International lecture archive · transcripts machine-generated, verify at source ·
+     <a href="https://hopepartners.podbean.com/" target="_blank" rel="noopener">original feed ↗</a>`;
+  render();
+}).catch(e=>{document.getElementById("view").innerHTML=
+  `<div class="banner">Could not load <code>data.json</code> — run <code>python3 scripts/build_site.py</code>, then serve this folder.</div>`});
+</script>
+</body></html>
