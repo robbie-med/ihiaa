@@ -149,13 +149,14 @@ def embed(texts: list[str]) -> list[list[float]]:
 # --------------------------------------------------------------------------
 # Chat / structured extraction
 # --------------------------------------------------------------------------
-def chat_json(system: str, user: str, model: str = None, max_tokens: int = 8000) -> dict:
+def chat_json(system: str, user: str, model: str = None, max_tokens: int = 8000,
+              temperature: float = 0.2) -> dict:
     model = model or CHAT_MODEL
     out = _post("/chat/completions", {
         "model": model,
         "messages": [{"role": "system", "content": system},
                      {"role": "user", "content": user}],
-        "temperature": 0.2,
+        "temperature": temperature,
         "max_tokens": max_tokens,
         "response_format": {"type": "json_object"},
     })

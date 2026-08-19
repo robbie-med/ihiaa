@@ -66,8 +66,17 @@ def build() -> dict:
         chunks = [{"t": c["t"], "text": c["text"], "v": quantize(c["vec"])}
                   for c in d.get("chunks", []) if c.get("vec")]
 
+        # Grades come from scripts/score_pearls.py (deterministic rules, no model).
+        # D is excluded from the site entirely -- that band is institution-local
+        # logistics and non-clinical filler. C is kept but sorts below A/B.
         for p in d.get("pearls", []):
+            g = (p.get("score") or {}).get("grade", "C")
+            if g == "D":
+                continue
             p = dict(p)
+            p["grade"] = g
+            p["points"] = (p.get("score") or {}).get("points", 0)
+            p.pop("score", None)
             p["episode_title"] = d["title"]
             p["link"] = d["link"]
             pearls.append(p)
@@ -124,6 +133,9 @@ def build() -> dict:
     # separately by cluster_pearls.py; absent on a fresh corpus.
     cl = BASE / "data" / "clusters.json"
     clusters = json.loads(cl.read_text())["clusters"] if cl.exists() else []
+
+    # Best pearls first, everywhere they are listed.
+    pearls.sort(key=lambda p: (-p.get("points", 0), p["episode"], p["t"]))
 
     return {"episodes": eps, "pearls": pearls, "topics": topic_list,
             "clusters": clusters,

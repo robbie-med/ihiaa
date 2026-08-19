@@ -144,8 +144,10 @@ function render(){
 
 function pearlCard(p){
   const ep=D.episodes.find(e=>e.slug===p.episode)||{};
+  const gc={A:"#15803d",B:"#0369a1",C:"#6b7280"}[p.grade]||"#6b7280";
   return `<div class="card">
     <span class="chip type">${esc(p.type)}</span>
+    <span class="chip" style="background:${gc};color:#fff;font-weight:600" title="deterministic rule score">${esc(p.grade||"")}</span>
     <div style="margin-top:7px">${esc(tr(p,"text"))}</div>
     <div class="meta">
       <b>${esc(p.speaker)}</b> · <a href="#" onclick="go('episode','${p.episode}');return false">${esc(ep.title||p.episode)}</a>
