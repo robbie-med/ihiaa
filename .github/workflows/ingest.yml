@@ -1,15 +1,15 @@
 name: Ingest new lectures
 
-# Nothing runs on the user's PC. The feed is polled weekly here; new episodes are
-# downloaded, transcribed, enriched and committed back, and Pages redeploys.
+# Polls the feed, processes anything new, rebuilds every derived artifact, then
+# deploys. Nothing runs on a local machine.
 on:
   schedule:
-    - cron: "0 9 * * 1"        # Mondays 09:00 UTC
+    - cron: "0 9 * * *"        # daily 09:00 UTC
   workflow_dispatch:
     inputs:
       limit:
         description: "Max episodes to process this run (0 = all outstanding)"
-        default: "5"
+        default: "0"
       slugs:
         description: "Specific slugs to (re)process, space separated"
         default: ""
@@ -24,28 +24,26 @@ permissions:
 jobs:
   ingest:
     runs-on: ubuntu-latest
-    # A large backfill is many hours of download + API time; keep headroom and
-    # rely on the run being resumable (finished episodes are skipped).
     timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
-        with:
-          lfs: false
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install ffmpeg
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          python3 -m pip install --quiet numpy
 
       - name: Find new episodes
         id: find
         run: |
           if [ -n "${{ github.event.inputs.slugs }}" ]; then
-            echo "${{ github.event.inputs.slugs }}" | tr ' ' '\n' > todo.txt
+            echo "${{ github.event.inputs.slugs }}" | tr ' ' '\n' | sed '/^$/d' > todo.txt
           else
-            python3 scripts/fetch_feed.py "${{ github.event.inputs.limit || 5 }}" > todo.txt
+            python3 scripts/fetch_feed.py "${{ github.event.inputs.limit || 0 }}" > todo.txt
           fi
           echo "count=$(wc -l < todo.txt)" >> "$GITHUB_OUTPUT"
           echo "--- to process ---"; cat todo.txt
@@ -55,30 +53,82 @@ jobs:
         env:
           DEEPGRAM_API_KEY: ${{ secrets.DEEPGRAM_API_KEY }}
           PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
-        run: xargs -a todo.txt python3 -u scripts/ingest.py
+        run: python3 -u scripts/backfill.py --workers 4
+
+      # Everything below is derived from data/episodes/*.json. It must re-run
+      # whenever the corpus changes, or new lectures show up ungraded, unmapped
+      # and unclustered -- which is exactly what happened when this workflow
+      # predated those scripts.
+      - name: Grade pearls (deterministic rules)
+        if: steps.find.outputs.count != '0'
+        run: python3 scripts/score_pearls.py --apply
+
+      - name: Cache MeSH
+        if: steps.find.outputs.count != '0'
+        id: meshcache
+        uses: actions/cache@v4
+        with:
+          path: data/ref/mesh.bin
+          key: mesh-d2025
+
+      - name: Download MeSH
+        if: steps.find.outputs.count != '0' && steps.meshcache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p data/ref
+          curl -sL --max-time 900 \
+            "https://nlmpubs.nlm.nih.gov/projects/mesh/2025/asciimesh/d2025.bin" \
+            -o data/ref/mesh.bin
+          test "$(stat -c%s data/ref/mesh.bin)" -gt 1000000
+
+      - name: Build site, taxonomy, concept map
+        if: steps.find.outputs.count != '0'
+        run: |
+          python3 scripts/build_site.py
+          python3 scripts/build_taxonomy.py
+          python3 scripts/build_graph.py
+
+      - name: Cluster pearls
+        if: steps.find.outputs.count != '0'
+        env:
+          PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
+        continue-on-error: true          # clustering is enrichment, not critical path
+        run: |
+          python3 scripts/cluster_pearls.py
+          python3 scripts/build_site.py   # fold refreshed clusters into data.json
 
       # Translation (ko/fr/de) is built and working but deliberately OFF.
-      # Re-enable by setting the repo variable RUN_TRANSLATE to "1".
-      - name: Translate (ko/fr/de)
+      # Set repo variable RUN_TRANSLATE=1 to enable.
+      - name: Translate
         if: steps.find.outputs.count != '0' && vars.RUN_TRANSLATE == '1'
         env:
           PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
         continue-on-error: true
-        run: python3 -u scripts/translate.py
-
-      - name: Build site
-        run: python3 scripts/build_site.py
+        run: |
+          python3 -u scripts/translate.py
+          python3 scripts/build_site.py
 
       - name: Commit
+        if: steps.find.outputs.count != '0'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Audio is intentionally not committed: ~1.5GB at full corpus, well
-          # past what belongs in git. Timestamps deep-link to Podbean instead.
-          git add data/episodes data/episodes_meta.json data/clusters.json site
+          # Audio is never committed (~2.5GB at full corpus); timestamps deep-link
+          # to Podbean instead.
+          git add data/episodes data/episodes_meta.json data/taxonomy.json \
+                  data/clusters.json site
           if git diff --cached --quiet; then
             echo "nothing to commit"
           else
-            git commit -m "ingest: $(wc -l < todo.txt) episode(s) [skip ci]"
+            git commit -m "ingest: $(wc -l < todo.txt) new lecture(s) [skip ci]"
             git push
           fi
+
+      # The Pages project is direct-upload, NOT connected to this repo, so a push
+      # alone deploys nothing. This step is what actually publishes the site.
+      - name: Deploy to Cloudflare Pages
+        if: steps.find.outputs.count != '0'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy site --project-name ihiaa --branch main --commit-dirty=true
