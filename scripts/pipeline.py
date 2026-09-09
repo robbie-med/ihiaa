@@ -172,6 +172,19 @@ Rules for pearls -- these matter more than coverage:
 - Topics should be canonical clinical concepts, not phrasings from the talk."""
 
 
+def _dedash(s: str) -> str:
+    """Strip em/en dashes from model prose.
+
+    The extraction model writes them constantly; the lecturers do not talk that
+    way, and they are a visible tell that the text is machine-written. Applied
+    at ingest so the habit does not come back on every new episode.
+    """
+    import re as _re
+    s = _re.sub(r"\s*[\u2014\u2013]\s*", ", ", s or "")
+    s = _re.sub(r",\s*,", ",", s)
+    return _re.sub(r",\s*\.", ".", s)
+
+
 def stage_enrich(slug: str, ep: dict) -> dict:
     if ep.get("pearls"):
         print(f"  enrich: cached ({len(ep['pearls'])} pearls)")
@@ -194,8 +207,8 @@ def stage_enrich(slug: str, ep: dict) -> dict:
         kp += r.get("key_points", [])
         topics += r.get("topics", [])
         pearls += r.get("pearls", [])
-    ep["abstract"] = abstract
-    ep["key_points"] = kp[:12]
+    ep["abstract"] = _dedash(abstract)
+    ep["key_points"] = [_dedash(k) for k in kp[:12]]
     ep["topics_raw"] = topics
     # Keep the model's raw output so anchoring can be re-tuned and re-run for
     # free, without paying for enrichment again.
@@ -260,7 +273,7 @@ def anchor_pearls(pearls: list, ep: dict) -> list:
             dropped += 1
             continue
         out.append({"pearl_id": f"{ep['slug']}-{int(t)}",
-                    "text": p.get("text", "").strip(),
+                    "text": _dedash(p.get("text", "").strip()),
                     "verbatim": p.get("verbatim", "").strip(),
                     "type": p.get("type", "judgment"), "t": round(t, 1),
                     "match": how, "episode": ep["slug"], "speaker": ep["speaker"],

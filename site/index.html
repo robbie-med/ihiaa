@@ -6,66 +6,120 @@
 <title>HPI Lecture Corpus</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="favicon.svg">
-<meta name="theme-color" content="#1c1c1f">
+<meta name="theme-color" content="#f8f8f8">
 <meta name="description" content="Searchable, cross-linked archive of Hope Partnerships International residency lectures.">
 <style>
-  :root{
-    --bg:#fbfaf8; --panel:#fff; --ink:#1a1a1c; --muted:#6b6b73; --line:#e5e2dc;
-    --accent:#7c2d12; --accent2:#b45309; --chip:#f3efe9; --shadow:0 1px 3px rgba(0,0,0,.06);
-  }
-  @media (prefers-color-scheme:dark){
-    :root{--bg:#141416;--panel:#1c1c1f;--ink:#eceaea;--muted:#9a9aa2;--line:#2e2e33;
-          --accent:#fb923c;--accent2:#fdba74;--chip:#26262b;--shadow:0 1px 3px rgba(0,0,0,.3);}
-  }
-  :root[data-theme=dark]{--bg:#141416;--panel:#1c1c1f;--ink:#eceaea;--muted:#9a9aa2;--line:#2e2e33;
-          --accent:#fb923c;--accent2:#fdba74;--chip:#26262b;--shadow:0 1px 3px rgba(0,0,0,.3);}
-  :root[data-theme=light]{--bg:#fbfaf8;--panel:#fff;--ink:#1a1a1c;--muted:#6b6b73;--line:#e5e2dc;
-          --accent:#7c2d12;--accent2:#b45309;--chip:#f3efe9;--shadow:0 1px 3px rgba(0,0,0,.06);}
+  /* Bootstrap 3 (2015) chrome, hand-written. The tells that actually date a page
+     are vertical gradients, inset white highlights, 4px radii and dense spacing.
+     A flat, airy layout reads 2017+ no matter what the palette is. */
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);
-       font:15px/1.6 ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif;}
-  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
-  .wrap{max-width:1040px;margin:0 auto;padding:0 18px}
-  header{border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:20}
-  .htop{display:flex;align-items:center;gap:14px;padding:14px 0;flex-wrap:wrap}
-  h1{font-size:19px;margin:0;letter-spacing:-.2px}
-  h1 span{color:var(--muted);font-weight:400}
-  .stats{color:var(--muted);font-size:12.5px;margin-left:auto;text-align:right}
-  nav{display:flex;gap:4px;flex-wrap:wrap;padding-bottom:10px}
-  nav button{background:none;border:0;padding:7px 13px;border-radius:7px;cursor:pointer;
-             color:var(--muted);font:inherit;font-size:14px}
-  nav button.on{background:var(--accent);color:#fff}
-  nav button:hover:not(.on){background:var(--chip);color:var(--ink)}
-  #q{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:9px;
-     background:var(--panel);color:var(--ink);font:inherit;margin:16px 0 6px}
-  #q:focus{outline:2px solid var(--accent);border-color:transparent}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
-        padding:15px 17px;margin-bottom:11px;box-shadow:var(--shadow)}
-  .chip{display:inline-block;background:var(--chip);color:var(--muted);border-radius:5px;
-        padding:2px 8px;font-size:11.5px;margin:2px 5px 2px 0;white-space:nowrap}
-  .chip.t{cursor:pointer} .chip.t:hover{background:var(--accent);color:#fff}
-  .type{background:var(--accent);color:#fff;font-weight:600;letter-spacing:.3px;text-transform:uppercase}
-  .meta{color:var(--muted);font-size:12.5px;margin-top:7px}
-  .ts{font-variant-numeric:tabular-nums;cursor:pointer;color:var(--accent);font-weight:600}
-  .quote{border-left:3px solid var(--line);padding:7px 0 7px 12px;margin:9px 0 0;
-         color:var(--muted);font-size:13.5px;font-style:italic;display:none}
+  body{margin:0;background:#fff;color:#333;
+       font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+       font-size:14px;line-height:1.428571429}
+  a{color:#337ab7;text-decoration:none}
+  a:hover,a:focus{color:#23527c;text-decoration:underline}
+  .wrap{max-width:1170px;margin:0 auto;padding:0 15px}
+
+  /* navbar-default: gradient + inset highlight */
+  header{background-image:linear-gradient(to bottom,#fff 0,#f8f8f8 100%);
+         background-repeat:repeat-x;border-bottom:1px solid #e7e7e7;
+         box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+         margin-bottom:18px}
+  .htop{display:flex;align-items:center;gap:12px;padding:11px 0;flex-wrap:wrap}
+  h1{font-size:18px;margin:0;font-weight:500;color:#777;line-height:20px}
+  h2{font-size:24px;font-weight:500;margin:0 0 10px}
+  h3{font-size:18px;font-weight:500;margin:18px 0 9px}
+  .stats{color:#777;font-size:12px;margin-left:auto;text-align:right}
+
+  /* nav-tabs: folder tabs that merge into the content edge */
+  nav{border-bottom:1px solid #ddd;display:flex;flex-wrap:wrap;margin-bottom:16px}
+  nav button{background:none;border:1px solid transparent;border-radius:4px 4px 0 0;
+             padding:10px 15px;margin-bottom:-1px;cursor:pointer;
+             font:inherit;line-height:1.428571429;color:#337ab7}
+  nav button:hover{background:#eee;border-color:#eee #eee #ddd;text-decoration:underline}
+  nav button.on{color:#555;background:#fff;border:1px solid #ddd;border-bottom-color:transparent;
+                cursor:default;text-decoration:none}
+
+  /* panels */
+  .card{background:#fff;border:1px solid #ddd;border-radius:4px;
+        box-shadow:0 1px 1px rgba(0,0,0,.05);padding:15px;margin-bottom:18px}
+  .phead{background-image:linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
+         background-repeat:repeat-x;border-bottom:1px solid #ddd;
+         padding:10px 15px;cursor:pointer;user-select:none;
+         display:flex;align-items:center;gap:8px;color:#333}
+  .phead:hover{background-image:linear-gradient(to bottom,#e8e8e8 0,#dcdcdc 100%)}
+
+  /* well: the inset gray box, very 2015 */
+  #q{width:100%;height:34px;padding:6px 12px;font-size:14px;line-height:1.428571429;
+     color:#555;background:#fff;border:1px solid #ccc;border-radius:4px;
+     box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+     transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+     margin:0 0 12px;font-family:inherit}
+  #q:focus{border-color:#66afe9;outline:0;
+           box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)}
+
+  /* labels and badges */
+  .chip{display:inline-block;background:#777;color:#fff;border-radius:10px;
+        padding:3px 7px;font-size:12px;font-weight:700;line-height:1;
+        margin:2px 4px 2px 0;white-space:nowrap;vertical-align:baseline}
+  .chip.t{cursor:pointer;background:#337ab7}
+  .chip.t:hover{background:#23527c}
+  .type{background:#337ab7;color:#fff;border-radius:.25em;padding:.2em .6em .3em;
+        font-size:75%;font-weight:700;text-transform:uppercase}
+  .meta{color:#777;font-size:12px;margin-top:6px}
+  .ts{font-weight:700;cursor:pointer;color:#337ab7}
+  .ts:hover{text-decoration:underline}
+  .muted{color:#777} .small{font-size:12px}
+
+  /* alert-warning */
+  .banner{background:#fcf8e3;border:1px solid #faebcc;color:#8a6d3b;
+          border-radius:4px;padding:15px;margin:0 0 18px}
+  .banner a{color:#66512c;font-weight:700;text-decoration:underline}
+
+  .quote{border-left:5px solid #eee;padding:10px 20px;margin:10px 0 0;
+         color:#777;font-size:13px;font-style:italic;display:none}
   .quote.show{display:block}
-  .toggle{font-size:12px;color:var(--muted);cursor:pointer;user-select:none}
-  .toggle:hover{color:var(--accent)}
-  .muted{color:var(--muted)} .small{font-size:12.5px}
-  .grid{display:grid;gap:11px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
-  .seg{padding:3px 0;display:flex;gap:11px;align-items:baseline}
-  .seg:hover{background:var(--chip);border-radius:5px}
-  .banner{background:var(--chip);border:1px solid var(--line);border-left:3px solid var(--accent2);
-          border-radius:8px;padding:11px 14px;margin:16px 0;font-size:13px}
-  mark{background:var(--accent2);color:#fff;border-radius:3px;padding:0 2px}
-  .lang{background:var(--panel);border:1px solid var(--line);color:var(--ink);
-        border-radius:7px;padding:6px 9px;font:inherit;font-size:13px}
+  .toggle{font-size:12px;color:#337ab7;cursor:pointer}
+  .toggle:hover{text-decoration:underline}
+
+  .grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+  .seg{padding:2px 0;display:flex;gap:10px;align-items:baseline}
+  .seg:hover{background:#f5f5f5}
+  mark{background:#fcf8e3;padding:.2em 0}
+
+  select,.lang{height:34px;padding:6px 12px;font-size:14px;color:#555;
+        background-image:linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+        background-repeat:repeat-x;border:1px solid #ccc;border-radius:4px;
+        text-shadow:0 1px 0 #fff;font-family:inherit;cursor:pointer}
   audio{width:100%;margin-top:10px}
-  footer{color:var(--muted);font-size:12px;padding:26px 0;border-top:1px solid var(--line);margin-top:34px}
-  table{width:100%;border-collapse:collapse;font-size:13px}
-  td,th{text-align:left;padding:6px 9px;border-bottom:1px solid var(--line)}
-  .scroll{overflow-x:auto}
+  footer{color:#777;font-size:12px;padding:19px 0;border-top:1px solid #e5e5e5;margin-top:30px}
+
+  /* table-striped */
+  table{width:100%;max-width:100%;border-collapse:collapse;margin-bottom:18px;font-size:13px}
+  th{text-align:left;padding:8px;border-bottom:2px solid #ddd;vertical-align:bottom}
+  td{padding:8px;border-top:1px solid #ddd;vertical-align:top}
+  tbody tr:nth-child(odd){background:#f9f9f9}
+  tbody tr:hover{background:#f5f5f5}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+  /* calendar */
+  .cal{width:100%;max-width:430px;border:1px solid #ddd;border-radius:4px;
+       margin-bottom:15px;font-size:13px}
+  .cal th{background-image:linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
+          text-align:center;padding:6px;border-bottom:1px solid #ddd;
+          font-size:12px;color:#777;font-weight:700}
+  .cal td{text-align:center;padding:6px;border-top:1px solid #eee;width:14.28%}
+  .cal td.nil{color:#ccc;background:none}
+  .cal td.has{background:#f5f5f5;font-weight:700}
+  .cal td.has a{display:block}
+  .flash{animation:fl 1.6s ease-out}
+  @keyframes fl{0%{background:#fcf8e3}100%{background:transparent}}
+
+  @media (max-width:640px){
+    .stats{width:100%;text-align:left;margin-left:0}
+    nav button{padding:8px 11px;font-size:13px}
+    .card{padding:12px}
+  }
 </style>
 </head>
 <body>
@@ -75,10 +129,10 @@
     <select class="lang" id="lang" title="Interface language"></select>
     <div class="stats" id="stats"></div>
   </div>
-  <nav id="nav"></nav>
 </div></header>
 
 <div class="wrap">
+  <nav id="nav" class="tabs"></nav>
   <input id="q" placeholder="Search transcripts, pearls, topics…" autocomplete="off">
   <div id="hint" class="muted small" style="margin-bottom:14px"></div>
   <main id="view"></main>
@@ -88,27 +142,31 @@
 <script>
 const UI = {
   en:{map:"Map",clusters:"Clusters",search:"Search",pearls:"Pearls",topics:"Topics",speakers:"Speakers",episodes:"Episodes",
+      archive:"Archive",arch_h:"All lectures, newest first. Click a highlighted day to jump to it.",
       about:"About",hits:"results",no:"No matches.",listen:"Listen at",src:"Source",
       abstract:"Abstract",keyp:"Key teaching points",transcript:"Transcript",
       showq:"show source quote",hideq:"hide source quote",talks:"lectures",
-      mt:"Machine-translated — verify against the English source.",
+      mt:"Machine-translated. Verify against the English source.",
       ph:"Search transcripts, pearls, topics…"},
   ko:{map:"개념도",clusters:"군집",search:"검색",pearls:"핵심 요점",topics:"주제",speakers:"강연자",episodes:"강의",
+      archive:"보관함",arch_h:"전체 강의 · 최신순. 표시된 날짜를 누르면 해당 강의로 이동합니다.",
       about:"정보",hits:"건",no:"검색 결과가 없습니다.",listen:"재생 위치",src:"출처",
       abstract:"요약",keyp:"핵심 교육 요점",transcript:"전사본",
       showq:"원문 인용 보기",hideq:"인용 숨기기",talks:"개 강의",
-      mt:"기계 번역입니다 — 영어 원문을 확인하세요.",ph:"전사본, 요점, 주제 검색…"},
+      mt:"기계 번역입니다. 영어 원문을 확인하세요.",ph:"전사본, 요점, 주제 검색…"},
   fr:{map:"Carte",clusters:"Groupes",search:"Recherche",pearls:"Perles",topics:"Thèmes",speakers:"Intervenants",episodes:"Cours",
+      archive:"Archives",arch_h:"Tous les cours, du plus récent au plus ancien. Cliquez sur un jour surligné pour y aller.",
       about:"À propos",hits:"résultats",no:"Aucun résultat.",listen:"Écouter à",src:"Source",
       abstract:"Résumé",keyp:"Points clés",transcript:"Transcription",
       showq:"voir la citation",hideq:"masquer la citation",talks:"cours",
-      mt:"Traduction automatique — vérifiez la source anglaise.",
+      mt:"Traduction automatique. Vérifiez la source anglaise.",
       ph:"Rechercher transcriptions, perles, thèmes…"},
   de:{map:"Karte",clusters:"Cluster",search:"Suche",pearls:"Merksätze",topics:"Themen",speakers:"Referenten",episodes:"Vorträge",
+      archive:"Archiv",arch_h:"Alle Vorträge, neueste zuerst. Klicken Sie auf einen markierten Tag, um dorthin zu springen.",
       about:"Info",hits:"Treffer",no:"Keine Treffer.",listen:"Anhören bei",src:"Quelle",
       abstract:"Zusammenfassung",keyp:"Kernaussagen",transcript:"Transkript",
       showq:"Zitat anzeigen",hideq:"Zitat ausblenden",talks:"Vorträge",
-      mt:"Maschinell übersetzt — bitte mit dem englischen Original abgleichen.",
+      mt:"Maschinell übersetzt. Bitte mit dem englischen Original abgleichen.",
       ph:"Transkripte, Merksätze, Themen durchsuchen…"}
 };
 let D=null, LANG="en", TAB="pearls", SEL=null;
@@ -134,7 +192,7 @@ function tr(obj, field, slug){
 function render(){
   document.getElementById("q").placeholder=T("ph");
   const nav=document.getElementById("nav");
-  nav.innerHTML=["pearls","clusters","map","topics","speakers","episodes","about"]
+  nav.innerHTML=["pearls","clusters","map","topics","speakers","episodes","archive","about"]
     .map(t=>`<button data-t="${t}" class="${TAB===t?'on':''}">${T(t)}</button>`).join("");
   nav.querySelectorAll("button").forEach(b=>b.onclick=()=>{TAB=b.dataset.t;SEL=null;render()});
   const q=document.getElementById("q").value.trim();
@@ -145,12 +203,12 @@ function render(){
   if(SEL&&SEL.kind==="topic")   return v.innerHTML=topicView(SEL.id);
   if(SEL&&SEL.kind==="speaker") return v.innerHTML=speakerView(SEL.id);
   v.innerHTML=({pearls:pearlsView,clusters:clustersView,map:mapView,topics:topicsView,
-                speakers:speakersView,episodes:episodesView,about:aboutView})[TAB]();
+                speakers:speakersView,episodes:episodesView,archive:archiveView,about:aboutView})[TAB]();
 }
 
 function pearlCard(p){
   const ep=D.episodes.find(e=>e.slug===p.episode)||{};
-  const gc={A:"#15803d",B:"#0369a1",C:"#6b7280"}[p.grade]||"#6b7280";
+  const gc={A:"#5cb85c",B:"#337ab7",C:"#999"}[p.grade]||"#999";
   return `<div class="card">
     <span class="chip type">${esc(p.type)}</span>
     <span class="chip" style="background:${gc};color:#fff;font-weight:600" title="deterministic rule score">${esc(p.grade||"")}</span>
@@ -175,18 +233,16 @@ function pearlsView(){
   const LBL={dosing:"Dosing",pitfall:"Pitfalls",red_flag:"Red flags",
              exam_technique:"Exam technique",dx_criteria:"Diagnostic criteria",
              practice:"Practice",judgment:"Clinical judgment"};
-  return `<div class="banner">${D.pearls.length} pearls in ${order.length} categories —
-      click a category to open it. Graded A–C by rule; D-grade excluded.</div>`
+  return `<div class="banner">${D.pearls.length} pearls in ${order.length} categories. Click a category to open it. Graded A-C by rule; D-grade excluded.</div>`
    +order.map(([t,ps])=>{
      const open=!!OPEN[t];
      const best=ps.filter(p=>p.grade==="A").length;
      return `<div class="card" style="padding:0;overflow:hidden">
-       <div onclick="togS('${t}')" style="cursor:pointer;padding:13px 16px;display:flex;
-            align-items:center;gap:10px;user-select:none">
+       <div onclick="togS('${t}')" class="phead">
          <span style="font-size:13px;width:12px;color:var(--muted)">${open?"▾":"▸"}</span>
          <b>${esc(LBL[t]||t)}</b>
          <span class="chip">${ps.length}</span>
-         ${best?`<span class="chip" style="background:#15803d;color:#fff">${best} A</span>`:""}
+         ${best?`<span class="chip" style="background:#5cb85c;color:#fff">${best} A</span>`:""}
        </div>
        ${open?`<div style="padding:0 12px 12px">${ps.map(pearlCard).join("")}</div>`:""}
      </div>`;}).join("");
@@ -195,16 +251,15 @@ function clustersView(){
   const cs=(D.clusters||[]).filter(c=>c.size>1);
   if(!cs.length) return `<div class="banner">No clusters yet.</div>`;
   const byId={}; D.pearls.forEach(p=>byId[p.pearl_id]=p);
-  const VC={conflict:"#b91c1c",duplicate:"#6b7280",consensus:"#15803d",related:"#0369a1"};
+  const VC={conflict:"#d9534f",duplicate:"#777",consensus:"#5cb85c",related:"#337ab7"};
   const nconf=cs.filter(c=>c.verdict==="conflict").length;
   const rows=cs.map((c,i)=>{
     const open=!!OPEN["c"+i];
     const ps=c.pearl_ids.map(id=>byId[id]).filter(Boolean);
     return `<div class="card" style="padding:0;overflow:hidden">
-      <div onclick="togS('c${i}')" style="cursor:pointer;padding:10px 14px;display:flex;
-           gap:10px;align-items:center;user-select:none;font-size:13.5px">
+      <div onclick="togS('c${i}')" class="phead" style="font-size:13.5px">
         <span style="width:10px;color:var(--muted)">${open?"▾":"▸"}</span>
-        <span class="chip" style="background:${VC[c.verdict]};color:#fff;font-weight:600;
+        <span class="chip" style="background:${VC[c.verdict]};color:#fff;font-weight:700;
               min-width:74px;text-align:center">${c.verdict}</span>
         <b style="flex:1">${esc(c.label)}</b>
         <span class="chip">${c.size}</span>
@@ -214,7 +269,7 @@ function clustersView(){
       ${open?`<div style="padding:0 12px 12px">${ps.map(pearlCard).join("")}</div>`:""}
     </div>`;}).join("");
   return `<div class="banner"><b>${cs.length}</b> groups of pearls that say nearly the same
-      thing · <b>${nconf}</b> contain a contradiction. Grouped by embedding similarity, then
+      thing. <b>${nconf}</b> contain a contradiction. Grouped by embedding similarity, then
       each close pair judged. Labels are the vocabulary the pearls share.</div>${rows}`;
 }
 
@@ -234,7 +289,7 @@ function mapView(){
       style="background:${G.colors[d]||'#6b7280'};color:#fff;${GDOM&&GDOM!==d?'opacity:.35':''}">${esc(d)} ${c}</span>`).join("");
   return `<div class="banner"><b>${G.nodes.length}</b> concepts taught in ${G.min_episodes}+ lectures.
       Lines join concepts taught together; thicker lines mean more shared lectures.
-      Circle size = how many lectures cover it. Click a concept to open it.</div>
+      Circle size shows how many lectures cover it. Click a concept to open it.</div>
     <div style="margin:10px 0">${legend}
       ${GDOM?`<span class="chip t" onclick="setDom(null)"><b>clear filter</b></span>`:""}</div>
     <div class="card" style="padding:6px;overflow:auto">
@@ -248,7 +303,7 @@ function mapView(){
           stroke-width="${br?2.2:Math.min(3,0.5+l.w*0.35)}"/>`;}).join("")}
       </g>
       ${shown.map(n=>`<g style="cursor:pointer" onclick="go('topic','${n.slug}')">
-          <title>${esc(n.label)} — ${n.n} lectures (${esc(n.domain)})</title>
+          <title>${esc(n.label)}. ${n.n} lectures (${esc(n.domain)})</title>
           <circle cx="${n.x}" cy="${n.y}" r="${r(n)}" fill="${n.color}"
                   fill-opacity=".85" stroke="var(--panel)" stroke-width="1.5"/>
           ${n.n>=6?`<text x="${n.x}" y="${n.y-r(n)-4}" text-anchor="middle"
@@ -293,6 +348,67 @@ function episodesView(){
       · <a href="${esc(e.link)}" target="_blank" rel="noopener">${T("src")} ↗</a></div>
     <div class="small" style="margin-top:8px">${esc((tr(e,"abstract",e.slug)||"").slice(0,260))}</div></div>`).join("");
 }
+// Archive: every lecture sorted by date, with a month calendar for quick jumps.
+// pubDate is RFC-2822, which Date parses natively; days are keyed YYYY-MM-DD.
+let CAL=null; // {y,m} of the month currently shown in the calendar
+const LOC={en:"en-US",ko:"ko-KR",fr:"fr-FR",de:"de-DE"};
+function dkey(dt){return dt.getFullYear()+"-"+String(dt.getMonth()+1).padStart(2,"0")
+  +"-"+String(dt.getDate()).padStart(2,"0")}
+function calMove(dm,dy){
+  let m=CAL.m+dm,y=CAL.y+dy;
+  while(m<0){m+=12;y--} while(m>11){m-=12;y++}
+  CAL={y,m};render();
+}
+function jumpDay(k){
+  const el=document.getElementById("day-"+k);
+  if(!el)return;
+  el.scrollIntoView({block:"center"});
+  el.classList.add("flash");setTimeout(()=>el.classList.remove("flash"),1600);
+}
+function archiveView(){
+  const eps=D.episodes.map(e=>({e,dt:e.pubDate?new Date(e.pubDate):null}))
+    .sort((a,b)=>(b.dt?+b.dt:0)-(a.dt?+a.dt:0));
+  const byDay={};
+  eps.forEach(x=>{if(x.dt)(byDay[dkey(x.dt)]=byDay[dkey(x.dt)]||[]).push(x.e)});
+  if(!CAL){const n=eps.find(x=>x.dt);CAL=n?{y:n.dt.getFullYear(),m:n.dt.getMonth()}:{y:2025,m:0};}
+  const loc=LOC[LANG]||"en-US";
+  const first=new Date(CAL.y,CAL.m,1);
+  const startDow=(first.getDay()+6)%7; // week starts Monday
+  const ndays=new Date(CAL.y,CAL.m+1,0).getDate();
+  const dows=[...Array(7)].map((_,i)=>new Date(2024,0,1+i) // 2024-01-01 was a Monday
+    .toLocaleString(loc,{weekday:"short"}));
+  let cells="";
+  for(let i=0;i<startDow;i++)cells+="<td></td>";
+  for(let d=1;d<=ndays;d++){
+    const k=CAL.y+"-"+String(CAL.m+1).padStart(2,"0")+"-"+String(d).padStart(2,"0");
+    const n=(byDay[k]||[]).length;
+    cells+=n?`<td class="has"><a href="#" title="${n}" onclick="jumpDay('${k}');return false">${d}</a></td>`
+            :`<td class="nil">${d}</td>`;
+    if((startDow+d)%7===0)cells+="</tr><tr>";
+  }
+  const cal=`<div class="card">
+    <div class="calhead">
+      <button onclick="calMove(0,-1)" title="year">&#171;</button>
+      <button onclick="calMove(-1,0)" title="month">&#8249;</button>
+      <b>${esc(first.toLocaleString(loc,{month:"long",year:"numeric"}))}</b>
+      <button onclick="calMove(1,0)" title="month">&#8250;</button>
+      <button onclick="calMove(0,1)" title="year">&#187;</button>
+    </div>
+    <table class="cal"><tr>${dows.map(d=>`<th>${esc(d)}</th>`).join("")}</tr>
+    <tr>${cells}</tr></table></div>`;
+  let lastDay="";
+  const rows=eps.map(x=>{
+    const k=x.dt?dkey(x.dt):"";
+    const anchor=(k&&k!==lastDay)?` id="day-${k}"`:"";
+    if(k)lastDay=k;
+    const date=x.dt?esc(x.e.pubDate.slice(5,16)):". ";
+    return `<div class="card ep-row"${anchor}>
+      <a href="#" onclick="go('episode','${x.e.slug}');return false"><b>${esc(x.e.title)}</b></a>
+      <div class="meta">${date} · ${esc(x.e.speaker)} · ${mmss(x.e.duration_sec)}
+        · <a href="${esc(x.e.link)}" target="_blank" rel="noopener">${T("src")} ↗</a></div>
+    </div>`;}).join("");
+  return `<div class="banner">${D.episodes.length} ${T("talks")}. ${T("arch_h")}</div>`+cal+rows;
+}
 // Per-episode detail (transcript/segments/vectors) is fetched on demand and
 // cached, so the initial load stays small as the corpus grows.
 const EPC={};
@@ -327,7 +443,7 @@ function aboutView(){
   return `
   <div class="banner"><b>Unverified teaching material.</b> Transcripts are machine-generated
     and machine-corrected, and pearls are machine-extracted. Every pearl links to the exact
-    second it was spoken — verify doses and numbers against the source audio before acting
+    second it was spoken. Verify doses and numbers against the source audio before acting
     on them. This is a study aid, not a clinical reference.</div>
 
   <div class="card"><b>What this is</b>
@@ -343,20 +459,20 @@ function aboutView(){
     ${row("2 · Transcribe","Deepgram <code>nova-3-medical</code>, a clinically-tuned model, with word-level timestamps, speaker diarization and keyterm boosting on drug names. Word timings are what make every pearl deep-linkable.")}
     ${row("3 · Repair","ASR still mangles drug names. A language model proposes corrections but never rewrites the text: it returns a list of replacements, applied deterministically with word-boundary matching, a minimum token length and a per-fix hit ceiling. The raw transcript is always retained, and every applied and rejected fix is logged below.")}
     ${row("4 · Enrich","A language model extracts an abstract, key points, topics and candidate pearls, and must quote the exact transcript span each pearl came from.")}
-    ${row("5 · Anchor","Each pearl's quoted span is located in the word-timed transcript — exact match first, then a bounded fuzzy search. A pearl whose source cannot be located is <b>dropped</b>, never shown with a guessed timestamp. This is the rule the whole design rests on: no unanchored clinical claim.")}
-    ${row("6 · Grade","Pure rules, no model. Five signals — specific, actionable, harm, non-obvious, plus an institution-local <b>veto</b> that forces grade D (medication storage, paging, scheduling, room names). Reproducible by construction rather than by measurement; an earlier model-based grader was discarded after scoring only 53% agreement with itself. Grade D is excluded from this site; C is shown but ranked below A and B.")}
+    ${row("5 · Anchor","Each pearl's quoted span is located in the word-timed transcript: exact match first, then a bounded fuzzy search. A pearl whose source cannot be located is <b>dropped</b>, never shown with a guessed timestamp. This is the rule the whole design rests on: no unanchored clinical claim.")}
+    ${row("6 · Grade","Pure rules, no model. Five signals: specific, actionable, harm, non-obvious, plus an institution-local <b>veto</b> that forces grade D (medication storage, paging, scheduling, room names). Reproducible by construction rather than by measurement; an earlier model-based grader was discarded after scoring only 53% agreement with itself. Grade D is excluded from this site; C is shown but ranked below A and B.")}
     ${row("7 · Index","Concepts are resolved against <b>MeSH</b>, the US National Library of Medicine vocabulary that indexes PubMed. Domain and hierarchy come from MeSH tree numbers, and each concept keeps a stable MeSH identifier that survives reprocessing. 90% of concepts appearing in three or more lectures resolve; the remainder fall back to a keyword table.")}
-    ${row("8 · Cluster","Pearls are embedded and grouped by cosine similarity, then each close pair is judged as duplicate, consensus, complement or conflict — similarity alone cannot separate “always do X” from “never do X”. Contradictions between attendings are surfaced with both sides kept, attributed and dated, never silently reconciled.")}
+    ${row("8 · Cluster","Pearls are embedded and grouped by cosine similarity, then each close pair is judged as duplicate, consensus, complement or conflict, because similarity alone cannot separate “always do X” from “never do X”. Contradictions between attendings are surfaced with both sides kept, attributed and dated, never silently reconciled.")}
     ${row("9 · Publish","A static site with no backend. The index loads once; transcripts load per episode on demand. The concept-map layout is solved at build time, so it is identical for every visitor and the page runs no physics simulation.")}
    </table></div></div>
 
   <div class="card"><b>Models and vocabulary</b>
    <div class="scroll"><table>
     <tr><th>stage</th><th>used</th></tr>
-    <tr><td>transcription</td><td>${esc(e.stt_model||"—")}</td></tr>
-    <tr><td>terminology repair, enrichment, clustering</td><td>${esc(e.enrich_model||"—")}</td></tr>
-    <tr><td>embeddings</td><td>${esc(e.embed_model||"—")} @ ${e.embed_dims||"—"}d</td></tr>
-    <tr><td>grading</td><td>deterministic rules — no model</td></tr>
+    <tr><td>transcription</td><td>${esc(e.stt_model||". ")}</td></tr>
+    <tr><td>terminology repair, enrichment, clustering</td><td>${esc(e.enrich_model||". ")}</td></tr>
+    <tr><td>embeddings</td><td>${esc(e.embed_model||". ")} @ ${e.embed_dims||". "}d</td></tr>
+    <tr><td>grading</td><td>deterministic rules. No model</td></tr>
     <tr><td>concept vocabulary</td><td>MeSH 2025 (NLM, public domain)</td></tr>
    </table></div></div>
 
@@ -380,7 +496,7 @@ function aboutView(){
       ? `<a href="#" onclick="loadAll();return false">load all episodes to see every correction</a>`:""}</div>
   ${Object.values(EPC).some(d=>(d.fixes_rejected||[]).length)?`<div class="card">
     <b>Corrections rejected as unsafe</b>
-    <p class="small muted">Repairs the pipeline refused to apply — too short to match safely,
+    <p class="small muted">Repairs the pipeline refused to apply. Too short to match safely,
     or matching implausibly often (e.g. <code>"d" → "deep vein thrombosis"</code>, which would
     have fired 1500 times).</p>
     <div class="scroll"><table><tr><th>from</th><th>to</th><th>why</th></tr>
