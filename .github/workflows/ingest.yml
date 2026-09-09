@@ -125,8 +125,10 @@ jobs:
 
       # The Pages project is direct-upload, NOT connected to this repo, so a push
       # alone deploys nothing. This step is what actually publishes the site.
+      # Deliberately NOT gated on new episodes. Deploying is cheap and
+      # idempotent, so an unconditional publish lets a manual run push the
+      # current site and lets a previously-failed deploy self-heal.
       - name: Deploy to Cloudflare Pages
-        if: steps.find.outputs.count != '0'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}

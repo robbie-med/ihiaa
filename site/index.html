@@ -75,6 +75,9 @@
   .banner{background:#fcf8e3;border:1px solid #faebcc;color:#8a6d3b;
           border-radius:4px;padding:15px;margin:0 0 18px}
   .banner a{color:#66512c;font-weight:700;text-decoration:underline}
+  /* alert-danger: the safety disclaimer must not read as a gentle notice */
+  .banner.danger{background:#f2dede;border-color:#ebccd1;color:#a94442}
+  .banner.danger a{color:#843534}
 
   .quote{border-left:5px solid #eee;padding:10px 20px;margin:10px 0 0;
          color:#777;font-size:13px;font-style:italic;display:none}
@@ -441,7 +444,7 @@ function aboutView(){
   const e=D.episodes[0]||{}; const s=D.stats;
   const row=(a,b)=>`<tr><td style="white-space:nowrap"><b>${a}</b></td><td>${b}</td></tr>`;
   return `
-  <div class="banner"><b>Unverified teaching material.</b> Transcripts are machine-generated
+  <div class="banner danger"><b>Unverified teaching material.</b> Transcripts are machine-generated
     and machine-corrected, and pearls are machine-extracted. Every pearl links to the exact
     second it was spoken. Verify doses and numbers against the source audio before acting
     on them. This is a study aid, not a clinical reference.</div>
