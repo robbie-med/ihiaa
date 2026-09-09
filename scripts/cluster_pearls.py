@@ -54,10 +54,19 @@ Return: {"verdicts":[{"id":"...","verdict":"...","why":"<12 words>"}]}"""
 
 
 def load_pearls() -> list:
+    """Only pearls with usable text.
+
+    The embeddings endpoint rejects the ENTIRE batch if any element is an empty
+    string, so one malformed pearl out of five thousand took down the whole
+    clustering step with an opaque 400. Filtering here keeps a single bad record
+    from being fatal.
+    """
     out = []
     for f in sorted(EPISODES.glob("*.json")):
         d = json.loads(f.read_text())
         for p in d.get("pearls", []):
+            if not (p.get("text") or "").strip():
+                continue
             out.append({**p, "episode_title": d.get("title", ""),
                         "pubDate": d.get("pubDate", "")})
     return out

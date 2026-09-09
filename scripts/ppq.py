@@ -137,6 +137,10 @@ def transcribe(audio_path: Path, minutes: float, prompt: str = "") -> dict:
 # Embeddings
 # --------------------------------------------------------------------------
 def embed(texts: list[str]) -> list[list[float]]:
+    # The API rejects the whole batch if any element is empty, so callers must
+    # not contain empty strings. Fail loudly here rather than eat a vague 400.
+    if any(not (t or "").strip() for t in texts):
+        raise ValueError("embed(): batch contains an empty string")
     out = _post("/embeddings", {"model": EMBED_MODEL, "input": texts,
                                 "dimensions": EMBED_DIMS})
     toks = out.get("usage", {}).get("prompt_tokens", sum(len(t) // 4 for t in texts))
