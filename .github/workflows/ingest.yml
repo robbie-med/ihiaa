@@ -9,7 +9,15 @@ name: Ingest new lectures
 #   reenrich  re-extract pearls with the current prompt: "all" or slugs. Uses the
 #             existing transcripts, so no audio or transcription cost; roughly $1
 #             for the whole corpus.
+#
+# The same options can be requested by committing .github/maintenance/request.json
+# (e.g. {"reenrich": "all", "max_pairs": "4000", "note": "why"}) to main. That is
+# for tools that can push but cannot press "Run workflow"; edit the note to
+# request again.
 on:
+  push:
+    branches: [main]
+    paths: [".github/maintenance/request.json"]
   schedule:
     - cron: "17 9 * * *"        # daily 09:17 UTC
   workflow_dispatch:
@@ -52,13 +60,49 @@ jobs:
       - name: Install Python dependencies
         run: python3 -m pip install --quiet numpy
 
+      # One set of options whether this run came from the Actions tab, a
+      # maintenance request commit, or the nightly schedule.
+      - name: Resolve options
+        id: opt
+        env:
+          EVENT: ${{ github.event_name }}
+          IN_SLUGS: ${{ inputs.slugs }}
+          IN_LIMIT: ${{ inputs.limit }}
+          IN_REFRESH: ${{ inputs.refresh }}
+          IN_REENRICH: ${{ inputs.reenrich }}
+          IN_MAX_PAIRS: ${{ inputs.max_pairs }}
+        run: |
+          python3 - <<'EOF'
+          import json, os, pathlib, re
+          e = os.environ
+          o = {"slugs": e["IN_SLUGS"], "limit": e["IN_LIMIT"] or "0",
+               "refresh": e["IN_REFRESH"] or "false", "reenrich": e["IN_REENRICH"],
+               "max_pairs": e["IN_MAX_PAIRS"] or "1500"}
+          req = pathlib.Path(".github/maintenance/request.json")
+          if e["EVENT"] == "push" and req.exists():
+              r = json.loads(req.read_text())
+              o.update({k: str(r[k]).lower() if isinstance(r[k], bool) else str(r[k])
+                        for k in ("slugs", "limit", "refresh", "reenrich", "max_pairs") if k in r})
+              print("maintenance request:", r.get("note", ""))
+          # slugs are [a-z0-9-]; anything else in a request is dropped
+          for k in ("slugs", "reenrich"):
+              o[k] = " ".join(w for w in o[k].split() if re.fullmatch(r"[a-z0-9-]+", w))
+          for k in ("limit", "max_pairs"):
+              o[k] = o[k] if o[k].isdigit() else ("0" if k == "limit" else "1500")
+          o["refresh"] = "true" if o["refresh"] == "true" else "false"
+          with open(e["GITHUB_OUTPUT"], "a") as fh:
+              for k, v in o.items():
+                  fh.write(f"{k}={v}\n")
+          print(o)
+          EOF
+
       # Inputs go through env, never straight into the script, so a slug can't
       # inject shell.
       - name: Find outstanding episodes
         id: find
         env:
-          SLUGS: ${{ inputs.slugs }}
-          LIMIT: ${{ inputs.limit || '0' }}
+          SLUGS: ${{ steps.opt.outputs.slugs }}
+          LIMIT: ${{ steps.opt.outputs.limit }}
         run: |
           if [ -n "$SLUGS" ]; then
             printf '%s\n' $SLUGS > todo.txt
@@ -86,18 +130,18 @@ jobs:
 
       - name: Re-extract pearls
         id: reenrich
-        if: inputs.reenrich != ''
+        if: steps.opt.outputs.reenrich != ''
         continue-on-error: true
         env:
           PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
-          REENRICH: ${{ inputs.reenrich }}
-        run: python3 -u scripts/backfill.py --reenrich --workers 4 $REENRICH
+          REENRICH: ${{ steps.opt.outputs.reenrich }}
+        run: python3 -u scripts/backfill.py --reenrich --workers 6 $REENRICH
 
       - name: Decide what to rebuild
         id: done
         env:
-          REFRESH: ${{ inputs.refresh }}
-          REENRICH: ${{ inputs.reenrich }}
+          REFRESH: ${{ steps.opt.outputs.refresh }}
+          REENRICH: ${{ steps.opt.outputs.reenrich }}
         run: |
           n=0
           if [ -s todo.txt ]; then
@@ -173,7 +217,7 @@ jobs:
         continue-on-error: true          # enrichment, not critical path
         env:
           PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
-          MAX_PAIRS: ${{ inputs.max_pairs || '1500' }}
+          MAX_PAIRS: ${{ steps.opt.outputs.max_pairs }}
         run: |
           python3 scripts/cluster_pearls.py --max-new "$MAX_PAIRS"
           python3 scripts/build_site.py   # fold fresh results into data.json

@@ -117,6 +117,8 @@ calls, per-lecture overrides) and run `./scripts/rebuild.sh`.
 Maintenance runs from the Actions tab, *Ingest new lectures* → Run workflow:
 `refresh` rebuilds everything and runs contradiction detection (cents);
 `reenrich` = `all` re-extracts pearls with the current prompt (about $1).
+The same options can be requested by committing `.github/maintenance/request.json`
+to main (for tools that can push but cannot press "Run workflow").
 
 ## Design principles
 

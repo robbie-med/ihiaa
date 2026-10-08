@@ -251,7 +251,7 @@ def stage_enrich(slug: str, ep: dict) -> dict:
             k -= 1
             back += segs[k][1]
         i = k
-    abstract, kp, topics, pearls = "", [], [], []
+    abstract, kp, topics, pearls, failed = "", [], [], [], 0
     for n, c in enumerate(chunks):
         print(f"  enrich: chunk {n+1}/{len(chunks)} ...")
         user = (f"Lecture: {ep['title']}\nPresenter: {ep.get('speaker', 'Unknown')}\n"
@@ -260,12 +260,17 @@ def stage_enrich(slug: str, ep: dict) -> dict:
             r = ppq.chat_json(ENRICH_SYS, user, max_tokens=8000)
         except Exception as e:                        # noqa: BLE001
             print(f"    ! {type(e).__name__}: {str(e)[:120]}")
+            failed += 1
             continue
         if n == 0:
             abstract = r.get("abstract", "")
         kp += r.get("key_points", [])
         topics += r.get("topics", [])
         pearls += r.get("pearls", [])
+    # Re-extracting must never trade a complete set of pearls for a partial one
+    # because a request failed. Keep the old ones and report the lecture as failed.
+    if failed and ep.get("pearls_raw"):
+        raise RuntimeError(f"{failed}/{len(chunks)} chunks failed; previous pearls kept")
     ep["abstract"] = _dedash(abstract)
     ep["key_points"] = [_dedash(k) for k in kp[:12]]
     ep["topics_raw"] = topics
