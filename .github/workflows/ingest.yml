@@ -111,12 +111,25 @@ jobs:
             )
           fi
           echo "count=$n" >> "$GITHUB_OUTPUT"
-          if [ "$n" -gt 0 ] || [ "$REFRESH" = "true" ] || [ -n "$REENRICH" ]; then
+          # Agreement/conflict detection works through candidate pairs a batch per
+          # run. Keep going on scheduled runs until every pair has been judged (or
+          # the results predate the current pipeline), then stop costing anything.
+          pending=$(python3 - <<'EOF'
+          import json, pathlib
+          p = pathlib.Path("data/clusters.json")
+          d = json.loads(p.read_text()) if p.exists() else {}
+          s = d.get("stats", {})
+          print("yes" if d.get("version") != 2 or s.get("candidates", 0) - s.get("judged", 0) > 50 else "no")
+          EOF
+          )
+          echo "conflict detection pending: $pending"
+          if [ "$n" -gt 0 ] || [ "$REFRESH" = "true" ] || [ -n "$REENRICH" ] || [ "$pending" = "yes" ]; then
             echo "rebuild=true" >> "$GITHUB_OUTPUT"
+            echo "$n new lecture(s) fully processed; rebuilding"
           else
             echo "rebuild=false" >> "$GITHUB_OUTPUT"
+            echo "nothing new; no rebuild"
           fi
-          echo "$n new lecture(s) fully processed; rebuild=$([ "$n" -gt 0 ] || [ "$REFRESH" = "true" ] || [ -n "$REENRICH" ] && echo yes || echo no)"
 
       # Everything below is derived from data/episodes/*.json and only needs to
       # run when the corpus changed or a refresh was asked for.

@@ -240,17 +240,23 @@ def verify(pearls: list, pairs: list) -> dict:
                                "lecture": p["episode_title"], "speaker": p.get("speaker", ""),
                                "date": p.get("pubDate", "")[:16]}
                            for x, p in (("A", a), ("B", b))}, ensure_ascii=False)
-        try:
-            r = ppq.chat_json(VERIFY_SYS, user, model=ppq.VERIFY_MODEL, max_tokens=600,
-                              temperature=0.0)
-        except Exception as e:                        # noqa: BLE001
-            print(f"  ! verify: {type(e).__name__}: {str(e)[:80]}", flush=True)
+        r, used = None, None
+        # If the stronger model is unavailable, fall back rather than silently
+        # verifying nothing (which would show zero conflicts as if checked).
+        for model in dict.fromkeys((ppq.VERIFY_MODEL, ppq.CHAT_MODEL)):
+            try:
+                r = ppq.chat_json(VERIFY_SYS, user, model=model, max_tokens=600, temperature=0.0)
+                used = model
+                break
+            except Exception as e:                    # noqa: BLE001
+                print(f"  ! verify ({model}): {type(e).__name__}: {str(e)[:80]}", flush=True)
+        if r is None:
             continue
         v = r.get("verdict", "")
         if v in ("compatible", "depends", "conflict"):
             cache[pkey(a, b)] = {"verdict": v, "topic": (r.get("topic") or "")[:60],
                                  "why": (r.get("why") or "")[:200],
-                                 "condition": (r.get("condition") or "")[:100]}
+                                 "condition": (r.get("condition") or "")[:100], "model": used}
         if n % 10 == 9 or n + 1 == len(todo):
             save_cache(f"verify_{VERIFY_VERSION}.json", cache)
     return cache
