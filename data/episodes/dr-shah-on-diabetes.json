@@ -2,7 +2,7 @@
   "slug": "dr-shah-on-diabetes",
   "guid": "hopepartners.podbean.com/204c8491-4ccc-35bd-87fc-ceb0bf128bca",
   "title": "Dr. Shah on Diabetes 12/4/25",
-  "speaker": "Shah",
+  "speaker": "Dr. Shah",
   "link": "https://hopepartners.podbean.com/e/dr-shah-on-diabetes-12425/",
   "pubDate": "Mon, 08 Dec 2025 09:36:35 -0600",
   "duration_sec": 4598,
@@ -75799,16 +75799,47 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-shah-on-diabetes-618",
+      "text": "Obtain all four type 1 diabetes autoantibodies (GAD, IA-2, ICA, ZnT8) when suspecting the diagnosis; do not rely only on GAD.",
+      "verbatim": "I would encourage you when you're thinking about type one diabetes to obtain all of the antibodies and not just the GAD because it could be any one of them.",
+      "type": "practice",
+      "t": 461.3,
+      "match": "exact",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-461",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:type 1 diabetes"
+          ],
+          "actionable": [
+            "Obtain"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "When interpreting C-peptide, always obtain a simultaneous glucose level; a C-peptide of 0.3 with a glucose of 80 indicates type 1 diabetes.",
       "verbatim": "If you have someone... Let's say you're in the hospital testing someone for pancreatic function, and their glucose is 80, and they come back with a C peptide of 0.3, you've got type one diabetes.",
       "type": "dx_criteria",
       "t": 618.9,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-618",
       "score": {
         "specific": true,
         "actionable": true,
@@ -75824,53 +75855,22 @@
           "actionable": [
             "always"
           ],
-          "rarity": 7.09
+          "rarity": 7.1
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-857",
-      "text": "Do not rely on C-peptide to determine diabetes type when blood sugars are very high, as glucotoxicity artificially lowers C-peptide.",
-      "verbatim": "when your blood sugars are very high for whatever the reason, C peptide can be artificially low, and you don't wanna use it in an uncontrolled state to determine the type of diabetes you have.",
-      "type": "pitfall",
-      "t": 857.6,
-      "match": "exact",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:glucotoxicity"
-          ],
-          "actionable": [
-            "Do not"
-          ],
-          "rarity": 7.96
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-650",
       "text": "Always order a glucose level with the C-peptide; you cannot interpret C-peptide alone.",
       "verbatim": "To get a glucose with that C peptide. You cannot just look into C peptide and send your diagnosis. You need to know where the person is, so it must be in... Or glucose dose... Glucose level with the C peptide.",
       "type": "pitfall",
       "t": 650.7,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-650",
       "score": {
         "specific": true,
         "actionable": true,
@@ -75886,22 +75886,81 @@
           "actionable": [
             "Always"
           ],
-          "rarity": 6.27
+          "rarity": 6.28
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-1058",
+      "text": "Do not rely on C-peptide to determine diabetes type when blood sugars are very high, as glucotoxicity artificially lowers C-peptide.",
+      "verbatim": "when your blood sugars are very high for whatever the reason, C peptide can be artificially low, and you don't wanna use it in an uncontrolled state to determine the type of diabetes you have.",
+      "type": "pitfall",
+      "t": 857.6,
+      "match": "exact",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-857",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:glucotoxicity"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Insulin autoantibodies are not useful after a patient has been on exogenous insulin for years; test early if needed.",
+      "verbatim": "The insulin antibody is tricky. You can obtain it initially before they've had significant exposure to insulin. But if you get someone in your clinic who's been on insulin for two or three years, that insulin antibody may be positive, low levels just because they're getting exogenous insulin.",
+      "type": "pitfall",
+      "t": 905.0,
+      "match": "exact",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-905",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:autoantibodies"
+          ],
+          "rarity": 6.71
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "In patients with type 1 diabetes, never withhold their long-acting insulin; doing so can precipitate DKA even after initial stabilization.",
       "verbatim": "Make sure your type ones that are insulin efficient have long acting insulin. That is what saves their life. That is what keeps them out of DKA.",
       "type": "judgment",
       "t": 1058.1,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-1058",
       "score": {
         "specific": true,
         "actionable": true,
@@ -75920,22 +75979,22 @@
           "harm": [
             "precipitate"
           ],
-          "rarity": 7.39
+          "rarity": 7.4
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-1069",
       "text": "When in doubt about diabetes type, start at least basal insulin to control glucose and determine the diagnosis later.",
       "verbatim": "When in doubt, always start insulin, at least basal insulin for these patients, and figure it out on the back end.",
       "type": "practice",
       "t": 1069.3,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-1069",
       "score": {
         "specific": true,
         "actionable": true,
@@ -75953,110 +76012,20 @@
           ],
           "rarity": 6.77
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-461",
-      "text": "Obtain all four type 1 diabetes autoantibodies (GAD, IA-2, ICA, ZnT8) when suspecting the diagnosis; do not rely only on GAD.",
-      "verbatim": "I would encourage you when you're thinking about type one diabetes to obtain all of the antibodies and not just the GAD because it could be any one of them.",
-      "type": "practice",
-      "t": 461.3,
-      "match": "exact",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:type 1 diabetes"
-          ],
-          "actionable": [
-            "Obtain"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-905",
-      "text": "Insulin autoantibodies are not useful after a patient has been on exogenous insulin for years; test early if needed.",
-      "verbatim": "The insulin antibody is tricky. You can obtain it initially before they've had significant exposure to insulin. But if you get someone in your clinic who's been on insulin for two or three years, that insulin antibody may be positive, low levels just because they're getting exogenous insulin.",
-      "type": "pitfall",
-      "t": 905.0,
-      "match": "exact",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:autoantibodies"
-          ],
-          "rarity": 6.71
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-1153",
-      "text": "Screen patients with autoimmune diseases (celiac, hypothyroidism, hyperthyroidism) for type 1 diabetes antibodies, as they are at higher risk.",
-      "verbatim": "anybody with autoimmune problems, celiac, hypothyroid, hyperthyroid can be tested for antibodies because they are at higher risk developing type one diabetes.",
-      "type": "red_flag",
-      "t": 1153.4,
-      "match": "exact",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:hyperthyroidism"
-          ],
-          "actionable": [
-            "Screen"
-          ],
-          "rarity": 6.72
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-1141",
       "text": "Teplizumab can delay onset of type 1 diabetes by 2, 3 years in presymptomatic individuals with two or more autoantibodies and dysglycemia (stage 2).",
       "verbatim": "So we now have a single medicine that's gonna prevent... Can delay the onset of type one diabetes on average two to three years. It is called.",
       "type": "practice",
       "t": 1141.7,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-1141",
       "score": {
         "specific": true,
         "actionable": false,
@@ -76072,20 +76041,51 @@
           ],
           "rarity": 8.06
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-1281",
+      "text": "Screen patients with autoimmune diseases (celiac, hypothyroidism, hyperthyroidism) for type 1 diabetes antibodies, as they are at higher risk.",
+      "verbatim": "anybody with autoimmune problems, celiac, hypothyroid, hyperthyroid can be tested for antibodies because they are at higher risk developing type one diabetes.",
+      "type": "red_flag",
+      "t": 1153.4,
+      "match": "exact",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-1153",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hyperthyroidism"
+          ],
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 6.73
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "In stage 2 prediabetes (two or more antibodies, glucose <126, no symptoms), there is 100% risk of progression to type 1 diabetes within 5 years.",
       "verbatim": "If someone reaches stage two, there is a hundred percent risk at five years they will progress to type one diabetes.",
       "type": "dx_criteria",
       "t": 1281.6,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-1281",
       "score": {
         "specific": true,
         "actionable": false,
@@ -76099,22 +76099,242 @@
             "dose:5 years",
             "threshold:<1"
           ],
-          "rarity": 6.58
+          "rarity": 6.54
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-2387",
+      "text": "Screen for presymptomatic type 1 diabetes by checking islet autoantibodies in patients with a family history of type 1 diabetes, thyroid disease, or celiac disease.",
+      "verbatim": "Anybody with a family member of type one diabetes, any type of thyroid disorder, whether its hypo or hyperthyroidism count and celiac disorder.",
+      "type": "dx_criteria",
+      "t": 1404.0,
+      "match": "fuzzy",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-1404",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:presymptomatic type 1 "
+          ],
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Teplizumab (TZield) is indicated only for patients with at least two positive islet autoantibodies; a single positive antibody does not qualify.",
+      "verbatim": "You have to have two antibodies positive. If youre one antibody positive, it it... Youre not a candidate for T cells.",
+      "type": "dx_criteria",
+      "t": 1524.1,
+      "match": "fuzzy",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-1524",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Teplizumab"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Teplizumab infusion commonly causes lymphopenia around day 5, and the presence of lymphopenia actually indicates a better therapeutic response.",
+      "verbatim": "Most common side effects are lymphopenia at about day five, sometimes a rash. And, actually, the more... Like, if patients have lymphopenia, it actually indicates a better response.",
+      "type": "judgment",
+      "t": 1577.0,
+      "match": "exact",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-1577",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Teplizumab"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When assessing for insulin deficiency, check a C-peptide level with a concurrent glucose in the 100, 200 mg/dL range; avoid checking when glucose is markedly elevated.",
+      "verbatim": "you check a C peptide with a glucose, but you make sure that its not, like, really high. Like, Definitely not there. One hundreds, two hundreds would be a more reasonable",
+      "type": "exam_technique",
+      "t": 1831.0,
+      "match": "fuzzy",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "numbers_unheard": [
+        "100",
+        "200"
+      ],
+      "by_presenter": false,
+      "pearl_id": "dr-shah-on-diabetes-1831",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:200 mg"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.14,
+          "capped": [
+            "number not heard: 100, 200"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Use a BMI threshold of 23 kg/m² (not 25) when screening Asian patients for type 2 diabetes, because they have a higher risk of visceral adiposity at lower BMI.",
+      "verbatim": "if you are Asian, the BMI is twenty three, not twenty five.",
+      "type": "practice",
+      "t": 1962.9,
+      "match": "exact",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-1962",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:23 kg"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When a patient presents with a very high glucose (e.g., 1000 mg/dL) and only mild ketosis, consider hyperosmolar hyperglycemic state rather than DKA, especially if the patient is thin.",
+      "verbatim": "The fact that he showed up with a glucose of a thousand is less likely DKA and more like That's what I wanna know. It sounds like HHS.",
+      "type": "red_flag",
+      "t": 2262.3,
+      "match": "fuzzy",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "dr-shah-on-diabetes-2262",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1000 mg"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Replace the old red box glucagon kit with either Gvoke (single-use injectable) or Baqsimi (intranasal spray) for easier administration by family members.",
+      "verbatim": "we have two new hypoglycemia treatments, Gvoke and Vaxini. Vaxini is an intranasal glucagon spray just like Narcan.",
+      "type": "practice",
+      "t": 2360.8,
+      "match": "fuzzy",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-2360",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:glucagon"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Prescribe an emergency glucagon kit (Gvoke injection or Baqsimi intranasal spray) for all type 1 diabetes patients on multiple daily insulin injections, and teach family members how to use it.",
       "verbatim": "anytime you have someone, especially if theyre type one and they are on insulin MDI therapy, please prescribe them one of these emergency things.",
       "type": "practice",
       "t": 2387.2,
       "match": "fuzzy",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-2387",
       "score": {
         "specific": true,
         "actionable": true,
@@ -76133,22 +76353,22 @@
           "harm": [
             "emergency"
           ],
-          "rarity": 7.96
+          "rarity": 7.97
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-2439",
       "text": "For hospitalized patients with type 2 diabetes on insulin, reduce the insulin dose by at least 20% to prevent hypoglycemia; type 1 patients on insulin pumps should generally stay on their home technology.",
       "verbatim": "If theyre type two, they need at least a 20% reduction.",
       "type": "dosing",
       "t": 2439.8,
       "match": "fuzzy",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-2439",
       "score": {
         "specific": true,
         "actionable": true,
@@ -76164,143 +76384,22 @@
           "actionable": [
             "reduce"
           ],
-          "rarity": 6.92
+          "rarity": 6.93
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-1404",
-      "text": "Screen for presymptomatic type 1 diabetes by checking islet autoantibodies in patients with a family history of type 1 diabetes, thyroid disease, or celiac disease.",
-      "verbatim": "Anybody with a family member of type one diabetes, any type of thyroid disorder, whether its hypo or hyperthyroidism count and celiac disorder.",
-      "type": "dx_criteria",
-      "t": 1404.0,
-      "match": "fuzzy",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:presymptomatic type 1 "
-          ],
-          "actionable": [
-            "Screen"
-          ],
-          "rarity": 7.82
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-1524",
-      "text": "Teplizumab (TZield) is indicated only for patients with at least two positive islet autoantibodies; a single positive antibody does not qualify.",
-      "verbatim": "You have to have two antibodies positive. If youre one antibody positive, it it... Youre not a candidate for T cells.",
-      "type": "dx_criteria",
-      "t": 1524.1,
-      "match": "fuzzy",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "drug:Teplizumab"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-1831",
-      "text": "When assessing for insulin deficiency, check a C-peptide level with a concurrent glucose in the 100, 200 mg/dL range; avoid checking when glucose is markedly elevated.",
-      "verbatim": "you check a C peptide with a glucose, but you make sure that its not, like, really high. Like, Definitely not there. One hundreds, two hundreds would be a more reasonable",
-      "type": "exam_technique",
-      "t": 1831.0,
-      "match": "fuzzy",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:200 mg"
-          ],
-          "actionable": [
-            "check"
-          ],
-          "rarity": 7.13
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-1962",
-      "text": "Use a BMI threshold of 23 kg/m² (not 25) when screening Asian patients for type 2 diabetes, because they have a higher risk of visceral adiposity at lower BMI.",
-      "verbatim": "if you are Asian, the BMI is twenty three, not twenty five.",
-      "type": "practice",
-      "t": 1962.9,
-      "match": "exact",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:23 kg"
-          ],
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 7.82
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-2443",
       "text": "Avoid using U-500 insulin in hospitalized patients; they rarely need such high concentrations and it increases the risk of severe hypoglycemia.",
       "verbatim": "If youve ever seen u five hundred in the hospital, I used to see it all the time. U-five hundred is a 5x concentration of insulin. They never need that much insulin when theyre in the hospital.",
       "type": "pitfall",
       "t": 2443.8,
       "match": "fuzzy",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-2443",
       "score": {
         "specific": true,
         "actionable": true,
@@ -76318,110 +76417,20 @@
           ],
           "rarity": 7.34
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-1577",
-      "text": "Teplizumab infusion commonly causes lymphopenia around day 5, and the presence of lymphopenia actually indicates a better therapeutic response.",
-      "verbatim": "Most common side effects are lymphopenia at about day five, sometimes a rash. And, actually, the more... Like, if patients have lymphopenia, it actually indicates a better response.",
-      "type": "judgment",
-      "t": 1577.0,
-      "match": "exact",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "drug:Teplizumab"
-          ],
-          "rarity": 7.59
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-2262",
-      "text": "When a patient presents with a very high glucose (e.g., 1000 mg/dL) and only mild ketosis, consider hyperosmolar hyperglycemic state rather than DKA, especially if the patient is thin.",
-      "verbatim": "The fact that he showed up with a glucose of a thousand is less likely DKA and more like That's what I wanna know. It sounds like HHS.",
-      "type": "red_flag",
-      "t": 2262.3,
-      "match": "fuzzy",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:1000 mg"
-          ],
-          "actionable": [
-            "consider"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-2360",
-      "text": "Replace the old red box glucagon kit with either Gvoke (single-use injectable) or Baqsimi (intranasal spray) for easier administration by family members.",
-      "verbatim": "we have two new hypoglycemia treatments, Gvoke and Vaxini. Vaxini is an intranasal glucagon spray just like Narcan.",
-      "type": "practice",
-      "t": 2360.8,
-      "match": "fuzzy",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:glucagon"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 8.19
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-2874",
       "text": "Tell patients on a CGM to wait 20 minutes before checking sensor glucose after treating hypoglycemia, or use a fingerstick instead.",
       "verbatim": "Tell patients that are on a CGM that you must wait twenty minutes to check to see if that sensor glucose is coming up. Or if you can't wait that long, do a finger stick because there is a delay.",
       "type": "practice",
       "t": 2874.4,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-2874",
       "score": {
         "specific": true,
         "actionable": true,
@@ -76437,22 +76446,22 @@
           "actionable": [
             "wait"
           ],
-          "rarity": 7.46
+          "rarity": 7.47
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-2905",
       "text": "Sensor glucoses are inaccurate at high and low extremes; always verify with a fingerstick when in doubt.",
       "verbatim": "The sensor glucoses are not very accurate at highs and lows.",
       "type": "pitfall",
       "t": 2905.9,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-2905",
       "score": {
         "specific": false,
         "actionable": true,
@@ -76465,22 +76474,22 @@
           "actionable": [
             "always"
           ],
-          "rarity": 8.19
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-2912",
       "text": "Overnight false lows are common when a patient lies on the sensor, causing compression of interstitial fluid; always ask if the low is real before treating.",
       "verbatim": "So we see a lot of false lows in the middle of the night when someone is laying on the sensor.",
       "type": "red_flag",
       "t": 2912.3,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-2912",
       "score": {
         "specific": false,
         "actionable": true,
@@ -76493,22 +76502,131 @@
           "actionable": [
             "always"
           ],
-          "rarity": 7.82
+          "rarity": 7.83
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-3233",
+      "text": "When a patient with a CGM has a low glucose alarm, first ask if the low is real, especially overnight.",
+      "verbatim": "the first question in low glucose is, is it real? And especially overnight, oftentimes, they are not real.",
+      "type": "judgment",
+      "t": 2938.2,
+      "match": "exact",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-2938",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.79
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Continuous glucose monitors should be offered to all patients with diabetes per 2025 ADA guidelines.",
+      "verbatim": "the ADA now has published data in 2025. The guidelines recommend that any person with diabetes should be offered a continuous glucose monitor because it provides insight into patterns and actionable items",
+      "type": "practice",
+      "t": 2999.5,
+      "match": "exact",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-2999",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:continuous glucose mon"
+          ],
+          "rarity": 7.53
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When starting a patient on an insulin pump, first learn about the pump from the manufacturer rep and try it yourself before prescribing.",
+      "verbatim": "I would strongly recommend that you with the pump rep that you want, learn about it, and then try it. Don't do it. Just, like, slap it on him and let him run off until won't.",
+      "type": "judgment",
+      "t": 3058.7,
+      "match": "exact",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-3058",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:insulin pump"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "CGM data interpretation is a billable procedure in the office; set up clinic access to receive patient data.",
+      "verbatim": "This is a billable procedure in the office. You should... If you're putting a person on a CGM, you should have access to their CGM data, and you should look at it because you can bill for your interpretation.",
+      "type": "practice",
+      "t": 3131.8,
+      "match": "exact",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-3131",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.47
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "When interpreting CGM data, first check the wear time; it should be at least 70% of the 14 days to be useful.",
       "verbatim": "First one is how long is the CGM active. 10% doesn't really help us. Right? We want it to be a higher number, at least 70% or more.",
       "type": "practice",
       "t": 3233.2,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-3233",
       "score": {
         "specific": true,
         "actionable": true,
@@ -76525,22 +76643,22 @@
           "actionable": [
             "check"
           ],
-          "rarity": 6.67
+          "rarity": 6.68
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-3262",
       "text": "Target time in range >70%, time below range <4%, and very low (<54 mg/dL) at 0%.",
       "verbatim": "Most patients will want a time in range of 70%, time below range of less than four. And, really, that very low range, which is less than 54 blood group o c one at zero.",
       "type": "practice",
       "t": 3262.1,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-3262",
       "score": {
         "specific": true,
         "actionable": false,
@@ -76556,20 +76674,20 @@
           ],
           "rarity": 5.33
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-3320",
       "text": "Hypoglycemia that drops and pops back up quickly may not appear on the AGP report because it requires 15 minutes in the range; always review daily graphs.",
       "verbatim": "So to make it onto the AGP here, you have to have fifteen minutes in that time zone. So if someone has hypoglycemia where it drops and pops right back up, but they're not there for fifteen minutes, it's gonna show zero. So while it's important to look at this, also scroll through the daily graph to see what can I find?",
       "type": "exam_technique",
       "t": 3320.6,
       "match": "fuzzy",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-3320",
       "score": {
         "specific": true,
         "actionable": true,
@@ -76586,22 +76704,22 @@
           "actionable": [
             "always"
           ],
-          "rarity": 8.65
+          "rarity": 8.66
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-3604",
       "text": "Always correct hypoglycemia first before addressing hyperglycemia, because one hypoglycemic episode can lead to another.",
       "verbatim": "You cannot treat hyperglycemia until you correct hypo because one hypo is gonna lead to another hypo when it's twenty four hours.",
       "type": "judgment",
       "t": 3604.2,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-3604",
       "score": {
         "specific": true,
         "actionable": true,
@@ -76617,131 +76735,22 @@
           "actionable": [
             "Always"
           ],
-          "rarity": 6.94
+          "rarity": 6.95
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-2938",
-      "text": "When a patient with a CGM has a low glucose alarm, first ask if the low is real, especially overnight.",
-      "verbatim": "the first question in low glucose is, is it real? And especially overnight, oftentimes, they are not real.",
-      "type": "judgment",
-      "t": 2938.2,
-      "match": "exact",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 6.79
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-2999",
-      "text": "Continuous glucose monitors should be offered to all patients with diabetes per 2025 ADA guidelines.",
-      "verbatim": "the ADA now has published data in 2025. The guidelines recommend that any person with diabetes should be offered a continuous glucose monitor because it provides insight into patterns and actionable items",
-      "type": "practice",
-      "t": 2999.5,
-      "match": "exact",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:continuous glucose mon"
-          ],
-          "rarity": 7.52
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-3058",
-      "text": "When starting a patient on an insulin pump, first learn about the pump from the manufacturer rep and try it yourself before prescribing.",
-      "verbatim": "I would strongly recommend that you with the pump rep that you want, learn about it, and then try it. Don't do it. Just, like, slap it on him and let him run off until won't.",
-      "type": "judgment",
-      "t": 3058.7,
-      "match": "exact",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:insulin pump"
-          ],
-          "actionable": [
-            "starting"
-          ],
-          "rarity": 7.73
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-3131",
-      "text": "CGM data interpretation is a billable procedure in the office; set up clinic access to receive patient data.",
-      "verbatim": "This is a billable procedure in the office. You should... If you're putting a person on a CGM, you should have access to their CGM data, and you should look at it because you can bill for your interpretation.",
-      "type": "practice",
-      "t": 3131.8,
-      "match": "exact",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.46
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-4075",
       "text": "Do not start an SGLT2 inhibitor in a patient with an A1c of 15; wait until glucose is lower.",
       "verbatim": "would never start a patient with an A1c of 15 on an SGLT2 inhibitor. I would wait till their glucose has come down and then initiate it.",
       "type": "pitfall",
       "t": 4075.1,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-4075",
       "score": {
         "specific": true,
         "actionable": true,
@@ -76757,22 +76766,22 @@
           "actionable": [
             "Do not"
           ],
-          "rarity": 6.19
+          "rarity": 6.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-4217",
       "text": "Document 'mealtime hyperglycemia' in the chart when billing for CGM interpretation.",
       "verbatim": "So what I would say, you have to document this in the chart if you're gonna bill for it. I would say, mealtime hyperglycemia.",
       "type": "practice",
       "t": 4217.4,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-4217",
       "score": {
         "specific": true,
         "actionable": true,
@@ -76790,20 +76799,52 @@
           ],
           "rarity": 7.0
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-4371",
+      "text": "If a patient has good overnight glucose but mealtime spikes, consider maximizing GLP-1 agonist before stopping insulin.",
+      "verbatim": "I wouldn't stop the insulin by any means, but I would definitely try to max out the GLP-1 agent.",
+      "type": "judgment",
+      "t": 4290.1,
+      "match": "exact",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "dr-shah-on-diabetes-4290",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:insulin"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Always question the diagnosis of type 2 diabetes in an adult with poor control despite multiple therapies.",
       "verbatim": "So always take a step back and say, did I get the diagnosis right? Just because he is an adult does not mean that he has had.",
       "type": "red_flag",
       "t": 4371.8,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-4371",
       "score": {
         "specific": true,
         "actionable": true,
@@ -76819,112 +76860,22 @@
           "actionable": [
             "Always"
           ],
-          "rarity": 6.19
+          "rarity": 6.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-4481",
-      "text": "Elevated zinc transporter antibodies confirm type 1 diabetes even if GAD is not high; their presence prevents DKA.",
-      "verbatim": "The zinc is elevated. The GAD is not as elevated as I was expecting it to be, but this is type one diabetes. Blood sugar is appropriate. Low levels, but still present. It is that presence that is preventing him from going into DKA.",
-      "type": "dx_criteria",
-      "t": 4481.8,
-      "match": "exact",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:type 1 diabetes"
-          ],
-          "actionable": [
-            "confirm"
-          ],
-          "rarity": 8.12
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-4499",
-      "text": "For a patient with confirmed type 1 diabetes, start mealtime and long-acting insulin and discontinue other agents.",
-      "verbatim": "I put him on insulin, mealtime and long acting. We turned everything else off. There you go. Oh my gosh. In range 82.",
-      "type": "judgment",
-      "t": 4499.6,
-      "match": "exact",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:type 1 diabetes"
-          ],
-          "actionable": [
-            "start"
-          ],
-          "rarity": 6.74
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-4529",
-      "text": "When a patient has been on multiple medications for years without control, think about type 1 diabetes.",
-      "verbatim": "And this is the reason I wanted to bring this case to you guys because it was four years. Right? Let's keep trying. Let's keep trying. Let's keep trying. You guys inherit somebody that you're like, hey. We've done these things, it doesn't make sense, please think about type one diabetes.",
-      "type": "red_flag",
-      "t": 4529.1,
-      "match": "exact",
-      "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:type 1 diabetes"
-          ],
-          "rarity": 5.22
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-shah-on-diabetes-4461",
       "text": "Smoldering type 1 diabetes in adults is often missed because residual pancreatic function prevents DKA but prevents good control.",
       "verbatim": "this is how the type one in adults get missed all the time. Because they have enough pancreatic function to keep them out of control, but you can't do anything to get them.",
       "type": "red_flag",
       "t": 4461.4,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-4461",
       "score": {
         "specific": true,
         "actionable": false,
@@ -76942,20 +76893,20 @@
           ],
           "rarity": 7.41
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-shah-on-diabetes-4290",
-      "text": "If a patient has good overnight glucose but mealtime spikes, consider maximizing GLP-1 agonist before stopping insulin.",
-      "verbatim": "I wouldn't stop the insulin by any means, but I would definitely try to max out the GLP-1 agent.",
-      "type": "judgment",
-      "t": 4290.1,
+      "text": "Elevated zinc transporter antibodies confirm type 1 diabetes even if GAD is not high; their presence prevents DKA.",
+      "verbatim": "The zinc is elevated. The GAD is not as elevated as I was expecting it to be, but this is type one diabetes. Blood sugar is appropriate. Low levels, but still present. It is that presence that is preventing him from going into DKA.",
+      "type": "dx_criteria",
+      "t": 4481.8,
       "match": "exact",
       "episode": "dr-shah-on-diabetes",
-      "speaker": "Shah",
+      "speaker": "Dr. Shah",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-4481",
       "score": {
         "specific": true,
         "actionable": true,
@@ -76966,14 +76917,73 @@
         "grade": "B",
         "fired": {
           "specific": [
-            "concept:insulin"
+            "concept:type 1 diabetes"
           ],
           "actionable": [
-            "consider"
+            "confirm"
           ],
-          "rarity": 8.19
+          "rarity": 8.12
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "For a patient with confirmed type 1 diabetes, start mealtime and long-acting insulin and discontinue other agents.",
+      "verbatim": "I put him on insulin, mealtime and long acting. We turned everything else off. There you go. Oh my gosh. In range 82.",
+      "type": "judgment",
+      "t": 4499.6,
+      "match": "exact",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-4499",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:type 1 diabetes"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When a patient has been on multiple medications for years without control, think about type 1 diabetes.",
+      "verbatim": "And this is the reason I wanted to bring this case to you guys because it was four years. Right? Let's keep trying. Let's keep trying. Let's keep trying. You guys inherit somebody that you're like, hey. We've done these things, it doesn't make sense, please think about type one diabetes.",
+      "type": "red_flag",
+      "t": 4529.1,
+      "match": "exact",
+      "episode": "dr-shah-on-diabetes",
+      "speaker": "Dr. Shah",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-shah-on-diabetes-4529",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:type 1 diabetes"
+          ],
+          "rarity": 5.22
+        },
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -112723,5 +112733,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "shah",
+      "name": "Dr. Shah"
+    }
+  ],
+  "pearls_fingerprint": "307d6b88a8a9385d"
 }

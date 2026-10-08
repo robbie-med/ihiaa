@@ -31298,7 +31298,155 @@
   ],
   "pearls": [
     {
-      "pearl_id": "amboss-resident-training-932",
+      "text": "When using the knowledge app for a patient with elevated transaminases, use the pocket guide's checklist format to review red flag features, history and physical exam, diagnostic approach, and initial management before discussing with staff.",
+      "verbatim": "you can quickly jump in and review the flow chart that's available. My Internet is being so wonky today. Sorry about that. But you can jump in here. What's what's my clinical evaluation? What should I look for? These are red flag features. So you can just jump in, and it's a checklist format. So you can go through the entire things you should be looking for in history and physical exam. Make sure you've covered all the bases before you talk to your staff. You can go through your diagnostic approach, and this is actually geared towards value care medicine and making sure you're ordering appropriately.",
+      "type": "exam_technique",
+      "t": 440.9,
+      "match": "fuzzy",
+      "episode": "amboss-resident-training",
+      "speaker": "Unknown",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-440",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:elevated transaminases"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When using the symptom-based article for weakness, if weakness is acute or rapidly progressive with symmetrical ascending and sensory symptoms, it is most likely Guillain-Barre syndrome and you can link directly to its management.",
+      "verbatim": "If the patient has, you know, a rapidly progressive weakness and it turns out it's symmetrical ascending with some sensory symptoms, then most likely gonna be Guillain-Barre. And you can click over here. It's gonna take you right to the management of Guillain-Barre syndrome.",
+      "type": "red_flag",
+      "t": 681.6,
+      "match": "exact",
+      "episode": "amboss-resident-training",
+      "speaker": "Unknown",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-681",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:guillain-barre syndrom"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "In evaluating acute pancreatitis, get all patients labs plus an ultrasound first, not a CT, because gallstones are the most common cause and ultrasound has identical sensitivity for that, avoiding unnecessary radiation especially in young patients.",
+      "verbatim": "all patients should get all of these labs plus an ultrasound. Maybe, maybe not a CT. If you're wondering why would I get an ultrasound if I can just as easily get a CT, we put that information in these little boxes. We call them e bubbles. It's because typically the acute pancreatitis is most commonly associated with gallstones, the sensitivity is identical between these two studies. So don't expose, especially young patient, to that kind of radiation.",
+      "type": "pitfall",
+      "t": 738.9,
+      "match": "fuzzy",
+      "episode": "amboss-resident-training",
+      "speaker": "Unknown",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-738",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "In acute pancreatitis, check the hematocrit because volume contraction is the biggest problem; three times the upper limit of normal for lipase and amylase confirms the diagnosis when combined with clinical criteria.",
+      "verbatim": "Three times the upper limit of normal for lipase and amylase. And always make sure to check the hematocrit 'cause volume contraction is really the biggest problem in these patients.",
+      "type": "dx_criteria",
+      "t": 785.1,
+      "match": "exact",
+      "episode": "amboss-resident-training",
+      "speaker": "Unknown",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-785",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acute pancreatitis"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Use radiograph overlays in the imaging section to compare findings like enlarged gallbladder, gallstones, or peripancreatic fluid when you are in the CT suite without immediate radiology support.",
+      "verbatim": "But you can pull it up. You can expand it, and you can throw an overlay on it. So if you're actually in the CT Suite while the patient's there, you can look to see if the patient has an enlarged gallbladder, gallstones, or peripancreatic fluid.",
+      "type": "exam_technique",
+      "t": 827.3,
+      "match": "exact",
+      "episode": "amboss-resident-training",
+      "speaker": "Unknown",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-827",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "For acute pancreatitis, start with lactated Ringer's as the preferred fluid. In unstable patients, bolus 500-1000 mL over 10-30 minutes and stop when fluid therapy goals are met.",
       "verbatim": "you should hang lactated ringers because that's what the ACT recommends. What rate do I run it at? Well, it depends if they're stable or unstable. If they're unstable, they recommend five hundred to a thousand milliliters of LR over ten to thirty minutes, bolusing if necessary. And when do you stop? Well, you stop when you hit the fluid therapy goal.",
       "type": "practice",
@@ -31308,6 +31456,7 @@
       "speaker": "Unknown",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-932",
       "score": {
         "specific": true,
         "actionable": true,
@@ -31324,100 +31473,43 @@
           "actionable": [
             "start"
           ],
-          "rarity": 7.65
+          "rarity": 7.66
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "amboss-resident-training-738",
-      "text": "In evaluating acute pancreatitis, get all patients labs plus an ultrasound first, not a CT, because gallstones are the most common cause and ultrasound has identical sensitivity for that, avoiding unnecessary radiation especially in young patients.",
-      "verbatim": "all patients should get all of these labs plus an ultrasound. Maybe, maybe not a CT. If you're wondering why would I get an ultrasound if I can just as easily get a CT, we put that information in these little boxes. We call them e bubbles. It's because typically the acute pancreatitis is most commonly associated with gallstones, the sensitivity is identical between these two studies. So don't expose, especially young patient, to that kind of radiation.",
-      "type": "pitfall",
-      "t": 738.9,
-      "match": "fuzzy",
-      "episode": "amboss-resident-training",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:ultrasound"
-          ],
-          "rarity": 7.03
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "amboss-resident-training-785",
-      "text": "In acute pancreatitis, check the hematocrit because volume contraction is the biggest problem; three times the upper limit of normal for lipase and amylase confirms the diagnosis when combined with clinical criteria.",
-      "verbatim": "Three times the upper limit of normal for lipase and amylase. And always make sure to check the hematocrit 'cause volume contraction is really the biggest problem in these patients.",
-      "type": "dx_criteria",
-      "t": 785.1,
+      "text": "For ketorolac dosing in acute pancreatitis, the FDA dose is immediately available in the drug monograph, along with information on whether to adjust for elevated liver function tests.",
+      "verbatim": "you wanna go with ketorolac, you just wanna check the dose. The FDA's drug dose is gonna be right there immediately available. The patient has elevated liver function test, and you wonder, can I use? Do I have to adjust the dose? That dose, that's immediately available too. So you can pull up the drug monograph and see that you don't have to.",
+      "type": "dosing",
+      "t": 959.1,
       "match": "exact",
       "episode": "amboss-resident-training",
       "speaker": "Unknown",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-959",
       "score": {
         "specific": true,
-        "actionable": true,
+        "actionable": false,
         "local": false,
-        "harm": false,
+        "harm": true,
         "nonobvious": true,
         "points": 3,
         "grade": "B",
         "fired": {
           "specific": [
-            "concept:acute pancreatitis"
+            "concept:liver function tests"
           ],
-          "actionable": [
-            "check"
-          ],
-          "rarity": 7.96
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "amboss-resident-training-681",
-      "text": "When using the symptom-based article for weakness, if weakness is acute or rapidly progressive with symmetrical ascending and sensory symptoms, it is most likely Guillain-Barre syndrome and you can link directly to its management.",
-      "verbatim": "If the patient has, you know, a rapidly progressive weakness and it turns out it's symmetrical ascending with some sensory symptoms, then most likely gonna be Guillain-Barre. And you can click over here. It's gonna take you right to the management of Guillain-Barre syndrome.",
-      "type": "red_flag",
-      "t": 681.6,
-      "match": "exact",
-      "episode": "amboss-resident-training",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:guillain-barre syndrom"
+          "harm": [
+            "immediately"
           ],
           "rarity": 8.06
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "amboss-resident-training-990",
       "text": "For acute pancreatitis, use the acute management checklist to track evidence-based steps; if you close the app, you can return and the checklist remembers where you left off, aiding handoffs.",
       "verbatim": "if you get to the replete electrolytes and your labs aren't back, you can skip over it. And if you have to go do something else, take care of a, you know, a birth or something like that, even if you close this out, you can come back here if you haven't cleared your checklist as you say, where was I? Oh, I have to go check the lights.",
       "type": "judgment",
@@ -31427,6 +31519,7 @@
       "speaker": "Unknown",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-990",
       "score": {
         "specific": true,
         "actionable": true,
@@ -31444,11 +31537,10 @@
           ],
           "rarity": 8.29
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "amboss-resident-training-1038",
       "text": "When performing a paracentesis, use the procedure article to review contraindications, landmarks, positioning, and the Z-track technique via the accompanying illustration right before the procedure.",
       "verbatim": "you can see if there's any contraindications to it. You can see what are the landmarks and positioning I'm looking for here to really get the most likelihood of success in my procedure. You can go through the technique step by step by step. You see how we format it. So it's really easy to read on the phone. You can pull out your phone. Look at this. You can even pull up an accompanying illustration that's always there and just kinda go over the features here. Go, oh, yeah. Don't forget the Z-track technique.",
       "type": "procedure",
@@ -31458,6 +31550,7 @@
       "speaker": "Unknown",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-1038",
       "score": {
         "specific": true,
         "actionable": true,
@@ -31476,106 +31569,12 @@
           "harm": [
             "contraindications"
           ],
-          "rarity": 8.42
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "amboss-resident-training-440",
-      "text": "When using the knowledge app for a patient with elevated transaminases, use the pocket guide's checklist format to review red flag features, history and physical exam, diagnostic approach, and initial management before discussing with staff.",
-      "verbatim": "you can quickly jump in and review the flow chart that's available. My Internet is being so wonky today. Sorry about that. But you can jump in here. What's what's my clinical evaluation? What should I look for? These are red flag features. So you can just jump in, and it's a checklist format. So you can go through the entire things you should be looking for in history and physical exam. Make sure you've covered all the bases before you talk to your staff. You can go through your diagnostic approach, and this is actually geared towards value care medicine and making sure you're ordering appropriately.",
-      "type": "exam_technique",
-      "t": 440.9,
-      "match": "fuzzy",
-      "episode": "amboss-resident-training",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:elevated transaminases"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "amboss-resident-training-959",
-      "text": "For ketorolac dosing in acute pancreatitis, the FDA dose is immediately available in the drug monograph, along with information on whether to adjust for elevated liver function tests.",
-      "verbatim": "you wanna go with ketorolac, you just wanna check the dose. The FDA's drug dose is gonna be right there immediately available. The patient has elevated liver function test, and you wonder, can I use? Do I have to adjust the dose? That dose, that's immediately available too. So you can pull up the drug monograph and see that you don't have to.",
-      "type": "dosing",
-      "t": 959.1,
-      "match": "exact",
-      "episode": "amboss-resident-training",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:liver function tests"
-          ],
-          "harm": [
-            "immediately"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "amboss-resident-training-827",
-      "text": "Use radiograph overlays in the imaging section to compare findings like enlarged gallbladder, gallstones, or peripancreatic fluid when you are in the CT suite without immediate radiology support.",
-      "verbatim": "But you can pull it up. You can expand it, and you can throw an overlay on it. So if you're actually in the CT Suite while the patient's there, you can look to see if the patient has an enlarged gallbladder, gallstones, or peripancreatic fluid.",
-      "type": "exam_technique",
-      "t": 827.3,
-      "match": "exact",
-      "episode": "amboss-resident-training",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:CT"
-          ],
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "amboss-resident-training-1166",
       "text": "Use the adult health maintenance article to review age-based screening recommendations for cancers and other conditions.",
       "verbatim": "open the adult health maintenance article, and it will take you through all the recommended screening cancers and things you need to do by age.",
       "type": "practice",
@@ -31585,6 +31584,7 @@
       "speaker": "Unknown",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-1166",
       "score": {
         "specific": true,
         "actionable": true,
@@ -31600,13 +31600,12 @@
           "actionable": [
             "Use"
           ],
-          "rarity": 7.52
+          "rarity": 7.53
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "amboss-resident-training-1216",
       "text": "Track your progress through the study plan by checking off articles as you complete them.",
       "verbatim": "you can check off the articles as you go along.",
       "type": "concept",
@@ -31616,6 +31615,7 @@
       "speaker": "Unknown",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-1216",
       "score": {
         "specific": false,
         "actionable": false,
@@ -31625,13 +31625,68 @@
         "points": 1,
         "grade": "D",
         "fired": {
-          "rarity": 7.1
+          "rarity": 7.07
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "amboss-resident-training-1303",
+      "text": "Use the active hyperlinks in question explanations to explore why wrong answers are incorrect.",
+      "verbatim": "All of the hyperlinks are active here so that you can explore any answers that are wrong.",
+      "type": "concept",
+      "t": 1238.5,
+      "match": "exact",
+      "episode": "amboss-resident-training",
+      "speaker": "Unknown",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-1238",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.43
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "After answering a question, click the associated article to place the information in a clinical context for better retention.",
+      "verbatim": "you can click the associated article, and it will literally put it into a clinical context for you",
+      "type": "concept",
+      "t": 1286.3,
+      "match": "exact",
+      "episode": "amboss-resident-training",
+      "speaker": "Unknown",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-1286",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:context"
+          ],
+          "rarity": 7.47
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Install the free Amboss Anki add-on to make Amboss hyperlinks work on your Anki cards and to pull related questions from the Anki deck.",
       "verbatim": "you can actually get our free Amboss Anki add on if you like Anki cards. The Amboss Anki add on will make all of these hyperlinks from Amboss work on your Anki cards. It will also pull any related questions from the Anki deck, and you can answer as many of those questions as you want to too.",
       "type": "concept",
@@ -31641,6 +31696,7 @@
       "speaker": "Unknown",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-1303",
       "score": {
         "specific": false,
         "actionable": true,
@@ -31653,13 +31709,12 @@
           "actionable": [
             "add"
           ],
-          "rarity": 8.65
+          "rarity": 8.66
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "amboss-resident-training-1326",
       "text": "Monitor your overall performance by going to the exams and CME study summary section.",
       "verbatim": "you can actually monitor yourself to see how you're doing by going to exams and CME, study summary.",
       "type": "concept",
@@ -31669,6 +31724,7 @@
       "speaker": "Unknown",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-1326",
       "score": {
         "specific": false,
         "actionable": true,
@@ -31681,13 +31737,40 @@
           "actionable": [
             "Monitor"
           ],
-          "rarity": 7.29
+          "rarity": 7.3
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "amboss-resident-training-1392",
+      "text": "Declare your board goal (e.g., family medicine) so the system automatically tracks the questions you answer toward that goal.",
+      "verbatim": "as soon as you declare your goal, the computer keeps track of the questions you're answering towards that goal.",
+      "type": "concept",
+      "t": 1354.8,
+      "match": "exact",
+      "episode": "amboss-resident-training",
+      "speaker": "Unknown",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-1354",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:family medicine"
+          ],
+          "rarity": 7.3
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Use performance analytics to identify weak areas (e.g., infective endocarditis) and then read the associated article and do the related questions to improve.",
       "verbatim": "John is weakest in infective endocarditis because he's answered all the questions. He's got none of them right, and it's a highly represented problem on the boards. So now John can go here, click on infective endocarditis, read the article, then do the associated questions with it.",
       "type": "judgment",
@@ -31697,6 +31780,7 @@
       "speaker": "Unknown",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-1392",
       "score": {
         "specific": true,
         "actionable": true,
@@ -31712,13 +31796,37 @@
           "actionable": [
             "Use"
           ],
-          "rarity": 7.73
+          "rarity": 7.74
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "amboss-resident-training-1501",
+      "text": "Quickly identify your areas of weakness and strength using performance analytics and correct them before an ITE or board exam.",
+      "verbatim": "you can quickly see where your areas of weakness and strength are and correct these before an ITE or the boards.",
+      "type": "judgment",
+      "t": 1413.5,
+      "match": "exact",
+      "episode": "amboss-resident-training",
+      "speaker": "Unknown",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-1413",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.47
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Create custom question banks based on clinical encounters, such as abdominal pain, to reinforce learning from real cases.",
       "verbatim": "you can create your own assignments by just coming into exams and see me hitting question bank, and you can create a question bank. So if you just wanna review, you saw someone with abdominal pain, you can come here and pick up questions on abdominal pain, sign how many questions you want, and do that.",
       "type": "judgment",
@@ -31728,6 +31836,7 @@
       "speaker": "Unknown",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "amboss-resident-training-1501",
       "score": {
         "specific": true,
         "actionable": false,
@@ -31742,116 +31851,7 @@
           ],
           "rarity": 8.06
         },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "amboss-resident-training-1354",
-      "text": "Declare your board goal (e.g., family medicine) so the system automatically tracks the questions you answer toward that goal.",
-      "verbatim": "as soon as you declare your goal, the computer keeps track of the questions you're answering towards that goal.",
-      "type": "concept",
-      "t": 1354.8,
-      "match": "exact",
-      "episode": "amboss-resident-training",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:family medicine"
-          ],
-          "rarity": 7.29
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "amboss-resident-training-1238",
-      "text": "Use the active hyperlinks in question explanations to explore why wrong answers are incorrect.",
-      "verbatim": "All of the hyperlinks are active here so that you can explore any answers that are wrong.",
-      "type": "concept",
-      "t": 1238.5,
-      "match": "exact",
-      "episode": "amboss-resident-training",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 8.42
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "amboss-resident-training-1286",
-      "text": "After answering a question, click the associated article to place the information in a clinical context for better retention.",
-      "verbatim": "you can click the associated article, and it will literally put it into a clinical context for you",
-      "type": "concept",
-      "t": 1286.3,
-      "match": "exact",
-      "episode": "amboss-resident-training",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:context"
-          ],
-          "rarity": 7.46
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "amboss-resident-training-1413",
-      "text": "Quickly identify your areas of weakness and strength using performance analytics and correct them before an ITE or board exam.",
-      "verbatim": "you can quickly see where your areas of weakness and strength are and correct these before an ITE or the boards.",
-      "type": "judgment",
-      "t": 1413.5,
-      "match": "exact",
-      "episode": "amboss-resident-training",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.46
-        },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -47917,5 +47917,7 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [],
+  "pearls_fingerprint": "bf5fbbfed4637c3c"
 }

@@ -2,7 +2,7 @@
   "slug": "dr-tischler-on-syncope",
   "guid": "hopepartners.podbean.com/6a8a4615-f806-3b31-b2ac-f16bbf5bc0e1",
   "title": "Dr. Tischler on Syncope",
-  "speaker": "Tischler",
+  "speaker": "Dr. Tischler",
   "link": "https://hopepartners.podbean.com/e/dr-tischler-on-syncope/",
   "pubDate": "Fri, 23 Sep 2022 14:01:03 -0500",
   "duration_sec": 3336,
@@ -38085,16 +38085,16 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-tischler-on-syncope-792",
       "text": "Syncope is defined as transient loss of consciousness due to global cerebral hypoperfusion, with loss of postural tone, brief duration (5-10 seconds), and spontaneous complete recovery.",
       "verbatim": "It's a transient loss of consciousness due to global cerebral hypoperfusion. That part is important too because that's what's actually going on. Right? You have that mentally to know, like, it's a lack of blood flow to the brain and what's causing that. That is the result of this. It's different than other that cause loss of consciousness. It does result in loss of postural tone, so when you're getting the history for that. And the other thing that's very key for syncope is that it's brief. We're talking five to ten seconds.",
       "type": "dx_criteria",
       "t": 792.4,
       "match": "fuzzy",
       "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-792",
       "score": {
         "specific": true,
         "actionable": false,
@@ -38107,22 +38107,53 @@
           "specific": [
             "concept:syncope"
           ],
-          "rarity": 7.73
+          "rarity": 7.74
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-syncope-1140",
+      "text": "Stroke should not cause syncope; if there is a neurologic deficit, the event is not simple syncope.",
+      "verbatim": "Stroke shouldn't cause syncope. We'll get to that. It'll be that different thing.",
+      "type": "pitfall",
+      "t": 851.7,
+      "match": "exact",
+      "episode": "dr-tischler-on-syncope",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-851",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:syncope"
+          ],
+          "harm": [
+            "Stroke"
+          ],
+          "rarity": 6.28
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Vasovagal syncope is the most common cause of syncope.",
       "verbatim": "vasovagal is the the big... It is actually the most common cause.",
       "type": "concept",
       "t": 1140.2,
       "match": "exact",
       "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-1140",
       "score": {
         "specific": true,
         "actionable": false,
@@ -38135,22 +38166,53 @@
           "specific": [
             "concept:vasovagal syncope"
           ],
-          "rarity": 5.93
+          "rarity": 5.91
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-syncope-1216",
+      "text": "Carotid sinus sensitivity can cause reflex syncope; tight collars or shaving the neck can trigger it, but carotid massage should be avoided in the emergency setting.",
+      "verbatim": "The carotid sinus sensitivity. ... people that can't be doing it, they accidentally pick it. Some people just have the sensitivity of wearing tight collars.",
+      "type": "dx_criteria",
+      "t": 1149.5,
+      "match": "exact",
+      "episode": "dr-tischler-on-syncope",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-1149",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:reflex syncope"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Pulmonary embolism can cause syncope and may be missed; patients with syncope and PE often do not spontaneously recover.",
       "verbatim": "PE is is actually really a cause of syncope, actually. ... The issue is when you have a PE like that, you just don't get back up.",
       "type": "red_flag",
-      "t": 1217.0,
-      "match": "fuzzy",
+      "t": 1218.0,
+      "match": "exact",
       "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-1218",
       "score": {
         "specific": true,
         "actionable": true,
@@ -38169,53 +38231,53 @@
           "harm": [
             "missed"
           ],
-          "rarity": 6.59
+          "rarity": 6.6
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-syncope-851",
-      "text": "Stroke should not cause syncope; if there is a neurologic deficit, the event is not simple syncope.",
-      "verbatim": "Stroke shouldn't cause syncope. We'll get to that. It'll be that different thing.",
-      "type": "pitfall",
-      "t": 851.7,
+      "text": "A long history of recurrent syncope over years almost always points to vasovagal syncope, not cardiac.",
+      "verbatim": "Long history of recurrent syncope. If they've had prior to see multiple episodes, and we're not talking about new onset in a month. We're talking about years and years. Like, that almost always points towards vasovagal.",
+      "type": "red_flag",
+      "t": 1897.1,
       "match": "exact",
       "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-1897",
       "score": {
         "specific": true,
-        "actionable": false,
+        "actionable": true,
         "local": false,
-        "harm": true,
+        "harm": false,
         "nonobvious": true,
         "points": 3,
         "grade": "B",
         "fired": {
           "specific": [
-            "concept:syncope"
+            "concept:vasovagal syncope"
           ],
-          "harm": [
-            "Stroke"
+          "actionable": [
+            "always"
           ],
-          "rarity": 6.3
+          "rarity": 6.47
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-syncope-1925",
       "text": "Exertional syncope during exercise is a red flag for cardiac cause; syncope after exertion is more likely reflex or orthostatic.",
       "verbatim": "exertion may be important to distinguish. So post exertion, if they've already worked out, they're done, walking around, and then it's like, then they have a staining episode. That is different than during exertion.",
       "type": "red_flag",
       "t": 1925.2,
       "match": "exact",
       "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-1925",
       "score": {
         "specific": true,
         "actionable": false,
@@ -38228,22 +38290,50 @@
           "specific": [
             "concept:syncope"
           ],
-          "rarity": 7.19
+          "rarity": 7.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-syncope-2230",
+      "text": "Delayed orthostatic hypotension (occurring after 5 minutes or more) is more common in the elderly.",
+      "verbatim": "most actually are delayed. And if you guys have time to curbside, that's a great one. There's a article that they posted on that. I went to that, and that's it. It's more common in the elderly.",
+      "type": "concept",
+      "t": 2218.4,
+      "match": "exact",
+      "episode": "dr-tischler-on-syncope",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-2218",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 minutes"
+          ],
+          "rarity": 6.67
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "A negative orthostatic vital sign evaluation does not rule out orthostatic hypotension, especially if history suggests it or in elderly patients.",
       "verbatim": "If if it's positive, great. If it's negative, it's like, I don't think you can fully say no, especially if the history points towards it.",
       "type": "pitfall",
       "t": 2230.1,
       "match": "exact",
       "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-2230",
       "score": {
         "specific": true,
         "actionable": true,
@@ -38261,48 +38351,20 @@
           ],
           "rarity": 6.23
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-syncope-2218",
-      "text": "Delayed orthostatic hypotension (occurring after 5 minutes or more) is more common in the elderly.",
-      "verbatim": "most actually are delayed. And if you guys have time to curbside, that's a great one. There's a article that they posted on that. I went to that, and that's it. It's more common in the elderly.",
-      "type": "concept",
-      "t": 2218.4,
-      "match": "exact",
-      "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:5 minutes"
-          ],
-          "rarity": 6.66
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-tischler-on-syncope-2287",
       "text": "Universal workup for syncope includes EKG and orthostatic vital signs; head imaging is reserved for patients with neurologic deficits or head trauma.",
       "verbatim": "EDG, that is one universal thing, and also could be. In fact, that's probably the only universal thing you're gonna order. ... Who gets head imaging? ... Neurologic deficits. ... head trauma, if they have a significant headache kind of is in there.",
       "type": "practice",
       "t": 2287.7,
-      "match": "fuzzy",
+      "match": "exact",
       "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-2287",
       "score": {
         "specific": true,
         "actionable": false,
@@ -38315,53 +38377,22 @@
           "specific": [
             "test:EKG"
           ],
-          "rarity": 7.19
+          "rarity": 7.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-syncope-1897",
-      "text": "A long history of recurrent syncope over years almost always points to vasovagal syncope, not cardiac.",
-      "verbatim": "Long history of recurrent syncope. If they've had prior to see multiple episodes, and we're not talking about new onset in a month. We're talking about years and years. Like, that almost always points towards vasovagal.",
-      "type": "red_flag",
-      "t": 1897.1,
-      "match": "exact",
-      "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:vasovagal syncope"
-          ],
-          "actionable": [
-            "always"
-          ],
-          "rarity": 6.48
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-tischler-on-syncope-2462",
       "text": "Syncope with the worst headache of life suggests subarachnoid hemorrhage; obtain a head CT.",
       "verbatim": "If they come in, it's like, got the worst headache of my life, you know, passing out episode, you may consider subarachnoid subarachnoid, something else that's going on.",
       "type": "red_flag",
       "t": 2462.5,
       "match": "exact",
       "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-2462",
       "score": {
         "specific": true,
         "actionable": true,
@@ -38380,22 +38411,53 @@
           "harm": [
             "hemorrhage"
           ],
-          "rarity": 6.71
+          "rarity": 6.7
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-syncope-2500",
+      "text": "Transient neurologic symptoms like prolonged slurred speech or unilateral weakness are not consistent with syncope and suggest TIA; consider head CT.",
+      "verbatim": "If you have a TIA, you may consider it as well. They have symptoms. You're like, that's weird, and then it resolved. Maybe reasonable enough. You may not have deficit on exam, but your history wise, it's like, that's not consistent with syncope because they had, you know, prolonged slurred speech or weakness on one side that resolved maybe recently again.",
+      "type": "red_flag",
+      "t": 2480.6,
+      "match": "exact",
+      "episode": "dr-tischler-on-syncope",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-2480",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "A new-onset seizure with syncope warrants a head CT.",
       "verbatim": "If they have a brand new seizure, never had seizures before, that's worthwhile getting a a head CT in.",
       "type": "red_flag",
       "t": 2500.4,
       "match": "exact",
       "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-2500",
       "score": {
         "specific": true,
         "actionable": false,
@@ -38411,22 +38473,50 @@
           "harm": [
             "seizure"
           ],
-          "rarity": 6.39
+          "rarity": 6.37
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-syncope-2815",
+      "text": "Echocardiogram is indicated only if EKG is abnormal or history suggests cardiac cause; not routinely for all syncope admissions.",
+      "verbatim": "If they do have an abnormal EKG and they do have concern for cardiac caused by your history, and that's where I go into with the unexplained sleep with that. But if you... If you're doing your history and workup and there is no specific finding that's concerning for cardiac, echo much value.",
+      "type": "practice",
+      "t": 2630.9,
+      "match": "exact",
+      "episode": "dr-tischler-on-syncope",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-2630",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "rarity": 6.67
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "For orthostatic vital signs, have the patient supine for 5 minutes, then stand; check blood pressure immediately and again at 2, 3 minutes.",
       "verbatim": "So supine, get him to stand. It's okay to check right away, but then again at two to three minutes.",
       "type": "exam_technique",
       "t": 2815.7,
       "match": "exact",
       "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-2815",
       "score": {
         "specific": true,
         "actionable": true,
@@ -38445,22 +38535,22 @@
           "harm": [
             "immediately"
           ],
-          "rarity": 7.04
+          "rarity": 7.05
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-syncope-2889",
       "text": "Heart rate increase is no longer part of the diagnostic criteria for orthostatic hypotension per current guidelines.",
       "verbatim": "the heart rate was no longer part of it, diagnosis for the static hypotension.",
       "type": "practice",
       "t": 2889.5,
       "match": "exact",
       "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-2889",
       "score": {
         "specific": true,
         "actionable": true,
@@ -38476,137 +38566,22 @@
           "actionable": [
             "increase"
           ],
-          "rarity": 5.86
+          "rarity": 5.87
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-syncope-3230",
-      "text": "For vasovagal prodrome, teach patients hand grip, leg crossing, and abdominal tensing; acute water ingestion (one glass) can also raise blood pressure.",
-      "verbatim": "they can do hand grip if they feel like coming on to anything that you're gonna reduce that blood flow going to the peripheries. Like, crossing tensing of the abdomen, you can teach those things. It's actually a really interesting study on acute water ingestion. So, like, if people are getting blood, they start to feel the symptoms. One glass of water, it can bump up the blood pressure.",
-      "type": "judgment",
-      "t": 3230.3,
-      "match": "exact",
-      "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:ingestion"
-          ],
-          "rarity": 8.42
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-tischler-on-syncope-3258",
-      "text": "Review medications that contribute to orthostatic hypotension: antihypertensives, diuretics, alpha/beta blockers, SSRIs, and antibiotics.",
-      "verbatim": "Really look at your medications. You're gonna look through those. Antihypertensives, diuretics, alpha beta blockers, SSRI, and antibiotics. Those are the most common ones that can contribute to orthostatic hypotension.",
-      "type": "pitfall",
-      "t": 3258.0,
-      "match": "fuzzy",
-      "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:orthostatic hypotensio"
-          ],
-          "rarity": 7.01
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-tischler-on-syncope-3267",
-      "text": "Compression stockings for orthostatic hypotension must be thigh-high to be effective, but patients often dislike them.",
-      "verbatim": "compression stockings, they have to be thigh high. Nobody's gonna wanna do that.",
-      "type": "judgment",
-      "t": 3267.4,
-      "match": "fuzzy",
-      "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:orthostatic hypotensio"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-tischler-on-syncope-2480",
-      "text": "Transient neurologic symptoms like prolonged slurred speech or unilateral weakness are not consistent with syncope and suggest TIA; consider head CT.",
-      "verbatim": "If you have a TIA, you may consider it as well. They have symptoms. You're like, that's weird, and then it resolved. Maybe reasonable enough. You may not have deficit on exam, but your history wise, it's like, that's not consistent with syncope because they had, you know, prolonged slurred speech or weakness on one side that resolved maybe recently again.",
-      "type": "red_flag",
-      "t": 2480.6,
-      "match": "exact",
-      "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:CT"
-          ],
-          "actionable": [
-            "consider"
-          ],
-          "rarity": 7.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-tischler-on-syncope-2978",
       "text": "Use the Canadian Syncope Risk Score on MD Calc to identify low-risk patients (only 1% adverse events at 30 days in low-risk group).",
       "verbatim": "Canadian risk score. It's on your MD calc if you pull it up. But it's extremely helpful. They did a study on 2,200 adults, and then 1,400 classified as low risk using this calculator, and only one percent of them had a significant clinical required procedure at thirty days.",
       "type": "practice",
       "t": 2978.6,
       "match": "fuzzy",
       "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-2978",
       "score": {
         "specific": true,
         "actionable": true,
@@ -38622,22 +38597,22 @@
           "actionable": [
             "Use"
           ],
-          "rarity": 7.36
+          "rarity": 7.37
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-syncope-2630",
-      "text": "Echocardiogram is indicated only if EKG is abnormal or history suggests cardiac cause; not routinely for all syncope admissions.",
-      "verbatim": "If they do have an abnormal EKG and they do have concern for cardiac caused by your history, and that's where I go into with the unexplained sleep with that. But if you... If you're doing your history and workup and there is no specific finding that's concerning for cardiac, echo much value.",
-      "type": "practice",
-      "t": 2630.9,
+      "text": "For vasovagal prodrome, teach patients hand grip, leg crossing, and abdominal tensing; acute water ingestion (one glass) can also raise blood pressure.",
+      "verbatim": "they can do hand grip if they feel like coming on to anything that you're gonna reduce that blood flow going to the peripheries. Like, crossing tensing of the abdomen, you can teach those things. It's actually a really interesting study on acute water ingestion. So, like, if people are getting blood, they start to feel the symptoms. One glass of water, it can bump up the blood pressure.",
+      "type": "judgment",
+      "t": 3230.3,
       "match": "exact",
       "episode": "dr-tischler-on-syncope",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-3230",
       "score": {
         "specific": true,
         "actionable": false,
@@ -38648,11 +38623,67 @@
         "grade": "C",
         "fired": {
           "specific": [
-            "test:EKG"
+            "concept:ingestion"
           ],
-          "rarity": 6.69
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Review medications that contribute to orthostatic hypotension: antihypertensives, diuretics, alpha/beta blockers, SSRIs, and antibiotics.",
+      "verbatim": "Really look at your medications. You're gonna look through those. Antihypertensives, diuretics, alpha beta blockers, SSRI, and antibiotics. Those are the most common ones that can contribute to orthostatic hypotension.",
+      "type": "pitfall",
+      "t": 3258.0,
+      "match": "fuzzy",
+      "episode": "dr-tischler-on-syncope",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-3258",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:orthostatic hypotensio"
+          ],
+          "rarity": 7.01
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Compression stockings for orthostatic hypotension must be thigh-high to be effective, but patients often dislike them.",
+      "verbatim": "compression stockings, they have to be thigh high. Nobody's gonna wanna do that.",
+      "type": "judgment",
+      "t": 3267.4,
+      "match": "fuzzy",
+      "episode": "dr-tischler-on-syncope",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-syncope-3267",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:orthostatic hypotensio"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -56790,5 +56821,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "tischler",
+      "name": "Dr. Tischler"
+    }
+  ],
+  "pearls_fingerprint": "290a8219777e5d75"
 }

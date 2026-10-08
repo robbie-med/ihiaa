@@ -10,6 +10,7 @@ date and hyperlink. No recording-date inference is attempted.
 Prints the slugs of episodes that still need processing, one per line, so CI can
 decide whether there is any work to do.
 """
+import html
 import json
 import re
 import sys
@@ -30,6 +31,12 @@ def slugify(title: str) -> str:
     return re.sub(r"-\d{1,2}-\d{1,2}-\d{2,4}$", "", s)[:60] or "episode"
 
 
+def clean_description(raw: str) -> str:
+    s = re.sub(r"<!\[CDATA\[|\]\]>", "", raw)
+    s = re.sub(r"<[^>]+>", " ", html.unescape(s))
+    return re.sub(r"\s+", " ", html.unescape(s)).strip()
+
+
 def parse(xml: str) -> dict:
     out = {}
     for it in re.findall(r"<item>.*?</item>", xml, re.S):
@@ -43,6 +50,7 @@ def parse(xml: str) -> dict:
         d = re.search(r"<itunes:duration>(\d+)</itunes:duration>", it)
         lk = re.search(r"<link>(.*?)</link>", it, re.S)
         pd = re.search(r"<pubDate>(.*?)</pubDate>", it)
+        ds = re.search(r"<description>(.*?)</description>", it, re.S)
         slug = slugify(title)
         base, n = slug, 2
         while slug in out:                       # keep slugs unique
@@ -55,6 +63,9 @@ def parse(xml: str) -> dict:
             "pubDate": pd.group(1).strip() if pd else "",
             "duration_sec": int(d.group(1)) if d else 0,
             "enclosure": e.group(1), "enclosure_bytes": int(e.group(2)),
+            # Often names the speaker when the title does not ("Moral Injury" ->
+            # "Dr. Jim Ritchie presents on moral injury"). Used by speakers.py.
+            "description": clean_description(ds.group(1)) if ds else "",
         }
     return out
 
@@ -68,6 +79,11 @@ def main() -> int:
     by_guid = {v["guid"] for v in old.values()}
     merged = dict(old)
     new = []
+    # Descriptions get edited after publication; keep known episodes' copy fresh.
+    desc = {v["guid"]: v["description"] for v in feed.values()}
+    for v in merged.values():
+        if v["guid"] in desc:
+            v["description"] = desc[v["guid"]]
     for slug, v in feed.items():
         if v["guid"] in by_guid:
             continue

@@ -2,7 +2,7 @@
   "slug": "dr-tischler-on-gout",
   "guid": "hopepartners.podbean.com/1e880c34-dbf9-3938-b21a-ff6897943393",
   "title": "Dr. Tischler on Gout",
-  "speaker": "Tischler",
+  "speaker": "Dr. Tischler",
   "link": "https://hopepartners.podbean.com/e/dr-tischler-on-gout/",
   "pubDate": "Fri, 08 Dec 2023 16:00:32 -0600",
   "duration_sec": 3000,
@@ -58876,16 +58876,109 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-tischler-on-gout-704",
+      "text": "Trauma and surgery are common instigating factors for gout flares due to shifts in extracellular fluid urate concentration.",
+      "verbatim": "Common ones, trauma and surgery. So post trauma, post surgery. One of our vignettes will have that, but it's common.",
+      "type": "red_flag",
+      "t": 588.8,
+      "match": "exact",
+      "episode": "dr-tischler-on-gout",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-588",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "A history of a recent large fatty meal or dehydration can precipitate a gout flare within 24, 48 hours.",
+      "verbatim": "Starvation, fatty foods, and especially, like, high fatty yield. So somebody after Thanksgiving, maybe a day or two later, all of sudden, it's like, that hurts.",
+      "type": "dx_criteria",
+      "t": 605.9,
+      "match": "exact",
+      "episode": "dr-tischler-on-gout",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "numbers_unheard": [
+        "48"
+      ],
+      "pearl_id": "dr-tischler-on-gout-605",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:48 hours"
+          ],
+          "harm": [
+            "precipitate"
+          ],
+          "rarity": 6.54,
+          "capped": [
+            "number not heard: 48"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Thiazide and loop diuretics are common drug triggers for gout flares; consider holding them during acute episodes.",
+      "verbatim": "Drugs also may cause those uric concentration to change. So thiazide, loop, diuretics are the two most common to know about and to remember.",
+      "type": "pitfall",
+      "t": 627.3,
+      "match": "exact",
+      "episode": "dr-tischler-on-gout",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-627",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:loop diuretics"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.12
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Acute gout flares peak within 12, 24 hours; this rapid onset helps distinguish gout from septic arthritis or cellulitis.",
       "verbatim": "So quick onset. So that's also a little bit unique in gout. So it's within twelve to twenty four hours, it hits its max, which is crazy.",
       "type": "dx_criteria",
       "t": 704.5,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-704",
       "score": {
         "specific": true,
         "actionable": false,
@@ -58901,22 +58994,22 @@
           "harm": [
             "septic"
           ],
-          "rarity": 6.11
+          "rarity": 6.1
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-726",
       "text": "Fifty percent of gout attacks occur between midnight and 8 AM; waking with a painful toe suggests gout.",
       "verbatim": "Night and early morning is actually pretty common. So they said fifty percent of attacks occur during between twelve and 8AM.",
       "type": "dx_criteria",
       "t": 726.6,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-726",
       "score": {
         "specific": false,
         "actionable": false,
@@ -58926,22 +59019,47 @@
         "points": 1,
         "grade": "D",
         "fired": {
-          "rarity": 7.82
+          "rarity": 7.83
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-799",
+      "text": "First gout flare is monoarticular in 80% of cases; recurrent flares can be polyarticular.",
+      "verbatim": "So most often gout, it's a single joint, especially the first flare. Eighty percent of them are one joint. So the first time they have it. The recurrent ones, it's possible it's multiple joints.",
+      "type": "dx_criteria",
+      "t": 760.9,
+      "match": "exact",
+      "episode": "dr-tischler-on-gout",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-760",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.76
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Erythema in gout is typically confined to the joint area, unlike cellulitis where redness spreads more broadly.",
       "verbatim": "So this picture right down here, right, you're gonna get the redness just around that MTP joint compared to cellulitis, some of those other ones where it's gonna be much more broad.",
       "type": "exam_technique",
       "t": 799.1,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-799",
       "score": {
         "specific": true,
         "actionable": false,
@@ -58954,22 +59072,22 @@
           "specific": [
             "concept:cellulitis"
           ],
-          "rarity": 8.42
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-887",
       "text": "Serum urate can be normal during an acute flare in up to 40% of cases; do not rule out gout based on a normal level.",
       "verbatim": "Up to forty percent of gout flares will have normal urine. Your body gets in kind of this proinflammatory state. So the thought is like the uric acid level go down and forms the crystals, and so your levels actually can be normal during forty percent of flare.",
       "type": "pitfall",
       "t": 887.0,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-887",
       "score": {
         "specific": false,
         "actionable": true,
@@ -58982,22 +59100,22 @@
           "actionable": [
             "do not"
           ],
-          "rarity": 5.75
+          "rarity": 5.76
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-966",
       "text": "Arthrocentesis is the gold standard to rule out septic arthritis when the presentation is atypical or infection risk is high.",
       "verbatim": "Hopefully, the arthrocentesis is what you're gonna probably have to do if you can.",
       "type": "practice",
       "t": 966.3,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-966",
       "score": {
         "specific": true,
         "actionable": true,
@@ -59016,134 +59134,22 @@
           "harm": [
             "septic"
           ],
-          "rarity": 6.49
+          "rarity": 6.47
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-627",
-      "text": "Thiazide and loop diuretics are common drug triggers for gout flares; consider holding them during acute episodes.",
-      "verbatim": "Drugs also may cause those uric concentration to change. So thiazide, loop, diuretics are the two most common to know about and to remember.",
-      "type": "pitfall",
-      "t": 627.3,
-      "match": "exact",
-      "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:loop diuretics"
-          ],
-          "actionable": [
-            "consider"
-          ],
-          "rarity": 7.12
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-tischler-on-gout-588",
-      "text": "Trauma and surgery are common instigating factors for gout flares due to shifts in extracellular fluid urate concentration.",
-      "verbatim": "Common ones, trauma and surgery. So post trauma, post surgery. One of our vignettes will have that, but it's common.",
-      "type": "red_flag",
-      "t": 588.8,
-      "match": "exact",
-      "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 8.19
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-tischler-on-gout-605",
-      "text": "A history of a recent large fatty meal or dehydration can precipitate a gout flare within 24, 48 hours.",
-      "verbatim": "Starvation, fatty foods, and especially, like, high fatty yield. So somebody after Thanksgiving, maybe a day or two later, all of sudden, it's like, that hurts.",
-      "type": "dx_criteria",
-      "t": 605.9,
-      "match": "exact",
-      "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:48 hours"
-          ],
-          "harm": [
-            "precipitate"
-          ],
-          "rarity": 6.58
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-tischler-on-gout-760",
-      "text": "First gout flare is monoarticular in 80% of cases; recurrent flares can be polyarticular.",
-      "verbatim": "So most often gout, it's a single joint, especially the first flare. Eighty percent of them are one joint. So the first time they have it. The recurrent ones, it's possible it's multiple joints.",
-      "type": "dx_criteria",
-      "t": 760.9,
-      "match": "exact",
-      "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.75
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-tischler-on-gout-1084",
       "text": "Check serum urate two weeks or more after a flare for accurate baseline; levels during the flare are unreliable.",
       "verbatim": "And then I add that on there two weeks or more after flare. That's when it's the most common time.",
       "type": "practice",
       "t": 1084.4,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-1084",
       "score": {
         "specific": false,
         "actionable": true,
@@ -59156,22 +59162,22 @@
           "actionable": [
             "Check"
           ],
-          "rarity": 6.14
+          "rarity": 6.12
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-1243",
       "text": "You can have both gout and septic arthritis; always wait for Gram stain and culture before ruling out infection.",
       "verbatim": "You can have both. So, also, critical to know.",
       "type": "pitfall",
       "t": 1243.6,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-1243",
       "score": {
         "specific": true,
         "actionable": true,
@@ -59190,22 +59196,84 @@
           "harm": [
             "septic"
           ],
-          "rarity": 7.42
+          "rarity": 7.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-1596",
+      "text": "The acute gout diagnosis rule (MDCalc) uses male sex, prior arthritis flare, onset within one day, chronic rash, and serum uric acid to stratify probability.",
+      "verbatim": "It's called acute gout diagnosis rule. So this takes a history. So you can can look through these, male sex, previous arthritis flare, onset within one day, chronic rash. Everything we talked about in the hypertension risk factors, and then the serum urine level.",
+      "type": "dx_criteria",
+      "t": 1356.0,
+      "match": "exact",
+      "episode": "dr-tischler-on-gout",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-1356",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:acute gout diagnosis r"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "For an intermediate score (4-8) on the acute gout diagnosis rule, you still need to tap the joint to rule out septic arthritis.",
+      "verbatim": "four to eight, intermediate. Greater than eight, you have a high probability that it's gout. So you can do this on everybody with the joints. You're especially gonna wanna do it in the ones that you can't tap. But but if you get the score of four to eight, what do you think you're gonna do about that? Sitting here on the history, you kinda throw this in there, and they get a score of six. I'm glad or not. Tap. Tap. Exactly right.",
+      "type": "judgment",
+      "t": 1389.0,
+      "match": "exact",
+      "episode": "dr-tischler-on-gout",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-1389",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:acute gout diagnosis r"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 6.87
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "For prednisone, use a 10-14 day course with taper; stopping earlier causes rebound flares.",
       "verbatim": "Do not wanna stop before their symptoms are done. It's gonna rebound. So you can't give them a five to seven day course. It's not COPD exacerbation. They'll come back, be pretty mad at you.",
       "type": "pitfall",
       "t": 1596.6,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-1596",
       "score": {
         "specific": true,
         "actionable": true,
@@ -59222,22 +59290,22 @@
           "actionable": [
             "use"
           ],
-          "rarity": 6.14
+          "rarity": 6.15
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-1685",
       "text": "Colchicine is most effective if started within 24 hours of flare onset.",
       "verbatim": "Colchicine, most effective if it's within twenty four hours. So that's kind of important.",
       "type": "dosing",
       "t": 1685.4,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-1685",
       "score": {
         "specific": true,
         "actionable": false,
@@ -59252,20 +59320,20 @@
           ],
           "rarity": 5.9
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-1692",
       "text": "Colchicine dosing: 1.2 mg then 0.6 mg one hour later, then 0.6 mg BID until flare resolves or up to 14 days.",
       "verbatim": "You give them one point two milligrams, and then an hour later, you give point six. I don't know why we decided that, but that's what it is. And then it's point six milligrams twice a day until the flare resolves or up to fourteen days.",
       "type": "dosing",
       "t": 1692.4,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-1692",
       "score": {
         "specific": true,
         "actionable": false,
@@ -59279,22 +59347,22 @@
             "dose:1.2 mg",
             "frequency:BID"
           ],
-          "rarity": 6.46
+          "rarity": 6.5
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-1745",
       "text": "Colchicine is contraindicated in CKD with eGFR less than 30; avoid in advanced CKD.",
       "verbatim": "Less than 30 is said avoid. That may be quite a bit of your patients.",
       "type": "red_flag",
       "t": 1745.7,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-1745",
       "score": {
         "specific": true,
         "actionable": true,
@@ -59316,20 +59384,20 @@
           ],
           "rarity": 7.0
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-1814",
       "text": "NSAIDs are reserved for patients younger than 60 with no kidney disease, no cardiac disease, and no active GI disease or gastritis.",
       "verbatim": "they kinda say reserve the NSAIDs for those if they're younger than 60. They got no kidney disease. They got no cardiac disease, and they have no active GI disease or gastritis.",
       "type": "practice",
       "t": 1814.9,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-1814",
       "score": {
         "specific": true,
         "actionable": false,
@@ -59342,84 +59410,47 @@
           "specific": [
             "concept:gastritis"
           ],
-          "rarity": 7.15
+          "rarity": 7.16
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-1355",
-      "text": "The acute gout diagnosis rule (MDCalc) uses male sex, prior arthritis flare, onset within one day, chronic rash, and serum uric acid to stratify probability.",
-      "verbatim": "It's called acute gout diagnosis rule. So this takes a history. So you can can look through these, male sex, previous arthritis flare, onset within one day, chronic rash. Everything we talked about in the hypertension risk factors, and then the serum urine level.",
-      "type": "dx_criteria",
-      "t": 1356.0,
-      "match": "exact",
+      "text": "Cherry intake was associated with a 30% reduction in flares in retrospective studies, but cherry concentrate supplements did not show benefit.",
+      "verbatim": "It was an interesting one on cherries that had quite a bit. Was, 30% reduction in flares. I don't know how you're gonna, like, tell that to people, but something again to just know it. You can get cherry juice concentrate supplement. Yes. They did... But they did it on concentrate, and it didn't work.",
+      "type": "judgment",
+      "t": 2092.3,
+      "match": "fuzzy",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2092",
       "score": {
-        "specific": true,
+        "specific": false,
         "actionable": false,
         "local": false,
         "harm": false,
         "nonobvious": true,
-        "points": 2,
-        "grade": "C",
+        "points": 1,
+        "grade": "D",
         "fired": {
-          "specific": [
-            "concept:acute gout diagnosis r"
-          ],
-          "rarity": 7.82
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-1389",
-      "text": "For an intermediate score (4-8) on the acute gout diagnosis rule, you still need to tap the joint to rule out septic arthritis.",
-      "verbatim": "four to eight, intermediate. Greater than eight, you have a high probability that it's gout. So you can do this on everybody with the joints. You're especially gonna wanna do it in the ones that you can't tap. But but if you get the score of four to eight, what do you think you're gonna do about that? Sitting here on the history, you kinda throw this in there, and they get a score of six. I'm glad or not. Tap. Tap. Exactly right.",
-      "type": "judgment",
-      "t": 1389.0,
-      "match": "exact",
-      "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 4,
-        "grade": "A",
-        "fired": {
-          "specific": [
-            "concept:acute gout diagnosis r"
-          ],
-          "actionable": [
-            "rule out"
-          ],
-          "harm": [
-            "septic"
-          ],
-          "rarity": 6.88
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-tischler-on-gout-2218",
       "text": "If a patient on a thiazide or loop diuretic develops gout, consider switching to losartan, which lowers uric acid.",
       "verbatim": "If they have gout and they're already been on, like, an HCTZ, just for blood pressure change, Switch him over to an ACE or an ARB, preferably losartan. Losartan has been proven actually to lower your rate.",
       "type": "practice",
       "t": 2219.0,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2219",
       "score": {
         "specific": true,
         "actionable": true,
@@ -59437,45 +59468,20 @@
           ],
           "rarity": 7.5
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-2092",
-      "text": "Cherry intake was associated with a 30% reduction in flares in retrospective studies, but cherry concentrate supplements did not show benefit.",
-      "verbatim": "It was an interesting one on cherries that had quite a bit. Was, 30% reduction in flares. I don't know how you're gonna, like, tell that to people, but something again to just know it. You can get cherry juice concentrate supplement. Yes. They did... But they did it on concentrate, and it didn't work.",
-      "type": "judgment",
-      "t": 2092.3,
-      "match": "fuzzy",
-      "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 8.19
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-tischler-on-gout-2368",
-      "text": "Start urate-lowering therapy at least two weeks after the flare has subsided.",
-      "verbatim": "When you start it, at least two weeks after the flare subsided is the recommendation.",
+      "text": "Consider urate-lowering therapy after the first flare if CKD stage 3+, uric acid >9 mg/dL, or history of urolithiasis.",
+      "verbatim": "you can consider therapy after the very first flare if any of these things. So they got CKD three or greater, uric acid above nine, or urolithiasis.",
       "type": "practice",
-      "t": 2368.5,
+      "t": 2346.3,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2346",
       "score": {
         "specific": true,
         "actionable": true,
@@ -59486,27 +59492,90 @@
         "grade": "B",
         "fired": {
           "specific": [
-            "concept:urate-lowering therapy"
+            "dose:9 mg",
+            "threshold:>9"
+          ],
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 6.99
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Start urate-lowering therapy at least two weeks after the flare has subsided.",
+      "verbatim": "When you start it, at least two weeks after the flare subsided is the recommendation.",
+      "type": "practice",
+      "t": 2368.5,
+      "match": "exact",
+      "episode": "dr-tischler-on-gout",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2368",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:therapy"
           ],
           "actionable": [
             "Start"
           ],
           "rarity": 6.89
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-2456",
+      "text": "Obtain a baseline urate level before starting therapy to guide dose adjustment.",
+      "verbatim": "you're gonna wanna get a baseline urate (correct) level because your whole goal in the treatment is knowing that you're lowering it enough.",
+      "type": "practice",
+      "t": 2378.0,
+      "match": "fuzzy",
+      "episode": "dr-tischler-on-gout",
+      "speaker": "Dr. Tischler",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2378",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:therapy"
+          ],
+          "actionable": [
+            "Obtain"
+          ],
+          "rarity": 5.88
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Target urate level is less than 6 mg/dL, or less than 5 mg/dL if tophi present.",
       "verbatim": "the target level that you wanna lower to them is less than six, and then a tophi is gonna be less than five.",
       "type": "practice",
       "t": 2456.0,
       "match": "fuzzy",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2456",
       "score": {
         "specific": true,
         "actionable": false,
@@ -59520,22 +59589,22 @@
             "dose:6 mg",
             "threshold:less than 6"
           ],
-          "rarity": 6.43
+          "rarity": 6.44
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-2502",
       "text": "Start allopurinol at 100 mg daily and increase by 100 mg every 2-4 weeks until target urate is reached.",
       "verbatim": "allopurinol, it's first line. Start them at a hundred daily, and then that's the... You can increase them by a hundred every two to four weeks until that goal is reached.",
       "type": "dosing",
       "t": 2502.6,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2502",
       "score": {
         "specific": true,
         "actionable": true,
@@ -59552,22 +59621,22 @@
           "actionable": [
             "Start"
           ],
-          "rarity": 6.37
+          "rarity": 6.38
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-2520",
       "text": "In CKD, start allopurinol at a lower dose and titrate slowly.",
       "verbatim": "the trick is if they have CKD, you do have to adjust the dose. So make sure on the kidney function that you may have to start at it lower and you go slower.",
       "type": "dosing",
       "t": 2520.9,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2520",
       "score": {
         "specific": true,
         "actionable": true,
@@ -59583,22 +59652,25 @@
           "actionable": [
             "start"
           ],
-          "rarity": 5.87
+          "rarity": 5.88
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-2530",
       "text": "Test for HLA-B*5801 in Han Chinese, Koreans, African Americans, and patients with CKD due to risk of severe cutaneous reaction.",
       "verbatim": "there's a risk for people to have the genetic HLA-B*5801. It's com... More common in Han Chinese. Patients have kidney disease, Korean descent, and some African Americans as well.",
       "type": "red_flag",
       "t": 2530.8,
       "match": "fuzzy",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "numbers_unheard": [
+        "5801"
+      ],
+      "pearl_id": "dr-tischler-on-gout-2530",
       "score": {
         "specific": true,
         "actionable": true,
@@ -59606,7 +59678,7 @@
         "harm": false,
         "nonobvious": true,
         "points": 3,
-        "grade": "B",
+        "grade": "C",
         "fired": {
           "specific": [
             "concept:african american"
@@ -59614,22 +59686,25 @@
           "actionable": [
             "Test for"
           ],
-          "rarity": 8.65
+          "rarity": 8.66,
+          "capped": [
+            "number not heard: 5801"
+          ]
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-2574",
       "text": "If a skin reaction occurs with allopurinol, stop immediately and switch to an alternative.",
       "verbatim": "If they get a skin reaction, just stop right away or say, hey. Let's just move you on to one of those other medicines.",
       "type": "pitfall",
       "t": 2574.6,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2574",
       "score": {
         "specific": true,
         "actionable": true,
@@ -59650,20 +59725,20 @@
           ],
           "rarity": 6.11
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-2644",
       "text": "Start prophylaxis (colchicine or NSAID) when initiating or adjusting urate-lowering therapy to prevent flares.",
       "verbatim": "you have to start prophylaxis with that anytime you're starting or adjusting the therapy.",
       "type": "practice",
       "t": 2644.4,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2644",
       "score": {
         "specific": true,
         "actionable": true,
@@ -59674,27 +59749,27 @@
         "grade": "B",
         "fired": {
           "specific": [
-            "concept:urate-lowering therapy"
+            "concept:prophylaxis"
           ],
           "actionable": [
             "Start"
           ],
-          "rarity": 6.73
+          "rarity": 6.74
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-2666",
       "text": "Continue prophylaxis for 3 months after achieving urate goal, or 6 months if tophi resolution.",
       "verbatim": "Once they get their urate (correct) level achieved, it's three months after that. Or if they got to a five, you wanna do it at least six months.",
       "type": "dosing",
       "t": 2666.5,
       "match": "fuzzy",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2666",
       "score": {
         "specific": true,
         "actionable": false,
@@ -59709,20 +59784,20 @@
           ],
           "rarity": 7.06
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-2704",
       "text": "Febuxostat is an alternative to allopurinol but contraindicated in patients with heart disease due to increased mortality risk.",
       "verbatim": "febuxostat. So if you can't take allopurinol, you can do this. If you have heart disease, you can't take it. Increased risk of mortality.",
       "type": "red_flag",
       "t": 2704.7,
       "match": "fuzzy",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2704",
       "score": {
         "specific": true,
         "actionable": false,
@@ -59740,20 +59815,20 @@
           ],
           "rarity": 6.32
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-2728",
       "text": "Probenecid is third-line; it increases uric acid excretion but carries a high risk of kidney stones.",
       "verbatim": "probenecid, third line, is good to know. If they can't take either of those, it basically increases your uric acid urine production. ... But as you can imagine, you get high risk of getting kidney stones, so which is kind of a bummer.",
       "type": "pitfall",
       "t": 2728.1,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2728",
       "score": {
         "specific": true,
         "actionable": false,
@@ -59768,20 +59843,20 @@
           ],
           "rarity": 8.06
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-2918",
       "text": "For confirmed CPPD, work up for hyperparathyroidism and hemochromatosis.",
       "verbatim": "If you diagnose this, so you get the arthrocentesis that comes back saying, you got CPPD. It'll be good to just check these things just to rule out that they don't have something, particularly parathyroidism, hyperparathyroidism, and hemochromatosis can cause it or increase your risk for it.",
       "type": "dx_criteria",
       "t": 2918.1,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2918",
       "score": {
         "specific": true,
         "actionable": false,
@@ -59794,22 +59869,22 @@
           "specific": [
             "concept:hemochromatosis"
           ],
-          "rarity": 8.42
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-tischler-on-gout-2948",
       "text": "For pseudogout with ≥3 attacks per year, consider chronic prophylaxis with colchicine or NSAIDs.",
       "verbatim": "If they get three or more attacks for a year, it's really difficult. You may consider putting them chronically on colchicine or chronically on NSAIDs.",
       "type": "practice",
       "t": 2948.0,
       "match": "exact",
       "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
+      "speaker": "Dr. Tischler",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-tischler-on-gout-2948",
       "score": {
         "specific": true,
         "actionable": true,
@@ -59825,72 +59900,9 @@
           "actionable": [
             "consider"
           ],
-          "rarity": 6.42
+          "rarity": 6.4
         },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-tischler-on-gout-2377",
-      "text": "Obtain a baseline urate level before starting therapy to guide dose adjustment.",
-      "verbatim": "you're gonna wanna get a baseline urate (correct) level because your whole goal in the treatment is knowing that you're lowering it enough.",
-      "type": "practice",
-      "t": 2378.0,
-      "match": "fuzzy",
-      "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:therapy"
-          ],
-          "actionable": [
-            "Obtain"
-          ],
-          "rarity": 5.87
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-tischler-on-gout-2346",
-      "text": "Consider urate-lowering therapy after the first flare if CKD stage 3+, uric acid >9 mg/dL, or history of urolithiasis.",
-      "verbatim": "you can consider therapy after the very first flare if any of these things. So they got CKD three or greater, uric acid above nine, or urolithiasis.",
-      "type": "practice",
-      "t": 2346.3,
-      "match": "exact",
-      "episode": "dr-tischler-on-gout",
-      "speaker": "Tischler",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:9 mg",
-            "threshold:>9"
-          ],
-          "actionable": [
-            "Consider"
-          ],
-          "rarity": 6.98
-        },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -89424,5 +89436,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "tischler",
+      "name": "Dr. Tischler"
+    }
+  ],
+  "pearls_fingerprint": "e6bfaa6932f1e41b"
 }

@@ -35,6 +35,9 @@ scripts/
   cluster_pearls.py  pearl similarity clustering + conflict judging
   translate.py       tier-1 translation (off by default)
   build_site.py      emit the static site
+  speakers.py        one identity per speaker (+ data/speaker_overrides.json)
+  find_duplicates.py fold re-uploaded recordings into the original
+  refine_pearls.py   anchor, number-check and attribute raw pearls (free)
   rebuild.sh         every derived artifact in order (free, no keys)
   check_site.py      sanity-check site/ before publishing
 data/
@@ -84,6 +87,36 @@ the Actions tab.
 
 An episode whose source can never be transcribed (e.g. a silent audio track) is
 marked `"status": "unavailable"` in its JSON and is skipped from then on.
+
+## Speakers
+
+`scripts/speakers.py` gives each person one identity, from the episode title, the
+feed description (which often names the speaker when the title does not) and the
+speaker's own introduction in the transcript. It merges middle initials, one-letter
+spellings and bare surnames that match exactly one full name, but never merges a
+common surname (Lee, Jones, Miller...) on the surname alone. Every merge and its
+reason is written to the generated `data/speakers.json`.
+
+To correct a name, edit **`data/speaker_overrides.json`** (nicknames, judgement
+calls, per-lecture overrides) and run `./scripts/rebuild.sh`.
+
+## Pearls and contradictions
+
+- `pipeline.py` asks the model for pearls citing a transcript segment, the exact
+  quote, and who the advice applies to; the raw answer is stored as `pearls_raw`.
+- `refine_pearls.py` (free, deterministic) anchors each quote to the audio, drops
+  any it cannot find, flags numbers that were **not spoken** near that moment
+  (`numbers_unheard`, capped at grade C), and marks pearls spoken by someone other
+  than the presenter (`by_presenter: false`).
+- `find_duplicates.py` folds re-uploads of the same recording into one lecture.
+- `cluster_pearls.py` compares pearls across lectures: candidate pairs from
+  nearest neighbours in other lectures, a cheap first-pass judge, then a stronger
+  model that tries to refute every claimed contradiction. Results are cached by
+  pearl text, so each run only pays for new pairs.
+
+Maintenance runs from the Actions tab, *Ingest new lectures* → Run workflow:
+`refresh` rebuilds everything and runs contradiction detection (cents);
+`reenrich` = `all` re-extracts pearls with the current prompt (about $1).
 
 ## Design principles
 

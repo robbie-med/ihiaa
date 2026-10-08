@@ -2,7 +2,7 @@
   "slug": "dr-bhakta-on-rapids-icu-criteria",
   "guid": "hopepartners.podbean.com/dbb558f3-6f44-3dd4-9199-af9ca03994f0",
   "title": "Dr. Bhakta on Rapids, ICU Criteria 8/27/26",
-  "speaker": "Bhakta",
+  "speaker": "Dr. Bhakta",
   "link": "https://hopepartners.podbean.com/e/dr-bhakta-on-rapids-icu-criteria-82726/",
   "pubDate": "Mon, 31 Aug 2026 11:21:29 -0500",
   "duration_sec": 1584,
@@ -26290,16 +26290,16 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-293",
       "text": "If the patient looks fine and is on their phone, they probably do not need ICU transfer.",
       "verbatim": "If the patient looks fine and they're on their phone, they don't probably need to come to the ICU.",
       "type": "judgment",
       "t": 293.1,
       "match": "exact",
       "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
+      "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-293",
       "score": {
         "specific": false,
         "actionable": true,
@@ -26312,22 +26312,75 @@
           "actionable": [
             "do not"
           ],
-          "rarity": 7.12
+          "rarity": 7.13
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-719",
+      "text": "Take ownership by making sure the nurses face you, not the attending, for patient issues.",
+      "verbatim": "Make sure the nurses are facing you and not me.",
+      "type": "practice",
+      "t": 433.8,
+      "match": "exact",
+      "episode": "dr-bhakta-on-rapids-icu-criteria",
+      "speaker": "Dr. Bhakta",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-433",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.36
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When oxygen needs escalate to heated high flow, BiPAP, or ventilator, the patient likely needs step-down or ICU.",
+      "verbatim": "When you get to heated high flow, BiPAP and vent, obviously, that that might need a step up to step down unit or ICU.",
+      "type": "judgment",
+      "t": 604.4,
+      "match": "exact",
+      "episode": "dr-bhakta-on-rapids-icu-criteria",
+      "speaker": "Dr. Bhakta",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-604",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bipap"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Albumin for hypotension in ESRD is not helpful if albumin is between 3 and 4; only give albumin if the level is under 3.",
       "verbatim": "patients who have the albumin between three and four doesn't really help. It's it's no more different than giving some fluids. So if you're under three, that's that's when you usually give albumin.",
       "type": "dosing",
       "t": 719.9,
       "match": "exact",
       "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
+      "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-719",
       "score": {
         "specific": true,
         "actionable": true,
@@ -26345,20 +26398,20 @@
           ],
           "rarity": 6.61
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-804",
       "text": "When using midodrine for hypotension, give it and see; if it works, it works, if not, stop.",
       "verbatim": "You can give it and just see. Usually, if if it works, it'll work. And if it doesn't, then I'll stop.",
       "type": "practice",
       "t": 804.1,
       "match": "exact",
       "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
+      "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-804",
       "score": {
         "specific": true,
         "actionable": true,
@@ -26374,22 +26427,50 @@
           "actionable": [
             "give"
           ],
-          "rarity": 6.45
+          "rarity": 6.46
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1051",
+      "text": "Tele-nurses are trained to call any wide-complex tachycardia V-tach; you must be the one to decide if it truly is V-tach.",
+      "verbatim": "The tele-nurses are there. They're trained to call any wide complex tachycardia VTAC. That's that's what they're taught to do. The nurses are trained to call you. You are trained to make a decision if that's V tach or not.",
+      "type": "practice",
+      "t": 840.1,
+      "match": "fuzzy",
+      "episode": "dr-bhakta-on-rapids-icu-criteria",
+      "speaker": "Dr. Bhakta",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-840",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tachycardia"
+          ],
+          "rarity": 8.43
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "For an unstable patient who is passing out or slumped, give electricity (cardioversion) regardless of rhythm.",
       "verbatim": "Unstable patient, doesn't matter what they're here for. Give them electricity.",
       "type": "judgment",
       "t": 1051.4,
       "match": "exact",
       "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
+      "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1051",
       "score": {
         "specific": true,
         "actionable": true,
@@ -26405,50 +26486,22 @@
           "actionable": [
             "give"
           ],
-          "rarity": 7.92
+          "rarity": 7.93
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-840",
-      "text": "Tele-nurses are trained to call any wide-complex tachycardia V-tach; you must be the one to decide if it truly is V-tach.",
-      "verbatim": "The tele-nurses are there. They're trained to call any wide complex tachycardia VTAC. That's that's what they're taught to do. The nurses are trained to call you. You are trained to make a decision if that's V tach or not.",
-      "type": "practice",
-      "t": 840.1,
-      "match": "fuzzy",
-      "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:tachycardia"
-          ],
-          "rarity": 8.42
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1079",
       "text": "For stable AFib with RVR, give beta blockers; if you call EP they will say the same thing and see the patient in the morning.",
       "verbatim": "If you call EP, they'll say the same thing I will. Are they fine? Give them beta blockers. I'll see them in the morning.",
       "type": "practice",
       "t": 1079.4,
       "match": "exact",
       "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
+      "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1079",
       "score": {
         "specific": true,
         "actionable": true,
@@ -26466,20 +26519,20 @@
           ],
           "rarity": 6.69
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1277",
       "text": "Address code status on every admission and daily rounds to ensure the patient's wishes are followed.",
       "verbatim": "Addressing it every time they're hospitalized and even every day on your rounds when you're in the hospital is is pretty important just to make sure that we're doing what the patient wants us to do.",
       "type": "practice",
       "t": 1277.4,
       "match": "fuzzy",
       "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
+      "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1277",
       "score": {
         "specific": true,
         "actionable": true,
@@ -26495,22 +26548,22 @@
           "actionable": [
             "ensure"
           ],
-          "rarity": 7.1
+          "rarity": 7.11
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1293",
       "text": "DNR and DNI are separate orders; a patient may not want chest compressions but might accept a trial of ventilator support.",
       "verbatim": "DNR and DNI, those are two separate orders. So some people, you know, don't want resuscitation, but at least would want a chance to be on the ventilator for a couple of days.",
       "type": "practice",
       "t": 1293.2,
       "match": "exact",
       "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
+      "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1293",
       "score": {
         "specific": false,
         "actionable": false,
@@ -26520,22 +26573,22 @@
         "points": 1,
         "grade": "D",
         "fired": {
-          "rarity": 7.42
+          "rarity": 7.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1321",
       "text": "Communicate prognosis and goals of care directly at a fifth-grade education level to avoid confusion.",
       "verbatim": "Be very, very direct. Fifth grade education direct.",
       "type": "practice",
       "t": 1321.8,
       "match": "fuzzy",
       "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
+      "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1321",
       "score": {
         "specific": true,
         "actionable": true,
@@ -26551,100 +26604,22 @@
           "actionable": [
             "avoid"
           ],
-          "rarity": 7.27
+          "rarity": 7.28
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-433",
-      "text": "Take ownership by making sure the nurses face you, not the attending, for patient issues.",
-      "verbatim": "Make sure the nurses are facing you and not me.",
+      "text": "Always have the difficult prognostic conversation to prevent patients from harboring false hope about curative treatment.",
+      "verbatim": "But if you don't have that conversation, then they're going to think there's treatment for it or I'm gonna get better for it.",
       "type": "practice",
-      "t": 433.8,
+      "t": 1390.1,
       "match": "exact",
       "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
+      "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.35
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-604",
-      "text": "When oxygen needs escalate to heated high flow, BiPAP, or ventilator, the patient likely needs step-down or ICU.",
-      "verbatim": "When you get to heated high flow, BiPAP and vent, obviously, that that might need a step up to step down unit or ICU.",
-      "type": "judgment",
-      "t": 604.4,
-      "match": "exact",
-      "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:bipap"
-          ],
-          "rarity": 7.82
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1538",
-      "text": "When a nurse calls about a patient, go see the patient yourself rather than relying only on the phone report.",
-      "verbatim": "The best thing to do when you get a call from a nurse is to just look at the patient and all the stuff.",
-      "type": "practice",
-      "t": 1538.4,
-      "match": "exact",
-      "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 6.86
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1555",
-      "text": "A second call from the nurse about the same patient requires you to evaluate them in person.",
-      "verbatim": "If you call again, probably should go see the patient.",
-      "type": "red_flag",
-      "t": 1555.7,
-      "match": "exact",
-      "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1390",
       "score": {
         "specific": false,
         "actionable": true,
@@ -26655,49 +26630,24 @@
         "grade": "C",
         "fired": {
           "actionable": [
-            "evaluate"
+            "Always"
           ],
-          "rarity": 5.67
+          "rarity": 7.66
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1525",
-      "text": "Unstable patients or those who appear sick should be sent to the ICU.",
-      "verbatim": "All the unstable patients, all patients who look kinda sick probably should go to the ICU.",
-      "type": "practice",
-      "t": 1525.1,
-      "match": "exact",
-      "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 6.12
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1408",
       "text": "Use specific mortality rates (e.g., 97%) when delivering a dismal prognosis to make the severity clear.",
       "verbatim": "He had bleeds all the time with a mortality rate of ninety seven percent. I'd say this is an unsurvivable injury",
       "type": "judgment",
       "t": 1408.2,
       "match": "exact",
       "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
+      "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1408",
       "score": {
         "specific": true,
         "actionable": true,
@@ -26713,50 +26663,22 @@
           "actionable": [
             "Use"
           ],
-          "rarity": 7.31
+          "rarity": 7.32
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1390",
-      "text": "Always have the difficult prognostic conversation to prevent patients from harboring false hope about curative treatment.",
-      "verbatim": "But if you don't have that conversation, then they're going to think there's treatment for it or I'm gonna get better for it.",
-      "type": "practice",
-      "t": 1390.1,
-      "match": "exact",
-      "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Always"
-          ],
-          "rarity": 7.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1454",
       "text": "Reframe clinical success as ensuring the patient is comfortable, not merely keeping the heart beating.",
       "verbatim": "My goal is to make sure the patient isn't suffering.",
       "type": "practice",
       "t": 1454.5,
       "match": "exact",
       "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
+      "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1454",
       "score": {
         "specific": false,
         "actionable": false,
@@ -26766,22 +26688,22 @@
         "points": 1,
         "grade": "D",
         "fired": {
-          "rarity": 7.82
+          "rarity": 7.83
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1456",
       "text": "If the only goal is to keep every patient alive, you will have a zero percent success rate; focus on comfort and goals of care instead.",
       "verbatim": "If I try to keep every patient alive, I'm gonna have a zero percent success rate.",
       "type": "judgment",
       "t": 1456.7,
       "match": "exact",
       "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
+      "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1456",
       "score": {
         "specific": true,
         "actionable": false,
@@ -26796,20 +26718,20 @@
           ],
           "rarity": 6.91
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1471",
       "text": "Even if a patient passes away from a devastating injury, consider it a win if they were comfortable in their final moments.",
       "verbatim": "And even if they pass, they're comfortable in their last moments, then that's a win for me.",
       "type": "judgment",
       "t": 1471.5,
       "match": "exact",
       "episode": "dr-bhakta-on-rapids-icu-criteria",
-      "speaker": "Bhakta",
+      "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1471",
       "score": {
         "specific": false,
         "actionable": true,
@@ -26824,7 +26746,85 @@
           ],
           "rarity": 8.06
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Unstable patients or those who appear sick should be sent to the ICU.",
+      "verbatim": "All the unstable patients, all patients who look kinda sick probably should go to the ICU.",
+      "type": "practice",
+      "t": 1525.1,
+      "match": "exact",
+      "episode": "dr-bhakta-on-rapids-icu-criteria",
+      "speaker": "Dr. Bhakta",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1525",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.12
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When a nurse calls about a patient, go see the patient yourself rather than relying only on the phone report.",
+      "verbatim": "The best thing to do when you get a call from a nurse is to just look at the patient and all the stuff.",
+      "type": "practice",
+      "t": 1538.4,
+      "match": "exact",
+      "episode": "dr-bhakta-on-rapids-icu-criteria",
+      "speaker": "Dr. Bhakta",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1538",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.87
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "A second call from the nurse about the same patient requires you to evaluate them in person.",
+      "verbatim": "If you call again, probably should go see the patient.",
+      "type": "red_flag",
+      "t": 1555.7,
+      "match": "exact",
+      "episode": "dr-bhakta-on-rapids-icu-criteria",
+      "speaker": "Dr. Bhakta",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1555",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "evaluate"
+          ],
+          "rarity": 5.68
+        },
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -39264,5 +39264,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "bhakta",
+      "name": "Dr. Bhakta"
+    }
+  ],
+  "pearls_fingerprint": "587e763681b1862d"
 }

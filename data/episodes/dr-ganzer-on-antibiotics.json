@@ -2,7 +2,7 @@
   "slug": "dr-ganzer-on-antibiotics",
   "guid": "hopepartners.podbean.com/7a46836d-0713-3715-b703-2c1528e66827",
   "title": "Dr. Ganzer on Antibiotics",
-  "speaker": "Ganzer",
+  "speaker": "Dr. Ganzer",
   "link": "https://hopepartners.podbean.com/e/dr-ganzer-on-antibiotics/",
   "pubDate": "Wed, 27 Dec 2023 15:16:33 -0600",
   "duration_sec": 2545,
@@ -34411,16 +34411,274 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-ganzer-on-antibiotics-1740",
+      "text": "Oral vancomycin has no systemic absorption; use it only for C. difficile colitis, not for skin or soft tissue infections.",
+      "verbatim": "oral vancomycin. Would I use that for a skin infection? No. No GI absorption of oral vancomycin",
+      "type": "pitfall",
+      "t": 288.8,
+      "match": "exact",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-288",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:vancomycin"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Nitrofurantoin (Macrobid) should not be used for pyelonephritis because it does not achieve adequate renal parenchymal concentration; it is only effective for cystitis.",
+      "verbatim": "I'm not gonna use Macrobid for hyalinephritis because it doesn't have enough renal concentration in the kidneys to really kill or treat a hyalinephritis",
+      "type": "pitfall",
+      "t": 313.5,
+      "match": "exact",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-313",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nitrofurantoin"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Lab panels are alphabetical, not arranged by spectrum or generation; clinicians must mentally reorder by class to avoid confusion.",
+      "verbatim": "lab does not set you up for success here, but you being the smarter clinician know that they just did this because it's alphabetical",
+      "type": "pitfall",
+      "t": 617.9,
+      "match": "exact",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-617",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Susceptibility reports list antibiotic classes, not individual drugs; susceptibility to one drug in a class implies susceptibility to others in that class.",
+      "verbatim": "recalibrate your your antibiotic susceptibility glasses, not to look at specific drugs, but classes of drugs",
+      "type": "exam_technique",
+      "t": 683.8,
+      "match": "exact",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-683",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Susceptibility to cefazolin (a first-generation cephalosporin) means you can use oral cephalexin (Keflex) because they are in the same class.",
+      "verbatim": "if it's susceptible to cefazolin... Well, cefazolin's an IV drug. If I wanna use a PO first generation cephalosporin, like Keflex? Would I use that? Yeah. Even though they didn't test Keflex, is in the same class. I can use it.",
+      "type": "practice",
+      "t": 722.5,
+      "match": "exact",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-722",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cephalexin"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Enterobacter cloacae is typically resistant to penicillins and first- through third-generation cephalosporins; cefepime or a carbapenem is often needed.",
+      "verbatim": "Enterobacter are sometimes those weird bugs that don't have a straight across the board sort of susceptibility pattern, it's kind of splotchy",
+      "type": "red_flag",
+      "t": 1064.6,
+      "match": "exact",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-1064",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:enterobacter cloacae"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When a culture shows an unexpected organism like Enterobacter, consult a reference (e.g., Sanford Guide) before susceptibilities return to avoid continuing a wrong empiric antibiotic.",
+      "verbatim": "I use the sandbird guide, and it's got this beautiful tape",
+      "type": "judgment",
+      "t": 1085.1,
+      "match": "exact",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-1085",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "consult"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "The lab only tests antibiotics known to have activity against the isolated organism; if a drug is not listed, it is almost certainly ineffective.",
+      "verbatim": "the lab only bothered testing antibiotics that can be susceptible to the moment",
+      "type": "exam_technique",
+      "t": 1343.0,
+      "match": "exact",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-1343",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "rarity": 7.59
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Pseudomonas has a limited set of effective antibiotics: ceftazidime, cefepime, ciprofloxacin, levofloxacin, piperacillin-tazobactam, and meropenem; memorize these for empiric coverage when risk factors exist.",
+      "verbatim": "pseudomonas. That's one of those that you should have, like, a group of antibiotics memorized as far as what can I use?",
+      "type": "practice",
+      "t": 1386.8,
+      "match": "exact",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-1386",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:ciprofloxacin"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Enterococcus faecalis is universally resistant to cephalosporins; never use a cephalosporin for enterococcal infections even if the susceptibility report appears to show susceptibility.",
       "verbatim": "enterococcus does not have any susceptibility to cephalosporins across the board",
       "type": "pitfall",
       "t": 1740.7,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
+      "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-1740",
       "score": {
         "specific": true,
         "actionable": true,
@@ -34438,278 +34696,20 @@
           ],
           "rarity": 8.29
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-ganzer-on-antibiotics-313",
-      "text": "Nitrofurantoin (Macrobid) should not be used for pyelonephritis because it does not achieve adequate renal parenchymal concentration; it is only effective for cystitis.",
-      "verbatim": "I'm not gonna use Macrobid for hyalinephritis because it doesn't have enough renal concentration in the kidneys to really kill or treat a hyalinephritis",
-      "type": "pitfall",
-      "t": 313.5,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:nitrofurantoin"
-          ],
-          "rarity": 7.96
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ganzer-on-antibiotics-288",
-      "text": "Oral vancomycin has no systemic absorption; use it only for C. difficile colitis, not for skin or soft tissue infections.",
-      "verbatim": "oral vancomycin. Would I use that for a skin infection? No. No GI absorption of oral vancomycin",
-      "type": "pitfall",
-      "t": 288.8,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "drug:vancomycin"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ganzer-on-antibiotics-722",
-      "text": "Susceptibility to cefazolin (a first-generation cephalosporin) means you can use oral cephalexin (Keflex) because they are in the same class.",
-      "verbatim": "if it's susceptible to cefazolin... Well, cefazolin's an IV drug. If I wanna use a PO first generation cephalosporin, like Keflex? Would I use that? Yeah. Even though they didn't test Keflex, is in the same class. I can use it.",
-      "type": "practice",
-      "t": 722.5,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:cephalexin"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 8.19
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ganzer-on-antibiotics-1064",
-      "text": "Enterobacter cloacae is typically resistant to penicillins and first- through third-generation cephalosporins; cefepime or a carbapenem is often needed.",
-      "verbatim": "Enterobacter are sometimes those weird bugs that don't have a straight across the board sort of susceptibility pattern, it's kind of splotchy",
-      "type": "red_flag",
-      "t": 1064.6,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:enterobacter cloacae"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ganzer-on-antibiotics-1386",
-      "text": "Pseudomonas has a limited set of effective antibiotics: ceftazidime, cefepime, ciprofloxacin, levofloxacin, piperacillin-tazobactam, and meropenem; memorize these for empiric coverage when risk factors exist.",
-      "verbatim": "pseudomonas. That's one of those that you should have, like, a group of antibiotics memorized as far as what can I use?",
-      "type": "practice",
-      "t": 1386.8,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "drug:ciprofloxacin"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ganzer-on-antibiotics-1342",
-      "text": "The lab only tests antibiotics known to have activity against the isolated organism; if a drug is not listed, it is almost certainly ineffective.",
-      "verbatim": "the lab only bothered testing antibiotics that can be susceptible to the moment",
-      "type": "exam_technique",
-      "t": 1343.0,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:antibiotics"
-          ],
-          "rarity": 7.58
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ganzer-on-antibiotics-1085",
-      "text": "When a culture shows an unexpected organism like Enterobacter, consult a reference (e.g., Sanford Guide) before susceptibilities return to avoid continuing a wrong empiric antibiotic.",
-      "verbatim": "I use the sandbird guide, and it's got this beautiful tape",
-      "type": "judgment",
-      "t": 1085.1,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:culture"
-          ],
-          "actionable": [
-            "consult"
-          ],
-          "rarity": 8.19
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ganzer-on-antibiotics-683",
-      "text": "Susceptibility reports list antibiotic classes, not individual drugs; susceptibility to one drug in a class implies susceptibility to others in that class.",
-      "verbatim": "recalibrate your your antibiotic susceptibility glasses, not to look at specific drugs, but classes of drugs",
-      "type": "exam_technique",
-      "t": 683.8,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 6.99
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ganzer-on-antibiotics-617",
-      "text": "Lab panels are alphabetical, not arranged by spectrum or generation; clinicians must mentally reorder by class to avoid confusion.",
-      "verbatim": "lab does not set you up for success here, but you being the smarter clinician know that they just did this because it's alphabetical",
-      "type": "pitfall",
-      "t": 617.9,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "avoid"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ganzer-on-antibiotics-1835",
       "text": "For enterococcus, switch from cephalosporin to amoxicillin, ampicillin, or vancomycin immediately because the cephalosporin is ineffective.",
       "verbatim": "the patient is at least on amoxicillin or ampicillin or vancomycin and not leave them on that cephalosporin because you know right off the bat that the cephalosporin is doing nothing.",
       "type": "pitfall",
       "t": 1835.8,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
+      "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-1835",
       "score": {
         "specific": true,
         "actionable": true,
@@ -34728,22 +34728,22 @@
           "harm": [
             "immediately"
           ],
-          "rarity": 7.69
+          "rarity": 7.6
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-ganzer-on-antibiotics-1951",
       "text": "Automatically consult ID for endocarditis and osteomyelitis as they require prolonged antibiotic courses and specialist management.",
       "verbatim": "infectious endocarditis, osteomyelitis, those are definitely two clinical scenarios where we're almost always, I would say, always consulting infectious disease",
       "type": "red_flag",
       "t": 1951.3,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
+      "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-1951",
       "score": {
         "specific": true,
         "actionable": true,
@@ -34759,22 +34759,50 @@
           "actionable": [
             "consult"
           ],
-          "rarity": 7.19
+          "rarity": 7.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-ganzer-on-antibiotics-2049",
+      "text": "Use Sanford or Hopkins guides as primary antibiotic resources instead of UpToDate for more actionable microbiology recommendations.",
+      "verbatim": "I use Sanford. I use... There we go. Hopkins. Those two. I bounce between those two and kind of try to merge whichever might seem to give me better information.",
+      "type": "practice",
+      "t": 1990.9,
+      "match": "exact",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-1990",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Staphylococcus aureus bacteremia, empyema, and pneumonia are aggressive infections that mandate automatic ID consultation.",
       "verbatim": "if you have, like, a scaph aureus bacteremia, that also would be a automatic ID consult, staph empyema, even a staph pneumonia.",
       "type": "red_flag",
       "t": 2049.3,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
+      "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-2049",
       "score": {
         "specific": true,
         "actionable": false,
@@ -34787,22 +34815,23 @@
           "specific": [
             "concept:staphylococcus aureus "
           ],
-          "rarity": 8.42
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-ganzer-on-antibiotics-2230",
       "text": "When an infection fails to respond despite using appropriate antibiotics per susceptibility, verify MIC breakpoints on the EUCAST website because EHR values may be outdated.",
       "verbatim": "going to the source of where our MIC value should be coming from and looking at these updated values was really helpful.",
       "type": "pitfall",
       "t": 2230.5,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
+      "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "dr-ganzer-on-antibiotics-2230",
       "score": {
         "specific": true,
         "actionable": false,
@@ -34817,48 +34846,21 @@
           ],
           "rarity": 8.06
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-ganzer-on-antibiotics-2311",
-      "text": "If MIC values are not updated, you can look up the current breakpoint on EUCAST to determine if the reported susceptibility is accurate.",
-      "verbatim": "Or maybe try to look up the MYC value, the updated value on the EUCAST website, and you'll know if this is accurate or not.",
-      "type": "practice",
-      "t": 2311.1,
-      "match": "fuzzy",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:eucast"
-          ],
-          "rarity": 7.73
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ganzer-on-antibiotics-2266",
       "text": "A rising MIC across serial cultures from the same patient indicates developing resistance; seek ID consult before repeating the same antibiotic.",
       "verbatim": "She came in with a value that said less than less than two. And then her next admission, it was, like, less than four. And her third admission, it said less than eight.",
       "type": "red_flag",
       "t": 2266.7,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
+      "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "dr-ganzer-on-antibiotics-2266",
       "score": {
         "specific": false,
         "actionable": true,
@@ -34871,22 +34873,23 @@
           "actionable": [
             "consult"
           ],
-          "rarity": 7.29
+          "rarity": 7.3
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-ganzer-on-antibiotics-2301",
       "text": "When a patient with recurrent infections keeps returning despite correct antibiotics per the susceptibility report, stop and question whether the MIC data is reliable or if resistance has emerged.",
       "verbatim": "if something's just not going way it should be going, stop and ask yourself. Yep. You know, maybe I should call an IV consult and see what I need to do differently.",
       "type": "judgment",
       "t": 2301.8,
       "match": "fuzzy",
       "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
+      "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "dr-ganzer-on-antibiotics-2301",
       "score": {
         "specific": true,
         "actionable": true,
@@ -34904,20 +34907,49 @@
           ],
           "rarity": 7.5
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-ganzer-on-antibiotics-2519",
+      "text": "If MIC values are not updated, you can look up the current breakpoint on EUCAST to determine if the reported susceptibility is accurate.",
+      "verbatim": "Or maybe try to look up the MYC value, the updated value on the EUCAST website, and you'll know if this is accurate or not.",
+      "type": "practice",
+      "t": 2311.1,
+      "match": "fuzzy",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "dr-ganzer-on-antibiotics-2311",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:eucast"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Susceptibility tables test antibiotic classes, not the specific drug listed; knowing the class spectrum allows you to choose appropriate therapy even from a single reported drug.",
       "verbatim": "you're learning the class, not the specific antibiotic.",
       "type": "concept",
       "t": 2519.8,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
+      "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-ganzer-on-antibiotics-2519",
       "score": {
         "specific": true,
         "actionable": false,
@@ -34930,37 +34962,9 @@
           "specific": [
             "concept:therapy"
           ],
-          "rarity": 7.75
+          "rarity": 7.76
         },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ganzer-on-antibiotics-1990",
-      "text": "Use Sanford or Hopkins guides as primary antibiotic resources instead of UpToDate for more actionable microbiology recommendations.",
-      "verbatim": "I use Sanford. I use... There we go. Hopkins. Those two. I bounce between those two and kind of try to merge whichever might seem to give me better information.",
-      "type": "practice",
-      "t": 1990.9,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -49990,5 +49994,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "ganzer",
+      "name": "Dr. Ganzer"
+    }
+  ],
+  "pearls_fingerprint": "b3579a79c189d80a"
 }

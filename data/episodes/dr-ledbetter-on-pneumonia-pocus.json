@@ -2,7 +2,7 @@
   "slug": "dr-ledbetter-on-pneumonia-pocus",
   "guid": "hopepartners.podbean.com/65a14ef1-85ee-384a-8ee3-8ad0fe578619",
   "title": "Dr. Ledbetter on Pneumonia & POCUS",
-  "speaker": "Ledbetter",
+  "speaker": "Dr. Ledbetter",
   "link": "https://hopepartners.podbean.com/e/dr-ledbetter-on-pneumonia-pocus/",
   "pubDate": "Mon, 12 Aug 2024 15:26:47 -0500",
   "duration_sec": 3426,
@@ -42550,16 +42550,19 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-184",
       "text": "For adult lobar pneumonia, prescribe amoxicillin 1000 mg three times daily using two 500 mg capsules per dose.",
       "verbatim": "They do five hundred capsules or tablets, and you do two, three times a day.",
       "type": "dosing",
       "t": 184.8,
       "match": "exact",
       "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "numbers_unheard": [
+        "1000"
+      ],
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-184",
       "score": {
         "specific": true,
         "actionable": true,
@@ -42567,7 +42570,7 @@
         "harm": false,
         "nonobvious": true,
         "points": 3,
-        "grade": "B",
+        "grade": "C",
         "fired": {
           "specific": [
             "dose:1000 mg",
@@ -42577,22 +42580,25 @@
           "actionable": [
             "prescribe"
           ],
-          "rarity": 7.89
+          "rarity": 7.89,
+          "capped": [
+            "number not heard: 1000"
+          ]
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-233",
       "text": "For atypical pneumonia, use azithromycin with a total of 1500 mg: either 500 mg daily for three days or 500 mg day one then 250 mg days two to five.",
       "verbatim": "Five hundred over three days, or you can do five hundred and then two fifty over four days.",
       "type": "dosing",
       "t": 233.6,
       "match": "exact",
       "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-233",
       "score": {
         "specific": true,
         "actionable": true,
@@ -42610,227 +42616,22 @@
           "actionable": [
             "use"
           ],
-          "rarity": 6.2
+          "rarity": 6.18
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-325",
-      "text": "Outpatient pneumonia treatment should last only three to five days, never more than seven days unless there is a specific reason.",
-      "verbatim": "But outpatient should only need three to five days, no more than seven days.",
-      "type": "practice",
-      "t": 325.9,
-      "match": "exact",
-      "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:pneumonia"
-          ],
-          "actionable": [
-            "never"
-          ],
-          "rarity": 6.04
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-890",
-      "text": "When using the Butterfly ultrasound for lung, use the lung preset for upper zones and the abdominal preset for the bases to avoid artifact.",
-      "verbatim": "you want to be in the lung preset, unless you're looking at the bases here, which include the area just above the diaphragm. In that case, generally, you wanna use the abdominal preset.",
-      "type": "exam_technique",
-      "t": 890.5,
-      "match": "exact",
-      "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:ultrasound"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 7.96
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1203",
-      "text": "Always orient the probe marker toward the patient's head when scanning the lung to obtain the best landmarks.",
-      "verbatim": "when you're scanning lung, you want probe marker to the patient's head because that will give you the best landmarks.",
-      "type": "exam_technique",
-      "t": 1203.1,
-      "match": "exact",
-      "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Always"
-          ],
-          "rarity": 7.42
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1712",
-      "text": "A dynamic air bronchogram, visible fluid moving back and forth within bronchioles, is essentially pathognomonic for pneumonia on ultrasound.",
-      "verbatim": "a dynamic air bronchogram, which is essentially pathognomonic for pneumonia on ultrasound.",
-      "type": "dx_criteria",
-      "t": 1713.0,
-      "match": "exact",
-      "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:ultrasound"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-981",
-      "text": "To detect a pleural effusion, position the patient at least partially upright so gravity pulls the fluid down to the diaphragm.",
-      "verbatim": "If you're looking for something that's gravity dependent, like fluid, pleural effusion, having them at least angled up a bit gonna be helpful to pull that fluid down to the diaphragm rather than if they're completely flat or if they're on their head.",
-      "type": "exam_technique",
-      "t": 981.2,
-      "match": "exact",
-      "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:pleural effusion"
-          ],
-          "rarity": 7.92
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1145",
-      "text": "If no pneumonia is found in the anterior lung zones, always scan the posterior zones (zones 5 and 6) to avoid missing a posterior consolidation.",
-      "verbatim": "if you're thinking pneumonia and you don't find anything anteriorly, you need to look posteriorly.",
-      "type": "judgment",
-      "t": 1145.1,
-      "match": "exact",
-      "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:consolidation"
-          ],
-          "actionable": [
-            "always"
-          ],
-          "rarity": 6.71
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1619",
-      "text": "A thickened, irregular, or 'muddled' pleural line on ultrasound is a common finding in pneumonia and should raise suspicion.",
-      "verbatim": "In pneumonia, frequently, that that line will be thick or just really sort of muddled up. It's not gonna be a nice clear line.",
-      "type": "red_flag",
-      "t": 1619.2,
-      "match": "exact",
-      "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:ultrasound"
-          ],
-          "rarity": 7.46
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-290",
       "text": "If a patient with pneumonia improves quickly, a three-day course of antibiotics may be sufficient; do not routinely extend beyond five days.",
       "verbatim": "if they're getting better really quickly, then three days might be sufficient, but certainly no longer than five days.",
       "type": "judgment",
       "t": 290.6,
       "match": "exact",
       "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-290",
       "score": {
         "specific": true,
         "actionable": true,
@@ -42846,22 +42647,227 @@
           "actionable": [
             "do not"
           ],
-          "rarity": 6.94
+          "rarity": 6.93
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1937",
+      "text": "Outpatient pneumonia treatment should last only three to five days, never more than seven days unless there is a specific reason.",
+      "verbatim": "But outpatient should only need three to five days, no more than seven days.",
+      "type": "practice",
+      "t": 325.9,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-pneumonia-pocus",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-325",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pneumonia"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 6.03
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When using the Butterfly ultrasound for lung, use the lung preset for upper zones and the abdominal preset for the bases to avoid artifact.",
+      "verbatim": "you want to be in the lung preset, unless you're looking at the bases here, which include the area just above the diaphragm. In that case, generally, you wanna use the abdominal preset.",
+      "type": "exam_technique",
+      "t": 890.5,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-pneumonia-pocus",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-890",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "To detect a pleural effusion, position the patient at least partially upright so gravity pulls the fluid down to the diaphragm.",
+      "verbatim": "If you're looking for something that's gravity dependent, like fluid, pleural effusion, having them at least angled up a bit gonna be helpful to pull that fluid down to the diaphragm rather than if they're completely flat or if they're on their head.",
+      "type": "exam_technique",
+      "t": 981.2,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-pneumonia-pocus",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-981",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pleural effusion"
+          ],
+          "rarity": 7.93
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "If no pneumonia is found in the anterior lung zones, always scan the posterior zones (zones 5 and 6) to avoid missing a posterior consolidation.",
+      "verbatim": "if you're thinking pneumonia and you don't find anything anteriorly, you need to look posteriorly.",
+      "type": "judgment",
+      "t": 1145.1,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-pneumonia-pocus",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1145",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:consolidation"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 6.72
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Always orient the probe marker toward the patient's head when scanning the lung to obtain the best landmarks.",
+      "verbatim": "when you're scanning lung, you want probe marker to the patient's head because that will give you the best landmarks.",
+      "type": "exam_technique",
+      "t": 1203.1,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-pneumonia-pocus",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1203",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "A thickened, irregular, or 'muddled' pleural line on ultrasound is a common finding in pneumonia and should raise suspicion.",
+      "verbatim": "In pneumonia, frequently, that that line will be thick or just really sort of muddled up. It's not gonna be a nice clear line.",
+      "type": "red_flag",
+      "t": 1619.2,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-pneumonia-pocus",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1619",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.47
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "A dynamic air bronchogram, visible fluid moving back and forth within bronchioles, is essentially pathognomonic for pneumonia on ultrasound.",
+      "verbatim": "a dynamic air bronchogram, which is essentially pathognomonic for pneumonia on ultrasound.",
+      "type": "dx_criteria",
+      "t": 1713.0,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-pneumonia-pocus",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1713",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Set depth to 12, 15 cm to evaluate B-lines; they will extend to the end of the screen, whereas Z-lines only go a few centimeters deep.",
       "verbatim": "you have to have your depth set to twelve, fifteen centimeters to evaluate if it's a b line or not.",
       "type": "exam_technique",
       "t": 1937.4,
       "match": "fuzzy",
       "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1937",
       "score": {
         "specific": true,
         "actionable": true,
@@ -42877,190 +42883,22 @@
           "actionable": [
             "evaluate"
           ],
-          "rarity": 7.64
+          "rarity": 7.65
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2090",
-      "text": "Three or more B-lines in a single zone is considered pathologic.",
-      "verbatim": "To be considered pathologic, you need three or more B-lines in a single zone.",
-      "type": "dx_criteria",
-      "t": 2090.7,
-      "match": "exact",
-      "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:b-lines"
-          ],
-          "rarity": 6.6
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2020",
-      "text": "Bilateral B-lines in multiple areas can be multifocal pneumonia, but also pulmonary edema, interstitial lung disease, ARDS, or atelectasis.",
-      "verbatim": "Bilateral bee... Bee lines, bee lines in multiple areas could be a multifocal pneumonia, but could be pulmonary edema, could be interstitial lung disease.",
-      "type": "pitfall",
-      "t": 2020.4,
-      "match": "exact",
-      "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:pulmonary edema"
-          ],
-          "rarity": 8.42
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2242",
-      "text": "Dynamic air bronchograms are seen as hyperechoic lines with bubbles moving upward, indicating patent airways within consolidated lung.",
-      "verbatim": "the hyperechoic line, and you see, like, little bubbles of the hyperechoic line floating upwards.",
-      "type": "exam_technique",
-      "t": 2242.5,
-      "match": "exact",
-      "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:dynamic air bronchogra"
-          ],
-          "rarity": 8.42
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2328",
-      "text": "A subpleural consolidation appears as a focal defect in the normally smooth pleural line; that finding is not normal.",
-      "verbatim": "normally, that line should be nice and smooth straight across. No disconnection. Here you see disconnection. That's not normal. That's a subpleural consolidation.",
-      "type": "exam_technique",
-      "t": 2328.9,
-      "match": "exact",
-      "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:subpleural consolidati"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2483",
-      "text": "If you see vertebrae above the diaphragm, it indicates pathology in the pleural space (effusion or consolidation).",
-      "verbatim": "If we are seeing vertebrae back here, we know there's something going on in this space.",
-      "type": "dx_criteria",
-      "t": 2483.1,
-      "match": "exact",
-      "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:consolidation"
-          ],
-          "rarity": 7.41
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3132",
-      "text": "Mirror artifact of the liver above the diaphragm can be mistaken for consolidation; if spine does not extend beyond the diaphragm, it is artifact.",
-      "verbatim": "what you're seeing is a mirror image of the liver on the cephalad side of the diaphragm.",
-      "type": "pitfall",
-      "t": 3132.8,
-      "match": "exact",
-      "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:mirror artifact"
-          ],
-          "rarity": 7.23
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2003",
       "text": "If you see what looks like lung tissue on ultrasound, it is always abnormal, normal lung is full of air and produces only artifact.",
       "verbatim": "If you can see what looks like lung, that's a problem. It's a problem. It's always a problem.",
       "type": "red_flag",
       "t": 2003.8,
       "match": "exact",
       "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2003",
       "score": {
         "specific": true,
         "actionable": true,
@@ -43076,22 +42914,162 @@
           "actionable": [
             "always"
           ],
-          "rarity": 6.27
+          "rarity": 6.28
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2513",
+      "text": "Bilateral B-lines in multiple areas can be multifocal pneumonia, but also pulmonary edema, interstitial lung disease, ARDS, or atelectasis.",
+      "verbatim": "Bilateral bee... Bee lines, bee lines in multiple areas could be a multifocal pneumonia, but could be pulmonary edema, could be interstitial lung disease.",
+      "type": "pitfall",
+      "t": 2021.8,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-pneumonia-pocus",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2021",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pulmonary edema"
+          ],
+          "rarity": 8.43
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Three or more B-lines in a single zone is considered pathologic.",
+      "verbatim": "To be considered pathologic, you need three or more B-lines in a single zone.",
+      "type": "dx_criteria",
+      "t": 2090.7,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-pneumonia-pocus",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2090",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:b-lines"
+          ],
+          "rarity": 6.55
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Dynamic air bronchograms are seen as hyperechoic lines with bubbles moving upward, indicating patent airways within consolidated lung.",
+      "verbatim": "the hyperechoic line, and you see, like, little bubbles of the hyperechoic line floating upwards.",
+      "type": "exam_technique",
+      "t": 2242.5,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-pneumonia-pocus",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2242",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dynamic air bronchogra"
+          ],
+          "rarity": 8.43
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "A subpleural consolidation appears as a focal defect in the normally smooth pleural line; that finding is not normal.",
+      "verbatim": "normally, that line should be nice and smooth straight across. No disconnection. Here you see disconnection. That's not normal. That's a subpleural consolidation.",
+      "type": "exam_technique",
+      "t": 2328.9,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-pneumonia-pocus",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2328",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:subpleural consolidati"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "If you see vertebrae above the diaphragm, it indicates pathology in the pleural space (effusion or consolidation).",
+      "verbatim": "If we are seeing vertebrae back here, we know there's something going on in this space.",
+      "type": "dx_criteria",
+      "t": 2483.1,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-pneumonia-pocus",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2483",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:consolidation"
+          ],
+          "rarity": 7.41
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Ultrasound is better than chest X-ray for assessing complications of a pleural effusion.",
       "verbatim": "Ultrasound is better than chest X-ray for assessing complications of an effusion.",
       "type": "practice",
       "t": 2513.3,
       "match": "exact",
       "episode": "dr-ledbetter-on-pneumonia-pocus",
-      "speaker": "Ledbetter",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2513",
       "score": {
         "specific": true,
         "actionable": false,
@@ -43104,9 +43082,37 @@
           "specific": [
             "test:Ultrasound"
           ],
-          "rarity": 6.23
+          "rarity": 6.24
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Mirror artifact of the liver above the diaphragm can be mistaken for consolidation; if spine does not extend beyond the diaphragm, it is artifact.",
+      "verbatim": "what you're seeing is a mirror image of the liver on the cephalad side of the diaphragm.",
+      "type": "pitfall",
+      "t": 3132.8,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-pneumonia-pocus",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3132",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:mirror artifact"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -61762,5 +61768,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "ledbetter",
+      "name": "Dr. Ledbetter"
+    }
+  ],
+  "pearls_fingerprint": "8d753ec0fe0b68aa"
 }

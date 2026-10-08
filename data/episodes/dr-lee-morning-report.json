@@ -2,7 +2,7 @@
   "slug": "dr-lee-morning-report",
   "guid": "hopepartners.podbean.com/0c6a5c6f-053c-3fc6-8672-6174b7bc6a09",
   "title": "Dr. Lee Morning Report 9/10/26",
-  "speaker": "Unknown",
+  "speaker": "Dr. Lawrence Lee",
   "link": "https://hopepartners.podbean.com/e/dr-lee-morning-report-91026/",
   "pubDate": "Fri, 11 Sep 2026 09:41:22 -0500",
   "duration_sec": 5142,
@@ -63925,16 +63925,125 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-lee-morning-report-833",
+      "text": "When QRS is wide but does not meet criteria for LBBB or RBBB, interpret it as an intraventricular conduction delay (IVCD).",
+      "verbatim": "K. This is an IVCD.",
+      "type": "dx_criteria",
+      "t": 430.2,
+      "match": "exact",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-430",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:intraventricular condu"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "On EKG, check for low voltage criteria by assessing QRS amplitude in limb and precordial leads.",
+      "verbatim": "We're looking for minimal voltage criteria.",
+      "type": "exam_technique",
+      "t": 503.9,
+      "match": "exact",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-503",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Assess T wave inversions primarily in leads I, II, V5, and V6.",
+      "verbatim": "One and two and v five and v six.",
+      "type": "exam_technique",
+      "t": 670.6,
+      "match": "exact",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-670",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "The first question when facing AFib RVR is whether the patient is hemodynamically stable.",
+      "verbatim": "What number one is Are they hemodynamically stable?",
+      "type": "practice",
+      "t": 828.0,
+      "match": "exact",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-828",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "If the patient with AFib RVR is hemodynamically unstable, the immediate action is direct current cardioversion.",
       "verbatim": "If they're hemodynamically unstable, you must do what? In terms of cardiovert. Cardiovert. Direct current cardiovert.",
       "type": "practice",
       "t": 833.1,
       "match": "exact",
       "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-833",
       "score": {
         "specific": true,
         "actionable": false,
@@ -63949,108 +64058,21 @@
           ],
           "rarity": 7.23
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lee-morning-report-1109",
-      "text": "Before administering rate control medication, ensure the systolic blood pressure is at least 100 mmHg or MAP >65 to provide a safety cushion.",
-      "verbatim": "You want it usually at least a 100. K? Probably. You don't want it to be less than a 100.",
-      "type": "judgment",
-      "t": 1109.9,
-      "match": "exact",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:100 mmHg",
-            "threshold:at least 1"
-          ],
-          "actionable": [
-            "ensure"
-          ],
-          "rarity": 6.92
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-1596",
-      "text": "Always link each plan item to a specific problem and clinical status to avoid floating plans.",
-      "verbatim": "At all times, link your status to your plan.",
-      "type": "practice",
-      "t": 1597.0,
-      "match": "exact",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Always"
-          ],
-          "rarity": 7.35
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-1581",
-      "text": "Do not stack all your problems and plans together at the end; instead, integrate them by problem.",
-      "verbatim": "not to stack all your problems all your plans all at the end.",
-      "type": "pitfall",
-      "t": 1581.2,
-      "match": "fuzzy",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Do not"
-          ],
-          "rarity": 7.69
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-874",
       "text": "For rate control in stable AFib RVR, give metoprolol 5 mg IV push and repeat every 5 minutes as needed.",
       "verbatim": "I think it's five of metoprolol, and you can give it every minutes, and it's an IV push.",
       "type": "dosing",
       "t": 874.4,
       "match": "exact",
       "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "dr-lee-morning-report-874",
       "score": {
         "specific": true,
         "actionable": true,
@@ -64070,98 +64092,20 @@
           ],
           "rarity": 6.95
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lee-morning-report-827",
-      "text": "The first question when facing AFib RVR is whether the patient is hemodynamically stable.",
-      "verbatim": "What number one is Are they hemodynamically stable?",
-      "type": "practice",
-      "t": 828.0,
+      "text": "Before administering rate control medication, ensure the systolic blood pressure is at least 100 mmHg or MAP >65 to provide a safety cushion.",
+      "verbatim": "You want it usually at least a 100. K? Probably. You don't want it to be less than a 100.",
+      "type": "judgment",
+      "t": 1109.9,
       "match": "exact",
       "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.06
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-430",
-      "text": "When QRS is wide but does not meet criteria for LBBB or RBBB, interpret it as an intraventricular conduction delay (IVCD).",
-      "verbatim": "K. This is an IVCD.",
-      "type": "dx_criteria",
-      "t": 430.2,
-      "match": "exact",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:intraventricular condu"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-670",
-      "text": "Assess T wave inversions primarily in leads I, II, V5, and V6.",
-      "verbatim": "One and two and v five and v six.",
-      "type": "exam_technique",
-      "t": 670.6,
-      "match": "exact",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.07
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-503",
-      "text": "On EKG, check for low voltage criteria by assessing QRS amplitude in limb and precordial leads.",
-      "verbatim": "We're looking for minimal voltage criteria.",
-      "type": "exam_technique",
-      "t": 503.9,
-      "match": "exact",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-1109",
       "score": {
         "specific": true,
         "actionable": true,
@@ -64172,27 +64116,84 @@
         "grade": "B",
         "fired": {
           "specific": [
-            "test:EKG"
+            "dose:100 mmHg",
+            "threshold:at least 1"
           ],
           "actionable": [
-            "check"
+            "ensure"
           ],
-          "rarity": 8.19
+          "rarity": 6.93
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lee-morning-report-1665",
+      "text": "Do not stack all your problems and plans together at the end; instead, integrate them by problem.",
+      "verbatim": "not to stack all your problems all your plans all at the end.",
+      "type": "pitfall",
+      "t": 1581.2,
+      "match": "fuzzy",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-1581",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.68
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Always link each plan item to a specific problem and clinical status to avoid floating plans.",
+      "verbatim": "At all times, link your status to your plan.",
+      "type": "practice",
+      "t": 1597.0,
+      "match": "exact",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-1597",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.36
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Floating plans are problematic because they lack a connection to the patient's status and specific problem.",
       "verbatim": "What's wrong with floating plans is that they don't have a status connected to it.",
       "type": "pitfall",
       "t": 1665.2,
       "match": "exact",
       "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-1665",
       "score": {
         "specific": false,
         "actionable": false,
@@ -64202,22 +64203,22 @@
         "points": 1,
         "grade": "D",
         "fired": {
-          "rarity": 7.1
+          "rarity": 7.11
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lee-morning-report-1720",
       "text": "Avoid using the word 'stable' without specifying what is stable; 'stable and dead is the most stable.' Use precise language like 'hemodynamically stable' or 'unchanging.'",
       "verbatim": "Don't say stable. That's what you mean unchanging. K? Stable and dead is the most stable.",
       "type": "practice",
       "t": 1720.9,
       "match": "exact",
       "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-1720",
       "score": {
         "specific": false,
         "actionable": true,
@@ -64230,22 +64231,23 @@
           "actionable": [
             "Avoid"
           ],
-          "rarity": 8.42
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lee-morning-report-2143",
       "text": "When a hospitalized patient develops a new fever, the correct initial step is to build a differential diagnosis based on the patient's history and clinical context, not to reflexively start antibiotics.",
       "verbatim": "The correct thing to do in a situation like this is to think about what will you know about this patient so far and build the differential diagnosis for the new fever and act accordingly.",
       "type": "judgment",
       "t": 2143.8,
       "match": "exact",
       "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "dr-lee-morning-report-2143",
       "score": {
         "specific": true,
         "actionable": true,
@@ -64261,22 +64263,22 @@
           "actionable": [
             "start"
           ],
-          "rarity": 6.66
+          "rarity": 6.67
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lee-morning-report-2335",
       "text": "Before ordering a repeat CT pulmonary angiogram for suspected PE, use the Well's score to stratify risk and avoid unnecessary imaging.",
       "verbatim": "So those of you who think high would get another CTP and get lower. Okay? I would do a well score? First.",
       "type": "practice",
       "t": 2335.5,
       "match": "fuzzy",
       "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-2335",
       "score": {
         "specific": true,
         "actionable": true,
@@ -64292,22 +64294,110 @@
           "actionable": [
             "repeat"
           ],
-          "rarity": 7.46
+          "rarity": 7.47
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lee-morning-report-2613",
+      "text": "Pulmonary embolism can occur despite prophylaxis with heparin and sequential compression devices; a prior negative CT does not rule out a new PE.",
+      "verbatim": "Despite prophylaxis? Hundred percent. K? Mhmm.",
+      "type": "pitfall",
+      "t": 2386.1,
+      "match": "exact",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-2386",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 7.47
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Always consider catheter-associated urinary tract infection in a hospitalized patient with a fever and an indwelling catheter.",
+      "verbatim": "Has this patient had a catheter? Ah, good. Looking for a catheter. Good. K. You're looking for? I'm looking for a potential UTI of some sort. Catheter associated infections. Very nicely done.",
+      "type": "dx_criteria",
+      "t": 2459.3,
+      "match": "exact",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-2459",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:catheter-associated ur"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Go see the patient. Physical re-evaluation is essential when a new symptom like fever develops.",
+      "verbatim": "Go see the patient. Yeah. Yeah. Go see the patient. Excellent.",
+      "type": "practice",
+      "t": 2492.0,
+      "match": "exact",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-2492",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.21
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "In a patient with atrial fibrillation and rapid ventricular response, do not automatically attribute the tachycardia to heart failure; infection is a common alternative cause and should be considered a 'red earring.'",
       "verbatim": "He's got A fib with RVR. It may be from his heart failure, but it could also be from an infectious source and not necessarily the heart failure. It's kind of a red earring.",
       "type": "red_flag",
       "t": 2613.9,
       "match": "exact",
       "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "dr-lee-morning-report-2613",
       "score": {
         "specific": true,
         "actionable": true,
@@ -64323,22 +64413,23 @@
           "actionable": [
             "do not"
           ],
-          "rarity": 7.36
+          "rarity": 7.33
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lee-morning-report-2784",
       "text": "Avoid starting empiric antibiotics without a clear target; this is 'throwing things at a problem' rather than treating a known infection.",
       "verbatim": "I think that's throwing things at a problem that I wish I could do something about rather than saying I know what I'm treating.",
       "type": "judgment",
       "t": 2784.4,
       "match": "exact",
       "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "dr-lee-morning-report-2784",
       "score": {
         "specific": true,
         "actionable": true,
@@ -64354,22 +64445,50 @@
           "actionable": [
             "Avoid"
           ],
-          "rarity": 6.64
+          "rarity": 6.62
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lee-morning-report-2910",
+      "text": "Drug fever is a possible cause of new fever, especially if the patient recently received antibiotics like levofloxacin; adding more antibiotics can confound the picture.",
+      "verbatim": "he got levofloxacin when he got here, so it could be also, like, a drug reaction. And so throwing on more antibiotics can make it more confusing.",
+      "type": "pitfall",
+      "t": 2857.9,
+      "match": "fuzzy",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-2857",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:levofloxacin"
+          ],
+          "rarity": 7.93
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "In a patient with unexplained fever and cytopenias, consider testing for HIV and syphilis as part of the workup.",
       "verbatim": "So you wanna get an HIV and a syphilis.",
       "type": "dx_criteria",
       "t": 2910.2,
       "match": "exact",
       "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-2910",
       "score": {
         "specific": true,
         "actionable": true,
@@ -64385,22 +64504,22 @@
           "actionable": [
             "consider"
           ],
-          "rarity": 6.29
+          "rarity": 6.3
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lee-morning-report-3287",
       "text": "Do not over-interpret bandemia as definitive evidence of sepsis; in the setting of unexplained cytopenias and fever, consider malignancy as a cause.",
       "verbatim": "If this was if this was in the days of MyChart and the sun... Or the act where people are stalking their charts, they have 4% bands now. I looked it up on Google that anytime there's bands in there, the patient is septic. They're septic now. You need to do something. He has cancer, not sepsis.",
       "type": "pitfall",
       "t": 3287.1,
       "match": "exact",
       "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-3287",
       "score": {
         "specific": true,
         "actionable": true,
@@ -64419,317 +64538,22 @@
           "harm": [
             "sepsis"
           ],
-          "rarity": 8.19
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lee-morning-report-2459",
-      "text": "Always consider catheter-associated urinary tract infection in a hospitalized patient with a fever and an indwelling catheter.",
-      "verbatim": "Has this patient had a catheter? Ah, good. Looking for a catheter. Good. K. You're looking for? I'm looking for a potential UTI of some sort. Catheter associated infections. Very nicely done.",
-      "type": "dx_criteria",
-      "t": 2459.3,
-      "match": "exact",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:catheter-associated ur"
-          ],
-          "actionable": [
-            "Always"
-          ],
-          "rarity": 7.42
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-2857",
-      "text": "Drug fever is a possible cause of new fever, especially if the patient recently received antibiotics like levofloxacin; adding more antibiotics can confound the picture.",
-      "verbatim": "he got levofloxacin when he got here, so it could be also, like, a drug reaction. And so throwing on more antibiotics can make it more confusing.",
-      "type": "pitfall",
-      "t": 2857.9,
-      "match": "fuzzy",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "drug:levofloxacin"
-          ],
-          "rarity": 7.92
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-2386",
-      "text": "Pulmonary embolism can occur despite prophylaxis with heparin and sequential compression devices; a prior negative CT does not rule out a new PE.",
-      "verbatim": "Despite prophylaxis? Hundred percent. K? Mhmm.",
-      "type": "pitfall",
-      "t": 2386.1,
-      "match": "exact",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:CT"
-          ],
-          "actionable": [
-            "rule out"
-          ],
-          "rarity": 7.46
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-2492",
-      "text": "Go see the patient. Physical re-evaluation is essential when a new symptom like fever develops.",
-      "verbatim": "Go see the patient. Yeah. Yeah. Go see the patient. Excellent.",
-      "type": "practice",
-      "t": 2492.0,
-      "match": "exact",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 6.21
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-4634",
-      "text": "If a patient is not improving on antibiotics and has negative cultures, reopen the differential to include autoimmune, malignant, and thromboembolic causes rather than escalating antibiotics.",
-      "verbatim": "you must reopen the differential every time, and that means doing this.",
-      "type": "judgment",
-      "t": 4634.2,
-      "match": "exact",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:antibiotics"
-          ],
-          "rarity": 7.54
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-4942",
-      "text": "When fevers persist despite antibiotics and blood cultures remain negative, consider ordering ANA, double-stranded DNA, complement levels, and serologies for EBV, CMV, and HIV.",
-      "verbatim": "Labs showed this. No rashes. No Raynaud's. No oral ulcers.",
-      "type": "dx_criteria",
-      "t": 4942.9,
-      "match": "fuzzy",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:blood cultures"
-          ],
-          "actionable": [
-            "consider"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-4751",
-      "text": "In a patient with cardiomyopathy and fever, consider autoimmune causes; order an ANA and double-stranded DNA even without classic lupus symptoms.",
-      "verbatim": "RNA positive. RNA positive. And in particular? Simple stranded DNA. Stranded DNA is positive. Okay? So what is the diagnosis now, everyone? Systemic lupus.",
-      "type": "dx_criteria",
-      "t": 4751.3,
-      "match": "exact",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:cardiomyopathy"
-          ],
-          "actionable": [
-            "consider"
-          ],
-          "rarity": 7.04
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-4408",
-      "text": "Always ask about B symptoms (unintentional weight loss, night sweats) when malignancy is on the differential, as it can help differentiate from infection or autoimmune disease.",
-      "verbatim": "I think about EBV and how is... How it has a relation to Burkitt's lymphoma. So I was just going down the cancer. Nice. Okay. So malignancy, right, for the rest of us. Right? Malignancy. Right? Malignancy. K. So ask him about b symptoms.",
-      "type": "red_flag",
-      "t": 4408.1,
-      "match": "exact",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:weight loss"
-          ],
-          "actionable": [
-            "Always"
-          ],
-          "rarity": 7.11
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-5029",
-      "text": "If a patient has upper extremity DVTs, obtain an upper extremity ultrasound; don't limit DVT imaging to the lower extremities.",
-      "verbatim": "They always think lower, but not upper. Right?",
-      "type": "practice",
-      "t": 5029.9,
-      "match": "exact",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:ultrasound"
-          ],
-          "actionable": [
-            "obtain"
-          ],
-          "rarity": 7.59
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-4589",
-      "text": "Anchoring bias is a cognitive trap; explicitly reopen the differential whenever the clinical course deviates from the expected trajectory.",
-      "verbatim": "For us J types, that's our tendency. K? That is our weakness. K? It's awesome that we come to conclusions quickly because we can we can come to decisions and we can decide on something.",
-      "type": "judgment",
-      "t": 4589.0,
-      "match": "exact",
-      "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:anchoring bias"
-          ],
-          "rarity": 7.82
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lee-morning-report-3523",
       "text": "Levofloxacin can be a reasonable empiric choice for community-acquired pneumonia if the local antibiogram supports it, but always re-evaluate if fever persists.",
       "verbatim": "According to our antibiogram, levaquinone, perfectly reasonable choice.",
       "type": "dosing",
       "t": 3523.3,
       "match": "exact",
       "episode": "dr-lee-morning-report",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-3523",
       "score": {
         "specific": true,
         "actionable": true,
@@ -64745,9 +64569,190 @@
           "actionable": [
             "always"
           ],
-          "rarity": 8.19
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Always ask about B symptoms (unintentional weight loss, night sweats) when malignancy is on the differential, as it can help differentiate from infection or autoimmune disease.",
+      "verbatim": "I think about EBV and how is... How it has a relation to Burkitt's lymphoma. So I was just going down the cancer. Nice. Okay. So malignancy, right, for the rest of us. Right? Malignancy. Right? Malignancy. K. So ask him about b symptoms.",
+      "type": "red_flag",
+      "t": 4408.1,
+      "match": "exact",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "dr-lee-morning-report-4408",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:weight loss"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.12
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Anchoring bias is a cognitive trap; explicitly reopen the differential whenever the clinical course deviates from the expected trajectory.",
+      "verbatim": "For us J types, that's our tendency. K? That is our weakness. K? It's awesome that we come to conclusions quickly because we can we can come to decisions and we can decide on something.",
+      "type": "judgment",
+      "t": 4589.0,
+      "match": "exact",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-4589",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:anchoring bias"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "If a patient is not improving on antibiotics and has negative cultures, reopen the differential to include autoimmune, malignant, and thromboembolic causes rather than escalating antibiotics.",
+      "verbatim": "you must reopen the differential every time, and that means doing this.",
+      "type": "judgment",
+      "t": 4634.2,
+      "match": "exact",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-4634",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "rarity": 7.55
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "In a patient with cardiomyopathy and fever, consider autoimmune causes; order an ANA and double-stranded DNA even without classic lupus symptoms.",
+      "verbatim": "RNA positive. RNA positive. And in particular? Simple stranded DNA. Stranded DNA is positive. Okay? So what is the diagnosis now, everyone? Systemic lupus.",
+      "type": "dx_criteria",
+      "t": 4751.3,
+      "match": "exact",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-4751",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cardiomyopathy"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.01
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When fevers persist despite antibiotics and blood cultures remain negative, consider ordering ANA, double-stranded DNA, complement levels, and serologies for EBV, CMV, and HIV.",
+      "verbatim": "Labs showed this. No rashes. No Raynaud's. No oral ulcers.",
+      "type": "dx_criteria",
+      "t": 4942.9,
+      "match": "fuzzy",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-4942",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:blood cultures"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "If a patient has upper extremity DVTs, obtain an upper extremity ultrasound; don't limit DVT imaging to the lower extremities.",
+      "verbatim": "They always think lower, but not upper. Right?",
+      "type": "practice",
+      "t": 5029.9,
+      "match": "exact",
+      "episode": "dr-lee-morning-report",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lee-morning-report-5029",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -93763,5 +93768,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "lawrence-lee",
+      "name": "Dr. Lawrence Lee"
+    }
+  ],
+  "pearls_fingerprint": "9e2b6f6af678ccc9"
 }

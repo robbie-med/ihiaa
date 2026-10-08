@@ -2,7 +2,7 @@
   "slug": "morning-report-sbp-and-hrs-management-dr-lee",
   "guid": "hopepartners.podbean.com/3d9d2749-3553-3d0f-a062-bf2234c7c505",
   "title": "Morning report (SBP and HRS management) - Dr. Lee",
-  "speaker": "Unknown",
+  "speaker": "Dr. Lawrence Lee",
   "link": "https://hopepartners.podbean.com/e/morning-report-sbp-and-hrs-management-dr-lee/",
   "pubDate": "Fri, 23 Sep 2022 14:34:10 -0500",
   "duration_sec": 7248,
@@ -89058,16 +89058,16 @@
   ],
   "pearls": [
     {
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-2363",
       "text": "Diagnostic criteria for SBP is >250 PMN in ascitic fluid.",
       "verbatim": "Greater than 250 PMN in the ascitic fluid.",
       "type": "dx_criteria",
       "t": 2363.3,
       "match": "exact",
       "episode": "morning-report-sbp-and-hrs-management-dr-lee",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-2363",
       "score": {
         "specific": true,
         "actionable": false,
@@ -89082,79 +89082,20 @@
           ],
           "rarity": 7.89
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-2438",
-      "text": "First-line antibiotic for SBP is cefotaxime, not ceftriaxone.",
-      "verbatim": "Cefotaxime. Notice this. It's not ceftriaxone.",
-      "type": "practice",
-      "t": 2438.8,
-      "match": "exact",
-      "episode": "morning-report-sbp-and-hrs-management-dr-lee",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:ceftriaxone"
-          ],
-          "rarity": 7.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-2666",
-      "text": "Administer albumin within 6 hours of SBP diagnosis to reduce mortality.",
-      "verbatim": "it is critical to give albumin.",
-      "type": "practice",
-      "t": 2666.2,
-      "match": "exact",
-      "episode": "morning-report-sbp-and-hrs-management-dr-lee",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:6 hours"
-          ],
-          "actionable": [
-            "Administer"
-          ],
-          "rarity": 6.95
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-2390",
       "text": "Always order a cell count on ascitic fluid to diagnose SBP; without it, you cannot diagnose.",
       "verbatim": "you need to order everybody a Cell count. If you don't order a cell count, guess what? Can't diagnose it.",
       "type": "pitfall",
       "t": 2391.0,
       "match": "exact",
       "episode": "morning-report-sbp-and-hrs-management-dr-lee",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-2391",
       "score": {
         "specific": false,
         "actionable": true,
@@ -89167,22 +89108,87 @@
           "actionable": [
             "Always"
           ],
-          "rarity": 6.77
+          "rarity": 6.78
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3157",
+      "text": "First-line antibiotic for SBP is cefotaxime, not ceftriaxone.",
+      "verbatim": "Cefotaxime. Notice this. It's not ceftriaxone.",
+      "type": "practice",
+      "t": 2438.8,
+      "match": "exact",
+      "episode": "morning-report-sbp-and-hrs-management-dr-lee",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-2438",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ceftriaxone"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Administer albumin within 6 hours of SBP diagnosis to reduce mortality.",
+      "verbatim": "it is critical to give albumin.",
+      "type": "practice",
+      "t": 2666.2,
+      "match": "exact",
+      "episode": "morning-report-sbp-and-hrs-management-dr-lee",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "numbers_unheard": [
+        "6"
+      ],
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-2666",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 hours"
+          ],
+          "actionable": [
+            "Administer"
+          ],
+          "rarity": 6.96,
+          "capped": [
+            "number not heard: 6"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "For HRS, use midodrine and octreotide.",
       "verbatim": "We need to give midodrine an octreotide.",
       "type": "practice",
       "t": 3157.4,
       "match": "exact",
       "episode": "morning-report-sbp-and-hrs-management-dr-lee",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3157",
       "score": {
         "specific": true,
         "actionable": true,
@@ -89198,22 +89204,22 @@
           "actionable": [
             "use"
           ],
-          "rarity": 7.65
+          "rarity": 7.66
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3411",
       "text": "HRS is a diagnosis of exclusion; do not anchor prematurely.",
       "verbatim": "HRS usually diagnosis of exclusion.",
       "type": "red_flag",
       "t": 3411.2,
       "match": "exact",
       "episode": "morning-report-sbp-and-hrs-management-dr-lee",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3411",
       "score": {
         "specific": false,
         "actionable": true,
@@ -89226,22 +89232,22 @@
           "actionable": [
             "do not"
           ],
-          "rarity": 7.82
+          "rarity": 7.83
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3532",
       "text": "Start EKG interpretation with the standardization.",
       "verbatim": "Step zero is the standard.",
       "type": "exam_technique",
       "t": 3532.3,
       "match": "exact",
       "episode": "morning-report-sbp-and-hrs-management-dr-lee",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3532",
       "score": {
         "specific": true,
         "actionable": true,
@@ -89257,22 +89263,22 @@
           "actionable": [
             "Start"
           ],
-          "rarity": 7.04
+          "rarity": 7.05
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3624",
       "text": "For EKG axis, check leads I and aVF.",
       "verbatim": "You look at leads one and aVF.",
       "type": "exam_technique",
       "t": 3624.3,
       "match": "exact",
       "episode": "morning-report-sbp-and-hrs-management-dr-lee",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3624",
       "score": {
         "specific": true,
         "actionable": true,
@@ -89288,22 +89294,22 @@
           "actionable": [
             "check"
           ],
-          "rarity": 6.58
+          "rarity": 6.59
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3751",
       "text": "Assess P wave morphology in leads V1 and V2.",
       "verbatim": "V one and two.",
       "type": "exam_technique",
       "t": 3751.3,
       "match": "exact",
       "episode": "morning-report-sbp-and-hrs-management-dr-lee",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3751",
       "score": {
         "specific": false,
         "actionable": false,
@@ -89313,9 +89319,9 @@
         "points": 1,
         "grade": "D",
         "fired": {
-          "rarity": 6.56
+          "rarity": 6.51
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -130245,5 +130251,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "lawrence-lee",
+      "name": "Dr. Lawrence Lee"
+    }
+  ],
+  "pearls_fingerprint": "d7d85bc528a0b94a"
 }

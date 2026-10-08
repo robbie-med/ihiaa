@@ -2,7 +2,7 @@
   "slug": "dr-calvert-on-abnormal-uterine-bleeding",
   "guid": "hopepartners.podbean.com/cdd5bad3-bf80-306f-a580-208af34a8feb",
   "title": "Dr. Calvert on Abnormal Uterine Bleeding",
-  "speaker": "Calvert",
+  "speaker": "Dr. Jon Calvert",
   "link": "https://hopepartners.podbean.com/e/dr-calvert-on-abnormal-uterine-bleeding/",
   "pubDate": "Fri, 05 Apr 2024 14:55:00 -0500",
   "duration_sec": 2445,
@@ -19384,47 +19384,47 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1409",
-      "text": "After menarche, allow up to 2 years for cycles to regulate; if still irregular at 6 months (in a patient 18 months post-menarche), evaluate for chronic anovulation.",
-      "verbatim": "If she comes back in six months and she's still irregular, then you begin to evaluate for chronic anovulation.",
-      "type": "practice",
-      "t": 1409.6,
-      "match": "fuzzy",
+      "text": "When taking a bleeding history, ask about normal periods off birth control to establish baseline.",
+      "verbatim": "When you're comparing the abnormal to the normal, you want to get normal. You don't wanna get when they're on birth control pills.",
+      "type": "pitfall",
+      "t": 164.7,
+      "match": "exact",
       "episode": "dr-calvert-on-abnormal-uterine-bleeding",
-      "speaker": "Calvert",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-164",
       "score": {
-        "specific": true,
+        "specific": false,
         "actionable": true,
         "local": false,
-        "harm": false,
+        "harm": true,
         "nonobvious": true,
         "points": 3,
         "grade": "B",
         "fired": {
-          "specific": [
-            "dose:2 years"
-          ],
           "actionable": [
-            "evaluate"
+            "ask about"
           ],
-          "rarity": 8.06
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 5.94
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1536",
-      "text": "Perimenopause is defined by irregular periods, not hot flashes.",
-      "verbatim": "It's not hot flashes. People in my... I know women in my practice who were 35 years old have hot flashes. It's irregular periods.",
-      "type": "red_flag",
-      "t": 1536.8,
+      "text": "Normal menstrual interval is 21-35 days.",
+      "verbatim": "we have an interval which is normally twenty one to thirty five days.",
+      "type": "practice",
+      "t": 203.7,
       "match": "exact",
       "episode": "dr-calvert-on-abnormal-uterine-bleeding",
-      "speaker": "Calvert",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-203",
       "score": {
         "specific": true,
         "actionable": false,
@@ -19435,24 +19435,83 @@
         "grade": "C",
         "fired": {
           "specific": [
-            "concept:perimenopause"
+            "dose:35 days"
           ],
-          "rarity": 7.41
+          "rarity": 5.27
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1084",
+      "text": "Normal menstrual duration is 5-7 days.",
+      "verbatim": "The duration is five to seven days.",
+      "type": "practice",
+      "t": 228.2,
+      "match": "exact",
+      "episode": "dr-calvert-on-abnormal-uterine-bleeding",
+      "speaker": "Dr. Jon Calvert",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-228",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:7 days"
+          ],
+          "rarity": 5.17
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Ask about number of pads/tampons used on the heaviest day to quantify menstrual bleeding.",
+      "verbatim": "The two questions I use are how many pads or tampons used on the heaviest day.",
+      "type": "exam_technique",
+      "t": 243.5,
+      "match": "exact",
+      "episode": "dr-calvert-on-abnormal-uterine-bleeding",
+      "speaker": "Dr. Jon Calvert",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-243",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "Ask about"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Use high-estrogen birth control pills to increase SHBG and treat hirsutism in PCOS.",
       "verbatim": "One of the treatments for PCOS is to give birth control pills. Birth control pills are high estrogen. High estrogen goes to the liver and increases sex hormone binding globulin, binding the testosterone. This is a way of stopping hirsutism associated with PCOS.",
       "type": "dosing",
       "t": 1084.5,
       "match": "exact",
       "episode": "dr-calvert-on-abnormal-uterine-bleeding",
-      "speaker": "Calvert",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1084",
       "score": {
         "specific": true,
         "actionable": true,
@@ -19470,82 +19529,79 @@
           ],
           "rarity": 7.89
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-243",
-      "text": "Ask about number of pads/tampons used on the heaviest day to quantify menstrual bleeding.",
-      "verbatim": "The two questions I use are how many pads or tampons used on the heaviest day.",
-      "type": "exam_technique",
-      "t": 243.5,
-      "match": "exact",
+      "text": "After menarche, allow up to 2 years for cycles to regulate; if still irregular at 6 months (in a patient 18 months post-menarche), evaluate for chronic anovulation.",
+      "verbatim": "If she comes back in six months and she's still irregular, then you begin to evaluate for chronic anovulation.",
+      "type": "practice",
+      "t": 1409.6,
+      "match": "fuzzy",
       "episode": "dr-calvert-on-abnormal-uterine-bleeding",
-      "speaker": "Calvert",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1409",
       "score": {
-        "specific": false,
+        "specific": true,
         "actionable": true,
         "local": false,
-        "harm": true,
+        "harm": false,
         "nonobvious": true,
         "points": 3,
         "grade": "B",
         "fired": {
+          "specific": [
+            "dose:2 years"
+          ],
           "actionable": [
-            "Ask about"
+            "evaluate"
           ],
-          "harm": [
-            "bleeding"
-          ],
-          "rarity": 7.59
+          "rarity": 8.06
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-164",
-      "text": "When taking a bleeding history, ask about normal periods off birth control to establish baseline.",
-      "verbatim": "When you're comparing the abnormal to the normal, you want to get normal. You don't wanna get when they're on birth control pills.",
-      "type": "pitfall",
-      "t": 164.7,
+      "text": "Perimenopause is defined by irregular periods, not hot flashes.",
+      "verbatim": "It's not hot flashes. People in my... I know women in my practice who were 35 years old have hot flashes. It's irregular periods.",
+      "type": "red_flag",
+      "t": 1536.8,
       "match": "exact",
       "episode": "dr-calvert-on-abnormal-uterine-bleeding",
-      "speaker": "Calvert",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1536",
       "score": {
-        "specific": false,
-        "actionable": true,
+        "specific": true,
+        "actionable": false,
         "local": false,
-        "harm": true,
+        "harm": false,
         "nonobvious": true,
-        "points": 3,
-        "grade": "B",
+        "points": 2,
+        "grade": "C",
         "fired": {
-          "actionable": [
-            "ask about"
+          "specific": [
+            "concept:perimenopause"
           ],
-          "harm": [
-            "bleeding"
-          ],
-          "rarity": 5.93
+          "rarity": 7.41
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1700",
       "text": "Postmenopausal bleeding at age 60 or older is suspicious for endometrial cancer.",
       "verbatim": "You have a woman coming into your office who's aged 60 and still menstruating problem, looks like. Could be endometrial cancer.",
       "type": "red_flag",
       "t": 1700.8,
       "match": "exact",
       "episode": "dr-calvert-on-abnormal-uterine-bleeding",
-      "speaker": "Calvert",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1700",
       "score": {
         "specific": true,
         "actionable": false,
@@ -19561,22 +19617,22 @@
           "harm": [
             "bleeding"
           ],
-          "rarity": 6.31
+          "rarity": 6.32
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-2278",
       "text": "Combined oral contraceptives treat both dysmenorrhea and perimenopausal irregular bleeding.",
       "verbatim": "So it's a twofer. You get dysmenorrhea treated, and you get diagnosis. Perimenopause.",
       "type": "practice",
       "t": 2278.6,
       "match": "exact",
       "episode": "dr-calvert-on-abnormal-uterine-bleeding",
-      "speaker": "Calvert",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-2278",
       "score": {
         "specific": true,
         "actionable": true,
@@ -19595,65 +19651,9 @@
           "harm": [
             "bleeding"
           ],
-          "rarity": 6.35
+          "rarity": 6.36
         },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-203",
-      "text": "Normal menstrual interval is 21-35 days.",
-      "verbatim": "we have an interval which is normally twenty one to thirty five days.",
-      "type": "practice",
-      "t": 203.7,
-      "match": "exact",
-      "episode": "dr-calvert-on-abnormal-uterine-bleeding",
-      "speaker": "Calvert",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:35 days"
-          ],
-          "rarity": 5.27
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-228",
-      "text": "Normal menstrual duration is 5-7 days.",
-      "verbatim": "The duration is five to seven days.",
-      "type": "practice",
-      "t": 228.2,
-      "match": "exact",
-      "episode": "dr-calvert-on-abnormal-uterine-bleeding",
-      "speaker": "Calvert",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:7 days"
-          ],
-          "rarity": 5.16
-        },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -27949,5 +27949,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "jon-calvert",
+      "name": "Dr. Jon Calvert"
+    }
+  ],
+  "pearls_fingerprint": "4ab5484596fa1b97"
 }

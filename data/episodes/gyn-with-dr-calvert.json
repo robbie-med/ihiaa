@@ -2,7 +2,7 @@
   "slug": "gyn-with-dr-calvert",
   "guid": "hopepartners.podbean.com/e1d360ac-26fd-3b02-af85-d68d3e12b43f",
   "title": "Gyn with Dr. Calvert",
-  "speaker": "Unknown",
+  "speaker": "Dr. Jon Calvert",
   "link": "https://hopepartners.podbean.com/e/gyn-with-dr-calvert/",
   "pubDate": "Wed, 15 Mar 2023 14:03:16 -0500",
   "duration_sec": 3283,
@@ -29738,16 +29738,16 @@
   ],
   "pearls": [
     {
-      "pearl_id": "gyn-with-dr-calvert-418",
       "text": "Low-dose birth control pills (15-25 mcg estrogen) must be started in the first three days of the cycle; starting later risks losing cycle control and ovulation may occur.",
       "verbatim": "It is very important you start at this point in time because if you don't, you're going to lose control of that cycle because there's so little estrogen, birth control pills.",
       "type": "dosing",
       "t": 418.2,
       "match": "exact",
       "episode": "gyn-with-dr-calvert",
-      "speaker": "Unknown",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "gyn-with-dr-calvert-418",
       "score": {
         "specific": true,
         "actionable": true,
@@ -29765,20 +29765,20 @@
           ],
           "rarity": 5.95
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "gyn-with-dr-calvert-678",
       "text": "In young girls with irregular periods, observe for up to two years before intervening, as it takes two years for physiology to stabilize.",
       "verbatim": "remember that it takes two years for the physiology to stabilize. So we would expect a certain percentage of young girls to have irregular periods for two years.",
       "type": "practice",
       "t": 678.1,
       "match": "exact",
       "episode": "gyn-with-dr-calvert",
-      "speaker": "Unknown",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "gyn-with-dr-calvert-678",
       "score": {
         "specific": false,
         "actionable": false,
@@ -29788,22 +29788,22 @@
         "points": 1,
         "grade": "D",
         "fired": {
-          "rarity": 7.59
+          "rarity": 7.6
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "gyn-with-dr-calvert-761",
       "text": "Perimenopause onset is defined by irregular periods (interval, flow, or duration), not by hot flashes or night sweats.",
       "verbatim": "the onset perimenopause is defined by the onset of irregular periods. It's not by hot flashes or night sweats. It's irregular periods.",
       "type": "dx_criteria",
       "t": 761.9,
       "match": "exact",
       "episode": "gyn-with-dr-calvert",
-      "speaker": "Unknown",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "gyn-with-dr-calvert-761",
       "score": {
         "specific": true,
         "actionable": false,
@@ -29816,22 +29816,22 @@
           "specific": [
             "concept:perimenopause"
           ],
-          "rarity": 7.69
+          "rarity": 7.7
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "gyn-with-dr-calvert-850",
       "text": "Menopause is diagnosed after 12 months without a menstrual period; if a woman has gone 11 months and then has a period, she is not yet menopausal.",
       "verbatim": "What do you have to do to become menopausal? Have to not have a menstrual period for how long? One year.",
       "type": "dx_criteria",
       "t": 850.0,
       "match": "exact",
       "episode": "gyn-with-dr-calvert",
-      "speaker": "Unknown",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "gyn-with-dr-calvert-850",
       "score": {
         "specific": true,
         "actionable": false,
@@ -29844,22 +29844,59 @@
           "specific": [
             "dose:12 months"
           ],
-          "rarity": 7.13
+          "rarity": 7.14
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "gyn-with-dr-calvert-1374",
+      "text": "For a woman with marked obesity and irregular periods at age 56-60, consider endometrial biopsy to rule out hyperplasia, as obesity is a risk factor for endometrial cancer.",
+      "verbatim": "She has marked obesity, as marked obesity is a risk factor for endometrial cancer. And you you can see people who have marked obesity having menstrual periods out of six, fifty seven, 58, 60. ... What do you do? An endometrial biopsy.",
+      "type": "red_flag",
+      "t": 946.9,
+      "match": "exact",
+      "episode": "gyn-with-dr-calvert",
+      "speaker": "Dr. Jon Calvert",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "numbers_unheard": [
+        "56"
+      ],
+      "pearl_id": "gyn-with-dr-calvert-946",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.79,
+          "capped": [
+            "number not heard: 56"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "In a perimenopausal patient with a history of DVT, use progesterone-only pills instead of estrogen-containing OCPs to avoid hypercoagulability.",
       "verbatim": "Progesterone only. So you you avoid the problem with hypercoagulability.",
       "type": "judgment",
       "t": 1374.7,
       "match": "fuzzy",
       "episode": "gyn-with-dr-calvert",
-      "speaker": "Unknown",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "gyn-with-dr-calvert-1374",
       "score": {
         "specific": true,
         "actionable": true,
@@ -29875,22 +29912,22 @@
           "actionable": [
             "use"
           ],
-          "rarity": 8.19
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "gyn-with-dr-calvert-1387",
       "text": "Progesterone-only pills help menorrhagia by thinning the endometrium, which also reduces prostaglandin production and thus dysmenorrhea.",
       "verbatim": "It pins the lining of the endometrium. Okay. So it helps the menorrhagia because progesterone does what the endometrium... Stops it from dividing.",
       "type": "judgment",
       "t": 1387.1,
       "match": "fuzzy",
       "episode": "gyn-with-dr-calvert",
-      "speaker": "Unknown",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "gyn-with-dr-calvert-1387",
       "score": {
         "specific": true,
         "actionable": false,
@@ -29903,53 +29940,53 @@
           "specific": [
             "concept:progesterone-only pill"
           ],
-          "rarity": 8.19
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "gyn-with-dr-calvert-946",
-      "text": "For a woman with marked obesity and irregular periods at age 56-60, consider endometrial biopsy to rule out hyperplasia, as obesity is a risk factor for endometrial cancer.",
-      "verbatim": "She has marked obesity, as marked obesity is a risk factor for endometrial cancer. And you you can see people who have marked obesity having menstrual periods out of six, fifty seven, 58, 60. ... What do you do? An endometrial biopsy.",
-      "type": "red_flag",
-      "t": 946.9,
+      "text": "For a single episode of missed period, do not order extensive workup; instead, have the patient keep a menstrual flow sheet to look for a pattern.",
+      "verbatim": "if you have a person come in with one episode of missed period, you don't throw the kitchen sink at them. Okay? You just have them do a menstrual flush.",
+      "type": "judgment",
+      "t": 1663.8,
       "match": "exact",
       "episode": "gyn-with-dr-calvert",
-      "speaker": "Unknown",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "gyn-with-dr-calvert-1663",
       "score": {
-        "specific": true,
+        "specific": false,
         "actionable": true,
         "local": false,
-        "harm": false,
+        "harm": true,
         "nonobvious": true,
         "points": 3,
         "grade": "B",
         "fired": {
-          "specific": [
-            "test:biopsy"
-          ],
           "actionable": [
-            "consider"
+            "do not"
           ],
-          "rarity": 6.78
+          "harm": [
+            "missed"
+          ],
+          "rarity": 6.76
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "gyn-with-dr-calvert-1855",
       "text": "When a patient misses a period due to stress (hypothalamic amenorrhea), ask about life stressors like death, divorce, or illness before ordering extensive labs.",
       "verbatim": "Hypothalamic amenorrhea. ... Only reason you will miss it is because you failed to ask the question.",
       "type": "pitfall",
-      "t": 1855.0,
-      "match": "fuzzy",
+      "t": 1856.4,
+      "match": "exact",
       "episode": "gyn-with-dr-calvert",
-      "speaker": "Unknown",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "gyn-with-dr-calvert-1856",
       "score": {
         "specific": true,
         "actionable": true,
@@ -29968,22 +30005,22 @@
           "harm": [
             "death"
           ],
-          "rarity": 7.92
+          "rarity": 7.93
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "gyn-with-dr-calvert-2474",
       "text": "PCOS diagnosis requires two of three criteria: irregular menstrual periods, polycystic ovaries on ultrasound, and elevated testosterone (or clinical hirsutism).",
       "verbatim": "Three things that you look at currently for polycystic ovary syndrome, irregular menstrual periods, polycystic ovaries on ultrasound, elevated pretestosterone. Those are the three things. You have to have two of the three to make the diagnosis.",
       "type": "dx_criteria",
       "t": 2474.4,
       "match": "exact",
       "episode": "gyn-with-dr-calvert",
-      "speaker": "Unknown",
+      "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "gyn-with-dr-calvert-2474",
       "score": {
         "specific": true,
         "actionable": false,
@@ -29996,40 +30033,9 @@
           "specific": [
             "test:ultrasound"
           ],
-          "rarity": 7.82
+          "rarity": 7.83
         },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "gyn-with-dr-calvert-1663",
-      "text": "For a single episode of missed period, do not order extensive workup; instead, have the patient keep a menstrual flow sheet to look for a pattern.",
-      "verbatim": "if you have a person come in with one episode of missed period, you don't throw the kitchen sink at them. Okay? You just have them do a menstrual flush.",
-      "type": "judgment",
-      "t": 1663.8,
-      "match": "exact",
-      "episode": "gyn-with-dr-calvert",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "actionable": [
-            "do not"
-          ],
-          "harm": [
-            "missed"
-          ],
-          "rarity": 6.76
-        },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -42987,5 +42993,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "jon-calvert",
+      "name": "Dr. Jon Calvert"
+    }
+  ],
+  "pearls_fingerprint": "47808e4e2287ab6e"
 }

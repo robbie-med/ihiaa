@@ -2,7 +2,7 @@
   "slug": "fmis-august-mm",
   "guid": "hopepartners.podbean.com/16ed7df4-2c69-3cd5-9ee1-5aa5b06c4ac1",
   "title": "FMIS August MM",
-  "speaker": "Unknown",
+  "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
   "link": "https://hopepartners.podbean.com/e/fmis-august-mm/",
   "pubDate": "Fri, 23 Sep 2022 13:59:53 -0500",
   "duration_sec": 2905,
@@ -39504,187 +39504,16 @@
   ],
   "pearls": [
     {
-      "pearl_id": "fmis-august-mm-1163",
-      "text": "When assuming care of a patient, always check the MAR to see if any IV fluids are running, as they may not be documented in the H&P or progress notes.",
-      "verbatim": "Whenever I take four patients to the hospital that first day, like, one of one of the things I look through is the MAR to see what meds they're on, and you will be shocked. It's not documented, but it's running.",
-      "type": "pitfall",
-      "t": 1164.0,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "always"
-          ],
-          "rarity": 7.16
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "fmis-august-mm-724",
-      "text": "TIA does not require IVF; ischemic stroke may require IVF without dextrose if the patient is volume depleted.",
-      "verbatim": "The difference between treatments is that TIA doesn't receive IVF. The baseline recommendation, usually, all baseline treatments for TIA include aspirin.",
-      "type": "practice",
-      "t": 724.8,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:ischemic stroke"
-          ],
-          "harm": [
-            "stroke"
-          ],
-          "rarity": 7.52
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "fmis-august-mm-1758",
-      "text": "One-third of patients with confirmed MI have no chest pain; dyspnea alone can be an anginal equivalent.",
-      "verbatim": "Of the one third of patients with confirmed MI had no chest pain. So really You know, dyspnea on exertion is kinda androgenic. Dyspnea alone can be simply a cause.",
-      "type": "red_flag",
-      "t": 1758.7,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:anginal equivalent"
-          ],
-          "rarity": 7.36
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "fmis-august-mm-1812",
-      "text": "If suspicion is high enough to order a troponin in the clinic, the patient should be sent to the ER for evaluation rather than having the lab drawn in clinic.",
-      "verbatim": "If you have a high enough suspicion to order troponin, you probably need to get that done at the ER.",
-      "type": "judgment",
-      "t": 1812.6,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:troponin"
-          ],
-          "actionable": [
-            "order"
-          ],
-          "rarity": 6.77
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "fmis-august-mm-866",
-      "text": "Volume overload is the number one cause of poor outcomes in patients with cardiac and ESRD diagnoses; main treatment is to dialyze them.",
-      "verbatim": "Volume overload is also the number one cause of which can be an independent cause for poor outcomes with our patients with cardiac as well as ESRD diagnoses. So main treatment for volume overload in ESRD is to dialyze them.",
-      "type": "practice",
-      "t": 866.1,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:volume overload"
-          ],
-          "rarity": 7.27
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "fmis-august-mm-885",
-      "text": "For ESRD patients, longer and more frequent HD sessions (e.g., q4 rather than q3) and a sodium-restricted diet can help prevent volume and sodium overload.",
-      "verbatim": "More specific looks at how to dialyze patients to prevent volume overload and sodium overload over the course of the weekend is to have longer sessions and more frequent HD schedules during the week, so doing q four rather than q three, and then using or programming the dialyzing machine to allow less sodium to be returned into the patient's body, and then also including a sodium restricted diet.",
-      "type": "dosing",
-      "t": 885.3,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.54
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "fmis-august-mm-624",
       "text": "When using an admission order set, ensure each item fits the provisional diagnosis and comorbidities; do not blindly accept defaults.",
       "verbatim": "Looking at potential protocol issues when patients are admitted, especially when we're using a preset given by Cerner, going through and and ensuring each item that's being ordered fits with the provisional diagnosis and comorbidities of the patient.",
       "type": "pitfall",
       "t": 624.3,
       "match": "exact",
       "episode": "fmis-august-mm",
-      "speaker": "Unknown",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-624",
       "score": {
         "specific": true,
         "actionable": true,
@@ -39703,22 +39532,218 @@
           "harm": [
             "blindly"
           ],
-          "rarity": 8.65
+          "rarity": 8.66
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "fmis-august-mm-1794",
+      "text": "TIA does not require IVF; ischemic stroke may require IVF without dextrose if the patient is volume depleted.",
+      "verbatim": "The difference between treatments is that TIA doesn't receive IVF. The baseline recommendation, usually, all baseline treatments for TIA include aspirin.",
+      "type": "practice",
+      "t": 724.8,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-724",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ischemic stroke"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.53
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Volume overload is the number one cause of poor outcomes in patients with cardiac and ESRD diagnoses; main treatment is to dialyze them.",
+      "verbatim": "Volume overload is also the number one cause of which can be an independent cause for poor outcomes with our patients with cardiac as well as ESRD diagnoses. So main treatment for volume overload in ESRD is to dialyze them.",
+      "type": "practice",
+      "t": 866.1,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-866",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:volume overload"
+          ],
+          "rarity": 7.28
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "For ESRD patients, longer and more frequent HD sessions (e.g., q4 rather than q3) and a sodium-restricted diet can help prevent volume and sodium overload.",
+      "verbatim": "More specific looks at how to dialyze patients to prevent volume overload and sodium overload over the course of the weekend is to have longer sessions and more frequent HD schedules during the week, so doing q four rather than q three, and then using or programming the dialyzing machine to allow less sodium to be returned into the patient's body, and then also including a sodium restricted diet.",
+      "type": "dosing",
+      "t": 885.3,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-885",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.55
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Document all treatments, especially IVF, in the H&P and progress notes under the specific problem being treated or in an FEN section.",
+      "verbatim": "Documenting all treatments, especially IVF, a drug that's being added to the patient in our HNPs and in our progress notes under either the specific problem that it's treating or in an FEN section.",
+      "type": "concept",
+      "t": 964.6,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-964",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Document"
+          ],
+          "rarity": 7.53
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When assuming care of a patient, always check the MAR to see if any IV fluids are running, as they may not be documented in the H&P or progress notes.",
+      "verbatim": "Whenever I take four patients to the hospital that first day, like, one of one of the things I look through is the MAR to see what meds they're on, and you will be shocked. It's not documented, but it's running.",
+      "type": "pitfall",
+      "t": 1164.0,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-1164",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.17
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Check all lines and their rates when seeing a patient in the morning, as fluids may be running at a rate not ordered.",
+      "verbatim": "When we check our patients in the morning, we should always check all the lines that are... To see, like, where... What's running and, like, what rate is it running? Because half the time, it's running at a rate that we didn't even order.",
+      "type": "exam_technique",
+      "t": 1244.7,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-1244",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Check"
+          ],
+          "rarity": 6.99
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "One-third of patients with confirmed MI have no chest pain; dyspnea alone can be an anginal equivalent.",
+      "verbatim": "Of the one third of patients with confirmed MI had no chest pain. So really You know, dyspnea on exertion is kinda androgenic. Dyspnea alone can be simply a cause.",
+      "type": "red_flag",
+      "t": 1758.7,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-1758",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:anginal equivalent"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "In patients with acute heart failure, urgent evaluation including IV therapy and possible same-day cardiac catheterization is recommended.",
       "verbatim": "Patients with acute heart failure do require urgent evaluation. So that means even getting IV therapy, which in the allow that to, like recommendations.",
       "type": "practice",
       "t": 1794.7,
       "match": "exact",
       "episode": "fmis-august-mm",
-      "speaker": "Unknown",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-1794",
       "score": {
         "specific": true,
         "actionable": false,
@@ -39734,140 +39759,22 @@
           "harm": [
             "urgent"
           ],
-          "rarity": 6.81
+          "rarity": 6.82
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "fmis-august-mm-1244",
-      "text": "Check all lines and their rates when seeing a patient in the morning, as fluids may be running at a rate not ordered.",
-      "verbatim": "When we check our patients in the morning, we should always check all the lines that are... To see, like, where... What's running and, like, what rate is it running? Because half the time, it's running at a rate that we didn't even order.",
-      "type": "exam_technique",
-      "t": 1244.7,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Check"
-          ],
-          "rarity": 6.98
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "fmis-august-mm-964",
-      "text": "Document all treatments, especially IVF, in the H&P and progress notes under the specific problem being treated or in an FEN section.",
-      "verbatim": "Documenting all treatments, especially IVF, a drug that's being added to the patient in our HNPs and in our progress notes under either the specific problem that it's treating or in an FEN section.",
-      "type": "concept",
-      "t": 964.6,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Document"
-          ],
-          "rarity": 7.52
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "fmis-august-mm-2132",
-      "text": "Up to one-third of myocardial infarctions present without chest pain; maintain a high index of suspicion in atypical presentations.",
-      "verbatim": "But up to a third of them that have MIs do not present.",
-      "type": "red_flag",
-      "t": 2132.3,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:myocardial infarction"
-          ],
-          "harm": [
-            "infarctions"
-          ],
-          "rarity": 7.15
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "fmis-august-mm-2123",
-      "text": "The most important cause of new-onset heart failure is ischemic cardiac disease; always consider underlying CAD.",
-      "verbatim": "the most important cause of heart failure is ischemic cardiac disease, and so having a higher suspicion of that.",
+      "text": "If suspicion is high enough to order a troponin in the clinic, the patient should be sent to the ER for evaluation rather than having the lab drawn in clinic.",
+      "verbatim": "If you have a high enough suspicion to order troponin, you probably need to get that done at the ER.",
       "type": "judgment",
-      "t": 2123.1,
+      "t": 1812.6,
       "match": "exact",
       "episode": "fmis-august-mm",
-      "speaker": "Unknown",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:heart failure"
-          ],
-          "actionable": [
-            "always"
-          ],
-          "rarity": 6.71
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "fmis-august-mm-1993",
-      "text": "If you order a troponin, complete your note explaining the result to avoid confusion for the night team.",
-      "verbatim": "Not to be judicious if you do order a troponin. Like, finish your note, please, by next... So the night call person's not like, hey. This person's got troponin elevated for no so that you, like, explain it to them.",
-      "type": "pitfall",
-      "t": 1993.7,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-1812",
       "score": {
         "specific": true,
         "actionable": true,
@@ -39883,22 +39790,146 @@
           "actionable": [
             "order"
           ],
-          "rarity": 6.76
+          "rarity": 6.78
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "fmis-august-mm-2313",
+      "text": "If you order a troponin, complete your note explaining the result to avoid confusion for the night team.",
+      "verbatim": "Not to be judicious if you do order a troponin. Like, finish your note, please, by next... So the night call person's not like, hey. This person's got troponin elevated for no so that you, like, explain it to them.",
+      "type": "pitfall",
+      "t": 1993.7,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-1993",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:troponin"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 6.77
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Consider atypical MI in older women with worsening GERD symptoms despite therapy.",
+      "verbatim": "older white ladies who've been on therapy for GERD, and it's worsening, acutely worsening. Yeah. They've been on it. That's another suspicion for.",
+      "type": "red_flag",
+      "t": 2076.8,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-2076",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:therapy"
+          ],
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 6.23
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "The most important cause of new-onset heart failure is ischemic cardiac disease; always consider underlying CAD.",
+      "verbatim": "the most important cause of heart failure is ischemic cardiac disease, and so having a higher suspicion of that.",
+      "type": "judgment",
+      "t": 2123.1,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-2123",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:heart failure"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 6.72
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Up to one-third of myocardial infarctions present without chest pain; maintain a high index of suspicion in atypical presentations.",
+      "verbatim": "But up to a third of them that have MIs do not present.",
+      "type": "red_flag",
+      "t": 2132.3,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-2132",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:myocardial infarction"
+          ],
+          "harm": [
+            "infarctions"
+          ],
+          "rarity": 7.16
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Severe neutropenia is defined as an absolute neutrophil count (ANC) less than 500 cells/μL.",
       "verbatim": "ANC was point two, so that's 200, and severe neutropenia is anything that's less than 500.",
       "type": "dx_criteria",
       "t": 2313.6,
       "match": "exact",
       "episode": "fmis-august-mm",
-      "speaker": "Unknown",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-2313",
       "score": {
         "specific": true,
         "actionable": false,
@@ -39913,51 +39944,20 @@
           ],
           "rarity": 7.89
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "fmis-august-mm-2561",
-      "text": "In febrile neutropenia, antibiotics should be administered within 30 minutes to reduce mortality.",
-      "verbatim": "timing to antibiotics less than thirty minutes to lower mortality than those greater than thirty minutes.",
-      "type": "practice",
-      "t": 2561.5,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:30 minutes"
-          ],
-          "actionable": [
-            "reduce"
-          ],
-          "rarity": 7.42
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "fmis-august-mm-2370",
       "text": "A delay of greater than 4 hours from antibiotic order to administration is a significant quality gap.",
       "verbatim": "the order for IV antibiotics was placed almost two hours later, right before 06:30. Then the antibiotics were given later at twenty fifty eight. So this was a delay in greater than four hours from IV antibiotic administration.",
       "type": "pitfall",
       "t": 2370.1,
       "match": "fuzzy",
       "episode": "fmis-august-mm",
-      "speaker": "Unknown",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-2370",
       "score": {
         "specific": true,
         "actionable": true,
@@ -39974,50 +39974,22 @@
           "actionable": [
             "order"
           ],
-          "rarity": 6.09
+          "rarity": 6.1
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "fmis-august-mm-2756",
-      "text": "File a variance for direct admission delays to drive systemic change; it is the mechanism for quality improvement.",
-      "verbatim": "we got to file a variance to make any type of systemic change.",
-      "type": "judgment",
-      "t": 2756.6,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:direct admission"
-          ],
-          "rarity": 7.69
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "fmis-august-mm-2540",
       "text": "Use the MASC risk score on MD Calc to risk-stratify patients with febrile neutropenia.",
       "verbatim": "This goes through some risk calculations for febrile neutropenia. They're all on MD calc, MASC, and the others you can plug in again and then these scores to kind of restratify them.",
       "type": "practice",
       "t": 2540.7,
       "match": "exact",
       "episode": "fmis-august-mm",
-      "speaker": "Unknown",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-2540",
       "score": {
         "specific": true,
         "actionable": true,
@@ -40033,22 +40005,53 @@
           "actionable": [
             "Use"
           ],
-          "rarity": 8.19
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "fmis-august-mm-2588",
+      "text": "In febrile neutropenia, antibiotics should be administered within 30 minutes to reduce mortality.",
+      "verbatim": "timing to antibiotics less than thirty minutes to lower mortality than those greater than thirty minutes.",
+      "type": "practice",
+      "t": 2561.5,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-2561",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:30 minutes"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Direct admissions to the floor often result in delayed notification of the treating team; proactively check for new patients.",
       "verbatim": "I think it is a near miss and something that this is a systemic problem of direct admissions coming to the floor and then treating teams not being notified.",
       "type": "pitfall",
       "t": 2588.9,
       "match": "exact",
       "episode": "fmis-august-mm",
-      "speaker": "Unknown",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-2588",
       "score": {
         "specific": true,
         "actionable": true,
@@ -40064,40 +40067,37 @@
           "actionable": [
             "check"
           ],
-          "rarity": 7.54
+          "rarity": 7.55
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "fmis-august-mm-2076",
-      "text": "Consider atypical MI in older women with worsening GERD symptoms despite therapy.",
-      "verbatim": "older white ladies who've been on therapy for GERD, and it's worsening, acutely worsening. Yeah. They've been on it. That's another suspicion for.",
-      "type": "red_flag",
-      "t": 2076.8,
+      "text": "File a variance for direct admission delays to drive systemic change; it is the mechanism for quality improvement.",
+      "verbatim": "we got to file a variance to make any type of systemic change.",
+      "type": "judgment",
+      "t": 2756.6,
       "match": "exact",
       "episode": "fmis-august-mm",
-      "speaker": "Unknown",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "fmis-august-mm-2756",
       "score": {
         "specific": true,
-        "actionable": true,
+        "actionable": false,
         "local": false,
         "harm": false,
         "nonobvious": true,
-        "points": 3,
-        "grade": "B",
+        "points": 2,
+        "grade": "C",
         "fired": {
           "specific": [
-            "concept:therapy"
+            "concept:direct admission"
           ],
-          "actionable": [
-            "Consider"
-          ],
-          "rarity": 6.25
+          "rarity": 7.7
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -58235,5 +58235,20 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "youmans",
+      "name": "Dr. Youmans"
+    },
+    {
+      "id": "wheeler",
+      "name": "Dr. Wheeler"
+    },
+    {
+      "id": "jones",
+      "name": "Dr. Jones"
+    }
+  ],
+  "pearls_fingerprint": "fddf1e661bf24470"
 }

@@ -309,7 +309,7 @@
    lecture actually carries translations.
    ====================================================================== */
 const UI = {
-  en:{home:"Home",map:"Map",clusters:"Clusters",search:"Search",pearls:"Pearls",topics:"Topics",speakers:"Speakers",
+  en:{home:"Home",map:"Map",clusters:"Conflicts",search:"Search",pearls:"Pearls",topics:"Topics",speakers:"Speakers",
       episodes:"Lectures",about:"About",no:"No matches.",src:"Source",
       abstract:"Abstract",keyp:"Key teaching points",transcript:"Transcript",
       showq:"show quote",hideq:"hide quote",talks:"lectures",
@@ -359,8 +359,7 @@ const TYPE_LBL={practice:"Practice",judgment:"Clinical judgment",pitfall:"Pitfal
   dx_criteria:"Diagnostic criteria",dosing:"Dosing",exam_technique:"Exam technique",concept:"Concepts",
   procedure:"Procedures",other:"Other"};
 const GRADE_CLS={A:"success",B:"primary",C:"default"};
-const VERDICT_CLS={conflict:"danger",duplicate:"default",consensus:"success",related:"primary"};
-const VERDICT_LBL={conflict:"Conflict",duplicate:"Duplicate",consensus:"Consensus",related:"Related"};
+let REL={conflicts:[],depends:[],groups:[],verified:false};
 
 function index(){
   D.episodes.forEach(e=>{e._dt=e.pubDate?Date.parse(e.pubDate)||0:0;e._np=0;EP[e.slug]=e;});
@@ -380,9 +379,10 @@ function index(){
   TYPES=Object.entries(ty).sort((a,b)=>(a[0]==="other")-(b[0]==="other")||b[1]-a[1]);
   D.speakers.forEach(s=>{
     const eps=s.episodes.map(x=>EP[x]).filter(Boolean);
-    SPK[s.name]={name:s.name,eps,np:eps.reduce((n,e)=>n+e._np,0),
-                 latest:Math.max(0,...eps.map(e=>e._dt))};
+    SPK[s.id]={id:s.id,name:s.name,aliases:s.aliases||[],eps,np:eps.reduce((n,e)=>n+e._np,0),
+               latest:Math.max(0,...eps.map(e=>e._dt))};
   });
+  REL=D.relations||REL;
   NEWEST=[...D.episodes].sort((a,b)=>b._dt-a._dt);
   D.topics.forEach(t=>t._l=t.label.toLowerCase());
 }
@@ -410,7 +410,7 @@ function href(view,params){
 const link={
   lecture:(slug,t)=>`#/lecture/${enc(slug)}`+(t!=null?`/${Math.floor(t)}`:""),
   topic:slug=>`#/topic/${enc(slug)}`,
-  speaker:name=>`#/speaker/${enc(name)}`,
+  speaker:id=>`#/speaker/${enc(id)}`,
 };
 
 // "Show more" state, reset whenever the route changes.
@@ -460,17 +460,26 @@ function hl(s,q){
   const rx=new RegExp("("+q.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")","ig");
   return esc(s).replace(rx,"<mark>$1</mark>");
 }
+// Every person on a lecture, each linked to their page.
+function spkLinks(e,q){
+  const sp=(e&&e.speakers)||[];
+  if(!sp.length) return `<span class="muted">${esc(e&&e.speaker||"Unknown")}</span>`;
+  return sp.map(x=>`<a href="${link.speaker(x.id)}">${q?hl(x.name,q):esc(x.name)}</a>`).join(" &amp; ");
+}
 function pearlCard(p,q,opts){
   const ep=EP[p.episode]||{};
   const showLecture=!(opts&&opts.inLecture);
   return `<div class="pearl" id="p-${esc(p.pearl_id)}">
     <span class="label label-${GRADE_CLS[p.grade]||"default"}" title="Rule-based grade (A best)">${esc(p.grade)}</span>
     <span class="label label-info">${esc(TYPE_LBL[p._type]||p._type)}</span>
+    ${p.numbers_unheard?`<span class="label label-warning" title="The number(s) ${esc(p.numbers_unheard.join(", "))} in this pearl were not heard in the recording near this moment. They may come from the extraction model, not the lecturer. Listen before relying on them.">⚠ ${esc(p.numbers_unheard.join(", "))} not heard</span>`:""}
+    ${p.by_presenter===false?`<span class="label label-default" title="Diarization says someone other than the presenter was speaking here: a question, or a resident's answer.">said from the floor</span>`:""}
     <div class="txt">${hl(tr(p,"text"),q)}</div>
+    ${p.applies_to?`<div class="meta" style="margin:-2px 0 4px"><b>Applies to:</b> ${esc(p.applies_to)}</div>`:""}
     <div class="meta">
       <a class="ts" href="${link.lecture(p.episode,p.t)}" onclick="return seekLink(event,'${p.episode}',${p.t})"
          title="Play from here">${mmss(p.t)}</a>
-      · <a href="${link.speaker(p.speaker)}">${esc(p.speaker)}</a>
+      · ${spkLinks(ep)}
       ${showLecture?`· <a href="${link.lecture(p.episode)}">${esc(ep.title||p.episode)}</a>`:""}
       · <button class="linkish" onclick="tq(this)">${esc(T("showq"))}</button>
     </div>
@@ -488,7 +497,7 @@ function lectureRows(eps,opts){
       <th>Date</th><th>Lecture</th>${opts.noSpeaker?"":"<th>Speaker</th>"}<th class="num">Length</th><th class="num">Pearls</th></tr></thead><tbody>`
     +eps.map(e=>`<tr${opts.hit&&opts.hit(e)?' class="hit"':""}><td class="nw">${esc(fmtDate(e._dt))}</td>
       <td><a href="${link.lecture(e.slug)}">${opts.q?hl(e.title,opts.q):esc(e.title)}</a></td>
-      ${opts.noSpeaker?"":`<td><a href="${link.speaker(e.speaker)}">${esc(e.speaker)}</a></td>`}
+      ${opts.noSpeaker?"":`<td>${spkLinks(e)}</td>`}
       <td class="num">${dur(e.duration_sec)}</td><td class="num">${e._np}</td></tr>`).join("")
     +`</tbody></table></div>`;
 }
@@ -502,10 +511,10 @@ function btnGroup(items,cur,mk){
    ====================================================================== */
 function homeView(){
   setTitle("");
-  const s=D.stats, nconf=(D.clusters||[]).filter(c=>c.verdict==="conflict").length;
+  const s=D.stats, nconf=REL.conflicts.length;
   const latest=NEWEST.slice(0,8);
   const fresh=NEWEST.slice(0,15).flatMap(e=>(PBYEP[e.slug]||[]).filter(p=>p.grade==="A")).slice(0,5);
-  const conf=(D.clusters||[]).filter(c=>c.verdict==="conflict").slice(0,5);
+  const conf=REL.conflicts.filter(c=>!c.same_speaker).slice(0,5);
   return `<div class="jumbotron">
       <h1>HPI Lecture Corpus</h1>
       <p class="lead">${num(s.n_episodes)} residency lectures from Hope Partnerships International,
@@ -533,10 +542,10 @@ function homeView(){
           <div class="panel-footer"><a href="#/lectures">All ${num(s.n_episodes)} lectures →</a></div></div>
         ${conf.length?`<div class="panel panel-danger"><div class="panel-heading"><h4>Where attendings disagree</h4></div>
           <div class="list-group" style="margin:0;box-shadow:none">
-          ${conf.map((c,i)=>`<a class="list-group-item" style="border-left:0;border-right:0"
-              href="${href("clusters",{v:"conflict",open:i})}">
-            <span class="badge">${c.size}</span><span class="lg-title">${esc(c.label)}</span>
-            <div class="meta">${esc(c.speakers.join(", "))}</div></a>`).join("")}</div>
+          ${conf.map(c=>{const a=BYID[c.a]||{},b=BYID[c.b]||{};
+            return `<a class="list-group-item" style="border-left:0;border-right:0" href="${href("clusters",{v:"conflict"})}">
+            <span class="lg-title">${esc(c.topic||"")}</span>
+            <div class="meta">${esc(a.speaker||"")} vs ${esc(b.speaker||"")}</div></a>`;}).join("")}</div>
           <div class="panel-footer"><a href="${href("clusters",{v:"conflict"})}">All ${nconf} contradictions →</a></div></div>`:""}
       </div>
       <div>
@@ -579,47 +588,59 @@ function pearlsView(){
     </div>`;
 }
 
-function clustersView(){
-  setTitle(T("clusters"));
-  const all=(D.clusters||[]).filter(c=>c.size>1);
-  if(!all.length) return `<div class="alert alert-info" style="margin-top:20px">No clusters yet.</div>`;
-  const v=R.q.v||"";
-  const cs=all.filter(c=>!v||c.verdict===v);
-  const cnt={}; all.forEach(c=>cnt[c.verdict]=(cnt[c.verdict]||0)+1);
-  if(R.q.open!=null&&!OPEN["c"+v+R.q.open]) OPEN["c"+v+R.q.open]=true;
-  const n=lim("clusters",40);
-  const rows=cs.slice(0,n).map((c,i)=>{
-    const k="c"+v+i, open=!!OPEN[k];
-    const ps=c.pearl_ids.map(id=>BYID[id]).filter(Boolean);
-    const confl=(c.relations||[]).filter(r=>r.verdict==="conflict");
-    return `<div class="panel" style="margin-bottom:8px">
-      <div class="panel-heading toggle-head" onclick="togS('${k}')" style="${open?"":"border-bottom:0;border-radius:3px"}">
-        <h4 style="font-size:14px"><span class="caret">${open?"▼":"►"}</span>
-        <span class="label label-${VERDICT_CLS[c.verdict]}" style="min-width:76px">${VERDICT_LBL[c.verdict]||c.verdict}</span>
-        <span style="flex:1">${esc(c.label)}</span>
-        <span class="badge" title="pearls">${c.size}</span></h4>
-        <div class="meta" style="margin:4px 0 0 18px">${esc(c.speakers.join(", "))}</div>
-      </div>
-      ${open?`<div class="panel-body">${clusterBody(c,ps,confl)}</div>`:""}
-    </div>`;}).join("");
-  return `<h2 style="margin-top:20px">${esc(T("clusters"))}</h2>
-    <p class="muted">Pearls from different lectures that say nearly the same thing, grouped by meaning, then each
-      close pair judged. A <b>conflict</b> means two attendings gave guidance you could not follow at once;
-      both sides are kept and attributed, never reconciled for you.</p>
-    <div class="toolbar">${btnGroup([["","All "+all.length],...["conflict","duplicate","consensus","related"]
-      .filter(x=>cnt[x]).map(x=>[x,`${VERDICT_LBL[x]} ${cnt[x]}`])],v,x=>href("clusters",{v:x}))}</div>
-    ${rows}${moreBtn("clusters",Math.min(n,cs.length),cs.length,40)}`;
+// Agreement and disagreement between lectures (scripts/cluster_pearls.py).
+// Conflicts are PAIRS: two specific statements, the judge's reason, and who said
+// each. Groups are pearls judged to say the same thing.
+function pairPanel(c,kind){
+  const a=BYID[c.a], b=BYID[c.b]; if(!a||!b) return "";
+  const cls=kind==="conflict"?"danger":"warning";
+  return `<div class="panel panel-${cls}"><div class="panel-heading"><h4 style="font-size:15px">
+      <span class="label label-${cls}">${kind==="conflict"?"Conflict":"Depends"}</span>
+      <span style="flex:1">${esc(c.topic||"")}</span>
+      ${c.same_speaker?`<span class="label label-default" title="Same person in two different lectures">same speaker</span>`:""}</h4></div>
+    <div class="panel-body">
+      <p style="margin-top:0">${esc(c.why||"")}${c.condition?`<br><b>Depends on:</b> ${esc(c.condition)}`:""}</p>
+      <div class="vs">${pearlCard(a)}${pearlCard(b)}</div>
+    </div></div>`;
 }
-// Conflicting pairs are shown side by side under the judge's reason, so it is clear
-// exactly which two statements disagree; the rest of the group follows.
-function clusterBody(c,ps,confl){
-  const used=new Set();
-  const pairs=confl.map(r=>{const a=BYID[r.a],b=BYID[r.b]; if(!a||!b) return "";
-    used.add(r.a);used.add(r.b);
-    return `<div class="alert alert-danger" style="padding:8px 12px;font-size:13px;margin-bottom:8px">
-        <b>Why these conflict:</b> ${esc(r.why)}</div><div class="vs">${pearlCard(a)}${pearlCard(b)}</div>`;}).join("");
-  const rest=ps.filter(p=>!used.has(p.pearl_id));
-  return pairs+(rest.length?(pairs?`<h5 class="sub">Also in this group</h5>`:"")+rest.map(p=>pearlCard(p)).join(""):"");
+function clustersView(){
+  setTitle("Agreement & conflict");
+  const v=R.q.v||"conflict";
+  const cons=REL.groups.filter(g=>g.kind==="consensus"), rep=REL.groups.filter(g=>g.kind!=="consensus");
+  const tabs=[["conflict",`Conflicts ${REL.conflicts.length}`]];
+  if(REL.verified) tabs.push(["depends",`Depends on context ${REL.depends.length}`]);
+  tabs.push(["consensus",`Consensus ${cons.length}`],["repeated",`Repeated ${rep.length}`]);
+  const intro={
+    conflict:REL.verified
+      ?`Two attendings gave guidance a resident could not follow at once. Each pair was flagged by a first
+        reading, then checked by a stronger model that tried to find a way both could be right; these are the
+        ones it could not reconcile. Both sides are shown, attributed and dated. Neither is marked correct.`
+      :`<b>Not yet verified.</b> These were flagged by a single cheap pass and include false alarms. The
+        verification step has not been run on this build.`,
+    depends:`Flagged as contradictory, but both can be right: which applies depends on the condition shown.`,
+    consensus:`The same teaching point from two or more different speakers. Independent agreement is a stronger
+      signal than one lecture saying it once.`,
+    repeated:`One speaker making the same point in different lectures, often a talk given again in a later year.`}[v];
+  let body="", n=0, total=0;
+  if(v==="conflict"||v==="depends"){
+    const list=v==="conflict"?REL.conflicts:REL.depends; total=list.length; n=lim("rel",20);
+    body=list.slice(0,n).map(c=>pairPanel(c,v)).join("")||`<p class="muted">None.</p>`;
+  } else {
+    const list=v==="consensus"?cons:rep; total=list.length; n=lim("rel",30);
+    body=list.slice(0,n).map((g,i)=>{const k="g"+v+i, open=!!OPEN[k];
+      const ps=g.pearl_ids.map(id=>BYID[id]).filter(Boolean);
+      return `<div class="panel" style="margin-bottom:8px">
+        <div class="panel-heading toggle-head" onclick="togS('${k}')" style="${open?"":"border-bottom:0;border-radius:3px"}">
+          <h4 style="font-size:14px"><span class="caret">${open?"▼":"►"}</span>
+          <span style="flex:1">${esc(g.topic)}</span>
+          <span class="badge" title="pearls">${ps.length}</span></h4>
+          <div class="meta" style="margin:4px 0 0 18px">${esc((g.speakers||[]).join(", "))}</div></div>
+        ${open?`<div class="panel-body">${ps.map(p=>pearlCard(p)).join("")}</div>`:""}</div>`;}).join("")||`<p class="muted">None.</p>`;
+  }
+  return `<h2 style="margin-top:20px">Agreement &amp; conflict</h2>
+    <div class="toolbar">${btnGroup(tabs,v,x=>href("clusters",{v:x}))}</div>
+    <div class="alert alert-${v==="conflict"&&!REL.verified?"warning":"info"}">${intro}</div>
+    ${body}${moreBtn("rel",Math.min(n,total),total,v==="conflict"||v==="depends"?20:30)}`;
 }
 function togS(k){OPEN[k]=!OPEN[k];render(true);}
 
@@ -703,10 +724,13 @@ function speakersView(){
   setTitle(T("speakers"));
   const sp=Object.values(SPK).sort((a,b)=>b.eps.length-a.eps.length||a.name.localeCompare(b.name));
   return `<h2 style="margin-top:20px">${esc(T("speakers"))}</h2>
-    <p class="muted">Names come from episode titles and are not yet reconciled, so one physician may appear twice.</p>
-    <div class="scroll"><table class="table-striped table-hover"><thead><tr><th>Speaker</th>
+    <p class="muted">One entry per person. Names are resolved from episode titles, feed descriptions and the
+      speakers' own introductions, so "Calvert" and "Jon Calvert" are the same row. Lectures given jointly
+      count for each presenter.</p>
+    <div class="scroll"><table class="table-striped table-hover"><thead><tr><th>Speaker</th><th>Also listed as</th>
       <th class="num">Lectures</th><th class="num">Pearls</th><th class="num">Most recent</th></tr></thead><tbody>
-    ${sp.map(s=>`<tr><td><a href="${link.speaker(s.name)}">${esc(s.name)}</a></td><td class="num">${s.eps.length}</td>
+    ${sp.map(s=>`<tr><td class="nw"><a href="${link.speaker(s.id)}">${esc(s.name)}</a></td>
+      <td class="small muted">${esc(s.aliases.join(", "))}</td><td class="num">${s.eps.length}</td>
       <td class="num">${num(s.np)}</td><td class="num">${esc(fmtDate(s.latest))}</td></tr>`).join("")}
     </tbody></table></div>`;
 }
@@ -715,9 +739,13 @@ function speakerView(){
   setTitle(s.name);
   const eps=[...s.eps].sort((a,b)=>b._dt-a._dt);
   const ps=eps.flatMap(e=>PBYEP[e.slug]||[]).sort((a,b)=>b.points-a.points||b._dt-a._dt);
+  const mine=new Set(ps.map(p=>p.pearl_id));
+  const conf=REL.conflicts.filter(c=>mine.has(c.a)||mine.has(c.b));
   return crumbs([T("speakers"),"#/speakers"],[s.name])+
-    `<h2>${esc(s.name)}</h2><p class="muted">${eps.length} ${esc(T("talks"))} · ${num(ps.length)} ${esc(T("pearls"))}</p>
-    ${lectureRows(eps,{noSpeaker:true})}
+    `<h2>${esc(s.name)}</h2><p class="muted">${eps.length} ${esc(T("talks"))} · ${num(ps.length)} ${esc(T("pearls"))}
+      ${s.aliases.length?` · also listed as ${esc(s.aliases.join(", "))}`:""}</p>
+    ${lectureRows(eps)}
+    ${conf.length?`<h3>Disagrees with another lecture <small class="muted">(${conf.length})</small></h3>${conf.map(c=>pairPanel(c,"conflict")).join("")}`:""}
     <h3>${esc(T("pearls"))} <small class="muted">(${num(ps.length)}, best first)</small></h3>${pearlList(ps,"sp",null,20)}`;
 }
 
@@ -763,7 +791,7 @@ function lecturesView(){
         </tr></thead><tbody>
         ${eps.slice(0,n).map(e=>`<tr><td class="nw">${esc(fmtDate(e._dt))}</td>
           <td><a href="${link.lecture(e.slug)}">${f?hl(e.title,LFILTER):esc(e.title)}</a></td>
-          <td><a href="${link.speaker(e.speaker)}">${f?hl(e.speaker,LFILTER):esc(e.speaker)}</a></td>
+          <td>${spkLinks(e,f?LFILTER:"")}</td>
           <td class="num">${dur(e.duration_sec)}</td><td class="num">${e._np}</td></tr>`).join("")}
         </tbody></table></div>${moreBtn("lectures",Math.min(n,eps.length),eps.length,100)}
       </div>
@@ -804,8 +832,10 @@ function lectureView(){
     : `<div class="progress" style="margin:20px auto"><div class="progress-bar"></div></div>`;
   return crumbs([T("episodes"),"#/lectures"],[e.title])+
     `<h2>${esc(e.title)}</h2>
-    <p class="muted"><a href="${link.speaker(e.speaker)}">${esc(e.speaker)}</a> · ${esc(fmtDate(e._dt))} · ${dur(e.duration_sec)}
+    <p class="muted">${spkLinks(e)} · ${esc(fmtDate(e._dt))} · ${dur(e.duration_sec)}
       · ${ps.length} ${esc(T("pearls").toLowerCase())} · <a href="${esc(e.link)}" target="_blank" rel="noopener">Podbean page ↗</a></p>
+    ${(e.also_uploaded||[]).length?`<p class="small muted">The same recording was also published as ${e.also_uploaded.map(x=>
+      `<a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.title)}</a>`).join(", ")}; it is listed once here.</p>`:""}
     ${mt}
     <div class="player">
       <audio id="player" controls preload="none" src="${esc(e.enclosure||"")}"></audio>
@@ -898,10 +928,11 @@ function aboutView(){
     ${row("2 · Transcribe","Deepgram <code>nova-3-medical</code>, a clinically-tuned model, with word-level timestamps and speaker diarization. Word timings are what make every pearl deep-linkable.")}
     ${row("3 · Repair","ASR still mangles drug names. A language model proposes corrections but never rewrites the text: it returns a list of replacements, applied deterministically with word-boundary matching, a minimum token length and a per-fix hit ceiling. The raw transcript is always retained, and every applied and rejected fix is logged below.")}
     ${row("4 · Enrich","A language model extracts an abstract, key points, topics and candidate pearls, and must quote the exact transcript span each pearl came from.")}
-    ${row("5 · Anchor","Each pearl's quoted span is located in the word-timed transcript: exact match first, then a bounded fuzzy search. A pearl whose source cannot be located is <b>dropped</b>, never shown with a guessed timestamp.")}
+    ${row("5 · Check","Each pearl's quoted span is located in the word-timed transcript; a pearl whose source cannot be located is <b>dropped</b>, never shown with a guessed timestamp. Every number in a pearl must then be <b>heard</b> in the recording near that moment (as digits or words: “ninety”, “two point five”). Numbers the lecturer never said are flagged ⚠ and the pearl is capped at grade C. Diarization marks pearls spoken by someone other than the presenter, such as a resident's answer at morning report.")}
     ${row("6 · Grade","Pure rules, no model. Five signals: specific, actionable, harm, non-obvious, plus an institution-local <b>veto</b> that forces grade D. Reproducible by construction; an earlier model-based grader was discarded after scoring only 53% agreement with itself. Grade D is excluded from this site.")}
     ${row("7 · Index","Concepts are resolved against <b>MeSH</b>, the US National Library of Medicine vocabulary that indexes PubMed. Domain and hierarchy come from MeSH tree numbers; the remainder fall back to a keyword table.")}
-    ${row("8 · Cluster","Pearls are embedded and grouped by similarity, then each close pair is judged as duplicate, consensus, complement or conflict, because similarity alone cannot separate “always do X” from “never do X”. Contradictions are surfaced with both sides kept.")}
+    ${row("8 · Compare","Each pearl is compared with its closest matches from <b>other</b> lectures (never the same one; re-uploaded recordings are folded together first). A first pass labels each pair same, agree, complement or contradict. Every claimed contradiction then goes to a stronger model that tries to find a reading under which both are right: different population, setting, severity, or newer evidence. Only pairs it cannot reconcile are shown as conflicts; the rest are “depends on context”, with the deciding condition. Agreement groups form only from pairs judged to agree, and only when every member is close to every other.")}
+    ${row("· Speakers","One identity per person, resolved from episode titles, feed descriptions and the speakers' own introductions, merging variants such as “Calvert” and “Jon Calvert”. Common surnames are never merged on the surname alone. Judgement calls (nicknames, ambiguous names) live in a small reviewed overrides file.")}
     ${row("9 · Publish","A static site with no backend. The index loads once; transcripts load per lecture on demand; audio streams from the original Podbean file.")}
    </table></div></div>
   <div class="panel"><div class="panel-heading"><h4>Models and vocabulary</h4></div>
@@ -915,7 +946,8 @@ function aboutView(){
    </table></div></div>
   <div class="panel"><div class="panel-heading"><h4>Known limitations</h4></div><div class="panel-body"><ul style="margin:0;padding-left:20px">
     <li>One lecture is missing: its source recording has a degenerate audio track (~1 kbps at the origin) and cannot be transcribed.</li>
-    <li>Speaker names come from episode titles and are not yet reconciled, so one physician may appear under more than one name.</li>
+    <li>Speakers are matched by rules. Where a bare surname could belong to two people (two Drs. Youmans), it is kept separate rather than guessed.</li>
+    <li>Some recordings were published twice; each appears once here, with a note naming the other upload.</li>
     <li>Topic labels are model-generated; most appear in only one lecture, so the concept map shows only those taught in three or more.</li>
     <li>MeSH classifies drugs by chemical class rather than by indication, so medications group under Pharmacology.</li>
     <li>Pearl grading is lexical. It rewards concrete language and cannot judge whether a claim is clinically correct.</li>

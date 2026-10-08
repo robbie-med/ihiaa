@@ -2,7 +2,7 @@
   "slug": "dr-haney-on-epidemiology",
   "guid": "hopepartners.podbean.com/6283e940-c585-331a-b277-afcee1186ddd",
   "title": "Dr. Haney on Epidemiology",
-  "speaker": "Haney",
+  "speaker": "Dr. Matt Haney",
   "link": "https://hopepartners.podbean.com/e/dr-haney-on-epidemiology/",
   "pubDate": "Fri, 11 Oct 2024 15:32:08 -0500",
   "duration_sec": 2536,
@@ -40299,16 +40299,100 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-haney-on-epidemiology-412",
+      "text": "Stage A heart failure is not actual heart failure; it simply denotes risk factors (e.g., obesity, hypertension, diabetes).",
+      "verbatim": "stage a isn't even heart failure. It's just you're at risk for heart failure.",
+      "type": "dx_criteria",
+      "t": 204.8,
+      "match": "exact",
+      "episode": "dr-haney-on-epidemiology",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-204",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:heart failure"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Stage B (pre-heart failure) means structural heart disease on echo without symptoms of CHF.",
+      "verbatim": "stage b, pre heart failure. These people don't have heart failure either.",
+      "type": "dx_criteria",
+      "t": 237.2,
+      "match": "exact",
+      "episode": "dr-haney-on-epidemiology",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-237",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:structural heart disea"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Once a patient reaches ACC/AHA stage C (symptomatic CHF with structural disease), they never regress to a lower stage.",
+      "verbatim": "once you're stage C, you've had a CHF exacerbation or you're having symptoms, you don't go back from that.",
+      "type": "dx_criteria",
+      "t": 300.0,
+      "match": "exact",
+      "episode": "dr-haney-on-epidemiology",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-300",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "never"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "BNP >400 pg/mL is highly specific for CHF; BNP <100 pg/mL effectively rules it out.",
       "verbatim": "if your BNP is more than 400, that's pretty consistent for CHF. That's pretty specific. If it's less than a 100, that's pretty pretty much rules out CHF.",
       "type": "dx_criteria",
       "t": 412.7,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-412",
       "score": {
         "specific": true,
         "actionable": false,
@@ -40322,75 +40406,22 @@
             "threshold:>4",
             "test:BNP"
           ],
-          "rarity": 6.63
+          "rarity": 6.64
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-1136",
-      "text": "When switching from an ACE inhibitor to an ARNI (sacubitril/valsartan), a 36-hour washout is required to prevent angioedema.",
-      "verbatim": "if somebody comes to you, they're on lisinopril, and you wanna start them on an ARNI, you have to have a washout for thirty six hours.",
-      "type": "pitfall",
-      "t": 1136.3,
-      "match": "exact",
-      "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "drug:valsartan"
-          ],
-          "rarity": 7.82
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-on-epidemiology-1151",
-      "text": "No washout period is needed when switching from an ARB to an ARNI.",
-      "verbatim": "if they're on an ARB, there's not a washout period.",
-      "type": "pitfall",
-      "t": 1151.9,
-      "match": "exact",
-      "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.04
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-on-epidemiology-584",
       "text": "JVD is a highly specific exam finding for volume overload in CHF; if present, it confirms increased volume.",
       "verbatim": "if it's there, they have it. They have increased volume.",
       "type": "exam_technique",
       "t": 584.8,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-584",
       "score": {
         "specific": true,
         "actionable": false,
@@ -40403,22 +40434,22 @@
           "specific": [
             "concept:volume overload"
           ],
-          "rarity": 6.66
+          "rarity": 6.67
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-604",
       "text": "An IVC diameter of 1-2.1 cm that does not collapse ≥50% with sniff is specific for CHF.",
       "verbatim": "if your inferior vena cava is one to 2.1 centimeters, doesn't collapse at least 50% with the sniff test. Pretty specific for CHF.",
       "type": "exam_technique",
       "t": 604.3,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-604",
       "score": {
         "specific": true,
         "actionable": false,
@@ -40433,20 +40464,129 @@
           ],
           "rarity": 7.36
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-1198",
+      "text": "HFrEF is defined as ejection fraction ≤40% in a patient with heart failure symptoms.",
+      "verbatim": "that is when your ejection fraction is 40 or less.",
+      "type": "dx_criteria",
+      "t": 799.2,
+      "match": "exact",
+      "episode": "dr-haney-on-epidemiology",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-799",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:heart failure"
+          ],
+          "rarity": 6.64
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Sacubitril/valsartan (Entresto) reduces hospitalization and mortality by about 20% compared to ACE inhibitors alone.",
+      "verbatim": "people that take Entresto, their hospitalization rate and mortality rate is, like, twenty percent less than just people that are on cases.",
+      "type": "practice",
+      "t": 1081.0,
+      "match": "exact",
+      "episode": "dr-haney-on-epidemiology",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1081",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:valsartan"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When switching from an ACE inhibitor to an ARNI (sacubitril/valsartan), a 36-hour washout is required to prevent angioedema.",
+      "verbatim": "if somebody comes to you, they're on lisinopril, and you wanna start them on an ARNI, you have to have a washout for thirty six hours.",
+      "type": "pitfall",
+      "t": 1136.3,
+      "match": "exact",
+      "episode": "dr-haney-on-epidemiology",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1136",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:valsartan"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "No washout period is needed when switching from an ARB to an ARNI.",
+      "verbatim": "if they're on an ARB, there's not a washout period.",
+      "type": "pitfall",
+      "t": 1151.9,
+      "match": "exact",
+      "episode": "dr-haney-on-epidemiology",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1151",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Only three beta blockers reduce hospitalizations and mortality in HFrEF: bisoprolol, carvedilol, and metoprolol succinate.",
       "verbatim": "beta blockers, a decreased hospitalizations mortality, but only these three, bisoprolol, carvedilol, foprolol succinate",
       "type": "practice",
       "t": 1198.4,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1198",
       "score": {
         "specific": true,
         "actionable": true,
@@ -40462,162 +40602,22 @@
           "actionable": [
             "reduce"
           ],
-          "rarity": 7.59
+          "rarity": 7.6
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-300",
-      "text": "Once a patient reaches ACC/AHA stage C (symptomatic CHF with structural disease), they never regress to a lower stage.",
-      "verbatim": "once you're stage C, you've had a CHF exacerbation or you're having symptoms, you don't go back from that.",
-      "type": "dx_criteria",
-      "t": 300.0,
-      "match": "exact",
-      "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "never"
-          ],
-          "rarity": 8.19
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-on-epidemiology-799",
-      "text": "HFrEF is defined as ejection fraction ≤40% in a patient with heart failure symptoms.",
-      "verbatim": "that is when your ejection fraction is 40 or less.",
-      "type": "dx_criteria",
-      "t": 799.2,
-      "match": "exact",
-      "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:heart failure"
-          ],
-          "rarity": 6.63
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-on-epidemiology-1080",
-      "text": "Sacubitril/valsartan (Entresto) reduces hospitalization and mortality by about 20% compared to ACE inhibitors alone.",
-      "verbatim": "people that take Entresto, their hospitalization rate and mortality rate is, like, twenty percent less than just people that are on cases.",
-      "type": "practice",
-      "t": 1081.0,
-      "match": "exact",
-      "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "drug:valsartan"
-          ],
-          "rarity": 8.19
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-on-epidemiology-204",
-      "text": "Stage A heart failure is not actual heart failure; it simply denotes risk factors (e.g., obesity, hypertension, diabetes).",
-      "verbatim": "stage a isn't even heart failure. It's just you're at risk for heart failure.",
-      "type": "dx_criteria",
-      "t": 204.8,
-      "match": "exact",
-      "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:heart failure"
-          ],
-          "rarity": 7.03
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-on-epidemiology-237",
-      "text": "Stage B (pre-heart failure) means structural heart disease on echo without symptoms of CHF.",
-      "verbatim": "stage b, pre heart failure. These people don't have heart failure either.",
-      "type": "dx_criteria",
-      "t": 237.2,
-      "match": "exact",
-      "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:structural heart disea"
-          ],
-          "rarity": 7.59
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-on-epidemiology-1320",
       "text": "Avoid starting beta-blockers on day one of an acute heart failure exacerbation if cardiac output is compromised; wait until the patient is stable for discharge.",
       "verbatim": "So if somebody's cardiac output is already down because they're in an acute exacerbation, trying to start a beta blocker, it's going to drop that heart rate and decrease the cardiac output. But presumably, they're more stable at discharge. So I wouldn't start it, like, day one.",
       "type": "judgment",
       "t": 1320.3,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1320",
       "score": {
         "specific": true,
         "actionable": true,
@@ -40633,22 +40633,22 @@
           "actionable": [
             "Avoid"
           ],
-          "rarity": 7.64
+          "rarity": 7.65
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-1417",
       "text": "Do not start all four HFrEF medications at the same time to reduce the risk of side effects and avoid patient distrust of the regimen.",
       "verbatim": "I wouldn't start all of the medicines at one time personally just because I think there's a potential for side effects",
       "type": "pitfall",
       "t": 1417.3,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1417",
       "score": {
         "specific": true,
         "actionable": true,
@@ -40664,22 +40664,22 @@
           "actionable": [
             "Do not"
           ],
-          "rarity": 7.38
+          "rarity": 7.39
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-1441",
       "text": "MRA is contraindicated if GFR <30 or potassium >5.0; these are key thresholds to check before starting spironolactone or eplerenone.",
       "verbatim": "contraindications can be renal function, right, if the GFR is less than 30, or if the potassium is more than five.",
       "type": "dx_criteria",
       "t": 1441.7,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1441",
       "score": {
         "specific": true,
         "actionable": true,
@@ -40699,22 +40699,22 @@
           "harm": [
             "contraindicated"
           ],
-          "rarity": 7.54
+          "rarity": 7.55
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-1449",
       "text": "If potassium is borderline >5.0, add an SGLT2 inhibitor (empagliflozin) to lower potassium and allow continuation of the MRA.",
       "verbatim": "If somebody is more than five or close to that and you add on the Jardiance, which is gonna be the SGLT2, that can help the potassium go down.",
       "type": "judgment",
       "t": 1449.7,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1449",
       "score": {
         "specific": true,
         "actionable": true,
@@ -40731,22 +40731,22 @@
           "actionable": [
             "add"
           ],
-          "rarity": 7.69
+          "rarity": 7.7
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-1523",
       "text": "Empagliflozin (Jardiance) for heart failure is dosed at a fixed 10 mg daily; no titration is needed.",
       "verbatim": "Jardiance ten milligrams. That's what it is. You don't adjust it.",
       "type": "dosing",
       "t": 1523.8,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1523",
       "score": {
         "specific": true,
         "actionable": false,
@@ -40763,20 +40763,20 @@
           ],
           "rarity": 7.23
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-1594",
       "text": "The target dose for losartan in HFrEF is 150 mg daily, higher than the usual hypertension dose.",
       "verbatim": "Losartan's a hundred and fifty milligrams a day is really kinda where you're shooting for",
       "type": "dosing",
       "t": 1594.7,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1594",
       "score": {
         "specific": true,
         "actionable": false,
@@ -40790,22 +40790,22 @@
             "dose:150 mg",
             "frequency:daily"
           ],
-          "rarity": 7.04
+          "rarity": 7.05
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-1631",
       "text": "Titrate GDMT to target doses even if the patient's symptoms improve; ongoing titration yields additional mortality and hospitalization benefit.",
       "verbatim": "you're supposed to titrate people up even if their symptoms get better.",
       "type": "practice",
       "t": 1631.5,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1631",
       "score": {
         "specific": false,
         "actionable": true,
@@ -40820,20 +40820,20 @@
           ],
           "rarity": 6.66
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-1748",
       "text": "For patients with HFrEF and diabetes, increase empagliflozin from 10 mg to 25 mg daily; the 10 mg dose is sufficient for heart failure alone.",
       "verbatim": "You don't have to titrate Jardiance up for heart failure. But if somebody's on... Somebody's got diabetes, make sure. Go to twenty five.",
       "type": "dosing",
       "t": 1748.6,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1748",
       "score": {
         "specific": true,
         "actionable": true,
@@ -40851,22 +40851,22 @@
           "actionable": [
             "increase"
           ],
-          "rarity": 6.65
+          "rarity": 6.64
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-1791",
       "text": "If target doses cannot be achieved, maintain the current lower dose rather than discontinuing the medication.",
       "verbatim": "If you're not able to reach goal, that's okay. But keep that medicine on. We have to do lisinopril ten milligrams instead of the twenty that we have to do at this time. Stay on that.",
       "type": "judgment",
       "t": 1791.1,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1791",
       "score": {
         "specific": false,
         "actionable": false,
@@ -40876,22 +40876,22 @@
         "points": 1,
         "grade": "D",
         "fired": {
-          "rarity": 6.71
+          "rarity": 6.72
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-1831",
       "text": "Avoid thiazide diuretics (e.g., metolazone) unless the patient is refractory to loop diuretics, due to risk of severe electrolyte disturbances.",
       "verbatim": "try not to do that unless people are refractory to loop diuretics.",
       "type": "pitfall",
       "t": 1831.6,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1831",
       "score": {
         "specific": true,
         "actionable": true,
@@ -40907,22 +40907,22 @@
           "actionable": [
             "Avoid"
           ],
-          "rarity": 7.96
+          "rarity": 7.97
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-1875",
       "text": "Refer patients with NYHA class II, IV HFrEF to cardiac rehabilitation; class II is the minimum threshold for referral.",
       "verbatim": "if somebody's class two through three, at least, I mean, all the way through. If somebody's at least class two, which is gonna be pretty much everybody that we find heart failure in, like, they're a candidate for rehabilitation.",
       "type": "practice",
       "t": 1875.1,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1875",
       "score": {
         "specific": true,
         "actionable": true,
@@ -40938,22 +40938,22 @@
           "actionable": [
             "Refer"
           ],
-          "rarity": 7.38
+          "rarity": 7.39
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-1909",
       "text": "Restrict sodium intake to less than 3 grams per day; more restrictive goals are unlikely to be beneficial and may discourage patients.",
       "verbatim": "Try to keep their sodium less than three grams a day.",
       "type": "practice",
       "t": 1909.4,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1909",
       "score": {
         "specific": true,
         "actionable": false,
@@ -40967,22 +40967,22 @@
             "threshold:less than 3",
             "frequency:per day"
           ],
-          "rarity": 8.19
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-1931",
       "text": "Fluid restriction is recommended only for stage D heart failure; it is not beneficial for stage C patients and they are unlikely to adhere.",
       "verbatim": "If they're in stage D, we do a fluid restriction.",
       "type": "practice",
       "t": 1931.9,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-1931",
       "score": {
         "specific": true,
         "actionable": false,
@@ -40995,22 +40995,22 @@
           "specific": [
             "concept:heart failure"
           ],
-          "rarity": 7.58
+          "rarity": 7.59
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-on-epidemiology-2036",
       "text": "ICD placement should be considered for patients with EF ≤35% who are on GDMT and not improving.",
       "verbatim": "if the EF is, like, 35% or less, there's a good chance they might need an ICD.",
       "type": "practice",
       "t": 2037.0,
       "match": "exact",
       "episode": "dr-haney-on-epidemiology",
-      "speaker": "Haney",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-on-epidemiology-2037",
       "score": {
         "specific": false,
         "actionable": false,
@@ -41020,9 +41020,9 @@
         "points": 1,
         "grade": "D",
         "fired": {
-          "rarity": 7.15
+          "rarity": 7.16
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -60714,5 +60714,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "matt-haney",
+      "name": "Dr. Matt Haney"
+    }
+  ],
+  "pearls_fingerprint": "60c049b8ab231ee5"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "cyr-headaches",
   "title": "Dr. Cyr on Headaches 6/25/26",
-  "speaker": "Cyr",
+  "speaker": "Dr. Cyr",
   "guid": "hopepartners.podbean.com/7de85a34-cf89-39ec-b526-04de6a5ebf74",
   "link": "https://hopepartners.podbean.com/e/dr-cyr-on-headaches-62526/",
   "pubDate": "Tue, 11 Aug 2026 13:41:40 -0500",
@@ -45298,16 +45298,44 @@
   ],
   "pearls": [
     {
-      "pearl_id": "cyr-headaches-219",
+      "text": "The Migraine Buddy app is a free tool that helps patients log attacks, triggers, and medication response, it can generate a headache diary automatically.",
+      "verbatim": "Migraine Buddy. This is an app... It's free... you can keep track within the app, and you don't have to remember all these things.",
+      "type": "concept",
+      "t": 122.4,
+      "match": "exact",
+      "episode": "cyr-headaches",
+      "speaker": "Dr. Cyr",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-122",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:migraine buddy app"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Use the POUND mnemonic to quickly screen for migraine in a patient with headache: Pulsatile quality, One-day duration, Unilateral, Nausea/vomiting, Disabling intensity.",
       "verbatim": "p, pulsatile quality. O, one day in duration or it's a long time, u, unilateral, thin, nausea or vomiting, and d, disabling intensity.",
       "type": "dx_criteria",
       "t": 219.5,
       "match": "exact",
       "episode": "cyr-headaches",
-      "speaker": "Cyr",
+      "speaker": "Dr. Cyr",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-219",
       "score": {
         "specific": true,
         "actionable": true,
@@ -45323,22 +45351,50 @@
           "actionable": [
             "Use"
           ],
-          "rarity": 8.42
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "cyr-headaches-271",
+      "text": "Ask children with headaches: 'If I gave you your favorite food, would you eat it?' A child with migraine typically cannot eat; a tension headache patient can.",
+      "verbatim": "if I give you a hamburger... If I gave you some really good ramen cheese ramen, would you be able to eat that right now? A kid who has a tension headache can probably eat that. A migraine, mm-mm.",
+      "type": "red_flag",
+      "t": 242.5,
+      "match": "fuzzy",
+      "episode": "cyr-headaches",
+      "speaker": "Dr. Cyr",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-242",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tension headache"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Ask about activity tolerance: 'If I told you to run around the clinic, would you feel the same, better, or worse?' Migraine worsens with routine physical activity.",
       "verbatim": "if I told you to go run around this clinic, would you feel the same, better, or worse? And it's like, when I have a migraine, you... Like, mm-mm.",
       "type": "red_flag",
       "t": 271.8,
       "match": "exact",
       "episode": "cyr-headaches",
-      "speaker": "Cyr",
+      "speaker": "Dr. Cyr",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-271",
       "score": {
         "specific": true,
         "actionable": true,
@@ -45354,109 +45410,22 @@
           "actionable": [
             "Ask about"
           ],
-          "rarity": 6.78
+          "rarity": 6.79
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "cyr-headaches-1236",
-      "text": "Triptans are more effective when combined with naproxen; take naproxen and a caffeinated drink at headache onset, then take the triptan only if still symptomatic after one hour.",
-      "verbatim": "Take the naproxen and drink a Coke beginning of your headache and, like, get in a dark room and rest. If in an hour you're still having that headache, take the triptan.",
-      "type": "dosing",
-      "t": 1236.1,
-      "match": "exact",
-      "episode": "cyr-headaches",
-      "speaker": "Cyr",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:headache"
-          ],
-          "rarity": 7.96
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "cyr-headaches-1270",
-      "text": "If one triptan at the standard dose does not work, do not increase the dose; instead, try a different triptan.",
-      "verbatim": "If fifty is not working on one triptan, try a different triptan. Don't go to a 100. It's not like an SSRI.",
-      "type": "dosing",
-      "t": 1270.9,
-      "match": "exact",
-      "episode": "cyr-headaches",
-      "speaker": "Cyr",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "do not"
-          ],
-          "rarity": 5.93
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "cyr-headaches-869",
-      "text": "Limit triptan use to avoid rebound headaches, the speaker's personal experience of 20 triptans per month was identified as excessive and contributed to medication overuse headache.",
-      "verbatim": "I was probably taking twenty triptans a month. That's bad... and you're having rebound headaches.",
-      "type": "pitfall",
-      "t": 869.1,
-      "match": "fuzzy",
-      "episode": "cyr-headaches",
-      "speaker": "Cyr",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:medication overuse hea"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 7.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "cyr-headaches-702",
       "text": "Common migraine triggers include stress, lack of sleep, missed meals, weather changes, neck pain, bright sun, dehydration, caffeine (too much or too little), processed foods, and hormone changes like menses.",
       "verbatim": "Stress, lack of sleep. I woke up two hours late. Is that changing how I'm living my life? Yes. Interrupted sleep... Depressed mood. Anxiety. Skip a meal. Very variable weather. Storm... Humidity above 80% also... Neck pain, alcohol, bright, sun, or dehydration... Caffeine, so, like, too little or too much.",
       "type": "concept",
-      "t": 702.2,
-      "match": "fuzzy",
+      "t": 704.6,
+      "match": "exact",
       "episode": "cyr-headaches",
-      "speaker": "Cyr",
+      "speaker": "Dr. Cyr",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-704",
       "score": {
         "specific": true,
         "actionable": false,
@@ -45472,22 +45441,81 @@
           "harm": [
             "missed"
           ],
-          "rarity": 7.82
+          "rarity": 7.83
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "cyr-headaches-981",
+      "text": "During a migraine attack, non-pharmacologic relief methods (dark room, rest, ice pack, heat pack, hydration) should be tried alongside medication.",
+      "verbatim": "dark room rest, go down to meditation, staying indoors, ice packs. Also, heat packs is there. Heating pad. Food, caffeine, hot shower, full shower, drink water.",
+      "type": "exam_technique",
+      "t": 825.6,
+      "match": "exact",
+      "episode": "cyr-headaches",
+      "speaker": "Dr. Cyr",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-825",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hydration"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Limit triptan use to avoid rebound headaches, the speaker's personal experience of 20 triptans per month was identified as excessive and contributed to medication overuse headache.",
+      "verbatim": "I was probably taking twenty triptans a month. That's bad... and you're having rebound headaches.",
+      "type": "pitfall",
+      "t": 869.1,
+      "match": "exact",
+      "episode": "cyr-headaches",
+      "speaker": "Dr. Cyr",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-869",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:medication overuse hea"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Injectable anti-CGRP monoclonal antibodies (e.g., Ajovy) are effective preventive options, the speaker's migraine frequency dramatically improved after five to six months of monthly injections.",
       "verbatim": "I started Ajovy... Ajovy is an injectable medicine. To prevent migraine, you take it once a month... after five months... it's, like, so much better.",
       "type": "practice",
-      "t": 981.7,
-      "match": "fuzzy",
+      "t": 983.1,
+      "match": "exact",
       "episode": "cyr-headaches",
-      "speaker": "Cyr",
+      "speaker": "Dr. Cyr",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-983",
       "score": {
         "specific": true,
         "actionable": false,
@@ -45502,20 +45530,20 @@
           ],
           "rarity": 8.29
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "cyr-headaches-825",
-      "text": "During a migraine attack, non-pharmacologic relief methods (dark room, rest, ice pack, heat pack, hydration) should be tried alongside medication.",
-      "verbatim": "dark room rest, go down to meditation, staying indoors, ice packs. Also, heat packs is there. Heating pad. Food, caffeine, hot shower, full shower, drink water.",
-      "type": "exam_technique",
-      "t": 825.6,
+      "text": "Triptans are more effective when combined with naproxen; take naproxen and a caffeinated drink at headache onset, then take the triptan only if still symptomatic after one hour.",
+      "verbatim": "Take the naproxen and drink a Coke beginning of your headache and, like, get in a dark room and rest. If in an hour you're still having that headache, take the triptan.",
+      "type": "dosing",
+      "t": 1236.1,
       "match": "exact",
       "episode": "cyr-headaches",
-      "speaker": "Cyr",
+      "speaker": "Dr. Cyr",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-1236",
       "score": {
         "specific": true,
         "actionable": false,
@@ -45526,24 +45554,80 @@
         "grade": "C",
         "fired": {
           "specific": [
-            "concept:hydration"
+            "concept:headache"
           ],
-          "rarity": 7.82
+          "rarity": 7.74
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "cyr-headaches-1310",
+      "text": "If one triptan at the standard dose does not work, do not increase the dose; instead, try a different triptan.",
+      "verbatim": "If fifty is not working on one triptan, try a different triptan. Don't go to a 100. It's not like an SSRI.",
+      "type": "dosing",
+      "t": 1270.9,
+      "match": "exact",
+      "episode": "cyr-headaches",
+      "speaker": "Dr. Cyr",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-1270",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 5.94
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "If a patient is taking more than the recommended limits of acute headache medications, you need to intervene.",
+      "verbatim": "if they're taking more than this, then you need to intervene",
+      "type": "red_flag",
+      "t": 1304.5,
+      "match": "exact",
+      "episode": "cyr-headaches",
+      "speaker": "Dr. Cyr",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-1304",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:headache"
+          ],
+          "rarity": 6.33
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Limit analgesics (acetaminophen, NSAIDs) to three days per week and triptans to two days per week or eight days per month to prevent medication overuse headache.",
       "verbatim": "for analgesics, so acetaminophen and NSAIDs, three days per week, days per month. For triptans combined with triptans, other medicine, two days per week or eight days per month.",
       "type": "practice",
       "t": 1310.9,
       "match": "exact",
       "episode": "cyr-headaches",
-      "speaker": "Cyr",
+      "speaker": "Dr. Cyr",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-1310",
       "score": {
         "specific": true,
         "actionable": false,
@@ -45558,20 +45642,20 @@
           ],
           "rarity": 6.83
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "cyr-headaches-1304",
-      "text": "If a patient is taking more than the recommended limits of acute headache medications, you need to intervene.",
-      "verbatim": "if they're taking more than this, then you need to intervene",
-      "type": "red_flag",
-      "t": 1304.5,
+      "text": "CGRP antagonists are a good option for patients with significant nausea or vomiting during migraines because the gut has many CGRP receptors.",
+      "verbatim": "CGRP would be good for me because I have significant nausea with my headaches and occasionally vomiting... your gut is a major one of them.",
+      "type": "dx_criteria",
+      "t": 1643.5,
       "match": "exact",
       "episode": "cyr-headaches",
-      "speaker": "Cyr",
+      "speaker": "Dr. Cyr",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-1643",
       "score": {
         "specific": true,
         "actionable": false,
@@ -45582,24 +45666,55 @@
         "grade": "C",
         "fired": {
           "specific": [
-            "concept:headache"
+            "concept:cgrp antagonists"
           ],
-          "rarity": 6.36
+          "rarity": 7.47
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "cyr-headaches-1837",
+      "text": "Use a headache diary app with your patients to track headaches and improve accountability.",
+      "verbatim": "use the headache diary... It's an app. It's easy... Look at it with your patients. Accountability.",
+      "type": "exam_technique",
+      "t": 1691.4,
+      "match": "exact",
+      "episode": "cyr-headaches",
+      "speaker": "Dr. Cyr",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-1691",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:accountability"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.1
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Give a triptan a fair chance, try it at least six times before concluding it doesn't work, and ensure the patient takes it at the beginning of the headache.",
       "verbatim": "give it a fair chance and make sure, like, someone's taking it at the beginning of their headache.",
       "type": "judgment",
       "t": 1837.4,
       "match": "exact",
       "episode": "cyr-headaches",
-      "speaker": "Cyr",
+      "speaker": "Dr. Cyr",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-1837",
       "score": {
         "specific": true,
         "actionable": true,
@@ -45615,22 +45730,22 @@
           "actionable": [
             "Give"
           ],
-          "rarity": 8.19
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "cyr-headaches-1853",
       "text": "Sumatriptan has the highest side effect profile among triptans; rizatriptan has a low side effect profile and works faster and better.",
       "verbatim": "the sumatriptan that we have, my neurologist told me it has the highest side effect profile of all the other triptans. So we had rizatriptan, and she said that's very good. It has a very low side effect profile, and it, like, works faster and better.",
       "type": "pitfall",
       "t": 1853.9,
       "match": "exact",
       "episode": "cyr-headaches",
-      "speaker": "Cyr",
+      "speaker": "Dr. Cyr",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-1853",
       "score": {
         "specific": true,
         "actionable": false,
@@ -45645,20 +45760,48 @@
           ],
           "rarity": 8.12
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "cyr-headaches-2104",
+      "text": "Frovatriptan is good for menstrual migraines due to its long half-life; take it every day of your period, but be aware of a reliable rebound headache the day after.",
+      "verbatim": "frovatriptan, good for menstrual migraines. Very long acting. Every day of your period. And then for me, I had a reliable rebound headache the day after.",
+      "type": "dosing",
+      "t": 1977.9,
+      "match": "exact",
+      "episode": "cyr-headaches",
+      "speaker": "Dr. Cyr",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-1977",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Frovatriptan"
+          ],
+          "rarity": 7.07
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "During a migraine, go into a cold, dark room to rest.",
       "verbatim": "you need to go into your room and, like, make it cold and dark",
       "type": "exam_technique",
       "t": 2104.3,
       "match": "exact",
       "episode": "cyr-headaches",
-      "speaker": "Cyr",
+      "speaker": "Dr. Cyr",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-2104",
       "score": {
         "specific": true,
         "actionable": false,
@@ -45671,56 +45814,23 @@
           "specific": [
             "concept:migraine"
           ],
-          "rarity": 6.41
+          "rarity": 6.32
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "cyr-headaches-2129",
-      "text": "Educate patients about medication overuse headache; some headaches may actually be rebound from withdrawal of acute medications.",
-      "verbatim": "some of the headaches she's having might actually rebound from withdrawal from the day Absolutely. Prescription.",
-      "type": "red_flag",
-      "t": 2129.6,
-      "match": "exact",
-      "episode": "cyr-headaches",
-      "speaker": "Cyr",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 4,
-        "grade": "A",
-        "fired": {
-          "specific": [
-            "concept:medication overuse hea"
-          ],
-          "actionable": [
-            "Educate"
-          ],
-          "harm": [
-            "withdrawal"
-          ],
-          "rarity": 6.63
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "cyr-headaches-2124",
       "text": "Set a goal to reduce acute medication use gradually, e.g., from 12 to 6 triptans per month.",
       "verbatim": "set a goal... maybe if your goal is 12 and eventually your goal is, like, six a month.",
       "type": "judgment",
-      "t": 2124.3,
-      "match": "fuzzy",
+      "t": 2124.5,
+      "match": "exact",
       "episode": "cyr-headaches",
-      "speaker": "Cyr",
+      "speaker": "Dr. Cyr",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "cyr-headaches-2124",
       "score": {
         "specific": true,
         "actionable": true,
@@ -45736,22 +45846,88 @@
           "actionable": [
             "reduce"
           ],
-          "rarity": 6.4
+          "rarity": 6.41
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "cyr-headaches-2271",
+      "text": "Educate patients about medication overuse headache; some headaches may actually be rebound from withdrawal of acute medications.",
+      "verbatim": "some of the headaches she's having might actually rebound from withdrawal from the day Absolutely. Prescription.",
+      "type": "red_flag",
+      "t": 2129.6,
+      "match": "exact",
+      "episode": "cyr-headaches",
+      "speaker": "Dr. Cyr",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "cyr-headaches-2129",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:medication overuse hea"
+          ],
+          "actionable": [
+            "Educate"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 6.5,
+          "capped": [
+            "said by another participant"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "For an acute migraine attack, take naproxen 550 mg with a bottle of Coke (or caffeine) to cause vasoconstriction and enhance relief.",
+      "verbatim": "take naproxen five hundred and fifty milligrams... with a bottle of Coke... caffeine is gonna cause the vasoconstriction that's gonna help.",
+      "type": "dosing",
+      "t": 2161.9,
+      "match": "exact",
+      "episode": "cyr-headaches",
+      "speaker": "Dr. Cyr",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-2161",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:550 mg"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Topiramate (Topamax) should not be used in women of childbearing age due to teratogenicity.",
       "verbatim": "Topamax... you should not put someone on who's, like, of childbearing age.",
       "type": "pitfall",
-      "t": 2271.3,
-      "match": "fuzzy",
+      "t": 2271.5,
+      "match": "exact",
       "episode": "cyr-headaches",
-      "speaker": "Cyr",
+      "speaker": "Dr. Cyr",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-2271",
       "score": {
         "specific": true,
         "actionable": false,
@@ -45764,50 +45940,22 @@
           "specific": [
             "concept:teratogenicity"
           ],
-          "rarity": 7.59
+          "rarity": 7.6
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "cyr-headaches-1643",
-      "text": "CGRP antagonists are a good option for patients with significant nausea or vomiting during migraines because the gut has many CGRP receptors.",
-      "verbatim": "CGRP would be good for me because I have significant nausea with my headaches and occasionally vomiting... your gut is a major one of them.",
-      "type": "dx_criteria",
-      "t": 1643.1,
-      "match": "fuzzy",
-      "episode": "cyr-headaches",
-      "speaker": "Cyr",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:cgrp antagonists"
-          ],
-          "rarity": 7.46
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "cyr-headaches-2396",
       "text": "Insurance often requires trying one or two other preventatives before covering a CGRP antagonist.",
       "verbatim": "insurance usually wants you to try one or two other preventative medications before you",
       "type": "pitfall",
       "t": 2396.4,
       "match": "exact",
       "episode": "cyr-headaches",
-      "speaker": "Cyr",
+      "speaker": "Dr. Cyr",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-2396",
       "score": {
         "specific": true,
         "actionable": false,
@@ -45820,50 +45968,22 @@
           "specific": [
             "concept:insurance"
           ],
-          "rarity": 8.19
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "cyr-headaches-1977",
-      "text": "Frovatriptan is good for menstrual migraines due to its long half-life; take it every day of your period, but be aware of a reliable rebound headache the day after.",
-      "verbatim": "frovatriptan, good for menstrual migraines. Very long acting. Every day of your period. And then for me, I had a reliable rebound headache the day after.",
-      "type": "dosing",
-      "t": 1977.9,
-      "match": "exact",
-      "episode": "cyr-headaches",
-      "speaker": "Cyr",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "drug:Frovatriptan"
-          ],
-          "rarity": 7.07
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "cyr-headaches-2455",
       "text": "Magnesium and triptans in moderation can be considered during pregnancy, though evidence is limited.",
       "verbatim": "magnesium... some evidence that triptans in moderation can be used during pregnancy.",
       "type": "judgment",
-      "t": 2455.6,
-      "match": "fuzzy",
+      "t": 2455.9,
+      "match": "exact",
       "episode": "cyr-headaches",
-      "speaker": "Cyr",
+      "speaker": "Dr. Cyr",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "cyr-headaches-2455",
       "score": {
         "specific": true,
         "actionable": false,
@@ -45876,9 +45996,9 @@
           "specific": [
             "concept:pregnancy"
           ],
-          "rarity": 7.1
+          "rarity": 7.09
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -67639,5 +67759,12 @@
         -0.06305
       ]
     }
-  ]
+  ],
+  "speakers": [
+    {
+      "id": "cyr",
+      "name": "Dr. Cyr"
+    }
+  ],
+  "pearls_fingerprint": "84e5d0a8c3dcf9f7"
 }

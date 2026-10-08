@@ -27,19 +27,27 @@ jobs:
       - name: Lint (undefined names, unused imports)
         run: python3 -m pyflakes scripts/
 
-      - name: Grader self-test
-        run: python3 scripts/score_pearls.py --selftest
+      - name: Self-tests (grader, speaker names, spoken-number check)
+        run: |
+          python3 scripts/score_pearls.py --selftest
+          python3 scripts/speakers.py --selftest
+          python3 scripts/refine_pearls.py --selftest
 
       # Rebuild under two different hash seeds. Any diff means either the
-      # committed site is stale or some step is nondeterministic.
+      # committed data is stale or some step is nondeterministic. (Taxonomy and
+      # the concept map need the MeSH download, so they are left out here.)
       - name: Derived data is reproducible and committed
         run: |
           for seed in 1 2; do
-            PYTHONHASHSEED=$seed python3 scripts/build_site.py > /dev/null
-            PYTHONHASHSEED=$seed python3 scripts/score_pearls.py --apply > /dev/null
-            PYTHONHASHSEED=$seed python3 scripts/build_site.py > /dev/null
+            export PYTHONHASHSEED=$seed
+            python3 scripts/speakers.py > /dev/null
+            python3 scripts/find_duplicates.py > /dev/null
+            python3 scripts/refine_pearls.py > /dev/null
+            python3 scripts/build_site.py > /dev/null
+            python3 scripts/score_pearls.py --apply > /dev/null
+            python3 scripts/build_site.py > /dev/null
           done
-          git diff --stat --exit-code -- data/episodes site/data.json site/ep
+          git diff --stat --exit-code -- data/episodes data/speakers.json site/data.json site/ep
 
       - name: Site check
         run: python3 scripts/check_site.py

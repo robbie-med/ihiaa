@@ -2,7 +2,7 @@
   "slug": "dr-herrmann-on-outpatient-management",
   "guid": "hopepartners.podbean.com/35ba7ee1-01c3-3881-877c-cf58dce31843",
   "title": "Dr. Herrmann on Outpatient Management",
-  "speaker": "Herrmann",
+  "speaker": "Dr. Herrmann",
   "link": "https://hopepartners.podbean.com/e/dr-herrmann-on-outpatient-management/",
   "pubDate": "Thu, 15 Sep 2022 11:15:48 -0500",
   "duration_sec": 2883,
@@ -50376,16 +50376,16 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-250",
       "text": "Tell patients that every 20 mmHg systolic increase over 115 doubles their risk of heart attack or stroke to motivate compliance.",
       "verbatim": "Every 20 points or millimeters of mercury systolic blood pressure over one fifteen, you're doubling your risk of heart attack or stroke.",
       "type": "judgment",
       "t": 250.6,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-250",
       "score": {
         "specific": true,
         "actionable": true,
@@ -50406,22 +50406,53 @@
           "harm": [
             "stroke"
           ],
-          "rarity": 7.36
+          "rarity": 7.37
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-822",
+      "text": "When staging hypertension, use the higher of the systolic or diastolic value.",
+      "verbatim": "So you always look at, of the diastolic and systolic, which one is higher. So if the systolic is is higher, let's say, if their blood pressure is, like, one forty two over 88, then you go away stop the systolic. If it's, like, one thirty eight over 92, you'd use the diastolic.",
+      "type": "dx_criteria",
+      "t": 644.7,
+      "match": "exact",
+      "episode": "dr-herrmann-on-outpatient-management",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-644",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypertension"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Diagnose hypertension using ambulatory home BP monitoring averaging >130/80 or at least three elevated office measurements.",
       "verbatim": "Ambulatory home blood pressure monitoring with an average over one thirty over 80 or at least three office space measurements.",
       "type": "dx_criteria",
       "t": 822.7,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-822",
       "score": {
         "specific": true,
         "actionable": false,
@@ -50434,22 +50465,106 @@
           "specific": [
             "threshold:>1"
           ],
-          "rarity": 7.52
+          "rarity": 7.47
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1091",
+      "text": "Instruct patients to take home BP once daily and return for follow-up in two weeks.",
+      "verbatim": "How often do you want her to take it? Once a day. ... When do you want her to come back then? Two weeks.",
+      "type": "practice",
+      "t": 877.1,
+      "match": "fuzzy",
+      "episode": "dr-herrmann-on-outpatient-management",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-877",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "rarity": 5.69
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Aerobic exercise can reduce BP by about 8 points in hypertensive patients and 5 points in non-hypertensive patients.",
+      "verbatim": "eight, potentially, if she has hypertension, around five.",
+      "type": "practice",
+      "t": 962.6,
+      "match": "exact",
+      "episode": "dr-herrmann-on-outpatient-management",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-962",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "The DASH diet can lower BP by 11 points; weight loss alone can lower it by 5 points.",
+      "verbatim": "Weight loss, five points. Healthy diet, 11 points.",
+      "type": "practice",
+      "t": 1072.0,
+      "match": "exact",
+      "episode": "dr-herrmann-on-outpatient-management",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1072",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:weight loss"
+          ],
+          "rarity": 6.08
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Optimal sodium reduction is less than 1,500 mg per day, which can lower BP by about 5 points.",
       "verbatim": "optimal is less than 1,500, so a gram and a half a day",
       "type": "practice",
       "t": 1091.7,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1091",
       "score": {
         "specific": true,
         "actionable": false,
@@ -50466,20 +50581,20 @@
           ],
           "rarity": 6.02
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1104",
       "text": "Increase potassium intake to 3,500, 5,000 mg/day from foods like spinach, avocados, bananas, and potatoes to help lower BP.",
       "verbatim": "increased your potassium... thirty five hundred to five thousand milligrams of potassium",
       "type": "practice",
-      "t": 1105.0,
-      "match": "fuzzy",
+      "t": 1106.3,
+      "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1106",
       "score": {
         "specific": true,
         "actionable": true,
@@ -50495,22 +50610,22 @@
           "actionable": [
             "Increase"
           ],
-          "rarity": 8.65
+          "rarity": 8.66
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1330",
-      "text": "For African American patients, a thiazide diuretic (e.g., chlorthalidone) is preferred as first-line therapy.",
-      "verbatim": "I know that Corthado is better for African Americans",
+      "text": "Limit alcohol to no more than 2 drinks per day for men and 1 drink per day for women.",
+      "verbatim": "men, less than two drinks a day. Woman, less than one drink a day.",
       "type": "practice",
-      "t": 1330.2,
+      "t": 1145.5,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1145",
       "score": {
         "specific": true,
         "actionable": false,
@@ -50521,24 +50636,56 @@
         "grade": "C",
         "fired": {
           "specific": [
-            "concept:african american"
+            "threshold:no more than 2",
+            "frequency:per day"
           ],
-          "rarity": 7.96
+          "rarity": 6.15
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1322",
+      "text": "Before starting an ACE inhibitor or ARB, check creatinine and potassium to avoid harm from underlying kidney disease.",
+      "verbatim": "And then we want another potassium. Right? If we're putting on the losartan, we wanna make sure we're not something really bad kidneys already before",
+      "type": "pitfall",
+      "t": 1240.3,
+      "match": "fuzzy",
+      "episode": "dr-herrmann-on-outpatient-management",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1240",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:creatinine"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 6.08
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "In patients with diabetes, start an ACE inhibitor or ARB for kidney protection.",
       "verbatim": "If I have diabetes, you should do an ACE or an ARP for kidney protection.",
       "type": "practice",
       "t": 1322.8,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1322",
       "score": {
         "specific": false,
         "actionable": true,
@@ -50551,22 +50698,50 @@
           "actionable": [
             "start"
           ],
-          "rarity": 6.27
+          "rarity": 6.28
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1359",
+      "text": "For African American patients, a thiazide diuretic (e.g., chlorthalidone) is preferred as first-line therapy.",
+      "verbatim": "I know that Corthado is better for African Americans",
+      "type": "practice",
+      "t": 1330.2,
+      "match": "exact",
+      "episode": "dr-herrmann-on-outpatient-management",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1330",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:african american"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "For systolic BP >160 mmHg, consider starting combination therapy with amlodipine and benazepril.",
       "verbatim": "Are they over one sixty? Start them on a double amlodipine, benazepril.",
       "type": "practice",
       "t": 1359.9,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1359",
       "score": {
         "specific": true,
         "actionable": true,
@@ -50584,135 +50759,26 @@
           "actionable": [
             "consider"
           ],
-          "rarity": 6.97
+          "rarity": 6.98
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-877",
-      "text": "Instruct patients to take home BP once daily and return for follow-up in two weeks.",
-      "verbatim": "How often do you want her to take it? Once a day. ... When do you want her to come back then? Two weeks.",
-      "type": "practice",
-      "t": 877.1,
-      "match": "fuzzy",
-      "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "frequency:daily"
-          ],
-          "rarity": 5.69
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1071",
-      "text": "The DASH diet can lower BP by 11 points; weight loss alone can lower it by 5 points.",
-      "verbatim": "Weight loss, five points. Healthy diet, 11 points.",
-      "type": "practice",
-      "t": 1072.0,
+      "text": "Expect a minor creatinine bump (0.2-0.3 mg/dL) after starting ACE/ARB; if it exceeds 0.3 or persists, consider other causes.",
+      "verbatim": "So you expect there to be some bump, you know, either point 2.3, something like that, you know, in in creatinine right after starting them. And now that goes back to normal over time.",
+      "type": "red_flag",
+      "t": 1501.1,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:weight loss"
-          ],
-          "rarity": 6.09
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-herrmann-on-outpatient-management-962",
-      "text": "Aerobic exercise can reduce BP by about 8 points in hypertensive patients and 5 points in non-hypertensive patients.",
-      "verbatim": "eight, potentially, if she has hypertension, around five.",
-      "type": "practice",
-      "t": 962.6,
-      "match": "exact",
-      "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "reduce"
-          ],
-          "rarity": 7.42
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1145",
-      "text": "Limit alcohol to no more than 2 drinks per day for men and 1 drink per day for women.",
-      "verbatim": "men, less than two drinks a day. Woman, less than one drink a day.",
-      "type": "practice",
-      "t": 1145.5,
-      "match": "exact",
-      "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "threshold:no more than 2",
-            "frequency:per day"
-          ],
-          "rarity": 6.14
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-herrmann-on-outpatient-management-644",
-      "text": "When staging hypertension, use the higher of the systolic or diastolic value.",
-      "verbatim": "So you always look at, of the diastolic and systolic, which one is higher. So if the systolic is is higher, let's say, if their blood pressure is, like, one forty two over 88, then you go away stop the systolic. If it's, like, one thirty eight over 92, you'd use the diastolic.",
-      "type": "dx_criteria",
-      "t": 644.7,
-      "match": "exact",
-      "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
+      "numbers_unheard": [
+        "0.2",
+        "0.3"
+      ],
+      "pearl_id": "dr-herrmann-on-outpatient-management-1501",
       "score": {
         "specific": true,
         "actionable": true,
@@ -50720,61 +50786,33 @@
         "harm": false,
         "nonobvious": true,
         "points": 3,
-        "grade": "B",
+        "grade": "C",
         "fired": {
           "specific": [
-            "concept:hypertension"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 7.1
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1240",
-      "text": "Before starting an ACE inhibitor or ARB, check creatinine and potassium to avoid harm from underlying kidney disease.",
-      "verbatim": "And then we want another potassium. Right? If we're putting on the losartan, we wanna make sure we're not something really bad kidneys already before",
-      "type": "pitfall",
-      "t": 1240.3,
-      "match": "fuzzy",
-      "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:creatinine"
+            "dose:0.3 mg"
           ],
           "actionable": [
             "starting"
           ],
-          "rarity": 6.07
+          "rarity": 6.74,
+          "capped": [
+            "number not heard: 0.2, 0.3"
+          ]
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1587",
       "text": "Avoid amlodipine 10 mg because it causes significant edema without much additional blood pressure lowering.",
       "verbatim": "avoid the ten milligrams. I had a patient in my clinic this week. You know, he's on ten milligrams of amlodipine, and he's got putting edema.",
       "type": "dosing",
       "t": 1588.0,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1588",
       "score": {
         "specific": true,
         "actionable": true,
@@ -50791,22 +50829,53 @@
           "actionable": [
             "Avoid"
           ],
-          "rarity": 6.42
+          "rarity": 6.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1727",
+      "text": "Advise patients to take thiazide diuretics in the morning to avoid nocturia.",
+      "verbatim": "tell them to take it in the morning because you're gonna be peeing all day.",
+      "type": "exam_technique",
+      "t": 1688.8,
+      "match": "exact",
+      "episode": "dr-herrmann-on-outpatient-management",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1688",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:thiazide diuretics"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 6.78
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Taper beta blockers slowly over months to prevent rebound tachycardia or myocardial infarction; reduce metoprolol by 25-50 mg per month.",
       "verbatim": "So if you stop one right right off the bat, right, you have a heart heart attack. So it's usually over months if you can. So take their current dose. Say they're on a hundred milligrams of metoprolol a day. Right? Cut them down to fifty milligrams per month. Cut them down to twenty five milligrams per month.",
       "type": "dosing",
       "t": 1727.2,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1727",
       "score": {
         "specific": true,
         "actionable": true,
@@ -50828,20 +50897,76 @@
           ],
           "rarity": 6.83
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1853",
+      "text": "Be cautious with beta blockers in asthma patients as they can worsen bronchospasm.",
+      "verbatim": "just be careful with asthma patients on these because they can make it worse.",
+      "type": "red_flag",
+      "t": 1778.0,
+      "match": "exact",
+      "episode": "dr-herrmann-on-outpatient-management",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1778",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:beta blockers"
+          ],
+          "rarity": 7.21
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Hydralazine requires four times daily dosing due to its short half-life; twice daily covers only half the day.",
+      "verbatim": "Pretty short half life, so it's gonna be... Really needs to be four times a day of dosing if you're gonna do it.",
+      "type": "dosing",
+      "t": 1810.8,
+      "match": "exact",
+      "episode": "dr-herrmann-on-outpatient-management",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1810",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Avoid clonidine tablets due to short duration of action (4 hours) and rebound hypertension; use patch if needed.",
       "verbatim": "Clonidine, just avoid it in the tablet form. Right? We're not trying to treat someone's blood pressure for four hours. We're trying to treat their blood pressure for four years.",
       "type": "pitfall",
       "t": 1853.4,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1853",
       "score": {
         "specific": true,
         "actionable": true,
@@ -50857,22 +50982,50 @@
           "actionable": [
             "Avoid"
           ],
-          "rarity": 6.77
+          "rarity": 6.81
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-2030",
+      "text": "Screen adults with normal blood pressure at least yearly; screen semiannually if they have risk factors.",
+      "verbatim": "screen your recommendations with normal blood pressure, Assess your blood pressure at least once a year. That way you know the trend and kinda keep an eye on. So... And then at least semiannually if they have risk factors.",
+      "type": "practice",
+      "t": 1967.9,
+      "match": "exact",
+      "episode": "dr-herrmann-on-outpatient-management",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-1967",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "For high-risk patients (diabetes, CKD, CAD, stroke), target blood pressure <130/80; for frail elderly, <140/90 or looser is acceptable.",
       "verbatim": "you really want their average to be less than one thirty over 80. Everyone else is kinda probably somewhere in between, but then you probably have the looser goal of one forty over ninety, specifically with patients with falls, dementia.",
       "type": "practice",
       "t": 2030.7,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-2030",
       "score": {
         "specific": true,
         "actionable": false,
@@ -50888,115 +51041,22 @@
           "harm": [
             "stroke"
           ],
-          "rarity": 7.64
+          "rarity": 7.65
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-2366",
-      "text": "In hypertensive urgency, aim to reduce blood pressure by 30% over the first week rather than quickly.",
-      "verbatim": "hypertensive urgency, your goal is 30 after the antihypertensives, following up in a week, slow decrease of blood pressure again.",
-      "type": "practice",
-      "t": 2366.1,
-      "match": "exact",
-      "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:hypertensive urgency"
-          ],
-          "actionable": [
-            "reduce"
-          ],
-          "rarity": 6.26
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-herrmann-on-outpatient-management-2466",
-      "text": "In hypertensive emergency with chest pain or stroke, give aspirin immediately.",
-      "verbatim": "If they have chest pain, yeah, let's give them some aspirin. You know? If... Or stroke, let's give them some aspirin.",
-      "type": "practice",
-      "t": 2466.1,
-      "match": "exact",
-      "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 4,
-        "grade": "A",
-        "fired": {
-          "specific": [
-            "concept:hypertensive emergency"
-          ],
-          "actionable": [
-            "give"
-          ],
-          "harm": [
-            "emergency"
-          ],
-          "rarity": 5.8
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-herrmann-on-outpatient-management-2529",
-      "text": "Suspect resistant hypertension when a patient is on three or more medications and blood pressure remains uncontrolled.",
-      "verbatim": "three medications is the point where you should probably start thinking about, is there something else going on?",
-      "type": "red_flag",
-      "t": 2529.2,
-      "match": "exact",
-      "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:resistant hypertension"
-          ],
-          "rarity": 6.14
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-herrmann-on-outpatient-management-2309",
       "text": "For suspected hypertensive emergency, order CT head if stroke symptoms, chest X-ray for pulmonary edema or dissection, and basic labs (CBC, CMP).",
       "verbatim": "So if you're worried about stroke, you wanna get a CT of their head. Absolutely. Possibly chest X-ray for this week. Yeah. Exactly. Looking for pulmonary edema or looking for dissection or something else going on.",
       "type": "dx_criteria",
       "t": 2309.6,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-2309",
       "score": {
         "specific": true,
         "actionable": true,
@@ -51015,22 +51075,115 @@
           "harm": [
             "emergency"
           ],
-          "rarity": 7.31
+          "rarity": 7.32
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-2594",
+      "text": "In hypertensive urgency, aim to reduce blood pressure by 30% over the first week rather than quickly.",
+      "verbatim": "hypertensive urgency, your goal is 30 after the antihypertensives, following up in a week, slow decrease of blood pressure again.",
+      "type": "practice",
+      "t": 2366.1,
+      "match": "exact",
+      "episode": "dr-herrmann-on-outpatient-management",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-2366",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypertensive urgency"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 6.27
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "In hypertensive emergency with chest pain or stroke, give aspirin immediately.",
+      "verbatim": "If they have chest pain, yeah, let's give them some aspirin. You know? If... Or stroke, let's give them some aspirin.",
+      "type": "practice",
+      "t": 2466.1,
+      "match": "exact",
+      "episode": "dr-herrmann-on-outpatient-management",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-2466",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hypertensive emergency"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 5.79
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Suspect resistant hypertension when a patient is on three or more medications and blood pressure remains uncontrolled.",
+      "verbatim": "three medications is the point where you should probably start thinking about, is there something else going on?",
+      "type": "red_flag",
+      "t": 2529.2,
+      "match": "exact",
+      "episode": "dr-herrmann-on-outpatient-management",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-2529",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:resistant hypertension"
+          ],
+          "rarity": 6.15
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "When evaluating primary aldosteronism, check plasma renin activity and 8 AM plasma aldosterone, especially if low potassium and high bicarbonate.",
       "verbatim": "I have to double check here on my my notes. But, yeah, it's the plasma renin activity and eight AM plasma aldosterone for calcium.",
       "type": "dx_criteria",
       "t": 2594.9,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-2594",
       "score": {
         "specific": true,
         "actionable": true,
@@ -51046,84 +51199,22 @@
           "actionable": [
             "check"
           ],
-          "rarity": 7.82
+          "rarity": 7.83
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1501",
-      "text": "Expect a minor creatinine bump (0.2-0.3 mg/dL) after starting ACE/ARB; if it exceeds 0.3 or persists, consider other causes.",
-      "verbatim": "So you expect there to be some bump, you know, either point 2.3, something like that, you know, in in creatinine right after starting them. And now that goes back to normal over time.",
-      "type": "red_flag",
-      "t": 1501.1,
+      "text": "If a patient needs dialysis for volume overload, that may be the only way to control their blood pressure when medications fail.",
+      "verbatim": "put them on diuretics, you know, potentially if even dialysis if they're to that stage, you know, where they need to be on dialysis. And that's that's the only thing that will get their blood pressure low if their... If these aren't working.",
+      "type": "judgment",
+      "t": 2638.6,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:0.3 mg"
-          ],
-          "actionable": [
-            "starting"
-          ],
-          "rarity": 6.73
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1688",
-      "text": "Advise patients to take thiazide diuretics in the morning to avoid nocturia.",
-      "verbatim": "tell them to take it in the morning because you're gonna be peeing all day.",
-      "type": "exam_technique",
-      "t": 1688.8,
-      "match": "exact",
-      "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:thiazide diuretics"
-          ],
-          "actionable": [
-            "avoid"
-          ],
-          "rarity": 6.77
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1810",
-      "text": "Hydralazine requires four times daily dosing due to its short half-life; twice daily covers only half the day.",
-      "verbatim": "Pretty short half life, so it's gonna be... Really needs to be four times a day of dosing if you're gonna do it.",
-      "type": "dosing",
-      "t": 1810.8,
-      "match": "exact",
-      "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-2638",
       "score": {
         "specific": true,
         "actionable": false,
@@ -51134,52 +51225,24 @@
         "grade": "C",
         "fired": {
           "specific": [
-            "frequency:daily"
+            "concept:volume overload"
           ],
-          "rarity": 7.08
+          "rarity": 6.95
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1777",
-      "text": "Be cautious with beta blockers in asthma patients as they can worsen bronchospasm.",
-      "verbatim": "just be careful with asthma patients on these because they can make it worse.",
+      "text": "Many patients hide non-adherence; check pharmacy fill records electronically to confirm they are actually taking prescribed medications.",
+      "verbatim": "if you look at their pharmacy list, you haven't... You filled a thirty day script, like, six months ago. Oh, yeah. I'm just taking it.",
       "type": "red_flag",
-      "t": 1778.0,
+      "t": 2670.8,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:beta blockers"
-          ],
-          "rarity": 7.2
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-herrmann-on-outpatient-management-1967",
-      "text": "Screen adults with normal blood pressure at least yearly; screen semiannually if they have risk factors.",
-      "verbatim": "screen your recommendations with normal blood pressure, Assess your blood pressure at least once a year. That way you know the trend and kinda keep an eye on. So... And then at least semiannually if they have risk factors.",
-      "type": "practice",
-      "t": 1967.9,
-      "match": "exact",
-      "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-2670",
       "score": {
         "specific": false,
         "actionable": true,
@@ -51190,24 +51253,24 @@
         "grade": "C",
         "fired": {
           "actionable": [
-            "Screen"
+            "check"
           ],
-          "rarity": 7.09
+          "rarity": 8.29
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-2696",
       "text": "To assess true dietary sodium intake, order a 24-hour urine sodium excretion; this provides objective evidence of excess salt.",
       "verbatim": "you can order a twenty four hour sodium excretion. And so you'll collect all the sodium that they've excreted for the day, and you can tell them how much sodium they've excreted for the day.",
-      "type": "diagnostic_criteria",
+      "type": "dx_criteria",
       "t": 2696.9,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-2696",
       "score": {
         "specific": true,
         "actionable": true,
@@ -51225,53 +51288,20 @@
           ],
           "rarity": 6.95
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-2810",
-      "text": "Start patients on achievable exercise goals: 30 minutes of brisk walking at least 5 days per week (150 minutes/week).",
-      "verbatim": "thirty minutes a day, five days a week. Hopefully, you can get out, go on a brisk walk for thirty minutes a day, five days a week.",
-      "type": "practice",
-      "t": 2810.8,
-      "match": "exact",
-      "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:30 minutes",
-            "threshold:at least 5",
-            "frequency:per week"
-          ],
-          "actionable": [
-            "Start"
-          ],
-          "rarity": 7.49
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-herrmann-on-outpatient-management-2734",
       "text": "Amlodipine/benazepril combination pills (5/10, 5/20) are as affordable as lisinopril or amlodipine alone, making them good first-choice combination tablets.",
       "verbatim": "My go to is amlodipine, benazepril. So amlodipine five, benazepril ten, benazepril twenty. They have... It's, like, the same price as lisinopril or amlodipine, and it's a combination one.",
       "type": "dosing",
       "t": 2734.5,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-2734",
       "score": {
         "specific": true,
         "actionable": false,
@@ -51285,22 +51315,22 @@
             "threshold:5/10",
             "drug:Amlodipine"
           ],
-          "rarity": 8.19
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-2782",
       "text": "When evaluating hyperaldosteronism, you must hold spironolactone for at least one month before checking aldosterone and renin levels.",
       "verbatim": "Probably have to be off of it for at least a month before it would really",
       "type": "pitfall",
       "t": 2782.7,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-2782",
       "score": {
         "specific": true,
         "actionable": true,
@@ -51316,50 +51346,61 @@
           "actionable": [
             "hold"
           ],
-          "rarity": 7.46
+          "rarity": 7.47
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-2670",
-      "text": "Many patients hide non-adherence; check pharmacy fill records electronically to confirm they are actually taking prescribed medications.",
-      "verbatim": "if you look at their pharmacy list, you haven't... You filled a thirty day script, like, six months ago. Oh, yeah. I'm just taking it.",
-      "type": "red_flag",
-      "t": 2670.8,
+      "text": "Start patients on achievable exercise goals: 30 minutes of brisk walking at least 5 days per week (150 minutes/week).",
+      "verbatim": "thirty minutes a day, five days a week. Hopefully, you can get out, go on a brisk walk for thirty minutes a day, five days a week.",
+      "type": "practice",
+      "t": 2810.8,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "numbers_unheard": [
+        "150"
+      ],
+      "pearl_id": "dr-herrmann-on-outpatient-management-2810",
       "score": {
-        "specific": false,
+        "specific": true,
         "actionable": true,
         "local": false,
         "harm": false,
         "nonobvious": true,
-        "points": 2,
+        "points": 3,
         "grade": "C",
         "fired": {
-          "actionable": [
-            "check"
+          "specific": [
+            "dose:30 minutes",
+            "threshold:at least 5",
+            "frequency:per week"
           ],
-          "rarity": 8.29
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 7.49,
+          "capped": [
+            "number not heard: 150"
+          ]
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-herrmann-on-outpatient-management-2857",
       "text": "A common hidden sodium source is frozen TV dinners, which can contain 2000 mg of sodium per serving.",
       "verbatim": "their TV dinner that they eat every day for for dinner has, like, 200, 2,000 of sodium.",
       "type": "pitfall",
       "t": 2857.2,
       "match": "exact",
       "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
+      "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-herrmann-on-outpatient-management-2857",
       "score": {
         "specific": true,
         "actionable": false,
@@ -51372,37 +51413,9 @@
           "specific": [
             "dose:2000 mg"
           ],
-          "rarity": 7.96
+          "rarity": 7.89
         },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-herrmann-on-outpatient-management-2638",
-      "text": "If a patient needs dialysis for volume overload, that may be the only way to control their blood pressure when medications fail.",
-      "verbatim": "put them on diuretics, you know, potentially if even dialysis if they're to that stage, you know, where they need to be on dialysis. And that's that's the only thing that will get their blood pressure low if their... If these aren't working.",
-      "type": "judgment",
-      "t": 2638.6,
-      "match": "exact",
-      "episode": "dr-herrmann-on-outpatient-management",
-      "speaker": "Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:volume overload"
-          ],
-          "rarity": 6.95
-        },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -75756,5 +75769,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "herrmann",
+      "name": "Dr. Herrmann"
+    }
+  ],
+  "pearls_fingerprint": "5d11b6a057263427"
 }

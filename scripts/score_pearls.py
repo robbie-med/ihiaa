@@ -40,7 +40,7 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent
 EPISODES = BASE / "data" / "episodes"
-RUBRIC_VERSION = "rules-v1"
+RUBRIC_VERSION = "rules-v2"
 
 # --------------------------------------------------------------------------
 # Lexicons. Deliberately explicit and editable -- these ARE the rubric, and a
@@ -174,6 +174,17 @@ def score_one(p: dict, idf: dict, concepts: list, rare_cut: float) -> dict:
     points = sum((specific, actionable, harm, nonobvious))
     grade = "D" if local else ("A" if points == 4 else "B" if points == 3
                                else "C" if points == 2 else "D")
+    # A number the lecturer never said (see refine_pearls.py) is the worst error a
+    # clinical reference can make, and "specific" rewards exactly those numbers.
+    # Such a pearl is kept for review but never ranked above C.
+    if p.get("numbers_unheard") and grade in "AB":
+        grade = "C"
+        fired["capped"] = ["number not heard: " + ", ".join(p["numbers_unheard"])]
+    # Said by someone other than the presenter (a resident's answer, a question
+    # from the floor): not the attending's teaching, so not ranked as top-tier.
+    elif p.get("by_presenter") is False and grade == "A":
+        grade = "B"
+        fired["capped"] = ["said by another participant"]
     return {"specific": specific, "actionable": actionable, "local": local,
             "harm": harm, "nonobvious": nonobvious, "points": points,
             "grade": grade, "fired": fired, "rubric": RUBRIC_VERSION}

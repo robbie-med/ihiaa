@@ -2,7 +2,7 @@
   "slug": "pocus-with-dr-ledbetter",
   "guid": "hopepartners.podbean.com/051c7866-6d86-3bd5-ac81-68837caf1d38",
   "title": "POCUS with Dr. Ledbetter",
-  "speaker": "Unknown",
+  "speaker": "Dr. Ledbetter",
   "link": "https://hopepartners.podbean.com/e/pocus-with-dr-ledbetter/",
   "pubDate": "Fri, 30 Sep 2022 10:18:04 -0500",
   "duration_sec": 5054,
@@ -41654,16 +41654,16 @@
   ],
   "pearls": [
     {
-      "pearl_id": "pocus-with-dr-ledbetter-3105",
-      "text": "In the parasternal long-axis view, if the mitral valve leaflet separation from the septum is greater than 1 cm, it suggests reduced left ventricular ejection fraction.",
-      "verbatim": "Mitral valve is very far from the So distance are you looking for? Centimeter. You're doing the eyeball test. It's a one centimeter.",
+      "text": "When interpreting POCUS, systematically identify the view, three pieces of anatomy, and whether the findings are normal or abnormal.",
+      "verbatim": "I want you to tell me what view it is. I want you to tell me three pieces of anatomy in that view, and I want you to tell me what what you see. Like, is it normal or is it abnormal?",
       "type": "exam_technique",
-      "t": 3105.8,
+      "t": 715.6,
       "match": "exact",
       "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-715",
       "score": {
         "specific": true,
         "actionable": false,
@@ -41674,53 +41674,24 @@
         "grade": "C",
         "fired": {
           "specific": [
-            "dose:1 cm",
-            "threshold:greater than 1"
+            "concept:pocus"
           ],
-          "rarity": 7.29
+          "rarity": 7.93
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "pocus-with-dr-ledbetter-2252",
-      "text": "A D-sign on parasternal short-axis view (left ventricle appearing D-shaped instead of circular) indicates acute right ventricular pressure overload, classically from pulmonary embolism.",
-      "verbatim": "When the right side pressure increases enough to overpower the left side, starts pushing against ventricle creating what looks like a... And that's evidence of increased right sided pressure. This... I think this is only an acute sign.",
-      "type": "dx_criteria",
-      "t": 2252.2,
-      "match": "exact",
-      "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:pulmonary embolism"
-          ],
-          "rarity": 8.19
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "pocus-with-dr-ledbetter-1443",
       "text": "In the FAST exam, finding free fluid in the abdomen after trauma plus a bladder with heterogeneous material suggests bladder rupture.",
       "verbatim": "So his his bladder rupture. So this is a example of how you could use the past exam.",
       "type": "dx_criteria",
       "t": 1443.4,
       "match": "exact",
       "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-1443",
       "score": {
         "specific": true,
         "actionable": false,
@@ -41735,20 +41706,73 @@
           ],
           "rarity": 7.5
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "pocus-with-dr-ledbetter-2413",
+      "text": "The right ventricle should be about two-thirds or less the size of the left ventricle; a larger right ventricle indicates increased right-sided pressure.",
+      "verbatim": "the right side should be about two thirds or less of the left side. This is giant Oh, wow. Compared to the left side.",
+      "type": "exam_technique",
+      "t": 2108.8,
+      "match": "exact",
+      "episode": "pocus-with-dr-ledbetter",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-2108",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "A D-sign on parasternal short-axis view (left ventricle appearing D-shaped instead of circular) indicates acute right ventricular pressure overload, classically from pulmonary embolism.",
+      "verbatim": "When the right side pressure increases enough to overpower the left side, starts pushing against ventricle creating what looks like a... And that's evidence of increased right sided pressure. This... I think this is only an acute sign.",
+      "type": "dx_criteria",
+      "t": 2252.2,
+      "match": "exact",
+      "episode": "pocus-with-dr-ledbetter",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-2252",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pulmonary embolism"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "When a patient presents with hypotension and tachycardia, perform cardiac POCUS to evaluate for pulmonary embolism even if the presentation is atypical.",
       "verbatim": "But because the blood pressure is 72, you wanna look at the heart. You might end up looking at the lungs or at the legs, looking at the IVC.",
       "type": "red_flag",
       "t": 2413.2,
       "match": "exact",
       "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-2413",
       "score": {
         "specific": true,
         "actionable": true,
@@ -41764,47 +41788,79 @@
           "actionable": [
             "evaluate"
           ],
-          "rarity": 6.83
+          "rarity": 6.82
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "pocus-with-dr-ledbetter-2108",
-      "text": "The right ventricle should be about two-thirds or less the size of the left ventricle; a larger right ventricle indicates increased right-sided pressure.",
-      "verbatim": "the right side should be about two thirds or less of the left side. This is giant Oh, wow. Compared to the left side.",
-      "type": "exam_technique",
-      "t": 2108.8,
+      "text": "Recording POCUS clips and comparing them with confirmatory imaging (e.g., CT) reinforces learning and builds diagnostic confidence.",
+      "verbatim": "if you do try and you do see something and then it is confirmed on CT PE protocol, and then you go back and looked at it, and if you save your clips or your images, that's gonna reinforce, oh, I I did that.",
+      "type": "judgment",
+      "t": 2581.4,
       "match": "exact",
       "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-2581",
       "score": {
-        "specific": false,
+        "specific": true,
         "actionable": false,
         "local": false,
         "harm": false,
         "nonobvious": true,
-        "points": 1,
-        "grade": "D",
+        "points": 2,
+        "grade": "C",
         "fired": {
-          "rarity": 7.42
+          "specific": [
+            "test:CT"
+          ],
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "pocus-with-dr-ledbetter-3218",
+      "text": "In the parasternal long-axis view, if the mitral valve leaflet separation from the septum is greater than 1 cm, it suggests reduced left ventricular ejection fraction.",
+      "verbatim": "Mitral valve is very far from the So distance are you looking for? Centimeter. You're doing the eyeball test. It's a one centimeter.",
+      "type": "exam_technique",
+      "t": 3105.8,
+      "match": "exact",
+      "episode": "pocus-with-dr-ledbetter",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-3105",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1 cm",
+            "threshold:greater than 1"
+          ],
+          "rarity": 7.3
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "A left atrium three to four times the size of the aorta is abnormal and suggests chronic diastolic dysfunction or volume overload.",
       "verbatim": "Eyelination of this ventricle is pretty remarkable as is the size of the left atrium. Right? So it's three or four times the size of the aorta and break down to the size of the aorta throughout the contraction.",
       "type": "exam_technique",
       "t": 3218.4,
       "match": "exact",
       "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-3218",
       "score": {
         "specific": true,
         "actionable": false,
@@ -41819,76 +41875,20 @@
           ],
           "rarity": 7.5
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "pocus-with-dr-ledbetter-715",
-      "text": "When interpreting POCUS, systematically identify the view, three pieces of anatomy, and whether the findings are normal or abnormal.",
-      "verbatim": "I want you to tell me what view it is. I want you to tell me three pieces of anatomy in that view, and I want you to tell me what what you see. Like, is it normal or is it abnormal?",
-      "type": "exam_technique",
-      "t": 715.6,
-      "match": "exact",
-      "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:pocus"
-          ],
-          "rarity": 7.92
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "pocus-with-dr-ledbetter-2581",
-      "text": "Recording POCUS clips and comparing them with confirmatory imaging (e.g., CT) reinforces learning and builds diagnostic confidence.",
-      "verbatim": "if you do try and you do see something and then it is confirmed on CT PE protocol, and then you go back and looked at it, and if you save your clips or your images, that's gonna reinforce, oh, I I did that.",
-      "type": "judgment",
-      "t": 2581.4,
-      "match": "exact",
-      "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:CT"
-          ],
-          "rarity": 8.19
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "pocus-with-dr-ledbetter-3365",
       "text": "If you have three B-lines in two different lung zones on both sides, that's pretty high sensitivity and specificity for pulmonary edema usually from decompensated heart failure.",
       "verbatim": "If you have three v lines in two different lung zones on both sides, that's pretty high sensitivity and specificity for pulmonary edema usually from decompensated heart.",
       "type": "dx_criteria",
       "t": 3365.4,
       "match": "exact",
       "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-3365",
       "score": {
         "specific": true,
         "actionable": false,
@@ -41901,22 +41901,22 @@
           "specific": [
             "concept:sensitivity and specif"
           ],
-          "rarity": 7.59
+          "rarity": 7.6
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "pocus-with-dr-ledbetter-3486",
       "text": "A dilated IVC beyond 2 cm is considered starting at a dilated point; lack of collapse indicates elevated right atrial pressure.",
       "verbatim": "It's not collapsing. And just generally speaking, it's dilated. It's it's, you know, at least three centimeters. And when you go beyond two centimeters, you're you're considered starting out at a dilated point.",
       "type": "dx_criteria",
       "t": 3486.6,
       "match": "exact",
       "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-3486",
       "score": {
         "specific": true,
         "actionable": true,
@@ -41932,22 +41932,22 @@
           "actionable": [
             "starting"
           ],
-          "rarity": 6.54
+          "rarity": 6.51
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "pocus-with-dr-ledbetter-3612",
       "text": "In a hypotensive patient with suspected sepsis, take a second to look at the heart and IVC; if you see a dilated, non-collapsing IVC, you should not give fluids but instead consider inotropes.",
       "verbatim": "take a second to look at the heart, the IVC because, I mean, if you saw this, you're longer thinking, oh, I should give him a whole bunch of fluids. You're thinking, oh, I should put him on on an iotrop.",
       "type": "red_flag",
       "t": 3612.6,
       "match": "exact",
       "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-3612",
       "score": {
         "specific": true,
         "actionable": true,
@@ -41966,138 +41966,22 @@
           "harm": [
             "sepsis"
           ],
-          "rarity": 7.65
+          "rarity": 7.66
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "pocus-with-dr-ledbetter-3995",
-      "text": "Pericardial effusion is anechoic (black) compared to blood; epicardial fat pads are more hypoechoic (gray) and fuzzier, so look in multiple views to confirm.",
-      "verbatim": "It's not it's not as anechoic as the blood inside. A little bit grayer and fuzzier. So you would wanna look in multiple views to see if you see it anywhere else.",
-      "type": "pitfall",
-      "t": 3995.3,
-      "match": "exact",
-      "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:pericardial effusion"
-          ],
-          "actionable": [
-            "confirm"
-          ],
-          "rarity": 8.42
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "pocus-with-dr-ledbetter-4523",
-      "text": "In left ventricular systolic dysfunction, the mitral valve barely moves and does not get within 1 cm of the septum (EPSS >1 cm).",
-      "verbatim": "mitral valve here, not even getting close to that septum. All you need is a centimeter. We're getting a lot more than that, it seems.",
-      "type": "dx_criteria",
-      "t": 4523.6,
-      "match": "exact",
-      "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:1 cm",
-            "threshold:>1"
-          ],
-          "rarity": 7.82
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "pocus-with-dr-ledbetter-4106",
-      "text": "A normal left ventricle in short axis appears circular and contracts concentrically; you can eyeball it and say 'that's normal' if it collapses at least 50%.",
-      "verbatim": "It's a circle, and it's closing concentrically. You can learn to eyeball this and say, oh, that's normal.",
-      "type": "exam_technique",
-      "t": 4106.2,
-      "match": "exact",
-      "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "threshold:at least 5"
-          ],
-          "rarity": 8.19
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "pocus-with-dr-ledbetter-4350",
-      "text": "Right ventricular strain is suggested by a right ventricle that looks smaller than the left (less than two-thirds the size) and contracts poorly from apex to base.",
-      "verbatim": "it looks smaller than the left side. Don't know if I could give as specific as two thirds, but it looks smaller. And then it's contracting from from apex to thigh.",
-      "type": "dx_criteria",
-      "t": 4350.9,
-      "match": "exact",
-      "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:right ventricular stra"
-          ],
-          "rarity": 7.5
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "pocus-with-dr-ledbetter-3673",
       "text": "In cardiogenic shock, the first priority is to get blood pressure up with vasopressors, then diurese; do not flood with fluids.",
       "verbatim": "I think the first priority would be get his blood pressure up. I think the second priority would be to diurese him.",
       "type": "practice",
       "t": 3673.5,
       "match": "exact",
       "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-3673",
       "score": {
         "specific": true,
         "actionable": true,
@@ -42116,22 +42000,144 @@
           "harm": [
             "shock"
           ],
-          "rarity": 8.42
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "pocus-with-dr-ledbetter-4665",
+      "text": "Pericardial effusion is anechoic (black) compared to blood; epicardial fat pads are more hypoechoic (gray) and fuzzier, so look in multiple views to confirm.",
+      "verbatim": "It's not it's not as anechoic as the blood inside. A little bit grayer and fuzzier. So you would wanna look in multiple views to see if you see it anywhere else.",
+      "type": "pitfall",
+      "t": 3995.3,
+      "match": "exact",
+      "episode": "pocus-with-dr-ledbetter",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-3995",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pericardial effusion"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "rarity": 8.43
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "A normal left ventricle in short axis appears circular and contracts concentrically; you can eyeball it and say 'that's normal' if it collapses at least 50%.",
+      "verbatim": "It's a circle, and it's closing concentrically. You can learn to eyeball this and say, oh, that's normal.",
+      "type": "exam_technique",
+      "t": 4106.2,
+      "match": "exact",
+      "episode": "pocus-with-dr-ledbetter",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "numbers_unheard": [
+        "50"
+      ],
+      "pearl_id": "pocus-with-dr-ledbetter-4106",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:at least 5"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Right ventricular strain is suggested by a right ventricle that looks smaller than the left (less than two-thirds the size) and contracts poorly from apex to base.",
+      "verbatim": "it looks smaller than the left side. Don't know if I could give as specific as two thirds, but it looks smaller. And then it's contracting from from apex to thigh.",
+      "type": "dx_criteria",
+      "t": 4350.9,
+      "match": "exact",
+      "episode": "pocus-with-dr-ledbetter",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-4350",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:right ventricular stra"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "In left ventricular systolic dysfunction, the mitral valve barely moves and does not get within 1 cm of the septum (EPSS >1 cm).",
+      "verbatim": "mitral valve here, not even getting close to that septum. All you need is a centimeter. We're getting a lot more than that, it seems.",
+      "type": "dx_criteria",
+      "t": 4523.6,
+      "match": "exact",
+      "episode": "pocus-with-dr-ledbetter",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "numbers_unheard": [
+        "1"
+      ],
+      "pearl_id": "pocus-with-dr-ledbetter-4523",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1 cm",
+            "threshold:>1"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "When you cannot clearly see the right ventricle due to air artifact, do not diagnose right heart strain; it is safer to say you cannot assess it.",
       "verbatim": "I wouldn't feel comfortable saying anything about the right side because you can't see where it ends.",
       "type": "pitfall",
       "t": 4665.8,
       "match": "exact",
       "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-4665",
       "score": {
         "specific": true,
         "actionable": true,
@@ -42147,22 +42153,22 @@
           "actionable": [
             "do not"
           ],
-          "rarity": 6.54
+          "rarity": 6.55
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "pocus-with-dr-ledbetter-4770",
       "text": "A hyperdynamic left ventricle that completely collapses on itself is actually normal, not abnormal.",
       "verbatim": "this left side is hyperdynamic. It's, like, completely collapsing on itself. Normal or abnormal? Normal.",
       "type": "judgment",
       "t": 4770.9,
       "match": "exact",
       "episode": "pocus-with-dr-ledbetter",
-      "speaker": "Unknown",
+      "speaker": "Dr. Ledbetter",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "pocus-with-dr-ledbetter-4770",
       "score": {
         "specific": true,
         "actionable": false,
@@ -42175,9 +42181,9 @@
           "specific": [
             "concept:hyperdynamic left vent"
           ],
-          "rarity": 7.73
+          "rarity": 7.74
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -60315,5 +60321,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "ledbetter",
+      "name": "Dr. Ledbetter"
+    }
+  ],
+  "pearls_fingerprint": "62285487da944469"
 }

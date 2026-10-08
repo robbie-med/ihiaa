@@ -2,7 +2,7 @@
   "slug": "dr-liening-on-pediatric-gi",
   "guid": "hopepartners.podbean.com/4885912d-9dd8-31ad-a8ea-1ab0b5153784",
   "title": "Dr. Liening on Pediatric GI 1/8/26",
-  "speaker": "Liening",
+  "speaker": "Dr. Liening",
   "link": "https://hopepartners.podbean.com/e/dr-liening-on-pediatric-gi-1826/",
   "pubDate": "Wed, 21 Jan 2026 10:13:23 -0600",
   "duration_sec": 2403,
@@ -39081,16 +39081,16 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-liening-on-pediatric-gi-1429",
       "text": "Goat milk is not safe for cow's milk allergy due to 90% cross-reactivity.",
       "verbatim": "the little peptide sequences are about 90% cross reactive. So goat is enough to no go for this.",
       "type": "pitfall",
       "t": 1429.8,
       "match": "exact",
       "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
+      "speaker": "Dr. Liening",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-1429",
       "score": {
         "specific": false,
         "actionable": false,
@@ -39102,20 +39102,20 @@
         "fired": {
           "rarity": 8.29
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-liening-on-pediatric-gi-1523",
       "text": "True IgE-mediated food allergy is highly unlikely before 6 months of age.",
       "verbatim": "It is highly, highly, highly unlikely that less than six months, baby's gonna have a true allergy to anything apart from this non-true allergy to, like, the milk or the soy or the goat.",
       "type": "red_flag",
       "t": 1523.0,
       "match": "exact",
       "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
+      "speaker": "Dr. Liening",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-1523",
       "score": {
         "specific": true,
         "actionable": false,
@@ -39130,20 +39130,129 @@
           ],
           "rarity": 7.02
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-liening-on-pediatric-gi-1855",
+      "text": "Maternal antibodies protect infants until about 6 months of age.",
+      "verbatim": "they have mom's antibodies up until about six months",
+      "type": "concept",
+      "t": 1551.8,
+      "match": "exact",
+      "episode": "dr-liening-on-pediatric-gi",
+      "speaker": "Dr. Liening",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-1551",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "rarity": 6.03
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Volvulus requires immediate admission and surgery.",
+      "verbatim": "Immediately admit them and take them to surgery.",
+      "type": "red_flag",
+      "t": 1629.9,
+      "match": "exact",
+      "episode": "dr-liening-on-pediatric-gi",
+      "speaker": "Dr. Liening",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-1629",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:volvulus"
+          ],
+          "rarity": 6.5
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "FPIES is a proctocolitis inflammation, not an infection.",
+      "verbatim": "The key is that it's a proctocolitis inflammation. It's not infection.",
+      "type": "dx_criteria",
+      "t": 1768.5,
+      "match": "exact",
+      "episode": "dr-liening-on-pediatric-gi",
+      "speaker": "Dr. Liening",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-1768",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "An abdominal X-ray for constipation can reassure parents even if not medically necessary.",
+      "verbatim": "You can get an X-ray to support your diagnosis. If you have any gout, you don't have to. For some reason, it's really helpful to the parents.",
+      "type": "exam_technique",
+      "t": 1821.9,
+      "match": "exact",
+      "episode": "dr-liening-on-pediatric-gi",
+      "speaker": "Dr. Liening",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-1821",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "rarity": 6.64
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "For constipation, after a cleanout, continue MiraLAX daily for at least a few months to allow the colon to recover.",
       "verbatim": "MiraLAX daily. So the abnormal stool. And then why are you gonna keep doing it on some sort of weekly regimen? Or should you stop after everything gets normal after a week? Because their colon is gonna distant. You need to need for at least a few months.",
       "type": "dosing",
       "t": 1855.0,
       "match": "exact",
       "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
+      "speaker": "Dr. Liening",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-1855",
       "score": {
         "specific": true,
         "actionable": false,
@@ -39156,22 +39265,22 @@
           "specific": [
             "frequency:daily"
           ],
-          "rarity": 7.32
+          "rarity": 7.33
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-liening-on-pediatric-gi-1895",
       "text": "Clean out the colon for a week, then give MiraLAX every night as a routine.",
       "verbatim": "So you clean them out for a week, and then you do, like, you know, every night of the week, same night, you know, as a routine.",
       "type": "dosing",
       "t": 1895.8,
       "match": "exact",
       "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
+      "speaker": "Dr. Liening",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-1895",
       "score": {
         "specific": true,
         "actionable": true,
@@ -39187,22 +39296,22 @@
           "actionable": [
             "give"
           ],
-          "rarity": 6.52
+          "rarity": 6.53
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-liening-on-pediatric-gi-1919",
       "text": "In gastroenteritis, only worry about bacterial infection if there is fever or blood in the stool.",
       "verbatim": "You really only need to worry about it if they're having fever or blood blood in the stool.",
       "type": "red_flag",
       "t": 1919.5,
       "match": "exact",
       "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
+      "speaker": "Dr. Liening",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-1919",
       "score": {
         "specific": false,
         "actionable": false,
@@ -39212,22 +39321,22 @@
         "points": 1,
         "grade": "D",
         "fired": {
-          "rarity": 7.55
+          "rarity": 7.56
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-liening-on-pediatric-gi-1929",
       "text": "Antiemetics like Zofran are not tested in infants under 60 days of life.",
       "verbatim": "none of them are tested under sixty days of of life.",
       "type": "pitfall",
       "t": 1929.5,
       "match": "exact",
       "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
+      "speaker": "Dr. Liening",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-1929",
       "score": {
         "specific": true,
         "actionable": false,
@@ -39241,22 +39350,22 @@
             "dose:60 days",
             "threshold:under 6"
           ],
-          "rarity": 7.46
+          "rarity": 7.39
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-liening-on-pediatric-gi-2065",
       "text": "High-volume watery stools are always viral.",
       "verbatim": "high volume watery is always viral.",
       "type": "dx_criteria",
       "t": 2065.9,
       "match": "exact",
       "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
+      "speaker": "Dr. Liening",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-2065",
       "score": {
         "specific": false,
         "actionable": true,
@@ -39269,22 +39378,22 @@
           "actionable": [
             "always"
           ],
-          "rarity": 7.92
+          "rarity": 7.93
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-liening-on-pediatric-gi-2075",
       "text": "Enterovirus typically does not cause severe dehydration like norovirus.",
       "verbatim": "Enterovirus, they usually don't get that sick.",
       "type": "judgment",
       "t": 2075.5,
       "match": "exact",
       "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
+      "speaker": "Dr. Liening",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-2075",
       "score": {
         "specific": true,
         "actionable": false,
@@ -39297,22 +39406,22 @@
           "specific": [
             "concept:dehydration"
           ],
-          "rarity": 7.96
+          "rarity": 7.97
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-liening-on-pediatric-gi-2191",
       "text": "Use the pediatric appendicitis score every time you have concern for appendicitis, especially in younger children.",
       "verbatim": "you need to use it every time you have an appendicitis, like, concern because appendicitis in kids, particularly the younger they are, the more likely you are to miss it.",
       "type": "practice",
       "t": 2191.0,
       "match": "exact",
       "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
+      "speaker": "Dr. Liening",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-2191",
       "score": {
         "specific": true,
         "actionable": true,
@@ -39328,22 +39437,22 @@
           "actionable": [
             "Use"
           ],
-          "rarity": 6.34
+          "rarity": 6.33
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-liening-on-pediatric-gi-2220",
       "text": "Key elements of the pediatric appendicitis score include anorexia, fever, nausea/vomiting, and right lower quadrant pain elicited by cough, percussion, or hopping.",
       "verbatim": "the key things are things like anorexia, fever, nausea, vomiting. Like, we all kinda know that. But then it helps you key into specifically right lower quadrant pain. So cough, percussion, or even hopping.",
       "type": "exam_technique",
       "t": 2220.4,
       "match": "exact",
       "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
+      "speaker": "Dr. Liening",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-2220",
       "score": {
         "specific": true,
         "actionable": false,
@@ -39356,131 +39465,22 @@
           "specific": [
             "concept:pediatric appendicitis"
           ],
-          "rarity": 8.42
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-liening-on-pediatric-gi-1768",
-      "text": "FPIES is a proctocolitis inflammation, not an infection.",
-      "verbatim": "The key is that it's a proctocolitis inflammation. It's not infection.",
-      "type": "dx_criteria",
-      "t": 1768.5,
-      "match": "exact",
-      "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.42
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-liening-on-pediatric-gi-1821",
-      "text": "An abdominal X-ray for constipation can reassure parents even if not medically necessary.",
-      "verbatim": "You can get an X-ray to support your diagnosis. If you have any gout, you don't have to. For some reason, it's really helpful to the parents.",
-      "type": "exam_technique",
-      "t": 1821.9,
-      "match": "exact",
-      "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:X-ray"
-          ],
-          "rarity": 6.63
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-liening-on-pediatric-gi-1551",
-      "text": "Maternal antibodies protect infants until about 6 months of age.",
-      "verbatim": "they have mom's antibodies up until about six months",
-      "type": "concept",
-      "t": 1551.8,
-      "match": "exact",
-      "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:6 months"
-          ],
-          "rarity": 6.09
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-liening-on-pediatric-gi-1629",
-      "text": "Volvulus requires immediate admission and surgery.",
-      "verbatim": "Immediately admit them and take them to surgery.",
-      "type": "red_flag",
-      "t": 1629.9,
-      "match": "exact",
-      "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:volvulus"
-          ],
-          "rarity": 6.5
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-liening-on-pediatric-gi-2261",
       "text": "Younger children with appendicitis are harder to diagnose because they cannot give a history.",
       "verbatim": "Part of the reason why it's harder in younger kids is because they can't give you a story.",
       "type": "pitfall",
       "t": 2261.8,
       "match": "exact",
       "episode": "dr-liening-on-pediatric-gi",
-      "speaker": "Liening",
+      "speaker": "Dr. Liening",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-liening-on-pediatric-gi-2261",
       "score": {
         "specific": true,
         "actionable": true,
@@ -39498,7 +39498,7 @@
           ],
           "rarity": 6.79
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -58154,5 +58154,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "liening",
+      "name": "Dr. Liening"
+    }
+  ],
+  "pearls_fingerprint": "fd728a7c3a8cde75"
 }

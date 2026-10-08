@@ -2,7 +2,7 @@
   "slug": "dr-haney-chf",
   "guid": "hopepartners.podbean.com/12bf5334-86a4-3f55-ab72-016860de980c",
   "title": "Dr. Haney- CHF",
-  "speaker": "Unknown",
+  "speaker": "Dr. Matt Haney",
   "link": "https://hopepartners.podbean.com/e/dr-haney-chf/",
   "pubDate": "Tue, 23 Aug 2022 14:27:45 -0500",
   "duration_sec": 2357,
@@ -38345,16 +38345,193 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-haney-chf-1369",
+      "text": "BNP >400 is consistent with CHF; <100 makes CHF unlikely, but cannot completely exclude it. Do not order BNP without a clinical picture.",
+      "verbatim": "if it's more than 400, it's pretty consistent with CHF. Not a slam dunk, but it definitely fits that picture. There are other things that cause it to go up. And if it's less than a 100, probably not CHF, but you can't completely exclude it.",
+      "type": "dx_criteria",
+      "t": 540.2,
+      "match": "exact",
+      "episode": "dr-haney-chf",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-540",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>4",
+            "test:BNP"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "PND and orthopnea are highly specific symptoms for CHF; dyspnea on exertion and fatigue are sensitive but not specific.",
+      "verbatim": "high sensitivity stuff, things that you're gonna see in people with CHF are gonna be dyspnea on exertion and fatigue and weight gain. ... Things that are specific. If you're seeing DMD or orthopnea, whenever you actually look at the patient and do an exam, you'll see JVD. It's really specific, but it's not sensitive.",
+      "type": "dx_criteria",
+      "t": 663.0,
+      "match": "fuzzy",
+      "episode": "dr-haney-chf",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-663",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fatigue"
+          ],
+          "rarity": 7.93
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "JVD is highly specific for CHF but not sensitive. If a patient is 400 pounds and you can't see their neck veins, it does not rule out CHF.",
+      "verbatim": "it's really specific, but it's not sensitive. So it's not always there. And once people are, like, four hundred pounds and you can't see their neck veins, it doesn't mean they don't have CHF. But if you see it, it's pretty specific for it.",
+      "type": "red_flag",
+      "t": 905.8,
+      "match": "exact",
+      "episode": "dr-haney-chf",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-905",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "On ultrasound, IVC >2.1 cm with <50% collapse is specific for CHF.",
+      "verbatim": "the IVC is more than 2.1 centimeters and it doesn't collapse at least 50%, that's pretty specific for CHF.",
+      "type": "exam_technique",
+      "t": 918.9,
+      "match": "exact",
+      "episode": "dr-haney-chf",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-918",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2.1 cm",
+            "threshold:>2",
+            "test:ultrasound"
+          ],
+          "rarity": 6.38
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Initial workup for suspected CHF should include iron panel, TSH, urinalysis, EKG, chest X-ray, and echo; consider stress test if ischemic etiology is suspected.",
+      "verbatim": "iron panel is helpful to look at things like hemochromatosis. You're gonna look at hypothyroidism, obviously, with the TSH. Urinalysis, you can look for proteins. Then you're gonna get an EKG, and the chest X-ray helps look for and and any any kind kind of of. Congestion.",
+      "type": "practice",
+      "t": 968.2,
+      "match": "exact",
+      "episode": "dr-haney-chf",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-968",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:TSH"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Echocardiogram is essential for diagnosis, EF ≤40% is HFrEF, 41-49% is HFmrEF, and ≥50% is HFpEF.",
+      "verbatim": "So it's HFrEF if he's 40 year old. Yeah. This splitting hairs. Yeah. If he was 41%, he'd have HFrEF Mr. F, which I'm gonna start calling that. That's good. And then if 50% and above, and that's treated a little different.",
+      "type": "dx_criteria",
+      "t": 1170.1,
+      "match": "exact",
+      "episode": "dr-haney-chf",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-1170",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:echocardiogram"
+          ],
+          "rarity": 8.01
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Start SGLT2 inhibitor before spironolactone: initiate Jardiance first, then add spironolactone 2 weeks later.",
       "verbatim": "start the Jardiance first. Two weeks later, add the spironolactone.",
       "type": "practice",
       "t": 1369.8,
       "match": "exact",
       "episode": "dr-haney-chf",
-      "speaker": "Unknown",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-1369",
       "score": {
         "specific": true,
         "actionable": true,
@@ -38372,20 +38549,20 @@
           ],
           "rarity": 7.0
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-chf-1407",
       "text": "For HFrEF, only three beta-blockers have proven mortality benefit: bisoprolol, carvedilol, and metoprolol succinate. Avoid metoprolol tartrate.",
       "verbatim": "the only ones that have decreased hospitalization mortality benefit. So if somebody has CHF and they're on metoprolol tartrate, are you gonna switch them over? Probably.",
       "type": "pitfall",
       "t": 1407.7,
       "match": "exact",
       "episode": "dr-haney-chf",
-      "speaker": "Unknown",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-1407",
       "score": {
         "specific": true,
         "actionable": true,
@@ -38403,138 +38580,20 @@
           ],
           "rarity": 8.06
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-chf-540",
-      "text": "BNP >400 is consistent with CHF; <100 makes CHF unlikely, but cannot completely exclude it. Do not order BNP without a clinical picture.",
-      "verbatim": "if it's more than 400, it's pretty consistent with CHF. Not a slam dunk, but it definitely fits that picture. There are other things that cause it to go up. And if it's less than a 100, probably not CHF, but you can't completely exclude it.",
-      "type": "dx_criteria",
-      "t": 540.2,
-      "match": "exact",
-      "episode": "dr-haney-chf",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "threshold:>4",
-            "test:BNP"
-          ],
-          "actionable": [
-            "Do not"
-          ],
-          "rarity": 7.19
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-chf-905",
-      "text": "JVD is highly specific for CHF but not sensitive. If a patient is 400 pounds and you can't see their neck veins, it does not rule out CHF.",
-      "verbatim": "it's really specific, but it's not sensitive. So it's not always there. And once people are, like, four hundred pounds and you can't see their neck veins, it doesn't mean they don't have CHF. But if you see it, it's pretty specific for it.",
-      "type": "red_flag",
-      "t": 905.8,
-      "match": "exact",
-      "episode": "dr-haney-chf",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "rule out"
-          ],
-          "rarity": 7.38
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-chf-918",
-      "text": "On ultrasound, IVC >2.1 cm with <50% collapse is specific for CHF.",
-      "verbatim": "the IVC is more than 2.1 centimeters and it doesn't collapse at least 50%, that's pretty specific for CHF.",
-      "type": "exam_technique",
-      "t": 918.9,
-      "match": "exact",
-      "episode": "dr-haney-chf",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:2.1 cm",
-            "threshold:>2",
-            "test:ultrasound"
-          ],
-          "rarity": 6.37
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-chf-1170",
-      "text": "Echocardiogram is essential for diagnosis, EF ≤40% is HFrEF, 41-49% is HFmrEF, and ≥50% is HFpEF.",
-      "verbatim": "So it's HFrEF if he's 40 year old. Yeah. This splitting hairs. Yeah. If he was 41%, he'd have HFrEF Mr. F, which I'm gonna start calling that. That's good. And then if 50% and above, and that's treated a little different.",
-      "type": "dx_criteria",
-      "t": 1170.1,
-      "match": "exact",
-      "episode": "dr-haney-chf",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:echocardiogram"
-          ],
-          "rarity": 8.0
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-chf-1456",
       "text": "Spironolactone is indicated for symptomatic HFrEF after ARNI and beta-blocker; avoid if kidney function is poor or hyperkalemia present; eplerenone can be used if gynecomastia is an issue.",
       "verbatim": "it's indicated for people that are symptomatic. So there's really, like, an initial therapy. Basically, everybody that's got HFrEF is going to get an ARNI, an ACE or an ARB, whichever one of the three they can get, and a beta blocker. So that's gonna be first line. You're gonna put both of those on. And then if they're still symptomatic after that, then you're gonna have spironolactone. Reasons you wouldn't are if their kidneys aren't working well and have hyperkalemia.",
       "type": "judgment",
       "t": 1456.0,
       "match": "exact",
       "episode": "dr-haney-chf",
-      "speaker": "Unknown",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-1456",
       "score": {
         "specific": true,
         "actionable": true,
@@ -38552,110 +38611,20 @@
           ],
           "rarity": 8.06
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-chf-662",
-      "text": "PND and orthopnea are highly specific symptoms for CHF; dyspnea on exertion and fatigue are sensitive but not specific.",
-      "verbatim": "high sensitivity stuff, things that you're gonna see in people with CHF are gonna be dyspnea on exertion and fatigue and weight gain. ... Things that are specific. If you're seeing DMD or orthopnea, whenever you actually look at the patient and do an exam, you'll see JVD. It's really specific, but it's not sensitive.",
-      "type": "dx_criteria",
-      "t": 663.0,
-      "match": "fuzzy",
-      "episode": "dr-haney-chf",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:fatigue"
-          ],
-          "rarity": 7.92
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-chf-968",
-      "text": "Initial workup for suspected CHF should include iron panel, TSH, urinalysis, EKG, chest X-ray, and echo; consider stress test if ischemic etiology is suspected.",
-      "verbatim": "iron panel is helpful to look at things like hemochromatosis. You're gonna look at hypothyroidism, obviously, with the TSH. Urinalysis, you can look for proteins. Then you're gonna get an EKG, and the chest X-ray helps look for and and any any kind kind of of. Congestion.",
-      "type": "practice",
-      "t": 968.2,
-      "match": "exact",
-      "episode": "dr-haney-chf",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:TSH"
-          ],
-          "actionable": [
-            "consider"
-          ],
-          "rarity": 6.9
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-chf-1725",
-      "text": "Use torsemide instead of furosemide for patients with persistent volume overload because it is better absorbed.",
-      "verbatim": "Torsemide's absorbed better. So if somebody is constantly volume overloaded, you would use torsemide instead of Lasix.",
-      "type": "judgment",
-      "t": 1725.5,
-      "match": "fuzzy",
-      "episode": "dr-haney-chf",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:volume overload"
-          ],
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 7.89
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-chf-1564",
       "text": "For metoprolol succinate, start at 25 mg daily and titrate up to 200 mg daily as tolerated, monitoring heart rate and blood pressure.",
       "verbatim": "For somebody with a little succinate, you can start at, like, 25 a day because it's just once a day, and you're shooting for 200. That's a big jump. But I don't want you guys to be afraid to do that as long as their heart rate and their blood pressure is tolerating it because that's the goal we're shooting for.",
       "type": "dosing",
       "t": 1564.0,
       "match": "exact",
       "episode": "dr-haney-chf",
-      "speaker": "Unknown",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-1564",
       "score": {
         "specific": true,
         "actionable": true,
@@ -38673,22 +38642,22 @@
           "actionable": [
             "start"
           ],
-          "rarity": 6.89
+          "rarity": 6.9
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-chf-1601",
       "text": "Add ivabradine if heart rate remains >70 bpm despite maximally tolerated beta blocker.",
       "verbatim": "if you're still symptomatic despite the goal directed medical therapy, you've titrated the beta blocker up all the way, and the heart rate is still more than 70. That would be ivabradine.",
       "type": "practice",
       "t": 1601.0,
       "match": "exact",
       "episode": "dr-haney-chf",
-      "speaker": "Unknown",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-1601",
       "score": {
         "specific": true,
         "actionable": true,
@@ -38704,22 +38673,53 @@
           "actionable": [
             "Add"
           ],
-          "rarity": 8.19
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-chf-1852",
+      "text": "Use torsemide instead of furosemide for patients with persistent volume overload because it is better absorbed.",
+      "verbatim": "Torsemide's absorbed better. So if somebody is constantly volume overloaded, you would use torsemide instead of Lasix.",
+      "type": "judgment",
+      "t": 1725.5,
+      "match": "fuzzy",
+      "episode": "dr-haney-chf",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-1725",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:volume overload"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Recommend sodium intake less than 3 grams per day rather than less than 2 grams, as very low sodium may be harmful.",
       "verbatim": "I tell people all the time, do less than two grams a day. But, really, this morning, recent studies have shown that if you do just shoot for less than three grams, you're not really aiming for a really goal. It might actually be harmful. I don't know why it's harmful. I didn't get that into the department. But you don't wanna have a lot either. So I think three grams.",
       "type": "practice",
       "t": 1852.5,
       "match": "exact",
       "episode": "dr-haney-chf",
-      "speaker": "Unknown",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-1852",
       "score": {
         "specific": true,
         "actionable": false,
@@ -38733,22 +38733,22 @@
             "threshold:less than 3",
             "frequency:per day"
           ],
-          "rarity": 6.02
+          "rarity": 6.03
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-chf-1884",
       "text": "Refer patients with Stage D heart failure to palliative care, as it improves quality of life and may prolong survival.",
       "verbatim": "Don't forget that these people that are really sick, they're stage d, don't forget about palliative care. People that have palliative care are well taken care of if they're ahead of that one anyways. And they actually live longer and have a life.",
       "type": "judgment",
       "t": 1884.1,
       "match": "exact",
       "episode": "dr-haney-chf",
-      "speaker": "Unknown",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-1884",
       "score": {
         "specific": true,
         "actionable": true,
@@ -38764,22 +38764,22 @@
           "actionable": [
             "Refer"
           ],
-          "rarity": 6.86
+          "rarity": 6.87
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-chf-1970",
       "text": "Consider ICD for non-ischemic cardiomyopathy with EF ≤35% and persistent symptoms despite GDMT.",
       "verbatim": "If it's not ischemic cardiomyopathy, basically, if their EF is 35% or less and they're still having symptoms, they might need ICD.",
       "type": "practice",
       "t": 1970.9,
       "match": "fuzzy",
       "episode": "dr-haney-chf",
-      "speaker": "Unknown",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-1970",
       "score": {
         "specific": true,
         "actionable": true,
@@ -38797,20 +38797,20 @@
           ],
           "rarity": 7.89
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-chf-2019",
       "text": "In patients with heart failure with improved ejection fraction (HFimpEF), continue all GDMT indefinitely even if they become asymptomatic.",
       "verbatim": "people had to have reduced ejection fraction to get better, which is the goal. They don't have reduced ejection fraction forever. They have improved ejection fraction. So how would you change your management? Never got in there? Yeah. You wouldn't change it. Great. So just keep doing.",
       "type": "practice",
       "t": 2019.5,
       "match": "exact",
       "episode": "dr-haney-chf",
-      "speaker": "Unknown",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-2019",
       "score": {
         "specific": true,
         "actionable": false,
@@ -38823,53 +38823,22 @@
           "specific": [
             "concept:heart failure with imp"
           ],
-          "rarity": 7.58
+          "rarity": 7.59
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-haney-chf-2333",
-      "text": "Monitor potassium and renal function when initiating or adjusting ACE inhibitors, ARBs, or ARNIs.",
-      "verbatim": "you're gonna have to check the potassium, some lab work while you're adjusting the ARNI or even the ACE. So you wanna keep an eye on it, and then better watch their heart rate and stuff too, their blood pressure.",
-      "type": "pitfall",
-      "t": 2333.7,
-      "match": "fuzzy",
-      "episode": "dr-haney-chf",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:ace inhibitors"
-          ],
-          "actionable": [
-            "Monitor"
-          ],
-          "rarity": 7.89
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-haney-chf-2326",
       "text": "During initial GDMT titration, follow up every 2-4 weeks to reassess tolerance and adjust doses, then space out visits once stable.",
       "verbatim": "I think that we need to see these people more than every three months initially. And once we're titrating and once they get to a good place, then we can back off.",
       "type": "judgment",
       "t": 2326.7,
       "match": "exact",
       "episode": "dr-haney-chf",
-      "speaker": "Unknown",
+      "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-2326",
       "score": {
         "specific": true,
         "actionable": true,
@@ -38888,7 +38857,38 @@
           ],
           "rarity": 6.66
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Monitor potassium and renal function when initiating or adjusting ACE inhibitors, ARBs, or ARNIs.",
+      "verbatim": "you're gonna have to check the potassium, some lab work while you're adjusting the ARNI or even the ACE. So you wanna keep an eye on it, and then better watch their heart rate and stuff too, their blood pressure.",
+      "type": "pitfall",
+      "t": 2333.7,
+      "match": "fuzzy",
+      "episode": "dr-haney-chf",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-haney-chf-2333",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ace inhibitors"
+          ],
+          "actionable": [
+            "Monitor"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -57026,5 +57026,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "matt-haney",
+      "name": "Dr. Matt Haney"
+    }
+  ],
+  "pearls_fingerprint": "42249f3626c37a3f"
 }

@@ -53,10 +53,51 @@ def quantize(vec: list) -> list:
     return [max(-127, min(127, int(round(x / m * 127)))) for x in vec]
 
 
+def relations(cl: dict, shown: set) -> dict:
+    """Agreement and conflict data for the site, limited to pearls it shows.
+
+    Understands both the current clusters.json (version 2: verified conflicts,
+    context-dependent pairs, agreement groups) and the original format, so the
+    site keeps working until cluster_pearls.py has been re-run.
+    """
+    ok = lambda *ids: all(i in shown for i in ids)
+    if cl.get("version") == 2:
+        return {"verified": True, "stats": cl.get("stats", {}),
+                "conflicts": [c for c in cl["conflicts"] if ok(c["a"], c["b"])],
+                "depends": [c for c in cl["depends"] if ok(c["a"], c["b"])],
+                "groups": [dict(g, pearl_ids=[i for i in g["pearl_ids"] if i in shown])
+                           for g in cl["groups"]
+                           if sum(1 for i in g["pearl_ids"] if i in shown) >= 2]}
+    conflicts, groups = [], []
+    for c in cl.get("clusters", []):
+        for r in c.get("relations", []):
+            if r.get("verdict") == "conflict" and ok(r["a"], r["b"]):
+                conflicts.append({"a": r["a"], "b": r["b"], "sim": r.get("sim", 0),
+                                  "topic": c.get("label", ""), "why": r.get("why", ""),
+                                  "same_speaker": False})
+        ids = [i for i in c.get("pearl_ids", []) if i in shown]
+        if c.get("verdict") in ("duplicate", "consensus") and len(ids) >= 2:
+            groups.append({"pearl_ids": ids, "topic": c.get("label", ""),
+                           "speakers": c.get("speakers", []),
+                           "n_speakers": len(c.get("speakers", [])),
+                           "kind": "consensus" if len(c.get("speakers", [])) > 1 else "repeated"})
+    return {"verified": False, "stats": {}, "conflicts": conflicts, "depends": [], "groups": groups}
+
+
 def build() -> dict:
     eps, pearls, topics = [], [], defaultdict(list)
+    # Re-uploads of the same recording (scripts/find_duplicates.py) are folded
+    # into the original instead of appearing as separate lectures.
+    dupes = defaultdict(list)
     for f in sorted(EPISODES.glob("*.json")):
         d = json.loads(f.read_text())
+        if d.get("duplicate_of"):
+            dupes[d["duplicate_of"]].append({"title": d["title"], "link": d["link"]})
+    for f in sorted(EPISODES.glob("*.json")):
+        d = json.loads(f.read_text())
+        if d.get("duplicate_of"):
+            print(f"  skip {f.name}: re-upload of {d['duplicate_of']}")
+            continue
         if not d.get("transcript"):
             why = ("unavailable: " + d.get("status_reason", "")[:60]
                    if d.get("status") == "unavailable" else "not transcribed yet")
@@ -77,6 +118,8 @@ def build() -> dict:
             p["grade"] = g
             p["points"] = (p.get("score") or {}).get("points", 0)
             p.pop("score", None)
+            for k in ("model", "prompt_version", "match"):
+                p.pop(k, None)
             p["episode_title"] = d["title"]
             p["link"] = d["link"]
             pearls.append(p)
@@ -107,6 +150,8 @@ def build() -> dict:
 
         eps.append({
             "slug": d["slug"], "title": d["title"], "speaker": d["speaker"],
+            "speakers": d.get("speakers") or [],
+            "also_uploaded": dupes.get(d["slug"], []),
             "link": d["link"], "pubDate": d.get("pubDate", ""),
             # Audio is never deployed (it is gitignored), so the player streams
             # the original Podbean enclosure. Timestamps seek within it.
@@ -128,21 +173,30 @@ def build() -> dict:
                            "kind": hits[0]["kind"],
                            "episodes": sorted({h["episode"] for h in hits})})
 
-    speakers = defaultdict(list)
-    for e in eps:
-        speakers[e["speaker"]].append(e["slug"])
+    # One entry per person, from the resolved registry (scripts/speakers.py).
+    shown_eps = {e["slug"] for e in eps}
+    reg = BASE / "data" / "speakers.json"
+    people = json.loads(reg.read_text())["people"] if reg.exists() else []
+    speakers = []
+    for p in people:
+        ep_ids = [s for s in p["episodes"] if s in shown_eps]
+        if ep_ids:
+            speakers.append({"id": p["id"], "name": p["display"], "episodes": ep_ids,
+                             "aliases": [a["form"] for a in p["aliases"]
+                                         if a["form"] not in (p["name"], p["display"])]})
+    speakers.sort(key=lambda p: p["name"].lower())
 
-    # Pearl clusters (near-duplicates, consensus, contradictions) are produced
-    # separately by cluster_pearls.py; absent on a fresh corpus.
+    # Agreement and contradictions between lectures, from cluster_pearls.py.
     cl = BASE / "data" / "clusters.json"
-    clusters = json.loads(cl.read_text())["clusters"] if cl.exists() else []
+    rel = relations(json.loads(cl.read_text()) if cl.exists() else {},
+                    {p["pearl_id"] for p in pearls})
 
     # Best pearls first, everywhere they are listed.
     pearls.sort(key=lambda p: (-p.get("points", 0), p["episode"], p["t"]))
 
     return {"episodes": eps, "pearls": pearls, "topics": topic_list,
-            "clusters": clusters,
-            "speakers": [{"name": k, "episodes": v} for k, v in sorted(speakers.items())],
+            "relations": rel,
+            "speakers": speakers,
             "langs": LANGS,
             "stats": {"n_episodes": len(eps), "n_pearls": len(pearls),
                       "n_topics": len(topic_list),
@@ -154,6 +208,11 @@ if __name__ == "__main__":
     SITE.mkdir(exist_ok=True)
     data = build()
     (SITE / "data.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
+    # Drop per-episode files for lectures no longer shown (e.g. folded re-uploads).
+    keep = {e["slug"] for e in data["episodes"]}
+    for f in (SITE / "ep").glob("*.json"):
+        if f.stem not in keep:
+            f.unlink()
     idx = (SITE / "data.json").stat().st_size
     ep_total = sum(f.stat().st_size for f in (SITE / "ep").glob("*.json"))
     s = data["stats"]

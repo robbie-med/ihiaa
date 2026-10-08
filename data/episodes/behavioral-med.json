@@ -2,7 +2,7 @@
   "slug": "behavioral-med",
   "guid": "hopepartners.podbean.com/b163b923-6d51-3e38-ab1c-f6179c3644a9",
   "title": "Behavioral Med",
-  "speaker": "Unknown",
+  "speaker": "Dr. Satterlee",
   "link": "https://hopepartners.podbean.com/e/behavioral-med/",
   "pubDate": "Fri, 10 Nov 2023 16:01:13 -0600",
   "duration_sec": 4991,
@@ -80535,16 +80535,100 @@
   ],
   "pearls": [
     {
-      "pearl_id": "behavioral-med-386",
+      "text": "The IHI SharePoint list of referral options is organized by license; yellow-highlighted entries indicate providers whose status is unconfirmed.",
+      "verbatim": "See these yellow ones? That's because we can't find these people right now to confirm their stuff.",
+      "type": "pitfall",
+      "t": 251.2,
+      "match": "exact",
+      "episode": "behavioral-med",
+      "speaker": "Dr. Satterlee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "behavioral-med-251",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:referral"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "SoonerCare provides some of the best insurance benefits for mental health care for children under 21, but finding adult providers who accept it is difficult.",
+      "verbatim": "if they have SoonerCare, they have some of the best insurance benefits for mental health care, especially if they're kiddos or 21. But if they're adults, finding the providers take SoonerCare and are approved for SoonerCare or Medicaid can be more difficult.",
+      "type": "pitfall",
+      "t": 345.8,
+      "match": "exact",
+      "episode": "behavioral-med",
+      "speaker": "Dr. Satterlee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "behavioral-med-345",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:under 2"
+          ],
+          "rarity": 6.38
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Medicare has historically been reluctant to work with small practices, especially mid-level providers, which affects access for patients with Medicare.",
+      "verbatim": "For a long time, Medicare has not wanted to deal with small practices, especially mid level providers.",
+      "type": "red_flag",
+      "t": 365.4,
+      "match": "exact",
+      "episode": "behavioral-med",
+      "speaker": "Dr. Satterlee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "behavioral-med-365",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:medicare"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "When referring for mental health therapy, start with the patient's insurance list and cross-reference with other sources; this is the best way to guarantee coverage.",
       "verbatim": "If your patients have insurance, really, the number one way to start for a mental health referral, unless you have someone specific and even then you need to check with insurance, but is really to start with their insurance list and then cross reference that other sources.",
       "type": "practice",
       "t": 386.8,
       "match": "exact",
       "episode": "behavioral-med",
-      "speaker": "Unknown",
+      "speaker": "Dr. Satterlee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "behavioral-med-386",
       "score": {
         "specific": true,
         "actionable": true,
@@ -80560,50 +80644,22 @@
           "actionable": [
             "start"
           ],
-          "rarity": 8.19
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "behavioral-med-345",
-      "text": "SoonerCare provides some of the best insurance benefits for mental health care for children under 21, but finding adult providers who accept it is difficult.",
-      "verbatim": "if they have SoonerCare, they have some of the best insurance benefits for mental health care, especially if they're kiddos or 21. But if they're adults, finding the providers take SoonerCare and are approved for SoonerCare or Medicaid can be more difficult.",
-      "type": "pitfall",
-      "t": 345.8,
-      "match": "exact",
-      "episode": "behavioral-med",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "threshold:under 2"
-          ],
-          "rarity": 6.38
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "behavioral-med-1031",
       "text": "St. John mental health providers typically offer only 6-8 sessions of 30 minutes each; this is a tiered care model appropriate for short interventions to increase access.",
       "verbatim": "Most of their appointments, almost all their appointments are allowed to be thirty minutes, six to eight sessions.",
       "type": "dx_criteria",
       "t": 1031.7,
       "match": "exact",
       "episode": "behavioral-med",
-      "speaker": "Unknown",
+      "speaker": "Dr. Satterlee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "behavioral-med-1031",
       "score": {
         "specific": true,
         "actionable": true,
@@ -80621,20 +80677,20 @@
           ],
           "rarity": 7.5
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "behavioral-med-1142",
       "text": "Referral notes sent through St. John are not received by the counseling office; they only get a name and St. John ID number, requiring them to dig into records to determine the reason for referral.",
       "verbatim": "Those notes you put in the referrals that you send through St. John, we don't get that. We don't know.",
       "type": "pitfall",
       "t": 1142.8,
       "match": "exact",
       "episode": "behavioral-med",
-      "speaker": "Unknown",
+      "speaker": "Dr. Satterlee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "behavioral-med-1142",
       "score": {
         "specific": true,
         "actionable": false,
@@ -80647,22 +80703,22 @@
           "specific": [
             "concept:counseling"
           ],
-          "rarity": 7.55
+          "rarity": 7.56
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "behavioral-med-1232",
       "text": "To speed up processing, walk the referral back to the counseling office with a demographic sheet and referral sheet; this can start processing 2-3 weeks before the email list arrives.",
       "verbatim": "If they just want the referral to go through, that's fine. You can print out the demographic sheet, the face sheet and the referral sheet that you complete, and send it back to us. Walk it back to us. And we will take it and put it on the top of the pile. Because now we know when it came in and who it's from, and we know that this patient per that latest visit to you is, like, ready to roll. And we will know at least that we need to put it at the top of pile. Sometimes we start working with those then three... Two to three weeks before we receive their name in the email list.",
       "type": "judgment",
       "t": 1232.3,
       "match": "exact",
       "episode": "behavioral-med",
-      "speaker": "Unknown",
+      "speaker": "Dr. Satterlee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "behavioral-med-1232",
       "score": {
         "specific": true,
         "actionable": true,
@@ -80678,134 +80734,23 @@
           "actionable": [
             "start"
           ],
-          "rarity": 7.92
+          "rarity": 7.93
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "behavioral-med-1381",
-      "text": "Co-counseling appointments are available for underinsured patients at $20 per session, with a resident observing; these are not for physicians or alumni.",
-      "verbatim": "We also do have some co-counseling appointments that are available for people who are underinsured. ... we charge them $20 a session flat fee. ... I have had recently some St. John or St. Francis physicians, IHI grads, call and say, unlike one of your co-counseling appointments. Because my deductible is $2,000. But they're a physician at St. Francis. They do not get a co-counseling appointment.",
-      "type": "red_flag",
-      "t": 1381.7,
-      "match": "fuzzy",
-      "episode": "behavioral-med",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:co-counseling"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "behavioral-med-1349",
-      "text": "The initial appointment cost at the counseling office is approximately $300, with follow-up appointments around $155 per hour.",
-      "verbatim": "a good ballpark for the initial appointment would be $300. A good ballpark for an hourly appointment after that would be a 155.",
-      "type": "dosing",
-      "t": 1349.8,
-      "match": "exact",
-      "episode": "behavioral-med",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:counseling"
-          ],
-          "rarity": 7.29
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "behavioral-med-251",
-      "text": "The IHI SharePoint list of referral options is organized by license; yellow-highlighted entries indicate providers whose status is unconfirmed.",
-      "verbatim": "See these yellow ones? That's because we can't find these people right now to confirm their stuff.",
-      "type": "pitfall",
-      "t": 251.2,
-      "match": "exact",
-      "episode": "behavioral-med",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:referral"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "behavioral-med-365",
-      "text": "Medicare has historically been reluctant to work with small practices, especially mid-level providers, which affects access for patients with Medicare.",
-      "verbatim": "For a long time, Medicare has not wanted to deal with small practices, especially mid level providers.",
-      "type": "red_flag",
-      "t": 365.4,
-      "match": "exact",
-      "episode": "behavioral-med",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:medicare"
-          ],
-          "rarity": 8.19
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "behavioral-med-1271",
       "text": "The counseling office does not accept SoonerCare for patients over 21 because they are too small a practice to meet administrative requirements.",
       "verbatim": "You you guys don't take SoonerCare for patients over 21. Correct. You do not. ... And the reason is, again, because they don't wanna mess with us because we're too small.",
       "type": "pitfall",
       "t": 1271.0,
       "match": "fuzzy",
       "episode": "behavioral-med",
-      "speaker": "Unknown",
+      "speaker": "Dr. Satterlee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "behavioral-med-1271",
       "score": {
         "specific": true,
         "actionable": false,
@@ -80818,22 +80763,78 @@
           "specific": [
             "threshold:over 2"
           ],
-          "rarity": 7.64
+          "rarity": 7.65
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "behavioral-med-2996",
+      "text": "The initial appointment cost at the counseling office is approximately $300, with follow-up appointments around $155 per hour.",
+      "verbatim": "a good ballpark for the initial appointment would be $300. A good ballpark for an hourly appointment after that would be a 155.",
+      "type": "dosing",
+      "t": 1349.8,
+      "match": "exact",
+      "episode": "behavioral-med",
+      "speaker": "Dr. Satterlee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "behavioral-med-1349",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:counseling"
+          ],
+          "rarity": 7.3
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Co-counseling appointments are available for underinsured patients at $20 per session, with a resident observing; these are not for physicians or alumni.",
+      "verbatim": "We also do have some co-counseling appointments that are available for people who are underinsured. ... we charge them $20 a session flat fee. ... I have had recently some St. John or St. Francis physicians, IHI grads, call and say, unlike one of your co-counseling appointments. Because my deductible is $2,000. But they're a physician at St. Francis. They do not get a co-counseling appointment.",
+      "type": "red_flag",
+      "t": 1382.6,
+      "match": "exact",
+      "episode": "behavioral-med",
+      "speaker": "Dr. Satterlee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "behavioral-med-1382",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:co-counseling"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Insurance in Oklahoma generally does not pay for couples therapy; one person must be designated as the identified patient.",
       "verbatim": "Very few insurance... Interest does not pay for couples therapy. One person has to be the identified patient.",
       "type": "pitfall",
-      "t": 2996.5,
+      "t": 2998.2,
       "match": "exact",
       "episode": "behavioral-med",
-      "speaker": "Unknown",
+      "speaker": "Dr. Satterlee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "behavioral-med-2998",
       "score": {
         "specific": true,
         "actionable": false,
@@ -80846,81 +80847,22 @@
           "specific": [
             "concept:insurance"
           ],
-          "rarity": 7.75
+          "rarity": 7.76
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "behavioral-med-4225",
-      "text": "If you need documentation for college accommodations for ADHD, refer for a psychoeducational assessment, not a full neuropsych eval.",
-      "verbatim": "If you're saying this person's headed to college, we think they have ADHD, and they need documentation so that they can get appropriate services, they need this.",
-      "type": "referral_guideline",
-      "t": 4225.2,
-      "match": "exact",
-      "episode": "behavioral-med",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:psychoeducational asse"
-          ],
-          "actionable": [
-            "refer"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "behavioral-med-4212",
-      "text": "For apparent changes in memory or executive function after head injury, write the referral as neuropsych testing.",
-      "verbatim": "If you put in neuropsych referral for apparent changes in memory, cognitive reasoning, executive functioning associated with recent head injury. That's a neuropsych.",
-      "type": "referral_guideline",
-      "t": 4212.0,
-      "match": "exact",
-      "episode": "behavioral-med",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:executive function"
-          ],
-          "rarity": 7.89
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "behavioral-med-3543",
       "text": "Certificates in therapy can be a weekend course or a six-month course; verify the training depth before assuming expertise.",
       "verbatim": "A certificate could be a weekend course. It could be a six month course.",
       "type": "red_flag",
       "t": 3543.2,
       "match": "exact",
       "episode": "behavioral-med",
-      "speaker": "Unknown",
+      "speaker": "Dr. Satterlee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "behavioral-med-3543",
       "score": {
         "specific": true,
         "actionable": false,
@@ -80933,134 +80875,50 @@
           "specific": [
             "concept:therapy"
           ],
-          "rarity": 8.19
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "behavioral-med-4164",
-      "text": "Not every psychologist who does neuropsych is certified for autism-specific assessments; pediatric autism evaluations require additional tools and training.",
-      "verbatim": "Not everyone who's good at doing this can do this because this requires certification and some assessment tools that are not part of this.",
-      "type": "referral_guideline",
-      "t": 4164.7,
-      "match": "exact",
+      "text": "Achievement tests (e.g., Woodcock Johnson) measure knowledge compared to peers, whereas aptitude (IQ) tests measure raw ability.",
+      "verbatim": "The Woodcock Johnson, always the best. Go to... That's an achievement test. Right? So it's measuring how much this person knows in specific areas based in comparison to people of a similar age and education. That's different than an aptitude test, which is an IQ test.",
+      "type": "concept",
+      "t": 3786.4,
+      "match": "fuzzy",
       "episode": "behavioral-med",
-      "speaker": "Unknown",
+      "speaker": "Dr. Satterlee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:autism"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "behavioral-med-4250",
-      "text": "When you are unsure about giving a controlled substance, send the patient for an abbreviated assessment to clarify the diagnosis first.",
-      "verbatim": "We do an abbreviated version of this if you send someone to us that you're like, I don't know. Might be something else going on. I don't know if I wanna give them a regulated substance.",
-      "type": "judgment",
-      "t": 4250.2,
-      "match": "exact",
-      "episode": "behavioral-med",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
+      "pearl_id": "behavioral-med-3786",
       "score": {
         "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.32
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "behavioral-med-3999",
-      "text": "Neuropsychological evaluation is best for measuring cognitive function after an injury or change to guide adaptation and prognosis.",
-      "verbatim": "Neuropsychologists are typically called upon if there's a deficit or a change or an injury, and we wanna measure specific cognitive functions in order to make recommendations for life adaptation or prognosis.",
-      "type": "dx_criteria",
-      "t": 3999.6,
-      "match": "exact",
-      "episode": "behavioral-med",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
         "actionable": true,
         "local": false,
         "harm": false,
         "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:prognosis"
-          ],
-          "actionable": [
-            "change to"
-          ],
-          "rarity": 8.19
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "behavioral-med-3959",
-      "text": "When writing a referral, specify what you are seeing and what the assessment will be used for; a vague referral like 'possible autism' is less helpful.",
-      "verbatim": "You don't need to figure out the battery, but you should be able to articulate the referral question well enough that we know where to start.",
-      "type": "practice",
-      "t": 3959.3,
-      "match": "exact",
-      "episode": "behavioral-med",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
         "points": 2,
         "grade": "C",
         "fired": {
-          "specific": [
-            "concept:referral"
+          "actionable": [
+            "measure"
           ],
-          "rarity": 7.21
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "behavioral-med-3901",
       "text": "Psychologists are the only providers typically trained to administer and interpret standardized projective tests like the Rorschach.",
       "verbatim": "A psychologist or a neuropsychologist are the only ones typically who are trained to do these.",
       "type": "exam_technique",
       "t": 3901.4,
       "match": "exact",
       "episode": "behavioral-med",
-      "speaker": "Unknown",
+      "speaker": "Dr. Satterlee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "behavioral-med-3901",
       "score": {
         "specific": true,
         "actionable": true,
@@ -81076,9 +80934,180 @@
           "actionable": [
             "administer"
           ],
-          "rarity": 8.65
+          "rarity": 8.66
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When writing a referral, specify what you are seeing and what the assessment will be used for; a vague referral like 'possible autism' is less helpful.",
+      "verbatim": "You don't need to figure out the battery, but you should be able to articulate the referral question well enough that we know where to start.",
+      "type": "practice",
+      "t": 3959.3,
+      "match": "exact",
+      "episode": "behavioral-med",
+      "speaker": "Dr. Satterlee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "behavioral-med-3959",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:referral"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Neuropsychological evaluation is best for measuring cognitive function after an injury or change to guide adaptation and prognosis.",
+      "verbatim": "Neuropsychologists are typically called upon if there's a deficit or a change or an injury, and we wanna measure specific cognitive functions in order to make recommendations for life adaptation or prognosis.",
+      "type": "dx_criteria",
+      "t": 3999.6,
+      "match": "exact",
+      "episode": "behavioral-med",
+      "speaker": "Dr. Satterlee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "behavioral-med-3999",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:prognosis"
+          ],
+          "actionable": [
+            "change to"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Not every psychologist who does neuropsych is certified for autism-specific assessments; pediatric autism evaluations require additional tools and training.",
+      "verbatim": "Not everyone who's good at doing this can do this because this requires certification and some assessment tools that are not part of this.",
+      "type": "practice",
+      "t": 4164.7,
+      "match": "exact",
+      "episode": "behavioral-med",
+      "speaker": "Dr. Satterlee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "behavioral-med-4164",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:autism"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "For apparent changes in memory or executive function after head injury, write the referral as neuropsych testing.",
+      "verbatim": "If you put in neuropsych referral for apparent changes in memory, cognitive reasoning, executive functioning associated with recent head injury. That's a neuropsych.",
+      "type": "practice",
+      "t": 4212.0,
+      "match": "exact",
+      "episode": "behavioral-med",
+      "speaker": "Dr. Satterlee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "behavioral-med-4212",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:executive function"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "If you need documentation for college accommodations for ADHD, refer for a psychoeducational assessment, not a full neuropsych eval.",
+      "verbatim": "If you're saying this person's headed to college, we think they have ADHD, and they need documentation so that they can get appropriate services, they need this.",
+      "type": "practice",
+      "t": 4225.2,
+      "match": "exact",
+      "episode": "behavioral-med",
+      "speaker": "Dr. Satterlee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "behavioral-med-4225",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:psychoeducational asse"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When you are unsure about giving a controlled substance, send the patient for an abbreviated assessment to clarify the diagnosis first.",
+      "verbatim": "We do an abbreviated version of this if you send someone to us that you're like, I don't know. Might be something else going on. I don't know if I wanna give them a regulated substance.",
+      "type": "judgment",
+      "t": 4250.2,
+      "match": "exact",
+      "episode": "behavioral-med",
+      "speaker": "Dr. Satterlee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "behavioral-med-4250",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -119936,5 +119965,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "satterlee",
+      "name": "Dr. Satterlee"
+    }
+  ],
+  "pearls_fingerprint": "2eb9d2f6c91be9de"
 }

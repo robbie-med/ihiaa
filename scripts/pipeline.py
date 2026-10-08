@@ -159,8 +159,12 @@ def stage_correct(slug: str, ep: dict) -> dict:
 
 
 # -------------------------------------------------------------------- enrich
+ENRICH_VERSION = "v2"
 ENRICH_SYS = """You are indexing a family-medicine residency lecture for a searchable
 clinical knowledge base used by residents.
+
+The transcript is split into numbered segments: "[#12 S0] text". S0, S1... are
+different voices; the presenter is usually the voice that talks most.
 
 Return JSON with exactly these keys:
 {
@@ -168,18 +172,31 @@ Return JSON with exactly these keys:
  "key_points": ["6-10 substantive teaching points"],
  "topics": [{"label":"Title Case clinical concept","kind":"condition|drug|procedure|concept"}],
  "pearls": [
-   {"text":"one specific, actionable teaching point in 1-2 sentences",
-    "verbatim":"the EXACT contiguous span from the transcript this came from",
-    "type":"dosing|pitfall|red_flag|exam_technique|dx_criteria|practice|judgment"}
+   {"text": "one specific, actionable teaching point in 1-2 sentences",
+    "seg": 12,
+    "verbatim": "the EXACT words from that segment (and the next few) this came from",
+    "applies_to": "who/when it applies, as stated: e.g. 'adults with CKD', 'in pregnancy', 'outpatient'; '' if general",
+    "type": "dosing|pitfall|red_flag|exam_technique|dx_criteria|practice|judgment|procedure|concept"}
  ]
 }
 
 Rules for pearls -- these matter more than coverage:
-- A pearl must be ACTIONABLE and SPECIFIC. "Diabetes is important" is not a pearl.
+- ACTIONABLE and SPECIFIC. "Diabetes is important" is not a pearl.
   "Check monofilament sensation at 10 sites; loss of 4 predicts ulceration" is.
-- "verbatim" MUST be copied character-for-character from the transcript provided.
-  Never paraphrase it. It is the provenance anchor used to locate the audio.
-- If you cannot find an exact supporting span, omit the pearl entirely.
+- Only what the PRESENTER teaches. Skip audience questions and wrong answers from
+  the room unless the presenter explicitly confirms them.
+- Every number, dose, threshold or duration in "text" must have been SAID in the
+  quoted passage. Never add numbers, doses or guideline values from your own
+  knowledge, and never do arithmetic the speaker did not do. If the speaker gave
+  no number, the pearl has no number.
+- Keep the speaker's claim as stated, even if you think guidelines say otherwise.
+  Do not correct or soften it; that is for the reader to judge.
+- "verbatim" MUST be copied character-for-character from the segment cited in
+  "seg". One contiguous span, no "...". It locates the audio. If you cannot quote
+  a supporting span, omit the pearl.
+- "applies_to" carries the population, setting or condition the speaker attached
+  to the advice. It is what distinguishes "give X" in pregnancy from "avoid X" in
+  heart failure, so do not drop it.
 - Prefer 8-15 excellent pearls over 40 mediocre ones.
 - Topics should be canonical clinical concepts, not phrasings from the talk."""
 
@@ -191,30 +208,60 @@ def _dedash(s: str) -> str:
     way, and they are a visible tell that the text is machine-written. Applied
     at ingest so the habit does not come back on every new episode.
     """
-    import re as _re
-    s = _re.sub(r"\s*[\u2014\u2013]\s*", ", ", s or "")
-    s = _re.sub(r",\s*,", ",", s)
-    return _re.sub(r",\s*\.", ".", s)
+    s = re.sub(r"\s*[\u2014\u2013]\s*", ", ", s or "")
+    s = re.sub(r",\s*,", ",", s)
+    return re.sub(r",\s*\.", ".", s)
+
+
+def numbered_segments(ep: dict) -> list:
+    """Segments with the terminology fixes applied, as '[#i Sk] text' lines."""
+    fixes = [(re.compile(r"(?<!\w)" + re.escape(f["from"]) + r"(?!\w)"), f["to"])
+             for f in ep.get("fixes", [])]
+    out = []
+    for i, sg in enumerate(ep.get("segments") or []):
+        text = sg["text"]
+        for rx, to in fixes:
+            text = rx.sub(to.replace("\\", r"\\"), text)
+        out.append((f"[#{i} S{sg.get('spk', 0)}] {text}", len(text.split())))
+    return out
 
 
 def stage_enrich(slug: str, ep: dict) -> dict:
-    if ep.get("pearls"):
-        print(f"  enrich: cached ({len(ep['pearls'])} pearls)")
+    if ep.get("pearls_raw") and ep.get("enrich_version") == ENRICH_VERSION:
+        print(f"  enrich: cached ({len(ep.get('pearls', []))} pearls)")
         return ep
-    txt = ep["transcript"]
-    words, size = txt.split(), 3500
-    chunks = [" ".join(words[i:i + size]) for i in range(0, len(words), size)]
+    if ep.get("pearls_raw") and not ep.get("reenrich"):
+        print(f"  enrich: cached, older prompt {ep.get('enrich_version', 'v1')} "
+              f"({len(ep.get('pearls', []))} pearls)")
+        return ep
+    # Chunks of ~3000 words that overlap by ~300, so a point made across a chunk
+    # boundary is seen whole at least once. refine_pearls drops the duplicates.
+    segs = numbered_segments(ep)
+    chunks, i = [], 0
+    while i < len(segs):
+        j, n = i, 0
+        while j < len(segs) and n < 3000:
+            n += segs[j][1]
+            j += 1
+        chunks.append("\n".join(s for s, _ in segs[i:j]))
+        if j >= len(segs):
+            break
+        back, k = 0, j
+        while k > i + 1 and back < 300:
+            k -= 1
+            back += segs[k][1]
+        i = k
     abstract, kp, topics, pearls = "", [], [], []
-    for i, c in enumerate(chunks):
-        print(f"  enrich: chunk {i+1}/{len(chunks)} ...")
-        user = (f"Lecture: {ep['title']}\nSpeaker: {ep['speaker']}\n"
-                f"(part {i+1} of {len(chunks)})\n\nTRANSCRIPT:\n{c}")
+    for n, c in enumerate(chunks):
+        print(f"  enrich: chunk {n+1}/{len(chunks)} ...")
+        user = (f"Lecture: {ep['title']}\nPresenter: {ep.get('speaker', 'Unknown')}\n"
+                f"(part {n+1} of {len(chunks)})\n\nTRANSCRIPT:\n{c}")
         try:
             r = ppq.chat_json(ENRICH_SYS, user, max_tokens=8000)
         except Exception as e:                        # noqa: BLE001
             print(f"    ! {type(e).__name__}: {str(e)[:120]}")
             continue
-        if i == 0:
+        if n == 0:
             abstract = r.get("abstract", "")
         kp += r.get("key_points", [])
         topics += r.get("topics", [])
@@ -222,77 +269,17 @@ def stage_enrich(slug: str, ep: dict) -> dict:
     ep["abstract"] = _dedash(abstract)
     ep["key_points"] = [_dedash(k) for k in kp[:12]]
     ep["topics_raw"] = topics
-    # Keep the model's raw output so anchoring can be re-tuned and re-run for
-    # free, without paying for enrichment again.
+    # The model's output is kept verbatim; scripts/refine_pearls.py turns it into
+    # anchored, number-checked pearls and can be re-run for free.
     ep["pearls_raw"] = pearls
-    ep["pearls"] = anchor_pearls(pearls, ep)
     ep["enrich_model"] = ppq.CHAT_MODEL
-    print(f"    -> {len(ep['pearls'])} pearls anchored, {len(topics)} topic mentions")
+    ep["enrich_version"] = ENRICH_VERSION
+    ep.pop("reenrich", None)
+    import refine_pearls
+    ep["pearls"] = refine_pearls.refine(ep)
+    ep["pearls_fingerprint"] = refine_pearls.fingerprint(ep)
+    print(f"    -> {len(ep['pearls'])} of {len(pearls)} pearls kept, {len(topics)} topic mentions")
     return ep
-
-
-def anchor_pearls(pearls: list, ep: dict) -> list:
-    """Attach a timestamp to each pearl by locating its verbatim span.
-
-    Exact substring matching dropped 14 of 24 pearls, because the model lightly
-    normalises the span it quotes. So: try exact first, then slide a window over
-    the word stream and keep the best fuzzy match. A pearl still needs a real
-    location above MIN_RATIO -- one that cannot be found is DROPPED, never kept
-    with a guessed timestamp. An unanchored clinical claim is precisely the
-    failure mode this design exists to prevent.
-
-    `match` records how the anchor was found so the UI can be honest about it.
-    """
-    import difflib
-
-    MIN_RATIO = 0.68
-    words = ep.get("words") or []
-    norm = lambda s: re.sub(r"[^a-z0-9 ]", " ", (s or "").lower())
-    toks = [norm(w["w"] or "").strip() for w in words]
-    times = [w["s"] for w in words]
-    flat = " ".join(toks)
-
-    # char offset -> timestamp, for the exact-match path
-    pos, idx = [], 0
-    for t, ts in zip(toks, times):
-        pos.append((idx, ts))
-        idx += len(t) + 1
-
-    out, dropped = [], 0
-    for p in pearls:
-        v = re.sub(r"\s+", " ", norm(p.get("verbatim", ""))).strip()
-        vt = v.split()
-        if len(vt) < 4:
-            dropped += 1
-            continue
-
-        t, how = None, None
-        at = flat.find(v[:120])
-        if at >= 0:
-            t, how = next((s for (o, s) in reversed(pos) if o <= at), 0), "exact"
-        else:
-            probe, best = vt[:14], 0.0
-            step = max(1, len(probe) // 3)
-            for i in range(0, max(1, len(toks) - len(probe)), step):
-                r = difflib.SequenceMatcher(None, probe, toks[i:i + len(probe)]).ratio()
-                if r > best:
-                    best, t = r, times[i]
-            how = "fuzzy"
-            if best < MIN_RATIO:
-                t = None
-
-        if t is None:
-            dropped += 1
-            continue
-        out.append({"pearl_id": f"{ep['slug']}-{int(t)}",
-                    "text": _dedash(p.get("text", "").strip()),
-                    "verbatim": p.get("verbatim", "").strip(),
-                    "type": p.get("type", "judgment"), "t": round(t, 1),
-                    "match": how, "episode": ep["slug"], "speaker": ep["speaker"],
-                    "model": ppq.CHAT_MODEL, "prompt_version": PROMPT_VERSION})
-    if dropped:
-        print(f"    ({dropped} pearls dropped - no locatable span)")
-    return out
 
 
 # --------------------------------------------------------------------- embed

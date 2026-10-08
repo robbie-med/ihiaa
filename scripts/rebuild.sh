@@ -2,6 +2,9 @@
 # Rebuild every derived artifact from data/episodes/*.json, in dependency order.
 # No API keys needed and no money spent; safe to run any time, locally or in CI.
 #
+#   speakers        one identity per person (titles, feed descriptions, intros)
+#   find_duplicates fold re-uploads of the same recording into the original
+#   refine_pearls   anchor + number-check + attribute the model's raw pearls
 #   build_site      topics -> site/data.json (the grader reads these as concepts)
 #   score_pearls    deterministic grades written back into data/episodes
 #   build_site      again, so the new grades decide which pearls are shown
@@ -13,6 +16,9 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+python3 scripts/speakers.py
+python3 scripts/find_duplicates.py
+python3 scripts/refine_pearls.py
 python3 scripts/build_site.py
 python3 scripts/score_pearls.py --apply
 python3 scripts/build_site.py

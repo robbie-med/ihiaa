@@ -2,7 +2,7 @@
   "slug": "dr-lucashu-on-outpatient-management",
   "guid": "hopepartners.podbean.com/9238d3e6-da67-30b7-92fe-e68c7a22004a",
   "title": "Dr. Lucashu on Outpatient Management",
-  "speaker": "Lucashu",
+  "speaker": "Dr. Amanda Lucashu",
   "link": "https://hopepartners.podbean.com/e/dr-lucashu-on-outpatient-management/",
   "pubDate": "Thu, 15 Sep 2022 11:16:51 -0500",
   "duration_sec": 2794,
@@ -45815,16 +45815,72 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-lucashu-on-outpatient-management-478",
+      "text": "On initial visit for new diabetes, recheck blood pressure if it is >140 systolic, as office policy requires confirmation before acting.",
+      "verbatim": "we need to recheck it before he leaves because it's higher than one forty. Just barely. He's taking it at 01:41, but we need to recheck that. That's office policy.",
+      "type": "red_flag",
+      "t": 396.0,
+      "match": "exact",
+      "episode": "dr-lucashu-on-outpatient-management",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-396",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>1"
+          ],
+          "actionable": [
+            "recheck"
+          ],
+          "rarity": 6.78
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Provide a diabetic education folder from care managers to cover basics like carbs and blood sugar measurement, saving visit time for other priorities.",
+      "verbatim": "provide the patient with a diabetic folder from your manager. Talk to the care managers in your suite. A lot of them have a folder that has information about diabetes.",
+      "type": "concept",
+      "t": 408.1,
+      "match": "exact",
+      "episode": "dr-lucashu-on-outpatient-management",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-408",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "For a new diabetes diagnosis, start at least a moderate-intensity statin regardless of cholesterol level; upgrade to high-intensity based on ASCVD risk calculator after lipid panel results.",
       "verbatim": "the diabetic report card says that if you have a patient with diabetes, unless there is contraindications that you need to be starting a moderate intensity statin regardless of what the cholesterol is.",
       "type": "practice",
       "t": 478.2,
       "match": "exact",
       "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-478",
       "score": {
         "specific": true,
         "actionable": true,
@@ -45841,22 +45897,82 @@
           "actionable": [
             "start"
           ],
-          "rarity": 7.65
+          "rarity": 7.66
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-on-outpatient-management-770",
+      "text": "Home glucose monitoring is needed for A1c >9%; for lower A1c, a monitor may still be provided but with less frequent checking.",
+      "verbatim": "Definitely greater than nine. Home glucose is needed.",
+      "type": "practice",
+      "t": 534.5,
+      "match": "exact",
+      "episode": "dr-lucashu-on-outpatient-management",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-534",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>9",
+            "test:A1c"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Metformin XR is better tolerated but may require prior authorization for Medicaid; regular metformin or SR are tier 1 options without special approval.",
+      "verbatim": "the XR, at least for Medicaid, has a special prior authorization required, and you have to go through all of these things. So don't even bother",
+      "type": "pitfall",
+      "t": 746.4,
+      "match": "exact",
+      "episode": "dr-lucashu-on-outpatient-management",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-746",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:prior authorization"
+          ],
+          "rarity": 7.47
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Metformin should be titrated to maximum dosing (1000 mg PO BID or XR 2000 mg daily) before considering a second agent; document failure at max dose.",
       "verbatim": "before moving on to tier two is that the patient has failed it at maximum dosing. So either the patient was not able to tolerate it or your hemoglobin A1c still needs work despite maximum dosing.",
       "type": "dosing",
       "t": 770.9,
       "match": "exact",
       "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-770",
       "score": {
         "specific": true,
         "actionable": true,
@@ -45875,104 +45991,20 @@
           ],
           "rarity": 6.79
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-on-outpatient-management-746",
-      "text": "Metformin XR is better tolerated but may require prior authorization for Medicaid; regular metformin or SR are tier 1 options without special approval.",
-      "verbatim": "the XR, at least for Medicaid, has a special prior authorization required, and you have to go through all of these things. So don't even bother",
-      "type": "pitfall",
-      "t": 746.4,
-      "match": "exact",
-      "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:prior authorization"
-          ],
-          "rarity": 7.46
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-on-outpatient-management-1049",
-      "text": "For aerobic exercise, patients should achieve a heart rate that prevents them from completing a full sentence; walking at a leisurely pace does not count.",
-      "verbatim": "I want your heart rate up, and I want you to not be able to finish a complete sentence at the end of your exercise.",
-      "type": "exam_technique",
-      "t": 1049.1,
-      "match": "exact",
-      "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 8.19
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-on-outpatient-management-1277",
-      "text": "Bariatric surgery referral can be made immediately for patients with BMI ≥35 and diabetes; no specific glycemic control is required for the referral itself.",
-      "verbatim": "The referral can happen right away. No specific glycemic control is needed. The bariatric surgery center has an entire system that they help to walk alongside patients in their weight loss journey.",
-      "type": "judgment",
-      "t": 1277.0,
-      "match": "exact",
-      "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:bariatric surgery"
-          ],
-          "harm": [
-            "immediately"
-          ],
-          "rarity": 6.54
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-on-outpatient-management-869",
       "text": "Use a shame-free approach when counseling on lifestyle; ask patients to identify one change (e.g., cutting sugary drinks) that can make a big difference.",
       "verbatim": "I wanna have a shame free office. That... This is not... You know, this is my rubric for how you can be an A plus patient in my name...",
       "type": "judgment",
       "t": 869.8,
       "match": "exact",
       "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-869",
       "score": {
         "specific": true,
         "actionable": true,
@@ -45988,85 +46020,47 @@
           "actionable": [
             "Use"
           ],
-          "rarity": 7.96
+          "rarity": 7.97
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-on-outpatient-management-534",
-      "text": "Home glucose monitoring is needed for A1c >9%; for lower A1c, a monitor may still be provided but with less frequent checking.",
-      "verbatim": "Definitely greater than nine. Home glucose is needed.",
-      "type": "practice",
-      "t": 534.5,
+      "text": "For aerobic exercise, patients should achieve a heart rate that prevents them from completing a full sentence; walking at a leisurely pace does not count.",
+      "verbatim": "I want your heart rate up, and I want you to not be able to finish a complete sentence at the end of your exercise.",
+      "type": "exam_technique",
+      "t": 1049.1,
       "match": "exact",
       "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-1049",
       "score": {
-        "specific": true,
-        "actionable": true,
+        "specific": false,
+        "actionable": false,
         "local": false,
         "harm": false,
         "nonobvious": true,
-        "points": 3,
-        "grade": "B",
+        "points": 1,
+        "grade": "D",
         "fired": {
-          "specific": [
-            "threshold:>9",
-            "test:A1c"
-          ],
-          "actionable": [
-            "monitor"
-          ],
-          "rarity": 6.69
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-on-outpatient-management-396",
-      "text": "On initial visit for new diabetes, recheck blood pressure if it is >140 systolic, as office policy requires confirmation before acting.",
-      "verbatim": "we need to recheck it before he leaves because it's higher than one forty. Just barely. He's taking it at 01:41, but we need to recheck that. That's office policy.",
-      "type": "red_flag",
-      "t": 396.0,
-      "match": "exact",
-      "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "threshold:>1"
-          ],
-          "actionable": [
-            "recheck"
-          ],
-          "rarity": 6.77
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-on-outpatient-management-1243",
       "text": "Weight loss goal is 0.5, 1 pound per week; avoid crash dieting that leads to rebound weight gain.",
       "verbatim": "talking to them about how weight loss is a slow and steady process of looking at point five to one pound per week and not let's split this and then having rebound.",
       "type": "practice",
       "t": 1243.4,
       "match": "exact",
       "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-1243",
       "score": {
         "specific": true,
         "actionable": true,
@@ -46082,47 +46076,59 @@
           "actionable": [
             "avoid"
           ],
-          "rarity": 7.59
+          "rarity": 7.6
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-on-outpatient-management-408",
-      "text": "Provide a diabetic education folder from care managers to cover basics like carbs and blood sugar measurement, saving visit time for other priorities.",
-      "verbatim": "provide the patient with a diabetic folder from your manager. Talk to the care managers in your suite. A lot of them have a folder that has information about diabetes.",
-      "type": "concept",
-      "t": 408.1,
+      "text": "Bariatric surgery referral can be made immediately for patients with BMI ≥35 and diabetes; no specific glycemic control is required for the referral itself.",
+      "verbatim": "The referral can happen right away. No specific glycemic control is needed. The bariatric surgery center has an entire system that they help to walk alongside patients in their weight loss journey.",
+      "type": "judgment",
+      "t": 1277.0,
       "match": "exact",
       "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "numbers_unheard": [
+        "35"
+      ],
+      "pearl_id": "dr-lucashu-on-outpatient-management-1277",
       "score": {
-        "specific": false,
+        "specific": true,
         "actionable": false,
         "local": false,
-        "harm": false,
+        "harm": true,
         "nonobvious": true,
-        "points": 1,
-        "grade": "D",
+        "points": 3,
+        "grade": "C",
         "fired": {
-          "rarity": 8.65
+          "specific": [
+            "concept:bariatric surgery"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 6.55,
+          "capped": [
+            "number not heard: 35"
+          ]
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-on-outpatient-management-2147",
-      "text": "Only use glipizide among sulfonylureas because it is the shortest acting and has the lowest potential for hypoglycemia, especially in CKD patients.",
-      "verbatim": "only use the glipizide. Glipizide is the short acting or shortest acting. And so it has the lowest potential for hypoglycemia.",
-      "type": "dosing",
-      "t": 2147.7,
+      "text": "For patients with hemoglobin A1c of 14 or higher, you will likely need to start with insulin directly rather than stepwise therapy.",
+      "verbatim": "for patients with a hemoglobin of 14, for example, he said, you'll likely just need to start with insulin.",
+      "type": "red_flag",
+      "t": 1599.7,
       "match": "exact",
       "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-1599",
       "score": {
         "specific": true,
         "actionable": true,
@@ -46133,27 +46139,86 @@
         "grade": "B",
         "fired": {
           "specific": [
-            "concept:sulfonylureas"
+            "test:A1c"
           ],
           "actionable": [
-            "use"
+            "start"
           ],
-          "rarity": 7.92
+          "rarity": 6.35
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-on-outpatient-management-1956",
+      "text": "Rybelsus is the only oral GLP-1 agonist, which distinguishes it from other injectable options in the class.",
+      "verbatim": "Rivalis is the only one of the GLP ones that is oral.",
+      "type": "concept",
+      "t": 1762.3,
+      "match": "exact",
+      "episode": "dr-lucashu-on-outpatient-management",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-1762",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:glp-1"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "GLP-1 agonists do not tend to lead to hypoglycemia, which is why they can be used for weight loss even in patients without diabetes.",
+      "verbatim": "One of the benefits of this medicine is that it does not tend to lead to hypoglycemia, which is one of the reasons why we can use it for weight loss management even in patients without diabetes.",
+      "type": "concept",
+      "t": 1869.2,
+      "match": "exact",
+      "episode": "dr-lucashu-on-outpatient-management",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-1869",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:glp-1 agonists"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.44
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "SGLT2 inhibitors cause an initial 3-4% drop in GFR in the first month, which then plateaus, so do not discontinue based on this early decline.",
       "verbatim": "even though they have a primary and secondary prevention of c k... CKD, it does cause a a baseline drop in GFR of three to 4% in the first month.",
       "type": "pitfall",
       "t": 1956.5,
       "match": "exact",
       "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-1956",
       "score": {
         "specific": true,
         "actionable": true,
@@ -46171,20 +46236,110 @@
           ],
           "rarity": 7.41
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-on-outpatient-management-2631",
+      "text": "Only use glipizide among sulfonylureas because it is the shortest acting and has the lowest potential for hypoglycemia, especially in CKD patients.",
+      "verbatim": "only use the glipizide. Glipizide is the short acting or shortest acting. And so it has the lowest potential for hypoglycemia.",
+      "type": "dosing",
+      "t": 2147.7,
+      "match": "exact",
+      "episode": "dr-lucashu-on-outpatient-management",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-2147",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:sulfonylureas"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.93
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Sulfonylureas cause earlier beta cell failure by exhausting the pancreas, leading to earlier insulin dependence.",
+      "verbatim": "it also has an earlier risk for beta cell failure. We're we're basically squeezing squeezing the pancreas all that it's worth and are going to exhaust it earlier, which is going to lead to earlier insulin dependence.",
+      "type": "pitfall",
+      "t": 2200.1,
+      "match": "exact",
+      "episode": "dr-lucashu-on-outpatient-management",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-2200",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sulfonylureas"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Use the insurance tier algorithm: Tier 1 metformin, then Tier 2 Trulicity/Victoza or Farxiga/Jardiance, then Tier 3 Ozempic/Invokana after trying Tier 2 in the same class.",
+      "verbatim": "tier two, we have Trulicity and Victoza as our GLP-1s. And then our SGLT 2s, we have Farxiga and Jardiance.",
+      "type": "practice",
+      "t": 2469.8,
+      "match": "fuzzy",
+      "episode": "dr-lucashu-on-outpatient-management",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-2469",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:insurance"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.66
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Avoid combining DPP-4 inhibitors with GLP-1 agonists because they work on the same pathway, providing no additional benefit.",
       "verbatim": "d p p fours and GLP ones work on the same pathway, and so I might question you a lot if you have a patient on both.",
       "type": "pitfall",
       "t": 2631.2,
       "match": "exact",
       "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-2631",
       "score": {
         "specific": true,
         "actionable": true,
@@ -46202,82 +46357,48 @@
           ],
           "rarity": 7.18
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-on-outpatient-management-1599",
-      "text": "For patients with hemoglobin A1c of 14 or higher, you will likely need to start with insulin directly rather than stepwise therapy.",
-      "verbatim": "for patients with a hemoglobin of 14, for example, he said, you'll likely just need to start with insulin.",
-      "type": "red_flag",
-      "t": 1599.7,
+      "text": "For CGM, Medicare requires monitoring as well as insulin administration four times a day; SoonerCare requires DKA or severe hypoglycemia less than 54.",
+      "verbatim": "Medicare requires monitoring as well as insulin administration four times a day, But sooner care is even more strict. They want either DKA and or severe hypoglycemia less than 54.",
+      "type": "dx_criteria",
+      "t": 2661.4,
       "match": "exact",
       "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-2661",
       "score": {
         "specific": true,
-        "actionable": true,
+        "actionable": false,
         "local": false,
         "harm": false,
         "nonobvious": true,
-        "points": 3,
-        "grade": "B",
+        "points": 2,
+        "grade": "C",
         "fired": {
           "specific": [
-            "test:A1c"
+            "threshold:less than 5"
           ],
-          "actionable": [
-            "start"
-          ],
-          "rarity": 6.34
+          "rarity": 6.61
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-on-outpatient-management-2469",
-      "text": "Use the insurance tier algorithm: Tier 1 metformin, then Tier 2 Trulicity/Victoza or Farxiga/Jardiance, then Tier 3 Ozempic/Invokana after trying Tier 2 in the same class.",
-      "verbatim": "tier two, we have Trulicity and Victoza as our GLP-1s. And then our SGLT 2s, we have Farxiga and Jardiance.",
-      "type": "practice",
-      "t": 2469.8,
-      "match": "fuzzy",
-      "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:insurance"
-          ],
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 8.65
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-on-outpatient-management-2733",
       "text": "Refer to endocrinology for patients already on mealtime insulin with difficult management or for insulin pump evaluation, not for starting insulin or oral-only regimens.",
       "verbatim": "the referral would be appropriate if you have patients who are already on mealtime insulin but are still difficult to manage or if you're trying to identify somebody for an insulin pump",
       "type": "judgment",
       "t": 2733.5,
       "match": "exact",
       "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-2733",
       "score": {
         "specific": true,
         "actionable": true,
@@ -46293,137 +46414,22 @@
           "actionable": [
             "Refer"
           ],
-          "rarity": 7.96
+          "rarity": 7.97
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-on-outpatient-management-1869",
-      "text": "GLP-1 agonists do not tend to lead to hypoglycemia, which is why they can be used for weight loss even in patients without diabetes.",
-      "verbatim": "One of the benefits of this medicine is that it does not tend to lead to hypoglycemia, which is one of the reasons why we can use it for weight loss management even in patients without diabetes.",
-      "type": "concept",
-      "t": 1869.2,
-      "match": "exact",
-      "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:glp-1 agonists"
-          ],
-          "actionable": [
-            "do not"
-          ],
-          "rarity": 6.43
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-on-outpatient-management-1762",
-      "text": "Rybelsus is the only oral GLP-1 agonist, which distinguishes it from other injectable options in the class.",
-      "verbatim": "Rivalis is the only one of the GLP ones that is oral.",
-      "type": "concept",
-      "t": 1762.3,
-      "match": "exact",
-      "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:glp-1"
-          ],
-          "rarity": 7.73
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-on-outpatient-management-2200",
-      "text": "Sulfonylureas cause earlier beta cell failure by exhausting the pancreas, leading to earlier insulin dependence.",
-      "verbatim": "it also has an earlier risk for beta cell failure. We're we're basically squeezing squeezing the pancreas all that it's worth and are going to exhaust it earlier, which is going to lead to earlier insulin dependence.",
-      "type": "pitfall",
-      "t": 2200.1,
-      "match": "exact",
-      "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:sulfonylureas"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-on-outpatient-management-2661",
-      "text": "For CGM, Medicare requires monitoring as well as insulin administration four times a day; SoonerCare requires DKA or severe hypoglycemia less than 54.",
-      "verbatim": "Medicare requires monitoring as well as insulin administration four times a day, But sooner care is even more strict. They want either DKA and or severe hypoglycemia less than 54.",
-      "type": "dx_criteria",
-      "t": 2661.4,
-      "match": "exact",
-      "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "threshold:less than 5"
-          ],
-          "rarity": 6.61
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-on-outpatient-management-2779",
       "text": "When outpatient diabetic educators are unavailable, clinicians must directly provide structured diabetes education to patients.",
       "verbatim": "don't have specific outpatient diabetic educators.",
       "type": "pitfall",
       "t": 2779.6,
       "match": "exact",
       "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-2779",
       "score": {
         "specific": false,
         "actionable": false,
@@ -46435,20 +46441,20 @@
         "fired": {
           "rarity": 7.23
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-on-outpatient-management-2788",
       "text": "Acknowledge and credit expert sources, such as Dr. Mangrum, when using their lecture content to enhance teaching.",
       "verbatim": "I stole most of his lecture. So thank you.",
       "type": "judgment",
       "t": 2788.1,
       "match": "exact",
       "episode": "dr-lucashu-on-outpatient-management",
-      "speaker": "Lucashu",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-on-outpatient-management-2788",
       "score": {
         "specific": false,
         "actionable": false,
@@ -46460,7 +46466,7 @@
         "fired": {
           "rarity": 8.06
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -68224,5 +68230,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "amanda-lucashu",
+      "name": "Dr. Amanda Lucashu"
+    }
+  ],
+  "pearls_fingerprint": "b690be8a4d4d98cb"
 }

@@ -2,7 +2,7 @@
   "slug": "l-dogg-s-morning-report-2",
   "guid": "hopepartners.podbean.com/ebe77f12-3631-3aa2-99af-b3cdd98e9666",
   "title": "L’Dogg’s Morning Report",
-  "speaker": "Unknown",
+  "speaker": "Dr. Lawrence Lee",
   "link": "https://hopepartners.podbean.com/e/l-dogg-s-morning-report/",
   "pubDate": "Fri, 15 Dec 2023 14:06:09 -0600",
   "duration_sec": 5620,
@@ -82151,16 +82151,81 @@
   ],
   "pearls": [
     {
-      "pearl_id": "l-dogg-s-morning-report-2-569",
+      "text": "Kussmaul breathing is a sign of severe metabolic acidosis, indicating deep and rapid breathing to compensate.",
+      "verbatim": "she's got definite Kussmaul breathing noted.",
+      "type": "red_flag",
+      "t": 213.3,
+      "match": "exact",
+      "episode": "l-dogg-s-morning-report-2",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-213",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:kussmaul breathing"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Use Winters' formula to calculate expected pCO2 in metabolic acidosis: expected pCO2 = 1.5 × [HCO3] + 8 ± 2.",
       "verbatim": "Bifur's formula. So it's the question's card. One One half of the Eight. Bicarb plus eight. Good. Yes. So so half of four is Up to So four plus two is is plus eight is 14. 14. That's your expected pCO2. Correct. So it's 12 to 16.",
       "type": "practice",
       "t": 569.4,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "numbers_unheard": [
+        "1.5"
+      ],
+      "pearl_id": "l-dogg-s-morning-report-2-569",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:metabolic acidosis"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 6.52,
+          "capped": [
+            "number not heard: 1.5"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "In DKA, the anion gap is elevated; calculate the anion gap as sodium minus chloride minus bicarbonate.",
+      "verbatim": "Sodium minus chloride minus bicarb.",
+      "type": "dx_criteria",
+      "t": 745.9,
+      "match": "exact",
+      "episode": "l-dogg-s-morning-report-2",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-745",
       "score": {
         "specific": true,
         "actionable": true,
@@ -82171,58 +82236,64 @@
         "grade": "B",
         "fired": {
           "specific": [
-            "concept:metabolic acidosis"
+            "concept:anion gap"
           ],
           "actionable": [
-            "Use"
+            "calculate"
           ],
-          "rarity": 6.51
+          "rarity": 6.83
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-1613",
-      "text": "In DKA, correct hypokalemia before giving insulin to prevent fatal arrhythmias, especially with prolonged QT.",
-      "verbatim": "if you underhydrate her and don't address the potassium before you give her insulin, she will die, especially with the k t... QTC that's that prolonged.",
-      "type": "pitfall",
-      "t": 1613.3,
+      "text": "Calculate delta gap to assess mixed acid-base disorders: delta gap = (AG − 12) + HCO3; a value of 22 ± 2 indicates pure AG metabolic acidosis.",
+      "verbatim": "excess anion gap. So it's where you take the anion gap minus Normal. Anion gap. Oh, which is 12. Exactly. So 30 minus 12 equals? 18. Very good. And then you add 18 to the Right. Right. Five carb, which equals? 22. 22. Very good. And 22, so it's fine.",
+      "type": "dx_criteria",
+      "t": 796.5,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "numbers_unheard": [
+        "2"
+      ],
+      "pearl_id": "l-dogg-s-morning-report-2-796",
       "score": {
         "specific": true,
-        "actionable": false,
+        "actionable": true,
         "local": false,
-        "harm": true,
+        "harm": false,
         "nonobvious": true,
         "points": 3,
-        "grade": "B",
+        "grade": "C",
         "fired": {
           "specific": [
-            "concept:hypokalemia"
+            "concept:mixed acid-base disord"
           ],
-          "harm": [
-            "fatal"
+          "actionable": [
+            "Calculate"
           ],
-          "rarity": 6.79
+          "rarity": 7.41,
+          "capped": [
+            "number not heard: 2"
+          ]
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-892",
       "text": "When interpreting EKG, step zero is to check the calibration standard: it should be 10 small boxes (10 mm) tall.",
       "verbatim": "What's step zero? Look at the intervals. The that interval? Yes. Good job. That interval is called the Standard. Yes. And you want it to... It needs to be 10 small boxes tall.",
       "type": "exam_technique",
       "t": 892.1,
       "match": "fuzzy",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-892",
       "score": {
         "specific": true,
         "actionable": true,
@@ -82239,81 +82310,23 @@
           "actionable": [
             "check"
           ],
-          "rarity": 8.42
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-796",
-      "text": "Calculate delta gap to assess mixed acid-base disorders: delta gap = (AG − 12) + HCO3; a value of 22 ± 2 indicates pure AG metabolic acidosis.",
-      "verbatim": "excess anion gap. So it's where you take the anion gap minus Normal. Anion gap. Oh, which is 12. Exactly. So 30 minus 12 equals? 18. Very good. And then you add 18 to the Right. Right. Five carb, which equals? 22. 22. Very good. And 22, so it's fine.",
-      "type": "dx_criteria",
-      "t": 796.5,
-      "match": "exact",
-      "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:mixed acid-base disord"
-          ],
-          "actionable": [
-            "Calculate"
-          ],
-          "rarity": 7.46
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "l-dogg-s-morning-report-2-1663",
-      "text": "In DKA, prefer normal saline over lactated Ringer's because LR contains potassium and lactate, which can complicate management.",
-      "verbatim": "I would do NS because you avoid... You can control the whole amount of potassium that you're putting in NS where LR has potassium added in it, and it also has lactate and is more acidic than MS. So she's already acidotic.",
-      "type": "judgment",
-      "t": 1663.8,
-      "match": "exact",
-      "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:lactated ringer's"
-          ],
-          "rarity": 7.96
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "l-dogg-s-morning-report-2-931",
       "text": "For a 10-second EKG strip, count the number of QRS complexes and multiply by 6 to get the heart rate.",
       "verbatim": "count them up. So we're like, 12345678910. Like it. Stop. 19. And it's a ten second strip, so, like, a 190 beats per minute. Not a 190, but it was 19 times Oh, times six because Yes. K. So it's one twenty minus six, which equals to one fourteen.",
       "type": "exam_technique",
       "t": 931.6,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "l-dogg-s-morning-report-2-931",
       "score": {
         "specific": true,
         "actionable": false,
@@ -82328,51 +82341,20 @@
           ],
           "rarity": 8.06
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-745",
-      "text": "In DKA, the anion gap is elevated; calculate the anion gap as sodium minus chloride minus bicarbonate.",
-      "verbatim": "Sodium minus chloride minus bicarb.",
-      "type": "dx_criteria",
-      "t": 745.9,
-      "match": "exact",
-      "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:anion gap"
-          ],
-          "actionable": [
-            "calculate"
-          ],
-          "rarity": 6.82
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "l-dogg-s-morning-report-2-1140",
       "text": "When evaluating EKG, check the QT interval; it should be less than half of the R-R interval, and a prolonged QT increases risk of torsades.",
       "verbatim": "we like it to be half. Correct. And what say you about this? It is prolonged. Okay. And you would be correct. And in fact, look at the QTC for reference, and it is? 68. So that is Bueno or no Bueno? Bueno. No Bueno.",
       "type": "red_flag",
       "t": 1140.1,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-1140",
       "score": {
         "specific": true,
         "actionable": true,
@@ -82390,20 +82372,53 @@
           ],
           "rarity": 7.5
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-213",
-      "text": "Kussmaul breathing is a sign of severe metabolic acidosis, indicating deep and rapid breathing to compensate.",
-      "verbatim": "she's got definite Kussmaul breathing noted.",
-      "type": "red_flag",
-      "t": 213.3,
+      "text": "In DKA, correct hypokalemia before giving insulin to prevent fatal arrhythmias, especially with prolonged QT.",
+      "verbatim": "if you underhydrate her and don't address the potassium before you give her insulin, she will die, especially with the k t... QTC that's that prolonged.",
+      "type": "pitfall",
+      "t": 1613.3,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "l-dogg-s-morning-report-2-1613",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypokalemia"
+          ],
+          "harm": [
+            "fatal"
+          ],
+          "rarity": 6.79
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "In DKA, prefer normal saline over lactated Ringer's because LR contains potassium and lactate, which can complicate management.",
+      "verbatim": "I would do NS because you avoid... You can control the whole amount of potassium that you're putting in NS where LR has potassium added in it, and it also has lactate and is more acidic than MS. So she's already acidotic.",
+      "type": "judgment",
+      "t": 1663.8,
+      "match": "exact",
+      "episode": "l-dogg-s-morning-report-2",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "l-dogg-s-morning-report-2-1663",
       "score": {
         "specific": true,
         "actionable": false,
@@ -82414,24 +82429,177 @@
         "grade": "C",
         "fired": {
           "specific": [
-            "concept:kussmaul breathing"
+            "concept:lactated ringer's"
           ],
-          "rarity": 7.27
+          "rarity": 7.97
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-2159",
+      "text": "Giving insulin when potassium is low drives potassium into cells and can cause fatal arrhythmia; hold insulin until potassium is above 4.",
+      "verbatim": "Because insulin's gonna drive down the potassium. So just let that brain cook. It's 6.9.",
+      "type": "pitfall",
+      "t": 1858.3,
+      "match": "exact",
+      "episode": "l-dogg-s-morning-report-2",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "numbers_unheard": [
+        "4"
+      ],
+      "pearl_id": "l-dogg-s-morning-report-2-1858",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:above 4"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "harm": [
+            "fatal"
+          ],
+          "rarity": 6.93,
+          "capped": [
+            "number not heard: 4"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Insulin does not directly fix acidosis in DKA; the primary problem is acidosis, not hyperglycemia alone.",
+      "verbatim": "But insulin is not the problem. It's the acidosis. And insulin's not gonna fix the acidosis.",
+      "type": "judgment",
+      "t": 1881.9,
+      "match": "exact",
+      "episode": "l-dogg-s-morning-report-2",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-1881",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hyperglycemia"
+          ],
+          "rarity": 6.1
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Fluid resuscitation alone can lower blood glucose in DKA and should be started before insulin when potassium is low.",
+      "verbatim": "The fluids will bring that down as well.",
+      "type": "concept",
+      "t": 1969.1,
+      "match": "exact",
+      "episode": "l-dogg-s-morning-report-2",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-1969",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fluid resuscitation"
+          ],
+          "rarity": 5.76
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Bicarbonate drives potassium into cells, worsening hypokalemia; avoid it in DKA unless acidosis is extreme.",
+      "verbatim": "Even her bicarb's gonna drive potassium into cellular even more.",
+      "type": "pitfall",
+      "t": 2144.8,
+      "match": "exact",
+      "episode": "l-dogg-s-morning-report-2",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "l-dogg-s-morning-report-2-2144",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypokalemia"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Bicarbonate carries a bigger risk than benefit in most DKA cases due to its effect on potassium.",
+      "verbatim": "So the bicarb runs a bigger risk.",
+      "type": "pitfall",
+      "t": 2157.0,
+      "match": "exact",
+      "episode": "l-dogg-s-morning-report-2",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-2157",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Potassium is the most fatal element in DKA; prioritize correction before starting insulin.",
       "verbatim": "Potassium is the most fatal thing in DKA.",
       "type": "pitfall",
       "t": 2159.4,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-2159",
       "score": {
         "specific": true,
         "actionable": true,
@@ -82450,84 +82618,22 @@
           "harm": [
             "fatal"
           ],
-          "rarity": 7.09
+          "rarity": 7.1
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-1858",
-      "text": "Giving insulin when potassium is low drives potassium into cells and can cause fatal arrhythmia; hold insulin until potassium is above 4.",
-      "verbatim": "Because insulin's gonna drive down the potassium. So just let that brain cook. It's 6.9.",
-      "type": "pitfall",
-      "t": 1858.3,
-      "match": "exact",
-      "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 4,
-        "grade": "A",
-        "fired": {
-          "specific": [
-            "threshold:above 4"
-          ],
-          "actionable": [
-            "hold"
-          ],
-          "harm": [
-            "fatal"
-          ],
-          "rarity": 6.92
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "l-dogg-s-morning-report-2-1881",
-      "text": "Insulin does not directly fix acidosis in DKA; the primary problem is acidosis, not hyperglycemia alone.",
-      "verbatim": "But insulin is not the problem. It's the acidosis. And insulin's not gonna fix the acidosis.",
-      "type": "judgment",
-      "t": 1881.9,
-      "match": "exact",
-      "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:hyperglycemia"
-          ],
-          "rarity": 6.09
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "l-dogg-s-morning-report-2-1969",
-      "text": "Fluid resuscitation alone can lower blood glucose in DKA and should be started before insulin when potassium is low.",
-      "verbatim": "The fluids will bring that down as well.",
+      "text": "Excessive QT prolongation increases the risk of early afterdepolarizations and torsades de pointes.",
+      "verbatim": "Excessive QT prolongation leads you... Increase risk for early after depolarization.",
       "type": "concept",
-      "t": 1969.1,
+      "t": 2676.0,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-2676",
       "score": {
         "specific": true,
         "actionable": false,
@@ -82538,144 +82644,24 @@
         "grade": "C",
         "fired": {
           "specific": [
-            "concept:fluid resuscitation"
+            "concept:torsades de pointes"
           ],
-          "rarity": 5.75
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-2144",
-      "text": "Bicarbonate drives potassium into cells, worsening hypokalemia; avoid it in DKA unless acidosis is extreme.",
-      "verbatim": "Even her bicarb's gonna drive potassium into cellular even more.",
-      "type": "pitfall",
-      "t": 2144.8,
-      "match": "exact",
-      "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:hypokalemia"
-          ],
-          "actionable": [
-            "avoid"
-          ],
-          "rarity": 6.81
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "l-dogg-s-morning-report-2-2156",
-      "text": "Bicarbonate carries a bigger risk than benefit in most DKA cases due to its effect on potassium.",
-      "verbatim": "So the bicarb runs a bigger risk.",
-      "type": "pitfall",
-      "t": 2157.0,
-      "match": "exact",
-      "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 6.88
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "l-dogg-s-morning-report-2-3052",
-      "text": "In DKA with hypokalemia, target potassium >4 mEq/L before starting insulin; check BMP every 2 hours until goal is reached.",
-      "verbatim": "We need to get potassium about four. I'll order a BMP every two until we get the potassium about four.",
-      "type": "practice",
-      "t": 3052.9,
-      "match": "exact",
-      "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:4 mEq",
-            "threshold:>4",
-            "frequency:every 2"
-          ],
-          "actionable": [
-            "starting"
-          ],
-          "rarity": 7.59
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "l-dogg-s-morning-report-2-3090",
-      "text": "When QTc is prolonged, avoid ondansetron and use an alternative like prochlorperazine (Compazine).",
-      "verbatim": "We'll give Kaposi instead of Zofran.",
-      "type": "dosing",
-      "t": 3090.4,
-      "match": "exact",
-      "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "drug:ondansetron"
-          ],
-          "actionable": [
-            "avoid"
-          ],
-          "rarity": 8.42
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "l-dogg-s-morning-report-2-2750",
       "text": "Among fluoroquinolones, ciprofloxacin is the least likely to prolong QTc, but still use caution.",
       "verbatim": "Cipro is the least likely of the quinolones. You're still not gonna be eager to give it.",
       "type": "judgment",
       "t": 2750.0,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-2750",
       "score": {
         "specific": true,
         "actionable": true,
@@ -82693,51 +82679,20 @@
           ],
           "rarity": 7.27
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-3340",
-      "text": "Severe acidosis (pH <7.0) is a direct threat to the brain and may justify starting insulin despite hypokalemia.",
-      "verbatim": "That level of acidemia is not for the brain under any circumstances.",
-      "type": "red_flag",
-      "t": 3340.8,
+      "text": "Amiodarone is a QT-prolonging agent; be aware of this when using it in patients with prolonged QTc.",
+      "verbatim": "Amiodarone a QT prolonging agent.",
+      "type": "concept",
+      "t": 2910.0,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "threshold:<7"
-          ],
-          "actionable": [
-            "starting"
-          ],
-          "rarity": 7.29
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "l-dogg-s-morning-report-2-3351",
-      "text": "If the heart stops from arrhythmia, the brain receives no blood; this counterargument supports prioritizing potassium over acidosis correction.",
-      "verbatim": "If your heart stops and your brain doesn't get any blood at all, and that's where it's acid.",
-      "type": "judgment",
-      "t": 3351.3,
-      "match": "exact",
-      "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-2910",
       "score": {
         "specific": true,
         "actionable": false,
@@ -82748,24 +82703,24 @@
         "grade": "C",
         "fired": {
           "specific": [
-            "concept:arrhythmia"
+            "concept:amiodarone"
           ],
-          "rarity": 8.65
+          "rarity": 7.04
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-3017",
       "text": "When a patient is on a QT-prolonging medication, obtain an EKG before continuing or starting the drug.",
       "verbatim": "I'll get an EKG. You're gonna stop. Yeah. Get an EKG.",
       "type": "practice",
       "t": 3017.9,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-3017",
       "score": {
         "specific": true,
         "actionable": true,
@@ -82781,50 +82736,117 @@
           "actionable": [
             "obtain"
           ],
-          "rarity": 6.58
+          "rarity": 6.65
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-2909",
-      "text": "Amiodarone is a QT-prolonging agent; be aware of this when using it in patients with prolonged QTc.",
-      "verbatim": "Amiodarone a QT prolonging agent.",
-      "type": "concept",
-      "t": 2910.0,
+      "text": "In DKA with hypokalemia, target potassium >4 mEq/L before starting insulin; check BMP every 2 hours until goal is reached.",
+      "verbatim": "We need to get potassium about four. I'll order a BMP every two until we get the potassium about four.",
+      "type": "practice",
+      "t": 3052.9,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-3052",
       "score": {
         "specific": true,
-        "actionable": false,
+        "actionable": true,
         "local": false,
         "harm": false,
         "nonobvious": true,
-        "points": 2,
-        "grade": "C",
+        "points": 3,
+        "grade": "B",
         "fired": {
           "specific": [
-            "concept:amiodarone"
+            "dose:4 mEq",
+            "threshold:>4",
+            "frequency:every 2"
           ],
-          "rarity": 7.04
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.6
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-2676",
-      "text": "Excessive QT prolongation increases the risk of early afterdepolarizations and torsades de pointes.",
-      "verbatim": "Excessive QT prolongation leads you... Increase risk for early after depolarization.",
-      "type": "concept",
-      "t": 2676.6,
-      "match": "fuzzy",
+      "text": "When QTc is prolonged, avoid ondansetron and use an alternative like prochlorperazine (Compazine).",
+      "verbatim": "We'll give Kaposi instead of Zofran.",
+      "type": "dosing",
+      "t": 3090.4,
+      "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-3090",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:ondansetron"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.43
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Severe acidosis (pH <7.0) is a direct threat to the brain and may justify starting insulin despite hypokalemia.",
+      "verbatim": "That level of acidemia is not for the brain under any circumstances.",
+      "type": "red_flag",
+      "t": 3340.8,
+      "match": "exact",
+      "episode": "l-dogg-s-morning-report-2",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-3340",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:<7"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.3
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "If the heart stops from arrhythmia, the brain receives no blood; this counterargument supports prioritizing potassium over acidosis correction.",
+      "verbatim": "If your heart stops and your brain doesn't get any blood at all, and that's where it's acid.",
+      "type": "judgment",
+      "t": 3351.3,
+      "match": "exact",
+      "episode": "l-dogg-s-morning-report-2",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-3351",
       "score": {
         "specific": true,
         "actionable": false,
@@ -82835,24 +82857,92 @@
         "grade": "C",
         "fired": {
           "specific": [
-            "concept:torsades de pointes"
+            "concept:arrhythmia"
           ],
-          "rarity": 8.42
+          "rarity": 8.66
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-3854",
+      "text": "For metabolic acidosis, calculate expected pCO2 as (1.5 × HCO3) + 8 ± 2; if the actual pCO2 falls within this range, the respiratory compensation is adequate.",
+      "verbatim": "So it's actually nine to 18. What's the actual pCO2? Eleven six. So what does that mean? It is Compensated.",
+      "type": "dx_criteria",
+      "t": 3433.7,
+      "match": "exact",
+      "episode": "l-dogg-s-morning-report-2",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "numbers_unheard": [
+        "1.5"
+      ],
+      "pearl_id": "l-dogg-s-morning-report-2-3433",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:metabolic acidosis"
+          ],
+          "actionable": [
+            "calculate"
+          ],
+          "rarity": 6.64,
+          "capped": [
+            "number not heard: 1.5"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Use the delta gap (anion gap, 12 + HCO3) to identify a superimposed non-anion gap metabolic acidosis; a value > normal suggests a NAGMA.",
+      "verbatim": "And then the anion gap is 27, then 27 minus 12 is 15 plus the bicarb, which is two. So 17. So there is a superimposed Magma.",
+      "type": "dx_criteria",
+      "t": 3461.9,
+      "match": "exact",
+      "episode": "l-dogg-s-morning-report-2",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-3461",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:non-anion gap metaboli"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "In severe hypokalemia with DKA and altered mental status, stop the insulin drip immediately.",
       "verbatim": "Stop insulin prep immediately.",
       "type": "judgment",
       "t": 3854.7,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-3854",
       "score": {
         "specific": true,
         "actionable": true,
@@ -82871,84 +82961,22 @@
           "harm": [
             "immediately"
           ],
-          "rarity": 6.25
+          "rarity": 6.26
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-3433",
-      "text": "For metabolic acidosis, calculate expected pCO2 as (1.5 × HCO3) + 8 ± 2; if the actual pCO2 falls within this range, the respiratory compensation is adequate.",
-      "verbatim": "So it's actually nine to 18. What's the actual pCO2? Eleven six. So what does that mean? It is Compensated.",
-      "type": "dx_criteria",
-      "t": 3433.7,
-      "match": "exact",
-      "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:metabolic acidosis"
-          ],
-          "actionable": [
-            "calculate"
-          ],
-          "rarity": 6.69
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "l-dogg-s-morning-report-2-3461",
-      "text": "Use the delta gap (anion gap, 12 + HCO3) to identify a superimposed non-anion gap metabolic acidosis; a value > normal suggests a NAGMA.",
-      "verbatim": "And then the anion gap is 27, then 27 minus 12 is 15 plus the bicarb, which is two. So 17. So there is a superimposed Magma.",
-      "type": "dx_criteria",
-      "t": 3461.9,
-      "match": "exact",
-      "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:non-anion gap metaboli"
-          ],
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 7.73
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "l-dogg-s-morning-report-2-3874",
       "text": "For severe hypokalemia, use an aggressive potassium replacement plan such as 40 mEq every 2 hours with close monitoring and central line access.",
       "verbatim": "We worked out a plan for safe potassium replacement. Forty milliequivalents every two hours.",
       "type": "dosing",
       "t": 3874.8,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-3874",
       "score": {
         "specific": true,
         "actionable": true,
@@ -82965,22 +82993,22 @@
           "actionable": [
             "use"
           ],
-          "rarity": 6.42
+          "rarity": 6.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-3989",
       "text": "Never attempt aggressive potassium replacement alone; involve consultants and document to share liability.",
       "verbatim": "You don't wanna have to take the stand and say you did this by yourself.",
       "type": "judgment",
       "t": 3989.7,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-3989",
       "score": {
         "specific": true,
         "actionable": true,
@@ -82996,22 +83024,22 @@
           "actionable": [
             "Never"
           ],
-          "rarity": 7.82
+          "rarity": 7.83
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-4038",
       "text": "When giving high-dose potassium, document the maximum safe dose and the involvement of consultants.",
       "verbatim": "I'm saying that's the maximum possible that you can give, and you make sure you get documentation.",
       "type": "judgment",
       "t": 4038.4,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-4038",
       "score": {
         "specific": false,
         "actionable": true,
@@ -83024,22 +83052,22 @@
           "actionable": [
             "document"
           ],
-          "rarity": 6.64
+          "rarity": 6.62
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-4066",
       "text": "Always monitor magnesium levels when aggressively repleting potassium.",
       "verbatim": "Do you have to monitor their magnesium levels too? 100%. That. Oh, yeah. Well, yeah, you'll give it... You'll monitor it all.",
       "type": "practice",
       "t": 4066.8,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-4066",
       "score": {
         "specific": false,
         "actionable": true,
@@ -83052,22 +83080,22 @@
           "actionable": [
             "Always"
           ],
-          "rarity": 7.43
+          "rarity": 7.41
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-4113",
       "text": "Intubation can help offload the respiratory acidosis component when the patient is tiring out.",
       "verbatim": "That maybe could have helped. Right? Because now that's offloading the respiratory acidosis piece.",
       "type": "procedure",
       "t": 4113.9,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-4113",
       "score": {
         "specific": true,
         "actionable": false,
@@ -83080,22 +83108,22 @@
           "specific": [
             "concept:respiratory acidosis"
           ],
-          "rarity": 7.96
+          "rarity": 7.97
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-4344",
       "text": "The brain can adapt to chronic acidosis; a patient may be awake and talking at a pH of 6.9 if the acidosis developed slowly over weeks.",
       "verbatim": "She was awake and talking to me at six point nine.",
       "type": "red_flag",
       "t": 4344.2,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-4344",
       "score": {
         "specific": false,
         "actionable": false,
@@ -83105,53 +83133,22 @@
         "points": 1,
         "grade": "D",
         "fired": {
-          "rarity": 7.09
+          "rarity": 7.1
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "l-dogg-s-morning-report-2-4815",
-      "text": "Measure the QT interval on EKG all the way to the end of the T wave; this is critical in hypokalemia to detect prolonged QTc.",
-      "verbatim": "I learned that you measure the QT all the way to the end of the T wave.",
-      "type": "exam_technique",
-      "t": 4815.8,
-      "match": "exact",
-      "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:EKG"
-          ],
-          "actionable": [
-            "Measure"
-          ],
-          "rarity": 6.46
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "l-dogg-s-morning-report-2-4546",
       "text": "If you start an insulin drip when there is severe hypokalemia, you must have an aggressive potassium replacement regimen in place simultaneously.",
       "verbatim": "If you are going to insulin drip when there's severe hypokalemia, you have an aggressive potassium replacement regimen.",
       "type": "practice",
       "t": 4546.4,
       "match": "exact",
       "episode": "l-dogg-s-morning-report-2",
-      "speaker": "Unknown",
+      "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "l-dogg-s-morning-report-2-4546",
       "score": {
         "specific": true,
         "actionable": true,
@@ -83167,9 +83164,41 @@
           "actionable": [
             "start"
           ],
-          "rarity": 6.52
+          "rarity": 6.53
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Measure the QT interval on EKG all the way to the end of the T wave; this is critical in hypokalemia to detect prolonged QTc.",
+      "verbatim": "I learned that you measure the QT all the way to the end of the T wave.",
+      "type": "exam_technique",
+      "t": 4815.8,
+      "match": "exact",
+      "episode": "l-dogg-s-morning-report-2",
+      "speaker": "Dr. Lawrence Lee",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "by_presenter": false,
+      "pearl_id": "l-dogg-s-morning-report-2-4815",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "actionable": [
+            "Measure"
+          ],
+          "rarity": 6.43
+        },
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -121509,5 +121538,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "lawrence-lee",
+      "name": "Dr. Lawrence Lee"
+    }
+  ],
+  "pearls_fingerprint": "673eda724b652387"
 }

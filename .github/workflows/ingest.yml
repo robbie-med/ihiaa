@@ -2,17 +2,34 @@ name: Ingest new lectures
 
 # Polls the feed, processes anything new, rebuilds every derived artifact,
 # commits, then deploys. Nothing runs on a local machine.
+#
+# Run by hand from the Actions tab for maintenance:
+#   refresh   rebuild everything and run contradiction detection even with no new
+#             lectures (cached; only unseen pearl pairs cost anything, ~cents)
+#   reenrich  re-extract pearls with the current prompt: "all" or slugs. Uses the
+#             existing transcripts, so no audio or transcription cost; roughly $1
+#             for the whole corpus.
 on:
   schedule:
     - cron: "17 9 * * *"        # daily 09:17 UTC
   workflow_dispatch:
     inputs:
       limit:
-        description: "Max episodes to process this run (0 = all outstanding)"
+        description: "Max new episodes to process this run (0 = all outstanding)"
         default: "0"
       slugs:
-        description: "Specific slugs to (re)try, space separated"
+        description: "Specific slugs to (re)try ingesting, space separated"
         default: ""
+      refresh:
+        description: "Rebuild all derived data and run contradiction detection"
+        type: boolean
+        default: false
+      reenrich:
+        description: "Re-extract pearls with the current prompt: 'all' or slugs (paid, ~$1 for all)"
+        default: ""
+      max_pairs:
+        description: "Max new pearl pairs to judge for agreement/conflict this run"
+        default: "1500"
 
 concurrency:
   group: ingest
@@ -67,25 +84,44 @@ jobs:
           PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
         run: xargs -a todo.txt python3 -u scripts/backfill.py --workers 4
 
-      - name: Count finished episodes
+      - name: Re-extract pearls
+        id: reenrich
+        if: inputs.reenrich != ''
+        continue-on-error: true
+        env:
+          PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
+          REENRICH: ${{ inputs.reenrich }}
+        run: python3 -u scripts/backfill.py --reenrich --workers 4 $REENRICH
+
+      - name: Decide what to rebuild
         id: done
-        if: steps.find.outputs.count != '0'
+        env:
+          REFRESH: ${{ inputs.refresh }}
+          REENRICH: ${{ inputs.reenrich }}
         run: |
-          n=$(python3 - <<'EOF'
+          n=0
+          if [ -s todo.txt ]; then
+            n=$(python3 - <<'EOF'
           import json, pathlib
           slugs = pathlib.Path("todo.txt").read_text().split()
           eps = pathlib.Path("data/episodes")
           print(sum(1 for s in slugs if (eps / f"{s}.json").exists()
                     and json.loads((eps / f"{s}.json").read_text()).get("chunks")))
           EOF
-          )
+            )
+          fi
           echo "count=$n" >> "$GITHUB_OUTPUT"
-          echo "$n of ${{ steps.find.outputs.count }} episode(s) fully processed"
+          if [ "$n" -gt 0 ] || [ "$REFRESH" = "true" ] || [ -n "$REENRICH" ]; then
+            echo "rebuild=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "rebuild=false" >> "$GITHUB_OUTPUT"
+          fi
+          echo "$n new lecture(s) fully processed; rebuild=$([ "$n" -gt 0 ] || [ "$REFRESH" = "true" ] || [ -n "$REENRICH" ] && echo yes || echo no)"
 
       # Everything below is derived from data/episodes/*.json and only needs to
-      # run when the corpus actually changed.
+      # run when the corpus changed or a refresh was asked for.
       - name: Cache MeSH
-        if: steps.done.outputs.count > 0
+        if: steps.done.outputs.rebuild == 'true'
         id: meshcache
         uses: actions/cache@v4
         with:
@@ -93,7 +129,7 @@ jobs:
           key: mesh-d2025
 
       - name: Download MeSH
-        if: steps.done.outputs.count > 0 && steps.meshcache.outputs.cache-hit != 'true'
+        if: steps.done.outputs.rebuild == 'true' && steps.meshcache.outputs.cache-hit != 'true'
         run: |
           mkdir -p data/ref
           curl -sSL --max-time 900 \
@@ -101,38 +137,39 @@ jobs:
             -o data/ref/mesh.bin
           test "$(stat -c%s data/ref/mesh.bin)" -gt 1000000
 
-      - name: Rebuild site, grades, taxonomy, concept map
-        if: steps.done.outputs.count > 0
+      - name: Rebuild speakers, pearls, grades, site, taxonomy, concept map
+        if: steps.done.outputs.rebuild == 'true'
         run: ./scripts/rebuild.sh
 
-      # Pearl embeddings and pair verdicts are cached between runs, so clustering
-      # only pays for pearls and pairs it has never seen. Without this cache every
-      # run re-embedded all ~5,700 pearls and re-judged the same 400 pairs.
-      - name: Restore clustering cache
-        if: steps.done.outputs.count > 0
+      # Embeddings and every judge/verify verdict are cached by pearl text, so a
+      # run only pays for pairs it has never seen.
+      - name: Restore agreement/conflict cache
+        if: steps.done.outputs.rebuild == 'true'
         uses: actions/cache@v4
         with:
           path: |
-            data/cache/pearl_vecs.json
-            data/cache/pair_verdicts.json
-          key: pearl-cache-${{ github.run_id }}
-          restore-keys: pearl-cache-
+            data/cache/pearl_vecs_by_text.json
+            data/cache/judge_*.json
+            data/cache/verify_*.json
+          key: relate-cache-${{ github.run_id }}
+          restore-keys: relate-cache-
 
-      - name: Cluster pearls
+      - name: Find agreement and conflicts
         id: cluster
-        if: steps.done.outputs.count > 0
+        if: steps.done.outputs.rebuild == 'true'
         continue-on-error: true          # enrichment, not critical path
         env:
           PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
+          MAX_PAIRS: ${{ inputs.max_pairs || '1500' }}
         run: |
-          python3 scripts/cluster_pearls.py
-          python3 scripts/build_site.py   # fold refreshed clusters into data.json
+          python3 scripts/cluster_pearls.py --max-new "$MAX_PAIRS"
+          python3 scripts/build_site.py   # fold fresh results into data.json
 
       # Translation (ko/fr/de) is built but deliberately OFF.
       # Set repo variable RUN_TRANSLATE=1 to enable.
       - name: Translate
         id: translate
-        if: steps.done.outputs.count > 0 && vars.RUN_TRANSLATE == '1'
+        if: steps.done.outputs.rebuild == 'true' && vars.RUN_TRANSLATE == '1'
         continue-on-error: true
         env:
           PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
@@ -141,13 +178,13 @@ jobs:
           python3 scripts/build_site.py
 
       - name: Check site
-        if: steps.done.outputs.count > 0
+        if: steps.done.outputs.rebuild == 'true'
         run: python3 scripts/check_site.py
 
       # Commits partial progress too: pipeline stages are cached per episode, so
       # a half-finished episode resumes next run instead of paying again.
       - name: Commit
-        if: steps.find.outputs.count != '0'
+        if: steps.find.outputs.count != '0' || steps.done.outputs.rebuild == 'true'
         env:
           N: ${{ steps.done.outputs.count }}
         run: |
@@ -156,25 +193,28 @@ jobs:
           # Audio is never committed (~2.5GB at full corpus); timestamps deep-link
           # to Podbean instead.
           git add data/episodes data/episodes_meta.json data/taxonomy.json \
-                  data/clusters.json site
+                  data/clusters.json data/speakers.json site
           if git diff --cached --quiet; then
             echo "nothing to commit"
             exit 0
           fi
           if [ "${N:-0}" -gt 0 ]; then
             msg="ingest: $N new lecture(s) [skip ci]"
-          else
+          elif [ -s todo.txt ]; then
             msg="ingest: partial progress, no lecture finished [skip ci]"
+          else
+            msg="refresh: rebuild derived data [skip ci]"
           fi
           git commit -m "$msg"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
 
       - name: Report failures
-        if: steps.ingest.outcome == 'failure' || steps.cluster.outcome == 'failure' || steps.translate.outcome == 'failure'
+        if: steps.ingest.outcome == 'failure' || steps.reenrich.outcome == 'failure' || steps.cluster.outcome == 'failure' || steps.translate.outcome == 'failure'
         run: |
           [ "${{ steps.ingest.outcome }}" = failure ]    && echo "::error::Some episodes failed to ingest; see the Ingest step."
-          [ "${{ steps.cluster.outcome }}" = failure ]   && echo "::error::Pearl clustering failed; clusters on the site are stale."
+          [ "${{ steps.reenrich.outcome }}" = failure ]  && echo "::error::Some lectures failed to re-extract; see that step."
+          [ "${{ steps.cluster.outcome }}" = failure ]   && echo "::error::Agreement/conflict detection failed; that view on the site is stale."
           [ "${{ steps.translate.outcome }}" = failure ] && echo "::error::Translation failed."
           exit 1
 

@@ -10,6 +10,10 @@ resumes rather than re-paying. Video is deleted as soon as audio is extracted,
 so peak disk stays at roughly one source file per worker.
 
     python3 scripts/backfill.py [--workers N] [--limit N] [slug ...]
+    python3 scripts/backfill.py --reenrich all|<slug ...>
+
+--reenrich re-runs only pearl/topic extraction with the current prompt, on
+lectures that are already transcribed (no audio, no transcription cost).
 
 With slugs, only those episodes are considered. Exits non-zero when any episode
 fails, so CI shows the failure instead of quietly carrying on.
@@ -36,8 +40,16 @@ def log(msg: str) -> None:
         print(f"[{n:3d}/{t}] {msg}", flush=True)
 
 
-def one(slug: str, meta: dict) -> bool:
+def one(slug: str, meta: dict, reenrich: bool = False) -> bool:
     try:
+        if reenrich:
+            ep = pipeline.load(slug)
+            ep["reenrich"] = True
+            ep = pipeline.stage_enrich(slug, ep)
+            pipeline.save(slug, ep)
+            STATE["done"] += 1
+            log(f"OK   {slug[:52]:52s} {len(ep.get('pearls',[])):3d} pearls (re-extracted)")
+            return True
         if not ingest.have_audio(slug):
             ingest.make_audio(slug, meta["enclosure"])
         ep = pipeline.load(slug) or dict(meta)
@@ -59,8 +71,26 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--workers", type=int, default=5)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--reenrich", action="store_true",
+                    help="re-extract pearls on transcribed lectures (slugs, or 'all')")
     ap.add_argument("slugs", nargs="*")
     a = ap.parse_args()
+
+    if a.reenrich:
+        want = None if a.slugs in ([], ["all"]) else set(a.slugs)
+        todo = [(p.stem, {}) for p in sorted(pipeline.EPISODES.glob("*.json"))
+                if (want is None or p.stem in want)]
+        todo = [(s, m) for s, m in todo
+                if pipeline.load(s).get("transcript") and not pipeline.load(s).get("duplicate_of")]
+        if a.limit:
+            todo = todo[:a.limit]
+        STATE["total"] = len(todo)
+        print(f"re-extract: {len(todo)} lectures, {a.workers} workers", flush=True)
+        with ThreadPoolExecutor(max_workers=a.workers) as pool:
+            for _ in as_completed([pool.submit(one, s, m, True) for s, m in todo]):
+                pass
+        print(f"\ndone={STATE['done']} failed={STATE['failed']}", flush=True)
+        return 1 if STATE["failed"] else 0
 
     meta = json.loads((BASE / "data" / "episodes_meta.json").read_text())
     for s in a.slugs:

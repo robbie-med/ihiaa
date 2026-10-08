@@ -35,6 +35,9 @@ STT_MODEL = "nova-3"
 EMBED_MODEL = "openai/text-embedding-3-small"
 EMBED_DIMS = 512          # keeps the in-browser index small as the corpus grows
 CHAT_MODEL = "deepseek/deepseek-v4-flash"
+# Stronger model for the few judgements that matter most: confirming that two
+# attendings really contradict each other. Override with PPQ_VERIFY_MODEL.
+VERIFY_MODEL = os.environ.get("PPQ_VERIFY_MODEL", "deepseek/deepseek-v3.2")
 
 
 def _base() -> str:

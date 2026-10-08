@@ -2,7 +2,7 @@
   "slug": "dr-leo-on-epidemiology",
   "guid": "hopepartners.podbean.com/1274f46b-0e90-3403-954a-1df46ae3fd31",
   "title": "Dr. Leo on Epidemiology",
-  "speaker": "Leo",
+  "speaker": "Dr. Leo",
   "link": "https://hopepartners.podbean.com/e/dr-leo-on-epidemiology/",
   "pubDate": "Fri, 26 Apr 2024 14:54:50 -0500",
   "duration_sec": 2715,
@@ -41423,16 +41423,81 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-leo-on-epidemiology-740",
+      "text": "Relative risk of 1.33 means 33% increased risk; interpret as a ratio where 1.0 indicates no association.",
+      "verbatim": "A relative risk of one point three three means women who have given birth at 25 years of age or older are thirty three percent more likely to develop breast cancer compared to women who gave birth at a younger age.",
+      "type": "concept",
+      "t": 417.9,
+      "match": "exact",
+      "episode": "dr-leo-on-epidemiology",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-leo-on-epidemiology-417",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:relative risk"
+          ],
+          "rarity": 6.42
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "A p-value less than 0.05 indicates less than 5% probability that the results occurred by chance; it does not confirm the null hypothesis is false.",
+      "verbatim": "p values do not tell you anything about whether your null hypothesis is true or false. This proves nothing to you except that you're simply pointing out that this did not happen by chance at all.",
+      "type": "concept",
+      "t": 655.7,
+      "match": "exact",
+      "episode": "dr-leo-on-epidemiology",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "numbers_unheard": [
+        "0.05"
+      ],
+      "pearl_id": "dr-leo-on-epidemiology-655",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 0"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "rarity": 8.43,
+          "capped": [
+            "number not heard: 0.05"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Use absolute risk reduction (ARR) rather than relative risk to assess clinical benefit; calculate NNT = 1/ARR.",
       "verbatim": "What is super helpful actually is your absolute risk reduction as well as the inverse of the absolute risk reduction, which are your NNCs, NNHS, and NNSs, preterm and screen.",
       "type": "judgment",
       "t": 740.1,
       "match": "exact",
       "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
+      "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-leo-on-epidemiology-740",
       "score": {
         "specific": true,
         "actionable": true,
@@ -41448,196 +41513,22 @@
           "actionable": [
             "Use"
           ],
-          "rarity": 7.23
+          "rarity": 7.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-leo-on-epidemiology-1063",
-      "text": "A highly sensitive test rules out disease (SnNOut); a highly specific test rules in disease (SpPIn).",
-      "verbatim": "Highly sensitive test rules out the disease, and a highly specific test rules in the disease.",
-      "type": "dx_criteria",
-      "t": 1063.8,
-      "match": "exact",
-      "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:snnout"
-          ],
-          "rarity": 7.92
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-leo-on-epidemiology-1302",
-      "text": "Do not administer oxygen to patients with acute MI if SpO2 > 90%; it does not reduce mortality.",
-      "verbatim": "oxygen does not impact mortality or secondary outcomes. Meaning, it did nothing for your MI patient even though you gave them six liters of oxygen. It did absolutely nothing.",
-      "type": "judgment",
-      "t": 1302.9,
-      "match": "exact",
-      "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "threshold:> 9"
-          ],
-          "actionable": [
-            "Do not"
-          ],
-          "rarity": 6.47
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-leo-on-epidemiology-1335",
-      "text": "Oxygen supplementation does not relieve breathlessness in palliative patients with air hunger compared to room air.",
-      "verbatim": "Oxygen supplementation provides absolutely no additional relief in your patients with air hunger compared to room air.",
-      "type": "pitfall",
-      "t": 1335.2,
-      "match": "exact",
-      "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.59
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-leo-on-epidemiology-1415",
-      "text": "In COPD exacerbations, use titrated oxygen to a target saturation rather than fixed high-flow oxygen to reduce mortality.",
-      "verbatim": "Overall mortality was nine percent in the high flow group, four percent in the titrated group. Mortality in the subgroup with confirmed COPD was nine percent compared to two percent in the titrated group.",
-      "type": "practice",
-      "t": 1415.3,
-      "match": "exact",
-      "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:copd exacerbation"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 7.35
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-leo-on-epidemiology-655",
-      "text": "A p-value less than 0.05 indicates less than 5% probability that the results occurred by chance; it does not confirm the null hypothesis is false.",
-      "verbatim": "p values do not tell you anything about whether your null hypothesis is true or false. This proves nothing to you except that you're simply pointing out that this did not happen by chance at all.",
-      "type": "concept",
-      "t": 655.7,
-      "match": "exact",
-      "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "threshold:less than 0"
-          ],
-          "actionable": [
-            "confirm"
-          ],
-          "rarity": 8.42
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-leo-on-epidemiology-417",
-      "text": "Relative risk of 1.33 means 33% increased risk; interpret as a ratio where 1.0 indicates no association.",
-      "verbatim": "A relative risk of one point three three means women who have given birth at 25 years of age or older are thirty three percent more likely to develop breast cancer compared to women who gave birth at a younger age.",
-      "type": "concept",
-      "t": 417.9,
-      "match": "exact",
-      "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:relative risk"
-          ],
-          "rarity": 6.47
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-leo-on-epidemiology-800",
       "text": "NNT is the number of patients you need to treat to prevent one adverse outcome; calculate as 1/ARR.",
       "verbatim": "NNT is how many patients will I need to treat to prevent one adverse outcome.",
       "type": "concept",
       "t": 800.1,
       "match": "exact",
       "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
+      "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-leo-on-epidemiology-800",
       "score": {
         "specific": false,
         "actionable": true,
@@ -41652,20 +41543,20 @@
           ],
           "rarity": 7.23
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-leo-on-epidemiology-1361",
-      "text": "Oxygen therapy in the absence of hypoxemia can cause harm, especially in COPD patients.",
-      "verbatim": "oxygen therapy in the absence of hypoxemia actually can cause great harm.",
-      "type": "red_flag",
-      "t": 1361.3,
+      "text": "A highly sensitive test rules out disease (SnNOut); a highly specific test rules in disease (SpPIn).",
+      "verbatim": "Highly sensitive test rules out the disease, and a highly specific test rules in the disease.",
+      "type": "dx_criteria",
+      "t": 1063.8,
       "match": "exact",
       "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
+      "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-leo-on-epidemiology-1063",
       "score": {
         "specific": true,
         "actionable": false,
@@ -41676,24 +41567,24 @@
         "grade": "C",
         "fired": {
           "specific": [
-            "concept:oxygen therapy"
+            "concept:snnout"
           ],
-          "rarity": 6.46
+          "rarity": 7.93
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-leo-on-epidemiology-1072",
       "text": "When interpreting a study, always consider both sensitivity and specificity; a test with high sensitivity alone is insufficient for practice change.",
       "verbatim": "If you're looking at some study, and you're like, wow. The sensitivity was great. That's only half the question. Right? That's only half the data that you need to make a decision about whether you're going to make a practice change or not. You need to know how specific that that that that modality of infection was.",
       "type": "judgment",
       "t": 1072.6,
       "match": "exact",
       "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
+      "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-leo-on-epidemiology-1072",
       "score": {
         "specific": true,
         "actionable": true,
@@ -41709,22 +41600,184 @@
           "actionable": [
             "always"
           ],
-          "rarity": 6.3
+          "rarity": 6.29
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-leo-on-epidemiology-1541",
+      "text": "Do not administer oxygen to patients with acute MI if SpO2 > 90%; it does not reduce mortality.",
+      "verbatim": "oxygen does not impact mortality or secondary outcomes. Meaning, it did nothing for your MI patient even though you gave them six liters of oxygen. It did absolutely nothing.",
+      "type": "judgment",
+      "t": 1302.9,
+      "match": "exact",
+      "episode": "dr-leo-on-epidemiology",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "numbers_unheard": [
+        "90"
+      ],
+      "pearl_id": "dr-leo-on-epidemiology-1302",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:> 9"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.46,
+          "capped": [
+            "number not heard: 90"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Oxygen supplementation does not relieve breathlessness in palliative patients with air hunger compared to room air.",
+      "verbatim": "Oxygen supplementation provides absolutely no additional relief in your patients with air hunger compared to room air.",
+      "type": "pitfall",
+      "t": 1335.2,
+      "match": "exact",
+      "episode": "dr-leo-on-epidemiology",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-leo-on-epidemiology-1335",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Oxygen therapy in the absence of hypoxemia can cause harm, especially in COPD patients.",
+      "verbatim": "oxygen therapy in the absence of hypoxemia actually can cause great harm.",
+      "type": "red_flag",
+      "t": 1361.3,
+      "match": "exact",
+      "episode": "dr-leo-on-epidemiology",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-leo-on-epidemiology-1361",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:oxygen therapy"
+          ],
+          "rarity": 6.47
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "In COPD exacerbations, use titrated oxygen to a target saturation rather than fixed high-flow oxygen to reduce mortality.",
+      "verbatim": "Overall mortality was nine percent in the high flow group, four percent in the titrated group. Mortality in the subgroup with confirmed COPD was nine percent compared to two percent in the titrated group.",
+      "type": "practice",
+      "t": 1415.3,
+      "match": "exact",
+      "episode": "dr-leo-on-epidemiology",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-leo-on-epidemiology-1415",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:copd exacerbation"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.36
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "In confirmed COPD, titrating oxygen to a target saturation reduces death rate from 9% to 4.2% and significantly reduces hypercapnia (22.9 vs. 76.5, p=0.02).",
+      "verbatim": "to those that had confirmed COPD, death rate is about nine percent if you just gave them o two without titrating it to that goal. ... When you titrated it, it comes down from nine to four and two. ... hypercapnia? M two retention. ... Twenty two point nine compared to sixty... Seventy six point five with a p value of point o two.",
+      "type": "dosing",
+      "t": 1444.8,
+      "match": "exact",
+      "episode": "dr-leo-on-epidemiology",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "numbers_unheard": [
+        "4.2",
+        "0.02"
+      ],
+      "pearl_id": "dr-leo-on-epidemiology-1444",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hypercapnia"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 7.43,
+          "capped": [
+            "number not heard: 4.2, 0.02"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "For patients without hypoxemia, liberal oxygen supplementation increases in-hospital mortality by 21% (RR 1.21) and 30-day mortality by 14%.",
       "verbatim": "in hospital mortality overall RR is one point two one. That range is ninety five percent confidence interval. So twenty one percent higher in hospital mortality with lower oxygen therapy in the absence of hypoxemia.",
       "type": "practice",
       "t": 1541.2,
       "match": "exact",
       "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
+      "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "numbers_unheard": [
+        "1.21"
+      ],
+      "pearl_id": "dr-leo-on-epidemiology-1541",
       "score": {
         "specific": true,
         "actionable": false,
@@ -41737,53 +41790,22 @@
           "specific": [
             "concept:hypoxemia"
           ],
-          "rarity": 8.19
+          "rarity": 8.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-leo-on-epidemiology-1444",
-      "text": "In confirmed COPD, titrating oxygen to a target saturation reduces death rate from 9% to 4.2% and significantly reduces hypercapnia (22.9 vs. 76.5, p=0.02).",
-      "verbatim": "to those that had confirmed COPD, death rate is about nine percent if you just gave them o two without titrating it to that goal. ... When you titrated it, it comes down from nine to four and two. ... hypercapnia? M two retention. ... Twenty two point nine compared to sixty... Seventy six point five with a p value of point o two.",
-      "type": "dosing",
-      "t": 1444.8,
-      "match": "exact",
-      "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:hypercapnia"
-          ],
-          "harm": [
-            "death"
-          ],
-          "rarity": 7.42
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-leo-on-epidemiology-1869",
       "text": "In older female nursing home residents, the prevalence of asymptomatic bacteriuria is about 50%, so a positive urinalysis does not prove UTI as the cause of delirium.",
       "verbatim": "older patients residing in long-term facilities, fifty percent of the female residents, forty percent of the male residents have ASV. So if a patient comes in from a nursing home, you can flip a coin, and there's a fifty percent chance that this female from our clinical scenario is going to have colonization?",
       "type": "pitfall",
       "t": 1869.6,
       "match": "exact",
       "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
+      "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-leo-on-epidemiology-1869",
       "score": {
         "specific": true,
         "actionable": false,
@@ -41796,22 +41818,22 @@
           "specific": [
             "concept:asymptomatic bacteriur"
           ],
-          "rarity": 7.36
+          "rarity": 7.37
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-leo-on-epidemiology-2026",
       "text": "According to the IDSA 2019 recommendation, for older patients with altered mental status and bacteriuria but no local UTI symptoms or systemic signs, assess for other causes and observe rather than treat.",
       "verbatim": "In older patients with functional or cognitive impairment with bacteria and delirium and acute mental status change without local symptoms or systemic signs, we recommend a assessment for other causes and careful observation.",
       "type": "practice",
       "t": 2026.4,
       "match": "exact",
       "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
+      "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-leo-on-epidemiology-2026",
       "score": {
         "specific": true,
         "actionable": true,
@@ -41827,22 +41849,50 @@
           "actionable": [
             "treat"
           ],
-          "rarity": 7.59
+          "rarity": 7.6
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-leo-on-epidemiology-2204",
+      "text": "Before ordering a UA for delirium in an older adult, call the nursing home for a timeline of the mental status change and look for reversible causes such as environment, sleep deprivation, medications, immobility, and sensory impairments.",
+      "verbatim": "call the nursing home RN. Call them. Ask them what happened. Try to come up with a a a a course, like a time... Timeline of when they started to have mental status changes and what kind of acute triggers may have been... ... Strongly consider your modifiable risk factors, like environment, sleep deprivation, medications. ... look for these reversible causes and actually reverse them and see if their delirium is improving.",
+      "type": "judgment",
+      "t": 2158.0,
+      "match": "exact",
+      "episode": "dr-leo-on-epidemiology",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-leo-on-epidemiology-2158",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sleep deprivation"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Immature granulocytes on CBC can indicate acute infection even when WBC count is normal.",
       "verbatim": "it's the last line on your CBC. It says immature granulocytes. ... whenever you have an acute infection, even if you're not mounting a WBC, a leukocytosis, an elevated WBC count, your immune cell is going to release immune cells, which are your granulocytes. You're going to have more immature granulocytes in your CBC. So if there's immature granulocytosis, maybe that's your indicator that maybe there's an infection here.",
       "type": "exam_technique",
       "t": 2204.6,
-      "match": "fuzzy",
+      "match": "exact",
       "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
+      "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-leo-on-epidemiology-2204",
       "score": {
         "specific": true,
         "actionable": false,
@@ -41855,22 +41905,22 @@
           "specific": [
             "test:CBC"
           ],
-          "rarity": 8.42
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-leo-on-epidemiology-2393",
       "text": "Docusate is no better than placebo for preventing constipation in hospitalized patients; use MiraLAX, lactulose, or stimulant laxatives instead.",
       "verbatim": "your better quality studies actually failed to show a benefit between benefit in multiple outcomes. ... This is the more systemat... The more recent systematic reviews. ... And these guys, including the synthesized or stimulants, are much better. And there is much stronger evidence for constipation with these guys compared to. Docusate.",
       "type": "practice",
-      "t": 2393.3,
-      "match": "fuzzy",
+      "t": 2393.5,
+      "match": "exact",
       "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
+      "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-leo-on-epidemiology-2393",
       "score": {
         "specific": true,
         "actionable": true,
@@ -41886,50 +41936,25 @@
           "actionable": [
             "use"
           ],
-          "rarity": 8.42
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-leo-on-epidemiology-2156",
-      "text": "Before ordering a UA for delirium in an older adult, call the nursing home for a timeline of the mental status change and look for reversible causes such as environment, sleep deprivation, medications, immobility, and sensory impairments.",
-      "verbatim": "call the nursing home RN. Call them. Ask them what happened. Try to come up with a a a a course, like a time... Timeline of when they started to have mental status changes and what kind of acute triggers may have been... ... Strongly consider your modifiable risk factors, like environment, sleep deprivation, medications. ... look for these reversible causes and actually reverse them and see if their delirium is improving.",
-      "type": "judgment",
-      "t": 2156.6,
-      "match": "fuzzy",
-      "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:sleep deprivation"
-          ],
-          "rarity": 8.29
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-leo-on-epidemiology-2653",
       "text": "For board exam questions, draw a 2x2 table: sensitivity = a/(a+c); specificity = d/(b+d); PPV = a/(a+b); NPV = d/(c+d); relative risk = [a/(a+c)]/[d/(d+c)]; absolute risk reduction = [a/(a+c)] - [d/(d+c)]; NNT = 1/ARR.",
       "verbatim": "you draw a right arrow, that is your positive predictive value. A over a plus b. Opposite arrow, negative predictive value, d over d plus c. And relative risk is just a over a plus c divided by d over d plus c. Flip it and put a subtraction sign. That's your absolute risk reduction. Inverse of the absolute risk reduction is your NNT or NNH or NN.",
       "type": "exam_technique",
       "t": 2653.7,
       "match": "exact",
       "episode": "dr-leo-on-epidemiology",
-      "speaker": "Leo",
+      "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "numbers_unheard": [
+        "1"
+      ],
+      "pearl_id": "dr-leo-on-epidemiology-2653",
       "score": {
         "specific": true,
         "actionable": false,
@@ -41944,7 +41969,7 @@
           ],
           "rarity": 8.06
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -61118,5 +61143,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "leo",
+      "name": "Dr. Leo"
+    }
+  ],
+  "pearls_fingerprint": "da1f7dd2ef088b7d"
 }

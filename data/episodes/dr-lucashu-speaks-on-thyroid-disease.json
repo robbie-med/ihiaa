@@ -2,7 +2,7 @@
   "slug": "dr-lucashu-speaks-on-thyroid-disease",
   "guid": "hopepartners.podbean.com/629710f9-762c-3dc7-b71a-6a92c48e8b2c",
   "title": "Dr. Lucashu speaks on Thyroid disease",
-  "speaker": "Lucashu speaks",
+  "speaker": "Dr. Amanda Lucashu",
   "link": "https://hopepartners.podbean.com/e/dr-lucashu-speaks-on-thyroid-disease/",
   "pubDate": "Fri, 26 Apr 2024 14:51:55 -0500",
   "duration_sec": 2835,
@@ -46573,16 +46573,16 @@
   ],
   "pearls": [
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-414",
       "text": "For vague symptoms like fatigue or hair loss, order a thyroid analyzer for screening; if TSH is abnormal, you can then order T3 and T4 separately.",
       "verbatim": "So oftentimes, ordering the thyroid analyzer will make that decision for you.",
       "type": "practice",
       "t": 415.0,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-415",
       "score": {
         "specific": true,
         "actionable": true,
@@ -46598,22 +46598,22 @@
           "actionable": [
             "order"
           ],
-          "rarity": 7.82
+          "rarity": 7.83
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-711",
       "text": "When starting levothyroxine, begin at 25-50 mcg daily and repeat TSH in 4-6 weeks after each dose change.",
       "verbatim": "Usually, twenty five to fifty micrograms daily is the starting dose, and then you're gonna repeat testing in four to six weeks.",
       "type": "dosing",
       "t": 711.0,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-711",
       "score": {
         "specific": true,
         "actionable": true,
@@ -46631,22 +46631,142 @@
           "actionable": [
             "starting"
           ],
-          "rarity": 5.94
+          "rarity": 5.95
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-1160",
+      "text": "Overcorrection of hypothyroidism can cause angina, atrial fibrillation, and osteoporosis; aim for the lower end of normal TSH in the elderly.",
+      "verbatim": "Some of the things actually that you said earlier can get angina, A-fib, and osteoporosis.",
+      "type": "red_flag",
+      "t": 900.4,
+      "match": "exact",
+      "episode": "dr-lucashu-speaks-on-thyroid-disease",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-900",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:TSH"
+          ],
+          "rarity": 7.1
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "When a patient asks about taking Synthroid versus the active T3 form, explain that T4 is preferred because T3 has a short half-life and causes inconsistent levels.",
+      "verbatim": "it's because T3 is rapidly absorbed and has a short half life, which leads to inconsistent levels as opposed to converting to the T3 when you need it from the T4.",
+      "type": "concept",
+      "t": 936.9,
+      "match": "exact",
+      "episode": "dr-lucashu-speaks-on-thyroid-disease",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-936",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:synthroid"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "Check TSH at least yearly in any patient on levothyroxine, even if they present for other reasons.",
+      "verbatim": "we wanna check a TSH at least yearly on a patient with thyroid.",
+      "type": "practice",
+      "t": 1014.0,
+      "match": "exact",
+      "episode": "dr-lucashu-speaks-on-thyroid-disease",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-1014",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:TSH"
+          ],
+          "actionable": [
+            "Check"
+          ],
+          "rarity": 6.98
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
+      "text": "If a patient requires more than 200 mcg of levothyroxine daily without symptom improvement, refer to endocrinology.",
+      "verbatim": "You might occasionally see patients higher than two hundred micrograms of levothyroxine, but that is not within the wheelhouse of family medicine.",
+      "type": "judgment",
+      "t": 1090.1,
+      "match": "exact",
+      "episode": "dr-lucashu-speaks-on-thyroid-disease",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-1090",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:200 mcg",
+            "threshold:more than 2",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 6.49
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "In pregnancy, immediately increase levothyroxine dose by 30-50% and check TSH monthly; do not wait for lab results.",
       "verbatim": "So you're actually gonna increase her level of thyroxine by 30 to 50% to keep her TSH at the lower end of the normal range to prevent congenital hypothyroidism.",
       "type": "dosing",
       "t": 1160.8,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-1160",
       "score": {
         "specific": true,
         "actionable": true,
@@ -46666,22 +46786,22 @@
           "harm": [
             "immediately"
           ],
-          "rarity": 5.86
+          "rarity": 5.85
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-1201",
       "text": "Do not use Cerner reference ranges for thyroid labs in pregnancy; use perinatology guidelines instead.",
       "verbatim": "Perinatology is a great resource for this. You can probably look at other sources as well, but do not trust Cerner.",
       "type": "pitfall",
       "t": 1201.2,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-1201",
       "score": {
         "specific": true,
         "actionable": true,
@@ -46697,22 +46817,22 @@
           "actionable": [
             "Do not"
           ],
-          "rarity": 7.82
+          "rarity": 7.83
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-1304",
       "text": "In pregnancy, manage hypothyroidism based on TSH alone; do not check T4 because a normal T4 with elevated TSH can falsely reassure you.",
       "verbatim": "We do not check a T4 in pregnancy because all of our management is based off of the TSH.",
       "type": "pitfall",
       "t": 1304.7,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-1304",
       "score": {
         "specific": true,
         "actionable": true,
@@ -46728,22 +46848,22 @@
           "actionable": [
             "do not"
           ],
-          "rarity": 6.13
+          "rarity": 6.08
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-1330",
       "text": "Treat subclinical hypothyroidism (elevated TSH, normal T4) in pregnancy, even though you would not treat it outside of pregnancy.",
       "verbatim": "subclinical hypothyroidism, which is when the TSH is elevated and the T4 is normal, we are treating in pregnancy even though we wouldn't treat it otherwise.",
       "type": "practice",
       "t": 1331.0,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-1331",
       "score": {
         "specific": true,
         "actionable": true,
@@ -46759,142 +46879,22 @@
           "actionable": [
             "Treat"
           ],
-          "rarity": 6.36
+          "rarity": 6.37
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-900",
-      "text": "Overcorrection of hypothyroidism can cause angina, atrial fibrillation, and osteoporosis; aim for the lower end of normal TSH in the elderly.",
-      "verbatim": "Some of the things actually that you said earlier can get angina, A-fib, and osteoporosis.",
-      "type": "red_flag",
-      "t": 900.4,
-      "match": "exact",
-      "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:TSH"
-          ],
-          "rarity": 7.13
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-1090",
-      "text": "If a patient requires more than 200 mcg of levothyroxine daily without symptom improvement, refer to endocrinology.",
-      "verbatim": "You might occasionally see patients higher than two hundred micrograms of levothyroxine, but that is not within the wheelhouse of family medicine.",
-      "type": "judgment",
-      "t": 1090.1,
-      "match": "exact",
-      "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:200 mcg",
-            "threshold:more than 2",
-            "frequency:daily"
-          ],
-          "actionable": [
-            "refer"
-          ],
-          "rarity": 6.48
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-1014",
-      "text": "Check TSH at least yearly in any patient on levothyroxine, even if they present for other reasons.",
-      "verbatim": "we wanna check a TSH at least yearly on a patient with thyroid.",
-      "type": "practice",
-      "t": 1014.0,
-      "match": "exact",
-      "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:TSH"
-          ],
-          "actionable": [
-            "Check"
-          ],
-          "rarity": 6.97
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-936",
-      "text": "When a patient asks about taking Synthroid versus the active T3 form, explain that T4 is preferred because T3 has a short half-life and causes inconsistent levels.",
-      "verbatim": "it's because T3 is rapidly absorbed and has a short half life, which leads to inconsistent levels as opposed to converting to the T3 when you need it from the T4.",
-      "type": "concept",
-      "t": 936.9,
-      "match": "exact",
-      "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:synthroid"
-          ],
-          "rarity": 7.18
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-1917",
       "text": "For ordering the anti-TSH receptor antibody in the EMR, type 'TSH receptor antibody', not 'thyrotropin' or 'anti influenza disease'.",
       "verbatim": "You will notice if you type in thyrotropin, nothing comes up. And you're like, are we some backwater place that doesn't have a way to test for this? No. Order it under the TSH receptor antibody.",
       "type": "pitfall",
       "t": 1917.6,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-1917",
       "score": {
         "specific": true,
         "actionable": false,
@@ -46907,22 +46907,22 @@
           "specific": [
             "test:TSH"
           ],
-          "rarity": 8.42
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2011",
       "text": "Do not repeat thyroid antibodies (TPO, thyroglobulin, anti-TSH receptor) after initial diagnosis; they do not change with treatment and are not clinically useful.",
       "verbatim": "Do not repeat your antibodies. Okay? So, like, I have patients, especially with Graves, who are like, did my TPO change? I don't I don't care if it did. Did my TPO change? Can we repeat it? No. Like, you were high before. There's no point in changing it because none of our treatments change that number.",
       "type": "pitfall",
       "t": 2011.9,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2011",
       "score": {
         "specific": true,
         "actionable": true,
@@ -46938,22 +46938,50 @@
           "actionable": [
             "Do not"
           ],
-          "rarity": 8.42
+          "rarity": 8.43
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2259",
+      "text": "Propranolol is used in hyperthyroidism both for symptom management and because it blocks conversion of T4 to T3.",
+      "verbatim": "propranolol is really good for the symptom management. It blocks the conversion of the T4 to that active T3.",
+      "type": "concept",
+      "t": 2082.7,
+      "match": "exact",
+      "episode": "dr-lucashu-speaks-on-thyroid-disease",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2082",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Propranolol"
+          ],
+          "rarity": 6.55
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Fever and sore throat in a patient on methimazole should prompt a CBC to rule out agranulocytosis, even though viral illness is also possible.",
       "verbatim": "having the fever, sore throat, especially that it's going on for of days, you also want to check his CBC.",
       "type": "red_flag",
       "t": 2259.2,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2259",
       "score": {
         "specific": true,
         "actionable": true,
@@ -46972,20 +47000,52 @@
           ],
           "rarity": 7.0
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2309",
+      "text": "When a patient on methimazole has fever and sore throat, check CBC for agranulocytosis; a normal WBC (e.g., 8) rules it out.",
+      "verbatim": "her white blood cell count is eight, so she doesn't have agranulocytosis.",
+      "type": "red_flag",
+      "t": 2270.6,
+      "match": "fuzzy",
+      "episode": "dr-lucashu-speaks-on-thyroid-disease",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2270",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:methimazole",
+            "test:CBC"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.47
+        },
+        "rubric": "rules-v2"
+      }
+    },
+    {
       "text": "Stop methimazole or PTU for transaminitis only if LFTs are more than three times the upper limit of normal; otherwise monitor more frequently.",
       "verbatim": "you'll only stop the medication if the LFTs are more than three times the upper limit of normal. So in this case, you wouldn't do any other workup other than just probably monitoring the LFTs a little bit more frequently.",
       "type": "practice",
       "t": 2309.7,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2309",
       "score": {
         "specific": true,
         "actionable": true,
@@ -47002,22 +47062,22 @@
           "actionable": [
             "Stop"
           ],
-          "rarity": 7.31
+          "rarity": 7.32
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2453",
       "text": "In thyroid storm, give methimazole and steroids first, then wait one hour before giving iodine to block further hormone release without increasing synthesis.",
       "verbatim": "The methimazole is going to block the oxidation of the iodine, which blocks the synthesis of T3 and T4. And then iodine is gonna block any further release of thyroid hormone based on the biofeedback loop. But that's why we wanna give it an hour later after these two have already blocked the production.",
       "type": "dosing",
       "t": 2453.4,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2453",
       "score": {
         "specific": true,
         "actionable": true,
@@ -47035,20 +47095,20 @@
           ],
           "rarity": 7.04
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2575",
       "text": "Switch from methimazole to propylthiouracil (PTU) in the first trimester of pregnancy because methimazole is teratogenic; PTU is less effective but safer in early gestation.",
       "verbatim": "So we're gonna switch to propylthiouracil. Usually, the starting dose there is a hundred milligrams PO TID since methimazole is contraindicated in the first trimester of pregnancy.",
       "type": "practice",
       "t": 2575.7,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2575",
       "score": {
         "specific": true,
         "actionable": true,
@@ -47064,22 +47124,22 @@
           "actionable": [
             "Switch"
           ],
-          "rarity": 7.73
+          "rarity": 7.74
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2660",
       "text": "T4 goal in pregnancy for hyperthyroidism is the upper third of the reference range, not just any normal value.",
       "verbatim": "we are looking for the upper third of the reference range. So on this one, at least according to what I have found, there's not different reference ranges in pregnancy like there is for hypothyroidism, but we would like to keep that T4 on the upper third of the reference range, but still within",
       "type": "dx_criteria",
       "t": 2660.4,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2660",
       "score": {
         "specific": true,
         "actionable": false,
@@ -47092,22 +47152,22 @@
           "specific": [
             "concept:hyperthyroidism"
           ],
-          "rarity": 6.19
+          "rarity": 6.2
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2744",
       "text": "Definitive therapy (thyroidectomy or radioactive iodine ablation) should be considered early for hyperthyroidism because the disease carries higher risk of A-fib, CHF, and death than treated hypothyroidism.",
       "verbatim": "hyperthyroidism is way riskier for the health than hypothyroidism because of that A fib and heart disease. Also has an increased risk of CHF and death.",
       "type": "judgment",
       "t": 2744.4,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2744",
       "score": {
         "specific": true,
         "actionable": false,
@@ -47123,82 +47183,22 @@
           "harm": [
             "death"
           ],
-          "rarity": 7.92
+          "rarity": 7.93
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2082",
-      "text": "Propranolol is used in hyperthyroidism both for symptom management and because it blocks conversion of T4 to T3.",
-      "verbatim": "propranolol is really good for the symptom management. It blocks the conversion of the T4 to that active T3.",
-      "type": "concept",
-      "t": 2082.7,
-      "match": "exact",
-      "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "drug:Propranolol"
-          ],
-          "rarity": 6.54
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2270",
-      "text": "When a patient on methimazole has fever and sore throat, check CBC for agranulocytosis; a normal WBC (e.g., 8) rules it out.",
-      "verbatim": "her white blood cell count is eight, so she doesn't have agranulocytosis.",
-      "type": "red_flag",
-      "t": 2270.6,
-      "match": "fuzzy",
-      "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "drug:methimazole",
-            "test:CBC"
-          ],
-          "actionable": [
-            "check"
-          ],
-          "rarity": 7.46
-        },
-        "rubric": "rules-v1"
-      }
-    },
-    {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2791",
       "text": "Consider subacute thyroiditis in patients with thyroid pain 2-6 weeks after a viral upper respiratory infection.",
       "verbatim": "this can happen two to six weeks after a viral URI",
       "type": "red_flag",
       "t": 2791.3,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2791",
       "score": {
         "specific": true,
         "actionable": true,
@@ -47214,22 +47214,22 @@
           "actionable": [
             "Consider"
           ],
-          "rarity": 6.46
+          "rarity": 6.49
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2797",
       "text": "The radioactive iodine uptake scan is the test of choice for diagnosing subacute thyroiditis.",
       "verbatim": "the radioactive iodine uptake scan is the test of choice",
       "type": "practice",
       "t": 2798.0,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2798",
       "score": {
         "specific": true,
         "actionable": false,
@@ -47242,22 +47242,22 @@
           "specific": [
             "concept:radioactive iodine upt"
           ],
-          "rarity": 7.27
+          "rarity": 7.28
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2806",
       "text": "A low uptake of less than 5% on radioactive iodine uptake scan is characteristic of subacute thyroiditis.",
       "verbatim": "It has low uptake, less than 5%",
       "type": "dx_criteria",
       "t": 2806.6,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2806",
       "score": {
         "specific": true,
         "actionable": false,
@@ -47270,22 +47270,22 @@
           "specific": [
             "threshold:less than 5"
           ],
-          "rarity": 7.27
+          "rarity": 7.28
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2810",
       "text": "Treat subacute thyroiditis with NSAIDs, propranolol, and corticosteroids.",
       "verbatim": "you are going to treat it with NSAIDs, propranolol, and corticosteroids",
       "type": "practice",
       "t": 2811.0,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2811",
       "score": {
         "specific": true,
         "actionable": true,
@@ -47301,22 +47301,22 @@
           "actionable": [
             "Treat"
           ],
-          "rarity": 6.66
+          "rarity": 6.67
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2815",
       "text": "Anticholinergic agents are usually not needed for subacute thyroiditis because it is self-limiting. If used, plan to discontinue after 3-6 months.",
       "verbatim": "Usually, you don't need anticholinergic agent because usually it's self limiting. If you do, for whatever reason, put them on it, you want to consider getting them off at, like, three to six months.",
       "type": "judgment",
       "t": 2815.1,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2815",
       "score": {
         "specific": true,
         "actionable": true,
@@ -47334,20 +47334,20 @@
           ],
           "rarity": 7.36
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     },
     {
-      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2828",
       "text": "Avoid making anticholinergic therapy a lifelong medication for subacute thyroiditis; discontinue after 3-6 months.",
       "verbatim": "don't let this be a new lifelong med for them",
       "type": "pitfall",
       "t": 2828.6,
       "match": "exact",
       "episode": "dr-lucashu-speaks-on-thyroid-disease",
-      "speaker": "Lucashu speaks",
+      "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "pearl_id": "dr-lucashu-speaks-on-thyroid-disease-2828",
       "score": {
         "specific": true,
         "actionable": true,
@@ -47363,9 +47363,9 @@
           "actionable": [
             "Avoid"
           ],
-          "rarity": 6.76
+          "rarity": 6.77
         },
-        "rubric": "rules-v1"
+        "rubric": "rules-v2"
       }
     }
   ],
@@ -70165,5 +70165,12 @@
     }
   ],
   "embed_model": "openai/text-embedding-3-small",
-  "embed_dims": 512
+  "embed_dims": 512,
+  "speakers": [
+    {
+      "id": "amanda-lucashu",
+      "name": "Dr. Amanda Lucashu"
+    }
+  ],
+  "pearls_fingerprint": "3299287e2bdc7ed2"
 }
