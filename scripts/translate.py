@@ -36,6 +36,18 @@ Input is JSON. Return JSON with the SAME keys and array lengths, values translat
 Return ONLY the JSON object."""
 
 
+def _call(lang_name: str, payload: dict):
+    """One translation request. Returns None on failure so a single bad batch
+    costs that batch, not the episode."""
+    try:
+        return ppq.chat_json(SYS.format(lang=lang_name),
+                             json.dumps(payload, ensure_ascii=False),
+                             max_tokens=4000, temperature=0.0)
+    except Exception as e:                            # noqa: BLE001
+        print(f"    ! {type(e).__name__}: {str(e)[:80]}")
+        return None
+
+
 def translate_episode(slug: str, ep: dict) -> dict:
     i18n = ep.get("i18n", {})
     for code, name in LANGS.items():

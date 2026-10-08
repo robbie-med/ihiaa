@@ -9,7 +9,10 @@ Safe to interrupt and re-run: every stage is cached per episode, so a restart
 resumes rather than re-paying. Video is deleted as soon as audio is extracted,
 so peak disk stays at roughly one source file per worker.
 
-    python3 scripts/backfill.py [--workers N] [--limit N]
+    python3 scripts/backfill.py [--workers N] [--limit N] [slug ...]
+
+With slugs, only those episodes are considered. Exits non-zero when any episode
+fails, so CI shows the failure instead of quietly carrying on.
 """
 import argparse
 import json
@@ -22,7 +25,6 @@ BASE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE / "scripts"))
 import ingest    # noqa: E402
 import pipeline  # noqa: E402
-import ppq       # noqa: E402
 
 PRINT_LOCK = threading.Lock()
 STATE = {"done": 0, "failed": 0, "total": 0}
@@ -57,13 +59,18 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--workers", type=int, default=5)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("slugs", nargs="*")
     a = ap.parse_args()
 
     meta = json.loads((BASE / "data" / "episodes_meta.json").read_text())
+    for s in a.slugs:
+        if s not in meta:
+            print(f"!! unknown slug {s}", flush=True)
     todo = []
     for slug, m in meta.items():
-        ep = pipeline.load(slug)
-        if ep.get("chunks"):
+        if a.slugs and slug not in a.slugs:
+            continue
+        if pipeline.is_settled(pipeline.load(slug)):
             continue
         todo.append((slug, m))
     if a.limit:
@@ -80,7 +87,7 @@ def main() -> int:
             pass
 
     print(f"\ndone={STATE['done']} failed={STATE['failed']}", flush=True)
-    return 0
+    return 1 if STATE["failed"] else 0
 
 
 if __name__ == "__main__":

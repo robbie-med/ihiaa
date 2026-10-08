@@ -1,17 +1,17 @@
 name: Ingest new lectures
 
-# Polls the feed, processes anything new, rebuilds every derived artifact, then
-# deploys. Nothing runs on a local machine.
+# Polls the feed, processes anything new, rebuilds every derived artifact,
+# commits, then deploys. Nothing runs on a local machine.
 on:
   schedule:
-    - cron: "0 9 * * *"        # daily 09:00 UTC
+    - cron: "17 9 * * *"        # daily 09:17 UTC
   workflow_dispatch:
     inputs:
       limit:
         description: "Max episodes to process this run (0 = all outstanding)"
         default: "0"
       slugs:
-        description: "Specific slugs to (re)process, space separated"
+        description: "Specific slugs to (re)try, space separated"
         default: ""
 
 concurrency:
@@ -26,45 +26,66 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 350
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-          python3 -m pip install --quiet numpy
+      - name: Install Python dependencies
+        run: python3 -m pip install --quiet numpy
 
-      - name: Find new episodes
+      # Inputs go through env, never straight into the script, so a slug can't
+      # inject shell.
+      - name: Find outstanding episodes
         id: find
+        env:
+          SLUGS: ${{ inputs.slugs }}
+          LIMIT: ${{ inputs.limit || '0' }}
         run: |
-          if [ -n "${{ github.event.inputs.slugs }}" ]; then
-            echo "${{ github.event.inputs.slugs }}" | tr ' ' '\n' | sed '/^$/d' > todo.txt
+          if [ -n "$SLUGS" ]; then
+            printf '%s\n' $SLUGS > todo.txt
           else
-            python3 scripts/fetch_feed.py "${{ github.event.inputs.limit || 0 }}" > todo.txt
+            python3 scripts/fetch_feed.py "$LIMIT" > todo.txt
           fi
-          echo "count=$(wc -l < todo.txt)" >> "$GITHUB_OUTPUT"
-          echo "--- to process ---"; cat todo.txt
+          n=$(grep -c . todo.txt || true)
+          echo "count=$n" >> "$GITHUB_OUTPUT"
+          echo "--- $n to process ---"; cat todo.txt
 
-      - name: Ingest
+      - name: Install ffmpeg
         if: steps.find.outputs.count != '0'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      # Failures here don't stop the run: episodes that did finish still get
+      # built, committed and deployed. The job is marked failed at the end.
+      - name: Ingest
+        id: ingest
+        if: steps.find.outputs.count != '0'
+        continue-on-error: true
         env:
           DEEPGRAM_API_KEY: ${{ secrets.DEEPGRAM_API_KEY }}
           PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
-        run: python3 -u scripts/backfill.py --workers 4
+        run: xargs -a todo.txt python3 -u scripts/backfill.py --workers 4
 
-      # Everything below is derived from data/episodes/*.json. It must re-run
-      # whenever the corpus changes, or new lectures show up ungraded, unmapped
-      # and unclustered -- which is exactly what happened when this workflow
-      # predated those scripts.
-      - name: Grade pearls (deterministic rules)
+      - name: Count finished episodes
+        id: done
         if: steps.find.outputs.count != '0'
-        run: python3 scripts/score_pearls.py --apply
+        run: |
+          n=$(python3 - <<'EOF'
+          import json, pathlib
+          slugs = pathlib.Path("todo.txt").read_text().split()
+          eps = pathlib.Path("data/episodes")
+          print(sum(1 for s in slugs if (eps / f"{s}.json").exists()
+                    and json.loads((eps / f"{s}.json").read_text()).get("chunks")))
+          EOF
+          )
+          echo "count=$n" >> "$GITHUB_OUTPUT"
+          echo "$n of ${{ steps.find.outputs.count }} episode(s) fully processed"
 
+      # Everything below is derived from data/episodes/*.json and only needs to
+      # run when the corpus actually changed.
       - name: Cache MeSH
-        if: steps.find.outputs.count != '0'
+        if: steps.done.outputs.count > 0
         id: meshcache
         uses: actions/cache@v4
         with:
@@ -72,43 +93,63 @@ jobs:
           key: mesh-d2025
 
       - name: Download MeSH
-        if: steps.find.outputs.count != '0' && steps.meshcache.outputs.cache-hit != 'true'
+        if: steps.done.outputs.count > 0 && steps.meshcache.outputs.cache-hit != 'true'
         run: |
           mkdir -p data/ref
-          curl -sL --max-time 900 \
+          curl -sSL --max-time 900 \
             "https://nlmpubs.nlm.nih.gov/projects/mesh/2025/asciimesh/d2025.bin" \
             -o data/ref/mesh.bin
           test "$(stat -c%s data/ref/mesh.bin)" -gt 1000000
 
-      - name: Build site, taxonomy, concept map
-        if: steps.find.outputs.count != '0'
-        run: |
-          python3 scripts/build_site.py
-          python3 scripts/build_taxonomy.py
-          python3 scripts/build_graph.py
+      - name: Rebuild site, grades, taxonomy, concept map
+        if: steps.done.outputs.count > 0
+        run: ./scripts/rebuild.sh
+
+      # Pearl embeddings and pair verdicts are cached between runs, so clustering
+      # only pays for pearls and pairs it has never seen. Without this cache every
+      # run re-embedded all ~5,700 pearls and re-judged the same 400 pairs.
+      - name: Restore clustering cache
+        if: steps.done.outputs.count > 0
+        uses: actions/cache@v4
+        with:
+          path: |
+            data/cache/pearl_vecs.json
+            data/cache/pair_verdicts.json
+          key: pearl-cache-${{ github.run_id }}
+          restore-keys: pearl-cache-
 
       - name: Cluster pearls
-        if: steps.find.outputs.count != '0'
+        id: cluster
+        if: steps.done.outputs.count > 0
+        continue-on-error: true          # enrichment, not critical path
         env:
           PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
-        continue-on-error: true          # clustering is enrichment, not critical path
         run: |
           python3 scripts/cluster_pearls.py
           python3 scripts/build_site.py   # fold refreshed clusters into data.json
 
-      # Translation (ko/fr/de) is built and working but deliberately OFF.
+      # Translation (ko/fr/de) is built but deliberately OFF.
       # Set repo variable RUN_TRANSLATE=1 to enable.
       - name: Translate
-        if: steps.find.outputs.count != '0' && vars.RUN_TRANSLATE == '1'
+        id: translate
+        if: steps.done.outputs.count > 0 && vars.RUN_TRANSLATE == '1'
+        continue-on-error: true
         env:
           PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
-        continue-on-error: true
         run: |
           python3 -u scripts/translate.py
           python3 scripts/build_site.py
 
+      - name: Check site
+        if: steps.done.outputs.count > 0
+        run: python3 scripts/check_site.py
+
+      # Commits partial progress too: pipeline stages are cached per episode, so
+      # a half-finished episode resumes next run instead of paying again.
       - name: Commit
         if: steps.find.outputs.count != '0'
+        env:
+          N: ${{ steps.done.outputs.count }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -118,19 +159,29 @@ jobs:
                   data/clusters.json site
           if git diff --cached --quiet; then
             echo "nothing to commit"
-          else
-            git commit -m "ingest: $(wc -l < todo.txt) new lecture(s) [skip ci]"
-            git push
+            exit 0
           fi
+          if [ "${N:-0}" -gt 0 ]; then
+            msg="ingest: $N new lecture(s) [skip ci]"
+          else
+            msg="ingest: partial progress, no lecture finished [skip ci]"
+          fi
+          git commit -m "$msg"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
 
-      # The Pages project is direct-upload, NOT connected to this repo, so a push
-      # alone deploys nothing. This step is what actually publishes the site.
-      # Deliberately NOT gated on new episodes. Deploying is cheap and
-      # idempotent, so an unconditional publish lets a manual run push the
-      # current site and lets a previously-failed deploy self-heal.
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy site --project-name ihiaa --branch main --commit-dirty=true
+      - name: Report failures
+        if: steps.ingest.outcome == 'failure' || steps.cluster.outcome == 'failure' || steps.translate.outcome == 'failure'
+        run: |
+          [ "${{ steps.ingest.outcome }}" = failure ]    && echo "::error::Some episodes failed to ingest; see the Ingest step."
+          [ "${{ steps.cluster.outcome }}" = failure ]   && echo "::error::Pearl clustering failed; clusters on the site are stale."
+          [ "${{ steps.translate.outcome }}" = failure ] && echo "::error::Translation failed."
+          exit 1
+
+  # Always publish, even when nothing new was found or ingest partly failed:
+  # deploying is idempotent, and it lets a previously failed deploy self-heal.
+  deploy:
+    needs: ingest
+    if: ${{ !cancelled() }}
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit

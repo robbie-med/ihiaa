@@ -557,8 +557,12 @@ function seek(slug,t){
 fetch("data.json").then(r=>r.json()).then(d=>{
   D=d;
   const s=d.stats;
+  // Newest lecture date, so it is obvious at a glance whether the site is current.
+  const newest=d.episodes.map(e=>e.pubDate?new Date(e.pubDate):null)
+    .filter(x=>x&&!isNaN(x)).sort((a,b)=>b-a)[0];
+  const latest=newest?` · latest ${newest.toLocaleDateString(undefined,{year:"numeric",month:"short",day:"numeric"})}`:"";
   document.getElementById("stats").innerHTML=
-    `${s.n_episodes} lectures · ${s.hours} h · ${s.n_pearls} pearls · ${s.n_topics} topics`;
+    `${s.n_episodes} lectures · ${s.hours} h · ${s.n_pearls} pearls · ${s.n_topics} topics${latest}`;
   
   const sel=document.getElementById("lang");
   sel.innerHTML=Object.entries(d.langs).map(([k,v])=>`<option value="${k}">${v}</option>`).join("");

@@ -34,6 +34,18 @@ def load(slug: str) -> dict:
     return json.loads(p.read_text()) if p.exists() else {}
 
 
+def is_settled(ep: dict) -> bool:
+    """True when an episode needs no more processing.
+
+    Either it is fully processed (has chunks), or it has been marked
+    `status: "unavailable"` -- a source that can never yield a transcript, such as
+    a recording with a silent audio track. Without that second case such an
+    episode stays "outstanding" forever, and every scheduled run re-downloads it
+    and pays to transcribe the silence again.
+    """
+    return bool(ep.get("chunks")) or ep.get("status") == "unavailable"
+
+
 def save(slug: str, ep: dict) -> None:
     EPISODES.mkdir(parents=True, exist_ok=True)
     (EPISODES / f"{slug}.json").write_text(json.dumps(ep, indent=2, ensure_ascii=False))

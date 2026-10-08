@@ -26,7 +26,9 @@ real information, not a bug.
 import argparse
 import itertools
 import json
+import re
 import sys
+from collections import Counter
 from pathlib import Path
 
 import numpy as np
@@ -37,6 +39,15 @@ import ppq  # noqa: E402
 
 EPISODES = BASE / "data" / "episodes"
 OUT = BASE / "data" / "clusters.json"
+CACHE = BASE / "data" / "cache"
+
+# Words that say nothing about what a cluster is about. Used for labels only.
+LABEL_STOP = set("""the a an and or of to in for with without on at by from is are was
+were be been being this that these those it its as if then than when while
+because there here what which who how why not no do does did can could should
+would may might will have has had about into over under more most less least
+very just also so such other another each any all some patient patients use
+used using consider start check give avoid treat""".split())
 
 JUDGE_SYS = """You compare pairs of clinical teaching points taken from residency lectures.
 
@@ -74,7 +85,7 @@ def load_pearls() -> list:
 
 def embed_pearls(pearls: list) -> np.ndarray:
     """Embed pearl text, cached on disk so re-clustering is free."""
-    cache_path = BASE / "data" / "cache" / "pearl_vecs.json"
+    cache_path = CACHE / "pearl_vecs.json"
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     cache = json.loads(cache_path.read_text()) if cache_path.exists() else {}
 
@@ -144,9 +155,19 @@ def main() -> int:
     pairs = pairs[:a.max_pairs]
     print(f"judging {len(pairs)} closest pairs", flush=True)
 
-    verdicts = {}
-    for i in range(0, len(pairs), 12):
-        batch = pairs[i:i + 12]
+    # Verdicts are cached by pearl-id pair. The closest pairs barely change from
+    # one run to the next, so without this every nightly run re-paid to judge
+    # the same 400 pairs (~20 minutes of LLM calls) and got the same answers.
+    vcache_path = CACHE / "pair_verdicts.json"
+    vcache = json.loads(vcache_path.read_text()) if vcache_path.exists() else {}
+
+    def pkey(i: int, j: int) -> str:
+        return "|".join(sorted((pearls[i]["pearl_id"], pearls[j]["pearl_id"])))
+
+    todo = [(s, i, j) for s, i, j in pairs if pkey(i, j) not in vcache]
+    print(f"  {len(pairs) - len(todo)} cached, {len(todo)} to judge", flush=True)
+    for n in range(0, len(todo), 12):
+        batch = todo[n:n + 12]
         payload = {"pairs": [{"id": f"{x}-{y}", "a": pearls[x]["text"],
                               "b": pearls[y]["text"]} for _, x, y in batch]}
         try:
@@ -155,15 +176,21 @@ def main() -> int:
         except Exception as e:                        # noqa: BLE001
             print(f"  ! {type(e).__name__}: {str(e)[:80]}", flush=True)
             continue
-        for v in r.get("verdicts", []):
-            verdicts[v.get("id", "")] = v
-        print(f"  judged {min(i+12, len(pairs))}/{len(pairs)}", flush=True)
+        byid = {v.get("id", ""): v for v in r.get("verdicts", [])}
+        for _, x, y in batch:
+            v = byid.get(f"{x}-{y}")
+            if v and v.get("verdict"):
+                vcache[pkey(x, y)] = {"verdict": v["verdict"], "why": v.get("why", "")}
+        print(f"  judged {min(n+12, len(todo))}/{len(todo)}", flush=True)
+    if todo:
+        vcache_path.parent.mkdir(parents=True, exist_ok=True)
+        vcache_path.write_text(json.dumps(vcache, sort_keys=True))
 
     out = []
     for g in multi:
         rel = []
         for s, i, j in [(s, i, j) for s, i, j in pairs if i in g and j in g]:
-            v = verdicts.get(f"{i}-{j}")
+            v = vcache.get(pkey(i, j))
             if not v:
                 continue
             rel.append({"a": pearls[i]["pearl_id"], "b": pearls[j]["pearl_id"],
@@ -172,20 +199,16 @@ def main() -> int:
         kinds = {r["verdict"] for r in rel}
         # Label the cluster from the vocabulary its pearls SHARE, rather than
         # showing the longest member verbatim. A shared-term label is short,
-        # says what the cluster is about, and is computed the same way every run.
-        import re as _re
-        _stop = set("""the a an and or of to in for with without on at by from is are was
-        were be been being this that these those it its as if then than when while
-        because there here what which who how why not no do does did can could should
-        would may might will have has had about into over under more most less least
-        very just also so such other another each any all some patient patients use
-        used using consider start check give avoid treat""".split())
+        # says what the cluster is about, and is computed the same way every run
+        # (ties break alphabetically, so the label never depends on set order).
         cnt = Counter()
         for i in g:
-            for w in set(_re.findall(r"[a-z][a-z-]{3,}", pearls[i]["text"].lower())):
-                if w not in _stop:
+            for w in set(re.findall(r"[a-z][a-z-]{3,}", pearls[i]["text"].lower())):
+                if w not in LABEL_STOP:
                     cnt[w] += 1
-        shared = [w for w, c in cnt.most_common() if c >= max(2, len(g) // 2)][:3]
+        need = max(2, len(g) // 2)
+        shared = [w for w, c in sorted(cnt.items(), key=lambda kv: (-kv[1], kv[0]))
+                  if c >= need][:3]
         label = " · ".join(shared) if shared else pearls[g[0]]["text"][:60]
 
         out.append({

@@ -35,7 +35,6 @@ import argparse
 import json
 import math
 import re
-import sys
 from collections import Counter
 from pathlib import Path
 
@@ -132,7 +131,7 @@ def build_idf(pearls: list) -> dict:
     return {t: math.log(n / c) for t, c in df.items()}
 
 
-def score_one(p: dict, idf: dict, concepts: set, rare_cut: float) -> dict:
+def score_one(p: dict, idf: dict, concepts: list, rare_cut: float) -> dict:
     text = p.get("text", "")
     fired = {}
 
@@ -180,14 +179,22 @@ def score_one(p: dict, idf: dict, concepts: set, rare_cut: float) -> dict:
             "grade": grade, "fired": fired, "rubric": RUBRIC_VERSION}
 
 
-def concept_set() -> set:
-    """Clinical concepts the corpus itself already named (topic labels)."""
+def concept_set() -> list:
+    """Clinical concepts the corpus itself already named (topic labels).
+
+    Returned as a list in a FIXED order -- longest first, then alphabetical -- so
+    the concept recorded for a pearl is the most specific match and is the same
+    on every run. Iterating a set here made the choice depend on Python's
+    per-process hash seed, so every nightly run rewrote ~240 episode files with
+    a different but equally valid concept and committed pure noise.
+    """
     site = BASE / "site" / "data.json"
     if not site.exists():
-        return set()
+        return []
     d = json.loads(site.read_text())
-    return {t["label"].lower() for t in d.get("topics", [])
-            if len(t.get("label", "")) > 4}
+    labels = {t["label"].lower() for t in d.get("topics", [])
+              if len(t.get("label", "")) > 4}
+    return sorted(labels, key=lambda c: (-len(c), c))
 
 
 def main() -> int:
@@ -245,14 +252,24 @@ def main() -> int:
                 print(f"     {s['fired']}")
 
     if a.apply:
-        for f in {f for f, _, _ in scored}:
+        by_file = {}
+        for f, p, s in scored:
+            by_file.setdefault(f, {})[p["pearl_id"]] = s
+        changed = 0
+        for f, byid in sorted(by_file.items()):
             d = json.loads(f.read_text())
-            byid = {p["pearl_id"]: s for _, p, s in scored if _ == f}
+            dirty = False
             for p in d.get("pearls", []):
-                if p["pearl_id"] in byid:
-                    p["score"] = byid[p["pearl_id"]]
-            f.write_text(json.dumps(d, indent=2, ensure_ascii=False))
-        print(f"\napplied to {len({f for f,_,_ in scored})} episode files")
+                s = byid.get(p["pearl_id"])
+                if s is not None and p.get("score") != s:
+                    p["score"] = s
+                    dirty = True
+            # Only touch files whose grades actually changed, so a re-run over
+            # an unchanged corpus produces no diff at all.
+            if dirty:
+                f.write_text(json.dumps(d, indent=2, ensure_ascii=False))
+                changed += 1
+        print(f"\napplied: {changed} of {len(by_file)} episode files changed")
     return 0
 
 

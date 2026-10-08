@@ -16,6 +16,9 @@ import sys
 import urllib.request
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from pipeline import is_settled  # noqa: E402
+
 BASE = Path(__file__).resolve().parent.parent
 FEED = "https://feed.podbean.com/hopepartners/feed.xml"
 META = BASE / "data" / "episodes_meta.json"
@@ -75,7 +78,7 @@ def main() -> int:
     META.write_text(json.dumps(merged, indent=2, ensure_ascii=False))
 
     done = {p.stem for p in EPISODES.glob("*.json")
-            if json.loads(p.read_text()).get("chunks")}
+            if is_settled(json.loads(p.read_text()))}
     todo = [s for s in merged if s not in done]
     if limit:
         todo = todo[:limit]

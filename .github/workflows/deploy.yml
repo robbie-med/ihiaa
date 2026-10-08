@@ -1,0 +1,135 @@
+name: Deploy site
+
+# Publishes site/ to Cloudflare Pages. The Pages project is direct-upload, NOT
+# connected to this repo, so a push alone deploys nothing: this workflow is the
+# only thing that puts a new build on the web.
+#
+# Runs:
+#   * after every scheduled ingest (called from ingest.yml)
+#   * on any push to main that changes site/ (hand edits to index.html etc.)
+#   * on demand from the Actions tab ("Run workflow")
+#
+# Needs repo secrets CLOUDFLARE_API_TOKEN (permission "Cloudflare Pages: Edit")
+# and CLOUDFLARE_ACCOUNT_ID. Optional repo variable PAGES_PROJECT (default ihiaa).
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", ".github/workflows/deploy.yml"]
+  workflow_dispatch:
+  workflow_call:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PAGES_PROJECT: ${{ vars.PAGES_PROJECT || 'ihiaa' }}
+    steps:
+      # When called right after an ingest, github.sha is the commit the ingest
+      # STARTED from, not the one it just pushed. Check out the branch tip.
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref }}
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Check site
+        run: python3 scripts/check_site.py
+
+      # Every deploy from Sep 9 to Oct 8 2026 died here with Cloudflare's opaque
+      # "Authentication failed [code: 9106]", meaning no credentials were sent.
+      # Check up front and say exactly what is wrong.
+      - name: Check Cloudflare credentials
+        id: cf
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          python3 - <<'EOF'
+          import json, os, sys, urllib.error, urllib.request
+
+          def fail(title, msg):
+              print(f"::error title={title}::{msg}")
+              sys.exit(1)
+
+          token, account = os.environ["CF_TOKEN"], os.environ["CF_ACCOUNT"]
+          project = os.environ["PAGES_PROJECT"]
+          missing = [n for n, v in (("CLOUDFLARE_API_TOKEN", token),
+                                    ("CLOUDFLARE_ACCOUNT_ID", account)) if not v.strip()]
+          if missing:
+              fail("Site not deployed",
+                   f"Missing repo secret(s): {', '.join(missing)}. Add under Settings > "
+                   "Secrets and variables > Actions. The API token needs the "
+                   "'Cloudflare Pages: Edit' permission.")
+
+          req = urllib.request.Request(
+              f"https://api.cloudflare.com/client/v4/accounts/{account.strip()}"
+              f"/pages/projects/{project}",
+              headers={"Authorization": f"Bearer {token.strip()}"})
+          try:
+              with urllib.request.urlopen(req, timeout=60) as r:
+                  sub = json.load(r)["result"].get("subdomain", "")
+          except urllib.error.HTTPError as e:
+              try:
+                  errs = json.load(e).get("errors", [])
+              except ValueError:
+                  errs = []
+              detail = "; ".join(f"[{x.get('code')}] {x.get('message')}" for x in errs)
+              fail("Cloudflare rejected the credentials",
+                   f"HTTP {e.code} reading Pages project '{project}': {detail}. Check that "
+                   "CLOUDFLARE_API_TOKEN is valid with 'Cloudflare Pages: Edit', that "
+                   "CLOUDFLARE_ACCOUNT_ID is the right account, and that the project "
+                   "name matches (repo variable PAGES_PROJECT).")
+
+          print(f"Pages project '{project}' reachable; production URL https://{sub}")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write(f"live=https://{sub}\n")
+          EOF
+
+      - name: Deploy to Cloudflare Pages
+        id: deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4.148.0"
+          command: pages deploy site --project-name=${{ env.PAGES_PROJECT }} --branch=main --commit-dirty=true
+
+      # A green deploy step is not proof the site changed. Fetch what is actually
+      # being served and compare it with what we just uploaded.
+      - name: Verify deployment
+        env:
+          DEPLOY_URL: ${{ steps.deploy.outputs.deployment-url }}
+          LIVE_URL: ${{ steps.cf.outputs.live }}
+        run: |
+          want=$(python3 -c 'import json; print(json.load(open("site/data.json"))["stats"]["n_episodes"])')
+          for url in "$DEPLOY_URL" "$LIVE_URL"; do
+            [ -n "$url" ] || continue
+            got=""
+            for i in 1 2 3 4 5 6; do
+              got=$(curl -fsSL --max-time 60 "$url/data.json?v=$GITHUB_RUN_ID" \
+                | python3 -c 'import json,sys; print(json.load(sys.stdin)["stats"]["n_episodes"])' 2>/dev/null || true)
+              [ "$got" = "$want" ] && break
+              sleep 10
+            done
+            if [ "$got" != "$want" ]; then
+              echo "::error title=Deployment not serving the new build::$url/data.json reports '${got:-nothing}' episodes, expected $want."
+              exit 1
+            fi
+            echo "$url serves $got episodes"
+          done
+          {
+            echo "### Site deployed"
+            echo "- Live: $LIVE_URL"
+            echo "- This deployment: $DEPLOY_URL"
+            echo "- Episodes: $want"
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -21,7 +21,6 @@ is a dust cloud of single-mention topics (76% of all labels) that add no structu
 """
 import json
 import math
-import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -115,7 +114,6 @@ def main() -> int:
     if not (SITE.exists() and TAX.exists()):
         print("run build_site.py and build_taxonomy.py first")
         return 1
-    data = json.loads(SITE.read_text())
     tax = json.loads(TAX.read_text())["nodes"]
 
     keep = {k: v for k, v in tax.items() if v["n"] >= MIN_EPISODES}

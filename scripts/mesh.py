@@ -20,7 +20,6 @@ reported as unmatched rather than approximated -- a wrong MeSH code is worse tha
 none, because it silently misfiles a concept under a specialty it does not belong to.
 """
 import re
-from collections import defaultdict
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent

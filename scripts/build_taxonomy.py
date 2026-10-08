@@ -24,7 +24,6 @@ becomes colour and the parent links become branches.
 """
 import json
 import re
-import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 

@@ -16,8 +16,6 @@ unconditionally, so the page is never dead without it.
 """
 import json
 import re
-import struct
-import sys
 from collections import defaultdict
 from pathlib import Path
 
@@ -60,7 +58,9 @@ def build() -> dict:
     for f in sorted(EPISODES.glob("*.json")):
         d = json.loads(f.read_text())
         if not d.get("transcript"):
-            print(f"  skip {f.name}: not transcribed yet")
+            why = ("unavailable: " + d.get("status_reason", "")[:60]
+                   if d.get("status") == "unavailable" else "not transcribed yet")
+            print(f"  skip {f.name}: {why}")
             continue
 
         chunks = [{"t": c["t"], "text": c["text"], "v": quantize(c["vec"])}

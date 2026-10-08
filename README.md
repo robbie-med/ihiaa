@@ -35,6 +35,8 @@ scripts/
   cluster_pearls.py  pearl similarity clustering + conflict judging
   translate.py       tier-1 translation (off by default)
   build_site.py      emit the static site
+  rebuild.sh         every derived artifact in order (free, no keys)
+  check_site.py      sanity-check site/ before publishing
 data/
   episodes/*.json    source of truth, one file per lecture
   audio/*.m4a        24kbps mono, gitignored (video is never kept)
@@ -46,8 +48,9 @@ site/                static output: index.html + data.json + ep/*.json
 ```bash
 python3 scripts/fetch_feed.py            # discover new episodes
 python3 scripts/backfill.py --workers 5  # process everything outstanding
-python3 scripts/cluster_pearls.py        # group pearls, find contradictions
-python3 scripts/build_site.py            # rebuild the site
+./scripts/rebuild.sh                     # site, grades, taxonomy, concept map
+python3 scripts/cluster_pearls.py        # group pearls, find contradictions (paid)
+python3 scripts/build_site.py            # fold clusters into the site
 python3 -m http.server 3907 --bind 127.0.0.1   # then open /site/
 ```
 
@@ -56,10 +59,31 @@ Keys live in `.ppq_key` and `.deepgram_key` (both gitignored), or the
 
 ## Automation
 
-`.github/workflows/ingest.yml` polls the feed weekly and processes new episodes on
-GitHub's runners — **nothing runs on a local machine**. Set repo secrets
-`DEEPGRAM_API_KEY` and `PPQ_API_KEY`. Set the repo variable `RUN_TRANSLATE=1` to
-re-enable translation.
+Three workflows, all on GitHub's runners. **Nothing runs on a local machine.**
+
+| Workflow | When | What |
+|---|---|---|
+| `ingest.yml` | daily 09:17 UTC, or by hand | poll feed, process new episodes, rebuild, commit, then call deploy |
+| `deploy.yml` | after every ingest, on pushes that touch `site/`, or by hand | publish `site/` to Cloudflare Pages and verify the live site serves it |
+| `ci.yml` | every push | lint, grader self-test, check that derived data is reproducible |
+
+Repo secrets:
+
+- `DEEPGRAM_API_KEY`, `PPQ_API_KEY`: transcription and LLM calls
+- `CLOUDFLARE_API_TOKEN`: an **API Token** (not the Global API Key) with
+  the *Cloudflare Pages: Edit* permission
+- `CLOUDFLARE_ACCOUNT_ID`
+
+Repo variables (optional): `PAGES_PROJECT` (default `ihiaa`), and
+`RUN_TRANSLATE=1` to re-enable translation.
+
+The Pages project is direct-upload, not connected to this repo, so **a push alone
+deploys nothing**. If the site looks stale, open the latest *Deploy site* run: its
+first failing step says what is wrong. To publish by hand, run *Deploy site* from
+the Actions tab.
+
+An episode whose source can never be transcribed (e.g. a silent audio track) is
+marked `"status": "unavailable"` in its JSON and is skipped from then on.
 
 ## Design principles
 
