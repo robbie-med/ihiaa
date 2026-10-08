@@ -7,6 +7,14 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="favicon.svg">
 <meta name="theme-color" content="#f8f8f8">
+<script>
+// Theme before first paint, so dark mode never flashes white. "auto" follows the
+// device; the navbar button pins light or dark for this browser.
+(function(){var t="auto";try{t=localStorage.getItem("hpi-theme")||"auto"}catch(e){}
+ var d=t==="dark"||(t==="auto"&&window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches);
+ document.documentElement.setAttribute("data-theme",d?"dark":"light");
+ document.querySelector('meta[name="theme-color"]').setAttribute("content",d?"#000000":"#f8f8f8");})();
+</script>
 <meta name="description" content="Searchable, cross-linked archive of Hope Partnerships International residency lectures.">
 <style>
   /* Bootstrap 3 + bootstrap-theme (2015), hand-written. What dates a page is the
@@ -261,6 +269,7 @@
   .transcript{max-height:70vh;overflow:auto;padding:6px 8px}
 
   .flash{animation:fl 2s ease-out}
+  .cmap{color:#333}
   @keyframes fl{0%{background:#fcf8e3}100%{background:transparent}}
 
   footer{color:#777;font-size:12px;padding:19px 0 30px;border-top:1px solid #e5e5e5;margin-top:30px}
@@ -282,6 +291,111 @@
     .jsearch{flex-direction:column}
     h2{font-size:22px}
   }
+
+  /* ================= dark: OLED black, Bootswatch "Cyborg" (2014) spirit =================
+     True #000 page so OLED pixels switch off; panels sit one step above it. The
+     period details stay: gradients, inset highlights, bevelled buttons. */
+  .theme-btn{min-width:38px}
+  html[data-theme="dark"]{color-scheme:dark}
+  html[data-theme="dark"] body{background:#000;color:#c8c8c8}
+  html[data-theme="dark"] a{color:#3fa7e0}
+  html[data-theme="dark"] a:hover,html[data-theme="dark"] a:focus{color:#79c4ee}
+  html[data-theme="dark"] .muted,html[data-theme="dark"] .meta,html[data-theme="dark"] footer{color:#8a8a8a}
+  html[data-theme="dark"] h1,html[data-theme="dark"] h2,html[data-theme="dark"] h3,html[data-theme="dark"] h4{color:#e6e6e6}
+  html[data-theme="dark"] code{color:#ff8fb1;background:#1a0d12}
+  html[data-theme="dark"] .navbar{background-image:linear-gradient(to bottom,#141414 0,#000 100%);
+    border-bottom-color:#1e1e1e;box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 1px 5px rgba(0,0,0,.6)}
+  html[data-theme="dark"] .brand,html[data-theme="dark"] .nav a{color:#9a9a9a;text-shadow:0 -1px 0 #000}
+  html[data-theme="dark"] .brand:hover,html[data-theme="dark"] .nav a:hover,html[data-theme="dark"] .nav a:focus{color:#fff}
+  html[data-theme="dark"] .nav a.on{color:#fff;background-image:linear-gradient(to bottom,#000 0,#151515 100%);
+    box-shadow:inset 0 3px 9px rgba(0,0,0,.9)}
+  html[data-theme="dark"] .form-control{background:#0a0a0a;color:#ddd;border-color:#2c2c2c;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.8)}
+  html[data-theme="dark"] .form-control:focus{border-color:#2a9fd6;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.8),0 0 8px rgba(42,159,214,.6)}
+  html[data-theme="dark"] .form-control::placeholder{color:#666}
+  html[data-theme="dark"] .btn-default{color:#ddd;border-color:#2e2e2e;text-shadow:0 -1px 0 #000;
+    background-image:linear-gradient(to bottom,#2a2a2a 0,#111 100%)}
+  html[data-theme="dark"] .btn-default:hover,html[data-theme="dark"] .btn-default:focus,
+  html[data-theme="dark"] .btn-default.on{color:#fff;background:#0b0b0b;border-color:#3a3a3a}
+  html[data-theme="dark"] .btn-primary{border-color:#1b6d94;background-image:linear-gradient(to bottom,#2a9fd6 0,#1c7bab 100%)}
+  html[data-theme="dark"] .alert{text-shadow:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+  html[data-theme="dark"] .alert-danger{color:#f2a5a3;border-color:#5a1d1b;
+    background-image:linear-gradient(to bottom,#2a0d0c 0,#1a0706 100%)}
+  html[data-theme="dark"] .alert-warning{color:#f0c97a;border-color:#5a4410;
+    background-image:linear-gradient(to bottom,#271d05 0,#181203 100%)}
+  html[data-theme="dark"] .alert-info{color:#8fd0ee;border-color:#16465c;
+    background-image:linear-gradient(to bottom,#081d27 0,#041219 100%)}
+  html[data-theme="dark"] .alert .close{color:#fff;text-shadow:none;opacity:.35}
+  html[data-theme="dark"] .breadcrumb{background-image:linear-gradient(to bottom,#141414 0,#0a0a0a 100%);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+  html[data-theme="dark"] .breadcrumb li+li:before{color:#444}
+  html[data-theme="dark"] .breadcrumb .active{color:#8a8a8a}
+  html[data-theme="dark"] .panel,html[data-theme="dark"] .pearl,html[data-theme="dark"] .thumb,
+  html[data-theme="dark"] .list-group-item{background:#0b0b0b;border-color:#222;color:#c8c8c8;box-shadow:none}
+  html[data-theme="dark"] .panel-heading{color:#e0e0e0;border-color:#222;
+    background-image:linear-gradient(to bottom,#1a1a1a 0,#0e0e0e 100%)}
+  html[data-theme="dark"] .toggle-head:hover{background-image:linear-gradient(to bottom,#222 0,#141414 100%)}
+  html[data-theme="dark"] .panel-primary{border-color:#1c7bab}
+  html[data-theme="dark"] .panel-primary>.panel-heading{color:#fff;border-color:#1c7bab;
+    background-image:linear-gradient(to bottom,#2a9fd6 0,#1c7bab 100%)}
+  html[data-theme="dark"] .panel-danger{border-color:#5a1d1b}
+  html[data-theme="dark"] .panel-danger>.panel-heading{color:#f2a5a3;border-color:#5a1d1b;
+    background-image:linear-gradient(to bottom,#2e0f0e 0,#1d0807 100%)}
+  html[data-theme="dark"] .panel-warning{border-color:#5a4410}
+  html[data-theme="dark"] .panel-warning>.panel-heading{color:#f0c97a;border-color:#5a4410;
+    background-image:linear-gradient(to bottom,#2a1f06 0,#191203 100%)}
+  html[data-theme="dark"] .panel-footer{background:#111;border-color:#222}
+  html[data-theme="dark"] a.list-group-item{color:#c8c8c8}
+  html[data-theme="dark"] a.list-group-item:hover,html[data-theme="dark"] a.list-group-item:focus{background:#161616;color:#fff}
+  html[data-theme="dark"] a.list-group-item.active{color:#fff;border-color:#1c7bab;text-shadow:0 -1px 0 #0d4a69;
+    background-image:linear-gradient(to bottom,#2a9fd6 0,#1c7bab 100%)}
+  html[data-theme="dark"] a.list-group-item.active .badge{color:#1c7bab;background:#fff}
+  html[data-theme="dark"] .lg-title{color:#3fa7e0}
+  html[data-theme="dark"] .badge{background:#333;color:#ddd}
+  html[data-theme="dark"] a.label,html[data-theme="dark"] a.label:hover{color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.6)}
+  html[data-theme="dark"] .label-default{background:#4a4a4a}
+  html[data-theme="dark"] .label-primary{background:#1c7bab}
+  html[data-theme="dark"] .label-info{background:#1b6f8c}
+  html[data-theme="dark"] .label-success{background:#3e8e3e}
+  html[data-theme="dark"] .label-warning{background:#b9771b}
+  html[data-theme="dark"] .label-danger{background:#b23a36}
+  html[data-theme="dark"] .jumbotron{background:#0b0b0b;
+    background-image:linear-gradient(to bottom,#151515 0,#050505 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+  html[data-theme="dark"] a.thumb:hover{border-color:#2a9fd6}
+  html[data-theme="dark"] .thumb b{color:#3fa7e0}
+  html[data-theme="dark"] .thumb.danger b{color:#e35d58}
+  html[data-theme="dark"] .well{border-color:#1e1e1e;background-image:linear-gradient(to bottom,#0d0d0d 0,#050505 100%);
+    box-shadow:inset 0 1px 3px rgba(0,0,0,.9)}
+  html[data-theme="dark"] .well h5{color:#777}
+  html[data-theme="dark"] .quote{border-left-color:#2a2a2a;color:#9a9a9a}
+  html[data-theme="dark"] mark{background:#4a3b05;color:#fff}
+  html[data-theme="dark"] th{border-bottom-color:#2a2a2a}
+  html[data-theme="dark"] th a{color:#ddd}
+  html[data-theme="dark"] td{border-top-color:#1e1e1e}
+  html[data-theme="dark"] .table-striped tbody tr:nth-child(odd){background:#0a0a0a}
+  html[data-theme="dark"] .table-hover tbody tr:hover{background:#151515}
+  html[data-theme="dark"] tr.hit{background:#271d05!important}
+  html[data-theme="dark"] .cal th{color:#777;border-bottom-color:#2a2a2a}
+  html[data-theme="dark"] .cal td{border-top-color:#1a1a1a}
+  html[data-theme="dark"] .cal td.nil{color:#444}
+  html[data-theme="dark"] .pagination a{background:#0b0b0b;border-color:#222;color:#3fa7e0}
+  html[data-theme="dark"] .pagination a:hover{background:#1a1a1a}
+  html[data-theme="dark"] .pagination a.on{background:#1c7bab;border-color:#1c7bab;color:#fff}
+  html[data-theme="dark"] .pagination a.dis{color:#444}
+  html[data-theme="dark"] .progress{background-image:linear-gradient(to bottom,#0a0a0a 0,#141414 100%);
+    box-shadow:inset 0 1px 2px rgba(0,0,0,.9)}
+  html[data-theme="dark"] .progress-bar{background-color:#1c7bab}
+  html[data-theme="dark"] .player{border-color:#2a2a2a;background-image:linear-gradient(to bottom,#1a1a1a 0,#080808 100%);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 2px 8px rgba(0,0,0,.9)}
+  html[data-theme="dark"] .seg:hover{background:#121212}
+  html[data-theme="dark"] .seg.now{background:#211903;box-shadow:inset 3px 0 0 #f0ad4e}
+  html[data-theme="dark"] footer{border-top-color:#1a1a1a}
+  html[data-theme="dark"] .linkish{color:#3fa7e0}
+  html[data-theme="dark"] .cmap{color:#bbb}
+  html[data-theme="dark"] .cmap circle{stroke:#000}
+  @keyframes fl-dark{0%{background:#4a3b05}100%{background:transparent}}
+  html[data-theme="dark"] .flash,html[data-theme="dark"] .pearl:target{animation-name:fl-dark}
 </style>
 </head>
 <body>
@@ -292,6 +406,8 @@
     <label class="sr" for="q">Search</label>
     <input id="q" class="form-control" type="search" placeholder="Search…  ( / )" autocomplete="off">
     <select class="form-control" id="lang" title="Interface language" hidden></select>
+    <button class="btn btn-default theme-btn" id="theme" type="button" onclick="toggleTheme()"
+            title="Switch light / dark" aria-label="Switch light / dark"></button>
   </div>
 </div></div>
 <div id="notice"></div>
@@ -666,7 +782,7 @@ function mapView(){
       together; circle size is how many lectures cover it. Click a colour to filter, a circle to open the concept.</p>
     <div style="margin:10px 0">${legend}${dom?` <a class="btn btn-default btn-xs" href="#/map">clear filter</a>`:""}</div>
     <div class="panel" style="padding:6px;overflow:auto">
-    <svg viewBox="0 0 ${G.w} ${G.h}" style="width:100%;height:auto;min-height:420px;color:#333" role="img" aria-label="Concept map">
+    <svg class="cmap" viewBox="0 0 ${G.w} ${G.h}" style="width:100%;height:auto;min-height:420px" role="img" aria-label="Concept map">
       <g stroke-linecap="round">
       ${links.map(l=>{const a=pos[l.s],b=pos[l.t];const br=l.kind==="branch";
         return `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}"
@@ -1044,6 +1160,23 @@ document.addEventListener("keydown",e=>{
   if(e.key==="/"&&t!=="INPUT"&&t!=="TEXTAREA"&&t!=="SELECT"){e.preventDefault();$("q").focus();$("q").select();}
 });
 window.addEventListener("hashchange",()=>{render();window.scrollTo(0,0);});
+
+function themeLabel(){
+  const dark=document.documentElement.getAttribute("data-theme")==="dark";
+  const b=$("theme"); if(b){b.textContent=dark?"☀":"☾";b.title=dark?"Switch to light":"Switch to dark (OLED black)";}
+}
+function toggleTheme(){
+  const dark=document.documentElement.getAttribute("data-theme")!=="dark";
+  document.documentElement.setAttribute("data-theme",dark?"dark":"light");
+  document.querySelector('meta[name="theme-color"]').setAttribute("content",dark?"#000000":"#f8f8f8");
+  store.set("hpi-theme",dark?"dark":"light"); themeLabel();
+}
+// Follow the device while the reader has not picked a theme themselves.
+if(window.matchMedia) matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change",e=>{
+  if((store.get("hpi-theme")||"auto")!=="auto") return;
+  document.documentElement.setAttribute("data-theme",e.matches?"dark":"light"); themeLabel();
+});
+themeLabel();
 
 function notice(){
   if(store.get("hpi-notice")==="1"){$("notice").innerHTML="";return;}
