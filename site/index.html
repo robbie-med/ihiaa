@@ -9,181 +9,340 @@
 <meta name="theme-color" content="#f8f8f8">
 <meta name="description" content="Searchable, cross-linked archive of Hope Partnerships International residency lectures.">
 <style>
-  /* Bootstrap 3 (2015) chrome, hand-written. The tells that actually date a page
-     are vertical gradients, inset white highlights, 4px radii and dense spacing.
-     A flat, airy layout reads 2017+ no matter what the palette is. */
+  /* Bootstrap 3 + bootstrap-theme (2015), hand-written. What dates a page is the
+     vertical gradients, inset white highlights, 4px radii, dense 14px type and
+     blue #337ab7 links. A flat, airy layout reads 2017+ whatever the palette. */
   *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
   body{margin:0;background:#fff;color:#333;
        font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
        font-size:14px;line-height:1.428571429}
   a{color:#337ab7;text-decoration:none}
   a:hover,a:focus{color:#23527c;text-decoration:underline}
-  .wrap{max-width:1170px;margin:0 auto;padding:0 15px}
+  h1,h2,h3,h4{font-weight:500;line-height:1.1;color:inherit}
+  h1{font-size:36px;margin:20px 0 10px}
+  h2{font-size:26px;margin:4px 0 6px}
+  h3{font-size:20px;margin:22px 0 10px}
+  h4{font-size:16px;margin:0}
+  small,.small{font-size:85%}
+  .muted{color:#777}
+  .container{max-width:1170px;margin:0 auto;padding:0 15px}
+  code{padding:2px 4px;font-size:90%;color:#c7254e;background:#f9f2f4;border-radius:4px}
+  [hidden]{display:none!important}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
 
-  /* navbar-default: gradient + inset highlight */
-  header{background-image:linear-gradient(to bottom,#fff 0,#f8f8f8 100%);
-         background-repeat:repeat-x;border-bottom:1px solid #e7e7e7;
-         box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
-         margin-bottom:18px}
-  .htop{display:flex;align-items:center;gap:12px;padding:11px 0;flex-wrap:wrap}
-  h1{font-size:18px;margin:0;font-weight:500;color:#777;line-height:20px}
-  h2{font-size:24px;font-weight:500;margin:0 0 10px}
-  h3{font-size:18px;font-weight:500;margin:18px 0 9px}
-  .stats{color:#777;font-size:12px;margin-left:auto;text-align:right}
+  /* ---- navbar-default, bootstrap-theme ---- */
+  .navbar{background-image:linear-gradient(to bottom,#fff 0,#f8f8f8 100%);
+          border-bottom:1px solid #e7e7e7;
+          box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075)}
+  .navbar .container{display:flex;align-items:center;flex-wrap:wrap;gap:0 6px;min-height:50px}
+  .brand{display:flex;align-items:center;gap:8px;font-size:18px;color:#777;
+         padding:13px 10px 13px 0;text-shadow:0 1px 0 rgba(255,255,255,.25);white-space:nowrap}
+  .brand:hover,.brand:focus{color:#5e5e5e;text-decoration:none}
+  .brand img{width:22px;height:22px;border-radius:5px}
+  .nav{display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0}
+  .nav a{display:block;padding:15px 11px;color:#777;text-shadow:0 1px 0 rgba(255,255,255,.25)}
+  .nav a:hover,.nav a:focus{color:#333;text-decoration:none;background:transparent}
+  .nav a.on{color:#555;background-image:linear-gradient(to bottom,#dbdbdb 0,#e2e2e2 100%);
+            box-shadow:inset 0 3px 9px rgba(0,0,0,.075)}
+  .navsearch{margin-left:auto;display:flex;gap:6px;align-items:center;padding:8px 0}
 
-  /* nav-tabs: folder tabs that merge into the content edge */
-  nav{border-bottom:1px solid #ddd;display:flex;flex-wrap:wrap;margin-bottom:16px}
-  nav button{background:none;border:1px solid transparent;border-radius:4px 4px 0 0;
-             padding:10px 15px;margin-bottom:-1px;cursor:pointer;
-             font:inherit;line-height:1.428571429;color:#337ab7}
-  nav button:hover{background:#eee;border-color:#eee #eee #ddd;text-decoration:underline}
-  nav button.on{color:#555;background:#fff;border:1px solid #ddd;border-bottom-color:transparent;
-                cursor:default;text-decoration:none}
+  /* ---- forms & buttons ---- */
+  .form-control{display:block;width:100%;height:34px;padding:6px 12px;font-size:14px;
+        line-height:1.428571429;color:#555;background:#fff;border:1px solid #ccc;border-radius:4px;
+        box-shadow:inset 0 1px 1px rgba(0,0,0,.075);font-family:inherit;
+        transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+  .form-control:focus{border-color:#66afe9;outline:0;
+        box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)}
+  .input-lg{height:46px;padding:10px 16px;font-size:18px;border-radius:6px}
+  #q{width:250px}
+  .btn{display:inline-block;padding:6px 12px;font-size:14px;line-height:1.428571429;
+       border:1px solid transparent;border-radius:4px;cursor:pointer;font-family:inherit;
+       white-space:nowrap;vertical-align:middle;user-select:none;
+       text-shadow:0 -1px 0 rgba(0,0,0,.2);
+       box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075)}
+  .btn:hover,.btn:focus{text-decoration:none}
+  .btn:active,.btn.on{box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}
+  .btn-default{color:#333;text-shadow:0 1px 0 #fff;border-color:#ccc;
+       background-image:linear-gradient(to bottom,#fff 0,#e0e0e0 100%)}
+  .btn-default:hover,.btn-default:focus{color:#333;background:#e0e0e0;border-color:#adadad}
+  .btn-default.on{background:#e0e0e0;border-color:#dbdbdb;color:#333}
+  .btn-primary{color:#fff;border-color:#245580;
+       background-image:linear-gradient(to bottom,#337ab7 0,#265a88 100%)}
+  .btn-primary:hover,.btn-primary:focus{color:#fff;background:#265a88}
+  .btn-sm{padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px}
+  .btn-xs{padding:1px 5px;font-size:12px;line-height:1.5;border-radius:3px}
+  .btn-lg{padding:10px 16px;font-size:18px;border-radius:6px}
+  .btn-block{display:block;width:100%}
+  .btn-group{display:inline-flex;flex-wrap:wrap;vertical-align:middle}
+  .btn-group .btn{border-radius:0;margin-left:-1px}
+  .btn-group .btn:first-child{border-radius:4px 0 0 4px;margin-left:0}
+  .btn-group .btn:last-child{border-radius:0 4px 4px 0}
+  .btn-group .btn.btn-sm:first-child{border-radius:3px 0 0 3px}
+  .btn-group .btn.btn-sm:last-child{border-radius:0 3px 3px 0}
+  select.form-control{width:auto;display:inline-block;cursor:pointer}
 
-  /* panels */
-  .card{background:#fff;border:1px solid #ddd;border-radius:4px;
-        box-shadow:0 1px 1px rgba(0,0,0,.05);padding:15px;margin-bottom:18px}
-  .phead{background-image:linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
-         background-repeat:repeat-x;border-bottom:1px solid #ddd;
-         padding:10px 15px;cursor:pointer;user-select:none;
-         display:flex;align-items:center;gap:8px;color:#333}
-  .phead:hover{background-image:linear-gradient(to bottom,#e8e8e8 0,#dcdcdc 100%)}
+  /* ---- alerts ---- */
+  .alert{padding:12px 15px;margin-bottom:18px;border:1px solid transparent;border-radius:4px;
+         text-shadow:0 1px 0 rgba(255,255,255,.2);
+         box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 1px 2px rgba(0,0,0,.05)}
+  .alert-danger{color:#a94442;border-color:#dca7a7;
+         background-image:linear-gradient(to bottom,#f2dede 0,#e7c3c3 100%)}
+  .alert-warning{color:#8a6d3b;border-color:#f5e79e;
+         background-image:linear-gradient(to bottom,#fcf8e3 0,#f8efc0 100%)}
+  .alert-info{color:#31708f;border-color:#9acfea;
+         background-image:linear-gradient(to bottom,#d9edf7 0,#b9def0 100%)}
+  .alert a{font-weight:700;color:inherit;text-decoration:underline}
+  .alert .close{float:right;margin-left:10px;font-size:21px;font-weight:700;line-height:1;
+         color:#000;opacity:.2;cursor:pointer;background:none;border:0;padding:0;
+         text-shadow:0 1px 0 #fff}
+  .alert .close:hover{opacity:.5}
+  .notice{margin:0;border-radius:0;border-width:0 0 1px;padding:7px 0;font-size:13px}
 
-  /* well: the inset gray box, very 2015 */
-  #q{width:100%;height:34px;padding:6px 12px;font-size:14px;line-height:1.428571429;
-     color:#555;background:#fff;border:1px solid #ccc;border-radius:4px;
-     box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
-     transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-     margin:0 0 12px;font-family:inherit}
-  #q:focus{border-color:#66afe9;outline:0;
-           box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)}
+  /* ---- breadcrumb ---- */
+  .breadcrumb{padding:8px 15px;margin:18px 0 18px;list-style:none;border-radius:4px;
+         background-image:linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
+         box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 1px 2px rgba(0,0,0,.05);
+         display:flex;flex-wrap:wrap;gap:0;font-size:13px}
+  .breadcrumb li+li:before{content:"/\00a0";padding:0 5px;color:#ccc}
+  .breadcrumb .active{color:#777}
 
-  /* labels and badges */
-  .chip{display:inline-block;background:#777;color:#fff;border-radius:10px;
-        padding:3px 7px;font-size:12px;font-weight:700;line-height:1;
-        margin:2px 4px 2px 0;white-space:nowrap;vertical-align:baseline}
-  .chip.t{cursor:pointer;background:#337ab7}
-  .chip.t:hover{background:#23527c}
-  .type{background:#337ab7;color:#fff;border-radius:.25em;padding:.2em .6em .3em;
-        font-size:75%;font-weight:700;text-transform:uppercase}
-  .meta{color:#777;font-size:12px;margin-top:6px}
-  .ts{font-weight:700;cursor:pointer;color:#337ab7}
-  .ts:hover{text-decoration:underline}
-  .muted{color:#777} .small{font-size:12px}
+  /* ---- panels ---- */
+  .panel{background:#fff;border:1px solid #ddd;border-radius:4px;margin-bottom:18px;
+         box-shadow:0 1px 2px rgba(0,0,0,.05)}
+  .panel-heading{padding:10px 15px;border-bottom:1px solid #ddd;border-radius:3px 3px 0 0;
+         color:#333;background-image:linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%)}
+  .panel-heading h4{display:flex;align-items:center;gap:8px}
+  .panel-primary{border-color:#337ab7}
+  .panel-primary>.panel-heading{color:#fff;border-color:#2e6da4;
+         background-image:linear-gradient(to bottom,#337ab7 0,#2e6da4 100%)}
+  .panel-danger{border-color:#ebccd1}
+  .panel-danger>.panel-heading{color:#a94442;border-color:#ebccd1;
+         background-image:linear-gradient(to bottom,#f2dede 0,#ebcccc 100%)}
+  .panel-body{padding:15px}
+  .panel-body>p:first-child{margin-top:0}
+  .panel-footer{padding:10px 15px;background:#f5f5f5;border-top:1px solid #ddd;
+         border-radius:0 0 3px 3px;font-size:13px}
+  .toggle-head{cursor:pointer;user-select:none}
+  .toggle-head:hover{background-image:linear-gradient(to bottom,#e8e8e8 0,#dcdcdc 100%)}
+  .caret{display:inline-block;width:10px;color:#777;font-size:11px}
 
-  /* alert-warning */
-  .banner{background:#fcf8e3;border:1px solid #faebcc;color:#8a6d3b;
-          border-radius:4px;padding:15px;margin:0 0 18px}
-  .banner a{color:#66512c;font-weight:700;text-decoration:underline}
-  /* alert-danger: the safety disclaimer must not read as a gentle notice */
-  .banner.danger{background:#f2dede;border-color:#ebccd1;color:#a94442}
-  .banner.danger a{color:#843534}
+  /* ---- list group ---- */
+  .list-group{padding:0;margin:0 0 18px;border-radius:4px;
+         box-shadow:0 1px 2px rgba(0,0,0,.075)}
+  .list-group-item{position:relative;display:block;padding:9px 15px;margin-bottom:-1px;
+         background:#fff;border:1px solid #ddd;color:#555}
+  .list-group-item:first-child{border-top-left-radius:4px;border-top-right-radius:4px}
+  .list-group-item:last-child{margin-bottom:0;border-bottom-left-radius:4px;border-bottom-right-radius:4px}
+  a.list-group-item:hover,a.list-group-item:focus{background:#f5f5f5;text-decoration:none;color:#555}
+  a.list-group-item.active{z-index:2;color:#fff;border-color:#2b669a;text-shadow:0 -1px 0 #286090;
+         background-image:linear-gradient(to bottom,#337ab7 0,#2b669a 100%)}
+  a.list-group-item.active .badge{color:#337ab7;background:#fff}
+  .list-group-item .badge{float:right;margin-left:6px}
+  .lg-title{color:#337ab7}
+  a.list-group-item:hover .lg-title{color:#23527c;text-decoration:underline}
 
-  .quote{border-left:5px solid #eee;padding:10px 20px;margin:10px 0 0;
-         color:#777;font-size:13px;font-style:italic;display:none}
+  /* ---- badges & labels ---- */
+  .badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:12px;font-weight:700;
+         line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:middle;
+         background:#777;border-radius:10px}
+  .label{display:inline-block;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;
+         color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em}
+  .label-default{background:#777}.label-primary{background:#337ab7}
+  .label-success{background:#5cb85c}.label-info{background:#5bc0de}
+  .label-warning{background:#f0ad4e}.label-danger{background:#d9534f}
+  a.label:hover{color:#fff;text-decoration:none;opacity:.85}
+
+  /* ---- jumbotron & thumbnails ---- */
+  .jumbotron{padding:30px 36px;margin:20px 0 20px;background:#eee;border-radius:6px;
+         background-image:linear-gradient(to bottom,#e8e8e8 0,#f5f5f5 100%);
+         box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 1px 2px rgba(0,0,0,.05)}
+  .jumbotron h1{margin-top:0;font-size:42px}
+  .jumbotron .lead{font-size:19px;font-weight:300;margin:0 0 20px;max-width:760px}
+  .jsearch{display:flex;gap:8px;max-width:640px}
+  .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-bottom:20px}
+  .thumb{display:block;padding:14px;border:1px solid #ddd;border-radius:4px;background:#fff;
+         text-align:center;color:#333;box-shadow:0 1px 2px rgba(0,0,0,.075)}
+  a.thumb:hover{border-color:#337ab7;text-decoration:none;color:#333}
+  .thumb b{display:block;font-size:30px;font-weight:300;color:#337ab7;line-height:1.2}
+  .thumb.danger b{color:#d9534f}
+
+  /* ---- layout ---- */
+  .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start}
+  .vs{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;margin-bottom:14px}
+  .vs .pearl{margin:0;height:100%}
+  h5.sub{margin:6px 0 10px;font-size:12px;text-transform:uppercase;color:#777;letter-spacing:.04em}
+  .side{display:grid;grid-template-columns:250px minmax(0,1fr);gap:20px;align-items:start}
+  .side-r{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:20px;align-items:start}
+  .cols{column-count:3;column-gap:20px}
+  .cols .list-group-item{break-inside:avoid}
+  .well{min-height:20px;padding:15px;margin-bottom:18px;border:1px solid #dcdcdc;border-radius:4px;
+        background-image:linear-gradient(to bottom,#e8e8e8 0,#f5f5f5 100%);
+        box-shadow:inset 0 1px 3px rgba(0,0,0,.05),0 1px 0 rgba(255,255,255,.1)}
+  .well h5{margin:0 0 8px;font-size:12px;text-transform:uppercase;color:#777;letter-spacing:.04em}
+  .well .list-group{margin-bottom:14px}
+  .well .list-group-item{padding:6px 12px;font-size:13px}
+  .toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 14px}
+  .toolbar .grow{flex:1}
+
+  /* ---- pearls ---- */
+  .pearl{padding:12px 15px;border:1px solid #ddd;border-radius:4px;margin-bottom:10px;
+         background:#fff;box-shadow:0 1px 1px rgba(0,0,0,.05)}
+  .pearl:target,.pearl.flash{animation:fl 2s ease-out}
+  .pearl .txt{margin:6px 0 4px;font-size:15px;line-height:1.45}
+  .meta{color:#777;font-size:12px}
+  .meta a{color:#337ab7}
+  .ts{font-weight:700;white-space:nowrap}
+  .ts:before{content:"\25B6\00a0";font-size:9px;vertical-align:1px}
+  .quote{border-left:5px solid #eee;padding:8px 16px;margin:8px 0 0;color:#666;
+         font-size:13px;font-style:italic;display:none}
   .quote.show{display:block}
-  .toggle{font-size:12px;color:#337ab7;cursor:pointer}
-  .toggle:hover{text-decoration:underline}
+  .linkish{color:#337ab7;cursor:pointer;background:none;border:0;padding:0;font:inherit;font-size:12px}
+  .linkish:hover{color:#23527c;text-decoration:underline}
+  mark{background:#fcf8e3;padding:0 1px}
 
-  .grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
-  .seg{padding:2px 0;display:flex;gap:10px;align-items:baseline}
-  .seg:hover{background:#f5f5f5}
-  mark{background:#fcf8e3;padding:.2em 0}
-
-  select,.lang{height:34px;padding:6px 12px;font-size:14px;color:#555;
-        background-image:linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
-        background-repeat:repeat-x;border:1px solid #ccc;border-radius:4px;
-        text-shadow:0 1px 0 #fff;font-family:inherit;cursor:pointer}
-  audio{width:100%;margin-top:10px}
-  footer{color:#777;font-size:12px;padding:19px 0;border-top:1px solid #e5e5e5;margin-top:30px}
-
-  /* table-striped */
+  /* ---- tables ---- */
   table{width:100%;max-width:100%;border-collapse:collapse;margin-bottom:18px;font-size:13px}
-  th{text-align:left;padding:8px;border-bottom:2px solid #ddd;vertical-align:bottom}
+  th{text-align:left;padding:8px;border-bottom:2px solid #ddd;vertical-align:bottom;white-space:nowrap}
+  th a{color:#333}
+  th a.on{color:#337ab7}
   td{padding:8px;border-top:1px solid #ddd;vertical-align:top}
-  tbody tr:nth-child(odd){background:#f9f9f9}
-  tbody tr:hover{background:#f5f5f5}
+  .table-striped tbody tr:nth-child(odd){background:#f9f9f9}
+  .table-hover tbody tr:hover{background:#f5f5f5}
+  td.num,th.num{text-align:right;white-space:nowrap}
+  td.nw{white-space:nowrap}
   .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .table-bordered{border:1px solid #ddd}
+  tr.hit{background:#fcf8e3!important}
 
-  /* calendar */
-  .cal{width:100%;max-width:430px;border:1px solid #ddd;border-radius:4px;
-       margin-bottom:15px;font-size:13px}
-  .cal th{background-image:linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
-          text-align:center;padding:6px;border-bottom:1px solid #ddd;
-          font-size:12px;color:#777;font-weight:700}
-  .cal td{text-align:center;padding:6px;border-top:1px solid #eee;width:14.28%}
-  .cal td.nil{color:#ccc;background:none}
-  .cal td.has{background:#f5f5f5;font-weight:700}
-  .cal td.has a{display:block}
-  .flash{animation:fl 1.6s ease-out}
+  /* ---- calendar ---- */
+  .cal{margin:0;font-size:12px}
+  .cal th{text-align:center;padding:4px;color:#777;border-bottom:1px solid #ddd}
+  .cal td{text-align:center;padding:4px;border-top:1px solid #eee;width:14.28%}
+  .cal td.nil{color:#bbb}
+  .cal td.has a{display:block;font-weight:700;border-radius:3px;color:#fff;
+         background-image:linear-gradient(to bottom,#337ab7 0,#265a88 100%)}
+  .cal td.has a:hover{text-decoration:none;opacity:.85}
+  .cal td.sel a{background:#f0ad4e}
+  .calhead{display:flex;align-items:center;gap:4px;margin-bottom:6px}
+  .calhead b{flex:1;text-align:center}
+
+  /* ---- pagination / pager ---- */
+  .pagination{display:flex;flex-wrap:wrap;padding:0;margin:0 0 16px;list-style:none;border-radius:4px}
+  .pagination a{display:block;padding:5px 10px;margin-left:-1px;font-size:13px;color:#337ab7;
+         background:#fff;border:1px solid #ddd}
+  .pagination li:first-child a{margin-left:0;border-radius:4px 0 0 4px}
+  .pagination li:last-child a{border-radius:0 4px 4px 0}
+  .pagination a:hover{background:#eee;text-decoration:none}
+  .pagination a.on{color:#fff;background:#337ab7;border-color:#337ab7;cursor:default;z-index:2;position:relative}
+  .pagination a.dis{color:#bbb;pointer-events:none}
+  .more{margin:6px 0 24px;text-align:center}
+
+  /* ---- progress (loading) ---- */
+  .progress{height:20px;margin:40px auto 10px;max-width:420px;overflow:hidden;border-radius:4px;
+         background-image:linear-gradient(to bottom,#ebebeb 0,#f5f5f5 100%);
+         box-shadow:inset 0 1px 2px rgba(0,0,0,.1)}
+  .progress-bar{height:100%;width:100%;background-color:#337ab7;
+         background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,
+           transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+         background-size:40px 40px;animation:stripes 1s linear infinite}
+  @keyframes stripes{from{background-position:40px 0}to{background-position:0 0}}
+
+  /* ---- lecture page ---- */
+  .player{position:sticky;top:0;z-index:5;padding:8px 12px;margin:0 0 18px;border:1px solid #ccc;
+          border-radius:4px;background-image:linear-gradient(to bottom,#fafafa 0,#e6e6e6 100%);
+          box-shadow:inset 0 1px 0 #fff,0 2px 6px rgba(0,0,0,.12)}
+  .player audio{width:100%;display:block}
+  .player .meta{display:flex;justify-content:space-between;gap:10px;margin-top:4px}
+  .seg{display:flex;gap:10px;align-items:baseline;padding:3px 6px;border-radius:3px}
+  .seg:hover{background:#f5f5f5}
+  .seg.now{background:#fcf8e3;box-shadow:inset 3px 0 0 #f0ad4e}
+  .seg .ts{min-width:52px;font-size:12px}
+  .transcript{max-height:70vh;overflow:auto;padding:6px 8px}
+
+  .flash{animation:fl 2s ease-out}
   @keyframes fl{0%{background:#fcf8e3}100%{background:transparent}}
 
+  footer{color:#777;font-size:12px;padding:19px 0 30px;border-top:1px solid #e5e5e5;margin-top:30px}
+
+  /* ---- small screens ---- */
+  @media (max-width:991px){
+    .side,.side-r,.row,.vs{grid-template-columns:minmax(0,1fr)!important}
+    .cols{column-count:2}
+    .tiles{grid-template-columns:repeat(2,1fr)}
+  }
   @media (max-width:640px){
-    .stats{width:100%;text-align:left;margin-left:0}
-    nav button{padding:8px 11px;font-size:13px}
-    .card{padding:12px}
+    .navsearch{margin-left:0;width:100%}
+    #q{width:100%}
+    .nav a{padding:8px 9px;font-size:13px}
+    .brand{padding:10px 0 4px}
+    .cols{column-count:1}
+    .jumbotron{padding:20px}
+    .jumbotron h1{font-size:30px}
+    .jsearch{flex-direction:column}
+    h2{font-size:22px}
   }
 </style>
 </head>
 <body>
-<header><div class="wrap">
-  <div class="htop">
-    <h1>HPI Lecture Corpus <span id="sub"></span></h1>
-    <select class="lang" id="lang" title="Interface language"></select>
-    <div class="stats" id="stats"></div>
+<div class="navbar"><div class="container">
+  <a class="brand" href="#/"><img src="favicon.svg" alt="">HPI Lecture Corpus</a>
+  <ul class="nav" id="nav"></ul>
+  <div class="navsearch">
+    <label class="sr" for="q">Search</label>
+    <input id="q" class="form-control" type="search" placeholder="Search…  ( / )" autocomplete="off">
+    <select class="form-control" id="lang" title="Interface language" hidden></select>
   </div>
-</div></header>
+</div></div>
+<div id="notice"></div>
 
-<div class="wrap">
-  <nav id="nav" class="tabs"></nav>
-  <input id="q" placeholder="Search transcripts, pearls, topics…" autocomplete="off">
-  <div id="hint" class="muted small" style="margin-bottom:14px"></div>
-  <main id="view"></main>
+<div class="container">
+  <main id="view"><div class="progress"><div class="progress-bar"></div></div>
+    <p class="muted" style="text-align:center">Loading the lecture index…</p></main>
   <footer id="foot"></footer>
 </div>
 
 <script>
+/* ======================================================================
+   Strings. Translations exist for the core vocabulary; anything missing
+   falls back to English. The language picker only appears when some
+   lecture actually carries translations.
+   ====================================================================== */
 const UI = {
-  en:{map:"Map",clusters:"Clusters",search:"Search",pearls:"Pearls",topics:"Topics",speakers:"Speakers",episodes:"Episodes",
-      archive:"Archive",arch_h:"All lectures, newest first. Click a highlighted day to jump to it.",
-      about:"About",hits:"results",no:"No matches.",listen:"Listen at",src:"Source",
+  en:{home:"Home",map:"Map",clusters:"Clusters",search:"Search",pearls:"Pearls",topics:"Topics",speakers:"Speakers",
+      episodes:"Lectures",about:"About",no:"No matches.",src:"Source",
       abstract:"Abstract",keyp:"Key teaching points",transcript:"Transcript",
-      showq:"show source quote",hideq:"hide source quote",talks:"lectures",
-      mt:"Machine-translated. Verify against the English source.",
-      ph:"Search transcripts, pearls, topics…"},
-  ko:{map:"개념도",clusters:"군집",search:"검색",pearls:"핵심 요점",topics:"주제",speakers:"강연자",episodes:"강의",
-      archive:"보관함",arch_h:"전체 강의 · 최신순. 표시된 날짜를 누르면 해당 강의로 이동합니다.",
-      about:"정보",hits:"건",no:"검색 결과가 없습니다.",listen:"재생 위치",src:"출처",
-      abstract:"요약",keyp:"핵심 교육 요점",transcript:"전사본",
-      showq:"원문 인용 보기",hideq:"인용 숨기기",talks:"개 강의",
-      mt:"기계 번역입니다. 영어 원문을 확인하세요.",ph:"전사본, 요점, 주제 검색…"},
-  fr:{map:"Carte",clusters:"Groupes",search:"Recherche",pearls:"Perles",topics:"Thèmes",speakers:"Intervenants",episodes:"Cours",
-      archive:"Archives",arch_h:"Tous les cours, du plus récent au plus ancien. Cliquez sur un jour surligné pour y aller.",
-      about:"À propos",hits:"résultats",no:"Aucun résultat.",listen:"Écouter à",src:"Source",
-      abstract:"Résumé",keyp:"Points clés",transcript:"Transcription",
-      showq:"voir la citation",hideq:"masquer la citation",talks:"cours",
-      mt:"Traduction automatique. Vérifiez la source anglaise.",
-      ph:"Rechercher transcriptions, perles, thèmes…"},
-  de:{map:"Karte",clusters:"Cluster",search:"Suche",pearls:"Merksätze",topics:"Themen",speakers:"Referenten",episodes:"Vorträge",
-      archive:"Archiv",arch_h:"Alle Vorträge, neueste zuerst. Klicken Sie auf einen markierten Tag, um dorthin zu springen.",
-      about:"Info",hits:"Treffer",no:"Keine Treffer.",listen:"Anhören bei",src:"Quelle",
-      abstract:"Zusammenfassung",keyp:"Kernaussagen",transcript:"Transkript",
-      showq:"Zitat anzeigen",hideq:"Zitat ausblenden",talks:"Vorträge",
-      mt:"Maschinell übersetzt. Bitte mit dem englischen Original abgleichen.",
-      ph:"Transkripte, Merksätze, Themen durchsuchen…"}
+      showq:"show quote",hideq:"hide quote",talks:"lectures",
+      mt:"Machine-translated. Verify against the English source."},
+  ko:{home:"홈",map:"개념도",clusters:"군집",search:"검색",pearls:"핵심 요점",topics:"주제",speakers:"강연자",episodes:"강의",
+      about:"정보",no:"검색 결과가 없습니다.",src:"출처",abstract:"요약",keyp:"핵심 교육 요점",transcript:"전사본",
+      showq:"원문 인용 보기",hideq:"인용 숨기기",talks:"개 강의",mt:"기계 번역입니다. 영어 원문을 확인하세요."},
+  fr:{home:"Accueil",map:"Carte",clusters:"Groupes",search:"Recherche",pearls:"Perles",topics:"Thèmes",speakers:"Intervenants",
+      episodes:"Cours",about:"À propos",no:"Aucun résultat.",src:"Source",abstract:"Résumé",keyp:"Points clés",
+      transcript:"Transcription",showq:"voir la citation",hideq:"masquer la citation",talks:"cours",
+      mt:"Traduction automatique. Vérifiez la source anglaise."},
+  de:{home:"Start",map:"Karte",clusters:"Cluster",search:"Suche",pearls:"Merksätze",topics:"Themen",speakers:"Referenten",
+      episodes:"Vorträge",about:"Info",no:"Keine Treffer.",src:"Quelle",abstract:"Zusammenfassung",keyp:"Kernaussagen",
+      transcript:"Transkript",showq:"Zitat anzeigen",hideq:"Zitat ausblenden",talks:"Vorträge",
+      mt:"Maschinell übersetzt. Bitte mit dem englischen Original abgleichen."}
 };
-let D=null, LANG="en", TAB="pearls", SEL=null;
-const OPEN={};
-function togS(t){OPEN[t]=!OPEN[t];render();}
-const T=k=>(UI[LANG]||UI.en)[k]||UI.en[k];
-const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const mmss=s=>{s=Math.max(0,Math.round(s));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
-const AUDIO=(sl)=>`../data/audio/${sl}.m4a`;
+let D=null, LANG="en";
+const T=k=>(UI[LANG]||UI.en)[k]||UI.en[k]||k;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const enc=encodeURIComponent;
+const mmss=s=>{s=Math.max(0,Math.floor(+s||0));const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=String(s%60).padStart(2,"0");
+  return h?`${h}:${String(m).padStart(2,"0")}:${x}`:`${m}:${x}`};
+const dur=s=>{const m=Math.round((+s||0)/60);return m>=60?`${Math.floor(m/60)}h ${String(m%60).padStart(2,"0")}m`:`${m}m`};
+const num=n=>(+n||0).toLocaleString("en-US");
+const fmtDate=t=>t?new Date(t).toLocaleDateString("en-US",{year:"numeric",month:"short",day:"numeric"}):"";
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},
+             set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 
 // Pick translated text when present, else fall back to English.
 function tr(obj, field, slug){
   if(LANG==="en") return obj[field];
-  const ep=D.episodes.find(e=>e.slug===(slug||obj.episode||obj.slug));
+  const ep=EP[slug||obj.episode||obj.slug];
   const t=ep&&ep.i18n&&ep.i18n[LANG];
   if(!t) return obj[field];
   if(field==="abstract"&&t.abstract) return t.abstract;
@@ -192,387 +351,693 @@ function tr(obj, field, slug){
   return obj[field];
 }
 
-function render(){
-  document.getElementById("q").placeholder=T("ph");
-  const nav=document.getElementById("nav");
-  nav.innerHTML=["pearls","clusters","map","topics","speakers","episodes","archive","about"]
-    .map(t=>`<button data-t="${t}" class="${TAB===t?'on':''}">${T(t)}</button>`).join("");
-  nav.querySelectorAll("button").forEach(b=>b.onclick=()=>{TAB=b.dataset.t;SEL=null;render()});
-  const q=document.getElementById("q").value.trim();
-  const v=document.getElementById("view");
-  document.getElementById("hint").textContent="";
-  if(q) return v.innerHTML=searchView(q);
-  if(SEL&&SEL.kind==="episode") return v.innerHTML=episodeView(SEL.id);
-  if(SEL&&SEL.kind==="topic")   return v.innerHTML=topicView(SEL.id);
-  if(SEL&&SEL.kind==="speaker") return v.innerHTML=speakerView(SEL.id);
-  v.innerHTML=({pearls:pearlsView,clusters:clustersView,map:mapView,topics:topicsView,
-                speakers:speakersView,episodes:episodesView,archive:archiveView,about:aboutView})[TAB]();
+/* ======================================================================
+   Indexes, built once after data.json loads.
+   ====================================================================== */
+let EP={}, BYID={}, PBYEP={}, SPK={}, TYPES=[], NEWEST=[];
+const TYPE_LBL={practice:"Practice",judgment:"Clinical judgment",pitfall:"Pitfalls",red_flag:"Red flags",
+  dx_criteria:"Diagnostic criteria",dosing:"Dosing",exam_technique:"Exam technique",concept:"Concepts",
+  procedure:"Procedures",other:"Other"};
+const GRADE_CLS={A:"success",B:"primary",C:"default"};
+const VERDICT_CLS={conflict:"danger",duplicate:"default",consensus:"success",related:"primary"};
+const VERDICT_LBL={conflict:"Conflict",duplicate:"Duplicate",consensus:"Consensus",related:"Related"};
+
+function index(){
+  D.episodes.forEach(e=>{e._dt=e.pubDate?Date.parse(e.pubDate)||0:0;e._np=0;EP[e.slug]=e;});
+  // The long tail of one-off pearl types the extractor invented is folded into "Other".
+  const tc={}; D.pearls.forEach(p=>tc[p.type]=(tc[p.type]||0)+1);
+  D.pearls.forEach(p=>{
+    p.t=+p.t||0; p.points=+p.points||0;
+    p._type=tc[p.type]>=20?p.type:"other";
+    p._s=((p.text||"")+" "+(p.verbatim||"")).toLowerCase();
+    p._dt=(EP[p.episode]||{})._dt||0;
+    BYID[p.pearl_id]=p;
+    (PBYEP[p.episode]=PBYEP[p.episode]||[]).push(p);
+    if(EP[p.episode]) EP[p.episode]._np++;
+  });
+  Object.values(PBYEP).forEach(ps=>ps.sort((a,b)=>a.t-b.t));
+  const ty={}; D.pearls.forEach(p=>ty[p._type]=(ty[p._type]||0)+1);
+  TYPES=Object.entries(ty).sort((a,b)=>(a[0]==="other")-(b[0]==="other")||b[1]-a[1]);
+  D.speakers.forEach(s=>{
+    const eps=s.episodes.map(x=>EP[x]).filter(Boolean);
+    SPK[s.name]={name:s.name,eps,np:eps.reduce((n,e)=>n+e._np,0),
+                 latest:Math.max(0,...eps.map(e=>e._dt))};
+  });
+  NEWEST=[...D.episodes].sort((a,b)=>b._dt-a._dt);
+  D.topics.forEach(t=>t._l=t.label.toLowerCase());
 }
 
-function pearlCard(p){
-  const ep=D.episodes.find(e=>e.slug===p.episode)||{};
-  const gc={A:"#5cb85c",B:"#337ab7",C:"#999"}[p.grade]||"#999";
-  return `<div class="card">
-    <span class="chip type">${esc(p.type)}</span>
-    <span class="chip" style="background:${gc};color:#fff;font-weight:600" title="deterministic rule score">${esc(p.grade||"")}</span>
-    <div style="margin-top:7px">${esc(tr(p,"text"))}</div>
-    <div class="meta">
-      <b>${esc(p.speaker)}</b> · <a href="#" onclick="go('episode','${p.episode}');return false">${esc(ep.title||p.episode)}</a>
-      · <span class="ts" onclick="seek('${p.episode}',${p.t})">${mmss(p.t)}</span>
-      · <a href="${esc(ep.link||'#')}" target="_blank" rel="noopener">${T("src")} ↗</a>
-      · <span class="toggle" onclick="tq(this)">${T("showq")}</span>
-    </div>
-    <div class="quote">“${esc(p.verbatim)}”</div></div>`;
+/* ======================================================================
+   Routing. Everything lives in the URL hash, so the back button works and
+   any view (down to a second of a lecture) can be bookmarked or shared.
+     #/                      home
+     #/pearls?type=&grade=   #/clusters?v=   #/map?d=   #/topics?l=&min=
+     #/speakers              #/lectures?sort=&dir=&day=   #/about
+     #/lecture/<slug>[/<sec>]   #/topic/<slug>   #/speaker/<name>   #/search/<q>
+   ====================================================================== */
+let R={view:"home",id:"",t:null,q:{}};
+function parse(){
+  const h=location.hash.replace(/^#\/?/,"");
+  const [path,qs]=h.split("?");
+  const parts=(path||"").split("/").map(x=>{try{return decodeURIComponent(x)}catch(e){return x}});
+  const q={}; new URLSearchParams(qs||"").forEach((v,k)=>q[k]=v);
+  return {view:parts[0]||"home",id:parts[1]||"",t:parts[2]!=null&&parts[2]!==""?+parts[2]:null,q};
 }
-function tq(el){const q=el.closest(".card").querySelector(".quote");
-  q.classList.toggle("show");el.textContent=q.classList.contains("show")?T("hideq"):T("showq")}
+function href(view,params){
+  const qs=Object.entries(params||{}).filter(([,v])=>v!==""&&v!=null);
+  return `#/${view}`+(qs.length?"?"+qs.map(([k,v])=>`${k}=${enc(v)}`).join("&"):"");
+}
+const link={
+  lecture:(slug,t)=>`#/lecture/${enc(slug)}`+(t!=null?`/${Math.floor(t)}`:""),
+  topic:slug=>`#/topic/${enc(slug)}`,
+  speaker:name=>`#/speaker/${enc(name)}`,
+};
+
+// "Show more" state, reset whenever the route changes.
+let LIMIT={}, LASTKEY="";
+const OPEN={};
+function more(key,step){LIMIT[key]=(LIMIT[key]||step)+step;render(true);}
+function lim(key,step){return LIMIT[key]||step;}
+function moreBtn(key,shown,total,step){
+  return shown<total?`<div class="more"><button class="btn btn-default" onclick="more('${key}',${step})">
+    Show ${Math.min(step,total-shown)} more <span class="muted">(${num(shown)} of ${num(total)})</span></button></div>`:"";
+}
+
+const NAV=[["home","#/"],["pearls","#/pearls"],["clusters","#/clusters"],["map","#/map"],["topics","#/topics"],
+           ["speakers","#/speakers"],["episodes","#/lectures"],["about","#/about"]];
+const SECTION={home:"home",pearls:"pearls",clusters:"clusters",map:"map",topics:"topics",topic:"topics",
+  speakers:"speakers",speaker:"speakers",lectures:"episodes",lecture:"episodes",about:"about",search:""};
+
+function render(keepScroll){
+  if(!D) return;
+  R=parse();
+  const key=location.hash.split("?")[0]+"?"+(R.view==="search"?"":location.hash.split("?")[1]||"");
+  if(key!==LASTKEY){LIMIT={};LASTKEY=key;}
+  const cur=SECTION[R.view]??"";
+  $("nav").innerHTML=NAV.map(([k,h])=>`<li><a href="${h}" class="${cur===k?"on":""}">${esc(T(k))}</a></li>`).join("");
+  const qb=$("q");
+  if(R.view==="search"){ if(document.activeElement!==qb) qb.value=R.id; } else if(document.activeElement!==qb) qb.value="";
+  const V={home:homeView,pearls:pearlsView,clusters:clustersView,map:mapView,topics:topicsView,topic:topicView,
+    speakers:speakersView,speaker:speakerView,lectures:lecturesView,lecture:lectureView,about:aboutView,search:searchView};
+  const y=window.scrollY;
+  $("view").innerHTML=(V[R.view]||notFound)();
+  if(keepScroll===true) window.scrollTo(0,y);
+  if(R.view==="lecture") afterLecture();
+}
+function notFound(){document.title="Not found · HPI Lecture Corpus";
+  return `<div class="alert alert-warning" style="margin-top:20px">That page does not exist. <a href="#/">Go home</a>.</div>`;}
+function crumbs(...items){
+  return `<ol class="breadcrumb"><li><a href="#/">${esc(T("home"))}</a></li>`+items.map((x,i)=>
+    i===items.length-1?`<li class="active">${esc(x[0])}</li>`:`<li><a href="${x[1]}">${esc(x[0])}</a></li>`).join("")+`</ol>`;
+}
+function setTitle(s){document.title=(s?s+" · ":"")+"HPI Lecture Corpus";}
+
+/* ======================================================================
+   Shared pieces
+   ====================================================================== */
+function hl(s,q){
+  if(!q) return esc(s);
+  const rx=new RegExp("("+q.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")","ig");
+  return esc(s).replace(rx,"<mark>$1</mark>");
+}
+function pearlCard(p,q,opts){
+  const ep=EP[p.episode]||{};
+  const showLecture=!(opts&&opts.inLecture);
+  return `<div class="pearl" id="p-${esc(p.pearl_id)}">
+    <span class="label label-${GRADE_CLS[p.grade]||"default"}" title="Rule-based grade (A best)">${esc(p.grade)}</span>
+    <span class="label label-info">${esc(TYPE_LBL[p._type]||p._type)}</span>
+    <div class="txt">${hl(tr(p,"text"),q)}</div>
+    <div class="meta">
+      <a class="ts" href="${link.lecture(p.episode,p.t)}" onclick="return seekLink(event,'${p.episode}',${p.t})"
+         title="Play from here">${mmss(p.t)}</a>
+      · <a href="${link.speaker(p.speaker)}">${esc(p.speaker)}</a>
+      ${showLecture?`· <a href="${link.lecture(p.episode)}">${esc(ep.title||p.episode)}</a>`:""}
+      · <button class="linkish" onclick="tq(this)">${esc(T("showq"))}</button>
+    </div>
+    <div class="quote">“${hl(p.verbatim,q)}”</div></div>`;
+}
+function tq(el){const q=el.closest(".pearl").querySelector(".quote");
+  q.classList.toggle("show");el.textContent=q.classList.contains("show")?T("hideq"):T("showq");}
+function pearlList(ps,key,q,step,opts){
+  step=step||25;const n=lim(key,step);
+  return ps.slice(0,n).map(p=>pearlCard(p,q,opts)).join("")+moreBtn(key,Math.min(n,ps.length),ps.length,step);
+}
+function lectureRows(eps,opts){
+  opts=opts||{};
+  return `<div class="scroll"><table class="table-striped table-hover"><thead><tr>
+      <th>Date</th><th>Lecture</th>${opts.noSpeaker?"":"<th>Speaker</th>"}<th class="num">Length</th><th class="num">Pearls</th></tr></thead><tbody>`
+    +eps.map(e=>`<tr${opts.hit&&opts.hit(e)?' class="hit"':""}><td class="nw">${esc(fmtDate(e._dt))}</td>
+      <td><a href="${link.lecture(e.slug)}">${opts.q?hl(e.title,opts.q):esc(e.title)}</a></td>
+      ${opts.noSpeaker?"":`<td><a href="${link.speaker(e.speaker)}">${esc(e.speaker)}</a></td>`}
+      <td class="num">${dur(e.duration_sec)}</td><td class="num">${e._np}</td></tr>`).join("")
+    +`</tbody></table></div>`;
+}
+function btnGroup(items,cur,mk){
+  return `<div class="btn-group">`+items.map(([v,l])=>
+    `<a class="btn btn-default btn-sm${String(cur)===String(v)?" on":""}" href="${mk(v)}">${l}</a>`).join("")+`</div>`;
+}
+
+/* ======================================================================
+   Views
+   ====================================================================== */
+function homeView(){
+  setTitle("");
+  const s=D.stats, nconf=(D.clusters||[]).filter(c=>c.verdict==="conflict").length;
+  const latest=NEWEST.slice(0,8);
+  const fresh=NEWEST.slice(0,15).flatMap(e=>(PBYEP[e.slug]||[]).filter(p=>p.grade==="A")).slice(0,5);
+  const conf=(D.clusters||[]).filter(c=>c.verdict==="conflict").slice(0,5);
+  return `<div class="jumbotron">
+      <h1>HPI Lecture Corpus</h1>
+      <p class="lead">${num(s.n_episodes)} residency lectures from Hope Partnerships International,
+        ${num(Math.round(s.hours))} hours of teaching, transcribed and cross-linked down to the second.</p>
+      <form class="jsearch" onsubmit="goSearch(this.q.value);return false">
+        <input name="q" class="form-control input-lg" type="search" placeholder="Try “naltrexone”, “preeclampsia”, “gout”…" aria-label="Search">
+        <button class="btn btn-primary btn-lg">Search</button>
+      </form>
+    </div>
+    <div class="tiles">
+      <a class="thumb" href="#/lectures"><b>${num(s.n_episodes)}</b>lectures</a>
+      <a class="thumb" href="#/pearls"><b>${num(s.n_pearls)}</b>pearls</a>
+      <a class="thumb danger" href="${href("clusters",{v:"conflict"})}"><b>${num(nconf)}</b>contradictions</a>
+      <a class="thumb" href="#/speakers"><b>${num(D.speakers.length)}</b>speakers</a>
+    </div>
+    <div class="row">
+      <div>
+        <div class="panel panel-primary"><div class="panel-heading"><h4>Newest lectures</h4></div>
+          <div class="list-group" style="margin:0;box-shadow:none">
+          ${latest.map(e=>`<a class="list-group-item" href="${link.lecture(e.slug)}" style="border-left:0;border-right:0">
+            <span class="badge" title="pearls">${e._np}</span>
+            <span class="lg-title">${esc(e.title)}</span>
+            <div class="meta">${esc(fmtDate(e._dt))} · ${esc(e.speaker)} · ${dur(e.duration_sec)}</div></a>`).join("")}
+          </div>
+          <div class="panel-footer"><a href="#/lectures">All ${num(s.n_episodes)} lectures →</a></div></div>
+        ${conf.length?`<div class="panel panel-danger"><div class="panel-heading"><h4>Where attendings disagree</h4></div>
+          <div class="list-group" style="margin:0;box-shadow:none">
+          ${conf.map((c,i)=>`<a class="list-group-item" style="border-left:0;border-right:0"
+              href="${href("clusters",{v:"conflict",open:i})}">
+            <span class="badge">${c.size}</span><span class="lg-title">${esc(c.label)}</span>
+            <div class="meta">${esc(c.speakers.join(", "))}</div></a>`).join("")}</div>
+          <div class="panel-footer"><a href="${href("clusters",{v:"conflict"})}">All ${nconf} contradictions →</a></div></div>`:""}
+      </div>
+      <div>
+        <div class="panel"><div class="panel-heading"><h4>Top-graded pearls, newest lectures</h4></div>
+          <div class="panel-body">${fresh.map(p=>pearlCard(p)).join("")||`<p class="muted">None yet.</p>`}</div>
+          <div class="panel-footer"><a href="${href("pearls",{grade:"A"})}">All grade A pearls →</a></div></div>
+      </div>
+    </div>`;
+}
 
 function pearlsView(){
-  // Collapsed by default: with ~4900 pearls the flat list buried the fact that
-  // there are distinct kinds. Headers show the categories at a glance; a section
-  // renders its cards only once opened, which also keeps the DOM small.
-  const by={};D.pearls.forEach(p=>(by[p.type]=by[p.type]||[]).push(p));
-  const order=Object.entries(by).sort((a,b)=>b[1].length-a[1].length);
-  const LBL={dosing:"Dosing",pitfall:"Pitfalls",red_flag:"Red flags",
-             exam_technique:"Exam technique",dx_criteria:"Diagnostic criteria",
-             practice:"Practice",judgment:"Clinical judgment"};
-  return `<div class="banner">${D.pearls.length} pearls in ${order.length} categories. Click a category to open it. Graded A-C by rule; D-grade excluded.</div>`
-   +order.map(([t,ps])=>{
-     const open=!!OPEN[t];
-     const best=ps.filter(p=>p.grade==="A").length;
-     return `<div class="card" style="padding:0;overflow:hidden">
-       <div onclick="togS('${t}')" class="phead">
-         <span style="font-size:13px;width:12px;color:var(--muted)">${open?"▾":"▸"}</span>
-         <b>${esc(LBL[t]||t)}</b>
-         <span class="chip">${ps.length}</span>
-         ${best?`<span class="chip" style="background:#5cb85c;color:#fff">${best} A</span>`:""}
-       </div>
-       ${open?`<div style="padding:0 12px 12px">${ps.map(pearlCard).join("")}</div>`:""}
-     </div>`;}).join("");
-}
-function clustersView(){
-  const cs=(D.clusters||[]).filter(c=>c.size>1);
-  if(!cs.length) return `<div class="banner">No clusters yet.</div>`;
-  const byId={}; D.pearls.forEach(p=>byId[p.pearl_id]=p);
-  const VC={conflict:"#d9534f",duplicate:"#777",consensus:"#5cb85c",related:"#337ab7"};
-  const nconf=cs.filter(c=>c.verdict==="conflict").length;
-  const rows=cs.map((c,i)=>{
-    const open=!!OPEN["c"+i];
-    const ps=c.pearl_ids.map(id=>byId[id]).filter(Boolean);
-    return `<div class="card" style="padding:0;overflow:hidden">
-      <div onclick="togS('c${i}')" class="phead" style="font-size:13.5px">
-        <span style="width:10px;color:var(--muted)">${open?"▾":"▸"}</span>
-        <span class="chip" style="background:${VC[c.verdict]};color:#fff;font-weight:700;
-              min-width:74px;text-align:center">${c.verdict}</span>
-        <b style="flex:1">${esc(c.label)}</b>
-        <span class="chip">${c.size}</span>
-        <span class="chip" style="max-width:190px;overflow:hidden;text-overflow:ellipsis"
-              >${esc(c.speakers.join(", "))}</span>
+  setTitle(T("pearls"));
+  const type=R.q.type||"", grade=R.q.grade||"", sort=R.q.sort||"grade";
+  let ps=D.pearls.filter(p=>(!type||p._type===type)&&(!grade||grade.includes(p.grade)));
+  if(sort==="new") ps=[...ps].sort((a,b)=>b._dt-a._dt||a.t-b.t);
+  const mk=o=>href("pearls",Object.assign({type,grade,sort:sort==="grade"?"":sort},o));
+  const g={A:0,B:0,C:0}; D.pearls.forEach(p=>{if(!type||p._type===type)g[p.grade]=(g[p.grade]||0)+1;});
+  return `<h2 style="margin-top:20px">${esc(T("pearls"))}</h2>
+    <p class="muted">Atomic teaching points pulled from the lectures, each anchored to the second it was said.
+      Graded A to C by fixed rules (specific, actionable, harm, non-obvious); D-grade filler is left out.</p>
+    <div class="side">
+      <div class="well">
+        <h5>Category</h5>
+        <div class="list-group">
+          <a class="list-group-item${type?"":" active"}" href="${mk({type:""})}"><span class="badge">${num(D.pearls.length)}</span>All categories</a>
+          ${TYPES.map(([t,n])=>`<a class="list-group-item${type===t?" active":""}" href="${mk({type:t})}">
+            <span class="badge">${num(n)}</span>${esc(TYPE_LBL[t]||t)}</a>`).join("")}
+        </div>
+        <h5>Grade</h5>
+        <div class="list-group">
+          ${[["","Any grade",g.A+g.B+g.C],["A","A only",g.A],["AB","A and B",g.A+g.B]].map(([v,l,n])=>
+            `<a class="list-group-item${grade===v?" active":""}" href="${mk({grade:v})}"><span class="badge">${num(n)}</span>${l}</a>`).join("")}
+        </div>
       </div>
-      ${open?`<div style="padding:0 12px 12px">${ps.map(pearlCard).join("")}</div>`:""}
-    </div>`;}).join("");
-  return `<div class="banner"><b>${cs.length}</b> groups of pearls that say nearly the same
-      thing. <b>${nconf}</b> contain a contradiction. Grouped by embedding similarity, then
-      each close pair judged. Labels are the vocabulary the pearls share.</div>${rows}`;
+      <div>
+        <div class="toolbar"><span class="grow muted">${num(ps.length)} pearls</span>
+          Sort ${btnGroup([["grade","Best first"],["new","Newest lecture"]],sort,v=>mk({sort:v==="grade"?"":v}))}</div>
+        ${ps.length?pearlList(ps,"pearls",null,25):`<p class="muted">${esc(T("no"))}</p>`}
+      </div>
+    </div>`;
 }
 
+function clustersView(){
+  setTitle(T("clusters"));
+  const all=(D.clusters||[]).filter(c=>c.size>1);
+  if(!all.length) return `<div class="alert alert-info" style="margin-top:20px">No clusters yet.</div>`;
+  const v=R.q.v||"";
+  const cs=all.filter(c=>!v||c.verdict===v);
+  const cnt={}; all.forEach(c=>cnt[c.verdict]=(cnt[c.verdict]||0)+1);
+  if(R.q.open!=null&&!OPEN["c"+v+R.q.open]) OPEN["c"+v+R.q.open]=true;
+  const n=lim("clusters",40);
+  const rows=cs.slice(0,n).map((c,i)=>{
+    const k="c"+v+i, open=!!OPEN[k];
+    const ps=c.pearl_ids.map(id=>BYID[id]).filter(Boolean);
+    const confl=(c.relations||[]).filter(r=>r.verdict==="conflict");
+    return `<div class="panel" style="margin-bottom:8px">
+      <div class="panel-heading toggle-head" onclick="togS('${k}')" style="${open?"":"border-bottom:0;border-radius:3px"}">
+        <h4 style="font-size:14px"><span class="caret">${open?"▼":"►"}</span>
+        <span class="label label-${VERDICT_CLS[c.verdict]}" style="min-width:76px">${VERDICT_LBL[c.verdict]||c.verdict}</span>
+        <span style="flex:1">${esc(c.label)}</span>
+        <span class="badge" title="pearls">${c.size}</span></h4>
+        <div class="meta" style="margin:4px 0 0 18px">${esc(c.speakers.join(", "))}</div>
+      </div>
+      ${open?`<div class="panel-body">${clusterBody(c,ps,confl)}</div>`:""}
+    </div>`;}).join("");
+  return `<h2 style="margin-top:20px">${esc(T("clusters"))}</h2>
+    <p class="muted">Pearls from different lectures that say nearly the same thing, grouped by meaning, then each
+      close pair judged. A <b>conflict</b> means two attendings gave guidance you could not follow at once;
+      both sides are kept and attributed, never reconciled for you.</p>
+    <div class="toolbar">${btnGroup([["","All "+all.length],...["conflict","duplicate","consensus","related"]
+      .filter(x=>cnt[x]).map(x=>[x,`${VERDICT_LBL[x]} ${cnt[x]}`])],v,x=>href("clusters",{v:x}))}</div>
+    ${rows}${moreBtn("clusters",Math.min(n,cs.length),cs.length,40)}`;
+}
+// Conflicting pairs are shown side by side under the judge's reason, so it is clear
+// exactly which two statements disagree; the rest of the group follows.
+function clusterBody(c,ps,confl){
+  const used=new Set();
+  const pairs=confl.map(r=>{const a=BYID[r.a],b=BYID[r.b]; if(!a||!b) return "";
+    used.add(r.a);used.add(r.b);
+    return `<div class="alert alert-danger" style="padding:8px 12px;font-size:13px;margin-bottom:8px">
+        <b>Why these conflict:</b> ${esc(r.why)}</div><div class="vs">${pearlCard(a)}${pearlCard(b)}</div>`;}).join("");
+  const rest=ps.filter(p=>!used.has(p.pearl_id));
+  return pairs+(rest.length?(pairs?`<h5 class="sub">Also in this group</h5>`:"")+rest.map(p=>pearlCard(p)).join(""):"");
+}
+function togS(k){OPEN[k]=!OPEN[k];render(true);}
+
 // Concept map. Layout is precomputed at build time (scripts/build_graph.py) so the
-// page never runs a force simulation -- it is instant, and identical for everyone.
-let G=null, GDOM=null;
+// page never runs a force simulation: it is instant, and identical for everyone.
+let G=null;
 function mapView(){
-  if(!G){ fetch("graph.json").then(r=>r.json()).then(g=>{G=g;render();});
-          return `<p class="muted">loading concept map…</p>`; }
-  const shown=G.nodes.filter(n=>!GDOM||n.domain===GDOM);
+  setTitle(T("map"));
+  if(!G){ fetch("graph.json").then(r=>r.json()).then(g=>{G=g;if(R.view==="map")render();})
+            .catch(()=>{$("view").innerHTML=`<div class="alert alert-danger" style="margin-top:20px">Could not load the concept map.</div>`});
+          return `<div class="progress"><div class="progress-bar"></div></div>`; }
+  const dom=R.q.d||"";
+  const shown=G.nodes.filter(n=>!dom||n.domain===dom);
   const ids=new Set(shown.map(n=>n.id));
   const links=G.links.filter(l=>ids.has(l.s)&&ids.has(l.t));
   const pos={}; G.nodes.forEach(n=>pos[n.id]=n);
   const r=n=>Math.max(4,Math.min(26,3.2*Math.sqrt(n.n)));
   const legend=G.domains.map(([d,c])=>
-    `<span class="chip t" onclick="setDom('${d.replace(/'/g,"")}')"
-      style="background:${G.colors[d]||'#6b7280'};color:#fff;${GDOM&&GDOM!==d?'opacity:.35':''}">${esc(d)} ${c}</span>`).join("");
-  return `<div class="banner"><b>${G.nodes.length}</b> concepts taught in ${G.min_episodes}+ lectures.
-      Lines join concepts taught together; thicker lines mean more shared lectures.
-      Circle size shows how many lectures cover it. Click a concept to open it.</div>
-    <div style="margin:10px 0">${legend}
-      ${GDOM?`<span class="chip t" onclick="setDom(null)"><b>clear filter</b></span>`:""}</div>
-    <div class="card" style="padding:6px;overflow:auto">
-    <svg viewBox="0 0 ${G.w} ${G.h}" style="width:100%;height:auto;min-height:420px" role="img">
+    `<a class="label" href="${href("map",{d:dom===d?"":d})}"
+      style="background:${G.colors[d]||"#6b7280"};display:inline-block;margin:0 4px 6px 0;padding:.35em .7em;${dom&&dom!==d?"opacity:.35":""}">${esc(d)} ${c}</a>`).join("");
+  return `<h2 style="margin-top:20px">Concept map</h2>
+    <p class="muted"><b>${G.nodes.length}</b> concepts taught in ${G.min_episodes}+ lectures. Lines join concepts taught
+      together; circle size is how many lectures cover it. Click a colour to filter, a circle to open the concept.</p>
+    <div style="margin:10px 0">${legend}${dom?` <a class="btn btn-default btn-xs" href="#/map">clear filter</a>`:""}</div>
+    <div class="panel" style="padding:6px;overflow:auto">
+    <svg viewBox="0 0 ${G.w} ${G.h}" style="width:100%;height:auto;min-height:420px;color:#333" role="img" aria-label="Concept map">
       <g stroke-linecap="round">
-      ${links.map(l=>{const a=pos[l.s],b=pos[l.t];
-        const br=l.kind==="branch";
+      ${links.map(l=>{const a=pos[l.s],b=pos[l.t];const br=l.kind==="branch";
         return `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}"
-          stroke="${br?(a.color||'#888'):'currentColor'}"
+          stroke="${br?(a.color||"#888"):"currentColor"}"
           stroke-opacity="${br?0.75:Math.min(0.32,0.06+l.w*0.05)}"
           stroke-width="${br?2.2:Math.min(3,0.5+l.w*0.35)}"/>`;}).join("")}
       </g>
-      ${shown.map(n=>`<g style="cursor:pointer" onclick="go('topic','${n.slug}')">
+      ${shown.map(n=>`<a href="${link.topic(n.slug)}">
           <title>${esc(n.label)}. ${n.n} lectures (${esc(n.domain)})</title>
-          <circle cx="${n.x}" cy="${n.y}" r="${r(n)}" fill="${n.color}"
-                  fill-opacity=".85" stroke="var(--panel)" stroke-width="1.5"/>
-          ${n.n>=6?`<text x="${n.x}" y="${n.y-r(n)-4}" text-anchor="middle"
-             font-size="13" fill="currentColor" opacity=".85">${esc(n.label.slice(0,26))}</text>`:""}
-        </g>`).join("")}
+          <circle cx="${n.x}" cy="${n.y}" r="${r(n)}" fill="${n.color}" fill-opacity=".85" stroke="#fff" stroke-width="1.5"/>
+          ${n.n>=6?`<text x="${n.x}" y="${n.y-r(n)-4}" text-anchor="middle" font-size="13" fill="currentColor" opacity=".85">${esc(n.label.slice(0,26))}</text>`:""}
+        </a>`).join("")}
     </svg></div>`;
 }
-function setDom(d){GDOM=d;render();}
 
 function topicsView(){
-  return `<div class="grid">`+D.topics.map(t=>
-    `<div class="card" style="cursor:pointer" onclick="go('topic','${t.slug}')">
-      <b>${esc(t.label)}</b><div class="meta">${t.episodes.length} ${T("talks")} · ${esc(t.kind)}</div>
-     </div>`).join("")+`</div>`;
-}
-function topicView(slug){
-  const t=D.topics.find(x=>x.slug===slug);if(!t)return T("no");
-  const eps=t.episodes.map(s=>D.episodes.find(e=>e.slug===s)).filter(Boolean);
-  const ps=D.pearls.filter(p=>t.episodes.includes(p.episode));
-  return `<h2>${esc(t.label)}</h2><p class="muted small">${eps.length} ${T("talks")} · ${ps.length} ${T("pearls")}</p>`
-    +eps.map(e=>`<div class="card"><a href="#" onclick="go('episode','${e.slug}');return false"><b>${esc(e.title)}</b></a>
-       <div class="meta">${esc(e.speaker)} · ${esc(e.pubDate||"")}</div></div>`).join("")
-    +`<h3 style="margin-top:22px">${T("pearls")}</h3>`+ps.map(pearlCard).join("");
-}
-function speakersView(){
-  return `<div class="grid">`+D.speakers.map(s=>
-    `<div class="card" style="cursor:pointer" onclick="go('speaker','${esc(s.name)}')">
-      <b>${esc(s.name)}</b><div class="meta">${s.episodes.length} ${T("talks")}</div></div>`).join("")+`</div>`;
-}
-function speakerView(name){
-  const eps=D.episodes.filter(e=>e.speaker===name);
-  const ps=D.pearls.filter(p=>p.speaker===name);
-  return `<h2>${esc(name)}</h2><p class="muted small">${eps.length} ${T("talks")} · ${ps.length} ${T("pearls")}</p>`
-   +eps.map(e=>`<div class="card"><a href="#" onclick="go('episode','${e.slug}');return false"><b>${esc(e.title)}</b></a>
-     <div class="meta">${esc(e.pubDate||"")}</div></div>`).join("")
-   +ps.map(pearlCard).join("");
-}
-function episodesView(){
-  return D.episodes.map(e=>`<div class="card">
-    <a href="#" onclick="go('episode','${e.slug}');return false"><b>${esc(e.title)}</b></a>
-    <div class="meta">${esc(e.speaker)} · ${mmss(e.duration_sec)} · ${esc(e.pubDate||"")}
-      · <a href="${esc(e.link)}" target="_blank" rel="noopener">${T("src")} ↗</a></div>
-    <div class="small" style="margin-top:8px">${esc((tr(e,"abstract",e.slug)||"").slice(0,260))}</div></div>`).join("");
-}
-// Archive: every lecture sorted by date, with a month calendar for quick jumps.
-// pubDate is RFC-2822, which Date parses natively; days are keyed YYYY-MM-DD.
-let CAL=null; // {y,m} of the month currently shown in the calendar
-const LOC={en:"en-US",ko:"ko-KR",fr:"fr-FR",de:"de-DE"};
-function dkey(dt){return dt.getFullYear()+"-"+String(dt.getMonth()+1).padStart(2,"0")
-  +"-"+String(dt.getDate()).padStart(2,"0")}
-function calMove(dm,dy){
-  let m=CAL.m+dm,y=CAL.y+dy;
-  while(m<0){m+=12;y--} while(m>11){m-=12;y++}
-  CAL={y,m};render();
-}
-function jumpDay(k){
-  const el=document.getElementById("day-"+k);
-  if(!el)return;
-  el.scrollIntoView({block:"center"});
-  el.classList.add("flash");setTimeout(()=>el.classList.remove("flash"),1600);
-}
-function archiveView(){
-  const eps=D.episodes.map(e=>({e,dt:e.pubDate?new Date(e.pubDate):null}))
-    .sort((a,b)=>(b.dt?+b.dt:0)-(a.dt?+a.dt:0));
-  const byDay={};
-  eps.forEach(x=>{if(x.dt)(byDay[dkey(x.dt)]=byDay[dkey(x.dt)]||[]).push(x.e)});
-  if(!CAL){const n=eps.find(x=>x.dt);CAL=n?{y:n.dt.getFullYear(),m:n.dt.getMonth()}:{y:2025,m:0};}
-  const loc=LOC[LANG]||"en-US";
-  const first=new Date(CAL.y,CAL.m,1);
-  const startDow=(first.getDay()+6)%7; // week starts Monday
-  const ndays=new Date(CAL.y,CAL.m+1,0).getDate();
-  const dows=[...Array(7)].map((_,i)=>new Date(2024,0,1+i) // 2024-01-01 was a Monday
-    .toLocaleString(loc,{weekday:"short"}));
-  let cells="";
-  for(let i=0;i<startDow;i++)cells+="<td></td>";
-  for(let d=1;d<=ndays;d++){
-    const k=CAL.y+"-"+String(CAL.m+1).padStart(2,"0")+"-"+String(d).padStart(2,"0");
-    const n=(byDay[k]||[]).length;
-    cells+=n?`<td class="has"><a href="#" title="${n}" onclick="jumpDay('${k}');return false">${d}</a></td>`
-            :`<td class="nil">${d}</td>`;
-    if((startDow+d)%7===0)cells+="</tr><tr>";
-  }
-  const cal=`<div class="card">
-    <div class="calhead">
-      <button onclick="calMove(0,-1)" title="year">&#171;</button>
-      <button onclick="calMove(-1,0)" title="month">&#8249;</button>
-      <b>${esc(first.toLocaleString(loc,{month:"long",year:"numeric"}))}</b>
-      <button onclick="calMove(1,0)" title="month">&#8250;</button>
-      <button onclick="calMove(0,1)" title="year">&#187;</button>
+  setTitle(T("topics"));
+  const l=R.q.l||"", all=R.q.min==="1";
+  let ts=D.topics.filter(t=>all||t.episodes.length>=2);
+  const pool=ts.length;
+  if(l==="#") ts=ts.filter(t=>!/^[a-z]/.test(t._l));
+  else if(l) ts=ts.filter(t=>t._l.startsWith(l.toLowerCase()));
+  else ts=ts.slice(0,90);                     // already sorted by lecture count
+  if(l) ts=[...ts].sort((a,b)=>a._l.localeCompare(b._l));
+  const letters=["","#",..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+  const n=lim("topics",150);
+  return `<h2 style="margin-top:20px">${esc(T("topics"))}</h2>
+    <p class="muted">${num(D.topics.length)} topics named across the lectures. ${all?"":`Showing the ${num(pool)} taught in two or more.`}</p>
+    <div class="toolbar">
+      ${btnGroup([["","Taught in 2+"],["1","All"]],all?"1":"",v=>href("topics",{l,min:v}))}
     </div>
-    <table class="cal"><tr>${dows.map(d=>`<th>${esc(d)}</th>`).join("")}</tr>
-    <tr>${cells}</tr></table></div>`;
-  let lastDay="";
-  const rows=eps.map(x=>{
-    const k=x.dt?dkey(x.dt):"";
-    const anchor=(k&&k!==lastDay)?` id="day-${k}"`:"";
-    if(k)lastDay=k;
-    const date=x.dt?esc(x.e.pubDate.slice(5,16)):". ";
-    return `<div class="card ep-row"${anchor}>
-      <a href="#" onclick="go('episode','${x.e.slug}');return false"><b>${esc(x.e.title)}</b></a>
-      <div class="meta">${date} · ${esc(x.e.speaker)} · ${mmss(x.e.duration_sec)}
-        · <a href="${esc(x.e.link)}" target="_blank" rel="noopener">${T("src")} ↗</a></div>
-    </div>`;}).join("");
-  return `<div class="banner">${D.episodes.length} ${T("talks")}. ${T("arch_h")}</div>`+cal+rows;
+    <ul class="pagination">${letters.map(x=>`<li><a class="${x===l?"on":""}" href="${href("topics",{l:x,min:all?"1":""})}">${x||"Most taught"}</a></li>`).join("")}</ul>
+    ${ts.length?`<div class="cols"><div class="list-group">`+ts.slice(0,n).map(t=>
+      `<a class="list-group-item" href="${link.topic(t.slug)}"><span class="badge" title="lectures">${t.episodes.length}</span>
+        <span class="lg-title">${esc(t.label)}</span></a>`).join("")+`</div></div>`+moreBtn("topics",Math.min(n,ts.length),ts.length,150)
+      :`<p class="muted">${esc(T("no"))}</p>`}`;
 }
-// Per-episode detail (transcript/segments/vectors) is fetched on demand and
-// cached, so the initial load stays small as the corpus grows.
+function topicView(){
+  const t=D.topics.find(x=>x.slug===R.id); if(!t) return notFound();
+  setTitle(t.label);
+  const eps=t.episodes.map(s=>EP[s]).filter(Boolean).sort((a,b)=>b._dt-a._dt);
+  const q=t._l.length>3?t._l:"";
+  const ps=eps.flatMap(e=>PBYEP[e.slug]||[]);
+  // Pearls that mention the topic by name first, then the rest from the same lectures.
+  const named=q?ps.filter(p=>p._s.includes(q)):[];
+  const rest=ps.filter(p=>!named.includes(p)).sort((a,b)=>b.points-a.points);
+  return crumbs([T("topics"),"#/topics"],[t.label])+
+    `<h2>${esc(t.label)}</h2><p class="muted">${eps.length} ${esc(T("talks"))} · ${ps.length} ${esc(T("pearls"))}</p>
+    ${lectureRows(eps)}
+    ${named.length?`<h3>Pearls about ${esc(t.label)} <small class="muted">(${named.length})</small></h3>${pearlList(named,"tn",q,15)}`:""}
+    ${rest.length?`<h3>${named.length?"More pearls from these lectures":esc(T("pearls"))} <small class="muted">(${rest.length})</small></h3>${pearlList(rest,"tr",null,15)}`:""}`;
+}
+
+function speakersView(){
+  setTitle(T("speakers"));
+  const sp=Object.values(SPK).sort((a,b)=>b.eps.length-a.eps.length||a.name.localeCompare(b.name));
+  return `<h2 style="margin-top:20px">${esc(T("speakers"))}</h2>
+    <p class="muted">Names come from episode titles and are not yet reconciled, so one physician may appear twice.</p>
+    <div class="scroll"><table class="table-striped table-hover"><thead><tr><th>Speaker</th>
+      <th class="num">Lectures</th><th class="num">Pearls</th><th class="num">Most recent</th></tr></thead><tbody>
+    ${sp.map(s=>`<tr><td><a href="${link.speaker(s.name)}">${esc(s.name)}</a></td><td class="num">${s.eps.length}</td>
+      <td class="num">${num(s.np)}</td><td class="num">${esc(fmtDate(s.latest))}</td></tr>`).join("")}
+    </tbody></table></div>`;
+}
+function speakerView(){
+  const s=SPK[R.id]; if(!s) return notFound();
+  setTitle(s.name);
+  const eps=[...s.eps].sort((a,b)=>b._dt-a._dt);
+  const ps=eps.flatMap(e=>PBYEP[e.slug]||[]).sort((a,b)=>b.points-a.points||b._dt-a._dt);
+  return crumbs([T("speakers"),"#/speakers"],[s.name])+
+    `<h2>${esc(s.name)}</h2><p class="muted">${eps.length} ${esc(T("talks"))} · ${num(ps.length)} ${esc(T("pearls"))}</p>
+    ${lectureRows(eps,{noSpeaker:true})}
+    <h3>${esc(T("pearls"))} <small class="muted">(${num(ps.length)}, best first)</small></h3>${pearlList(ps,"sp",null,20)}`;
+}
+
+// Lectures: sortable table with a month calendar alongside for date jumps.
+let CAL=null;
+function calMove(dm){let m=CAL.m+dm,y=CAL.y;while(m<0){m+=12;y--}while(m>11){m-=12;y++}CAL={y,m};render(true);}
+function dkey(t){const d=new Date(t);return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
+let LFILTER="";
+function lecturesView(){
+  setTitle(T("episodes"));
+  const sort=R.q.sort||"date", dir=R.q.dir||(sort==="date"||sort==="pearls"||sort==="len"?"desc":"asc"), day=R.q.day||"";
+  const f=LFILTER.toLowerCase();
+  let eps=D.episodes.filter(e=>(!day||dkey(e._dt)===day)&&(!f||(e.title+" "+e.speaker).toLowerCase().includes(f)));
+  const key={date:e=>e._dt,title:e=>e.title.toLowerCase(),speaker:e=>e.speaker.toLowerCase(),len:e=>e.duration_sec,pearls:e=>e._np}[sort]||(e=>e._dt);
+  eps=[...eps].sort((a,b)=>{const x=key(a),y=key(b);return (x<y?-1:x>y?1:0)*(dir==="asc"?1:-1)||b._dt-a._dt;});
+  const th=(k,l,cls)=>{const on=sort===k, nd=on?(dir==="asc"?"desc":"asc"):(k==="date"||k==="pearls"||k==="len"?"desc":"asc");
+    return `<th class="${cls||""}"><a class="${on?"on":""}" href="${href("lectures",{sort:k,dir:nd,day})}">${l}${on?(dir==="asc"?" ▲":" ▼"):""}</a></th>`;};
+  // calendar
+  const byDay={}; D.episodes.forEach(e=>{if(e._dt)(byDay[dkey(e._dt)]=byDay[dkey(e._dt)]||[]).push(e)});
+  if(!CAL){const d=new Date(day?Date.parse(day+"T12:00"):NEWEST[0]._dt||Date.now());CAL={y:d.getFullYear(),m:d.getMonth()};}
+  const first=new Date(CAL.y,CAL.m,1), startDow=(first.getDay()+6)%7, ndays=new Date(CAL.y,CAL.m+1,0).getDate();
+  let cells="<tr>"+"<td></td>".repeat(startDow);
+  for(let d=1;d<=ndays;d++){
+    const k=CAL.y+"-"+String(CAL.m+1).padStart(2,"0")+"-"+String(d).padStart(2,"0"), n=(byDay[k]||[]).length;
+    cells+=n?`<td class="has${k===day?" sel":""}"><a href="${href("lectures",{sort:R.q.sort,dir:R.q.dir,day:k===day?"":k})}" title="${n} lecture(s)">${d}</a></td>`
+            :`<td class="nil">${d}</td>`;
+    if((startDow+d)%7===0&&d<ndays)cells+="</tr><tr>";
+  }
+  cells+="</tr>";
+  const inMonth=Object.keys(byDay).filter(k=>k.startsWith(CAL.y+"-"+String(CAL.m+1).padStart(2,"0"))).reduce((n,k)=>n+byDay[k].length,0);
+  const n=lim("lectures",100);
+  return `<h2 style="margin-top:20px">${esc(T("episodes"))}</h2>
+    <div class="side-r">
+      <div>
+        <div class="toolbar">
+          <input class="form-control grow" id="lf" type="search" placeholder="Filter by title or speaker" value="${esc(LFILTER)}"
+                 oninput="LFILTER=this.value;render(true);const i=$('lf');i.focus();i.setSelectionRange(i.value.length,i.value.length)">
+          ${day?`<a class="btn btn-default btn-sm" href="${href("lectures",{sort:R.q.sort,dir:R.q.dir})}">✕ ${esc(fmtDate(Date.parse(day+"T12:00")))}</a>`:""}
+        </div>
+        <p class="muted small">${eps.length} of ${D.episodes.length} lectures</p>
+        <div class="scroll"><table class="table-striped table-hover"><thead><tr>
+          ${th("date","Date")}${th("title","Lecture")}${th("speaker","Speaker")}${th("len","Length","num")}${th("pearls","Pearls","num")}
+        </tr></thead><tbody>
+        ${eps.slice(0,n).map(e=>`<tr><td class="nw">${esc(fmtDate(e._dt))}</td>
+          <td><a href="${link.lecture(e.slug)}">${f?hl(e.title,LFILTER):esc(e.title)}</a></td>
+          <td><a href="${link.speaker(e.speaker)}">${f?hl(e.speaker,LFILTER):esc(e.speaker)}</a></td>
+          <td class="num">${dur(e.duration_sec)}</td><td class="num">${e._np}</td></tr>`).join("")}
+        </tbody></table></div>${moreBtn("lectures",Math.min(n,eps.length),eps.length,100)}
+      </div>
+      <div class="panel"><div class="panel-heading"><h4>Calendar</h4></div><div class="panel-body">
+        <div class="calhead">
+          <button class="btn btn-default btn-xs" onclick="calMove(-12)" title="Previous year">«</button>
+          <button class="btn btn-default btn-xs" onclick="calMove(-1)" title="Previous month">‹</button>
+          <b>${esc(first.toLocaleString("en-US",{month:"long",year:"numeric"}))}</b>
+          <button class="btn btn-default btn-xs" onclick="calMove(1)" title="Next month">›</button>
+          <button class="btn btn-default btn-xs" onclick="calMove(12)" title="Next year">»</button>
+        </div>
+        <table class="cal"><tr>${["Mo","Tu","We","Th","Fr","Sa","Su"].map(d=>`<th>${d}</th>`).join("")}</tr>${cells}</table>
+        <p class="muted small" style="margin:8px 0 0">${inMonth} lecture(s) posted this month. Click a day to filter.</p>
+      </div></div>
+    </div>`;
+}
+
+// Per-episode detail (transcript/segments) is fetched on demand and cached, so the
+// initial load stays small as the corpus grows.
 const EPC={};
 function loadEp(slug){
   if(EPC[slug]) return Promise.resolve(EPC[slug]);
-  return fetch(`ep/${slug}.json`).then(r=>r.json()).then(d=>(EPC[slug]=d));
+  return fetch(`ep/${slug}.json`).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(d=>(EPC[slug]=d));
 }
-function episodeView(slug){
-  const e=D.episodes.find(x=>x.slug===slug);if(!e)return T("no");
-  const ps=D.pearls.filter(p=>p.episode===slug);
-  const kp=tr(e,"key_points",slug)||[];
-  const mt=(LANG!=="en"&&e.i18n&&e.i18n[LANG])?`<div class="banner">${T("mt")}</div>`:"";
-  const det=EPC[slug];
-  if(!det) loadEp(slug).then(()=>{ if(SEL&&SEL.id===slug) render(); });
+let PENDING_PLAY=false;
+function lectureView(){
+  const e=EP[R.id]; if(!e) return notFound();
+  setTitle(e.title);
+  const ps=PBYEP[e.slug]||[];
+  const kp=tr(e,"key_points",e.slug)||[];
+  const mt=(LANG!=="en"&&e.i18n&&e.i18n[LANG])?`<div class="alert alert-warning">${esc(T("mt"))}</div>`:"";
+  const det=EPC[e.slug];
+  if(!det) loadEp(e.slug).then(()=>{ if(R.view==="lecture"&&R.id===e.slug) render(true); })
+            .catch(()=>{const b=$("tx");if(b)b.innerHTML=`<div class="alert alert-danger">Could not load the transcript.</div>`;});
   const body=det
-    ? det.segments.map(s=>`<div class="seg"><span class="ts" onclick="seek('${slug}',${s.t})">${mmss(s.t)}</span>
-        <span>${esc(s.text)}</span></div>`).join("")
-    : `<span class="muted">…</span>`;
-  return `<h2>${esc(e.title)}</h2>
-    <p class="muted small">${esc(e.speaker)} · ${mmss(e.duration_sec)} · ${esc(e.pubDate||"")}
-      · <a href="${esc(e.link)}" target="_blank" rel="noopener">${T("src")} ↗</a></p>
+    ? det.segments.map((s,i)=>`<div class="seg" id="s${i}" data-t="${s.t}"><a class="ts" href="${link.lecture(e.slug,s.t)}"
+        onclick="return seekLink(event,'${e.slug}',${s.t})">${mmss(s.t)}</a><span>${esc(s.text)}</span></div>`).join("")
+    : `<div class="progress" style="margin:20px auto"><div class="progress-bar"></div></div>`;
+  return crumbs([T("episodes"),"#/lectures"],[e.title])+
+    `<h2>${esc(e.title)}</h2>
+    <p class="muted"><a href="${link.speaker(e.speaker)}">${esc(e.speaker)}</a> · ${esc(fmtDate(e._dt))} · ${dur(e.duration_sec)}
+      · ${ps.length} ${esc(T("pearls").toLowerCase())} · <a href="${esc(e.link)}" target="_blank" rel="noopener">Podbean page ↗</a></p>
     ${mt}
-    <audio id="au-${slug}" controls preload="none" src="${AUDIO(slug)}"></audio>
-    <div class="card"><b>${T("abstract")}</b><p>${esc(tr(e,"abstract",slug))}</p>
-      <b>${T("keyp")}</b><ul>${kp.map(k=>`<li>${esc(k)}</li>`).join("")}</ul></div>
-    <h3>${T("pearls")} <span class="muted small">(${ps.length})</span></h3>${ps.map(pearlCard).join("")}
-    <h3>${T("transcript")}</h3><div class="card">${body}</div>`;
+    <div class="player">
+      <audio id="player" controls preload="none" src="${esc(e.enclosure||"")}"></audio>
+      <div class="meta"><span id="nowat">Click any timestamp to play from that moment.</span>
+        <span><button class="linkish" onclick="copyAt()">copy link to this moment</button></span></div>
+    </div>
+    <div class="row">
+      <div class="panel"><div class="panel-heading"><h4>${esc(T("abstract"))}</h4></div>
+        <div class="panel-body">${esc(tr(e,"abstract",e.slug))||`<span class="muted">No abstract.</span>`}</div></div>
+      <div class="panel"><div class="panel-heading"><h4>${esc(T("keyp"))}</h4></div>
+        <div class="panel-body"><ul style="margin:0;padding-left:20px">${kp.map(k=>`<li>${esc(k)}</li>`).join("")}</ul></div></div>
+    </div>
+    <div class="side-r" style="grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+      <div><h3 style="margin-top:0">${esc(T("pearls"))} <small class="muted">(${ps.length}, in order)</small></h3>
+        ${ps.map(p=>pearlCard(p,null,{inLecture:true})).join("")||`<p class="muted">No pearls from this lecture.</p>`}</div>
+      <div><h3 style="margin-top:0">${esc(T("transcript"))}
+          <small><button class="linkish" onclick="toNow()">jump to playing</button></small></h3>
+        <div class="panel transcript" id="tx">${body}</div></div>
+    </div>`;
 }
+function playerAt(t,play){
+  const a=$("player"); if(!a) return;
+  const go=()=>{a.currentTime=t; if(play) a.play().catch(()=>{});};
+  if(a.readyState>=1) go();
+  else { a.addEventListener("loadedmetadata",go,{once:true}); a.preload="metadata"; a.load(); }
+  markSeg(t,true);
+}
+function seekLink(ev,slug,t){
+  if(ev&&(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button===1)) return true;   // let new-tab clicks through
+  if(R.view==="lecture"&&R.id===slug){
+    history.replaceState(null,"",link.lecture(slug,t)); R.t=t; playerAt(t,true); return false;
+  }
+  PENDING_PLAY=true; return true;
+}
+let SEGT=[];
+function afterLecture(){
+  const a=$("player"); if(!a) return;
+  SEGT=[...document.querySelectorAll("#tx .seg")].map(x=>+x.dataset.t);
+  // While loading, the element reports 0:00; ignore that so a seek's highlight sticks.
+  a.ontimeupdate=()=>{if(a.paused&&a.currentTime===0) return;
+    markSeg(a.currentTime,false);
+    const n=$("nowat"); if(n) n.textContent=(a.paused?"Paused at ":"Playing at ")+mmss(a.currentTime);};
+  if(R.t!=null){
+    if(PENDING_PLAY||!a.paused) playerAt(R.t,true);
+    else{ markSeg(R.t,true); const n=$("nowat"); if(n) n.textContent="Press play to start at "+mmss(R.t);
+          a.addEventListener("play",function once(){a.removeEventListener("play",once);
+            if(a.currentTime<1&&R.t) a.currentTime=R.t;});}
+  }
+  PENDING_PLAY=false;
+}
+let NOWSEG=-1;
+function markSeg(t,scroll){
+  if(!SEGT.length) return;
+  let lo=0,hi=SEGT.length-1,i=0;
+  while(lo<=hi){const m=(lo+hi)>>1; if(SEGT[m]<=t+0.3){i=m;lo=m+1}else hi=m-1;}
+  if(i===NOWSEG&&!scroll) return;
+  const old=$("s"+NOWSEG); if(old) old.classList.remove("now");
+  NOWSEG=i; const el=$("s"+i); if(!el) return;
+  el.classList.add("now");
+  if(scroll){const box=$("tx"); box.scrollTop=el.offsetTop-box.offsetTop-box.clientHeight/3;}
+}
+function toNow(){const a=$("player"); markSeg(a?a.currentTime:0,true);}
+function copyAt(){
+  const a=$("player"); const t=a&&a.currentTime?a.currentTime:(R.t||0);
+  const url=location.href.split("#")[0]+link.lecture(R.id,t);
+  const done=()=>{const n=$("nowat"); if(n) n.textContent="Link copied ("+mmss(t)+")";};
+  if(navigator.clipboard) navigator.clipboard.writeText(url).then(done,()=>prompt("Copy this link:",url));
+  else prompt("Copy this link:",url);
+}
+
 function aboutView(){
+  setTitle(T("about"));
   const e=D.episodes[0]||{}; const s=D.stats;
-  const row=(a,b)=>`<tr><td style="white-space:nowrap"><b>${a}</b></td><td>${b}</td></tr>`;
-  return `
-  <div class="banner danger"><b>Unverified teaching material.</b> Transcripts are machine-generated
+  const row=(a,b)=>`<tr><td class="nw"><b>${a}</b></td><td>${b}</td></tr>`;
+  const loaded=Object.keys(EPC).length;
+  return `<h2 style="margin-top:20px">${esc(T("about"))}</h2>
+  <div class="alert alert-danger"><b>Unverified teaching material.</b> Transcripts are machine-generated
     and machine-corrected, and pearls are machine-extracted. Every pearl links to the exact
     second it was spoken. Verify doses and numbers against the source audio before acting
     on them. This is a study aid, not a clinical reference.</div>
-
-  <div class="card"><b>What this is</b>
-    <p>${s.n_episodes} lectures (${s.hours} hours, ${s.words.toLocaleString()} words) from the
+  <div class="panel"><div class="panel-heading"><h4>What this is</h4></div><div class="panel-body">
+    ${num(s.n_episodes)} lectures (${s.hours} hours, ${num(s.words)} words) from the
     Hope Partnerships International residency lecture series, transcribed and cross-linked so
     they can be searched, compared and cited. Lectures are public and the speaking physicians
-    consent to publication.
-    <a href="https://hopepartners.podbean.com/" target="_blank" rel="noopener">Original feed ↗</a></p></div>
-
-  <div class="card"><b>How it was built</b>
-   <div class="scroll"><table>
-    ${row("1 · Fetch","The public RSS feed is polled and each episode keyed on its GUID, which is stable across re-uploads. Audio is extracted from the source video with ffmpeg to 24 kbps mono; the video is deleted immediately, so no media is retained beyond the audio track.")}
-    ${row("2 · Transcribe","Deepgram <code>nova-3-medical</code>, a clinically-tuned model, with word-level timestamps, speaker diarization and keyterm boosting on drug names. Word timings are what make every pearl deep-linkable.")}
+    consent to publication. New lectures are picked up from the feed automatically every day.
+    <a href="https://hopepartners.podbean.com/" target="_blank" rel="noopener">Original feed ↗</a></div></div>
+  <div class="panel"><div class="panel-heading"><h4>How it was built</h4></div>
+   <div class="scroll"><table class="table-striped" style="margin:0">
+    ${row("1 · Fetch","The public RSS feed is polled daily and each episode keyed on its GUID, which is stable across re-uploads. Audio is extracted from the source video with ffmpeg to 24 kbps mono; the video is deleted immediately.")}
+    ${row("2 · Transcribe","Deepgram <code>nova-3-medical</code>, a clinically-tuned model, with word-level timestamps and speaker diarization. Word timings are what make every pearl deep-linkable.")}
     ${row("3 · Repair","ASR still mangles drug names. A language model proposes corrections but never rewrites the text: it returns a list of replacements, applied deterministically with word-boundary matching, a minimum token length and a per-fix hit ceiling. The raw transcript is always retained, and every applied and rejected fix is logged below.")}
     ${row("4 · Enrich","A language model extracts an abstract, key points, topics and candidate pearls, and must quote the exact transcript span each pearl came from.")}
-    ${row("5 · Anchor","Each pearl's quoted span is located in the word-timed transcript: exact match first, then a bounded fuzzy search. A pearl whose source cannot be located is <b>dropped</b>, never shown with a guessed timestamp. This is the rule the whole design rests on: no unanchored clinical claim.")}
-    ${row("6 · Grade","Pure rules, no model. Five signals: specific, actionable, harm, non-obvious, plus an institution-local <b>veto</b> that forces grade D (medication storage, paging, scheduling, room names). Reproducible by construction rather than by measurement; an earlier model-based grader was discarded after scoring only 53% agreement with itself. Grade D is excluded from this site; C is shown but ranked below A and B.")}
-    ${row("7 · Index","Concepts are resolved against <b>MeSH</b>, the US National Library of Medicine vocabulary that indexes PubMed. Domain and hierarchy come from MeSH tree numbers, and each concept keeps a stable MeSH identifier that survives reprocessing. 90% of concepts appearing in three or more lectures resolve; the remainder fall back to a keyword table.")}
-    ${row("8 · Cluster","Pearls are embedded and grouped by cosine similarity, then each close pair is judged as duplicate, consensus, complement or conflict, because similarity alone cannot separate “always do X” from “never do X”. Contradictions between attendings are surfaced with both sides kept, attributed and dated, never silently reconciled.")}
-    ${row("9 · Publish","A static site with no backend. The index loads once; transcripts load per episode on demand. The concept-map layout is solved at build time, so it is identical for every visitor and the page runs no physics simulation.")}
+    ${row("5 · Anchor","Each pearl's quoted span is located in the word-timed transcript: exact match first, then a bounded fuzzy search. A pearl whose source cannot be located is <b>dropped</b>, never shown with a guessed timestamp.")}
+    ${row("6 · Grade","Pure rules, no model. Five signals: specific, actionable, harm, non-obvious, plus an institution-local <b>veto</b> that forces grade D. Reproducible by construction; an earlier model-based grader was discarded after scoring only 53% agreement with itself. Grade D is excluded from this site.")}
+    ${row("7 · Index","Concepts are resolved against <b>MeSH</b>, the US National Library of Medicine vocabulary that indexes PubMed. Domain and hierarchy come from MeSH tree numbers; the remainder fall back to a keyword table.")}
+    ${row("8 · Cluster","Pearls are embedded and grouped by similarity, then each close pair is judged as duplicate, consensus, complement or conflict, because similarity alone cannot separate “always do X” from “never do X”. Contradictions are surfaced with both sides kept.")}
+    ${row("9 · Publish","A static site with no backend. The index loads once; transcripts load per lecture on demand; audio streams from the original Podbean file.")}
    </table></div></div>
-
-  <div class="card"><b>Models and vocabulary</b>
-   <div class="scroll"><table>
+  <div class="panel"><div class="panel-heading"><h4>Models and vocabulary</h4></div>
+   <div class="scroll"><table class="table-striped" style="margin:0">
     <tr><th>stage</th><th>used</th></tr>
-    <tr><td>transcription</td><td>${esc(e.stt_model||". ")}</td></tr>
-    <tr><td>terminology repair, enrichment, clustering</td><td>${esc(e.enrich_model||". ")}</td></tr>
-    <tr><td>embeddings</td><td>${esc(e.embed_model||". ")} @ ${e.embed_dims||". "}d</td></tr>
-    <tr><td>grading</td><td>deterministic rules. No model</td></tr>
+    <tr><td>transcription</td><td>${esc(e.stt_model||"–")}</td></tr>
+    <tr><td>terminology repair, enrichment, clustering</td><td>${esc(e.enrich_model||"–")}</td></tr>
+    <tr><td>embeddings</td><td>${esc(e.embed_model||"–")} @ ${e.embed_dims||"–"}d</td></tr>
+    <tr><td>grading</td><td>deterministic rules, no model</td></tr>
     <tr><td>concept vocabulary</td><td>MeSH 2025 (NLM, public domain)</td></tr>
    </table></div></div>
-
-  <div class="card"><b>Known limitations</b>
-   <ul>
+  <div class="panel"><div class="panel-heading"><h4>Known limitations</h4></div><div class="panel-body"><ul style="margin:0;padding-left:20px">
     <li>One lecture is missing: its source recording has a degenerate audio track (~1 kbps at the origin) and cannot be transcribed.</li>
     <li>Speaker names come from episode titles and are not yet reconciled, so one physician may appear under more than one name.</li>
     <li>Topic labels are model-generated; most appear in only one lecture, so the concept map shows only those taught in three or more.</li>
-    <li>MeSH classifies drugs by chemical class rather than by indication, so medications group under Pharmacology rather than the specialty that prescribes them.</li>
+    <li>MeSH classifies drugs by chemical class rather than by indication, so medications group under Pharmacology.</li>
     <li>Pearl grading is lexical. It rewards concrete language and cannot judge whether a claim is clinically correct.</li>
-   </ul></div>
-
-  <div class="card"><b>ASR corrections applied</b>
-    <p class="small muted">Every terminology repair is logged. The raw transcript is retained,
-    so any correction can be audited or reverted.</p>
-    <div class="scroll"><table><tr><th>episode</th><th>from</th><th>to</th><th>n</th></tr>
+  </ul></div></div>
+  <div class="panel"><div class="panel-heading"><h4>ASR corrections applied</h4></div><div class="panel-body">
+    <p class="small muted">Every terminology repair is logged. The raw transcript is retained, so any correction can be
+    audited or reverted. Shown for the ${loaded} lecture(s) loaded so far.</p>
+    <div class="scroll"><table class="table-striped"><tr><th>lecture</th><th>from</th><th>to</th><th class="num">n</th></tr>
     ${Object.values(EPC).flatMap(det=>(det.fixes||[]).map(f=>
-      `<tr><td>${esc(det.slug)}</td><td>${esc(f.from)}</td><td><b>${esc(f.to)}</b></td><td>${f.n}</td></tr>`)).join("")}
+      `<tr><td><a href="${link.lecture(det.slug)}">${esc((EP[det.slug]||{}).title||det.slug)}</a></td><td>${esc(f.from)}</td><td><b>${esc(f.to)}</b></td><td class="num">${f.n}</td></tr>`)).join("")}
     </table></div>
-    ${Object.keys(EPC).length<D.episodes.length
-      ? `<a href="#" onclick="loadAll();return false">load all episodes to see every correction</a>`:""}</div>
-  ${Object.values(EPC).some(d=>(d.fixes_rejected||[]).length)?`<div class="card">
-    <b>Corrections rejected as unsafe</b>
-    <p class="small muted">Repairs the pipeline refused to apply. Too short to match safely,
-    or matching implausibly often (e.g. <code>"d" → "deep vein thrombosis"</code>, which would
-    have fired 1500 times).</p>
-    <div class="scroll"><table><tr><th>from</th><th>to</th><th>why</th></tr>
+    ${loaded<D.episodes.length?loadAllBtn():""}</div></div>
+  ${Object.values(EPC).some(d=>(d.fixes_rejected||[]).length)?`<div class="panel"><div class="panel-heading"><h4>Corrections rejected as unsafe</h4></div>
+    <div class="panel-body"><p class="small muted">Repairs the pipeline refused to apply: too short to match safely,
+    or matching implausibly often (e.g. <code>"d" → "deep vein thrombosis"</code>, which would have fired 1500 times).</p>
+    <div class="scroll"><table class="table-striped"><tr><th>from</th><th>to</th><th>why</th></tr>
     ${Object.values(EPC).flatMap(d=>(d.fixes_rejected||[]).map(f=>
       `<tr><td>${esc(f.from)}</td><td>${esc(f.to)}</td><td>${esc(f.why||"")}</td></tr>`)).join("")}
-    </table></div></div>`:""}`;
-}
-function searchView(q){
-  const rx=new RegExp("("+q.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")","ig");
-  const hi=s=>esc(s).replace(rx,"<mark>$1</mark>");
-  const ps=D.pearls.filter(p=>(p.text+" "+p.verbatim).toLowerCase().includes(q.toLowerCase()));
-  const ts=D.topics.filter(t=>t.label.toLowerCase().includes(q.toLowerCase()));
-  let out=[];
-  if(ts.length) out.push(`<h3>${T("topics")}</h3>`+ts.map(t=>
-    `<span class="chip t" onclick="go('topic','${t.slug}')">${esc(t.label)} (${t.episodes.length})</span>`).join(""));
-  if(ps.length) out.push(`<h3>${T("pearls")} <span class="muted small">(${ps.length})</span></h3>`+ps.map(pearlCard).join(""));
-  // Abstracts and key points live in the index, so they always search instantly.
-  const ab=D.episodes.filter(e=>((e.abstract||"")+" "+(e.key_points||[]).join(" "))
-      .toLowerCase().includes(q.toLowerCase()));
-  if(ab.length) out.push(`<h3>${T("episodes")}</h3>`+ab.map(e=>
-    `<div class="card"><a href="#" onclick="go('episode','${e.slug}');return false"><b>${esc(e.title)}</b></a>
-     <div class="small" style="margin-top:6px">${hi((e.abstract||"").slice(0,240))}</div></div>`).join(""));
-
-  // Full transcripts are per-episode files. Search whatever is already cached,
-  // and let the reader opt in to pulling the rest rather than silently
-  // downloading the whole corpus on every keystroke.
-  let th=[];
-  Object.values(EPC).forEach(det=>{
-    const e=D.episodes.find(x=>x.slug===det.slug)||{};
-    (det.segments||[]).forEach(s=>{
-      if(s.text.toLowerCase().includes(q.toLowerCase()))
-        th.push(`<div class="card"><div>${hi(s.text)}</div><div class="meta">
-          <a href="#" onclick="go('episode','${e.slug}');return false">${esc(e.title||det.slug)}</a>
-          · <span class="ts" onclick="seek('${e.slug}',${s.t})">${mmss(s.t)}</span></div></div>`);
-    });
-  });
-  const nload=D.episodes.length-Object.keys(EPC).length;
-  if(th.length) out.push(`<h3>${T("transcript")} <span class="muted small">(${th.length})</span></h3>`+th.slice(0,80).join(""));
-  if(nload>0) out.push(`<div class="banner">Full-text search covers ${Object.keys(EPC).length}
-    of ${D.episodes.length} transcripts loaded so far.
-    <a href="#" onclick="loadAll();return false"><b>Load remaining ${nload}</b></a></div>`);
-  return out.length?out.join(""):`<p class="muted">${T("no")}</p>`;
+    </table></div></div></div>`:""}`;
 }
 
+let LOADING=false;
+function loadAllBtn(){
+  const n=D.episodes.length-Object.keys(EPC).length;
+  return LOADING?`<div class="progress" style="margin:10px 0"><div class="progress-bar"></div></div>
+      <p class="muted small">Loading ${n} transcripts…</p>`
+    :`<button class="btn btn-default btn-sm" onclick="loadAll()">Load all ${n} remaining transcripts</button>
+      <span class="muted small">about ${Math.round(n*0.22)} MB</span>`;
+}
 function loadAll(){
-  Promise.all(D.episodes.map(e=>loadEp(e.slug))).then(render);
-}
-function go(kind,id){SEL={kind,id};document.getElementById("q").value="";render();window.scrollTo(0,0)}
-function seek(slug,t){
-  if(!(SEL&&SEL.kind==="episode"&&SEL.id===slug)) go("episode",slug);
-  setTimeout(()=>{const a=document.getElementById("au-"+slug);
-    if(a){a.currentTime=t;a.play().catch(()=>{});a.scrollIntoView({block:"center"});}},60);
+  LOADING=true; render(true);
+  const slugs=D.episodes.map(e=>e.slug).filter(s=>!EPC[s]);
+  let i=0;
+  const worker=()=>i<slugs.length?loadEp(slugs[i++]).catch(()=>{}).then(worker):Promise.resolve();
+  Promise.all([...Array(6)].map(worker)).then(()=>{LOADING=false;render(true);});
 }
 
-fetch("data.json").then(r=>r.json()).then(d=>{
-  D=d;
+function searchView(){
+  const q=R.id.trim(), ql=q.toLowerCase();
+  setTitle(`“${q}”`);
+  if(!q) return `<p class="muted" style="margin-top:20px">Type to search.</p>`;
+  const ts=D.topics.filter(t=>t._l.includes(ql)).slice(0,40);
+  const eps=D.episodes.filter(e=>(e.title+" "+e.speaker+" "+(e.abstract||"")+" "+(e.key_points||[]).join(" ")).toLowerCase().includes(ql))
+    .sort((a,b)=>b._dt-a._dt);
+  const ps=D.pearls.filter(p=>p._s.includes(ql));
+  let th=[];
+  Object.values(EPC).forEach(det=>(det.segments||[]).forEach(s=>{
+    if(s.text.toLowerCase().includes(ql)) th.push({slug:det.slug,s});}));
+  const nload=D.episodes.length-Object.keys(EPC).length;
+  const out=[];
+  out.push(`<h2 style="margin-top:20px">Results for “${esc(q)}”</h2>
+    <p class="muted">${ts.length} topics · ${eps.length} lectures · ${num(ps.length)} pearls${Object.keys(EPC).length?` · ${num(th.length)} transcript lines`:""}</p>`);
+  if(ts.length) out.push(`<div style="margin-bottom:14px">`+ts.map(t=>
+    `<a class="label label-primary" style="display:inline-block;margin:0 4px 6px 0;padding:.35em .7em" href="${link.topic(t.slug)}">${hl(t.label,q)} · ${t.episodes.length}</a>`).join("")+`</div>`);
+  if(eps.length) out.push(`<div class="panel"><div class="panel-heading"><h4>${esc(T("episodes"))} <span class="badge">${eps.length}</span></h4></div>
+    <div class="list-group" style="margin:0;box-shadow:none">`+eps.slice(0,lim("se",10)).map(e=>{
+      const ab=e.abstract||"", i=ab.toLowerCase().indexOf(ql);
+      const snip=i>=0?(i>60?"…":"")+ab.slice(Math.max(0,i-60),i+140)+"…":ab.slice(0,160);
+      return `<a class="list-group-item" style="border-left:0;border-right:0" href="${link.lecture(e.slug)}">
+        <span class="lg-title">${hl(e.title,q)}</span> <span class="meta">${esc(e.speaker)} · ${esc(fmtDate(e._dt))}</span>
+        <div class="small" style="margin-top:3px">${hl(snip,q)}</div></a>`;}).join("")+`</div></div>`
+    +moreBtn("se",Math.min(lim("se",10),eps.length),eps.length,20));
+  if(ps.length) out.push(`<h3>${esc(T("pearls"))} <small class="muted">(${num(ps.length)})</small></h3>`+pearlList(ps,"sp",q,20));
+  if(th.length) out.push(`<h3>${esc(T("transcript"))} <small class="muted">(${num(th.length)})</small></h3>`
+    +th.slice(0,lim("st",30)).map(x=>{const e=EP[x.slug]||{};
+      return `<div class="pearl"><div>${hl(x.s.text,q)}</div><div class="meta">
+        <a class="ts" href="${link.lecture(x.slug,x.s.t)}" onclick="return seekLink(event,'${x.slug}',${x.s.t})">${mmss(x.s.t)}</a>
+        · <a href="${link.lecture(x.slug)}">${esc(e.title||x.slug)}</a></div></div>`;}).join("")
+    +moreBtn("st",Math.min(lim("st",30),th.length),th.length,50));
+  if(nload>0) out.push(`<div class="alert alert-info">Full-text transcript search covers the ${Object.keys(EPC).length}
+    of ${D.episodes.length} lectures loaded so far. ${loadAllBtn()}</div>`);
+  if(!ts.length&&!eps.length&&!ps.length&&!th.length) out.push(`<p class="muted">${esc(T("no"))}</p>`);
+  return out.join("");
+}
+
+/* ======================================================================
+   Search box, keyboard, notice, boot
+   ====================================================================== */
+let BEFORE_SEARCH="#/", STIMER=null;
+function goSearch(q){
+  q=(q||"").trim();
+  if(!q){ if(R.view==="search") location.hash=BEFORE_SEARCH; return; }
+  const h="#/search/"+enc(q);
+  if(R.view==="search"){ history.replaceState(null,"",h); render(); }
+  else { BEFORE_SEARCH=location.hash||"#/"; location.hash=h; }
+}
+$("q").addEventListener("input",e=>{clearTimeout(STIMER);const v=e.target.value;STIMER=setTimeout(()=>goSearch(v),180);});
+$("q").addEventListener("keydown",e=>{
+  if(e.key==="Escape"){e.target.value="";goSearch("");e.target.blur();}
+  if(e.key==="Enter"){clearTimeout(STIMER);goSearch(e.target.value);}
+});
+document.addEventListener("keydown",e=>{
+  const t=e.target.tagName;
+  if(e.key==="/"&&t!=="INPUT"&&t!=="TEXTAREA"&&t!=="SELECT"){e.preventDefault();$("q").focus();$("q").select();}
+});
+window.addEventListener("hashchange",()=>{render();window.scrollTo(0,0);});
+
+function notice(){
+  if(store.get("hpi-notice")==="1"){$("notice").innerHTML="";return;}
+  $("notice").innerHTML=`<div class="alert alert-danger notice"><div class="container">
+    <button class="close" aria-label="Dismiss" onclick="store.set('hpi-notice','1');notice()">×</button>
+    <b>Study aid, not a clinical reference.</b> Machine-transcribed lectures; verify doses at the source.</div></div>`;
+}
+
+fetch("data.json").then(r=>{if(!r.ok)throw new Error("data.json: HTTP "+r.status);return r.json()}).then(d=>{
+  D=d; index();
   const s=d.stats;
-  // Newest lecture date, so it is obvious at a glance whether the site is current.
-  const newest=d.episodes.map(e=>e.pubDate?new Date(e.pubDate):null)
-    .filter(x=>x&&!isNaN(x)).sort((a,b)=>b-a)[0];
-  const latest=newest?` · latest ${newest.toLocaleDateString(undefined,{year:"numeric",month:"short",day:"numeric"})}`:"";
-  document.getElementById("stats").innerHTML=
-    `${s.n_episodes} lectures · ${s.hours} h · ${s.n_pearls} pearls · ${s.n_topics} topics${latest}`;
-  
-  const sel=document.getElementById("lang");
-  sel.innerHTML=Object.entries(d.langs).map(([k,v])=>`<option value="${k}">${v}</option>`).join("");
-  sel.onchange=()=>{LANG=sel.value;render()};
-  document.getElementById("q").oninput=render;
-  document.getElementById("foot").innerHTML=
-    `Hope Partnerships International lecture archive · transcripts machine-generated, verify at source ·
-     <a href="https://hopepartners.podbean.com/" target="_blank" rel="noopener">original feed ↗</a>`;
+  const newest=NEWEST[0];
+  $("foot").innerHTML=`Hope Partnerships International lecture archive · ${num(s.n_episodes)} lectures · ${num(s.n_pearls)} pearls
+     ${newest?`· newest lecture ${esc(fmtDate(newest._dt))}`:""}
+     · <a href="https://hopepartners.podbean.com/" target="_blank" rel="noopener">original feed ↗</a>
+     · press <kbd>/</kbd> to search`;
+  // Only offer languages when some lecture actually carries translations.
+  if(d.episodes.some(e=>e.i18n&&Object.keys(e.i18n).length)){
+    const sel=$("lang"); sel.hidden=false;
+    sel.innerHTML=Object.entries(d.langs).map(([k,v])=>`<option value="${k}">${v}</option>`).join("");
+    sel.onchange=()=>{LANG=sel.value;render(true)};
+  }
+  notice();
   render();
-}).catch(e=>{document.getElementById("view").innerHTML=
-  `<div class="banner">Failed to start: ${esc(e && e.message || String(e))}</div>`});
+}).catch(e=>{$("view").innerHTML=
+  `<div class="alert alert-danger" style="margin-top:20px"><b>The lecture index failed to load.</b> ${esc(e&&e.message||String(e))}.
+   Try reloading the page.</div>`});
 </script>
 </body></html>

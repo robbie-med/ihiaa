@@ -108,6 +108,9 @@ def build() -> dict:
         eps.append({
             "slug": d["slug"], "title": d["title"], "speaker": d["speaker"],
             "link": d["link"], "pubDate": d.get("pubDate", ""),
+            # Audio is never deployed (it is gitignored), so the player streams
+            # the original Podbean enclosure. Timestamps seek within it.
+            "enclosure": d.get("enclosure", ""),
             "duration_sec": d.get("duration_sec", 0),
             "abstract": d.get("abstract", ""), "key_points": d.get("key_points", []),
             "n_fixes": len(d.get("fixes", [])),
