@@ -36093,11 +36093,675 @@
   ],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "",
-  "key_points": [],
-  "topics_raw": [],
-  "pearls_raw": [],
-  "pearls": [],
+  "abstract": "Dr. Slaughter presents an overview of acute diarrheal illness, defining it as loose or watery stools three or more times in 24 hours lasting less than 14 days. The vast majority of cases are infectious and self-limited, with viral pathogens most common; however, bacterial causes become more likely with severe or prolonged symptoms. History and timing of onset help narrow the differential, and stool testing is reserved for severe illness, inflammatory diarrhea, high-risk hosts, duration >7 days, or public health concerns. Special populations, such as pregnant patients (20× listeria susceptibility) and immunocompromised hosts, require tailored evaluation, and antibiotics should be avoided in STEC infection due to risk of HUS.",
+  "key_points": [
+    "Acute diarrhea: <14 days; persistent: 14, 30 days; chronic: >30 days.",
+    "Most acute diarrhea is viral; bacterial etiology is more likely if severe or lasting >7 days.",
+    "Small bowel infection → watery, large-volume stools with cramping; large bowel infection → small, frequent, bloody stools with tenesmus.",
+    "Onset <6 hours suggests preformed toxin (Staphylococcus, Bacillus cereus) with vomiting; 8, 16 hours suggests Clostridium perfringens; >16 hours suggests viral or other bacterial.",
+    "Indications for stool culture: >6 stools/24 hours, severe abdominal pain, hypovolemia, inflammatory diarrhea, high-risk host (immunocompromised, pregnant, comorbidities), duration >7 days, or public health concerns (food handler, healthcare, daycare).",
+    "Rectal swab is an alternative for culture when patient no longer has diarrhea, though less sensitive.",
+    "Order ova and parasite testing on three consecutive stool samples due to intermittent shedding.",
+    "C. difficile testing: recent antibiotics or hospitalization within last 3 months.",
+    "Pregnant patients are 20× more susceptible to listeriosis; avoid unpasteurized dairy products.",
+    "Avoid antibiotics for Shiga toxin, producing E. coli (STEC, e.g., O157:H7) because they can precipitate HUS.",
+    "Stool culture is recommended to confirm GI PCR results because PCR can detect non-viable organisms or multiple organisms.",
+    "Grossly bloody diarrhea warrants Shiga toxin testing."
+  ],
+  "topics_raw": [
+    {
+      "label": "Acute Diarrhea",
+      "kind": "condition"
+    },
+    {
+      "label": "Dysentery",
+      "kind": "condition"
+    },
+    {
+      "label": "Viral Gastroenteritis",
+      "kind": "condition"
+    },
+    {
+      "label": "Bacterial Gastroenteritis",
+      "kind": "condition"
+    },
+    {
+      "label": "STEC (E. coli O157:H7)",
+      "kind": "condition"
+    },
+    {
+      "label": "Listeriosis",
+      "kind": "condition"
+    },
+    {
+      "label": "Clostridioides difficile Infection",
+      "kind": "condition"
+    },
+    {
+      "label": "Preformed Toxin",
+      "kind": "concept"
+    },
+    {
+      "label": "Stool Culture",
+      "kind": "procedure"
+    },
+    {
+      "label": "Rectal Swab",
+      "kind": "procedure"
+    },
+    {
+      "label": "GI PCR Panel",
+      "kind": "procedure"
+    },
+    {
+      "label": "Ova and Parasite Testing",
+      "kind": "procedure"
+    },
+    {
+      "label": "Fecal Leukocytes",
+      "kind": "procedure"
+    },
+    {
+      "label": "Antibiotics",
+      "kind": "drug"
+    },
+    {
+      "label": "Acute Diarrhea",
+      "kind": "condition"
+    },
+    {
+      "label": "Dysentery",
+      "kind": "condition"
+    },
+    {
+      "label": "Clostridioides difficile Infection",
+      "kind": "condition"
+    },
+    {
+      "label": "Cytomegalovirus Infection",
+      "kind": "condition"
+    },
+    {
+      "label": "Herpes Simplex Virus Infection",
+      "kind": "condition"
+    },
+    {
+      "label": "Azithromycin",
+      "kind": "drug"
+    },
+    {
+      "label": "Loperamide",
+      "kind": "drug"
+    },
+    {
+      "label": "Bismuth Subsalicylate",
+      "kind": "drug"
+    },
+    {
+      "label": "Probiotics",
+      "kind": "drug"
+    },
+    {
+      "label": "Zinc",
+      "kind": "drug"
+    },
+    {
+      "label": "Stool Culture",
+      "kind": "procedure"
+    },
+    {
+      "label": "Gastrointestinal PCR Panel",
+      "kind": "procedure"
+    },
+    {
+      "label": "Shiga Toxin Testing",
+      "kind": "procedure"
+    },
+    {
+      "label": "Fecal Leukocyte Test",
+      "kind": "procedure"
+    },
+    {
+      "label": "Ova and Parasite Examination",
+      "kind": "procedure"
+    },
+    {
+      "label": "Oral Rehydration Solution",
+      "kind": "concept"
+    },
+    {
+      "label": "Sodium-Glucose Cotransporter",
+      "kind": "concept"
+    },
+    {
+      "label": "Empiric Antibiotic Criteria",
+      "kind": "concept"
+    }
+  ],
+  "pearls_raw": [
+    {
+      "text": "Severe acute diarrhea is defined as more than six episodes in 24 hours; this is an indication for stool culture.",
+      "seg": 346,
+      "verbatim": "so severe illness is typically defined as basically more than six episodes in twenty four hours",
+      "applies_to": "patients with acute diarrhea",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "Onset of diarrhea between 8 and 16 hours after exposure suggests Clostridium perfringens; onset >16 hours suggests viral or other bacterial causes.",
+      "seg": 225,
+      "verbatim": "eight to sixteen hours, you're looking at more likely cholesteatreperfringens, and then greater than sixteen hours is gonna be any viral cause or other bacterial.",
+      "applies_to": "acute diarrhea",
+      "type": "concept"
+    },
+    {
+      "text": "Pregnant patients are 20 times more susceptible to listeriosis, which is invasive and can harm the fetus.",
+      "seg": 326,
+      "verbatim": "you're 20 times more susceptible to a stereosis when you're pregnant.",
+      "applies_to": "pregnant patients",
+      "type": "red_flag"
+    },
+    {
+      "text": "Advise pregnant patients to avoid unpasteurized dairy products because of listeria risk.",
+      "seg": 334,
+      "verbatim": "we don't recommend, you know, dairy meats, unpasteurized dairy products during pregnancy.",
+      "applies_to": "pregnant patients",
+      "type": "practice"
+    },
+    {
+      "text": "For bloody diarrhea, test for Shiga toxin; if positive, do not give antibiotics because they can precipitate hemolytic uremic syndrome.",
+      "seg": 404,
+      "verbatim": "we need to check for that Shiga toxin.",
+      "applies_to": "patients with bloody diarrhea",
+      "type": "practice"
+    },
+    {
+      "text": "If diarrhea persists beyond 7 days, suspect a bacterial cause and consider stool culture.",
+      "seg": 360,
+      "verbatim": "symptoms or lasting longer than seven days. Right? Now that we're going more towards... So seven days, it makes something bacterial more likely.",
+      "applies_to": "patients with acute diarrhea >7 days",
+      "type": "practice"
+    },
+    {
+      "text": "When ordering ova and parasite testing, collect three specimens on consecutive days because shedding is intermittent.",
+      "seg": 422,
+      "verbatim": "They don't shed the ova. They don't come out in the stool every day. So you have to get three, like, samples on consecutive days to make sure you actually catch it.",
+      "applies_to": "patients with suspected parasitic diarrhea",
+      "type": "practice"
+    },
+    {
+      "text": "Check for C. difficile if the patient has had antibiotics or hospitalization in the last three months.",
+      "seg": 431,
+      "verbatim": "C. Diff testing. Right. Antibiotics or hospitalization last three months.",
+      "applies_to": "patients with acute diarrhea and recent antibiotic use or hospitalization",
+      "type": "practice"
+    },
+    {
+      "text": "A rectal swab can be used for stool culture when the patient is no longer producing stool, though it is less sensitive.",
+      "seg": 371,
+      "verbatim": "we don't do as often as we should if we're, like, willing to have much diarrhea, but now they're not, because they're still feeling terrible. We can get a rectal swab, and we can send that. It's gonna be less sensitive, but still gets the ball moving.",
+      "applies_to": "patients with acute diarrhea who are no longer having frequent stools",
+      "type": "procedure"
+    },
+    {
+      "text": "Consider stool testing for patients who work as food handlers, healthcare workers, or in day care centers to prevent spread.",
+      "seg": 364,
+      "verbatim": "if there's somebody who's likely to spread it to another person, we might wanna check them. So if they're a food handler, health care worker, day care center.",
+      "applies_to": "patients with acute diarrhea who work in high-risk settings",
+      "type": "practice"
+    },
+    {
+      "text": "For most patients with acute diarrhea, expectant management is sufficient; no testing is needed unless clinically indicated.",
+      "seg": 338,
+      "verbatim": "workup for most people, just expectant management. No need, you know, to do anything else unless clinically indicated.",
+      "applies_to": "otherwise healthy patients with mild, self-limited acute diarrhea",
+      "type": "practice"
+    },
+    {
+      "text": "When using GI PCR panels, get a confirmatory stool culture because PCR may detect non-viable organisms or multiple organisms, making it unclear which is the true pathogen.",
+      "seg": 401,
+      "verbatim": "it is good to get a confirmatory culture with the test",
+      "applies_to": "patients undergoing GI PCR testing",
+      "type": "practice"
+    },
+    {
+      "text": "Grossly bloody diarrhea requires Shiga toxin testing.",
+      "seg": 404,
+      "verbatim": "bloody diarrhea, especially if it's grossly bloody. You know, we need to check for that Shiga toxin",
+      "applies_to": "patients with bloody diarrhea",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "In travelers with diarrhea who have taken antibiotics, fecal leukocyte testing can be falsely negative because antibiotics fragmentize leukocytes.",
+      "seg": 408,
+      "verbatim": "if the patient has been traveling, go ahead and check a fecal leukocyte because the antemuva will, like, fragmentize leukocytes",
+      "applies_to": "patients with travel-associated diarrhea who may have used antibiotics",
+      "type": "pitfall"
+    },
+    {
+      "text": "For ova and parasite testing, collect three stool samples on consecutive days because organisms are not shed every day.",
+      "seg": 422,
+      "verbatim": "they don't come out in the stool every day. So you have to get three, like, samples on consecutive days",
+      "applies_to": "patients suspected of parasitic infection",
+      "type": "practice"
+    },
+    {
+      "text": "Test for C. diff if the patient has had antibiotics or hospitalization within the last three months.",
+      "seg": 431,
+      "verbatim": "C. Diff testing. Right. Antibiotics or hospitalization last three months.",
+      "applies_to": "patients with acute diarrhea",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "The GI PCR panel is very expensive (billed at $819 to insurance, $400 for self-pay) and has a 2-3 day turnaround; stool culture costs only $3 and may be more practical in outpatient settings.",
+      "seg": 461,
+      "verbatim": "The price that gets billed to insurance is $819 for the patient. If they're gonna self pay, it's, like, $400. ... stool culture, $3.",
+      "applies_to": "outpatient setting",
+      "type": "practice"
+    },
+    {
+      "text": "Oral rehydration solutions should contain equimolar amounts of sodium and glucose to utilize the sodium-glucose cotransporter; excess of either can worsen diarrhea.",
+      "seg": 514,
+      "verbatim": "you want to have basically an equimolar amount of sodium and glucose, and they will utilize that sodium glucose cotransporter bring fluid in more quickly",
+      "applies_to": "patients needing oral rehydration",
+      "type": "concept"
+    },
+    {
+      "text": "Pedialyte is far better than Gatorade for rehydration; Gatorade's excess glucose can actually worsen dehydration.",
+      "seg": 560,
+      "verbatim": "Gatorade ... still nowhere near as good as Pedialyte as far as its makeup and ability to rehydrate.",
+      "applies_to": "patients needing oral rehydration",
+      "type": "practice"
+    },
+    {
+      "text": "For acute diarrhea, do not give empiric antibiotics unless it is travel-associated, bloody, or prolonged; otherwise supportive care alone is appropriate.",
+      "seg": 610,
+      "verbatim": "things change if it's travel associated. Things change if it's bloody. Right? Or if now we're getting into prolonged.",
+      "applies_to": "patients with acute diarrhea",
+      "type": "practice"
+    },
+    {
+      "text": "When antibiotics are indicated, azithromycin is preferred over fluoroquinolones due to resistance; for non-dysentery cases, a one-time dose can be used.",
+      "seg": 635,
+      "verbatim": "Azithromycin is preferred agent because there is resistance more likely to the fluoroquinolones. ... you can do a onetime dose, which is kinda nice.",
+      "applies_to": "patients requiring empiric antibiotics for acute diarrhea",
+      "type": "dosing"
+    },
+    {
+      "text": "Loperamide (Imodium) is safe for symptomatic relief if there is no fever, no bloody stool, and the illness is not severe; do not use in dysentery as it may prolong the disease.",
+      "seg": 669,
+      "verbatim": "no fever or it's very low grade. You know, it's not severe. It's not bloody. Then you can do Imodium.",
+      "applies_to": "patients with non-inflammatory acute diarrhea",
+      "type": "practice"
+    },
+    {
+      "text": "Lomotil is not recommended for acute diarrhea because it is less well-studied and carries risks of central opioid and cholinergic side effects.",
+      "seg": 680,
+      "verbatim": "Lomotil, we see that. It works, but it's not recommended as much because of... It's just not as well studied, and there's the chance of it causing, like, central opioid or cholinergic side effects.",
+      "applies_to": "patients with acute diarrhea",
+      "type": "practice"
+    },
+    {
+      "text": "During acute diarrhea, the BRAT diet is helpful; avoid fat and dairy except yogurt.",
+      "seg": 702,
+      "verbatim": "the BRAT diet can help ... Fat is gonna make it worse, and then dairy can also make it worse other than yogurt.",
+      "applies_to": "patients with acute diarrhea",
+      "type": "practice"
+    },
+    {
+      "text": "In children with acute diarrhea from overseas areas where zinc deficiency is prevalent, or who are malnourished, give zinc supplementation.",
+      "seg": 724,
+      "verbatim": "if they're coming from, you know, overseas where zinc deficiency is prevalent or they are malnourished, you may need to give them some zinc.",
+      "applies_to": "children with acute diarrhea in resource-limited settings",
+      "type": "practice"
+    },
+    {
+      "text": "For outpatient ova and parasite testing, give the patient a collection kit and have them drop off a sample each day for three consecutive days.",
+      "seg": 788,
+      "verbatim": "all stool testing has to be done at home so we can give them the kit every day for three days to drop off the sample.",
+      "applies_to": "outpatient stool collection for ova and parasites",
+      "type": "practice"
+    }
+  ],
+  "pearls": [
+    {
+      "text": "Onset of diarrhea between 8 and 16 hours after exposure suggests Clostridium perfringens; onset >16 hours suggests viral or other bacterial causes.",
+      "verbatim": "eight to sixteen hours, you're looking at more likely cholesteatreperfringens, and then greater than sixteen hours is gonna be any viral cause or other bacterial.",
+      "type": "concept",
+      "t": 760.8,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "acute diarrhea",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-760"
+    },
+    {
+      "text": "Pregnant patients are 20 times more susceptible to listeriosis, which is invasive and can harm the fetus.",
+      "verbatim": "you're 20 times more susceptible to a stereosis when you're pregnant.",
+      "type": "red_flag",
+      "t": 1101.9,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "pregnant patients",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1101"
+    },
+    {
+      "text": "Advise pregnant patients to avoid unpasteurized dairy products because of listeria risk.",
+      "verbatim": "we don't recommend, you know, dairy meats, unpasteurized dairy products during pregnancy.",
+      "type": "practice",
+      "t": 1127.0,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "pregnant patients",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1127"
+    },
+    {
+      "text": "For most patients with acute diarrhea, expectant management is sufficient; no testing is needed unless clinically indicated.",
+      "verbatim": "workup for most people, just expectant management. No need, you know, to do anything else unless clinically indicated.",
+      "type": "practice",
+      "t": 1140.5,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "otherwise healthy patients with mild, self-limited acute diarrhea",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1140"
+    },
+    {
+      "text": "Severe acute diarrhea is defined as more than six episodes in 24 hours; this is an indication for stool culture.",
+      "verbatim": "so severe illness is typically defined as basically more than six episodes in twenty four hours",
+      "type": "dx_criteria",
+      "t": 1162.7,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with acute diarrhea",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1162"
+    },
+    {
+      "text": "If diarrhea persists beyond 7 days, suspect a bacterial cause and consider stool culture.",
+      "verbatim": "symptoms or lasting longer than seven days. Right? Now that we're going more towards... So seven days, it makes something bacterial more likely.",
+      "type": "practice",
+      "t": 1209.0,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with acute diarrhea >7 days",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1209"
+    },
+    {
+      "text": "Consider stool testing for patients who work as food handlers, healthcare workers, or in day care centers to prevent spread.",
+      "verbatim": "if there's somebody who's likely to spread it to another person, we might wanna check them. So if they're a food handler, health care worker, day care center.",
+      "type": "practice",
+      "t": 1221.6,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with acute diarrhea who work in high-risk settings",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1221"
+    },
+    {
+      "text": "A rectal swab can be used for stool culture when the patient is no longer producing stool, though it is less sensitive.",
+      "verbatim": "we don't do as often as we should if we're, like, willing to have much diarrhea, but now they're not, because they're still feeling terrible. We can get a rectal swab, and we can send that. It's gonna be less sensitive, but still gets the ball moving.",
+      "type": "procedure",
+      "t": 1248.3,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with acute diarrhea who are no longer having frequent stools",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1248"
+    },
+    {
+      "text": "When using GI PCR panels, get a confirmatory stool culture because PCR may detect non-viable organisms or multiple organisms, making it unclear which is the true pathogen.",
+      "verbatim": "it is good to get a confirmatory culture with the test",
+      "type": "practice",
+      "t": 1364.4,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients undergoing GI PCR testing",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1364"
+    },
+    {
+      "text": "Grossly bloody diarrhea requires Shiga toxin testing.",
+      "verbatim": "bloody diarrhea, especially if it's grossly bloody. You know, we need to check for that Shiga toxin",
+      "type": "dx_criteria",
+      "t": 1380.9,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with bloody diarrhea",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1380"
+    },
+    {
+      "text": "For bloody diarrhea, test for Shiga toxin; if positive, do not give antibiotics because they can precipitate hemolytic uremic syndrome.",
+      "verbatim": "we need to check for that Shiga toxin.",
+      "type": "practice",
+      "t": 1385.2,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with bloody diarrhea",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1385"
+    },
+    {
+      "text": "In travelers with diarrhea who have taken antibiotics, fecal leukocyte testing can be falsely negative because antibiotics fragmentize leukocytes.",
+      "verbatim": "if the patient has been traveling, go ahead and check a fecal leukocyte because the antemuva will, like, fragmentize leukocytes",
+      "type": "pitfall",
+      "t": 1390.8,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with travel-associated diarrhea who may have used antibiotics",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1390"
+    },
+    {
+      "text": "When ordering ova and parasite testing, collect three specimens on consecutive days because shedding is intermittent.",
+      "verbatim": "They don't shed the ova. They don't come out in the stool every day. So you have to get three, like, samples on consecutive days to make sure you actually catch it.",
+      "type": "practice",
+      "t": 1430.5,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with suspected parasitic diarrhea",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1430"
+    },
+    {
+      "text": "For ova and parasite testing, collect three stool samples on consecutive days because organisms are not shed every day.",
+      "verbatim": "they don't come out in the stool every day. So you have to get three, like, samples on consecutive days",
+      "type": "practice",
+      "t": 1433.0,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients suspected of parasitic infection",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1433"
+    },
+    {
+      "text": "Check for C. difficile if the patient has had antibiotics or hospitalization in the last three months.",
+      "verbatim": "C. Diff testing. Right. Antibiotics or hospitalization last three months.",
+      "type": "practice",
+      "t": 1456.6,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with acute diarrhea and recent antibiotic use or hospitalization",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1456"
+    },
+    {
+      "text": "Test for C. diff if the patient has had antibiotics or hospitalization within the last three months.",
+      "verbatim": "C. Diff testing. Right. Antibiotics or hospitalization last three months.",
+      "type": "dx_criteria",
+      "t": 1456.6,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with acute diarrhea",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1456-2"
+    },
+    {
+      "text": "The GI PCR panel is very expensive (billed at $819 to insurance, $400 for self-pay) and has a 2-3 day turnaround; stool culture costs only $3 and may be more practical in outpatient settings.",
+      "verbatim": "The price that gets billed to insurance is $819 for the patient. If they're gonna self pay, it's, like, $400. ... stool culture, $3.",
+      "type": "practice",
+      "t": 1564.5,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "outpatient setting",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1564"
+    },
+    {
+      "text": "Oral rehydration solutions should contain equimolar amounts of sodium and glucose to utilize the sodium-glucose cotransporter; excess of either can worsen diarrhea.",
+      "verbatim": "you want to have basically an equimolar amount of sodium and glucose, and they will utilize that sodium glucose cotransporter bring fluid in more quickly",
+      "type": "concept",
+      "t": 1731.8,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients needing oral rehydration",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1731"
+    },
+    {
+      "text": "Pedialyte is far better than Gatorade for rehydration; Gatorade's excess glucose can actually worsen dehydration.",
+      "verbatim": "Gatorade ... still nowhere near as good as Pedialyte as far as its makeup and ability to rehydrate.",
+      "type": "practice",
+      "t": 1922.2,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients needing oral rehydration",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1922"
+    },
+    {
+      "text": "For acute diarrhea, do not give empiric antibiotics unless it is travel-associated, bloody, or prolonged; otherwise supportive care alone is appropriate.",
+      "verbatim": "things change if it's travel associated. Things change if it's bloody. Right? Or if now we're getting into prolonged.",
+      "type": "practice",
+      "t": 2087.2,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with acute diarrhea",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2087"
+    },
+    {
+      "text": "When antibiotics are indicated, azithromycin is preferred over fluoroquinolones due to resistance; for non-dysentery cases, a one-time dose can be used.",
+      "verbatim": "Azithromycin is preferred agent because there is resistance more likely to the fluoroquinolones. ... you can do a onetime dose, which is kinda nice.",
+      "type": "dosing",
+      "t": 2155.9,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients requiring empiric antibiotics for acute diarrhea",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2155"
+    },
+    {
+      "text": "Loperamide (Imodium) is safe for symptomatic relief if there is no fever, no bloody stool, and the illness is not severe; do not use in dysentery as it may prolong the disease.",
+      "verbatim": "no fever or it's very low grade. You know, it's not severe. It's not bloody. Then you can do Imodium.",
+      "type": "practice",
+      "t": 2257.7,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with non-inflammatory acute diarrhea",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2257"
+    },
+    {
+      "text": "Lomotil is not recommended for acute diarrhea because it is less well-studied and carries risks of central opioid and cholinergic side effects.",
+      "verbatim": "Lomotil, we see that. It works, but it's not recommended as much because of... It's just not as well studied, and there's the chance of it causing, like, central opioid or cholinergic side effects.",
+      "type": "practice",
+      "t": 2291.8,
+      "match": "fuzzy",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with acute diarrhea",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2291"
+    },
+    {
+      "text": "During acute diarrhea, the BRAT diet is helpful; avoid fat and dairy except yogurt.",
+      "verbatim": "the BRAT diet can help ... Fat is gonna make it worse, and then dairy can also make it worse other than yogurt.",
+      "type": "practice",
+      "t": 2362.3,
+      "match": "fuzzy",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with acute diarrhea",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2362"
+    },
+    {
+      "text": "In children with acute diarrhea from overseas areas where zinc deficiency is prevalent, or who are malnourished, give zinc supplementation.",
+      "verbatim": "if they're coming from, you know, overseas where zinc deficiency is prevalent or they are malnourished, you may need to give them some zinc.",
+      "type": "practice",
+      "t": 2421.4,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "children with acute diarrhea in resource-limited settings",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2421"
+    },
+    {
+      "text": "For outpatient ova and parasite testing, give the patient a collection kit and have them drop off a sample each day for three consecutive days.",
+      "verbatim": "all stool testing has to be done at home so we can give them the kit every day for three days to drop off the sample.",
+      "type": "practice",
+      "t": 2625.5,
+      "match": "exact",
+      "episode": "dr-slaughter-on-acute-diarreal-illness",
+      "speaker": "Dr. Slaughter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "outpatient stool collection for ova and parasites",
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2625"
+    }
+  ],
   "enrich_model": "deepseek/deepseek-v4-flash",
   "chunks": [
     {
@@ -52166,5 +52830,7 @@
       "id": "slaughter",
       "name": "Dr. Slaughter"
     }
-  ]
+  ],
+  "enrich_version": "v2",
+  "pearls_fingerprint": "0f18c30e4f537c07"
 }
