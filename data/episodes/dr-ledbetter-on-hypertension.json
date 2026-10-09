@@ -20916,11 +20916,396 @@
   "fixes_rejected": [],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "",
-  "key_points": [],
-  "topics_raw": [],
-  "pearls_raw": [],
-  "pearls": [],
+  "abstract": "Dr. Ledbetter discusses the management of hypertension, focusing on differentiating hypertensive urgency from emergency based on the presence of end-organ damage symptoms. He emphasizes that for non-emergency hypertension, blood pressure should be lowered over days, not hours, especially in older adults to avoid strokes from rapid reduction. The talk covers appropriate management strategies in both inpatient and outpatient settings, including addressing underlying causes such as pain or anxiety, restarting home medications, and avoiding PRN blood pressure medications except for specific conditions like stroke, aortic dissection, or preeclampsia. Key takeaway: a calm, symptom-focused approach often replaces aggressive pharmacologic intervention.",
+  "key_points": [
+    "Hypertensive emergency is defined by symptoms of end-organ damage (brain, heart, kidneys, eyes) and requires lowering BP within hours; urgency lacks such symptoms and can be managed over days.",
+    "In elderly patients, rapid BP lowering can cause strokes; therefore, a slower approach is recommended.",
+    "For asymptomatic inpatients with elevated BP, first consider non-hypertensive causes (pain, anxiety, missed home meds) before adding new antihypertensives.",
+    "Initial rapid BP reduction goal is under 160/100, but no more than 25% reduction over the first 2, 4 hours.",
+    "Oral clonidine or captopril can be used in clinic for patients with known aortic dissection (not actively dissecting) to prevent progression to emergency.",
+    "For never-treated patients with persistent BP 140s, start one medication; for 160s, 170s or higher, consider two medications initially.",
+    "In hospital, avoid adjusting home BP meds except for acute coronary syndrome or heart failure where guideline-directed therapy is changing.",
+    "PRN blood pressure medications should not be ordered routinely; they are only appropriate for stroke protocols, aortic dissection, or preeclampsia.",
+    "White coat hypertension in hospital is often anxiety-driven; treating the underlying anxiety is preferred over giving IV antihypertensives.",
+    "PRN blood pressure medications should not be routinely ordered for hospitalized patients.",
+    "Exceptions for PRN antihypertensives include stroke protocol, aortic dissection, and preeclampsia.",
+    "Parameters alone are insufficient; decisions should incorporate symptoms and clinical context."
+  ],
+  "topics_raw": [
+    {
+      "label": "Hypertensive Emergency",
+      "kind": "condition"
+    },
+    {
+      "label": "Hypertensive Urgency",
+      "kind": "condition"
+    },
+    {
+      "label": "Aortic Dissection",
+      "kind": "condition"
+    },
+    {
+      "label": "White Coat Hypertension",
+      "kind": "condition"
+    },
+    {
+      "label": "Clonidine",
+      "kind": "drug"
+    },
+    {
+      "label": "Captopril",
+      "kind": "drug"
+    },
+    {
+      "label": "Labetalol",
+      "kind": "drug"
+    },
+    {
+      "label": "Losartan",
+      "kind": "drug"
+    },
+    {
+      "label": "Lisinopril",
+      "kind": "drug"
+    },
+    {
+      "label": "Hydrochlorothiazide",
+      "kind": "drug"
+    },
+    {
+      "label": "Relative Hypotension",
+      "kind": "concept"
+    },
+    {
+      "label": "End-Organ Damage",
+      "kind": "concept"
+    },
+    {
+      "label": "PRN antihypertensives",
+      "kind": "drug"
+    },
+    {
+      "label": "Hypertensive emergency",
+      "kind": "condition"
+    },
+    {
+      "label": "Stroke protocol",
+      "kind": "procedure"
+    },
+    {
+      "label": "Aortic dissection",
+      "kind": "condition"
+    },
+    {
+      "label": "Preeclampsia",
+      "kind": "condition"
+    },
+    {
+      "label": "Sepsis",
+      "kind": "condition"
+    },
+    {
+      "label": "Small bowel obstruction",
+      "kind": "condition"
+    },
+    {
+      "label": "IV labetalol",
+      "kind": "drug"
+    },
+    {
+      "label": "IV Ativan",
+      "kind": "drug"
+    },
+    {
+      "label": "IV Valium",
+      "kind": "drug"
+    }
+  ],
+  "pearls_raw": [
+    {
+      "text": "In elderly patients, lowering blood pressure too quickly can cause strokes; therefore, a gradual reduction over days is recommended.",
+      "seg": 70,
+      "verbatim": "Old people, when you lower them down too quickly, have strokes.",
+      "applies_to": "elderly patients",
+      "type": "pitfall"
+    },
+    {
+      "text": "For rapid blood pressure adjustment, the initial goal is under 160/100, with no more than a 25% reduction over the first 2–4 hours.",
+      "seg": 108,
+      "verbatim": "Initial goal, if you're gonna be adjusting it rapidly, would be to get it under one sixty over a 100. But you don't wanna do more than 25% over the first two to four hours.",
+      "applies_to": "patients requiring rapid BP reduction",
+      "type": "dosing"
+    },
+    {
+      "text": "In non-emergency hypertension, do not give IV medications; instead, take a breath and evaluate underlying causes.",
+      "seg": 119,
+      "verbatim": "Not emergency. Take a breath. Think about what's going on. Don't give them IV medications.",
+      "applies_to": "non-emergency hypertension",
+      "type": "judgment"
+    },
+    {
+      "text": "For a patient with known aortic dissection who is not actively dissecting but has severely elevated BP, give clonidine in clinic and observe for a couple of hours.",
+      "seg": 127,
+      "verbatim": "This might be somebody that you give them clonidine in clinic and make them sit here for a couple hours to make sure their blood pressure goes down.",
+      "applies_to": "patients with known aortic dissection (not actively dissecting) in clinic",
+      "type": "practice"
+    },
+    {
+      "text": "In patients aged 65 and older, start antihypertensive therapy with a low dose of a single medication to avoid relative hypotension.",
+      "seg": 166,
+      "verbatim": "If they were old, 65 and up, probably be more inclined to just start them on a low dose of one medication.",
+      "applies_to": "elderly patients (65+) starting antihypertensive therapy",
+      "type": "dosing"
+    },
+    {
+      "text": "When an asymptomatic inpatient has high blood pressure, do not give IV labetalol; instead, restart their home losartan if it was missed.",
+      "seg": 260,
+      "verbatim": "What I don't want you to do is say, oh, blood pressure's super high. They're totally cool, calm, sitting in bed, no problems at all. I'm gonna give them IV labetalol when you should have just restarted the losartan.",
+      "applies_to": "asymptomatic inpatients with missed home antihypertensives",
+      "type": "pitfall"
+    },
+    {
+      "text": "Do not order PRN blood pressure medications except for stroke protocol, aortic dissection, or preeclampsia; even with parameters, the decision should be based on symptoms, not just numbers.",
+      "seg": 337,
+      "verbatim": "I never order PRM blood pressure medications with it outside of those few exceptions.",
+      "applies_to": "inpatient setting",
+      "type": "practice"
+    },
+    {
+      "text": "Adjusting a patient's lisinopril dose in the hospital for elevated BP often leads to hypotension after discharge; avoid changing home medications unless there is an acute indication like NSTEMI or heart failure.",
+      "seg": 283,
+      "verbatim": "You address their lisinopril while they're in the hospital because blood pressure's high. They go home, and they become hypotensive.",
+      "applies_to": "older patients in the hospital",
+      "type": "pitfall"
+    },
+    {
+      "text": "Do not order PRN blood pressure medications for hospitalized patients; the only exceptions are stroke protocol, aortic dissection, and preeclampsia.",
+      "seg": 324,
+      "verbatim": "How do you feel about PRNs for high blood pressure? Don't do it. It shouldn't be ordered.",
+      "applies_to": "hospitalized patients",
+      "type": "practice"
+    },
+    {
+      "text": "Even with parameters, PRN blood pressure medications should not be ordered; the decision should be based on symptoms and addressing other issues first.",
+      "seg": 340,
+      "verbatim": "Even with parameters. Because what should... Your your parameters should not just be numbers. It should be symptoms. It should be symptoms. And have you tried all of these other things to address their other issues first?",
+      "applies_to": "hospitalized patients",
+      "type": "judgment"
+    },
+    {
+      "text": "In a septic patient with pneumonia and high blood pressure, do not give PRN blood pressure medications; the issue is not the blood pressure.",
+      "seg": 331,
+      "verbatim": "somebody who's in there septic with pneumonia, even if their blood pressure's super high, they should not be getting PRM blood pressure medications.",
+      "applies_to": "septic patients with pneumonia",
+      "type": "pitfall"
+    },
+    {
+      "text": "For a patient with small bowel obstruction, high blood pressure is likely due to pain and vomiting, not a primary hypertensive issue.",
+      "seg": 332,
+      "verbatim": "Maybe with a small bowel obstruction. Issue is not their blood pressure more than likely. Issues that they're in pain and they're vomiting and you're checking their blood pressure while they're retching into a bed. Of course, it's going to be high.",
+      "applies_to": "patients with small bowel obstruction",
+      "type": "concept"
+    },
+    {
+      "text": "Parameters for PRN blood pressure medications are acceptable in preeclampsia and stroke protocol, but even then, it's not just the numbers—it's the underlying condition.",
+      "seg": 353,
+      "verbatim": "Parameters is usually not good enough. It's good enough in preeclampsia. It's good enough in a stroke protocol. But even even then, it's not just the numbers. It's the fact that they have preeclampsia. It's the fact that they had a stroke.",
+      "applies_to": "patients with preeclampsia or stroke",
+      "type": "practice"
+    },
+    {
+      "text": "If you suspect hypertensive emergency, send the patient to the emergency room.",
+      "seg": 358,
+      "verbatim": "Alright. So if you think it's hypertensive emergency, just go to ER.",
+      "applies_to": "patients with suspected hypertensive emergency",
+      "type": "red_flag"
+    }
+  ],
+  "pearls": [
+    {
+      "text": "In elderly patients, lowering blood pressure too quickly can cause strokes; therefore, a gradual reduction over days is recommended.",
+      "verbatim": "Old people, when you lower them down too quickly, have strokes.",
+      "type": "pitfall",
+      "t": 223.1,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-hypertension",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "elderly patients",
+      "pearl_id": "dr-ledbetter-on-hypertension-223"
+    },
+    {
+      "text": "For rapid blood pressure adjustment, the initial goal is under 160/100, with no more than a 25% reduction over the first 2, 4 hours.",
+      "verbatim": "Initial goal, if you're gonna be adjusting it rapidly, would be to get it under one sixty over a 100. But you don't wanna do more than 25% over the first two to four hours.",
+      "type": "dosing",
+      "t": 331.1,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-hypertension",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients requiring rapid BP reduction",
+      "pearl_id": "dr-ledbetter-on-hypertension-331"
+    },
+    {
+      "text": "In non-emergency hypertension, do not give IV medications; instead, take a breath and evaluate underlying causes.",
+      "verbatim": "Not emergency. Take a breath. Think about what's going on. Don't give them IV medications.",
+      "type": "judgment",
+      "t": 359.9,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-hypertension",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "non-emergency hypertension",
+      "pearl_id": "dr-ledbetter-on-hypertension-359"
+    },
+    {
+      "text": "For a patient with known aortic dissection who is not actively dissecting but has severely elevated BP, give clonidine in clinic and observe for a couple of hours.",
+      "verbatim": "This might be somebody that you give them clonidine in clinic and make them sit here for a couple hours to make sure their blood pressure goes down.",
+      "type": "practice",
+      "t": 402.5,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-hypertension",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with known aortic dissection (not actively dissecting) in clinic",
+      "pearl_id": "dr-ledbetter-on-hypertension-402"
+    },
+    {
+      "text": "In patients aged 65 and older, start antihypertensive therapy with a low dose of a single medication to avoid relative hypotension.",
+      "verbatim": "If they were old, 65 and up, probably be more inclined to just start them on a low dose of one medication.",
+      "type": "dosing",
+      "t": 527.9,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-hypertension",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "elderly patients (65+) starting antihypertensive therapy",
+      "pearl_id": "dr-ledbetter-on-hypertension-527"
+    },
+    {
+      "text": "When an asymptomatic inpatient has high blood pressure, do not give IV labetalol; instead, restart their home losartan if it was missed.",
+      "verbatim": "What I don't want you to do is say, oh, blood pressure's super high. They're totally cool, calm, sitting in bed, no problems at all. I'm gonna give them IV labetalol when you should have just restarted the losartan.",
+      "type": "pitfall",
+      "t": 930.9,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-hypertension",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "asymptomatic inpatients with missed home antihypertensives",
+      "pearl_id": "dr-ledbetter-on-hypertension-930"
+    },
+    {
+      "text": "Adjusting a patient's lisinopril dose in the hospital for elevated BP often leads to hypotension after discharge; avoid changing home medications unless there is an acute indication like NSTEMI or heart failure.",
+      "verbatim": "You address their lisinopril while they're in the hospital because blood pressure's high. They go home, and they become hypotensive.",
+      "type": "pitfall",
+      "t": 1028.2,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-hypertension",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "older patients in the hospital",
+      "pearl_id": "dr-ledbetter-on-hypertension-1028"
+    },
+    {
+      "text": "Do not order PRN blood pressure medications for hospitalized patients; the only exceptions are stroke protocol, aortic dissection, and preeclampsia.",
+      "verbatim": "How do you feel about PRNs for high blood pressure? Don't do it. It shouldn't be ordered.",
+      "type": "practice",
+      "t": 1179.7,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-hypertension",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "hospitalized patients",
+      "by_presenter": false,
+      "pearl_id": "dr-ledbetter-on-hypertension-1179"
+    },
+    {
+      "text": "In a septic patient with pneumonia and high blood pressure, do not give PRN blood pressure medications; the issue is not the blood pressure.",
+      "verbatim": "somebody who's in there septic with pneumonia, even if their blood pressure's super high, they should not be getting PRM blood pressure medications.",
+      "type": "pitfall",
+      "t": 1204.3,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-hypertension",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "septic patients with pneumonia",
+      "pearl_id": "dr-ledbetter-on-hypertension-1204"
+    },
+    {
+      "text": "For a patient with small bowel obstruction, high blood pressure is likely due to pain and vomiting, not a primary hypertensive issue.",
+      "verbatim": "Maybe with a small bowel obstruction. Issue is not their blood pressure more than likely. Issues that they're in pain and they're vomiting and you're checking their blood pressure while they're retching into a bed. Of course, it's going to be high.",
+      "type": "concept",
+      "t": 1215.7,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-hypertension",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with small bowel obstruction",
+      "pearl_id": "dr-ledbetter-on-hypertension-1215"
+    },
+    {
+      "text": "Do not order PRN blood pressure medications except for stroke protocol, aortic dissection, or preeclampsia; even with parameters, the decision should be based on symptoms, not just numbers.",
+      "verbatim": "I never order PRM blood pressure medications with it outside of those few exceptions.",
+      "type": "practice",
+      "t": 1233.5,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-hypertension",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "inpatient setting",
+      "pearl_id": "dr-ledbetter-on-hypertension-1233"
+    },
+    {
+      "text": "Even with parameters, PRN blood pressure medications should not be ordered; the decision should be based on symptoms and addressing other issues first.",
+      "verbatim": "Even with parameters. Because what should... Your your parameters should not just be numbers. It should be symptoms. It should be symptoms. And have you tried all of these other things to address their other issues first?",
+      "type": "judgment",
+      "t": 1243.5,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-hypertension",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "hospitalized patients",
+      "pearl_id": "dr-ledbetter-on-hypertension-1243"
+    },
+    {
+      "text": "Parameters for PRN blood pressure medications are acceptable in preeclampsia and stroke protocol, but even then, it's not just the numbers, it's the underlying condition.",
+      "verbatim": "Parameters is usually not good enough. It's good enough in preeclampsia. It's good enough in a stroke protocol. But even even then, it's not just the numbers. It's the fact that they have preeclampsia. It's the fact that they had a stroke.",
+      "type": "practice",
+      "t": 1290.8,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-hypertension",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with preeclampsia or stroke",
+      "pearl_id": "dr-ledbetter-on-hypertension-1290"
+    },
+    {
+      "text": "If you suspect hypertensive emergency, send the patient to the emergency room.",
+      "verbatim": "Alright. So if you think it's hypertensive emergency, just go to ER.",
+      "type": "red_flag",
+      "t": 1321.7,
+      "match": "exact",
+      "episode": "dr-ledbetter-on-hypertension",
+      "speaker": "Dr. Ledbetter",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with suspected hypertensive emergency",
+      "pearl_id": "dr-ledbetter-on-hypertension-1321"
+    }
+  ],
   "enrich_model": "deepseek/deepseek-v4-flash",
   "chunks": [
     {
@@ -30773,5 +31158,7 @@
       "id": "ledbetter",
       "name": "Dr. Ledbetter"
     }
-  ]
+  ],
+  "enrich_version": "v2",
+  "pearls_fingerprint": "c58ae8c64d0f2196"
 }
