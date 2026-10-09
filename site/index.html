@@ -627,10 +627,13 @@ function btnGroup(items,cur,mk){
    ====================================================================== */
 function homeView(){
   setTitle("");
-  const s=D.stats, nconf=REL.conflicts.length;
+  const s=D.stats, nconf=REL.conflicts.length, ndep=(REL.depends||[]).length;
   const latest=NEWEST.slice(0,8);
   const fresh=NEWEST.slice(0,15).flatMap(e=>(PBYEP[e.slug]||[]).filter(p=>p.grade==="A")).slice(0,5);
-  const conf=REL.conflicts.filter(c=>!c.same_speaker).slice(0,5);
+  // Disagreements between different attendings: verified conflicts first, then
+  // pairs where both are right depending on a condition (often the more useful).
+  const conf=[...REL.conflicts.map(c=>[c,"conflict"]),...(REL.depends||[]).map(c=>[c,"depends"])]
+    .filter(([c])=>!c.same_speaker).slice(0,6);
   return `<div class="jumbotron">
       <h1>HPI Lecture Corpus</h1>
       <p class="lead">${num(s.n_episodes)} residency lectures from Hope Partnerships International,
@@ -643,7 +646,7 @@ function homeView(){
     <div class="tiles">
       <a class="thumb" href="#/lectures"><b>${num(s.n_episodes)}</b>lectures</a>
       <a class="thumb" href="#/pearls"><b>${num(s.n_pearls)}</b>pearls</a>
-      <a class="thumb danger" href="${href("clusters",{v:"conflict"})}"><b>${num(nconf)}</b>contradictions</a>
+      <a class="thumb danger" href="${href("clusters",{v:nconf||!ndep?"conflict":"depends"})}"><b>${num(nconf+ndep)}</b>disagreements</a>
       <a class="thumb" href="#/speakers"><b>${num(D.speakers.length)}</b>speakers</a>
     </div>
     <div class="row">
@@ -658,11 +661,13 @@ function homeView(){
           <div class="panel-footer"><a href="#/lectures">All ${num(s.n_episodes)} lectures →</a></div></div>
         ${conf.length?`<div class="panel panel-danger"><div class="panel-heading"><h4>Where attendings disagree</h4></div>
           <div class="list-group" style="margin:0;box-shadow:none">
-          ${conf.map(c=>{const a=BYID[c.a]||{},b=BYID[c.b]||{};
-            return `<a class="list-group-item" style="border-left:0;border-right:0" href="${href("clusters",{v:"conflict"})}">
+          ${conf.map(([c,kind])=>{const a=BYID[c.a]||{},b=BYID[c.b]||{};
+            return `<a class="list-group-item" style="border-left:0;border-right:0" href="${href("clusters",{v:kind})}">
+            <span class="label label-${kind==="conflict"?"danger":"warning"}" style="float:right">${kind==="conflict"?"conflict":"depends"}</span>
             <span class="lg-title">${esc(c.topic||"")}</span>
-            <div class="meta">${esc(a.speaker||"")} vs ${esc(b.speaker||"")}</div></a>`;}).join("")}</div>
-          <div class="panel-footer"><a href="${href("clusters",{v:"conflict"})}">All ${nconf} contradictions →</a></div></div>`:""}
+            <div class="meta">${esc(a.speaker||"")} vs ${esc(b.speaker||"")}${c.condition?` · depends on ${esc(c.condition)}`:""}</div></a>`;}).join("")}</div>
+          <div class="panel-footer"><a href="${href("clusters",{v:"conflict"})}">${nconf} conflict(s)</a> ·
+            <a href="${href("clusters",{v:"depends"})}">${ndep} that depend on context →</a></div></div>`:""}
       </div>
       <div>
         <div class="panel"><div class="panel-heading"><h4>Top-graded pearls, newest lectures</h4></div>
@@ -857,11 +862,13 @@ function speakerView(){
   const ps=eps.flatMap(e=>PBYEP[e.slug]||[]).sort((a,b)=>b.points-a.points||b._dt-a._dt);
   const mine=new Set(ps.map(p=>p.pearl_id));
   const conf=REL.conflicts.filter(c=>mine.has(c.a)||mine.has(c.b));
+  const dep=(REL.depends||[]).filter(c=>mine.has(c.a)||mine.has(c.b));
   return crumbs([T("speakers"),"#/speakers"],[s.name])+
     `<h2>${esc(s.name)}</h2><p class="muted">${eps.length} ${esc(T("talks"))} · ${num(ps.length)} ${esc(T("pearls"))}
       ${s.aliases.length?` · also listed as ${esc(s.aliases.join(", "))}`:""}</p>
     ${lectureRows(eps)}
     ${conf.length?`<h3>Disagrees with another lecture <small class="muted">(${conf.length})</small></h3>${conf.map(c=>pairPanel(c,"conflict")).join("")}`:""}
+    ${dep.length?`<h3>Differs, depending on context <small class="muted">(${dep.length})</small></h3>${dep.map(c=>pairPanel(c,"depends")).join("")}`:""}
     <h3>${esc(T("pearls"))} <small class="muted">(${num(ps.length)}, best first)</small></h3>${pearlList(ps,"sp",null,20)}`;
 }
 
