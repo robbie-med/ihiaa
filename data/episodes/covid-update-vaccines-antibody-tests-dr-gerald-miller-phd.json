@@ -80044,37 +80044,41 @@
   ],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "Dr. Gerald Miller provides an update on COVID-19, vaccines, and antibody testing. He describes the SARS-CoV-2 virus structure, focusing on the spike protein's role in infection. The lecture covers vaccine platforms (mRNA and adenovirus vector), how they generate both antibody and T-cell immunity, and the importance of memory cells. He also discusses infectious periods, variants of concern, and the clinical relevance of antibody durability and breakthrough infections.",
+  "abstract": "Dr. Gerald Miller presents a COVID-19 update covering the SARS-CoV-2 virus structure, immune response, and vaccine mechanisms. He explains the roles of spike protein subunits (S1 and S2), antibody-mediated neutralization versus T-cell-mediated clearance, and how mRNA and adenovirus-vectored vaccines generate both humoral and cellular immunity. The talk addresses infectious periods, variants of concern, breakthrough infections, and the importance of memory B and T cells for rapid recall responses.",
   "key_points": [
-    "The spike protein S1 contains the receptor binding domain that attaches to ACE2; S2 mediates membrane fusion.",
-    "Antibodies block infection by neutralizing the virus and promoting opsonization; T cells terminate infection by killing infected cells.",
-    "mRNA vaccines (Pfizer, Moderna) use lipid nanoparticles to deliver mRNA encoding the spike protein; J&J uses a nonreplicating adenovirus vector with DNA that produces mRNA for the spike protein.",
-    "Because the spike antigen is produced inside the cell, mRNA and adenovirus vaccines generate both antibody and cell-mediated immunity.",
-    "Memory B and T cells are stored in lymphatic tissues and provide a rapid anamnestic response upon reexposure, typically within 3-4 days.",
-    "Infectious period begins 2-3 days before symptom onset and lasts about 8-10 days based on viral culture data.",
-    "Variants of concern (Alpha, Beta, Delta) show increased transmissibility, virulence, or immune escape; no variant has yet rendered spike protein unreactive to vaccine-induced antibodies.",
-    "IgG antibody testing can be used to assess response to vaccine or infection, but not for acute diagnosis.",
-    "Breakthrough infections in vaccinated patients are often mild or asymptomatic due to rapid memory cell response.",
-    "Novavax (protein subunit vaccine) primarily generates antibody response with minimal T-cell immunity.",
-    "Natural infection generates antibodies and T cells against many viral epitopes; vaccines generate a more limited response focused on the spike protein.",
-    "Vaccine-induced antibodies decline ~40% per month (half-life ~1.5 months); infection-induced antibodies decline ~4% per month (half-life ~6-7 months)."
+    "The spike protein S1 subunit contains the receptor-binding domain (RBD) that attaches to ACE2 receptors; S2 mediates membrane fusion and viral entry.",
+    "Antibodies block infection by neutralizing the virus and promoting opsonization/phagocytosis; T cells (especially cytotoxic CD8+ cells) terminate infection by destroying infected cells.",
+    "Infectiousness begins 2, 3 weeks before symptom onset and lasts 8, 10 days (based on viral culture data).",
+    "Variants of concern (Alpha, Beta, Delta) show increased transmissibility, virulence, or immune escape; no variant of high consequences has emerged yet.",
+    "mRNA vaccines (Pfizer, Moderna) use lipid nanoparticles to deliver mRNA encoding the spike protein; J&J uses a non-replicating adenovirus vector with DNA that produces mRNA for the spike protein.",
+    "Antigen produced inside the cell (as with mRNA and adenovirus vaccines) triggers both antibody-mediated and cell-mediated (T cell) immunity; injected spike protein alone (like Novavax) primarily generates antibody responses.",
+    "Memory B and T cells are stored in lymphatic tissues and provide a rapid protective response within 3, 4 days upon re-exposure, compared to 9, 14 days for primary immunization.",
+    "Breakthrough infections occur as antibody levels wane, but memory cells often limit symptoms to mild or short-lived illness.",
+    "The immune response to both infection and vaccination includes generation of memory cells (T helper, CD8, B cells) that persist in lymphatic tissues.",
+    "Vaccine-induced antibodies remain reactive to spike protein variants; no mutation has yet rendered the spike unrecognizable to vaccine-generated antibodies.",
+    "Vaccination mimics infection to educate the immune system through both antibody-mediated immunity and cell-mediated immunity.",
+    "IgG is used to determine whether a patient has had infection, for management purposes, not diagnosis."
   ],
   "topics_raw": [
     {
-      "label": "SARS-CoV-2 Spike Protein",
+      "label": "SARS-CoV-2",
+      "kind": "condition"
+    },
+    {
+      "label": "Spike Protein",
       "kind": "concept"
     },
     {
-      "label": "COVID-19 Vaccine Platforms",
+      "label": "ACE2 Receptor",
       "kind": "concept"
     },
     {
-      "label": "Messenger RNA Vaccine",
-      "kind": "procedure"
+      "label": "mRNA Vaccine",
+      "kind": "drug"
     },
     {
       "label": "Adenovirus Vector Vaccine",
-      "kind": "procedure"
+      "kind": "drug"
     },
     {
       "label": "Antibody-Mediated Immunity",
@@ -80093,27 +80097,75 @@
       "kind": "concept"
     },
     {
-      "label": "SARS-CoV-2 Variants",
-      "kind": "concept"
-    },
-    {
       "label": "Breakthrough Infection",
       "kind": "condition"
     },
     {
-      "label": "COVID-19 Infectious Period",
+      "label": "Variant of Concern",
       "kind": "concept"
     },
     {
-      "label": "ACE2 Receptor",
+      "label": "Cytokine Storm",
+      "kind": "condition"
+    },
+    {
+      "label": "COVID-19",
+      "kind": "condition"
+    },
+    {
+      "label": "SARS-CoV-2 immunity",
       "kind": "concept"
     },
     {
-      "label": "COVID-19 Vaccine",
+      "label": "Spike protein antibody testing",
       "kind": "procedure"
     },
     {
-      "label": "SARS-CoV-2 Antibody Testing",
+      "label": "Nucleocapsid antibody testing",
+      "kind": "procedure"
+    },
+    {
+      "label": "COVID-19 vaccination",
+      "kind": "procedure"
+    },
+    {
+      "label": "Natural immunity vs vaccine immunity",
+      "kind": "concept"
+    },
+    {
+      "label": "Memory T cells",
+      "kind": "concept"
+    },
+    {
+      "label": "Memory B cells",
+      "kind": "concept"
+    },
+    {
+      "label": "Mucosal IgA immunity",
+      "kind": "concept"
+    },
+    {
+      "label": "Antibody half-life",
+      "kind": "concept"
+    },
+    {
+      "label": "Cell-mediated immunity",
+      "kind": "concept"
+    },
+    {
+      "label": "COVID-19 infection",
+      "kind": "condition"
+    },
+    {
+      "label": "COVID-19",
+      "kind": "condition"
+    },
+    {
+      "label": "SARS-CoV-2 Vaccine",
+      "kind": "drug"
+    },
+    {
+      "label": "Antibody Titer",
       "kind": "procedure"
     },
     {
@@ -80121,406 +80173,500 @@
       "kind": "concept"
     },
     {
-      "label": "Vaccine-Induced Immunity",
-      "kind": "concept"
+      "label": "Breakthrough Infection",
+      "kind": "condition"
     },
     {
-      "label": "Spike Protein Antibody",
-      "kind": "concept"
-    },
-    {
-      "label": "Nucleocapsid Antibody",
-      "kind": "concept"
-    },
-    {
-      "label": "Memory B Cells",
-      "kind": "concept"
-    },
-    {
-      "label": "Memory T Cells",
+      "label": "High-Zone Tolerance",
       "kind": "concept"
     },
     {
       "label": "Immunocompromised Host",
-      "kind": "condition"
-    },
-    {
-      "label": "Breakthrough Infection",
-      "kind": "condition"
-    },
-    {
-      "label": "Asymptomatic COVID-19",
-      "kind": "condition"
-    },
-    {
-      "label": "Antibody Half-Life",
       "kind": "concept"
     },
     {
-      "label": "SARS-CoV-2 Spike Antibody",
-      "kind": "concept"
-    },
-    {
-      "label": "High Zone Tolerance",
-      "kind": "concept"
-    },
-    {
-      "label": "Myocarditis",
+      "label": "Asymptomatic Infection",
       "kind": "condition"
     },
     {
-      "label": "COVID-19 Vaccine Booster",
+      "label": "Booster Vaccination",
       "kind": "procedure"
     },
     {
-      "label": "Natural Immunity",
+      "label": "Vaccine Effectiveness",
       "kind": "concept"
     },
     {
-      "label": "Antibody Titer Decay",
-      "kind": "concept"
-    },
-    {
-      "label": "Breakthrough Infection",
-      "kind": "condition"
-    },
-    {
-      "label": "Pregnancy and COVID-19 Vaccine",
-      "kind": "concept"
-    },
-    {
-      "label": "Vaccine Ingredients",
-      "kind": "concept"
-    },
-    {
-      "label": "Anaphylaxis to Vaccine",
-      "kind": "condition"
-    },
-    {
-      "label": "COVID-19 Vaccine",
-      "kind": "drug"
-    },
-    {
-      "label": "Vaccine Mandates",
-      "kind": "concept"
-    },
-    {
-      "label": "Herd Immunity",
-      "kind": "concept"
-    },
-    {
-      "label": "Natural Immunity",
-      "kind": "concept"
-    },
-    {
-      "label": "Antibody Titer",
-      "kind": "concept"
-    },
-    {
-      "label": "Memory B Cells",
-      "kind": "concept"
-    },
-    {
-      "label": "Pfizer-BioNTech COVID-19 Vaccine",
-      "kind": "drug"
-    },
-    {
-      "label": "Moderna COVID-19 Vaccine",
-      "kind": "drug"
-    },
-    {
-      "label": "Janssen COVID-19 Vaccine",
-      "kind": "drug"
-    },
-    {
-      "label": "Hepatitis B Vaccine",
-      "kind": "drug"
-    },
-    {
-      "label": "Spike Antibody Test",
+      "label": "SARS-CoV-2 spike antibody testing",
       "kind": "procedure"
     },
     {
-      "label": "Breakthrough Infection",
+      "label": "COVID-19 vaccine booster timing",
       "kind": "concept"
     },
     {
-      "label": "Vaccine Dosing Schedule",
+      "label": "Antibody titer decline rate",
       "kind": "concept"
     },
     {
-      "label": "Comorbidity",
+      "label": "Breakthrough infection risk",
+      "kind": "condition"
+    },
+    {
+      "label": "Myocarditis risk from COVID-19",
+      "kind": "condition"
+    },
+    {
+      "label": "Myocarditis risk from COVID-19 vaccine",
+      "kind": "condition"
+    },
+    {
+      "label": "Anaphylaxis to COVID-19 vaccine",
+      "kind": "condition"
+    },
+    {
+      "label": "Natural immunity",
+      "kind": "concept"
+    },
+    {
+      "label": "Herd immunity",
+      "kind": "concept"
+    },
+    {
+      "label": "Vaccine ingredients",
+      "kind": "concept"
+    },
+    {
+      "label": "COVID-19",
+      "kind": "condition"
+    },
+    {
+      "label": "Pfizer COVID-19 vaccine",
+      "kind": "drug"
+    },
+    {
+      "label": "Moderna COVID-19 vaccine",
+      "kind": "drug"
+    },
+    {
+      "label": "Johnson & Johnson COVID-19 vaccine",
+      "kind": "drug"
+    },
+    {
+      "label": "Spike antibody test",
+      "kind": "procedure"
+    },
+    {
+      "label": "Vaccine dosing schedule",
+      "kind": "concept"
+    },
+    {
+      "label": "Immune memory",
+      "kind": "concept"
+    },
+    {
+      "label": "Vaccine half-life",
       "kind": "concept"
     }
   ],
   "pearls_raw": [
     {
-      "text": "Upon exposure, patients are infectious about 2-3 days prior to symptom onset and remain infectious for 8-10 days.",
-      "verbatim": "upon exposure, that you are about two to three weeks prior to onset of symptoms. You're gonna be infectious. Now you're... Basically, this graph shows you're out to eight days.",
-      "type": "guideline"
-    },
-    {
-      "text": "Antibodies block infection; T cells terminate infection by destroying infected cells.",
-      "verbatim": "The antibodies block the infection. Okay? The antibodies. ... However, the T cells terminate the infection.",
+      "text": "Antibodies block the infection; T cells terminate the infection by destroying infected cells.",
+      "seg": 156,
+      "verbatim": "The antibodies block the infection. Okay? The antibodies. We went back and we were going through that schematic. We were finding the antibody binding to the virus, blocking it, infecting itself. The antibodies were also binding to the virus and clearing the virus through the through the monocytes and through the neutrophils. So look at the antibodies as that component that blocks the infection. However, the T cells terminate the infection.",
+      "applies_to": "general",
       "type": "concept"
     },
     {
-      "text": "Memory cells provide a protective response within about 3-4 days upon reexposure, compared to 9-14 days for the initial immune response.",
+      "text": "Infectiousness begins 2–3 weeks before symptom onset and lasts 8–10 days based on viral culture data.",
+      "seg": 118,
+      "verbatim": "upon exposure, that you are about two to three weeks prior to onset of symptoms. You're gonna be infectious. Now you're... Basically, this graph shows you're out to eight days. In the early days back in March and April 2020, we were... They were able to culture viruses as late as ten days. And that's the reason you've got a ten day you've got a ten day quarantine because it's... It was considered at that particular time ten days. But this particular graph shows eight days, so eight to ten days is what we'll what we'll talk about.",
+      "applies_to": "patients with COVID-19",
+      "type": "concept"
+    },
+    {
+      "text": "Antigen produced inside the cell (as with mRNA and adenovirus vaccines) triggers both antibody and cell-mediated immunity; injected spike protein alone (like Novavax) primarily generates antibody responses.",
+      "seg": 212,
+      "verbatim": "if that antigen is coming from within the cell, you'll get both antibody and cell mediated immunity. So when the... Like the Novavax, the Novavax is nothing more than a spike protein. That's all you're gonna get with the Novavax is the antibody because that that antigen is not gonna come from within the cell.",
+      "applies_to": "general",
+      "type": "concept"
+    },
+    {
+      "text": "Memory cells provide a protective response within 3–4 days upon re-exposure, compared to 9–14 days for primary immunization.",
+      "seg": 266,
       "verbatim": "when you call upon the memory cells, you're gonna have a protective response within about three to four days. And so it's much shorter. On that initial time, it may be as early as nine days, ten days, but by definitely, you're gonna have a 100% by fourteen days.",
-      "type": "judgment"
-    },
-    {
-      "text": "Because the spike antigen is produced inside the cell with mRNA and adenovirus vaccines, both antibody and cell-mediated immunity are generated.",
-      "verbatim": "the key here is if that antigen is coming from within the cell, you'll get both antibody and cell mediated immunity.",
+      "applies_to": "vaccinated or previously infected individuals",
       "type": "concept"
     },
     {
-      "text": "Novavax, a protein subunit vaccine, primarily generates antibody response with very little T-cell immunity.",
-      "verbatim": "the Novavax is nothing more than a spike protein. That's all you're gonna get with the Novavax is the antibody because that that antigen is not gonna come from within the cell.",
+      "text": "No mutation has yet rendered the spike protein unrecognizable to antibodies generated by current vaccines.",
+      "seg": 232,
+      "verbatim": "it doesn't seem to be a problem. We haven't had a mutation whereby the spike proteins no longer no longer reactive with the antibodies regenerating with these vaccines.",
+      "applies_to": "general",
       "type": "concept"
     },
     {
-      "text": "No mutation has yet made the spike protein unreactive with antibodies generated by current vaccines.",
-      "verbatim": "We haven't had a mutation whereby the spike proteins no longer no longer reactive with the antibodies regenerating with these vaccines.",
-      "type": "judgment"
+      "text": "Breakthrough infections occur as antibody levels wane, but memory cells often limit symptoms to mild or short-lived illness.",
+      "seg": 258,
+      "verbatim": "you're gonna become vulnerable to an infection, to a reinfection, which you all see as a breakthrough infection on these vaccinated patients. But when that happens, the memory cells will, in fact, express themselves, and that's the reason, you know, a lot of these patients may see no symptoms, or you may see very limited symptoms, or you may see very short lived symptoms.",
+      "applies_to": "vaccinated patients",
+      "type": "concept"
     },
     {
-      "text": "IgG antibody testing is used to assess response to vaccine or infection, not for acute diagnosis.",
-      "verbatim": "IgG is the one we're gonna use in terms of saying, has this patient had the infection? Not using it for diagnosis. Just using it for management.",
-      "type": "guideline"
-    },
-    {
-      "text": "The spike protein S1 contains the receptor binding domain that attaches to ACE2; S2 then mediates fusion into the cell.",
-      "verbatim": "We've got the spike one, which has a receptor binding domain, and that's the site which is the so called attachment site to the receptor. And that receptor, of course, is the ACE2 protein on the cells. ... the S2 becomes the so called handle to turn the doorknob to allow the fusion of the virus into the cell.",
+      "text": "The spike protein S1 subunit contains the receptor-binding domain that attaches to ACE2 receptors; S2 mediates membrane fusion.",
+      "seg": 69,
+      "verbatim": "We've got the spike protein. We've got the spike one, which has a receptor binding domain, and that's the site which is the so called attachment site to the receptor. And that receptor, of course, is the ACE2 protein on the cells. Now when that's... That binds... That receptor binding domain binds the ACE2 receptor, that's what its function is, is that that is cleaved from the S2, and the S2 becomes the so called handle to turn the doorknob to allow the fusion of the virus into the cell.",
+      "applies_to": "general",
       "type": "concept"
     },
     {
       "text": "Variants of concern (Alpha, Beta, Delta) are recognized by increased transmissibility, virulence, and decreased effectiveness of public health measures.",
+      "seg": 132,
       "verbatim": "the variants of concern, the alpha, gamma, the alpha, the beta, the the delta. And these become the variants of of concern when we recognize them for their transmissibility in terms of their detrimental change to the patient, the increase in virulence, and, of course, we've been dealing with with delta, which has been paramount in all of this, and a decrease in the effectiveness of the of the public health system.",
+      "applies_to": "general",
       "type": "concept"
     },
     {
-      "text": "Symptoms of COVID-19 are due to the immune response to the virus, not direct viral damage.",
-      "verbatim": "what you're seeing as symptoms is the response of the immune system to the virus. That's what that's all about.",
+      "text": "The three stages of COVID-19 infection: stage 1 is respiratory infection symptoms; stage 2 is pulmonary phase with pneumonia; stage 3 is hyperinflammatory response with cytokine storm, ARDS, sepsis, and organ failure.",
+      "seg": 100,
+      "verbatim": "in terms of of the stage one, this is nothing more than due to a respiratory infection, and you're seeing the the characteristics there. You're seeing the characteristics of a respiratory infection. You go to the stage two, which you all well know... Which you all are well aware of in terms of now you got the pulmonary phase. You've got the pneumonia. And you go on over to the stage three, you get into... Oh god. You get into, of course, the the... You get into the hyperinflammatory response, acute respiratory disease syndrome. You start getting the sepsis. You get the kidney. You get the organ. You get the organ failure. That's really due to the reaction of the immune system. You're getting the cytokine storm, which are causing a tremendous amount of inflation... Inflammation.",
+      "applies_to": "patients with COVID-19",
       "type": "concept"
     },
     {
-      "text": "Order anti-spike antibody tests to assess vaccine response; nucleocapsid antibodies are only made after infection and are often low and short-lived, so they can falsely suggest no prior infection.",
-      "verbatim": "the test you need to order is order the anti spike. Don't order this. I'll tell you why in a minute unless unless you got... You're gonna use it in a very clever way.",
-      "type": "guideline"
+      "text": "Recommended patient education videos: one describing how Moderna and Pfizer mRNA vaccines work, and another explaining the J&J adenovirus vaccine mechanism.",
+      "seg": 287,
+      "verbatim": "I put them in here for you to use with your patients. They're excellent little videos. Put this in. Put... Type these into your your browser. And this one right here is a very descriptive, very descriptive little video on how Moderna and how Pfizer function, how they work. And lay people lay people find it very secure in order to seeing these and to be able to grasp what's taking place. This right here, this YouTube right here is on terms of J&J in terms of how it functions.",
+      "applies_to": "patients seeking vaccine information",
+      "type": "practice"
     },
     {
-      "text": "Vaccine-induced antibodies decline about 40% per month (half-life ~1.5 months), while infection-induced antibodies decline only 4% per month (half-life ~6-7 months).",
-      "verbatim": "If it's a virus induced antibody, it's gonna reduce four four percent every month. If it's a vaccine induced antibody, it's gonna reduce 40% every month.",
-      "type": "dx_criteria"
+      "text": "Order the anti-spike antibody test, not the nucleocapsid test, as the primary test to assess a patient's immune response to COVID vaccine or infection.",
+      "seg": 471,
+      "verbatim": "the test you need to order is order the anti spike.",
+      "applies_to": "patients being evaluated for immune response to COVID vaccine or infection",
+      "type": "practice"
     },
     {
-      "text": "A positive anti-spike antibody in an unvaccinated patient indicates prior infection, even if the nucleocapsid antibody is negative.",
-      "verbatim": "if you were looking for infection, you'd have got deceived with the nucleocapsid antibody. You'd have got deceived. The thing is that the spike is spike in positive, a patient a patient hasn't had a vaccine, I can tell you, take it to the back. That patient had an infection.",
-      "type": "pitfall"
-    },
-    {
-      "text": "Nucleocapsid antibody is only present in about 36% of patients after six months, so a negative result does not rule out prior infection.",
-      "verbatim": "it's only gonna be around for thirty six per... Thirty six percent of the patients after six months.",
-      "type": "red_flag"
-    },
-    {
-      "text": "Immunocompromised patients (leukemia, lymphoma, organ transplant, advanced HIV, diabetes) may have poor or absent vaccine responses and require closer monitoring.",
-      "verbatim": "if you look at the leukemias and lymphomas, you look at patients who are organ transplants, diabetes. Diabetes itself is immunosuppressive. If you if you have any of these, you're more than likely gonna have a low response or, in fact, particularly like these these lymphomas... Leukemias, lymphomas, HIV, advanced HIV, you're not gonna get any response at all.",
-      "type": "red_flag"
-    },
-    {
-      "text": "About 30% of COVID-19 infections are asymptomatic, but these individuals are still infectious.",
-      "verbatim": "Thirty percent of the people who got infected in COVID had no symptoms, had no symptoms at all. ... And those individuals that are infected with no symptoms, they're still infectious.",
-      "type": "judgment"
-    },
-    {
-      "text": "Vaccine effectiveness against infection drops from ~88% to ~47% after 4-5 months; protection against hospitalization also wanes but more slowly.",
-      "verbatim": "they go from eighty eight percent and they decrease down to forty seven percent. ... hospital admissions are kind of about the same. However, once you get past four to five months, that's... That is a different story simply because the titers have begin to diminish and not being able to block the infection.",
-      "type": "guideline"
-    },
-    {
-      "text": "Memory T cells from SARS-1 are still detectable years later, while memory B cells wane by about 6 years, suggesting T-cell memory may be more durable.",
-      "verbatim": "if we look back at SARS one in two thousand three, there's... There's some of these patients that had... They can still find memory T cells today, but the memory B cells were were gone by six years.",
+      "text": "Virus-induced antibodies decline about 4% per month, whereas vaccine-induced antibodies decline about 40% per month — a dramatic difference in antibody half-life.",
+      "seg": 488,
+      "verbatim": "four four percent every month. If it's a vaccine induced antibody, it's gonna reduce 40%",
+      "applies_to": "patients with prior COVID infection vs vaccination",
       "type": "concept"
     },
     {
-      "text": "Do not give the second dose of the vaccine to patients with prior COVID-19 infection because it can cause high zone tolerance and shut down T-cell immunity.",
-      "verbatim": "Do not give them the second dose of that vaccine because this is what we know, and some of the early papers address this. You get what's called high zone tolerance.",
-      "type": "pitfall"
-    },
-    {
-      "text": "After infection, wait at least 30 days before administering the first vaccine dose.",
-      "verbatim": "you wait thirty days, at least thirty days to vaccinate.",
-      "type": "guideline"
-    },
-    {
-      "text": "For patients with prior infection and vaccination, wait six months before checking a spike antibody titer to guide further management.",
-      "verbatim": "wait about six months, and you go back in, and you do a titer.",
-      "type": "guideline"
-    },
-    {
-      "text": "Order the SARS-CoV-2 IgG spike antibody test, not the nucleocapsid antibody test, to assess vaccine-induced immunity.",
-      "verbatim": "I want you to order the SARS-CoV-2 IgG spike.",
-      "type": "exam_technique"
-    },
-    {
-      "text": "A spike antibody level of 300 AU/mL or lower is a critical threshold for increased risk of breakthrough infection.",
-      "verbatim": "participants with a serology level of 300 AU/mL or lower or more likely to get infected with COVID-19 than those with a serology level greater than 300.",
-      "type": "dx_criteria"
-    },
-    {
-      "text": "When spike antibody levels drop to the low hundreds (200–350), consider giving a booster dose.",
-      "verbatim": "when you get in the lower one hundreds, you get into 200, two fifty, 300, three fifty. You ought to be thinking about whether you shouldn't give a booster at that particular time.",
-      "type": "guideline"
-    },
-    {
-      "text": "The gold standard for vaccination decisions is clinical history, not laboratory values alone.",
-      "verbatim": "The gold standard is your clinical history, not the lab.",
-      "type": "judgment"
-    },
-    {
-      "text": "Natural immunity antibody titers decay at approximately 4% per month.",
-      "verbatim": "That's diminishing by about four percent a month.",
+      "text": "The nucleocapsid antibody is only made in infection, not in response to the vaccine, so it can be used to tell whether a patient had the infection.",
+      "seg": 501,
+      "verbatim": "is only gonna be made in terms of infection because it's not in the course of the vaccine.",
+      "applies_to": "patients being evaluated for prior COVID infection",
       "type": "concept"
     },
     {
-      "text": "Vaccine-induced antibody titers decay at approximately 40% per month.",
-      "verbatim": "How much are they gonna diminish every month? 40%.",
+      "text": "When ordering a nucleocapsid antibody, always order a spike antibody along with it — especially for breakthrough infections — because a negative nucleocapsid alone can mislead you.",
+      "seg": 511,
+      "verbatim": "And so if... So my one point is if you order nucleocapsid antibody protein, you order... Always order a spike along with it. Okay? Because a lot of folks are doing that, and it seems to be working out well with them, particularly on these breakthrough infections.",
+      "applies_to": "breakthrough infections",
+      "type": "practice"
+    },
+    {
+      "text": "Recovered COVID patients given a single vaccine dose mount a 'horrendous' antibody response, much stronger than a naive patient's initial response.",
+      "seg": 415,
+      "verbatim": "But what happens here, what's gonna happen with the group of patients who have recovered and you give them a vaccine, one dose, they have a horrendous response.",
+      "applies_to": "recovered COVID patients receiving vaccination",
+      "type": "practice"
+    },
+    {
+      "text": "Memory T cells are long-lived — still detectable in SARS-1 patients from 2003 — while memory B cells were gone by about six years, so T-cell memory is the more durable protection.",
+      "seg": 427,
+      "verbatim": "But if we look back at SARS one in two thousand three, there's... There's some of these patients that had... They can still find memory T cells today, but the memory B cells were were gone by six years.",
+      "applies_to": "general",
       "type": "concept"
     },
     {
-      "text": "In young males, the risk of vaccine-associated myocarditis (10.69 per 100,000) is far lower than the risk of COVID-19 myocarditis (2.3 per 100).",
-      "verbatim": "if they get COVID if they get COVID, that's top way risk with benefits, at a two point three percent.",
-      "type": "red_flag"
-    },
-    {
-      "text": "Advanced age over 60-65 is considered a comorbidity for severe COVID-19.",
-      "verbatim": "It's that advanced age. That over 60, 65 is a comorbidity.",
-      "type": "red_flag"
-    },
-    {
-      "text": "Breakthrough infections occur when antibody titers get low enough, even in vaccinated individuals.",
-      "verbatim": "we know as titers get low enough, they're gonna have breakthrough infections.",
-      "type": "pitfall"
-    },
-    {
-      "text": "Natural immunity from infection can generate protection, as seen in Sweden's approach.",
-      "verbatim": "they walked through that infection, and they had people who got it. ... They generated that natural immunity.",
+      "text": "After COVID infection, antibody levels drop about 44% in the second month and 50% in the third month, then continue decreasing until about 180 days, after which they stabilize.",
+      "seg": 550,
+      "verbatim": "In terms of the the second thirty days, you had a drop of 44%. The next thirty days, you drop from the the values the month before by 50.",
+      "applies_to": "patients after COVID infection",
       "type": "concept"
     },
     {
-      "text": "Spike antibody testing can identify prior asymptomatic COVID-19 infection.",
-      "verbatim": "just go do a spike antibody. It's positive. You have it.",
-      "type": "dx_criteria"
+      "text": "Natural immunity generates antibodies to many epitopes across the whole virus, whereas vaccines produce antibodies only to spike protein epitopes — a much more limited but still effective response.",
+      "seg": 395,
+      "verbatim": "stop and think now. We're only making antibodies, our immune res... The antibody responses to the epitopes that are on the spike protein.",
+      "applies_to": "general",
+      "type": "concept"
     },
     {
-      "text": "The second dose of mRNA vaccines is needed to boost antibody titers and establish more memory cells.",
-      "verbatim": "that second dose is to boost it. And not only just establish a higher titer, but to establish establish more memory cells.",
-      "type": "guideline"
+      "text": "The Novavax vaccine will generate very little T-cell immune response, unlike Moderna, Pfizer, and J&J which produce cell-mediated immunity.",
+      "seg": 363,
+      "verbatim": "When you start seeing they begin to promote this this Novavax to you, you're gonna get very little of any T cell immune response.",
+      "applies_to": "patients considering Novavax vaccine",
+      "type": "concept"
     },
     {
-      "text": "Moderna's booster dose is 50 micrograms, lower than the primary series dose of 100 micrograms, because less antigen is needed to reactivate the immune system.",
-      "verbatim": "their booster is fifty micrograms. ... it takes a lot more antigen to stimulate initially to sensitize the immune system than it does to come back and to to re... Regenerate it, reactivate it.",
+      "text": "Fourteen days after vaccination, you can check the antibody response to see what kind of response the patient generated.",
+      "seg": 478,
+      "verbatim": "Fourteen days after vaccination, you can take a look and see what kind of a response you got.",
+      "applies_to": "patients after COVID vaccination",
+      "type": "practice"
+    },
+    {
+      "text": "Antibodies not only block viral binding but also enhance clearance: the Fc region binds to neutrophils and macrophages, promoting engulfment and clearing of the virus.",
+      "seg": 353,
+      "verbatim": "Those antibodies binding by the Fc region will bind to the the neutrophils and the macrophages. They'll bind to them and enhance the ability for those to be engulfed and cleared.",
+      "applies_to": "general",
+      "type": "concept"
+    },
+    {
+      "text": "IgG (not IgM or IgA) is the antibody used to determine whether a patient has had the infection — for management, not diagnosis.",
+      "seg": 326,
+      "verbatim": "Now IgG is the one we're gonna use in terms of saying, has this patient had the infection? Not using it for diagnosis. Just using it for management.",
+      "applies_to": "patients being evaluated for prior COVID infection",
+      "type": "practice"
+    },
+    {
+      "text": "At about 6 months after vaccination, memory B cell levels in recovered-vaccinated patients are about the same as in naive patients who received the vaccine.",
+      "seg": 421,
+      "verbatim": "But after about six months, they're about the same as the memory B cells with the with the naive patients who received the vaccine.",
+      "applies_to": "recovered COVID patients vs naive patients after vaccination",
+      "type": "concept"
+    },
+    {
+      "text": "Vaccine-induced antibody levels are much higher initially than infection-induced levels — in a large Israeli study the vaccine group mean was 12,153 versus 1,914 for the virus-induced group — but the faster decline of vaccine antibodies changes the picture over time.",
+      "seg": 537,
+      "verbatim": "the mean of that group of... I don't know. It was thousands, if not hundreds of thousands of people in that, was 12,153. However, look at the vaccine in... I mean, the virus induced antibody was only 19... 1,914.",
+      "applies_to": "general",
+      "type": "concept"
+    },
+    {
+      "text": "Vaccine-induced antibody titers decrease by about 40% per month; use a half-life of 1-2 months (approximately 1.5 months) to estimate a patient's titer decline.",
+      "seg": 600,
+      "verbatim": "about their half-life on their antibody was somewhere one... It was from one to two months. So I always calculate about a month and a half. A month and a half, you can divide it by two. Another month and a half, you can divide it by two. Another month and a half, you divide it by two",
+      "applies_to": "vaccinated patients",
       "type": "dosing"
     },
     {
-      "text": "J&J vaccine is about 66% effective against infection, likely because the single dose is insufficient to generate adequate antibody and memory cells.",
-      "verbatim": "J&J is sixty six percent. ... that probably wasn't enough to generate sufficient, number one, sufficient antibody, and number two, sufficient memory cells in order to protect them.",
+      "text": "Natural infection-induced antibodies decrease by about 4% per month, with a half-life of about 6-7 months.",
+      "seg": 605,
+      "verbatim": "the SARS-CoV-2 infected patients, and they're diminishing at four percent each passing month.",
+      "applies_to": "patients with prior COVID-19 infection",
+      "type": "concept"
+    },
+    {
+      "text": "30% of COVID-19 infections are asymptomatic; these individuals are still infectious and can spread the virus.",
+      "seg": 688,
+      "verbatim": "Thirty percent of the people who got infected in COVID had no symptoms, had no symptoms at all.",
+      "applies_to": "general population",
+      "type": "red_flag"
+    },
+    {
+      "text": "In patients with prior natural infection, wait at least 30 days before giving the first vaccine dose; do not give the second dose because it can cause high-zone tolerance and shut down the T cell immune response.",
+      "seg": 754,
+      "verbatim": "You wait thirty days, at least thirty days to vaccinate. Then when you vaccinate them is that two weeks after the first dose, I'm gonna tell you from experience, they're gonna have values at the minimum over 10,000, and on some of them are gonna be greater than a 100,000. ... Do not give them the second dose of that vaccine because this is what we know, and some of the early papers address this. You get what's called high zone tolerance. ... giving too much antigen to the immune system. And what happens, you shut the immune system down to the T cells.",
+      "applies_to": "patients with prior COVID-19 infection",
+      "type": "dosing"
+    },
+    {
+      "text": "After a patient with prior natural infection has been vaccinated with one dose, wait six months and then check an antibody titer to guide further management.",
+      "seg": 779,
+      "verbatim": "what you do on these patients is that you wait about six months. You wait six months, and you go back in, and you do a titer.",
+      "applies_to": "patients with prior COVID-19 infection who received one vaccine dose",
+      "type": "practice"
+    },
+    {
+      "text": "Patients with breakthrough infection after vaccination will have very high antibody titers, in the tens of thousands to over 100,000; manage similarly to those with prior infection plus vaccination, and check titer at six months.",
+      "seg": 823,
+      "verbatim": "These individuals have breakthrough infections. They have horrendous titers again. You're gonna be shocked when you see the titer. In fact, I'm not gonna be surprised you call me and say, hey. You made a mistake here, because that's gonna be in the tens of thousands, not a 100, over a 100,000. Okay? And so here again... The question goes again. .. I'm gonna say come back in six months and take a look and see what your titer is.",
+      "applies_to": "patients with breakthrough infection after vaccination",
+      "type": "practice"
+    },
+    {
+      "text": "Leukemia, lymphoma, organ transplant, advanced HIV, and diabetes are comorbidities that lead to poor or absent vaccine antibody response; these patients need closer attention and monitoring.",
+      "seg": 666,
+      "verbatim": "These are individuals here that are not going to respond very well if at all. Particularly if you look at the leukemias and lymphomas, you look at patients who are organ transplants, diabetes. Diabetes itself is immunosuppressive. ... HIV, advanced HIV, you're not gonna get any response at all.",
+      "applies_to": "patients with these comorbidities",
+      "type": "red_flag"
+    },
+    {
+      "text": "Vaccine effectiveness against infection with the Delta variant drops from 93% to 53% after 4-5 months; against hospitalization, effectiveness for Moderna is about 93%, Pfizer 88%, and J&J 71% before declining after 5-7 months.",
+      "seg": 641,
+      "verbatim": "the delta, 97... 93% drops down to fifty three percent after four or five months. ... hospitalizations from March to ninety three, the Moderna stayed in about ninety three, Pfizer, eighty eight. J&J, seventy one. ... once you get past five, six, seven months, then you begin to see those value... Those values decrease and decrease significantly.",
+      "applies_to": "immunocompetent patients",
+      "type": "concept"
+    },
+    {
+      "text": "A third of patients who get infected never know they were infected; always consider the possibility of asymptomatic prior infection when evaluating a patient's immune status.",
+      "seg": 834,
+      "verbatim": "a third of the patients got infected never knew they were infected.",
+      "applies_to": "general population",
+      "type": "pitfall"
+    },
+    {
+      "text": "When a patient asks what to do about their antibody titer (e.g., 92, 1,000, 2,000), you can calculate the expected decline: for vaccine-induced, halve every 1.5 months; for natural infection, 4% per month.",
+      "seg": 614,
+      "verbatim": "hey. I've got a value of 1,000, 2,000, or I got a value of 92. What do you think I should do? We're gonna try giving you some numbers here in a minute. But that's the kind of questions you're getting that you need to be able to answer, but yet you can calculate out on these these infections here.",
+      "applies_to": "any patient with an antibody titer result",
+      "type": "practice"
+    },
+    {
+      "text": "Antibody titers decline about 40% per month after vaccination or infection.",
+      "seg": 813,
+      "verbatim": "40%.",
+      "applies_to": "patients after vaccination or infection",
+      "type": "concept"
+    },
+    {
+      "text": "A spike antibody level of 300 AU/mL or lower is associated with higher risk of breakthrough infection; consider booster when titer is in the 100-350 range.",
+      "seg": 912,
+      "verbatim": "participants with a serology level of 300 AU/mL or lower or more likely to get infected with SARS... With COVID nineteen than than those with a serology level greater than 300.",
+      "applies_to": "vaccinated individuals",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "In patients with breakthrough infection after vaccination, titers can exceed 100,000.",
+      "seg": 824,
+      "verbatim": "not a 100, over a 100,000.",
+      "applies_to": "patients with breakthrough infection after vaccination",
+      "type": "concept"
+    },
+    {
+      "text": "The risk of vaccine-associated myocarditis in males aged 16-29 is 10.69 per 100,000, while the risk of COVID-associated myocarditis in young male athletes is 2.3 per 100 (2.3%).",
+      "seg": 982,
+      "verbatim": "at a two point three percent. Two point three percent.",
+      "applies_to": "young male athletes aged 16-29",
       "type": "judgment"
     },
     {
-      "text": "Spacing vaccine doses further apart (e.g., 4 months) may improve immune response, similar to the hepatitis B vaccine schedule with a third dose at 6 months.",
-      "verbatim": "if you give one dose and that one dose has has got half-life of of a month and a half, two month... One to two months, And you come back in four months. You now have that immune system there poised and ready, and you're probably gonna get more ... stimulation than you would have if you would have done it why why the immune system was all hyped up and making a response.",
-      "type": "guideline"
+      "text": "Anaphylaxis to COVID-19 vaccines occurs at a rate of 11.1 per million doses.",
+      "seg": 1024,
+      "verbatim": "eleven point one per million.",
+      "applies_to": "general population receiving COVID-19 vaccine",
+      "type": "concept"
     },
     {
-      "text": "Giving vaccine doses too close together may not optimize the immune response; waiting longer can yield better stimulation.",
-      "verbatim": "if you give them too much too close in sequence ... You don't get the response.",
-      "type": "pitfall"
+      "text": "Order SARS-CoV-2 IgG spike antibody test, not the nucleocapsid antibody test, to assess vaccine-induced immunity.",
+      "seg": 883,
+      "verbatim": "Don't send me a SARS-CoV-2 IgG. I want you to order a spike.",
+      "applies_to": "clinicians ordering antibody testing",
+      "type": "practice"
+    },
+    {
+      "text": "The gold standard for deciding who needs antibody testing is clinical history, not the lab.",
+      "seg": 1052,
+      "verbatim": "The gold standard is your clinical history, not the lab.",
+      "applies_to": "clinicians deciding on antibody testing",
+      "type": "judgment"
+    },
+    {
+      "text": "Healthcare workers and first responders are good candidates for spike antibody testing because about a third of infected individuals are asymptomatic.",
+      "seg": 1044,
+      "verbatim": "Is this individual a health care worker who's been working in the midst of all of this, and are they the one that has thirty percent that had an infection but never had any symptoms?",
+      "applies_to": "healthcare workers and first responders",
+      "type": "practice"
+    },
+    {
+      "text": "If a patient's titer is 500, you can back-calculate using the 40% monthly decline: one month ago it was ~1000, two months ago ~2000, etc., indicating good memory cell response.",
+      "seg": 843,
+      "verbatim": "We can go backwards. So they were at 500. So three three months ago or thirty days ago, they were at a thousand.",
+      "applies_to": "patients with known spike antibody titer",
+      "type": "concept"
+    },
+    {
+      "text": "Age over 60-65 is a comorbidity that increases risk of symptomatic infection.",
+      "seg": 1060,
+      "verbatim": "That over 60, 65 is a comorbidity.",
+      "applies_to": "adults over 60-65",
+      "type": "concept"
+    },
+    {
+      "text": "If a patient may have had COVID without knowing, order a spike antibody test; a positive result confirms prior infection.",
+      "seg": 1100,
+      "verbatim": "And when you find out, just go do a spike antibody. It's positive. You have it.",
+      "applies_to": "patients with suspected undiagnosed prior COVID",
+      "type": "practice"
+    },
+    {
+      "text": "Show patients the 2–2.5 minute vaccine ingredient videos to help them decide: one video for Pfizer, a different one for J&J.",
+      "seg": 1110,
+      "verbatim": "If you're giving Pfizer, do the first video. And if they're... You're doing J&J, do the second video.",
+      "applies_to": "clinicians counseling patients about COVID vaccination",
+      "type": "practice"
+    },
+    {
+      "text": "Moderna's primary series doses are 100 micrograms each, which the presenter considers possibly too high; the booster is 50 micrograms.",
+      "seg": 1132,
+      "verbatim": "Moderna is a hundred micrograms on those first two doses. They're a hundred micrograms, which I kinda would have to argue is a little too high... their booster is fifty micrograms.",
+      "applies_to": "Moderna vaccine dosing",
+      "type": "dosing"
+    },
+    {
+      "text": "For patients who had COVID infection and then received one dose of Moderna, be cautious about giving the second dose because Moderna is so strong.",
+      "seg": 1143,
+      "verbatim": "Moderna is the one that I really dug my heels in on individuals who'd had the infection and then had one dose and them getting the second dose because Moderna is so so high, so strong.",
+      "applies_to": "patients with prior COVID who received one Moderna dose",
+      "type": "judgment"
+    },
+    {
+      "text": "J&J vaccine is 66% effective against infection, which likely did not generate sufficient antibody or memory cells for durable protection.",
+      "seg": 1149,
+      "verbatim": "J&J is sixty six percent. And sixty six percent, and that's is in terms of infection. ... that probably wasn't enough to generate sufficient, number one, sufficient antibody, and number two, sufficient memory cells in order to protect them.",
+      "applies_to": "J&J vaccine recipients",
+      "type": "concept"
+    },
+    {
+      "text": "The second dose of mRNA vaccines is given not only to raise antibody titer but to establish more memory cells.",
+      "seg": 1129,
+      "verbatim": "that second dose is to boost it. And not only just establish a higher titer, but to establish more memory cells.",
+      "applies_to": "two-dose mRNA COVID vaccines",
+      "type": "concept"
+    },
+    {
+      "text": "Longer intervals between doses (e.g., 4 months) may improve immune response because the vaccine's half-life (1–2 months) leaves the immune system poised and ready for greater stimulation, analogous to the hepatitis B schedule.",
+      "seg": 1165,
+      "verbatim": "If you give one dose and that one dose has got half-life of a month and a half, two month... One to two months, And you come back in four months. You now have that immune system there poised and ready, and you're probably gonna get more stimulation... That's the reason the hepatitis B. That's the reason you wait six months for that third dose.",
+      "applies_to": "COVID vaccine dosing interval decisions",
+      "type": "concept"
     }
   ],
   "pearls": [
     {
-      "text": "The spike protein S1 contains the receptor binding domain that attaches to ACE2; S2 then mediates fusion into the cell.",
-      "verbatim": "We've got the spike one, which has a receptor binding domain, and that's the site which is the so called attachment site to the receptor. And that receptor, of course, is the ACE2 protein on the cells. ... the S2 becomes the so called handle to turn the doorknob to allow the fusion of the virus into the cell.",
+      "text": "The spike protein S1 subunit contains the receptor-binding domain that attaches to ACE2 receptors; S2 mediates membrane fusion.",
+      "verbatim": "We've got the spike protein. We've got the spike one, which has a receptor binding domain, and that's the site which is the so called attachment site to the receptor. And that receptor, of course, is the ACE2 protein on the cells. Now when that's... That binds... That receptor binding domain binds the ACE2 receptor, that's what its function is, is that that is cleaved from the S2, and the S2 becomes the so called handle to turn the doorknob to allow the fusion of the virus into the cell.",
       "type": "concept",
-      "t": 378.2,
+      "t": 376.9,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-378",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "general",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-376"
     },
     {
-      "text": "Symptoms of COVID-19 are due to the immune response to the virus, not direct viral damage.",
-      "verbatim": "what you're seeing as symptoms is the response of the immune system to the virus. That's what that's all about.",
+      "text": "The three stages of COVID-19 infection: stage 1 is respiratory infection symptoms; stage 2 is pulmonary phase with pneumonia; stage 3 is hyperinflammatory response with cytokine storm, ARDS, sepsis, and organ failure.",
+      "verbatim": "in terms of of the stage one, this is nothing more than due to a respiratory infection, and you're seeing the the characteristics there. You're seeing the characteristics of a respiratory infection. You go to the stage two, which you all well know... Which you all are well aware of in terms of now you got the pulmonary phase. You've got the pneumonia. And you go on over to the stage three, you get into... Oh god. You get into, of course, the the... You get into the hyperinflammatory response, acute respiratory disease syndrome. You start getting the sepsis. You get the kidney. You get the organ. You get the organ failure. That's really due to the reaction of the immune system. You're getting the cytokine storm, which are causing a tremendous amount of inflation... Inflammation.",
       "type": "concept",
-      "t": 502.9,
+      "t": 511.1,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-502",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:covid-19"
-          ],
-          "rarity": 6.64
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with COVID-19",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-511"
     },
     {
-      "text": "Upon exposure, patients are infectious about 2-3 days prior to symptom onset and remain infectious for 8-10 days.",
-      "verbatim": "upon exposure, that you are about two to three weeks prior to onset of symptoms. You're gonna be infectious. Now you're... Basically, this graph shows you're out to eight days.",
-      "type": "practice",
+      "text": "Infectiousness begins 2, 3 weeks before symptom onset and lasts 8, 10 days based on viral culture data.",
+      "verbatim": "upon exposure, that you are about two to three weeks prior to onset of symptoms. You're gonna be infectious. Now you're... Basically, this graph shows you're out to eight days. In the early days back in March and April 2020, we were... They were able to culture viruses as late as ten days. And that's the reason you've got a ten day you've got a ten day quarantine because it's... It was considered at that particular time ten days. But this particular graph shows eight days, so eight to ten days is what we'll what we'll talk about.",
+      "type": "concept",
       "t": 582.6,
       "match": "fuzzy",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-582",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:3 days"
-          ],
-          "rarity": 6.81
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with COVID-19",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-582"
     },
     {
       "text": "Variants of concern (Alpha, Beta, Delta) are recognized by increased transmissibility, virulence, and decreased effectiveness of public health measures.",
@@ -80532,27 +80678,12 @@
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-653",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:public health"
-          ],
-          "rarity": 8.43
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "general",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-653"
     },
     {
-      "text": "Antibodies block infection; T cells terminate infection by destroying infected cells.",
-      "verbatim": "The antibodies block the infection. Okay? The antibodies. ... However, the T cells terminate the infection.",
+      "text": "Antibodies block the infection; T cells terminate the infection by destroying infected cells.",
+      "verbatim": "The antibodies block the infection. Okay? The antibodies. We went back and we were going through that schematic. We were finding the antibody binding to the virus, blocking it, infecting itself. The antibodies were also binding to the virus and clearing the virus through the through the monocytes and through the neutrophils. So look at the antibodies as that component that blocks the infection. However, the T cells terminate the infection.",
       "type": "concept",
       "t": 732.8,
       "match": "exact",
@@ -80560,186 +80691,168 @@
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-732",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 8.01
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "general",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-732"
     },
     {
-      "text": "Because the spike antigen is produced inside the cell with mRNA and adenovirus vaccines, both antibody and cell-mediated immunity are generated.",
-      "verbatim": "the key here is if that antigen is coming from within the cell, you'll get both antibody and cell mediated immunity.",
+      "text": "Antigen produced inside the cell (as with mRNA and adenovirus vaccines) triggers both antibody and cell-mediated immunity; injected spike protein alone (like Novavax) primarily generates antibody responses.",
+      "verbatim": "if that antigen is coming from within the cell, you'll get both antibody and cell mediated immunity. So when the... Like the Novavax, the Novavax is nothing more than a spike protein. That's all you're gonna get with the Novavax is the antibody because that that antigen is not gonna come from within the cell.",
       "type": "concept",
-      "t": 942.1,
+      "t": 944.1,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-942",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:cell-mediated immunity"
-          ],
-          "rarity": 8.43
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "general",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-944"
     },
     {
-      "text": "Novavax, a protein subunit vaccine, primarily generates antibody response with very little T-cell immunity.",
-      "verbatim": "the Novavax is nothing more than a spike protein. That's all you're gonna get with the Novavax is the antibody because that that antigen is not gonna come from within the cell.",
+      "text": "No mutation has yet rendered the spike protein unrecognizable to antibodies generated by current vaccines.",
+      "verbatim": "it doesn't seem to be a problem. We haven't had a mutation whereby the spike proteins no longer no longer reactive with the antibodies regenerating with these vaccines.",
       "type": "concept",
-      "t": 958.1,
+      "t": 1021.2,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-958",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "general",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1021"
     },
     {
-      "text": "No mutation has yet made the spike protein unreactive with antibodies generated by current vaccines.",
-      "verbatim": "We haven't had a mutation whereby the spike proteins no longer no longer reactive with the antibodies regenerating with these vaccines.",
-      "type": "judgment",
-      "t": 1022.7,
+      "text": "Breakthrough infections occur as antibody levels wane, but memory cells often limit symptoms to mild or short-lived illness.",
+      "verbatim": "you're gonna become vulnerable to an infection, to a reinfection, which you all see as a breakthrough infection on these vaccinated patients. But when that happens, the memory cells will, in fact, express themselves, and that's the reason, you know, a lot of these patients may see no symptoms, or you may see very limited symptoms, or you may see very short lived symptoms.",
+      "type": "concept",
+      "t": 1105.4,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1022",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.83
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "vaccinated patients",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1105"
     },
     {
-      "text": "Memory cells provide a protective response within about 3-4 days upon reexposure, compared to 9-14 days for the initial immune response.",
+      "text": "Memory cells provide a protective response within 3, 4 days upon re-exposure, compared to 9, 14 days for primary immunization.",
       "verbatim": "when you call upon the memory cells, you're gonna have a protective response within about three to four days. And so it's much shorter. On that initial time, it may be as early as nine days, ten days, but by definitely, you're gonna have a 100% by fourteen days.",
-      "type": "judgment",
+      "type": "concept",
       "t": 1147.7,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1147",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:4 days"
-          ],
-          "rarity": 7.5
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "vaccinated or previously infected individuals",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1147"
     },
     {
-      "text": "IgG antibody testing is used to assess response to vaccine or infection, not for acute diagnosis.",
-      "verbatim": "IgG is the one we're gonna use in terms of saying, has this patient had the infection? Not using it for diagnosis. Just using it for management.",
+      "text": "Recommended patient education videos: one describing how Moderna and Pfizer mRNA vaccines work, and another explaining the J&J adenovirus vaccine mechanism.",
+      "verbatim": "I put them in here for you to use with your patients. They're excellent little videos. Put this in. Put... Type these into your your browser. And this one right here is a very descriptive, very descriptive little video on how Moderna and how Pfizer function, how they work. And lay people lay people find it very secure in order to seeing these and to be able to grasp what's taking place. This right here, this YouTube right here is on terms of J&J in terms of how it functions.",
       "type": "practice",
-      "t": 1369.1,
+      "t": 1227.6,
+      "match": "fuzzy",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients seeking vaccine information",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1227"
+    },
+    {
+      "text": "IgG (not IgM or IgA) is the antibody used to determine whether a patient has had the infection, for management, not diagnosis.",
+      "verbatim": "Now IgG is the one we're gonna use in terms of saying, has this patient had the infection? Not using it for diagnosis. Just using it for management.",
+      "type": "practice",
+      "t": 1369.0,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1369",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:antibody testing"
-          ],
-          "rarity": 5.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients being evaluated for prior COVID infection",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1369"
     },
     {
-      "text": "Memory T cells from SARS-1 are still detectable years later, while memory B cells wane by about 6 years, suggesting T-cell memory may be more durable.",
-      "verbatim": "if we look back at SARS one in two thousand three, there's... There's some of these patients that had... They can still find memory T cells today, but the memory B cells were were gone by six years.",
+      "text": "Antibodies not only block viral binding but also enhance clearance: the Fc region binds to neutrophils and macrophages, promoting engulfment and clearing of the virus.",
+      "verbatim": "Those antibodies binding by the Fc region will bind to the the neutrophils and the macrophages. They'll bind to them and enhance the ability for those to be engulfed and cleared.",
       "type": "concept",
-      "t": 1808.9,
+      "t": 1492.1,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1808",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:6 years"
-          ],
-          "rarity": 8.43
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "general",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1492"
     },
     {
-      "text": "Order anti-spike antibody tests to assess vaccine response; nucleocapsid antibodies are only made after infection and are often low and short-lived, so they can falsely suggest no prior infection.",
-      "verbatim": "the test you need to order is order the anti spike. Don't order this. I'll tell you why in a minute unless unless you got... You're gonna use it in a very clever way.",
+      "text": "The Novavax vaccine will generate very little T-cell immune response, unlike Moderna, Pfizer, and J&J which produce cell-mediated immunity.",
+      "verbatim": "When you start seeing they begin to promote this this Novavax to you, you're gonna get very little of any T cell immune response.",
+      "type": "concept",
+      "t": 1530.4,
+      "match": "fuzzy",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients considering Novavax vaccine",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1530"
+    },
+    {
+      "text": "Natural immunity generates antibodies to many epitopes across the whole virus, whereas vaccines produce antibodies only to spike protein epitopes, a much more limited but still effective response.",
+      "verbatim": "stop and think now. We're only making antibodies, our immune res... The antibody responses to the epitopes that are on the spike protein.",
+      "type": "concept",
+      "t": 1670.5,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "general",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1670"
+    },
+    {
+      "text": "Recovered COVID patients given a single vaccine dose mount a 'horrendous' antibody response, much stronger than a naive patient's initial response.",
+      "verbatim": "But what happens here, what's gonna happen with the group of patients who have recovered and you give them a vaccine, one dose, they have a horrendous response.",
+      "type": "practice",
+      "t": 1753.6,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "recovered COVID patients receiving vaccination",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1753"
+    },
+    {
+      "text": "At about 6 months after vaccination, memory B cell levels in recovered-vaccinated patients are about the same as in naive patients who received the vaccine.",
+      "verbatim": "But after about six months, they're about the same as the memory B cells with the with the naive patients who received the vaccine.",
+      "type": "concept",
+      "t": 1787.4,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "recovered COVID patients vs naive patients after vaccination",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1787"
+    },
+    {
+      "text": "Memory T cells are long-lived, still detectable in SARS-1 patients from 2003, while memory B cells were gone by about six years, so T-cell memory is the more durable protection.",
+      "verbatim": "But if we look back at SARS one in two thousand three, there's... There's some of these patients that had... They can still find memory T cells today, but the memory B cells were were gone by six years.",
+      "type": "concept",
+      "t": 1808.8,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "general",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-1808"
+    },
+    {
+      "text": "Order the anti-spike antibody test, not the nucleocapsid test, as the primary test to assess a patient's immune response to COVID vaccine or infection.",
+      "verbatim": "the test you need to order is order the anti spike.",
       "type": "practice",
       "t": 2016.9,
       "match": "exact",
@@ -80747,358 +80860,269 @@
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2016",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:spike antibody test"
-          ],
-          "actionable": [
-            "Order"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients being evaluated for immune response to COVID vaccine or infection",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2016"
     },
     {
-      "text": "Vaccine-induced antibodies decline about 40% per month (half-life ~1.5 months), while infection-induced antibodies decline only 4% per month (half-life ~6-7 months).",
-      "verbatim": "If it's a virus induced antibody, it's gonna reduce four four percent every month. If it's a vaccine induced antibody, it's gonna reduce 40% every month.",
-      "type": "dx_criteria",
-      "t": 2092.0,
+      "text": "Fourteen days after vaccination, you can check the antibody response to see what kind of response the patient generated.",
+      "verbatim": "Fourteen days after vaccination, you can take a look and see what kind of a response you got.",
+      "type": "practice",
+      "t": 2054.2,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "numbers_unheard": [
-        "1.5",
-        "7"
-      ],
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2092",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:1.5 months"
-          ],
-          "rarity": 7.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients after COVID vaccination",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2054"
     },
     {
-      "text": "Nucleocapsid antibody is only present in about 36% of patients after six months, so a negative result does not rule out prior infection.",
-      "verbatim": "it's only gonna be around for thirty six per... Thirty six percent of the patients after six months.",
-      "type": "red_flag",
-      "t": 2150.0,
+      "text": "Virus-induced antibodies decline about 4% per month, whereas vaccine-induced antibodies decline about 40% per month, a dramatic difference in antibody half-life.",
+      "verbatim": "four four percent every month. If it's a vaccine induced antibody, it's gonna reduce 40%",
+      "type": "concept",
+      "t": 2096.3,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2150",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:nucleocapsid antibody"
-          ],
-          "actionable": [
-            "rule out"
-          ],
-          "rarity": 6.06
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with prior COVID infection vs vaccination",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2096"
     },
     {
-      "text": "A positive anti-spike antibody in an unvaccinated patient indicates prior infection, even if the nucleocapsid antibody is negative.",
-      "verbatim": "if you were looking for infection, you'd have got deceived with the nucleocapsid antibody. You'd have got deceived. The thing is that the spike is spike in positive, a patient a patient hasn't had a vaccine, I can tell you, take it to the back. That patient had an infection.",
-      "type": "pitfall",
-      "t": 2180.0,
+      "text": "The nucleocapsid antibody is only made in infection, not in response to the vaccine, so it can be used to tell whether a patient had the infection.",
+      "verbatim": "is only gonna be made in terms of infection because it's not in the course of the vaccine.",
+      "type": "concept",
+      "t": 2134.4,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients being evaluated for prior COVID infection",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2134"
+    },
+    {
+      "text": "When ordering a nucleocapsid antibody, always order a spike antibody along with it, especially for breakthrough infections, because a negative nucleocapsid alone can mislead you.",
+      "verbatim": "And so if... So my one point is if you order nucleocapsid antibody protein, you order... Always order a spike along with it. Okay? Because a lot of folks are doing that, and it seems to be working out well with them, particularly on these breakthrough infections.",
+      "type": "practice",
+      "t": 2200.0,
       "match": "fuzzy",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2180",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:nucleocapsid antibody"
-          ],
-          "rarity": 7.6
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "breakthrough infections",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2200"
     },
     {
-      "text": "Vaccine effectiveness against infection drops from ~88% to ~47% after 4-5 months; protection against hospitalization also wanes but more slowly.",
-      "verbatim": "they go from eighty eight percent and they decrease down to forty seven percent. ... hospital admissions are kind of about the same. However, once you get past four to five months, that's... That is a different story simply because the titers have begin to diminish and not being able to block the infection.",
+      "text": "Vaccine-induced antibody levels are much higher initially than infection-induced levels, in a large Israeli study the vaccine group mean was 12,153 versus 1,914 for the virus-induced group, but the faster decline of vaccine antibodies changes the picture over time.",
+      "verbatim": "the mean of that group of... I don't know. It was thousands, if not hundreds of thousands of people in that, was 12,153. However, look at the vaccine in... I mean, the virus induced antibody was only 19... 1,914.",
+      "type": "concept",
+      "t": 2283.5,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "general",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2283"
+    },
+    {
+      "text": "After COVID infection, antibody levels drop about 44% in the second month and 50% in the third month, then continue decreasing until about 180 days, after which they stabilize.",
+      "verbatim": "In terms of the the second thirty days, you had a drop of 44%. The next thirty days, you drop from the the values the month before by 50.",
+      "type": "concept",
+      "t": 2338.0,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients after COVID infection",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2338"
+    },
+    {
+      "text": "Vaccine-induced antibody titers decrease by about 40% per month; use a half-life of 1-2 months (approximately 1.5 months) to estimate a patient's titer decline.",
+      "verbatim": "about their half-life on their antibody was somewhere one... It was from one to two months. So I always calculate about a month and a half. A month and a half, you can divide it by two. Another month and a half, you can divide it by two. Another month and a half, you divide it by two",
+      "type": "dosing",
+      "t": 2528.2,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "vaccinated patients",
+      "numbers_unheard": [
+        "1.5"
+      ],
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2528"
+    },
+    {
+      "text": "Natural infection-induced antibodies decrease by about 4% per month, with a half-life of about 6-7 months.",
+      "verbatim": "the SARS-CoV-2 infected patients, and they're diminishing at four percent each passing month.",
+      "type": "concept",
+      "t": 2559.3,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with prior COVID-19 infection",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2559"
+    },
+    {
+      "text": "When a patient asks what to do about their antibody titer (e.g., 92, 1,000, 2,000), you can calculate the expected decline: for vaccine-induced, halve every 1.5 months; for natural infection, 4% per month.",
+      "verbatim": "hey. I've got a value of 1,000, 2,000, or I got a value of 92. What do you think I should do? We're gonna try giving you some numbers here in a minute. But that's the kind of questions you're getting that you need to be able to answer, but yet you can calculate out on these these infections here.",
       "type": "practice",
-      "t": 2674.1,
+      "t": 2579.1,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2674",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:5 months"
-          ],
-          "rarity": 7.03
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "any patient with an antibody titer result",
+      "numbers_unheard": [
+        "1.5"
+      ],
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2579"
     },
     {
-      "text": "Immunocompromised patients (leukemia, lymphoma, organ transplant, advanced HIV, diabetes) may have poor or absent vaccine responses and require closer monitoring.",
-      "verbatim": "if you look at the leukemias and lymphomas, you look at patients who are organ transplants, diabetes. Diabetes itself is immunosuppressive. If you if you have any of these, you're more than likely gonna have a low response or, in fact, particularly like these these lymphomas... Leukemias, lymphomas, HIV, advanced HIV, you're not gonna get any response at all.",
+      "text": "Vaccine effectiveness against infection with the Delta variant drops from 93% to 53% after 4-5 months; against hospitalization, effectiveness for Moderna is about 93%, Pfizer 88%, and J&J 71% before declining after 5-7 months.",
+      "verbatim": "the delta, 97... 93% drops down to fifty three percent after four or five months. ... hospitalizations from March to ninety three, the Moderna stayed in about ninety three, Pfizer, eighty eight. J&J, seventy one. ... once you get past five, six, seven months, then you begin to see those value... Those values decrease and decrease significantly.",
+      "type": "concept",
+      "t": 2684.4,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "immunocompetent patients",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2684"
+    },
+    {
+      "text": "Leukemia, lymphoma, organ transplant, advanced HIV, and diabetes are comorbidities that lead to poor or absent vaccine antibody response; these patients need closer attention and monitoring.",
+      "verbatim": "These are individuals here that are not going to respond very well if at all. Particularly if you look at the leukemias and lymphomas, you look at patients who are organ transplants, diabetes. Diabetes itself is immunosuppressive. ... HIV, advanced HIV, you're not gonna get any response at all.",
       "type": "red_flag",
-      "t": 2781.4,
+      "t": 2772.9,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2781",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:leukemia"
-          ],
-          "rarity": 6.95
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with these comorbidities",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2772"
     },
     {
-      "text": "About 30% of COVID-19 infections are asymptomatic, but these individuals are still infectious.",
-      "verbatim": "Thirty percent of the people who got infected in COVID had no symptoms, had no symptoms at all. ... And those individuals that are infected with no symptoms, they're still infectious.",
-      "type": "judgment",
+      "text": "30% of COVID-19 infections are asymptomatic; these individuals are still infectious and can spread the virus.",
+      "verbatim": "Thirty percent of the people who got infected in COVID had no symptoms, had no symptoms at all.",
+      "type": "red_flag",
       "t": 2845.1,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2845",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:covid-19"
-          ],
-          "rarity": 6.37
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "general population",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-2845"
     },
     {
-      "text": "Natural immunity antibody titers decay at approximately 4% per month.",
-      "verbatim": "That's diminishing by about four percent a month.",
-      "type": "concept",
-      "t": 3071.8,
-      "match": "exact",
-      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
-      "speaker": "Dr. Gerald C. Miller",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3071",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:natural immunity"
-          ],
-          "rarity": 7.05
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "After infection, wait at least 30 days before administering the first vaccine dose.",
-      "verbatim": "you wait thirty days, at least thirty days to vaccinate.",
-      "type": "practice",
+      "text": "In patients with prior natural infection, wait at least 30 days before giving the first vaccine dose; do not give the second dose because it can cause high-zone tolerance and shut down the T cell immune response.",
+      "verbatim": "You wait thirty days, at least thirty days to vaccinate. Then when you vaccinate them is that two weeks after the first dose, I'm gonna tell you from experience, they're gonna have values at the minimum over 10,000, and on some of them are gonna be greater than a 100,000. ... Do not give them the second dose of that vaccine because this is what we know, and some of the early papers address this. You get what's called high zone tolerance. ... giving too much antigen to the immune system. And what happens, you shut the immune system down to the T cells.",
+      "type": "dosing",
       "t": 3121.8,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3121",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:30 days",
-            "threshold:at least 3"
-          ],
-          "actionable": [
-            "wait"
-          ],
-          "rarity": 5.64
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with prior COVID-19 infection",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3121"
     },
     {
-      "text": "Do not give the second dose of the vaccine to patients with prior COVID-19 infection because it can cause high zone tolerance and shut down T-cell immunity.",
-      "verbatim": "Do not give them the second dose of that vaccine because this is what we know, and some of the early papers address this. You get what's called high zone tolerance.",
-      "type": "pitfall",
-      "t": 3176.5,
-      "match": "exact",
-      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
-      "speaker": "Dr. Gerald C. Miller",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3176",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 4,
-        "grade": "A",
-        "fired": {
-          "specific": [
-            "concept:high zone tolerance"
-          ],
-          "actionable": [
-            "Do not"
-          ],
-          "harm": [
-            "Do not give"
-          ],
-          "rarity": 7.1
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "For patients with prior infection and vaccination, wait six months before checking a spike antibody titer to guide further management.",
-      "verbatim": "wait about six months, and you go back in, and you do a titer.",
+      "text": "After a patient with prior natural infection has been vaccinated with one dose, wait six months and then check an antibody titer to guide further management.",
+      "verbatim": "what you do on these patients is that you wait about six months. You wait six months, and you go back in, and you do a titer.",
       "type": "practice",
-      "t": 3220.6,
-      "match": "fuzzy",
-      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
-      "speaker": "Dr. Gerald C. Miller",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3220",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:antibody titer"
-          ],
-          "actionable": [
-            "wait"
-          ],
-          "rarity": 6.46
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Vaccine-induced antibody titers decay at approximately 40% per month.",
-      "verbatim": "How much are they gonna diminish every month? 40%.",
-      "type": "concept",
-      "t": 3354.4,
+      "t": 3216.6,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3354",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:antibody titer"
-          ],
-          "rarity": 7.55
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with prior COVID-19 infection who received one vaccine dose",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3216"
     },
     {
-      "text": "A spike antibody level of 300 AU/mL or lower is a critical threshold for increased risk of breakthrough infection.",
-      "verbatim": "participants with a serology level of 300 AU/mL or lower or more likely to get infected with COVID-19 than those with a serology level greater than 300.",
+      "text": "Patients with breakthrough infection after vaccination will have very high antibody titers, in the tens of thousands to over 100,000; manage similarly to those with prior infection plus vaccination, and check titer at six months.",
+      "verbatim": "These individuals have breakthrough infections. They have horrendous titers again. You're gonna be shocked when you see the titer. In fact, I'm not gonna be surprised you call me and say, hey. You made a mistake here, because that's gonna be in the tens of thousands, not a 100, over a 100,000. Okay? And so here again... The question goes again. .. I'm gonna say come back in six months and take a look and see what your titer is.",
+      "type": "practice",
+      "t": 3383.4,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with breakthrough infection after vaccination",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3383"
+    },
+    {
+      "text": "In patients with breakthrough infection after vaccination, titers can exceed 100,000.",
+      "verbatim": "not a 100, over a 100,000.",
+      "type": "concept",
+      "t": 3397.1,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with breakthrough infection after vaccination",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3397"
+    },
+    {
+      "text": "A third of patients who get infected never know they were infected; always consider the possibility of asymptomatic prior infection when evaluating a patient's immune status.",
+      "verbatim": "a third of the patients got infected never knew they were infected.",
+      "type": "pitfall",
+      "t": 3428.8,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "general population",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3428"
+    },
+    {
+      "text": "If a patient's titer is 500, you can back-calculate using the 40% monthly decline: one month ago it was ~1000, two months ago ~2000, etc., indicating good memory cell response.",
+      "verbatim": "We can go backwards. So they were at 500. So three three months ago or thirty days ago, they were at a thousand.",
+      "type": "concept",
+      "t": 3473.4,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with known spike antibody titer",
+      "numbers_unheard": [
+        "40",
+        "1000"
+      ],
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3473"
+    },
+    {
+      "text": "Order SARS-CoV-2 IgG spike antibody test, not the nucleocapsid antibody test, to assess vaccine-induced immunity.",
+      "verbatim": "Don't send me a SARS-CoV-2 IgG. I want you to order a spike.",
+      "type": "practice",
+      "t": 3616.5,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "clinicians ordering antibody testing",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3616"
+    },
+    {
+      "text": "A spike antibody level of 300 AU/mL or lower is associated with higher risk of breakthrough infection; consider booster when titer is in the 100-350 range.",
+      "verbatim": "participants with a serology level of 300 AU/mL or lower or more likely to get infected with SARS... With COVID nineteen than than those with a serology level greater than 300.",
       "type": "dx_criteria",
       "t": 3732.2,
       "match": "fuzzy",
@@ -81106,85 +81130,53 @@
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3732",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:breakthrough infection"
-          ],
-          "rarity": 6.43
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "vaccinated individuals",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3732"
     },
     {
-      "text": "When spike antibody levels drop to the low hundreds (200, 350), consider giving a booster dose.",
-      "verbatim": "when you get in the lower one hundreds, you get into 200, two fifty, 300, three fifty. You ought to be thinking about whether you shouldn't give a booster at that particular time.",
-      "type": "practice",
-      "t": 3758.0,
+      "text": "The risk of vaccine-associated myocarditis in males aged 16-29 is 10.69 per 100,000, while the risk of COVID-associated myocarditis in young male athletes is 2.3 per 100 (2.3%).",
+      "verbatim": "at a two point three percent. Two point three percent.",
+      "type": "judgment",
+      "t": 3979.0,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3758",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "consider"
-          ],
-          "rarity": 7.41
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "In young males, the risk of vaccine-associated myocarditis (10.69 per 100,000) is far lower than the risk of COVID-19 myocarditis (2.3 per 100).",
-      "verbatim": "if they get COVID if they get COVID, that's top way risk with benefits, at a two point three percent.",
-      "type": "red_flag",
-      "t": 3972.5,
-      "match": "exact",
-      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
-      "speaker": "Dr. Gerald C. Miller",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
+      "applies_to": "young male athletes aged 16-29",
       "numbers_unheard": [
         "100"
       ],
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3972",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:myocarditis"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v2"
-      }
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-3979"
     },
     {
-      "text": "The gold standard for vaccination decisions is clinical history, not laboratory values alone.",
+      "text": "Anaphylaxis to COVID-19 vaccines occurs at a rate of 11.1 per million doses.",
+      "verbatim": "eleven point one per million.",
+      "type": "concept",
+      "t": 4107.7,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "general population receiving COVID-19 vaccine",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4107"
+    },
+    {
+      "text": "Healthcare workers and first responders are good candidates for spike antibody testing because about a third of infected individuals are asymptomatic.",
+      "verbatim": "Is this individual a health care worker who's been working in the midst of all of this, and are they the one that has thirty percent that had an infection but never had any symptoms?",
+      "type": "practice",
+      "t": 4178.6,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "healthcare workers and first responders",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4178"
+    },
+    {
+      "text": "The gold standard for deciding who needs antibody testing is clinical history, not the lab.",
       "verbatim": "The gold standard is your clinical history, not the lab.",
       "type": "judgment",
       "t": 4239.2,
@@ -81193,267 +81185,112 @@
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4239",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:vaccination"
-          ],
-          "rarity": 6.45
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "clinicians deciding on antibody testing",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4239"
     },
     {
-      "text": "Advanced age over 60-65 is considered a comorbidity for severe COVID-19.",
-      "verbatim": "It's that advanced age. That over 60, 65 is a comorbidity.",
-      "type": "red_flag",
-      "t": 4268.9,
-      "match": "exact",
-      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
-      "speaker": "Dr. Gerald C. Miller",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4268",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "threshold:over 6"
-          ],
-          "rarity": 6.6
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Breakthrough infections occur when antibody titers get low enough, even in vaccinated individuals.",
-      "verbatim": "we know as titers get low enough, they're gonna have breakthrough infections.",
-      "type": "pitfall",
-      "t": 4307.7,
-      "match": "exact",
-      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
-      "speaker": "Dr. Gerald C. Miller",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4307",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:breakthrough infection"
-          ],
-          "rarity": 7.05
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Natural immunity from infection can generate protection, as seen in Sweden's approach.",
-      "verbatim": "they walked through that infection, and they had people who got it. ... They generated that natural immunity.",
+      "text": "Age over 60-65 is a comorbidity that increases risk of symptomatic infection.",
+      "verbatim": "That over 60, 65 is a comorbidity.",
       "type": "concept",
-      "t": 4343.9,
+      "t": 4272.9,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4343",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:natural immunity"
-          ],
-          "rarity": 7.41
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "adults over 60-65",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4272"
     },
     {
-      "text": "Spike antibody testing can identify prior asymptomatic COVID-19 infection.",
-      "verbatim": "just go do a spike antibody. It's positive. You have it.",
-      "type": "dx_criteria",
-      "t": 4453.0,
-      "match": "exact",
-      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
-      "speaker": "Dr. Gerald C. Miller",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4453",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:asymptomatic covid-19"
-          ],
-          "rarity": 6.05
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "The second dose of mRNA vaccines is needed to boost antibody titers and establish more memory cells.",
-      "verbatim": "that second dose is to boost it. And not only just establish a higher titer, but to establish establish more memory cells.",
+      "text": "If a patient may have had COVID without knowing, order a spike antibody test; a positive result confirms prior infection.",
+      "verbatim": "And when you find out, just go do a spike antibody. It's positive. You have it.",
       "type": "practice",
-      "t": 4587.7,
+      "t": 4452.0,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4587",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:antibody titer"
-          ],
-          "rarity": 7.24
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with suspected undiagnosed prior COVID",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4452"
     },
     {
-      "text": "Moderna's booster dose is 50 micrograms, lower than the primary series dose of 100 micrograms, because less antigen is needed to reactivate the immune system.",
-      "verbatim": "their booster is fifty micrograms. ... it takes a lot more antigen to stimulate initially to sensitize the immune system than it does to come back and to to re... Regenerate it, reactivate it.",
-      "type": "dosing",
-      "t": 4614.6,
+      "text": "Show patients the 2, 2.5 minute vaccine ingredient videos to help them decide: one video for Pfizer, a different one for J&J.",
+      "verbatim": "If you're giving Pfizer, do the first video. And if they're... You're doing J&J, do the second video.",
+      "type": "practice",
+      "t": 4510.6,
       "match": "exact",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4614",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 8.06
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "clinicians counseling patients about COVID vaccination",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4510"
     },
     {
-      "text": "J&J vaccine is about 66% effective against infection, likely because the single dose is insufficient to generate adequate antibody and memory cells.",
-      "verbatim": "J&J is sixty six percent. ... that probably wasn't enough to generate sufficient, number one, sufficient antibody, and number two, sufficient memory cells in order to protect them.",
-      "type": "judgment",
-      "t": 4676.6,
+      "text": "The second dose of mRNA vaccines is given not only to raise antibody titer but to establish more memory cells.",
+      "verbatim": "that second dose is to boost it. And not only just establish a higher titer, but to establish more memory cells.",
+      "type": "concept",
+      "t": 4587.9,
       "match": "fuzzy",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4676",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 6.21
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "two-dose mRNA COVID vaccines",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4587"
     },
     {
-      "text": "Spacing vaccine doses further apart (e.g., 4 months) may improve immune response, similar to the hepatitis B vaccine schedule with a third dose at 6 months.",
-      "verbatim": "if you give one dose and that one dose has has got half-life of of a month and a half, two month... One to two months, And you come back in four months. You now have that immune system there poised and ready, and you're probably gonna get more ... stimulation than you would have if you would have done it why why the immune system was all hyped up and making a response.",
-      "type": "practice",
+      "text": "Moderna's primary series doses are 100 micrograms each, which the presenter considers possibly too high; the booster is 50 micrograms.",
+      "verbatim": "Moderna is a hundred micrograms on those first two doses. They're a hundred micrograms, which I kinda would have to argue is a little too high... their booster is fifty micrograms.",
+      "type": "dosing",
+      "t": 4601.2,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "Moderna vaccine dosing",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4601"
+    },
+    {
+      "text": "For patients who had COVID infection and then received one dose of Moderna, be cautious about giving the second dose because Moderna is so strong.",
+      "verbatim": "Moderna is the one that I really dug my heels in on individuals who'd had the infection and then had one dose and them getting the second dose because Moderna is so so high, so strong.",
+      "type": "judgment",
+      "t": 4649.8,
+      "match": "exact",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with prior COVID who received one Moderna dose",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4649"
+    },
+    {
+      "text": "J&J vaccine is 66% effective against infection, which likely did not generate sufficient antibody or memory cells for durable protection.",
+      "verbatim": "J&J is sixty six percent. And sixty six percent, and that's is in terms of infection. ... that probably wasn't enough to generate sufficient, number one, sufficient antibody, and number two, sufficient memory cells in order to protect them.",
+      "type": "concept",
+      "t": 4676.1,
+      "match": "fuzzy",
+      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
+      "speaker": "Dr. Gerald C. Miller",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "J&J vaccine recipients",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4676"
+    },
+    {
+      "text": "Longer intervals between doses (e.g., 4 months) may improve immune response because the vaccine's half-life (1, 2 months) leaves the immune system poised and ready for greater stimulation, analogous to the hepatitis B schedule.",
+      "verbatim": "If you give one dose and that one dose has got half-life of a month and a half, two month... One to two months, And you come back in four months. You now have that immune system there poised and ready, and you're probably gonna get more stimulation... That's the reason the hepatitis B. That's the reason you wait six months for that third dose.",
+      "type": "concept",
       "t": 4754.3,
-      "match": "exact",
+      "match": "fuzzy",
       "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
       "speaker": "Dr. Gerald C. Miller",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4754",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:4 months"
-          ],
-          "rarity": 7.06
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Giving vaccine doses too close together may not optimize the immune response; waiting longer can yield better stimulation.",
-      "verbatim": "if you give them too much too close in sequence ... You don't get the response.",
-      "type": "pitfall",
-      "t": 4791.2,
-      "match": "exact",
-      "episode": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd",
-      "speaker": "Dr. Gerald C. Miller",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4791",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 6.96
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "COVID vaccine dosing interval decisions",
+      "pearl_id": "covid-update-vaccines-antibody-tests-dr-gerald-miller-phd-4754"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -119281,5 +119118,6 @@
       "name": "Dr. Gerald C. Miller"
     }
   ],
-  "pearls_fingerprint": "70ed448a49706f8c"
+  "pearls_fingerprint": "a60dbf9b3a604ca7",
+  "enrich_version": "v2"
 }

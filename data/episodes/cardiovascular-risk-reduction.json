@@ -36319,20 +36319,18 @@
   "fixes_rejected": [],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "This lecture covers cardiovascular risk reduction, a core primary care topic. It emphasizes that heart disease is the leading cause of death in the US and that half of all heart attacks are caused by five modifiable risk factors: smoking, cholesterol, obesity, hypertension, and diabetes. The talk focuses on lipid screening guidelines, statin therapy as the cornerstone of risk reduction, and the use of the ASCVD risk calculator to guide treatment decisions. Key teaching points include when to screen for familial hypercholesterolemia, how to monitor statin therapy, and how to manage common side effects like myalgias.",
+  "abstract": "This lecture covers cardiovascular risk reduction in primary care, focusing on screening, lifestyle interventions, and pharmacotherapy. The presenter reviews the top causes of death in the US, the five modifiable risk factors for heart attacks, and guidelines for lipid panel screening. A case-based discussion illustrates ASCVD risk calculation, statin initiation and monitoring, and considerations for familial hypercholesterolemia. The talk emphasizes actionable steps like smoking cessation, diet, exercise, and appropriate use of statins, including expected LDL reductions and side effect management.",
   "key_points": [
-    "Half of all heart attacks are caused by five modifiable risk factors: smoking, cholesterol, obesity, hypertension, and diabetes.",
-    "USPSTF recommends lipid screening starting at age 11 for familial hypercholesterolemia, then every 5 years from age 40 to 75 for those without risk factors.",
-    "Non-fasting lipid panels are acceptable unless triglycerides are over 400, which requires a fasting sample to calculate LDL.",
-    "The Dutch Lipid Clinic Network criteria can diagnose familial hypercholesterolemia with a score >8, even without genetic testing.",
-    "ASCVD risk score <10%: lifestyle modifications; 10-20%: moderate-dose statin; >20%: high-dose statin.",
-    "After starting a statin, recheck lipids at 6-12 weeks, then annually; routine monitoring of LFTs and CK is not indicated.",
-    "Statins reduce LDL by 30-50% depending on dose; atorvastatin 10 mg gives ~30% reduction, 20 mg gives ~45% reduction.",
-    "Common statin side effects include myalgias (7-20%), elevated LFTs, and a small increase in diabetes risk, but cardiovascular benefits far outweigh these risks.",
-    "For statin-associated myalgias, options include switching to a less intense statin (e.g., pravastatin), reducing dose, or using every-other-day dosing.",
-    "Non-statin alternatives like ezetimibe provide only ~17% LDL reduction and are best used as add-on therapy, not primary treatment.",
-    "Lipoprotein(a) and high-sensitivity CRP are emerging risk factors not captured in the standard ASCVD risk calculator.",
-    "Smoking cessation with pharmacotherapy (e.g., varenicline, bupropion, NRT) significantly improves quit rates compared to advice alone."
+    "Heart disease is the number one cause of death in the US, and stroke is number five.",
+    "Half of all heart attacks are caused by five modifiable factors: smoking, cholesterol, obesity, hypertension, and diabetes.",
+    "USPSTF recommends lipid screening starting at age 11 for familial hypercholesterolemia, then every five years from age 40 to 75.",
+    "Non-fasting lipid panels are acceptable unless triglycerides exceed 400, which requires a fasting sample.",
+    "An LDL over 190 mg/dL should prompt evaluation for familial hypercholesterolemia using Dutch Lipid Clinic Network criteria.",
+    "ASCVD risk score guides statin therapy: <10% risk → lifestyle; 10-20% → moderate-dose statin; >20% → high-dose statin.",
+    "Statins reduce LDL by 30-35% at low doses (e.g., atorvastatin 10 mg) and up to 45% at higher doses.",
+    "Recheck lipids 6-12 weeks after starting a statin, then annually; routine monitoring of LFTs and CK is not indicated.",
+    "Common statin side effects include myalgias (7-20%), elevated ALT, and a small increase in diabetes risk.",
+    "Short-acting statins (e.g., simvastatin) should be taken at night; long-acting atorvastatin can be taken any time."
   ],
   "topics_raw": [
     {
@@ -36340,8 +36338,8 @@
       "kind": "concept"
     },
     {
-      "label": "Hyperlipidemia",
-      "kind": "condition"
+      "label": "ASCVD Risk Score",
+      "kind": "concept"
     },
     {
       "label": "Familial Hypercholesterolemia",
@@ -36352,16 +36350,8 @@
       "kind": "drug"
     },
     {
-      "label": "ASCVD Risk Calculator",
+      "label": "Lipid Panel Screening",
       "kind": "procedure"
-    },
-    {
-      "label": "Lipid Panel",
-      "kind": "procedure"
-    },
-    {
-      "label": "Ezetimibe",
-      "kind": "drug"
     },
     {
       "label": "Smoking Cessation",
@@ -36372,247 +36362,158 @@
       "kind": "concept"
     },
     {
-      "label": "Myalgia",
-      "kind": "condition"
+      "label": "Atorvastatin",
+      "kind": "drug"
     },
     {
-      "label": "Lipoprotein(a)",
-      "kind": "concept"
+      "label": "Rosuvastatin",
+      "kind": "drug"
     },
     {
       "label": "Dutch Lipid Clinic Network Criteria",
-      "kind": "procedure"
-    },
-    {
-      "label": "PCSK9 Inhibitors",
-      "kind": "drug"
-    },
-    {
-      "label": "Inclisiran",
-      "kind": "drug"
-    },
-    {
-      "label": "Lipoprotein(a)",
-      "kind": "concept"
-    },
-    {
-      "label": "Hypertriglyceridemia",
-      "kind": "condition"
-    },
-    {
-      "label": "Vascepa",
-      "kind": "drug"
-    },
-    {
-      "label": "Fibrates",
-      "kind": "drug"
-    },
-    {
-      "label": "Aspirin",
-      "kind": "drug"
-    },
-    {
-      "label": "Coronary Artery Calcium Score",
-      "kind": "procedure"
-    },
-    {
-      "label": "Statin Therapy",
-      "kind": "drug"
-    },
-    {
-      "label": "Secondary Prevention",
       "kind": "concept"
     }
   ],
   "pearls_raw": [
     {
-      "text": "Non-fasting lipid panels are acceptable for LDL measurement unless triglycerides exceed 400, which then requires a fasting sample.",
-      "verbatim": "AAP recommends as long as adults get their triglycerides over 400, then all of sudden, you gotta make a comeback. You're not gonna get... Be able to get an LDL if your triglycerides are.",
-      "type": "guideline"
+      "text": "Non-fasting lipid panels are acceptable for LDL measurement; only repeat fasting if triglycerides exceed 400.",
+      "seg": 118,
+      "verbatim": "It shouldn't grossly affect your LDL, which is the main one we're looking at. So AAP recommends as long as adults get their triglycerides over 400, then all of sudden, you gotta make a comeback.",
+      "applies_to": "adults",
+      "type": "practice"
     },
     {
-      "text": "After starting a statin, recheck lipids at 6 weeks and then annually; routine monitoring of LFTs and CK is not indicated.",
+      "text": "For LDL over 190 mg/dL, evaluate for familial hypercholesterolemia using Dutch Lipid Clinic Network criteria; a score >8 is diagnostic even without genetic testing.",
+      "seg": 143,
+      "verbatim": "What you can do is you can do the Dutch Lipid Clinic Network diagnostic criteria for familial hypercholesterolemia.",
+      "applies_to": "patients with LDL >190 mg/dL",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "When starting a statin, recheck lipids at 6 weeks, then annually; routine monitoring of LFTs and CK is not indicated.",
+      "seg": 266,
       "verbatim": "Up to date recommend liver panel and TSH prior to starting. We check lipids at six weeks and then every year thereafter. Key monitoring of LFTs and creatinine kinase are not actually indicated.",
-      "type": "guideline"
+      "applies_to": "patients starting statin therapy",
+      "type": "practice"
     },
     {
-      "text": "Atorvastatin 10 mg reduces LDL by about 30%, and 20 mg reduces it by about 45%; these expected reductions help assess adherence.",
-      "verbatim": "Even just ten milligrams of her statin, you should see a 30% drop. Right? Twenty milligrams, 45% reduction.",
+      "text": "Low-dose atorvastatin (10 mg) reduces LDL by 30-35%; 20 mg reduces it by 45%.",
+      "seg": 311,
+      "verbatim": "30 to 35% reduction in LDL. So that's just with low dose. Even just ten milligrams of her statin, you should see a 30% drop. Twenty milligrams, 45% reduction.",
+      "applies_to": "adults on atorvastatin",
       "type": "dosing"
     },
     {
-      "text": "Short-acting statins like simvastatin should be taken at night because cholesterol synthesis peaks during sleep; atorvastatin lasts 24 hours so timing does not matter.",
+      "text": "Short-acting statins like simvastatin should be taken at night; atorvastatin lasts 24 hours so timing does not matter.",
+      "seg": 323,
       "verbatim": "The short acting ones like simvastatin, you wanna take at night. Corvastatin, it lasts twenty four hours, so it doesn't really matter when you take it.",
+      "applies_to": "patients on statins",
       "type": "dosing"
     },
     {
-      "text": "For statin-associated myalgias, options include switching to a less intense statin like pravastatin or using every-other-day dosing of rosuvastatin.",
-      "verbatim": "Switch it to maybe one of the less intense ones. Right? So maybe pravastatin will have slightly less... Have less side effects. Take the rosuvastatin, but just take it every other day.",
+      "text": "Statins can increase blood sugar and may push prediabetic patients over the threshold for diabetes diagnosis.",
+      "seg": 333,
+      "verbatim": "It can increase your blood sugars. There are... As a... Will increase your risk of being diagnosed by death... Of diabetes. So those people that are on the threshold who are already almost gonna get diagnosed with diabetes, or some could bump you up close enough to hit that 6.5.",
+      "applies_to": "patients on statins, especially those near diabetes threshold",
       "type": "pitfall"
     },
     {
-      "text": "Vitamin D supplementation does not reduce statin-induced myalgias based on randomized controlled trial evidence.",
-      "verbatim": "There was a publication published November that did... That showed randomized controlled trials of vitamin D or placebo, found exactly no difference in myalgias.",
-      "type": "red_flag"
+      "text": "Smoking cessation is more effective than any medication for reducing cardiovascular risk; actively prescribe therapy (Wellbutrin, Chantix, patches, gum) rather than just advising to quit.",
+      "seg": 190,
+      "verbatim": "Don't just say you should quit. You know? Do something about it. Your chances of quitting are much lower if you start on on medication and really motivate them. So do something about it.",
+      "applies_to": "smokers",
+      "type": "practice"
     },
     {
-      "text": "Ezetimibe provides only about 17% LDL reduction and is best used as add-on therapy to statins, not as primary treatment.",
-      "verbatim": "Zetia is probably the most common one that's... That we see used because it's relatively inexpensive. But compared to the statins, right, you're getting 17% reduction in LDL versus thirty, forty, 50% reduction in LDL.",
-      "type": "judgment"
+      "text": "Chantix (varenicline) is FDA-approved and safe to use; it remains a good option for smoking cessation despite past market withdrawal.",
+      "seg": 196,
+      "verbatim": "It's fine. It's safe to use now? Still FDA approved. Yep. It's mine. It's a good one. One of the two FDA approved medications we have.",
+      "applies_to": "smokers considering pharmacotherapy",
+      "type": "practice"
     },
     {
-      "text": "The Dutch Lipid Clinic Network criteria can diagnose familial hypercholesterolemia with a score >8 without requiring genetic testing.",
-      "verbatim": "If you have a score greater than eight based on that criteria, diagnostic. So you kinda know, and you can have them make sure their family is getting aware and getting the screening that makes this well too.",
-      "type": "dx_criteria"
+      "text": "ASCVD risk score does not include obesity, family history, LDL level, or chronic kidney disease; these are additional risk factors to consider.",
+      "seg": 274,
+      "verbatim": "We didn't put type in their weight when we calculated the risk score. So good. Metabolic syndrome and obesity. Family history. Right? I didn't type in a family history. That puts someone at higher risk.",
+      "applies_to": "adults being assessed for cardiovascular risk",
+      "type": "concept"
     },
     {
-      "text": "Smoking cessation pharmacotherapy (varenicline, bupropion, NRT) significantly improves quit rates; simply advising patients to quit is insufficient.",
-      "verbatim": "Don't just say you should quit. You know? Do something about it. Your chances of quitting are much lower if you start on on medication and really motivate them.",
-      "type": "judgment"
-    },
-    {
-      "text": "The ASCVD risk calculator does not include obesity, family history, chronic kidney disease, or inflammatory conditions, which are additional risk factors.",
-      "verbatim": "What wasn't included in the risk score that also puts someone at a higher risk for heart attack? Right? So we didn't put type in their weight when we calculated the risk score. So good. Metabolic syndrome and obesity. Who else? What else? Family history.",
-      "type": "red_flag"
-    },
-    {
-      "text": "PCSK9 inhibitors reduce LDL by 70% and cardiovascular events by 50%, but are expensive and require prior authorization; patients often need to fail multiple statins first.",
-      "verbatim": "What if I tell you there's a medication out here that can reduce your LDL by 70%? You can have 50% reduction in cardiovascular events.",
-      "type": "judgment"
-    },
-    {
-      "text": "For hypertriglyceridemia with ASCVD risk >2%, Vascepa (icosapent ethyl) is first-line; if unaffordable, use omega-3 fatty acids.",
-      "verbatim": "So Vascepa has got the best evidence for patients that have both hypertriglyceridemia and elevated risk. So if their ACVD score is less than two percent Vascepa, and if they can't afford Vascepa, then omega three fatty acids.",
-      "type": "guideline"
-    },
-    {
-      "text": "For triglycerides >500 mg/dL, fibrates are the best medication to lower triglycerides and prevent pancreatitis.",
-      "verbatim": "Once they're trying to sort of get over 500, I rates are gonna be the best medication to actually lower their their Criglycerides, not as much evidence for it for the risk.",
-      "type": "dosing"
-    },
-    {
-      "text": "Aspirin for primary prevention: number needed to treat is 241 to prevent one cardiovascular death versus number needed to harm of 210 to cause a significant bleed.",
-      "verbatim": "your number needed to treat two hundred and forty one patients in years to reduce one incidence of card... Cardiovascular death versus two hundred and ten patients needed to cause a significant bleed.",
-      "type": "red_flag"
-    },
-    {
-      "text": "USPSTF recommends aspirin for primary prevention only in adults aged 40-60 with ASCVD risk >10% and low bleeding risk; no aspirin for primary prevention after age 60.",
-      "verbatim": "USPSTF says age 40 60, greater than ten percent risk, low risk of bleeding. But it should be individualized because the potential benefit is small. So they say no one 60 for primary prevention.",
-      "type": "guideline"
-    },
-    {
-      "text": "Coronary artery calcium score is useful for borderline ASCVD risk (7.5-10%); a score ≥100 supports statin initiation.",
-      "verbatim": "A score of a 100 is equal to an ASCVD risk score of seven point five percent. Essentially, if they have a score of a 100 or higher, then you probably should be an elevated LDL, then you probably should be on statin.",
-      "type": "dx_criteria"
-    },
-    {
-      "text": "Starting a statin in an 85-year-old is unlikely to provide significant benefit because statin benefit requires years of exposure.",
-      "verbatim": "So this is why starting someone that's 85 year old old on a statin is probably not gonna help significantly. It's it's years and years and years of high LDL that really makes makes a difference.",
-      "type": "judgment"
-    },
-    {
-      "text": "Red yeast rice lowers LDL by 12% but lacks cardiovascular outcome data; most other supplements (calcium, tea, coconut water) show no benefit.",
-      "verbatim": "Red yeast rice has LDL reduction by 12%. Again, no one's paid to actually do large studies and prove the cardiovascular benefit, but there is an LDL reduction.",
-      "type": "pitfall"
-    },
-    {
-      "text": "Alcohol at one drink per day reduces cardiovascular disease but increases mortality; two drinks per day reduces lifespan by about six months.",
-      "verbatim": "So at one drink per day, at two drinks per day, now it starts going up, and one drink per day, it actually increases your risk. But alcohol increases mortality.",
-      "type": "red_flag"
-    },
-    {
-      "text": "After MI, secondary prevention includes aspirin, statin, beta-blocker, ACE inhibitor (e.g., lisinopril), and antiplatelet therapy (e.g., ticagrelor); colchicine may be added based on recent trial data.",
-      "verbatim": "So, basically, anyone that's had a heart attack needs to have a cardiologist, and you're probably just kinda gonna go along with what they recommend. But some things to think about. So in addition to our aspirin and statin, colchicine.",
-      "type": "guideline"
+      "text": "For ASCVD risk 10-20%, start moderate-dose statin; for >20%, start high-dose statin; for <10%, lifestyle modification alone.",
+      "seg": 244,
+      "verbatim": "less than ten percent ASCVD risk score, lifestyle modifications, ten to twenty percent, moderate dose statins. That's like atorvastatin. Twenty percent higher. Additionally, this is... These guidelines here is based on USPSTF.",
+      "applies_to": "adults aged 40-75",
+      "type": "practice"
     }
   ],
   "pearls": [
     {
-      "text": "Non-fasting lipid panels are acceptable for LDL measurement unless triglycerides exceed 400, which then requires a fasting sample.",
-      "verbatim": "AAP recommends as long as adults get their triglycerides over 400, then all of sudden, you gotta make a comeback. You're not gonna get... Be able to get an LDL if your triglycerides are.",
+      "text": "Non-fasting lipid panels are acceptable for LDL measurement; only repeat fasting if triglycerides exceed 400.",
+      "verbatim": "It shouldn't grossly affect your LDL, which is the main one we're looking at. So AAP recommends as long as adults get their triglycerides over 400, then all of sudden, you gotta make a comeback.",
       "type": "practice",
-      "t": 398.3,
+      "t": 393.7,
       "match": "exact",
       "episode": "cardiovascular-risk-reduction",
       "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-398",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:LDL"
-          ],
-          "rarity": 7.33
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "adults",
+      "pearl_id": "cardiovascular-risk-reduction-393"
     },
     {
-      "text": "The Dutch Lipid Clinic Network criteria can diagnose familial hypercholesterolemia with a score >8 without requiring genetic testing.",
-      "verbatim": "If you have a score greater than eight based on that criteria, diagnostic. So you kinda know, and you can have them make sure their family is getting aware and getting the screening that makes this well too.",
+      "text": "For LDL over 190 mg/dL, evaluate for familial hypercholesterolemia using Dutch Lipid Clinic Network criteria; a score >8 is diagnostic even without genetic testing.",
+      "verbatim": "What you can do is you can do the Dutch Lipid Clinic Network diagnostic criteria for familial hypercholesterolemia.",
       "type": "dx_criteria",
-      "t": 640.6,
-      "match": "fuzzy",
+      "t": 500.2,
+      "match": "exact",
       "episode": "cardiovascular-risk-reduction",
       "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-640",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "threshold:>8"
-          ],
-          "rarity": 8.43
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with LDL >190 mg/dL",
+      "pearl_id": "cardiovascular-risk-reduction-500"
     },
     {
-      "text": "Smoking cessation pharmacotherapy (varenicline, bupropion, NRT) significantly improves quit rates; simply advising patients to quit is insufficient.",
-      "verbatim": "Don't just say you should quit. You know? Do something about it. Your chances of quitting are much lower if you start on on medication and really motivate them.",
-      "type": "judgment",
+      "text": "Smoking cessation is more effective than any medication for reducing cardiovascular risk; actively prescribe therapy (Wellbutrin, Chantix, patches, gum) rather than just advising to quit.",
+      "verbatim": "Don't just say you should quit. You know? Do something about it. Your chances of quitting are much lower if you start on on medication and really motivate them. So do something about it.",
+      "type": "practice",
       "t": 685.6,
       "match": "exact",
       "episode": "cardiovascular-risk-reduction",
       "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-685",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:smoking cessation"
-          ],
-          "rarity": 7.93
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "smokers",
+      "pearl_id": "cardiovascular-risk-reduction-685"
     },
     {
-      "text": "After starting a statin, recheck lipids at 6 weeks and then annually; routine monitoring of LFTs and CK is not indicated.",
+      "text": "Chantix (varenicline) is FDA-approved and safe to use; it remains a good option for smoking cessation despite past market withdrawal.",
+      "verbatim": "It's fine. It's safe to use now? Still FDA approved. Yep. It's mine. It's a good one. One of the two FDA approved medications we have.",
+      "type": "practice",
+      "t": 719.4,
+      "match": "exact",
+      "episode": "cardiovascular-risk-reduction",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "smokers considering pharmacotherapy",
+      "pearl_id": "cardiovascular-risk-reduction-719"
+    },
+    {
+      "text": "For ASCVD risk 10-20%, start moderate-dose statin; for >20%, start high-dose statin; for <10%, lifestyle modification alone.",
+      "verbatim": "less than ten percent ASCVD risk score, lifestyle modifications, ten to twenty percent, moderate dose statins. That's like atorvastatin. Twenty percent higher. Additionally, this is... These guidelines here is based on USPSTF.",
+      "type": "practice",
+      "t": 934.2,
+      "match": "exact",
+      "episode": "cardiovascular-risk-reduction",
+      "speaker": "Dr. Herrmann",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "adults aged 40-75",
+      "pearl_id": "cardiovascular-risk-reduction-934"
+    },
+    {
+      "text": "When starting a statin, recheck lipids at 6 weeks, then annually; routine monitoring of LFTs and CK is not indicated.",
       "verbatim": "Up to date recommend liver panel and TSH prior to starting. We check lipids at six weeks and then every year thereafter. Key monitoring of LFTs and creatinine kinase are not actually indicated.",
       "type": "practice",
       "t": 1015.0,
@@ -36621,88 +36522,37 @@
       "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-1015",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:6 weeks",
-            "test:LFTs"
-          ],
-          "actionable": [
-            "starting"
-          ],
-          "rarity": 7.11
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients starting statin therapy",
+      "pearl_id": "cardiovascular-risk-reduction-1015"
     },
     {
-      "text": "The ASCVD risk calculator does not include obesity, family history, chronic kidney disease, or inflammatory conditions, which are additional risk factors.",
-      "verbatim": "What wasn't included in the risk score that also puts someone at a higher risk for heart attack? Right? So we didn't put type in their weight when we calculated the risk score. So good. Metabolic syndrome and obesity. Who else? What else? Family history.",
-      "type": "red_flag",
-      "t": 1039.7,
-      "match": "exact",
+      "text": "ASCVD risk score does not include obesity, family history, LDL level, or chronic kidney disease; these are additional risk factors to consider.",
+      "verbatim": "We didn't put type in their weight when we calculated the risk score. So good. Metabolic syndrome and obesity. Family history. Right? I didn't type in a family history. That puts someone at higher risk.",
+      "type": "concept",
+      "t": 1048.7,
+      "match": "fuzzy",
       "episode": "cardiovascular-risk-reduction",
       "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-1039",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:ASCVD"
-          ],
-          "rarity": 6.33
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "adults being assessed for cardiovascular risk",
+      "pearl_id": "cardiovascular-risk-reduction-1048"
     },
     {
-      "text": "Atorvastatin 10 mg reduces LDL by about 30%, and 20 mg reduces it by about 45%; these expected reductions help assess adherence.",
-      "verbatim": "Even just ten milligrams of her statin, you should see a 30% drop. Right? Twenty milligrams, 45% reduction.",
+      "text": "Low-dose atorvastatin (10 mg) reduces LDL by 30-35%; 20 mg reduces it by 45%.",
+      "verbatim": "30 to 35% reduction in LDL. So that's just with low dose. Even just ten milligrams of her statin, you should see a 30% drop. Twenty milligrams, 45% reduction.",
       "type": "dosing",
-      "t": 1225.5,
-      "match": "exact",
+      "t": 1222.0,
+      "match": "fuzzy",
       "episode": "cardiovascular-risk-reduction",
       "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-1225",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:10 mg",
-            "drug:Atorvastatin",
-            "test:LDL"
-          ],
-          "rarity": 7.36
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "adults on atorvastatin",
+      "pearl_id": "cardiovascular-risk-reduction-1222"
     },
     {
-      "text": "Short-acting statins like simvastatin should be taken at night because cholesterol synthesis peaks during sleep; atorvastatin lasts 24 hours so timing does not matter.",
+      "text": "Short-acting statins like simvastatin should be taken at night; atorvastatin lasts 24 hours so timing does not matter.",
       "verbatim": "The short acting ones like simvastatin, you wanna take at night. Corvastatin, it lasts twenty four hours, so it doesn't really matter when you take it.",
       "type": "dosing",
       "t": 1271.2,
@@ -36711,412 +36561,21 @@
       "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-1271",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:24 hours",
-            "drug:simvastatin"
-          ],
-          "rarity": 7.89
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients on statins",
+      "pearl_id": "cardiovascular-risk-reduction-1271"
     },
     {
-      "text": "For statin-associated myalgias, options include switching to a less intense statin like pravastatin or using every-other-day dosing of rosuvastatin.",
-      "verbatim": "Switch it to maybe one of the less intense ones. Right? So maybe pravastatin will have slightly less... Have less side effects. Take the rosuvastatin, but just take it every other day.",
+      "text": "Statins can increase blood sugar and may push prediabetic patients over the threshold for diabetes diagnosis.",
+      "verbatim": "It can increase your blood sugars. There are... As a... Will increase your risk of being diagnosed by death... Of diabetes. So those people that are on the threshold who are already almost gonna get diagnosed with diabetes, or some could bump you up close enough to hit that 6.5.",
       "type": "pitfall",
-      "t": 1363.1,
+      "t": 1308.9,
       "match": "exact",
       "episode": "cardiovascular-risk-reduction",
       "speaker": "Dr. Herrmann",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-1363",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "drug:pravastatin"
-          ],
-          "rarity": 8.43
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Vitamin D supplementation does not reduce statin-induced myalgias based on randomized controlled trial evidence.",
-      "verbatim": "There was a publication published November that did... That showed randomized controlled trials of vitamin D or placebo, found exactly no difference in myalgias.",
-      "type": "red_flag",
-      "t": 1394.5,
-      "match": "exact",
-      "episode": "cardiovascular-risk-reduction",
-      "speaker": "Dr. Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-1394",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:vitamin d supplementat"
-          ],
-          "actionable": [
-            "reduce"
-          ],
-          "rarity": 8.2
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Ezetimibe provides only about 17% LDL reduction and is best used as add-on therapy to statins, not as primary treatment.",
-      "verbatim": "Zetia is probably the most common one that's... That we see used because it's relatively inexpensive. But compared to the statins, right, you're getting 17% reduction in LDL versus thirty, forty, 50% reduction in LDL.",
-      "type": "judgment",
-      "t": 1481.5,
-      "match": "exact",
-      "episode": "cardiovascular-risk-reduction",
-      "speaker": "Dr. Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-1481",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:LDL"
-          ],
-          "actionable": [
-            "add"
-          ],
-          "rarity": 7.3
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "PCSK9 inhibitors reduce LDL by 70% and cardiovascular events by 50%, but are expensive and require prior authorization; patients often need to fail multiple statins first.",
-      "verbatim": "What if I tell you there's a medication out here that can reduce your LDL by 70%? You can have 50% reduction in cardiovascular events.",
-      "type": "judgment",
-      "t": 1579.0,
-      "match": "exact",
-      "episode": "cardiovascular-risk-reduction",
-      "speaker": "Dr. Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-1579",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:LDL"
-          ],
-          "actionable": [
-            "reduce"
-          ],
-          "rarity": 7.33
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Red yeast rice lowers LDL by 12% but lacks cardiovascular outcome data; most other supplements (calcium, tea, coconut water) show no benefit.",
-      "verbatim": "Red yeast rice has LDL reduction by 12%. Again, no one's paid to actually do large studies and prove the cardiovascular benefit, but there is an LDL reduction.",
-      "type": "pitfall",
-      "t": 1770.0,
-      "match": "exact",
-      "episode": "cardiovascular-risk-reduction",
-      "speaker": "Dr. Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-1770",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:LDL"
-          ],
-          "rarity": 7.83
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Starting a statin in an 85-year-old is unlikely to provide significant benefit because statin benefit requires years of exposure.",
-      "verbatim": "So this is why starting someone that's 85 year old old on a statin is probably not gonna help significantly. It's it's years and years and years of high LDL that really makes makes a difference.",
-      "type": "judgment",
-      "t": 1824.3,
-      "match": "exact",
-      "episode": "cardiovascular-risk-reduction",
-      "speaker": "Dr. Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-1824",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Starting"
-          ],
-          "rarity": 6.21
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "For hypertriglyceridemia with ASCVD risk >2%, Vascepa (icosapent ethyl) is first-line; if unaffordable, use omega-3 fatty acids.",
-      "verbatim": "So Vascepa has got the best evidence for patients that have both hypertriglyceridemia and elevated risk. So if their ACVD score is less than two percent Vascepa, and if they can't afford Vascepa, then omega three fatty acids.",
-      "type": "practice",
-      "t": 1914.8,
-      "match": "exact",
-      "episode": "cardiovascular-risk-reduction",
-      "speaker": "Dr. Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-1914",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "threshold:>2",
-            "test:ASCVD"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "For triglycerides >500 mg/dL, fibrates are the best medication to lower triglycerides and prevent pancreatitis.",
-      "verbatim": "Once they're trying to sort of get over 500, I rates are gonna be the best medication to actually lower their their Criglycerides, not as much evidence for it for the risk.",
-      "type": "dosing",
-      "t": 1932.0,
-      "match": "exact",
-      "episode": "cardiovascular-risk-reduction",
-      "speaker": "Dr. Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-1932",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:500 mg",
-            "threshold:>5"
-          ],
-          "rarity": 6.98
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Aspirin for primary prevention: number needed to treat is 241 to prevent one cardiovascular death versus number needed to harm of 210 to cause a significant bleed.",
-      "verbatim": "your number needed to treat two hundred and forty one patients in years to reduce one incidence of card... Cardiovascular death versus two hundred and ten patients needed to cause a significant bleed.",
-      "type": "red_flag",
-      "t": 2068.7,
-      "match": "exact",
-      "episode": "cardiovascular-risk-reduction",
-      "speaker": "Dr. Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-2068",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 4,
-        "grade": "A",
-        "fired": {
-          "specific": [
-            "concept:number needed to treat"
-          ],
-          "actionable": [
-            "treat"
-          ],
-          "harm": [
-            "death"
-          ],
-          "rarity": 6.28
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "USPSTF recommends aspirin for primary prevention only in adults aged 40-60 with ASCVD risk >10% and low bleeding risk; no aspirin for primary prevention after age 60.",
-      "verbatim": "USPSTF says age 40 60, greater than ten percent risk, low risk of bleeding. But it should be individualized because the potential benefit is small. So they say no one 60 for primary prevention.",
-      "type": "practice",
-      "t": 2102.2,
-      "match": "exact",
-      "episode": "cardiovascular-risk-reduction",
-      "speaker": "Dr. Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-2102",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "threshold:>1",
-            "test:ASCVD"
-          ],
-          "harm": [
-            "bleeding"
-          ],
-          "rarity": 6.53
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Alcohol at one drink per day reduces cardiovascular disease but increases mortality; two drinks per day reduces lifespan by about six months.",
-      "verbatim": "So at one drink per day, at two drinks per day, now it starts going up, and one drink per day, it actually increases your risk. But alcohol increases mortality.",
-      "type": "red_flag",
-      "t": 2174.3,
-      "match": "exact",
-      "episode": "cardiovascular-risk-reduction",
-      "speaker": "Dr. Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-2174",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "frequency:per day"
-          ],
-          "rarity": 7.06
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Coronary artery calcium score is useful for borderline ASCVD risk (7.5-10%); a score ≥100 supports statin initiation.",
-      "verbatim": "A score of a 100 is equal to an ASCVD risk score of seven point five percent. Essentially, if they have a score of a 100 or higher, then you probably should be an elevated LDL, then you probably should be on statin.",
-      "type": "dx_criteria",
-      "t": 2301.0,
-      "match": "exact",
-      "episode": "cardiovascular-risk-reduction",
-      "speaker": "Dr. Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-2301",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:ASCVD"
-          ],
-          "rarity": 6.89
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "After MI, secondary prevention includes aspirin, statin, beta-blocker, ACE inhibitor (e.g., lisinopril), and antiplatelet therapy (e.g., ticagrelor); colchicine may be added based on recent trial data.",
-      "verbatim": "So, basically, anyone that's had a heart attack needs to have a cardiologist, and you're probably just kinda gonna go along with what they recommend. But some things to think about. So in addition to our aspirin and statin, colchicine.",
-      "type": "practice",
-      "t": 2384.8,
-      "match": "exact",
-      "episode": "cardiovascular-risk-reduction",
-      "speaker": "Dr. Herrmann",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "cardiovascular-risk-reduction-2384",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "drug:lisinopril"
-          ],
-          "rarity": 7.7
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients on statins, especially those near diabetes threshold",
+      "pearl_id": "cardiovascular-risk-reduction-1308"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -54224,5 +53683,6 @@
       "name": "Dr. Herrmann"
     }
   ],
-  "pearls_fingerprint": "e70dd9cf00be1f96"
+  "pearls_fingerprint": "c8b5828f94cdf278",
+  "enrich_version": "v2"
 }
