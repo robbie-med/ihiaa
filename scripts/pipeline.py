@@ -237,13 +237,13 @@ def stage_enrich(slug: str, ep: dict) -> dict:
     # Chunks of ~3000 words that overlap by ~300, so a point made across a chunk
     # boundary is seen whole at least once. refine_pearls drops the duplicates.
     segs = numbered_segments(ep)
-    chunks, i = [], 0
+    chunks, i = [], 0                         # (first segment, end segment)
     while i < len(segs):
         j, n = i, 0
         while j < len(segs) and n < 3000:
             n += segs[j][1]
             j += 1
-        chunks.append("\n".join(s for s, _ in segs[i:j]))
+        chunks.append((i, j))
         if j >= len(segs):
             break
         back, k = 0, j
@@ -251,22 +251,34 @@ def stage_enrich(slug: str, ep: dict) -> dict:
             k -= 1
             back += segs[k][1]
         i = k
-    abstract, kp, topics, pearls, failed = "", [], [], [], 0
-    for n, c in enumerate(chunks):
-        print(f"  enrich: chunk {n+1}/{len(chunks)} ...")
+
+    def ask(lo: int, hi: int, label: str, split_ok: bool = True):
+        """One model call; a reply that fails (most often cut off mid-JSON on a
+        dense passage) is retried as two halves before the chunk counts as failed."""
+        print(f"  enrich: {label} ...")
         user = (f"Lecture: {ep['title']}\nPresenter: {ep.get('speaker', 'Unknown')}\n"
-                f"(part {n+1} of {len(chunks)})\n\nTRANSCRIPT:\n{c}")
+                f"({label})\n\nTRANSCRIPT:\n" + "\n".join(t for t, _ in segs[lo:hi]))
         try:
-            r = ppq.chat_json(ENRICH_SYS, user, max_tokens=8000)
+            return [ppq.chat_json(ENRICH_SYS, user, max_tokens=8000)]
         except Exception as e:                        # noqa: BLE001
             print(f"    ! {type(e).__name__}: {str(e)[:120]}")
+            if not split_ok or hi - lo < 4:
+                return None
+            mid = (lo + hi) // 2
+            a, b = ask(lo, mid, label + " (first half)", False), ask(mid, hi, label + " (second half)", False)
+            return a + b if a is not None and b is not None else None
+
+    abstract, kp, topics, pearls, failed = "", [], [], [], 0
+    for n, (lo, hi) in enumerate(chunks):
+        got = ask(lo, hi, f"part {n+1} of {len(chunks)}")
+        if got is None:
             failed += 1
             continue
-        if n == 0:
-            abstract = r.get("abstract", "")
-        kp += r.get("key_points", [])
-        topics += r.get("topics", [])
-        pearls += r.get("pearls", [])
+        for r in got:
+            abstract = abstract or r.get("abstract", "")
+            kp += r.get("key_points", [])
+            topics += r.get("topics", [])
+            pearls += r.get("pearls", [])
     # Re-extracting must never trade a complete set of pearls for a partial one
     # because a request failed. Keep the old ones and report the lecture as failed.
     if failed and ep.get("pearls_raw"):

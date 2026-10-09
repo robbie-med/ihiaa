@@ -33,6 +33,7 @@ import pipeline  # noqa: E402
 
 PRINT_LOCK = threading.Lock()
 STATE = {"done": 0, "failed": 0, "total": 0}
+FAILED = []
 
 
 def log(msg: str) -> None:
@@ -70,6 +71,7 @@ def one(slug: str, meta: dict, reenrich: bool = False) -> bool:
         return True
     except Exception as e:                            # noqa: BLE001
         STATE["failed"] += 1
+        FAILED.append(slug)
         log(f"FAIL {slug[:52]:52s} {type(e).__name__}: {str(e)[:80]}")
         return False
 
@@ -80,6 +82,10 @@ def main() -> int:
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--reenrich", action="store_true",
                     help="re-extract pearls on transcribed lectures (slugs, or 'all')")
+    ap.add_argument("--force", action="store_true",
+                    help="with --reenrich: redo lectures already on the current prompt")
+    ap.add_argument("--summary", default="", help="write a JSON run summary here (for CI)")
+    ap.add_argument("--exclude", default="", help="file of slugs to leave out (one per line)")
     ap.add_argument("--max-minutes", type=float, default=0,
                     help="stop starting new lectures after this long, so CI reaches its commit")
     ap.add_argument("slugs", nargs="*")
@@ -93,9 +99,12 @@ def main() -> int:
                 if (want is None or p.stem in want)]
         todo = [(s, m) for s, m in todo
                 if pipeline.load(s).get("transcript") and not pipeline.load(s).get("duplicate_of")]
-        # "all" is resumable: lectures already on the current prompt are skipped,
-        # so re-requesting after a partial run only pays for what is left.
-        if want is None:
+        if a.exclude and Path(a.exclude).exists():
+            skip = set(Path(a.exclude).read_text().split())
+            todo = [(s, m) for s, m in todo if s not in skip]
+        # Resumable: lectures already on the current prompt are skipped, so a
+        # repeated request (or the next batch) only pays for what is left.
+        if not a.force:
             todo = [(s, m) for s, m in todo
                     if pipeline.load(s).get("enrich_version") != pipeline.ENRICH_VERSION]
         if a.limit:
@@ -106,6 +115,10 @@ def main() -> int:
             for _ in as_completed([pool.submit(one, s, m, True) for s, m in todo]):
                 pass
         left = STATE.get("skipped", 0)
+        if a.summary:
+            Path(a.summary).write_text(json.dumps(
+                {"attempted": len(todo), "done": STATE["done"], "failed": STATE["failed"],
+                 "not_started": left, "failed_slugs": sorted(FAILED)}))
         print(f"\ndone={STATE['done']} failed={STATE['failed']} not started (time budget)={left}",
               flush=True)
         if left:

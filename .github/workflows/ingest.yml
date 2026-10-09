@@ -128,6 +128,11 @@ jobs:
           PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
         run: xargs -a todo.txt python3 -u scripts/backfill.py --workers 4
 
+      # In batches of 20 lectures, committing and pushing after each, so a slow
+      # provider or a timeout can only ever lose the batch in progress. The first
+      # full run finished all 259 lectures and then lost everything at the job
+      # limit because it only committed at the end. Batches skip lectures already
+      # on the current prompt, so any later run resumes where this one stopped.
       - name: Re-extract pearls
         id: reenrich
         if: steps.opt.outputs.reenrich != ''
@@ -135,9 +140,34 @@ jobs:
         env:
           PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
           REENRICH: ${{ steps.opt.outputs.reenrich }}
-        # A time budget leaves room for the rebuild, conflict pass and commit
-        # within the job limit; "all" resumes where an earlier run stopped.
-        run: python3 -u scripts/backfill.py --reenrich --workers 6 --max-minutes 240 $REENRICH
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          end=$(( $(date +%s) + 230 * 60 ))
+          failed=0
+          for batch in $(seq 1 30); do
+            left=$(( (end - $(date +%s)) / 60 ))
+            [ "$left" -gt 5 ] || { echo "time budget used; the rest resume next run"; break; }
+            rm -f summary.json
+            python3 -u scripts/backfill.py --reenrich --workers 8 --limit 20 \
+                --max-minutes "$left" --summary summary.json --exclude failed.txt $REENRICH || true
+            # a lecture that fails is set aside for the rest of this run (retried next run)
+            python3 -c 'import json; print("\n".join(json.load(open("summary.json")).get("failed_slugs", [])))' \
+                >> failed.txt 2>/dev/null || true
+            read -r attempted ndone nfail <<< "$(python3 -c 'import json; s=json.load(open("summary.json")); print(s["attempted"], s["done"], s["failed"])' 2>/dev/null || echo 0 0 1)"
+            failed=$(( failed + nfail ))
+            git add data/episodes
+            if ! git diff --cached --quiet; then
+              git commit -q -m "reenrich: batch $batch, $ndone lecture(s) [skip ci]"
+              git pull -q --rebase --autostash origin "${GITHUB_REF_NAME}"
+              git push -q origin "HEAD:${GITHUB_REF_NAME}"
+            fi
+            echo "batch $batch: attempted=$attempted done=$ndone failed=$nfail"
+            # stop when nothing is left, or a batch made no progress at all
+            [ "$attempted" -gt 0 ] && [ "$ndone" -gt 0 ] || break
+          done
+          echo "re-extraction failures this run: $failed"
+          [ "$failed" -eq 0 ]
 
       - name: Decide what to rebuild
         id: done
@@ -202,16 +232,15 @@ jobs:
 
       # Embeddings and every judge/verify verdict are cached by pearl text, so a
       # run only pays for pairs it has never seen.
-      - name: Restore agreement/conflict cache
+      # Pearl embeddings only (cheap to redo). The judge/verify verdicts, the
+      # paid part, are committed under data/relations so they are never lost.
+      - name: Restore embedding cache
         if: steps.done.outputs.rebuild == 'true'
         uses: actions/cache@v4
         with:
-          path: |
-            data/cache/pearl_vecs_by_text.json
-            data/cache/judge_*.json
-            data/cache/verify_*.json
-          key: relate-cache-${{ github.run_id }}
-          restore-keys: relate-cache-
+          path: data/cache/pearl_vecs_by_text.json
+          key: pearl-vecs-${{ github.run_id }}
+          restore-keys: pearl-vecs-
 
       - name: Find agreement and conflicts
         id: cluster
@@ -221,7 +250,7 @@ jobs:
           PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
           MAX_PAIRS: ${{ steps.opt.outputs.max_pairs }}
         run: |
-          python3 scripts/cluster_pearls.py --max-new "$MAX_PAIRS"
+          python3 scripts/cluster_pearls.py --max-new "$MAX_PAIRS" --max-minutes 45
           python3 scripts/build_site.py   # fold fresh results into data.json
 
       # Translation (ko/fr/de) is built but deliberately OFF.
@@ -252,7 +281,7 @@ jobs:
           # Audio is never committed (~2.5GB at full corpus); timestamps deep-link
           # to Podbean instead.
           git add data/episodes data/episodes_meta.json data/taxonomy.json \
-                  data/clusters.json data/speakers.json site
+                  data/clusters.json data/speakers.json data/relations site
           if git diff --cached --quiet; then
             echo "nothing to commit"
             exit 0
@@ -265,7 +294,7 @@ jobs:
             msg="refresh: rebuild derived data [skip ci]"
           fi
           git commit -m "$msg"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
 
       - name: Report failures

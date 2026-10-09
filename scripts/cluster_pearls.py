@@ -40,6 +40,7 @@ import hashlib
 import json
 import re
 import sys
+import time
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -51,7 +52,11 @@ import ppq  # noqa: E402
 
 EPISODES = BASE / "data" / "episodes"
 OUT = BASE / "data" / "clusters.json"
-CACHE = BASE / "data" / "cache"
+CACHE = BASE / "data" / "cache"          # embeddings: large, cheap to redo, not committed
+# Judge and verify verdicts are the paid part. They live in git, so a run that is
+# cut off still keeps everything it judged, and every verdict can be audited.
+VERDICTS = BASE / "data" / "relations"
+DEADLINE = [float("inf")]
 JUDGE_VERSION, VERIFY_VERSION = "j2", "v2"
 
 JUDGE_SYS = """You compare pairs of clinical teaching points from different residency lectures.
@@ -192,13 +197,13 @@ def side(p: dict) -> dict:
 
 
 def load_cache(name: str) -> dict:
-    path = CACHE / name
+    path = VERDICTS / name
     return json.loads(path.read_text()) if path.exists() else {}
 
 
 def save_cache(name: str, data: dict) -> None:
-    CACHE.mkdir(parents=True, exist_ok=True)
-    (CACHE / name).write_text(json.dumps(data, sort_keys=True))
+    VERDICTS.mkdir(parents=True, exist_ok=True)
+    (VERDICTS / name).write_text(json.dumps(data, sort_keys=True, indent=0))
 
 
 def judge(pearls: list, cands: list, max_new: int) -> dict:
@@ -206,6 +211,11 @@ def judge(pearls: list, cands: list, max_new: int) -> dict:
     todo = [c for c in cands if pkey(pearls[c[2]], pearls[c[3]]) not in cache][:max_new]
     print(f"  judge: {len(cands) - len(todo)} pairs cached or deferred, {len(todo)} to judge", flush=True)
     for n in range(0, len(todo), 10):
+        if time.time() > DEADLINE[0]:
+            print(f"  judge: time budget reached after {n} pairs; the rest wait for the next run",
+                  flush=True)
+            save_cache(f"judge_{JUDGE_VERSION}.json", cache)
+            break
         batch = todo[n:n + 10]
         payload = {"pairs": [{"id": str(x), "a": side(pearls[i]), "b": side(pearls[j])}
                              for x, (_, _, i, j) in enumerate(batch)]}
@@ -234,6 +244,9 @@ def verify(pearls: list, pairs: list) -> dict:
     print(f"  verify: {len(pairs) - len(todo)} cached, {len(todo)} to check with {ppq.VERIFY_MODEL}",
           flush=True)
     for n, (i, j) in enumerate(todo):
+        if time.time() > DEADLINE[0] + 600:    # verification gets 10 extra minutes
+            print(f"  verify: time budget reached after {n}; the rest wait for the next run", flush=True)
+            break
         a, b = pearls[i], pearls[j]
         user = json.dumps({x: {"teaching": p["text"], "quote": p.get("verbatim", ""),
                                "applies_to": p.get("applies_to", ""),
@@ -257,8 +270,10 @@ def verify(pearls: list, pairs: list) -> dict:
             cache[pkey(a, b)] = {"verdict": v, "topic": (r.get("topic") or "")[:60],
                                  "why": (r.get("why") or "")[:200],
                                  "condition": (r.get("condition") or "")[:100], "model": used}
-        if n % 10 == 9 or n + 1 == len(todo):
+        if n % 10 == 9:
             save_cache(f"verify_{VERIFY_VERSION}.json", cache)
+    if todo:
+        save_cache(f"verify_{VERIFY_VERSION}.json", cache)
     return cache
 
 
@@ -270,7 +285,11 @@ def main() -> int:
     ap.add_argument("--group-sim", type=float, default=0.72,
                     help="every pair inside an agreement group must be at least this similar")
     ap.add_argument("--max-group", type=int, default=12)
+    ap.add_argument("--max-minutes", type=float, default=0,
+                    help="stop judging after this long; output is written either way")
     a = ap.parse_args()
+    if a.max_minutes:
+        DEADLINE[0] = time.time() + a.max_minutes * 60
 
     pearls = load_pearls()
     if len(pearls) < 2:
