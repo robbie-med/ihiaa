@@ -22,6 +22,7 @@ import argparse
 import json
 import sys
 import threading
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
@@ -40,7 +41,13 @@ def log(msg: str) -> None:
         print(f"[{n:3d}/{t}] {msg}", flush=True)
 
 
+DEADLINE = [float("inf")]
+
+
 def one(slug: str, meta: dict, reenrich: bool = False) -> bool:
+    if time.time() > DEADLINE[0]:
+        STATE["skipped"] = STATE.get("skipped", 0) + 1
+        return False
     try:
         if reenrich:
             ep = pipeline.load(slug)
@@ -73,8 +80,12 @@ def main() -> int:
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--reenrich", action="store_true",
                     help="re-extract pearls on transcribed lectures (slugs, or 'all')")
+    ap.add_argument("--max-minutes", type=float, default=0,
+                    help="stop starting new lectures after this long, so CI reaches its commit")
     ap.add_argument("slugs", nargs="*")
     a = ap.parse_args()
+    if a.max_minutes:
+        DEADLINE[0] = time.time() + a.max_minutes * 60
 
     if a.reenrich:
         want = None if a.slugs in ([], ["all"]) else set(a.slugs)
@@ -82,6 +93,11 @@ def main() -> int:
                 if (want is None or p.stem in want)]
         todo = [(s, m) for s, m in todo
                 if pipeline.load(s).get("transcript") and not pipeline.load(s).get("duplicate_of")]
+        # "all" is resumable: lectures already on the current prompt are skipped,
+        # so re-requesting after a partial run only pays for what is left.
+        if want is None:
+            todo = [(s, m) for s, m in todo
+                    if pipeline.load(s).get("enrich_version") != pipeline.ENRICH_VERSION]
         if a.limit:
             todo = todo[:a.limit]
         STATE["total"] = len(todo)
@@ -89,8 +105,12 @@ def main() -> int:
         with ThreadPoolExecutor(max_workers=a.workers) as pool:
             for _ in as_completed([pool.submit(one, s, m, True) for s, m in todo]):
                 pass
-        print(f"\ndone={STATE['done']} failed={STATE['failed']}", flush=True)
-        return 1 if STATE["failed"] else 0
+        left = STATE.get("skipped", 0)
+        print(f"\ndone={STATE['done']} failed={STATE['failed']} not started (time budget)={left}",
+              flush=True)
+        if left:
+            print("  re-run with the same request to continue where this stopped", flush=True)
+        return 1 if STATE["failed"] or left else 0
 
     meta = json.loads((BASE / "data" / "episodes_meta.json").read_text())
     for s in a.slugs:

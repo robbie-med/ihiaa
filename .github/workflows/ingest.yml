@@ -135,7 +135,9 @@ jobs:
         env:
           PPQ_API_KEY: ${{ secrets.PPQ_API_KEY }}
           REENRICH: ${{ steps.opt.outputs.reenrich }}
-        run: python3 -u scripts/backfill.py --reenrich --workers 6 $REENRICH
+        # A time budget leaves room for the rebuild, conflict pass and commit
+        # within the job limit; "all" resumes where an earlier run stopped.
+        run: python3 -u scripts/backfill.py --reenrich --workers 6 --max-minutes 240 $REENRICH
 
       - name: Decide what to rebuild
         id: done
