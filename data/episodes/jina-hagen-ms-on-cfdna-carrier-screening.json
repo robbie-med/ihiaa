@@ -32272,40 +32272,48 @@
   "fixes_rejected": [],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "Jina Hagen from Labcorp reviews cell-free DNA (cfDNA) screening using massively parallel sequencing to detect fetal trisomies and subchromosomal abnormalities. She explains that fetal DNA fragments are smaller than maternal fragments, enabling fetal fraction calculation, and discusses ACOG guidelines recommending NIPT for all pregnant women. The presentation also covers the Maternity Genome reflex option for deeper sequencing when later concerns arise and emphasizes the importance of positive predictive value in counseling. Finally, she reviews carrier screening for autosomal recessive conditions, highlighting that CF and SMA screening should be offered to all patients and noting that 1-2% of couples are at risk for an affected child.",
+  "abstract": "Jina Hagen from Labcorp reviews cell-free DNA (cfDNA) screening for fetal aneuploidy, including the technology of massively parallel sequencing, the distinction between maternal and fetal DNA fragments by size, and the evolution of NIPT from high-risk to universal screening following ACOG Practice Bulletin 226. She discusses the importance of positive predictive value (PPV) in interpreting results, the option of reflexing to a genome-wide screen (Maternity Genome) from the same blood sample when later concerns arise, and briefly covers carrier screening for autosomal recessive conditions, noting that 1-2% of couples are at risk.",
   "key_points": [
-    "NIPT uses massively parallel sequencing to count DNA fragments from each chromosome and detect overrepresentation indicating trisomy.",
-    "Fetal DNA fragments average ~130 bp, maternal ~160 bp, allowing fetal fraction determination by size distribution.",
-    "ACOG 2020 practice bulletin 226 recommends offering NIPT to all pregnant women as the most sensitive and specific screening for trisomies.",
-    "Positive predictive value (PPV) of NIPT is ~80% overall, compared to ~3.5% for first-trimester serum screening, but PPV depends on population prevalence.",
-    "Labcorp retains the blood sample until the due date; if later ultrasound concerns arise, providers can request the Maternity Genome reflex for deeper sequencing to detect subchromosomal events.",
-    "Carrier screening for cystic fibrosis (CF) and spinal muscular atrophy (SMA) should be offered to all patients regardless of ethnicity per ACOG.",
-    "Expanded carrier screening can test many conditions for the same price and is especially useful preconceptually.",
-    "Approximately 1-2% of couples are at risk for having a child with an autosomal recessive disorder.",
-    "ACOG recommends carrier screening for cystic fibrosis, spinal muscular atrophy, and hemoglobinopathies.",
-    "Cell-free DNA (Maternity21) can be initiated at 9 weeks and performed throughout pregnancy, with fetal fraction increasing over time.",
-    "Traditional serum screening (quad screen, first trimester screen) uses algorithms and has higher false-positive rates compared to cfDNA.",
-    "cfDNA has a screen positive rate of about 1% or less, reducing patient anxiety and unnecessary follow-up."
+    "cfDNA screens for trisomies 21, 18, 13, sex chromosome aneuploidy, and optional microdeletions/rare trisomies.",
+    "Fetal DNA fragments are smaller (~130 bp) than maternal fragments (~160 bp), which helps determine fetal fraction.",
+    "Massively parallel sequencing assigns DNA fragments to chromosome bins to detect overrepresentation indicating trisomy.",
+    "ACOG Practice Bulletin 226 (2020) recommends offering NIPT to all pregnant women, not just those at high risk.",
+    "PPV of cfDNA is ~80% overall but varies with disease prevalence; it is higher in older women and lower in low-risk populations.",
+    "A positive NIPT result should not be followed by a quad screen; diagnostic testing (amnio/CVS) is the next step.",
+    "Labcorp keeps the blood sample until the due date, allowing reflex to Maternity Genome (whole-chromosome and subchromosomal analysis) within 3 days if later concerns arise.",
+    "Maternity Genome provides information comparable to a fetal karyotype, including deletions, duplications, and partial trisomies.",
+    "Carrier screening identifies autosomal recessive conditions; most carriers have no symptoms or family history.",
+    "1-2% of couples are at risk for having a child with an autosomal recessive disorder; early knowledge improves outcomes.",
+    "ACOG accepts ethnic-specific, panethnic, or expanded carrier screening as valid strategies.",
+    "Everyone carries recessive gene mutations; collectively, recessive conditions cause significant infant mortality and hospitalizations."
   ],
   "topics_raw": [
+    {
+      "label": "Cell-Free DNA Screening",
+      "kind": "procedure"
+    },
     {
       "label": "Noninvasive Prenatal Testing",
       "kind": "procedure"
     },
     {
-      "label": "Cell-Free DNA",
-      "kind": "concept"
-    },
-    {
-      "label": "Massively Parallel Sequencing",
-      "kind": "procedure"
-    },
-    {
-      "label": "Fetal Fraction",
-      "kind": "concept"
-    },
-    {
       "label": "Trisomy 21",
+      "kind": "condition"
+    },
+    {
+      "label": "Trisomy 18",
+      "kind": "condition"
+    },
+    {
+      "label": "Trisomy 13",
+      "kind": "condition"
+    },
+    {
+      "label": "Sex Chromosome Aneuploidy",
+      "kind": "condition"
+    },
+    {
+      "label": "Microdeletion",
       "kind": "condition"
     },
     {
@@ -32313,12 +32321,24 @@
       "kind": "concept"
     },
     {
-      "label": "ACOG Guidelines",
-      "kind": "guideline"
+      "label": "Fetal Fraction",
+      "kind": "concept"
     },
     {
       "label": "Maternity Genome",
       "kind": "procedure"
+    },
+    {
+      "label": "Carrier Screening",
+      "kind": "procedure"
+    },
+    {
+      "label": "Autosomal Recessive Disorder",
+      "kind": "condition"
+    },
+    {
+      "label": "ACOG Practice Bulletin 226",
+      "kind": "concept"
     },
     {
       "label": "Carrier Screening",
@@ -32333,11 +32353,7 @@
       "kind": "condition"
     },
     {
-      "label": "Cystic fibrosis",
-      "kind": "condition"
-    },
-    {
-      "label": "Spinal muscular atrophy",
+      "label": "Fragile X Syndrome",
       "kind": "condition"
     },
     {
@@ -32345,332 +32361,330 @@
       "kind": "condition"
     },
     {
-      "label": "Noninvasive prenatal testing",
-      "kind": "procedure"
-    },
-    {
-      "label": "Carrier screening",
+      "label": "Autosomal Recessive Disorders",
       "kind": "concept"
     },
     {
-      "label": "Quad screen",
+      "label": "Cell-Free DNA Testing",
       "kind": "procedure"
     },
     {
-      "label": "First trimester screening",
+      "label": "Serum Screening (Quad Screen)",
       "kind": "procedure"
     },
     {
-      "label": "Nuchal translucency",
+      "label": "Nuchal Translucency",
       "kind": "procedure"
     },
     {
-      "label": "ACOG guidelines",
+      "label": "Newborn Screening",
+      "kind": "procedure"
+    },
+    {
+      "label": "Expanded Carrier Screening",
+      "kind": "concept"
+    },
+    {
+      "label": "Screen Positive Rate",
+      "kind": "concept"
+    },
+    {
+      "label": "Fetal Fraction",
       "kind": "concept"
     }
   ],
   "pearls_raw": [
     {
-      "text": "Do not perform a quad screen or other serum screening after NIPT; it is unnecessary and may confuse results.",
+      "text": "Fetal DNA fragments are smaller (~130 bp) than maternal fragments (~160 bp); this size difference is used to calculate fetal fraction.",
+      "seg": 81,
+      "verbatim": "fetal DNA fragments tend to be smaller in size, only about a 130 base pairs, and maternal DNA fragments tend to be larger in size, so maybe a 160 base pairs.",
+      "applies_to": "pregnant women undergoing cfDNA screening",
+      "type": "concept"
+    },
+    {
+      "text": "ACOG Practice Bulletin 226 (2020) states that NIPT should not be limited to high-risk patients; all pregnant women should be educated on prenatal screening options.",
+      "seg": 116,
+      "verbatim": "in 2020 when American College of OBGYNs came out with their practice bulletin two two six on screening for fetal chromosome abnormalities and basically said that, really, all pregnant women should be educated on the different prenatal screening options. They should have all those options available to them, and that really NIPT shouldn't be limited to just a high risk population.",
+      "applies_to": "all pregnant women",
+      "type": "practice"
+    },
+    {
+      "text": "cfDNA has a much higher positive predictive value (~80%) compared to first-trimester serum screening (~3.5%), even in low-risk populations.",
+      "seg": 136,
+      "verbatim": "first trimester screening to having a positive predictive value of about three and a half percent, they noted that even in low risk populations, the cell free DNA had a much higher positive predictive value. Now it's still a screening test, but when we look just even at all patients for cell free, we've got a positive predictive value of eighty percent.",
+      "applies_to": "all pregnant women",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "PPV of cfDNA depends on disease prevalence; it performs better in older women (late 30s-40s) because there are more cases of Down syndrome.",
+      "seg": 148,
+      "verbatim": "the positive predictive value of a test really does depend on the prevalence of the condition in that population. So they just want to make it clear that, you know, if you're working with the group of women who are late thirties, forties, the test is gonna perform better because there's more cases of Down syndrome or trisomy versus women who are are considered low risk on the outset, there's not as many cases, your your predictive value is not gonna be as high.",
+      "applies_to": "pregnant women",
+      "type": "concept"
+    },
+    {
+      "text": "If a patient has NIPT, do not then do a quad screen or other serum screening; it would not make sense.",
+      "seg": 163,
       "verbatim": "if someone does do NIPT, for example, then it wouldn't make sense to then do a quad screen or some other type of serum screening.",
-      "type": "judgment"
-    },
-    {
-      "text": "If a patient had NIPT and later has concerning ultrasound findings, request the Maternity Genome reflex on the stored blood sample for deeper sequencing within 3 days.",
-      "verbatim": "we keep that until their due date. If the doctor requests, we can rerun the sample with deeper sequencing to get a maternity genome report.",
-      "type": "judgment"
-    },
-    {
-      "text": "The maximum out-of-pocket cost for Labcorp NIPT is $2.99; patients can call to check benefits in about 5 minutes.",
-      "verbatim": "the most that they'll pay is $2.99.",
-      "type": "judgment"
-    },
-    {
-      "text": "Medicaid patients will not be balance billed if their insurance does not cover NIPT.",
-      "verbatim": "with Medicaid patients, it's covered really well. But if for some reason it's not, we won't balance bill for the patient.",
-      "type": "judgment"
-    },
-    {
-      "text": "Offer carrier screening for cystic fibrosis and spinal muscular atrophy to all patients regardless of ethnicity per ACOG guidelines.",
-      "verbatim": "all patients should be offered carrier screening for cystic fibrosis and SMA or spinal muscular atrophy.",
-      "type": "guideline"
-    },
-    {
-      "text": "About 1-2% of couples are at risk for having a child with an autosomal recessive disorder; carrier screening can identify this risk.",
-      "verbatim": "one to two percent of all couples at risk of having a child with an autosomal recessive disorder.",
-      "type": "judgment"
-    },
-    {
-      "text": "Offer carrier screening preconceptually to avoid the stress of pregnancy while determining carrier status.",
-      "verbatim": "preconceptually, if you get patients that are looking to become pregnant, it's a great time to introduce the idea of carrier screening.",
-      "type": "judgment"
-    },
-    {
-      "text": "Be aware that 95% of positive newborn screens for CF are false positives, leading to a prolonged diagnostic process; carrier screening provides more definitive information.",
-      "verbatim": "ninety five percent of the babies that test positive on newborn screens are false positives.",
+      "applies_to": "pregnant women who have had NIPT",
       "type": "pitfall"
     },
     {
-      "text": "When counseling on NIPT positive results, note that positive predictive value depends on condition prevalence in the population; a positive in a young, low-risk patient has lower PPV than in an older or higher-risk patient.",
-      "verbatim": "the positive predictive value of a test really does depend on the prevalence of the condition in that population.",
-      "type": "guideline"
+      "text": "Labcorp keeps the blood sample from Maternity 21 until the due date; if later ultrasound concerns arise, the sample can be rerun with deeper sequencing to get a Maternity Genome report within 3 days.",
+      "seg": 222,
+      "verbatim": "The lab that did that testing has your blood sample on file. We keep that until their due date. If the doctor requests, we can rerun the sample with deeper sequencing to get a maternity genome report.",
+      "applies_to": "pregnant women who had Maternity 21 and later have concerning ultrasound findings",
+      "type": "procedure"
     },
     {
-      "text": "Fetal DNA fragments (~130 bp) are smaller than maternal fragments (~160 bp); this size difference is used to calculate fetal fraction.",
-      "verbatim": "on average, fetal DNA fragments tend to be smaller in size, only about a 130 base pairs, and maternal DNA fragments tend to be larger in size, so maybe a 160 base pairs.",
-      "type": "dx_criteria"
+      "text": "Maternity Genome provides information comparable to a fetal karyotype, including whole-chromosome and subchromosomal events (deletions, duplications, partial trisomies, microdeletions).",
+      "seg": 225,
+      "verbatim": "on the right hand side, we've got the areas in blue where we're looking at all the chromosomes, and we can report out on not only the whole chromosome, but any extra or missing pieces of chromosome. So deletions, duplication, partial trisomy, smaller microdeletions.",
+      "applies_to": "pregnant women with concerns after initial NIPT",
+      "type": "concept"
     },
     {
-      "text": "cfDNA can be performed from 9 weeks onward with no upper gestational age limit.",
-      "verbatim": "you can start at nine weeks for using the MFT21. Is there a time when you cannot do the test? Good. No. There's not an upper limit.",
-      "type": "guideline"
+      "text": "1-2% of all couples are at risk of having a child with an autosomal recessive disorder; if you see 100 pregnant patients, 1-2 will be carrier-carrier couples.",
+      "seg": 329,
+      "verbatim": "one to two percent of all couples at risk of having a child with an autosomal recessive disorder. So if you see a 100 pregnant patients, then we know one to two of them will be of a carrier carrier couple.",
+      "applies_to": "all couples considering pregnancy or pregnant",
+      "type": "concept"
     },
     {
-      "text": "The screen positive rate for cfDNA is about 1% or less, compared to serum screening which places more women in a high-risk category.",
-      "verbatim": "the way the serum screening is set up is it's going to put a larger group of women in that high risk category to try and find the one or two that actually have a trisomy pregnancy. And with cell free DNA, you know, our our overall screen positive rate is about one percent. So... Or less.",
-      "type": "judgment"
+      "text": "Carrier screening is for autosomal recessive conditions; most carriers have no symptoms and no family history, so only screening can identify them.",
+      "seg": 308,
+      "verbatim": "We know the carrier screening is for primarily autosomal recessive conditions. So conditions that we don't know if we're a carrier. There's no symptoms. There's typically no family history, and it really doesn't cause a problem for for individuals unless their partner is also a carrier, then they have that one in four risk to have an affected child.",
+      "applies_to": "all individuals considering pregnancy",
+      "type": "concept"
     },
     {
-      "text": "The most a patient will pay for CF and SMA carrier screening is $99, and it goes towards the deductible; 70% pay $0 out of pocket.",
-      "verbatim": "70% of the patients pay zero out of pocket anyway. But for those that might have a higher deductible or whatever, the most that they're gonna pay is 99, and it does go towards the deductible.",
-      "type": "judgment"
+      "text": "ACOG accepts ethnic-specific, panethnic, or expanded carrier screening as all acceptable strategies.",
+      "seg": 340,
+      "verbatim": "American College of OBGYNs, basically stating in 2017 and reaffirming more recently that you can do kinda ethnic specific carrier screening. You can do panethnic. You can do expanded carrier screening. All of those are acceptable strategies.",
+      "applies_to": "pregnant women and those planning pregnancy",
+      "type": "practice"
     },
     {
-      "text": "If insurance denies carrier screening, the clinic will not balance bill the patient.",
-      "verbatim": "if for some reason it doesn't get covered, we're not gonna balance bill those patients.",
-      "type": "judgment"
+      "text": "Offer carrier screening for cystic fibrosis and spinal muscular atrophy to all pregnant patients regardless of ethnicity.",
+      "seg": 344,
+      "verbatim": "all patients should be offered carrier screening for cystic fibrosis and SMA or spinal muscular atrophy. So regardless of their ethnicity, they should be offered those two carrier screens.",
+      "applies_to": "all pregnant patients",
+      "type": "practice"
     },
     {
-      "text": "Quad screen looks at four biochemical markers in the second trimester; first trimester screen combines serum markers with nuchal translucency measurement.",
-      "verbatim": "quad screen, which is looking at four different biochemical markers that you draw in the second trimester. And if some are high and some are low, they have an algorithm to to predict, you know, one in a hundred chance of this condition or one in a thousand. First trimester screening involves a blood draw for serum markers as well and combines that with a measurement of nuchal translucency or or kind of fluid buildup at the back of the baby's neck.",
-      "type": "dx_criteria"
+      "text": "If there is a family history of intellectual disability, particularly in boys, offer fragile X carrier screening (blood test) because women can be carriers without knowing.",
+      "seg": 349,
+      "verbatim": "If there's a family history of intellectual disability, particularly for boys, fragile x is something that women can be carriers. Not know that, but have an affected boy. So that's a blood test we can check for that.",
+      "applies_to": "patients with family history of intellectual disability",
+      "type": "practice"
     },
     {
-      "text": "Prenatal oral medication for spinal muscular atrophy has been shown in a case study to prevent motor delays.",
-      "verbatim": "New England Journal of Medicine published a case study of a baby that was treated prenatally with a oral medication. The mom took a oral medication for spinal muscular atrophy, and the baby's having, like, no motor delays or issues with this condition.",
-      "type": "guideline"
+      "text": "Expanded carrier screening can test more conditions typically for the same price as a limited panel.",
+      "seg": 352,
+      "verbatim": "they do note that with expanded carrier screening, you can test more conditions typically for the same price.",
+      "applies_to": "patients considering carrier screening",
+      "type": "practice"
     },
     {
-      "text": "Dr. Stanley recommends offering cell-free DNA to every pregnant patient rather than serum screening.",
-      "verbatim": "I don't even know why they're still doing serum screening and not just offering cell free DNA to to every pregnant patient.",
-      "type": "judgment"
+      "text": "95% of babies who test positive on CF newborn screening are false positives, leading to a month-long diagnostic process; carrier screening provides certainty earlier.",
+      "seg": 372,
+      "verbatim": "ninety five percent of the babies that test positive on newborn screens are false positives. So then parents are going through that... Having to go through that whole diagnostic opsy, which is gonna take you probably a month to a month and a half, which is all more reason just do the carrier screening and, you know, know, you know, for sure.",
+      "applies_to": "pregnant patients and couples planning pregnancy",
+      "type": "pitfall"
+    },
+    {
+      "text": "Offer expanded carrier screening preconceptually to avoid the stress of finding a carrier couple during pregnancy.",
+      "seg": 381,
+      "verbatim": "preconceptually, if you get patients that are looking to become pregnant, it's a great time to introduce the idea of carrier screening. There's no ongoing pregnancy, and so you can find out if you have a carrier carrier couple without that stress of being pregnant.",
+      "applies_to": "patients considering pregnancy",
+      "type": "practice"
+    },
+    {
+      "text": "To cover ACOG recommendations, order CF and SMA carrier screening plus hemoglobin fractionation for hemoglobinopathies.",
+      "seg": 393,
+      "verbatim": "if you were able to draw someone for CF and SMA and then can always do, like, a hemoglobin fractionation for hemoglobinopathies, then you've covered all your bases as far as ACOG is considered.",
+      "applies_to": "pregnant patients",
+      "type": "practice"
+    },
+    {
+      "text": "Cell-free DNA testing can be done at any gestational age; there is no upper limit, and fetal fraction increases throughout pregnancy.",
+      "seg": 442,
+      "verbatim": "No. There's not an upper limit. Weeks. Okay. Right. Right. It can be done second trimester, third trimester. Yeah. That's the nice thing about it. And, you know, the fetal fraction just increases throughout pregnancy.",
+      "applies_to": "pregnant patients",
+      "type": "procedure"
+    },
+    {
+      "text": "Cell-free DNA screening has a screen positive rate of about 1% or less, compared to serum screening which puts a larger group in the high-risk category to find the few true positives.",
+      "seg": 496,
+      "verbatim": "with cell free DNA, you know, our our overall screen positive rate is about one percent. So... Or less. So most patients will get a normal result.",
+      "applies_to": "pregnant patients",
+      "type": "concept"
+    },
+    {
+      "text": "The CF and SMA carrier screening panel is well covered by insurance, including Medicaid; most patients pay $0 out of pocket, and if denied, the lab does not balance bill.",
+      "seg": 502,
+      "verbatim": "The CF and SMA panel is actually very well covered. So the the... With that one, the most I pay is $3.49, but it goes towards their deductible. And if it... And it's covered by it's covered by Medicaid. Actually, the university systems are using... Are testing all of your different of these with the the and SMA panel because it's covered. It's recommended by ACOG.",
+      "applies_to": "all patients (especially those with Medicaid)",
+      "type": "practice"
+    },
+    {
+      "text": "1–2% of couples are at risk for having a child with an autosomal recessive disorder, and most have no family history.",
+      "seg": 328,
+      "verbatim": "Most of the time, there's no family history. And a statistic I think that's kinda interesting is that one to two percent of all couples at risk of having a child with an autosomal recessive disorder. So if you see a 100 pregnant patients, then we know one to two of them will be of a carrier carrier couple.",
+      "applies_to": "all couples",
+      "type": "concept"
     }
   ],
   "pearls": [
     {
-      "text": "Fetal DNA fragments (~130 bp) are smaller than maternal fragments (~160 bp); this size difference is used to calculate fetal fraction.",
-      "verbatim": "on average, fetal DNA fragments tend to be smaller in size, only about a 130 base pairs, and maternal DNA fragments tend to be larger in size, so maybe a 160 base pairs.",
-      "type": "dx_criteria",
-      "t": 305.4,
+      "text": "Fetal DNA fragments are smaller (~130 bp) than maternal fragments (~160 bp); this size difference is used to calculate fetal fraction.",
+      "verbatim": "fetal DNA fragments tend to be smaller in size, only about a 130 base pairs, and maternal DNA fragments tend to be larger in size, so maybe a 160 base pairs.",
+      "type": "concept",
+      "t": 307.0,
       "match": "exact",
       "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
       "speaker": "Jina Hagen",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-305",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:fetal fraction"
-          ],
-          "actionable": [
-            "calculate"
-          ],
-          "rarity": 7.15
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "pregnant women undergoing cfDNA screening",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-307"
     },
     {
-      "text": "When counseling on NIPT positive results, note that positive predictive value depends on condition prevalence in the population; a positive in a young, low-risk patient has lower PPV than in an older or higher-risk patient.",
-      "verbatim": "the positive predictive value of a test really does depend on the prevalence of the condition in that population.",
+      "text": "ACOG Practice Bulletin 226 (2020) states that NIPT should not be limited to high-risk patients; all pregnant women should be educated on prenatal screening options.",
+      "verbatim": "in 2020 when American College of OBGYNs came out with their practice bulletin two two six on screening for fetal chromosome abnormalities and basically said that, really, all pregnant women should be educated on the different prenatal screening options. They should have all those options available to them, and that really NIPT shouldn't be limited to just a high risk population.",
       "type": "practice",
+      "t": 422.3,
+      "match": "exact",
+      "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
+      "speaker": "Jina Hagen",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "all pregnant women",
+      "numbers_unheard": [
+        "226"
+      ],
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-422"
+    },
+    {
+      "text": "cfDNA has a much higher positive predictive value (~80%) compared to first-trimester serum screening (~3.5%), even in low-risk populations.",
+      "verbatim": "first trimester screening to having a positive predictive value of about three and a half percent, they noted that even in low risk populations, the cell free DNA had a much higher positive predictive value. Now it's still a screening test, but when we look just even at all patients for cell free, we've got a positive predictive value of eighty percent.",
+      "type": "dx_criteria",
+      "t": 511.1,
+      "match": "exact",
+      "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
+      "speaker": "Jina Hagen",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "all pregnant women",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-511"
+    },
+    {
+      "text": "PPV of cfDNA depends on disease prevalence; it performs better in older women (late 30s-40s) because there are more cases of Down syndrome.",
+      "verbatim": "the positive predictive value of a test really does depend on the prevalence of the condition in that population. So they just want to make it clear that, you know, if you're working with the group of women who are late thirties, forties, the test is gonna perform better because there's more cases of Down syndrome or trisomy versus women who are are considered low risk on the outset, there's not as many cases, your your predictive value is not gonna be as high.",
+      "type": "concept",
       "t": 560.0,
       "match": "exact",
       "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
       "speaker": "Jina Hagen",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-560",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:positive predictive va"
-          ],
-          "rarity": 8.08
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "pregnant women",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-560"
     },
     {
-      "text": "Do not perform a quad screen or other serum screening after NIPT; it is unnecessary and may confuse results.",
+      "text": "If a patient has NIPT, do not then do a quad screen or other serum screening; it would not make sense.",
       "verbatim": "if someone does do NIPT, for example, then it wouldn't make sense to then do a quad screen or some other type of serum screening.",
-      "type": "judgment",
+      "type": "pitfall",
       "t": 629.5,
       "match": "exact",
       "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
       "speaker": "Jina Hagen",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-629",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:quad screen"
-          ],
-          "actionable": [
-            "Do not"
-          ],
-          "rarity": 7.25
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "pregnant women who have had NIPT",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-629"
     },
     {
-      "text": "If a patient had NIPT and later has concerning ultrasound findings, request the Maternity Genome reflex on the stored blood sample for deeper sequencing within 3 days.",
-      "verbatim": "we keep that until their due date. If the doctor requests, we can rerun the sample with deeper sequencing to get a maternity genome report.",
-      "type": "judgment",
-      "t": 858.9,
+      "text": "Labcorp keeps the blood sample from Maternity 21 until the due date; if later ultrasound concerns arise, the sample can be rerun with deeper sequencing to get a Maternity Genome report within 3 days.",
+      "verbatim": "The lab that did that testing has your blood sample on file. We keep that until their due date. If the doctor requests, we can rerun the sample with deeper sequencing to get a maternity genome report.",
+      "type": "procedure",
+      "t": 855.3,
       "match": "exact",
       "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
       "speaker": "Jina Hagen",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-858",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": true,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "D",
-        "fired": {
-          "specific": [
-            "dose:3 days",
-            "test:ultrasound"
-          ],
-          "local": [
-            "stored"
-          ],
-          "rarity": 8.61
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "pregnant women who had Maternity 21 and later have concerning ultrasound findings",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-855"
     },
     {
-      "text": "The maximum out-of-pocket cost for Labcorp NIPT is $2.99; patients can call to check benefits in about 5 minutes.",
-      "verbatim": "the most that they'll pay is $2.99.",
-      "type": "judgment",
-      "t": 1025.5,
+      "text": "Maternity Genome provides information comparable to a fetal karyotype, including whole-chromosome and subchromosomal events (deletions, duplications, partial trisomies, microdeletions).",
+      "verbatim": "on the right hand side, we've got the areas in blue where we're looking at all the chromosomes, and we can report out on not only the whole chromosome, but any extra or missing pieces of chromosome. So deletions, duplication, partial trisomy, smaller microdeletions.",
+      "type": "concept",
+      "t": 869.5,
       "match": "exact",
       "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
       "speaker": "Jina Hagen",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1025",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:5 minutes"
-          ],
-          "actionable": [
-            "check"
-          ],
-          "rarity": 7.94
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "pregnant women with concerns after initial NIPT",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-869"
     },
     {
-      "text": "Medicaid patients will not be balance billed if their insurance does not cover NIPT.",
-      "verbatim": "with Medicaid patients, it's covered really well. But if for some reason it's not, we won't balance bill for the patient.",
-      "type": "judgment",
-      "t": 1055.6,
+      "text": "Carrier screening is for autosomal recessive conditions; most carriers have no symptoms and no family history, so only screening can identify them.",
+      "verbatim": "We know the carrier screening is for primarily autosomal recessive conditions. So conditions that we don't know if we're a carrier. There's no symptoms. There's typically no family history, and it really doesn't cause a problem for for individuals unless their partner is also a carrier, then they have that one in four risk to have an affected child.",
+      "type": "concept",
+      "t": 1187.6,
       "match": "exact",
       "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
       "speaker": "Jina Hagen",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1055",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:insurance"
-          ],
-          "rarity": 7.05
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "all individuals considering pregnancy",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1187"
     },
     {
-      "text": "About 1-2% of couples are at risk for having a child with an autosomal recessive disorder; carrier screening can identify this risk.",
-      "verbatim": "one to two percent of all couples at risk of having a child with an autosomal recessive disorder.",
-      "type": "judgment",
+      "text": "1, 2% of couples are at risk for having a child with an autosomal recessive disorder, and most have no family history.",
+      "verbatim": "Most of the time, there's no family history. And a statistic I think that's kinda interesting is that one to two percent of all couples at risk of having a child with an autosomal recessive disorder. So if you see a 100 pregnant patients, then we know one to two of them will be of a carrier carrier couple.",
+      "type": "concept",
+      "t": 1268.2,
+      "match": "exact",
+      "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
+      "speaker": "Jina Hagen",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "all couples",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1268"
+    },
+    {
+      "text": "1-2% of all couples are at risk of having a child with an autosomal recessive disorder; if you see 100 pregnant patients, 1-2 will be carrier-carrier couples.",
+      "verbatim": "one to two percent of all couples at risk of having a child with an autosomal recessive disorder. So if you see a 100 pregnant patients, then we know one to two of them will be of a carrier carrier couple.",
+      "type": "concept",
       "t": 1273.9,
       "match": "exact",
       "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
       "speaker": "Jina Hagen",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1273",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:carrier screening"
-          ],
-          "rarity": 8.38
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "all couples considering pregnancy or pregnant",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1273"
     },
     {
-      "text": "Offer carrier screening for cystic fibrosis and spinal muscular atrophy to all patients regardless of ethnicity per ACOG guidelines.",
-      "verbatim": "all patients should be offered carrier screening for cystic fibrosis and SMA or spinal muscular atrophy.",
+      "text": "ACOG accepts ethnic-specific, panethnic, or expanded carrier screening as all acceptable strategies.",
+      "verbatim": "American College of OBGYNs, basically stating in 2017 and reaffirming more recently that you can do kinda ethnic specific carrier screening. You can do panethnic. You can do expanded carrier screening. All of those are acceptable strategies.",
+      "type": "practice",
+      "t": 1327.1,
+      "match": "exact",
+      "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
+      "speaker": "Jina Hagen",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "pregnant women and those planning pregnancy",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1327"
+    },
+    {
+      "text": "Offer carrier screening for cystic fibrosis and spinal muscular atrophy to all pregnant patients regardless of ethnicity.",
+      "verbatim": "all patients should be offered carrier screening for cystic fibrosis and SMA or spinal muscular atrophy. So regardless of their ethnicity, they should be offered those two carrier screens.",
       "type": "practice",
       "t": 1347.3,
       "match": "exact",
@@ -32678,27 +32692,38 @@
       "speaker": "Jina Hagen",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1347",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:spinal muscular atroph"
-          ],
-          "rarity": 7.85
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "all pregnant patients",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1347"
     },
     {
-      "text": "Be aware that 95% of positive newborn screens for CF are false positives, leading to a prolonged diagnostic process; carrier screening provides more definitive information.",
-      "verbatim": "ninety five percent of the babies that test positive on newborn screens are false positives.",
+      "text": "If there is a family history of intellectual disability, particularly in boys, offer fragile X carrier screening (blood test) because women can be carriers without knowing.",
+      "verbatim": "If there's a family history of intellectual disability, particularly for boys, fragile x is something that women can be carriers. Not know that, but have an affected boy. So that's a blood test we can check for that.",
+      "type": "practice",
+      "t": 1362.5,
+      "match": "exact",
+      "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
+      "speaker": "Jina Hagen",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with family history of intellectual disability",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1362"
+    },
+    {
+      "text": "Expanded carrier screening can test more conditions typically for the same price as a limited panel.",
+      "verbatim": "they do note that with expanded carrier screening, you can test more conditions typically for the same price.",
+      "type": "practice",
+      "t": 1377.4,
+      "match": "exact",
+      "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
+      "speaker": "Jina Hagen",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients considering carrier screening",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1377"
+    },
+    {
+      "text": "95% of babies who test positive on CF newborn screening are false positives, leading to a month-long diagnostic process; carrier screening provides certainty earlier.",
+      "verbatim": "ninety five percent of the babies that test positive on newborn screens are false positives. So then parents are going through that... Having to go through that whole diagnostic opsy, which is gonna take you probably a month to a month and a half, which is all more reason just do the carrier screening and, you know, know, you know, for sure.",
       "type": "pitfall",
       "t": 1453.0,
       "match": "exact",
@@ -32706,261 +32731,75 @@
       "speaker": "Jina Hagen",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "applies_to": "pregnant patients and couples planning pregnancy",
       "by_presenter": false,
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1453",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:carrier screening"
-          ],
-          "rarity": 6.75
-        },
-        "rubric": "rules-v2"
-      }
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1453"
     },
     {
-      "text": "Offer carrier screening preconceptually to avoid the stress of pregnancy while determining carrier status.",
-      "verbatim": "preconceptually, if you get patients that are looking to become pregnant, it's a great time to introduce the idea of carrier screening.",
-      "type": "judgment",
+      "text": "Offer expanded carrier screening preconceptually to avoid the stress of finding a carrier couple during pregnancy.",
+      "verbatim": "preconceptually, if you get patients that are looking to become pregnant, it's a great time to introduce the idea of carrier screening. There's no ongoing pregnancy, and so you can find out if you have a carrier carrier couple without that stress of being pregnant.",
+      "type": "practice",
       "t": 1499.0,
       "match": "exact",
       "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
       "speaker": "Jina Hagen",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1499",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:carrier screening"
-          ],
-          "actionable": [
-            "avoid"
-          ],
-          "rarity": 8.2
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients considering pregnancy",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1499"
     },
     {
-      "text": "Prenatal oral medication for spinal muscular atrophy has been shown in a case study to prevent motor delays.",
-      "verbatim": "New England Journal of Medicine published a case study of a baby that was treated prenatally with a oral medication. The mom took a oral medication for spinal muscular atrophy, and the baby's having, like, no motor delays or issues with this condition.",
+      "text": "To cover ACOG recommendations, order CF and SMA carrier screening plus hemoglobin fractionation for hemoglobinopathies.",
+      "verbatim": "if you were able to draw someone for CF and SMA and then can always do, like, a hemoglobin fractionation for hemoglobinopathies, then you've covered all your bases as far as ACOG is considered.",
       "type": "practice",
-      "t": 1681.5,
+      "t": 1557.9,
       "match": "exact",
       "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
       "speaker": "Jina Hagen",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1681",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:spinal muscular atroph"
-          ],
-          "rarity": 7.25
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "pregnant patients",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1557"
     },
     {
-      "text": "cfDNA can be performed from 9 weeks onward with no upper gestational age limit.",
-      "verbatim": "you can start at nine weeks for using the MFT21. Is there a time when you cannot do the test? Good. No. There's not an upper limit.",
+      "text": "Cell-free DNA testing can be done at any gestational age; there is no upper limit, and fetal fraction increases throughout pregnancy.",
+      "verbatim": "No. There's not an upper limit. Weeks. Okay. Right. Right. It can be done second trimester, third trimester. Yeah. That's the nice thing about it. And, you know, the fetal fraction just increases throughout pregnancy.",
+      "type": "procedure",
+      "t": 1742.4,
+      "match": "exact",
+      "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
+      "speaker": "Jina Hagen",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "pregnant patients",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1742"
+    },
+    {
+      "text": "Cell-free DNA screening has a screen positive rate of about 1% or less, compared to serum screening which puts a larger group in the high-risk category to find the few true positives.",
+      "verbatim": "with cell free DNA, you know, our our overall screen positive rate is about one percent. So... Or less. So most patients will get a normal result.",
+      "type": "concept",
+      "t": 1960.4,
+      "match": "exact",
+      "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
+      "speaker": "Jina Hagen",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "pregnant patients",
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1960"
+    },
+    {
+      "text": "The CF and SMA carrier screening panel is well covered by insurance, including Medicaid; most patients pay $0 out of pocket, and if denied, the lab does not balance bill.",
+      "verbatim": "The CF and SMA panel is actually very well covered. So the the... With that one, the most I pay is $3.49, but it goes towards their deductible. And if it... And it's covered by it's covered by Medicaid. Actually, the university systems are using... Are testing all of your different of these with the the and SMA panel because it's covered. It's recommended by ACOG.",
       "type": "practice",
-      "t": 1734.6,
+      "t": 1979.4,
       "match": "exact",
       "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
       "speaker": "Jina Hagen",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "applies_to": "all patients (especially those with Medicaid)",
       "by_presenter": false,
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1734",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:9 weeks"
-          ],
-          "rarity": 7.76
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Quad screen looks at four biochemical markers in the second trimester; first trimester screen combines serum markers with nuchal translucency measurement.",
-      "verbatim": "quad screen, which is looking at four different biochemical markers that you draw in the second trimester. And if some are high and some are low, they have an algorithm to to predict, you know, one in a hundred chance of this condition or one in a thousand. First trimester screening involves a blood draw for serum markers as well and combines that with a measurement of nuchal translucency or or kind of fluid buildup at the back of the baby's neck.",
-      "type": "dx_criteria",
-      "t": 1790.1,
-      "match": "exact",
-      "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
-      "speaker": "Jina Hagen",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1790",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:nuchal translucency"
-          ],
-          "actionable": [
-            "screen"
-          ],
-          "rarity": 8.11
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Dr. Stanley recommends offering cell-free DNA to every pregnant patient rather than serum screening.",
-      "verbatim": "I don't even know why they're still doing serum screening and not just offering cell free DNA to to every pregnant patient.",
-      "type": "judgment",
-      "t": 1881.2,
-      "match": "exact",
-      "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
-      "speaker": "Jina Hagen",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1881",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:cell-free dna"
-          ],
-          "rarity": 7.55
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "The screen positive rate for cfDNA is about 1% or less, compared to serum screening which places more women in a high-risk category.",
-      "verbatim": "the way the serum screening is set up is it's going to put a larger group of women in that high risk category to try and find the one or two that actually have a trisomy pregnancy. And with cell free DNA, you know, our our overall screen positive rate is about one percent. So... Or less.",
-      "type": "judgment",
-      "t": 1944.2,
-      "match": "exact",
-      "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
-      "speaker": "Jina Hagen",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1944",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:screening"
-          ],
-          "actionable": [
-            "screen"
-          ],
-          "rarity": 7.71
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "If insurance denies carrier screening, the clinic will not balance bill the patient.",
-      "verbatim": "if for some reason it doesn't get covered, we're not gonna balance bill those patients.",
-      "type": "judgment",
-      "t": 2024.8,
-      "match": "exact",
-      "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
-      "speaker": "Jina Hagen",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-2024",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:carrier screening"
-          ],
-          "rarity": 7.46
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "The most a patient will pay for CF and SMA carrier screening is $99, and it goes towards the deductible; 70% pay $0 out of pocket.",
-      "verbatim": "70% of the patients pay zero out of pocket anyway. But for those that might have a higher deductible or whatever, the most that they're gonna pay is 99, and it does go towards the deductible.",
-      "type": "judgment",
-      "t": 2121.2,
-      "match": "exact",
-      "episode": "jina-hagen-ms-on-cfdna-carrier-screening",
-      "speaker": "Jina Hagen",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-2121",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:carrier screening"
-          ],
-          "rarity": 8.02
-        },
-        "rubric": "rules-v2"
-      }
+      "pearl_id": "jina-hagen-ms-on-cfdna-carrier-screening-1979"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -47996,5 +47835,6 @@
       "name": "Jina Hagen"
     }
   ],
-  "pearls_fingerprint": "30f64f95146d38f0"
+  "pearls_fingerprint": "6604f5ce6c30fab1",
+  "enrich_version": "v2"
 }

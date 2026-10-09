@@ -23189,22 +23189,27 @@
   ],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "This learner-driven session covers four common types of uncommon anemia encountered in family medicine, focusing on diagnoses beyond iron deficiency, B12, or folate deficiency. Each group presents a case with history, exam, and lab findings for others to diagnose, followed by a teaching pearl. Topics include anemia of chronic disease, thalassemia, myelodysplastic syndrome, and anemia of chronic kidney disease. The session emphasizes the importance of a thorough history, peripheral smear, and appropriate workup before jumping to treatment, with pearls on avoiding unnecessary iron supplementation and recognizing red flags like hemoglobin below 9 in chronic disease.",
+  "abstract": "Dr. Hildebrand leads a learner-driven session on four common but uncommon causes of anemia that prompt hematology referrals. After a brief review of anemia mechanisms, small groups work up cases on anemia of chronic disease, thalassemia, myelodysplastic syndrome, and anemia of chronic kidney disease. The session emphasizes that anemia of chronic disease rarely drops hemoglobin below 9 g/dL, that iron should not be given unless concomitant iron deficiency is confirmed, and that a normal B12/folate/TSH workup for macrocytic anemia should prompt a peripheral smear to rule out myelodysplastic syndrome. Key pearls include the classic triad of multiple myeloma (hypercalcemia, anemia, elevated creatinine) and the need to supplement iron when giving erythropoietin in CKD.",
   "key_points": [
-    "Anemia of chronic disease typically does not drop hemoglobin below 9 g/dL; if lower, consider concomitant iron deficiency or another cause.",
-    "In anemia of chronic disease, do not give iron unless there is proven concomitant iron deficiency.",
-    "Thalassemia requires hemoglobin electrophoresis to differentiate major/minor and alpha/beta; avoid iron supplementation unless iron deficiency is confirmed.",
-    "Myelodysplastic syndrome (MDS) can present with macrocytic anemia and normal B12/folate/TSH; a peripheral smear is essential for diagnosis.",
-    "MDS can transform to acute myeloid leukemia (AML), requiring hematology referral.",
-    "Anemia of chronic kidney disease (CKD) typically presents with hemoglobin <10 g/dL; consider erythropoietin (EPO) therapy in conjunction with nephrology.",
-    "When giving EPO for CKD anemia, iron stores are rapidly depleted, so iron supplementation is often needed even without iron deficiency.",
-    "Elevated BUN in CKD shortens RBC lifespan, contributing to anemia beyond erythropoietin deficiency.",
-    "For initial anemia workup, obtain a reticulocyte count and direct Coombs test to guide further evaluation.",
-    "If MCV is high and B12/folate/TSH are normal, consider MDS or hemolysis; a high reticulocyte count suggests hemolysis."
+    "Anemia of chronic disease typically does not lower hemoglobin below 9 g/dL; a hemoglobin <9 should trigger a search for another cause.",
+    "Do not give iron for anemia of chronic disease unless concomitant iron deficiency anemia is confirmed.",
+    "In thalassemia, iron supplementation is harmful because it can cause iron overload; diagnosis requires hemoglobin electrophoresis.",
+    "For thalassemia major, pre-transfusion hemoglobin threshold is approximately 5.5 to 10 g/dL.",
+    "When macrocytic anemia workup (B12, folate, TSH) is normal, obtain a peripheral blood smear to evaluate for myelodysplastic syndrome.",
+    "Myelodysplastic syndrome can transform into acute myeloid leukemia.",
+    "The classic triad of multiple myeloma is hypercalcemia, anemia, and elevated creatinine.",
+    "In chronic kidney disease with hemoglobin <10, consider erythropoietin therapy, which should be managed with nephrology.",
+    "When giving erythropoietin, also supplement iron because EPO depletes iron stores rapidly.",
+    "Elevated BUN in CKD shortens RBC lifespan, which can confound the interpretation of BUN in GI bleeding.",
+    "Initial workup of new anemia should include a careful history, repeat CBC, reticulocyte count, and direct Coombs test to guide further evaluation cost-effectively."
   ],
   "topics_raw": [
     {
       "label": "Anemia of Chronic Disease",
+      "kind": "condition"
+    },
+    {
+      "label": "Iron Deficiency Anemia",
       "kind": "condition"
     },
     {
@@ -23220,7 +23225,7 @@
       "kind": "condition"
     },
     {
-      "label": "Iron Deficiency Anemia",
+      "label": "Multiple Myeloma",
       "kind": "condition"
     },
     {
@@ -23228,106 +23233,121 @@
       "kind": "drug"
     },
     {
-      "label": "Hemoglobin Electrophoresis",
-      "kind": "procedure"
+      "label": "Iron Supplementation",
+      "kind": "drug"
     },
     {
       "label": "Peripheral Blood Smear",
       "kind": "procedure"
     },
     {
-      "label": "Reticulocyte Count",
+      "label": "Hemoglobin Electrophoresis",
       "kind": "procedure"
     },
     {
       "label": "Direct Coombs Test",
       "kind": "procedure"
+    },
+    {
+      "label": "Reticulocyte Count",
+      "kind": "procedure"
     }
   ],
   "pearls_raw": [
     {
-      "text": "In anemia of chronic disease, hemoglobin usually does not drop below 9 g/dL; if it does, suspect concomitant iron deficiency or another cause.",
+      "text": "In anemia of chronic disease, hemoglobin usually does not drop below 9 g/dL. If it is less than 9, look for another cause such as concomitant iron deficiency.",
+      "seg": 228,
       "verbatim": "Doesn't usually drop below nine. So if you have someone who has a hemoglobin that's less than nine and then you have chronic disease and they have chronic disease, that should not be your go to answer.",
+      "applies_to": "patients with suspected anemia of chronic disease",
       "type": "red_flag"
     },
     {
-      "text": "For anemia of chronic disease, do not give iron unless there is proven concomitant iron deficiency anemia.",
-      "verbatim": "in terms of treatment, do not give iron. The treatment is to really treat the underlying disease unless they have concomitant iron deficiency anemia and anemia.",
+      "text": "Do not give iron for anemia of chronic disease unless concomitant iron deficiency anemia is confirmed.",
+      "seg": 222,
+      "verbatim": "do not give iron. The treatment is to really treat the underlying disease unless they have concomitant iron deficiency anemia and anemia.",
+      "applies_to": "patients with anemia of chronic disease",
       "type": "pitfall"
     },
     {
-      "text": "In thalassemia, avoid iron supplementation unless iron deficiency is confirmed, as unnecessary iron can cause harmful long-term effects like heart overload.",
-      "verbatim": "So what are the cons... Negative consequences of iron supplementation in a setting where it's not necessary? You know, I appreciate that you're worried about this balance. Harmful long term effect. Heart overload. Absolutely. So you don't wanna keep that one.",
+      "text": "In thalassemia, iron supplementation is harmful because it can cause iron overload; do not give iron empirically.",
+      "seg": 282,
+      "verbatim": "Harmful long term effect. Heart overload. Absolutely. Yeah. So you don't wanna keep that one.",
+      "applies_to": "patients with thalassemia",
       "type": "pitfall"
     },
     {
-      "text": "For macrocytic anemia with normal B12, folate, and TSH, do not stop the workup; obtain a peripheral blood smear to evaluate for myelodysplastic syndrome.",
-      "verbatim": "I didn't look their chart up to see if I had gotten a peripheral blood smear. I'm like, shoot. I wonder if that lady has myelodysplastic syndrome. And so... And those patients, working them up and then you're like, oh, it's all normal. Don't stop there. I'll be right. Get the peripheral smear.",
-      "type": "dx_criteria"
-    },
-    {
-      "text": "In anemia of chronic kidney disease with hemoglobin less than 10, consider erythropoietin therapy in conjunction with nephrology.",
-      "verbatim": "anyone that has CKD and the hemoglobin is less than 10, Shoot. Consider And we... Generally, if someone is needing EPO, then they're hopefully also being seen in conjunction with nephrology.",
-      "type": "guideline"
-    },
-    {
-      "text": "When giving erythropoietin for CKD anemia, supplement with iron because EPO stimulates marrow and depletes iron stores quickly.",
-      "verbatim": "Also, when you give EPO, what are you doing to the B12 marrow? Stimulating it. So you also need to give them iron because you're gonna deplete their stores pretty quickly.",
+      "text": "For thalassemia major, the pre-transfusion hemoglobin threshold is approximately 5.5 to 10 g/dL.",
+      "seg": 272,
+      "verbatim": "You want a pre transfusion threshold of approximately five and a half to 10.",
+      "applies_to": "patients with thalassemia major",
       "type": "dosing"
     },
     {
-      "text": "Elevated BUN in chronic kidney disease shortens RBC lifespan, contributing to anemia beyond erythropoietin deficiency.",
-      "verbatim": "toxic metabolites shorten RBC lifespan. And so as BUN increases, specifically, as BUN increases, your decreases.",
+      "text": "When macrocytic anemia workup (B12, folate, TSH) is normal, do not stop; obtain a peripheral blood smear to evaluate for myelodysplastic syndrome.",
+      "seg": 324,
+      "verbatim": "working them up and then you're like, oh, it's all normal. Don't stop there. I'll be right. Get the peripheral smear.",
+      "applies_to": "patients with macrocytic anemia and normal B12, folate, TSH",
+      "type": "practice"
+    },
+    {
+      "text": "Myelodysplastic syndrome can transform into acute myeloid leukemia.",
+      "seg": 315,
+      "verbatim": "Our pearl is that this can transform into AML",
+      "applies_to": "patients with myelodysplastic syndrome",
       "type": "concept"
     },
     {
-      "text": "For initial anemia workup, obtain a reticulocyte count and direct Coombs test to guide further evaluation cost-effectively.",
-      "verbatim": "add to it a retic count and add to it an ICT because that's gonna help you... This is this is not the only way to do it. So pick what algorithm you want. But this is one branch point that would be helpful. Because if a Coombs positive right off the bat, then you're gonna completely go down that route and not worry about working.",
+      "text": "The classic triad of multiple myeloma is hypercalcemia, anemia, and elevated creatinine.",
+      "seg": 360,
+      "verbatim": "Hypercalcemia, anemia, and elevated creatinine are three.",
+      "applies_to": "patients with suspected multiple myeloma",
       "type": "dx_criteria"
     },
     {
-      "text": "If MCV is high and B12/folate/TSH are normal, consider myelodysplastic syndrome or hemolysis; a high reticulocyte count suggests hemolysis.",
-      "verbatim": "If these things are normal, labs are normal, and they're setting them up... Have a high MCV, then what are we gonna think about? The hemolytic. B twelve is low, then you're gonna treat it. If your B12 is low, you're gonna treat it. If your TSH is high, you're gonna treat it. Right? And then finally, if all of these things are normal and your retic count is high, then what are you thinking? Well, actually, we didn't talk about it today, but hemolysis.",
-      "type": "dx_criteria"
+      "text": "In chronic kidney disease with hemoglobin less than 10, consider erythropoietin therapy, which should be managed with nephrology.",
+      "seg": 374,
+      "verbatim": "anyone that has CKD and the hemoglobin is less than 10, Shoot. Consider",
+      "applies_to": "patients with CKD and hemoglobin <10",
+      "type": "practice"
+    },
+    {
+      "text": "When giving erythropoietin, also supplement iron because EPO stimulates the bone marrow and depletes iron stores rapidly.",
+      "seg": 389,
+      "verbatim": "Also, when you give EPO, what are you doing to the B12 marrow? Stimulating it. So you also need to give them iron because you're gonna deplete their stores pretty quickly.",
+      "applies_to": "patients receiving erythropoietin",
+      "type": "dosing"
+    },
+    {
+      "text": "Elevated BUN in CKD shortens RBC lifespan, which can confound the interpretation of BUN in GI bleeding.",
+      "seg": 401,
+      "verbatim": "toxic metabolites shorten RBC lifespan. And so as BUN increases, specifically, as BUN increases, your decreases.",
+      "applies_to": "patients with CKD and anemia",
+      "type": "concept"
+    },
+    {
+      "text": "Initial workup of new anemia should include a careful history, repeat CBC, reticulocyte count, and direct Coombs test to guide further evaluation cost-effectively.",
+      "seg": 422,
+      "verbatim": "Get more. Physical. Get more blood. Repeat their CBC. Got it. And then add to it a retic count and add to it an ICT because that's gonna help you...",
+      "applies_to": "patients with newly discovered anemia",
+      "type": "practice"
     }
   ],
   "pearls": [
     {
-      "text": "For anemia of chronic disease, do not give iron unless there is proven concomitant iron deficiency anemia.",
-      "verbatim": "in terms of treatment, do not give iron. The treatment is to really treat the underlying disease unless they have concomitant iron deficiency anemia and anemia.",
+      "text": "Do not give iron for anemia of chronic disease unless concomitant iron deficiency anemia is confirmed.",
+      "verbatim": "do not give iron. The treatment is to really treat the underlying disease unless they have concomitant iron deficiency anemia and anemia.",
       "type": "pitfall",
-      "t": 1606.9,
+      "t": 1608.4,
       "match": "exact",
       "episode": "lifestyle-anemia",
       "speaker": "Dr. Hildebrand",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "lifestyle-anemia-1606",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 4,
-        "grade": "A",
-        "fired": {
-          "specific": [
-            "concept:anemia of chronic dise"
-          ],
-          "actionable": [
-            "do not"
-          ],
-          "harm": [
-            "do not give"
-          ],
-          "rarity": 6.52
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with anemia of chronic disease",
+      "pearl_id": "lifestyle-anemia-1608"
     },
     {
-      "text": "In anemia of chronic disease, hemoglobin usually does not drop below 9 g/dL; if it does, suspect concomitant iron deficiency or another cause.",
+      "text": "In anemia of chronic disease, hemoglobin usually does not drop below 9 g/dL. If it is less than 9, look for another cause such as concomitant iron deficiency.",
       "verbatim": "Doesn't usually drop below nine. So if you have someone who has a hemoglobin that's less than nine and then you have chronic disease and they have chronic disease, that should not be your go to answer.",
       "type": "red_flag",
       "t": 1627.2,
@@ -23336,90 +23356,78 @@
       "speaker": "Dr. Hildebrand",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "lifestyle-anemia-1627",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:9 g",
-            "threshold:below 9"
-          ],
-          "rarity": 6.41
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with suspected anemia of chronic disease",
+      "pearl_id": "lifestyle-anemia-1627"
     },
     {
-      "text": "In thalassemia, avoid iron supplementation unless iron deficiency is confirmed, as unnecessary iron can cause harmful long-term effects like heart overload.",
-      "verbatim": "So what are the cons... Negative consequences of iron supplementation in a setting where it's not necessary? You know, I appreciate that you're worried about this balance. Harmful long term effect. Heart overload. Absolutely. So you don't wanna keep that one.",
+      "text": "For thalassemia major, the pre-transfusion hemoglobin threshold is approximately 5.5 to 10 g/dL.",
+      "verbatim": "You want a pre transfusion threshold of approximately five and a half to 10.",
+      "type": "dosing",
+      "t": 1789.6,
+      "match": "exact",
+      "episode": "lifestyle-anemia",
+      "speaker": "Dr. Hildebrand",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with thalassemia major",
+      "pearl_id": "lifestyle-anemia-1789"
+    },
+    {
+      "text": "In thalassemia, iron supplementation is harmful because it can cause iron overload; do not give iron empirically.",
+      "verbatim": "Harmful long term effect. Heart overload. Absolutely. Yeah. So you don't wanna keep that one.",
       "type": "pitfall",
-      "t": 1818.3,
+      "t": 1829.5,
       "match": "exact",
       "episode": "lifestyle-anemia",
       "speaker": "Dr. Hildebrand",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "lifestyle-anemia-1818",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:iron supplementation"
-          ],
-          "actionable": [
-            "avoid"
-          ],
-          "rarity": 6.7
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with thalassemia",
+      "by_presenter": false,
+      "pearl_id": "lifestyle-anemia-1829"
     },
     {
-      "text": "For macrocytic anemia with normal B12, folate, and TSH, do not stop the workup; obtain a peripheral blood smear to evaluate for myelodysplastic syndrome.",
-      "verbatim": "I didn't look their chart up to see if I had gotten a peripheral blood smear. I'm like, shoot. I wonder if that lady has myelodysplastic syndrome. And so... And those patients, working them up and then you're like, oh, it's all normal. Don't stop there. I'll be right. Get the peripheral smear.",
+      "text": "Myelodysplastic syndrome can transform into acute myeloid leukemia.",
+      "verbatim": "Our pearl is that this can transform into AML",
+      "type": "concept",
+      "t": 1949.5,
+      "match": "exact",
+      "episode": "lifestyle-anemia",
+      "speaker": "Dr. Hildebrand",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with myelodysplastic syndrome",
+      "pearl_id": "lifestyle-anemia-1949"
+    },
+    {
+      "text": "When macrocytic anemia workup (B12, folate, TSH) is normal, do not stop; obtain a peripheral blood smear to evaluate for myelodysplastic syndrome.",
+      "verbatim": "working them up and then you're like, oh, it's all normal. Don't stop there. I'll be right. Get the peripheral smear.",
+      "type": "practice",
+      "t": 1987.0,
+      "match": "exact",
+      "episode": "lifestyle-anemia",
+      "speaker": "Dr. Hildebrand",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with macrocytic anemia and normal B12, folate, TSH",
+      "pearl_id": "lifestyle-anemia-1987"
+    },
+    {
+      "text": "The classic triad of multiple myeloma is hypercalcemia, anemia, and elevated creatinine.",
+      "verbatim": "Hypercalcemia, anemia, and elevated creatinine are three.",
       "type": "dx_criteria",
-      "t": 1978.6,
+      "t": 2140.5,
       "match": "exact",
       "episode": "lifestyle-anemia",
       "speaker": "Dr. Hildebrand",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "lifestyle-anemia-1978",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:TSH"
-          ],
-          "actionable": [
-            "do not"
-          ],
-          "rarity": 7.37
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with suspected multiple myeloma",
+      "pearl_id": "lifestyle-anemia-2140"
     },
     {
-      "text": "In anemia of chronic kidney disease with hemoglobin less than 10, consider erythropoietin therapy in conjunction with nephrology.",
-      "verbatim": "anyone that has CKD and the hemoglobin is less than 10, Shoot. Consider And we... Generally, if someone is needing EPO, then they're hopefully also being seen in conjunction with nephrology.",
+      "text": "In chronic kidney disease with hemoglobin less than 10, consider erythropoietin therapy, which should be managed with nephrology.",
+      "verbatim": "anyone that has CKD and the hemoglobin is less than 10, Shoot. Consider",
       "type": "practice",
       "t": 2177.0,
       "match": "exact",
@@ -23427,29 +23435,11 @@
       "speaker": "Dr. Hildebrand",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "lifestyle-anemia-2177",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "threshold:less than 1"
-          ],
-          "actionable": [
-            "consider"
-          ],
-          "rarity": 7.6
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with CKD and hemoglobin <10",
+      "pearl_id": "lifestyle-anemia-2177"
     },
     {
-      "text": "When giving erythropoietin for CKD anemia, supplement with iron because EPO stimulates marrow and depletes iron stores quickly.",
+      "text": "When giving erythropoietin, also supplement iron because EPO stimulates the bone marrow and depletes iron stores rapidly.",
       "verbatim": "Also, when you give EPO, what are you doing to the B12 marrow? Stimulating it. So you also need to give them iron because you're gonna deplete their stores pretty quickly.",
       "type": "dosing",
       "t": 2227.7,
@@ -23458,26 +23448,11 @@
       "speaker": "Dr. Hildebrand",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "lifestyle-anemia-2227",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:erythropoietin"
-          ],
-          "rarity": 8.48
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients receiving erythropoietin",
+      "pearl_id": "lifestyle-anemia-2227"
     },
     {
-      "text": "Elevated BUN in chronic kidney disease shortens RBC lifespan, contributing to anemia beyond erythropoietin deficiency.",
+      "text": "Elevated BUN in CKD shortens RBC lifespan, which can confound the interpretation of BUN in GI bleeding.",
       "verbatim": "toxic metabolites shorten RBC lifespan. And so as BUN increases, specifically, as BUN increases, your decreases.",
       "type": "concept",
       "t": 2292.8,
@@ -23486,85 +23461,21 @@
       "speaker": "Dr. Hildebrand",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "lifestyle-anemia-2292",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:chronic kidney disease"
-          ],
-          "rarity": 8.48
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with CKD and anemia",
+      "pearl_id": "lifestyle-anemia-2292"
     },
     {
-      "text": "For initial anemia workup, obtain a reticulocyte count and direct Coombs test to guide further evaluation cost-effectively.",
-      "verbatim": "add to it a retic count and add to it an ICT because that's gonna help you... This is this is not the only way to do it. So pick what algorithm you want. But this is one branch point that would be helpful. Because if a Coombs positive right off the bat, then you're gonna completely go down that route and not worry about working.",
-      "type": "dx_criteria",
-      "t": 2359.7,
+      "text": "Initial workup of new anemia should include a careful history, repeat CBC, reticulocyte count, and direct Coombs test to guide further evaluation cost-effectively.",
+      "verbatim": "Get more. Physical. Get more blood. Repeat their CBC. Got it. And then add to it a retic count and add to it an ICT because that's gonna help you...",
+      "type": "practice",
+      "t": 2351.8,
       "match": "exact",
       "episode": "lifestyle-anemia",
       "speaker": "Dr. Hildebrand",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "lifestyle-anemia-2359",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:direct coombs test"
-          ],
-          "actionable": [
-            "obtain"
-          ],
-          "rarity": 8.15
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "If MCV is high and B12/folate/TSH are normal, consider myelodysplastic syndrome or hemolysis; a high reticulocyte count suggests hemolysis.",
-      "verbatim": "If these things are normal, labs are normal, and they're setting them up... Have a high MCV, then what are we gonna think about? The hemolytic. B twelve is low, then you're gonna treat it. If your B12 is low, you're gonna treat it. If your TSH is high, you're gonna treat it. Right? And then finally, if all of these things are normal and your retic count is high, then what are you thinking? Well, actually, we didn't talk about it today, but hemolysis.",
-      "type": "dx_criteria",
-      "t": 2469.4,
-      "match": "exact",
-      "episode": "lifestyle-anemia",
-      "speaker": "Dr. Hildebrand",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "lifestyle-anemia-2469",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:TSH"
-          ],
-          "actionable": [
-            "consider"
-          ],
-          "rarity": 7.56
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with newly discovered anemia",
+      "pearl_id": "lifestyle-anemia-2351"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -34456,5 +34367,6 @@
       "name": "Dr. Hildebrand"
     }
   ],
-  "pearls_fingerprint": "b06ce53bf405fe89"
+  "pearls_fingerprint": "9cc4fa29682e0716",
+  "enrich_version": "v2"
 }
