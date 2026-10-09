@@ -24945,25 +24945,23 @@
   "fixes_rejected": [],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "Dr. Comninellis delivers a practical lecture on evaluating acute febrile illness in low-resource tropical settings. Using case-based role play, he emphasizes that epidemiology, specifically the patient's geographic location, is the most critical diagnostic clue. He demonstrates how to use simple tools like the tourniquet test for dengue and a fever evaluation grid based on duration, malaria test, and CBC. The talk covers key exam findings (palatal Koplik spots, rose spots, posterior cervical adenopathy) and provides guidance on when empiric therapy is justified.",
+  "abstract": "Dr. Comninellis presents a lecture on tropical fever, focusing on febrile illnesses in low-resource settings rather than returning travelers. He emphasizes that geographic location is the most critical clue for diagnosis and demonstrates how to use a simple evaluation grid based on fever duration, malaria test, and CBC. Key teaching points include the tourniquet test for dengue, Koplik spots as an early measles sign, rose spots in typhoid, and the importance of rapid diagnostic tests. The lecture also covers the differential diagnosis of prolonged fever, including parasitic diseases with eosinophilia and tuberculosis with neutropenia.",
   "key_points": [
-    "The most important diagnostic step in tropical fever is determining the patient's geographic location and local disease epidemiology.",
-    "Measles can present with palatal Koplik spots before the classic skin rash appears.",
-    "The tourniquet test (blood pressure cuff inflated above diastolic, below systolic) is a specific bedside test for dengue fever when petechiae develop.",
-    "Typhoid fever causes rose spots (erythematous lesions on the chest) from systemic septic emboli.",
-    "Posterior cervical adenopathy (scrofula) is the most common extrapulmonary presentation of tuberculosis, especially in children.",
-    "Fever of unknown origin in a resource-limited setting can often be managed by scheduling follow-up; most cases resolve spontaneously.",
-    "Empiric antibiotics are justified for unstable vital signs, septic shock, very young or elderly patients, or suspected meningitis when LP is unavailable.",
-    "Rapid diagnostic tests (e.g., for malaria, HIV, typhoid) have become affordable ($1/test) and provide objective data in low-resource settings.",
-    "Eosinophilia in a prolonged febrile patient (>2 weeks) strongly suggests a parasitic etiology such as schistosomiasis or filariasis.",
-    "The dengue mosquito (Aedes aegypti) bites during the day and breeds in standing water, unlike the Anopheles mosquito that transmits malaria.",
-    "Schistosomiasis can cause cirrhosis and liver cancer by invading the liver's collecting system.",
-    "Diagnosis is made via iodine stain of urine or stool to identify ova, requiring no advanced laboratory."
+    "The number one takeaway for tropical fever is knowing where in the world you are, as disease epidemiology varies by region.",
+    "Measles vaccine coverage is a reliable indirect indicator of measles risk; one dose provides ~95% protection, two doses ~98%.",
+    "The tourniquet test for dengue is performed by inflating a BP cuff above diastolic but below systolic pressure; petechiae indicate a positive test.",
+    "Koplik spots (punctate erythematous lesions on the soft palate) appear before the measles rash and are a key early diagnostic clue.",
+    "Rose spots on the chest are erythematous, slightly tender lesions representing septic emboli in typhoid fever, which is a systemic disease.",
+    "Scrofula (posterior cervical adenitis) is the most common extrapulmonary presentation of tuberculosis, especially in children.",
+    "In acute fever (<2 weeks) with negative malaria test and high WBC, suspect bacterial causes like abscess or sepsis.",
+    "Fever >2 weeks with eosinophilia points to parasitic diseases such as schistosomiasis, leishmaniasis, or lymphatic filariasis.",
+    "Fever >2 weeks with neutropenia suggests HIV, advanced TB, dengue, or viral hemorrhagic fevers.",
+    "Rapid diagnostic tests (e.g., for malaria, typhoid, HIV) have become affordable (malaria test <$1) and provide objective data in low-resource settings."
   ],
   "topics_raw": [
     {
-      "label": "Fever of Unknown Origin",
-      "kind": "condition"
+      "label": "Tropical Fever",
+      "kind": "concept"
     },
     {
       "label": "Dengue Fever",
@@ -24982,11 +24980,19 @@
       "kind": "condition"
     },
     {
+      "label": "Malaria",
+      "kind": "condition"
+    },
+    {
       "label": "Schistosomiasis",
       "kind": "condition"
     },
     {
-      "label": "Malaria",
+      "label": "Leishmaniasis",
+      "kind": "condition"
+    },
+    {
+      "label": "Lymphatic Filariasis",
       "kind": "condition"
     },
     {
@@ -24994,8 +25000,12 @@
       "kind": "condition"
     },
     {
-      "label": "Scrofula",
-      "kind": "condition"
+      "label": "Rapid Diagnostic Test",
+      "kind": "procedure"
+    },
+    {
+      "label": "Tourniquet Test",
+      "kind": "procedure"
     },
     {
       "label": "Koplik Spots",
@@ -25006,132 +25016,148 @@
       "kind": "concept"
     },
     {
-      "label": "Tourniquet Test",
-      "kind": "procedure"
-    },
-    {
-      "label": "Rapid Diagnostic Test",
-      "kind": "procedure"
+      "label": "Scrofula",
+      "kind": "condition"
     },
     {
       "label": "Eosinophilia",
       "kind": "concept"
     },
     {
-      "label": "Schistosomiasis",
-      "kind": "condition"
-    },
-    {
-      "label": "Cirrhosis",
-      "kind": "condition"
-    },
-    {
-      "label": "Liver Cancer",
-      "kind": "condition"
-    },
-    {
-      "label": "Praziquantel",
-      "kind": "drug"
-    },
-    {
-      "label": "Iodine Stain",
-      "kind": "procedure"
-    },
-    {
-      "label": "Urine Ova Detection",
-      "kind": "procedure"
-    },
-    {
-      "label": "Stool Ova Detection",
-      "kind": "procedure"
+      "label": "Neutropenia",
+      "kind": "concept"
     }
   ],
   "pearls_raw": [
     {
-      "text": "For the tourniquet test in suspected dengue, inflate the blood pressure cuff above diastolic but below systolic to increase capillary pressure; petechiae indicate bleeding tendency specific to dengue.",
-      "verbatim": "Tourniquet test, you put a blood pressure cuff on the extremity. You pump it up above the diastolic but below the systolic. So blood gets into the extremity but can't get out, increasing capillary pressure. And so if the person has a bleeding tendency then they will break out in petechiae.",
-      "type": "exam_technique"
-    },
-    {
-      "text": "Measles rash often appears first on the fauces (palatal Koplik spots) before becoming visible on the extremities; you can diagnose measles before the classic rash develops.",
-      "verbatim": "This is actually the measles rash presenting in the fairies, which is typical. That's where it usually starts. Then later on, they will break out in the rash on their extremities.",
-      "type": "dx_criteria"
-    },
-    {
-      "text": "Posterior cervical adenopathy (scrofula) is the most common extrapulmonary presentation of tuberculosis, especially in children.",
-      "verbatim": "What is the most common extrapulmonary presentation of tuberculosis? ...Scrofula. Remember that word from pathology class? So it's actually posterior cervical adenitis. Most common presentation of extraculmonary TB, especially kids.",
-      "type": "dx_criteria"
-    },
-    {
-      "text": "Typhoid fever causes rose spots on the chest—these are septic emboli in the skin and indicate systemic disease, not just GI infection.",
-      "verbatim": "These are called rose spots. ...these erythematous lesions on the chest actually represent septic emboli within the skin because it's a systemic disease.",
-      "type": "red_flag"
-    },
-    {
-      "text": "In a prolonged fever (>2 weeks) with eosinophilia, always suspect a parasitic cause such as schistosomiasis, leishmaniasis, or lymphatic filariasis.",
-      "verbatim": "They've been febrile for more than two weeks, and they have eosinophilia. ...it usually is pointing to a parasitic disease. ...they have schistosomiasis, lymphatic filariasis.",
-      "type": "dx_criteria"
-    },
-    {
-      "text": "Empiric antibiotics are justified for unstable vital signs, septic shock, very young or elderly patients, or when meningitis is suspected and LP is unavailable.",
-      "verbatim": "I I would say you would be justified to initiate an broad spectrum sepsis antibiotic therapy in someone who is compromised like these that we just talked about a moment ago.",
-      "type": "guideline"
-    },
-    {
-      "text": "The dengue mosquito (Aedes aegypti) bites during the day and breeds in standing water, unlike the Anopheles mosquito that transmits malaria (bites at night, does not breed in standing water).",
-      "verbatim": "The mosquito that transmits dengue is the eighties digit tongue mosquito. It's a friendly mosquito. It lives in people's homes. It bites during the day. It breathes in standing water. Unlike the anopheles mosquito, the transmissible area, which bites at night and does not breathe in standing water.",
+      "text": "The number one takeaway for tropical fever is knowing where in the world you are; geographic location is the most important clue for diagnosis.",
+      "seg": 90,
+      "verbatim": "Now the number one takeaway from today is where in the world are you?",
+      "applies_to": "any patient with suspected tropical fever",
       "type": "concept"
     },
     {
-      "text": "If you cannot identify the cause of a fever in a low-resource setting, schedule the patient for follow-up; most fevers resolve spontaneously, and new signs may appear to clarify the diagnosis.",
-      "verbatim": "You need to schedule them to come back and see you for sure. ...they might present with some new findings, some new symptoms, some new physical signs that you didn't have before.",
-      "type": "judgment"
-    },
-    {
-      "text": "Rapid diagnostic tests for malaria now cost less than $1 per test, making objective testing far more affordable in low-resource settings.",
-      "verbatim": "Ten years ago, rather. Rapid malaria test was about $5 for one test. ...Now now it's down to about less than $1 per test.",
+      "text": "To assess measles risk, check vaccination coverage: one dose of measles vaccine provides about 95% protection, two doses about 98%.",
+      "seg": 122,
+      "verbatim": "One of the best ways to assess measles is to look at vaccination rate. You know, if if a child has one vax... One dose of measles vaccine, what's their likelihood of protection? Ninety percent. About ninety five percent. You know, if they've had two doses, it's like ninety eight percent.",
+      "applies_to": "children in any setting",
       "type": "concept"
     },
     {
-      "text": "Schistosomiasis can cause cirrhosis and liver cancer by invading the liver's collecting system.",
-      "verbatim": "it invades the the collecting system of the bladder... Of the liver leading to cirrhosis and and liver cancer",
-      "type": "red_flag"
-    },
-    {
-      "text": "Treatment for schistosomiasis is a single dose of praziquantel.",
-      "verbatim": "usually, it's one pill at praziquantel",
-      "type": "dosing"
-    },
-    {
-      "text": "Diagnose schistosomiasis by iodine stain of urine or stool to identify ova.",
-      "verbatim": "we made the diagnosis by examining the lip... The the urine, in this case, where we... You do an iodine stain to identify the ova",
-      "type": "dx_criteria"
-    },
-    {
-      "text": "For GI tract schistosomiasis, use iodine stain of stool to look for eggs.",
-      "verbatim": "if you're suspecting GI, then you do a iodine stain of the stool looking for the eggs",
+      "text": "The tourniquet test for dengue: inflate a BP cuff above diastolic but below systolic pressure so blood enters the extremity but cannot leave; petechiae indicate a positive test, which is specific for dengue.",
+      "seg": 143,
+      "verbatim": "Tourniquet test, you put a blood pressure cuff on the extremity. You pump it up above the diastolic but below the systolic. So blood gets into the extremity but can't get out, increasing capillary pressure. And so if the person has a bleeding tendency then they will break out in petechiae. And the tourniquet test is is clearly specific for dengue fever.",
+      "applies_to": "patients with suspected dengue in low-resource settings",
       "type": "exam_technique"
     },
     {
-      "text": "Schistosomiasis diagnosis does not require an advanced laboratory.",
-      "verbatim": "you don't need a very advanced laboratory, you know, to make this kind of of diagnosis",
-      "type": "judgment"
+      "text": "The dengue mosquito (Aedes aegypti) lives in homes, bites during the day, and breeds in standing water, unlike the Anopheles mosquito (malaria) which bites at night and does not breed in standing water.",
+      "seg": 162,
+      "verbatim": "The dengue... The the mosquito that transmits dengue is the eighties digit tongue mosquito. It's a friendly mosquito. It lives in people's homes. It bites during the day. It breathes in standing water. Unlike the anopheles mosquito, the transmissible area, which bites at night and does not breathe in standing water.",
+      "applies_to": "anyone in dengue-endemic regions",
+      "type": "concept"
     },
     {
-      "text": "GI bleeding is not a typical feature of GI tract schistosomiasis.",
-      "verbatim": "They don't have GI bleeding",
-      "type": "pitfall"
+      "text": "There are four dengue serotypes; first infection is usually mild, but second infection with a different serotype triggers an autoimmune reaction causing severe pain (breakbone fever).",
+      "seg": 168,
+      "verbatim": "But there's four serotypes, and you get immunity against one serotype. But the next time you get infected, you have an autoimmune reaction, which causes severe pain. It's called break bone fever.",
+      "applies_to": "patients in dengue-endemic regions",
+      "type": "concept"
     },
     {
-      "text": "GI tract schistosomiasis can present with chronic liver failure signs.",
-      "verbatim": "They develop liver failure signs, chronic liver failure",
-      "type": "red_flag"
+      "text": "Koplik spots (punctate erythematous lesions on the soft palate) appear before the measles rash; if you see them in a febrile child without rash, expect the rash to appear on the face in two days.",
+      "seg": 205,
+      "verbatim": "The the scenario is a child, acute febrile illness for three days. They don't have a rash on their skin, but you're looking at their soft palate, and you see these punctate erythematous lesions. ... This is actually the measles rash presenting in the fairies, which is typical. That's where it usually starts. Then later on, they will break out in the rash on their extremities.",
+      "applies_to": "children with acute febrile illness",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "Rose spots on the chest in typhoid fever are erythematous, slightly tender lesions representing septic emboli; typhoid is a systemic disease that can affect any organ including skin, cerebellum, lungs, or heart.",
+      "seg": 219,
+      "verbatim": "Erythematous, slightly tender lesions across the chest. Acute febrile illness. This is another classic. ... These are called rose spots. ... these erythematous lesions on the chest actually represent septic emboli within the skin because it's a systemic disease.",
+      "applies_to": "patients with acute febrile illness in areas with unsafe water",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "Scrofula (posterior cervical adenitis) is the most common extrapulmonary presentation of tuberculosis, especially in children; always palpate for cervical nodes in a febrile child.",
+      "seg": 189,
+      "verbatim": "What is the most common extrapulmonary presentation of tuberculosis? ... Scrofula. Remember that word from pathology class? So it's actually posterior cervical adenitis. Most common presentation of extraculmonary TB, especially kids.",
+      "applies_to": "children with fever of unknown origin",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "In acute fever (<2 weeks) with negative malaria test and high WBC, suspect bacterial causes like abscess, sepsis, or liver abscess.",
+      "seg": 317,
+      "verbatim": "Now if it's less than two weeks and your malaria smear is negative and they have a high white count, chances are this is something that's plagiogenic. It's bacterial. And so you're gonna be looking at at joints, abscesses, at liver abscess.",
+      "applies_to": "patients with acute fever in low-resource settings",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "Fever >2 weeks with eosinophilia points to parasitic diseases such as leishmaniasis, schistosomiasis, or lymphatic filariasis.",
+      "seg": 352,
+      "verbatim": "They've been febrile for more than two weeks, and they have eosinophilia. You know? I get excited when I see Eos. Because it usually is pointing to a parasitic disease. So they have they have they have lush mania. They have schistosomiasis, lymphatic filariasis.",
+      "applies_to": "patients with prolonged fever in tropical regions",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "Fever >2 weeks with neutropenia suggests HIV, advanced tuberculosis, dengue, or viral hemorrhagic fevers.",
+      "seg": 362,
+      "verbatim": "Fever for more than two weeks, neutropenia. So we're gonna look for HIV, advanced tuberculosis, as well as dengue and and those viral anhydragic fevers, which usually suppress the white count.",
+      "applies_to": "patients with prolonged fever in tropical regions",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "Leprosy is difficult to acquire; almost all cases occur in family members of a leper after years of exposure, so do not eliminate it from the differential in endemic areas.",
+      "seg": 256,
+      "verbatim": "Leprosy is... It's actually very difficult to get leprosy. Almost everybody who has leprosy is a family member of a leper, and and they've been exposed to the to the infectious agent for years, and then they acquire the the disease.",
+      "applies_to": "patients in leprosy-endemic regions with anesthetic skin patches",
+      "type": "concept"
+    },
+    {
+      "text": "Rapid diagnostic tests for malaria now cost less than $1 per test, down from $5 ten years ago, making them affordable for low-resource settings.",
+      "seg": 287,
+      "verbatim": "Ten years ago, rather. Rapid malaria test was about $5 for one test. Wow. You know? Now now it's down to about less than $1 per test.",
+      "applies_to": "clinicians working in low-resource settings",
+      "type": "practice"
+    },
+    {
+      "text": "When the cause of fever is unknown, schedule the patient for follow-up because they may develop new findings or symptoms that clarify the diagnosis.",
+      "seg": 388,
+      "verbatim": "You need to schedule them to come back and see you for sure. That's it, Sarah. Because they might present with some new findings, some new symptoms, some new physical signs that you didn't have before.",
+      "applies_to": "patients with undifferentiated fever in any setting",
+      "type": "practice"
     }
   ],
   "pearls": [
     {
-      "text": "For the tourniquet test in suspected dengue, inflate the blood pressure cuff above diastolic but below systolic to increase capillary pressure; petechiae indicate bleeding tendency specific to dengue.",
-      "verbatim": "Tourniquet test, you put a blood pressure cuff on the extremity. You pump it up above the diastolic but below the systolic. So blood gets into the extremity but can't get out, increasing capillary pressure. And so if the person has a bleeding tendency then they will break out in petechiae.",
+      "text": "The number one takeaway for tropical fever is knowing where in the world you are; geographic location is the most important clue for diagnosis.",
+      "verbatim": "Now the number one takeaway from today is where in the world are you?",
+      "type": "concept",
+      "t": 526.7,
+      "match": "exact",
+      "episode": "dr-comninellis-on-tropical-fever",
+      "speaker": "Dr. Comninellis",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "any patient with suspected tropical fever",
+      "pearl_id": "dr-comninellis-on-tropical-fever-526"
+    },
+    {
+      "text": "To assess measles risk, check vaccination coverage: one dose of measles vaccine provides about 95% protection, two doses about 98%.",
+      "verbatim": "One of the best ways to assess measles is to look at vaccination rate. You know, if if a child has one vax... One dose of measles vaccine, what's their likelihood of protection? Ninety percent. About ninety five percent. You know, if they've had two doses, it's like ninety eight percent.",
+      "type": "concept",
+      "t": 677.8,
+      "match": "exact",
+      "episode": "dr-comninellis-on-tropical-fever",
+      "speaker": "Dr. Comninellis",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "children in any setting",
+      "pearl_id": "dr-comninellis-on-tropical-fever-677"
+    },
+    {
+      "text": "The tourniquet test for dengue: inflate a BP cuff above diastolic but below systolic pressure so blood enters the extremity but cannot leave; petechiae indicate a positive test, which is specific for dengue.",
+      "verbatim": "Tourniquet test, you put a blood pressure cuff on the extremity. You pump it up above the diastolic but below the systolic. So blood gets into the extremity but can't get out, increasing capillary pressure. And so if the person has a bleeding tendency then they will break out in petechiae. And the tourniquet test is is clearly specific for dengue fever.",
       "type": "exam_technique",
       "t": 759.5,
       "match": "exact",
@@ -25139,61 +25165,38 @@
       "speaker": "Dr. Comninellis",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-759",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 4,
-        "grade": "A",
-        "fired": {
-          "specific": [
-            "concept:tourniquet test"
-          ],
-          "actionable": [
-            "increase"
-          ],
-          "harm": [
-            "bleeding"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with suspected dengue in low-resource settings",
+      "pearl_id": "dr-comninellis-on-tropical-fever-759"
     },
     {
-      "text": "The dengue mosquito (Aedes aegypti) bites during the day and breeds in standing water, unlike the Anopheles mosquito that transmits malaria (bites at night, does not breed in standing water).",
-      "verbatim": "The mosquito that transmits dengue is the eighties digit tongue mosquito. It's a friendly mosquito. It lives in people's homes. It bites during the day. It breathes in standing water. Unlike the anopheles mosquito, the transmissible area, which bites at night and does not breathe in standing water.",
+      "text": "The dengue mosquito (Aedes aegypti) lives in homes, bites during the day, and breeds in standing water, unlike the Anopheles mosquito (malaria) which bites at night and does not breed in standing water.",
+      "verbatim": "The dengue... The the mosquito that transmits dengue is the eighties digit tongue mosquito. It's a friendly mosquito. It lives in people's homes. It bites during the day. It breathes in standing water. Unlike the anopheles mosquito, the transmissible area, which bites at night and does not breathe in standing water.",
       "type": "concept",
-      "t": 829.5,
+      "t": 829.4,
       "match": "exact",
       "episode": "dr-comninellis-on-tropical-fever",
       "speaker": "Dr. Comninellis",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-829",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:malaria"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "anyone in dengue-endemic regions",
+      "pearl_id": "dr-comninellis-on-tropical-fever-829"
     },
     {
-      "text": "Posterior cervical adenopathy (scrofula) is the most common extrapulmonary presentation of tuberculosis, especially in children.",
-      "verbatim": "What is the most common extrapulmonary presentation of tuberculosis? ...Scrofula. Remember that word from pathology class? So it's actually posterior cervical adenitis. Most common presentation of extraculmonary TB, especially kids.",
+      "text": "There are four dengue serotypes; first infection is usually mild, but second infection with a different serotype triggers an autoimmune reaction causing severe pain (breakbone fever).",
+      "verbatim": "But there's four serotypes, and you get immunity against one serotype. But the next time you get infected, you have an autoimmune reaction, which causes severe pain. It's called break bone fever.",
+      "type": "concept",
+      "t": 854.9,
+      "match": "exact",
+      "episode": "dr-comninellis-on-tropical-fever",
+      "speaker": "Dr. Comninellis",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients in dengue-endemic regions",
+      "pearl_id": "dr-comninellis-on-tropical-fever-854"
+    },
+    {
+      "text": "Scrofula (posterior cervical adenitis) is the most common extrapulmonary presentation of tuberculosis, especially in children; always palpate for cervical nodes in a febrile child.",
+      "verbatim": "What is the most common extrapulmonary presentation of tuberculosis? ... Scrofula. Remember that word from pathology class? So it's actually posterior cervical adenitis. Most common presentation of extraculmonary TB, especially kids.",
       "type": "dx_criteria",
       "t": 1050.6,
       "match": "exact",
@@ -25201,114 +25204,77 @@
       "speaker": "Dr. Comninellis",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-1050",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:tuberculosis"
-          ],
-          "rarity": 8.29
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "children with fever of unknown origin",
+      "pearl_id": "dr-comninellis-on-tropical-fever-1050"
     },
     {
-      "text": "Measles rash often appears first on the fauces (palatal Koplik spots) before becoming visible on the extremities; you can diagnose measles before the classic rash develops.",
-      "verbatim": "This is actually the measles rash presenting in the fairies, which is typical. That's where it usually starts. Then later on, they will break out in the rash on their extremities.",
+      "text": "Koplik spots (punctate erythematous lesions on the soft palate) appear before the measles rash; if you see them in a febrile child without rash, expect the rash to appear on the face in two days.",
+      "verbatim": "The the scenario is a child, acute febrile illness for three days. They don't have a rash on their skin, but you're looking at their soft palate, and you see these punctate erythematous lesions. ... This is actually the measles rash presenting in the fairies, which is typical. That's where it usually starts. Then later on, they will break out in the rash on their extremities.",
       "type": "dx_criteria",
-      "t": 1154.8,
+      "t": 1110.8,
       "match": "exact",
       "episode": "dr-comninellis-on-tropical-fever",
       "speaker": "Dr. Comninellis",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-1154",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:koplik spots"
-          ],
-          "rarity": 8.43
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "children with acute febrile illness",
+      "pearl_id": "dr-comninellis-on-tropical-fever-1110"
     },
     {
-      "text": "Typhoid fever causes rose spots on the chest, these are septic emboli in the skin and indicate systemic disease, not just GI infection.",
-      "verbatim": "These are called rose spots. ...these erythematous lesions on the chest actually represent septic emboli within the skin because it's a systemic disease.",
-      "type": "red_flag",
-      "t": 1211.1,
+      "text": "Rose spots on the chest in typhoid fever are erythematous, slightly tender lesions representing septic emboli; typhoid is a systemic disease that can affect any organ including skin, cerebellum, lungs, or heart.",
+      "verbatim": "Erythematous, slightly tender lesions across the chest. Acute febrile illness. This is another classic. ... These are called rose spots. ... these erythematous lesions on the chest actually represent septic emboli within the skin because it's a systemic disease.",
+      "type": "dx_criteria",
+      "t": 1176.0,
       "match": "exact",
       "episode": "dr-comninellis-on-tropical-fever",
       "speaker": "Dr. Comninellis",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-1211",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:typhoid fever"
-          ],
-          "harm": [
-            "septic"
-          ],
-          "rarity": 8.01
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with acute febrile illness in areas with unsafe water",
+      "pearl_id": "dr-comninellis-on-tropical-fever-1176"
     },
     {
-      "text": "Rapid diagnostic tests for malaria now cost less than $1 per test, making objective testing far more affordable in low-resource settings.",
-      "verbatim": "Ten years ago, rather. Rapid malaria test was about $5 for one test. ...Now now it's down to about less than $1 per test.",
+      "text": "Leprosy is difficult to acquire; almost all cases occur in family members of a leper after years of exposure, so do not eliminate it from the differential in endemic areas.",
+      "verbatim": "Leprosy is... It's actually very difficult to get leprosy. Almost everybody who has leprosy is a family member of a leper, and and they've been exposed to the to the infectious agent for years, and then they acquire the the disease.",
       "type": "concept",
+      "t": 1286.8,
+      "match": "exact",
+      "episode": "dr-comninellis-on-tropical-fever",
+      "speaker": "Dr. Comninellis",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients in leprosy-endemic regions with anesthetic skin patches",
+      "pearl_id": "dr-comninellis-on-tropical-fever-1286"
+    },
+    {
+      "text": "Rapid diagnostic tests for malaria now cost less than $1 per test, down from $5 ten years ago, making them affordable for low-resource settings.",
+      "verbatim": "Ten years ago, rather. Rapid malaria test was about $5 for one test. Wow. You know? Now now it's down to about less than $1 per test.",
+      "type": "practice",
       "t": 1422.2,
       "match": "exact",
       "episode": "dr-comninellis-on-tropical-fever",
       "speaker": "Dr. Comninellis",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-1422",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:rapid diagnostic test"
-          ],
-          "rarity": 7.47
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "clinicians working in low-resource settings",
+      "pearl_id": "dr-comninellis-on-tropical-fever-1422"
     },
     {
-      "text": "In a prolonged fever (>2 weeks) with eosinophilia, always suspect a parasitic cause such as schistosomiasis, leishmaniasis, or lymphatic filariasis.",
-      "verbatim": "They've been febrile for more than two weeks, and they have eosinophilia. ...it usually is pointing to a parasitic disease. ...they have schistosomiasis, lymphatic filariasis.",
+      "text": "In acute fever (<2 weeks) with negative malaria test and high WBC, suspect bacterial causes like abscess, sepsis, or liver abscess.",
+      "verbatim": "Now if it's less than two weeks and your malaria smear is negative and they have a high white count, chances are this is something that's plagiogenic. It's bacterial. And so you're gonna be looking at at joints, abscesses, at liver abscess.",
+      "type": "dx_criteria",
+      "t": 1542.1,
+      "match": "exact",
+      "episode": "dr-comninellis-on-tropical-fever",
+      "speaker": "Dr. Comninellis",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with acute fever in low-resource settings",
+      "pearl_id": "dr-comninellis-on-tropical-fever-1542"
+    },
+    {
+      "text": "Fever >2 weeks with eosinophilia points to parasitic diseases such as leishmaniasis, schistosomiasis, or lymphatic filariasis.",
+      "verbatim": "They've been febrile for more than two weeks, and they have eosinophilia. You know? I get excited when I see Eos. Because it usually is pointing to a parasitic disease. So they have they have they have lush mania. They have schistosomiasis, lymphatic filariasis.",
       "type": "dx_criteria",
       "t": 1652.5,
       "match": "exact",
@@ -25316,257 +25282,34 @@
       "speaker": "Dr. Comninellis",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-1652",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:2 weeks",
-            "threshold:>2"
-          ],
-          "actionable": [
-            "always"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with prolonged fever in tropical regions",
+      "pearl_id": "dr-comninellis-on-tropical-fever-1652"
     },
     {
-      "text": "If you cannot identify the cause of a fever in a low-resource setting, schedule the patient for follow-up; most fevers resolve spontaneously, and new signs may appear to clarify the diagnosis.",
-      "verbatim": "You need to schedule them to come back and see you for sure. ...they might present with some new findings, some new symptoms, some new physical signs that you didn't have before.",
-      "type": "judgment",
+      "text": "Fever >2 weeks with neutropenia suggests HIV, advanced tuberculosis, dengue, or viral hemorrhagic fevers.",
+      "verbatim": "Fever for more than two weeks, neutropenia. So we're gonna look for HIV, advanced tuberculosis, as well as dengue and and those viral anhydragic fevers, which usually suppress the white count.",
+      "type": "dx_criteria",
+      "t": 1690.6,
+      "match": "exact",
+      "episode": "dr-comninellis-on-tropical-fever",
+      "speaker": "Dr. Comninellis",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with prolonged fever in tropical regions",
+      "pearl_id": "dr-comninellis-on-tropical-fever-1690"
+    },
+    {
+      "text": "When the cause of fever is unknown, schedule the patient for follow-up because they may develop new findings or symptoms that clarify the diagnosis.",
+      "verbatim": "You need to schedule them to come back and see you for sure. That's it, Sarah. Because they might present with some new findings, some new symptoms, some new physical signs that you didn't have before.",
+      "type": "practice",
       "t": 1771.7,
       "match": "exact",
       "episode": "dr-comninellis-on-tropical-fever",
       "speaker": "Dr. Comninellis",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-1771",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 6.96
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Empiric antibiotics are justified for unstable vital signs, septic shock, very young or elderly patients, or when meningitis is suspected and LP is unavailable.",
-      "verbatim": "I I would say you would be justified to initiate an broad spectrum sepsis antibiotic therapy in someone who is compromised like these that we just talked about a moment ago.",
-      "type": "practice",
-      "t": 1889.2,
-      "match": "exact",
-      "episode": "dr-comninellis-on-tropical-fever",
-      "speaker": "Dr. Comninellis",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-1889",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:septic shock"
-          ],
-          "harm": [
-            "septic"
-          ],
-          "rarity": 7.18
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Schistosomiasis can cause cirrhosis and liver cancer by invading the liver's collecting system.",
-      "verbatim": "it invades the the collecting system of the bladder... Of the liver leading to cirrhosis and and liver cancer",
-      "type": "red_flag",
-      "t": 2259.2,
-      "match": "exact",
-      "episode": "dr-comninellis-on-tropical-fever",
-      "speaker": "Dr. Comninellis",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-2259",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:schistosomiasis"
-          ],
-          "rarity": 7.74
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Diagnose schistosomiasis by iodine stain of urine or stool to identify ova.",
-      "verbatim": "we made the diagnosis by examining the lip... The the urine, in this case, where we... You do an iodine stain to identify the ova",
-      "type": "dx_criteria",
-      "t": 2288.4,
-      "match": "exact",
-      "episode": "dr-comninellis-on-tropical-fever",
-      "speaker": "Dr. Comninellis",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-2288",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:schistosomiasis"
-          ],
-          "rarity": 7.47
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "For GI tract schistosomiasis, use iodine stain of stool to look for eggs.",
-      "verbatim": "if you're suspecting GI, then you do a iodine stain of the stool looking for the eggs",
-      "type": "exam_technique",
-      "t": 2302.6,
-      "match": "exact",
-      "episode": "dr-comninellis-on-tropical-fever",
-      "speaker": "Dr. Comninellis",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-2302",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:schistosomiasis"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 7.47
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Schistosomiasis diagnosis does not require an advanced laboratory.",
-      "verbatim": "you don't need a very advanced laboratory, you know, to make this kind of of diagnosis",
-      "type": "judgment",
-      "t": 2309.1,
-      "match": "exact",
-      "episode": "dr-comninellis-on-tropical-fever",
-      "speaker": "Dr. Comninellis",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-2309",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:schistosomiasis"
-          ],
-          "rarity": 6.54
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "GI bleeding is not a typical feature of GI tract schistosomiasis.",
-      "verbatim": "They don't have GI bleeding",
-      "type": "pitfall",
-      "t": 2337.0,
-      "match": "exact",
-      "episode": "dr-comninellis-on-tropical-fever",
-      "speaker": "Dr. Comninellis",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-2337",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:schistosomiasis"
-          ],
-          "harm": [
-            "bleeding"
-          ],
-          "rarity": 6.37
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "GI tract schistosomiasis can present with chronic liver failure signs.",
-      "verbatim": "They develop liver failure signs, chronic liver failure",
-      "type": "red_flag",
-      "t": 2339.7,
-      "match": "exact",
-      "episode": "dr-comninellis-on-tropical-fever",
-      "speaker": "Dr. Comninellis",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-comninellis-on-tropical-fever-2339",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:schistosomiasis"
-          ],
-          "rarity": 5.97
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with undifferentiated fever in any setting",
+      "pearl_id": "dr-comninellis-on-tropical-fever-1771"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -36976,5 +36719,6 @@
       "name": "Dr. Comninellis"
     }
   ],
-  "pearls_fingerprint": "0a6322ad24499ed6"
+  "pearls_fingerprint": "769a7b94da43b727",
+  "enrich_version": "v2"
 }
