@@ -43917,24 +43917,28 @@
   ],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "Dr. Leo's lecture clarifies common terminologies in advance care planning, including advanced directives, living wills, POLST, DNR, comfort measures only, and hospice. The talk emphasizes that advance care planning is an ongoing process, and that a living will does not automatically include DNR orders. It also highlights the differences between a power of attorney and a health care agent, and explains that POLST is a portable medical order for patients with life-altering diagnoses. Practical tips include consulting palliative care for complex cases and understanding that hospice does not require a prior DNR.",
+  "abstract": "Dr. Leo presents a family-medicine residency lecture on advance care planning, clarifying key terminology and legal distinctions. The talk covers advanced directives, living wills, POLST forms, comfort measures only, hospice care, and power of attorney, using a case example to highlight common misconceptions. Dr. Leo emphasizes that hospice and DNR status are not mutually exclusive and provides practical guidance on documentation and palliative care consultation.",
   "key_points": [
-    "Advance care planning is an ongoing process, not a one-time event.",
-    "An advanced directive is a legal document for future care decisions but is not legally binding in emergencies.",
-    "A POLST is a physician order for life-sustaining treatment, portable and intended for patients with life-altering diagnoses.",
-    "A living will may not include resuscitation orders; always verify its contents.",
-    "Comfort measures only (CMO) orders automatically include DNR at St. John.",
-    "Hospice care requires a prognosis of six months or less.",
-    "Palliative care can be combined with curative treatment.",
-    "A durable power of attorney overrides the default health care agent (e.g., spouse).",
-    "When a patient lacks capacity, the health care agent follows a state-specific pecking order (spouse, children, parents, siblings).",
-    "Observing palliative care consultations can improve a clinician's communication skills.",
-    "Initiate advance care planning early; it is a process that can be revisited.",
-    "Document the health care proxy in the H&P note per Ascension policy."
+    "Advance care planning is an ongoing process, not a one-time event, allowing patients to communicate wishes for life-limiting or life-altering events.",
+    "An advanced directive is a legal document outlining future medical care decisions in case of incapacity; it is recognized but not legally binding in emergency situations.",
+    "A POLST (Physician Orders for Life-Sustaining Treatment) is a portable medical order completed by the patient and provider, serving as a standing order for life-sustaining treatments.",
+    "Comfort measures only (CMO) focuses on relieving pain and symptoms at end of life; at St. John, ordering CMO requires also ordering DNR and DNI forms.",
+    "Hospice care is for terminally ill patients with a prognosis of six months or less, focusing on comfort and palliative care.",
+    "A living will is a written document listing general treatment wishes but may not include specific orders like DNR or intubation.",
+    "Power of attorney appoints a named person as health care proxy for medical decisions during temporary or permanent incapacity.",
+    "Palliative care can be combined with curative treatments and is not mutually exclusive with aggressive therapy.",
+    "In Oklahoma, the health care agent pecking order is spouse, children, parents, siblings, then others; this varies by state.",
+    "If no family is available, the closest person to the patient can act as health care agent under Oklahoma law.",
+    "Living wills should address four components: pacemaker/ICD, IV hydration, and other life-sustaining treatments; missing components should prompt a follow-up conversation.",
+    "POLST is for patients with a life-altering diagnosis who are not imminently dying but are at risk; it includes medical orders and is used in the 'gray zone'."
   ],
   "topics_raw": [
     {
-      "label": "Advance Directive",
+      "label": "Advance Care Planning",
+      "kind": "concept"
+    },
+    {
+      "label": "Advanced Directive",
       "kind": "concept"
     },
     {
@@ -43943,22 +43947,14 @@
     },
     {
       "label": "POLST",
-      "kind": "procedure"
-    },
-    {
-      "label": "DNR",
-      "kind": "procedure"
+      "kind": "concept"
     },
     {
       "label": "Comfort Measures Only",
-      "kind": "procedure"
+      "kind": "concept"
     },
     {
       "label": "Hospice Care",
-      "kind": "procedure"
-    },
-    {
-      "label": "Palliative Care",
       "kind": "concept"
     },
     {
@@ -43966,763 +43962,463 @@
       "kind": "concept"
     },
     {
-      "label": "Health Care Proxy",
+      "label": "Palliative Care",
       "kind": "concept"
     },
     {
-      "label": "Terminal Illness",
-      "kind": "condition"
+      "label": "DNR",
+      "kind": "concept"
     },
     {
-      "label": "Cancer",
-      "kind": "condition"
-    },
-    {
-      "label": "Dementia",
-      "kind": "condition"
+      "label": "Health Care Proxy",
+      "kind": "concept"
     },
     {
       "label": "Advance Care Planning",
       "kind": "concept"
     },
     {
-      "label": "Do Not Resuscitate Order",
-      "kind": "procedure"
+      "label": "Living Will",
+      "kind": "concept"
     },
     {
       "label": "POLST",
-      "kind": "procedure"
+      "kind": "concept"
     },
     {
       "label": "Health Care Proxy",
       "kind": "concept"
     },
     {
-      "label": "Advance Directive",
+      "label": "DNR Order",
       "kind": "concept"
     },
     {
-      "label": "Cardiopulmonary Resuscitation",
-      "kind": "procedure"
-    },
-    {
-      "label": "Artificial Nutrition and Hydration",
-      "kind": "procedure"
-    },
-    {
-      "label": "Hospice Care",
+      "label": "DNI Order",
       "kind": "concept"
     },
     {
-      "label": "Medicare Billing",
+      "label": "CPR",
+      "kind": "procedure"
+    },
+    {
+      "label": "Pacemaker",
+      "kind": "procedure"
+    },
+    {
+      "label": "ICD",
+      "kind": "procedure"
+    },
+    {
+      "label": "IV Hydration",
+      "kind": "procedure"
+    },
+    {
+      "label": "Artificial Nutrition",
+      "kind": "procedure"
+    },
+    {
+      "label": "Billing Code 99497",
       "kind": "concept"
     },
     {
-      "label": "Out-of-Hospital DNR",
-      "kind": "procedure"
+      "label": "Billing Code 99498",
+      "kind": "concept"
+    },
+    {
+      "label": "End-of-Life Care",
+      "kind": "concept"
+    },
+    {
+      "label": "Goals of Care",
+      "kind": "concept"
     }
   ],
   "pearls_raw": [
     {
-      "text": "Advanced directive without a POLST, you can have a standing DNR.",
-      "verbatim": "Advanced directive without a POLST, you can have a standing DNR.",
-      "type": "guideline"
-    },
-    {
-      "text": "If you're ordering comfort measures only on your patient, you have to also order a DNR.",
-      "verbatim": "if you're ordering comfort measures only on your patient, you have to also order a DNR.",
-      "type": "pitfall"
-    },
-    {
-      "text": "Just because you have a living will doesn't mean you have orders for resuscitation and intubation.",
-      "verbatim": "just because you have a living will doesn't mean you have orders for resuscitation and intubation.",
-      "type": "pitfall"
-    },
-    {
-      "text": "You would tap into a POLST when you know somebody who's got a life altering diagnosis, but they're not really, like, super close together right now.",
-      "verbatim": "You would tap into a POLST when you when you know somebody who's got a life altering diagnosis. And you know that they have a life altering diagnosis, but they're not really, like, super close together right now.",
-      "type": "guideline"
-    },
-    {
-      "text": "Under Oklahoma law, the spouse will become the health care agent if no power of attorney.",
-      "verbatim": "under Oklahoma law, that husband, that spouse will become the health care agent.",
-      "type": "guideline"
-    },
-    {
-      "text": "If a patient has a durable power of attorney naming someone else, that overrides the default health care agent.",
-      "verbatim": "you're going to be able to override the health care agent and go to the power of attorney.",
-      "type": "guideline"
-    },
-    {
-      "text": "Palliative care can be both curative and comfort at the same time.",
-      "verbatim": "Palliative care. It can be both curative. Within palliative care. You can have curative things. You can also have comfort things.",
+      "text": "Hospice and DNR are not mutually exclusive; a patient can be made hospice without being DNR.",
+      "seg": 25,
+      "verbatim": "Exclusive. Absolutely. They are not mutually exclusive.",
+      "applies_to": "patients requesting hospice care",
       "type": "concept"
     },
     {
-      "text": "Hospice requires a prognosis of six months or less.",
-      "verbatim": "they have a prognosis that's going to limit their life to six months or less.",
-      "type": "guideline"
-    },
-    {
-      "text": "You can be a fly on the wall with palliative care to learn their communication techniques.",
-      "verbatim": "I just asked them, can I come and just be a fly on the wall? Man, they're amazing. And I learned so much just by watching how they frame their questions, how they explain things to the patient.",
-      "type": "judgment"
-    },
-    {
-      "text": "If a patient says they want to be made hospice, they do not necessarily need to be DNR first.",
-      "verbatim": "They are not mutually exclusive. Right? This act was actually a real thing when I was intern. My intern year, the case manager was telling me this hospice care facility said we cannot accept this person unless you send us a DNR. And Doctor. Was like, no. We're not doing that. So that's when I was able to learn that you don't actually need it.",
+      "text": "An advanced directive is recognized but not legally binding; EMS will not know about it in an emergency.",
+      "seg": 46,
+      "verbatim": "It's also really important to note that an advanced directive is a new point recognized but not legally binding.",
+      "applies_to": "all patients with advanced directives",
       "type": "pitfall"
     },
     {
-      "text": "Document the health proxy in every H&P note per Ascension policy.",
-      "verbatim": "every time you do an HMP note, you need to be able to document somewhere in your note their health proxy is going to be, by the way.",
-      "type": "guideline"
+      "text": "A POLST is a portable medical order completed by the patient and provider, serving as a standing order for life-sustaining treatments.",
+      "seg": 54,
+      "verbatim": "there is something called a POLST. So this is where you have a physician order for a life sustaining treatment, which is a portable medical order.",
+      "applies_to": "chronically ill patients not close to death",
+      "type": "concept"
     },
     {
-      "text": "You can bill for advance care planning once a year.",
-      "verbatim": "Once a year, you can bill for it.",
-      "type": "dosing"
+      "text": "If a patient has decided only on DNR but not other aspects, you can sign a DNR form separately without a full POLST or advanced directive.",
+      "seg": 61,
+      "verbatim": "you can say, okay. You've decided at least the part that you wanna be DNR. So you can just go ahead and sign into the RNR form.",
+      "applies_to": "patients who want DNR but need time for other decisions",
+      "type": "practice"
     },
     {
-      "text": "A standing DNR order can exist without an advance directive or living will.",
-      "verbatim": "you can just have a standing DNR order and not have an advanced directive or a living will.",
-      "type": "guideline"
+      "text": "At St. John, ordering comfort measures only requires also ordering DNR and DNI forms separately, plus writing about artificial hydration and nutrition.",
+      "seg": 106,
+      "verbatim": "it's not enough to just put in a CMO order on their thing. You also have to sign a DNR form with your patient and a DNI form your patient and write something about artificial hydration nutrition",
+      "applies_to": "inpatient at St. John",
+      "type": "practice"
     },
     {
-      "text": "In a late conversation, tell the patient directly that you need to know what they want because the situation is very serious.",
-      "verbatim": "tell them that you need to know as quickly as possible what they would want. Tell them this is very serious.",
+      "text": "A living will may not include orders for resuscitation or intubation; do not assume a DNR is attached.",
+      "seg": 121,
+      "verbatim": "if your patient has a living will in their chart, you shouldn't assume that there's also a DNR attached to that because it may or may not.",
+      "applies_to": "patients with living wills",
+      "type": "pitfall"
+    },
+    {
+      "text": "Palliative care can be combined with curative treatments; they are not mutually exclusive.",
+      "seg": 144,
+      "verbatim": "You need to be able to ask your patient, do you want to continue full on curative chemo while also getting palliative care? Those are not mutually exclusive.",
+      "applies_to": "patients with serious illness",
+      "type": "concept"
+    },
+    {
+      "text": "In Oklahoma, the health care agent pecking order is spouse, children, parents, siblings, then others; this varies by state.",
+      "seg": 185,
+      "verbatim": "It is exactly like you said. It's a spouse, children, parents, siblings, and whoever else that falls after that.",
+      "applies_to": "Oklahoma residents without power of attorney",
+      "type": "concept"
+    },
+    {
+      "text": "If no family members are available or accessible, the closest person to the patient can act as health care agent under Oklahoma law.",
+      "seg": 198,
+      "verbatim": "if there's no phone numbers, if there's no way of reaching any kind of family members, it's whoever is closest to that person under a glom alone.",
+      "applies_to": "patients with no accessible family",
+      "type": "concept"
+    },
+    {
+      "text": "In a living will, ensure all four components are addressed: pacemaker/ICD, IV hydration, and other life-sustaining treatments; if any are missing, circle back and ask the patient.",
+      "seg": 208,
+      "verbatim": "I would go ahead and ask them. Right? At least circle back and ask your patient, hey. I did re... I ready your living will, but I didn't see anything about, like, you know, whether you'd be open to a pacemaker or a defibrillator. And I didn't see anything about, you know, IV hydration. Tell me what what would you like.",
+      "applies_to": "patients with a living will",
+      "type": "practice"
+    },
+    {
+      "text": "POLST is for patients with a life-altering diagnosis who are not imminently dying but are at risk; it includes medical orders for that gray zone.",
+      "seg": 216,
+      "verbatim": "You would tap into a POLST when you when you know somebody who's got a life altering diagnosis. And you know that they have a life altering diagnosis, but they're not really, like, super close together right now. Mhmm. At some point, this diagnosis can lead them to death, and it could cause... I don't know. Like, it could cause metastasis to the brain that we don't know about, and they could pass out tomorrow. But for all we know right now, they're not imminently dying.",
+      "applies_to": "patients with a life-altering diagnosis not imminently dying",
+      "type": "concept"
+    },
+    {
+      "text": "Under Ascension Saint John's policy, every H&P note must document the health care proxy; this is a quality measure for hospitalists.",
+      "seg": 225,
+      "verbatim": "under Saint John's policy, ascension Saint John's policy, every time you do an HMP note, you need to be able to document somewhere in your note their health proxy is going to be, by the way.",
+      "applies_to": "hospitalists at Ascension Saint John's",
+      "type": "practice"
+    },
+    {
+      "text": "If a patient is uncomfortable discussing advance care planning, give them the booklet available in all suites and revisit at the next visit.",
+      "seg": 237,
+      "verbatim": "Give them this booklet that's that's in all of our suites. Have you guys seen this? Yep. It's like an amazing booklet.",
+      "applies_to": "patients uncomfortable with ACP discussion",
+      "type": "practice"
+    },
+    {
+      "text": "Late ACP conversations (when the patient is critically ill) are more complex and time-consuming; be direct and tell them you need to know as quickly as possible what they would want.",
+      "seg": 282,
+      "verbatim": "Honestly, this is my best advice is to just tell them that you need to know as quickly as possible what they would want. Tell them this is very serious. Like, you have a very difficult diagnosis. Prognosis is poor, and you need to know now what they would want.",
+      "applies_to": "patients with poor prognosis in the hospital",
       "type": "judgment"
     },
     {
-      "text": "Bill for ACP with a minimum of 16 minutes; add-on code if over 30 minutes.",
-      "verbatim": "Minimum of sixteen minutes. And then if you go above thirty minutes, then you get an add on.",
+      "text": "Billing code 99497 for advance care planning requires a minimum of 16 minutes; if you hit 33 minutes, you can use a higher bill.",
+      "seg": 312,
+      "verbatim": "Minimum of sixteen. And then if you hit thirty three minutes, that's a higher bill.",
+      "applies_to": "Medicare patients",
       "type": "dosing"
     },
     {
-      "text": "Appoint a surrogate decision maker at admission.",
-      "verbatim": "appoint a surrogate decision maker at admission.",
-      "type": "guideline"
-    },
-    {
-      "text": "Use open-ended questions like 'What are your thoughts about CPR? What are your thoughts about artificial nutrition?'",
-      "verbatim": "ask good open ended questions. Right? Like, what are your thoughts about CPR? What are your thoughts about? What are your thoughts about artificial nutrition?",
+      "text": "Use open-ended questions like 'What are your thoughts about CPR?' and let the patient talk most; the best ACP happens when the patient talks the most.",
+      "seg": 333,
+      "verbatim": "What are your thoughts about CPR? What are your thoughts about? What are your thoughts about artificial nutrition? Where do you stand? Asking these open ended questions and listening.",
+      "applies_to": "all patients",
       "type": "exam_technique"
     },
     {
-      "text": "The best advance care planning happens when the patient talks the most.",
-      "verbatim": "the best advanced care planning is done when the patient talks the most.",
+      "text": "Use simple language: say 'if your heart were to stop, do you want me to try to restart it?' instead of 'DNR'.",
+      "seg": 350,
+      "verbatim": "if your heart were to stop, do you want me to perform your chest resuscitate your heart? Use those languages",
+      "applies_to": "all patients",
+      "type": "practice"
+    },
+    {
+      "text": "Over 75% of patients over 65 wish to die at home, but only 25% do; most die in acute care facilities, indicating a need for better ACP.",
+      "seg": 354,
+      "verbatim": "over seventy five percent of patients above the age of 65 wish to die in their homes. Mhmm. But only twenty five percent of patients that die after the age of 65 die in their homes.",
+      "applies_to": "patients over 65",
+      "type": "concept"
+    },
+    {
+      "text": "Establish a supportive relationship with the patient and family before initiating serious ACP discussions; avoid showing up and saying 'you're dying' without rapport.",
+      "seg": 321,
+      "verbatim": "But notice how you need a supportive relationship with your patient and family to even start this discussion. So if if I'm that doctor that sees them for five minutes a day and then shows up three days later and says, you're dying. Tell me what you're going to do. Like, that's not going to be very helpful to our patient.",
+      "applies_to": "all patients",
       "type": "judgment"
-    },
-    {
-      "text": "Clarify resuscitation orders with each admission.",
-      "verbatim": "clarify resuscitation orders. With each admission, we should be doing that.",
-      "type": "guideline"
-    },
-    {
-      "text": "Use plain language: say 'if your heart were to stop, do you want me to try to restart your heart?' instead of 'DNR'.",
-      "verbatim": "use simple language. Don't talk about, do you want a DNR order? That's not simple language. ... say, if your heart were to stop, do you want me to perform your chest resuscitate your heart?",
-      "type": "exam_technique"
-    },
-    {
-      "text": "An advance directive requires two witnesses to sign.",
-      "verbatim": "you need two witnesses to sign this.",
-      "type": "guideline"
     }
   ],
   "pearls": [
     {
-      "text": "If a patient says they want to be made hospice, they do not necessarily need to be DNR first.",
-      "verbatim": "They are not mutually exclusive. Right? This act was actually a real thing when I was intern. My intern year, the case manager was telling me this hospice care facility said we cannot accept this person unless you send us a DNR. And Doctor. Was like, no. We're not doing that. So that's when I was able to learn that you don't actually need it.",
-      "type": "pitfall",
-      "t": 136.6,
-      "match": "exact",
-      "episode": "dr-leo-on-advance-care-planning",
-      "speaker": "Dr. Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-136",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:hospice"
-          ],
-          "actionable": [
-            "do not"
-          ],
-          "rarity": 6.47
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Advanced directive without a POLST, you can have a standing DNR.",
-      "verbatim": "Advanced directive without a POLST, you can have a standing DNR.",
-      "type": "practice",
-      "t": 377.8,
-      "match": "exact",
-      "episode": "dr-leo-on-advance-care-planning",
-      "speaker": "Dr. Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-377",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:polst"
-          ],
-          "rarity": 7.41
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "If you're ordering comfort measures only on your patient, you have to also order a DNR.",
-      "verbatim": "if you're ordering comfort measures only on your patient, you have to also order a DNR.",
-      "type": "pitfall",
-      "t": 554.6,
-      "match": "exact",
-      "episode": "dr-leo-on-advance-care-planning",
-      "speaker": "Dr. Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-554",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:comfort measures only"
-          ],
-          "actionable": [
-            "order"
-          ],
-          "rarity": 6.41
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Hospice requires a prognosis of six months or less.",
-      "verbatim": "they have a prognosis that's going to limit their life to six months or less.",
-      "type": "practice",
-      "t": 675.2,
-      "match": "exact",
-      "episode": "dr-leo-on-advance-care-planning",
-      "speaker": "Dr. Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-675",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:prognosis"
-          ],
-          "rarity": 5.62
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Just because you have a living will doesn't mean you have orders for resuscitation and intubation.",
-      "verbatim": "just because you have a living will doesn't mean you have orders for resuscitation and intubation.",
-      "type": "pitfall",
-      "t": 730.9,
-      "match": "exact",
-      "episode": "dr-leo-on-advance-care-planning",
-      "speaker": "Dr. Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-730",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:living will"
-          ],
-          "rarity": 6.58
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Palliative care can be both curative and comfort at the same time.",
-      "verbatim": "Palliative care. It can be both curative. Within palliative care. You can have curative things. You can also have comfort things.",
+      "text": "Hospice and DNR are not mutually exclusive; a patient can be made hospice without being DNR.",
+      "verbatim": "Exclusive. Absolutely. They are not mutually exclusive.",
       "type": "concept",
-      "t": 784.3,
-      "match": "fuzzy",
-      "episode": "dr-leo-on-advance-care-planning",
-      "speaker": "Dr. Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-784",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:palliative care"
-          ],
-          "rarity": 6.75
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "You can be a fly on the wall with palliative care to learn their communication techniques.",
-      "verbatim": "I just asked them, can I come and just be a fly on the wall? Man, they're amazing. And I learned so much just by watching how they frame their questions, how they explain things to the patient.",
-      "type": "judgment",
-      "t": 853.8,
+      "t": 135.3,
       "match": "exact",
       "episode": "dr-leo-on-advance-care-planning",
       "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-853",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:palliative care"
-          ],
-          "rarity": 7.7
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients requesting hospice care",
+      "pearl_id": "dr-leo-on-advance-care-planning-135"
     },
     {
-      "text": "Under Oklahoma law, the spouse will become the health care agent if no power of attorney.",
-      "verbatim": "under Oklahoma law, that husband, that spouse will become the health care agent.",
-      "type": "practice",
-      "t": 903.2,
+      "text": "An advanced directive is recognized but not legally binding; EMS will not know about it in an emergency.",
+      "verbatim": "It's also really important to note that an advanced directive is a new point recognized but not legally binding.",
+      "type": "pitfall",
+      "t": 270.6,
       "match": "exact",
       "episode": "dr-leo-on-advance-care-planning",
       "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-903",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:power of attorney"
-          ],
-          "rarity": 7.14
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "all patients with advanced directives",
+      "pearl_id": "dr-leo-on-advance-care-planning-270"
     },
     {
-      "text": "If a patient has a durable power of attorney naming someone else, that overrides the default health care agent.",
-      "verbatim": "you're going to be able to override the health care agent and go to the power of attorney.",
-      "type": "practice",
-      "t": 933.1,
+      "text": "A POLST is a portable medical order completed by the patient and provider, serving as a standing order for life-sustaining treatments.",
+      "verbatim": "there is something called a POLST. So this is where you have a physician order for a life sustaining treatment, which is a portable medical order.",
+      "type": "concept",
+      "t": 308.0,
       "match": "exact",
       "episode": "dr-leo-on-advance-care-planning",
       "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "dr-leo-on-advance-care-planning-933",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:power of attorney"
-          ],
-          "rarity": 8.2
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "chronically ill patients not close to death",
+      "pearl_id": "dr-leo-on-advance-care-planning-308"
     },
     {
-      "text": "You would tap into a POLST when you know somebody who's got a life altering diagnosis, but they're not really, like, super close together right now.",
-      "verbatim": "You would tap into a POLST when you when you know somebody who's got a life altering diagnosis. And you know that they have a life altering diagnosis, but they're not really, like, super close together right now.",
+      "text": "If a patient has decided only on DNR but not other aspects, you can sign a DNR form separately without a full POLST or advanced directive.",
+      "verbatim": "you can say, okay. You've decided at least the part that you wanna be DNR. So you can just go ahead and sign into the RNR form.",
       "type": "practice",
+      "t": 368.7,
+      "match": "exact",
+      "episode": "dr-leo-on-advance-care-planning",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients who want DNR but need time for other decisions",
+      "pearl_id": "dr-leo-on-advance-care-planning-368"
+    },
+    {
+      "text": "At St. John, ordering comfort measures only requires also ordering DNR and DNI forms separately, plus writing about artificial hydration and nutrition.",
+      "verbatim": "it's not enough to just put in a CMO order on their thing. You also have to sign a DNR form with your patient and a DNI form your patient and write something about artificial hydration nutrition",
+      "type": "practice",
+      "t": 605.4,
+      "match": "exact",
+      "episode": "dr-leo-on-advance-care-planning",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "inpatient at St. John",
+      "pearl_id": "dr-leo-on-advance-care-planning-605"
+    },
+    {
+      "text": "A living will may not include orders for resuscitation or intubation; do not assume a DNR is attached.",
+      "verbatim": "if your patient has a living will in their chart, you shouldn't assume that there's also a DNR attached to that because it may or may not.",
+      "type": "pitfall",
+      "t": 696.8,
+      "match": "exact",
+      "episode": "dr-leo-on-advance-care-planning",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with living wills",
+      "pearl_id": "dr-leo-on-advance-care-planning-696"
+    },
+    {
+      "text": "Palliative care can be combined with curative treatments; they are not mutually exclusive.",
+      "verbatim": "You need to be able to ask your patient, do you want to continue full on curative chemo while also getting palliative care? Those are not mutually exclusive.",
+      "type": "concept",
+      "t": 795.9,
+      "match": "exact",
+      "episode": "dr-leo-on-advance-care-planning",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with serious illness",
+      "pearl_id": "dr-leo-on-advance-care-planning-795"
+    },
+    {
+      "text": "In Oklahoma, the health care agent pecking order is spouse, children, parents, siblings, then others; this varies by state.",
+      "verbatim": "It is exactly like you said. It's a spouse, children, parents, siblings, and whoever else that falls after that.",
+      "type": "concept",
+      "t": 1005.1,
+      "match": "exact",
+      "episode": "dr-leo-on-advance-care-planning",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "Oklahoma residents without power of attorney",
+      "pearl_id": "dr-leo-on-advance-care-planning-1005"
+    },
+    {
+      "text": "If no family members are available or accessible, the closest person to the patient can act as health care agent under Oklahoma law.",
+      "verbatim": "if there's no phone numbers, if there's no way of reaching any kind of family members, it's whoever is closest to that person under a glom alone.",
+      "type": "concept",
+      "t": 1085.4,
+      "match": "exact",
+      "episode": "dr-leo-on-advance-care-planning",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with no accessible family",
+      "pearl_id": "dr-leo-on-advance-care-planning-1085"
+    },
+    {
+      "text": "In a living will, ensure all four components are addressed: pacemaker/ICD, IV hydration, and other life-sustaining treatments; if any are missing, circle back and ask the patient.",
+      "verbatim": "I would go ahead and ask them. Right? At least circle back and ask your patient, hey. I did re... I ready your living will, but I didn't see anything about, like, you know, whether you'd be open to a pacemaker or a defibrillator. And I didn't see anything about, you know, IV hydration. Tell me what what would you like.",
+      "type": "practice",
+      "t": 1167.6,
+      "match": "exact",
+      "episode": "dr-leo-on-advance-care-planning",
+      "speaker": "Dr. Leo",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with a living will",
+      "pearl_id": "dr-leo-on-advance-care-planning-1167"
+    },
+    {
+      "text": "POLST is for patients with a life-altering diagnosis who are not imminently dying but are at risk; it includes medical orders for that gray zone.",
+      "verbatim": "You would tap into a POLST when you when you know somebody who's got a life altering diagnosis. And you know that they have a life altering diagnosis, but they're not really, like, super close together right now. Mhmm. At some point, this diagnosis can lead them to death, and it could cause... I don't know. Like, it could cause metastasis to the brain that we don't know about, and they could pass out tomorrow. But for all we know right now, they're not imminently dying.",
+      "type": "concept",
       "t": 1205.3,
       "match": "fuzzy",
       "episode": "dr-leo-on-advance-care-planning",
       "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-1205",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:polst"
-          ],
-          "rarity": 7.83
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with a life-altering diagnosis not imminently dying",
+      "pearl_id": "dr-leo-on-advance-care-planning-1205"
     },
     {
-      "text": "Document the health proxy in every H&P note per Ascension policy.",
-      "verbatim": "every time you do an HMP note, you need to be able to document somewhere in your note their health proxy is going to be, by the way.",
+      "text": "Under Ascension Saint John's policy, every H&P note must document the health care proxy; this is a quality measure for hospitalists.",
+      "verbatim": "under Saint John's policy, ascension Saint John's policy, every time you do an HMP note, you need to be able to document somewhere in your note their health proxy is going to be, by the way.",
       "type": "practice",
-      "t": 1281.7,
+      "t": 1277.9,
       "match": "exact",
       "episode": "dr-leo-on-advance-care-planning",
       "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-1281",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Document"
-          ],
-          "rarity": 7.78
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "hospitalists at Ascension Saint John's",
+      "pearl_id": "dr-leo-on-advance-care-planning-1277"
     },
     {
-      "text": "You can bill for advance care planning once a year.",
-      "verbatim": "Once a year, you can bill for it.",
-      "type": "dosing",
-      "t": 1434.2,
-      "match": "exact",
-      "episode": "dr-leo-on-advance-care-planning",
-      "speaker": "Dr. Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-1434",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:advance care planning"
-          ],
-          "rarity": 6.61
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "A standing DNR order can exist without an advance directive or living will.",
-      "verbatim": "you can just have a standing DNR order and not have an advanced directive or a living will.",
+      "text": "If a patient is uncomfortable discussing advance care planning, give them the booklet available in all suites and revisit at the next visit.",
+      "verbatim": "Give them this booklet that's that's in all of our suites. Have you guys seen this? Yep. It's like an amazing booklet.",
       "type": "practice",
-      "t": 1448.1,
+      "t": 1373.3,
       "match": "exact",
       "episode": "dr-leo-on-advance-care-planning",
       "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-1448",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:advance directive"
-          ],
-          "actionable": [
-            "order"
-          ],
-          "rarity": 7.05
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients uncomfortable with ACP discussion",
+      "pearl_id": "dr-leo-on-advance-care-planning-1373"
     },
     {
-      "text": "In a late conversation, tell the patient directly that you need to know what they want because the situation is very serious.",
-      "verbatim": "tell them that you need to know as quickly as possible what they would want. Tell them this is very serious.",
+      "text": "Late ACP conversations (when the patient is critically ill) are more complex and time-consuming; be direct and tell them you need to know as quickly as possible what they would want.",
+      "verbatim": "Honestly, this is my best advice is to just tell them that you need to know as quickly as possible what they would want. Tell them this is very serious. Like, you have a very difficult diagnosis. Prognosis is poor, and you need to know now what they would want.",
       "type": "judgment",
-      "t": 1599.1,
+      "t": 1595.7,
       "match": "exact",
       "episode": "dr-leo-on-advance-care-planning",
       "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-1599",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 6.47
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with poor prognosis in the hospital",
+      "pearl_id": "dr-leo-on-advance-care-planning-1595"
     },
     {
-      "text": "Bill for ACP with a minimum of 16 minutes; add-on code if over 30 minutes.",
-      "verbatim": "Minimum of sixteen minutes. And then if you go above thirty minutes, then you get an add on.",
+      "text": "Billing code 99497 for advance care planning requires a minimum of 16 minutes; if you hit 33 minutes, you can use a higher bill.",
+      "verbatim": "Minimum of sixteen. And then if you hit thirty three minutes, that's a higher bill.",
       "type": "dosing",
-      "t": 1723.5,
+      "t": 1744.8,
       "match": "exact",
       "episode": "dr-leo-on-advance-care-planning",
       "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "dr-leo-on-advance-care-planning-1723",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:16 minutes",
-            "threshold:over 3"
-          ],
-          "actionable": [
-            "add"
-          ],
-          "rarity": 7.41
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "Medicare patients",
+      "numbers_unheard": [
+        "99497"
+      ],
+      "pearl_id": "dr-leo-on-advance-care-planning-1744"
     },
     {
-      "text": "Appoint a surrogate decision maker at admission.",
-      "verbatim": "appoint a surrogate decision maker at admission.",
-      "type": "practice",
-      "t": 1796.6,
-      "match": "exact",
-      "episode": "dr-leo-on-advance-care-planning",
-      "speaker": "Dr. Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-1796",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 8.2
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Use open-ended questions like 'What are your thoughts about CPR? What are your thoughts about artificial nutrition?'",
-      "verbatim": "ask good open ended questions. Right? Like, what are your thoughts about CPR? What are your thoughts about? What are your thoughts about artificial nutrition?",
-      "type": "exam_technique",
-      "t": 1829.1,
-      "match": "exact",
-      "episode": "dr-leo-on-advance-care-planning",
-      "speaker": "Dr. Leo",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-1829",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 8.12
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "The best advance care planning happens when the patient talks the most.",
-      "verbatim": "the best advanced care planning is done when the patient talks the most.",
+      "text": "Establish a supportive relationship with the patient and family before initiating serious ACP discussions; avoid showing up and saying 'you're dying' without rapport.",
+      "verbatim": "But notice how you need a supportive relationship with your patient and family to even start this discussion. So if if I'm that doctor that sees them for five minutes a day and then shows up three days later and says, you're dying. Tell me what you're going to do. Like, that's not going to be very helpful to our patient.",
       "type": "judgment",
-      "t": 1851.6,
+      "t": 1773.4,
       "match": "exact",
       "episode": "dr-leo-on-advance-care-planning",
       "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-1851",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:advance care planning"
-          ],
-          "rarity": 7.53
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "all patients",
+      "pearl_id": "dr-leo-on-advance-care-planning-1773"
     },
     {
-      "text": "Use plain language: say 'if your heart were to stop, do you want me to try to restart your heart?' instead of 'DNR'.",
-      "verbatim": "use simple language. Don't talk about, do you want a DNR order? That's not simple language. ... say, if your heart were to stop, do you want me to perform your chest resuscitate your heart?",
+      "text": "Use open-ended questions like 'What are your thoughts about CPR?' and let the patient talk most; the best ACP happens when the patient talks the most.",
+      "verbatim": "What are your thoughts about CPR? What are your thoughts about? What are your thoughts about artificial nutrition? Where do you stand? Asking these open ended questions and listening.",
       "type": "exam_technique",
-      "t": 1901.2,
+      "t": 1833.1,
       "match": "exact",
       "episode": "dr-leo-on-advance-care-planning",
       "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-1901",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 6.8
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "all patients",
+      "pearl_id": "dr-leo-on-advance-care-planning-1833"
     },
     {
-      "text": "Clarify resuscitation orders with each admission.",
-      "verbatim": "clarify resuscitation orders. With each admission, we should be doing that.",
+      "text": "Use simple language: say 'if your heart were to stop, do you want me to try to restart it?' instead of 'DNR'.",
+      "verbatim": "if your heart were to stop, do you want me to perform your chest resuscitate your heart? Use those languages",
       "type": "practice",
-      "t": 2095.1,
+      "t": 1916.3,
       "match": "exact",
       "episode": "dr-leo-on-advance-care-planning",
       "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-2095",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 6.34
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "all patients",
+      "pearl_id": "dr-leo-on-advance-care-planning-1916"
     },
     {
-      "text": "An advance directive requires two witnesses to sign.",
-      "verbatim": "you need two witnesses to sign this.",
-      "type": "practice",
-      "t": 2294.0,
+      "text": "Over 75% of patients over 65 wish to die at home, but only 25% do; most die in acute care facilities, indicating a need for better ACP.",
+      "verbatim": "over seventy five percent of patients above the age of 65 wish to die in their homes. Mhmm. But only twenty five percent of patients that die after the age of 65 die in their homes.",
+      "type": "concept",
+      "t": 1942.9,
       "match": "exact",
       "episode": "dr-leo-on-advance-care-planning",
       "speaker": "Dr. Leo",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-leo-on-advance-care-planning-2294",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:advance directive"
-          ],
-          "rarity": 7.7
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients over 65",
+      "pearl_id": "dr-leo-on-advance-care-planning-1942"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -66492,5 +66188,6 @@
       "name": "Dr. Leo"
     }
   ],
-  "pearls_fingerprint": "89eed0e487287835"
+  "pearls_fingerprint": "8a54e1529aadb8a2",
+  "enrich_version": "v2"
 }
