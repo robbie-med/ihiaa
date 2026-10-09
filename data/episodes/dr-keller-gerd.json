@@ -36559,7 +36559,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dysphagia",
-      "pearl_id": "dr-keller-gerd-153"
+      "pearl_id": "dr-keller-gerd-153",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:dysphagia"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Liquid dysphagia is not mechanical obstruction; it suggests esophageal dysmotility, achalasia, or diffuse esophageal spasm.",
@@ -36572,7 +36591,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with liquid dysphagia",
-      "pearl_id": "dr-keller-gerd-213"
+      "pearl_id": "dr-keller-gerd-213",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:diffuse esophageal spa"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pill dysphagia without associated food solid dysphagia is not worrisome for a stricture.",
@@ -36585,7 +36620,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pill dysphagia",
-      "pearl_id": "dr-keller-gerd-259"
+      "pearl_id": "dr-keller-gerd-259",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dysphagia"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pill esophagitis from tetracycline or potassium can cause local toxic effect if hung up at a Schatzki ring or stricture.",
@@ -36598,7 +36649,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on tetracycline or potassium",
-      "pearl_id": "dr-keller-gerd-270"
+      "pearl_id": "dr-keller-gerd-270",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:tetracycline"
+          ],
+          "harm": [
+            "toxic"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "GERD-related chest pain is usually postprandial, awakens from sleep, and exacerbated by emotional stress.",
@@ -36611,7 +36681,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chest pain",
-      "pearl_id": "dr-keller-gerd-350"
+      "pearl_id": "dr-keller-gerd-350",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chest pain"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In unexplained refractory nausea, 25% cleared with PPI therapy in one study.",
@@ -36624,7 +36710,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with unexplained nausea",
-      "pearl_id": "dr-keller-gerd-442"
+      "pearl_id": "dr-keller-gerd-442",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:therapy"
+          ],
+          "rarity": 6.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Erosive esophagitis is always at the GE junction, not mid or cervical esophagus.",
@@ -36637,7 +36739,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with GERD",
-      "pearl_id": "dr-keller-gerd-465"
+      "pearl_id": "dr-keller-gerd-465",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:erosive esophagitis"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "LA grade A: <5mm, no bridging; B: >5mm, no bridging; C: bridging <75%; D: >75%.",
@@ -36650,7 +36771,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "endoscopy reports",
-      "pearl_id": "dr-keller-gerd-508"
+      "pearl_id": "dr-keller-gerd-508",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5mm",
+            "threshold:<5"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "NERD is nonerosive reflux disease: reflux symptoms without endoscopic esophagitis.",
@@ -36663,7 +36801,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with GERD symptoms",
-      "pearl_id": "dr-keller-gerd-572"
+      "pearl_id": "dr-keller-gerd-572",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:esophagitis"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients with history of peptic strictures or dilation, do not stop PPIs; keeping them on PPI may prevent need for yearly dilation.",
@@ -36676,7 +36830,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with peptic strictures",
-      "pearl_id": "dr-keller-gerd-1061"
+      "pearl_id": "dr-keller-gerd-1061",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Step down PPI therapy: from omeprazole 40 mg to 20 mg, then 10 mg, then H2 blocker.",
@@ -36693,7 +36863,24 @@
         "20",
         "10"
       ],
-      "pearl_id": "dr-keller-gerd-1155"
+      "pearl_id": "dr-keller-gerd-1155",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:40 mg",
+            "drug:omeprazole"
+          ],
+          "rarity": 6.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Transition from PPI to famotidine at 2-3 months.",
@@ -36706,7 +36893,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on PPI",
-      "pearl_id": "dr-keller-gerd-1219"
+      "pearl_id": "dr-keller-gerd-1219",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 months",
+            "drug:famotidine"
+          ],
+          "rarity": 6.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Transition patients from PPI to famotidine after 2-3 months of good symptom control to minimize long-term medication use.",
@@ -36719,7 +36923,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with GERD whose symptoms are well-controlled on PPI",
-      "pearl_id": "dr-keller-gerd-1219-2"
+      "pearl_id": "dr-keller-gerd-1219-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 months",
+            "drug:famotidine"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PPIs have no tachyphylaxis, unlike H2 blockers.",
@@ -36732,7 +36956,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PPI vs H2 therapy",
-      "pearl_id": "dr-keller-gerd-1251"
+      "pearl_id": "dr-keller-gerd-1251",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:h2 blockers"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Elevate head of bed with 4-6 inch blocks or a wedge mattress; propping with pillows increases intra-abdominal pressure and worsens reflux.",
@@ -36745,7 +36985,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with GERD",
-      "pearl_id": "dr-keller-gerd-1261"
+      "pearl_id": "dr-keller-gerd-1261",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advise patients not to prop head with pillows; it increases intragastric pressure and worsens reflux.",
@@ -36758,7 +37011,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with GERD",
-      "pearl_id": "dr-keller-gerd-1275"
+      "pearl_id": "dr-keller-gerd-1275",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dietary triggers to avoid: chocolate, tomatoes, garlic, onions, bananas, caffeine, tobacco.",
@@ -36771,7 +37037,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with GERD",
-      "pearl_id": "dr-keller-gerd-1287"
+      "pearl_id": "dr-keller-gerd-1287",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:caffeine"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PPIs must be taken 30-60 minutes before the first meal of the day; 40% of patients do not time it correctly.",
@@ -36784,7 +37069,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on PPIs for GERD",
-      "pearl_id": "dr-keller-gerd-1395"
+      "pearl_id": "dr-keller-gerd-1395",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:60 minutes"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Functional heartburn accounts for 58% of nonresponders to PPI; treat with pain modulators like nortriptyline 10-20 mg at bedtime or SSRIs.",
@@ -36797,7 +37101,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with refractory GERD despite PPI",
-      "pearl_id": "dr-keller-gerd-1450"
+      "pearl_id": "dr-keller-gerd-1450",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:20 mg"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PPIs are safe in pregnancy except omeprazole (class C); other PPIs are class B.",
@@ -36810,7 +37133,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with GERD",
-      "pearl_id": "dr-keller-gerd-1705"
+      "pearl_id": "dr-keller-gerd-1705",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:omeprazole"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For H. pylori testing, use stool antigen or breath test; serology is unreliable in the US due to low prevalence. Stop PPIs, antibiotics, and Pepto-Bismol for 2 weeks before testing.",
@@ -36823,7 +37162,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being tested for H. pylori in the US",
-      "pearl_id": "dr-keller-gerd-1840"
+      "pearl_id": "dr-keller-gerd-1840",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 weeks"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For PRN use, a single dose of liquid antacid plus omeprazole provides staggered relief; a 2-week PPI course may reduce long-term medication use.",
@@ -36836,7 +37194,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with intermittent GERD symptoms",
-      "pearl_id": "dr-keller-gerd-1954"
+      "pearl_id": "dr-keller-gerd-1954",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:PRN",
+            "drug:omeprazole"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "H2 blockers develop tachyphylaxis after 2-4 weeks; a drug holiday restores effectiveness.",
@@ -36849,7 +37227,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on H2 blockers for GERD",
-      "pearl_id": "dr-keller-gerd-2106"
+      "pearl_id": "dr-keller-gerd-2106",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4 weeks"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Long-term PPI use requires annual monitoring of vitamin B12 and magnesium levels.",
@@ -36862,7 +37256,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on chronic PPI therapy",
-      "pearl_id": "dr-keller-gerd-2145"
+      "pearl_id": "dr-keller-gerd-2145",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:magnesium"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.47
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dexlansoprazole (Dexilant) has dual-release granules and can be taken any time relative to meals; it covers nighttime reflux well.",
@@ -36875,7 +37288,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with GERD, especially those with poor compliance with PPI timing or nighttime reflux",
-      "pearl_id": "dr-keller-gerd-2240"
+      "pearl_id": "dr-keller-gerd-2240",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Dexlansoprazole"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -41516,7 +41516,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "immunocompetent individuals with latent TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-663"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-663",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In HIV patients with latent TB, risk of reactivation is 7-10% per year, much higher than the general population.",
@@ -41529,7 +41542,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "HIV patients with latent TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-693"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-693",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.84
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diabetes increases lifetime risk of TB reactivation by about 30%.",
@@ -41542,7 +41568,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diabetes and latent TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-707"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-707",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:diabetes"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In the US, all positive TB cases must be reported; high-risk groups include those from high-incidence countries, correctional facilities, shelters, and nursing homes.",
@@ -41555,7 +41597,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "US clinicians",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-758"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-758",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Persistent cough for more than 3 weeks plus chest pain with breathing are key pulmonary TB symptoms, but they are not specific.",
@@ -41568,7 +41623,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with respiratory symptoms",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-800"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-800",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 weeks",
+            "threshold:more than 3"
+          ],
+          "rarity": 5.99
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Physical exam is not very helpful for diagnosing TB; many patients with severe chest X-ray findings have normal lung auscultation.",
@@ -41581,7 +41653,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients suspected of TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-818"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-818",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients with pulmonary TB, lung auscultation can be normal even when chest X-ray looks severe; do not rely on exam to rule out TB.",
@@ -41594,7 +41682,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients suspected of having TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-824"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-824",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IGRA (QuantiFERON Gold) is more sensitive and specific than PPD skin test; it avoids the need for a 48-hour follow-up and confusion over PPD measurement thresholds.",
@@ -41607,7 +41714,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing TB screening",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-871"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-871",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:quantiferon gold"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient had BCG vaccine within 10 years, their PPD skin test will be positive regardless of true TB infection; use IGRA to avoid false positives.",
@@ -41620,7 +41743,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with BCG vaccination",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-910"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-910",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 years"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For pulmonary TB suspicion, collect sputum for culture and NAAT; if sputum cannot be obtained, consider induced sputum or bronchoscopy.",
@@ -41633,7 +41775,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected pulmonary TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-960"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-960",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Extrapulmonary TB specimen should be taken from the affected site (e.g., urine for renal, CSF for meningeal).",
@@ -41646,7 +41807,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected extrapulmonary TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-972"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-972",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Negative AFB smear does not rule out TB or infectiousness; culture and NAAT are still needed.",
@@ -41659,7 +41833,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being evaluated for TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1014"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1014",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A positive NAAT and positive AFB smear allows a patient to be presumed to have TB, but NAAT does not replace smear, culture, and clinical judgment.",
@@ -41672,7 +41865,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1036"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1036",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "rarity": 7.41
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "GeneXpert can test for Mycobacterium tuberculosis and rifampin resistance in about two hours, but the CDC still considers culture the best standard.",
@@ -41685,7 +41894,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1056"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1056",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "test for"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "All specimens should be cultured regardless of whether the AFB smear is positive or negative.",
@@ -41698,7 +41926,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all TB specimens",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1181"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1181",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sputum cultures should be obtained monthly until two are negative; conversion is an objective measure of response to treatment.",
@@ -41711,7 +41952,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on TB treatment",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1235"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1235",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:monthly"
+          ],
+          "actionable": [
+            "measure"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Multidrug-resistant TB is defined as resistance to isoniazid and rifampin.",
@@ -41724,7 +41984,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1254"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1254",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:isoniazid"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Drug susceptibility testing should be done when a person has a positive culture, and should be reviewed if they are not getting better.",
@@ -41737,7 +42013,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with positive TB culture",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1282"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1282",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "rarity": 6.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For latent TB treatment in pregnancy, most treatment can be delayed until after delivery, but if the patient is HIV-positive, treatment should be considered during pregnancy.",
@@ -41750,7 +42042,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women with latent TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1410"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1410",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tb treatment"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The preferred latent TB treatment in pregnancy is isoniazid with vitamin B6.",
@@ -41763,7 +42071,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women with latent TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1420"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1420",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tb treatment"
+          ],
+          "rarity": 6.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Breastfeeding is not contraindicated during TB treatment, but patients may have orange breast milk due to rifampin.",
@@ -41776,7 +42100,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "breastfeeding women on TB treatment",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1425"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1425",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:breastfeeding"
+          ],
+          "harm": [
+            "contraindicated"
+          ],
+          "rarity": 6.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stop TB medications if LFTs are three times the upper limit of normal.",
@@ -41789,7 +42132,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on TB treatment with elevated LFTs",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1472"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1472",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:LFTs"
+          ],
+          "actionable": [
+            "Stop"
+          ],
+          "rarity": 5.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Give patients a document with their positive TB results, medication regimen, and chest X-ray findings, because they will likely still test positive on future screening.",
@@ -41802,7 +42164,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1480"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1480",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "actionable": [
+            "Give"
+          ],
+          "rarity": 6.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Active TB treatment should be for at least six months: two months of intensive phase with RIPE (rifampin, isoniazid, pyrazinamide, ethambutol) followed by four months of continuation phase with isoniazid and rifampin.",
@@ -41815,7 +42196,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with active TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1520"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1520",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pyrazinamide"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients who do not improve or worsen in the first two months of treatment should be reevaluated with new specimens, adherence check, symptom review, exam, and repeat chest X-ray.",
@@ -41828,7 +42225,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on TB treatment",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1639"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1639",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A patient can be considered noninfectious after ≥2 weeks of treatment, clinical improvement, and three consecutive negative sputum smears.",
@@ -41841,7 +42257,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pulmonary TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1672"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1672",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 weeks"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In low-resource settings like PNG, TB is often a clinical diagnosis using chest X-ray and GeneXpert; cultures are rarely performed due to logistical issues.",
@@ -41854,7 +42286,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "low-resource settings like PNG",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1824"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1824",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In PNG, the Stop TB Kit contains all medicines needed for six months of treatment for an individual, with dosing based on weight.",
@@ -41867,7 +42315,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with active TB in PNG",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1940"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1940",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Stop"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Standard TB treatment is 2 months intensive phase plus 4 months continuation phase, total 6 months.",
@@ -41880,7 +42344,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with pulmonary TB (non-CNS, non-bone)",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1987"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1987",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 months"
+          ],
+          "rarity": 6.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CNS and bone TB require longer treatment durations and a second kit (regimen).",
@@ -41893,7 +42373,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CNS or bone TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1999"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-1999",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In PNG, drug resistance is monitored clinically; if rifampin resistance is detected, treatment duration can be extended or injectables used.",
@@ -41906,7 +42399,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with rifampin-resistant TB in PNG",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2027"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2027",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rifampin resistance"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In PNG, only rifampin resistance testing is routinely available; culture and full sensitivity testing are often not successful.",
@@ -41919,7 +42428,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "TB patients in PNG",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2027-2"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2027-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "rarity": 6.67
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When culture is unavailable, monitor TB patients by clinical improvement rather than lab tests.",
@@ -41932,7 +42457,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "TB patients in resource-limited settings",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2038"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2038",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "rarity": 5.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Rifampin-resistant TB can be treated with longer duration (e.g., 3 months) or with injectable medications.",
@@ -41945,7 +42489,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with rifampin-resistant TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2044"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2044",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 months"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "TB chest X-ray can show non-classic patchy infiltrates, not just apical cavitary lesions.",
@@ -41958,7 +42518,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians evaluating chest X-rays in TB-endemic areas",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2103"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2103",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Miliary TB has a characteristic 'miliary' appearance on chest X-ray.",
@@ -41971,7 +42547,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with miliary TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2130"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2130",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pleural TB effusions can be loculated and difficult to drain despite large fluid volume.",
@@ -41984,7 +42576,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pleural TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2176"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2176",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ultrasound is very helpful for evaluating pleural effusions in TB.",
@@ -41997,7 +42602,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians evaluating pleural effusions",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2196"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2196",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:Ultrasound"
+          ],
+          "rarity": 6.41
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pott's disease (spinal TB) presents with back pain, weight loss, night sweats, and vertebral height loss on X-ray resembling a compression fracture.",
@@ -42010,7 +42631,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with spinal TB",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2228"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2228",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In PNG, every TB suspect gets sputum GeneXpert, acid-fast stain, and reflex HIV/syphilis testing.",
@@ -42023,7 +42660,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "TB suspects in PNG",
-      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2275"
+      "pearl_id": "dr-kaleigh-winters-on-png-tuberculosis-2275",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:syphilis testing"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

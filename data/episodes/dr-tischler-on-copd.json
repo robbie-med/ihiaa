@@ -40907,7 +40907,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-494"
+      "pearl_id": "dr-tischler-on-copd-494",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chronic cough"
+          ],
+          "rarity": 6.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Smoking accounts for 70% of COPD in high-income countries.",
@@ -40920,7 +40936,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in high-income countries",
-      "pearl_id": "dr-tischler-on-copd-538"
+      "pearl_id": "dr-tischler-on-copd-538",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:smoking"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "You cannot diagnose COPD without spirometry; clinical suspicion is not enough.",
@@ -40933,7 +40965,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected COPD",
-      "pearl_id": "dr-tischler-on-copd-785"
+      "pearl_id": "dr-tischler-on-copd-785",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:spirometry"
+          ],
+          "rarity": 5.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diagnostic spirometry requires a post-bronchodilator FEV1/FVC ratio less than 0.7.",
@@ -40946,7 +40994,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with clinical suspicion of COPD",
-      "pearl_id": "dr-tischler-on-copd-808"
+      "pearl_id": "dr-tischler-on-copd-808",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 0",
+            "test:spirometry"
+          ],
+          "rarity": 7.68
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pre-COPD (PRISm) describes symptomatic patients with normal spirometry who are at risk for progression; consider bronchodilators and risk factor modification.",
@@ -40959,7 +41024,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "symptomatic patients with normal spirometry",
-      "pearl_id": "dr-tischler-on-copd-843"
+      "pearl_id": "dr-tischler-on-copd-843",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:spirometry"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the mMRC scale: grade 2 or higher (breathless when walking at a regular pace on level ground) indicates more severe symptoms.",
@@ -40972,7 +41056,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-1171"
+      "pearl_id": "dr-tischler-on-copd-1171",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the mMRC question: 'Do you get more breathless than people your age when walking at a regular pace?' A positive answer indicates more severe symptoms.",
@@ -40985,7 +41085,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-1184"
+      "pearl_id": "dr-tischler-on-copd-1184",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the CAT score: 10 points or more indicates more severe symptoms.",
@@ -40998,7 +41114,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-1218"
+      "pearl_id": "dr-tischler-on-copd-1218",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 5.98
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In 2023, GOLD replaced groups C and D with a single group E for treatment classification.",
@@ -41011,7 +41143,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-1266"
+      "pearl_id": "dr-tischler-on-copd-1266",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A moderate exacerbation is defined as one treated with steroids or antibiotics, not necessarily requiring hospitalization.",
@@ -41024,7 +41169,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-1309"
+      "pearl_id": "dr-tischler-on-copd-1309",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:exacerbation"
+          ],
+          "rarity": 5.9
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To classify patients into GOLD groups A, B, or E, ask: 'Have you had exacerbations, been hospitalized, or needed steroids in the last year or two?'",
@@ -41037,7 +41198,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-1340"
+      "pearl_id": "dr-tischler-on-copd-1340",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:exacerbation"
+          ],
+          "rarity": 6.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid combining a short-acting muscarinic antagonist (SAMA) with a long-acting muscarinic antagonist (LAMA) due to additive anticholinergic side effects.",
@@ -41050,7 +41227,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-1522"
+      "pearl_id": "dr-tischler-on-copd-1522",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:long-acting muscarinic"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If choosing one maintenance bronchodilator, stick with LAMA as the mainstay.",
@@ -41063,7 +41259,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-1732"
+      "pearl_id": "dr-tischler-on-copd-1732",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If high blood eosinophils or hospitalization despite LAMA/LABA combination, consider adding ICS.",
@@ -41076,7 +41285,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD and high blood eosinophils or prior hospitalization",
-      "pearl_id": "dr-tischler-on-copd-1945"
+      "pearl_id": "dr-tischler-on-copd-1945",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "COPDfoundation.org has videos for every inhaler; direct patients there to learn proper technique.",
@@ -41089,7 +41314,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-2085"
+      "pearl_id": "dr-tischler-on-copd-2085",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Long-term oxygen therapy confers a mortality benefit only for severe resting desaturation; do not routinely prescribe it for ambulatory desaturation.",
@@ -41102,7 +41340,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-2123"
+      "pearl_id": "dr-tischler-on-copd-2123",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:long-term oxygen thera"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pulmonary rehabilitation within 90 days of hospital discharge is associated with statistically significant reduced mortality.",
@@ -41115,7 +41372,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD after hospitalization",
-      "pearl_id": "dr-tischler-on-copd-2177"
+      "pearl_id": "dr-tischler-on-copd-2177",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:90 days"
+          ],
+          "rarity": 6.64
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Screen all patients with COPD once for alpha-1 antitrypsin deficiency; the test is available for free through a specific program.",
@@ -41128,7 +41401,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-2234"
+      "pearl_id": "dr-tischler-on-copd-2234",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:alpha-1 antitrypsin de"
+          ],
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Inhaled corticosteroids are indicated for patients with blood eosinophils >300 cells/µL, history of asthma, or recurrent exacerbations despite LAMA/LABA.",
@@ -41141,7 +41433,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-2287"
+      "pearl_id": "dr-tischler-on-copd-2287",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>3"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients on triple therapy with persistent exacerbations, consider roflumilast (PDE4 inhibitor) or chronic azithromycin, but azithromycin has no good studies beyond one year and has many side effects.",
@@ -41154,7 +41462,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD exacerbations despite triple therapy",
-      "pearl_id": "dr-tischler-on-copd-2348"
+      "pearl_id": "dr-tischler-on-copd-2348",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:azithromycin"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For COPD exacerbations, there is no significant difference between metered-dose inhaler (MDI) and nebulizer; use 1-2 puffs every hour for 2-3 doses, then every 2-4 hours.",
@@ -41167,7 +41494,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD exacerbation",
-      "pearl_id": "dr-tischler-on-copd-2406"
+      "pearl_id": "dr-tischler-on-copd-2406",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4 hours",
+            "frequency:every 2"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For COPD exacerbation, there is no significant difference between MDI and nebulizer; GOLD recommends 1-2 puffs every hour for 2-3 doses then every 2-4 hours, but nebulizer is appropriate for hospitalized patients.",
@@ -41180,7 +41527,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD exacerbation",
-      "pearl_id": "dr-tischler-on-copd-2406-2"
+      "pearl_id": "dr-tischler-on-copd-2406-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4 hours",
+            "frequency:every 2"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In severe COPD exacerbation, consider addition of IV magnesium.",
@@ -41193,7 +41557,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe COPD exacerbation",
-      "pearl_id": "dr-tischler-on-copd-2430"
+      "pearl_id": "dr-tischler-on-copd-2430",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:copd exacerbation"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.64
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In hospitalized patients, continue their long-acting bronchodilators or start them as soon as possible before discharge if not already on a LABA.",
@@ -41206,7 +41589,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-2435"
+      "pearl_id": "dr-tischler-on-copd-2435",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "GOLD guidelines recommend prednisone 40 mg for 5 days for COPD exacerbation; some European guidelines allow up to 14 days.",
@@ -41219,7 +41618,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD exacerbation",
-      "pearl_id": "dr-tischler-on-copd-2445"
+      "pearl_id": "dr-tischler-on-copd-2445",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:40 mg",
+            "drug:prednisone"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In frequent exacerbators hospitalized more than once in the past year, obtain a sputum culture to guide antibiotic therapy.",
@@ -41232,7 +41648,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD hospitalized more than once in the past year",
-      "pearl_id": "dr-tischler-on-copd-2499"
+      "pearl_id": "dr-tischler-on-copd-2499",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 6.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Antibiotics for COPD exacerbation require increased sputum purulence plus either increased sputum volume or increased dyspnea, or if the patient is severely ill (e.g., on a ventilator).",
@@ -41245,7 +41680,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD exacerbation",
-      "pearl_id": "dr-tischler-on-copd-2552"
+      "pearl_id": "dr-tischler-on-copd-2552",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:copd exacerbation"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "COPD diagnosis requires spirometry with FEV1/FVC ratio <0.7.",
@@ -41261,7 +41712,24 @@
       "numbers_unheard": [
         "0.7"
       ],
-      "pearl_id": "dr-tischler-on-copd-2608"
+      "pearl_id": "dr-tischler-on-copd-2608",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:<0",
+            "test:spirometry"
+          ],
+          "rarity": 6.8
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "All patients with COPD should have a SABA for as-needed relief; mainstay treatment is LABA.",
@@ -41274,7 +41742,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with COPD",
-      "pearl_id": "dr-tischler-on-copd-2623"
+      "pearl_id": "dr-tischler-on-copd-2623",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

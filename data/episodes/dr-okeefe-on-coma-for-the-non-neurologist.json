@@ -98443,7 +98443,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with altered consciousness",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-184"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-184",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The transition from lethargic to stuporous (and to obtunded) is a dangerous pattern because protective reflexes and the ability to follow commands are lost.",
@@ -98456,7 +98472,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with declining consciousness",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-355"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-355",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "dangerous"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A comatose patient does not respond to external stimulus and cannot be woken up; this differentiates coma from sleep.",
@@ -98469,7 +98501,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected coma",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-379"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-379",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients with preexisting structural brain issues (cortical atrophy, dementia, stroke, TBI, etc.) are more susceptible to delirium and mental status decline when ill.",
@@ -98482,7 +98527,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with prior brain injury",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-453"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-453",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:delirium"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The weakest link in the chain is the first to break: patients with cognitive impairment from dementia or other brain injury will decompensate first when medically stressed.",
@@ -98495,7 +98559,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cognitive impairment",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-460"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-460",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cognitive impairment"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The Monro-Kellie doctrine states that the skull is a fixed-volume space containing brain, blood, and CSF; any increase in one component requires compensation or leads to herniation.",
@@ -98508,7 +98588,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with intracranial mass effect or edema",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-555"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-555",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:monro-kellie doctrine"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consciousness requires three components: bilateral cortices, thalami, and the reticular activating system; knocking out any one of these causes loss of consciousness.",
@@ -98521,7 +98620,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with coma",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-685"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-685",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:reticular activating s"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Common causes of coma are often non-anatomical: metabolic disturbances, intoxications, generalized seizures, toxic metabolic syndromes, and delirium.",
@@ -98534,7 +98649,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute coma",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-951"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-951",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:metabolic syndrome"
+          ],
+          "harm": [
+            "toxic"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To prevent delirium, keep lights on during the day, get patients out of bed, ensure they use glasses and hearing aids, and maintain a day/night cycle.",
@@ -98547,7 +98681,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients at risk for delirium",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1069"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1069",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hearing aid"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 6.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advocate for delirium prevention: keep lights on during the day, get patients up in a chair, ensure they have glasses and hearing aids to avoid sensory deprivation.",
@@ -98560,7 +98713,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized elderly patients",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1069-2"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1069-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hearing aid"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you correct the underlying metabolic or toxic disturbance, you can often improve consciousness, but recovery is slow and requires consistent effort, especially in delirium-prone brains.",
@@ -98573,7 +98745,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with delirium or coma from reversible causes",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1096"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1096",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:consciousness"
+          ],
+          "harm": [
+            "toxic"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Artery of Percheron stroke causes bilateral medial thalamic infarction; strokes are tiny and can be missed on MRI but cause devastating coma with poor recovery.",
@@ -98586,7 +98777,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with sudden coma and no obvious cause",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1341"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1341",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A blown pupil in a comatose patient is a sign of increased ICP and possible uncal herniation; in an awake patient, consider topical medications (albuterol, scopolamine) or prior cataract surgery.",
@@ -98599,7 +98809,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anisocoria",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1505"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1505",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:albuterol"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Forced eye deviation: if eyes look away from the flaccid side, it's a stroke; if looking toward the flaccid side, it's a seizure.",
@@ -98612,7 +98841,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "comatose patients with hemiparesis",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1587"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1587",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:eye deviation"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Slow roving eye movements ('ping pong balls') are often a sign of delirium or metabolic derangement.",
@@ -98625,7 +98873,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with altered mental status",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1615"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1615",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:delirium"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pinpoint pupils in a comatose patient suggest pontine catastrophe or opiate effect; the mnemonic is 'P's' = pons.",
@@ -98638,7 +98902,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "comatose patients",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1621"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1621",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When examining a comatose patient, apply a painful stimulus once and correctly (using good pinchers) to avoid repeated pinching; the motor response tells you the neurological status.",
@@ -98651,7 +98928,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "comatose patients",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1738"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1738",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A localizing motor response (crossing midline to the stimulus) indicates higher cortical function is working; flexion without crossing midline is worse and suggests blunted awareness.",
@@ -98664,7 +98957,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "comatose patients",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1772"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1772",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you see one side flex and the other side not move, it suggests a unilateral brain injury; if arms are not moving but legs are, consider spinal cord injury.",
@@ -98677,7 +98983,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "comatose patients with asymmetric motor responses",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1844"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1844",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In the comatose patient, always start with ABCs (airway, breathing, circulation) and correct hypotension, hypercapnia, and non-perfusing rhythms before any neurological intervention.",
@@ -98690,7 +99012,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all comatose patients",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1882"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1882",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypercapnia"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nonconvulsive status epilepticus is rare but has >50% mortality because it is poorly recognized and goes on too long; it should not be your first guess.",
@@ -98706,7 +99047,23 @@
       "numbers_unheard": [
         "50"
       ],
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1994"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-1994",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>5"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nonconvulsive status epilepticus has higher mortality than convulsive status because it is poorly recognized and prolonged, leading to brain injury.",
@@ -98719,7 +99076,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected status epilepticus",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2007"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2007",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nonconvulsive status e"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "EEG is marginally helpful because if the seizure is not happening at the moment you record, it doesn't mean it didn't happen, just like an EKG.",
@@ -98732,7 +99105,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected nonconvulsive seizures",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2028"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2028",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "EEG is only marginally helpful; if the seizure is not happening at the moment of recording, a normal EEG does not rule out seizure activity.",
@@ -98745,7 +99137,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected seizures",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2028-2"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2028-2",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "rule out"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Triphasic waves on EEG are very common with metabolic derangements, specifically renal failure.",
@@ -98758,7 +99169,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with metabolic encephalopathy",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2044"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2044",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:triphasic waves"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Periodic lateralized epileptiform discharges (PLEDs) on EEG are highly pathognomonic for HSV encephalitis.",
@@ -98771,7 +99198,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected HSV encephalitis",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2062"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2062",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:periodic lateralized e"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HSV encephalitis shows periodic lateralized epileptiform discharges (PLEDs) on EEG, which are sharply contoured and very pathognomonic.",
@@ -98784,7 +99227,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected encephalitis",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2068"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2068",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:periodic lateralized e"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Delirium precautions, lights on during the day, off at night, are imperative for all non-ICU patients; physicians must enforce them because nurses are stretched thin.",
@@ -98797,7 +99256,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all non-ICU hospitalized patients",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2194"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2194",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:delirium precautions"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Write a nursing PAL task every 6-12 hours specifying: during the day lights on, patient out of bed, fed, glasses and hearing aids on; at night lights off, TV off, hold care unless emergency.",
@@ -98810,7 +99285,30 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients on delirium precautions",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2245"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2245",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:12 hours",
+            "frequency:every 6"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient appears comatose but has a normal head CT, reconsider brain death and evaluate for locked-in syndrome from severe Guillain-Barré or other causes.",
@@ -98823,7 +99321,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being evaluated for brain death with normal imaging",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2356"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2356",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "evaluate"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always talk to comatose patients because they may be awake but locked in, as in severe Guillain-Barré syndrome.",
@@ -98836,7 +99356,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with altered consciousness",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2396"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2396",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:guillain-barré syndrom"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a stroke or structural lesion, the eyes deviate toward the side of the lesion (frontal eye field injury); in a focal seizure, the eyes deviate away from the side of the seizure (hyperactive side).",
@@ -98849,7 +99388,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute neurological deficits",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2539"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2539",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:frontal eye field"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Post-seizure focal weakness is called Todd's paralysis.",
@@ -98862,7 +99420,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after a seizure",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2590"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2590",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:todd's paralysis"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a seizure, eye deviation is contralateral to the side of the seizure focus; the eyes point toward the side of the seizure.",
@@ -98875,7 +99452,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with seizures",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2597"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2597",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:eye deviation"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 6.84
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Upward eye rolling (eyes in the back of the head) has no localizing value; it is Bell's phenomenon, a normal physiologic brainstem response when you open someone's eyes.",
@@ -98888,7 +99484,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with altered consciousness or syncope",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2634"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2634",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bell's phenomenon"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Your assessment starts as soon as you enter the room; observe the patient even before formal interaction.",
@@ -98901,7 +99513,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinical encounters",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2659"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2659",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "interaction"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a time-pressured admission, perform a focused review of systems including chest pain, night sweats, melena, palpitations, presyncope, and shortness of breath.",
@@ -98914,7 +99542,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalists performing admissions",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2939"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-2939",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:review of systems"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When admitting a patient with weight loss, flushing, and palpitations, ask specifically about flushing if the face appears redder than expected.",
@@ -98927,7 +99571,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with unexplained flushing and weight loss",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3048"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3048",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:weight loss"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a patient with flushing, weight loss, and palpitations, consider carcinoid syndrome, thyroid storm, heart failure, and leukemia in the differential.",
@@ -98940,7 +99600,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with flushing, weight loss, and palpitations",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3122"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3122",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:carcinoid syndrome"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Carcinoid tumor symptoms (flushing, palpitations, orthopnea, weight loss) are nonspecific and can fit many differentials, so a broad workup is needed.",
@@ -98953,7 +99632,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with flushing and palpitations",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3314"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3314",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:weight loss"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with anemia and palpitations, check an iron panel to evaluate for iron deficiency; low iron, high TIBC, and low ferritin confirm iron deficiency anemia.",
@@ -98966,7 +99661,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anemia",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3394"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3394",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:iron deficiency anemia"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Total iron measures total iron concentration in blood; ferritin reflects total iron stores; TIBC measures the body's capacity to bind iron to transferrin; iron saturation is the percentage of total iron bound to transferrin; UIBC measures transferrin not bound to iron.",
@@ -98979,7 +99693,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with anemia",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3443"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3443",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ferritin"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CHF is a clinical diagnosis; a patient can meet Framingham criteria (orthopnea, edema, cardiomegaly) even with a normal echocardiogram showing no systolic or diastolic dysfunction.",
@@ -98992,7 +99722,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected CHF",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3623"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3623",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:echocardiogram"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Order tests that will change management; do not chase incidental findings without clinical suspicion, for example, small liver nodules on CT warrant MRI only if you suspect malignancy that would alter management.",
@@ -99005,7 +99751,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient workup",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3707"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3707",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "Order"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Protein-calorie malnutrition is diagnosed subjectively by >20% muscle mass atrophy, lower extremity edema, and low albumin; it is a subjective assessment.",
@@ -99018,7 +99783,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with weight loss and weakness",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3787"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3787",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>2"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a complex patient with suspected malignancy, consult medical oncology, GI, general surgery, and interventional radiology early to coordinate diagnosis and management.",
@@ -99031,7 +99812,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients with complex undiagnosed malignancy",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3862"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3862",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "consult"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a liver biopsy shows neuroendocrine features, the primary site (e.g., colon) is determined by colonoscopy and biopsy of the colonic mass, not from the liver biopsy alone.",
@@ -99044,7 +99841,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with metastatic neuroendocrine tumors",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3958"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-3958",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ki-67 index is a stain specific for neuroendocrine tumors that indicates mitotic activity; a high index (e.g., 60%) signifies aggressive, well-differentiated tumor.",
@@ -99057,7 +99870,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with neuroendocrine tumors",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4109"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4109",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:neuroendocrine tumor"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Synaptophysin and chromogranin are immunohistochemical stains highly specific for well-differentiated neuroendocrine tumors.",
@@ -99070,7 +99899,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected neuroendocrine tumors",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4187"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4187",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:neuroendocrine tumor"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For neuroendocrine tumors, a Ki-67 index of 60% indicates a highly aggressive, high mitotic rate tumor.",
@@ -99083,7 +99928,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neuroendocrine tumors",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4236"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4236",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:neuroendocrine tumor"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Any level of metastasis (M1) automatically makes the cancer stage IV, regardless of T and N status.",
@@ -99096,7 +99957,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "cancer staging",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4356"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4356",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cancer"
+          ],
+          "rarity": 6.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "No hospital on earth will pay for an inpatient PET scan; if a patient's therapeutic options depend on PET results, stabilize and discharge them to get it as an outpatient, even if they return as a readmission.",
@@ -99109,7 +99986,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients needing PET scans",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4439"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4439",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pet scan"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Infiltrative cardiomyopathy from cardiac mets can cause diastolic dysfunction and CHF symptoms even when the echo appears normal; a PET scan may be needed to visualize it.",
@@ -99122,7 +100015,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with known malignancy and new heart failure symptoms",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4495"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4495",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:infiltrative cardiomyo"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A patient with NET who develops new heart failure symptoms with a normal echo may have infiltrative cardiomyopathy from mets; consider PET scan for diagnosis.",
@@ -99135,7 +100044,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with NET and new CHF",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4567"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4567",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:infiltrative cardiomyo"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Somatostatin analogs like octreotide are used in carcinoid syndrome to reduce serotonin secretion and GI motility, similar to their use in GI bleeds.",
@@ -99148,7 +100076,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with carcinoid syndrome",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4708"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4708",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "drug:Somatostatin"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "harm": [
+            "bleeds"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Track chromogranin levels as an objective response marker to octreotide therapy; rising levels can indicate treatment failure.",
@@ -99161,7 +100111,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on octreotide for NET",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4789"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4789",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chromogranin"
+          ],
+          "rarity": 7.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In goals-of-care discussions, be honest and clear, not wishy-washy, and recommend hospice when there is no further curative option; continue chemo may harm more than benefit.",
@@ -99174,7 +100140,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "terminal cancer patients",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4962"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-4962",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hospice"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a stage IV neuroendocrine tumor with high Ki-67 and no response to octreotide, having a goals of care discussion and transitioning to hospice is appropriate when further chemo offers no benefit.",
@@ -99187,7 +100169,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "terminal NET patients",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5004"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5004",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:goals of care discussi"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Most neuroendocrine tumors are diagnosed incidentally when an appendix is sent to pathology after appendectomy; always send the appendix for pathology.",
@@ -99200,7 +100198,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "after appendectomy",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5063"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5063",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:neuroendocrine tumor"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For commonly asked prognosis questions, look up survival data before delivering results; overall 5-year survival for NETs is about 67%, but it depends on stage and differentiation.",
@@ -99213,7 +100230,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with neuroendocrine tumors",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5194"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5194",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Carcinoid syndrome can mimic serotonin syndrome (flushing, palpitations, high fevers) but is due to secreting hormones, not SSRIs; check 5-HIAA in urine.",
@@ -99226,7 +100256,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected carcinoid syndrome",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5231"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5231",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:carcinoid syndrome"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ethanol can precipitate carcinoid syndrome symptoms, including flushing, in patients with neuroendocrine tumors.",
@@ -99239,7 +100288,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with neuroendocrine tumors",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5306"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5306",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:neuroendocrine tumor"
+          ],
+          "harm": [
+            "precipitate"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Carcinoid syndrome symptoms (flushing, diarrhea, palpitations) can be precipitated by ethanol; alcohol intake may cause acute flushing in these patients.",
@@ -99252,7 +100320,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with carcinoid syndrome",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5307"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5307",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:carcinoid syndrome"
+          ],
+          "harm": [
+            "precipitated"
+          ],
+          "rarity": 6.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Only about ten percent of neuroendocrine tumor patients develop carcinoid syndrome, and it is most associated with midgut tumors.",
@@ -99265,7 +100352,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neuroendocrine tumor patients",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5334"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5334",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:neuroendocrine tumor"
+          ],
+          "rarity": 7.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In outpatient evaluation of flushing and chronic diarrhea, consider non-carcinoid causes like menopause, thyroid disease, asthma; ask when flushing occurs especially after eating or drinking alcohol.",
@@ -99278,7 +100381,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatients with flushing",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5346"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5346",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:menopause"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In outpatient evaluation of flushing and diarrhea, first rule out common causes like menopause, thyroid disease, asthma, IBS, serotonin syndrome, endocarditis, and bloodstream infections before considering carcinoid syndrome.",
@@ -99291,7 +100413,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient setting, patients with flushing and diarrhea",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5348"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5348",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:carcinoid syndrome"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Serum chromogranin has 96% specificity for neuroendocrine tumors; a negative result effectively rules out the disease.",
@@ -99304,7 +100445,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients suspected of neuroendocrine tumors",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5420"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5420",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:neuroendocrine tumor"
+          ],
+          "rarity": 6.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Seventeen percent of patients with neuroendocrine tumors have a second primary malignancy, which is often more aggressive and determines prognosis.",
@@ -99317,7 +100474,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with neuroendocrine tumors",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5451"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5451",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:second primary maligna"
+          ],
+          "rarity": 7.4
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For carcinoid syndrome with heart disease, use octreotide and diuretics; tricuspid regurgitation is not what will kill the patient, so valve replacement is rarely indicated.",
@@ -99330,7 +100503,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with carcinoid syndrome and heart disease",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5554"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5554",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:tricuspid regurgitatio"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "kill"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Screening for neuroendocrine tumors in first-degree relatives follows colon cancer guidelines: colonoscopy 10 years before the age of diagnosis of the affected relative.",
@@ -99343,7 +100538,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "first-degree relatives of patients with neuroendocrine tumors",
-      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5681"
+      "pearl_id": "dr-okeefe-on-coma-for-the-non-neurologist-5681",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 years",
+            "test:colonoscopy"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

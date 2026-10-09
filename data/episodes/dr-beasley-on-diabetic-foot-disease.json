@@ -56857,7 +56857,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "non-diabetic patients with neuropathy",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-370"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-370",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diabetic patients may not mount a classic septic response (fever, leukocytosis) even with gangrenous toes; do not be falsely reassured by normal sepsis markers.",
@@ -56870,7 +56889,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with gangrenous toe",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-422"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-422",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:leukocytosis"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a diabetic patient presents with a septic joint or abscess, do not rely on systemic signs of sepsis to decide on surgery; they may not mount a febrile or leukocyte response. These are limb-threatening emergencies requiring immediate surgical drainage.",
@@ -56883,7 +56924,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with foot infection",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-464"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-464",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:surgical drainage"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For diabetic patients, daily self-foot inspection is critical since neuropathy eliminates protective sensation; ulcers or foreign bodies (e.g., a nail) may go unnoticed.",
@@ -56896,7 +56959,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with neuropathy",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-559"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-559",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a diabetic patient with unilateral swelling and redness, do not assume cellulitis; get an X-ray to rule out Charcot neuroarthropathy (dislocating foot).",
@@ -56909,7 +56988,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with unilateral foot swelling and redness",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-696"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-696",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Partial foot or toe amputations can serve as a wake-up call that redirects patients to foot care, potentially preventing major amputations.",
@@ -56922,7 +57020,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients who have undergone minor amputation",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-813"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-813",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:amputation"
+          ],
+          "harm": [
+            "amputations"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Major amputation (BKA/AKA) increases mortality significantly due to increased energy cost of walking and fluid volume dysregulation; strive for limb salvage with partial foot amputations when possible.",
@@ -56935,7 +57052,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with foot complications",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-826"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-826",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:limb salvage"
+          ],
+          "harm": [
+            "amputation"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A1c below 8% is the surgical threshold for elective foot procedures and significantly lowers risk of lower extremity complications.",
@@ -56948,7 +57084,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients considering elective foot surgery",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-970"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-970",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:below 8",
+            "test:A1c"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A1c below 8 is the surgical threshold for foot issues; better control also helps save kidneys and eyes.",
@@ -56961,7 +57114,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients at risk for foot problems",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1005"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1005",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:below 8",
+            "test:A1c"
+          ],
+          "rarity": 6.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid cotton socks for diabetic patients; instead recommend synthetic wicking socks (e.g., SmartWool, Thorlo, Darn Tough) that reduce moisture and friction.",
@@ -56974,7 +57144,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1032"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1032",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:socks"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cotton socks absorb bacteria and fungus and keep it close to the skin. Recommend synthetic fiber wicking socks (e.g., SmartWool, Thorlo, Darn Tough) to reduce friction and moisture.",
@@ -56987,7 +57176,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1032-2"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1032-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:socks"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The single most important thing to communicate to diabetic patients is to look at their feet every day. If they cannot bend down, have them use a mirror against the wall or a phone camera.",
@@ -57000,7 +57208,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all diabetic patients",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1125"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1125",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To check shoe fit, remove the insole, put it on the floor, and step on it. If the foot falls off the side, the shoe is too narrow; if toes are closer than a thumb's width to the end, it is too short.",
@@ -57013,7 +57237,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients selecting shoes",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1219"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1219",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:shoe fit"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dry, non-moisturized skin is less resistant to infection. Daily lotion helps maintain skin elasticity and prevent cracking.",
@@ -57026,7 +57269,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1376"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1376",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:Daily"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diabetics often have some level of malnutrition; check prealbumin and ensure good nutritional support to minimize risk of non-healing wounds.",
@@ -57039,7 +57298,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients, especially those with wounds",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1395"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1395",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:malnutrition"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients with open foot wounds must cover the foot with a trash bag and tape or a waterproof sleeve during showers to prevent contaminated water from entering the wound and causing infection.",
@@ -57052,7 +57330,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with open foot wounds",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1433"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1433",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For wound cleaning, use saline, Vashe (hypochlorous solution), or diluted Betadine (dark tea color). Avoid repeated Hibiclens use on open wounds.",
@@ -57065,7 +57356,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with open foot wounds",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1508"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1508",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:betadine"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Showing patients pictures of advanced diabetic foot disease (rotting foot with tubes) can be a powerful motivator for behavior change when they are not taking the condition seriously.",
@@ -57078,7 +57388,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients who are not adherent or not understanding the severity",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1571"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1571",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:diabetic foot disease"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In the hospital, obtain a deep tissue culture before giving antibiotics. Always dress an open wound with gauze and a Betadine swab to reduce surface bacteria and colonization.",
@@ -57091,7 +57417,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with infected diabetic foot wounds",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1634"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1634",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If concerned for abscess or osteomyelitis, get an MRI. Gadolinium contrast may not be necessary and has potential long-term risks including brain deposition and kidney irritation.",
@@ -57104,7 +57449,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected abscess or osteomyelitis",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1751"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1751",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ABI is unreliable in diabetics due to arterial hardening (false normal). Use toe-brachial index or TCOM (TcPO2) for vascular assessment.",
@@ -57117,7 +57478,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with foot wounds",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1819"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1819",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ABI"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "TCOM (transcutaneous partial pressure of oxygen) normal is above 40 mmHg; wound healing is expected above 25 mmHg. If very low, consult vascular or interventional cardiology.",
@@ -57130,7 +57510,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with foot wounds",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1915"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-1915",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:40 mmHg",
+            "threshold:above 4"
+          ],
+          "actionable": [
+            "consult"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In diabetic foot disease, sepsis may present with only fatigue; check EKG and cardiac enzymes as you would for a heart attack.",
@@ -57143,7 +57543,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diabetic foot disease",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-2170"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-2170",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 6.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "All foot abscesses, septic joints, gas noticed on X-ray, or crepitus on palpation of the foot are surgical emergencies that require immediate surgical consultation.",
@@ -57156,7 +57578,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diabetic foot disease",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-2179"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-2179",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a digital block before toenail avulsion, only two injections are needed (one on each side of the toe).",
@@ -57169,7 +57610,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring toenail removal",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-2899"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-2899",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:toenail avulsion"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a digital block, use a maximum of 5-6 cc of bupivacaine (Marcaine).",
@@ -57182,7 +57639,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring toenail removal",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-2920"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-2920",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:bupivacaine"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For toenail avulsion, use a freer elevator to free the nail and yank it off; no incisions are needed.",
@@ -57195,7 +57671,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring toenail removal",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-2938"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-2938",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:toenail avulsion"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid phenol ablation for ingrown toenails in patients with uncontrolled diabetes; the nail should be removed without chemical matrixectomy until glucose control is achieved.",
@@ -57208,7 +57703,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with uncontrolled diabetes",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-2960"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-2960",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ingrown toenail"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use epinephrine in digital blocks for patients with known or suspected peripheral arterial disease or diabetes.",
@@ -57221,7 +57735,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PAD or diabetes",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3031"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3031",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:peripheral arterial di"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use epinephrine with lidocaine in patients with known PAD, suspicion of arterial disease, or diabetes.",
@@ -57234,7 +57767,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with known PAD, suspicion of arterial disease, or diabetes",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3031-2"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3031-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:lidocaine"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 5.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To prevent retained tourniquets during toe procedures, avoid roll-on ring tourniquets; instead, use a long elastic strip with a hemostat attached that remains visible.",
@@ -57247,7 +57799,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any toe procedure",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3077"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3077",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:tourniquet"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When using a digital tourniquet, use a long elastic strip dangling with a hemostat attached so it is not forgotten under dressings.",
@@ -57260,7 +57831,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "during digital procedures",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3077-2"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3077-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:tourniquet"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not remove a toenail solely for nail fungus; it should be reserved for ingrown toenails causing pain, drainage, or repeated wounds.",
@@ -57273,7 +57863,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with nail fungus",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3116"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3116",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ingrown toenail"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Oral terbinafine (Lamisil) works about 70-80% of the time but has a 90% recurrence rate, so the presenter avoids prescribing it due to liver risk and lack of durable benefit.",
@@ -57286,7 +57895,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with nail fungus considering oral treatment",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3143"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3143",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:terbinafine"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nail fungus recurrence after treatment is often due to poor shoe fit; if shoes are too small the infection will return.",
@@ -57299,7 +57924,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with nail fungus",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3153"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3153",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:shoe fit"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients on oral Lamisil must also disinfect their shoes with a Clorox wipe to prevent reinfection after finishing the course.",
@@ -57312,7 +57953,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients prescribed oral terbinafine for nail fungus",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3162"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3162",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For nail fungus, have the patient file with a disposable memory board and use cheap over-the-counter topical treatments like the combined natural/antifungal product mentioned.",
@@ -57325,7 +57979,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with nail fungus",
-      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3184"
+      "pearl_id": "dr-beasley-on-diabetic-foot-disease-3184",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

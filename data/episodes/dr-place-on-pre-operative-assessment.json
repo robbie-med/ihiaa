@@ -51363,7 +51363,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients awaiting elective surgery",
-      "pearl_id": "dr-place-on-pre-operative-assessment-361"
+      "pearl_id": "dr-place-on-pre-operative-assessment-361",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When sending a clearance form to the surgeon, also write and attach a formal report listing the patient's specific risks; this distinguishes you from most primary care physicians.",
@@ -51376,7 +51389,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "family physicians doing pre-op evaluation",
-      "pearl_id": "dr-place-on-pre-operative-assessment-398"
+      "pearl_id": "dr-place-on-pre-operative-assessment-398",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:primary care"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Surgical duration under one hour carries lower stress than procedures over one hour; five-hour neurosurgical cases are much harder on the body.",
@@ -51389,7 +51418,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all surgical patients",
-      "pearl_id": "dr-place-on-pre-operative-assessment-478"
+      "pearl_id": "dr-place-on-pre-operative-assessment-478",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recognize spiritual risks before surgery: assess the patient's hope, fear, anxiety, and beliefs about God's will or illness causation, as these are often overlooked resources or vulnerabilities.",
@@ -51402,7 +51444,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all pre-operative patients",
-      "pearl_id": "dr-place-on-pre-operative-assessment-637"
+      "pearl_id": "dr-place-on-pre-operative-assessment-637",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:belief"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "About 30% of patients develop clinical major depressive disorder within one year after CABG, so consider starting an SSRI or SNRI before surgery.",
@@ -51415,7 +51473,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing CABG",
-      "pearl_id": "dr-place-on-pre-operative-assessment-801"
+      "pearl_id": "dr-place-on-pre-operative-assessment-801",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:major depressive disor"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Most patients go into elective surgery in a sub-optimized nutritional state, either overweight or underweight, which impairs recovery.",
@@ -51428,7 +51505,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing elective surgery",
-      "pearl_id": "dr-place-on-pre-operative-assessment-858"
+      "pearl_id": "dr-place-on-pre-operative-assessment-858",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Assess social support structure before surgery; patients without family or caregivers and from depressed socioeconomic situations have worse outcomes.",
@@ -51441,7 +51531,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all pre-operative patients",
-      "pearl_id": "dr-place-on-pre-operative-assessment-923"
+      "pearl_id": "dr-place-on-pre-operative-assessment-923",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:social support"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The NSQIP calculator accepts the actual CPT code of the planned surgery, making risk estimates specific to that procedure.",
@@ -51454,7 +51560,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians using NSQIP",
-      "pearl_id": "dr-place-on-pre-operative-assessment-983"
+      "pearl_id": "dr-place-on-pre-operative-assessment-983",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the ACS risk calculator to generate patient-specific risks for serious complications, pneumonia, cardiac events, surgical site infection, UTI, VTE, and discharge to nursing/rehab facility; print and sign the single-page output for the chart.",
@@ -51467,7 +51586,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing elective surgery",
-      "pearl_id": "dr-place-on-pre-operative-assessment-1251"
+      "pearl_id": "dr-place-on-pre-operative-assessment-1251",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acs risk calculator"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A serious complication risk of 10% or above is a reasonable rule of thumb to consider postponing surgery for optimization, e.g., if A1c is 12.",
@@ -51480,7 +51618,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with elevated surgical risk",
-      "pearl_id": "dr-place-on-pre-operative-assessment-1330"
+      "pearl_id": "dr-place-on-pre-operative-assessment-1330",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:A1c"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has chest pain or dyspnea on climbing a flight of stairs, they need a workup for that problem (angina or dyspnea), not just cardiac clearance for surgery; pause the surgical process to evaluate.",
@@ -51493,7 +51650,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with positive cardiac symptom screen",
-      "pearl_id": "dr-place-on-pre-operative-assessment-1348"
+      "pearl_id": "dr-place-on-pre-operative-assessment-1348",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cardiac clearance"
+          ],
+          "actionable": [
+            "evaluate"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients using more than about three servings of alcohol per week should have a conversation about it; the pre-op visit is a great time to address alcohol, opioid use, and other health risks.",
@@ -51506,7 +51682,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with alcohol or opioid use",
-      "pearl_id": "dr-place-on-pre-operative-assessment-1429"
+      "pearl_id": "dr-place-on-pre-operative-assessment-1429",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:per week"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Screen functional status by asking: can you climb two flights of stairs without stopping, without chest pain? That is equivalent to 4 METs, the threshold needed to avoid major adverse cardiac events during surgery.",
@@ -51519,7 +51714,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being assessed for surgery",
-      "pearl_id": "dr-place-on-pre-operative-assessment-1536"
+      "pearl_id": "dr-place-on-pre-operative-assessment-1536",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:functional status"
+          ],
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Four METs is the magic number needed to have surgery without having MACE; surgery is fairly low risk because 4 METs is not that much activity.",
@@ -51532,7 +51746,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all surgical patients",
-      "pearl_id": "dr-place-on-pre-operative-assessment-1612"
+      "pearl_id": "dr-place-on-pre-operative-assessment-1612",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nutritional risk factors include BMI less than 21 and age over 65; protein malnutrition is the most predictive of bad outcomes.",
@@ -51545,7 +51772,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients, especially those with hip fracture or from nursing homes",
-      "pearl_id": "dr-place-on-pre-operative-assessment-1704"
+      "pearl_id": "dr-place-on-pre-operative-assessment-1704",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 2"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients over 65 having major surgery, most pre-op physicians would get a CBC; the value is in finding incidental anemia, not in assessing pre-op risk.",
@@ -51558,7 +51801,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients age 65+ undergoing major surgery",
-      "pearl_id": "dr-place-on-pre-operative-assessment-1949"
+      "pearl_id": "dr-place-on-pre-operative-assessment-1949",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 6",
+            "test:CBC"
+          ],
+          "rarity": 6.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients over 65 having major surgery, most pre-op physicians recommend a CBC, not for pre-op risk but to find incidental findings.",
@@ -51571,7 +51831,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients over 65 undergoing major surgery",
-      "pearl_id": "dr-place-on-pre-operative-assessment-1963"
+      "pearl_id": "dr-place-on-pre-operative-assessment-1963",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 6",
+            "test:CBC"
+          ],
+          "rarity": 6.68
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a 35-year-old, the chance of finding something on a CBC is almost zero, and the chance of finding something you didn't want to know is higher than zero, so routine CBC is not indicated.",
@@ -51584,7 +51861,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "younger patients without specific indications",
-      "pearl_id": "dr-place-on-pre-operative-assessment-1977"
+      "pearl_id": "dr-place-on-pre-operative-assessment-1977",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CBC"
+          ],
+          "rarity": 6.51
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Routine PT/PTT is not indicated for the average patient getting a knee replacement; only check if the patient is on anticoagulation or has a bleeding history.",
@@ -51597,7 +51890,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "average surgical patient without anticoagulation or bleeding history",
-      "pearl_id": "dr-place-on-pre-operative-assessment-2035"
+      "pearl_id": "dr-place-on-pre-operative-assessment-2035",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:PT"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid routine EKG in a 30-something patient because you may find an incidental abnormality that leads to unnecessary echo and anxiety.",
@@ -51610,7 +51925,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "younger patients without cardiac symptoms",
-      "pearl_id": "dr-place-on-pre-operative-assessment-2077"
+      "pearl_id": "dr-place-on-pre-operative-assessment-2077",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When you involve a cardiologist for pre-op clearance, you will often get a letter back saying 'no further testing required', they rarely order extensive testing.",
@@ -51623,7 +51957,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with known congestive heart failure referred to cardiology",
-      "pearl_id": "dr-place-on-pre-operative-assessment-2153"
+      "pearl_id": "dr-place-on-pre-operative-assessment-2153",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A good exercise MPS pushes patients to about 10 METs; if they can survive that, they will likely tolerate surgery.",
@@ -51636,7 +51986,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing cardiac stress testing before surgery",
-      "pearl_id": "dr-place-on-pre-operative-assessment-2213"
+      "pearl_id": "dr-place-on-pre-operative-assessment-2213",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:exercise"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Resting echo is not routinely recommended for pre-op evaluation unless you hear a big murmur or there is a history of endocarditis.",
@@ -51649,7 +52015,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "asymptomatic patients without murmur or endocarditis history",
-      "pearl_id": "dr-place-on-pre-operative-assessment-2302"
+      "pearl_id": "dr-place-on-pre-operative-assessment-2302",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Smoking cessation is the number one thing you can do to change a patient's life; set a quit date for the day of surgery and use nicotine replacement or Chantix.",
@@ -51662,7 +52041,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who smoke and are planning surgery",
-      "pearl_id": "dr-place-on-pre-operative-assessment-2469"
+      "pearl_id": "dr-place-on-pre-operative-assessment-2469",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:smoking cessation"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Protein is the biggest nutritional predictor of surgical recovery; encourage elderly patients to use Boost, Ensure, or protein shakes to combat sarcopenia.",
@@ -51675,7 +52073,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients with sarcopenia",
-      "pearl_id": "dr-place-on-pre-operative-assessment-2555"
+      "pearl_id": "dr-place-on-pre-operative-assessment-2555",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:sarcopenia"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the RCRI (Revised Cardiac Risk Index) to communicate cardiovascular risk to the surgeon; include it in your note or quick text.",
@@ -51688,7 +52105,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all pre-operative patients",
-      "pearl_id": "dr-place-on-pre-operative-assessment-2643"
+      "pearl_id": "dr-place-on-pre-operative-assessment-2643",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:revised cardiac risk i"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient's A1c is 12, delay surgery and work with them monthly until glucose control improves before re-referring to the surgeon.",
@@ -51701,7 +52137,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with poorly controlled diabetes (A1c > 12)",
-      "pearl_id": "dr-place-on-pre-operative-assessment-2781"
+      "pearl_id": "dr-place-on-pre-operative-assessment-2781",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:monthly",
+            "test:A1c"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

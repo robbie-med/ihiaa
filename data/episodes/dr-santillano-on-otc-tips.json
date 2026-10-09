@@ -40625,7 +40625,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting meloxicam",
-      "pearl_id": "dr-santillano-on-otc-tips-12"
+      "pearl_id": "dr-santillano-on-otc-tips-12",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:nsaids"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For Unisom, specify the sleep tabs (doxylamine) because they can be broken in half for a lower dose; the sleep gels (diphenhydramine) are not as effective and cannot be halved.",
@@ -40638,7 +40657,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing sleep aid",
-      "pearl_id": "dr-santillano-on-otc-tips-175"
+      "pearl_id": "dr-santillano-on-otc-tips-175",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:diphenhydramine"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pregnancy, antihistamines and Tylenol are safe, but avoid decongestants (phenylephrine, pseudoephedrine) and anything with '-D' in the name.",
@@ -40651,7 +40686,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients",
-      "pearl_id": "dr-santillano-on-otc-tips-289"
+      "pearl_id": "dr-santillano-on-otc-tips-289",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pseudoephedrine"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Infant ibuprofen is 100 mg/5 mL, while children's ibuprofen (Motrin for infants) is 50 mg/1.25 mL; always include the concentration when prescribing weight-based doses.",
@@ -40664,7 +40718,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children requiring ibuprofen",
-      "pearl_id": "dr-santillano-on-otc-tips-336"
+      "pearl_id": "dr-santillano-on-otc-tips-336",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:100 mg"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recommend vitamin D at a max of 2000 IU daily unless the patient has documented deficiency; if taking 10,000 IU, it should be taken once weekly, not daily.",
@@ -40677,7 +40750,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults on vitamin D supplements",
-      "pearl_id": "dr-santillano-on-otc-tips-412"
+      "pearl_id": "dr-santillano-on-otc-tips-412",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2000 IU",
+            "frequency:daily"
+          ],
+          "rarity": 6.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients on multiple supplements with unexplained symptoms, advise them to ask a pharmacist about interactions, then stop all supplements, wait a week or two, and restart one by one to identify the culprit.",
@@ -40690,7 +40780,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on multiple supplements with new symptoms",
-      "pearl_id": "dr-santillano-on-otc-tips-596"
+      "pearl_id": "dr-santillano-on-otc-tips-596",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with outdoor allergies, recommend using a nasal saline rinse immediately after coming inside to reset the sinuses, then use nasal spray afterward.",
@@ -40703,7 +40809,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with outdoor allergies",
-      "pearl_id": "dr-santillano-on-otc-tips-772"
+      "pearl_id": "dr-santillano-on-otc-tips-772",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When using Flonase, administer with the opposite hand pointing toward the ear (not the septum) to avoid epistaxis and improve delivery.",
@@ -40717,7 +40842,23 @@
       "prompt_version": "v1",
       "applies_to": "patients using Flonase",
       "by_presenter": false,
-      "pearl_id": "dr-santillano-on-otc-tips-1020"
+      "pearl_id": "dr-santillano-on-otc-tips-1020",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "administer"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with frequent UTIs, cranberry supplements can be tried as a preventive measure.",
@@ -40730,7 +40871,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with frequent UTIs",
-      "pearl_id": "dr-santillano-on-otc-tips-1084"
+      "pearl_id": "dr-santillano-on-otc-tips-1084",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cranberry supplement"
+          ],
+          "actionable": [
+            "measure"
+          ],
+          "rarity": 7.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Azo (phenazopyridine) will mess up a urinalysis, making it pan-positive and unhelpful.",
@@ -40743,7 +40903,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on Azo",
-      "pearl_id": "dr-santillano-on-otc-tips-1092"
+      "pearl_id": "dr-santillano-on-otc-tips-1092",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:phenazopyridine"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with frequent UTIs, cranberry supplements may help; be aware that Azo can cause a false-positive urine dipstick and should be noted if a UA is ordered.",
@@ -40756,7 +40932,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with UTI symptoms or on Azo",
-      "pearl_id": "dr-santillano-on-otc-tips-1094"
+      "pearl_id": "dr-santillano-on-otc-tips-1094",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cranberry supplement"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Salonpas patches come in two formulations: one with lidocaine 4% (similar to prescription 5% patches) and one with menthol; avoid aspirin-containing creams (e.g., Aspercreme) in children.",
@@ -40769,7 +40961,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with back pain",
-      "pearl_id": "dr-santillano-on-otc-tips-1144"
+      "pearl_id": "dr-santillano-on-otc-tips-1144",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:lidocaine"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Salonpas patches come in two formulations: one with lidocaine 4% (vs prescription 5%) and one with menthol; they are a good OTC option for back pain.",
@@ -40782,7 +40993,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with back pain",
-      "pearl_id": "dr-santillano-on-otc-tips-1144-2"
+      "pearl_id": "dr-santillano-on-otc-tips-1144-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:lidocaine"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "OTC diclofenac gel is very effective; patients who say it doesn't work likely didn't use it correctly.",
@@ -40795,7 +41022,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pain",
-      "pearl_id": "dr-santillano-on-otc-tips-1239"
+      "pearl_id": "dr-santillano-on-otc-tips-1239",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:diclofenac gel"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For fungal infections, OTC clotrimazole works faster than nystatin.",
@@ -40808,7 +41054,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fungal infections",
-      "pearl_id": "dr-santillano-on-otc-tips-1441"
+      "pearl_id": "dr-santillano-on-otc-tips-1441",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:clotrimazole"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For diaper rash, start OTC clotrimazole early to prevent progression to pain and crying; most diaper rashes become fungal.",
@@ -40821,7 +41083,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with diaper rash",
-      "pearl_id": "dr-santillano-on-otc-tips-1491"
+      "pearl_id": "dr-santillano-on-otc-tips-1491",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:clotrimazole"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anyone taking an antibiotic should supplement with a probiotic or yogurt daily while on it and for a couple days after to prevent diarrhea and fungal infections.",
@@ -40834,7 +41115,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on antibiotics",
-      "pearl_id": "dr-santillano-on-otc-tips-1536"
+      "pearl_id": "dr-santillano-on-otc-tips-1536",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients flying with sinus congestion, recommend Afrin (oxymetazoline) to prevent ear barotrauma.",
@@ -40847,7 +41144,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients flying with sinus congestion",
-      "pearl_id": "dr-santillano-on-otc-tips-1576"
+      "pearl_id": "dr-santillano-on-otc-tips-1576",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:afrin"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Colace (docusate) is a cheap laxative option at $4 for 120 pills; it works well for patients starting pain medicine or iron.",
@@ -40860,7 +41173,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with constipation, especially starting opioids or iron",
-      "pearl_id": "dr-santillano-on-otc-tips-1630"
+      "pearl_id": "dr-santillano-on-otc-tips-1630",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:docusate"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For pediatric constipation, chia seeds (1/4 to 1/2 tablespoon) mixed in water or yogurt work as well as MiraLAX and can be started at 6 months.",
@@ -40876,7 +41208,24 @@
       "numbers_unheard": [
         "4"
       ],
-      "pearl_id": "dr-santillano-on-otc-tips-1744"
+      "pearl_id": "dr-santillano-on-otc-tips-1744",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 months",
+            "threshold:1/4"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tums (calcium carbonate) can cause constipation and kidney stones if overused; escalate care if patients are using them like candy.",
@@ -40889,7 +41238,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using Tums frequently",
-      "pearl_id": "dr-santillano-on-otc-tips-2051"
+      "pearl_id": "dr-santillano-on-otc-tips-2051",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:calcium carbonate"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ask patients with insomnia what they are currently taking and ensure they know the maximum recommended dose of OTC sleep aids.",
@@ -40902,7 +41267,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with insomnia",
-      "pearl_id": "dr-santillano-on-otc-tips-2131"
+      "pearl_id": "dr-santillano-on-otc-tips-2131",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:insomnia"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Long-term use of Benadryl (diphenhydramine) for sleep may be associated with a higher incidence of Alzheimer's; avoid it if possible.",
@@ -40915,7 +41299,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using Benadryl for sleep",
-      "pearl_id": "dr-santillano-on-otc-tips-2140"
+      "pearl_id": "dr-santillano-on-otc-tips-2140",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:diphenhydramine"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sunscreen sticks are best for applying to children's faces; make it fun by asking what animal they want to be.",
@@ -40928,7 +41331,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children needing facial sunscreen",
-      "pearl_id": "dr-santillano-on-otc-tips-2171"
+      "pearl_id": "dr-santillano-on-otc-tips-2171",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sunscreen"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For applying sunscreen to a child's face, use a stick formulation (like a deodorant stick) and make it fun by asking what animal they want to be.",
@@ -40941,7 +41360,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children needing facial sunscreen",
-      "pearl_id": "dr-santillano-on-otc-tips-2171-2"
+      "pearl_id": "dr-santillano-on-otc-tips-2171-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:sunscreen"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sunburn risk is worse in water because of UV refraction; a shirt provides better protection than sunscreen alone.",
@@ -40954,7 +41392,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "people in water (swimming, floating)",
-      "pearl_id": "dr-santillano-on-otc-tips-2210"
+      "pearl_id": "dr-santillano-on-otc-tips-2210",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sunscreen"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cimetidine, due to its antiviral properties, may help treat warts when used at high doses.",
@@ -40967,7 +41421,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with warts",
-      "pearl_id": "dr-santillano-on-otc-tips-2297"
+      "pearl_id": "dr-santillano-on-otc-tips-2297",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:Cimetidine"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Taking multiple products containing the same active ingredient can be fatal and cause liver failure; always check for duplicate ingredients.",
@@ -40980,7 +41453,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients taking multiple OTC or prescription medications",
-      "pearl_id": "dr-santillano-on-otc-tips-2310"
+      "pearl_id": "dr-santillano-on-otc-tips-2310",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "always"
+          ],
+          "harm": [
+            "fatal"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients on Norco or Percocet must be warned not to take additional Tylenol (acetaminophen) because these combination products already contain it.",
@@ -40993,7 +41485,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on Norco or Percocet",
-      "pearl_id": "dr-santillano-on-otc-tips-2329"
+      "pearl_id": "dr-santillano-on-otc-tips-2329",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:acetaminophen"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When prescribing butalbital with Tylenol, instruct patients not to take more than 600 mg of additional Tylenol.",
@@ -41006,7 +41514,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on butalbital with Tylenol",
-      "pearl_id": "dr-santillano-on-otc-tips-2338"
+      "pearl_id": "dr-santillano-on-otc-tips-2338",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:600 mg",
+            "threshold:more than 6"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with ear ringing (tinnitus), OTC products found in the discount section of Walmart may be worth trying.",
@@ -41019,7 +41544,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with tinnitus",
-      "pearl_id": "dr-santillano-on-otc-tips-2354"
+      "pearl_id": "dr-santillano-on-otc-tips-2354",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tinnitus"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

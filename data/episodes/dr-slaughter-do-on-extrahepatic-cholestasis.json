@@ -75309,7 +75309,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic hyperbilirubinemia",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-327"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-327",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hyperbilirubinemia"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a post-surgical patient with a hematoma, unconjugated bilirubin rises from hemolysis; if the liver's ability to excrete conjugated bilirubin is impaired, both fractions rise, creating a confusing mixed picture.",
@@ -75322,7 +75338,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "post-surgical patients with hematoma and underlying liver disease",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-471"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-471",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bilirubin"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If alkaline phosphatase is elevated in isolation and the source is unclear, check GGT or 5'-nucleosidase to differentiate liver from bone origin.",
@@ -75335,7 +75367,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with isolated alkaline phosphatase elevation",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-781"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-781",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:alkaline phosphatase"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ultrasound is the first imaging step for jaundice with elevated LFTs, but bowel gas can limit sensitivity.",
@@ -75348,7 +75399,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with jaundice and elevated LFTs",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-895"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-895",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:Ultrasound"
+          ],
+          "rarity": 6.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For high-risk choledocholithiasis (stone on imaging, acute cholangitis, or bilirubin >4 with dilated CBD), proceed directly to ERCP without MRCP.",
@@ -75361,7 +75428,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with high-risk choledocholithiasis",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1026"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1026",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>4"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Normal common bile duct diameter is 6 mm with gallbladder, 8 mm without; post-cholecystectomy CBD >10 mm is common due to loss of reservoir.",
@@ -75377,7 +75460,24 @@
       "numbers_unheard": [
         "10"
       ],
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1098"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1098",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 mm",
+            "threshold:>1"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For intermediate-risk choledocholithiasis (abnormal LFTs, dilated CBD but not markedly elevated bilirubin), obtain MRCP before ERCP.",
@@ -75390,7 +75490,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with intermediate risk of choledocholithiasis",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1137"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1137",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:LFTs"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If ERCP fails due to difficult anatomy (e.g., post-bariatric surgery), options include endoscopic ultrasound-guided rendezvous, precut sphincterotomy, or external biliary drainage.",
@@ -75403,7 +75522,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with failed ERCP",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1198"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1198",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is too sick for ERCP, an external biliary drain can be placed to decompress and clear infection.",
@@ -75416,7 +75551,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients too ill for ERCP",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1288"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1288",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CT with dedicated liver protocol and contrast is best for characterizing masses seen on ultrasound or ERCP.",
@@ -75429,7 +75577,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with a mass seen on imaging",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1436"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1436",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected pancreatic cancer, get a CT scan of the liver and pancreas with contrast as the preferred imaging modality.",
@@ -75442,7 +75606,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected pancreatic cancer",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1594"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1594",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CA 19-9 is not useful for ruling in or out pancreatic cancer; it is most useful as a baseline to monitor response to treatment.",
@@ -75459,7 +75639,29 @@
         "19",
         "9"
       ],
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1647"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1647",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ca 19-9"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "rarity": 6.53,
+          "capped": [
+            "number not heard: 19, 9"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The only potential cure for pancreatic adenocarcinoma is surgical resection, which for head tumors requires a Whipple procedure (pancreaticoduodenectomy).",
@@ -75472,7 +75674,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pancreatic adenocarcinoma",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1693"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1693",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pancreatic adenocarcin"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Most pancreatic cancers causing jaundice are in the head of the pancreas because the head is close to the biliary tree.",
@@ -75485,7 +75703,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pancreatic cancer and jaundice",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1710"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1710",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:jaundice"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For intermediate pancreatic cancers with some invasion, use neoadjuvant chemotherapy first to shrink the tumor and treat micrometastases before surgery.",
@@ -75498,7 +75732,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with borderline resectable pancreatic cancer",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1900"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1900",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:neoadjuvant chemothera"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pancreatic neuroendocrine tumors are rare (1-2% of pancreatic tumors) and less aggressive; if small and inactive, they can be monitored with surveillance.",
@@ -75511,7 +75764,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pancreatic neuroendocrine tumors",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1971"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-1971",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pancreatic neuroendocr"
+          ],
+          "rarity": 7.68
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Almost all patients with MEN type 1 will develop a pancreatic neuroendocrine tumor at some point.",
@@ -75524,7 +75793,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with MEN type 1",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-2025"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-2025",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pancreatic neuroendocr"
+          ],
+          "rarity": 6.03
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ampullary malignancies account for about 20% of neoplastic common bile duct obstructions.",
@@ -75537,7 +75822,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with neoplastic biliary obstruction",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-2105"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-2105",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:common bile duct"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cholangiocarcinoma is often advanced at diagnosis; only about 1.5% of cases are resectable.",
@@ -75553,7 +75854,23 @@
       "numbers_unheard": [
         "1.5"
       ],
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-2202"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-2202",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cholangiocarcinoma"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For painless jaundice in an outpatient setting, order a CT scan with contrast ASAP and refer to oncology if anything is found.",
@@ -75566,7 +75883,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatients with painless jaundice",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-2336"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-2336",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.55
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IBS patients have a higher incidence of systemic inflammatory diseases, similar to IBD patients, suggesting a shared inflammatory mechanism.",
@@ -75579,7 +75915,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with IBS",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-3087"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-3087",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:stemi"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IBS accounts for 12% of primary care visits and 28% of gastroenterology referrals.",
@@ -75592,7 +75944,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-3439"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-3439",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:gastroenterology"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "One third of primary care physicians and gastroenterologists agree that IBS management is highly frustrating.",
@@ -75605,7 +75973,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians managing IBS",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-3450"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-3450",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:primary care"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Higher peristalsis reduces absorption; lower peristalsis increases water extraction and leads to constipation.",
@@ -75618,7 +76002,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-3513"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-3513",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:constipation"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The enteric nervous system coordinates peristalsis via the myenteric plexus and controls absorption and vascular tone via the submucosal plexus.",
@@ -75631,7 +76031,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-3581"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-3581",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:enteric nervous system"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If circular muscles tighten down, peristalsis is blocked; if longitudinal muscles do not coordinate, peristalsis fails.",
@@ -75644,7 +76060,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-3900"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-3900",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Antibodies attacking the mucosal lining cause ulcerations; antibodies attacking the submucosal plexus alter absorption; antibodies attacking the myenteric plexus alter peristalsis.",
@@ -75657,7 +76089,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with autoimmune gut disease",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-4033"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-4033",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Viruses steal host membrane, so antiviral antibodies are directed against self-antigens, leading to autoimmunity.",
@@ -75670,7 +76115,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-4227"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-4227",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:autoimmunity"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The immune system does not distinguish well between self and viral antigens, which is why autoimmune disease develops after infections.",
@@ -75683,7 +76144,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-4249"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-4249",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.4
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Post-infectious IBS can develop after acute gastroenteritis; a subset of patients develop IBS symptoms as postinfectious irritable bowel syndrome.",
@@ -75696,7 +76170,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after acute gastroenteritis",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-4407"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-4407",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:irritable bowel syndro"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The colonic lamina propria in IBS patients has considerably larger areas occupied by total immune cells, CD3, CD4, CD8, and mast cells compared to healthy individuals.",
@@ -75709,7 +76199,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "IBS patients",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-4429"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-4429",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IBS involves augmented cellular immune response with elevated production of proinflammatory cytokines like tumor necrosis factor, similar to asthma.",
@@ -75722,7 +76225,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "IBS patients",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-4480"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-4480",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:asthma"
+          ],
+          "harm": [
+            "necrosis"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gastroenterologists should biopsy the colon even if it looks normal under scope, because not everything is mucosa-based; pathology can reveal immune cell infiltration.",
@@ -75735,7 +76257,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected IBS",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-4596"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-4596",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Antibacterial antibodies (e.g., against flagellin) are negatively correlated with the density of enteric ganglia, linking immune activation to impaired gut function.",
@@ -75748,7 +76286,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "IBS patients",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5081"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5081",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Autoantibodies as biomarkers for IBS are still controversial because sensitivity and specificity are not as high as for IBD, but combining multiple autoantibodies in a panel improves differentiation from healthy controls.",
@@ -75761,7 +76312,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected IBS",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5254"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5254",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sensitivity and specif"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The IBS Smart Test is proprietary and costs $250; LabCorp cannot perform it. Other antibody panels are available through LabCorp.",
@@ -75774,7 +76341,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected autoimmune IBS",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5336"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5336",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:labcorp"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anti-IgE monoclonal antibodies used for asthma can also result in almost complete resolution of IBS symptoms, but this is only indicated if the patient has both asthma and an approved indication for anti-IgE.",
@@ -75787,7 +76370,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with both asthma and IBS who qualify for anti-IgE therapy",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5359"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5359",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:anti-ige monoclonal an"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anti-IgE monoclonal antibodies improve both asthma and IBS symptoms, supporting a shared disease process across tissues.",
@@ -75800,7 +76399,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with asthma and IBS",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5359-2"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5359-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:anti-ige monoclonal an"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anti-IgE therapy is not approved for IBS alone; it is only indicated if the patient has asthma or another approved condition.",
@@ -75813,7 +76428,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with IBS without concurrent allergic condition",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5379"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5379",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:therapy"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Traditional IBS therapies include stress reduction, soluble fiber, probiotics, MiraLAX, bromide, and bile acid sequestrants.",
@@ -75826,7 +76457,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with IBS",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5432"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5432",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bile acid sequestrants"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Historic therapies for IBS, stress reduction, soluble fiber, probiotics, MiraLAX, antispasmodics, and bile acid sequestrants, should still be used even with new immune-based approaches.",
@@ -75839,7 +76486,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all IBS patients",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5433"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5433",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bile acid sequestrants"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An IgG elimination diet involves blood testing to identify positive IgG antibodies to foods, eliminating those foods, then reintroducing them while monitoring symptoms.",
@@ -75852,7 +76515,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "IBS patients with suspected food sensitivities",
-      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5457"
+      "pearl_id": "dr-slaughter-do-on-extrahepatic-cholestasis-5457",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:igg elimination diet"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

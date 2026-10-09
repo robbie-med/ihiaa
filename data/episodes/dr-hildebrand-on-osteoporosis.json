@@ -42501,7 +42501,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on bisphosphonates",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-279"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-279",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4 years",
+            "threshold:more than 4"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recommend a weighted vest to load the spine for bone density; arm exercises alone are insufficient.",
@@ -42514,7 +42534,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with osteoporosis",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-322"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-322",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:exercise"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recommend tai chi to older adults for balance training, core strength, and fall prevention.",
@@ -42527,7 +42563,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older adults",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-351"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-351",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fall prevention"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bisphosphonates are first-line therapy for primary osteoporosis.",
@@ -42540,7 +42592,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with primary osteoporosis",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-369"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-369",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bisphosphonates"
+          ],
+          "rarity": 6.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid daily bisphosphonate dosing due to gastrointestinal side effects; prefer weekly or monthly regimens.",
@@ -42553,7 +42621,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients initiating bisphosphonate",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-481"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-481",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with severe GERD or esophageal disorders, consider IV bisphosphonate instead of oral.",
@@ -42566,7 +42653,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with GI contraindications to oral bisphosphonate",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-518"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-518",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Levothyroxine must be taken on an empty stomach, and patients must wait at least one hour before taking bisphosphonate or eating.",
@@ -42579,7 +42682,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on levothyroxine and oral bisphosphonate",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-800"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-800",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:levothyroxine"
+          ],
+          "actionable": [
+            "wait"
+          ],
+          "rarity": 6.57
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients with abnormal TSH while on levothyroxine, ask about biotin supplementation as it can interfere with TSH assays.",
@@ -42592,7 +42714,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on levothyroxine with abnormal TSH",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-877"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-877",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:TSH"
+          ],
+          "actionable": [
+            "ask about"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Denosumab reduces the risk of hip, vertebral, and nonvertebral fractures.",
@@ -42605,7 +42746,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "postmenopausal women with osteoporosis",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-1085"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-1085",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Denosumab"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before administering denosumab, check a chem 8 with calcium to avoid giving it to someone who is hypocalcemic.",
@@ -42618,7 +42775,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving denosumab",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-1128"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-1128",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:denosumab"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before administering denosumab, check a complete metabolic panel with calcium to avoid giving it to a hypocalcemic patient.",
@@ -42631,7 +42807,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being considered for denosumab",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-1129"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-1129",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:denosumab"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For severe osteoporosis (e.g., after a fragility fracture), start teriparatide or romosozumab rather than a bisphosphonate.",
@@ -42644,7 +42839,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe osteoporosis",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-1328"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-1328",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:romosozumab"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Repeat DEXA two years after starting osteoporosis treatment; for normal bone density, repeat every five years.",
@@ -42657,7 +42871,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on osteoporosis treatment or with normal bone density",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-1361"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-1361",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:osteoporosis"
+          ],
+          "actionable": [
+            "Repeat"
+          ],
+          "rarity": 6.57
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before starting osteoporosis therapy, check vitamin D levels and consider TSH if secondary osteoporosis is suspected.",
@@ -42670,7 +42903,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients before starting osteoporosis treatment",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-1376"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-1376",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:TSH"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 5.67
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Osteoporosis treatment is within primary care scope; routine endocrinology referral is not necessary.",
@@ -42683,7 +42935,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-1444"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-1444",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:endocrinology referral"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A fracture from a fall at standing height or less is a fragility fracture and can be diagnosed clinically.",
@@ -42696,7 +42964,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with low-trauma fracture",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-1660"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-1660",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fragility fracture"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Only order a DEXA scan if the patient is willing to consider pharmacologic treatment; if not, focus on exercise and nutrition.",
@@ -42709,7 +42993,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with risk factors for osteoporosis",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-1924"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-1924",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:dexa scan"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the FRAX tool to estimate 10-year fracture risk; it works without DEXA data. Consider treatment if hip fracture risk exceeds 3% or total fracture risk exceeds 20%.",
@@ -42722,7 +43025,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with osteopenia or risk factors",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-2112"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-2112",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:FRAX"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consider treatment if 10-year hip fracture risk is 3% or total osteoporosis-related fracture risk is >20%, as calculated by FRAX.",
@@ -42735,7 +43057,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with osteopenia or risk factors asking about fracture risk",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-2115"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-2115",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>2",
+            "test:FRAX"
+          ],
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "FRAX can be used without bone density results to estimate fracture risk and decide whether a DEXA scan is needed.",
@@ -42748,7 +43090,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anyone being assessed for osteoporosis risk",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-2160"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-2160",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:FRAX"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients starting osteoporosis treatment, recommend 1000 mg of calcium and 800 IU of vitamin D daily, and check vitamin D level before starting.",
@@ -42761,7 +43119,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting pharmacotherapy for osteoporosis",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-2254"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-2254",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1000 mg",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 5.63
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Calcium from food is better than calcium supplements because supplements increase the risk of kidney stones.",
@@ -42774,7 +43152,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients needing calcium",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-2266"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-2266",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:kidney stones"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 6.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "First-line pharmacotherapy for osteoporosis is bisphosphonates; teriparatide is reserved for patients who cannot take bisphosphonates.",
@@ -42787,7 +43184,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with osteoporosis requiring treatment",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-2301"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-2301",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bisphosphonates"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not perform DEXA screening in women younger than 65 or men younger than 70 who have no risk factors.",
@@ -42800,7 +43213,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women <65 and men <70 without risk factors",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-2310"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-2310",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:screening"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not repeat DEXA more often than every 2 years.",
@@ -42813,7 +43245,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients on osteoporosis monitoring",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-2322"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-2322",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 years",
+            "frequency:every 2"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 5.34
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Biotin supplements cause a falsely low TSH on lab tests; patients should stop biotin at least 2 days before checking TSH.",
@@ -42826,7 +43278,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient having TSH checked",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-2351"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-2351",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 days",
+            "threshold:at least 2",
+            "test:TSH"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After 5 years of bisphosphonate therapy, the benefit decreases and the risk of osteonecrosis of the jaw increases, so consider a drug holiday.",
@@ -42839,7 +43312,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on bisphosphonates for 5 years",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-2402"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-2402",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:5 years"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient fractures while on a bisphosphonate, escalate therapy to teriparatide.",
@@ -42852,7 +43344,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on bisphosphonate who sustain a fracture",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-2418"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-2418",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:teriparatide"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Universal vitamin D screening is not helpful; check vitamin D only after a diagnosis of osteopenia or osteoporosis is made.",
@@ -42865,7 +43373,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population vs. patients with bone health diagnosis",
-      "pearl_id": "dr-hildebrand-on-osteoporosis-2494"
+      "pearl_id": "dr-hildebrand-on-osteoporosis-2494",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:osteoporosis"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 6.73
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

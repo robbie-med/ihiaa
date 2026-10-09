@@ -36589,7 +36589,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient with subacute creatinine rise",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-539"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-539",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ace inhibitors"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a mild subacute creatinine rise (<0.5 mg/dL), advise holding NSAIDs, increasing oral fluids, and rechecking creatinine in 2 weeks; if it improves, no further workup is needed.",
@@ -36602,7 +36621,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient with subacute creatinine rise",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-603"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-603",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:0.5 mg",
+            "threshold:<0"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If renal ultrasound shows hydronephrosis, refer to urology to relieve obstruction.",
@@ -36615,7 +36651,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient with subacute kidney injury and hydronephrosis on ultrasound",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-741"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-741",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If urinalysis shows RBC casts, dysmorphic RBCs, or proteinuria, work up for glomerulonephritis.",
@@ -36628,7 +36683,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient with subacute kidney injury and abnormal UA",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-814"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-814",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:glomerulonephritis"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If urinalysis shows pyuria, suspect interstitial nephritis and consider nephrology referral for autoimmune/serology workup.",
@@ -36641,7 +36712,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient with subacute kidney injury and pyuria on UA",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-903"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-903",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:interstitial nephritis"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If urinalysis is normal, the workup focuses on prerenal causes or acute tubular necrosis; ATN often results from prolonged prerenal state (ischemic) or nephrotoxins.",
@@ -36654,7 +36744,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient with subacute kidney injury and normal UA",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-920"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-920",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acute tubular necrosis"
+          ],
+          "harm": [
+            "necrosis"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CKD is more common in women, but men are more likely to progress to ESRD.",
@@ -36667,7 +36776,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1251"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1251",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.16
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Screen for CKD annually in patients with diabetes or hypertension using serum creatinine, eGFR, and urine albumin-to-creatinine ratio.",
@@ -36680,7 +36802,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes or hypertension",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1420"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1420",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:eGFR"
+          ],
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Urine albumin-to-creatinine ratio (UACR) has replaced 24-hour urine protein due to inadequate collections, inconvenience, and lack of diagnostic advantage; obtain it on a morning sample for accuracy.",
@@ -36693,7 +36834,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient with CKD or suspected proteinuria",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1512"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1512",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:urine albumin-to-creat"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Urine dipstick has high sensitivity for heavy proteinuria (>300 mg/g) but may miss clinically significant lower levels (30-300 mg/g); do not rely on dipstick alone, order UACR.",
@@ -36706,7 +36866,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient with CKD or suspected proteinuria",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1548"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1548",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:300 mg",
+            "threshold:>3"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not rely on urine dipstick urinalysis alone to screen for proteinuria; it has high sensitivity for heavy proteinuria (>300 mg/g) but may miss clinically significant lower levels (30, 300 mg/g). Obtain a urine albumin-to-creatinine ratio instead.",
@@ -36719,7 +36899,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being screened for CKD",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1548-2"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1548-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:300 mg",
+            "threshold:>3"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cystatin C is a better screening tool than creatinine alone for renal function, especially in obese patients with CKD.",
@@ -36732,7 +36932,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "obese patients with CKD",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1622"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1622",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:creatinine"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with CKD stage 3 or 4, recommend protein intake of 0.6 to 0.8 grams per kilogram per day to reduce progression.",
@@ -36745,7 +36961,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CKD stage 3 or 4",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2317"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2317",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:per day"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Prescribe a structured moderate-intensity exercise program of at least 150 minutes per week for patients with CKD.",
@@ -36758,7 +36993,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CKD",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2348"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2348",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:150 minutes",
+            "threshold:at least 1",
+            "frequency:per week"
+          ],
+          "actionable": [
+            "Prescribe"
+          ],
+          "rarity": 6.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Include resistance exercise to prevent sarcopenia, as patients with CKD suffer from a higher degree of sarcopenia and also tend to have osteoporosis/osteopenia.",
@@ -36771,7 +37027,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CKD",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2379"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2379",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:osteoporosis"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For CKD with hypertension, diabetes, or albuminuria, the blood pressure goal is less than 120 mmHg systolic per 2021 Kidney Disease: Improving Global Outcomes (KDIGO) guidelines.",
@@ -36784,7 +37056,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CKD and hypertension, diabetes, or albuminuria",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2464"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2464",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:120 mmHg",
+            "threshold:less than 1"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When using an ACE inhibitor or ARB for renal protection, titrate to the maximally tolerated dose; the goal is renal protection, not just blood pressure control.",
@@ -36797,7 +37086,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CKD and hypertension, diabetes, or albuminuria",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2491"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2491",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "titrate"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hold ACE inhibitors or ARBs if potassium is over 5.5. If GFR declines by more than 30% after starting, consider stopping or changing therapy.",
@@ -36810,7 +37115,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CKD starting ACE/ARB",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2540"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2540",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:over 5",
+            "test:GFR"
+          ],
+          "actionable": [
+            "Hold"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Finerenone, a selective nonsteroidal mineralocorticoid receptor antagonist, is a game changer for stage 3, 4 CKD as it reduces the risk of sustained GFR decline, ESRD, and cardiovascular death.",
@@ -36823,7 +37148,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with stage 3–4 CKD",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2579"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2579",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:GFR"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For diabetic CKD, target A1c to 6.5% up to 8% depending on life situation; use SGLT2 inhibitors and metformin.",
@@ -36836,7 +37180,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diabetic CKD",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2636"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2636",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:A1c"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Refer to nephrology for hematuria, hereditary kidney disease, approaching ESRD, nephrotic syndrome, rapidly progressive disease, severe electrolyte abnormalities, structural abnormalities, or uncontrolled hypertension.",
@@ -36849,7 +37212,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CKD",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2752"
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2752",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypertension"
+          ],
+          "actionable": [
+            "Refer"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -50505,7 +50505,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with obesity",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-197"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-197",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "initiate"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients with BMI ≥30 and severe uncontrolled diabetes are now acceptable candidates for bariatric surgery.",
@@ -50518,7 +50534,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with BMI ≥30 and uncontrolled diabetes",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-247"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-247",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bariatric surgery"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Endoscopic sleeve gastrectomy (incisionless) is offered for patients with BMI 30, 40.",
@@ -50531,7 +50563,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with BMI 30–40",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-273"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-273",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:endoscopic sleeve gast"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Vertical sleeve gastrectomy reduces ghrelin (appetite hormone) and provides a modest GLP-1 effect, improving satiety and glucose utilization.",
@@ -50544,7 +50592,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing sleeve gastrectomy",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-406"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-406",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vertical sleeve gastre"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pre-existing heartburn or reflux is a relative contraindication to sleeve gastrectomy because the narrowed stomach can worsen regurgitation; evaluate severity, esophagitis on EGD, and presence of hiatal hernia.",
@@ -50557,7 +50621,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients considering sleeve gastrectomy",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-501"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-501",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:sleeve gastrectomy"
+          ],
+          "actionable": [
+            "evaluate"
+          ],
+          "harm": [
+            "contraindication"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Postoperative patients should take bariatric-specific multivitamins; Centrum Silver is an acceptable over-the-counter option, but Flintstones vitamins are insufficient.",
@@ -50570,7 +50656,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after bariatric surgery",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-672"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-672",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Roux-en-Y gastric bypass creates a profound GLP-1 effect, which is the original model for GLP-1 medications; it treats diabetes very effectively and provides longer-lasting satiety than sleeve gastrectomy.",
@@ -50583,7 +50682,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing Roux-en-Y gastric bypass",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-708"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-708",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:roux-en-y gastric bypa"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gastric bypass patients must not smoke and should avoid prolonged NSAID use because of high risk of marginal ulcer at the connection site, which can bleed or perforate.",
@@ -50596,7 +50711,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after Roux-en-Y gastric bypass",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-765"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-765",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:marginal ulcer"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "bleed"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Expected weight loss is gradual: sleeve ~100 lbs, bypass ~115 lbs, SADI ~130, 140 lbs.",
@@ -50613,7 +50750,23 @@
         "130",
         "140"
       ],
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-923"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-923",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:weight loss"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with BMI >50 who are diabetic, consider the SADI (single anastomosis duodenal ileal bypass) as it provides greater weight loss and better long-term blood sugar control than sleeve or bypass.",
@@ -50626,7 +50779,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with BMI >50 and diabetes",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-939"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-939",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>5"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients should take two weeks off work after surgery: the first week for physical recovery, the second for mental adjustment to new diet (focus on fluid and protein intake).",
@@ -50639,7 +50811,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after bariatric surgery",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-1017"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-1017",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:protein intake"
+          ],
+          "rarity": 5.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In the first two weeks after surgery, patients should aim for 70 grams of protein per day while prioritizing fluid intake.",
@@ -50652,7 +50840,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in first 2 weeks after bariatric surgery",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-1045"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-1045",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:per day"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with BMI 65 or greater, consider a staged approach: do sleeve gastrectomy first to get BMI down (e.g., from 65 to 45), then add SADI later if needed to get BMI past 35.",
@@ -50665,7 +50869,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with BMI ≥65",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2033"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2033",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:sleeve gastrectomy"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After sleeve gastrectomy, if the stomach has stretched out or lost restriction effect, you can resleeve endoscopically.",
@@ -50678,7 +50901,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with prior sleeve gastrectomy and weight regain",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2126"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2126",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sleeve gastrectomy"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After gastric bypass, if the gastrojejunal anastomosis becomes too wide and dilated, you can suture it down endoscopically to recreate restriction.",
@@ -50691,7 +50930,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with prior gastric bypass and weight regain",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2136"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2136",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Revisional surgeries carry about 3-4% risk of complications, compared to 1-2% for primary bariatric surgery.",
@@ -50704,7 +50956,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing revisional bariatric surgery",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2172"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2172",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bariatric surgery"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Referrals for bariatric evaluation go through Healthy Lifestyles, which has a medical-only option and a surgical option.",
@@ -50717,7 +50985,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "primary care referring patients for bariatric evaluation",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2328"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2328",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:referral"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Medicaid patients often cannot access GLP-1 medications, but bariatric surgery is covered and is the cheapest way to treat morbid obesity.",
@@ -50730,7 +51014,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicaid patients with obesity",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2445"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2445",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bariatric surgery"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When starting GLP-1 medications, patients need to understand they are meant to be lifelong, like treating hypertension; stopping them leads to weight regain.",
@@ -50743,7 +51046,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting GLP-1 therapy for obesity",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2521"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2521",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypertension"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before bariatric surgery, ask patients if they have about $50 of disposable income per month for protein drinks and multivitamins.",
@@ -50756,7 +51078,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being evaluated for bariatric surgery",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2597"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2597",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bariatric surgery"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Refer patients to a plastic surgeon about 18 months after bariatric surgery for skin removal, once weight loss is complete.",
@@ -50769,7 +51107,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after bariatric surgery considering skin removal",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2689"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2689",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:18 months"
+          ],
+          "actionable": [
+            "Refer"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Panniculectomy can be covered by insurance if you document wounds or irritation under the pannus; other skin removal (arms, tummy tuck) is cosmetic and not covered.",
@@ -50782,7 +51139,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after bariatric surgery with excess abdominal skin",
-      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2721"
+      "pearl_id": "dr-kirkpatrick-on-bariatric-seminar-presentation-2721",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:panniculectomy"
+          ],
+          "actionable": [
+            "document"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

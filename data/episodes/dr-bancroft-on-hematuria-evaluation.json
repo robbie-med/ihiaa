@@ -46032,7 +46032,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with gross hematuria",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-197"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-197",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:gross hematuria"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Microscopic hematuria is defined as greater than 3 red blood cells per high-power field after spinning down 10-15 mL of urine.",
@@ -46045,7 +46064,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with suspected microscopic hematuria",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-222"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-222",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:15 mL",
+            "threshold:greater than 3"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dipstick hematuria must always be confirmed with microscopy because false positives can occur with free hemoglobin, myoglobin, semen, urine pH >9, or cleaning agents contaminating the sample.",
@@ -46058,7 +46094,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with positive dipstick for blood",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-259"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-259",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>9"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Risk factors for malignancy in hematuria include age >35 (men >40, women >60), smoking (more pack-years = higher risk), male sex, history of gross hematuria, persistent microscopic hematuria, irritative voiding symptoms, prior pelvic radiation, certain chemotherapies, occupational exposure to rubber/petrochemicals/dyes, and chronic indwelling foreign bodies.",
@@ -46071,7 +46126,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with hematuria",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-505"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-505",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>3"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Irritative voiding symptoms (e.g., frequency, urgency) in a patient with hematuria are actually a higher risk for malignancy than painless hematuria, contrary to the classic teaching.",
@@ -46084,7 +46155,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with hematuria and irritative symptoms",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-546"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-546",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hematuria"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients on anticoagulants with unexplained hematuria should undergo the same workup as those not on anticoagulants; do not attribute bleeding to the anticoagulant without evaluation.",
@@ -46097,7 +46184,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on anticoagulants with hematuria",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-756"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-756",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hematuria"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has known medical renal disease causing hematuria, refer to both nephrology and urology to avoid anchoring and missing a second cause of bleeding.",
@@ -46110,7 +46219,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with known renal disease and hematuria",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-788"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-788",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hematuria"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected kidney stones, use a low-dose CT for patients with BMI <30 and a standard-dose CT for obese patients; you change imaging based on patient weight.",
@@ -46123,7 +46254,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected kidney stones",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1018"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1018",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:<3",
+            "test:CT"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After treating a cause of hematuria, you must recheck the urine to confirm resolution; if bleeding persists, refer to urology, especially in rural settings where access is limited.",
@@ -46136,7 +46287,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients treated for hematuria",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1073"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1073",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hematuria"
+          ],
+          "actionable": [
+            "recheck"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 6.49
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For incidental microscopic hematuria with no risk factors, retest at 6 months; if 5-25 RBCs per high-power field, that warrants a urology consultation.",
@@ -46149,7 +46322,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with incidental microscopic hematuria and no risk factors",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1145"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1145",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If microscopic hematuria shows 5 to 25 RBCs per HPF, that warrants a urology consultation.",
@@ -46162,7 +46351,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with microscopic hematuria",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1150"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1150",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:microscopic hematuria"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Benign causes like BPH, kidney stones, vaginal atrophy, and pelvic organ prolapse can cause persistent microhematuria, but if it continues, it's probably best to send to a urologist.",
@@ -46175,7 +46380,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with persistent microscopic hematuria",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1216"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1216",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pelvic organ prolapse"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "About 50% of women with bladder cancer are initially treated for a UTI; if symptoms don't resolve, do not keep switching antibiotics, pursue further workup.",
@@ -46188,7 +46409,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with hematuria",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1253"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1253",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bladder cancer"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 6.49
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Studies show about 50% of women with bladder cancer are treated for a UTI first, and 16% are treated with antibiotics before diagnosis, so do not dismiss hematuria as UTI without confirmation.",
@@ -46201,7 +46441,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with hematuria",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1254"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1254",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bladder cancer"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Low-risk patients (3-10 RBCs/HPF, women <60, men <40, never smoked or <10 pack-years, no risk factors) do not need urology referral; just follow up with repeat UA in 6 months.",
@@ -46214,7 +46473,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "low-risk patients",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1371"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1371",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 months",
+            "threshold:<6"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Intermediate risk: 11-25 RBCs/HPF, or persistent low-risk finding on repeat, women >60, men 40-59, 10-30 pack-years, or any one risk factor; consider urology referral.",
@@ -46227,7 +46506,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hematuria",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1401"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1401",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>6"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "High risk: >25 RBCs/HPF, gross hematuria, men >60, smoking >30 pack-years, or any risk factor plus other criteria; refer immediately to urology without hesitation.",
@@ -46240,7 +46538,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "high-risk patients",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1467"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1467",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "threshold:>2"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For high-risk patients, the PCP should order a multiphasic CT scan (CT with and without contrast, renal protocol) before sending the referral.",
@@ -46253,7 +46573,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "high-risk patients",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1645"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1645",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient with a known cause (e.g., kidney stone, UTI) has resolution of hematuria after treatment, repeat UA is negative; persistent hematuria after treatment warrants urology referral.",
@@ -46266,7 +46605,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hematuria and a known cause",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1708"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1708",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:urology referral"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 6.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Urine-based tumor markers should not be ordered by the PCP; they are specialized and should be done by the urologist after negative cystoscopy in high-risk patients.",
@@ -46279,7 +46637,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with hematuria",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1890"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1890",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cystoscopy"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient with microscopic hematuria has a negative workup but returns a year later with hematuria again, recommend another urology consultation.",
@@ -46292,7 +46666,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with recurrent microscopic hematuria after negative workup",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1923"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-1923",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:microscopic hematuria"
+          ],
+          "rarity": 6.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Renal colic pain is caused by distension of the renal pelvis, not by contraction of the ureter.",
@@ -46305,7 +46695,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with renal colic",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2314"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2314",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:renal colic"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Renal colic pain is caused by distension of the renal pelvis, not by the stone itself.",
@@ -46318,7 +46724,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with renal colic",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2327"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2327",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:renal colic"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Flank pain with hematuria is the most pathognomonic finding for a kidney stone, but 30% of patients with stones will not have hematuria.",
@@ -46331,7 +46753,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected kidney stone",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2427"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2427",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:kidney stone"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For pregnant patients with suspected stone, use bladder/kidney ultrasound or MRI; avoid CT if possible.",
@@ -46344,7 +46782,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with suspected stone",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2464"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2464",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 5.49
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For non-pregnant patients, low-dose CT is preferred if patient is thin enough; otherwise standard-dose CT.",
@@ -46357,7 +46814,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "non-pregnant patients with suspected stone",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2486"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2486",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Indications for ER referral include AKI, fever, not taking PO, uncontrollable pain, obstructing stone, or UTI with positive stone on imaging.",
@@ -46370,7 +46843,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected kidney stone",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2537"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2537",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:referral"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "NSAIDs work for stone pain by dilating smooth muscle, decreasing urine production, reducing ureteric peristalsis and edema, and lowering renal pelvic pressure.",
@@ -46383,7 +46872,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with renal colic",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2601"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2601",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nsaids"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stones <5 mm are likely to pass spontaneously; 5.1-9.9 mm have increasing risk of failure; >10 mm rarely pass.",
@@ -46399,7 +46904,24 @@
       "numbers_unheard": [
         "10"
       ],
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2651"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2651",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 mm",
+            "threshold:<5"
+          ],
+          "rarity": 6.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If pain resolves, stone has likely passed; if pain persists at 4 weeks, repeat CT scan and UA with microscopy.",
@@ -46412,7 +46934,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with known kidney stone",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2762"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2762",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4 weeks",
+            "test:CT"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 6.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients should strain urine to capture stone for composition analysis; provide a cup and lab order in the office.",
@@ -46425,7 +46967,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with kidney stone",
-      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2808"
+      "pearl_id": "dr-bancroft-on-hematuria-evaluation-2808",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

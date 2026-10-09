@@ -31150,7 +31150,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with LUTS",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-273"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-273",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ask male patients over 50 about urinary complaints; they often do not volunteer them.",
@@ -31163,7 +31179,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men over 50",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-387"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-387",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:over 5"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Frequency is defined as urinating more than every two hours.",
@@ -31176,7 +31211,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-453"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-453",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nocturia is often the first symptom of BPH and the one that bothers patients most; use it as a screening question in men over 50.",
@@ -31192,7 +31240,29 @@
       "numbers_unheard": [
         "50"
       ],
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-499"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-499",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 5"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.0,
+          "capped": [
+            "number not heard: 50"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Post-void residual should normally be zero; any residual urine means the bladder starts filling faster, causing frequency.",
@@ -31205,7 +31275,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-607"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-607",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Obstructive symptoms (weak stream, hesitancy, straining, incomplete emptying, post-void dribbling) result from the enlarged prostate compressing the urethra, leading to incomplete bladder emptying.",
@@ -31218,7 +31301,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with BPH",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-682"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-682",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Irritative symptoms (frequency, urgency, nocturia, dysuria) mimic infection; in BPH they are caused by bladder irritation from incomplete emptying.",
@@ -31231,7 +31327,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with BPH",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-704"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-704",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nocturia"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A DRE is mandatory in any patient presenting with lower urinary tract symptoms; do not skip it even if you order a PSA.",
@@ -31244,7 +31356,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with LUTS",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-861"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-861",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:lower urinary tract sy"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "BPH is a symptom diagnosis; you cannot tell a patient they do not have BPH based on a low PSA alone.",
@@ -31257,7 +31388,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with LUTS",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1022"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1022",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 5.84
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A very low PSA (e.g., 0.01) should prompt checking testosterone, as these men are often hypogonadal.",
@@ -31270,7 +31417,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with very low PSA",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1059"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1059",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An extremely low PSA (e.g., 0.01) should prompt checking testosterone, as it often indicates hypogonadism.",
@@ -31283,7 +31446,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with very low PSA",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1059-2"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1059-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hypogonadism"
+          ],
+          "rarity": 6.55
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "High percent free PSA is usually more associated with BPH; low percent free is generally reassuring.",
@@ -31296,7 +31475,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with gray zone PSA",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1122"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1122",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.47
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advise patients to stop drinking fluids after 6 PM to reduce nocturia.",
@@ -31309,7 +31501,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with BPH and nocturia",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1224"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1224",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:nocturia"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 6.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Double voiding means emptying the bladder, then going again after 5-10 minutes (e.g., after brushing teeth) to ensure an empty bladder before bed.",
@@ -31322,7 +31533,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with BPH",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1309"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1309",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 minutes"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sitting down to urinate may help some men empty their bladder better; it is controversial but worth trying.",
@@ -31335,7 +31565,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with BPH",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1366"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1366",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Managing constipation can help BPH symptoms because a full rectum puts pressure on the prostate.",
@@ -31348,7 +31591,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with BPH",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1380"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1380",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:constipation"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nonselective alpha-1 antagonists (e.g., Cardura, Hytrin) cause vasodilation, hypotension, and reflex tachycardia; avoid them for BPH unless no alternative.",
@@ -31361,7 +31620,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with BPH",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1462"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1462",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:alpha-1 antagonists"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tamsulosin can cause floppy iris syndrome; inform patients before cataract surgery.",
@@ -31374,7 +31652,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on tamsulosin",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1508"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1508",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Tamsulosin"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Alpha-1 antagonists (e.g., tamsulosin) work within 3-7 days; 5-alpha reductase inhibitors take 2-4 months to show significant effect.",
@@ -31387,7 +31681,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting alpha-1 antagonists",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1589"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1589",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:7 days",
+            "drug:tamsulosin"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient is on a 5-alpha reductase inhibitor, at least double the PSA value when assessing for prostate cancer risk.",
@@ -31400,7 +31711,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on 5-alpha reductase inhibitors",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1679"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-1679",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:prostate cancer"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

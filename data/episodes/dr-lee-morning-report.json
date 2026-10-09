@@ -63829,7 +63829,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with new-onset atrial fibrillation and heart failure",
-      "pearl_id": "dr-lee-morning-report-84"
+      "pearl_id": "dr-lee-morning-report-84",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:atrial fibrillation"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When interpreting an EKG, scan up and down the tracing to compare QRS width in different leads; a wide QRS may be more apparent in some leads than others.",
@@ -63842,7 +63861,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "EKG interpretation",
-      "pearl_id": "dr-lee-morning-report-313"
+      "pearl_id": "dr-lee-morning-report-313",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A wide QRS that does not meet criteria for left or right bundle branch block should be called an IVCD (intraventricular conduction delay).",
@@ -63855,7 +63890,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "EKG interpretation",
-      "pearl_id": "dr-lee-morning-report-428"
+      "pearl_id": "dr-lee-morning-report-428",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:intraventricular condu"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When interpreting an EKG, look for T wave inversions in leads I, II, V5, and V6, not in V2-V3 where they can be a normal variant.",
@@ -63868,7 +63919,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "EKG interpretation",
-      "pearl_id": "dr-lee-morning-report-661"
+      "pearl_id": "dr-lee-morning-report-661",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In atrial fibrillation with RVR, first assess hemodynamic stability. If unstable, perform direct current cardioversion. If stable, check blood pressure before giving rate control.",
@@ -63881,7 +63948,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with atrial fibrillation and RVR",
-      "pearl_id": "dr-lee-morning-report-820"
+      "pearl_id": "dr-lee-morning-report-820",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:atrial fibrillation"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In atrial fibrillation with RVR, if the patient is hemodynamically stable and blood pressure is normal or high, you can give metoprolol 5 mg IV push every 5 minutes or diltiazem.",
@@ -63895,7 +63981,28 @@
       "prompt_version": "v1",
       "applies_to": "hemodynamically stable patients with atrial fibrillation and RVR and normal/high blood pressure",
       "by_presenter": false,
-      "pearl_id": "dr-lee-morning-report-874"
+      "pearl_id": "dr-lee-morning-report-874",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:5 mg",
+            "frequency:every 5",
+            "drug:metoprolol"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In atrial fibrillation with RVR, if the blood pressure is low (e.g., <100 systolic), giving rate control agents like metoprolol or diltiazem can cause further hypotension, which is preventable.",
@@ -63908,7 +64015,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with atrial fibrillation and RVR and low blood pressure",
-      "pearl_id": "dr-lee-morning-report-960"
+      "pearl_id": "dr-lee-morning-report-960",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:<1",
+            "drug:metoprolol"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before giving rate control medication for atrial fibrillation with RVR, ensure the systolic blood pressure is at least 100 mmHg to provide a cushion against drug-induced hypotension.",
@@ -63921,7 +64045,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hemodynamically stable patients with atrial fibrillation and RVR",
-      "pearl_id": "dr-lee-morning-report-1107"
+      "pearl_id": "dr-lee-morning-report-1107",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:100 mmHg",
+            "threshold:at least 1"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use 'RRR' (regular rate and rhythm) in documentation for a patient with atrial fibrillation, as the rhythm is irregularly irregular.",
@@ -63934,7 +64078,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "documentation",
-      "pearl_id": "dr-lee-morning-report-1338"
+      "pearl_id": "dr-lee-morning-report-1338",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:atrial fibrillation"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient with no known medical history presents with progressive shortness of breath, hypoxemia, and edema, frame the presentation as new-onset decompensated heart failure until proven otherwise.",
@@ -63947,7 +64110,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with no known medical history presenting with dyspnea, hypoxemia, and edema",
-      "pearl_id": "dr-lee-morning-report-1368"
+      "pearl_id": "dr-lee-morning-report-1368",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:heart failure"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consider drug-induced fever from antibiotics such as levofloxacin as a cause of new fever.",
@@ -63960,7 +64139,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients started on antibiotics",
-      "pearl_id": "dr-lee-morning-report-2857"
+      "pearl_id": "dr-lee-morning-report-2857",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:levofloxacin"
+          ],
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 6.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hold antibiotics until you have a specific target; monitor closely for the source to present itself.",
@@ -63972,7 +64170,26 @@
       "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-lee-morning-report-2961"
+      "pearl_id": "dr-lee-morning-report-2961",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "actionable": [
+            "Hold"
+          ],
+          "rarity": 6.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bradycardia is defined as heart rate less than 60 beats per minute.",
@@ -63984,7 +64201,23 @@
       "speaker": "Dr. Lawrence Lee",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-lee-morning-report-3037"
+      "pearl_id": "dr-lee-morning-report-3037",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 6"
+          ],
+          "rarity": 6.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When the diagnosis is uncertain, tell patients and families: 'We're not quite sure what's going on. I don't want to assume.'",
@@ -63997,7 +64230,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "communication with patients and families",
-      "pearl_id": "dr-lee-morning-report-3428"
+      "pearl_id": "dr-lee-morning-report-3428",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If pneumonia was brewing prior to admission, classify it as community-acquired pneumonia (CAP) even if diagnosed after 48 hours in the hospital.",
@@ -64010,7 +64259,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients admitted with pneumonia diagnosed after 48 hours",
-      "pearl_id": "dr-lee-morning-report-3471"
+      "pearl_id": "dr-lee-morning-report-3471",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:48 hours"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When initial blood cultures are negative, repeat them and also obtain sputum cultures.",
@@ -64023,7 +64288,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with negative initial blood cultures and suspected infection",
-      "pearl_id": "dr-lee-morning-report-3503"
+      "pearl_id": "dr-lee-morning-report-3503",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:sputum culture"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 5.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Obtain a urine drug screen in patients with cardiomyopathy of unknown cause.",
@@ -64036,7 +64320,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with unexplained cardiomyopathy",
-      "pearl_id": "dr-lee-morning-report-4272"
+      "pearl_id": "dr-lee-morning-report-4272",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:urine drug screen"
+          ],
+          "actionable": [
+            "Obtain"
+          ],
+          "rarity": 6.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In fever of unknown origin, consider noninfectious causes including VTE, autoimmune disease, and malignancy.",
@@ -64049,7 +64352,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with persistent fever without clear infectious source",
-      "pearl_id": "dr-lee-morning-report-4440"
+      "pearl_id": "dr-lee-morning-report-4440",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fever of unknown origi"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In workup of persistent fever without source, order extremity ultrasound, LDH, procalcitonin, and serologies for EBV, HIV, CMV.",
@@ -64062,7 +64384,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fever of unknown origin",
-      "pearl_id": "dr-lee-morning-report-4452"
+      "pearl_id": "dr-lee-morning-report-4452",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anchoring bias leads clinicians to hold onto an initial diagnosis; reflect on how often you anchored and the patient ended up with something else.",
@@ -64075,7 +64416,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians, especially those with decisive personality types",
-      "pearl_id": "dr-lee-morning-report-4581"
+      "pearl_id": "dr-lee-morning-report-4581",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anchoring bias"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -9226,7 +9226,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-226"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-226",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:prostate cancer"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "BPH is a true hyperplasia (increase in cell number), not hypertrophy (increase in cell size).",
@@ -9239,7 +9255,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-329"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-329",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The epidemiology of BPH is captured by '50 by fifty and 80 by 80': 50% of men in their 50s and 80% of men in their 80s have symptoms.",
@@ -9252,7 +9284,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "male patients",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-345"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-345",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:epidemiology"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always use the term 'lower urinary tract symptoms' (LUTS) rather than 'BPH symptoms' because other conditions (UTI, cancer, STD) cause similar symptoms, and women also have LUTS.",
@@ -9265,7 +9313,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with urinary symptoms",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-385"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-385",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:lower urinary tract sy"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the International Prostate Symptom Score (IPSS) as a validated instrument to quantify and characterize LUTS; it is not available in Cerner, so print it off or have it up while talking to the patient.",
@@ -9278,7 +9345,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient primary care",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-420"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-420",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:international prostate"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Frequency is defined as having to urinate less than every two hours.",
@@ -9291,7 +9377,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with LUTS",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-473"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-473",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Intermittency is when you stop and start again several times during urination.",
@@ -9304,7 +9403,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with LUTS",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-479"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-479",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When asking about urgency, ask: 'Do you have the feeling that if you don't get to the bathroom right now, you're gonna pee yourself?'",
@@ -9317,7 +9432,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with LUTS",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-506"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-506",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Straining to start or maintain urination involves Valsalva, bearing down to help the detrusor muscle empty the bladder.",
@@ -9330,7 +9461,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with LUTS",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-521"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-521",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nocturia is the most common reason a patient will come in and talk to you about BPH; they are no longer sleeping well, getting up four or five times a night.",
@@ -9343,7 +9490,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "male patients with BPH",
-      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-536"
+      "pearl_id": "dr-place-on-benign-prostatic-hyperplasia-2-536",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nocturia"
+          ],
+          "rarity": 6.64
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

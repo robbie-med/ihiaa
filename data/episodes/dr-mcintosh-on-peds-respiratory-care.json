@@ -37945,7 +37945,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children and adults using saline irrigation",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1094"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1094",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:saline irrigation"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cool mist and steam humidifiers are equally effective for URI symptoms; patient preference can guide choice.",
@@ -37958,7 +37974,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with URI",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1205"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1205",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For cough in children over 1 year, give 1 teaspoon of honey at bedtime; it is as effective as OTC cough medicines.",
@@ -37971,7 +38000,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children over 1 year with cough",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1244"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1244",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1 year",
+            "threshold:over 1"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not give honey to infants under 1 year due to risk of infant botulism from spores.",
@@ -37984,7 +38033,30 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants under 1 year",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1259"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1259",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:1 year",
+            "threshold:under 1"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "Do not give"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid OTC cough and cold medications (dextromethorphan, phenylephrine) in children under 4 years due to overdose risk; use with caution ages 4-6.",
@@ -37997,7 +38069,30 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children under 4 years",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1384"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1384",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:4 years",
+            "threshold:under 4"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "harm": [
+            "overdose"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For bacterial sinusitis, treat only if symptoms persist beyond 10 days or worsen after 5-7 days.",
@@ -38010,7 +38105,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with suspected bacterial sinusitis",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1494"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1494",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 days"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 6.07
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "First-line antibiotic for strep or bacterial sinusitis is high-dose amoxicillin; amoxicillin-clavulanate is second-line.",
@@ -38023,7 +38137,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with strep pharyngitis or bacterial sinusitis",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1608"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1608",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:amoxicillin"
+          ],
+          "rarity": 7.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Antivirals for influenza are reserved for children with severe illness or comorbidities; most children with flu do well with supportive care.",
@@ -38036,7 +38166,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with influenza",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1659"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1659",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:supportive care"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Red flags requiring urgent evaluation: respiratory distress/tripoding, stridor at rest, fever >5 days, dehydration, lethargy, symptoms >14 days without improvement, and unilateral pharyngitis (suggests peritonsillar abscess).",
@@ -38049,7 +38195,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with URI symptoms",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1806"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1806",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:5 days",
+            "threshold:>5"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Red flags in pediatric respiratory illness include stridor at rest, tripoding, drooling, fever longer than five days, signs of dehydration, symptoms longer than fourteen days without improvement, and unilateral symptoms.",
@@ -38062,7 +38228,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with respiratory symptoms",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1812"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1812",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dehydration"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fever longer than five days is a red flag.",
@@ -38075,7 +38257,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with fever",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1839"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1839",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fever"
+          ],
+          "rarity": 5.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Unilateral pharyngitis should raise suspicion for peritonsillar abscess.",
@@ -38088,7 +38286,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with pharyngitis",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1902"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-1902",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:peritonsillar abscess"
+          ],
+          "rarity": 6.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For croup with barking cough and inspiratory stridor, treat with dexamethasone.",
@@ -38101,7 +38315,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with croup",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2024"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2024",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:dexamethasone"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Peritonsillar abscess presents with unilateral pharyngitis, fever, neck stiffness, and drooling; obtain a lateral neck X-ray or CT and start antibiotics.",
@@ -38114,7 +38347,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with suspected peritonsillar abscess",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2095"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2095",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Persistent unilateral foul-smelling rhinorrhea in a toddler is likely a nasal foreign body.",
@@ -38127,7 +38379,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "toddlers with unilateral rhinorrhea",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2121"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2121",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nasal foreign body"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pertussis presents with paroxysmal coughing fits ending in whoop or vomiting after a mild cold; treat with azithromycin or a macrolide.",
@@ -38140,7 +38408,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with suspected pertussis",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2227"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2227",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:azithromycin"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Post-exposure prophylaxis for pertussis is indicated for unvaccinated household contacts.",
@@ -38153,7 +38440,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "unvaccinated household contacts of pertussis patients",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2238"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2238",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:post-exposure prophyla"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Kawasaki disease should be considered in children with prolonged fever longer than five days, high fever, rash, conjunctivitis, and strawberry tongue; it can lead to coronary aneurysms.",
@@ -38166,7 +38469,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with prolonged fever and rash",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2278"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2278",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:kawasaki disease"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Most URIs are viral; supportive care with saline, humidification, and honey is the mainstay.",
@@ -38179,7 +38498,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with upper respiratory infections",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2397"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2397",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:supportive care"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Honey is effective for cough in children.",
@@ -38192,7 +38527,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with cough",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2428"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2428",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cough"
+          ],
+          "rarity": 5.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Yellow mucus does not equal bacterial infection or need for antibiotics.",
@@ -38205,7 +38556,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "families of children with respiratory symptoms",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2458"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2458",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid pushing antipyretics too hard; let the body fight the infection.",
@@ -38218,7 +38585,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with fever",
-      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2484"
+      "pearl_id": "dr-mcintosh-on-peds-respiratory-care-2484",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

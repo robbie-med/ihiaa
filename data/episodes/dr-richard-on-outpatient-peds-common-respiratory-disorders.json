@@ -32038,7 +32038,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with sore throat",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-477"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-477",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In children under 3 years, avoid routine strep swabbing because colonization can cause false positives leading to unnecessary antibiotics.",
@@ -32054,7 +32070,30 @@
       "numbers_unheard": [
         "3"
       ],
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-614"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-614",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 years",
+            "threshold:under 3"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.75,
+          "capped": [
+            "number not heard: 3"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For infants whose mother received RSV vaccine at 32, 36.6 weeks, the infant is protected for the first 6 months and does not need monoclonal antibody for the first RSV season.",
@@ -32067,7 +32106,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants born to vaccinated mothers",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-790"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-790",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:36.6 weeks"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For the second RSV season, only high-risk infants (e.g., premature) qualify for monoclonal antibody, unless the infant was born late in the season.",
@@ -32080,7 +32135,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants entering second RSV season",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-827"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-827",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a mother receives the RSV vaccine (Abrysvo) less than 14 days before delivery, the infant still needs monoclonal antibody because immunity transfer is insufficient.",
@@ -32093,7 +32161,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants born <14 days after maternal RSV vaccination",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-869"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-869",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:14 days",
+            "threshold:less than 1"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For viral upper respiratory infections in infants, nasal suctioning before every feed is the main treatment; use nasal saline drops or spray first.",
@@ -32106,7 +32191,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with viral URI",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-1005"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-1005",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:nasal suctioning"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.99
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Paxlovid for children requires all four criteria: age >12 years, weight >40 kg, symptom onset within 5 days, and comorbidities or immunocompromised status.",
@@ -32119,7 +32223,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with COVID-19",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-1726"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-1726",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:12 years",
+            "threshold:>1"
+          ],
+          "rarity": 7.03
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consider MIS-C in children presenting with generalized illness 2-3 weeks after COVID-19 infection; treatment includes IVIG and steroids.",
@@ -32132,7 +32253,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with recent COVID-19",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-1752"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-1752",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 weeks"
+          ],
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consider Kawasaki disease in children with fever >5 days without known cause.",
@@ -32145,7 +32285,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with prolonged fever",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-1797"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-1797",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:5 days",
+            "threshold:>5"
+          ],
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 6.07
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stridor at rest in croup warrants ER referral; do not send by private vehicle.",
@@ -32158,7 +32318,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with croup",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-2285"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-2285",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:referral"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dexamethasone for croup takes time to act; prednisone or methylprednisolone can be used as alternatives.",
@@ -32171,7 +32350,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with croup",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-2308"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-2308",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Dexamethasone"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Humidity for croup may provide symptomatic relief but is not curative.",
@@ -32184,7 +32379,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with croup",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-2328"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-2328",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:croup"
+          ],
+          "rarity": 7.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not examine the throat of a child with suspected croup as it may worsen symptoms.",
@@ -32197,7 +32408,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with suspected croup",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-2348"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-2348",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:croup"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Asthma diagnosis in children <5 years is clinical, requiring at least 2-3 wheezing episodes (including tachypnea and retractions).",
@@ -32210,7 +32440,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children under 5 years",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-2424"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-2424",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 years",
+            "threshold:<5"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Inhaled corticosteroids (ICS) are the mainstay of asthma maintenance therapy; monitor growth in children on ICS.",
@@ -32223,7 +32470,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with asthma on ICS",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-2746"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-2746",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:inhaled corticosteroid"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "rarity": 6.72
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ICS-formoterol is the only LABA combination that can be used as both reliever and maintenance due to its fast-acting properties; insurance often does not cover it.",
@@ -32236,7 +32502,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with asthma",
-      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-2881"
+      "pearl_id": "dr-richard-on-outpatient-peds-common-respiratory-disorders-2881",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:formoterol"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

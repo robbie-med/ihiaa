@@ -42984,7 +42984,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chest pain in outpatient or ED setting",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-1442"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-1442",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:heart score"
+          ],
+          "actionable": [
+            "document"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In the HEART score, 'highly suspicious' means all three features: substernal pain, with exertion, relieved by rest; 'moderately' means substernal or two of three; 'slightly' means zero or one feature.",
@@ -42997,7 +43016,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chest pain being evaluated for ACS",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-1483"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-1483",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:heart score"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Features that make chest pain less likely to be ACS: pleuritic pain, pain lasting less than five minutes, or pain lasting more than 24 hours without EKG or troponin changes.",
@@ -43010,7 +43045,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chest pain",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-1498"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-1498",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours",
+            "threshold:more than 2",
+            "test:EKG"
+          ],
+          "rarity": 7.17
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For HEART score 0-3, discharge home is appropriate; for 4-6 (moderate risk), admit or observe with troponins and likely inpatient stress test; for 7-10 (high risk), consult cardiology directly for likely cath.",
@@ -43023,7 +43076,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chest pain and HEART score calculated",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-1595"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-1595",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:heart score"
+          ],
+          "actionable": [
+            "admit"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anticoagulation (heparin or enoxaparin) is often forgotten in ACS management; even if the patient is not going to the cath lab, they should be on in-hospital prophylactic enoxaparin.",
@@ -43036,7 +43108,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients admitted with ACS",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2127"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2127",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:enoxaparin"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Aspirin is the only component of MONA with a mortality benefit in ACS; nitroglycerin does not decrease mortality but can relieve angina.",
@@ -43049,7 +43137,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ACS",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2202"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2202",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:mortality benefit"
+          ],
+          "actionable": [
+            "decrease"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If there is a chance of multi-vessel disease requiring CABG, do not load with a P2Y12 inhibitor (e.g., ticagrelor) before the cath, because once given, you must wait 5-7 days for surgery; loading with aspirin alone allows same-day CABG.",
@@ -43062,7 +43169,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ACS before coronary angiography",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2228"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2228",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:7 days"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "At hospital follow-up after ACS, always check the cath entry site, confirm medications were filled and are affordable, refer to cardiac rehab, and ensure follow-up appointments are scheduled.",
@@ -43075,7 +43201,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients after hospital discharge",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2324"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2324",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hospital follow-up"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For outpatient management after ACS, avoid labetalol as a beta blocker; use calcium channel blockers if beta blockers are contraindicated, but avoid in patients with Wolff-Parkinson-White.",
@@ -43088,7 +43233,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient management after ACS",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2425"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2425",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:calcium channel blocke"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "contraindicated"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Calcium channel blockers can be used in combination with beta blockers as long as the patient does not have Wolff-Parkinson-White.",
@@ -43101,7 +43268,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CAD",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2436"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2436",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:calcium channel blocke"
+          ],
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nitrates do not decrease mortality in CAD; they only delay angina.",
@@ -43114,7 +43297,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CAD",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2445"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2445",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:nitrates"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If sublingual nitroglycerin does not produce a tingly sensation under the tongue, it did not work and the medication may be expired or ineffective.",
@@ -43127,7 +43329,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using sublingual nitroglycerin",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2455"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2455",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nitroglycerin"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sublingual nitroglycerin should produce a tingly sensation under the tongue; if it does not, the medication may have lost potency due to disintegration over time.",
@@ -43140,7 +43358,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using sublingual nitroglycerin",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2455-2"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2455-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nitroglycerin"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ranolazine has many interactions with other cardiac medications; primary care should generally continue it if started by cardiology rather than initiating it.",
@@ -43153,7 +43387,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic angina",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2514"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2514",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:primary care"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Primary and secondary prevention of CAD can be managed by family medicine; cardiology referral is typically for tertiary prevention once the diagnosis is established and progression needs management.",
@@ -43166,7 +43416,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CAD",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2561"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2561",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cardiology referral"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Labetalol is the only beta blocker to avoid in CAD because it has beta agonist properties; metoprolol and carvedilol are the most commonly used alternatives.",
@@ -43179,7 +43445,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CAD",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2592"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2592",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:metoprolol"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Post-ACS LDL goal is less than 70 mg/dL, the same as for diabetes because diabetes is a CAD equivalent.",
@@ -43192,7 +43477,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients post-ACS",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2630"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2630",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:70 mg",
+            "threshold:less than 7",
+            "test:LDL"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Coronary calcium score is only for asymptomatic patients; it does not assess acute blood flow and should not be used for chest pain workup.",
@@ -43205,7 +43508,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "asymptomatic patients",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2695"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2695",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:coronary calcium score"
+          ],
+          "rarity": 6.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use HEART score for chest pain evaluation; use TIMI or GRACE scores once NSTEMI is confirmed with elevated troponin or EKG changes.",
@@ -43218,7 +43537,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chest pain or suspected ACS",
-      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2717"
+      "pearl_id": "dr-lucashu-on-coronary-artery-disease-2717",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

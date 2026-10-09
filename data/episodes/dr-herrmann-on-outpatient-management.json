@@ -50431,7 +50431,31 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-herrmann-on-outpatient-management-250"
+      "pearl_id": "dr-herrmann-on-outpatient-management-250",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:20 mmHg",
+            "threshold:over 1",
+            "frequency:Every 20"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Common medications that raise BP include NSAIDs, oral contraceptives, steroids, decongestants, stimulants, and antidepressants.",
@@ -50444,7 +50468,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-herrmann-on-outpatient-management-561"
+      "pearl_id": "dr-herrmann-on-outpatient-management-561",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:oral contraceptives"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Obstructive sleep apnea is a common cause of secondary hypertension; screen for it.",
@@ -50457,7 +50497,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with resistant hypertension",
-      "pearl_id": "dr-herrmann-on-outpatient-management-581"
+      "pearl_id": "dr-herrmann-on-outpatient-management-581",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:obstructive sleep apne"
+          ],
+          "actionable": [
+            "screen"
+          ],
+          "rarity": 5.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To diagnose hypertension, use ambulatory or home blood pressure monitoring averaging >130/80, or at least three office measurements.",
@@ -50470,7 +50529,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with elevated office BP",
-      "pearl_id": "dr-herrmann-on-outpatient-management-798"
+      "pearl_id": "dr-herrmann-on-outpatient-management-798",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>1"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Aerobic exercise can lower BP by about 8 points in patients with hypertension.",
@@ -50483,7 +50561,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with hypertension",
-      "pearl_id": "dr-herrmann-on-outpatient-management-949"
+      "pearl_id": "dr-herrmann-on-outpatient-management-949",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:aerobic exercise"
+          ],
+          "rarity": 6.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Weight loss can lower BP by about 5 points.",
@@ -50496,7 +50590,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "overweight adults with hypertension",
-      "pearl_id": "dr-herrmann-on-outpatient-management-977"
+      "pearl_id": "dr-herrmann-on-outpatient-management-977",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:weight loss"
+          ],
+          "rarity": 4.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The DASH diet can lower systolic BP by about 11 points; reduction of dietary sodium to <1500 mg/day is optimal.",
@@ -50509,7 +50619,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with hypertension",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1073"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1073",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1500 mg",
+            "threshold:<1"
+          ],
+          "rarity": 6.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Increase potassium intake to 3500-5000 mg/day from fruits and vegetables to help lower BP.",
@@ -50522,7 +50649,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with hypertension",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1099"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1099",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:5000 mg"
+          ],
+          "actionable": [
+            "Increase"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Limit alcohol: men <2 drinks/day, women <1 drink/day to help control BP.",
@@ -50535,7 +50681,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with hypertension",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1145"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1145",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:<2"
+          ],
+          "rarity": 6.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The Ascension protocol requires follow-up within one month if BP >140/90, with a second BP check before the visit.",
@@ -50548,7 +50710,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient, Ascension system",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1155"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1155",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>1"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 6.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If BP >140/90, follow up with physician within one month and recheck a second time before the visit.",
@@ -50561,7 +50742,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with elevated BP",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1155-2"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1155-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>1"
+          ],
+          "actionable": [
+            "follow up"
+          ],
+          "rarity": 5.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For BP >160, start double therapy with amlodipine and benazepril.",
@@ -50574,7 +50774,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with hypertension",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1359"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1359",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>1",
+            "drug:amlodipine"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.9
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For BP <160 with CKD or diabetes, start an ACE inhibitor or ARB.",
@@ -50587,7 +50807,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with hypertension and CKD or diabetes",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1364"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1364",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:<1"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 5.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Expect a creatinine bump of up to 0.3 mg/dL after starting ACE/ARB; if it rises more, evaluate for acute kidney injury.",
@@ -50603,7 +50842,29 @@
       "numbers_unheard": [
         "0.3"
       ],
-      "pearl_id": "dr-herrmann-on-outpatient-management-1501"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1501",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:0.3 mg"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 6.74,
+          "capped": [
+            "number not heard: 0.3"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid amlodipine 10 mg; little extra BP benefit but much more edema.",
@@ -50616,7 +50877,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with hypertension",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1588"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1588",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 mg",
+            "drug:amlodipine"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 6.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If edema develops with amlodipine, add a thiazide diuretic for synergistic BP control and edema improvement.",
@@ -50629,7 +50910,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on amlodipine with edema",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1649"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1649",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:amlodipine"
+          ],
+          "actionable": [
+            "add"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid thiazide diuretics in patients with gout because they increase uric acid.",
@@ -50642,7 +50942,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with gout",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1677"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1677",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:thiazide diuretics"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 6.51
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Beta blockers are not first-line for hypertension; metoprolol only lowers BP modestly.",
@@ -50655,7 +50974,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with hypertension",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1705"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1705",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:metoprolol"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Taper beta blockers slowly over months (e.g., reduce by 50 mg per month) to avoid rebound tachycardia or heart attack.",
@@ -50668,7 +51003,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients discontinuing beta blockers",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1727"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1727",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:50 mg"
+          ],
+          "actionable": [
+            "Taper"
+          ],
+          "rarity": 6.16
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hydralazine requires four-times-daily dosing due to short half-life; twice-daily dosing only covers half the day.",
@@ -50681,7 +51035,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on hydralazine",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1810"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1810",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid clonidine tablets; they only lower BP for 4 hours and cause rebound hypertension. Patches are an alternative.",
@@ -50694,7 +51064,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with hypertension",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1852"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1852",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4 hours"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 6.76
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Screen blood pressure annually for normal-risk adults; semiannually if risk factors are present.",
@@ -50707,7 +51096,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults",
-      "pearl_id": "dr-herrmann-on-outpatient-management-1967"
+      "pearl_id": "dr-herrmann-on-outpatient-management-1967",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For high-risk patients (diabetes, CKD, CVD, heart failure, PAD), target BP <130/80.",
@@ -50720,7 +51125,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "high-risk patients",
-      "pearl_id": "dr-herrmann-on-outpatient-management-2015"
+      "pearl_id": "dr-herrmann-on-outpatient-management-2015",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:<1"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For frail patients (falls, dementia, nursing home, orthostatic hypotension, limited life expectancy), use a looser goal of <140/90.",
@@ -50733,7 +51154,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "frail elderly or those with limited life expectancy",
-      "pearl_id": "dr-herrmann-on-outpatient-management-2036"
+      "pearl_id": "dr-herrmann-on-outpatient-management-2036",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:<1"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In hypertensive emergency without acute target organ damage, do not send to ER; lower BP slowly over weeks to months.",
@@ -50746,7 +51186,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "asymptomatic patients with severely elevated BP",
-      "pearl_id": "dr-herrmann-on-outpatient-management-2107"
+      "pearl_id": "dr-herrmann-on-outpatient-management-2107",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hypertensive emergency"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 6.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For asymptomatic severe hypertension (hypertensive urgency), the goal is to reduce BP by 30% after starting antihypertensives and follow up in one week.",
@@ -50759,7 +51221,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with asymptomatic severe hypertension (hypertensive urgency)",
-      "pearl_id": "dr-herrmann-on-outpatient-management-2366"
+      "pearl_id": "dr-herrmann-on-outpatient-management-2366",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypertensive urgency"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 6.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not give oral clonidine in the office for hypertensive urgency; the BP will rebound after 4 hours, and the ER will see a normal BP and not know what happened.",
@@ -50772,7 +51253,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hypertensive urgency in the clinic",
-      "pearl_id": "dr-herrmann-on-outpatient-management-2436"
+      "pearl_id": "dr-herrmann-on-outpatient-management-2436",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:4 hours"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "Do not give"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For hypertensive emergency with chest pain or stroke, give aspirin in the office before sending to the ER.",
@@ -50785,7 +51288,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hypertensive emergency and chest pain or stroke",
-      "pearl_id": "dr-herrmann-on-outpatient-management-2466"
+      "pearl_id": "dr-herrmann-on-outpatient-management-2466",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hypertensive emergency"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 6.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Resistant hypertension is defined as BP still high despite max dose lisinopril, decent dose amlodipine, and max dose hydrochlorothiazide; start thinking about secondary causes at three medications.",
@@ -50798,7 +51323,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on three antihypertensives at optimal doses",
-      "pearl_id": "dr-herrmann-on-outpatient-management-2498"
+      "pearl_id": "dr-herrmann-on-outpatient-management-2498",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:lisinopril"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To evaluate for primary aldosteronism, order plasma renin activity and 8 AM plasma aldosterone; patients on spironolactone may need to be off it for at least a month before testing.",
@@ -50811,7 +51355,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients suspected of primary aldosteronism",
-      "pearl_id": "dr-herrmann-on-outpatient-management-2599"
+      "pearl_id": "dr-herrmann-on-outpatient-management-2599",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:plasma renin activity"
+          ],
+          "actionable": [
+            "evaluate"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For resistant hypertension with CKD, optimize diuretic therapy; if end-stage, dialysis may be needed to control BP.",
@@ -50824,7 +51387,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CKD and resistant hypertension",
-      "pearl_id": "dr-herrmann-on-outpatient-management-2638"
+      "pearl_id": "dr-herrmann-on-outpatient-management-2638",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:resistant hypertension"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before evaluating for secondary causes of resistant hypertension, check medication adherence by reviewing pharmacy fill records.",
@@ -50837,7 +51416,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with apparent resistant hypertension",
-      "pearl_id": "dr-herrmann-on-outpatient-management-2660"
+      "pearl_id": "dr-herrmann-on-outpatient-management-2660",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:resistant hypertension"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Amlodipine/benazepril combination pill is cost-effective, similar price to lisinopril or amlodipine alone.",
@@ -50850,7 +51448,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing combination antihypertensive therapy",
-      "pearl_id": "dr-herrmann-on-outpatient-management-2734"
+      "pearl_id": "dr-herrmann-on-outpatient-management-2734",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Amlodipine"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lifestyle: 30 minutes of brisk walking per day, 5 days per week (150 minutes/week), and DASH diet with fruits/vegetables.",
@@ -50866,7 +51480,24 @@
       "numbers_unheard": [
         "150"
       ],
-      "pearl_id": "dr-herrmann-on-outpatient-management-2810"
+      "pearl_id": "dr-herrmann-on-outpatient-management-2810",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:30 minutes",
+            "frequency:per day"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advise patients to remove the salt shaker from the table and avoid high-sodium foods like TV dinners (which can have 2000 mg sodium).",
@@ -50879,7 +51510,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hypertension",
-      "pearl_id": "dr-herrmann-on-outpatient-management-2845"
+      "pearl_id": "dr-herrmann-on-outpatient-management-2845",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2000 mg"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

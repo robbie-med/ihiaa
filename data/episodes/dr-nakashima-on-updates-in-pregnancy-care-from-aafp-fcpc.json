@@ -36990,7 +36990,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "family physicians in the US",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-113"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-113",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:family medicine"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Black women are two to three times more likely to die from their pregnancy and have the highest rate of cesarean deliveries across the board.",
@@ -37003,7 +37019,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Black pregnant women",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-304"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-304",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pregnancy"
+          ],
+          "harm": [
+            "die"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Continuity of care reduces mortality: 81% of studies in a systematic review showed a reduction in mortality with continuity physicians.",
@@ -37016,7 +37051,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with continuity of care",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-540"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-540",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:continuity of care"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "UDS is not recommended as a primary screening tool for substance use in pregnancy; use the NIDA-4 or 5 Ps instead.",
@@ -37029,7 +37080,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-594"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-594",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pregnancy"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a UDS is positive, get confirmatory testing and counsel that if still positive at birth, a DHS referral will be made in the hospital.",
@@ -37042,7 +37112,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with positive UDS",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-663"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-663",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:referral"
+          ],
+          "actionable": [
+            "counsel"
+          ],
+          "rarity": 7.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The NIDA-4 asks: have you smoked tobacco or vaped? More than 4 drinks of alcohol on a day? More than 10 in a week? Used prescription for something other than prescribed or any illicit drugs? Include marijuana.",
@@ -37055,7 +37144,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-714"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-714",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:More than 4"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The 5 Ps screening tool (Parents, Partner, Past, Prescriptions, Personal) is an indirect approach to ask about substance use, starting with parents and partner before moving to personal use.",
@@ -37068,7 +37173,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-769"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-769",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:5 ps screening tool"
+          ],
+          "actionable": [
+            "ask about"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For refugee patients, educate on the value of prenatal labs and monitoring in the American system, and consider PTSD screening as it can increase rates of postpartum depression.",
@@ -37081,7 +37205,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "refugee pregnant patients",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-880"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-880",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:postpartum depression"
+          ],
+          "actionable": [
+            "educate"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consider PTSD in obstetric patients as it can increase rates of postpartum depression.",
@@ -37094,7 +37237,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "obstetric patients",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-926"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-926",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:postpartum depression"
+          ],
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fetal growth restriction is defined as estimated fetal weight less than 10% of gestational age or based on abdominal circumference.",
@@ -37107,7 +37269,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-953"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-953",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 1"
+          ],
+          "rarity": 6.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The Hadlock formula is superior to NICHD and WHO formulas for detection of fetal growth restriction or small for gestational age.",
@@ -37120,7 +37298,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients undergoing ultrasound",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-962"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-962",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:small for gestational "
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Umbilical artery Doppler monitoring in FGR can decrease stillbirth rate by 9%.",
@@ -37133,7 +37327,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnancies with fetal growth restriction",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1059"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1059",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:umbilical artery doppl"
+          ],
+          "actionable": [
+            "decrease"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For FGR, perform umbilical artery Doppler weekly for the first two weeks; if normal, increase interval to every two to four weeks; if abnormal, continue weekly until delivery.",
@@ -37146,7 +37359,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnancies with fetal growth restriction",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1064"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1064",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:weekly"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 7.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In hypothyroidism in pregnancy, recheck TSH every four to six weeks before 20 weeks, then once at 24-28 weeks and again at 32-34 weeks.",
@@ -37159,7 +37391,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with hypothyroidism",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1353"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1353",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:20 weeks",
+            "test:TSH"
+          ],
+          "actionable": [
+            "recheck"
+          ],
+          "rarity": 5.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Goal TSH in pregnancy for hypothyroidism is less than 2.5.",
@@ -37172,7 +37424,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with hypothyroidism",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1370"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1370",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 2",
+            "test:TSH"
+          ],
+          "rarity": 5.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For hyperthyroidism in first trimester, start propylthiouracil (PTU) 100-600 mg/day, divided (e.g., 200 mg TID for 600 mg).",
@@ -37185,7 +37454,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients in first trimester with hyperthyroidism",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1388"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1388",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:600 mg",
+            "frequency:TID"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For hyperthyroidism in second trimester and beyond, switch from PTU to methimazole.",
@@ -37198,7 +37487,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients in second trimester or later with hyperthyroidism",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1421"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1421",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:methimazole"
+          ],
+          "actionable": [
+            "switch"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For hyperthyroidism in pregnancy, monitor free T4 every two weeks until stable with medication adjustment.",
@@ -37211,7 +37519,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with hyperthyroidism on medication",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1454"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1454",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hyperthyroidism in pre"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "rarity": 6.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients already on levothyroxine before pregnancy, increase dose by 50 micrograms every four weeks, checking levels to stay in range.",
@@ -37224,7 +37551,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with pre-existing hypothyroidism on levothyroxine",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1495"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1495",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:levothyroxine"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 6.73
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Self-titration for hypothyroidism: as soon as a patient suspects pregnancy (missed period or positive test), take two extra doses of Synthroid per week (e.g., two additional doses of their usual daily dose).",
@@ -37237,7 +37583,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hypothyroidism of reproductive age who may become pregnant",
-      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1664"
+      "pearl_id": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1664",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:per week"
+          ],
+          "harm": [
+            "missed"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

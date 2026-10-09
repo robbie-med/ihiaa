@@ -29259,7 +29259,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with allergic rhinitis",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-568"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-568",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:allergic rhinitis"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When using a nasal spray, point the nostril toward the tip of the opposite ear to ensure proper deposition.",
@@ -29272,7 +29288,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients using nasal spray",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-634"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-634",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 6.98
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Flonase (fluticasone) takes about 6 days to take effect; start with 2 sprays each nostril twice daily for at least 2 weeks, then taper to once daily.",
@@ -29285,7 +29317,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with allergic rhinitis",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-679"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-679",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 days",
+            "threshold:at least 2",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "You do not need to inhale when spraying nasal medication; mucociliary clearance moves it to the back of the throat naturally (we swallow 1.5, 2 liters of nasal secretions daily).",
@@ -29298,7 +29351,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients using nasal spray",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-762"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-762",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Montelukast has a black box warning for insomnia and suicide; use it only in patients with asthma or those who cannot tolerate nasal sprays.",
@@ -29311,7 +29383,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with allergic rhinitis",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-941"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-941",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:black box warning"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "black box"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Montelukast targets leukotrienes and is less effective for IgE-mediated allergic rhinitis; reserve for patients with asthma.",
@@ -29324,7 +29418,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with allergic rhinitis",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-955"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-955",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:allergic rhinitis"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Goldenrod is not a significant allergen; ragweed is the main cause of late summer/fall hay fever.",
@@ -29337,7 +29447,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with seasonal allergies",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1017"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1017",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fever"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bacterial sinusitis is always preceded by and concurrent with rhinitis.",
@@ -29350,7 +29476,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1080"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1080",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bacterial sinusitis"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recurrent sinusitis is defined as 4 episodes per year with at least 10 symptom-free days between episodes; recurrence within 5 days is considered the same infection.",
@@ -29363,7 +29508,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "sinusitis",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1123"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1123",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 days",
+            "threshold:at least 1"
+          ],
+          "rarity": 7.07
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diagnosis of bacterial sinusitis requires 10 days of symptoms without improvement; even high fever and purulent drainage on day 4 do not justify antibiotics.",
@@ -29376,7 +29538,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acute sinusitis",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1199"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1199",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 days"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.95
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not treat sinusitis based on physical exam findings (percussion, transillumination); diagnosis is based on duration of symptoms (≥10 days).",
@@ -29389,7 +29570,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "sinusitis",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1237"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1237",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 days"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.67
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "First-line antibiotics for bacterial sinusitis: amoxicillin or amoxicillin-clavulanate. For penicillin allergy, use cefpodoxime/clavulanate or doxycycline.",
@@ -29402,7 +29602,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "bacterial sinusitis",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1267"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1267",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:amoxicillin"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For bacterial sinusitis, use amoxicillin-clavulanate 875 mg twice daily for 5-7 days, not 10 days.",
@@ -29415,7 +29634,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with bacterial sinusitis",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1284"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1284",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:875 mg",
+            "frequency:daily",
+            "drug:amoxicillin"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use macrolides (Z-Pak) for sinusitis; they don't work well.",
@@ -29428,7 +29668,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with bacterial sinusitis",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1287"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1287",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:macrolides"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use macrolides (Z-Pak) for sinusitis; they are not effective.",
@@ -29441,7 +29700,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "bacterial sinusitis",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1288"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1288",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:macrolides"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If sinusitis fails initial treatment, escalate to Augmentin 2 grams twice daily for 5-7 days.",
@@ -29454,7 +29732,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with bacterial sinusitis failing initial therapy",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1291"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1291",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:7 days",
+            "frequency:daily"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For penicillin-allergic patients with sinusitis, use levofloxacin.",
@@ -29467,7 +29762,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with bacterial sinusitis and penicillin allergy",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1297"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1297",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:penicillin"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For sinusitis patients with risk factors (insulin resistance, age >65, recent hospitalization, antibiotics in past month, immunocompromise, diabetes, CAD), start Augmentin 2 grams twice daily, not 875 mg.",
@@ -29480,7 +29794,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with bacterial sinusitis and risk factors",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1305"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1305",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:875 mg",
+            "threshold:>6",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients with risk factors (age >65, recent hospitalization, antibiotics in past month, immunocompromised, diabetes, CAD), use high-dose amoxicillin-clavulanate (2 g BID) as initial therapy for bacterial sinusitis.",
@@ -29493,7 +29828,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "bacterial sinusitis with risk factors",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1305-2"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1305-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 g",
+            "threshold:>6",
+            "frequency:BID"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If concerned for sinusitis complications (preseptal/orbital cellulitis, osteomyelitis), order CT face with contrast for bone evaluation; MRI is better for soft tissue/abscess/sinus thrombosis.",
@@ -29506,7 +29862,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected complicated sinusitis",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1401"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1401",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.41
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bacterial sinusitis is diagnosed after 10 days of symptoms; during that time, use Flonase and nasal rinses.",
@@ -29519,7 +29894,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with sinusitis symptoms",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1466"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1466",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 days"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consider STI causes (chlamydia, gonorrhea, syphilis) for sore throat in high-risk patients (oral sex, MSM); culture if concerned.",
@@ -29532,7 +29926,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "high-risk patients with sore throat",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1547"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1547",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For strep pharyngitis, use Centor criteria; if criteria are not met, do not test because you won't treat.",
@@ -29545,7 +29958,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with sore throat",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1648"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1648",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:strep pharyngitis"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If rapid strep test is negative, trust the negative result; do not routinely send a culture.",
@@ -29558,7 +29990,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with sore throat and negative rapid strep",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1711"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1711",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 5.9
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Treat strep pharyngitis with amoxicillin 500 mg twice daily for 10 days.",
@@ -29571,7 +30022,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with group A strep pharyngitis",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1784"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1784",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:500 mg",
+            "frequency:daily",
+            "drug:amoxicillin"
+          ],
+          "actionable": [
+            "Treat"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not give steroids for sore throat except in extreme circumstances (severe pain, inability to swallow).",
@@ -29584,7 +30056,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with sore throat",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1857"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1857",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "Do not give"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Honey for cough from sore throat is better studied than any over-the-counter medication.",
@@ -29597,7 +30088,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with sore throat and cough",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1874"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1874",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cough"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not retest for strep after treatment if symptoms resolve; retest only if concerning symptoms recur.",
@@ -29610,7 +30117,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients treated for strep pharyngitis",
-      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1897"
+      "pearl_id": "dr-bancroft-on-sore-throat-rhinitis-sinusitis-1897",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.1
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

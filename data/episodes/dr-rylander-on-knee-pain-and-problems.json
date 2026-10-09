@@ -39448,7 +39448,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults being evaluated for knee ligament injury",
-      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1238"
+      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1238",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ligamentous laxity"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A partial ligament tear has a stretchy but present endpoint; a complete tear has no endpoint and feels like soft tissue distension.",
@@ -39461,7 +39480,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected knee ligament injury",
-      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1289"
+      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1289",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To reduce a lateral patellar dislocation, hyperextend the knee to recreate the window for the patella, then gently guide it back; do not force it back while the knee is bent.",
@@ -39474,7 +39506,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute lateral patellar dislocation",
-      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1427"
+      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1427",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:patellar dislocation"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After reducing a patellar dislocation, brace the knee in slight flexion to prevent hyperextension and refer to orthopedics; most patients see an orthopedist within six weeks.",
@@ -39487,7 +39538,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after patellar dislocation reduction",
-      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1468"
+      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1468",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:patellar dislocation"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Medial or superior patellar dislocations are rare and require urgent orthopedic referral due to possible joint capsule or tendon damage.",
@@ -39500,7 +39570,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with non-lateral patellar dislocation",
-      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1580"
+      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1580",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:patellar dislocation"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The patellar apprehension test reproduces lateral displacement and patient tightening; the grind test causes a grinding sensation in the posterior quadrant.",
@@ -39513,7 +39602,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected patellar instability",
-      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1606"
+      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1606",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:patellar apprehension "
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Most patients who present with a 'dislocated knee' actually have a patellar dislocation; the tibiofemoral joint is rarely dislocated.",
@@ -39526,7 +39631,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients presenting with knee dislocation history",
-      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1665"
+      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1665",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:patellar dislocation"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patellofemoral pain syndrome, management includes activity modification, topical treatments, and physical therapy focusing on strengthening the quadriceps and VMO to improve patellar tracking.",
@@ -39539,7 +39660,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with patellofemoral pain syndrome",
-      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1902"
+      "pearl_id": "dr-rylander-on-knee-pain-and-problems-1902",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:patellofemoral pain sy"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For bursitis, avoid aspiration because it increases infection risk; steroids further increase infection risk and can cause joint degeneration. Manage conservatively with activity modification and anti-inflammatories.",
@@ -39552,7 +39689,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with knee bursitis",
-      "pearl_id": "dr-rylander-on-knee-pain-and-problems-2134"
+      "pearl_id": "dr-rylander-on-knee-pain-and-problems-2134",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:activity modification"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Osgood-Schlatter disease is an apophysitis of the tibial tubercle common in adolescents, especially those in jumping or kicking sports; it typically resolves by the twenties.",
@@ -39566,7 +39722,23 @@
       "prompt_version": "v1",
       "applies_to": "adolescents with anterior knee pain",
       "by_presenter": false,
-      "pearl_id": "dr-rylander-on-knee-pain-and-problems-2497"
+      "pearl_id": "dr-rylander-on-knee-pain-and-problems-2497",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:osgood-schlatter disea"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -44386,7 +44386,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients age 36 and older",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-558"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-558",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:copy number variant"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cell-free DNA (NIPS) is much more sensitive and specific than the quad screen, so if doing prenatal screening, it makes more sense to use cell-free DNA.",
@@ -44399,7 +44415,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients undergoing prenatal screening",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-896"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-896",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cell-free dna"
+          ],
+          "actionable": [
+            "screen"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The quad screen also gives risk of neural tube defects, which cell-free DNA does not; the anatomy scan at 20 weeks catches most but not all neural tube defects.",
@@ -44412,7 +44447,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients choosing between quad screen and cell-free DNA",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-913"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-913",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:20 weeks"
+          ],
+          "actionable": [
+            "screen"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nuchal translucency >3.5 mm is associated with congenital heart defects, fetal malformations, dysplasias, and genetic syndromes.",
@@ -44425,7 +44479,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "first-trimester ultrasound screening",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1040"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1040",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3.5 mm",
+            "threshold:>3"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "First-trimester screening (nuchal translucency plus PAPP-A and beta-hCG) must be done at 12-13 weeks and has sensitivity of only 70%.",
@@ -44438,7 +44509,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "first-trimester screening",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1109"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1109",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:13 weeks"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Quad screen sensitivity is about 75% for women under 35 and only 80% for women over 35.",
@@ -44451,7 +44538,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients undergoing quad screen",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1150"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1150",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:under 3"
+          ],
+          "actionable": [
+            "screen"
+          ],
+          "rarity": 5.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient has an abnormal ultrasound finding, instead of saying 'I don't know,' you can say the finding can be associated with trisomy 21 and refer to a specialist for further evaluation.",
@@ -44464,7 +44570,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "family physicians counseling patients with abnormal ultrasound findings",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1256"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1256",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ultrasound measurements (e.g., renal pelvis) can appear abnormal if the plane is slightly oblique; tests are only as accurate as the skill of the person acquiring the data.",
@@ -44477,7 +44602,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all prenatal ultrasound interpretations",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1359"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1359",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:Ultrasound"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Resolved ultrasound findings like pyelectasis should not be carried forward in the medical record to avoid creating unnecessary patient anxiety later in pregnancy.",
@@ -44490,7 +44631,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with resolved ultrasound findings",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1388"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1388",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If pyelectasis is resolved on follow-up ultrasound, do not carry the finding forward in the medical record; it creates confusion and unnecessary stress for the patient.",
@@ -44503,7 +44663,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with resolved pyelectasis on ultrasound",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1395"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1395",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Echogenic intracardiac foci are seen commonly; 15-30% could have Down syndrome, but it is normal in 4-7% of pregnancies.",
@@ -44516,7 +44695,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with echogenic intracardiac foci on ultrasound",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1494"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1494",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:down syndrome"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Echogenic intracardiac foci: 15, 30% of fetuses with this finding have Down syndrome, but it is normal in 4, 7% of fetuses. Counsel patients before MFM referral to prevent panic.",
@@ -44529,7 +44724,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with echogenic intracardiac foci on ultrasound",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1494-2"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1494-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:down syndrome"
+          ],
+          "actionable": [
+            "Counsel"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cell-free DNA is a screening tool, not diagnostic; a positive test may have a positive predictive value as low as 50%.",
@@ -44542,7 +44756,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all pregnant patients considering cfDNA screening",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1740"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1740",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:positive predictive va"
+          ],
+          "rarity": 6.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cell-free DNA can be drawn at any point in pregnancy after 9, 10 weeks, unlike the quad screen which has a limited window.",
@@ -44555,7 +44785,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients after 9–10 weeks",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1804"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1804",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 weeks"
+          ],
+          "actionable": [
+            "screen"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The fetal component of cell-free DNA is derived from placental trophoblasts undergoing programmed cell death, not from the fetus itself.",
@@ -44568,7 +44817,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1889"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1889",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cell-free dna"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If cell-free DNA shows multiple aneuploidies, consider occult maternal malignancy; incidence is 18% (about 1 in 5 cases).",
@@ -44581,7 +44849,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with multiple aneuploidies on cfDNA",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2036"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2036",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:maternal malignancy"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In Cerner, the Core Plus order screens for trisomies 21, 18, and 13; adding SCA screens for sex chromosome aneuploidy; ESS screens for rare chromosomal abnormalities.",
@@ -44594,7 +44881,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians ordering cfDNA in Cerner",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2141"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2141",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:aneuploidy"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Testing for chromosomal abnormalities should be an informed patient choice based on accurate information, patient values, and goals.",
@@ -44607,7 +44913,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all pregnant patients",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2455"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2455",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When counseling, provide information on risks (false positives, need for diagnostic testing) and benefits (early preparation). Inquire about the patient's beliefs and preferences regarding testing and potential results.",
@@ -44620,7 +44939,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all pregnant patients considering screening",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2716"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2716",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:false positive"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient would not pursue diagnostic testing after a positive screen, discuss this upfront to avoid unnecessary anxiety and testing.",
@@ -44633,7 +44968,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients considering cfDNA screening",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2743"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2743",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "screen"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always inquire about the patient's beliefs and preferences regarding screening and what they would do with a positive result before offering the test.",
@@ -44646,7 +44997,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all pregnant patients considering NIPS",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2762"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2762",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:screening"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Obtain informed consent when offering NIPS, allowing the patient to choose to pursue or decline testing.",
@@ -44659,7 +45029,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all pregnant patients considering NIPS",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2766"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2766",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:informed consent"
+          ],
+          "actionable": [
+            "Obtain"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a 32-year-old at 14 weeks, the positive predictive value of NIPS for trisomy 13 is only 7% because the incidence is about 1 in 4052.",
@@ -44675,7 +45064,23 @@
       "numbers_unheard": [
         "4052"
       ],
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2937"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-2937",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:14 weeks"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pre-counsel patients that if they get a positive NIPS result, they should not panic immediately because for their age it may only have a 70% chance of being real.",
@@ -44688,7 +45093,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients undergoing NIPS",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-3055"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-3055",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "counsel"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 7.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Positive predictive value of NIPS decreases by about 1-2% per week as gestational age increases, possibly due to changes in fetal fraction.",
@@ -44701,7 +45125,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients undergoing NIPS",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-3126"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-3126",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:per week"
+          ],
+          "rarity": 6.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient gets an abnormal NIPS result, involve maternal-fetal medicine and genetic counseling to determine if diagnostic testing is indicated.",
@@ -44714,7 +45154,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with abnormal NIPS results",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-3192"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-3192",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:maternal-fetal medicin"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Explain positive predictive value to patients in lay terms as 'the likelihood that the positive test is real'.",
@@ -44727,7 +45183,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients asking about PPV",
-      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-3239"
+      "pearl_id": "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-3239",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:positive predictive va"
+          ],
+          "rarity": 6.92
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

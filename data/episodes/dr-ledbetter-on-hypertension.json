@@ -21133,7 +21133,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients",
-      "pearl_id": "dr-ledbetter-on-hypertension-223"
+      "pearl_id": "dr-ledbetter-on-hypertension-223",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:stroke"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For rapid blood pressure adjustment, the initial goal is under 160/100, with no more than a 25% reduction over the first 2, 4 hours.",
@@ -21146,7 +21162,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring rapid BP reduction",
-      "pearl_id": "dr-ledbetter-on-hypertension-331"
+      "pearl_id": "dr-ledbetter-on-hypertension-331",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4 hours",
+            "threshold:under 1"
+          ],
+          "rarity": 5.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In non-emergency hypertension, do not give IV medications; instead, take a breath and evaluate underlying causes.",
@@ -21159,7 +21192,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "non-emergency hypertension",
-      "pearl_id": "dr-ledbetter-on-hypertension-359"
+      "pearl_id": "dr-ledbetter-on-hypertension-359",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hypertension"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 6.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a patient with known aortic dissection who is not actively dissecting but has severely elevated BP, give clonidine in clinic and observe for a couple of hours.",
@@ -21172,7 +21227,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with known aortic dissection (not actively dissecting) in clinic",
-      "pearl_id": "dr-ledbetter-on-hypertension-402"
+      "pearl_id": "dr-ledbetter-on-hypertension-402",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:aortic dissection"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients aged 65 and older, start antihypertensive therapy with a low dose of a single medication to avoid relative hypotension.",
@@ -21185,7 +21259,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients (65+) starting antihypertensive therapy",
-      "pearl_id": "dr-ledbetter-on-hypertension-527"
+      "pearl_id": "dr-ledbetter-on-hypertension-527",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:relative hypotension"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When an asymptomatic inpatient has high blood pressure, do not give IV labetalol; instead, restart their home losartan if it was missed.",
@@ -21198,7 +21291,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "asymptomatic inpatients with missed home antihypertensives",
-      "pearl_id": "dr-ledbetter-on-hypertension-930"
+      "pearl_id": "dr-ledbetter-on-hypertension-930",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:iv labetalol"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "do not give"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Adjusting a patient's lisinopril dose in the hospital for elevated BP often leads to hypotension after discharge; avoid changing home medications unless there is an acute indication like NSTEMI or heart failure.",
@@ -21211,7 +21326,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older patients in the hospital",
-      "pearl_id": "dr-ledbetter-on-hypertension-1028"
+      "pearl_id": "dr-ledbetter-on-hypertension-1028",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:lisinopril"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not order PRN blood pressure medications for hospitalized patients; the only exceptions are stroke protocol, aortic dissection, and preeclampsia.",
@@ -21225,7 +21359,32 @@
       "prompt_version": "v1",
       "applies_to": "hospitalized patients",
       "by_presenter": false,
-      "pearl_id": "dr-ledbetter-on-hypertension-1179"
+      "pearl_id": "dr-ledbetter-on-hypertension-1179",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:PRN"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.0,
+          "capped": [
+            "said by another participant"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a septic patient with pneumonia and high blood pressure, do not give PRN blood pressure medications; the issue is not the blood pressure.",
@@ -21238,7 +21397,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "septic patients with pneumonia",
-      "pearl_id": "dr-ledbetter-on-hypertension-1204"
+      "pearl_id": "dr-ledbetter-on-hypertension-1204",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "frequency:PRN"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 6.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a patient with small bowel obstruction, high blood pressure is likely due to pain and vomiting, not a primary hypertensive issue.",
@@ -21251,7 +21432,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with small bowel obstruction",
-      "pearl_id": "dr-ledbetter-on-hypertension-1215"
+      "pearl_id": "dr-ledbetter-on-hypertension-1215",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:small bowel obstructio"
+          ],
+          "rarity": 6.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not order PRN blood pressure medications except for stroke protocol, aortic dissection, or preeclampsia; even with parameters, the decision should be based on symptoms, not just numbers.",
@@ -21264,7 +21461,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient setting",
-      "pearl_id": "dr-ledbetter-on-hypertension-1233"
+      "pearl_id": "dr-ledbetter-on-hypertension-1233",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "frequency:PRN"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Even with parameters, PRN blood pressure medications should not be ordered; the decision should be based on symptoms and addressing other issues first.",
@@ -21277,7 +21496,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients",
-      "pearl_id": "dr-ledbetter-on-hypertension-1243"
+      "pearl_id": "dr-ledbetter-on-hypertension-1243",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:PRN"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Parameters for PRN blood pressure medications are acceptable in preeclampsia and stroke protocol, but even then, it's not just the numbers, it's the underlying condition.",
@@ -21290,7 +21525,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with preeclampsia or stroke",
-      "pearl_id": "dr-ledbetter-on-hypertension-1290"
+      "pearl_id": "dr-ledbetter-on-hypertension-1290",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:PRN"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 6.76
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you suspect hypertensive emergency, send the patient to the emergency room.",
@@ -21303,7 +21557,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected hypertensive emergency",
-      "pearl_id": "dr-ledbetter-on-hypertension-1321"
+      "pearl_id": "dr-ledbetter-on-hypertension-1321",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypertensive emergency"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 5.85
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

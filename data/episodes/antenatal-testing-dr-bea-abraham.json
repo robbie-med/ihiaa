@@ -16661,7 +16661,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-155"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-155",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 hours"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The rate of antepartum stillbirth within one week of a negative contraction stress test is 0.04%.",
@@ -16674,7 +16690,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women with a negative CST",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-226"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-226",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:contraction stress tes"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a contraction stress test, use nipple stimulation (works faster and is better than IV oxytocin) and look for three contractions lasting at least 40 seconds in a 10-minute period.",
@@ -16687,7 +16719,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "when performing a contraction stress test",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-245"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-245",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:at least 4"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A negative contraction stress test means no late or variable decelerations; a positive test means late decelerations after 50% of contractions.",
@@ -16700,7 +16751,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "interpreting contraction stress test results",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-270"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-270",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:contraction stress tes"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Contraindications to contraction stress test include placenta previa, abruption, and incompetent cervix.",
@@ -16713,7 +16780,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women being considered for CST",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-301"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-301",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:contraction stress tes"
+          ],
+          "harm": [
+            "Contraindications"
+          ],
+          "rarity": 7.4
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "NST has a 0.3% false negative rate and a 55% false positive rate; false positives can occur if the baby is sleeping or if maternal medications cause fetal sleepiness.",
@@ -16726,7 +16812,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women undergoing NST",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-342"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-342",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:false negative"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For NST, monitor for 20 minutes; reactive requires ≥2 accelerations in 20 minutes. If nonreactive, extend monitoring to at least 40 minutes.",
@@ -16739,7 +16841,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women undergoing NST",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-363"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-363",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:20 minutes",
+            "threshold:at least 4"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "NSTs are usually done twice weekly for antenatal testing.",
@@ -16752,7 +16874,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women requiring antenatal testing",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-385"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-385",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:weekly"
+          ],
+          "rarity": 7.1
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ACOG defines oligohydramnios as a maximum vertical pocket (MVP) of less than 2 cm; they do not rely on the amniotic fluid index (AFI).",
@@ -16765,7 +16903,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women with suspected oligohydramnios",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-443"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-443",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 cm",
+            "threshold:less than 2"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For gestational diabetes, ACOG recommends starting antenatal testing at 32 weeks if the patient is on medication; diet-controlled GDM usually does not need testing.",
@@ -16778,7 +16936,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women with gestational diabetes",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-641"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-641",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:32 weeks"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For chronic hypertension, start antenatal testing at 32 weeks; for gestational hypertension, start at diagnosis and test twice weekly.",
@@ -16791,7 +16968,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women with hypertensive disorders",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-683"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-683",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:32 weeks",
+            "frequency:weekly"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For post-term pregnancy, ACOG recommends starting testing at 40 weeks; practice is to induce at 41 weeks.",
@@ -16804,7 +17001,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "post-term pregnant women",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-793"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-793",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:40 weeks"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For decreased fetal movement, ACOG recommends an NST and AFI (or modified BPP).",
@@ -16817,7 +17033,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women with decreased fetal movement",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-831"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-831",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:decreased fetal moveme"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If an NST or modified BPP is abnormal for decreased fetal movement, get a full BPP. If BPP is 6/10 and ≥37 weeks, deliver; if <37 weeks, repeat BPP in 24 hours. If BPP ≤4/10, proceed to delivery.",
@@ -16830,7 +17062,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women with abnormal antenatal testing",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-852"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-852",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:37 weeks",
+            "threshold:6/10"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 6.76
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For oligohydramnios, assess for rupture of membranes and consider delivery at 36-37 weeks; if <36 weeks, manage expectantly.",
@@ -16843,7 +17095,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women with oligohydramnios",
-      "pearl_id": "antenatal-testing-dr-bea-abraham-895"
+      "pearl_id": "antenatal-testing-dr-bea-abraham-895",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:37 weeks",
+            "threshold:<3"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

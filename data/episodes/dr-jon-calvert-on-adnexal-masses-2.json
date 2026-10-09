@@ -23077,7 +23077,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-403"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-403",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a 60-year-old woman, you probably should not feel an ovary at all; if you do, get an ultrasound to rule out cancer.",
@@ -23090,7 +23103,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "postmenopausal women",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-531"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-531",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 6.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you cannot feel the uterus on bimanual exam when pushing the cervix upward, suspect a retroverted uterus.",
@@ -23103,7 +23135,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing bimanual pelvic exam",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-681"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-681",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bimanual exam"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To feel the ovary on bimanual exam, slide your finger along the lateral aspect of the cervix, then lift upward to push the ovary toward the anterior abdominal wall.",
@@ -23116,7 +23164,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing bimanual pelvic exam",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-784"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-784",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bimanual exam"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A simple cyst on ultrasound has a 90% chance of being benign; complex cysts (loculated or with solid growth) are more concerning.",
@@ -23129,7 +23193,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with adnexal masses on ultrasound",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-981"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-981",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In PCOS, ultrasound shows 10-15 follicles of similar size; management depends on pregnancy desire, if not, ensure endometrial shedding at least yearly and screen for diabetes.",
@@ -23142,7 +23222,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PCOS",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-1304"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-1304",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a woman with PCOS does not desire pregnancy, you must ensure she empties her uterus at least once a year to prevent endometrial hyperplasia and cancer.",
@@ -23155,7 +23254,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "non-pregnant women with PCOS",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-1409"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-1409",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:endometrial hyperplasi"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a functional simple cyst less than 10 cm, observe with repeat ultrasound in 3 months; most will resolve.",
@@ -23168,7 +23286,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "premenopausal women with simple cysts <10 cm",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-1642"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-1642",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 cm",
+            "threshold:less than 1",
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 5.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Mittelschmerz is pain at the time of ovulation (day 14 of a regular cycle) and is a normal finding.",
@@ -23181,7 +23320,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women of reproductive age",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-1824"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-1824",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:mittelschmerz"
+          ],
+          "rarity": 6.4
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Absence of guarding and tenderness suggests no peritoneal irritation; rebound tenderness indicates peritoneal irritation and a surgical abdomen.",
@@ -23194,7 +23349,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with abdominal pain",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-1949"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-1949",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:peritoneal irritation"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Uterus displaced to the left suggests something pushing or pulling it, often a mass; get an ultrasound.",
@@ -23207,7 +23378,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with adnexal mass",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-1986"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-1986",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 6.78
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Normal ovary size is 5 x 3 x 2 cm; twice normal size is 8 x 10 x 12 cm.",
@@ -23220,7 +23407,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-2021"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-2021",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 cm"
+          ],
+          "rarity": 5.68
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hemorrhagic ovarian cyst appears as a complex cyst with internal solid structure suggesting blood clot on ultrasound.",
@@ -23233,7 +23436,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with adnexal mass",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-2042"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-2042",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "harm": [
+            "Hemorrhagic"
+          ],
+          "rarity": 6.78
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A hemorrhagic ovarian cyst presents with gradually increasing pain after ovulation and shows internal solid structure (clot) on ultrasound; management is observation, not surgery.",
@@ -23246,7 +23468,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "reproductive-age women with acute pelvic pain",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-2081"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-2081",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "harm": [
+            "hemorrhagic"
+          ],
+          "rarity": 6.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hemorrhagic ovarian cyst is managed with observation, not surgery.",
@@ -23259,7 +23500,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hemorrhagic ovarian cyst",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-2101"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-2101",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hemorrhagic ovarian cy"
+          ],
+          "harm": [
+            "Hemorrhagic"
+          ],
+          "rarity": 6.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tubo-ovarian abscess appears as a cystic structure with internal debris (not black) on ultrasound, often U-shaped.",
@@ -23272,7 +23532,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PID",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-2346"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-2346",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tubo-ovarian abscess requires IV antibiotics and hospitalization.",
@@ -23285,7 +23561,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with tubo-ovarian abscess",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-2408"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-2408",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tubo-ovarian abscess"
+          ],
+          "rarity": 6.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PID involves endometrium, cervix, and at least one fallopian tube; tubo-ovarian abscess likely causes permanent tubal damage, affecting future fertility.",
@@ -23298,7 +23590,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PID",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-2438"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-2-2438",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tubo-ovarian abscess"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

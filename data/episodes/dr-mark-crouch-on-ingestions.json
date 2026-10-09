@@ -39817,7 +39817,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians working in unfamiliar regions",
-      "pearl_id": "dr-mark-crouch-on-ingestions-931"
+      "pearl_id": "dr-mark-crouch-on-ingestions-931",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:resource-limited setti"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An asymptomatic patient after ingestion can be reassuring, but you must know the timing and substance because they can deteriorate rapidly.",
@@ -39830,7 +39846,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with suspected ingestion",
-      "pearl_id": "dr-mark-crouch-on-ingestions-951"
+      "pearl_id": "dr-mark-crouch-on-ingestions-951",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ingestion"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Activated charcoal is most effective if given within one hour of ingestion; timing affects GI tract location and absorption.",
@@ -39844,7 +39876,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with recent ingestion (within ~1 hour)",
       "by_presenter": false,
-      "pearl_id": "dr-mark-crouch-on-ingestions-986"
+      "pearl_id": "dr-mark-crouch-on-ingestions-986",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:activated charcoal"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always obtain the original container; in the US, bottles often list poison control number and first aid instructions.",
@@ -39857,7 +39905,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with suspected ingestion",
-      "pearl_id": "dr-mark-crouch-on-ingestions-1053"
+      "pearl_id": "dr-mark-crouch-on-ingestions-1053",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:poison control"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When working overseas with unfamiliar medications, open the package insert inside the box; global manufacturers include dosing and toxicity information that may not be in US databases.",
@@ -39870,7 +39937,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians using unfamiliar medications in resource-limited settings",
-      "pearl_id": "dr-mark-crouch-on-ingestions-1166"
+      "pearl_id": "dr-mark-crouch-on-ingestions-1166",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:package insert"
+          ],
+          "harm": [
+            "toxicity"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In any potential poisoning or resuscitation scenario, place an IV line early, before circulatory collapse, because finding a vein after blood pressure drops is very difficult.",
@@ -39883,7 +39969,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with potential poisoning or need for resuscitation",
-      "pearl_id": "dr-mark-crouch-on-ingestions-1240"
+      "pearl_id": "dr-mark-crouch-on-ingestions-1240",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:poisoning"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Check blood glucose in any patient with altered mental status or suspected ingestion, as hypoglycemia may be a contributing factor even if not directly from the poison.",
@@ -39896,7 +39998,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected ingestion or altered mental status",
-      "pearl_id": "dr-mark-crouch-on-ingestions-1275"
+      "pearl_id": "dr-mark-crouch-on-ingestions-1275",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypoglycemia"
+          ],
+          "actionable": [
+            "Check"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Even from overseas, you can call US poison control (1-800-222-1222) for guidance on unfamiliar ingestions.",
@@ -39914,7 +40035,23 @@
         "222",
         "1222"
       ],
-      "pearl_id": "dr-mark-crouch-on-ingestions-1336"
+      "pearl_id": "dr-mark-crouch-on-ingestions-1336",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:poison control"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Paraquat (Gramoxone) ingestion of more than 30 mL (three 10 mL syringes) is universally fatal; it creates oxygen superradicals that attack the alveoli.",
@@ -39927,7 +40064,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected paraquat ingestion",
-      "pearl_id": "dr-mark-crouch-on-ingestions-1463"
+      "pearl_id": "dr-mark-crouch-on-ingestions-1463",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:30 mL",
+            "threshold:more than 3"
+          ],
+          "harm": [
+            "fatal"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Drinking more than 30 mL of paraquat (three 10 cc syringes) is universally fatal.",
@@ -39940,7 +40097,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any ingestion of paraquat",
-      "pearl_id": "dr-mark-crouch-on-ingestions-1463-2"
+      "pearl_id": "dr-mark-crouch-on-ingestions-1463-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:30 mL",
+            "threshold:more than 3"
+          ],
+          "harm": [
+            "fatal"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Improperly prepared cassava or fava beans can cause cyanide poisoning or hemolytic crisis in patients with G6PD deficiency.",
@@ -39953,7 +40130,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with G6PD deficiency or after ingestion of improperly prepared cassava/fava beans",
-      "pearl_id": "dr-mark-crouch-on-ingestions-1518"
+      "pearl_id": "dr-mark-crouch-on-ingestions-1518",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cyanide poisoning"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For cyanide poisoning from fava beans or cassava, give 10 mL of Nithiodote through a 16 gauge IV; patients can recover dramatically within 20 minutes.",
@@ -39966,7 +40159,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "cyanide poisoning",
-      "pearl_id": "dr-mark-crouch-on-ingestions-1615"
+      "pearl_id": "dr-mark-crouch-on-ingestions-1615",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 mL"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Naloxone is now available without prescription at county health departments and pharmacies; it should be carried in the community like defibrillators.",
@@ -39979,7 +40191,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "community setting, opioid overdose risk",
-      "pearl_id": "dr-mark-crouch-on-ingestions-1695"
+      "pearl_id": "dr-mark-crouch-on-ingestions-1695",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:naloxone"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In low-resource settings, use epidemiology to guide diagnosis; if a condition is one in a hundred thousand, it should move way down the differential.",
@@ -39992,7 +40220,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians in any setting, especially low-resource",
-      "pearl_id": "dr-mark-crouch-on-ingestions-2001"
+      "pearl_id": "dr-mark-crouch-on-ingestions-2001",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:epidemiology"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The Global Burden of Disease database at the Institute for Health Metrics is a useful resource for understanding local disease patterns before working in a new region.",
@@ -40005,7 +40252,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians planning to work in cross-cultural or low-resource settings",
-      "pearl_id": "dr-mark-crouch-on-ingestions-2020"
+      "pearl_id": "dr-mark-crouch-on-ingestions-2020",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:global burden of disea"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Paraquat causes severe esophagitis and pulmonary fibrosis; it has no antidote, so treatment is supportive.",
@@ -40018,7 +40281,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "paraquat ingestion",
-      "pearl_id": "dr-mark-crouch-on-ingestions-2344"
+      "pearl_id": "dr-mark-crouch-on-ingestions-2344",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:esophagitis"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For direct caustic injury from ingestions, give magnesium-aluminum antacids or a PPI to reduce GI irritation.",
@@ -40031,7 +40310,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "caustic ingestion",
-      "pearl_id": "dr-mark-crouch-on-ingestions-2411"
+      "pearl_id": "dr-mark-crouch-on-ingestions-2411",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ingestion"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Prevention of accidental ingestions includes storing chemicals in original containers out of reach of children; never repurpose water bottles for weed killer.",
@@ -40044,7 +40342,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "households with children",
-      "pearl_id": "dr-mark-crouch-on-ingestions-2450"
+      "pearl_id": "dr-mark-crouch-on-ingestions-2450",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": true,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "D",
+        "fired": {
+          "specific": [
+            "concept:ingestion"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "local": [
+            "storing"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Insulin can be used to counteract the effects of beta-blocker and calcium channel blocker overdose.",
@@ -40057,7 +40377,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "beta-blocker or calcium channel blocker overdose",
-      "pearl_id": "dr-mark-crouch-on-ingestions-2537"
+      "pearl_id": "dr-mark-crouch-on-ingestions-2537",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:calcium channel blocke"
+          ],
+          "harm": [
+            "overdose"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Activated charcoal is most effective if given within one hour of ingestion; some newer guidelines extend to six hours, but the one-hour mark is still cited in AFP articles.",
@@ -40070,7 +40409,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acute ingestion",
-      "pearl_id": "dr-mark-crouch-on-ingestions-2655"
+      "pearl_id": "dr-mark-crouch-on-ingestions-2655",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:activated charcoal"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

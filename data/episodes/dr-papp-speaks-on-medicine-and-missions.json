@@ -50049,7 +50049,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "in Togo, for lethargic seizing child",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-119"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-119",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For cerebral malaria with seizures, start with phenobarbital 20 mg/kg IV (skip diazepam to avoid oversedation).",
@@ -50062,7 +50075,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "cerebral malaria with seizures",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-428"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-428",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:20 mg"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Wait 5, 10 minutes between sequential seizure medications before moving to the next agent.",
@@ -50075,7 +50107,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "status epilepticus",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-468"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-468",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:10 minutes"
+          ],
+          "actionable": [
+            "Wait"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 6.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Give IV artesunate empirically for suspected cerebral malaria after drawing blood but before the test result returns (result takes 3 hours).",
@@ -50088,7 +50142,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "suspected cerebral malaria",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-507"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-507",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 hours"
+          ],
+          "actionable": [
+            "Give"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected typhoid with severe abdominal tenderness, admit for serial abdominal exams; do not discharge.",
@@ -50101,7 +50174,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "suspected typhoid with severe abdominal tenderness",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-654"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-654",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:typhoid"
+          ],
+          "actionable": [
+            "admit"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Physically escort the patient to the ER yourself; saying 'go to the ER' can result in a 30, 60 minute delay.",
@@ -50114,7 +50206,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "in resource-limited setting",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-667"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-667",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:60 minute"
+          ],
+          "rarity": 7.55
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Maintain a very high suspicion for typhoid perforation; patients can perforate and die quickly.",
@@ -50127,7 +50235,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "typhoid with abdominal pain",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-704"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-704",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:typhoid"
+          ],
+          "harm": [
+            "perforation"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Treat typhoid empirically: IV ceftriaxone for inpatients; ciprofloxacin or azithromycin for outpatients.",
@@ -50140,7 +50267,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "typhoid",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-733"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-733",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:ciprofloxacin"
+          ],
+          "actionable": [
+            "Treat"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use WHO diagnostic criteria (weight-for-length z-score, mid-upper arm circumference, edema) to diagnose severe acute malnutrition.",
@@ -50153,7 +50299,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with suspected malnutrition",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-821"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-821",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:severe acute malnutrit"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In severe acute malnutrition, watch vigilantly for refeeding syndrome: monitor electrolytes and follow a feeding protocol.",
@@ -50166,7 +50331,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "severe acute malnutrition",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-883"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-883",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:severe acute malnutrit"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Give prophylactic antibiotics and multivitamins to all children with severe acute malnutrition due to high infection risk from cracked skin.",
@@ -50179,7 +50363,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "severe acute malnutrition",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-894"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-894",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:severe acute malnutrit"
+          ],
+          "actionable": [
+            "Give"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For premature neonates <32 weeks gestational age, use NG tube feeding because the suck-swallow-breathe reflex is not developed.",
@@ -50192,7 +50395,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "premature neonates <32 weeks",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-994"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-994",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:32 weeks",
+            "threshold:<3"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Increase total fluids by 20 mL/kg/day in premature neonates on a feeding protocol, monitoring weights and growth charts.",
@@ -50205,7 +50428,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "premature neonates on feeding protocol",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1027"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1027",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:20 mL"
+          ],
+          "actionable": [
+            "Increase"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Perform lumbar puncture routinely as part of the neonatal sepsis workup.",
@@ -50218,7 +50460,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonatal sepsis",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1049"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1049",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:lumbar puncture"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In Togo, lumbar puncture is routinely performed as part of sepsis workup, and you become very proficient at it.",
@@ -50231,7 +50492,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "sepsis workup in Togo",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1049-2"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1049-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:lumbar puncture"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a neonate who aspirated milk and goes limp with heart rate 60, immediately suction, ambu bag, and call for crash cart; this can be life-saving.",
@@ -50244,7 +50524,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonate with aspiration and bradycardia",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1196"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1196",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For herbicide ingestion (suicide attempt), immediately place an NG tube and suction out the stomach contents; atropine may be used depending on the type ingested.",
@@ -50257,7 +50553,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "herbicide ingestion",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1237"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1237",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:suicide attempt"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Monkeypox in West Africa presents just like chickenpox and is usually self-limited; antivirals may not be on formulary and are often unnecessary.",
@@ -50270,7 +50585,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "West Africa",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1346"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1346",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:monkeypox"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected MALT lymphoma of the stomach when biopsy is unavailable, compare ultrasound images to known MALT pictures and consider empiric treatment.",
@@ -50283,7 +50614,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "resource-limited setting without pathology",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1421"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1421",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When ultrasound shows a large bladder with bilateral hydronephrosis and sediment that moves with patient repositioning, it suggests sediment rather than a congenital tumor; a suprapubic catheter may be needed if Foley cannot be placed.",
@@ -50296,7 +50646,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infant with abdominal distension and suspected bladder outlet obstruction",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1513"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1513",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In bradycardia without reversible cause and no pacemaker available, atropine can be used temporarily, but the patient may not survive long-term; focus on spiritual care.",
@@ -50309,7 +50675,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "resource-limited setting without pacemaker",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1802"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1802",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:spiritual care"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For acute stroke, always check blood sugar first; hypoglycemia can cause exacerbation of old stroke symptoms, and pushing dextrose may make them disappear.",
@@ -50322,7 +50704,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute stroke symptoms",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1846"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1846",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:exacerbation"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Without CT, ischemic stroke is 90% of cases and hemorrhagic 10%; if blood pressure is very high (e.g., SBP 240), withhold aspirin because hemorrhagic stroke is more likely.",
@@ -50335,7 +50739,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "resource-limited setting without CT",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1889"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1889",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When making a labetalol drip without Cardene, titrate slowly because labetalol is longer acting; watch for cumulative hypotension from too much dosing.",
@@ -50348,7 +50771,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "resource-limited setting without Cardene",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1987"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-1987",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypotension"
+          ],
+          "actionable": [
+            "titrate"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient in Togo sits up and grabs their chest, take it seriously because people there are not dramatic; it likely indicates a real emergency.",
@@ -50361,7 +50803,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Togo",
-      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-2072"
+      "pearl_id": "dr-papp-speaks-on-medicine-and-missions-2072",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

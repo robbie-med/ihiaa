@@ -29237,7 +29237,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-118"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-118",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:respiratory alkalosis"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "FEV1 and FVC do not change significantly during pregnancy, so spirometry can be used to diagnose asthma as in non-pregnant patients.",
@@ -29250,7 +29266,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-213"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-213",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:spirometry"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.03
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Asthma exacerbations in pregnancy most commonly occur between 24 and 36 weeks gestation.",
@@ -29263,7 +29298,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with asthma",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-989"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-989",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:36 weeks"
+          ],
+          "rarity": 5.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Treatment of acute asthma exacerbation in pregnancy is the same as in non-pregnant patients: oxygen, aerosol albuterol, ipratropium, and systemic steroids.",
@@ -29276,7 +29327,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with acute asthma exacerbation",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1154"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1154",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:albuterol"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Magnesium sulfate 2 grams over 20 minutes is safe in pregnancy for refractory asthma exacerbation.",
@@ -29289,7 +29356,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with refractory asthma exacerbation",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1176"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1176",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:20 minutes",
+            "threshold:over 2"
+          ],
+          "rarity": 6.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pregnant women with asthma exacerbation are less likely to receive corticosteroids in the emergency department and less likely to be prescribed steroids at discharge, which leads to ongoing symptoms.",
@@ -29302,7 +29386,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with asthma exacerbation",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1221"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1221",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:asthma exacerbation"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 6.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a patient with moderate persistent asthma who was on as-needed low-dose ICS with albuterol, the next step is to add a low-dose ICS with formoterol inhaler, used as needed.",
@@ -29315,7 +29418,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with moderate persistent asthma",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1364"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1364",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:albuterol"
+          ],
+          "actionable": [
+            "add"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Clinical presentation of bilateral rales and hypoxemia is enough to diagnose pulmonary edema; you do not need a chest X-ray to start treatment.",
@@ -29328,7 +29450,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with suspected pulmonary edema",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1691"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1691",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with pulmonary edema and hypertension, avoid labetalol if peripartum cardiomyopathy is possible because labetalol is a negative inotrope and can worsen heart failure.",
@@ -29341,7 +29482,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant or postpartum patients with pulmonary edema and possible peripartum cardiomyopathy",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1711"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1711",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:peripartum cardiomyopa"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with pulmonary edema and fluid overload, avoid giving magnesium first; instead, give furosemide to reduce fluid volume.",
@@ -29354,7 +29514,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with pulmonary edema and fluid overload",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1732"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1732",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pulmonary edema"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 6.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pulmonary edema with fluid overload, give furosemide 40 mg IV first, repeating every 10-15 minutes based on blood pressure, before considering magnesium.",
@@ -29367,7 +29546,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with pulmonary edema and fluid overload",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1749"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1749",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:40 mg",
+            "frequency:every 10"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nitroglycerin can be used as an antihypertensive in pregnancy because it is a venous and arterial dilator and does not affect cardiac contractility.",
@@ -29380,7 +29579,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with hypertension and pulmonary edema",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1768"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1768",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nitroglycerin"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a septic pregnant patient with pulmonary edema, do not give aggressive fluid boluses; go straight to vasopressors, with norepinephrine as first-line.",
@@ -29393,7 +29608,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with sepsis and pulmonary edema",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1885"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1885",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:pulmonary edema"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Norepinephrine is the first-line vasopressor recommended in pregnancy, based on a meta-analysis of 11 randomized trials.",
@@ -29406,7 +29643,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients requiring vasopressors",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1895"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1895",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:norepinephrine"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pregnancy, VTE risk is fivefold increased during pregnancy and sixtyfold increased in the first three months after birth.",
@@ -29419,7 +29672,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant and postpartum women",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2034"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2034",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pregnancy"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In postpartum hemorrhage, avoid TXA due to increased VTE risk; use Cytotec, Methergine (if no blood pressure issue), or Hemabate instead.",
@@ -29432,7 +29701,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "postpartum patients with hemorrhage",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2048"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2048",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Compressive ultrasonography is the gold standard for diagnosing DVT in the leg, with good sensitivity and specificity for proximal DVTs, but lower for distal and iliac vein thromboses.",
@@ -29445,7 +29733,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with suspected DVT",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2138"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2138",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:compressive ultrasonog"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "D-dimers are always elevated in pregnancy, so do not order them; a low D-dimer can rule out DVT, but any elevation requires confirmation.",
@@ -29458,7 +29762,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with suspected VTE",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2180"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2180",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pregnancy"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For VTE treatment in pregnancy, use low molecular weight heparin (enoxaparin) 1 mg/kg every 12 hours until 36 weeks, then switch to subcutaneous unfractionated heparin.",
@@ -29471,7 +29794,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with VTE",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2240"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2240",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1 mg",
+            "frequency:every 12",
+            "drug:enoxaparin"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Switch from enoxaparin to unfractionated heparin at 36 weeks because heparin clears from the system faster, which is important as delivery approaches.",
@@ -29484,7 +29828,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients on anticoagulation at 36+ weeks",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2280"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2280",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:36 weeks",
+            "drug:enoxaparin"
+          ],
+          "actionable": [
+            "Switch"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HIT is rare in pregnancy; suspect it if platelets fall greater than 50% from baseline or below 100,000.",
@@ -29497,7 +29861,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients on heparin",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2305"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2305",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:greater than 5"
+          ],
+          "rarity": 6.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Treatment for acute VTE in pregnancy or postpartum should be a minimum of 3 months, with many experts recommending 6 months, depending on provoked or unprovoked status.",
@@ -29510,7 +29890,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant or postpartum patients with VTE",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2313"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2313",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 months"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid DOACs in pregnancy due to unknown fetal risks; they can be used in the postpartum period.",
@@ -29523,7 +29919,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients needing anticoagulation",
-      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2347"
+      "pearl_id": "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2347",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pregnancy"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

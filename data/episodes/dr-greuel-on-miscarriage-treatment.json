@@ -38584,7 +38584,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with new miscarriage diagnosis",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-244"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-244",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:miscarriage"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Routine Pap smears, transvaginal ultrasounds, and bimanual exams do not cause miscarriage; inform patients of this to allay fear.",
@@ -38597,7 +38616,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients needing these exams",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-459"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-459",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:transvaginal ultrasoun"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before performing a pelvic or speculum exam on a patient with threatened or incomplete miscarriage, explain the reason and reassure them it is safe.",
@@ -38610,7 +38648,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with threatened or incomplete abortion",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-473"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-473",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:speculum exam"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In initial evaluation of early pregnancy loss, obtain CBC, quantitative hCG, and Rh type unless recently checked.",
@@ -38623,7 +38677,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with suspected miscarriage",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-551"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-551",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CBC"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For anembryonic gestation, transvaginal ultrasound criteria: gestational sac ≥13 mm with yolk sac but no embryonic pole, or sac ≥18 mm without a yolk sac.",
@@ -38636,7 +38709,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diagnosis of anembryonic gestation",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-670"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-670",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:13 mm",
+            "test:ultrasound"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "By the end of the sixth week, transvaginal ultrasound should show an embryonic pole (MRV).",
@@ -38649,7 +38739,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnancies evaluated with transvaginal ultrasound",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-720"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-720",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If ectopic pregnancy cannot be ruled out, evaluate the patient the same day because ectopics can hemorrhage rapidly.",
@@ -38662,7 +38768,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with unclear pregnancy location and possible ectopic",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-921"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-921",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:ectopic pregnancy"
+          ],
+          "actionable": [
+            "evaluate"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ectopic pregnancy is unlikely if the patient has no pain, even with bleeding.",
@@ -38675,7 +38803,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with vaginal bleeding in early pregnancy",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-945"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-945",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ectopic pregnancy"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 5.3
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Allow the patient time to choose among management options; respecting preference improves mental health outcomes.",
@@ -38688,7 +38835,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with miscarriage",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-1064"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-1064",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Expectant management is up to 90% effective for incomplete abortion; it is safe to wait as long as there is no hemorrhage or infection.",
@@ -38701,7 +38861,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "stable patients with incomplete abortion",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-1103"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-1103",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:expectant management"
+          ],
+          "actionable": [
+            "wait"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 6.34
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use color flow Doppler to assess intrauterine contents in nonviable pregnancy: blood flow suggests retained placental tissue, no flow is reassuring.",
@@ -38714,7 +38896,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "nonviable pregnancy with intrauterine contents",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-1259"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-1259",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:color flow doppler"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On follow-up ultrasound, use color flow Doppler to assess retained tissue: blood flow suggests retained placenta, no flow suggests clot and is reassuring.",
@@ -38727,7 +38928,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "follow-up after miscarriage",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-1277"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-1277",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients can switch between expectant, medical, and surgical management at any point; they are not locked into their initial choice.",
@@ -38740,7 +38960,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with early pregnancy loss",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-1326"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-1326",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "switch"
+          ],
+          "rarity": 6.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Misoprostol repeat dose can be given as soon as 24 hours, but 48 hours is typical.",
@@ -38753,7 +38989,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using misoprostol for miscarriage management",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-1348"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-1348",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 6.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Misoprostol may be more traumatic for patients prone to anxiety, without good support, or nulliparous, due to heavy bleeding and cramping at home.",
@@ -38766,7 +39021,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients considering misoprostol for early pregnancy loss",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-1368"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-1368",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:misoprostol"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Standard of care in Tulsa for surgical management is suction dilation and curettage (D&C), not manual vacuum aspiration.",
@@ -38779,7 +39053,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "surgical management of early pregnancy loss in Tulsa, Oklahoma",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-1434"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-1434",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dilation and curettage"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not project your own expectations onto patients; expectant, medical, and surgical management are all equally safe.",
@@ -38792,7 +39082,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "counseling patients with early pregnancy loss",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-1487"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-1487",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Proceed to surgical management when expectant or medical management fails, with signs like heavy bleeding, prolonged bleeding, dropping hematocrit, or concern for infection.",
@@ -38805,7 +39111,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "failed expectant or medical management of early pregnancy loss",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-1505"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-1505",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:medical management"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 6.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Antibiotic prophylaxis is not needed for miscarriage management.",
@@ -38818,7 +39143,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "management of early pregnancy loss",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-1597"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-1597",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:miscarriage"
+          ],
+          "rarity": 6.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Subsequent fertility is not statistically significantly adversely affected by the choice of management.",
@@ -38831,7 +39172,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after early pregnancy loss",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-1602"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-1602",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fertility"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For anembryonic gestation with expectant management, only 25% pass within 1 week, 52% by 2 weeks, and 66% by day 46.",
@@ -38844,7 +39201,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anembryonic gestation managed expectantly",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-1825"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-1825",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1 week"
+          ],
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If expectant management has not succeeded by 2-3 weeks, start preparing the patient for medical or surgical options.",
@@ -38857,7 +39230,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "expectant management of early pregnancy loss",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-1864"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-1864",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 weeks"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Misoprostol alone is 67% successful within 2 days and 84% within a week.",
@@ -38870,7 +39262,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "medical management of early pregnancy loss with misoprostol alone",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-2032"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-2032",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 days"
+          ],
+          "rarity": 5.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For pain with miscarriage, advise patients to take NSAIDs beforehand as part of the protocol.",
@@ -38884,7 +39292,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with miscarriage",
       "by_presenter": false,
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-2856"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-2856",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:miscarriage"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pain not controlled by Tylenol or ibuprofen is an ER precaution that suggests something else may be going on.",
@@ -38897,7 +39321,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with early pregnancy loss",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-2878"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-2878",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ibuprofen"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Take a spiritual history because it can impact management decisions.",
@@ -38910,7 +39350,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-greuel-on-miscarriage-treatment-2891"
+      "pearl_id": "dr-greuel-on-miscarriage-treatment-2891",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:spiritual history"
+          ],
+          "rarity": 5.88
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

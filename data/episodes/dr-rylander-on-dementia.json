@@ -52569,7 +52569,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with Alzheimer's disease",
-      "pearl_id": "dr-rylander-on-dementia-593"
+      "pearl_id": "dr-rylander-on-dementia-593",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:14 years",
+            "frequency:monthly"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lewy body dementia has a shorter course: diagnosis typically occurs about one year into symptoms, with about six to seven more years of survival.",
@@ -52582,7 +52599,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with Lewy body dementia",
-      "pearl_id": "dr-rylander-on-dementia-675"
+      "pearl_id": "dr-rylander-on-dementia-675",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:lewy body dementia"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Vascular dementia has a stepwise decline with plateaus between events; it is the only dementia where you can intervene to prevent further decline.",
@@ -52595,7 +52628,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with vascular dementia",
-      "pearl_id": "dr-rylander-on-dementia-705"
+      "pearl_id": "dr-rylander-on-dementia-705",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vascular dementia"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Vascular dementia is the only treatable form of dementia; management includes high-dose statins, antiplatelet therapy, and lifestyle changes to prevent further decline.",
@@ -52608,7 +52657,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with vascular dementia",
-      "pearl_id": "dr-rylander-on-dementia-724"
+      "pearl_id": "dr-rylander-on-dementia-724",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:antiplatelet therapy"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For vascular dementia, use high-dose statins (e.g., rosuvastatin 40 mg) and antiplatelet therapy (e.g., clopidogrel) along with lifestyle changes to arrest progression.",
@@ -52621,7 +52686,30 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with vascular dementia",
-      "pearl_id": "dr-rylander-on-dementia-754"
+      "pearl_id": "dr-rylander-on-dementia-754",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:40 mg",
+            "drug:rosuvastatin"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "arrest"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To improve tolerance of high-dose statins, load patients with vitamin D, then start at 10 mg, titrate to 20, 30, then 40 mg.",
@@ -52634,7 +52722,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting high-dose statins",
-      "pearl_id": "dr-rylander-on-dementia-782"
+      "pearl_id": "dr-rylander-on-dementia-782",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 mg"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.34
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The MIND diet combines the DASH diet and Mediterranean diet, emphasizing vegetables, legumes, and berries, with optional small amounts of wine.",
@@ -52647,7 +52754,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients seeking to prevent or slow cognitive decline",
-      "pearl_id": "dr-rylander-on-dementia-831"
+      "pearl_id": "dr-rylander-on-dementia-831",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:mediterranean diet"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Alcohol in excess causes its own kind of dementia and reinforces dementia; even small amounts increase cancer risk.",
@@ -52660,7 +52783,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-rylander-on-dementia-870"
+      "pearl_id": "dr-rylander-on-dementia-870",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:dementia"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To distinguish delirium from dementia, obtain collateral history from family or nursing staff to establish baseline function; do not assume an acute change is just dementia.",
@@ -52673,7 +52815,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with known dementia presenting with acute mental status change",
-      "pearl_id": "dr-rylander-on-dementia-1114"
+      "pearl_id": "dr-rylander-on-dementia-1114",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:delirium"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the FAST scale to grade dementia severity; if a patient was at FAST stage 5 in clinic and returns at stage 6b, that acute change indicates delirium superimposed on dementia.",
@@ -52686,7 +52847,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dementia in acute care settings",
-      "pearl_id": "dr-rylander-on-dementia-1161"
+      "pearl_id": "dr-rylander-on-dementia-1161",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fast scale"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the FAST scale to grade dementia severity; if a patient was a 5 on Tuesday and is still a 5 on Friday, it's not an acute change, but if they drop from a 6b to a lower level, that indicates delirium superimposed on dementia.",
@@ -52699,7 +52879,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with known dementia",
-      "pearl_id": "dr-rylander-on-dementia-1172"
+      "pearl_id": "dr-rylander-on-dementia-1172",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fast scale"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In delirium, thought is disorganized with inattention and distraction; it is a neural overstimulation, whereas dementia-related agitation is a direct response to a stimulus (e.g., being moved or bumped) and patients quiet down when left alone.",
@@ -52712,7 +52911,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with altered mental status",
-      "pearl_id": "dr-rylander-on-dementia-1225"
+      "pearl_id": "dr-rylander-on-dementia-1225",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:agitation"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In Alzheimer's dementia, short-term recall is impaired while long-term recall is relatively preserved; patients cannot lay down new memories but can access old ones, sometimes even singing along to old hymns when otherwise non-communicative.",
@@ -52725,7 +52940,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected Alzheimer's dementia",
-      "pearl_id": "dr-rylander-on-dementia-1328"
+      "pearl_id": "dr-rylander-on-dementia-1328",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dementia"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lewy body dementia has a prognosis roughly half that of Alzheimer's; when you correct the diagnosis, you should advise families to expedite hospice, life insurance, and legal paperwork.",
@@ -52738,7 +52969,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients newly diagnosed with Lewy body dementia",
-      "pearl_id": "dr-rylander-on-dementia-1491"
+      "pearl_id": "dr-rylander-on-dementia-1491",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:lewy body dementia"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Frontotemporal dementia presents with executive dysfunction, emotional flatness, and language difficulty; it has a 10-12 year prognosis and progresses erratically through FAST stages.",
@@ -52751,7 +52998,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected frontotemporal dementia",
-      "pearl_id": "dr-rylander-on-dementia-1722"
+      "pearl_id": "dr-rylander-on-dementia-1722",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:12 year"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Any dementia patient with hallucinations, especially visual hallucinations, should be presumed to have Lewy body dementia until proven otherwise; auditory hallucinations are also mostly Lewy body.",
@@ -52764,7 +53027,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dementia and new hallucinations",
-      "pearl_id": "dr-rylander-on-dementia-1856"
+      "pearl_id": "dr-rylander-on-dementia-1856",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:lewy body dementia"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Vascular dementia hallmark is stepwise progression with cerebrovascular events; you can often confirm with MRA/MRI showing new infarcts.",
@@ -52777,7 +53056,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected vascular dementia",
-      "pearl_id": "dr-rylander-on-dementia-1932"
+      "pearl_id": "dr-rylander-on-dementia-1932",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "harm": [
+            "infarcts"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Mixed dementia is common; a patient can have Alzheimer's plus vascular dementia, or Lewy body plus vascular dementia.",
@@ -52790,7 +53091,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with dementia",
-      "pearl_id": "dr-rylander-on-dementia-1955"
+      "pearl_id": "dr-rylander-on-dementia-1955",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vascular dementia"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The MIND diet has the best evidence for dementia prevention, supported by randomized controlled trials; it combines elements of the DASH and Mediterranean diets.",
@@ -52803,7 +53120,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients seeking dementia prevention",
-      "pearl_id": "dr-rylander-on-dementia-2124"
+      "pearl_id": "dr-rylander-on-dementia-2124",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:mediterranean diet"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Physical activity and an active lifestyle prevent cognitive deterioration; counsel patients against sedentary retirement habits.",
@@ -52816,7 +53149,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older adults",
-      "pearl_id": "dr-rylander-on-dementia-2193"
+      "pearl_id": "dr-rylander-on-dementia-2193",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:physical activity"
+          ],
+          "actionable": [
+            "counsel"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Physical activity and an active lifestyle help prevent cognitive deterioration; fight against the idea that being old and retired means it's okay to live on the couch.",
@@ -52829,7 +53181,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older adults",
-      "pearl_id": "dr-rylander-on-dementia-2202"
+      "pearl_id": "dr-rylander-on-dementia-2202",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:physical activity"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anticholinergic drugs, especially bladder medications, directly cause dementia with an additive effect: a little bit does a little bit, more does more, and the longer you take it, the worse it is.",
@@ -52842,7 +53210,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on anticholinergic medications",
-      "pearl_id": "dr-rylander-on-dementia-2458"
+      "pearl_id": "dr-rylander-on-dementia-2458",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dementia"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stop prescribing bladder drugs like oxybutynin because they cause dementia; it is inexcusable to leave patients on them and then add cholinesterase inhibitors to treat the dementia they caused.",
@@ -52855,7 +53239,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with overactive bladder",
-      "pearl_id": "dr-rylander-on-dementia-2469"
+      "pearl_id": "dr-rylander-on-dementia-2469",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cholinesterase inhibit"
+          ],
+          "actionable": [
+            "Stop"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In nursing homes, you will commonly find patients on both anticholinergic drugs (like oxybutynin) and cholinergic dementia drugs simultaneously, which is inexcusable and universal.",
@@ -52868,7 +53271,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "nursing home residents",
-      "pearl_id": "dr-rylander-on-dementia-2521"
+      "pearl_id": "dr-rylander-on-dementia-2521",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:oxybutynin"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The Cochrane review of cholinesterase inhibitors showed a statistically significant but clinically trivial 2.7-point difference on a 70-point scale; you could not tell the difference between a 67 and a 70 in conversation.",
@@ -52881,7 +53300,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dementia on cholinesterase inhibitors",
-      "pearl_id": "dr-rylander-on-dementia-2766"
+      "pearl_id": "dr-rylander-on-dementia-2766",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cholinesterase inhibit"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For cholinesterase inhibitors, the number needed to treat for one patient to have substantial slowing of Alzheimer's progression is 42, at a cost of $7,000 per year per patient, while the number needed to harm for one additional adverse effect is 12.",
@@ -52894,7 +53329,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with mild to moderate dementia",
-      "pearl_id": "dr-rylander-on-dementia-2945"
+      "pearl_id": "dr-rylander-on-dementia-2945",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cholinesterase inhibit"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cholinesterase inhibitors were FDA-approved only for mild to moderate dementia to delay institutionalization, not for long-term use in nursing homes; if a patient has been in a nursing home for years, consider stopping these medications.",
@@ -52907,7 +53361,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dementia in nursing homes",
-      "pearl_id": "dr-rylander-on-dementia-3059"
+      "pearl_id": "dr-rylander-on-dementia-3059",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cholinesterase inhibit"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When discussing deprescribing cholinesterase inhibitors with families, present the data (one in 42 chance of benefit, one in 12 chance of harm) and let them decide, respecting their relationship with their primary doctor.",
@@ -52924,7 +53397,23 @@
         "42",
         "12"
       ],
-      "pearl_id": "dr-rylander-on-dementia-3151"
+      "pearl_id": "dr-rylander-on-dementia-3151",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cholinesterase inhibit"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For bladder issues, there are non-pharmacologic alternatives with fewer side effects, including Kegel exercises, pelvic physical therapy, Botox injections, slings, and bladder training; most patients are not evaluated for these and are just put on a medicine that causes dementia.",
@@ -52937,7 +53426,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with overactive bladder",
-      "pearl_id": "dr-rylander-on-dementia-3310"
+      "pearl_id": "dr-rylander-on-dementia-3310",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bladder training"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Kegel exercises, especially with a good pelvic physical therapist, can make a life-changing difference for many patients with bladder issues, though it requires more effort than taking a pill.",
@@ -52950,7 +53455,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with bladder control issues",
-      "pearl_id": "dr-rylander-on-dementia-3330"
+      "pearl_id": "dr-rylander-on-dementia-3330",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:kegel exercises"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

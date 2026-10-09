@@ -56592,7 +56592,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-b-howard-on-ra-lupus-149"
+      "pearl_id": "dr-b-howard-on-ra-lupus-149",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "NSAIDs and opioids are typically effective for peripheral nociceptive pain but not central pain; tricyclics and SNRIs are typically effective for both.",
@@ -56605,7 +56618,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-b-howard-on-ra-lupus-379"
+      "pearl_id": "dr-b-howard-on-ra-lupus-379",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:opioids"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gabapentinoids and cannabinoids are typically effective for central pain but not peripheral pain.",
@@ -56618,7 +56647,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-b-howard-on-ra-lupus-393"
+      "pearl_id": "dr-b-howard-on-ra-lupus-393",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:gabapentinoid"
+          ],
+          "rarity": 7.47
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The 1990 ACR criteria required a history of chronic widespread pain and greater than 11 tender points.",
@@ -56631,7 +56676,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "historical criteria for fibromyalgia",
-      "pearl_id": "dr-b-howard-on-ra-lupus-548"
+      "pearl_id": "dr-b-howard-on-ra-lupus-548",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:greater than 1"
+          ],
+          "rarity": 6.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fibromyalgia patients manifest hypersensitivity to both noxious and non-noxious stimuli, termed hyperalgesia and allodynia.",
@@ -56644,7 +56705,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fibromyalgia",
-      "pearl_id": "dr-b-howard-on-ra-lupus-797"
+      "pearl_id": "dr-b-howard-on-ra-lupus-797",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hypersensitivity"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fibromyalgia can be a standalone condition, but it can also increase symptoms of whatever other condition the person has.",
@@ -56657,7 +56734,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fibromyalgia",
-      "pearl_id": "dr-b-howard-on-ra-lupus-839"
+      "pearl_id": "dr-b-howard-on-ra-lupus-839",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fibromyalgia"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fibromyalgia criteria can be fulfilled with a widespread pain index of greater than or equal to 7 and a symptom severity scale score of greater than or equal to 5.",
@@ -56670,7 +56766,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic widespread pain",
-      "pearl_id": "dr-b-howard-on-ra-lupus-1590"
+      "pearl_id": "dr-b-howard-on-ra-lupus-1590",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:symptom severity scale"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When using the standardized questionnaire, ask about 'pain' (not discomfort) over the last week, and ask the question exactly as written.",
@@ -56683,7 +56795,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians using fibromyalgia criteria",
-      "pearl_id": "dr-b-howard-on-ra-lupus-1631"
+      "pearl_id": "dr-b-howard-on-ra-lupus-1631",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "ask about"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For the symptom severity scale in fibromyalgia criteria, ask about fatigue over the past week and have the patient rate it as no problems, slight, moderate, or severe.",
@@ -56696,7 +56824,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians assessing fibromyalgia",
-      "pearl_id": "dr-b-howard-on-ra-lupus-1680"
+      "pearl_id": "dr-b-howard-on-ra-lupus-1680",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:symptom severity scale"
+          ],
+          "actionable": [
+            "ask about"
+          ],
+          "rarity": 6.49
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Symptoms should generally be present for at least three months to make a diagnosis of fibromyalgia.",
@@ -56709,7 +56856,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients suspected of fibromyalgia",
-      "pearl_id": "dr-b-howard-on-ra-lupus-1731"
+      "pearl_id": "dr-b-howard-on-ra-lupus-1731",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fibromyalgia"
+          ],
+          "rarity": 5.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In RA, elevated acute phase reactants (ESR, CRP) support inflammation; degree of ESR elevation correlates: upper limit to 50 is mild, 50, 100 moderate, >100 severe.",
@@ -56722,7 +56885,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected inflammatory arthritis",
-      "pearl_id": "dr-b-howard-on-ra-lupus-2852"
+      "pearl_id": "dr-b-howard-on-ra-lupus-2852",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>1",
+            "test:ESR"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In the 2010 ACR/EULAR RA criteria, start at the bottom (duration, acute phase reactants, serology) and work up to determine how many involved joints are needed to reach a score of ≥6.",
@@ -56738,7 +56918,29 @@
       "numbers_unheard": [
         "2010"
       ],
-      "pearl_id": "dr-b-howard-on-ra-lupus-2988"
+      "pearl_id": "dr-b-howard-on-ra-lupus-2988",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:acute phase reactants"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.56,
+          "capped": [
+            "number not heard: 2010"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In RA, serology scoring: low positive is >upper limit of normal but <3 times ULN (2 points); high positive is >3 times ULN (3 points).",
@@ -56751,7 +56953,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians using RA classification criteria",
-      "pearl_id": "dr-b-howard-on-ra-lupus-3019"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3019",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:<3"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a joint to be considered involved in the RA criteria, it can be either swollen or tender; but if tenderness is from fibromyalgia, do not count it unless swelling is present.",
@@ -56764,7 +56982,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with possible RA and comorbid fibromyalgia",
-      "pearl_id": "dr-b-howard-on-ra-lupus-3083"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3083",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fibromyalgia"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In SLE, a positive ANA (titer ≥1:80) is the entry criterion, but 15, 21% of healthy adults have this titer, so interpret in clinical context; for every one lupus patient, you may see 60 positive ANAs.",
@@ -56777,7 +57014,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being evaluated for SLE",
-      "pearl_id": "dr-b-howard-on-ra-lupus-3255"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3255",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:context"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid testing ANA in patients with low pretest probability for lupus, such as those with chronic widespread pain, because a positive result is more likely to be a false positive.",
@@ -56790,7 +57043,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic widespread pain",
-      "pearl_id": "dr-b-howard-on-ra-lupus-3375"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3375",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:false positive"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not count a criterion if there is a more likely explanation than SLE.",
@@ -56803,7 +57075,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient being evaluated for SLE",
-      "pearl_id": "dr-b-howard-on-ra-lupus-3592"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3592",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In SLE, criteria need not occur simultaneously; many can be historical and occur only once, but must be present at the time of exam or documented historically.",
@@ -56816,7 +57104,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being evaluated for SLE",
-      "pearl_id": "dr-b-howard-on-ra-lupus-3611"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3611",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In the 2019 EULAR/ACR SLE criteria, if more than one item in a domain is positive, only count the highest scoring item.",
@@ -56832,7 +57133,20 @@
       "numbers_unheard": [
         "2019"
       ],
-      "pearl_id": "dr-b-howard-on-ra-lupus-3638"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3638",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If more than one item in a domain is positive, discount the highest scoring item.",
@@ -56845,7 +57159,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being classified for SLE",
-      "pearl_id": "dr-b-howard-on-ra-lupus-3638-2"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3638-2",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In SLE, unexplained fever as a criterion is defined as >38.3°C.",
@@ -56858,7 +57185,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being evaluated for SLE",
-      "pearl_id": "dr-b-howard-on-ra-lupus-3660"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3660",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>3"
+          ],
+          "rarity": 6.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Unexplained fever for SLE classification is >38.3°C.",
@@ -56871,7 +57214,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being evaluated for SLE",
-      "pearl_id": "dr-b-howard-on-ra-lupus-3660-2"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3660-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>3"
+          ],
+          "rarity": 6.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In SLE, leukopenia is defined as unexplained white blood cell count <4,000 on one occasion; thrombocytopenia as platelet count <100,000 unexplained on one occasion.",
@@ -56884,7 +57243,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being evaluated for SLE",
-      "pearl_id": "dr-b-howard-on-ra-lupus-3678"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3678",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:<4"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Leukopenia for SLE classification is an unexplained white blood cell count <4,000 on a single occasion.",
@@ -56897,7 +57272,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being evaluated for SLE",
-      "pearl_id": "dr-b-howard-on-ra-lupus-3678-2"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3678-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:<4"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Thrombocytopenia for SLE classification is an unexplained platelet count <100,000 on a single occasion.",
@@ -56910,7 +57301,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being evaluated for SLE",
-      "pearl_id": "dr-b-howard-on-ra-lupus-3689"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3689",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:<1"
+          ],
+          "rarity": 6.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Mucocutaneous criteria such as alopecia, oral ulcers, and cutaneous lupus must be observed by the clinician, not based on patient history alone.",
@@ -56923,7 +57330,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being classified for SLE",
-      "pearl_id": "dr-b-howard-on-ra-lupus-3728"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3728",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:lupus"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lupus oral ulcers are painless, distinguishing them from other causes.",
@@ -56936,7 +57359,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being evaluated for SLE",
-      "pearl_id": "dr-b-howard-on-ra-lupus-3747"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3747",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:lupus"
+          ],
+          "rarity": 6.55
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For serosal involvement in the 2019 criteria, you need imaging confirmation, not just history of pleuritic or pericardial pain.",
@@ -56952,7 +57391,20 @@
       "numbers_unheard": [
         "2019"
       ],
-      "pearl_id": "dr-b-howard-on-ra-lupus-3769"
+      "pearl_id": "dr-b-howard-on-ra-lupus-3769",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For chronic widespread pain, acute phase reactants can be normal in lupus, so monitor over time and examine for synovitis.",
@@ -56965,7 +57417,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic widespread pain",
-      "pearl_id": "dr-b-howard-on-ra-lupus-4026"
+      "pearl_id": "dr-b-howard-on-ra-lupus-4026",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acute phase reactants"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Any patient you suspect has lupus should be referred to a rheumatologist.",
@@ -56979,7 +57450,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with suspected SLE",
       "by_presenter": false,
-      "pearl_id": "dr-b-howard-on-ra-lupus-4285"
+      "pearl_id": "dr-b-howard-on-ra-lupus-4285",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:lupus"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hydroxychloroquine can cause eye toxicity, so patients need to see an eye professional periodically; start the medication first, then schedule the eye exam.",
@@ -56992,7 +57479,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting hydroxychloroquine",
-      "pearl_id": "dr-b-howard-on-ra-lupus-4347"
+      "pearl_id": "dr-b-howard-on-ra-lupus-4347",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hydroxychloroquine"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "harm": [
+            "toxicity"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid methotrexate and leflunomide in any woman of childbearing age due to teratogenicity; use sulfasalazine or hydroxychloroquine instead.",
@@ -57005,7 +57514,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women of childbearing age with rheumatoid arthritis or SLE",
-      "pearl_id": "dr-b-howard-on-ra-lupus-4479"
+      "pearl_id": "dr-b-howard-on-ra-lupus-4479",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hydroxychloroquine"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Any patient with rheumatoid arthritis should be referred to a rheumatologist because they may be a candidate for biologic therapy.",
@@ -57018,7 +57546,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with rheumatoid arthritis",
-      "pearl_id": "dr-b-howard-on-ra-lupus-4560"
+      "pearl_id": "dr-b-howard-on-ra-lupus-4560",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rheumatoid arthritis"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid prolonged high-dose corticosteroids (e.g., prednisone >15 mg daily); see the patient every 2, 4 weeks while monitoring and attempting to taper.",
@@ -57031,7 +57575,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected SLE on corticosteroids",
-      "pearl_id": "dr-b-howard-on-ra-lupus-4709"
+      "pearl_id": "dr-b-howard-on-ra-lupus-4709",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:15 mg",
+            "threshold:>1",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 6.63
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For fibromyalgia management, use exercise, gabapentinoids, serotonergic agents, and cognitive behavioral therapy.",
@@ -57044,7 +57609,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fibromyalgia",
-      "pearl_id": "dr-b-howard-on-ra-lupus-4884"
+      "pearl_id": "dr-b-howard-on-ra-lupus-4884",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cognitive behavioral t"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

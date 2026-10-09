@@ -35534,7 +35534,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with claudication",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-252"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-252",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:claudication"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A normal ABI should be above 1.0 because leg pressure is normally higher than arm pressure; an ABI below 0.9 is abnormal and warrants imaging.",
@@ -35550,7 +35566,24 @@
       "numbers_unheard": [
         "0.9"
       ],
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-422"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-422",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:above 1",
+            "test:ABI"
+          ],
+          "rarity": 6.55
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Check pedal pulses in every patient at risk; if pulses are bounding, no further screening is needed. If absent or weak, obtain imaging.",
@@ -35563,7 +35596,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients at risk for PAD",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-455"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-455",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:screening"
+          ],
+          "actionable": [
+            "Check"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An ABI above 1.4 indicates non-compressible calcified arteries; do not rely on ABI, instead perform toe-brachial index (TBI).",
@@ -35576,7 +35628,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PAD",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-500"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-500",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:above 1",
+            "test:ABI"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Arterial duplex Doppler signal: triphasic is normal healthy artery, biphasic indicates some disease, monophasic suggests severe stenosis.",
@@ -35589,7 +35661,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing arterial duplex",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-647"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-647",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In PAD, the primary cause of death is cardiac events, not limb loss; aggressive medical therapy with aspirin and statin saves lives.",
@@ -35602,7 +35687,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all PAD patients",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-759"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-759",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:aspirin"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For smoking cessation in PAD, tell patients 'your cigarette or your leg' to make them more scared than death, as it is true.",
@@ -35615,7 +35719,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PAD patients who smoke",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-773"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-773",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:smoking cessation"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cilostazol can be used for claudication in patients who want to avoid intervention and try walking therapy first; it may also help prevent restenosis after stenting, though not guideline-endorsed.",
@@ -35628,7 +35751,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with claudication not undergoing intervention",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-1496"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-1496",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:claudication"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For DVT, early treatment of acute thrombosis is crucial to prevent post-thrombotic syndrome, which can cause chronic edema, skin thickening, and ulceration.",
@@ -35641,7 +35783,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute DVT",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-1711"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-1711",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:post-thrombotic syndro"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Post-thrombotic syndrome treatment is only effective if the disease is in the iliac vein; femoral vein disease is not stented because the valves are there, only ballooning is possible.",
@@ -35654,7 +35812,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with post-thrombotic syndrome",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-1769"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-1769",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:post-thrombotic syndro"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In post-thrombotic syndrome, iliac vein stenting is an option, but femoral vein stenting is avoided because it would disrupt venous valves.",
@@ -35667,7 +35841,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with post-thrombotic syndrome",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-1771"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-1771",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:post-thrombotic syndro"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "May-Thurner syndrome presents as acute left DVT, mostly in young women, and is highly treatable; these patients should not be sent home without treatment.",
@@ -35680,7 +35870,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute left DVT, especially young women",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-1809"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-1809",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:may-thurner syndrome"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Risk factors for post-thrombotic syndrome after DVT: female sex (OR 1.5), varicose veins at diagnosis (OR 4.5), and iliofemoral DVT (OR 1.3). Below-knee DVT is not treated.",
@@ -35693,7 +35899,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute DVT",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-1868"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-1868",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:post-thrombotic syndro"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Refer for thrombectomy: any DVT with no pulse (phlegmasia cerulea dolens), common femoral or iliac DVT, symptomatic iliofemoral DVT, or symptomatic superficial femoral DVT that persists after one week of anticoagulation.",
@@ -35706,7 +35928,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute DVT",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-1966"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-1966",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:phlegmasia cerulea dol"
+          ],
+          "actionable": [
+            "Refer"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The ATTRACT trial showed that pharmacomechanical thrombolysis for iliofemoral DVT reduced moderate-to-severe PTS from 24% to 18%, and severe PTS (ulcers) from 8.7% to 4.3% (50% reduction).",
@@ -35722,7 +35963,23 @@
       "numbers_unheard": [
         "4.3"
       ],
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-2018"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-2018",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pharmacomechanical thr"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients with iliofemoral DVT have a 28-30% chance of developing PTS; early intervention can prevent this.",
@@ -35735,7 +35992,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with iliofemoral DVT",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-2046"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-2046",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:early intervention"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Best timeline for thrombectomy is within six weeks of symptom onset.",
@@ -35748,7 +36021,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute DVT being considered for thrombectomy",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-2106"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-2106",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:thrombectomy"
+          ],
+          "rarity": 6.99
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For chronic PTS, iliac vein stenosis can be stented; femoral vein stenosis can be ballooned.",
@@ -35761,7 +36050,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic post-thrombotic syndrome",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-2140"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-2140",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Superficial thrombophlebitis (great saphenous vein) is treated with aspirin; if clot extends to deep system, use anticoagulation.",
@@ -35774,7 +36076,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with superficial thrombophlebitis",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-2509"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-2509",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:superficial thrombophl"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If DVT is suspected, start anticoagulation empirically while arranging same-day or next-day duplex ultrasound; point-of-care ultrasound (butterfly) can be used to check compressibility.",
@@ -35787,7 +36108,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected DVT",
-      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-2657"
+      "pearl_id": "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-2657",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

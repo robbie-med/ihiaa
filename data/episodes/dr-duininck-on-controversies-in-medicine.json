@@ -59309,7 +59309,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient and emergency settings",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-239"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-239",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Men typically only come to the doctor three times: when they are so sick they think they will die, when they feel like it (vague), or when a family member is diagnosed with a potentially genetic disease and their spouse drives them crazy.",
@@ -59322,7 +59341,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men in primary care",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-479"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-479",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "die"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients come to doctors because they are unhealthy or scared; the doctor's job is to serve and care for them, moving them from a state of illness or worry back to health.",
@@ -59335,7 +59370,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patient interactions",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-703"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-703",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a physician gets angry that a patient is not compliant, it usually reflects the physician's own ego problem, the patient either doesn't trust you or is scared of the treatment, and that is their right.",
@@ -59348,7 +59396,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all physicians dealing with non-compliant patients",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-713"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-713",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:trust"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The presenter advises using the mnemonic 'ABCDEFG' for recommendations: 'A to G, up to you', meaning physicians should present options but not be offended if patients decline.",
@@ -59361,7 +59425,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patient counseling",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-751"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-751",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The presenter states that medical cannabis is 'terrible,' causing psychotic effects and long-term addiction, and is 'worse than regular smoking' despite the public perception that it is safe because it is 'medicinal.'",
@@ -59374,7 +59451,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general use in any population",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-788"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-788",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:medical cannabis"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In the early COVID-19 pandemic, the presenter's clinic became the designated COVID hub for the whole health system, and residents voluntarily cared for all COVID patients without refusing to see them.",
@@ -59387,7 +59480,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "during COVID-19 pandemic",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-963"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-963",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:covid-19"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During the COVID-19 vaccine mandate at Ascension, some healthcare workers were not convinced of the vaccine's efficacy, safety, or need because most deaths were in those over 60, 65, and they felt their personal risk was low.",
@@ -59400,7 +59509,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "healthcare workers during vaccine mandate debates",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-1113"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-1113",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 6"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient demands an antibiotic, consider that if you refuse and they end up in the ER getting one anyway, you may have caused more harm. Balance antibiotic stewardship with the reality of patient outcomes.",
@@ -59413,7 +59538,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient primary care",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-2410"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-2410",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:antibiotic stewardship"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not refer patients to counselors without knowing their skills and personality personally, as you would for a surgeon operating on your own family.",
@@ -59426,7 +59570,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any physician making referrals",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-2700"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-2700",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For fertility counseling, teach that the fertile window is days 12 to 16 of a 28-day cycle, and advise intercourse every 24 to 48 hours during that time because sperm and egg each last about 24 to 48 hours.",
@@ -59439,7 +59599,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "couples trying to conceive",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-2927"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-2927",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:48 hours",
+            "frequency:every 24"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advise patients trying to conceive to stay flat on their back after intercourse rather than getting up and running to the bathroom, to keep sperm where they need to be.",
@@ -59452,7 +59629,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "couples trying to conceive",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-2966"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-2966",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A majority of people who undergo gender transition later want to detransition by their thirties, and surgery is irreversible, causing lasting emotional pain.",
@@ -59465,7 +59655,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients considering gender transition",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-3172"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-3172",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gender dysphoria is normal in many cases and the vast majority will resolve if you walk through the difficulties with the person, addressing underlying depression, self-hate, and self-rejection.",
@@ -59478,7 +59681,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with gender dysphoria",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-3200"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-3200",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:gender dysphoria"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During the COVID-19 shutdown of cardiac cath labs, there was no change in the incidence of severe cardiac disease or cardiac death, suggesting many interventions may not affect population-level outcomes.",
@@ -59491,7 +59710,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population with cardiac disease",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-3296"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-3296",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:covid-19"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During a three-month COVID-19 shutdown of the cath lab, including no ablations, cardiac caths, balloon angioplasties, or stents, there was no change in the incidence of severe cardiac disease or cardiac death.",
@@ -59504,7 +59742,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population during COVID-19",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-3303"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-3303",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:covid-19"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hysterectomy rates dropped to about 20% of prior levels after insurance companies required strict indications like anemia, large fibroids, or chronic resistant pelvic pain, indicating many were unnecessary.",
@@ -59517,7 +59774,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women considering hysterectomy",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-3375"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-3375",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hysterectomy"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Even if you are single or a virgin, you must be able to talk to patients about sexuality to help them.",
@@ -59530,7 +59803,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all physicians",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-3411"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-3411",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pediatricians can receive upwards of $50,000 per year if 90% or more of their patients have a full set of vaccinations on schedule.",
@@ -59543,7 +59829,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pediatricians",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-3439"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-3439",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vaccination"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Some pediatric practices require patients to get every vaccination on schedule to remain a patient, partly due to financial incentives tied to vaccination rates.",
@@ -59556,7 +59858,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pediatric practices",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-3463"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-3463",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vaccination"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fluoride in water is a clear public health benefit ('obviously').",
@@ -59569,7 +59887,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-3507"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-3507",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:public health"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Statins are heavily promoted by cardiologists, but their universal benefit is controversial.",
@@ -59582,7 +59916,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-3531"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-3531",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:statins"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Selling natural cholesterol or blood pressure lowering agents from the office creates a conflict of interest; the speaker avoids it because they don't trust themselves.",
@@ -59595,7 +59945,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-3569"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-3569",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:cholesterol"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Doctors should not reflexively refuse to prescribe controlled medicines; each case should be considered individually, e.g., Ativan for a patient with bad anxiety three times a month may be appropriate.",
@@ -59608,7 +59977,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians prescribing controlled substances",
-      "pearl_id": "dr-duininck-on-controversies-in-medicine-3596"
+      "pearl_id": "dr-duininck-on-controversies-in-medicine-3596",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "prescribe"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

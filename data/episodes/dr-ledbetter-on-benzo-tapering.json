@@ -25419,7 +25419,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on benzodiazepines being tapered",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-271"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-271",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:alprazolam"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cross-taper gradually: replace one dose of the original benzo with half the dose plus 10 mg diazepam (e.g., 0.5 mg clonazepam replaced by 10 mg diazepam) and hold for 1-2 weeks before making further changes.",
@@ -25432,7 +25448,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on clonazepam or alprazolam",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-310"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-310",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 mg",
+            "drug:clonazepam"
+          ],
+          "actionable": [
+            "taper"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After a dose change, have the patient message you on the portal the next day if they experience withdrawal or oversedation, so you can adjust (e.g., add 5 mg diazepam or reduce to 7.5 mg).",
@@ -25445,7 +25481,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing benzodiazepine taper",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-378"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-378",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:5 mg"
+          ],
+          "actionable": [
+            "add"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the Ashton Manual conversion chart: 0.5 mg alprazolam is roughly equivalent to 10 mg diazepam.",
@@ -25458,7 +25516,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on alprazolam",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-542"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-542",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:0.5 mg",
+            "drug:alprazolam"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start with frequent follow-up every 1-2 weeks; once the patient is stable and comfortable, you can prescribe 4 weeks at a time with a portal check at 2 weeks.",
@@ -25471,7 +25549,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting benzodiazepine taper",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-563"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-563",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 weeks",
+            "frequency:every 1"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 6.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "As the total daily diazepam dose decreases, the same milligram cut becomes a larger percentage cut, so monitor closely and consider smaller cuts at lower doses.",
@@ -25484,7 +25582,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on low-dose diazepam",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-846"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-846",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Microtapering using compounded liquid benzodiazepines (e.g., 0.1 mg daily cuts) may be better tolerated than weekly cuts, though availability and cost are unknown.",
@@ -25497,7 +25614,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who have difficulty with standard taper cuts",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-884"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-884",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:0.1 mg",
+            "frequency:daily"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients on clonazepam, the Ashton protocol recommends even smaller cuts than for other benzodiazepines due to its potency or long half-life.",
@@ -25510,7 +25644,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on clonazepam",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-1014"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-1014",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:clonazepam"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Temazepam is a benzodiazepine and can cause withdrawal symptoms; it should be tapered like other benzodiazepines, not stopped abruptly.",
@@ -25523,7 +25673,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on temazepam",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-1042"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-1042",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:Temazepam"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient refuses to discontinue benzodiazepines and you believe it is not in their best interest, provide a one-month supply and instruct them to find a new provider; do not continue refilling.",
@@ -25536,7 +25705,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who decline taper and insist on continued benzodiazepine prescription",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-1287"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-1287",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:benzodiazepines"
+          ],
+          "actionable": [
+            "discontinue"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient refuses to stop benzodiazepines, offer one month's supply and instruct them to find a new doctor.",
@@ -25549,7 +25737,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients chronically on benzodiazepines who refuse to taper",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-1288"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-1288",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:benzodiazepines"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 6.64
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient returns after you said you would not refill, it is on them; document the initial conversation clearly.",
@@ -25562,7 +25769,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who return requesting benzodiazepine refills after deprescribing discussion",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-1355"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-1355",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "document"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Compassionate prescribing can sometimes enable continued use of harmful medications.",
@@ -25575,7 +25798,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians prescribing benzodiazepines long-term",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-1372"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-1372",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:compassion"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients on identical benzodiazepine regimens can have vastly different withdrawal experiences; do not assume the same outcome for all.",
@@ -25588,7 +25830,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient on benzodiazepines",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-1442"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-1442",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:benzodiazepine"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tapering may be very difficult emotionally, patients may cry or shake, but many still succeed with persistence.",
@@ -25601,7 +25865,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients tapering off benzodiazepines",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-1482"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-1482",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When tapering, start or optimize an SSRI or SNRI and encourage therapy or counseling.",
@@ -25614,7 +25891,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on chronic benzodiazepines for anxiety",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-1558"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-1558",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:counseling"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.49
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hydroxyzine can be used as a PRN alternative to benzodiazepines, but should not be used routinely.",
@@ -25627,7 +25923,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing PRN anxiety medication during benzodiazepine taper",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-1591"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-1591",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:PRN"
+          ],
+          "rarity": 6.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Review the Ashton Manual before starting to taper patients to have a practical starting point.",
@@ -25640,7 +25952,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians new to benzodiazepine tapering",
-      "pearl_id": "dr-ledbetter-on-benzo-tapering-1643"
+      "pearl_id": "dr-ledbetter-on-benzo-tapering-1643",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ashton manual"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.03
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

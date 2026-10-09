@@ -47863,7 +47863,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being considered for cervical ripening balloon",
-      "pearl_id": "dr-ganzer-on-induction-of-labor-2741"
+      "pearl_id": "dr-ganzer-on-induction-of-labor-2741",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Remove the cervical ripening balloon at 6 hours rather than waiting 12 hours; studies show induction time is shorter regardless of cervical dilation, as the most effective work is in the first 6 hours.",
@@ -47876,7 +47889,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing cervical ripening with a Foley balloon",
-      "pearl_id": "dr-ganzer-on-induction-of-labor-2813"
+      "pearl_id": "dr-ganzer-on-induction-of-labor-2813",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 hours"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After placing a balloon, wait 45-60 minutes before starting low-dose oxytocin to let the balloon settle and the patient's cramping subside.",
@@ -47892,7 +47921,29 @@
       "numbers_unheard": [
         "60"
       ],
-      "pearl_id": "dr-ganzer-on-induction-of-labor-2896"
+      "pearl_id": "dr-ganzer-on-induction-of-labor-2896",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:60 minutes"
+          ],
+          "actionable": [
+            "wait"
+          ],
+          "rarity": 8.11,
+          "capped": [
+            "number not heard: 60"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A Foley balloon will not spontaneously expel until the cervix is 4-5 cm dilated; to check cervical dilation with the balloon in place, you must deflate the vaginal balloon first.",
@@ -47905,7 +47956,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with a cervical ripening balloon in place",
-      "pearl_id": "dr-ganzer-on-induction-of-labor-2931"
+      "pearl_id": "dr-ganzer-on-induction-of-labor-2931",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:5 cm"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a primiparous patient in latent labor, do not perform early AROM (at 3-4 cm) because latent phase can last many hours, leading to prolonged rupture of membranes and increased infection risk.",
@@ -47918,7 +47988,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "primiparous patients in latent labor",
-      "pearl_id": "dr-ganzer-on-induction-of-labor-3047"
+      "pearl_id": "dr-ganzer-on-induction-of-labor-3047",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4 cm"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a multiparous patient with engaged head, early AROM at 3-4 cm is safe and highly effective; the cervix has dilated before and often responds dramatically.",
@@ -47931,7 +48020,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "multiparous patients with engaged fetal head",
-      "pearl_id": "dr-ganzer-on-induction-of-labor-3086"
+      "pearl_id": "dr-ganzer-on-induction-of-labor-3086",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4 cm"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "High-dose oxytocin (starting at 2 mU/min and increasing by 2 mU/min) is the standard approach; it allows faster titration to effective contraction patterns compared to regular dosing.",
@@ -47944,7 +48049,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing induction of labor with oxytocin",
-      "pearl_id": "dr-ganzer-on-induction-of-labor-3262"
+      "pearl_id": "dr-ganzer-on-induction-of-labor-3262",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:oxytocin"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 6.72
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Failed induction is defined as failure to generate regular contractions and cervical change after 24 hours of oxytocin with AROM if feasible; this is rarely reached in practice.",
@@ -47957,7 +48081,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing induction of labor",
-      "pearl_id": "dr-ganzer-on-induction-of-labor-3314"
+      "pearl_id": "dr-ganzer-on-induction-of-labor-3314",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use oral misoprostol instead of vaginal when there is concern for fetal sensitivity, such as fetal growth restriction or suspected placental insufficiency, because it is less intense and can be stopped if needed.",
@@ -47970,7 +48110,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fetal growth restriction or suspected placental insufficiency",
-      "pearl_id": "dr-ganzer-on-induction-of-labor-3345"
+      "pearl_id": "dr-ganzer-on-induction-of-labor-3345",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fetal growth restricti"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

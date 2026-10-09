@@ -64947,7 +64947,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-engstrom-on-acs-1250"
+      "pearl_id": "dr-engstrom-on-acs-1250",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "rarity": 6.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Failure to relieve chest pain with nitroglycerin suggests occlusive MI.",
@@ -64960,7 +64976,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected ACS",
-      "pearl_id": "dr-engstrom-on-acs-1396"
+      "pearl_id": "dr-engstrom-on-acs-1396",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nitroglycerin"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recognize hyperacute T waves: T wave should be proportional and smaller than the QRS; if T wave is tall relative to a small QRS and more symmetrical, consider hyperacute T.",
@@ -64973,7 +65005,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "EKG interpretation",
-      "pearl_id": "dr-engstrom-on-acs-1458"
+      "pearl_id": "dr-engstrom-on-acs-1458",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hyperacute t waves"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anterior ST depression in V1-V4 is a posterior MI until proven otherwise; obtain posterior leads (V7-V9).",
@@ -64986,7 +65037,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anterior ST depression",
-      "pearl_id": "dr-engstrom-on-acs-1555"
+      "pearl_id": "dr-engstrom-on-acs-1555",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:posterior mi"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For ACS, give nonenteric coated aspirin; enteric coated aspirin is absorbed too slowly and delays platelet inhibition.",
@@ -64999,7 +65069,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "ACS patients",
-      "pearl_id": "dr-engstrom-on-acs-1696"
+      "pearl_id": "dr-engstrom-on-acs-1696",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:aspirin"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "162 mg of aspirin blocks all platelets; 325 mg is overdoing it but not harmful.",
@@ -65012,7 +65101,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "ACS patients",
-      "pearl_id": "dr-engstrom-on-acs-1770"
+      "pearl_id": "dr-engstrom-on-acs-1770",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:162 mg"
+          ],
+          "rarity": 7.16
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Brilinta (ticagrelor) has 6-10% lower reocclusion rate than Plavix; preferred by cardiologists for patients getting stents, but cost limits long-term use.",
@@ -65025,7 +65130,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ACS undergoing PCI",
-      "pearl_id": "dr-engstrom-on-acs-1799"
+      "pearl_id": "dr-engstrom-on-acs-1799",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For unstable angina/NSTEMI, use heparin if there is a chance of going to cath (can be turned off quickly); use enoxaparin if medical management only.",
@@ -65038,7 +65159,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with unstable angina/NSTEMI",
-      "pearl_id": "dr-engstrom-on-acs-1939"
+      "pearl_id": "dr-engstrom-on-acs-1939",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:enoxaparin"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For STEMI, if PCI cannot be done within 90 minutes from identification, give thrombolytics (TPA or TNK).",
@@ -65051,7 +65191,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "STEMI patients",
-      "pearl_id": "dr-engstrom-on-acs-2009"
+      "pearl_id": "dr-engstrom-on-acs-2009",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:90 minutes"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After thrombolytics, if the patient has resolution of pain, EKG normalization, hemodynamic stability, no heart failure, and no arrhythmias, they may not need emergent cath; otherwise, rescue PCI is indicated.",
@@ -65064,7 +65223,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "post-thrombolytic STEMI patients",
-      "pearl_id": "dr-engstrom-on-acs-2154"
+      "pearl_id": "dr-engstrom-on-acs-2154",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "harm": [
+            "emergent"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When moonlighting, if you cannot establish PCI within 90 minutes of STEMI identification, give lytics because time is muscle.",
@@ -65077,7 +65255,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "rural/moonlighting setting",
-      "pearl_id": "dr-engstrom-on-acs-2363"
+      "pearl_id": "dr-engstrom-on-acs-2363",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:90 minutes"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a STEMI patient cannot get a stent within 90 minutes of identification, give fibrinolytics because time is muscle.",
@@ -65090,7 +65287,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with STEMI in settings without immediate PCI",
-      "pearl_id": "dr-engstrom-on-acs-2363-2"
+      "pearl_id": "dr-engstrom-on-acs-2363-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:90 minutes"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In cardiogenic shock from ACS, if the patient is bradycardic or in heart block, start external pacing.",
@@ -65103,7 +65319,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cardiogenic shock from ACS",
-      "pearl_id": "dr-engstrom-on-acs-2653"
+      "pearl_id": "dr-engstrom-on-acs-2653",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:cardiogenic shock"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In cardiogenic shock without bradycardia, use epinephrine or dobutamine for pump failure; epinephrine is quick on, quick off.",
@@ -65116,7 +65354,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cardiogenic shock from ACS without bradycardia",
-      "pearl_id": "dr-engstrom-on-acs-2675"
+      "pearl_id": "dr-engstrom-on-acs-2675",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:cardiogenic shock"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 6.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If nitroglycerin does not relieve pain in NSTEMI or unstable angina, call cardiology.",
@@ -65129,7 +65389,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with NSTEMI or unstable angina",
-      "pearl_id": "dr-engstrom-on-acs-2740"
+      "pearl_id": "dr-engstrom-on-acs-2740",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:unstable angina"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Empiric oxygen in ACS without hypoxia can cause harm via hyperoxygenation and free radicals, increasing infarct size.",
@@ -65142,7 +65418,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ACS without hypoxia",
-      "pearl_id": "dr-engstrom-on-acs-2774"
+      "pearl_id": "dr-engstrom-on-acs-2774",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypoxia"
+          ],
+          "harm": [
+            "infarct"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Opioids can mask ischemic pain; pain relief does not mean the infarction has stopped.",
@@ -65155,7 +65450,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ACS receiving opioids",
-      "pearl_id": "dr-engstrom-on-acs-2798"
+      "pearl_id": "dr-engstrom-on-acs-2798",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:opioids"
+          ],
+          "harm": [
+            "infarction"
+          ],
+          "rarity": 6.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In suspected ACS, get serial EKGs at time zero, 15 minutes, and 30 minutes to detect evolving ischemia.",
@@ -65168,7 +65482,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected ACS",
-      "pearl_id": "dr-engstrom-on-acs-2839"
+      "pearl_id": "dr-engstrom-on-acs-2839",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:15 minutes"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A big jump in troponin (e.g., 0.5 to 3) indicates ongoing ischemia and warrants cardiology consultation.",
@@ -65181,7 +65511,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected ACS and rising troponin",
-      "pearl_id": "dr-engstrom-on-acs-2912"
+      "pearl_id": "dr-engstrom-on-acs-2912",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:troponin"
+          ],
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In LBBB or ventricular paced rhythm, use Sgarbossa criteria: discordant ST elevation >25% of QRS depth is abnormal; concordant ST elevation (QRS and J point same direction) is a STEMI equivalent.",
@@ -65194,7 +65540,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with LBBB or ventricular paced rhythm and suspected ACS",
-      "pearl_id": "dr-engstrom-on-acs-3122"
+      "pearl_id": "dr-engstrom-on-acs-3122",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>2"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A new LBBB alone is no longer an automatic STEMI equivalent; it increases likelihood but requires Sgarbossa criteria or clinical instability for cath lab activation.",
@@ -65207,7 +65572,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with new LBBB and suspected ACS",
-      "pearl_id": "dr-engstrom-on-acs-3308"
+      "pearl_id": "dr-engstrom-on-acs-3308",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sgarbossa criteria"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The J point is where the ST segment starts; the new threshold for significant ST elevation is 25 ms, not 5 ms.",
@@ -65220,7 +65601,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "ECG interpretation",
-      "pearl_id": "dr-engstrom-on-acs-3463"
+      "pearl_id": "dr-engstrom-on-acs-3463",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:j point"
+          ],
+          "rarity": 6.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a ventricularly paced rhythm, the QRS is wide because electricity bypasses the AV node; if atrially paced, the QRS would be narrow.",
@@ -65233,7 +65630,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "ECG interpretation of paced rhythms",
-      "pearl_id": "dr-engstrom-on-acs-3554"
+      "pearl_id": "dr-engstrom-on-acs-3554",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "De Winter T waves (high peaked T waves in precordial leads) are a STEMI equivalent; within minutes this will become a STEMI.",
@@ -65246,7 +65656,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute chest pain",
-      "pearl_id": "dr-engstrom-on-acs-3679"
+      "pearl_id": "dr-engstrom-on-acs-3679",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:de winter t waves"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ST elevation in aVR with ST depression in every other lead indicates global myocardial ischemia, often from hypotension, fast heart rate, or proximal LAD occlusion.",
@@ -65259,7 +65685,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ECG showing aVR elevation and diffuse ST depression",
-      "pearl_id": "dr-engstrom-on-acs-3728"
+      "pearl_id": "dr-engstrom-on-acs-3728",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:global myocardial isch"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nitroglycerin in occlusive MI is unlikely to relieve pain and may drop blood pressure, worsening myocardial injury; avoid it in tombstone STEMI.",
@@ -65272,7 +65714,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with occlusive MI / tombstone STEMI",
-      "pearl_id": "dr-engstrom-on-acs-3919"
+      "pearl_id": "dr-engstrom-on-acs-3919",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:nitroglycerin"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not rely on atypical chest pain descriptors when the patient looks ill; patients in distress cannot give clear histories.",
@@ -65285,7 +65746,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected ACS who appear ill",
-      "pearl_id": "dr-engstrom-on-acs-3972"
+      "pearl_id": "dr-engstrom-on-acs-3972",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:atypical chest pain"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A negative stress test does not rule out acute plaque rupture; it only shows no ischemia at that moment and is only about 85% sensitive for occlusive CAD.",
@@ -65298,7 +65778,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chest pain and recent negative stress test",
-      "pearl_id": "dr-engstrom-on-acs-4043"
+      "pearl_id": "dr-engstrom-on-acs-4043",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acute plaque rupture"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Repeat the ECG early and often; if the patient looks bad, call cardiology even if the ECG seems reassuring.",
@@ -65311,7 +65810,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with suspected ACS",
-      "pearl_id": "dr-engstrom-on-acs-4103"
+      "pearl_id": "dr-engstrom-on-acs-4103",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ECG"
+          ],
+          "actionable": [
+            "Repeat"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Unstable NSTEMI patients should go to the cath lab emergently, just like STEMI patients.",
@@ -65324,7 +65842,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "unstable NSTEMI patients",
-      "pearl_id": "dr-engstrom-on-acs-4128"
+      "pearl_id": "dr-engstrom-on-acs-4128",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nstemi"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

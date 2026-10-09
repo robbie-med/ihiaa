@@ -47851,7 +47851,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient primary care",
-      "pearl_id": "dr-place-outpatient-lecture-121"
+      "pearl_id": "dr-place-outpatient-lecture-121",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hepatitis c"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A positive anti-HCV antibody with a positive HCV RNA test indicates current infection; a negative RNA with positive antibody suggests past infection.",
@@ -47864,7 +47883,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults being tested for hepatitis C",
-      "pearl_id": "dr-place-outpatient-lecture-286"
+      "pearl_id": "dr-place-outpatient-lecture-286",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hcv rna"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients with hepatitis C should be offered hepatitis A and B vaccination if not current, and screened for alcohol/drug use, HIV, and STIs.",
@@ -47877,7 +47912,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hepatitis C",
-      "pearl_id": "dr-place-outpatient-lecture-411"
+      "pearl_id": "dr-place-outpatient-lecture-411",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hepatitis a"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with ongoing hepatitis C risk factors who test negative, repeat testing should be done every 3 to 12 months, not every 5 years.",
@@ -47893,7 +47947,30 @@
       "numbers_unheard": [
         "12"
       ],
-      "pearl_id": "dr-place-outpatient-lecture-432"
+      "pearl_id": "dr-place-outpatient-lecture-432",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:12 months",
+            "frequency:every 3"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 5.38,
+          "capped": [
+            "number not heard: 12"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Family medicine should manage hepatitis C in the clinic, as many patients are not receiving care and it is not a difficult process for most patients.",
@@ -47906,7 +47983,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "family medicine clinics",
-      "pearl_id": "dr-place-outpatient-lecture-538"
+      "pearl_id": "dr-place-outpatient-lecture-538",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:family medicine"
+          ],
+          "rarity": 5.95
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "About 75% of people with chronic hepatitis C are unaware of their infection, highlighting the need for universal screening.",
@@ -47919,7 +48012,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "US population",
-      "pearl_id": "dr-place-outpatient-lecture-598"
+      "pearl_id": "dr-place-outpatient-lecture-598",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hepatitis c"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Deaths from hepatitis C now exceed deaths from HIV, primarily due to cirrhosis and hepatocellular carcinoma.",
@@ -47932,7 +48041,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "US population",
-      "pearl_id": "dr-place-outpatient-lecture-726"
+      "pearl_id": "dr-place-outpatient-lecture-726",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hepatocellular carcino"
+          ],
+          "rarity": 6.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hepatitis C is curable with direct-acting antivirals, achieving over 90% sustained virologic response.",
@@ -47945,7 +48070,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hepatitis C",
-      "pearl_id": "dr-place-outpatient-lecture-950"
+      "pearl_id": "dr-place-outpatient-lecture-950",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 9"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hepatitis C is rarely transmitted sexually unless blood is involved; injection drug use is a major risk factor.",
@@ -47958,7 +48099,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-place-outpatient-lecture-1064"
+      "pearl_id": "dr-place-outpatient-lecture-1064",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hepatitis c"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Baby boomers (born 1945-1965) account for about 75% of hepatitis C cases in the US, but universal screening for all adults 18 and older is now recommended.",
@@ -47975,7 +48135,23 @@
         "1945",
         "1965"
       ],
-      "pearl_id": "dr-place-outpatient-lecture-1132"
+      "pearl_id": "dr-place-outpatient-lecture-1132",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:baby boomers"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Order hepatitis C antibody reflex to genotype as the initial test; if antibody is negative the patient is charged only for the antibody, but if positive it automatically adds viral load (HCV RNA) and genotype.",
@@ -47988,7 +48164,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults being screened for hepatitis C",
-      "pearl_id": "dr-place-outpatient-lecture-1315"
+      "pearl_id": "dr-place-outpatient-lecture-1315",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hepatitis c antibody r"
+          ],
+          "actionable": [
+            "Order"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HCV RNA determines active replicating virus; antibody alone cannot distinguish past cleared infection from current viremia, so you need the cascade test.",
@@ -48001,7 +48196,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with positive hepatitis C antibody",
-      "pearl_id": "dr-place-outpatient-lecture-1507"
+      "pearl_id": "dr-place-outpatient-lecture-1507",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hcv rna"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Home hepatitis C test kits are FDA-approved and available over the counter for about $75; patients may present with positive results from these tests.",
@@ -48014,7 +48225,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-place-outpatient-lecture-1624"
+      "pearl_id": "dr-place-outpatient-lecture-1624",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hepatitis c"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Over 90% of otherwise healthy patients with hepatitis C (no chronic alcoholism, terrible diabetes, etc.) will have zero fibrosis on workup.",
@@ -48027,7 +48254,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "otherwise healthy adults with hepatitis C",
-      "pearl_id": "dr-place-outpatient-lecture-1992"
+      "pearl_id": "dr-place-outpatient-lecture-1992",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:Over 9"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For simplified treatment, the patient must have chronic hepatitis C (any genotype), no cirrhosis, and no prior treatment; these patients can be managed in primary care.",
@@ -48040,7 +48283,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with newly diagnosed hepatitis C",
-      "pearl_id": "dr-place-outpatient-lecture-2043"
+      "pearl_id": "dr-place-outpatient-lecture-2043",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:primary care"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients with prior treatment failure, cirrhosis, hepatitis B coinfection, pregnancy, suspected hepatocellular carcinoma, or transplant should be referred to a hepatologist or ID specialist.",
@@ -48053,7 +48312,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with complicated hepatitis C",
-      "pearl_id": "dr-place-outpatient-lecture-2062"
+      "pearl_id": "dr-place-outpatient-lecture-2062",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hepatocellular carcino"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the University of Liverpool drug interaction checker (like for Paxlovid) to check for interactions between hepatitis C medications and statins, diabetes drugs, etc.",
@@ -48066,7 +48341,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting hepatitis C treatment",
-      "pearl_id": "dr-place-outpatient-lecture-2114"
+      "pearl_id": "dr-place-outpatient-lecture-2114",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hepatitis c"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "harm": [
+            "interaction"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "APRI is not part of HCV guidelines; it is only used for ECHO program forms.",
@@ -48079,7 +48376,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "HCV staging",
-      "pearl_id": "dr-place-outpatient-lecture-2216"
+      "pearl_id": "dr-place-outpatient-lecture-2216",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The two main treatment regimens are Mavyret (3 pills daily for 8 weeks) and Epclusa (1 pill daily for 12 weeks); no lab monitoring is required during therapy.",
@@ -48092,7 +48402,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with hepatitis C eligible for simplified treatment",
-      "pearl_id": "dr-place-outpatient-lecture-2230"
+      "pearl_id": "dr-place-outpatient-lecture-2230",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:8 weeks",
+            "frequency:daily"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Epclusa is given as one pill daily for twelve weeks for HCV.",
@@ -48105,7 +48432,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HCV",
-      "pearl_id": "dr-place-outpatient-lecture-2253"
+      "pearl_id": "dr-place-outpatient-lecture-2253",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bring HCV patients in once a month during treatment to check on them.",
@@ -48118,7 +48461,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on HCV treatment",
-      "pearl_id": "dr-place-outpatient-lecture-2256"
+      "pearl_id": "dr-place-outpatient-lecture-2256",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "check"
+          ],
+          "rarity": 5.64
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not manage HCV in patients on warfarin in primary care; consider referral.",
@@ -48131,7 +48490,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HCV on warfarin",
-      "pearl_id": "dr-place-outpatient-lecture-2269"
+      "pearl_id": "dr-place-outpatient-lecture-2269",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:primary care"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "No lab monitoring is required during hepatitis C treatment; just bring the patient in once a month to check on side effects and adherence.",
@@ -48144,7 +48522,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on hepatitis C treatment",
-      "pearl_id": "dr-place-outpatient-lecture-2275"
+      "pearl_id": "dr-place-outpatient-lecture-2275",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hepatitis c"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 5.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "No routine lab monitoring is required during HCV treatment.",
@@ -48157,7 +48554,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on HCV treatment",
-      "pearl_id": "dr-place-outpatient-lecture-2275-2"
+      "pearl_id": "dr-place-outpatient-lecture-2275-2",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 5.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Check HCV RNA 12 weeks after completing treatment to confirm cure; a viral load that was 4.5 million at start should be zero at 12 weeks post-treatment.",
@@ -48170,7 +48580,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after completing hepatitis C treatment",
-      "pearl_id": "dr-place-outpatient-lecture-2287"
+      "pearl_id": "dr-place-outpatient-lecture-2287",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:12 weeks"
+          ],
+          "actionable": [
+            "Check"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After completing HCV treatment, check a viral RNA at twelve weeks.",
@@ -48183,7 +48612,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who have completed HCV treatment",
-      "pearl_id": "dr-place-outpatient-lecture-2287-2"
+      "pearl_id": "dr-place-outpatient-lecture-2287-2",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Noncirrhotic patients who achieve sustained virologic response need no liver-related follow-up.",
@@ -48196,7 +48641,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "noncirrhotic patients with SVR",
-      "pearl_id": "dr-place-outpatient-lecture-2314"
+      "pearl_id": "dr-place-outpatient-lecture-2314",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sustained virologic re"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For HCV on Medicaid SoonerCare, prescribe Mavyret as three tabs daily for eight weeks; no prior authorization is required with your signature.",
@@ -48209,7 +48670,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HCV on Medicaid SoonerCare",
-      "pearl_id": "dr-place-outpatient-lecture-2367"
+      "pearl_id": "dr-place-outpatient-lecture-2367",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "actionable": [
+            "prescribe"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Watch for hypoglycemia as a side effect of HCV treatment, especially in diabetics.",
@@ -48222,7 +48702,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on HCV treatment, especially diabetics",
-      "pearl_id": "dr-place-outpatient-lecture-2451"
+      "pearl_id": "dr-place-outpatient-lecture-2451",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hypoglycemia"
+          ],
+          "rarity": 6.34
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "At monthly visits during HCV treatment, do not order labs routinely; only if clinically indicated, such as suspicion of AKI.",
@@ -48235,7 +48731,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on HCV treatment",
-      "pearl_id": "dr-place-outpatient-lecture-2665"
+      "pearl_id": "dr-place-outpatient-lecture-2665",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:monthly"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Educate patients about the importance of committing to the full HCV treatment course.",
@@ -48248,7 +48763,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting HCV treatment",
-      "pearl_id": "dr-place-outpatient-lecture-2684"
+      "pearl_id": "dr-place-outpatient-lecture-2684",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Educate"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

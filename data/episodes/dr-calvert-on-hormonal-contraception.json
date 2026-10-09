@@ -26770,7 +26770,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting low-dose OCPs (15–25 mcg ethinyl estradiol)",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-349"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-349",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 6.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "All combination OCPs are equally effective for contraception; choose based on side-effect profile.",
@@ -26783,7 +26799,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on combination OCPs",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-703"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-703",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:contraception"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use monophasic pills to simplify management; you know exactly how much hormone each day.",
@@ -26796,7 +26828,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on combination OCPs",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-708"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-708",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:monophasic pill"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For heavy menstrual bleeding or dysmenorrhea, choose a pill with strong progestin (e.g., levonorgestrel) to thin the endometrium.",
@@ -26809,7 +26860,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with menorrhagia or dysmenorrhea",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-939"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-939",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:levonorgestrel"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients with acne, avoid strong androgen progestins like levonorgestrel; choose desogestrel or norgestimate instead.",
@@ -26822,7 +26892,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acne",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-985"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-985",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:levonorgestrel"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Classify pills by estrogen group (A high, B low, C very low) and progestin group (1 strong/strong androgen, 2 strong/weak androgen, 3 weak/moderate androgen) rather than by trade name; pick 2-3 brands per group.",
@@ -26835,7 +26924,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians prescribing OCPs",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-1230"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-1230",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:progestin"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "High-estrogen pills (group A) can be used to stop acute heavy bleeding, but not for routine contraception.",
@@ -26848,7 +26953,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute heavy menstrual bleeding",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-1475"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-1475",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:contraception"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Follow up new OCP users at 3 months for blood pressure check; do not schedule earlier because early spotting often resolves.",
@@ -26861,7 +26988,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "new OCP users",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-1818"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-1818",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 months"
+          ],
+          "actionable": [
+            "Follow up"
+          ],
+          "rarity": 7.68
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For breakthrough bleeding in the first half of the cycle, increase estrogen or decrease progestin; for second half, decrease estrogen or increase progestin.",
@@ -26874,7 +27020,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on OCPs with breakthrough bleeding after at least 3 months",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-1906"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-1906",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:breakthrough bleeding"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 6.34
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Wait at least three months before changing the pill regimen for breakthrough bleeding; the body needs time to adjust.",
@@ -26887,7 +27055,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting or changing OCPs",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2045"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2045",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:breakthrough bleeding"
+          ],
+          "actionable": [
+            "Wait"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Most patients with breakthrough bleeding just need reassurance if cancer is ruled out; it is very common.",
@@ -26900,7 +27090,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on OCPs with breakthrough bleeding",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2084"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2084",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:breakthrough bleeding"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In women over 40, use low-estrogen pills (C group) to reduce risk of hypertension.",
@@ -26913,7 +27122,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women over 40 starting OCPs",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2194"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2194",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:over 4"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In women over 40, use low-dose estrogen pills because estrogen side effects like hypertension increase with age.",
@@ -26929,7 +27157,29 @@
       "numbers_unheard": [
         "40"
       ],
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2239"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2239",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 4"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 5.36,
+          "capped": [
+            "number not heard: 40"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In younger women (teens to 20s), use 35 mcg estrogen pills; 15-20 mcg may be too weak and missed doses have greater impact.",
@@ -26942,7 +27192,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women aged 15-20 starting OCPs",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2303"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2303",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:35 mcg"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "missed"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For heavy bleeding, give high-dose estrogen: three pills daily for three days, then two for three days, then one for three days.",
@@ -26955,7 +27227,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with heavy bleeding on OCPs",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2366"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2366",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 5.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After the high-dose taper, do not stop the pill; continue cycling continuously for three to six months to allow the endometrium to stabilize and correct anemia.",
@@ -26968,7 +27262,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with heavy bleeding after taper",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2384"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2384",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anemia"
+          ],
+          "actionable": [
+            "taper"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Smoking plus age >45 is a contraindication to combined hormonal contraception; patient must stop smoking first.",
@@ -26981,7 +27294,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women over 45 who smoke",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2550"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2550",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "threshold:>4"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "harm": [
+            "contraindication"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Half of women have gone through menopause by age 52; 95% by age 54. Advise patients to stop OCPs for one month at that age to see if menses return.",
@@ -26994,7 +27329,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "perimenopausal women on OCPs",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2689"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2689",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:menopause"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 6.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When stopping OCPs for a menopause trial, the patient must be committed to stopping for a full month, not just a couple of weeks.",
@@ -27007,7 +27361,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "perimenopausal women stopping OCPs for menopause trial",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2740"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2740",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:menopause"
+          ],
+          "rarity": 7.4
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

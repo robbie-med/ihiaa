@@ -24120,7 +24120,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected BV",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-334"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-334",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bacterial vaginosis"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To diagnose bacterial vaginosis, you need three of four Amsel criteria: thin milky discharge, pH >4.5, positive whiff test, and clue cells.",
@@ -24133,7 +24149,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with vaginal discharge",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-380"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-380",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>4"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Normal vaginal pH is 4.5 or less; a pH greater than 4.5 is seen in bacterial vaginosis and trichomonas.",
@@ -24146,7 +24178,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-447"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-447",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:greater than 4"
+          ],
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For recurrent BV associated with menstruation or sex, give metronidazole for one to two days after the period stops.",
@@ -24159,7 +24207,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with recurrent BV triggered by menses or sex",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-637"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-637",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:metronidazole"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 6.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Primary HSV infection is treated more aggressively than recurrent infection and can be serious enough to require hospitalization.",
@@ -24172,7 +24239,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with first clinical episode of HSV",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-797"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-797",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HSV lesions typically progress from tingling to clear vesicles within 24 hours, then to pustules, then rupture and scab.",
@@ -24185,7 +24265,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected HSV",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-828"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-828",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pregnancy with HSV history, perform a thorough exam of cervix and vaginal walls for active lesions; if any doubt, err on the side of C-section.",
@@ -24198,7 +24294,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with HSV history in labor",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-1118"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-1118",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pregnancy"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Asymptomatic transmission of HSV occurs when a person has a painless lesion they are unaware of; it does not mean no lesion is present.",
@@ -24211,7 +24323,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HSV",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-1464"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-1464",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gonorrhea and chlamydia produce purulent discharge from the cervical os because they grow intracellularly in columnar cells of the endocervical canal.",
@@ -24224,7 +24349,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected cervicitis",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-1768"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-1768",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chlamydia"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When you don't know if it's gonorrhea or chlamydia, treat presumptively for both; if one is confirmed, treat only that one.",
@@ -24237,7 +24378,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected STI and uncertain etiology",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-1860"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-1860",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:chlamydia"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Syphilis presents with a chancre at the entry point and a characteristic rash on palms and soles; Oklahoma has high rates, nearly 100 cases per 100,000.",
@@ -24250,7 +24410,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with genital lesions and rash",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-1931"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-1931",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:syphilis"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Trichomonas presents with frothy white discharge, pH >4.5, postcoital spotting, and a strawberry cervix with punctate erosions on the vaginal wall.",
@@ -24266,7 +24442,23 @@
       "numbers_unheard": [
         "4.5"
       ],
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2087"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2087",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>4"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In trichomonas, the discharge is typically white and frothy, and the vaginal pH is 5.5, which helps distinguish it from bacterial vaginosis or candidiasis.",
@@ -24279,7 +24471,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with vaginal discharge",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2098"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2098",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bacterial vaginosis"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Strawberry cervix and erosions on the vaginal sidewall in trichomonas can cause postcoital bleeding from the friable mucosa.",
@@ -24292,7 +24500,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with trichomonas",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2157"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2157",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:strawberry cervix"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The syphilis rash, once present, does not come and go intermittently; it persists for a variable period and then resolves without recurrence.",
@@ -24305,7 +24532,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with secondary syphilis",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2342"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2342",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:syphilis"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In secondary syphilis, the rash on palms and soles may be very faint, so if you suspect syphilis and think you see a rash, test rather than dismiss it.",
@@ -24318,7 +24561,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected syphilis",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2406"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2406",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:secondary syphilis"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fordyce spots (visible sebaceous glands) are a common benign finding on the genitals; they can be distinguished from warts by feel, they are barely raised and not hard.",
@@ -24331,7 +24590,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with small genital bumps",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2540"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2540",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sebaceous gland"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pearly penile papules are small, barely raised bumps on the penis that feel soft, unlike genital warts which are hard like a fingernail.",
@@ -24344,7 +24619,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with penile lesions",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2543"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2543",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pearly penile papules"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Genital warts are usually painless unless they are traumatized or become infected; pain is not a typical feature.",
@@ -24357,7 +24648,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with genital warts",
-      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2562"
+      "pearl_id": "dr-jon-calvert-on-infections-genitalia-2562",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:genital warts"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -19427,7 +19427,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with abnormal uterine bleeding",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-126"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-126",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "ask about"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 6.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Normal menstrual interval is 21 to 35 days; duration is 5 to 7 days. Pick one reference range and use it consistently.",
@@ -19440,7 +19459,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-201"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-201",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:35 days"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To quantify menstrual bleeding, ask how many pads or tampons are used on the heaviest day.",
@@ -19453,7 +19491,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with abnormal uterine bleeding",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-243"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-243",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Oligomenorrhea is vaginal bleeding occurring at regular intervals greater than 35 days but less than 6 months.",
@@ -19466,7 +19520,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-568"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-568",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:35 days",
+            "threshold:greater than 3"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A rapid rise in estrogen triggers an LH surge, which triggers ovulation.",
@@ -19479,7 +19553,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-712"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-712",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:estrogen"
+          ],
+          "rarity": 6.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Progesterone withdrawal causes menstruation; exogenous administration of progesterone and withdrawal can also cause menstruation.",
@@ -19492,7 +19582,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-751"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-751",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:progesterone"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 6.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The liver responds to elevated levels of estrogen by producing increased sex hormone binding globulin; it responds to high testosterone by decreasing sex hormone binding globulin.",
@@ -19505,7 +19614,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1028"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1028",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sex hormone binding gl"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In PCOS, high testosterone reduces sex hormone binding globulin, further increasing free testosterone. Birth control pills (high estrogen) increase SHBG, bind testosterone, and reduce hirsutism.",
@@ -19518,7 +19643,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PCOS and hirsutism",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1060"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1060",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:sex hormone binding gl"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After menarche, it can take up to two years for periods to become regular. If still irregular at two years, begin evaluation for chronic anovulation.",
@@ -19531,7 +19675,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adolescents within 2 years of menarche",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1362"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1362",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chronic anovulation"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Perimenopause onset is defined by irregular periods (interval, duration, or amount), not hot flashes. Mean age of onset is 45 years; duration is 2, 8 years, average 4, 5 years.",
@@ -19544,7 +19704,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women in perimenopause",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1519"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1519",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:45 years"
+          ],
+          "rarity": 7.28
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Average age of menopause is 51, 52; 95% reach menopause by age 54. A woman aged 60 still menstruating should be evaluated for endometrial cancer.",
@@ -19557,7 +19733,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women aged 45–60",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1682"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-1682",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:endometrial cancer"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Combination birth control pills treat both dysmenorrhea and perimenopausal irregularity: progestin thins the endometrium, reducing prostaglandin and uterine contractions, while estrogen regulates cycles.",
@@ -19570,7 +19762,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with perimenopause and dysmenorrhea",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-2226"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-2226",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:dysmenorrhea"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

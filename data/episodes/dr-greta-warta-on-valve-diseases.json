@@ -28051,7 +28051,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe aortic stenosis",
-      "pearl_id": "dr-greta-warta-on-valve-diseases-137"
+      "pearl_id": "dr-greta-warta-on-valve-diseases-137",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:referral"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For asymptomatic aortic stenosis, surveillance echo intervals: mild every 3-5 years, moderate every 1-2 years, severe every 6-12 months.",
@@ -28064,7 +28083,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "asymptomatic patients with aortic stenosis",
-      "pearl_id": "dr-greta-warta-on-valve-diseases-402"
+      "pearl_id": "dr-greta-warta-on-valve-diseases-402",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 years",
+            "frequency:every 3"
+          ],
+          "rarity": 6.49
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Control hypertension cautiously in aortic stenosis; driving pressure too low or aggressive diuresis can cause decompensation. Target systolic around 130-140, not per SPRINT guidelines.",
@@ -28081,7 +28117,23 @@
         "130",
         "140"
       ],
-      "pearl_id": "dr-greta-warta-on-valve-diseases-524"
+      "pearl_id": "dr-greta-warta-on-valve-diseases-524",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hypertension"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Refer any symptomatic patient with aortic stenosis for valve replacement, even if echo measurements seem discordant; put it together clinically.",
@@ -28094,7 +28146,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "symptomatic patients with suspected aortic stenosis",
-      "pearl_id": "dr-greta-warta-on-valve-diseases-593"
+      "pearl_id": "dr-greta-warta-on-valve-diseases-593",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:valve replacement"
+          ],
+          "actionable": [
+            "Refer"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For severe aortic stenosis, the speaker uses old guidelines for endocarditis prophylaxis (antibiotics before dental procedures) erring on the side of caution, though current guidelines only recommend it for prosthetic valve or prior endocarditis.",
@@ -28107,7 +28178,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe aortic stenosis undergoing major dental procedures",
-      "pearl_id": "dr-greta-warta-on-valve-diseases-725"
+      "pearl_id": "dr-greta-warta-on-valve-diseases-725",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:endocarditis prophylax"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A disappearing murmur can be a sign of low-flow aortic stenosis.",
@@ -28120,7 +28207,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with aortic stenosis",
-      "pearl_id": "dr-greta-warta-on-valve-diseases-794"
+      "pearl_id": "dr-greta-warta-on-valve-diseases-794",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Listen to heart, lungs, and carotids every single visit because you might catch something one time that you didn't another time.",
@@ -28133,7 +28233,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-greta-warta-on-valve-diseases-924"
+      "pearl_id": "dr-greta-warta-on-valve-diseases-924",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In bicuspid aortic valve, also monitor the thoracic aorta; surgical threshold for aortic dilation is 4.5 cm (vs 5.0 cm for others).",
@@ -28146,7 +28259,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with bicuspid aortic valve",
-      "pearl_id": "dr-greta-warta-on-valve-diseases-1055"
+      "pearl_id": "dr-greta-warta-on-valve-diseases-1055",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4.5 cm"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Any diastolic murmur is pathologic and deserves a cardiology referral.",
@@ -28159,7 +28291,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with a diastolic murmur",
-      "pearl_id": "dr-greta-warta-on-valve-diseases-1161"
+      "pearl_id": "dr-greta-warta-on-valve-diseases-1161",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cardiology referral"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients with aortic stenosis feel immediately better after valve replacement because blood flow is restored; symptoms like dizziness, shortness of breath, and fatigue resolve quickly.",
@@ -28172,7 +28320,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing valve replacement for aortic stenosis",
-      "pearl_id": "dr-greta-warta-on-valve-diseases-1266"
+      "pearl_id": "dr-greta-warta-on-valve-diseases-1266",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:valve replacement"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

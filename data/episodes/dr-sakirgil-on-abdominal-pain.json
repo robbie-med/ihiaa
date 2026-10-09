@@ -38198,7 +38198,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women of childbearing age with abdominal pain",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-242"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-242",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:abdominal pain"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 5.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When concerned about appendicitis or gallbladder disease, ask the patient if they still have that organ; medical records may be outdated.",
@@ -38211,7 +38230,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected appendicitis or cholecystitis",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-338"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-338",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:appendicitis"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pain that is constant and less than 48 hours in duration is more likely to be a surgical condition; intermittent pain is less serious.",
@@ -38224,7 +38259,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with abdominal pain",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-416"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-416",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:48 hours",
+            "threshold:less than 4"
+          ],
+          "rarity": 6.47
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To overcome guarding during abdominal exam, start away from the tender area, have the patient relax with arms at sides, and explain what you will do; leave the most tender point for last.",
@@ -38237,7 +38289,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing abdominal exam",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-525"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-525",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Rebound tenderness is elicited by pressing deeply and releasing quickly at the same spot; pain on release is positive and indicates peritoneal irritation.",
@@ -38250,7 +38318,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected peritoneal irritation",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-645"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-645",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:peritoneal irritation"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you have a positive rebound sign, the patient has an acute abdomen and should be sent to the ER immediately; you do not need to know the exact cause.",
@@ -38263,7 +38347,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with abdominal pain",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-677"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-677",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If sending a patient to the ER for possible emergency surgery, instruct them not to eat or drink on the way or while there.",
@@ -38276,7 +38379,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being sent to ER for possible surgery",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-715"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-715",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 6.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "EKG should be considered in patients with abdominal pain, especially in the elderly, as MI can present with epigastric pain.",
@@ -38289,7 +38408,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with abdominal pain, especially elderly",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-907"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-907",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "rarity": 6.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A normal white blood cell count does not rule out appendicitis.",
@@ -38302,7 +38437,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected appendicitis",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-1006"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-1006",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:appendicitis"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 5.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ultrasound is the imaging study of choice for right upper quadrant pain; CT is the study of choice for right lower quadrant and left lower quadrant pain in adults.",
@@ -38315,7 +38469,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with abdominal pain",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-1016"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-1016",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:Ultrasound"
+          ],
+          "rarity": 5.99
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In appendicitis, if you document 'Rovsing positive' or 'psoas sign positive' in your note, the ER attending will take it seriously and cannot ignore those words.",
@@ -38328,7 +38498,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected appendicitis being sent to ER",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-1354"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-1354",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:appendicitis"
+          ],
+          "actionable": [
+            "document"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected appendicitis with peritoneal signs, keep the patient NPO (nothing by mouth) on the way to the ER.",
@@ -38341,7 +38530,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected appendicitis and peritoneal signs",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-1451"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-1451",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:appendicitis"
+          ],
+          "rarity": 6.99
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In renal colic, if the stone is >5 mm it is unlikely to pass; smaller stones can be watched.",
@@ -38354,7 +38559,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with renal colic and known stone size",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-1615"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-1615",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 mm",
+            "threshold:>5"
+          ],
+          "rarity": 7.68
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For outpatient diverticulitis without peritoneal signs, prescribe Cipro 500 mg TID and Flagyl 500 mg TID for 10 days, and instruct a liquid diet for 2 days.",
@@ -38367,7 +38589,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatients with diverticulitis, no peritoneal signs",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-1723"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-1723",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:500 mg",
+            "frequency:TID"
+          ],
+          "actionable": [
+            "prescribe"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In diverticulitis, tell patients not to get constipated; consider Colace if needed.",
@@ -38380,7 +38622,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diverticulitis on liquid diet",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-1747"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-1747",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:diverticulitis"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For H. pylori testing, stool antigen is easier because it remains positive even if the patient is on PPIs; breath test requires stopping PPIs for 2 weeks.",
@@ -38393,7 +38654,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being tested for H. pylori",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-1882"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-1882",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 weeks"
+          ],
+          "rarity": 6.67
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For GERD-like symptoms, trial a PPI for 4 weeks; if no improvement, then consider H. pylori testing and EGD.",
@@ -38406,7 +38683,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected GERD/acid reflux",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-1910"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-1910",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4 weeks"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Red flags for gastric cancer: age >45, weight loss, anemia, persistent anorexia, and early satiety ('I eat just a little bit and I'm not hungry anymore'), refer immediately for EGD.",
@@ -38419,7 +38715,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dyspepsia and alarm symptoms",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-1951"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-1951",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "threshold:>4"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pancreatitis, early refeeding as tolerated is now recommended; you do not have to keep them NPO until pain resolves.",
@@ -38432,7 +38750,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-2058"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-2058",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pancreatitis"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Testicular torsion salvage rate is 80-100% if repaired within 6 hours; any acute testicular pain in a young male requires immediate ER referral.",
@@ -38445,7 +38782,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "young males with acute testicular pain",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-2098"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-2098",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 hours"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In elderly, pain perception is altered; they may not respond to pain in a typical way, so maintain high suspicion.",
@@ -38458,7 +38811,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-2263"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-2263",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Mesenteric ischemia is tough to diagnose; think about CTA and consider atrial fibrillation as a risk factor.",
@@ -38471,7 +38837,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected mesenteric ischemia",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-2300"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-2300",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:atrial fibrillation"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consider AAA in older patients (men >55, women >70) with sudden onset abdominal/back pain, syncope, or hypotension; ultrasound can detect AAA but is not helpful for rupture; CT without contrast for stable patients.",
@@ -38484,7 +38869,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older patients with abdominal/back pain",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-2322"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-2322",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>5",
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 6.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "AAA risk increases with age; women over 70 and men over 55 are at higher risk.",
@@ -38497,7 +38902,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-2322-2"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-2322-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 7"
+          ],
+          "rarity": 5.4
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In elderly patients with abdominal pain, suspect AAA if pain radiates to back, is sudden onset, and significant.",
@@ -38510,7 +38931,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients with abdominal pain",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-2328"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-2328",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:abdominal pain"
+          ],
+          "rarity": 6.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Atypical locations for AAA pain include hip, inguinal hernia, and external areas.",
@@ -38523,7 +38960,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected AAA",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-2333"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-2333",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:inguinal hernia"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Syncope and hypotension can occur with AAA; consider AAA in elderly with these symptoms.",
@@ -38536,7 +38989,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients with abdominal pain",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-2336"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-2336",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypotension"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Palpation may reveal a tender, enlarged aorta in AAA.",
@@ -38549,7 +39021,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected AAA",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-2339"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-2339",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:palpation"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hematuria may be present in AAA; consider AAA in older patients with back/flank/abdominal pain and renal colic-like presentation.",
@@ -38562,7 +39050,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older patients with back/flank/abdominal pain",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-2344"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-2344",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:abdominal pain"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ultrasound can reveal AAA but is not helpful for detecting rupture; use CT without contrast for stable patients.",
@@ -38575,7 +39082,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "stable patients with suspected AAA",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-2353"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-2353",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:Ultrasound"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For unstable patients with high suspicion of AAA, obtain immediate surgical consultation and emergent surgery.",
@@ -38588,7 +39114,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "unstable patients with suspected AAA",
-      "pearl_id": "dr-sakirgil-on-abdominal-pain-2357"
+      "pearl_id": "dr-sakirgil-on-abdominal-pain-2357",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "obtain"
+          ],
+          "harm": [
+            "emergent"
+          ],
+          "rarity": 6.62
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

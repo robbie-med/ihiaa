@@ -84929,7 +84929,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with bilateral arm pain",
-      "pearl_id": "dr-lee-on-morning-report-194"
+      "pearl_id": "dr-lee-on-morning-report-194",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bilateral arm pain"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Chest pain should be asked about in patients with bilateral arm pain, as this might be the only way they present.",
@@ -84942,7 +84961,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with bilateral arm pain",
-      "pearl_id": "dr-lee-on-morning-report-218"
+      "pearl_id": "dr-lee-on-morning-report-218",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bilateral arm pain"
+          ],
+          "rarity": 5.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Severe bilateral arm pain with confirmed platelets of 5 warrants immediate transfer to the ER, not dismissal as lab error.",
@@ -84955,7 +84990,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe bilateral arm pain and thrombocytopenia",
-      "pearl_id": "dr-lee-on-morning-report-345"
+      "pearl_id": "dr-lee-on-morning-report-345",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bilateral arm pain"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a case feels 'fishy' or unexpected, explicitly pause to write out or verbalize a differential diagnosis, this is often forgotten in real clinical settings.",
@@ -84968,7 +85019,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any clinician encountering an unexpected or concerning presentation",
-      "pearl_id": "dr-lee-on-morning-report-731"
+      "pearl_id": "dr-lee-on-morning-report-731",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:differential diagnosis"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "TTP often first presents with a clot, not bleeding.",
@@ -84981,7 +85048,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thrombocytopenia",
-      "pearl_id": "dr-lee-on-morning-report-908"
+      "pearl_id": "dr-lee-on-morning-report-908",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 5.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For thrombocytopenia, the differential includes HIT (check HIT antibody), ITP (peripheral smear, diagnosis of exclusion), DIC (DIC panel), TTP (ADAMTS13 deficiency), splenic sequestration (ultrasound), bone marrow infiltration (biopsy), cirrhosis (liver ultrasound, INR, CP), medication-induced (check outside records), and viral illness (viral panel).",
@@ -84994,7 +85077,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thrombocytopenia",
-      "pearl_id": "dr-lee-on-morning-report-972"
+      "pearl_id": "dr-lee-on-morning-report-972",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A normal white count (13.2) makes hematologic malignancy less likely as a cause of thrombocytopenia.",
@@ -85007,7 +85109,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thrombocytopenia and normal white count",
-      "pearl_id": "dr-lee-on-morning-report-1157"
+      "pearl_id": "dr-lee-on-morning-report-1157",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hematologic malignancy"
+          ],
+          "rarity": 6.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always check if the patient has had low platelets before, review outside records for prior labs.",
@@ -85020,7 +85138,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with new thrombocytopenia",
-      "pearl_id": "dr-lee-on-morning-report-1164"
+      "pearl_id": "dr-lee-on-morning-report-1164",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 6.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Medication-induced thrombocytopenia is easily overlooked; check outside medication records.",
@@ -85033,7 +85167,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thrombocytopenia",
-      "pearl_id": "dr-lee-on-morning-report-1275"
+      "pearl_id": "dr-lee-on-morning-report-1275",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:medication-induced thr"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Documentation should clearly link the assessment to the plan; a plan that does not follow from the assessment is a 'non sequitur' and makes it hard for the next clinician to follow.",
@@ -85046,7 +85199,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinical documentation",
-      "pearl_id": "dr-lee-on-morning-report-1612"
+      "pearl_id": "dr-lee-on-morning-report-1612",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:non sequitur"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Every problem on the problem list should have a corresponding plan, and every plan should address a specific problem; a plan that does not follow from the assessment is a 'non sequitur' and makes it hard for the next clinician to follow.",
@@ -85059,7 +85228,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinical documentation",
-      "pearl_id": "dr-lee-on-morning-report-1625"
+      "pearl_id": "dr-lee-on-morning-report-1625",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:non sequitur"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Polymyalgia rheumatica is a strong consideration in older adults presenting with bilateral shoulder girdle pain, stiffness, and elevated inflammatory markers.",
@@ -85072,7 +85257,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older adults with bilateral shoulder pain and stiffness",
-      "pearl_id": "dr-lee-on-morning-report-2092"
+      "pearl_id": "dr-lee-on-morning-report-2092",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:polymyalgia rheumatica"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PO oxycodone is more potent than PO morphine on a per-milligram basis, so switching from oxycodone to morphine without dose adjustment may not improve analgesia.",
@@ -85085,7 +85286,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on oral opioids",
-      "pearl_id": "dr-lee-on-morning-report-2205"
+      "pearl_id": "dr-lee-on-morning-report-2205",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:oxycodone"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Aldolase and creatine kinase are muscle markers that can be elevated in inflammatory myopathies such as dermatomyositis.",
@@ -85098,7 +85315,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected myopathy",
-      "pearl_id": "dr-lee-on-morning-report-2327"
+      "pearl_id": "dr-lee-on-morning-report-2327",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dermatomyositis"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient's presentation is atypical and evolving, inflammatory arthropathy should remain in the differential diagnosis.",
@@ -85111,7 +85344,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with atypical presentations",
-      "pearl_id": "dr-lee-on-morning-report-2382"
+      "pearl_id": "dr-lee-on-morning-report-2382",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:inflammatory arthropat"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Peripheral smear is essential for evaluating thrombocytopenia; findings of macrocytic anemia and atypical granulocytes suggest an underlying hematologic malignancy.",
@@ -85124,7 +85373,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thrombocytopenia and anemia",
-      "pearl_id": "dr-lee-on-morning-report-2442"
+      "pearl_id": "dr-lee-on-morning-report-2442",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hematologic malignancy"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The absence of microangiopathic hemolytic anemia (MAHA) rules out TTP, HIT, and DIC as causes of thrombocytopenia.",
@@ -85137,7 +85402,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thrombocytopenia",
-      "pearl_id": "dr-lee-on-morning-report-2484"
+      "pearl_id": "dr-lee-on-morning-report-2484",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:microangiopathic hemol"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "MRI of the brachial plexus can be useful when neurologic symptoms localize to the upper extremities and cervical spine imaging is unrevealing.",
@@ -85150,7 +85431,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with upper extremity neurologic symptoms and negative cervical spine imaging",
-      "pearl_id": "dr-lee-on-morning-report-2613"
+      "pearl_id": "dr-lee-on-morning-report-2613",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Platelet transfusion threshold in a bleeding patient with thrombocytopenia is platelets less than 10.",
@@ -85163,7 +85460,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "bleeding patients with thrombocytopenia",
-      "pearl_id": "dr-lee-on-morning-report-2713"
+      "pearl_id": "dr-lee-on-morning-report-2713",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:less than 1"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 6.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bone marrow biopsy for suspected hematologic malignancy is done blindly at the iliac crest; the likelihood of missing a diffuse marrow process is low because blood circulates through all marrow.",
@@ -85176,7 +85492,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing bone marrow biopsy for suspected hematologic malignancy",
-      "pearl_id": "dr-lee-on-morning-report-2875"
+      "pearl_id": "dr-lee-on-morning-report-2875",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "harm": [
+            "blindly"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In an adult with arm pain and pancytopenia, consider hematologic malignancy such as AML, not just musculoskeletal or neuropathic causes.",
@@ -85189,7 +85524,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with arm pain and pancytopenia",
-      "pearl_id": "dr-lee-on-morning-report-3000"
+      "pearl_id": "dr-lee-on-morning-report-3000",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hematologic malignancy"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A normal haptoglobin and low reticulocyte count argue against hemolysis as the cause of anemia or LDH elevation.",
@@ -85202,7 +85556,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anemia and elevated LDH",
-      "pearl_id": "dr-lee-on-morning-report-3139"
+      "pearl_id": "dr-lee-on-morning-report-3139",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:reticulocyte count"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Rising LDH indicates cell death and can be a marker of tumor lysis syndrome, even before treatment begins.",
@@ -85215,7 +85585,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected malignancy and rising LDH",
-      "pearl_id": "dr-lee-on-morning-report-3170"
+      "pearl_id": "dr-lee-on-morning-report-3170",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:tumor lysis syndrome"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Extramedullary hematopoiesis occurs in the liver, lungs, and gut as a compensatory mechanism when bone marrow is replaced by fibrosis or malignancy.",
@@ -85228,7 +85617,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with myelofibrosis or marrow replacement",
-      "pearl_id": "dr-lee-on-morning-report-3292"
+      "pearl_id": "dr-lee-on-morning-report-3292",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:extramedullary hematop"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Steroid-induced leukocytosis can raise WBC from 14 to 171, but if the rise is that high and the patient looks different, do not attribute it solely to steroids.",
@@ -85244,7 +85649,29 @@
       "numbers_unheard": [
         "171"
       ],
-      "pearl_id": "dr-lee-on-morning-report-3373"
+      "pearl_id": "dr-lee-on-morning-report-3373",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:steroid-induced leukoc"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.88,
+          "capped": [
+            "number not heard: 171"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "AML can progress very rapidly, with symptoms evolving from arm pain to critical illness in days to weeks.",
@@ -85258,7 +85685,20 @@
       "prompt_version": "v1",
       "applies_to": "patients with AML",
       "by_presenter": false,
-      "pearl_id": "dr-lee-on-morning-report-3463"
+      "pearl_id": "dr-lee-on-morning-report-3463",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tumor lysis syndrome can occur spontaneously from a large tumor outgrowing its blood supply, not just after chemotherapy.",
@@ -85272,7 +85712,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with large tumor burden",
       "by_presenter": false,
-      "pearl_id": "dr-lee-on-morning-report-3481"
+      "pearl_id": "dr-lee-on-morning-report-3481",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tumor lysis syndrome"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In critically ill patients with newly diagnosed AML, goals of care discussions should occur before starting treatment, as the patient's metabolic reserve may be too low to tolerate therapy.",
@@ -85285,7 +85741,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "critically ill patients with newly diagnosed AML",
-      "pearl_id": "dr-lee-on-morning-report-3549"
+      "pearl_id": "dr-lee-on-morning-report-3549",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:goals of care discussi"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the 'fork in the road' metaphor to present two paths: continued treatment vs. shifting focus to comfort and quality of life.",
@@ -85298,7 +85773,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "goals-of-care conversations",
-      "pearl_id": "dr-lee-on-morning-report-3794"
+      "pearl_id": "dr-lee-on-morning-report-3794",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:quality of life"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Palliative care communication should be honest and direct, framing treatment and hospice as two paths that may lead to the same outcome, focusing on quality of life.",
@@ -85311,7 +85805,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with terminal illness",
-      "pearl_id": "dr-lee-on-morning-report-3797"
+      "pearl_id": "dr-lee-on-morning-report-3797",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:palliative care"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Give a specific prognosis when asked; Dr. Lee told the patient 'days to weeks, maybe even about two months'.",
@@ -85324,7 +85834,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with terminal illness",
-      "pearl_id": "dr-lee-on-morning-report-3853"
+      "pearl_id": "dr-lee-on-morning-report-3853",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Give"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient objects to hospice, sitting with them in their feelings and acknowledging 'that sucks' can be more effective than trying to sugarcoat the situation.",
@@ -85338,7 +85864,23 @@
       "prompt_version": "v1",
       "applies_to": "clinicians in goals-of-care conversations",
       "by_presenter": false,
-      "pearl_id": "dr-lee-on-morning-report-4158"
+      "pearl_id": "dr-lee-on-morning-report-4158",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hospice"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When recommending hospice, use the personal statement 'if you were my mother, I would say let's get out of here' as a powerful closing that often overcomes patient objections.",
@@ -85351,7 +85893,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians discussing hospice with patients",
-      "pearl_id": "dr-lee-on-morning-report-4182"
+      "pearl_id": "dr-lee-on-morning-report-4182",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hospice"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Graft-versus-host disease from transfusion occurs when donor blood attacks the host; ABO incompatibility is when the host attacks the donor blood.",
@@ -85364,7 +85925,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving blood transfusion",
-      "pearl_id": "dr-lee-on-morning-report-4506"
+      "pearl_id": "dr-lee-on-morning-report-4506",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:graft-versus-host dise"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The GATE mnemonic covers transfusion reactions: Graft-versus-host, Anaphylaxis and ABO incompatibility, Infection and Immunosuppression, TRALI and TACO.",
@@ -85377,7 +85954,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "informed consent for blood transfusion",
-      "pearl_id": "dr-lee-on-morning-report-4525"
+      "pearl_id": "dr-lee-on-morning-report-4525",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:transfusion reaction"
+          ],
+          "harm": [
+            "Anaphylaxis"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Informed consent for blood transfusion should take about 30 seconds; explain all GATE risks and also state the risk of not transfusing (heart attack or stroke).",
@@ -85390,7 +85986,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians obtaining consent for transfusion",
-      "pearl_id": "dr-lee-on-morning-report-4674"
+      "pearl_id": "dr-lee-on-morning-report-4674",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:informed consent"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ANC <500 defines severe neutropenia; ANC 500-1000 is moderate risk; ANC 1000-1500 is also moderate risk.",
@@ -85403,7 +86018,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on chemotherapy",
-      "pearl_id": "dr-lee-on-morning-report-4782"
+      "pearl_id": "dr-lee-on-morning-report-4782",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:<5"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Neutropenic fever requires broad-spectrum antibiotics and antifungal coverage.",
@@ -85416,7 +86047,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with neutropenic fever",
-      "pearl_id": "dr-lee-on-morning-report-4797"
+      "pearl_id": "dr-lee-on-morning-report-4797",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:broad-spectrum antibio"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Neutropenic enterocolitis (typhlitis) occurs due to breakdown of the gut mucosa from impaired turnover, leading to leakage of gut contents and sepsis.",
@@ -85429,7 +86076,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neutropenic patients",
-      "pearl_id": "dr-lee-on-morning-report-4965"
+      "pearl_id": "dr-lee-on-morning-report-4965",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:neutropenic enterocoli"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Neutropenic enterocolitis (typhlitis) results from mucosal breakdown in the gut due to chemotherapy, leading to bacterial translocation and sepsis.",
@@ -85442,7 +86108,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chemotherapy-induced neutropenia",
-      "pearl_id": "dr-lee-on-morning-report-4966"
+      "pearl_id": "dr-lee-on-morning-report-4966",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:neutropenic enterocoli"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "LDH is a nonspecific marker that can indicate tumor tissue damage and breakdown.",
@@ -85455,7 +86140,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected malignancy or tumor lysis",
-      "pearl_id": "dr-lee-on-morning-report-5225"
+      "pearl_id": "dr-lee-on-morning-report-5225",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Peripheral smear is critical for detecting circulating blasts, which may not show up on an automated differential.",
@@ -85468,7 +86166,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected leukemia",
-      "pearl_id": "dr-lee-on-morning-report-5344"
+      "pearl_id": "dr-lee-on-morning-report-5344",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:circulating blasts"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When formulating differentials or problem lists, break them out clearly and communicate your thinking to avoid non-sequitur care during handoffs.",
@@ -85481,7 +86195,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinicians during handoffs",
-      "pearl_id": "dr-lee-on-morning-report-5379"
+      "pearl_id": "dr-lee-on-morning-report-5379",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:problem list"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Aldolase tells you about muscle inflammation, such as in dermatomyositis and myositis.",
@@ -85495,7 +86228,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with suspected myositis",
       "by_presenter": false,
-      "pearl_id": "dr-lee-on-morning-report-5443"
+      "pearl_id": "dr-lee-on-morning-report-5443",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dermatomyositis"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Doctors may prematurely believe a patient will die and initiate hospice discussions, creating a self-fulfilling prophecy; patients can survive despite initial dire predictions.",
@@ -85508,7 +86257,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians caring for critically ill patients",
-      "pearl_id": "dr-lee-on-morning-report-5510"
+      "pearl_id": "dr-lee-on-morning-report-5510",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hospice"
+          ],
+          "actionable": [
+            "initiate"
+          ],
+          "harm": [
+            "die"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Steroid-induced psychosis is a known adverse effect of corticosteroids.",
@@ -85521,7 +86292,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving corticosteroids",
-      "pearl_id": "dr-lee-on-morning-report-5659"
+      "pearl_id": "dr-lee-on-morning-report-5659",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:steroid-induced psycho"
+          ],
+          "rarity": 7.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When withholding blood transfusion due to adequate hemoglobin, explain the reason to the patient or family to avoid misunderstanding.",
@@ -85534,7 +86321,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians managing transfusions",
-      "pearl_id": "dr-lee-on-morning-report-5696"
+      "pearl_id": "dr-lee-on-morning-report-5696",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tumor lysis syndrome can happen when a tumor outgrows its blood supply and self-destructs, not only with chemotherapy.",
@@ -85547,7 +86350,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with rapidly growing tumors",
-      "pearl_id": "dr-lee-on-morning-report-5773"
+      "pearl_id": "dr-lee-on-morning-report-5773",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tumor lysis syndrome"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HIT (heparin-induced thrombocytopenia) is a culprit for thrombocytopenia in hospitalized patients.",
@@ -85560,7 +86379,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients on heparin",
-      "pearl_id": "dr-lee-on-morning-report-5806"
+      "pearl_id": "dr-lee-on-morning-report-5806",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:heparin-induced thromb"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

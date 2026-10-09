@@ -40094,7 +40094,32 @@
       "prompt_version": "v1",
       "applies_to": "patients with elevated BNP but no fluid overload",
       "by_presenter": false,
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-773"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-773",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:BNP"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 7.56,
+          "capped": [
+            "said by another participant"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with a fall and no focal neurological deficits, still obtain a CT head if there is altered mental status or concern for hemorrhage, especially in the elderly.",
@@ -40107,7 +40132,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients with fall and altered mental status",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-790"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-790",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 6.57
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hyperventilation and mannitol are not indicated for chronic subdural hemorrhage that has been stable for a week; they are reserved for acute deterioration with increased intracranial pressure.",
@@ -40120,7 +40167,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic subdural hemorrhage, stable for days",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-961"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-961",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:increased intracranial"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before transferring a patient with intracranial hemorrhage, call the receiving neurosurgery facility for acceptance first, and reverse any anticoagulation.",
@@ -40133,7 +40199,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with intracranial hemorrhage requiring transfer",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-990"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-990",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anticoagulation"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For intracranial hemorrhage, maintain isotonic fluids and keep serum sodium above 135 to avoid worsening cerebral edema.",
@@ -40146,7 +40231,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with intracranial hemorrhage",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1028"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1028",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "threshold:above 1"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When deciding between helicopter and ground ambulance for transfer, consider patient stability and cost; a stable patient with a chronic bleed may tolerate a longer ground transport.",
@@ -40159,7 +40266,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians arranging transfer for stable intracranial hemorrhage",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1082"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1082",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "bleed"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with a subdural hemorrhage and splenomegaly, consider underlying hematologic conditions like CLL, which may cause both the splenomegaly and a predisposition to bleeding.",
@@ -40172,7 +40298,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with subdural hemorrhage and splenomegaly",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1196"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1196",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:subdural hemorrhage"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In an elderly patient with a fall and altered mental status, an elevated BNP can be a marker of intracranial hemorrhage, not just heart failure; do not start diuretics if the patient is not fluid overloaded.",
@@ -40185,7 +40333,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients with fall and altered mental status",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1211"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1211",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:BNP"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When triaging a call about shortness of breath, ask about oxygen saturation, inspiratory stridor, wheezing, and the patient's general appearance to decide if you need to rush to the bedside.",
@@ -40198,7 +40368,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians triaging phone calls about dyspnea",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1291"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1291",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:stridor"
+          ],
+          "actionable": [
+            "ask about"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diagnostic criteria for anaphylaxis require involvement of two or more organ systems: skin/mucosal (e.g., urticaria), respiratory (dyspnea, wheeze, stridor), cardiovascular (hypotension), or gastrointestinal.",
@@ -40211,7 +40400,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected anaphylaxis",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1396"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1396",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anaphylaxis"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For anaphylaxis, diagnostic criteria require two of three categories: skin/mucosal involvement, respiratory compromise (dyspnea/wheeze/stridor), or hypotension/GI symptoms (vomiting, abdominal pain).",
@@ -40224,7 +40432,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with suspected anaphylaxis",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1397"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1397",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:abdominal pain"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Epinephrine in anaphylaxis must be given IM, not sub-Q. If a nurse argues, insist and draw it up correctly.",
@@ -40237,7 +40464,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with anaphylaxis",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1462"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1462",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anaphylaxis"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After a second epinephrine dose with no improvement, give a third dose, start an IV epinephrine drip, give steroids and Benadryl, consider albuterol, prepare for intubation, and never leave the room.",
@@ -40250,7 +40496,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patient with anaphylaxis not responding to two IM epinephrine doses",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1577"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1577",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:albuterol"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient needs more than one dose of epinephrine for anaphylaxis, observe them for 24 hours and ensure they have an EpiPen before discharge.",
@@ -40263,7 +40528,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anaphylaxis requiring more than one epinephrine dose",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1697"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-1697",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 6.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For concussion evaluation, do not ask simple orientation questions; they are not specific and won't reassure you. Use a standardized symptom checklist.",
@@ -40276,7 +40563,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected concussion",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2010"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2010",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:concussion"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For concussion physical exam, always evaluate cranial nerves III-VII (facial sensation, movement, eye testing), strength coordination, and observe gait.",
@@ -40289,7 +40595,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected concussion",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2033"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2033",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:concussion"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After concussion, rest for 24 hours, then gradually return to activity. Return to play is deferred at least 10 days because risk of subsequent concussion increases threefold and usually occurs within 10 days.",
@@ -40305,7 +40630,24 @@
       "numbers_unheard": [
         "24"
       ],
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2398"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2398",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours",
+            "threshold:at least 1"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient fails a return-to-activity step (medication not taken, return of symptoms), go back to the previous level and slowly progress again.",
@@ -40318,7 +40660,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing concussion return-to-play protocol",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2411"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2411",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Opiates should be prescribed with extreme caution and are often not necessary; avoid using them as a default.",
@@ -40331,7 +40686,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients presenting with head or neck conditions in urgent care",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2565"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2565",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Screen MVA patients with the Canadian C-Spine Rule; if all questions are negative, remove the cervical collar and ask them to turn their head 45 degrees left and right. Ability to do so indicates very low likelihood of a clinically significant fracture.",
@@ -40344,7 +40715,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adult MVA patients in urgent care",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2600"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2600",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:canadian c-spine rule"
+          ],
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For MVA C-spine clearance, if the patient can turn their head 45 degrees left and right and all other Canadian C-Spine Rule criteria are negative, the likelihood of fracture is very low and the collar can be removed.",
@@ -40357,7 +40747,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in MVA with low-risk mechanism per Canadian C-Spine Rule",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2606"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2606",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:canadian c-spine rule"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For MVA with high-risk mechanism (e.g., someone died at the scene, age >65, dangerous mechanism, paresthesias), keep the C-collar on and obtain a CT.",
@@ -40373,7 +40779,33 @@
       "numbers_unheard": [
         "65"
       ],
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2638"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2638",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>6",
+            "test:CT"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "harm": [
+            "dangerous"
+          ],
+          "rarity": 8.61,
+          "capped": [
+            "number not heard: 65"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a trauma center, cervical spine clearance is legally and protocol-driven; the trauma team must evaluate the patient before the collar can be removed, even if CT is negative.",
@@ -40386,7 +40818,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients at a trauma center",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2643"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2643",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "evaluate"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a CT head or cervical spine is negative in an urgent care setting, you may not need trauma clearance; local protocols vary.",
@@ -40399,7 +40850,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "urgent care patients with MVA",
-      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2700"
+      "pearl_id": "dr-bancroft-on-head-neck-in-urgent-care-setting-2700",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

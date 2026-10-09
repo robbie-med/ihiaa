@@ -39065,7 +39065,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected median nerve or carpal tunnel syndrome",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-158"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-158",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For the ulnar nerve, ask the patient to splay their fingers (abduct) and try to squeeze them together; weakness indicates ulnar nerve lesion.",
@@ -39078,7 +39091,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected ulnar nerve injury",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-273"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-273",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Radial nerve injury presents with wrist drop and inability to extend the fingers at the MCP or DIP joints.",
@@ -39091,7 +39117,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected radial nerve palsy (e.g., Saturday night palsy)",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-335"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-335",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:radial nerve injury"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Meralgia paresthetica (lateral femoral cutaneous nerve compression) is benign; manage with weight loss and avoiding tight belts.",
@@ -39104,7 +39146,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "larger men with burning/numbness on anterolateral thigh",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-524"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-524",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:meralgia paresthetica"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Rapid weight loss, particularly with GLP-1 receptor agonists, is a common cause of peroneal nerve injury (foot drop) due to loss of protective fat pad.",
@@ -39117,7 +39175,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients presenting with foot drop",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-578"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-578",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:glp-1 receptor agonist"
+          ],
+          "rarity": 7.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For foot drop from peroneal nerve injury, refer to podiatry or orthotics for a stiff ankle-foot orthosis to prevent tripping during walking.",
@@ -39130,7 +39204,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with foot drop who are tripping",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-654"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-654",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:foot drop"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To differentiate peroneal nerve palsy from L5 radiculopathy, test ankle eversion; if both dorsiflexion and eversion are weak, the lesion is higher (e.g., L5 root), not the peroneal nerve.",
@@ -39143,7 +39236,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with foot drop, to localize the lesion",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-783"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-783",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Acute cluster headache can be aborted with high-flow oxygen; it is a first-line acute therapy.",
@@ -39157,7 +39263,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with cluster headache during an attack",
       "by_presenter": false,
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-915"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-915",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cluster headache"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cluster headache prophylaxis includes topiramate and verapamil; lithium is considered a third-line agent due to its side-effect profile.",
@@ -39170,7 +39292,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cluster headache requiring prevention",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-992"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-992",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cluster headache"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the SNOOP mnemonic to identify secondary headache red flags; absence of these flags suggests a primary headache that does not require imaging.",
@@ -39183,7 +39321,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "headache evaluation in any patient",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1041"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1041",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:headache red flags"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Primary headaches (migraine, tension, cluster) typically show no significant findings on brain imaging; in patients over 50, minor microvascular changes may be seen but are not diagnostic.",
@@ -39196,7 +39353,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with primary headache",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1092"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1092",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 5"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A thunderclap headache reaches peak intensity within one minute; do not accept the term without clarifying. Send the patient to the ER for concern of subarachnoid hemorrhage.",
@@ -39209,7 +39382,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with headache",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1287"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1287",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:subarachnoid hemorrhag"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients over 50 with new headache, consider giant cell arteritis as a potential cause.",
@@ -39222,7 +39417,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults over 50 with new headache",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1315"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1315",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:over 5"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a pregnant patient with headache and elevated blood pressure, suspect preeclampsia.",
@@ -39235,7 +39449,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1329"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1329",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:preeclampsia"
+          ],
+          "rarity": 5.4
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A pseudo-flare (recrudescence of old MS symptoms due to infection like pneumonia or sinusitis) does not require high-dose IV steroids. Differentiate from true flare by assessing whether symptoms are truly new.",
@@ -39248,7 +39478,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with established MS",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1615"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1615",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pneumonia"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For secondary stroke prevention, prescribe a high-intensity statin (atorvastatin 40, 80 mg or rosuvastatin 20, 40 mg).",
@@ -39264,7 +39510,33 @@
       "numbers_unheard": [
         "80"
       ],
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1838"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1838",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:80 mg",
+            "drug:atorvastatin"
+          ],
+          "actionable": [
+            "prescribe"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.41,
+          "capped": [
+            "number not heard: 80"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For TIA or minor ischemic stroke, start dual antiplatelet therapy (aspirin plus clopidogrel) as soon as possible and continue for 21 days.",
@@ -39277,7 +39549,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with TIA or minor non‑debilitating stroke",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1915"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-1915",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:21 days"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In hypertensive emergency, lower blood pressure by no more than 25% in the first hour, then to below 160/100 over the next 2, 6 hours.",
@@ -39290,7 +39584,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hypertensive emergency",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2169"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2169",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 hours",
+            "threshold:no more than 2"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 5.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After a large stroke, do not start dual antiplatelet therapy; use aspirin only because of risk of bleeding into necrotic brain tissue.",
@@ -39303,7 +39617,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with large ischemic stroke",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2344"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2344",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:dual antiplatelet ther"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the NIH Stroke Scale (available on MDCalc) for any acute neurological change concerning for stroke.",
@@ -39316,7 +39652,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute neurological symptoms",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2379"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2379",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:nih stroke scale"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "harm": [
+            "Stroke"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the NIH Stroke Scale on MDCalc for any patient with acute neurological changes concerning for stroke; just read through it step by step.",
@@ -39329,7 +39687,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with acute neurological changes",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2379-2"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2379-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:nih stroke scale"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "harm": [
+            "Stroke"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hospitalized patients are at higher risk for stroke, especially after cardiac procedures where catheter manipulation can dislodge calcium or clot from the aortic arch.",
@@ -39342,7 +39722,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients, especially post-cardiac procedure",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2402"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2402",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:calcium"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Guillain‑Barré syndrome is characterized by loss of reflexes (hyporeflexia/areflexia).",
@@ -39355,7 +39754,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected GBS",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2495"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2495",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "COVID-19 vaccination was associated with cases of central spinal cord inflammation (transverse myelitis) during the initial vaccination period.",
@@ -39368,7 +39780,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients presenting with myelopathy after COVID-19 vaccination",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2540"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2540",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:covid-19 vaccination"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Brisk deep tendon reflexes with clonus indicate a CNS lesion; in Guillain-Barré syndrome, reflexes go down, not up.",
@@ -39381,7 +39809,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with neurological symptoms and reflex examination",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2616"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2616",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:guillain-barré syndrom"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Multiple sclerosis is a central nervous system disorder, so patients will have brisk reflexes.",
@@ -39394,7 +39838,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected multiple sclerosis",
-      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2634"
+      "pearl_id": "dr-hadwen-on-neuro-ite-prep-2634",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:multiple sclerosis"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -52862,7 +52862,29 @@
       "numbers_unheard": [
         "16"
       ],
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-136"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-136",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>3"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.85,
+          "capped": [
+            "number not heard: 16"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An Epworth Sleepiness Scale score ≥10 indicates excessive daytime sleepiness and helps decide treatment for mild OSA (AHI 5-15).",
@@ -52875,7 +52897,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with suspected OSA",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-335"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-335",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:epworth sleepiness sca"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For mild OSA (AHI <15), treat if the patient is symptomatic (e.g., Epworth >10); if asymptomatic, reassure that it is not likely to shorten life.",
@@ -52888,7 +52926,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with AHI <15 and no symptoms",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-404"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-404",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:<1"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In practice, treat most patients with AHI >5 because symptoms fluctuate and in-lab studies may underestimate severity due to poor sleep.",
@@ -52901,7 +52958,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with AHI >5",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-421"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-421",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>5"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Medicare requires a 4% oxygen desaturation rule for scoring hypopneas; using a 3% rule may necessitate repeating the sleep study even if AHI is very high.",
@@ -52914,7 +52990,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare patients undergoing sleep testing",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-636"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-636",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sleep study"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Periodic limb movements are treated only if associated with arousals and daytime sleepiness; treat OSA first, as it often resolves the leg movements.",
@@ -52927,7 +53019,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with periodic limb movements on sleep study",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-709"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-709",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For in-lab sleep studies, offer zolpidem 5 mg thirty minutes before sleep to help patients fall asleep in the unfamiliar environment.",
@@ -52940,7 +53048,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing in-lab polysomnography who have difficulty sleeping",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-825"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-825",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 mg"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For in-lab polysomnography, a split-night study can be done if AHI ≥20 in the first 2 hours, with at least 4 hours of PAP therapy needed for a prescription.",
@@ -52953,7 +53077,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing in-lab polysomnography",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-866"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-866",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 hours",
+            "threshold:at least 4"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For direct referral to a sleep lab, document snoring and medical comorbidities like depression, insomnia, hypertension, MI, or stroke to help qualify for insurance authorization.",
@@ -52966,7 +53107,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being referred for sleep study",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-983"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-983",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hypertension"
+          ],
+          "actionable": [
+            "document"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 6.84
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When referring directly to the sleep lab, include documentation of snoring, medical comorbidities (hypertension, depression, insomnia, stroke, MI) to help obtain insurance authorization.",
@@ -52979,7 +53142,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being referred for sleep study",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-984"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-984",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hypertension"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 6.84
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Leave the mask type blank on the PAP prescription to allow the patient to try different masks (full face, nasal, nasal pillows) at the DME company.",
@@ -52992,7 +53177,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting PAP therapy",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1073"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1073",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On CPAP prescriptions, leave the mask type blank because fit is individualized; heated tubing is recommended to prevent condensation and dry mouth.",
@@ -53005,7 +53203,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting CPAP",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1073-2"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1073-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:heated tubing"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For dry mouth on CPAP, increase humidification and decrease the temperature of the climate control tubing.",
@@ -53018,7 +53232,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on CPAP with dry mouth",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1147"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1147",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Insurance requires a follow-up visit within 8, 12 weeks of starting CPAP to document usage and symptomatic benefit; device download must show >70% of nights with >4 hours use.",
@@ -53031,7 +53261,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting CPAP",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1242"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1242",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:12 weeks",
+            "threshold:>7"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Weight gain of about 20 pounds on average may require an upward pressure adjustment.",
@@ -53044,7 +53294,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on CPAP who gain weight",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1288"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1288",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:weight gain"
+          ],
+          "rarity": 6.57
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Prescribe a pressure range (e.g., 10, 13 cm H₂O) rather than a single pressure to allow adjustment for weight changes, nasal congestion, or mask changes.",
@@ -53057,7 +53323,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on CPAP",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1306"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1306",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:13 cm"
+          ],
+          "actionable": [
+            "Prescribe"
+          ],
+          "rarity": 6.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On the download report, the goal apnea-hypopnea index (AHI) is under 3 events per hour; if AHI is 4 but the patient feels well and is at high pressures, that may be acceptable.",
@@ -53070,7 +53355,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on CPAP",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1559"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1559",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:under 3"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ResMed devices have a clinical menu accessible by holding two touch points; settings include pressure range, mask type, ramp time, expiratory pressure release (EPR), and smart start/stop.",
@@ -53083,7 +53384,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians adjusting ResMed AirSense 10",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1669"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1669",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:expiratory pressure re"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Expiratory pressure release (EPR) reduces pressure by 1, 3 cm H₂O during exhalation as a comfort feature.",
@@ -53096,7 +53416,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on CPAP",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1779"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1779",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 cm"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Remote pressure adjustments can be made via the ResMed system using the device serial number, without requiring the patient to bring the machine in.",
@@ -53109,7 +53445,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ResMed CPAP devices",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1970"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-1970",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "DMEs require a new prescription every year for supplies (tubing, filters, headgear, masks); renewals can be signed without a patient visit unless the patient reports issues.",
@@ -53122,7 +53471,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on PAP therapy",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2014"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2014",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Auto-adjusting CPAP is the default mode; even if the range is narrowed (e.g., 10, 13), keep it on auto rather than switching to fixed pressure.",
@@ -53135,7 +53497,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on CPAP therapy",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2104"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2104",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:auto-adjusting cpap"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Mouth taping is not recommended; a dental device is preferred for snoring or airflow limitation.",
@@ -53148,7 +53526,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with snoring or airflow limitation",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2185"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2185",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For inpatients with known OSA who don't have their own CPAP, order 'chronic' CPAP at a starting pressure of 8 cm H2O and add a comment: 'Known history of obstructive sleep apnea. Please use nocturnal CPAP therapy during hospitalization.'",
@@ -53161,7 +53552,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients with known OSA without their own device",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2480"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2480",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:8 cm"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For inpatients with COPD exacerbation or heart failure, use an 'acute' CPAP order to let respiratory therapy titrate, which will typically default to BiPAP or AVAPS.",
@@ -53174,7 +53584,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients with COPD exacerbation or heart failure",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2552"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2552",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:copd exacerbation"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Split-night sleep studies are preferred; labs can split at 20 events per hour to combine diagnostic and treatment in one night.",
@@ -53187,7 +53616,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing initial sleep study",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2610"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2610",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Home-based sleep tests are not good at detecting central or complex apnea; patients who are pregnant, on narcotics, or have heart failure/Cheyne-Stokes should be studied in the lab.",
@@ -53200,7 +53642,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected central or complex apnea (pregnancy, narcotics, heart failure, Cheyne-Stokes)",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2718"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2718",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:heart failure"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Transition from CPAP to BiPAP when pressure exceeds 16 cm H2O to avoid patient discomfort from exhaling against high pressure.",
@@ -53213,7 +53671,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring PAP therapy",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2829"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2829",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:16 cm"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On BiPAP, keep pressure support (IPAP minus EPAP) at 4 cm H2O or less; otherwise it affects ventilation.",
@@ -53226,7 +53703,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on BiPAP",
-      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2852"
+      "pearl_id": "dr-dolin-on-obstructive-sleep-apnea-2852",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4 cm"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

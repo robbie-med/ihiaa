@@ -46087,7 +46087,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with new diagnosis of type 2 diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-292"
+      "pearl_id": "dr-lucashu-on-outpatient-management-292",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:diabetic foot exam"
+          ],
+          "actionable": [
+            "recheck"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a new diagnosis of diabetes, start a moderate-intensity statin regardless of cholesterol level; only consider stopping if LDL is below 70.",
@@ -46100,7 +46119,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with new diagnosis of diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-478"
+      "pearl_id": "dr-lucashu-on-outpatient-management-478",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:below 7",
+            "drug:cholesterol",
+            "test:LDL"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Home glucose monitoring is needed for patients with A1c greater than 9; for lower A1c, a monitor may still be provided but with less frequent checking.",
@@ -46113,7 +46153,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with type 2 diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-531"
+      "pearl_id": "dr-lucashu-on-outpatient-management-531",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:greater than 9",
+            "test:A1c"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Metformin XR is better tolerated with fewer side effects, but for Medicaid patients it requires prior authorization; use regular or SR formulations instead.",
@@ -46126,7 +46186,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicaid patients starting metformin",
-      "pearl_id": "dr-lucashu-on-outpatient-management-724"
+      "pearl_id": "dr-lucashu-on-outpatient-management-724",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:prior authorization"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before moving to a second-line diabetes agent, ensure the patient has failed metformin at maximum dosing (1000 mg PO BID or XR 2000 mg daily).",
@@ -46139,7 +46218,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with type 2 diabetes on metformin",
-      "pearl_id": "dr-lucashu-on-outpatient-management-770"
+      "pearl_id": "dr-lucashu-on-outpatient-management-770",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1000 mg",
+            "frequency:BID"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 6.68
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When prescribing metformin, ramp up to the maximum dose within the same prescription rather than waiting a month between dose increases.",
@@ -46152,7 +46251,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting metformin",
-      "pearl_id": "dr-lucashu-on-outpatient-management-822"
+      "pearl_id": "dr-lucashu-on-outpatient-management-822",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:metformin"
+          ],
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use a shame-free approach to lifestyle counseling; acknowledge that patients may choose to accept glycemic consequences for personal priorities like birthday cake.",
@@ -46165,7 +46280,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-880"
+      "pearl_id": "dr-lucashu-on-outpatient-management-880",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:counseling"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Offer a dietitian referral to all patients with diabetes; it saves time and provides depth that a primary care visit cannot.",
@@ -46178,7 +46312,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-987"
+      "pearl_id": "dr-lucashu-on-outpatient-management-987",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dietitian referral"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Exercise should be 150 minutes weekly, broken into sessions of at least 10 minutes; intensity should be sufficient that the patient cannot finish a complete sentence.",
@@ -46191,7 +46341,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-1037"
+      "pearl_id": "dr-lucashu-on-outpatient-management-1037",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:150 minutes",
+            "threshold:at least 1",
+            "frequency:weekly"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Aerobic exercise should be at least 150 minutes per week, broken into sessions of at least 10 minutes; less than 10 minutes does not provide enough time to elevate heart rate.",
@@ -46204,7 +46372,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-1037-2"
+      "pearl_id": "dr-lucashu-on-outpatient-management-1037-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:150 minutes",
+            "threshold:at least 1",
+            "frequency:per week"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advise patients that exercise intensity is adequate when they cannot finish a complete sentence at the end of the session.",
@@ -46217,7 +46403,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-1049"
+      "pearl_id": "dr-lucashu-on-outpatient-management-1049",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:exercise"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Walking may not count as exercise if it does not elevate the heart rate; advise patients that the heart must feel the benefit, not just the time spent.",
@@ -46230,7 +46432,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-1078"
+      "pearl_id": "dr-lucashu-on-outpatient-management-1078",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:exercise"
+          ],
+          "rarity": 6.73
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bariatric surgery referral is indicated for BMI ≥40, or ≥35 with a comorbidity such as diabetes.",
@@ -46243,7 +46461,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with obesity and diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-1221"
+      "pearl_id": "dr-lucashu-on-outpatient-management-1221",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bariatric surgery"
+          ],
+          "rarity": 6.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "No specific glycemic control is needed before referring for bariatric surgery; the surgery center manages preoperative optimization.",
@@ -46256,7 +46490,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes considering bariatric surgery",
-      "pearl_id": "dr-lucashu-on-outpatient-management-1280"
+      "pearl_id": "dr-lucashu-on-outpatient-management-1280",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bariatric surgery"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For ASCVD, use GLP-1 agonists with cardiovascular benefit (liraglutide, semaglutide, dulaglutide) and SGLT2 inhibitors with cardiovascular benefit (empagliflozin, canagliflozin).",
@@ -46269,7 +46519,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes and ASCVD",
-      "pearl_id": "dr-lucashu-on-outpatient-management-1419"
+      "pearl_id": "dr-lucashu-on-outpatient-management-1419",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:liraglutide",
+            "test:ASCVD"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For CHF, only SGLT2 inhibitors (empagliflozin, dapagliflozin, canagliflozin) have proven benefit; GLP-1 agonists do not have CHF benefit.",
@@ -46282,7 +46552,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes and CHF",
-      "pearl_id": "dr-lucashu-on-outpatient-management-1451"
+      "pearl_id": "dr-lucashu-on-outpatient-management-1451",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:empagliflozin"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid insulin as long as possible because it causes weight gain and is difficult to discontinue; start with basal insulin only after GLP-1 and SGLT2 are at maximally tolerated doses and A1c remains above goal.",
@@ -46295,7 +46584,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-1561"
+      "pearl_id": "dr-lucashu-on-outpatient-management-1561",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:A1c"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with A1c of 14% or higher, starting directly with insulin may be necessary.",
@@ -46308,7 +46616,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes and A1c ≥14%",
-      "pearl_id": "dr-lucashu-on-outpatient-management-1599"
+      "pearl_id": "dr-lucashu-on-outpatient-management-1599",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:A1c"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 5.57
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "GLP-1 agonists lower A1c by 1, 1.5% and produce average weight loss of 4, 8 kg; they do not cause hypoglycemia.",
@@ -46321,7 +46648,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-1857"
+      "pearl_id": "dr-lucashu-on-outpatient-management-1857",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:8 kg",
+            "test:A1c"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 5.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SGLT2 inhibitors lower A1c by 0.8, 1.2% and produce average weight loss of 4, 8 kg.",
@@ -46334,7 +46681,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-1943"
+      "pearl_id": "dr-lucashu-on-outpatient-management-1943",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:8 kg",
+            "test:A1c"
+          ],
+          "rarity": 6.1
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For CKD with albuminuria, use SGLT2 inhibitors (empagliflozin, dapagliflozin); they cause an initial 3, 4% drop in GFR in the first month, then stabilize, similar to ACE inhibitors.",
@@ -46347,7 +46711,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes and CKD with albuminuria",
-      "pearl_id": "dr-lucashu-on-outpatient-management-1962"
+      "pearl_id": "dr-lucashu-on-outpatient-management-1962",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:empagliflozin",
+            "test:GFR"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "DPP-4 inhibitors (e.g., sitagliptin) should be used only if A1c is mildly above goal and the patient does not have CHF or obesity.",
@@ -46360,7 +46744,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2077"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2077",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:sitagliptin",
+            "test:A1c"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sulfonylureas should be used only for cost; if used, choose glipizide because it is the shortest acting and has the lowest risk of hypoglycemia.",
@@ -46373,7 +46774,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes, especially those with CKD",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2135"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2135",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sulfonylureas"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients with CKD, avoid sulfonylureas that last a long time because they increase hypoglycemia risk; glipizide is preferred due to shorter duration.",
@@ -46386,7 +46803,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CKD",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2160"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2160",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:sulfonylureas"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sulfonylureas cause earlier beta-cell failure and lead to earlier insulin dependence by exhausting the pancreas.",
@@ -46399,7 +46835,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on sulfonylureas",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2200"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2200",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sulfonylureas"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "TZDs (pioglitazone) are contraindicated in heart failure and obesity; the endocrinologist advised using them only if no other option exists.",
@@ -46412,7 +46864,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2270"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2270",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:heart failure"
+          ],
+          "harm": [
+            "contraindicated"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Thiazolidinediones (Actos) are contraindicated in heart failure and obesity; use only if no other option.",
@@ -46425,7 +46896,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with heart failure or obesity",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2270-2"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2270-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:thiazolidinediones"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "contraindicated"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not stop Actos unless the patient has heart failure; leave patients on existing medications until control is achieved, then remove unwanted ones.",
@@ -46438,7 +46931,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on thiazolidinediones without heart failure",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2287"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2287",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:heart failure"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Newer basal insulins have longer duration, flatter profile, and less hypoglycemia, but are difficult to get covered with Medicaid.",
@@ -46451,7 +46963,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on Medicaid",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2350"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2350",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:basal insulin"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ultra-rapid acting insulins have quicker onset with same strength and duration, but are difficult to get covered.",
@@ -46464,7 +46992,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient setting",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2378"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2378",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:insulin"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Insurance tier 1 for diabetes medications is metformin or metformin SR (not XR).",
@@ -46477,7 +47021,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient prescribing",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2424"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2424",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:insurance"
+          ],
+          "rarity": 6.34
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For tier three drugs like Ozempic, you must have already tried a tier two GLP-1 (Trulicity or Victoza) in the same category.",
@@ -46490,7 +47050,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with type 2 diabetes on a formulary with tiered step therapy",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2502"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2502",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ozempic"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For tier three SGLT2 Invokana, you must have tried a different SGLT2 (Farxiga or Jardiance) first.",
@@ -46503,7 +47079,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with type 2 diabetes on a formulary with tiered step therapy",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2506"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2506",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ozempic has higher weight loss compared to other GLP-1s like Trulicity or Victoza.",
@@ -46516,7 +47105,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with type 2 diabetes considering GLP-1 therapy",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2512"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2512",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:weight loss"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "DPP-4 inhibitors and GLP-1s work on the same pathway, so there is no need to use both together.",
@@ -46529,7 +47134,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with type 2 diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2631"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2631",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:dpp-4 inhibitors"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Medicare requires monitoring as well as insulin administration four times a day for continuous glucose monitoring coverage.",
@@ -46542,7 +47166,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare patients with diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2661"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2661",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:continuous glucose mon"
+          ],
+          "rarity": 6.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SoonerCare requires either DKA or severe hypoglycemia less than 54 mg/dL for continuous glucose monitoring coverage.",
@@ -46555,7 +47195,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "SoonerCare (Medicaid) patients with diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2667"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2667",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:54 mg",
+            "threshold:less than 5"
+          ],
+          "rarity": 6.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Referral to endocrinology is appropriate for patients already on mealtime insulin who are still difficult to manage or for insulin pump evaluation.",
@@ -46568,7 +47225,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with type 1 or type 2 diabetes",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2736"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2736",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:endocrinology"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For insulin pump coverage, patients need to be on both basal and mealtime insulin, and insurance may require a low C-peptide.",
@@ -46581,7 +47254,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with type 1 or type 2 diabetes being considered for insulin pump",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2748"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2748",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:insulin pump"
+          ],
+          "rarity": 6.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Inappropriate referrals to endocrinology include patients only on oral medications or just to start insulin; primary care should handle those.",
@@ -46594,7 +47283,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diabetes in primary care",
-      "pearl_id": "dr-lucashu-on-outpatient-management-2767"
+      "pearl_id": "dr-lucashu-on-outpatient-management-2767",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:endocrinology"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

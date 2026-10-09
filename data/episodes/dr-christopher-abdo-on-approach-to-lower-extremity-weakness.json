@@ -55579,7 +55579,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected demyelinating disease",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-1203"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-1203",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:multiple sclerosis"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An MRI of the entire neuraxis (brain and spine) takes around two hours without contrast and up to three hours with contrast; after the first hour, patient movement often degrades the study.",
@@ -55592,7 +55608,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing MRI of brain and entire spine",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-1262"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-1262",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A patient with acute painless unilateral lower extremity weakness without sensory loss should be evaluated for stroke, not a spinal cause, because spinal pathology typically produces associated sensory loss.",
@@ -55605,7 +55637,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute leg weakness",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-1582"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-1582",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:lower extremity weakne"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A disabling stroke (even with a low NIHSS of 2, 3) should be treated with thrombolysis; the minor stroke criteria for dual antiplatelet therapy (NIHSS < 4) only apply if the deficit is not disabling.",
@@ -55618,7 +55669,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "stroke patients within thrombolytic window",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-1736"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-1736",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:< 4"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ACA strokes present with contralateral lower extremity-predominant weakness and often spare sensation because the motor strip is involved but the sensory strip is protected by PCA territory.",
@@ -55631,7 +55701,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected ACA stroke",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-1769"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-1769",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:aca stroke"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Acute spinal cord injury presents with complete flaccidity (spinal shock), not hypertonia; hypertonia and hyperreflexia develop later.",
@@ -55644,7 +55730,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute spinal cord injury",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-1960"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-1960",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:spinal shock"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cauda equina syndrome causes severe radicular pain because the nerve roots are mechanically irritated; a painless flaccid paraplegia with a sensory level is not cauda equina.",
@@ -55657,7 +55762,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute paraplegia",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-1988"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-1988",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cauda equina syndrome"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Preserved vibration and proprioception with loss of pain and temperature in acute paraplegia localizes to an anterior cord syndrome; the posterior columns are spared.",
@@ -55670,7 +55791,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute paraplegia",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2042"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2042",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:anterior cord syndrome"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diffusion-weighted imaging (DWI) is not routinely performed on spine MRI and must be explicitly ordered if spinal cord ischemia is suspected.",
@@ -55683,7 +55820,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected spinal cord infarction",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2228"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2228",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Most spinal cord infarctions occur between T8 and L2, the territory of the artery of Adamkiewicz, because this region has limited collateral blood supply.",
@@ -55696,7 +55849,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with spinal cord infarction",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2303"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2303",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:spinal cord infarction"
+          ],
+          "harm": [
+            "infarctions"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Performing plasma exchange (or any procedure that causes fluid shifts) in a patient with spinal cord infarction can worsen ischemia.",
@@ -55709,7 +55881,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected spinal cord infarction versus inflammatory myelopathy",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2372"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2372",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:spinal cord infarction"
+          ],
+          "harm": [
+            "infarction"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In spinal cord infarction, plasma exchange can worsen ischemia by causing fluid shift; correct localization prevents this harm.",
@@ -55722,7 +55913,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected spinal cord infarction",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2380"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2380",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:spinal cord infarction"
+          ],
+          "harm": [
+            "infarction"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In GBS, rapid progression from normal to unable to walk in three days predicts impending respiratory and autonomic failure; these patients need ICU-level monitoring.",
@@ -55735,7 +55945,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected GBS",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2690"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2690",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The most common cause of death in GBS is cardiac arrhythmia due to autonomic demyelination, not respiratory failure.",
@@ -55748,7 +55971,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with GBS",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2716"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2716",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "death"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "GBS patients need telemetry monitoring and monitoring of respiratory function while transferring to intermediate care or ICU.",
@@ -55761,7 +56000,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with rapidly progressive GBS",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2779"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2779",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CSF in GBS shows albuminocytologic dissociation (elevated protein, no cells), but may be normal in the first week.",
@@ -55774,7 +56026,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected GBS",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2953"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-2953",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:albuminocytologic diss"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IVIG and plasma exchange are equivalent long-term for GBS; plasma exchange may give quicker improvement.",
@@ -55787,7 +56055,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with GBS",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-3080"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-3080",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:plasma exchange"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Steroids worsen outcomes in GBS and should not be used.",
@@ -55800,7 +56087,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with GBS",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-3133"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-3133",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 5.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Isolated acute leg weakness without sensory loss is almost always a stroke.",
@@ -55813,7 +56113,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with acute leg weakness",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-3252"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-3252",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:acute leg weakness"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 6.63
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When testing temperature sensation, use the forehead as a baseline and compare sides; this crude method works for screening.",
@@ -55826,7 +56148,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general neurologic exam",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-3319"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-3319",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:screening"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.99
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you are not confident in your reflex exam technique, the exam is useless; practice early in residency to build skill.",
@@ -55839,7 +56180,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "trainees performing neurologic exams",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-3455"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-3455",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Practice screening neurologic examinations early in residency, especially during the PGY-1 and PGY-2 years when patient loads are lower, to build lifelong skills that will make your career easier.",
@@ -55852,7 +56206,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "family medicine residents in PGY-1 and PGY-2",
-      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-3495"
+      "pearl_id": "dr-christopher-abdo-on-approach-to-lower-extremity-weakness-3495",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 years"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

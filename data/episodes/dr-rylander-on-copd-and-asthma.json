@@ -44956,7 +44956,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-67"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-67",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:alveoli"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In COPD, alveolar destruction and inflammation cause collapse and atelectasis, leading to dead space and air trapping.",
@@ -44969,7 +44985,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-162"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-162",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:air trapping"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Asthma involves both chronic inflammation (hypertrophied mucosa, eosinophils, mucus gland hyperplasia) and bronchial hyperreactivity, not just bronchospasm.",
@@ -44982,7 +45014,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with asthma",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-337"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-337",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:asthma"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In asthma, baseline airway narrowing from chronic inflammation makes a superimposed spasm much more dangerous than in a normal airway.",
@@ -44995,7 +45043,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with asthma",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-366"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-366",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:asthma"
+          ],
+          "harm": [
+            "dangerous"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To determine if a COPD patient has a reactive component, look for reversibility on spirometry with a bronchodilator challenge.",
@@ -45008,7 +45075,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-468"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-468",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:spirometry"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pulmonary function test results can be found in the PLT tab in the results view; read the impression at the bottom for reversibility.",
@@ -45021,7 +45104,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents using the EMR",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-495"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-495",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a PFT says no response to bronchodilators, there is no reason to use a bronchodilator in that patient.",
@@ -45034,7 +45130,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD without reversibility",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-543"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-543",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A COPD exacerbation requires a change in cough and a change in sputum production; change in sputum character is supportive but not required.",
@@ -45047,7 +45159,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-584"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-584",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:copd exacerbation"
+          ],
+          "rarity": 6.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The typical COPD exacerbation story evolves over weeks, not hours or overnight.",
@@ -45060,7 +45188,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-669"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-669",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:copd exacerbation"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient cannot produce sputum but has two of the three cardinal features (change in cough, sputum production, sputum character), it can still be a COPD exacerbation.",
@@ -45073,7 +45217,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-831"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-831",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:copd exacerbation"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Reduced ejection fraction directly reduces glomerular filtration rate by a similar percentage.",
@@ -45086,7 +45246,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with systolic heart failure",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-1079"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-1079",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:glomerular filtration "
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Heart failure exacerbations present more rapidly (hours to days) than COPD exacerbations, often triggered by dietary salt or medication changes.",
@@ -45099,7 +45275,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with heart failure",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-1104"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-1104",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:copd exacerbation"
+          ],
+          "rarity": 6.63
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diastolic heart failure preserves ejection fraction but impairs relaxation, requiring higher filling pressures and still reducing cardiac output similarly to systolic failure.",
@@ -45112,7 +45304,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diastolic heart failure",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-1188"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-1188",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:diastolic heart failur"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Acute dyspnea after a large meal in an older patient should prompt evaluation for aspiration, myocardial infarction, atrial fibrillation (holiday heart), and hypoxic cardiomyopathy from missed CPAP use.",
@@ -45125,7 +45333,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older patients with acute dyspnea after a large meal",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-2258"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-2258",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hypoxic cardiomyopathy"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "infarction"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Aspiration pneumonitis is a chemical reaction to gastric contents; it can be sterile and does not require antibiotics, only steroids.",
@@ -45138,7 +45368,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute aspiration event",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-2323"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-2323",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:aspiration pneumonitis"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bacterial pneumonia from aspiration develops 3-4 days after the event; antibiotics are indicated only at that point.",
@@ -45151,7 +45397,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with aspiration event",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-2338"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-2338",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4 days"
+          ],
+          "rarity": 5.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hypoxic cardiomyopathy from missed CPAP use can present as acute heart failure symptoms even with a normal echo from the previous night when CPAP was used.",
@@ -45164,7 +45426,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with obstructive sleep apnea who miss CPAP use",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-2450"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-2450",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hypoxic cardiomyopathy"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "missed"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In COPD and asthma exacerbations, beta-agonists should be reserved as second-line therapy; use muscarinics and steroids first.",
@@ -45177,7 +45461,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD or asthma exacerbation",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-2516"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-2516",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:asthma exacerbation"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IV magnesium therapy in COPD and asthma exacerbations reduces hospital length of stay and repeat hospitalizations.",
@@ -45191,7 +45494,26 @@
       "prompt_version": "v1",
       "applies_to": "patients with COPD or asthma exacerbation not responding well to initial therapy",
       "by_presenter": false,
-      "pearl_id": "dr-rylander-on-copd-and-asthma-2539"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-2539",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:asthma exacerbation"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 6.72
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Short-acting muscarinics (LAMAs) are often not available in hospitals, so use short-acting anticholinergics instead.",
@@ -45204,7 +45526,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with COPD/asthma exacerbation",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-2632"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-2632",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Steroids take 24-48 hours to work because they require intracellular signaling and protein synthesis; do not judge their efficacy within a few hours.",
@@ -45217,7 +45555,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving systemic steroids for exacerbation",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-2668"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-2668",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:48 hours"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Even in non-COPD conditions like RSV, beta-agonists should be avoided due to risk.",
@@ -45230,7 +45587,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with RSV",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-2751"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-2751",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:beta-agonist"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Beta-agonist risk is dose-dependent; more use increases risk of cardiac arrhythmias.",
@@ -45243,7 +45616,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-rylander-on-copd-and-asthma-2780"
+      "pearl_id": "dr-rylander-on-copd-and-asthma-2780",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:beta-agonist"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

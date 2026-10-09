@@ -40439,7 +40439,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CHF",
-      "pearl_id": "dr-haney-on-epidemiology-59"
+      "pearl_id": "dr-haney-on-epidemiology-59",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hypertension"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stage A is not heart failure; it is just risk factors for heart failure.",
@@ -40452,7 +40468,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-haney-on-epidemiology-204"
+      "pearl_id": "dr-haney-on-epidemiology-204",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:heart failure"
+          ],
+          "rarity": 4.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If BNP is >400, it is pretty specific for CHF; if <100, it rules out CHF.",
@@ -40465,7 +40497,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with symptoms of CHF",
-      "pearl_id": "dr-haney-on-epidemiology-412"
+      "pearl_id": "dr-haney-on-epidemiology-412",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>4",
+            "test:BNP"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not order a BNP without a clinical picture (symptoms of heart failure).",
@@ -40478,7 +40527,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient",
-      "pearl_id": "dr-haney-on-epidemiology-436"
+      "pearl_id": "dr-haney-on-epidemiology-436",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:BNP"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 5.98
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A pre-discharge BNP that remains elevated is a strong predictor of readmission.",
@@ -40491,7 +40559,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized CHF patients",
-      "pearl_id": "dr-haney-on-epidemiology-459"
+      "pearl_id": "dr-haney-on-epidemiology-459",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:BNP"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dyspnea on exertion, peripheral edema, and weight gain are sensitive for CHF; if one of these is missing, it is probably not CHF.",
@@ -40504,7 +40588,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected CHF",
-      "pearl_id": "dr-haney-on-epidemiology-508"
+      "pearl_id": "dr-haney-on-epidemiology-508",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:weight gain"
+          ],
+          "rarity": 6.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Orthopnea or paroxysmal nocturnal dyspnea (waking up gasping for air) is pretty specific to CHF.",
@@ -40517,7 +40617,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected CHF",
-      "pearl_id": "dr-haney-on-epidemiology-554"
+      "pearl_id": "dr-haney-on-epidemiology-554",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dyspnea"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "JVD is a specific finding for CHF; if present, it indicates increased volume.",
@@ -40530,7 +40646,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected CHF",
-      "pearl_id": "dr-haney-on-epidemiology-584"
+      "pearl_id": "dr-haney-on-epidemiology-584",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An IVC diameter of 1, 2.1 cm that does not collapse at least 50% with sniff test is pretty specific for CHF.",
@@ -40543,7 +40672,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected CHF",
-      "pearl_id": "dr-haney-on-epidemiology-604"
+      "pearl_id": "dr-haney-on-epidemiology-604",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2.1 cm",
+            "threshold:at least 5"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Initial workup for new CHF includes CBC, chem14, lipid panel, iron panel, PSA, urinalysis, EKG, and chest X-ray.",
@@ -40556,7 +40702,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "new diagnosis of CHF",
-      "pearl_id": "dr-haney-on-epidemiology-631"
+      "pearl_id": "dr-haney-on-epidemiology-631",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CBC"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ejection fraction of 40% or less defines HFrEF.",
@@ -40569,7 +40731,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CHF symptoms",
-      "pearl_id": "dr-haney-on-epidemiology-799"
+      "pearl_id": "dr-haney-on-epidemiology-799",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ejection fraction"
+          ],
+          "rarity": 6.49
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HFmrEF (ejection fraction 41, 49%) is a midrange category; these patients are teetering and could get better or worse.",
@@ -40582,7 +40760,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CHF",
-      "pearl_id": "dr-haney-on-epidemiology-830"
+      "pearl_id": "dr-haney-on-epidemiology-830",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ejection fraction"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "GDMT stands for guideline-directed medical therapy and consists of four pillars (four medicines) for HFrEF.",
@@ -40595,7 +40789,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all CHF patients",
-      "pearl_id": "dr-haney-on-epidemiology-1021"
+      "pearl_id": "dr-haney-on-epidemiology-1021",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:guideline-directed med"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When switching from an ACE inhibitor to an ARNI (sacubitril/valsartan), a 36-hour washout is required because of the high risk of angioedema.",
@@ -40608,7 +40818,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HFrEF on ACE inhibitor being switched to ARNI",
-      "pearl_id": "dr-haney-on-epidemiology-1136"
+      "pearl_id": "dr-haney-on-epidemiology-1136",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:valsartan"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Only three beta-blockers are proven for HFrEF: bisoprolol, carvedilol, and metoprolol succinate (long-acting).",
@@ -40621,7 +40847,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HFrEF",
-      "pearl_id": "dr-haney-on-epidemiology-1198"
+      "pearl_id": "dr-haney-on-epidemiology-1198",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:bisoprolol"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start beta-blocker therapy before hospital discharge, but not during an acute exacerbation when cardiac output is already low.",
@@ -40634,7 +40876,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with HFrEF",
-      "pearl_id": "dr-haney-on-epidemiology-1234"
+      "pearl_id": "dr-haney-on-epidemiology-1234",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:exacerbation"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 6.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "MRA (spironolactone/eplerenone) is contraindicated if GFR <30 or potassium >5; if potassium is borderline, try adding empagliflozin first to lower potassium so you can continue the MRA.",
@@ -40647,7 +40908,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HFrEF being considered for MRA",
-      "pearl_id": "dr-haney-on-epidemiology-1441"
+      "pearl_id": "dr-haney-on-epidemiology-1441",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:<3",
+            "drug:empagliflozin",
+            "test:GFR"
+          ],
+          "harm": [
+            "contraindicated"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Empagliflozin (Jardiance) for HFrEF is dosed at 10 mg once daily; no titration is needed. If the patient also has diabetes, the dose can be increased to 25 mg.",
@@ -40660,7 +40942,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HFrEF (with or without diabetes)",
-      "pearl_id": "dr-haney-on-epidemiology-1523"
+      "pearl_id": "dr-haney-on-epidemiology-1523",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 mg",
+            "frequency:daily",
+            "drug:Empagliflozin"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Titrate GDMT medications to target doses even if the patient's symptoms improve, because higher doses provide additional mortality and hospitalization benefit.",
@@ -40673,7 +40973,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HFrEF on GDMT",
-      "pearl_id": "dr-haney-on-epidemiology-1631"
+      "pearl_id": "dr-haney-on-epidemiology-1631",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Titrate"
+          ],
+          "rarity": 6.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Repeat an echocardiogram 3, 6 months after starting GDMT to reassess ejection fraction.",
@@ -40686,7 +41002,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HFrEF after initiating GDMT",
-      "pearl_id": "dr-haney-on-epidemiology-1809"
+      "pearl_id": "dr-haney-on-epidemiology-1809",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "actionable": [
+            "Repeat"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diuretics improve symptoms but do not reduce mortality in heart failure.",
@@ -40699,7 +41034,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with heart failure",
-      "pearl_id": "dr-haney-on-epidemiology-1814"
+      "pearl_id": "dr-haney-on-epidemiology-1814",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:heart failure"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 5.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Metolazone is a powerful thiazide diuretic; use it only when patients are refractory to loop diuretics, and monitor potassium closely as it can drop significantly.",
@@ -40712,7 +41066,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with heart failure refractory to loop diuretics",
-      "pearl_id": "dr-haney-on-epidemiology-1827"
+      "pearl_id": "dr-haney-on-epidemiology-1827",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:loop diuretics"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start cardiac rehab early for class II, III heart failure patients; it's a good referral for motivated patients who want to improve.",
@@ -40725,7 +41098,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "heart failure patients class II–III",
-      "pearl_id": "dr-haney-on-epidemiology-1872"
+      "pearl_id": "dr-haney-on-epidemiology-1872",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:heart failure"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cardiac rehabilitation is indicated for patients with NYHA class II, III HFrEF.",
@@ -40738,7 +41130,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HFrEF, NYHA class II–III",
-      "pearl_id": "dr-haney-on-epidemiology-1875"
+      "pearl_id": "dr-haney-on-epidemiology-1875",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cardiac rehabilitation"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recommend sodium restriction to less than 3 grams per day; more restrictive goals are not helpful and may discourage patients.",
@@ -40751,7 +41159,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with heart failure",
-      "pearl_id": "dr-haney-on-epidemiology-1909"
+      "pearl_id": "dr-haney-on-epidemiology-1909",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 3",
+            "frequency:per day"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fluid restriction is only recommended for stage D heart failure (symptoms at rest); it is not beneficial for stage C patients and they are unlikely to adhere.",
@@ -40764,7 +41189,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with heart failure; stage D vs stage C",
-      "pearl_id": "dr-haney-on-epidemiology-1931"
+      "pearl_id": "dr-haney-on-epidemiology-1931",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fluid restriction"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Offer palliative care to stage D heart failure patients; it provides symptom management and end-of-life preparation, not just terminal care.",
@@ -40777,7 +41218,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "stage D heart failure patients",
-      "pearl_id": "dr-haney-on-epidemiology-1942"
+      "pearl_id": "dr-haney-on-epidemiology-1942",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:palliative care"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For stage D heart failure, do not forget to involve palliative care.",
@@ -40790,7 +41247,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with stage D heart failure",
-      "pearl_id": "dr-haney-on-epidemiology-1948"
+      "pearl_id": "dr-haney-on-epidemiology-1948",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:palliative care"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nonpharmacologic measures (diet, rehab, smoking cessation) help patients feel in control of their condition, which improves adherence.",
@@ -40803,7 +41279,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "heart failure patients",
-      "pearl_id": "dr-haney-on-epidemiology-1990"
+      "pearl_id": "dr-haney-on-epidemiology-1990",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:smoking cessation"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consider ICD placement when EF is 35% or less, especially if the patient is symptomatic (NYHA class II, III).",
@@ -40816,7 +41308,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "heart failure patients with EF ≤35%",
-      "pearl_id": "dr-haney-on-epidemiology-2035"
+      "pearl_id": "dr-haney-on-epidemiology-2035",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Post-MI patients with EF 40% may qualify for ICD due to arrhythmia risk; there is more leniency after a prior MI.",
@@ -40829,7 +41337,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "post-MI patients with EF ≤40%",
-      "pearl_id": "dr-haney-on-epidemiology-2051"
+      "pearl_id": "dr-haney-on-epidemiology-2051",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After starting GDMT, recheck ejection fraction in 3, 6 months; if EF remains ≤40%, the patient still has HFrEF.",
@@ -40842,7 +41363,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "heart failure patients on GDMT",
-      "pearl_id": "dr-haney-on-epidemiology-2083"
+      "pearl_id": "dr-haney-on-epidemiology-2083",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 6.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cardiac rehab referral can be arranged within a month, sometimes as soon as the next day.",
@@ -40855,7 +41395,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "heart failure patients referred for cardiac rehab",
-      "pearl_id": "dr-haney-on-epidemiology-2515"
+      "pearl_id": "dr-haney-on-epidemiology-2515",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:referral"
+          ],
+          "rarity": 7.45
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

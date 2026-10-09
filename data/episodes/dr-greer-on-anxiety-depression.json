@@ -47060,7 +47060,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults",
-      "pearl_id": "dr-greer-on-anxiety-depression-234"
+      "pearl_id": "dr-greer-on-anxiety-depression-234",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:40 mg"
+          ],
+          "rarity": 7.41
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In elderly patients, do not exceed 10 mg of escitalopram or 20 mg of citalopram.",
@@ -47073,7 +47089,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly",
-      "pearl_id": "dr-greer-on-anxiety-depression-294"
+      "pearl_id": "dr-greer-on-anxiety-depression-294",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 mg"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sertraline is first-line in pregnancy; take it in the morning because it can be stimulating.",
@@ -47086,7 +47121,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnancy",
-      "pearl_id": "dr-greer-on-anxiety-depression-319"
+      "pearl_id": "dr-greer-on-anxiety-depression-319",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sertraline"
+          ],
+          "rarity": 7.16
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For PMDD, fluoxetine can be taken only two days before the period starts until the period ends, rather than daily.",
@@ -47099,7 +47150,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with PMDD",
-      "pearl_id": "dr-greer-on-anxiety-depression-343"
+      "pearl_id": "dr-greer-on-anxiety-depression-343",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Paroxetine has the worst side effect profile (sexual dysfunction, weight gain, medication interactions) but sometimes works best for anxiety after other medications have failed.",
@@ -47112,7 +47179,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with refractory anxiety",
-      "pearl_id": "dr-greer-on-anxiety-depression-398"
+      "pearl_id": "dr-greer-on-anxiety-depression-398",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sexual dysfunction"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fluoxetine has a long half-life and can be stopped easily without withdrawal; use cross-titration with fluoxetine to help patients get off SNRIs.",
@@ -47125,7 +47208,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients discontinuing an SNRI",
-      "pearl_id": "dr-greer-on-anxiety-depression-660"
+      "pearl_id": "dr-greer-on-anxiety-depression-660",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:cross-titration"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Desvenlafaxine is not FDA-approved for anxiety but works decently for anxiety; it is more for depression.",
@@ -47138,7 +47243,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with depression or anxiety",
-      "pearl_id": "dr-greer-on-anxiety-depression-731"
+      "pearl_id": "dr-greer-on-anxiety-depression-731",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:desvenlafaxine"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Duloxetine requires higher doses (60 mg, possibly 60 mg twice daily) to be beneficial; it may help chronic pain modestly.",
@@ -47151,7 +47272,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with depression or chronic pain",
-      "pearl_id": "dr-greer-on-anxiety-depression-841"
+      "pearl_id": "dr-greer-on-anxiety-depression-841",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:60 mg",
+            "frequency:daily"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use an SSRI and an SNRI together because both act on serotonin receptors.",
@@ -47164,7 +47302,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-greer-on-anxiety-depression-907"
+      "pearl_id": "dr-greer-on-anxiety-depression-907",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient fails two different SSRIs, switch to an SNRI.",
@@ -47177,7 +47331,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with depression or anxiety",
-      "pearl_id": "dr-greer-on-anxiety-depression-958"
+      "pearl_id": "dr-greer-on-anxiety-depression-958",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ssris"
+          ],
+          "actionable": [
+            "switch"
+          ],
+          "rarity": 5.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient fails two SSRIs, switch to an SNRI rather than trying another SSRI.",
@@ -47190,7 +47363,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with depression failing two SSRIs",
-      "pearl_id": "dr-greer-on-anxiety-depression-963"
+      "pearl_id": "dr-greer-on-anxiety-depression-963",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ssris"
+          ],
+          "actionable": [
+            "switch"
+          ],
+          "rarity": 6.1
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bupropion is best for atypical depression with low motivation and lack of sadness, not for anxiety.",
@@ -47203,7 +47395,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with atypical depression",
-      "pearl_id": "dr-greer-on-anxiety-depression-1001"
+      "pearl_id": "dr-greer-on-anxiety-depression-1001",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:atypical depression"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bupropion 450 mg is rarely covered by insurance; prescribe 300 mg plus 150 mg instead.",
@@ -47220,7 +47428,29 @@
         "300",
         "150"
       ],
-      "pearl_id": "dr-greer-on-anxiety-depression-1037"
+      "pearl_id": "dr-greer-on-anxiety-depression-1037",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:450 mg"
+          ],
+          "actionable": [
+            "prescribe"
+          ],
+          "rarity": 6.05,
+          "capped": [
+            "number not heard: 300, 150"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Screen for bipolar disorder before starting bupropion, as it can trigger a manic episode in undiagnosed bipolar patients.",
@@ -47233,7 +47463,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting bupropion",
-      "pearl_id": "dr-greer-on-anxiety-depression-1070"
+      "pearl_id": "dr-greer-on-anxiety-depression-1070",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bipolar disorder"
+          ],
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Buspirone is not effective as a PRN; it must be taken daily for anxiety.",
@@ -47246,7 +47495,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anxiety",
-      "pearl_id": "dr-greer-on-anxiety-depression-1137"
+      "pearl_id": "dr-greer-on-anxiety-depression-1137",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:PRN"
+          ],
+          "rarity": 5.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start buspirone at 7.5 mg twice daily for one week, then increase to 15 mg twice daily; some need up to 30 mg twice daily.",
@@ -47259,7 +47524,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting buspirone",
-      "pearl_id": "dr-greer-on-anxiety-depression-1171"
+      "pearl_id": "dr-greer-on-anxiety-depression-1171",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:7.5 mg",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 5.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Mirtazapine at 30-45 mg is needed for appetite stimulation; 15 mg is insufficient for that purpose.",
@@ -47272,7 +47557,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients needing appetite boost",
-      "pearl_id": "dr-greer-on-anxiety-depression-1515"
+      "pearl_id": "dr-greer-on-anxiety-depression-1515",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:45 mg"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Trazodone is cheap and effective for insomnia but increases fall risk, especially in the elderly.",
@@ -47285,7 +47586,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients with insomnia",
-      "pearl_id": "dr-greer-on-anxiety-depression-1603"
+      "pearl_id": "dr-greer-on-anxiety-depression-1603",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fall risk"
+          ],
+          "rarity": 6.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid starting Z-drugs like Ambien due to risks of sleepwalking, amnesia, and dangerous behaviors.",
@@ -47298,7 +47615,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with insomnia",
-      "pearl_id": "dr-greer-on-anxiety-depression-1642"
+      "pearl_id": "dr-greer-on-anxiety-depression-1642",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "Avoid"
+          ],
+          "harm": [
+            "dangerous"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Benzodiazepines should be avoided except for short-term use (30-60 days) after a traumatic event.",
@@ -47311,7 +47647,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after trauma",
-      "pearl_id": "dr-greer-on-anxiety-depression-1732"
+      "pearl_id": "dr-greer-on-anxiety-depression-1732",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:60 days"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid screens for three hours before bed; blue light glasses may help anecdotally but lack strong evidence.",
@@ -47324,7 +47679,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with insomnia",
-      "pearl_id": "dr-greer-on-anxiety-depression-1823"
+      "pearl_id": "dr-greer-on-anxiety-depression-1823",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The bed should only be used for sex and sleep; avoid studying, watching TV, or talking on the bed to strengthen the association with sleep.",
@@ -47337,7 +47708,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with insomnia",
-      "pearl_id": "dr-greer-on-anxiety-depression-1842"
+      "pearl_id": "dr-greer-on-anxiety-depression-1842",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient lies in bed for 20-30 minutes unable to sleep, they should get up and do something other than look at their phone, such as reading a book or magazine.",
@@ -47350,7 +47737,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with insomnia",
-      "pearl_id": "dr-greer-on-anxiety-depression-1874"
+      "pearl_id": "dr-greer-on-anxiety-depression-1874",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:30 minutes"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Magnesium and vitamin D are commonly deficient and may help with sleep; consider supplementation.",
@@ -47363,7 +47766,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population with sleep issues",
-      "pearl_id": "dr-greer-on-anxiety-depression-1933"
+      "pearl_id": "dr-greer-on-anxiety-depression-1933",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:magnesium"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The CBTI Coach app, developed with the Department of Defense and Stanford, is a free, user-friendly tool for sleep diaries and cognitive behavioral therapy for insomnia.",
@@ -47377,7 +47799,23 @@
       "prompt_version": "v1",
       "applies_to": "adults with insomnia",
       "by_presenter": false,
-      "pearl_id": "dr-greer-on-anxiety-depression-1958"
+      "pearl_id": "dr-greer-on-anxiety-depression-1958",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cognitive behavioral t"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For outpatient alcohol withdrawal taper, use Valium 10 mg: four doses on day 1 (q6h), three on day 2 (q8h), two on day 3 (q12h), and one on day 4.",
@@ -47390,7 +47828,30 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient alcohol withdrawal without history of delirium tremens or seizures",
-      "pearl_id": "dr-greer-on-anxiety-depression-2128"
+      "pearl_id": "dr-greer-on-anxiety-depression-2128",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:10 mg",
+            "frequency:q6h"
+          ],
+          "actionable": [
+            "taper"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid prescribing Xanax due to high addiction risk and withdrawal seizures; use Valium or Ativan as-needed only.",
@@ -47403,7 +47864,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general outpatient anxiety/insomnia",
-      "pearl_id": "dr-greer-on-anxiety-depression-2192"
+      "pearl_id": "dr-greer-on-anxiety-depression-2192",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:withdrawal"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has paradoxical reactions to SSRIs, SNRIs, and mirtazapine, consider trying Trintellix (vortioxetine) because it works differently on serotonin receptors.",
@@ -47416,7 +47899,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with treatment-resistant depression or anxiety who had paradoxical reactions to other antidepressants",
-      "pearl_id": "dr-greer-on-anxiety-depression-2310"
+      "pearl_id": "dr-greer-on-anxiety-depression-2310",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:vortioxetine"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Genetic testing for antidepressant selection does not predict efficacy, only potential adverse reactions based on genes.",
@@ -47429,7 +47931,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with treatment-resistant depression",
-      "pearl_id": "dr-greer-on-anxiety-depression-2349"
+      "pearl_id": "dr-greer-on-anxiety-depression-2349",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:antidepressant selecti"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For bipolar depression without weight gain, consider Lamictal (lamotrigine), but titrate up very slowly to prevent Stevens-Johnson syndrome.",
@@ -47442,7 +47960,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with bipolar depression who want to avoid weight gain",
-      "pearl_id": "dr-greer-on-anxiety-depression-2371"
+      "pearl_id": "dr-greer-on-anxiety-depression-2371",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:stevens-johnson syndro"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

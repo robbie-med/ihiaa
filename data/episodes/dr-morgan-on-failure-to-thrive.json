@@ -43894,7 +43894,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any child in clinic",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-238"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-238",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "measure"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use CDC WHO growth curves for ages 0, 24 months and CDC curves beyond 24 months; these are built into Cerner.",
@@ -43907,7 +43923,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children in outpatient clinic",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-347"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-347",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:24 months"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Failure to thrive is defined as a change of two standard deviations below the patient's own norm, usually based on birth percentile.",
@@ -43920,7 +43955,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children being evaluated for FTT",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-424"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-424",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:standard deviation"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A baby born at 3rd percentile who stays there is not FTT; a baby born at 50th percentile who drops to 25th is FTT.",
@@ -43933,7 +43984,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants being evaluated for FTT",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-534"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-534",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A baby born SGA is not automatically failure to thrive; FTT requires a change from a prior thriving state.",
@@ -43946,7 +44010,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants born small for gestational age",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-547"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-547",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:failure to thrive"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Weight-for-height or height-for-age below the 10th percentile is a strong indicator of FTT.",
@@ -43959,7 +44039,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children being evaluated for FTT",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-629"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-629",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In FTT, weight is lost first, then length, then head circumference; the body preserves brain growth as long as possible.",
@@ -43973,7 +44066,20 @@
       "prompt_version": "v1",
       "applies_to": "children with FTT",
       "by_presenter": false,
-      "pearl_id": "dr-morgan-on-failure-to-thrive-765"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-765",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diagnose FTT early even if you're unsure; it is better to diagnose and monitor than to miss the opportunity to intervene.",
@@ -43986,7 +44092,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents in clinic",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-875"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-875",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "monitor"
+          ],
+          "harm": [
+            "miss the"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Most FTT cases are nonorganic and resolve with social history, feeding education, and close follow-up.",
@@ -43999,7 +44124,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with FTT",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-908"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-908",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Don't be afraid to diagnose failure to thrive; it's okay for the diagnosis to resolve in three months, and it's better than missing serious pathology.",
@@ -44012,7 +44150,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with suspected FTT",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-969"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-969",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:failure to thrive"
+          ],
+          "actionable": [
+            "Don't"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If head circumference drops quickly along with weight and length, suspect a genetic or organic cause rather than simple underfeeding.",
@@ -44025,7 +44182,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with FTT and rapid head circumference decline",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-1056"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-1056",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The brain is designed to hold on longest; weight drops first, then length, then head circumference. If head circumference is dropping, it suggests a serious genetic or organic problem.",
@@ -44038,7 +44208,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with growth failure",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-1068"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-1068",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "hold"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Symmetric growth failure (weight, length, and head circumference all dropping together at the same rate) suggests an intrinsic problem like growth hormone deficiency.",
@@ -44051,7 +44237,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with symmetric growth decline",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-1137"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-1137",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:growth hormone deficie"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a child with FTT has no improvement after a period of close monitoring and intervention, they likely need specialist referral.",
@@ -44064,7 +44266,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with FTT not improving with close follow-up",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-1284"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-1284",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:referral"
+          ],
+          "rarity": 6.47
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "First referrals for failure to thrive should be to GI, endocrine, and genetics; neurology is not first unless there is a specific seizure concern.",
@@ -44077,7 +44295,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with FTT needing specialist referral",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-1306"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-1306",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:failure to thrive"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For preterm infants, use Fenton growth curves adjusted for gestational age; you must enter the gestational age at birth into the EHR for correct calculation.",
@@ -44090,7 +44327,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "preterm infants",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-1596"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-1596",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fenton growth curves"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For preterm infants, use Fenton curves from 0-24 months and switch to WHO/CDC once they reach a normal growth trajectory.",
@@ -44103,7 +44359,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "preterm infants",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-1661"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-1661",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:24 months"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Most failure to thrive is nonorganic (environmental/social), often due to maternal depression, overwhelmed parents, or feeding issues like giving juice instead of formula.",
@@ -44116,7 +44391,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with FTT",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-1799"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-1799",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:maternal depression"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diagnosing failure to thrive is essential for families to access government-funded resources like Emergency Infant Services; without the diagnosis, they cannot get those resources.",
@@ -44129,7 +44420,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with FTT",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-1842"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-1842",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:failure to thrive"
+          ],
+          "harm": [
+            "Emergency"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use a structured questionnaire (HMP/plan quick text) at the initial visit to uncover hidden issues like prior surgeries, birth history, or feeding problems.",
@@ -44142,7 +44452,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "initial visit for FTT",
-      "pearl_id": "dr-morgan-on-failure-to-thrive-1968"
+      "pearl_id": "dr-morgan-on-failure-to-thrive-1968",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

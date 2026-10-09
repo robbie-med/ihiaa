@@ -26008,7 +26008,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PV",
-      "pearl_id": "dr-harris-on-polycythemia-vera-395"
+      "pearl_id": "dr-harris-on-polycythemia-vera-395",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 minutes"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Erythromelalgia, burning pain in hands and feet with erythema, is pathognomonic for PV.",
@@ -26021,7 +26037,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PV",
-      "pearl_id": "dr-harris-on-polycythemia-vera-455"
+      "pearl_id": "dr-harris-on-polycythemia-vera-455",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:erythromelalgia"
+          ],
+          "rarity": 7.55
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consider PV in younger women (<45) who present with Budd-Chiari syndrome or portal/splenic/mesenteric vein thrombosis.",
@@ -26034,7 +26066,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women <45 with unusual thrombotic events",
-      "pearl_id": "dr-harris-on-polycythemia-vera-694"
+      "pearl_id": "dr-harris-on-polycythemia-vera-694",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:<4"
+          ],
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For diagnosis of PV, rule out secondary causes first: cardiopulmonary disease, chronic hypoxia, left-to-right shunts, EPO-producing tumors, high altitude, testosterone, steroids, blood doping, renal disease, sleep apnea, obesity hypoventilation, smoking/chronic CO poisoning.",
@@ -26047,7 +26098,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with elevated hemoglobin/hematocrit",
-      "pearl_id": "dr-harris-on-polycythemia-vera-736"
+      "pearl_id": "dr-harris-on-polycythemia-vera-736",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "None of the treatments for PV reduce the risk of transformation to leukemia or other malignancies; the goal is symptom control and reducing thrombotic risk.",
@@ -26060,7 +26130,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all PV patients",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1082"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1082",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:leukemia"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The goal hematocrit for therapeutic phlebotomy in PV is less than 45% for both males and females, even though diagnostic cutoffs differ.",
@@ -26073,7 +26162,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with PV undergoing phlebotomy",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1122"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1122",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 4"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "One unit of therapeutic phlebotomy (500 mL) reduces hematocrit by 3 percentage points, use this to calculate how many units a patient needs.",
@@ -26086,7 +26191,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing therapeutic phlebotomy for PV",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1141"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1141",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:500 mL"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tell patients to stay well hydrated and avoid strenuous exercise (like Orangetheory) within 24 hours after therapeutic phlebotomy.",
@@ -26099,7 +26223,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after therapeutic phlebotomy",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1155"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1155",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Men can tolerate 1.5, 2 units of phlebotomy per week; women, older, undernourished, low-BMI, or cardiopulmonary patients may tolerate only about 0.5 unit per week.",
@@ -26112,7 +26255,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving therapeutic phlebotomy for PV",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1184"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1184",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 units",
+            "frequency:per week"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not give iron to patients with PV who are undergoing therapeutic phlebotomy, because phlebotomy works by creating iron deficiency.",
@@ -26125,7 +26285,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PV patients undergoing therapeutic phlebotomy",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1208"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1208",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:therapeutic phlebotomy"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "Do not give"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not give iron supplementation to polycythemia vera patients undergoing therapeutic phlebotomy, as it counteracts the treatment.",
@@ -26138,7 +26320,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PV patients on therapeutic phlebotomy",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1217"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1217",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:therapeutic phlebotomy"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "Do not give"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Low-dose aspirin for thrombosis prophylaxis in PV: 40, 100 mg daily; if symptoms or cardiovascular risk factors, consider twice-daily dosing.",
@@ -26151,7 +26355,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PV patients without contraindication",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1239"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1239",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:100 mg",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.98
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cytoreductive therapies for PV do not reduce the risk of transformation to leukemia or other malignancies.",
@@ -26164,7 +26388,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PV patients on cytoreductive therapy",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1274"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1274",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:leukemia"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cytoreductive therapy (hydroxyurea, interferon, or busulfan) is reserved for high-risk patients: age >60 or prior thrombotic event; may also be considered for low-risk patients with uncontrolled symptoms, rising leukocytes/platelets, progressive splenomegaly, or phlebotomy intolerance.",
@@ -26177,7 +26420,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PV patients",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1284"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1284",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>6"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start hydroxyurea at 15 mg/kg/day. It takes 3-5 days to work; wait at least one week before adjusting dose, and do not adjust more than once a week.",
@@ -26190,7 +26449,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PV patients on hydroxyurea",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1364"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1364",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:15 mg"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 6.8
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The treatment goal for hydroxyurea is a platelet count between 100,000 and 400,000.",
@@ -26207,7 +26485,23 @@
         "100000",
         "400000"
       ],
-      "pearl_id": "dr-harris-on-polycythemia-vera-1393"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1393",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hydroxyurea"
+          ],
+          "rarity": 6.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hydroxyurea side effects include cytopenias, cutaneous ulcers, peripheral neuropathy, skin cancers, teratogenicity, and rare severe pulmonary toxicity.",
@@ -26220,7 +26514,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PV patients on hydroxyurea",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1420"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1420",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:peripheral neuropathy"
+          ],
+          "harm": [
+            "toxicity"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Macrocytosis or megaloblastic erythrocytosis is a normal finding on hydroxyurea; do not mistake it for a problem.",
@@ -26233,7 +26546,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PV patients on hydroxyurea",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1438"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1438",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:erythrocytosis"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Interferon alpha is non-teratogenic and can be used in pregnant PV patients, but it is poorly tolerated due to fevers, malaise, nausea, and vomiting.",
@@ -26246,7 +26578,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant PV patients",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1469"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1469",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:interferon alpha"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Busulfan is last-line cytoreductive therapy for PV patients over 60 who have failed hydroxyurea and interferon; it carries risks of cytopenias, marrow aplasia, skin pigmentation, pulmonary fibrosis, and leukemia.",
@@ -26259,7 +26607,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PV patients >60 who failed hydroxyurea and interferon",
-      "pearl_id": "dr-harris-on-polycythemia-vera-1523"
+      "pearl_id": "dr-harris-on-polycythemia-vera-1523",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 6"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

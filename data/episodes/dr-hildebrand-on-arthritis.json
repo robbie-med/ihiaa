@@ -31151,7 +31151,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "family physicians in resource-limited settings",
-      "pearl_id": "dr-hildebrand-on-arthritis-71"
+      "pearl_id": "dr-hildebrand-on-arthritis-71",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hydroxychloroquine"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid ordering ANA unless lupus is on the differential; a positive ANA in low-risk patients leads to unnecessary workup and patient anxiety.",
@@ -31164,7 +31183,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients without clear lupus symptoms",
-      "pearl_id": "dr-hildebrand-on-arthritis-469"
+      "pearl_id": "dr-hildebrand-on-arthritis-469",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:patient anxiety"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 6.67
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "RA diagnosis requires symptoms for at least six weeks; shorter duration points to other causes.",
@@ -31177,7 +31215,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected RA",
-      "pearl_id": "dr-hildebrand-on-arthritis-772"
+      "pearl_id": "dr-hildebrand-on-arthritis-772",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 5.95
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On exam, feel each finger joint for warmth, swelling, and boggy synovitis; compare to unaffected joints to detect inflammation.",
@@ -31190,7 +31241,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected RA",
-      "pearl_id": "dr-hildebrand-on-arthritis-952"
+      "pearl_id": "dr-hildebrand-on-arthritis-952",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:synovitis"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "High positive anti-CCP and rheumatoid factor (e.g., anti-CCP 1400, RF 103) strongly support RA; low positive values give fewer points in the criteria.",
@@ -31206,7 +31273,29 @@
       "numbers_unheard": [
         "103"
       ],
-      "pearl_id": "dr-hildebrand-on-arthritis-1146"
+      "pearl_id": "dr-hildebrand-on-arthritis-1146",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rheumatoid factor"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.27,
+          "capped": [
+            "number not heard: 103"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the ACR 2010 criteria systematically: score joint involvement, serology (RF, anti-CCP), acute phase reactants (ESR, CRP), and symptom duration; a score of 6 or more classifies definite RA.",
@@ -31222,7 +31311,29 @@
       "numbers_unheard": [
         "2010"
       ],
-      "pearl_id": "dr-hildebrand-on-arthritis-1285"
+      "pearl_id": "dr-hildebrand-on-arthritis-1285",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ESR"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.38,
+          "capped": [
+            "number not heard: 2010"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Small joint involvement (PIPs, MCPs, wrists) is the key trigger to think autoimmune arthritis rather than osteoarthritis.",
@@ -31235,7 +31346,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with joint pain",
-      "pearl_id": "dr-hildebrand-on-arthritis-1304"
+      "pearl_id": "dr-hildebrand-on-arthritis-1304",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:osteoarthritis"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use ACR criteria as a checklist with the patient to systematically diagnose lupus or rheumatoid arthritis.",
@@ -31248,7 +31375,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected rheumatoid arthritis or lupus",
-      "pearl_id": "dr-hildebrand-on-arthritis-1316"
+      "pearl_id": "dr-hildebrand-on-arthritis-1316",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:rheumatoid arthritis"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Steroids (e.g., prednisone) can be used as a short-term bridge while DMARDs take effect, especially if the patient is miserable.",
@@ -31261,7 +31407,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with active RA symptoms",
-      "pearl_id": "dr-hildebrand-on-arthritis-1375"
+      "pearl_id": "dr-hildebrand-on-arthritis-1375",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:prednisone"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before starting methotrexate, screen for TB, hepatitis B/C, HIV, and obtain CBC and comprehensive metabolic panel.",
@@ -31274,7 +31436,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting methotrexate",
-      "pearl_id": "dr-hildebrand-on-arthritis-1387"
+      "pearl_id": "dr-hildebrand-on-arthritis-1387",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CBC"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 6.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before starting methotrexate, check TB, HIV, hepatitis panel, and CBC/chemistries.",
@@ -31287,7 +31468,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being considered for methotrexate therapy",
-      "pearl_id": "dr-hildebrand-on-arthritis-1391"
+      "pearl_id": "dr-hildebrand-on-arthritis-1391",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CBC"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 6.73
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start methotrexate at a low dose and counsel patients that it is a DMARD, not primarily a cancer drug, to address their concerns.",
@@ -31300,7 +31500,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting methotrexate",
-      "pearl_id": "dr-hildebrand-on-arthritis-1417"
+      "pearl_id": "dr-hildebrand-on-arthritis-1417",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:methotrexate"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start methotrexate at a low dose and titrate up based on ESR, with effect expected in 3-6 months.",
@@ -31313,7 +31532,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting methotrexate for rheumatoid arthritis",
-      "pearl_id": "dr-hildebrand-on-arthritis-1430"
+      "pearl_id": "dr-hildebrand-on-arthritis-1430",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 months",
+            "test:ESR"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 6.17
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recheck liver chemistries 6-8 weeks after starting methotrexate; disease activity is measured at 3 months.",
@@ -31326,7 +31565,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on methotrexate",
-      "pearl_id": "dr-hildebrand-on-arthritis-1452"
+      "pearl_id": "dr-hildebrand-on-arthritis-1452",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:8 weeks"
+          ],
+          "actionable": [
+            "Recheck"
+          ],
+          "rarity": 7.07
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Primary care can start methotrexate and refer to rheumatology while the patient waits months for an appointment.",
@@ -31339,7 +31597,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with rheumatoid arthritis in areas with limited rheumatology access",
-      "pearl_id": "dr-hildebrand-on-arthritis-1489"
+      "pearl_id": "dr-hildebrand-on-arthritis-1489",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:methotrexate"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For fatigue workup in a 51-year-old, get CBC, TSH, chem 14, and vitamin D.",
@@ -31352,7 +31629,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with fatigue",
-      "pearl_id": "dr-hildebrand-on-arthritis-1724"
+      "pearl_id": "dr-hildebrand-on-arthritis-1724",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CBC"
+          ],
+          "rarity": 6.68
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Elevated AST with normal initial labs should prompt recheck and consideration of autoimmune hepatitis.",
@@ -31365,7 +31658,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with elevated liver enzymes",
-      "pearl_id": "dr-hildebrand-on-arthritis-1944"
+      "pearl_id": "dr-hildebrand-on-arthritis-1944",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:autoimmune hepatitis"
+          ],
+          "actionable": [
+            "recheck"
+          ],
+          "rarity": 7.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Autoimmune hepatitis is confirmed by positive anti-smooth muscle antibody, which must be ordered separately.",
@@ -31378,7 +31690,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with elevated liver enzymes and positive ANA",
-      "pearl_id": "dr-hildebrand-on-arthritis-2016"
+      "pearl_id": "dr-hildebrand-on-arthritis-2016",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:anti-smooth muscle ant"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient says they think they have lupus, explain that lupus affects every organ system, then go through criteria asking about seizures, confusion, hematuria, and skin rashes.",
@@ -31391,7 +31719,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected lupus",
-      "pearl_id": "dr-hildebrand-on-arthritis-2069"
+      "pearl_id": "dr-hildebrand-on-arthritis-2069",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hematuria"
+          ],
+          "rarity": 6.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Steroids can calm autoimmune flares while awaiting definitive treatment.",
@@ -31404,7 +31748,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with autoimmune hepatitis flare",
-      "pearl_id": "dr-hildebrand-on-arthritis-2318"
+      "pearl_id": "dr-hildebrand-on-arthritis-2318",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

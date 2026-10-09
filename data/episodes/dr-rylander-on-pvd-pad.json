@@ -52977,7 +52977,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with limb symptoms",
-      "pearl_id": "dr-rylander-on-pvd-pad-75"
+      "pearl_id": "dr-rylander-on-pvd-pad-75",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not apply compression for venous disease above the arterial perfusion pressure, or you risk creating critical limb ischemia.",
@@ -52990,7 +53006,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with mixed arterial and venous disease",
-      "pearl_id": "dr-rylander-on-pvd-pad-115"
+      "pearl_id": "dr-rylander-on-pvd-pad-115",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:critical limb ischemia"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Microvascular disease is as important as proximal blockages; spending $100,000 on a bypass is futile if microvascular circulation is poor.",
@@ -53003,7 +53038,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being considered for revascularization",
-      "pearl_id": "dr-rylander-on-pvd-pad-220"
+      "pearl_id": "dr-rylander-on-pvd-pad-220",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use toe-brachial index when ankle-brachial index is falsely elevated due to calcified vessels.",
@@ -53016,7 +53064,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PAD and calcified arteries (e.g., diabetes, CKD)",
-      "pearl_id": "dr-rylander-on-pvd-pad-286"
+      "pearl_id": "dr-rylander-on-pvd-pad-286",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ankle-brachial index"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Reserve CTA, MRA, and vascular referral for patients being considered for revascularization; stop workup with duplex if not intervening.",
@@ -53029,7 +53096,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PAD not being considered for intervention",
-      "pearl_id": "dr-rylander-on-pvd-pad-409"
+      "pearl_id": "dr-rylander-on-pvd-pad-409",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:revascularization"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Arterial ulcers have sharp, punched-out borders and a clean pink base; venous ulcers have raised edges, shallow base, hemosiderin staining, and are wet.",
@@ -53042,7 +53128,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with leg ulcers",
-      "pearl_id": "dr-rylander-on-pvd-pad-536"
+      "pearl_id": "dr-rylander-on-pvd-pad-536",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:arterial ulcer"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PAD in the leg is a marker for systemic cardiovascular disease; aggressively reduce risk with LDL target <50, smoking cessation, and full-court press risk reduction.",
@@ -53055,7 +53157,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with PAD",
-      "pearl_id": "dr-rylander-on-pvd-pad-708"
+      "pearl_id": "dr-rylander-on-pvd-pad-708",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:<5",
+            "test:LDL"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Exercise therapy for claudication: walk to the point of ischemic discomfort, rest, then repeat; this stimulates neovascularization and bypasses blockages.",
@@ -53068,7 +53190,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with claudication",
-      "pearl_id": "dr-rylander-on-pvd-pad-926"
+      "pearl_id": "dr-rylander-on-pvd-pad-926",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:neovascularization"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When prescribing exercise, warn patients not to exercise to the point of skin breakdown; ensure good shoes and educate about foot injury prevention.",
@@ -53081,7 +53222,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PAD starting exercise therapy",
-      "pearl_id": "dr-rylander-on-pvd-pad-988"
+      "pearl_id": "dr-rylander-on-pvd-pad-988",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:exercise"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Educate patients with PAD to recognize new foot sores and seek urgent care immediately; a three-week delay can lead to gangrene.",
@@ -53094,7 +53254,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PAD and neuropathy",
-      "pearl_id": "dr-rylander-on-pvd-pad-1056"
+      "pearl_id": "dr-rylander-on-pvd-pad-1056",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:urgent care"
+          ],
+          "actionable": [
+            "Educate"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Buerger's test: pallor on elevation and rubor on dependency indicate severe ischemia.",
@@ -53107,7 +53289,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PAD",
-      "pearl_id": "dr-rylander-on-pvd-pad-1135"
+      "pearl_id": "dr-rylander-on-pvd-pad-1135",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:buerger's test"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the ABI is too high (noncompressible), move on to toe pressures.",
@@ -53121,7 +53319,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with suspected PAD where ABI is elevated",
       "by_presenter": false,
-      "pearl_id": "dr-rylander-on-pvd-pad-1160"
+      "pearl_id": "dr-rylander-on-pvd-pad-1160",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ABI"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For noncritical lesions, do physiologic studies yourself and start an exercise program before referring to vascular.",
@@ -53134,7 +53348,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with noncritical PAD",
-      "pearl_id": "dr-rylander-on-pvd-pad-1189"
+      "pearl_id": "dr-rylander-on-pvd-pad-1189",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:exercise"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients with active critical ischemia (cool, infected, need reperfusion) require urgent vascular referral.",
@@ -53147,7 +53380,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with critical limb ischemia",
-      "pearl_id": "dr-rylander-on-pvd-pad-1295"
+      "pearl_id": "dr-rylander-on-pvd-pad-1295",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:vascular referral"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For chronic ischemia without exacerbation, refer to vascular within a few days to a week; for acute exacerbation, send to the ER for vascular consult.",
@@ -53160,7 +53412,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic limb ischemia",
-      "pearl_id": "dr-rylander-on-pvd-pad-1358"
+      "pearl_id": "dr-rylander-on-pvd-pad-1358",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:exacerbation"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 5.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Duplex ultrasound is the anatomic test to localize the lesion; everyone should get it along with the physical exam.",
@@ -53173,7 +53444,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PAD",
-      "pearl_id": "dr-rylander-on-pvd-pad-1398"
+      "pearl_id": "dr-rylander-on-pvd-pad-1398",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid CTA unless necessary because it hurts kidneys and vascular will redo it when they are ready to operate.",
@@ -53186,7 +53473,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PAD being evaluated",
-      "pearl_id": "dr-rylander-on-pvd-pad-1414"
+      "pearl_id": "dr-rylander-on-pvd-pad-1414",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Arterial claudication is not relieved by bending forward; neurogenic claudication is relieved by bending (shopping cart test) because it reduces spinal stenosis.",
@@ -53199,7 +53502,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with leg pain on walking",
-      "pearl_id": "dr-rylander-on-pvd-pad-1581"
+      "pearl_id": "dr-rylander-on-pvd-pad-1581",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:neurogenic claudicatio"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Neurogenic claudication lacks the pallor, rubor, and hair loss seen in arterial disease.",
@@ -53212,7 +53531,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected claudication",
-      "pearl_id": "dr-rylander-on-pvd-pad-1657"
+      "pearl_id": "dr-rylander-on-pvd-pad-1657",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:neurogenic claudicatio"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not delay urgent vascular referral for topical wound care alone if the wound has arterial perfusion problems; it will not heal without oxygen.",
@@ -53225,7 +53560,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with non-healing wounds and suspected arterial insufficiency",
-      "pearl_id": "dr-rylander-on-pvd-pad-1693"
+      "pearl_id": "dr-rylander-on-pvd-pad-1693",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:vascular referral"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The six P's of acute limb ischemia: pain, pallor, pulselessness, paresthesia, paralysis, and poikilothermia (cold).",
@@ -53238,7 +53595,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute limb ischemia",
-      "pearl_id": "dr-rylander-on-pvd-pad-1718"
+      "pearl_id": "dr-rylander-on-pvd-pad-1718",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When you suspect critical limb ischemia, start anticoagulation while the patient is waiting for the vascular consultation; do not leave it for the vascular surgeon to order.",
@@ -53251,7 +53621,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected critical limb ischemia",
-      "pearl_id": "dr-rylander-on-pvd-pad-1764"
+      "pearl_id": "dr-rylander-on-pvd-pad-1764",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:critical limb ischemia"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Older patients often have neurogenic claudication, arterial claudication, arthritic changes, and neuropathic changes simultaneously; determine which is predominant and causing the acute problem.",
@@ -53264,7 +53653,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older patients with leg symptoms",
-      "pearl_id": "dr-rylander-on-pvd-pad-1818"
+      "pearl_id": "dr-rylander-on-pvd-pad-1818",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:neurogenic claudicatio"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Venous claudication presents with bursting pain after walking and slow relief with elevation, due to obstruction and reflux.",
@@ -53277,7 +53682,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected venous disease",
-      "pearl_id": "dr-rylander-on-pvd-pad-1854"
+      "pearl_id": "dr-rylander-on-pvd-pad-1854",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:venous claudication"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "GLP-1 agonists are emerging as a smoking cessation tool because they reduce the pleasure of smoking and make cigarettes taste bad.",
@@ -53290,7 +53711,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PAD who smoke",
-      "pearl_id": "dr-rylander-on-pvd-pad-1933"
+      "pearl_id": "dr-rylander-on-pvd-pad-1933",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:smoking cessation"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Revascularization is not as successful in patients who continue to smoke; be brutally honest with patients about the need to quit.",
@@ -53303,7 +53743,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PAD who smoke and are candidates for revascularization",
-      "pearl_id": "dr-rylander-on-pvd-pad-1985"
+      "pearl_id": "dr-rylander-on-pvd-pad-1985",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:revascularization"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "High-intensity statin should be your default; plan to add additional therapy at 3-month intervals until LDL goal is reached, not a 'maybe later' approach.",
@@ -53316,7 +53772,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PAD",
-      "pearl_id": "dr-rylander-on-pvd-pad-2001"
+      "pearl_id": "dr-rylander-on-pvd-pad-2001",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:LDL"
+          ],
+          "actionable": [
+            "add"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For secondary prevention in high-risk patients who have had revascularization, the evidence supports driving LDL below 50 mg/dL; the new guidelines are moving toward that target.",
@@ -53329,7 +53804,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with prior revascularization (secondary prevention)",
-      "pearl_id": "dr-rylander-on-pvd-pad-2090"
+      "pearl_id": "dr-rylander-on-pvd-pad-2090",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:50 mg",
+            "threshold:below 5",
+            "test:LDL"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Low-dose rivaroxaban 2.5 mg BID plus aspirin is FDA-approved and evidence-based for secondary prevention in PAD; insurance covers it.",
@@ -53345,7 +53838,24 @@
       "numbers_unheard": [
         "2.5"
       ],
-      "pearl_id": "dr-rylander-on-pvd-pad-2168"
+      "pearl_id": "dr-rylander-on-pvd-pad-2168",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2.5 mg",
+            "frequency:BID"
+          ],
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cilostazol improves microvascular circulation, helping translate higher perfusion pressure into better tissue perfusion in the small arterial beds.",
@@ -53358,7 +53868,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PAD and microvascular disease",
-      "pearl_id": "dr-rylander-on-pvd-pad-2224"
+      "pearl_id": "dr-rylander-on-pvd-pad-2224",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cilostazol"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Post-revascularization antiplatelet therapy duration depends on the procedure and patient risk; talk with vascular about how long they need to do antiplatelet.",
@@ -53371,7 +53897,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after revascularization",
-      "pearl_id": "dr-rylander-on-pvd-pad-2295"
+      "pearl_id": "dr-rylander-on-pvd-pad-2295",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:antiplatelet therapy"
+          ],
+          "rarity": 7.26
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After revascularization, schedule follow-up every 3 months with exercise log, blood pressure log, and glucose log; patients often lose motivation after the first month and fall off after discharge from vascular.",
@@ -53384,7 +53926,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after revascularization",
-      "pearl_id": "dr-rylander-on-pvd-pad-2305"
+      "pearl_id": "dr-rylander-on-pvd-pad-2305",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 months",
+            "frequency:every 3"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Venous ulcers are shallow with rolled edges, fibrin deposits, and hemosiderin deposits around them; arterial ulcers are gangrenous, black, and hard.",
@@ -53397,7 +53956,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with lower extremity ulcers",
-      "pearl_id": "dr-rylander-on-pvd-pad-2538"
+      "pearl_id": "dr-rylander-on-pvd-pad-2538",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:arterial ulcer"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use CEAP classification for venous disease documentation: C0 no visible changes, C2 varicose veins, C3 edema, C4 skin changes/pigmentation, C5 healed venous ulcer, C6 active venous ulcer.",
@@ -53410,7 +53985,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "documentation when consulting vascular specialists",
-      "pearl_id": "dr-rylander-on-pvd-pad-2607"
+      "pearl_id": "dr-rylander-on-pvd-pad-2607",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ceap classification"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When it's bilateral, it's almost never cellulitis; it's stasis dermatitis from chronic venous hypertension.",
@@ -53423,7 +54017,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with bilateral lower extremity erythema",
-      "pearl_id": "dr-rylander-on-pvd-pad-2684"
+      "pearl_id": "dr-rylander-on-pvd-pad-2684",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:stasis dermatitis"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 6.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Venous claudication is bursting pain in the foot and ankle, while arterial claudication is crampy pain from mid-calf upward.",
@@ -53436,7 +54049,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with leg pain on walking",
-      "pearl_id": "dr-rylander-on-pvd-pad-2743"
+      "pearl_id": "dr-rylander-on-pvd-pad-2743",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:venous claudication"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For proximal DVT, get the cardiologist to suction the clot out early to preserve venous function and prevent post-thrombotic syndrome.",
@@ -53449,7 +54078,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute proximal DVT",
-      "pearl_id": "dr-rylander-on-pvd-pad-2855"
+      "pearl_id": "dr-rylander-on-pvd-pad-2855",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:post-thrombotic syndro"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Compression is a cornerstone to control venous disease, but arterial perfusion has to be adequate to allow compression; use small compression on arterial patients, not moderate or severe.",
@@ -53462,7 +54107,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with venous disease and possible arterial disease",
-      "pearl_id": "dr-rylander-on-pvd-pad-2879"
+      "pearl_id": "dr-rylander-on-pvd-pad-2879",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Little old ladies who need compression stockings may lack arm strength; use socks with a sleeve and zipper to help them get into them.",
@@ -53475,7 +54136,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly female patients needing compression therapy",
-      "pearl_id": "dr-rylander-on-pvd-pad-2951"
+      "pearl_id": "dr-rylander-on-pvd-pad-2951",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:socks"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid adhesive tape on venous disease skin; use daily moisturization and topical corticosteroids for stasis dermatitis.",
@@ -53488,7 +54168,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic venous insufficiency",
-      "pearl_id": "dr-rylander-on-pvd-pad-2988"
+      "pearl_id": "dr-rylander-on-pvd-pad-2988",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For borderline PAD patients not ready for vascular referral, reassess every 2-3 months with exercise log, smoking status, diabetes control, and blood pressure log.",
@@ -53501,7 +54200,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with borderline symptomatic PAD",
-      "pearl_id": "dr-rylander-on-pvd-pad-3168"
+      "pearl_id": "dr-rylander-on-pvd-pad-3168",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 months",
+            "frequency:every 2"
+          ],
+          "actionable": [
+            "reassess"
+          ],
+          "rarity": 6.73
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

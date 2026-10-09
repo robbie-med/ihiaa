@@ -32410,7 +32410,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients with acute mental status change",
-      "pearl_id": "dr-hadwen-on-neuro-exam-314"
+      "pearl_id": "dr-hadwen-on-neuro-exam-314",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use MDCalc to guide NIHSS; it is a screening exam and you cannot get it wrong with the tool.",
@@ -32423,7 +32436,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians performing NIHSS",
-      "pearl_id": "dr-hadwen-on-neuro-exam-347"
+      "pearl_id": "dr-hadwen-on-neuro-exam-347",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:screening"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 6.99
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For NIHSS level of consciousness, ask the month and the patient's age, not orientation to place.",
@@ -32436,7 +32468,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing NIHSS",
-      "pearl_id": "dr-hadwen-on-neuro-exam-433"
+      "pearl_id": "dr-hadwen-on-neuro-exam-433",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:level of consciousness"
+          ],
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Speak very loudly to stroke patients to overcome common hearing impairment and get the best exam.",
@@ -32449,7 +32497,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "stroke patients with hearing impairment",
-      "pearl_id": "dr-hadwen-on-neuro-exam-455"
+      "pearl_id": "dr-hadwen-on-neuro-exam-455",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hearing impairment"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After the mental status commands, you may demonstrate (pantomime) motor tasks to the patient.",
@@ -32462,7 +32529,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing NIHSS motor testing",
-      "pearl_id": "dr-hadwen-on-neuro-exam-576"
+      "pearl_id": "dr-hadwen-on-neuro-exam-576",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When testing commands, do not put your fingers in the patient's hand because they will reflexively grasp; that does not count as following the command.",
@@ -32475,7 +32555,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing NIHSS command testing",
-      "pearl_id": "dr-hadwen-on-neuro-exam-603"
+      "pearl_id": "dr-hadwen-on-neuro-exam-603",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hold your finger about two to two and a half feet away when testing extraocular movements.",
@@ -32488,7 +32584,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing NIHSS",
-      "pearl_id": "dr-hadwen-on-neuro-exam-643"
+      "pearl_id": "dr-hadwen-on-neuro-exam-643",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Hold"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For gaze testing, only test horizontal movement; score based on ability to cross midline.",
@@ -32501,7 +32613,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing NIHSS",
-      "pearl_id": "dr-hadwen-on-neuro-exam-671"
+      "pearl_id": "dr-hadwen-on-neuro-exam-671",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Test visual fields binocularly by holding your fists about two feet away and flashing fingers in the lower and upper quadrants while the patient looks at your nose.",
@@ -32514,7 +32639,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing NIHSS",
-      "pearl_id": "dr-hadwen-on-neuro-exam-695"
+      "pearl_id": "dr-hadwen-on-neuro-exam-695",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:visual fields"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the patient is not moving, use your face as the strongest stimulus to get them to look.",
@@ -32527,7 +32668,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who are not responding to visual field testing",
-      "pearl_id": "dr-hadwen-on-neuro-exam-802"
+      "pearl_id": "dr-hadwen-on-neuro-exam-802",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For visual fields, if the patient looks at the stimulus, that counts as seeing it.",
@@ -32540,7 +32697,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing NIHSS visual field testing",
-      "pearl_id": "dr-hadwen-on-neuro-exam-834"
+      "pearl_id": "dr-hadwen-on-neuro-exam-834",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:visual fields"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A change of 3 or more on NIHSS indicates a significant neurological change; an initial score of 4 or more is considered disabling and in tPA range.",
@@ -32553,7 +32726,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute neurological symptoms",
-      "pearl_id": "dr-hadwen-on-neuro-exam-895"
+      "pearl_id": "dr-hadwen-on-neuro-exam-895",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with baseline visual deficits, score conservatively; do not subtract points for chronic findings.",
@@ -32566,7 +32752,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic visual loss undergoing NIHSS",
-      "pearl_id": "dr-hadwen-on-neuro-exam-987"
+      "pearl_id": "dr-hadwen-on-neuro-exam-987",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Arms are held up for 10 seconds, legs for 5 seconds during motor testing.",
@@ -32579,7 +32781,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing NIHSS motor exam",
-      "pearl_id": "dr-hadwen-on-neuro-exam-1001"
+      "pearl_id": "dr-hadwen-on-neuro-exam-1001",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.44
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -38018,7 +38018,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with GERD who have no response to PPIs",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1167"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1167",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.28
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start omeprazole 40 mg daily, taken 30-60 minutes before breakfast; if not taken that way, effectiveness is reduced by about 50%.",
@@ -38031,7 +38047,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults starting PPI therapy",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1193"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1193",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:40 mg",
+            "frequency:daily",
+            "drug:omeprazole"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PPI effectiveness continues to improve over 3-5 days until all proton pump ATPase is inhibited.",
@@ -38044,7 +38081,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting PPI therapy",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1225"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1225",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 days",
+            "threshold:over 3"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If BID dosing is needed, give one dose before breakfast and one before supper.",
@@ -38057,7 +38111,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring twice-daily PPI",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1237"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1237",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:BID"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Long-term PPI use increases risk of hypomagnesemia; FDA recommends periodic magnesium level checks. Dr. Keller uses a chem 14 plus magnesium.",
@@ -38070,7 +38143,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on long-term PPI therapy",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1323"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1323",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypomagnesemia"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PPI use over two years increases risk of osteopenia and fractures, especially in petite women; recommend osteoporosis prevention with calcium and vitamin D, and prefer calcium citrate over calcium carbonate because absorption is better with higher gastric pH.",
@@ -38083,7 +38175,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on PPIs for more than 2 years, especially petite women",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1338"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1338",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:calcium carbonate"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To taper off PPIs, switch to every-other-day dosing for a week then stop, or switch to famotidine once daily to avoid rebound hypersecretion.",
@@ -38096,7 +38207,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients discontinuing PPI therapy",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1453"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1453",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:daily",
+            "drug:famotidine"
+          ],
+          "actionable": [
+            "taper"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use omeprazole with clopidogrel due to CYP2C19 interaction; use pantoprazole instead.",
@@ -38109,7 +38240,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on clopidogrel requiring PPI",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1492"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1492",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "drug:omeprazole"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "interaction"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For extraesophageal symptoms (chronic cough, chest pain) without classic heartburn or regurgitation, do not start a PPI trial; work up the chest pain first.",
@@ -38122,7 +38275,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with extraesophageal symptoms without typical GERD symptoms",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1534"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1534",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:chronic cough"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "LA grade C or D GERD requires lifelong PPI therapy per American College of Gastroenterology recommendation.",
@@ -38135,7 +38307,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe (LA grade C/D) erosive esophagitis",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1708"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1708",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:gastroenterology"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Reactive gastropathy is most commonly caused by NSAIDs, then alcohol; also iron tablets, steroids, alendronate, potassium, colchicine. In the hospital, give liquid potassium to reduce gastropathy.",
@@ -38148,7 +38336,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with reactive gastropathy",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1864"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1864",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:reactive gastropathy"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For bile reflux gastropathy (yellowish stomach on endoscopy), consider sucralfate; some studies suggest it improves histology.",
@@ -38161,7 +38368,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with bile reflux gastropathy",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1896"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1896",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:sucralfate"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For H. pylori diagnosis, use breath test or stool antigen; do not order serology in the US due to low prevalence causing false positives.",
@@ -38174,7 +38400,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being tested for H. pylori in the US",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1959"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-1959",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:false positive"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "H. pylori infection carries a 15-20% lifetime risk of peptic ulcer and a 1% lifetime risk of gastric adenocarcinoma; also associated with ITP and iron deficiency anemia.",
@@ -38187,7 +38432,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with H. pylori infection",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2114"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2114",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:gastric adenocarcinoma"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "First-line H. pylori treatment is optimized bismuth quadruple therapy for 14 days (metronidazole, tetracycline, bismuth); avoid clarithromycin due to resistance and do not substitute doxycycline for tetracycline.",
@@ -38200,7 +38461,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with H. pylori infection",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2163"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2163",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:14 days",
+            "drug:metronidazole"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For non-English speaking patients prescribed H. pylori quadruple therapy, bring them back, explain importance, and give Zofran for nausea.",
@@ -38213,7 +38494,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "non-English speaking patients prescribed H. pylori quadruple therapy",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2186"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2186",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:therapy"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After H. pylori treatment, test for cure at least one month later; if still positive, retreat with different antibiotics; after two failures, refer for EGD with culture and sensitivity.",
@@ -38226,7 +38526,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with persistent H. pylori after treatment",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2301"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2301",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "test for"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When retreating H. pylori, do not use the same antibiotics used in the first course.",
@@ -38239,7 +38558,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring repeat H. pylori treatment",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2301-2"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2301-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.95
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After two H. pylori treatment failures, refer for endoscopy with culture and sensitivity to guide therapy.",
@@ -38252,7 +38590,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with two failed H. pylori eradication attempts",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2307"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2307",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "H. pylori is classified as a carcinogen by the World Health Organization.",
@@ -38265,7 +38622,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with H. pylori infection",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2314"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2314",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:carcinogen"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "H. pylori infection first attacks the antrum, then moves proximally into the body of the stomach.",
@@ -38278,7 +38651,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with H. pylori gastritis",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2320"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2320",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Biopsies for H. pylori should be taken from both the antrum and the body of the stomach.",
@@ -38291,7 +38677,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing endoscopy for H. pylori evaluation",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2331"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2331",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After completing H. pylori treatment, wait at least one month before testing for cure.",
@@ -38304,7 +38703,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after H. pylori eradication therapy",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2379"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2379",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "wait"
+          ],
+          "rarity": 6.8
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In atrophic gastritis, endoscopically you should be able to see vessels coming through the mucosa.",
@@ -38317,7 +38732,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with atrophic gastritis",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2411"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2411",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:atrophic gastritis"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Intestinal metaplasia with goblet cells on both sides of normal foveolar cells represents incomplete intestinal metaplasia.",
@@ -38330,7 +38761,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "histologic evaluation of gastric biopsies",
-      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2437"
+      "pearl_id": "dr-keller-on-gerd-gastritis-and-pud-2437",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:intestinal metaplasia"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

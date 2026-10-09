@@ -26849,7 +26849,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with cyclic pelvic pain from ovulation",
-      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-2857"
+      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-2857",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:combination oral contr"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the cervix is displaced to one side, consider either scar tissue pulling the uterus to that side or a mass pushing it from the opposite side.",
@@ -26862,7 +26881,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cervical displacement on bimanual exam",
-      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-3157"
+      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-3157",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.78
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During bimanual exam, attempt to move the uterus side to side; if it does not move well when pushed toward one side, that suggests scar tissue on that side.",
@@ -26875,7 +26910,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected pelvic adhesions",
-      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-3194"
+      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-3194",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bimanual exam"
+          ],
+          "rarity": 6.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A tender uterus on bimanual exam is abnormal and suggests adenomyosis, pelvic inflammatory disease, or endometritis.",
@@ -26888,7 +26939,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pelvic pain",
-      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-3245"
+      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-3245",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pelvic inflammatory di"
+          ],
+          "rarity": 6.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pelvic inflammatory disease (PID) can involve any single structure (cervix, endometrium, fallopian tube, ovary) or multiple; the term does not specify location.",
@@ -26901,7 +26968,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PID",
-      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-3283"
+      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-3283",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pelvic inflammatory di"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Chronic endometritis can persist for months to years after pelvic surgery, presenting with dysmenorrhea and heavy bleeding.",
@@ -26914,7 +26997,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with persistent pelvic pain after pelvic surgery",
-      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-3514"
+      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-3514",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:chronic endometritis"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 6.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Treat chronic endometritis with a single dose of ceftriaxone plus a 14-day course of metronidazole and doxycycline.",
@@ -26927,7 +27029,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic endometritis",
-      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-3553"
+      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-3553",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:metronidazole"
+          ],
+          "actionable": [
+            "Treat"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After antibiotic treatment for chronic endometritis, follow up to confirm the infection has cleared.",
@@ -26940,7 +27061,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients treated for chronic endometritis",
-      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-3565"
+      "pearl_id": "dr-jon-calvert-on-pelvic-pain-cases-3565",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:chronic endometritis"
+          ],
+          "actionable": [
+            "follow up"
+          ],
+          "rarity": 6.84
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

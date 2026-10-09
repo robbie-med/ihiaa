@@ -44181,7 +44181,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requesting hospice care",
-      "pearl_id": "dr-leo-on-advance-care-planning-135"
+      "pearl_id": "dr-leo-on-advance-care-planning-135",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hospice"
+          ],
+          "rarity": 7.16
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An advanced directive is recognized but not legally binding; EMS will not know about it in an emergency.",
@@ -44194,7 +44210,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with advanced directives",
-      "pearl_id": "dr-leo-on-advance-care-planning-270"
+      "pearl_id": "dr-leo-on-advance-care-planning-270",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:advanced directive"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A POLST is a portable medical order completed by the patient and provider, serving as a standing order for life-sustaining treatments.",
@@ -44207,7 +44242,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "chronically ill patients not close to death",
-      "pearl_id": "dr-leo-on-advance-care-planning-308"
+      "pearl_id": "dr-leo-on-advance-care-planning-308",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:polst"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has decided only on DNR but not other aspects, you can sign a DNR form separately without a full POLST or advanced directive.",
@@ -44220,7 +44274,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who want DNR but need time for other decisions",
-      "pearl_id": "dr-leo-on-advance-care-planning-368"
+      "pearl_id": "dr-leo-on-advance-care-planning-368",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:advanced directive"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "At St. John, ordering comfort measures only requires also ordering DNR and DNI forms separately, plus writing about artificial hydration and nutrition.",
@@ -44233,7 +44303,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient at St. John",
-      "pearl_id": "dr-leo-on-advance-care-planning-605"
+      "pearl_id": "dr-leo-on-advance-care-planning-605",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:comfort measures only"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A living will may not include orders for resuscitation or intubation; do not assume a DNR is attached.",
@@ -44246,7 +44332,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with living wills",
-      "pearl_id": "dr-leo-on-advance-care-planning-696"
+      "pearl_id": "dr-leo-on-advance-care-planning-696",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:living will"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Palliative care can be combined with curative treatments; they are not mutually exclusive.",
@@ -44259,7 +44364,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with serious illness",
-      "pearl_id": "dr-leo-on-advance-care-planning-795"
+      "pearl_id": "dr-leo-on-advance-care-planning-795",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:palliative care"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In Oklahoma, the health care agent pecking order is spouse, children, parents, siblings, then others; this varies by state.",
@@ -44272,7 +44393,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Oklahoma residents without power of attorney",
-      "pearl_id": "dr-leo-on-advance-care-planning-1005"
+      "pearl_id": "dr-leo-on-advance-care-planning-1005",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "order"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If no family members are available or accessible, the closest person to the patient can act as health care agent under Oklahoma law.",
@@ -44285,7 +44422,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with no accessible family",
-      "pearl_id": "dr-leo-on-advance-care-planning-1085"
+      "pearl_id": "dr-leo-on-advance-care-planning-1085",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a living will, ensure all four components are addressed: pacemaker/ICD, IV hydration, and other life-sustaining treatments; if any are missing, circle back and ask the patient.",
@@ -44298,7 +44448,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with a living will",
-      "pearl_id": "dr-leo-on-advance-care-planning-1167"
+      "pearl_id": "dr-leo-on-advance-care-planning-1167",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:iv hydration"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "POLST is for patients with a life-altering diagnosis who are not imminently dying but are at risk; it includes medical orders for that gray zone.",
@@ -44311,7 +44480,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with a life-altering diagnosis not imminently dying",
-      "pearl_id": "dr-leo-on-advance-care-planning-1205"
+      "pearl_id": "dr-leo-on-advance-care-planning-1205",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:polst"
+          ],
+          "harm": [
+            "dying"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Under Ascension Saint John's policy, every H&P note must document the health care proxy; this is a quality measure for hospitalists.",
@@ -44324,7 +44512,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalists at Ascension Saint John's",
-      "pearl_id": "dr-leo-on-advance-care-planning-1277"
+      "pearl_id": "dr-leo-on-advance-care-planning-1277",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:health care proxy"
+          ],
+          "actionable": [
+            "document"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is uncomfortable discussing advance care planning, give them the booklet available in all suites and revisit at the next visit.",
@@ -44337,7 +44544,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients uncomfortable with ACP discussion",
-      "pearl_id": "dr-leo-on-advance-care-planning-1373"
+      "pearl_id": "dr-leo-on-advance-care-planning-1373",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:advance care planning"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Late ACP conversations (when the patient is critically ill) are more complex and time-consuming; be direct and tell them you need to know as quickly as possible what they would want.",
@@ -44350,7 +44576,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with poor prognosis in the hospital",
-      "pearl_id": "dr-leo-on-advance-care-planning-1595"
+      "pearl_id": "dr-leo-on-advance-care-planning-1595",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Billing code 99497 for advance care planning requires a minimum of 16 minutes; if you hit 33 minutes, you can use a higher bill.",
@@ -44366,7 +44605,29 @@
       "numbers_unheard": [
         "99497"
       ],
-      "pearl_id": "dr-leo-on-advance-care-planning-1744"
+      "pearl_id": "dr-leo-on-advance-care-planning-1744",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:16 minutes"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.65,
+          "capped": [
+            "number not heard: 99497"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Establish a supportive relationship with the patient and family before initiating serious ACP discussions; avoid showing up and saying 'you're dying' without rapport.",
@@ -44379,7 +44640,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-leo-on-advance-care-planning-1773"
+      "pearl_id": "dr-leo-on-advance-care-planning-1773",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "dying"
+          ],
+          "rarity": 7.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use open-ended questions like 'What are your thoughts about CPR?' and let the patient talk most; the best ACP happens when the patient talks the most.",
@@ -44392,7 +44672,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-leo-on-advance-care-planning-1833"
+      "pearl_id": "dr-leo-on-advance-care-planning-1833",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:open-ended questions"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use simple language: say 'if your heart were to stop, do you want me to try to restart it?' instead of 'DNR'.",
@@ -44405,7 +44704,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-leo-on-advance-care-planning-1916"
+      "pearl_id": "dr-leo-on-advance-care-planning-1916",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 6.49
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Over 75% of patients over 65 wish to die at home, but only 25% do; most die in acute care facilities, indicating a need for better ACP.",
@@ -44418,7 +44733,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients over 65",
-      "pearl_id": "dr-leo-on-advance-care-planning-1942"
+      "pearl_id": "dr-leo-on-advance-care-planning-1942",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:Over 7"
+          ],
+          "harm": [
+            "die"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

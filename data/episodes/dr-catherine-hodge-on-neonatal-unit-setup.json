@@ -92158,7 +92158,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "setting up a neonatal unit in a resource-limited hospital",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-494"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-494",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "You need at least 4-5 dedicated nurses for a neonatal unit to cover shifts, leave, and sickness.",
@@ -92171,7 +92184,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospital administration planning a neonatal unit",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-582"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-582",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:at least 4"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Adapt protocols to locally available medications and equipment; do not simply copy from textbooks.",
@@ -92184,7 +92213,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any clinician writing protocols for a resource-limited setting",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-660"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-660",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Make a simple CPAP using a bottle of water: mark centimeters of water depth, place the tube from the baby at that depth underwater, and connect the other tube to an oxygen source. Start at 5 cm H2O for preterm babies; can go up to 8 cm, or 10-12 cm in older babies with meconium.",
@@ -92197,7 +92242,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates with respiratory distress in a resource-limited setting",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-724"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-724",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:5 cm"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use oxygen concentrators instead of cylinders; cylinders are heavy, hard to move, and dangerous because they make no sound when empty.",
@@ -92210,7 +92274,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any neonatal unit without piped oxygen",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-758"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-758",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:oxygen concentrator"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "harm": [
+            "dangerous"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use burettes to administer small volumes of IV fluids (50-80 mL at a time) to prevent fluid overload when syringe pumps are unavailable.",
@@ -92223,7 +92309,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates requiring IV fluids in a low-resource setting",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-826"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-826",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:80 mL"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Build hot cots from thin plywood and regular heating bulbs; use multiple switches to control the number of bulbs on (e.g., 1 in summer, 4 in winter) to maintain warmth for 800-900 gram babies.",
@@ -92240,7 +92345,29 @@
         "800",
         "900"
       ],
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-872"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-872",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hot cot"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.85,
+          "capped": [
+            "number not heard: 800, 900"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Expect referrals to increase dramatically once the unit is known to provide care; initial needs assessments may underestimate demand.",
@@ -92253,7 +92380,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any new neonatal unit in a resource-limited area",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-914"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-914",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:referral"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Kangaroo Mother Care (skin-to-skin with only a cap) provides near-perfect thermoregulation for almost 100% of preterm babies, regardless of how premature they are, eliminating the need for electrical warmers.",
@@ -92269,7 +92415,23 @@
       "numbers_unheard": [
         "100"
       ],
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1071"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1071",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:kangaroo mother care"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Keep the NICU and kangaroo room at 82°F year-round to provide ambient warmth; this reduces dehydration and temperature variability compared to direct heater warmth.",
@@ -92282,7 +92444,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonatal units",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1088"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1088",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dehydration"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CRP is more specific than ESR for neonatal sepsis; if available, check CRP at 24 hours and if normal, stop antibiotics, then repeat at 48 hours to confirm.",
@@ -92298,7 +92476,33 @@
       "numbers_unheard": [
         "48"
       ],
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1185"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1185",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours",
+            "test:CRP"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 6.6,
+          "capped": [
+            "number not heard: 48"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Without blood cultures, neonatal sepsis is diagnosed presumptively; WHO guidelines say babies born before 34 weeks should be presumed septic until proven otherwise.",
@@ -92311,7 +92515,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates <34 weeks in settings without blood cultures",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1236"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1236",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:34 weeks"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When using CPAP, mix oxygen with room air down to an FiO2 of 21% to reduce lung injury and retinopathy of prematurity.",
@@ -92324,7 +92547,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates on CPAP",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1438"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1438",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:retinopathy of prematu"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Homemade CPAP bottles deliver 100% oxygen, which is known to be very harmful; avoid this if possible.",
@@ -92337,7 +92579,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates on homemade CPAP",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1452"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1452",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Treat preterm babies like concussion patients: keep them in a dark, quiet room to protect white and gray matter development.",
@@ -92350,7 +92608,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "preterm infants",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1530"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1530",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:concussion"
+          ],
+          "actionable": [
+            "Treat"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To retain mothers in the KMC room, provide activities like Mancala boards and TV to prevent boredom; otherwise they may leave early, leading to poor outcomes.",
@@ -92363,7 +92640,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "mothers in KMC programs",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1587"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1587",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The five or six essential interventions for preterm survival in low-resource settings are: warmth, basic antibiotics, vital sign monitoring, blood sugar checks, and dextrose administration.",
@@ -92376,7 +92666,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "preterm infants in low-resource settings",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1901"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1901",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not judge local nurses' motivation; they may lack context for neonatal care. Once they see survival is possible with simple interventions, they often become passionate advocates.",
@@ -92389,7 +92695,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "foreign staff working with local nurses",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1917"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1917",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:context"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The African policy of rotating nurses every six months undermines specialized neonatal training; retaining trained staff is a major challenge.",
@@ -92402,7 +92727,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "nursing administration in African hospitals",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1931"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1931",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advocating for 12-month nurse rotations instead of the standard 6-month rotation improved outcomes; showing evidence from other countries helped shift policy.",
@@ -92415,7 +92753,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "in Malawi neonatal unit",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1976"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-1976",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The Mira Cradle hypothermia protocol failed because nurses were trained to keep babies warm and feared license revocation; it requires IRB approval and bedside monitoring every 30 minutes.",
@@ -92428,7 +92779,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "in Malawi neonatal unit",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-2056"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-2056",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:30 minutes",
+            "frequency:every 30"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bringing in baked goods like pumpkin cake and throwing employee appreciation parties significantly improved staff morale and willingness to work hard for patients.",
@@ -92441,7 +92809,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "in low-resource neonatal unit",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-2141"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-2141",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "It takes at least six months for local nursing staff to trust and follow orders they do not fully understand; before that, they will only do what they understand.",
@@ -92454,7 +92835,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "in low-resource neonatal units with foreign physicians",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-2238"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-2238",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:trust"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Rolling up sleeves to help with tasks like suctioning and changing nappies builds trust and shows teamwork, even if it feels beneath a physician's role.",
@@ -92467,7 +92867,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "foreign physicians in low-resource neonatal units",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-2292"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-2292",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:trust"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Annual conferences in Tanzania motivated staff by treating them as experts and allowing them to share their techniques; they returned very motivated and proud.",
@@ -92480,7 +92896,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Malawi neonatal unit staff",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-2350"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-2350",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The Biu CPAP includes a humidifier, preventing the mucus plugging seen with the Pumani CPAP after 12 hours.",
@@ -92493,7 +92922,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates on CPAP in resource-limited settings",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-2403"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-2403",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:12 hours"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Surfactant can be administered via LMA using the salsa technique: insert a tiny LMA, thread an OG tube, and push aliquots of surfactant. Cost is $400 per dose; many babies need one dose, some need two.",
@@ -92506,7 +92951,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates with respiratory distress syndrome in resource-limited settings",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-2453"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-2453",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:salsa technique"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Periodontal bone loss is permanent, but soft tissue can reattach if the disease is controlled, reducing pocket depth and ongoing disease.",
@@ -92519,7 +92980,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with periodontal disease",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3108"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3108",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has red, irritated gums and generalized bone loss on X-rays compared to a year prior, suspect undiagnosed diabetes and refer them for evaluation.",
@@ -92532,7 +93006,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with unexplained generalized bone loss on dental X-rays",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3183"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3183",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:diabetes"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Scaling and root planing lowers A1c by approximately 0.4 percentage points, similar to a DPP-4 inhibitor like Januvia; diabetic patients should be encouraged to have dental cleanings every three months if insurance allows.",
@@ -92545,7 +93038,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diabetes",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3217"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3217",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:A1c"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a toothache 'gets better' after being severe, the pulp has likely necrosed; the patient will develop an abscess later and needs dental evaluation.",
@@ -92558,7 +93067,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients reporting tooth pain that resolved spontaneously",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3301"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3301",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:abscess"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Swelling below the mandible or into the periorbital space from a dental infection requires immediate antibiotics covering anaerobes (e.g., penicillin VK with metronidazole) and referral to an oral surgeon, not a general dentist.",
@@ -92571,7 +93096,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dental infection spreading below mandible or to periorbital space",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3412"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3412",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:penicillin"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fluctuance on exam in a dental infection indicates an abscess that needs drainage; antibiotics alone are unlikely to resolve it.",
@@ -92584,7 +93125,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dental infection and fluctuance on exam",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3494"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3494",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dental infection"
+          ],
+          "rarity": 7.28
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Spontaneous tooth pain (e.g., waking at night) indicates irreversible pulpitis requiring definitive treatment, root canal or extraction; antibiotics alone will not resolve it.",
@@ -92597,7 +93154,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with spontaneous tooth pain",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3524"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3524",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sudden development of spaces between teeth is a strong indicator of periodontal disease and warrants prompt dental referral.",
@@ -92610,7 +93183,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients reporting new spacing between teeth",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3571"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3571",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:periodontal disease"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For an avulsed permanent tooth, reimplant it within one hour: rinse off dirt without scraping, orient it correctly, and push it back into the socket; milk is the best transport medium if Hank's solution is unavailable.",
@@ -92623,7 +93212,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with avulsed permanent tooth",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3698"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3698",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not scrape or clean an avulsed tooth; if dirty, rinse it off. The best immediate action is to orient it and reimplant it in the socket.",
@@ -92636,7 +93238,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anyone managing an avulsed tooth",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3718"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-3718",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:avulsed tooth"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before starting bisphosphonates (e.g., Fosamax) for osteoporosis or bone-sensitive cancers, send the patient to a dentist for clearance; extract any teeth compromised by periodontal disease or large cavities before the patient has been on bisphosphonates for six months.",
@@ -92649,7 +93270,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting bisphosphonates",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4178"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4178",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:periodontal disease"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For infants, lift the lip to examine the front teeth; decayed front teeth indicate the child is sleeping with a bottle.",
@@ -92662,7 +93302,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4322"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4322",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "examine"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To wean a baby from a nighttime bottle, gradually dilute the formula with water so the bottle becomes less appealing; sucking is 75% of the need, so start with formula, then water it down.",
@@ -92675,7 +93331,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants using nighttime bottles",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4348"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4348",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use fluoridated toothpaste twice daily only after a child can spit; do not use it before the child can spit.",
@@ -92688,7 +93360,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4374"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4374",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For intubated patients, routine chlorhexidine swabs decrease the incidence of ventilator-associated pneumonia.",
@@ -92701,7 +93392,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "intubated patients",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4443"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4443",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pneumonia"
+          ],
+          "actionable": [
+            "decrease"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Xylitol lozenges are more effective than fluoride in reducing caries; maternal xylitol use in the first few months of life can colonize the baby with protective bacteria instead of caries-causing bacteria.",
@@ -92714,7 +93424,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "mothers of infants in the first few months of life",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4582"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4582",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fluoride"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For toothache pain, use combined ibuprofen and acetaminophen; avoid narcotics and antibiotics unless there is cellulitis, swelling, or fever.",
@@ -92727,7 +93456,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with toothache",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4667"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4667",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acetaminophen"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For an abscessed tooth that is draining pus, antibiotics are not needed if the tooth can be extracted, unless the patient is immunocompromised.",
@@ -92740,7 +93488,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with draining dental abscess",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4709"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-4709",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:immunocompromised"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Antibiotic prophylaxis for joint replacements is no longer routinely recommended beyond six months post-surgery; clindamycin is avoided due to C. diff risk.",
@@ -92753,7 +93517,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with joint replacements",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5120"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5120",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:clindamycin"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Poor dentition alone is unlikely to cause sepsis unless there is visible inflammation, swelling, or cellulitis extending beyond the oral cavity (e.g., periorbital or submandibular swelling).",
@@ -92766,7 +93546,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with suspected sepsis of unknown source",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5227"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5227",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cellulitis"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If teeth are in good repair, it is almost impossible for them to be a source of sepsis.",
@@ -92779,7 +93578,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected sepsis of unknown source",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5228"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5228",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:sepsis"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.28
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Look for swelling or cellulitis outside the oral cavity (periorbital, submandibular) as signs of a dental source of sepsis.",
@@ -92792,7 +93610,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected dental infection",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5255"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5255",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cellulitis"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Broken-down teeth with healthy gums are unlikely to be a source of infection or sepsis.",
@@ -92805,7 +93642,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with poor dentition but no gum inflammation",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5292"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5292",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:sepsis"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is conversant and has no dental complaints, even if their mouth looks terrible, it is unlikely to be a source of sepsis.",
@@ -92818,7 +93674,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with poor dentition but no pain",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5315"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5315",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:sepsis"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Communicate clearly with the dentist about what you need (e.g., X-ray vs. full exam) to avoid misunderstandings and incomplete care.",
@@ -92831,7 +93706,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians referring to dentists",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5340"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5340",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient is gearing up for head and neck radiation, clarify whether the entire mouth will receive radiation or be shielded to guide whether all teeth need extraction.",
@@ -92844,7 +93738,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients before head and neck radiation",
-      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5422"
+      "pearl_id": "dr-catherine-hodge-on-neonatal-unit-setup-5422",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:head and neck radiatio"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

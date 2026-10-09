@@ -71369,7 +71369,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients with controlled symptoms and no exacerbations",
-      "pearl_id": "copd-dr-matt-haney-905"
+      "pearl_id": "copd-dr-matt-haney-905",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:exacerbation"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For uncontrolled symptoms without exacerbations, start a LAMA; LAMAs work better for exacerbations than LABAs.",
@@ -71382,7 +71401,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients with uncontrolled symptoms but few exacerbations",
-      "pearl_id": "copd-dr-matt-haney-959"
+      "pearl_id": "copd-dr-matt-haney-959",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:exacerbation"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is already on a LAMA and has controlled symptoms but exacerbations, you can skip the LABA/LAMA step and consider adding ICS, especially if eosinophils are high.",
@@ -71395,7 +71433,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients on LAMA with exacerbations",
-      "pearl_id": "copd-dr-matt-haney-983"
+      "pearl_id": "copd-dr-matt-haney-983",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:exacerbation"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For uncontrolled symptoms with frequent exacerbations, you can start either LABA/LAMA or LABA/LAMA/ICS; the choice depends on exacerbation severity and eosinophil count.",
@@ -71408,7 +71465,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients with uncontrolled symptoms and frequent exacerbations",
-      "pearl_id": "copd-dr-matt-haney-997"
+      "pearl_id": "copd-dr-matt-haney-997",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:exacerbation"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has symptoms but no exacerbations, do not advance to triple therapy (e.g., Trelegy) just because of symptoms; reconsider the diagnosis and check inhaler technique.",
@@ -71421,7 +71497,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients with symptoms but no exacerbations",
-      "pearl_id": "copd-dr-matt-haney-1105"
+      "pearl_id": "copd-dr-matt-haney-1105",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:inhaler technique"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Exacerbations are defined as acute worsening requiring systemic steroids, not just chronic dyspnea; two or more exacerbations or one hospitalization count.",
@@ -71434,7 +71529,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients",
-      "pearl_id": "copd-dr-matt-haney-1135"
+      "pearl_id": "copd-dr-matt-haney-1135",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:systemic steroids"
+          ],
+          "rarity": 5.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient on a LAMA has exacerbations and elevated eosinophils on CBC, consider adding ICS (e.g., LABA/ICS) because eosinophilia suggests a reactive process.",
@@ -71447,7 +71558,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients with exacerbations and elevated eosinophils",
-      "pearl_id": "copd-dr-matt-haney-1216"
+      "pearl_id": "copd-dr-matt-haney-1216",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CBC"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Inhaled corticosteroids are helpful for exacerbations, not for symptoms alone; if a patient has symptoms but no exacerbations, ICS may be more harmful than good.",
@@ -71460,7 +71590,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients",
-      "pearl_id": "copd-dr-matt-haney-1228"
+      "pearl_id": "copd-dr-matt-haney-1228",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:inhaled corticosteroid"
+          ],
+          "rarity": 6.4
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient on triple therapy (e.g., Trelegy) still has exacerbations, consider roflumilast (Daliresp) for those with FEV1 <50% and chronic bronchitis.",
@@ -71476,7 +71622,29 @@
       "numbers_unheard": [
         "50"
       ],
-      "pearl_id": "copd-dr-matt-haney-1337"
+      "pearl_id": "copd-dr-matt-haney-1337",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:<5"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.02,
+          "capped": [
+            "number not heard: 50"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Leukotriene inhibitors have no role in pure COPD, but may be considered in asthma-COPD overlap.",
@@ -71489,7 +71657,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients with asthma overlap",
-      "pearl_id": "copd-dr-matt-haney-1361"
+      "pearl_id": "copd-dr-matt-haney-1361",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:asthma-copd overlap"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Azithromycin can be added for exacerbations on triple therapy, but only in non-smokers; watch for hearing impairment and antibiotic resistance.",
@@ -71502,7 +71686,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients on triple therapy with persistent exacerbations, non-smokers",
-      "pearl_id": "copd-dr-matt-haney-1386"
+      "pearl_id": "copd-dr-matt-haney-1386",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Azithromycin"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Never use LAMA/ICS combination; there are no such combination products, and it is not recommended.",
@@ -71515,7 +71715,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients",
-      "pearl_id": "copd-dr-matt-haney-1502"
+      "pearl_id": "copd-dr-matt-haney-1502",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Never"
+          ],
+          "rarity": 6.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dry powder inhalers require a fast, forceful inhalation to get the drug into the lungs; patients who cannot generate that flow may not get the full dose.",
@@ -71528,7 +71744,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients using dry powder inhalers",
-      "pearl_id": "copd-dr-matt-haney-1774"
+      "pearl_id": "copd-dr-matt-haney-1774",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dry powder inhaler"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After inhaling from a dry powder inhaler, hold your breath for ten seconds or as long as you can.",
@@ -71541,7 +71773,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients using dry powder inhalers",
-      "pearl_id": "copd-dr-matt-haney-1781"
+      "pearl_id": "copd-dr-matt-haney-1781",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:dry powder inhaler"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient struggles with dry powder inhalers due to inability to breathe fast, consider switching to a soft mist inhaler like Respimat.",
@@ -71554,7 +71805,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients unable to use dry powder inhalers effectively",
-      "pearl_id": "copd-dr-matt-haney-1846"
+      "pearl_id": "copd-dr-matt-haney-1846",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:dry powder inhaler"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Respimat devices may require prior authorization because they are often more expensive than dry powder inhalers; use this option when a patient cannot use a DPI.",
@@ -71567,7 +71837,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who cannot use dry powder inhalers",
-      "pearl_id": "copd-dr-matt-haney-1890"
+      "pearl_id": "copd-dr-matt-haney-1890",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:prior authorization"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For Respimat inhalers, you do not need to breathe in quickly; use a slow, steady inhalation after pressing the dose button.",
@@ -71580,7 +71869,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using Respimat inhalers",
-      "pearl_id": "copd-dr-matt-haney-1985"
+      "pearl_id": "copd-dr-matt-haney-1985",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:respimat inhaler"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Combivent Respimat is used for rescue therapy in COPD patients, including those already on other maintenance therapies, but it is not expected to provide long-term improvement.",
@@ -71593,7 +71901,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients needing rescue therapy",
-      "pearl_id": "copd-dr-matt-haney-2085"
+      "pearl_id": "copd-dr-matt-haney-2085",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:combivent respimat"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Spiriva is available as a HandiHaler (single-dose capsule, DPI) or a Respimat (soft mist); choose Respimat for patients who struggle with dry powder inhalers.",
@@ -71606,7 +71930,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD who cannot use dry powder inhalers",
-      "pearl_id": "copd-dr-matt-haney-2123"
+      "pearl_id": "copd-dr-matt-haney-2123",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dry powder inhaler"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For Ellipta inhalers, opening the cap loads a dose; do not shake or exhale into the device, as it can blow the powder away.",
@@ -71619,7 +71959,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using Ellipta inhalers",
-      "pearl_id": "copd-dr-matt-haney-2270"
+      "pearl_id": "copd-dr-matt-haney-2270",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ellipta inhaler"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Never click or actuate an inhaler multiple times at once, it wastes doses and does not deliver extra medication.",
@@ -71632,7 +71991,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all inhaler users",
-      "pearl_id": "copd-dr-matt-haney-2353"
+      "pearl_id": "copd-dr-matt-haney-2353",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Never"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The red zone on a Diskus dose counter means about 30 doses remain; it signals the patient to get a refill, not that the inhaler is empty.",
@@ -71645,7 +72020,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using Diskus inhalers",
-      "pearl_id": "copd-dr-matt-haney-2398"
+      "pearl_id": "copd-dr-matt-haney-2398",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For metered-dose inhalers (MDIs) like Symbicort, shake for about six seconds, then inhale with a slow, steady breath, not fast.",
@@ -71658,7 +72046,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using metered-dose inhalers",
-      "pearl_id": "copd-dr-matt-haney-2622"
+      "pearl_id": "copd-dr-matt-haney-2622",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:metered-dose inhaler"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use a spacer with MDIs: one puff at a time, inhale deeply, hold breath for 10 seconds, then wait 15, 20 seconds before the next puff.",
@@ -71671,7 +72075,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using metered-dose inhalers with a spacer",
-      "pearl_id": "copd-dr-matt-haney-2686"
+      "pearl_id": "copd-dr-matt-haney-2686",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:spacer"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "One puff at a time with spacer; do not put two puffs in and take six breaths.",
@@ -71684,7 +72107,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients using inhalers",
-      "pearl_id": "copd-dr-matt-haney-2686-2"
+      "pearl_id": "copd-dr-matt-haney-2686-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:spacer"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Inhaler technique: deep breath in, hold 10 seconds, exhale away from device; wait 15, 20 seconds before next puff.",
@@ -71697,7 +72139,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients using inhalers",
-      "pearl_id": "copd-dr-matt-haney-2689"
+      "pearl_id": "copd-dr-matt-haney-2689",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:inhaler technique"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "rarity": 7.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use a spacer with MDI to reduce mouth deposition.",
@@ -71710,7 +72171,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using metered dose inhalers",
-      "pearl_id": "copd-dr-matt-haney-2817"
+      "pearl_id": "copd-dr-matt-haney-2817",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:spacer"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advair Discus is a dry powder inhaler (not to be used with a spacer).",
@@ -71723,7 +72203,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients prescribed Advair Discus",
-      "pearl_id": "copd-dr-matt-haney-2855"
+      "pearl_id": "copd-dr-matt-haney-2855",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dry powder inhaler"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ICS increase pneumonia risk; do not add ICS without a clear indication.",
@@ -71736,7 +72232,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD being considered for ICS-containing therapy",
-      "pearl_id": "copd-dr-matt-haney-3023"
+      "pearl_id": "copd-dr-matt-haney-3023",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pneumonia risk"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 6.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Rinse mouth after every ICS use to prevent oral side effects.",
@@ -71749,7 +72264,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using ICS inhalers",
-      "pearl_id": "copd-dr-matt-haney-3054"
+      "pearl_id": "copd-dr-matt-haney-3054",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Never use ICS monotherapy (e.g., fluticasone alone) in COPD; always combine with a LABA.",
@@ -71762,7 +72293,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD",
-      "pearl_id": "copd-dr-matt-haney-3070"
+      "pearl_id": "copd-dr-matt-haney-3070",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:fluticasone"
+          ],
+          "actionable": [
+            "Never"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Refer COPD patients with persistent symptoms or any exacerbations (GOLD B or D) to pulmonary rehabilitation.",
@@ -71775,7 +72325,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD GOLD groups B or D",
-      "pearl_id": "copd-dr-matt-haney-3121"
+      "pearl_id": "copd-dr-matt-haney-3121",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pulmonary rehabilitati"
+          ],
+          "actionable": [
+            "Refer"
+          ],
+          "rarity": 6.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Screen all patients with COPD at least once for alpha-1 antitrypsin deficiency (WHO recommendation).",
@@ -71788,7 +72357,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with COPD",
-      "pearl_id": "copd-dr-matt-haney-3138"
+      "pearl_id": "copd-dr-matt-haney-3138",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:alpha-1 antitrypsin de"
+          ],
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Long-term oxygen therapy reduces mortality when resting SpO2 <88% on room air (or PaO2 <55 mmHg); titrate to keep SpO2 ≥90% (88, 92% goal).",
@@ -71801,7 +72389,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD and severe resting hypoxemia",
-      "pearl_id": "copd-dr-matt-haney-3212"
+      "pearl_id": "copd-dr-matt-haney-3212",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:55 mmHg",
+            "threshold:<8"
+          ],
+          "actionable": [
+            "titrate"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Roflumilast (Daliresp) can be added for patients on triple therapy with ≥1 exacerbation in the past year, severe COPD by spirometry, and chronic bronchitis.",
@@ -71814,7 +72422,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on triple therapy with persistent exacerbations, severe COPD, and chronic bronchitis",
-      "pearl_id": "copd-dr-matt-haney-3241"
+      "pearl_id": "copd-dr-matt-haney-3241",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:spirometry"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Add azithromycin for exacerbations in patients who are not currently smoking (does not have to be former smoker).",
@@ -71827,7 +72451,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD on triple therapy who continue to have exacerbations and are not currently smoking",
-      "pearl_id": "copd-dr-matt-haney-3275"
+      "pearl_id": "copd-dr-matt-haney-3275",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:azithromycin"
+          ],
+          "actionable": [
+            "Add"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the COPD Pocket Consult app for inhaler demonstration videos and treatment algorithms.",
@@ -71840,7 +72483,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians managing COPD",
-      "pearl_id": "copd-dr-matt-haney-3373"
+      "pearl_id": "copd-dr-matt-haney-3373",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:copd pocket consult ap"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ask about dyspnea on level ground and exacerbation history to guide therapy adjustment.",
@@ -71853,7 +72515,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD during follow-up visits",
-      "pearl_id": "copd-dr-matt-haney-3530"
+      "pearl_id": "copd-dr-matt-haney-3530",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:exacerbation"
+          ],
+          "actionable": [
+            "Ask about"
+          ],
+          "rarity": 6.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a combination inhaler is available and affordable, use it; if not, prescribing separate medications from each class is acceptable.",
@@ -71866,7 +72547,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD who cannot afford combination inhalers",
-      "pearl_id": "copd-dr-matt-haney-3603"
+      "pearl_id": "copd-dr-matt-haney-3603",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cardioselective beta-blockers (metoprolol, atenolol) may have a mortality benefit in COPD, based on a review of 75 articles.",
@@ -71879,7 +72576,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD who need beta-blocker therapy",
-      "pearl_id": "copd-dr-matt-haney-3633"
+      "pearl_id": "copd-dr-matt-haney-3633",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:metoprolol"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Carvedilol is not cardioselective because it has alpha-blocking activity.",
@@ -71893,7 +72606,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with COPD being considered for beta-blocker therapy",
       "by_presenter": false,
-      "pearl_id": "copd-dr-matt-haney-3688"
+      "pearl_id": "copd-dr-matt-haney-3688",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:carvedilol"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -55830,7 +55830,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men being evaluated for hypogonadism",
-      "pearl_id": "dr-place-on-hypogonadism-280"
+      "pearl_id": "dr-place-on-hypogonadism-280",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:erectile dysfunction"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Erectile dysfunction is mostly vascular (blood pressure, diabetes) and often does not improve with testosterone. Avoid creating false expectations by checking T for ED alone.",
@@ -55843,7 +55859,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with erectile dysfunction",
-      "pearl_id": "dr-place-on-hypogonadism-328"
+      "pearl_id": "dr-place-on-hypogonadism-328",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:erectile dysfunction"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Physical symptoms of hypogonadism include decreased muscle mass and strength, increased body fat, reduced bone mineral density, and anemia.",
@@ -55856,7 +55891,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with suspected hypogonadism",
-      "pearl_id": "dr-place-on-hypogonadism-364"
+      "pearl_id": "dr-place-on-hypogonadism-364",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hypogonadism"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Psychological symptoms include brain fog, fatigue, depressed mood, poor concentration, and sleep disturbance.",
@@ -55869,7 +55920,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with suspected hypogonadism",
-      "pearl_id": "dr-place-on-hypogonadism-382"
+      "pearl_id": "dr-place-on-hypogonadism-382",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In primary hypogonadism (sick testis), LH and FSH are high; in secondary (pituitary/hypothalamus problem), they are low or inappropriately normal.",
@@ -55882,7 +55946,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men being evaluated for hypogonadism",
-      "pearl_id": "dr-place-on-hypogonadism-450"
+      "pearl_id": "dr-place-on-hypogonadism-450",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:primary hypogonadism"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Klinefelter syndrome (XXY) is missed about 50% of the time; consider karyotype in men with primary hypogonadism.",
@@ -55895,7 +55975,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with primary hypogonadism",
-      "pearl_id": "dr-place-on-hypogonadism-517"
+      "pearl_id": "dr-place-on-hypogonadism-517",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:klinefelter syndrome"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "missed"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Functional hypogonadism (most common) is driven by obesity: adipose tissue releases leptin, causing leptin resistance at the hypothalamus, and adipocytes aromatize testosterone to estrogen, both suppressing LH/FSH.",
@@ -55908,7 +56010,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "obese men with low testosterone",
-      "pearl_id": "dr-place-on-hypogonadism-666"
+      "pearl_id": "dr-place-on-hypogonadism-666",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:functional hypogonadis"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use LCMS (liquid chromatography, mass spectrometry) total testosterone for accuracy at low levels; the standard immunoassay is less reliable at low values.",
@@ -55921,7 +56039,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with suspected hypogonadism",
-      "pearl_id": "dr-place-on-hypogonadism-860"
+      "pearl_id": "dr-place-on-hypogonadism-860",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Draw total testosterone fasting between 7 and 10 AM. Non-fasting can lower the value by 30, 50 points, potentially misclassifying a patient as low.",
@@ -55934,7 +56071,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men being tested for hypogonadism",
-      "pearl_id": "dr-place-on-hypogonadism-924"
+      "pearl_id": "dr-place-on-hypogonadism-924",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If total testosterone is borderline or low, repeat the level in 2, 3 weeks and add SHBG, FSH, LH, and calculated free testosterone.",
@@ -55947,7 +56100,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with initial low/borderline total testosterone",
-      "pearl_id": "dr-place-on-hypogonadism-946"
+      "pearl_id": "dr-place-on-hypogonadism-946",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 weeks"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When total testosterone is borderline or doesn't fit the clinical picture, check SHBG to interpret the result.",
@@ -55960,7 +56132,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adult men with borderline total testosterone",
-      "pearl_id": "dr-place-on-hypogonadism-992"
+      "pearl_id": "dr-place-on-hypogonadism-992",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Low SHBG (from obesity, type 2 diabetes, hypothyroidism, steroids, chronic opioid use) lowers total testosterone, but free testosterone may be normal.",
@@ -55973,7 +56164,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adult men with low total testosterone",
-      "pearl_id": "dr-place-on-hypogonadism-1003"
+      "pearl_id": "dr-place-on-hypogonadism-1003",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:free testosterone"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SHBG is decreased by obesity, type 2 diabetes, hypothyroidism, steroids, and chronic opioid use; it is increased by aging and liver disease.",
@@ -55986,7 +56196,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with borderline total testosterone",
-      "pearl_id": "dr-place-on-hypogonadism-1020"
+      "pearl_id": "dr-place-on-hypogonadism-1020",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:type 2 diabetes"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "High SHBG (from aging, liver disease) lowers free testosterone; always check free T in elderly men.",
@@ -55999,7 +56228,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly men or those with liver disease",
-      "pearl_id": "dr-place-on-hypogonadism-1033"
+      "pearl_id": "dr-place-on-hypogonadism-1033",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:free testosterone"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Order total testosterone by LC-MS (gold standard), not the older assay; the lab calculates free T using the TruT calculator.",
@@ -56012,7 +56260,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adult men being evaluated for hypogonadism",
-      "pearl_id": "dr-place-on-hypogonadism-1065"
+      "pearl_id": "dr-place-on-hypogonadism-1065",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "actionable": [
+            "Order"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In primary hypogonadism, FSH and LH are high (pituitary trying to stimulate sick testes); testicular volume is often small.",
@@ -56025,7 +56292,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with primary hypogonadism",
-      "pearl_id": "dr-place-on-hypogonadism-1404"
+      "pearl_id": "dr-place-on-hypogonadism-1404",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:primary hypogonadism"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In functional hypogonadism from obesity (80-90% of clinic patients), SHBG is low, FSH/LH are low-normal; treatment is weight loss and exercise, not testosterone.",
@@ -56038,7 +56321,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "obese men with low testosterone, low SHBG, low-normal FSH/LH",
-      "pearl_id": "dr-place-on-hypogonadism-1524"
+      "pearl_id": "dr-place-on-hypogonadism-1524",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:functional hypogonadis"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Weight loss and exercise can raise testosterone from ~250 to ~380; it won't go to 900 but will definitely improve.",
@@ -56055,7 +56354,23 @@
         "250",
         "380"
       ],
-      "pearl_id": "dr-place-on-hypogonadism-1548"
+      "pearl_id": "dr-place-on-hypogonadism-1548",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "rarity": 6.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Only 40% of obese men started on testosterone are still on it a year later because the benefit runs out while they remain obese and miserable.",
@@ -56068,7 +56383,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "obese men with functional hypogonadism",
-      "pearl_id": "dr-place-on-hypogonadism-1717"
+      "pearl_id": "dr-place-on-hypogonadism-1717",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The TRAVERSE trial showed no significant increase in MACE or prostate cancer with testosterone therapy, contradicting prior FDA warnings.",
@@ -56081,7 +56412,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men on testosterone therapy",
-      "pearl_id": "dr-place-on-hypogonadism-1897"
+      "pearl_id": "dr-place-on-hypogonadism-1897",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:prostate cancer"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Testosterone therapy increases risk of pulmonary embolism; contraindicated in patients with history of PE or hypercoagulable state.",
@@ -56094,7 +56444,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with history of PE or hypercoagulable state",
-      "pearl_id": "dr-place-on-hypogonadism-1994"
+      "pearl_id": "dr-place-on-hypogonadism-1994",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pulmonary embolism"
+          ],
+          "harm": [
+            "contraindicated"
+          ],
+          "rarity": 6.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "History of PE or hypercoagulable state are absolute contraindications to testosterone therapy.",
@@ -56107,7 +56476,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with prior PE or hypercoagulable state",
-      "pearl_id": "dr-place-on-hypogonadism-2005"
+      "pearl_id": "dr-place-on-hypogonadism-2005",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "harm": [
+            "contraindications"
+          ],
+          "rarity": 6.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Testosterone is absolutely contraindicated in men desiring future fertility because exogenous T suppresses FSH/LH, causing azoospermia (partially reversible).",
@@ -56120,7 +56508,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men desiring future fertility",
-      "pearl_id": "dr-place-on-hypogonadism-2022"
+      "pearl_id": "dr-place-on-hypogonadism-2022",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "harm": [
+            "contraindicated"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Exogenous testosterone shuts off FSH and LH, causing Sertoli cells to go dormant, testicular atrophy, and sterility; partially reversible with age.",
@@ -56133,7 +56540,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men of reproductive age",
-      "pearl_id": "dr-place-on-hypogonadism-2022-2"
+      "pearl_id": "dr-place-on-hypogonadism-2022-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Desire for continued fertility is an absolute contraindication to testosterone therapy; alternative options include HCG or clomiphene but are outside routine primary care.",
@@ -56146,7 +56569,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men desiring fertility",
-      "pearl_id": "dr-place-on-hypogonadism-2066"
+      "pearl_id": "dr-place-on-hypogonadism-2066",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:primary care"
+          ],
+          "harm": [
+            "contraindication"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Active or suspected prostate cancer, breast cancer, palpable prostate nodule, or unexplained elevated PSA (>4) are contraindications to testosterone; urology co-management recommended.",
@@ -56159,7 +56601,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with prostate/breast cancer or abnormal prostate findings",
-      "pearl_id": "dr-place-on-hypogonadism-2269"
+      "pearl_id": "dr-place-on-hypogonadism-2269",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>4"
+          ],
+          "harm": [
+            "contraindications"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If PSA is over 4, refer to urologist before starting testosterone; if over 3 with first-degree relative history, seek backup from urology.",
@@ -56172,7 +56633,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men considering testosterone therapy",
-      "pearl_id": "dr-place-on-hypogonadism-2292"
+      "pearl_id": "dr-place-on-hypogonadism-2292",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:over 4"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Testosterone usually raises hematocrit by about 4-5 points; stop/dose-adjust if hematocrit exceeds 54.",
@@ -56185,7 +56665,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all men on testosterone",
-      "pearl_id": "dr-place-on-hypogonadism-2321"
+      "pearl_id": "dr-place-on-hypogonadism-2321",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Untreated obstructive sleep apnea should be treated before starting testosterone; obesity/sleep apnea often cause low T.",
@@ -56198,7 +56697,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with obesity and suspected sleep apnea",
-      "pearl_id": "dr-place-on-hypogonadism-2344"
+      "pearl_id": "dr-place-on-hypogonadism-2344",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:obstructive sleep apne"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 6.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start IM testosterone cypionate 100 mg weekly; avoid every-2-week dosing because drug washout makes patients feel unwell.",
@@ -56211,7 +56729,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all men starting IM testosterone",
-      "pearl_id": "dr-place-on-hypogonadism-2419"
+      "pearl_id": "dr-place-on-hypogonadism-2419",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:100 mg",
+            "frequency:weekly"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For gel formulations, warn about transference to children via skin contact; apply to back/shoulders and avoid contact with others.",
@@ -56224,7 +56762,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men using testosterone gel who have children",
-      "pearl_id": "dr-place-on-hypogonadism-2490"
+      "pearl_id": "dr-place-on-hypogonadism-2490",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:transference"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If hematocrit exceeds 54, switch from IM to gel formulation; that usually fixes the erythrocytosis.",
@@ -56237,7 +56794,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men on IM testosterone with hematocrit >54",
-      "pearl_id": "dr-place-on-hypogonadism-2576"
+      "pearl_id": "dr-place-on-hypogonadism-2576",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:erythrocytosis"
+          ],
+          "actionable": [
+            "switch"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When starting IM testosterone, check mid-cycle level 3-4 days after injection at 4-6 weeks; target 450-600 ng/dL.",
@@ -56253,7 +56829,29 @@
       "numbers_unheard": [
         "450"
       ],
-      "pearl_id": "dr-place-on-hypogonadism-2639"
+      "pearl_id": "dr-place-on-hypogonadism-2639",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4 days"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 6.0,
+          "capped": [
+            "number not heard: 450"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For gels, check testosterone 2-3 hours after morning application; target around 500 ng/dL.",
@@ -56266,7 +56864,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men on topical testosterone gel",
-      "pearl_id": "dr-place-on-hypogonadism-2679"
+      "pearl_id": "dr-place-on-hypogonadism-2679",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 hours"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.1
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If PSA rises >1.5 or goes over 4 on testosterone, refer to urology; a jump to 40 is not due to testosterone and needs urgent evaluation.",
@@ -56279,7 +56896,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men on testosterone with rising PSA",
-      "pearl_id": "dr-place-on-hypogonadism-2696"
+      "pearl_id": "dr-place-on-hypogonadism-2696",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "threshold:>1"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Blood donation can effectively lower hematocrit in men on testosterone; consider this option before stopping therapy.",
@@ -56292,7 +56931,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men on testosterone with elevated hematocrit",
-      "pearl_id": "dr-place-on-hypogonadism-2754"
+      "pearl_id": "dr-place-on-hypogonadism-2754",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Running hematocrit >54 on testosterone puts the patient at very high risk for heart attack, stroke, or clot, and it is your fault as prescriber.",
@@ -56305,7 +56963,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all men on testosterone therapy",
-      "pearl_id": "dr-place-on-hypogonadism-2778"
+      "pearl_id": "dr-place-on-hypogonadism-2778",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>5"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recovery from testosterone suppression after stopping anabolic steroids is possible but much less likely the older the patient is.",
@@ -56318,7 +56995,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men who have used anabolic steroids or exogenous testosterone",
-      "pearl_id": "dr-place-on-hypogonadism-2890"
+      "pearl_id": "dr-place-on-hypogonadism-2890",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anabolic steroid use is a common cause of primary hypogonadism in young bodybuilders, often resulting in testosterone levels of 100-150 ng/dL with permanent testicular damage.",
@@ -56334,7 +57027,29 @@
       "numbers_unheard": [
         "150"
       ],
-      "pearl_id": "dr-place-on-hypogonadism-2906"
+      "pearl_id": "dr-place-on-hypogonadism-2906",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:anabolic steroid use"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.61,
+          "capped": [
+            "number not heard: 150"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hypogonadism is not life-threatening, but it is a miserable condition if truly hypogonadal.",
@@ -56347,7 +57062,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with hypogonadism",
-      "pearl_id": "dr-place-on-hypogonadism-2944"
+      "pearl_id": "dr-place-on-hypogonadism-2944",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypogonadism"
+          ],
+          "harm": [
+            "life-threatening"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the testosterone conversation as an opening to discuss depression, diabetes, obesity, and overall health, you can address many issues through that door.",
@@ -56360,7 +57094,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient presenting with low T concerns",
-      "pearl_id": "dr-place-on-hypogonadism-2954"
+      "pearl_id": "dr-place-on-hypogonadism-2954",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A patient complaining of low testosterone is an open door to discuss depression, obesity, diabetes, cholesterol, and lifestyle issues.",
@@ -56373,7 +57126,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "male patients presenting with fatigue or concern about low testosterone",
-      "pearl_id": "dr-place-on-hypogonadism-2960"
+      "pearl_id": "dr-place-on-hypogonadism-2960",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:cholesterol"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the patient's concern about testosterone to redirect the conversation to truly important health issues like cholesterol, A1c, diet, exercise, and mental health.",
@@ -56386,7 +57155,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men who bring up low testosterone as a concern",
-      "pearl_id": "dr-place-on-hypogonadism-2978"
+      "pearl_id": "dr-place-on-hypogonadism-2978",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:cholesterol",
+            "test:A1c"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The presenter draws a picture and teaches patients that low testosterone is not their real problem, using it as a teaching moment.",
@@ -56399,7 +57188,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who attribute symptoms to low testosterone",
-      "pearl_id": "dr-place-on-hypogonadism-3009"
+      "pearl_id": "dr-place-on-hypogonadism-3009",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

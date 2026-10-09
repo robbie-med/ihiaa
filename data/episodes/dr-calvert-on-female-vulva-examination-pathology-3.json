@@ -20540,7 +20540,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected genital herpes",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-228"
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-228",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:herpes simplex virus"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Urethral caruncles are common in older women; leave them alone unless they cause problems.",
@@ -20553,7 +20569,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older women",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-434"
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-434",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:urethral caruncle"
+          ],
+          "rarity": 6.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Skene's gland cysts are just blocked normal gland openings, not pathologic; only incise and drain if problematic.",
@@ -20567,7 +20599,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with Skene's gland cyst",
       "by_presenter": false,
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-743"
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-743",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:skene's gland cyst"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gartner duct cysts are embryologic remnants along the vaginal wall; do not remove or drain because they may extend up to the kidney.",
@@ -20580,7 +20628,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with Gartner duct cyst",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-998"
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-998",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:gartner duct cyst"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Urethral diverticulum can be detected by palpating a bulge along the anterior vaginal wall while stripping the urethra.",
@@ -20593,7 +20660,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected urethral diverticulum",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1149"
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1149",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:urethral diverticulum"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bartholin glands are located near the inferior part of the labia minora at the fourchette, not in the upper labia.",
@@ -20606,7 +20689,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1374"
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1374",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When you don't know what a vulvar lesion is, perform a punch biopsy; a small sample of the discolored or misshapen tissue is sufficient.",
@@ -20619,7 +20715,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspicious vulvar lesions",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1507"
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1507",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A skin tag that has a palpable mass at its base suggests invasion and is not benign.",
@@ -20632,7 +20747,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with vulvar skin lesions",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1652"
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1652",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Vulvar cancer may present as subtle discoloration (red, white, or black) with underlying induration on palpation.",
@@ -20645,7 +20773,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing vulvar examination",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1752"
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1752",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vulvar cancer"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Syphilitic chancres are painless; touching the center with a Q-tip wooden end does not cause pain.",
@@ -20658,7 +20802,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected primary syphilis",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-2185"
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-2185",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chancre"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Rhabdomyosarcoma is a rare but deadly vulvar tumor seen primarily in children.",
@@ -20671,7 +20831,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with vulvar masses",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-2218"
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-2218",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rhabdomyosarcoma"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always examine the vulva in newborn girls.",
@@ -20684,7 +20860,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "newborn girls",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-2226"
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-2226",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

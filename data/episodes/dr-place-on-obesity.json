@@ -68364,7 +68364,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with end-stage renal disease on dialysis",
-      "pearl_id": "dr-place-on-obesity-210"
+      "pearl_id": "dr-place-on-obesity-210",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bariatric surgery"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "COVID cytokine storms were most common in obese patients due to chronic underlying inflammation from adipose tissue.",
@@ -68377,7 +68393,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with obesity",
-      "pearl_id": "dr-place-on-obesity-506"
+      "pearl_id": "dr-place-on-obesity-506",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:adipose tissue"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In obese patients (BMI ≥35), check A1c because they have a 7x (men) or 12x (women) risk of diabetes.",
@@ -68390,7 +68422,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "obese patients with BMI ≥35",
-      "pearl_id": "dr-place-on-obesity-539"
+      "pearl_id": "dr-place-on-obesity-539",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:A1c"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 5.72
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ASCVD kills 20 million people globally per year, double all cancers combined, and obesity is a primary driver.",
@@ -68406,7 +68457,23 @@
       "numbers_unheard": [
         "20"
       ],
-      "pearl_id": "dr-place-on-obesity-560"
+      "pearl_id": "dr-place-on-obesity-560",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ASCVD"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use the term 'morbid obesity'; use 'class III obesity' instead to avoid stigmatizing patients.",
@@ -68419,7 +68486,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with obesity",
-      "pearl_id": "dr-place-on-obesity-746"
+      "pearl_id": "dr-place-on-obesity-746",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:obesity"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "BMI is inaccurate in Asians (they get sick at lower BMIs) and in Black patients (they can be higher and still well).",
@@ -68432,7 +68518,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients, especially Asian and Black populations",
-      "pearl_id": "dr-place-on-obesity-855"
+      "pearl_id": "dr-place-on-obesity-855",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Waist circumference has better outcome data than BMI, though it is rarely measured in clinic.",
@@ -68445,7 +68544,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient clinic",
-      "pearl_id": "dr-place-on-obesity-887"
+      "pearl_id": "dr-place-on-obesity-887",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:waist circumference"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Obesity is a genetic propensity (over 70 genes involved) accelerated by environment and lifestyle; avoid blaming patients.",
@@ -68458,7 +68573,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with obesity",
-      "pearl_id": "dr-place-on-obesity-910"
+      "pearl_id": "dr-place-on-obesity-910",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:over 7"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sugar in food likely hijacks the dopamine axis, driving craving for more sugar.",
@@ -68471,7 +68605,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-place-on-obesity-1057"
+      "pearl_id": "dr-place-on-obesity-1057",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dopamine"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient on mirtazapine gains significant weight, consider stopping it first.",
@@ -68484,7 +68634,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on mirtazapine with weight gain",
-      "pearl_id": "dr-place-on-obesity-1129"
+      "pearl_id": "dr-place-on-obesity-1129",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:mirtazapine"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid mirtazapine in patients with obesity or eating disorders; it is the medicine we give little old people to give them an appetite.",
@@ -68497,7 +68666,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with obesity or eating disorders",
-      "pearl_id": "dr-place-on-obesity-1151"
+      "pearl_id": "dr-place-on-obesity-1151",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:eating disorders"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 6.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Obesity rates are about 80% in disabled populations such as Down syndrome and cerebral palsy.",
@@ -68510,7 +68698,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "disabled populations (Down syndrome, cerebral palsy)",
-      "pearl_id": "dr-place-on-obesity-1191"
+      "pearl_id": "dr-place-on-obesity-1191",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:down syndrome"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Check BMI before blood pressure; it is the number one thing that could change that patient's life.",
@@ -68523,7 +68727,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "every patient",
-      "pearl_id": "dr-place-on-obesity-1210"
+      "pearl_id": "dr-place-on-obesity-1210",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Check"
+          ],
+          "rarity": 5.17
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recognize the 'obese clueless' phenotype: patients who are obese but unaware and not motivated; most leave without discussing weight.",
@@ -68536,7 +68756,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "obese patients who are unaware of their obesity",
-      "pearl_id": "dr-place-on-obesity-1228"
+      "pearl_id": "dr-place-on-obesity-1228",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diabetes starts at a fasting glucose of 5.6; by 6.0 the horse is out of the barn, the patient is already metabolically sick.",
@@ -68549,7 +68782,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with obesity",
-      "pearl_id": "dr-place-on-obesity-1308"
+      "pearl_id": "dr-place-on-obesity-1308",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:diabetes"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Triglycerides track very closely with sugar.",
@@ -68562,7 +68811,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-place-on-obesity-1356"
+      "pearl_id": "dr-place-on-obesity-1356",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:triglycerides"
+          ],
+          "rarity": 6.76
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For metabolic obese patients (motivated, on diabetes spectrum), do not use motivational interviewing; it is counterproductive. Instead, partner and listen.",
@@ -68575,7 +68840,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "metabolic obese patients who are motivated and on the diabetes spectrum",
-      "pearl_id": "dr-place-on-obesity-1381"
+      "pearl_id": "dr-place-on-obesity-1381",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:motivational interview"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ask permission before discussing weight: 'Can we talk about your weight today?' Patients expect it and rarely say no.",
@@ -68588,7 +68872,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with obesity",
-      "pearl_id": "dr-place-on-obesity-1554"
+      "pearl_id": "dr-place-on-obesity-1554",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ask permission before discussing weight with a patient; do not assume their current weight is their heaviest.",
@@ -68601,7 +68898,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with obesity",
-      "pearl_id": "dr-place-on-obesity-1566"
+      "pearl_id": "dr-place-on-obesity-1566",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Document three numbers in the chart: heaviest weight, lightest weight, and goal weight.",
@@ -68614,7 +68927,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with obesity",
-      "pearl_id": "dr-place-on-obesity-1615"
+      "pearl_id": "dr-place-on-obesity-1615",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Document"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the 'wagon wheel in a rut' analogy to explain the body's set point and protected fat mass.",
@@ -68627,7 +68956,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with obesity",
-      "pearl_id": "dr-place-on-obesity-1628"
+      "pearl_id": "dr-place-on-obesity-1628",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:protected fat mass"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Target 5-10% weight loss initially; 10% loss is a common goal (e.g., 22 pounds for a 220-pound patient).",
@@ -68640,7 +68988,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with obesity",
-      "pearl_id": "dr-place-on-obesity-1700"
+      "pearl_id": "dr-place-on-obesity-1700",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:weight loss"
+          ],
+          "rarity": 6.78
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Rapid weight loss (e.g., 20 pounds in 3 months) often leads to yo-yo rebound with higher weight and worse body composition.",
@@ -68653,7 +69017,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients attempting rapid weight loss",
-      "pearl_id": "dr-place-on-obesity-1877"
+      "pearl_id": "dr-place-on-obesity-1877",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 months"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Aim for slow weight loss of about 10% per year to avoid triggering the thrifty gene and yo-yo rebound.",
@@ -68666,7 +69046,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with obesity",
-      "pearl_id": "dr-place-on-obesity-1895"
+      "pearl_id": "dr-place-on-obesity-1895",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:thrifty gene"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Know two diets well: DASH and Mediterranean; low-carb is a stricter alternative.",
@@ -68679,7 +69078,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians counseling patients on weight loss",
-      "pearl_id": "dr-place-on-obesity-1924"
+      "pearl_id": "dr-place-on-obesity-1924",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Weight Watchers is the best studied commercial diet, though its recent move to prescribe medications is controversial.",
@@ -68692,7 +69104,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients considering commercial weight loss programs",
-      "pearl_id": "dr-place-on-obesity-1945"
+      "pearl_id": "dr-place-on-obesity-1945",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:weight watchers"
+          ],
+          "actionable": [
+            "prescribe"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Weight Watchers yields about 10% weight loss on average, which is enough to move many patients from BMI 28 to 25.",
@@ -68705,7 +69136,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with overweight/obesity",
-      "pearl_id": "dr-place-on-obesity-1991"
+      "pearl_id": "dr-place-on-obesity-1991",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:weight watchers"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Counseling is foundational; group counseling is more effective than individual.",
@@ -68718,7 +69165,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with obesity",
-      "pearl_id": "dr-place-on-obesity-2019"
+      "pearl_id": "dr-place-on-obesity-2019",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:counseling"
+          ],
+          "rarity": 6.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Group counseling is better than individual counseling for weight loss.",
@@ -68731,7 +69194,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with obesity",
-      "pearl_id": "dr-place-on-obesity-2019-2"
+      "pearl_id": "dr-place-on-obesity-2019-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:weight loss"
+          ],
+          "rarity": 5.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Clinicians should personally try weight loss apps (e.g., Noom, Weight Watchers) to give informed recommendations.",
@@ -68744,7 +69223,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians counseling patients on weight loss",
-      "pearl_id": "dr-place-on-obesity-2023"
+      "pearl_id": "dr-place-on-obesity-2023",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:weight watchers"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients cannot exercise themselves to a healthy BMI from BMI 30-32; diet is 80% of initial weight loss.",
@@ -68757,7 +69255,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with BMI 30-32",
-      "pearl_id": "dr-place-on-obesity-2103"
+      "pearl_id": "dr-place-on-obesity-2103",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:weight loss"
+          ],
+          "rarity": 5.67
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sleeve gastrectomy is a 2-hour procedure, 2 days in hospital, 2 weeks recovery.",
@@ -68770,7 +69284,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults undergoing sleeve gastrectomy",
-      "pearl_id": "dr-place-on-obesity-2204"
+      "pearl_id": "dr-place-on-obesity-2204",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 days"
+          ],
+          "rarity": 6.34
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Roux-en-Y is often done when patients also have a bad hiatal hernia or other issues needing repair; most healthy young people get a sleeve.",
@@ -68783,7 +69313,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults undergoing bariatric surgery",
-      "pearl_id": "dr-place-on-obesity-2341"
+      "pearl_id": "dr-place-on-obesity-2341",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Phentermine is a safe stimulant appetite suppressant, similar to Adderall; it was unfairly dragged down by fenfluramine's cardiac valve issues.",
@@ -68796,7 +69339,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with obesity",
-      "pearl_id": "dr-place-on-obesity-2415"
+      "pearl_id": "dr-place-on-obesity-2415",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:phentermine"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Qsymia (phentermine/topiramate) can be created cheaply from generics; the brand is expensive at a couple bucks a pill.",
@@ -68809,7 +69368,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with obesity",
-      "pearl_id": "dr-place-on-obesity-2484"
+      "pearl_id": "dr-place-on-obesity-2484",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:phentermine"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bupropion/naltrexone works best for patients with addictive or behavioral eating phenotypes.",
@@ -68822,7 +69397,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with obesity and addictive/behavioral eating",
-      "pearl_id": "dr-place-on-obesity-2501"
+      "pearl_id": "dr-place-on-obesity-2501",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:naltrexone"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Xenical (orlistat) causes oily incontinence if patients eat a high-fat meal; one episode ends patient trust.",
@@ -68835,7 +69426,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with obesity",
-      "pearl_id": "dr-place-on-obesity-2539"
+      "pearl_id": "dr-place-on-obesity-2539",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:orlistat"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Obesity is a chronic illness designated since 2012, not a moral failure; patients may hide medication use due to stigma.",
@@ -68848,7 +69455,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with obesity",
-      "pearl_id": "dr-place-on-obesity-2728"
+      "pearl_id": "dr-place-on-obesity-2728",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:obesity"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When starting a GLP-1, tell patients to eat half their normal portion to avoid nausea.",
@@ -68861,7 +69487,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults starting GLP-1 agonists",
-      "pearl_id": "dr-place-on-obesity-2800"
+      "pearl_id": "dr-place-on-obesity-2800",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:glp-1"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 6.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To prevent constipation on GLP-1s, start one tablespoon Metamucil and two tablespoons Citrucel once a day.",
@@ -68874,7 +69519,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults starting GLP-1 agonists",
-      "pearl_id": "dr-place-on-obesity-2829"
+      "pearl_id": "dr-place-on-obesity-2829",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:once a day"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "GLP-1s cause loss of lean muscle mass; patients need high protein intake (1 gram per pound of body weight if kidneys normal) and resistance training focusing on large muscles (squats, deadlifts).",
@@ -68887,7 +69551,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults on GLP-1 agonists with normal kidney function",
-      "pearl_id": "dr-place-on-obesity-2867"
+      "pearl_id": "dr-place-on-obesity-2867",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:resistance training"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Don't use food trackers in patients with eating disorders; it makes them sicker.",
@@ -68900,7 +69580,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with eating disorders",
-      "pearl_id": "dr-place-on-obesity-2902"
+      "pearl_id": "dr-place-on-obesity-2902",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:eating disorders"
+          ],
+          "actionable": [
+            "Don't"
+          ],
+          "rarity": 7.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use activity trackers in patients with eating disorders; it will make them sicker.",
@@ -68913,7 +69612,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with eating disorders",
-      "pearl_id": "dr-place-on-obesity-2902-2"
+      "pearl_id": "dr-place-on-obesity-2902-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:eating disorders"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Mounjaro is only FDA-approved for diabetes; prescribing it for obesity will be denied by insurance.",
@@ -68926,7 +69644,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with obesity without diabetes",
-      "pearl_id": "dr-place-on-obesity-2974"
+      "pearl_id": "dr-place-on-obesity-2974",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:insurance"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ozempic is only FDA-approved for diabetes; do not prescribe it for obesity as it will be denied every time.",
@@ -68939,7 +69673,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients without diabetes",
-      "pearl_id": "dr-place-on-obesity-2974-2"
+      "pearl_id": "dr-place-on-obesity-2974-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:diabetes"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To avoid nausea on shot day, do not give the GLP-1 injection on Friday if the patient wants to eat out on the weekend; peak sickness is Saturday through Monday.",
@@ -68952,7 +69705,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on GLP-1 agonists",
-      "pearl_id": "dr-place-on-obesity-2990"
+      "pearl_id": "dr-place-on-obesity-2990",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:glp-1"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "do not give"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Titrate GLP-1 agonists to the highest dose for maximal weight loss; do not stop at a low dose, go up monthly until the patient cannot tolerate higher.",
@@ -68965,7 +69740,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on GLP-1 agonists for weight loss",
-      "pearl_id": "dr-place-on-obesity-3004"
+      "pearl_id": "dr-place-on-obesity-3004",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:monthly"
+          ],
+          "actionable": [
+            "Titrate"
+          ],
+          "rarity": 6.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Once at goal weight, back off the GLP-1 dose to the lowest effective dose for cost; it takes a long time for weight to return, and you can extend intervals to every 10-14 days.",
@@ -68978,7 +69772,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients at goal weight on GLP-1 agonists",
-      "pearl_id": "dr-place-on-obesity-3021"
+      "pearl_id": "dr-place-on-obesity-3021",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:14 days",
+            "frequency:every 10"
+          ],
+          "rarity": 6.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Topamax (topiramate) increases risk of kidney stones; Wellbutrin (bupropion) lowers seizure threshold.",
@@ -68991,7 +69802,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on these medications",
-      "pearl_id": "dr-place-on-obesity-3098"
+      "pearl_id": "dr-place-on-obesity-3098",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:seizure threshold"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "GLP-1 agonists carry warnings for history of pancreatitis, multiple endocrine neoplasia syndrome, and thyroid cancer.",
@@ -69004,7 +69834,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients considering GLP-1 agonists",
-      "pearl_id": "dr-place-on-obesity-3105"
+      "pearl_id": "dr-place-on-obesity-3105",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:multiple endocrine neo"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Orlistat (Alli) can cause anal leakage; counsel patients about this side effect.",
@@ -69017,7 +69863,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on orlistat",
-      "pearl_id": "dr-place-on-obesity-3120"
+      "pearl_id": "dr-place-on-obesity-3120",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:orlistat"
+          ],
+          "actionable": [
+            "counsel"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Topamax (topiramate) is good for patients who get up and eat at night; it causes taste disturbance that reduces desire for sweets.",
@@ -69030,7 +69895,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with night eating",
-      "pearl_id": "dr-place-on-obesity-3133"
+      "pearl_id": "dr-place-on-obesity-3133",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:topiramate"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For fiber supplementation, recommend two parts Citrucel to one part Metamucil to reduce gas while getting cholesterol benefit.",
@@ -69043,7 +69924,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing fiber supplementation",
-      "pearl_id": "dr-place-on-obesity-3753"
+      "pearl_id": "dr-place-on-obesity-3753",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:cholesterol"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -52698,7 +52698,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "traumatic shoulder pain",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-156"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-156",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always inspect the skin over the shoulder, back, and chest; you may find herpes zoster as a cause of shoulder pain.",
@@ -52711,7 +52730,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "shoulder pain",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-316"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-316",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:herpes zoster"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Extrinsic causes of shoulder pain commonly include cervical spondylitis and cervical nerve compression, most often at C5-C6.",
@@ -52724,7 +52762,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "shoulder pain",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-341"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-341",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cervical spondylitis"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A brachial plexus stinger presents as 1-3 minutes of stinging pain from the acromion down to the fingers after a compression injury to the head or shoulder during sports.",
@@ -52737,7 +52791,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "sports injury",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-483"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-483",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 minutes"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Types I and II AC injuries should be treated conservatively with ice, sling, rest, and gradual activity; they almost always heal given enough time.",
@@ -52750,7 +52820,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "type I and II AC injury",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-584"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-584",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For types IV through VI AC injuries, obtain urgent orthopedic referral.",
@@ -52763,7 +52849,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "types IV-VI AC injury",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-593"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-593",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:orthopedic referral"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 6.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For type I AC injury, palpate over the coracoid (bony prominence under the clavicle); it should not be tender. Tenderness there suggests type II or higher injury.",
@@ -52776,7 +52884,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acute AC joint injury",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-705"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-705",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "palpate"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In type II AC injury, the coracoclavicular ligament is partially torn and will be tender to palpation.",
@@ -52789,7 +52913,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "type II AC injury",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-769"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-769",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:coracoclavicular ligam"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Type III AC injury shows complete disruption of both AC and CC ligaments, with visible deformity, the clavicle pops up when the patient removes their shirt.",
@@ -52802,7 +52942,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "type III AC injury",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-838"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-838",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For type III AC separation, older patients (60s-70s) with low physical demands can be managed conservatively; active patients or those needing quick return should be referred to orthopedics.",
@@ -52815,7 +52968,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "type III AC separation",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-894"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-894",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anterior shoulder dislocation is the most common type and is much easier to reduce than posterior or inferior dislocations.",
@@ -52828,7 +52994,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "shoulder dislocation",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1115"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1115",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anterior shoulder disl"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To reduce an anterior shoulder dislocation, sit the patient up, place your thumbs on the scapular spine and give medial pressure while an assistant holds the forearm at the elbow and applies gentle inferior traction.",
@@ -52841,7 +53026,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anterior shoulder dislocation",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1194"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1194",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anterior shoulder disl"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Biceps tendon tear presents with a visible bulge, ecchymosis, weakness, and a history of a pop with severe pain; MRI is needed to determine if surgery is required.",
@@ -52854,7 +53058,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute biceps tendon tear",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1305"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1305",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The AC joint can be injected directly for sprains or osteoarthritis; you only need to go half a centimeter to a centimeter at most to enter the joint.",
@@ -52867,7 +53087,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with AC joint pathology",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1558"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1558",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:osteoarthritis"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For subacromial injections, use a posterior approach sliding under the lateral posterior acromion; it is easier than going laterally through the deltoid.",
@@ -52880,7 +53116,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with impingement syndrome or mild rotator cuff tears",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1640"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1640",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:subacromial injection"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Normal shoulder flexion should reach at least 180 degrees; inability to do so is abnormal.",
@@ -52893,7 +53148,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1721"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1721",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:at least 1"
+          ],
+          "rarity": 6.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Internal rotation is normal if the patient can place their thumb up to mid-scapula without pain.",
@@ -52906,7 +53177,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1841"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1841",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Scapular winging from serratus anterior palsy (long thoracic nerve injury) typically heals with conservative treatment alone.",
@@ -52919,7 +53203,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with scapular winging from nerve contusion",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1905"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-1905",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:scapular winging"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The triad of positive open can test, Hawkins test, and external rotation weakness is 98% sensitive for rotator cuff tear.",
@@ -52932,7 +53232,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected rotator cuff tear",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2202"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2202",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rotator cuff tear"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients over 60, only two of the three triad tests (open can, Hawkins, external rotation weakness) need to be positive for 98% sensitivity for rotator cuff tear.",
@@ -52945,7 +53261,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients over 60 with suspected rotator cuff tear",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2227"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2227",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 6"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Night pain with weakness suggests rotator cuff tear; night pain without weakness suggests osteoarthritis of the glenohumeral joint.",
@@ -52958,7 +53290,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with shoulder pain",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2263"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2263",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rotator cuff tear"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients over 65 with positive external rotation test, pain, weakness, and night pain, 91% have a rotator cuff tear.",
@@ -52971,7 +53319,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients >65 years old",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2301"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2301",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 6"
+          ],
+          "rarity": 6.1
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The lift-off test is specific for subscapularis tendon tear or weakness.",
@@ -52984,7 +53348,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with shoulder pain",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2346"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2346",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:lift-off test"
+          ],
+          "rarity": 7.3
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For the apprehension test, position the arm at 90 degrees abduction, flex the elbow, and externally rotate; a positive test is when the patient pulls against the motion due to apprehension, indicating joint laxity or instability.",
@@ -52997,7 +53377,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected shoulder instability",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2442"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2442",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:apprehension test"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cross-body test pain indicates AC joint pathology because you are impinging the AC joint.",
@@ -53010,7 +53406,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with shoulder pain",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2464"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2464",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ac joint pathology"
+          ],
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "O'Brien's test for SLAP tear: bring the arm across the body with thumb down, apply resistance as the patient moves upward; pain indicates a positive test, and pain should go away when the palm is turned up.",
@@ -53023,7 +53435,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "athletes or patients with suspected SLAP tear",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2503"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2503",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:o'brien's test"
+          ],
+          "actionable": [
+            "test for"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you suspect a rotator cuff tear, obtain an MRI before doing an injection.",
@@ -53036,7 +53467,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected rotator cuff tear",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2657"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2657",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 6.1
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Adhesive capsulitis is more common in patients with thyroid disease or diabetes; early referral is important because lost mobility may never be regained.",
@@ -53049,7 +53499,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with adhesive capsulitis, especially with thyroid disease or diabetes",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2848"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2848",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:adhesive capsulitis"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Complete rotator cuff tears need to be fixed sooner rather than later; partial tears allow more time.",
@@ -53062,7 +53531,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with rotator cuff tear",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2924"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-2924",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rotator cuff tear"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients over 40 are much more likely to have glenohumeral osteoarthritis, adhesive capsulitis, or rotator cuff tear; those under 40 are more likely to have tendinopathy.",
@@ -53075,7 +53560,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with shoulder pain",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-3174"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-3174",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 4"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "AC joint separations grade 3 or above need orthopedic referral; grades 1 and 2 do not.",
@@ -53088,7 +53589,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with AC joint separation",
-      "pearl_id": "dr-acker-on-shoulder-disorders-examination-3237"
+      "pearl_id": "dr-acker-on-shoulder-disorders-examination-3237",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ac joint separation"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

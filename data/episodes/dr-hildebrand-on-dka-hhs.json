@@ -35772,7 +35772,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with ketosis and low oral intake",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-471"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-471",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:starvation ketosis"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Confusion in DKA indicates severe DKA; mild-to-moderate DKA typically does not cause altered mental status.",
@@ -35785,7 +35804,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DKA",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-690"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-690",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.98
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "DKA develops over hours to days.",
@@ -35798,7 +35830,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hyperglycemic emergencies",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-715"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-715",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 4.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HHS develops over many days to weeks due to residual insulin production.",
@@ -35811,7 +35856,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hyperglycemic emergencies",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-723"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-723",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:insulin"
+          ],
+          "rarity": 6.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For HHS, plasma glucose is at least 600 mg/dL and serum osmolality at least 300 mOsm/kg.",
@@ -35824,7 +35885,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected HHS",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-948"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-948",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:600 mg",
+            "threshold:at least 6"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HHS can have trace urine ketones (<2+); it is not defined by absent ketones.",
@@ -35837,7 +35915,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected HHS",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-965"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-965",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:<2"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The glucose threshold for DKA diagnosis has been lowered to 200 mg/dL (from 250).",
@@ -35850,7 +35944,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diabetes",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-1000"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-1000",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:200 mg"
+          ],
+          "rarity": 6.16
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use urine ketones to monitor DKA resolution; acetoacetate persists longer in the system and will give false positive results.",
@@ -35863,7 +35973,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being treated for DKA",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-1072"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-1072",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:false positive"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In early DKA, urine dipstick may be negative because beta-hydroxybutyrate is the first ketone produced and is not detected by the dipstick.",
@@ -35876,7 +36005,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected DKA",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-1107"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-1107",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:beta-hydroxybutyrate"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Urine dipstick can be negative early in DKA; use serum ketones instead.",
@@ -35889,7 +36034,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinic setting when evaluating possible DKA",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-1110"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-1110",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:serum ketones"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you use urine ketones to monitor DKA treatment you can overtreat because the urine dipstick stays positive longer than serum ketones.",
@@ -35902,7 +36066,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "monitoring response to DKA treatment",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-1117"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-1117",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:serum ketones"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When investigating the cause of DKA/HHS, first consider infection; then consider medication issues (nonadherence, steroids, checkpoint inhibitors).",
@@ -35915,7 +36098,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with DKA/HHS",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-1169"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-1169",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:checkpoint inhibitors"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The top three reasons for DKA/HHS are infection, infection, infection, and the next three are medication, medication, medication.",
@@ -35928,7 +36130,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with DKA or HHS",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-1169-2"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-1169-2",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.51
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Steroids can precipitate DKA.",
@@ -35941,7 +36156,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving steroids",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-1186"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-1186",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "precipitate"
+          ],
+          "rarity": 5.41
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The most common trigger for DKA/HHS is lack of insulin due to nonadherence or access issues.",
@@ -35954,7 +36185,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diabetes",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-1191"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-1191",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:adherence"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Checkpoint inhibitors can put someone into DKA.",
@@ -35967,7 +36214,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on checkpoint inhibitor therapy",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-1220"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-1220",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:checkpoint inhibitors"
+          ],
+          "rarity": 6.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Checkpoint inhibitors are a recognized cause of DKA.",
@@ -35980,7 +36243,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on immunotherapy",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-1222"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-1222",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:checkpoint inhibitors"
+          ],
+          "rarity": 6.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Poor social determinants of health like terrible diet and lack of transportation can cause DKA.",
@@ -35993,7 +36272,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with recurrent DKA",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-1230"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-1230",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:social determinants of"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IV fluids are the mainstay of treatment for DKA; start fluids before insulin.",
@@ -36006,7 +36301,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with DKA",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-1286"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-1286",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:insulin"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 5.95
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For HHS, resolution criteria are normalized osmolality, glucose less than 250, and normal urine output.",
@@ -36019,7 +36333,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HHS",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-2119"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-2119",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 2"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use anion gap to determine DKA resolution; normal saline can cause hyperchloremic acidosis that falsely elevates the gap.",
@@ -36032,7 +36362,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DKA receiving normal saline",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-2153"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-2153",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hyperchloremic acidosi"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ICU admission is indicated for altered mental status, encephalopathy, or decreased GCS in DKA/HHS.",
@@ -36045,7 +36394,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DKA/HHS and altered mental status",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-2301"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-2301",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:encephalopathy"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Labs in DKA can be rechecked every 2 to 4 hours depending on severity, not necessarily every hour.",
@@ -36058,7 +36423,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DKA",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-2324"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-2324",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4 hours",
+            "frequency:every 2"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Initial potassium cutoff for supplementation in DKA is serum K <5.0; recheck in about 2 hours as insulin drives K intracellularly.",
@@ -36072,7 +36454,27 @@
       "prompt_version": "v1",
       "applies_to": "patients with DKA",
       "by_presenter": false,
-      "pearl_id": "dr-hildebrand-on-dka-hhs-2457"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-2457",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 hours",
+            "threshold:<5"
+          ],
+          "actionable": [
+            "recheck"
+          ],
+          "rarity": 7.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Euglycemic DKA (glucose 150-200) can often be managed with fluids alone without an insulin drip, depending on cardiovascular status.",
@@ -36085,7 +36487,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with euglycemic DKA",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-2497"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-2497",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:euglycemic dka"
+          ],
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Subcutaneous insulin may be less reliable in vasoconstricted patients; consider IV insulin in that setting.",
@@ -36098,7 +36516,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "vasoconstricted patients with DKA",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-2509"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-2509",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:insulin"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Never give potassium in DKA/HHS until the patient has urinated ('no P, no K').",
@@ -36111,7 +36548,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DKA or HHS",
-      "pearl_id": "dr-hildebrand-on-dka-hhs-2539"
+      "pearl_id": "dr-hildebrand-on-dka-hhs-2539",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "Never"
+          ],
+          "harm": [
+            "Never give"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

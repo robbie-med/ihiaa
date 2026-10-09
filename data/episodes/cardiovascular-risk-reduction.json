@@ -36458,7 +36458,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults",
-      "pearl_id": "cardiovascular-risk-reduction-393"
+      "pearl_id": "cardiovascular-risk-reduction-393",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:LDL"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For LDL over 190 mg/dL, evaluate for familial hypercholesterolemia using Dutch Lipid Clinic Network criteria; a score >8 is diagnostic even without genetic testing.",
@@ -36471,7 +36490,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with LDL >190 mg/dL",
-      "pearl_id": "cardiovascular-risk-reduction-500"
+      "pearl_id": "cardiovascular-risk-reduction-500",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:190 mg",
+            "threshold:over 1",
+            "test:LDL"
+          ],
+          "actionable": [
+            "evaluate"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Smoking cessation is more effective than any medication for reducing cardiovascular risk; actively prescribe therapy (Wellbutrin, Chantix, patches, gum) rather than just advising to quit.",
@@ -36484,7 +36524,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "smokers",
-      "pearl_id": "cardiovascular-risk-reduction-685"
+      "pearl_id": "cardiovascular-risk-reduction-685",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cardiovascular risk"
+          ],
+          "actionable": [
+            "prescribe"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Chantix (varenicline) is FDA-approved and safe to use; it remains a good option for smoking cessation despite past market withdrawal.",
@@ -36497,7 +36556,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "smokers considering pharmacotherapy",
-      "pearl_id": "cardiovascular-risk-reduction-719"
+      "pearl_id": "cardiovascular-risk-reduction-719",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:smoking cessation"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For ASCVD risk 10-20%, start moderate-dose statin; for >20%, start high-dose statin; for <10%, lifestyle modification alone.",
@@ -36510,7 +36591,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults aged 40-75",
-      "pearl_id": "cardiovascular-risk-reduction-934"
+      "pearl_id": "cardiovascular-risk-reduction-934",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>2",
+            "test:ASCVD"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When starting a statin, recheck lipids at 6 weeks, then annually; routine monitoring of LFTs and CK is not indicated.",
@@ -36523,7 +36624,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting statin therapy",
-      "pearl_id": "cardiovascular-risk-reduction-1015"
+      "pearl_id": "cardiovascular-risk-reduction-1015",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 weeks",
+            "test:LFTs"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ASCVD risk score does not include obesity, family history, LDL level, or chronic kidney disease; these are additional risk factors to consider.",
@@ -36536,7 +36657,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults being assessed for cardiovascular risk",
-      "pearl_id": "cardiovascular-risk-reduction-1048"
+      "pearl_id": "cardiovascular-risk-reduction-1048",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ASCVD"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Low-dose atorvastatin (10 mg) reduces LDL by 30-35%; 20 mg reduces it by 45%.",
@@ -36549,7 +36689,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults on atorvastatin",
-      "pearl_id": "cardiovascular-risk-reduction-1222"
+      "pearl_id": "cardiovascular-risk-reduction-1222",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 mg",
+            "drug:atorvastatin",
+            "test:LDL"
+          ],
+          "rarity": 6.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Short-acting statins like simvastatin should be taken at night; atorvastatin lasts 24 hours so timing does not matter.",
@@ -36562,7 +36720,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on statins",
-      "pearl_id": "cardiovascular-risk-reduction-1271"
+      "pearl_id": "cardiovascular-risk-reduction-1271",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours",
+            "drug:simvastatin"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Statins can increase blood sugar and may push prediabetic patients over the threshold for diabetes diagnosis.",
@@ -36575,7 +36750,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on statins, especially those near diabetes threshold",
-      "pearl_id": "cardiovascular-risk-reduction-1308"
+      "pearl_id": "cardiovascular-risk-reduction-1308",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:diabetes diagnosis"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

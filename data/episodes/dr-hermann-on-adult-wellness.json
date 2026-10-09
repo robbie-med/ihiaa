@@ -32823,7 +32823,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all wellness visits",
-      "pearl_id": "dr-hermann-on-adult-wellness-73"
+      "pearl_id": "dr-hermann-on-adult-wellness-73",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:wellness visit"
+          ],
+          "rarity": 6.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you have to order labs or prescribe new medications for a new problem during a wellness visit, add modifier 25 to the sick visit code; if you are just answering questions, try not to bill extra to avoid patient charges.",
@@ -32836,7 +32852,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults during wellness visit",
-      "pearl_id": "dr-hermann-on-adult-wellness-393"
+      "pearl_id": "dr-hermann-on-adult-wellness-393",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:wellness visit"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For Medicare patients, you can add the wellness code to a sick visit because it is just a questionnaire; offer to do the wellness portion when they come for a sick complaint.",
@@ -32849,7 +32884,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare patients",
-      "pearl_id": "dr-hermann-on-adult-wellness-453"
+      "pearl_id": "dr-hermann-on-adult-wellness-453",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:medicare"
+          ],
+          "actionable": [
+            "add"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use PHQ-2 as initial depression screen; if positive, follow with PHQ-9.",
@@ -32862,7 +32916,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all adults",
-      "pearl_id": "dr-hermann-on-adult-wellness-633"
+      "pearl_id": "dr-hermann-on-adult-wellness-633",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:PHQ-9"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.07
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Review the patient's family history, surgical history, and social history with them at each wellness visit; it takes only a minute or two.",
@@ -32875,7 +32948,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all adults",
-      "pearl_id": "dr-hermann-on-adult-wellness-701"
+      "pearl_id": "dr-hermann-on-adult-wellness-701",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:wellness visit"
+          ],
+          "rarity": 6.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ask three quick screening questions: 'Do you smoke? Do you drink? How many sexual partners in the last six months?'",
@@ -32888,7 +32977,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all adults",
-      "pearl_id": "dr-hermann-on-adult-wellness-787"
+      "pearl_id": "dr-hermann-on-adult-wellness-787",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:screening"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always double-check the medication list yourself even if the MA has reviewed it, because they may not know dosing or how medications are taken.",
@@ -32901,7 +33006,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-hermann-on-adult-wellness-807"
+      "pearl_id": "dr-hermann-on-adult-wellness-807",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For diabetic patients, refer for a formal eye exam rather than attempting ophthalmoscopy yourself.",
@@ -32914,7 +33035,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients",
-      "pearl_id": "dr-hermann-on-adult-wellness-905"
+      "pearl_id": "dr-hermann-on-adult-wellness-905",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For older patients, have them get up and try to walk as part of the physical exam to assess gait.",
@@ -32927,7 +33064,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older adults",
-      "pearl_id": "dr-hermann-on-adult-wellness-927"
+      "pearl_id": "dr-hermann-on-adult-wellness-927",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In older patients, pay extra attention to the skin during the physical exam and look for any growths.",
@@ -32940,7 +33090,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older adults",
-      "pearl_id": "dr-hermann-on-adult-wellness-941"
+      "pearl_id": "dr-hermann-on-adult-wellness-941",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For older patients, pay extra attention to the skin during the physical exam to look for any growths; ask patients if they have any abnormal skin lesions rather than doing a full gown exam.",
@@ -32953,7 +33116,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older adults",
-      "pearl_id": "dr-hermann-on-adult-wellness-941-2"
+      "pearl_id": "dr-hermann-on-adult-wellness-941-2",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Instead of a full gown skin exam, ask patients if they have any skin lesions that seem abnormal; they will usually show you.",
@@ -32966,7 +33142,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all adults during wellness exam",
-      "pearl_id": "dr-hermann-on-adult-wellness-974"
+      "pearl_id": "dr-hermann-on-adult-wellness-974",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:skin exam"
+          ],
+          "rarity": 6.73
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "USPSTF recommends diabetes screening with either CMP or A1C for anyone age 35-70 with BMI greater than 28 (overweight, not just obese).",
@@ -32979,7 +33171,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults age 35-70 with BMI >28",
-      "pearl_id": "dr-hermann-on-adult-wellness-1185"
+      "pearl_id": "dr-hermann-on-adult-wellness-1185",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:greater than 2",
+            "test:CMP"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Universal lipid panel every 5 years for everyone age 40 to 75 for cardiovascular risk calculation.",
@@ -32992,7 +33201,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults age 40-75",
-      "pearl_id": "dr-hermann-on-adult-wellness-1197"
+      "pearl_id": "dr-hermann-on-adult-wellness-1197",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 years",
+            "frequency:every 5"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hepatitis C testing recommended for everyone aged 18 to 79; often order CMP first and if LFTs are elevated, then check hepatitis panel.",
@@ -33005,7 +33231,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults age 18-79",
-      "pearl_id": "dr-hermann-on-adult-wellness-1209"
+      "pearl_id": "dr-hermann-on-adult-wellness-1209",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CMP"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HIV screening recommended for ages 16 to 65.",
@@ -33018,7 +33263,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults age 16-65",
-      "pearl_id": "dr-hermann-on-adult-wellness-1225"
+      "pearl_id": "dr-hermann-on-adult-wellness-1225",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hiv screening"
+          ],
+          "rarity": 5.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lung cancer screening: annual low-dose CT for ages 50 to 80 with 20 pack-year smoking history, current smoker or quit within the past 15 years.",
@@ -33031,7 +33292,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults age 50-80 with 20 pack-year history, current or quit <15 years",
-      "pearl_id": "dr-hermann-on-adult-wellness-1288"
+      "pearl_id": "dr-hermann-on-adult-wellness-1288",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:15 years",
+            "test:CT"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient quit smoking more than 15 years ago and all prior lung cancer screens were normal, they no longer need screening.",
@@ -33044,7 +33322,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults who quit >15 years ago with normal prior screens",
-      "pearl_id": "dr-hermann-on-adult-wellness-1309"
+      "pearl_id": "dr-hermann-on-adult-wellness-1309",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:15 years",
+            "threshold:more than 1"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Colon cancer screening: USPSTF grade A for ages 50 to 75, grade B for ages 45 to 49.",
@@ -33060,7 +33355,23 @@
       "numbers_unheard": [
         "49"
       ],
-      "pearl_id": "dr-hermann-on-adult-wellness-1341"
+      "pearl_id": "dr-hermann-on-adult-wellness-1341",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:colon cancer screening"
+          ],
+          "rarity": 6.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Osteoporosis screening: one-time DEXA scan for all women at age 65.",
@@ -33073,7 +33384,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women age 65",
-      "pearl_id": "dr-hermann-on-adult-wellness-1349"
+      "pearl_id": "dr-hermann-on-adult-wellness-1349",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:osteoporosis screening"
+          ],
+          "rarity": 6.68
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "AAA screening: one-time ultrasound for men age 65 who have ever smoked.",
@@ -33086,7 +33413,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men age 65 with any smoking history",
-      "pearl_id": "dr-hermann-on-adult-wellness-1352"
+      "pearl_id": "dr-hermann-on-adult-wellness-1352",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "No routine digital rectal exam for prostate cancer screening; only perform if symptomatic.",
@@ -33099,7 +33442,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "asymptomatic men",
-      "pearl_id": "dr-hermann-on-adult-wellness-1439"
+      "pearl_id": "dr-hermann-on-adult-wellness-1439",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:prostate cancer screen"
+          ],
+          "rarity": 6.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PSA screening: discuss with patients ages 50-69 every 2-4 years; high-risk patients (family history, Black ancestry, germline mutations) start at age 40.",
@@ -33112,7 +33471,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men age 50-69; high-risk start at 40",
-      "pearl_id": "dr-hermann-on-adult-wellness-1460"
+      "pearl_id": "dr-hermann-on-adult-wellness-1460",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4 years",
+            "frequency:every 2"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Shingrix (recombinant zoster vaccine) is recommended for everyone over age 50, regardless of prior chickenpox or old zoster vaccine; wait 6 months after shingles outbreak.",
@@ -33125,7 +33504,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults age 50 and older",
-      "pearl_id": "dr-hermann-on-adult-wellness-1534"
+      "pearl_id": "dr-hermann-on-adult-wellness-1534",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "actionable": [
+            "wait"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tetanus vaccine booster every 10 years.",
@@ -33138,7 +33536,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all adults",
-      "pearl_id": "dr-hermann-on-adult-wellness-1579"
+      "pearl_id": "dr-hermann-on-adult-wellness-1579",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 years",
+            "frequency:every 10"
+          ],
+          "rarity": 6.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pneumococcal vaccine: give PCV20 at age 65 for most patients; high-risk patients (asplenia, HIV, cochlear implants, etc.) need both PCV20 and PPSV23.",
@@ -33151,7 +33566,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults age 65 and high-risk patients",
-      "pearl_id": "dr-hermann-on-adult-wellness-1627"
+      "pearl_id": "dr-hermann-on-adult-wellness-1627",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pneumococcal vaccine"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient already had PCV13 or PPSV23, still give PCV20 as long as it has been at least a year since the other vaccine.",
@@ -33164,7 +33598,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with prior pneumococcal vaccine",
-      "pearl_id": "dr-hermann-on-adult-wellness-1659"
+      "pearl_id": "dr-hermann-on-adult-wellness-1659",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Wait 6 months after a shingles outbreak before giving Shingrix.",
@@ -33177,7 +33627,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults after shingles outbreak",
-      "pearl_id": "dr-hermann-on-adult-wellness-1673"
+      "pearl_id": "dr-hermann-on-adult-wellness-1673",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "actionable": [
+            "Wait"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "RSV vaccine can be recommended for older patients with chronic lung disease (e.g., COPD); for others, present as optional, it prevents 90% of cases.",
@@ -33190,7 +33659,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older adults, especially with chronic lung disease",
-      "pearl_id": "dr-hermann-on-adult-wellness-1730"
+      "pearl_id": "dr-hermann-on-adult-wellness-1730",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rsv vaccine"
+          ],
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HPV vaccine can be given to any female at any age if they did not receive it earlier.",
@@ -33203,7 +33688,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "females of any age who missed earlier vaccination",
-      "pearl_id": "dr-hermann-on-adult-wellness-1762"
+      "pearl_id": "dr-hermann-on-adult-wellness-1762",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hpv vaccine"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

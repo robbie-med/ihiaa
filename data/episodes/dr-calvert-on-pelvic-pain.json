@@ -24090,7 +24090,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with pelvic pain",
-      "pearl_id": "dr-calvert-on-pelvic-pain-59"
+      "pearl_id": "dr-calvert-on-pelvic-pain-59",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Secondary dysmenorrhea is diagnosed when pain develops after years of pain-free cycles, not at menarche.",
@@ -24104,7 +24117,23 @@
       "prompt_version": "v1",
       "applies_to": "women with dysmenorrhea",
       "by_presenter": false,
-      "pearl_id": "dr-calvert-on-pelvic-pain-438"
+      "pearl_id": "dr-calvert-on-pelvic-pain-438",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dysmenorrhea"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The most common cause of dyspareunia is scar tissue (adhesions), which often recurs in the same spot.",
@@ -24117,7 +24146,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with dyspareunia",
-      "pearl_id": "dr-calvert-on-pelvic-pain-497"
+      "pearl_id": "dr-calvert-on-pelvic-pain-497",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dyspareunia"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On bimanual exam, decreased mobility of the uterus suggests scar tissue involving the uterus or adnexa.",
@@ -24131,7 +24176,23 @@
       "prompt_version": "v1",
       "applies_to": "women with pelvic pain",
       "by_presenter": false,
-      "pearl_id": "dr-calvert-on-pelvic-pain-556"
+      "pearl_id": "dr-calvert-on-pelvic-pain-556",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bimanual exam"
+          ],
+          "rarity": 7.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The posterior cul-de-sac is the most common location for endometriosis; nodularity may be felt there on bimanual exam.",
@@ -24144,7 +24205,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with suspected endometriosis",
-      "pearl_id": "dr-calvert-on-pelvic-pain-699"
+      "pearl_id": "dr-calvert-on-pelvic-pain-699",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:posterior cul-de-sac"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Progestin-dominant contraceptives stop endometrial tissue from dividing, reducing pain from endometriosis wherever it is located.",
@@ -24157,7 +24234,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with endometriosis",
-      "pearl_id": "dr-calvert-on-pelvic-pain-772"
+      "pearl_id": "dr-calvert-on-pelvic-pain-772",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:endometriosis"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In adenomyosis, perform the pelvic exam just prior to onset of menses to maximize finding a tender, boggy uterus with cervical motion tenderness.",
@@ -24170,7 +24266,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with suspected adenomyosis",
-      "pearl_id": "dr-calvert-on-pelvic-pain-1058"
+      "pearl_id": "dr-calvert-on-pelvic-pain-1058",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:adenomyosis"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "95% of the time, adenomyosis can be diagnosed by physical exam alone; MRI is used to confirm when needed.",
@@ -24183,7 +24295,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with suspected adenomyosis",
-      "pearl_id": "dr-calvert-on-pelvic-pain-1216"
+      "pearl_id": "dr-calvert-on-pelvic-pain-1216",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "rarity": 5.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Interstitial cystitis is often linked with endometriosis and irritable bowel syndrome; if you see one, suspect the others.",
@@ -24196,7 +24327,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pelvic pain",
-      "pearl_id": "dr-calvert-on-pelvic-pain-1445"
+      "pearl_id": "dr-calvert-on-pelvic-pain-1445",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:irritable bowel syndro"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For abdominal wall pain, ask the patient to point with one finger to the spot, then palpate while the patient raises head and legs to tense the muscles.",
@@ -24209,7 +24356,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with lower abdominal/pelvic pain",
-      "pearl_id": "dr-calvert-on-pelvic-pain-1641"
+      "pearl_id": "dr-calvert-on-pelvic-pain-1641",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:abdominal wall pain"
+          ],
+          "actionable": [
+            "palpate"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For recurrent Bartholin abscess, marsupialization is needed: open, drain, and sew the epithelium of the gland to the skin to create a permanent opening.",
@@ -24222,7 +24388,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "recurrent Bartholin abscess",
-      "pearl_id": "dr-calvert-on-pelvic-pain-1923"
+      "pearl_id": "dr-calvert-on-pelvic-pain-1923",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bartholin abscess"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ovulation pain (mittelschmerz) is cyclic, mid-cycle, and can alternate sides; if severe and patient does not desire pregnancy, start OCPs to suppress ovulation.",
@@ -24236,7 +24418,26 @@
       "prompt_version": "v1",
       "applies_to": "women with severe ovulation pain not desiring pregnancy",
       "by_presenter": false,
-      "pearl_id": "dr-calvert-on-pelvic-pain-2264"
+      "pearl_id": "dr-calvert-on-pelvic-pain-2264",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:mittelschmerz"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If ovulation pain persists on cyclic OCPs, try continuous OCPs to suppress menstruation for a longer period.",
@@ -24249,7 +24450,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with ovulation pain not responding to cyclic OCPs",
-      "pearl_id": "dr-calvert-on-pelvic-pain-2311"
+      "pearl_id": "dr-calvert-on-pelvic-pain-2311",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Continuous oral contraceptive pills can be used to suppress menstruation for longer periods.",
@@ -24262,7 +24476,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women needing menstrual suppression",
-      "pearl_id": "dr-calvert-on-pelvic-pain-2311-2"
+      "pearl_id": "dr-calvert-on-pelvic-pain-2311-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:continuous oral contra"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In acute pelvic pain with delayed menses, always check beta-hCG to rule out ectopic pregnancy.",
@@ -24275,7 +24505,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women of reproductive age with acute pelvic pain",
-      "pearl_id": "dr-calvert-on-pelvic-pain-2396"
+      "pearl_id": "dr-calvert-on-pelvic-pain-2396",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ectopic pregnancy"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 6.84
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pain radiating to the shoulder in a patient with pelvic pain suggests diaphragmatic irritation, as from a ruptured ectopic pregnancy.",
@@ -24289,7 +24538,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with acute pelvic pain",
       "by_presenter": false,
-      "pearl_id": "dr-calvert-on-pelvic-pain-2499"
+      "pearl_id": "dr-calvert-on-pelvic-pain-2499",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ectopic pregnancy"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bilateral shoulder pain that worsens with inspiration indicates diaphragmatic irritation from intra-abdominal blood, a sign of peritonitis.",
@@ -24302,7 +24567,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pelvic pain",
-      "pearl_id": "dr-calvert-on-pelvic-pain-2539"
+      "pearl_id": "dr-calvert-on-pelvic-pain-2539",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:shoulder pain"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hemoperitoneum irritates the peritoneum diffusely, including the diaphragm and pelvis, causing pain on uterine movement and referred shoulder pain.",
@@ -24315,7 +24596,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hemoperitoneum",
-      "pearl_id": "dr-calvert-on-pelvic-pain-2618"
+      "pearl_id": "dr-calvert-on-pelvic-pain-2618",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:referred shoulder pain"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A hemorrhagic corpus luteum cyst ruptures around day 35 of the menstrual cycle, not at ovulation (day 14).",
@@ -24331,7 +24628,29 @@
       "numbers_unheard": [
         "14"
       ],
-      "pearl_id": "dr-calvert-on-pelvic-pain-2688"
+      "pearl_id": "dr-calvert-on-pelvic-pain-2688",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hemorrhagic corpus lut"
+          ],
+          "harm": [
+            "hemorrhagic"
+          ],
+          "rarity": 8.38,
+          "capped": [
+            "number not heard: 14"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a hemodynamically stable patient with hemoperitoneum from a ruptured corpus luteum cyst, you can observe or perform exploratory laparoscopy.",
@@ -24345,7 +24664,23 @@
       "prompt_version": "v1",
       "applies_to": "stable patients with hemoperitoneum from ruptured corpus luteum cyst",
       "by_presenter": false,
-      "pearl_id": "dr-calvert-on-pelvic-pain-2715"
+      "pearl_id": "dr-calvert-on-pelvic-pain-2715",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:exploratory laparoscop"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

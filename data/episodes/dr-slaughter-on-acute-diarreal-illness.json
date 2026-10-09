@@ -36434,7 +36434,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acute diarrhea",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-760"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-760",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:16 hours",
+            "threshold:>1"
+          ],
+          "rarity": 7.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pregnant patients are 20 times more susceptible to listeriosis, which is invasive and can harm the fetus.",
@@ -36447,7 +36464,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1101"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1101",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:listeriosis"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advise pregnant patients to avoid unpasteurized dairy products because of listeria risk.",
@@ -36460,7 +36493,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1127"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1127",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For most patients with acute diarrhea, expectant management is sufficient; no testing is needed unless clinically indicated.",
@@ -36473,7 +36522,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "otherwise healthy patients with mild, self-limited acute diarrhea",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1140"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1140",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:expectant management"
+          ],
+          "rarity": 6.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Severe acute diarrhea is defined as more than six episodes in 24 hours; this is an indication for stool culture.",
@@ -36486,7 +36551,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute diarrhea",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1162"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1162",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours",
+            "test:culture"
+          ],
+          "rarity": 6.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If diarrhea persists beyond 7 days, suspect a bacterial cause and consider stool culture.",
@@ -36499,7 +36581,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute diarrhea >7 days",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1209"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1209",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:7 days",
+            "test:culture"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 5.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consider stool testing for patients who work as food handlers, healthcare workers, or in day care centers to prevent spread.",
@@ -36512,7 +36614,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute diarrhea who work in high-risk settings",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1221"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1221",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A rectal swab can be used for stool culture when the patient is no longer producing stool, though it is less sensitive.",
@@ -36525,7 +36643,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute diarrhea who are no longer having frequent stools",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1248"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1248",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When using GI PCR panels, get a confirmatory stool culture because PCR may detect non-viable organisms or multiple organisms, making it unclear which is the true pathogen.",
@@ -36538,7 +36672,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing GI PCR testing",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1364"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1364",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Grossly bloody diarrhea requires Shiga toxin testing.",
@@ -36551,7 +36701,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with bloody diarrhea",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1380"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1380",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:shiga toxin testing"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For bloody diarrhea, test for Shiga toxin; if positive, do not give antibiotics because they can precipitate hemolytic uremic syndrome.",
@@ -36564,7 +36730,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with bloody diarrhea",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1385"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1385",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "actionable": [
+            "test for"
+          ],
+          "harm": [
+            "do not give"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In travelers with diarrhea who have taken antibiotics, fecal leukocyte testing can be falsely negative because antibiotics fragmentize leukocytes.",
@@ -36577,7 +36765,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with travel-associated diarrhea who may have used antibiotics",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1390"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1390",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fecal leukocyte test"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When ordering ova and parasite testing, collect three specimens on consecutive days because shedding is intermittent.",
@@ -36590,7 +36794,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected parasitic diarrhea",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1430"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1430",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ova and parasite testi"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For ova and parasite testing, collect three stool samples on consecutive days because organisms are not shed every day.",
@@ -36603,7 +36823,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients suspected of parasitic infection",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1433"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1433",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ova and parasite testi"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Check for C. difficile if the patient has had antibiotics or hospitalization in the last three months.",
@@ -36616,7 +36852,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute diarrhea and recent antibiotic use or hospitalization",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1456"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1456",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "actionable": [
+            "Check"
+          ],
+          "rarity": 6.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Test for C. diff if the patient has had antibiotics or hospitalization within the last three months.",
@@ -36629,7 +36884,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute diarrhea",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1456-2"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1456-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "actionable": [
+            "Test for"
+          ],
+          "rarity": 6.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The GI PCR panel is very expensive (billed at $819 to insurance, $400 for self-pay) and has a 2-3 day turnaround; stool culture costs only $3 and may be more practical in outpatient settings.",
@@ -36642,7 +36916,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient setting",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1564"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1564",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 day",
+            "test:culture"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Oral rehydration solutions should contain equimolar amounts of sodium and glucose to utilize the sodium-glucose cotransporter; excess of either can worsen diarrhea.",
@@ -36655,7 +36946,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing oral rehydration",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1731"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1731",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sodium-glucose cotrans"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pedialyte is far better than Gatorade for rehydration; Gatorade's excess glucose can actually worsen dehydration.",
@@ -36668,7 +36975,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing oral rehydration",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1922"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-1922",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dehydration"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For acute diarrhea, do not give empiric antibiotics unless it is travel-associated, bloody, or prolonged; otherwise supportive care alone is appropriate.",
@@ -36681,7 +37004,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute diarrhea",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2087"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2087",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:supportive care"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "do not give"
+          ],
+          "rarity": 7.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When antibiotics are indicated, azithromycin is preferred over fluoroquinolones due to resistance; for non-dysentery cases, a one-time dose can be used.",
@@ -36694,7 +37039,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring empiric antibiotics for acute diarrhea",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2155"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2155",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:azithromycin"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Loperamide (Imodium) is safe for symptomatic relief if there is no fever, no bloody stool, and the illness is not severe; do not use in dysentery as it may prolong the disease.",
@@ -36707,7 +37068,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with non-inflammatory acute diarrhea",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2257"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2257",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:loperamide"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lomotil is not recommended for acute diarrhea because it is less well-studied and carries risks of central opioid and cholinergic side effects.",
@@ -36720,7 +37100,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute diarrhea",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2291"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2291",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:acute diarrhea"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During acute diarrhea, the BRAT diet is helpful; avoid fat and dairy except yogurt.",
@@ -36733,7 +37129,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute diarrhea",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2362"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2362",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acute diarrhea"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In children with acute diarrhea from overseas areas where zinc deficiency is prevalent, or who are malnourished, give zinc supplementation.",
@@ -36746,7 +37161,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with acute diarrhea in resource-limited settings",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2421"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2421",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acute diarrhea"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For outpatient ova and parasite testing, give the patient a collection kit and have them drop off a sample each day for three consecutive days.",
@@ -36759,7 +37193,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient stool collection for ova and parasites",
-      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2625"
+      "pearl_id": "dr-slaughter-on-acute-diarreal-illness-2625",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ova and parasite testi"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

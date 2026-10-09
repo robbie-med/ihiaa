@@ -70130,7 +70130,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with massive PE and hemodynamic instability",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-246"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-246",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:right heart strain"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For tension pneumothorax, if the patient is shocky, their life depends on you getting a chest tube in; do not hesitate to call for help.",
@@ -70143,7 +70162,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with tension pneumothorax and shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-347"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-347",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:tension pneumothorax"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In hemorrhagic shock, give blood, not just saline, because saline does not carry oxygen; crystalloid is like putting water in a gas tank.",
@@ -70156,7 +70194,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in hemorrhagic shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-407"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-407",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:shock"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "hemorrhagic"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In cardiogenic shock with cardiorenal syndrome, strongly consider an inotrope to squeeze the heart better and move blood forward.",
@@ -70169,7 +70229,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cardiorenal syndrome and shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-585"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-585",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:cardiorenal syndrome"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Neurogenic shock causes vessel dilation and bradycardia; be alert for bradycardia in these patients.",
@@ -70182,7 +70264,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with neurogenic shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-781"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-781",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:neurogenic shock"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anaphylaxis is diagnosed almost exclusively by history; look for rash or swelling in obtunded patients.",
@@ -70195,7 +70296,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected anaphylaxis",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-798"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-798",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anaphylaxis"
+          ],
+          "harm": [
+            "Anaphylaxis"
+          ],
+          "rarity": 7.07
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In septic shock, each hour of delayed antibiotics increases mortality by a relative 35%; give antibiotics immediately, even if it means ignoring the patient's catheter for an hour.",
@@ -70208,7 +70328,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in septic shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-857"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-857",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:septic shock"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 6.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For shock, establish two large-bore IVs (16 or 18 gauge); if unable, place an IO line, preferably humeral.",
@@ -70221,7 +70363,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-950"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-950",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:shock"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In shock, if you have a 22-gauge IV in the hand, after giving 500 mL of fluid, you may be able to get an 18-gauge because the vein may pump up.",
@@ -70234,7 +70395,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in shock with small IV access",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-968"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-968",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:500 mL"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 6.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Humeral IO placement: put fingertips at armpit, where thumbs meet is the site, drill 90 degrees straight in; prefer humeral over tibial because it's closer to central vasculature.",
@@ -70247,7 +70427,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in shock needing IO access",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1066"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1066",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Prefer humeral IO over tibial IO because it is much closer to central vasculature, allowing faster fluid delivery.",
@@ -70260,7 +70453,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults requiring IO access in shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1082"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1082",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tibial IO placement: about an inch below the knee joint on the flat part of the tibia, drill 90 degrees straight in; avoid the knee joint to prevent morbidity.",
@@ -70273,7 +70479,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in shock needing IO access when humeral not possible",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1127"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1127",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:knee joint"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Place tibial IO about an inch below the knee joint on the flat plate of the tibia, drilling 90 degrees straight in.",
@@ -70286,7 +70511,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults requiring IO access when humeral site is unavailable",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1127-2"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1127-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:knee joint"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is circling the drain and IV access is difficult, place an IO immediately; it is totally effective and can deliver two liters rapidly with a pressure bag.",
@@ -70299,7 +70540,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in shock with difficult IV access",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1148"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1148",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:iv access"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anything you can put through an IV, you can put through an IO, including vasopressors.",
@@ -70312,7 +70572,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in shock without IV access",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1162"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1162",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vasopressors"
+          ],
+          "rarity": 6.16
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In undifferentiated shock without signs of cardiogenic shock, start fluids while you figure it out; it takes ten minutes for blood to arrive even if they are hemorrhagic.",
@@ -70325,7 +70601,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with undifferentiated shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1228"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1228",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:undifferentiated shock"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient does not respond to fluids within five minutes, start vasopressors; it is better to get blood pressure normal and then titrate off than to wait 45 minutes without perfusing organs.",
@@ -70338,7 +70636,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with shock not responding to initial fluid bolus",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1249"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1249",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:45 minutes"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A MAP of 60 is the minimum pressure needed to perfuse critical organs (brain, lungs, kidneys, heart); we set a goal MAP of 65 to give a cushion.",
@@ -70351,7 +70668,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults in shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1282"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1282",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient looks sick with a MAP of 58, act quickly to raise the MAP; if they appear well and are playing on their phone, a lower MAP may be tolerated.",
@@ -70364,7 +70697,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with low MAP",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1369"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1369",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.99
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Warm shock indicates peripheral vasodilation (alpha receptors not working); cold shock indicates vasoconstriction, often from poor cardiac function.",
@@ -70377,7 +70723,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1560"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1560",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cold shock"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Phenylephrine (Neo-Synephrine) is a pure alpha agonist used in neurogenic shock or for MAP pushes in spinal cord injury, but it adds strain to the heart; use only in patients with a strong heart not in cardiogenic shock.",
@@ -70390,7 +70755,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with vasodilatory shock and preserved cardiac function",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1722"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1722",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:cardiogenic shock"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dobutamine is a pure beta agonist used in cardiogenic shock with hypertension; it increases contractility and causes mild vasodilation, but avoid in patients with atrial fibrillation with RVR or those prone to tachydysrhythmias.",
@@ -70403,7 +70790,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with cardiogenic shock and hypertension",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1868"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-1868",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:atrial fibrillation"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In cardiac arrest, standard epinephrine dose is 1 mg (1000 mcg) push, which is about a thousand times the max infusion rate; excessive doses in shockable rhythms may worsen outcomes.",
@@ -70416,7 +70825,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults in cardiac arrest",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2130"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2130",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1 mg"
+          ],
+          "harm": [
+            "arrest"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In shockable rhythms (V-fib, V-tach), strongly consider not giving epinephrine before shocking, as it can make V-fib shock-resistant; instead use aggressive shocks and amiodarone.",
@@ -70429,7 +70857,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with shockable rhythms in cardiac arrest",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2337"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2337",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:shockable rhythm"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For refractory V-fib after multiple epinephrine doses and failed shocks, consider giving esmolol (a beta blocker) and then shocking.",
@@ -70442,7 +70892,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with refractory V-fib in cardiac arrest",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2371"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2371",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:esmolol"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In shockable rhythms (VF/pVT), after multiple epinephrine doses, consider giving esmolol (beta blocker) before shocking to avoid shock-resistant VF.",
@@ -70455,7 +70924,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with refractory VF/pVT after multiple epinephrine doses",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2371-2"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2371-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "drug:esmolol"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A milligram of epinephrine is the same regardless of concentration; the dose matters, not the volume.",
@@ -70468,7 +70959,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient receiving IV epinephrine",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2492"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2492",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:epinephrine"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In anaphylaxis, epinephrine dose is 0.3-0.5 mg (300-500 mcg) IM for adults; never give this dose IV.",
@@ -70481,7 +70988,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with anaphylaxis",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2519"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2519",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:0.5 mg"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 5.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In anaphylaxis, IM route is preferred over SQ because SQ is too slow due to poor blood flow to fat.",
@@ -70494,7 +71023,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anaphylaxis",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2575"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2575",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anaphylaxis"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 6.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For peri-arrest bradycardia/hypotension, give push-dose epinephrine 50 mcg (0.5 mL of code-dose epi, 1 mg/10 mL) IV as a bridge to a drip.",
@@ -70510,7 +71058,32 @@
       "numbers_unheard": [
         "10"
       ],
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2773"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-2773",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:50 mcg"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "arrest"
+          ],
+          "rarity": 8.25,
+          "capped": [
+            "number not heard: 10"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In peri-arrest hyperkalemia with wide QRS, use calcium chloride (not gluconate) because it is 3 times more potent and works within 60 seconds.",
@@ -70523,7 +71096,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "peri-arrest patients with hyperkalemia and wide QRS",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3043"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3043",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:calcium chloride"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "arrest"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Two amps of calcium chloride can narrow a wide QRS within 60 seconds; effect lasts 2-3 hours, enough to get to dialysis.",
@@ -70536,7 +71131,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "peri-arrest patients with hyperkalemia and wide QRS",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3114"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3114",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 hours"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pediatric anaphylaxis epinephrine dose is 0.15 mg (150 mcg) IM for children roughly under 5 years.",
@@ -70549,7 +71160,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children under 5 years with anaphylaxis",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3321"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3321",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:0.15 mg",
+            "threshold:under 5"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 6.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Empower patients with life-threatening allergies to use EpiPen immediately at first sign of throat closure or tongue swelling; tell them to call 911 and give epinephrine themselves.",
@@ -70562,7 +71193,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with life-threatening anaphylaxis risk",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3370"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3370",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:epinephrine"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "life-threatening"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For undifferentiated shock, start norepinephrine (Levophed); no one will criticize you for it.",
@@ -70575,7 +71228,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with undifferentiated shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3478"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3478",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:undifferentiated shock"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you don't know what's causing the shock, start norepinephrine (Levophed); no one will criticize that choice.",
@@ -70588,7 +71263,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with undifferentiated shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3478-2"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3478-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:norepinephrine"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start norepinephrine at a dose proportional to the MAP deficit: 20 mcg/min if MAP is 45, 10 mcg/min if MAP is 55.",
@@ -70601,7 +71298,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring vasopressors",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3589"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3589",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:20 mcg"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dopamine is a prodrug that must be converted by functional adrenal glands to epinephrine and norepinephrine; it is unreliable in sick patients.",
@@ -70614,7 +71330,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3691"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3691",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:norepinephrine"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dopamine is more prone to tachydysrhythmias than other vasopressors.",
@@ -70627,7 +71359,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving dopamine",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3720"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3720",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vasopressors"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Low-dose dopamine (less than 5 mcg/kg/min) for renal protection has been proven ineffective since the 2000s and should not be used.",
@@ -70640,7 +71388,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3798"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3798",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 mcg",
+            "threshold:less than 5"
+          ],
+          "rarity": 6.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Vasopressin is dosed at 0.03 to 0.04 units/min and acts on peripheral V1 receptors to increase systemic vascular resistance.",
@@ -70657,7 +71422,29 @@
         "0.03",
         "0.04"
       ],
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3930"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-3930",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:0.04 units"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 6.94,
+          "capped": [
+            "number not heard: 0.03, 0.04"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Milrinone (0.25-0.75 mcg/kg/min) is a phosphodiesterase inhibitor and a good inotrope option for cardiogenic shock with atrial fibrillation, but its half-life is very long.",
@@ -70670,7 +71457,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cardiogenic shock and atrial fibrillation",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-4000"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-4000",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:0.75 mcg"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In septic shock, give 30 mL/kg crystalloid if the heart can handle it; if EF is poor, use ultrasound to assess volume status before fluid bolus.",
@@ -70683,7 +71489,30 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with septic shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-4085"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-4085",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:30 mL",
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 7.1
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When norepinephrine reaches 15-20 mcg/min without adequate response, add a second pressor (vasopressin or epinephrine).",
@@ -70696,7 +71525,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on norepinephrine for shock",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-4119"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-4119",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:20 mcg"
+          ],
+          "actionable": [
+            "add"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For warm, vasodilated shock, add vasopressin; for cold shock with poor cardiac function, add epinephrine for more beta effect.",
@@ -70709,7 +71557,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring a second vasopressor",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-4152"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-4152",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:epinephrine"
+          ],
+          "actionable": [
+            "add"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consider IV hydrocortisone 100 mg for patients who have been sick for more than 48 hours and require escalating vasopressors, as they may have adrenal burnout.",
@@ -70722,7 +71592,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with prolonged illness (>48 hours) requiring escalating vasopressors",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-4175"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-4175",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:100 mg",
+            "threshold:more than 4",
+            "drug:hydrocortisone"
+          ],
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 7.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient on vasopressors is circling the drain (likely to code), titrate aggressively every 5 minutes; if awake and talking, allow 30-45 minutes to assess response.",
@@ -70735,7 +71626,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on vasopressors",
-      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-4344"
+      "pearl_id": "dr-engstrom-on-approach-to-undifferentiated-shock-4344",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:5 minutes",
+            "frequency:every 5"
+          ],
+          "actionable": [
+            "titrate"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

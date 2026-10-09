@@ -42929,7 +42929,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acute rotator cuff tear in young active patient vs chronic tear in older patient",
-      "pearl_id": "dr-liening-on-shoulder-exam-261"
+      "pearl_id": "dr-liening-on-shoulder-exam-261",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The empty can test is performed by having the patient hold their arms in forward flexion and internal rotation (thumbs down) while the examiner applies downward pressure; it is specific for supraspinatus weakness.",
@@ -42942,7 +42961,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected rotator cuff pathology",
-      "pearl_id": "dr-liening-on-shoulder-exam-444"
+      "pearl_id": "dr-liening-on-shoulder-exam-444",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:empty can test"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Adhesive capsulitis presents with gradual, constant dull aching pain over months, markedly reduced range of motion in all planes (especially external rotation), no point tenderness, and no weakness on resisted isometric testing.",
@@ -42955,7 +42993,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older patients with risk factors",
-      "pearl_id": "dr-liening-on-shoulder-exam-516"
+      "pearl_id": "dr-liening-on-shoulder-exam-516",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:adhesive capsulitis"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient presents with shoulder pain, always examine the cervical spine; Spurling's test (head extended, laterally flexed, and rotated toward the painful side with axial compression) reproduces radicular arm pain and paresthesias.",
@@ -42968,7 +43022,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with shoulder pain",
-      "pearl_id": "dr-liening-on-shoulder-exam-607"
+      "pearl_id": "dr-liening-on-shoulder-exam-607",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:spurling's test"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cross-body adduction test reproduces pain in AC joint injury; in a patient with trauma to the point of the shoulder, localized swelling, tenderness over the AC joint, and a step-off deformity, this test confirms the diagnosis.",
@@ -42981,7 +43054,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected AC joint injury after trauma",
-      "pearl_id": "dr-liening-on-shoulder-exam-727"
+      "pearl_id": "dr-liening-on-shoulder-exam-727",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cross-body adduction t"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gerber lift-off test is an internal rotation lift-off test that can indicate rotator cuff pathology or capsulitis; it is another version of a rotator cuff test.",
@@ -42994,7 +43083,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with shoulder pain",
-      "pearl_id": "dr-liening-on-shoulder-exam-759"
+      "pearl_id": "dr-liening-on-shoulder-exam-759",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:gerber lift-off test"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In time-limited visits, gather a good history first to decide which exam to prioritize, then have the patient stand and do a quick range-of-motion exam; you often do not have time to examine the normal shoulder, though you should if possible.",
@@ -43007,7 +43112,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient visits with limited time",
-      "pearl_id": "dr-liening-on-shoulder-exam-1120"
+      "pearl_id": "dr-liening-on-shoulder-exam-1120",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Perform a quick range-of-motion exam in this order: forward flexion, abduction, internal rotation (hand behind back), external rotation (arm at side), then cross-body adduction. This sequence gets four motions done efficiently without confusing the patient.",
@@ -43020,7 +43141,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient shoulder exam",
-      "pearl_id": "dr-liening-on-shoulder-exam-1194"
+      "pearl_id": "dr-liening-on-shoulder-exam-1194",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Observe the shoulder from behind during range-of-motion testing to detect scapular hiking or compensatory movements that indicate true shoulder pathology, which you might miss if looking at the patient's face.",
@@ -43033,7 +43170,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "shoulder exam",
-      "pearl_id": "dr-liening-on-shoulder-exam-1276"
+      "pearl_id": "dr-liening-on-shoulder-exam-1276",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Observe shoulder range of motion from behind the patient to detect scapular hiking, which indicates compensation or pathology.",
@@ -43046,7 +43196,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing shoulder range of motion assessment",
-      "pearl_id": "dr-liening-on-shoulder-exam-1286"
+      "pearl_id": "dr-liening-on-shoulder-exam-1286",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:shoulder range of moti"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Perform rotator cuff strength testing at 30 degrees of abduction in the scapular plane to minimize deltoid involvement and isolate the rotator cuff.",
@@ -43059,7 +43225,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing rotator cuff strength testing",
-      "pearl_id": "dr-liening-on-shoulder-exam-1457"
+      "pearl_id": "dr-liening-on-shoulder-exam-1457",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rotator cuff"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Empty can test (thumb-down position) is most specific for supraspinatus pathology but can be positive for any rotator cuff disorder.",
@@ -43072,7 +43254,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected rotator cuff pathology",
-      "pearl_id": "dr-liening-on-shoulder-exam-1542"
+      "pearl_id": "dr-liening-on-shoulder-exam-1542",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:empty can test"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For external rotation strength testing (infraspinatus), keep the patient's hand in supination (palm up) to avoid biceps compensation.",
@@ -43085,7 +43283,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing infraspinatus strength testing",
-      "pearl_id": "dr-liening-on-shoulder-exam-1595"
+      "pearl_id": "dr-liening-on-shoulder-exam-1595",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:infraspinatus"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gerber's lift-off test assesses subscapularis; in older patients with chronic rotator cuff disease, the hand will drift down quickly, indicating a tear.",
@@ -43098,7 +43315,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older patients with suspected chronic rotator cuff tears",
-      "pearl_id": "dr-liening-on-shoulder-exam-1744"
+      "pearl_id": "dr-liening-on-shoulder-exam-1744",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:gerber's lift-off test"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Neer's sign (passive forward elevation with internal rotation) tests for impingement by pinching the supraspinatus tendon under the acromion; pain indicates a positive test.",
@@ -43111,7 +43344,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected shoulder impingement",
-      "pearl_id": "dr-liening-on-shoulder-exam-1917"
+      "pearl_id": "dr-liening-on-shoulder-exam-1917",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:supraspinatus"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Empty can test can also be used to assess impingement: pain anteriorly during the maneuver (without resistance) suggests impingement, whereas weakness with resistance suggests rotator cuff tear.",
@@ -43124,7 +43373,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with shoulder pain to differentiate impingement from rotator cuff tear",
-      "pearl_id": "dr-liening-on-shoulder-exam-2071"
+      "pearl_id": "dr-liening-on-shoulder-exam-2071",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rotator cuff tear"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Biceps tendinopathy is more common in younger patients who are new to exercise or mothers lifting babies, whereas impingement is more common in older workers with repetitive overhead motion and arthritis.",
@@ -43137,7 +43402,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients presenting with anterior shoulder pain",
-      "pearl_id": "dr-liening-on-shoulder-exam-2246"
+      "pearl_id": "dr-liening-on-shoulder-exam-2246",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:biceps tendinopathy"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Speed's test for biceps tendinopathy: have the patient supinate the forearm (thumb up) and resist forward flexion at the shoulder; pain in the bicipital groove is positive.",
@@ -43150,7 +43431,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anterior shoulder pain, especially younger athletes or mothers lifting babies",
-      "pearl_id": "dr-liening-on-shoulder-exam-2378"
+      "pearl_id": "dr-liening-on-shoulder-exam-2378",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:biceps tendinopathy"
+          ],
+          "actionable": [
+            "test for"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cross-body adduction test (scarf sign) and painful arc in the last 30 degrees of abduction pinch the AC joint and are useful for diagnosing AC joint pathology.",
@@ -43163,7 +43463,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected AC joint injury",
-      "pearl_id": "dr-liening-on-shoulder-exam-2656"
+      "pearl_id": "dr-liening-on-shoulder-exam-2656",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cross-body adduction t"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For AC joint pathology, the cross-body adduction test (scarf sign) pinches the AC joint by bringing the arm across the body while the shoulder is elevated.",
@@ -43176,7 +43492,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "suspected AC joint injury",
-      "pearl_id": "dr-liening-on-shoulder-exam-2661"
+      "pearl_id": "dr-liening-on-shoulder-exam-2661",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cross-body adduction t"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The sulcus sign is performed by pulling downward on the patient's arm; a visible divot under the deltoid is abnormal and suggests shoulder instability or hypermobility.",
@@ -43189,7 +43521,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with recurrent shoulder dislocation or hypermobility",
-      "pearl_id": "dr-liening-on-shoulder-exam-2735"
+      "pearl_id": "dr-liening-on-shoulder-exam-2735",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:shoulder instability"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Labral tears in younger athletes often present with deep intra-articular pain, catching, and crepitus, and should prompt referral for MRI and possible arthroscopic surgery.",
@@ -43202,7 +43550,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "active patients in their 30s-40s with shoulder pain and mechanical symptoms",
-      "pearl_id": "dr-liening-on-shoulder-exam-2822"
+      "pearl_id": "dr-liening-on-shoulder-exam-2822",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Asymptomatic shoulder clunking or popping without pain is often a non-pathologic variant from years of overactivity and does not require treatment.",
@@ -43215,7 +43579,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with shoulder crepitus but no pain",
-      "pearl_id": "dr-liening-on-shoulder-exam-3009"
+      "pearl_id": "dr-liening-on-shoulder-exam-3009",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Acute labral tears cause sudden pain and a clunking sensation in the shoulder, distinguishing them from chronic degenerative changes.",
@@ -43228,7 +43605,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "young athletes with acute shoulder injury",
-      "pearl_id": "dr-liening-on-shoulder-exam-3028"
+      "pearl_id": "dr-liening-on-shoulder-exam-3028",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:labral tear"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A quick shoulder exam strategy: get range of motion done fast, then focus the rest of the exam on the anatomy you suspect is the source of pain.",
@@ -43241,7 +43634,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "time-limited outpatient shoulder evaluation",
-      "pearl_id": "dr-liening-on-shoulder-exam-3044"
+      "pearl_id": "dr-liening-on-shoulder-exam-3044",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.76
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you cannot recall the exact special test, look up shoulder anatomy or tests on your computer during the visit to ensure you apply the correct angle of stress.",
@@ -43254,7 +43660,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians who need to refresh shoulder exam technique mid-visit",
-      "pearl_id": "dr-liening-on-shoulder-exam-3063"
+      "pearl_id": "dr-liening-on-shoulder-exam-3063",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

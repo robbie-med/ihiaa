@@ -47562,7 +47562,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-ganzer-on-knee-injuries-676"
+      "pearl_id": "dr-ganzer-on-knee-injuries-676",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:knee joint"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When performing a knee injection, inject with the knee in near-full extension (180 degrees) to push fluid into the suprapatellar pouch, providing a safe space above the patella away from ligaments.",
@@ -47575,7 +47591,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring knee injection",
-      "pearl_id": "dr-ganzer-on-knee-injuries-689"
+      "pearl_id": "dr-ganzer-on-knee-injuries-689",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:knee injection"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A thorough history and physical exam can be 93% as accurate as MRI for diagnosing knee injuries, so use imaging to confirm what you already suspect.",
@@ -47588,7 +47620,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with knee injury",
-      "pearl_id": "dr-ganzer-on-knee-injuries-816"
+      "pearl_id": "dr-ganzer-on-knee-injuries-816",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.84
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always examine the unaffected knee first to establish a baseline of what is normal before examining the injured knee.",
@@ -47601,7 +47652,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any knee exam",
-      "pearl_id": "dr-ganzer-on-knee-injuries-1112"
+      "pearl_id": "dr-ganzer-on-knee-injuries-1112",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Rapid onset of knee effusion within two hours of injury suggests an ACL tear or intra-articular fracture, while gradual onset over a day or more suggests a meniscal tear.",
@@ -47614,7 +47681,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute knee injury",
-      "pearl_id": "dr-ganzer-on-knee-injuries-1214"
+      "pearl_id": "dr-ganzer-on-knee-injuries-1214",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:knee effusion"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "About 70% of ACL injuries occur in noncontact situations, often from landing awkwardly or sudden deceleration.",
@@ -47627,7 +47710,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "athletes and active individuals",
-      "pearl_id": "dr-ganzer-on-knee-injuries-1256"
+      "pearl_id": "dr-ganzer-on-knee-injuries-1256",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ACL injuries are more common in females, especially in adolescent sports, likely due to a larger Q angle that increases valgus stress.",
@@ -47640,7 +47736,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "female adolescent athletes",
-      "pearl_id": "dr-ganzer-on-knee-injuries-1291"
+      "pearl_id": "dr-ganzer-on-knee-injuries-1291",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:valgus stress"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you aspirate a knee with an acute ACL injury, you will see a hemarthrosis (blood in the joint fluid).",
@@ -47653,7 +47765,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected ACL tear",
-      "pearl_id": "dr-ganzer-on-knee-injuries-1378"
+      "pearl_id": "dr-ganzer-on-knee-injuries-1378",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hemarthrosis"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The Lachman test is performed with the knee flexed at 20 degrees, stabilizing the femur and pulling the tibia anteriorly to feel for an endpoint.",
@@ -47667,7 +47795,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with suspected ACL injury",
       "by_presenter": false,
-      "pearl_id": "dr-ganzer-on-knee-injuries-1463"
+      "pearl_id": "dr-ganzer-on-knee-injuries-1463",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:lachman test"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In the acute setting, patients may guard with their quadriceps during the Lachman test, so you may not get a positive result even if the ACL is torn.",
@@ -47680,7 +47824,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute knee injury",
-      "pearl_id": "dr-ganzer-on-knee-injuries-1500"
+      "pearl_id": "dr-ganzer-on-knee-injuries-1500",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:lachman test"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In the acute setting, patient guarding can make the Lachman test falsely negative; the pivot shift test may catch the patient off guard and yield a positive result.",
@@ -47693,7 +47853,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acute knee injury",
-      "pearl_id": "dr-ganzer-on-knee-injuries-1500-2"
+      "pearl_id": "dr-ganzer-on-knee-injuries-1500-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pivot shift test"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PCL injuries are uncommon in outpatient settings, about 3% of ligamentous injuries, and are often seen in trauma with concurrent injuries.",
@@ -47706,7 +47882,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient setting",
-      "pearl_id": "dr-ganzer-on-knee-injuries-1882"
+      "pearl_id": "dr-ganzer-on-knee-injuries-1882",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A classic PCL injury mechanism is a dashboard injury: strong blunt force to the anterior tibia causing posterior translocation.",
@@ -47719,7 +47908,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "trauma setting",
-      "pearl_id": "dr-ganzer-on-knee-injuries-1897"
+      "pearl_id": "dr-ganzer-on-knee-injuries-1897",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A fall onto a flexed knee with a plantar-flexed foot can injure the PCL, as force is transmitted through the patellar tendon to the posterior cruciate ligament.",
@@ -47732,7 +47934,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fall onto knee",
-      "pearl_id": "dr-ganzer-on-knee-injuries-1943"
+      "pearl_id": "dr-ganzer-on-knee-injuries-1943",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:patellar tendon"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The posterior sag sign is seen by flexing both knees to 90 degrees and comparing tibial tubercle levels; a posteriorly displaced tibia suggests PCL injury.",
@@ -47746,7 +47964,20 @@
       "prompt_version": "v1",
       "applies_to": "suspected PCL injury",
       "by_presenter": false,
-      "pearl_id": "dr-ganzer-on-knee-injuries-2049"
+      "pearl_id": "dr-ganzer-on-knee-injuries-2049",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a full PCL rupture, the posterior drawer test may not be painful; a good amount of force does not hurt them.",
@@ -47759,7 +47990,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "suspected PCL rupture",
-      "pearl_id": "dr-ganzer-on-knee-injuries-2213"
+      "pearl_id": "dr-ganzer-on-knee-injuries-2213",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:posterior drawer test"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The quadriceps active test: with the patient supine and knee flexed, hold the foot down and ask them to straighten the knee; activation of the quadriceps pulls the tibia forward if there is a PCL-deficient posterior sag.",
@@ -47772,7 +48019,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "suspected PCL injury",
-      "pearl_id": "dr-ganzer-on-knee-injuries-2237"
+      "pearl_id": "dr-ganzer-on-knee-injuries-2237",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:quadriceps active test"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients with MCL injury may have a vaulting gait because they use their quadriceps to lock the knee and prevent it from buckling inward under valgus stress.",
@@ -47785,7 +48051,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with MCL injury",
-      "pearl_id": "dr-ganzer-on-knee-injuries-2359"
+      "pearl_id": "dr-ganzer-on-knee-injuries-2359",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:valgus stress"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For MCL testing, apply valgus stress at 30 degrees of knee flexion to isolate the MCL; laxity at full extension suggests a more significant injury involving other structures.",
@@ -47799,7 +48084,23 @@
       "prompt_version": "v1",
       "applies_to": "suspected MCL injury",
       "by_presenter": false,
-      "pearl_id": "dr-ganzer-on-knee-injuries-2419"
+      "pearl_id": "dr-ganzer-on-knee-injuries-2419",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:valgus stress"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The frog leg maneuver for LCL: position the patient with hip flexed and externally rotated, knee flexed, then push down on the knee to create varus stress; gapping of the lateral compartment suggests LCL injury.",
@@ -47812,7 +48113,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "suspected LCL injury",
-      "pearl_id": "dr-ganzer-on-knee-injuries-2638"
+      "pearl_id": "dr-ganzer-on-knee-injuries-2638",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:frog leg maneuver"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For the Thessaly test, start at 5 degrees of knee flexion; if no symptoms, repeat at about 20 degrees, but do not go past 30 degrees of flexion.",
@@ -47825,7 +48142,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "suspected meniscal tear",
-      "pearl_id": "dr-ganzer-on-knee-injuries-3244"
+      "pearl_id": "dr-ganzer-on-knee-injuries-3244",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:thessaly test"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The Thessaly test is the most accurate meniscal test, up to 94% accurate; have the patient stand on the injured leg, hold hands for balance, and rotate the body at 5 degrees and then 20 degrees of knee flexion.",
@@ -47838,7 +48174,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "suspected meniscal tear",
-      "pearl_id": "dr-ganzer-on-knee-injuries-3289"
+      "pearl_id": "dr-ganzer-on-knee-injuries-3289",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:thessaly test"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patellar dislocation is typically lateral due to the Q angle; it occurs with foot flat and internal rotation on a flexed knee, not when the knee is straight.",
@@ -47851,7 +48206,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected patellar dislocation",
-      "pearl_id": "dr-ganzer-on-knee-injuries-3323"
+      "pearl_id": "dr-ganzer-on-knee-injuries-3323",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:patellar dislocation"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patellar dislocation typically occurs with the knee flexed, not when straight, because the quadriceps holds the patella up when extended.",
@@ -47864,7 +48235,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with knee injury",
-      "pearl_id": "dr-ganzer-on-knee-injuries-3345"
+      "pearl_id": "dr-ganzer-on-knee-injuries-3345",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:patellar dislocation"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The patellar apprehension test: with the knee extended, apply a lateral displacement force to the patella; a positive test is the sensation that something bad is going to happen, not necessarily pain.",
@@ -47878,7 +48265,23 @@
       "prompt_version": "v1",
       "applies_to": "suspected patellar instability",
       "by_presenter": false,
-      "pearl_id": "dr-ganzer-on-knee-injuries-3445"
+      "pearl_id": "dr-ganzer-on-knee-injuries-3445",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:patellar apprehension "
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To reduce a laterally dislocated patella, hold the patella laterally as you put the knee back into extension, then slide it over.",
@@ -47891,7 +48294,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acute lateral patellar dislocation",
-      "pearl_id": "dr-ganzer-on-knee-injuries-3472"
+      "pearl_id": "dr-ganzer-on-knee-injuries-3472",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Extensor mechanism rupture (quadriceps tendon, patella, patellar tendon, tibial tuberosity) causes loss of active knee extension and difficulty bearing weight.",
@@ -47904,7 +48323,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with knee trauma",
-      "pearl_id": "dr-ganzer-on-knee-injuries-3524"
+      "pearl_id": "dr-ganzer-on-knee-injuries-3524",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:extensor mechanism rup"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Quadriceps tendon rupture typically occurs in older adults with comorbidities like chronic steroid use, rheumatoid arthritis, diabetes, obesity, kidney disease, or gout.",
@@ -47917,7 +48352,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older adults with knee injury",
-      "pearl_id": "dr-ganzer-on-knee-injuries-3545"
+      "pearl_id": "dr-ganzer-on-knee-injuries-3545",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:quadriceps tendon rupt"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In quadriceps tendon rupture, the patella sits inferiorly and the prepatellar bursa may be swollen.",
@@ -47930,7 +48384,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected quadriceps tendon rupture",
-      "pearl_id": "dr-ganzer-on-knee-injuries-3608"
+      "pearl_id": "dr-ganzer-on-knee-injuries-3608",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:quadriceps tendon rupt"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Osteochondral fractures may cause locking or catching; if only cartilage is involved (chondral defect), it may not be visible on X-ray and requires MRI for diagnosis.",
@@ -47943,7 +48413,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with knee locking or catching and normal X-rays",
-      "pearl_id": "dr-ganzer-on-knee-injuries-3757"
+      "pearl_id": "dr-ganzer-on-knee-injuries-3757",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tibial plateau fracture can occur from a valgus blow that spares the MCL but compresses the lateral compartment, causing the bones to hit hard enough to fracture.",
@@ -47956,7 +48442,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with lateral knee trauma",
-      "pearl_id": "dr-ganzer-on-knee-injuries-3792"
+      "pearl_id": "dr-ganzer-on-knee-injuries-3792",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tibial plateau fractur"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lipid droplets in knee joint aspiration indicate an intra-articular fracture, such as a tibial plateau fracture, even if not seen on X-ray.",
@@ -47969,7 +48471,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with knee trauma and hemarthrosis",
-      "pearl_id": "dr-ganzer-on-knee-injuries-3838"
+      "pearl_id": "dr-ganzer-on-knee-injuries-3838",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pediatric patients, tibial eminence (spine) fracture is an avulsion of the ACL attachment; if nondisplaced, cast in extension; if displaced, needs surgical fixation.",
@@ -47982,7 +48500,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "skeletally immature patients with knee injury",
-      "pearl_id": "dr-ganzer-on-knee-injuries-3959"
+      "pearl_id": "dr-ganzer-on-knee-injuries-3959",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patellar sleeve avulsion in children usually involves the inferior aspect of the patella and typically requires open reduction internal fixation.",
@@ -47995,7 +48526,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pediatric patients with knee injury",
-      "pearl_id": "dr-ganzer-on-knee-injuries-4052"
+      "pearl_id": "dr-ganzer-on-knee-injuries-4052",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:patellar sleeve avulsi"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

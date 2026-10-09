@@ -61250,7 +61250,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with obesity and urinary incontinence",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-318"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-318",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 5.55
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advise caution with extreme sports like CrossFit, as the heavy lifting and pounding put excessive pressure on the pelvic floor that the body was not made to handle.",
@@ -61263,7 +61276,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all women considering extreme sports",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-375"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-375",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "MiraLAX at night is recommended to prevent constipation and reduce straining that can worsen pelvic floor disorders.",
@@ -61276,7 +61302,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pelvic floor disorders",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-458"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-458",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:constipation"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tell patients to imagine clenching their butt cheeks in a room full of people and trying not to pass gas to perform a proper Kegel exercise.",
@@ -61289,7 +61334,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all women doing Kegel exercises",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-472"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-472",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:exercise"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To test Kegel strength, have the patient try to stop urine midstream once a month, but not more often to avoid causing voiding dysfunction.",
@@ -61302,7 +61363,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women performing Kegel exercises",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-483"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-483",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with diabetes and incontinence, first get their blood sugar under control with a hemoglobin A1c under 7% before addressing the urinary issues.",
@@ -61315,7 +61392,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with urinary incontinence",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-502"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-502",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:under 7",
+            "test:A1c"
+          ],
+          "rarity": 6.57
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not assume every woman knows there are three separate openings (urethra, vagina, rectum) or knows how to do a Kegel; educating patients on anatomy is important.",
@@ -61328,7 +61422,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all female patients",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-834"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-834",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Urinary incontinence is not a normal part of aging; one in four women aged 20-39 also suffers from it, so it should be asked about in younger women as well.",
@@ -61341,7 +61451,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women of all ages",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-935"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-935",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:urinary incontinence"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nocturia is defined as waking up more than two times during the night to urinate, though the definition is patient-centered based on increased bother.",
@@ -61354,7 +61480,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adult patients",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1084"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1084",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nocturia"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advise patients to avoid carbonated drinks, citrus, caffeine, and chocolate because these acidic items irritate the bladder and worsen urgency/frequency.",
@@ -61367,7 +61509,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with bladder urgency/frequency",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1149"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1149",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:caffeine"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advise patients to avoid the four C's: carbonated drinks, citrusy things, caffeinated drinks, and chocolate, as these are high in acid and irritate the bladder lining, causing urgency and frequency.",
@@ -61380,7 +61541,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with urinary urgency/frequency",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1151"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1151",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Limit fluid intake 2, 3 hours before bedtime to reduce nocturia.",
@@ -61393,7 +61570,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with nocturia",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1249"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1249",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 hours"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 6.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Teach Kegels as a set of 10, each held for 10 seconds, twice daily.",
@@ -61406,7 +61602,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with urinary incontinence",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1262"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1262",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For overactive bladder, gradually increase time between voids by 10 minutes each week.",
@@ -61419,7 +61631,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with overactive bladder or frequent voiding",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1484"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1484",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 minutes"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid oxybutynin due to severe dry mouth; it also takes 4, 6 weeks to see effect.",
@@ -61432,7 +61663,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing an anticholinergic for overactive bladder",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1593"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1593",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 weeks"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 6.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Prefer solifenacin (Vesicare) for overactive bladder; start at 5 mg, can increase to 10 mg, once daily, fewer side effects.",
@@ -61445,7 +61695,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing an anticholinergic for overactive bladder",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1615"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1615",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:5 mg",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid mirabegron in patients with hypertension because it elevates blood pressure.",
@@ -61458,7 +61728,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hypertensive patients with overactive bladder",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1639"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1639",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypertension"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PTNS protocol: 25-minute sessions weekly for 12 weeks, then maintenance every 4, 6 weeks.",
@@ -61471,7 +61760,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with overactive bladder interested in non-drug therapy",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1797"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1797",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:12 weeks",
+            "frequency:weekly"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bladder Botox wears off after 6, 12 months, requiring injections once or twice a year.",
@@ -61484,7 +61790,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving bladder Botox for overactive bladder",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1859"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1859",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:12 months"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In elderly patients, if an anticholinergic is needed, choose trospium (Sanctura) because it is a quaternary amine and does not cross the blood-brain barrier, minimizing cognitive effects.",
@@ -61497,7 +61819,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients needing anticholinergic",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1899"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1899",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:blood-brain barrier"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If using desmopressin for nocturia, monitor electrolytes monthly to prevent sodium/potassium derangements.",
@@ -61510,7 +61848,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on desmopressin for nocturia",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1942"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1942",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:monthly"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A pessary acts like a speed bump under the urethra, preventing leakage with cough, laugh, or sneeze.",
@@ -61523,7 +61880,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with stress urinary incontinence",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1995"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-1995",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pessary"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bulking agent for stress incontinence is ~65, 70% effective, permanent, and can be done in office.",
@@ -61536,7 +61909,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with stress urinary incontinence",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-2097"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-2097",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Autologous fascial sling avoids mesh but may increase risk of overactive bladder symptoms.",
@@ -61549,7 +61935,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with stress urinary incontinence who choose autologous sling",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-2201"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-2201",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:overactive bladder"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A properly fitted pessary should have at least one finger breadth of space around it to avoid necrosis or fistula.",
@@ -61562,7 +61967,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being fitted for a pessary",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3102"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3102",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:pessary"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "necrosis"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tell patients the pessary should feel like a tampon, noticeable at first, then forgotten.",
@@ -61575,7 +62002,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using a pessary",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3125"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3125",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pessary"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For young, healthy patients, clean the pessary once a week with warm soap and water, let it dry overnight, and reinsert the next morning.",
@@ -61588,7 +62031,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "young, healthy patients using a pessary",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3177"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3177",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pessary"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The more patients wash and dry the pessary, the less vaginal discharge they will have.",
@@ -61601,7 +62060,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using a pessary",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3192"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3192",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vaginal discharge"
+          ],
+          "rarity": 6.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "One in four women will like pessaries; three out of four will not, and the number one reason is increased vaginal discharge.",
@@ -61614,7 +62089,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women considering a pessary",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3202"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3202",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vaginal discharge"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advise younger patients to remove the pessary before intercourse.",
@@ -61627,7 +62118,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "younger patients using a pessary",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3223"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3223",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pessary"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with arthritis who cannot manage self-care, schedule clinic visits every three months for pessary removal, vaginal exam, cleaning, and reinsertion.",
@@ -61640,7 +62147,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with arthritis who cannot self-manage a pessary",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3288"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3288",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:self-care"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When inserting a folded pessary, apply lubricant only to the very top, not the whole device, to maintain grip.",
@@ -61653,7 +62176,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians inserting a pessary",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3318"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3318",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pessary"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After fitting a pessary, have the patient void into a hat to confirm it stays in place.",
@@ -61666,7 +62205,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after pessary fitting",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3384"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3384",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pessary"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Imaging is not necessary for prolapse evaluation unless uterine pathology such as fibroids or bleeding is suspected.",
@@ -61680,7 +62238,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with pelvic organ prolapse",
       "by_presenter": false,
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3412"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3412",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 6.72
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bleeding from prolapse should not be significant; if it is, evaluate for endometrial pathology including cancer.",
@@ -61693,7 +62267,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with prolapse and bleeding",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3452"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3452",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:cancer"
+          ],
+          "actionable": [
+            "evaluate"
+          ],
+          "harm": [
+            "Bleeding"
+          ],
+          "rarity": 6.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Vaginal estrogen cream is a 'three-for-one' for postmenopausal women: treats atrophy, supports pelvic floor, and reduces UTIs.",
@@ -61706,7 +62302,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "postmenopausal women",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3500"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3500",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vaginal estrogen"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Vaginal estrogen does not increase endometrial cancer risk, but coordinate with oncology for patients with gynecologic cancer history.",
@@ -61719,7 +62331,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with history of gynecologic cancer",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3541"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3541",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:endometrial cancer"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dose vaginal estrogen cream as about one inch on the index finger, placed as high as possible, Monday-Wednesday-Friday nights.",
@@ -61732,7 +62363,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "postmenopausal women using vaginal estrogen",
-      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3561"
+      "pearl_id": "dr-price-on-pelvic-floor-dysfunction-3561",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vaginal estrogen"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

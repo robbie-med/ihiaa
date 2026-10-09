@@ -27715,7 +27715,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with vomiting",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-219"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-219",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:small bowel obstructio"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If milk or formula is seen coming out of the infant's mouth during a brief event, it is not a BRUE (brief resolved unexplained event) because the cause is explained.",
@@ -27728,7 +27747,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with apparent life-threatening events",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-373"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-373",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For infants with reflux, give smaller, more frequent feedings; a 6-week-old should not be getting 6 ounces per feed.",
@@ -27741,7 +27773,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with reflux",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-542"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-542",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After feeding, hold the infant upright for 20-30 minutes and burp them to decrease reflux.",
@@ -27754,7 +27802,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with reflux",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-584"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-584",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:30 minutes"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the infant chokes, coughs, or milk leaks during feeding, the nipple flow rate is too fast; switch to a slower nipple.",
@@ -27767,7 +27834,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with feeding difficulty",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-628"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-628",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:nipple flow rate"
+          ],
+          "actionable": [
+            "switch"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Thicken formula with 1 tablespoon of dry infant oat cereal per ounce; do not use rice cereal due to arsenic concerns, and do not thicken breast milk because amylase breaks down the thickener.",
@@ -27780,7 +27866,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with reflux on formula",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-660"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-660",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:oat cereal"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not prop the crib or use wedges for reflux; infants should sleep supine on a flat, firm surface to prevent SIDS.",
@@ -27793,7 +27898,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all infants",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-759"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-759",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nicotine exposure decreases lower esophageal sphincter tone and increases reflux; counsel families to avoid smoking around the infant.",
@@ -27806,7 +27927,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with reflux",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-843"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-843",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:lower esophageal sphin"
+          ],
+          "actionable": [
+            "counsel"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "40% of infants with GERD have cow's milk protein intolerance; if reflux is excessive, consider a trial of hypoallergenic formula.",
@@ -27819,7 +27959,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with excessive reflux",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-864"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-864",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypoallergenic formula"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sandifer syndrome (arching back, neck extension, chin lifting) indicates esophageal pain from reflux; observe the infant feeding in the office to detect it.",
@@ -27832,7 +27991,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with suspected reflux",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-1195"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-1195",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sandifer syndrome"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bright red blood in stool may indicate proctocolitis; check for anal fissures with a spread sheet exam, and if found, use MiraLAX to keep stools consistently soft.",
@@ -27845,7 +28020,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with blood in stool",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-1278"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-1278",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anal fissure"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Brick-red gritty substance in the diaper is urate crystals, not blood; it is normal in newborns and resolves in a few days.",
@@ -27858,7 +28052,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "newborns in the hospital",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-1319"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-1319",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:urate crystals"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Urate crystals in newborn urine can be mistaken for blood; they are gritty and not shiny, and resolve in a few days.",
@@ -27871,7 +28081,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "newborns in the first 1-3 days of life",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-1331"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-1331",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:urate crystals"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For poor weight gain, have the mother keep a feeding log of every feed and number of ounces to assess caloric intake at the next visit.",
@@ -27884,7 +28110,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with poor weight gain or failure to thrive",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-1418"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-1418",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:feeding log"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cow's milk protein allergy is IgE-mediated, presents with hives around the mouth and red eyes, and most children outgrow it by 3-5 years of age.",
@@ -27897,7 +28139,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with suspected milk allergy",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-1497"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-1497",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 years"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Food protein-induced enterocolitis syndrome (FPIES) is non-IgE mediated, delayed 2-3 hours after exposure, and causes vomiting and diarrhea without skin symptoms.",
@@ -27910,7 +28168,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with severe vomiting and diarrhea after feeding",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-1521"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-1521",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 hours"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PPIs (omeprazole, esomeprazole) are FDA-approved for erosive esophagitis in infants down to 1 month of age; they do not affect the lower esophageal sphincter and only help if erosive esophagitis is present.",
@@ -27923,7 +28197,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with confirmed erosive esophagitis",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-1617"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-1617",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1 month",
+            "drug:omeprazole"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nexium (esomeprazole) comes in delayed release granules in 2.5, 5, and 10 mg packets; add a teaspoon of water, wait a couple minutes for it to thicken, then syringe into the side of the mouth.",
@@ -27939,7 +28233,30 @@
       "numbers_unheard": [
         "2.5"
       ],
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-1650"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-1650",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 mg",
+            "drug:esomeprazole"
+          ],
+          "actionable": [
+            "add"
+          ],
+          "rarity": 8.61,
+          "capped": [
+            "number not heard: 2.5"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Famotidine suspension is 40 mg per teaspoon, max 40 mg per day.",
@@ -27952,7 +28269,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants prescribed famotidine",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-1669"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-1669",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:40 mg",
+            "frequency:per day",
+            "drug:Famotidine"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Prokinetics like metoclopramide are not recommended due to potential for neurologic side effects.",
@@ -27965,7 +28300,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with reflux",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-1680"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-1680",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:metoclopramide"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a breastfeeding mother cuts out dairy, it may take a week to see change and a couple weeks to decide if it's effective.",
@@ -27978,7 +28329,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "breastfeeding mothers of infants with suspected cow's milk protein allergy",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-1748"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-1748",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:breastfeeding"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Most infant reflux resolves by 1 year; reassure parents that it is normal and developmental, and they do not need to try multiple formulas or medications.",
@@ -27991,7 +28358,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with uncomplicated reflux and normal weight gain",
-      "pearl_id": "dr-keller-on-infant-gastroesophageal-1787"
+      "pearl_id": "dr-keller-on-infant-gastroesophageal-1787",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1 year"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

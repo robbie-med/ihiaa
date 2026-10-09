@@ -57943,7 +57943,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with predictable seasonal allergic rhinitis",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-1475"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-1475",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Triamcinolone and fluticasone furoate are approved down to age 2; fluticasone propionate is not.",
@@ -57956,7 +57972,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children aged 2 and older",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-1689"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-1689",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:fluticasone"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fluticasone furoate, mometasone furoate, and triamcinolone have less than 1% systemic absorption; prefer them in pregnancy, osteoporosis, severe glaucoma, cataracts, and children with growth concerns.",
@@ -57969,7 +58001,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnancy, osteoporosis, severe glaucoma, cataracts, children with growth concerns",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-1791"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-1791",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 1",
+            "drug:Fluticasone"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ciclesonide (Omnaris, Zetonna) is a pro-drug that activates inside the cell, reducing local side effects, but it is very hard to obtain.",
@@ -57982,7 +58031,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with difficult-to-treat allergic rhinitis",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-1826"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-1826",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ciclesonide"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dog allergy testing is unreliable because commercial 'mixed dog' extracts don't specify which breeds are included; male dogs are more allergenic due to a protein in their prostate that appears in urine.",
@@ -57995,7 +58063,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected dog allergy",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-1999"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-1999",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:allergy testing"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cat allergen (Fel d 1) is so small and sticky that it coats walls and is present even in newly built apartments via transfer on clothing from workers.",
@@ -58008,7 +58095,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cat allergy",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-2106"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-2106",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dust mites require humidity above 50% to reproduce; keeping indoor humidity between 30-50% with a dehumidifier or humidifier as needed is key for control in humid climates.",
@@ -58021,7 +58121,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dust mite allergy in humid climates",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-2183"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-2183",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:above 5"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Optimal indoor humidity for allergic rhinitis is 30-50%; above or below causes problems like bloody noses and coughing.",
@@ -58034,7 +58150,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with allergic rhinitis",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-2193"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-2193",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:allergic rhinitis"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dust mites feed on skin scales; highest concentration is in the bed. Hot wash sheets, cover pillows and mattress with breathable, truly occlusive covers.",
@@ -58047,7 +58179,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dust mite allergy",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-2210"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-2210",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For dust mite control, hot wash sheets, cover pillows and mattresses with breathable allergen-proof covers from specialty vendors like missionallergy.com, not general store brands.",
@@ -58060,7 +58205,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dust mite allergy",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-2226"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-2226",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cockroach protein is without question 100% associated with asthma, especially in inner-city environments.",
@@ -58073,7 +58231,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with asthma, especially in inner-city environments",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-2256"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-2256",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:asthma"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cockroach protein is 100% associated with asthma.",
@@ -58086,7 +58260,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with asthma",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-2256-2"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-2256-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:asthma"
+          ],
+          "rarity": 6.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Air filters reduce dog dander more effectively than cat dander because cat dander is smaller and sticks to walls.",
@@ -58099,7 +58289,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pet allergies",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-2282"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-2282",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nasal irrigation cleans sinuses better than sprays, but avoid in immunocompromised patients unless they reliably use sterile distilled water.",
@@ -58112,7 +58318,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "immunocompromised patients",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-2435"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-2435",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:immunocompromised"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is too congested to use a nasal rinse, first use a topical decongestant (e.g., Afrin) or a few days of low-dose oral prednisone to reduce swelling before rinsing.",
@@ -58125,7 +58350,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe nasal congestion",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-2529"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-2529",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:prednisone"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Over-the-counter azelastine (Astepro) is twice as strong as the prescription version and dosed once daily; major side effects are drowsiness (dose at night) and bad taste.",
@@ -58138,7 +58382,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with allergic rhinitis",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-2935"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-2935",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cromolyn is safe in pregnancy, non-sedating, works for about 4 hours, and takes 30 minutes to act; useful for short exposures like visiting a cat.",
@@ -58151,7 +58411,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients or those avoiding steroids",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-3051"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-3051",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4 hours"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For geriatric patients, use oral syrups (Zyrtec, Allegra, Claritin) at a teaspoon dose; they often need less medicine.",
@@ -58164,7 +58440,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "geriatric patients",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-3199"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-3199",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Proper nasal spray technique: use opposite hand for same-side nostril, pull nostril open, aim away from septum to avoid epistaxis.",
@@ -58177,7 +58469,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients using nasal sprays",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-3288"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-3288",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:nasal spray technique"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has nasal vault collapse or septal deviation, pull that side of the nose outward before inserting the spray to ensure the medication reaches the nasal cavity.",
@@ -58190,7 +58501,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with nasal structural issues",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-3295"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-3295",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:nasal vault collapse"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Place the thumb on the bottom of the spray bottle for stability, not on the sides.",
@@ -58203,7 +58533,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using nasal sprays",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-3305"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-3305",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.67
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Raise the elbow so the spray bottle is flat and not crimping; this helps direct the spray straight back rather than upward into the septum.",
@@ -58216,7 +58559,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using nasal sprays",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-3330"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-3330",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When teaching nasal spray use, have the patient pull the nostril outward, hold the bottle with the opposite hand, and aim straight back toward the ear, not curled toward the septum, to prevent bloody noses.",
@@ -58229,7 +58585,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using nasal sprays",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-3338"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-3338",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Switch hands for each nostril: use the right hand for the left nostril and vice versa, so the spray naturally angles toward the ear.",
@@ -58242,7 +58614,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using nasal sprays",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-3351"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-3351",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Switch"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A skin prick test requires only a tiny prick, just enough to introduce the allergen, not a deep scratch.",
@@ -58255,7 +58643,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "allergy testing",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-3448"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-3448",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:skin prick test"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For skin prick testing, use the back rather than the arm because the back skin is more sensitive and yields better reactions.",
@@ -58268,7 +58672,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "allergy testing",
-      "pearl_id": "dr-purser-on-allergic-rhinitis-3450"
+      "pearl_id": "dr-purser-on-allergic-rhinitis-3450",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:skin prick test"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

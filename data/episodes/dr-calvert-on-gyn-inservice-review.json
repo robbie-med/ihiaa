@@ -12555,7 +12555,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with an IUD",
-      "pearl_id": "dr-calvert-on-gyn-inservice-review-313"
+      "pearl_id": "dr-calvert-on-gyn-inservice-review-313",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:progestin"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Two influenza vaccines are made without egg; for severe egg allergy, use clinical judgment but the amount of egg protein in other vaccines is minimal and risk is low.",
@@ -12568,7 +12584,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe egg allergy",
-      "pearl_id": "dr-calvert-on-gyn-inservice-review-950"
+      "pearl_id": "dr-calvert-on-gyn-inservice-review-950",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:influenza vaccine"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Kegel exercises are a frequent board exam topic; counsel patients about them routinely.",
@@ -12581,7 +12616,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients for pelvic floor support",
-      "pearl_id": "dr-calvert-on-gyn-inservice-review-1180"
+      "pearl_id": "dr-calvert-on-gyn-inservice-review-1180",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:kegel exercises"
+          ],
+          "actionable": [
+            "counsel"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hematuria workup must consider bladder or kidney cancer.",
@@ -12594,7 +12648,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hematuria",
-      "pearl_id": "dr-calvert-on-gyn-inservice-review-1276"
+      "pearl_id": "dr-calvert-on-gyn-inservice-review-1276",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hematuria"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 5.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "New guideline for starting mammography screening is age 50 (as of 2022), changed from age 45.",
@@ -12610,7 +12683,29 @@
       "numbers_unheard": [
         "2022"
       ],
-      "pearl_id": "dr-calvert-on-gyn-inservice-review-1301"
+      "pearl_id": "dr-calvert-on-gyn-inservice-review-1301",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:mammography screening"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 8.11,
+          "capped": [
+            "number not heard: 2022"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For severe dysmenorrhea, naproxen may not help much; consider combined oral contraceptives to thin the endometrium and reduce prostaglandin production.",
@@ -12623,7 +12718,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with severe dysmenorrhea",
-      "pearl_id": "dr-calvert-on-gyn-inservice-review-1512"
+      "pearl_id": "dr-calvert-on-gyn-inservice-review-1512",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:combined oral contrace"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pregnancy is progesterone dominant; birth control pills mimic this to thin the endometrium, leading to lighter periods or amenorrhea.",
@@ -12636,7 +12750,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women on combined oral contraceptives",
-      "pearl_id": "dr-calvert-on-gyn-inservice-review-1585"
+      "pearl_id": "dr-calvert-on-gyn-inservice-review-1585",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:progesterone"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For chronic anovulation, evaluate both PCOS and insulin resistance; if both are causal and insulin resistance is more severe, start by treating insulin resistance; if PCOS is the primary driver, treat PCOS.",
@@ -12649,7 +12779,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with chronic anovulation",
-      "pearl_id": "dr-calvert-on-gyn-inservice-review-1700"
+      "pearl_id": "dr-calvert-on-gyn-inservice-review-1700",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:chronic anovulation"
+          ],
+          "actionable": [
+            "evaluate"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PCOS diagnosis requires two of three: irregular periods, polycystic ovaries, elevated testosterone.",
@@ -12662,7 +12811,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with suspected PCOS",
-      "pearl_id": "dr-calvert-on-gyn-inservice-review-1770"
+      "pearl_id": "dr-calvert-on-gyn-inservice-review-1770",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In chronic anovulation, ensure the patient menstruates at least twice a year to avoid endometrial hyperplasia and cancer; if she has only one period a year or none, give progesterone withdrawal with 10 mg Provera daily for five days.",
@@ -12678,7 +12843,33 @@
       "numbers_unheard": [
         "10"
       ],
-      "pearl_id": "dr-calvert-on-gyn-inservice-review-1839"
+      "pearl_id": "dr-calvert-on-gyn-inservice-review-1839",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 mg",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 8.08,
+          "capped": [
+            "number not heard: 10"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Submucosal fibroids cause heavy menstrual bleeding; subserosal and intramural fibroids do not.",
@@ -12691,7 +12882,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with fibroids on pelvic ultrasound",
-      "pearl_id": "dr-calvert-on-gyn-inservice-review-1971"
+      "pearl_id": "dr-calvert-on-gyn-inservice-review-1971",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Uterine artery embolization is the only non-surgical procedure for symptomatic fibroids when the patient wants to avoid hysterectomy.",
@@ -12704,7 +12914,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with symptomatic fibroids who want to avoid hysterectomy",
-      "pearl_id": "dr-calvert-on-gyn-inservice-review-2026"
+      "pearl_id": "dr-calvert-on-gyn-inservice-review-2026",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:uterine artery emboliz"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When evaluating breast pain, ask if it is cyclic or random; cyclic pain is usually physiologic and benign.",
@@ -12717,7 +12946,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with breast pain",
-      "pearl_id": "dr-calvert-on-gyn-inservice-review-2153"
+      "pearl_id": "dr-calvert-on-gyn-inservice-review-2153",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:breast pain"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

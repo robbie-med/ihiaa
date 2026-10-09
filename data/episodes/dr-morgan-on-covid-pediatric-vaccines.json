@@ -27741,7 +27741,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children 6 months to 4 years",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-622"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-622",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "46-68% of hospitalized children 6 months to 4 years had underlying health conditions; use this to identify high-risk patients.",
@@ -27754,7 +27773,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children 6 months to 4 years hospitalized with COVID",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-704"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-704",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 5.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a child 6 months to 4 years is hospitalized with COVID, they are more likely to need ICU, high-flow nasal cannula, BiPAP, CPAP, or ventilator.",
@@ -27767,7 +27805,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children 6 months to 4 years hospitalized with COVID",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-732"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-732",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "COVID hospitalization rates in children 6 months to 4 years during Delta/Omicron were as high as or higher than prepandemic flu rates, justifying vaccine development.",
@@ -27780,7 +27834,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "for comparison with flu",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-783"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-783",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "COVID was the fifth leading cause of death in children 6 months to 4 years, with a higher death rate than flu, hep A, meningitis, varicella, rubella, and other coronaviruses before their vaccines.",
@@ -27793,7 +27863,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children 6 months to 4 years",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-877"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-877",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Initial COVID infection in children 6 months to 4 years is much worse than MIS-C; do not underestimate acute infection.",
@@ -27809,7 +27898,29 @@
       "numbers_unheard": [
         "6"
       ],
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-939"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-939",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.15,
+          "capped": [
+            "number not heard: 6"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The FDA emergency use authorization process for pediatric COVID vaccines included 45-minute presentations from Moderna, FDA reviewers, Pfizer, and FDA reviewers, followed by public hearing and voting.",
@@ -27822,7 +27933,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "understanding FDA process",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1199"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1199",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:emergency use authoriz"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The vaccine was safer than getting COVID in this age group given high hospitalization and ventilator rates.",
@@ -27835,7 +27968,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children 6 months to 4 years",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1269"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1269",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Extreme and mild side effects from the vaccine were very low, though study numbers were small.",
@@ -27848,7 +27994,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children 6 months to 4 years",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1280"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1280",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The pediatric vaccine studies were observer-blind, placebo-controlled, randomized, and had good population differences, but were small in size.",
@@ -27861,7 +28020,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general (study design)",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1323"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1323",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "blind"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Warn families that local and systemic reactions (pain, redness, swelling, fever) are likely to be worse after the second dose than after the first.",
@@ -27874,7 +28049,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children receiving COVID-19 vaccines",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1386"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1386",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fever"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Moderna vaccine reactions are generally worse than Pfizer reactions in children, possibly because children have not been exposed to Moderna's novel mechanism of action before.",
@@ -27887,7 +28078,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children receiving Moderna vs Pfizer COVID-19 vaccine",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1400"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1400",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:moderna vaccine"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Only one febrile seizure was reported across all pediatric vaccine trials; febrile seizures can also occur with COVID infection itself.",
@@ -27900,7 +28107,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children receiving COVID-19 vaccine",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1448"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1448",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:febrile seizure"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 6.47
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "No cases of myocarditis were reported in any of the pediatric COVID vaccine studies for children under 5 years old.",
@@ -27913,7 +28139,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children aged 6 months to 5 years receiving COVID-19 vaccine",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1479"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1479",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 years",
+            "threshold:under 5"
+          ],
+          "rarity": 6.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Moderna vaccine efficacy against symptomatic COVID was 46% for children aged 2, 5 years and 31% for those aged 6, 23 months.",
@@ -27926,7 +28169,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children aged 6 months to 5 years receiving Moderna COVID-19 vaccine",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1573"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1573",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 years"
+          ],
+          "rarity": 6.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pfizer vaccine was more effective than Moderna in this age group, about 80% effective, but requires three doses.",
@@ -27939,7 +28198,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children aged 6 months to 5 years receiving Pfizer COVID-19 vaccine",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1601"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1601",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pfizer vaccine"
+          ],
+          "rarity": 6.41
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Antibody seropositivity was confirmed at one month after vaccination; safety follow-up extended to seven months.",
@@ -27952,7 +28227,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children aged 6 months to 5 years in COVID-19 vaccine trials",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1622"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1622",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vaccination"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Shared decision-making should include underlying health conditions, age, environment, prior vaccine reactions, and family comfort with risk-benefit.",
@@ -27965,7 +28256,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "families of children aged 6 months to 5 years",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1732"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1732",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For children with underlying health conditions (e.g., Down syndrome), strongly recommend vaccination because they are at higher risk.",
@@ -27978,7 +28282,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children aged 6 months to 5 years with underlying health conditions",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1740"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1740",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:down syndrome"
+          ],
+          "rarity": 6.16
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Children aged 6 months to 5 years are at the highest risk of hospitalization from COVID among pediatric age groups.",
@@ -27991,7 +28311,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children aged 6 months to 5 years",
-      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1761"
+      "pearl_id": "dr-morgan-on-covid-pediatric-vaccines-1761",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "rarity": 6.6
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

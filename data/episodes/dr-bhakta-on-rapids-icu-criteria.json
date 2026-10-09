@@ -26385,7 +26385,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient being considered for ICU",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-118"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-118",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When calling the ICU about a patient, you should have seen the patient, know a brief history, and have started the workup if time allows.",
@@ -26398,7 +26411,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents calling ICU for admission",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-282"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-282",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When called to a rapid, first look at the patient: if they are on their phone, you have time; if they are slumped over and passed out, you need to act immediately.",
@@ -26411,7 +26437,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with a rapid response call",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-547"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-547",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Non-rebreather masks can deliver up to 95% oxygen; if a patient is hypoxic, ensure the mask is on the patient, not on the floor.",
@@ -26424,7 +26466,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hypoxic patients on the floor",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-612"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-612",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Albumin is not more effective than crystalloid if the patient's albumin level is between 3 and 4; only give albumin when the albumin is under 3.",
@@ -26437,7 +26495,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hypotensive patients with ESRD or low albumin",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-719"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-719",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:under 3"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 6.68
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Midodrine is an alpha agonist like levophed or phenylephrine; it is indicated for orthostatic hypotension or dialysis-related hypotension, but not FDA-indicated for floor hypotension management.",
@@ -26450,7 +26527,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with orthostatic hypotension or on dialysis",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-754"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-754",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:orthostatic hypotensio"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Telemetry technicians are trained to call any wide-complex tachycardia VTach; it is the physician's job to determine if it truly is VTach using criteria like Brugada or Life in the Fast Lane.",
@@ -26463,7 +26556,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with a wide-complex tachycardia on telemetry",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-840"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-840",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:life in the fast lane"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For an unstable patient with any tachyarrhythmia who is passed out or slumped over, do not wait for medications, give synchronized cardioversion immediately.",
@@ -26476,7 +26585,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "unstable patients with tachyarrhythmia",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1041"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1041",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:synchronized cardiover"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For chronic atrial fibrillation in patients with COPD and heart disease who are on baseline rate control and have heart rates in the 120s, 140s, calling EP will likely yield the same advice: give beta blockers and see them in the morning.",
@@ -26489,7 +26620,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic AFib, COPD, and heart disease who are stable",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1076"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1076",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:atrial fibrillation"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stable atrial fibrillation with rapid ventricular response (rates 120s-140s) is often difficult to treat; beta blockers or amiodarone can be tried, but if the patient is stable, it is acceptable to call EP and continue management in the morning.",
@@ -26502,7 +26652,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "stable patients with AFib RVR",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1079"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1079",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:atrial fibrillation wi"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For refractory atrial fibrillation in complex patients (COPD, heart disease), try to treat it; if you cannot, get AP (advanced practice provider or attending).",
@@ -26515,7 +26684,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with refractory AFib and comorbidities",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1101"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1101",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:atrial fibrillation"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 6.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Code status discussions should begin in the clinic, not when the patient is decompensating at night.",
@@ -26528,7 +26716,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients in clinic",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1171"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1171",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:code status"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ensure the designated healthcare proxy is aware of the patient's wishes and is aligned; otherwise, a proxy who has not seen the patient in months may override the patient's wishes and demand full care.",
@@ -26541,7 +26745,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with advance directives and a designated healthcare proxy",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1201"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1201",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:healthcare proxy"
+          ],
+          "actionable": [
+            "Ensure"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Re-check code status and advance directives at every hospitalization and daily on rounds to ensure they match the chart and the patient's current wishes.",
@@ -26554,7 +26777,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1239"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1239",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is unstable and no DNR bracelet is visible, assume full code and proceed with full resuscitation.",
@@ -26567,7 +26809,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "unstable patients without visible DNR identification",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1269"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1269",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.8
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "At St. John's, DNR and DNI are separate orders; some patients may want DNR but still desire a trial of mechanical ventilation for a few days.",
@@ -26580,7 +26835,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients at St. John's hospital",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1290"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1290",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:mechanical ventilation"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When discussing prognosis, use language at a 5th-grade level because about 20% of Oklahomans are illiterate; be direct and avoid giving false hope.",
@@ -26593,7 +26864,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients, especially in Oklahoma",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1323"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1323",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Reframe success in critical care: your goal is to ensure the patient isn't suffering and that their goals of care are addressed; if they pass comfortably, that is a win.",
@@ -26606,7 +26893,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients, especially those at end of life",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1449"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1449",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:goals of care"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "All unstable patients or those who 'look sick' should probably go to the ICU.",
@@ -26619,7 +26925,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "unstable or clinically ill patients",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1525"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1525",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a nurse calls about a patient a second time, the physician should go see the patient rather than manage by phone.",
@@ -26632,7 +26951,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient when the nurse calls a second time",
-      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1550"
+      "pearl_id": "dr-bhakta-on-rapids-icu-criteria-1550",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.28
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

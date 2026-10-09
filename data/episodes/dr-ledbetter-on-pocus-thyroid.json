@@ -11159,7 +11159,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anyone performing thyroid POCUS",
-      "pearl_id": "dr-ledbetter-on-pocus-thyroid-117"
+      "pearl_id": "dr-ledbetter-on-pocus-thyroid-117",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.03
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Measure the isthmus in the transverse plane; it should be less than half a centimeter top to bottom.",
@@ -11172,7 +11185,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "normal thyroid",
-      "pearl_id": "dr-ledbetter-on-pocus-thyroid-276"
+      "pearl_id": "dr-ledbetter-on-pocus-thyroid-276",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Measure"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Normal thyroid tissue is homogeneous and hyperechoic relative to the strap muscles, which are hypoechoic.",
@@ -11185,7 +11214,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "normal thyroid",
-      "pearl_id": "dr-ledbetter-on-pocus-thyroid-292"
+      "pearl_id": "dr-ledbetter-on-pocus-thyroid-292",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In thyroiditis, the thyroid appears heterogeneous with black and white specks throughout due to lymphocytic infiltration.",
@@ -11198,7 +11240,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thyroiditis",
-      "pearl_id": "dr-ledbetter-on-pocus-thyroid-303"
+      "pearl_id": "dr-ledbetter-on-pocus-thyroid-303",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:thyroiditis"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Be consistent in how you measure nodules (e.g., AP and perpendicular planes or greatest dimensions) to ensure reproducible follow-up.",
@@ -11211,7 +11269,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anyone following thyroid nodules",
-      "pearl_id": "dr-ledbetter-on-pocus-thyroid-449"
+      "pearl_id": "dr-ledbetter-on-pocus-thyroid-449",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "measure"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A halo sign around a nodule (anechoic rim) is generally benign.",
@@ -11224,7 +11298,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "thyroid nodules",
-      "pearl_id": "dr-ledbetter-on-pocus-thyroid-636"
+      "pearl_id": "dr-ledbetter-on-pocus-thyroid-636",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Simple cysts and colloid cysts are usually benign and not a big deal.",
@@ -11237,7 +11324,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "thyroid nodules",
-      "pearl_id": "dr-ledbetter-on-pocus-thyroid-675"
+      "pearl_id": "dr-ledbetter-on-pocus-thyroid-675",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:colloid cyst"
+          ],
+          "rarity": 7.9
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Microcalcifications (<1 mm) are associated with psammoma bodies and papillary carcinoma, which is concerning for malignancy.",
@@ -11250,7 +11353,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "thyroid nodules with microcalcifications",
-      "pearl_id": "dr-ledbetter-on-pocus-thyroid-803"
+      "pearl_id": "dr-ledbetter-on-pocus-thyroid-803",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1 mm",
+            "threshold:<1"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Internodular or central vascularity in a nodule is more concerning for malignancy than absent or peripheral vascularity.",
@@ -11263,7 +11383,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "thyroid nodules",
-      "pearl_id": "dr-ledbetter-on-pocus-thyroid-841"
+      "pearl_id": "dr-ledbetter-on-pocus-thyroid-841",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For TIRADS 3 (mildly suspicious) nodules, biopsy if >2.5 cm; for TIRADS 4 (moderately suspicious), biopsy if >1.5 cm; for TIRADS 5 (highly suspicious), biopsy if >1 cm.",
@@ -11279,7 +11412,25 @@
       "numbers_unheard": [
         "1.5"
       ],
-      "pearl_id": "dr-ledbetter-on-pocus-thyroid-886"
+      "pearl_id": "dr-ledbetter-on-pocus-thyroid-886",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2.5 cm",
+            "threshold:>2",
+            "test:biopsy"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

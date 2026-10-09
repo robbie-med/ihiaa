@@ -86328,7 +86328,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dizziness",
-      "pearl_id": "dr-anne-hogan-on-vertigo-188"
+      "pearl_id": "dr-anne-hogan-on-vertigo-188",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dizziness"
+          ],
+          "rarity": 6.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To demonstrate an intact VOR, have the patient shake their head while fixating on a stationary object; if the object remains clear, the VOR is working.",
@@ -86341,7 +86357,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-anne-hogan-on-vertigo-414"
+      "pearl_id": "dr-anne-hogan-on-vertigo-414",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hearing loss of 20 dB or greater increases fall risk threefold.",
@@ -86354,7 +86383,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hearing loss",
-      "pearl_id": "dr-anne-hogan-on-vertigo-508"
+      "pearl_id": "dr-anne-hogan-on-vertigo-508",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hearing loss"
+          ],
+          "rarity": 6.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dizzy patients have a 12 times higher risk of falls based on NHANES data.",
@@ -86367,7 +86412,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dizziness",
-      "pearl_id": "dr-anne-hogan-on-vertigo-525"
+      "pearl_id": "dr-anne-hogan-on-vertigo-525",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Over age 85, one in two patients have had a fall in the past year.",
@@ -86380,7 +86438,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients over 85",
-      "pearl_id": "dr-anne-hogan-on-vertigo-569"
+      "pearl_id": "dr-anne-hogan-on-vertigo-569",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 5.4
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Falls are the leading cause of accidental death and injury in adults 65 and older.",
@@ -86393,7 +86464,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults 65+",
-      "pearl_id": "dr-anne-hogan-on-vertigo-576"
+      "pearl_id": "dr-anne-hogan-on-vertigo-576",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "death"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Women have twice the fall rate of men.",
@@ -86406,7 +86493,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women",
-      "pearl_id": "dr-anne-hogan-on-vertigo-587"
+      "pearl_id": "dr-anne-hogan-on-vertigo-587",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 5.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For any dizziness evaluation, start with a hearing test.",
@@ -86419,7 +86519,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dizziness",
-      "pearl_id": "dr-anne-hogan-on-vertigo-673"
+      "pearl_id": "dr-anne-hogan-on-vertigo-673",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hearing test"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 5.41
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Explain vestibular testing procedures to patients beforehand to reduce anxiety, as fear amplifies symptoms.",
@@ -86432,7 +86551,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing vestibular testing",
-      "pearl_id": "dr-anne-hogan-on-vertigo-792"
+      "pearl_id": "dr-anne-hogan-on-vertigo-792",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Reframe caloric testing: tell patients that feeling movement is a good sign that their ear is working.",
@@ -86445,7 +86580,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing caloric testing",
-      "pearl_id": "dr-anne-hogan-on-vertigo-881"
+      "pearl_id": "dr-anne-hogan-on-vertigo-881",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:caloric testing"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "BPPV is caused by otoconia (crystals) from the utricle entering a semicircular canal, disrupting fluid dynamics.",
@@ -86458,7 +86609,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with positional vertigo",
-      "pearl_id": "dr-anne-hogan-on-vertigo-1086"
+      "pearl_id": "dr-anne-hogan-on-vertigo-1086",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:otoconia"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "You can do video head impulse testing with a cell phone: use slow-motion video to catch catch-up saccades that might not be visible to the naked eye.",
@@ -86471,7 +86638,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians performing head impulse testing",
-      "pearl_id": "dr-anne-hogan-on-vertigo-1407"
+      "pearl_id": "dr-anne-hogan-on-vertigo-1407",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:head impulse test"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If dizziness is not getting better or is worse, there is a central component, or it is fully central.",
@@ -86484,7 +86670,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dizziness",
-      "pearl_id": "dr-anne-hogan-on-vertigo-1651"
+      "pearl_id": "dr-anne-hogan-on-vertigo-1651",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dizziness"
+          ],
+          "rarity": 6.1
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Constant dizziness is not the ear; the ear contains accelerometers, and if someone is constantly dizzy, that doesn't make sense because they are not constantly accelerating.",
@@ -86497,7 +86699,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with constant dizziness",
-      "pearl_id": "dr-anne-hogan-on-vertigo-1662"
+      "pearl_id": "dr-anne-hogan-on-vertigo-1662",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dizziness"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tinnitus that is not timed with dizziness is not Meniere's. Hearing loss that is not timed with the dizziness is not Meniere's.",
@@ -86510,7 +86728,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dizziness and hearing loss/tinnitus",
-      "pearl_id": "dr-anne-hogan-on-vertigo-1675"
+      "pearl_id": "dr-anne-hogan-on-vertigo-1675",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hearing loss"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Magnesium deficiency is a very common cause for recurrent migraines; you can do a magnesium serum test or ask about heart flutters.",
@@ -86523,7 +86757,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with recurrent migraines",
-      "pearl_id": "dr-anne-hogan-on-vertigo-1715"
+      "pearl_id": "dr-anne-hogan-on-vertigo-1715",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:magnesium"
+          ],
+          "actionable": [
+            "ask about"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If dizziness lasts seconds, it is probably BPPV and can be treated with a modified Epley or canalith repositioning procedure.",
@@ -86536,7 +86789,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with brief episodes of vertigo",
-      "pearl_id": "dr-anne-hogan-on-vertigo-1738"
+      "pearl_id": "dr-anne-hogan-on-vertigo-1738",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:canalith repositioning"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When performing the Epley maneuver, make the patient look at their belly button before they sit up, or else you throw the otoconia into the horizontal canal.",
@@ -86549,7 +86818,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing Epley maneuver for BPPV",
-      "pearl_id": "dr-anne-hogan-on-vertigo-1772"
+      "pearl_id": "dr-anne-hogan-on-vertigo-1772",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:epley maneuver"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ninety percent of dizziness and imbalance could be improved by vestibular rehab, including Meniere's disease.",
@@ -86562,7 +86847,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dizziness and imbalance",
-      "pearl_id": "dr-anne-hogan-on-vertigo-1795"
+      "pearl_id": "dr-anne-hogan-on-vertigo-1795",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:meniere's disease"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Meclizine should only be used for one or two days and then stopped so the system can recover; long-term use prolongs recovery.",
@@ -86575,7 +86876,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute vertigo",
-      "pearl_id": "dr-anne-hogan-on-vertigo-1912"
+      "pearl_id": "dr-anne-hogan-on-vertigo-1912",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:meclizine"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with dizziness for years, especially with a fear aspect, send them to physical therapy; it also works as cognitive behavioral therapy.",
@@ -86588,7 +86908,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic dizziness and fear of movement",
-      "pearl_id": "dr-anne-hogan-on-vertigo-2042"
+      "pearl_id": "dr-anne-hogan-on-vertigo-2042",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cognitive behavioral t"
+          ],
+          "rarity": 6.17
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with chronic dizziness and a fear component, refer to physical therapy; it also works as cognitive behavioral therapy through safe movement.",
@@ -86601,7 +86937,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic dizziness and fear of movement",
-      "pearl_id": "dr-anne-hogan-on-vertigo-2042-2"
+      "pearl_id": "dr-anne-hogan-on-vertigo-2042-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cognitive behavioral t"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 5.99
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Refer seniors at risk of falls to the Tai Chi for Better Balance program; a 12-week program twice a week reduced falls risk, depression, and pain.",
@@ -86614,7 +86969,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "seniors at risk of falls",
-      "pearl_id": "dr-anne-hogan-on-vertigo-2136"
+      "pearl_id": "dr-anne-hogan-on-vertigo-2136",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:tai chi for better bal"
+          ],
+          "actionable": [
+            "Refer"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ask dizzy patients when they last had an eye exam and how old their glasses are; outdated glasses can contribute to balance problems.",
@@ -86627,7 +87001,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "dizzy patients",
-      "pearl_id": "dr-anne-hogan-on-vertigo-2196"
+      "pearl_id": "dr-anne-hogan-on-vertigo-2196",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "New glasses may cause dizziness for up to two weeks as the brain adjusts the vestibulo-ocular reflex; advise patients to persist with wearing them.",
@@ -86640,7 +87027,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with new glasses who experience dizziness",
-      "pearl_id": "dr-anne-hogan-on-vertigo-2280"
+      "pearl_id": "dr-anne-hogan-on-vertigo-2280",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dizziness"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Line bifocals have a lower fall risk than progressive (no-line) bifocals; consider recommending line bifocals for patients with balance issues.",
@@ -86653,7 +87056,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with balance concerns who need bifocals",
-      "pearl_id": "dr-anne-hogan-on-vertigo-2297"
+      "pearl_id": "dr-anne-hogan-on-vertigo-2297",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:line bifocals"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During the canalith repositioning procedure, after swinging the patient's legs off the table, have them look at their belly button before sitting up to avoid moving otoconia into the horizontal canal.",
@@ -86666,7 +87088,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing CRP for posterior canal BPPV",
-      "pearl_id": "dr-anne-hogan-on-vertigo-2533"
+      "pearl_id": "dr-anne-hogan-on-vertigo-2533",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:canalith repositioning"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Perform the Dix-Hallpike maneuver from behind the patient, holding their head and using your legs to lift, to protect your back.",
@@ -86679,7 +87120,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians performing Dix-Hallpike",
-      "pearl_id": "dr-anne-hogan-on-vertigo-2568"
+      "pearl_id": "dr-anne-hogan-on-vertigo-2568",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dix-hallpike maneuver"
+          ],
+          "rarity": 6.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients with recurrent BPPV, check vitamin D levels; deficiency can cause otoconia to break off the utricle.",
@@ -86692,7 +87149,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with recurrent BPPV",
-      "pearl_id": "dr-anne-hogan-on-vertigo-2613"
+      "pearl_id": "dr-anne-hogan-on-vertigo-2613",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:vitamin d"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After canalith repositioning, instruct patients to be a 'king or queen' for 24 hours: no bending down, no looking up, and sleep propped up. Do not extend this beyond one day to avoid triggering PPPD.",
@@ -86705,7 +87181,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after CRP for BPPV",
-      "pearl_id": "dr-anne-hogan-on-vertigo-2634"
+      "pearl_id": "dr-anne-hogan-on-vertigo-2634",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient with dizziness has no objective positional findings but becomes dizzy when visual input is removed (e.g., closing VNG goggles), suspect a central vestibular disorder or migraine.",
@@ -86718,7 +87213,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "dizzy patients with normal positional testing",
-      "pearl_id": "dr-anne-hogan-on-vertigo-2721"
+      "pearl_id": "dr-anne-hogan-on-vertigo-2721",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dizziness"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients with unilateral vestibular weakness and hearing loss after an upper respiratory infection, consider labyrinthitis but obtain imaging to rule out acoustic neuroma.",
@@ -86731,7 +87242,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with unilateral weakness and hearing loss after URI",
-      "pearl_id": "dr-anne-hogan-on-vertigo-2795"
+      "pearl_id": "dr-anne-hogan-on-vertigo-2795",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acoustic neuroma"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If dates are unreliable, rely on ultrasound rather than quantitative HCG trend to diagnose early pregnancy loss.",
@@ -86744,7 +87274,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy loss with unreliable dating",
-      "pearl_id": "dr-anne-hogan-on-vertigo-2998"
+      "pearl_id": "dr-anne-hogan-on-vertigo-2998",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Confirm completion of expectant management by ultrasound showing complete passage of tissue or an 80% drop in HCG one week after tissue passage.",
@@ -86757,7 +87303,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy loss managed expectantly",
-      "pearl_id": "dr-anne-hogan-on-vertigo-3153"
+      "pearl_id": "dr-anne-hogan-on-vertigo-3153",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "Confirm"
+          ],
+          "rarity": 7.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If ectopic pregnancy is not ruled out, follow HCG to zero instead of using the 80% drop rule.",
@@ -86770,7 +87335,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy loss with possible ectopic",
-      "pearl_id": "dr-anne-hogan-on-vertigo-3172"
+      "pearl_id": "dr-anne-hogan-on-vertigo-3172",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ectopic pregnancy"
+          ],
+          "rarity": 6.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "RhoGAM is optional for expectant management in the first trimester per ACOG, but can be considered.",
@@ -86783,7 +87364,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy loss, expectant management, first trimester",
-      "pearl_id": "dr-anne-hogan-on-vertigo-3195"
+      "pearl_id": "dr-anne-hogan-on-vertigo-3195",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:expectant management"
+          ],
+          "rarity": 7.03
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Expectant management beyond 14 days offers little additional benefit; only 81% are complete by 46 days, so recommend not waiting more than 14 days.",
@@ -86796,7 +87393,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy loss, expectant management",
-      "pearl_id": "dr-anne-hogan-on-vertigo-3218"
+      "pearl_id": "dr-anne-hogan-on-vertigo-3218",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:14 days",
+            "threshold:more than 1"
+          ],
+          "rarity": 6.26
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Contraindications to expectant management include septic abortion and molar pregnancy.",
@@ -86809,7 +87423,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy loss",
-      "pearl_id": "dr-anne-hogan-on-vertigo-3262"
+      "pearl_id": "dr-anne-hogan-on-vertigo-3262",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:expectant management"
+          ],
+          "harm": [
+            "Contraindications"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Medical management: misoprostol 800 mcg vaginally, repeat dose after 24-48 hours if bleeding does not start.",
@@ -86822,7 +87455,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy loss, medical management",
-      "pearl_id": "dr-anne-hogan-on-vertigo-3296"
+      "pearl_id": "dr-anne-hogan-on-vertigo-3296",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:800 mcg"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 6.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "RhoGAM is indicated for all Rh-negative patients undergoing D&C due to higher risk of immunization.",
@@ -86835,7 +87490,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Rh-negative patients undergoing D&C for pregnancy loss",
-      "pearl_id": "dr-anne-hogan-on-vertigo-3362"
+      "pearl_id": "dr-anne-hogan-on-vertigo-3362",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rhogam"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ER precaution: advise patients to present if soaking 2 pads per hour for 2 hours in a row.",
@@ -86848,7 +87519,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients managing early pregnancy loss at home",
-      "pearl_id": "dr-anne-hogan-on-vertigo-3381"
+      "pearl_id": "dr-anne-hogan-on-vertigo-3381",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 hours"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid prescribing narcotics prophylactically with misoprostol because they can mask severe pain that would warrant an ER visit.",
@@ -86861,7 +87548,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy loss, medical management with misoprostol",
-      "pearl_id": "dr-anne-hogan-on-vertigo-3419"
+      "pearl_id": "dr-anne-hogan-on-vertigo-3419",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:misoprostol"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For stillbirth diagnostic workup, placental pathology is done for all patients; antiphospholipid antibody testing is highly recommended.",
@@ -86874,7 +87580,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "stillbirth (13+ weeks) diagnostic workup",
-      "pearl_id": "dr-anne-hogan-on-vertigo-3610"
+      "pearl_id": "dr-anne-hogan-on-vertigo-3610",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:stillbirth"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cervical ripening balloon is highly recommended for induction of labor in fetal demise, especially in patients with prior hysterotomy.",
@@ -86887,7 +87609,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "stillbirth, induction of labor",
-      "pearl_id": "dr-anne-hogan-on-vertigo-3713"
+      "pearl_id": "dr-anne-hogan-on-vertigo-3713",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cervical ripening ball"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Induction of labor for stillbirth has higher risk of retained placenta requiring D&C and is less effective with higher complication rates between 13 and 24 weeks.",
@@ -86900,7 +87638,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "stillbirth, induction of labor",
-      "pearl_id": "dr-anne-hogan-on-vertigo-3752"
+      "pearl_id": "dr-anne-hogan-on-vertigo-3752",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 weeks"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use personalized terms (e.g., baby's name) and avoid medical jargon like 'spontaneous abortion' when discussing pregnancy loss with patients.",
@@ -86913,7 +87667,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients experiencing pregnancy loss",
-      "pearl_id": "dr-anne-hogan-on-vertigo-3815"
+      "pearl_id": "dr-anne-hogan-on-vertigo-3815",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:spontaneous abortion"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "History of pregnancy loss increases risk of postpartum psychiatric treatment in a later pregnancy: 35% more likely overall; 59% if also had mental health treatment.",
@@ -86926,7 +87699,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with history of pregnancy loss in a subsequent pregnancy",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4163"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4163",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:postpartum psychiatric"
+          ],
+          "rarity": 6.28
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients with mental health treatment history who lose their first pregnancy have nearly 100% risk of needing postpartum psychiatric treatment with their first live birth.",
@@ -86939,7 +87728,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with mental health treatment history and first pregnancy loss",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4202"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4202",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:postpartum psychiatric"
+          ],
+          "rarity": 6.51
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients who lose their first pregnancy have nearly 100% risk of requiring postpartum treatment with their first live birth; recognize this and plan extra follow-up.",
@@ -86952,7 +87757,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with first pregnancy loss",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4208"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4208",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pregnancy"
+          ],
+          "rarity": 6.51
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has a mental health history and loses a pregnancy, almost 100% need treatment following their first live birth.",
@@ -86965,7 +87786,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with mental health history and pregnancy loss",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4218"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4218",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pregnancy"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Increased number of prior pregnancy losses increases the risk for needing postpartum treatment; provide extra support and follow-up visits.",
@@ -86978,7 +87815,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with multiple prior losses",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4232"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4232",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pregnancy loss"
+          ],
+          "rarity": 6.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For OB providers after a fetal death, the top coping strategies are having clinical knowledge and self-confidence, support from colleagues, and debriefing with colleagues after the event.",
@@ -86991,7 +87844,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "OB providers after fetal death",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4372"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4372",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:coping strategies"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For other stressful OB events, helpful coping includes discussing with colleagues and significant others, and follow-up consultations with patients to review the event.",
@@ -87004,7 +87876,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "OB providers after stressful OB events",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4392"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4392",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:significant other"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For burnout, structured meditation, group seminars, educational material, and grief resolution are most helpful; grief expression is less helpful.",
@@ -87017,7 +87905,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "healthcare providers experiencing burnout",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4514"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4514",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:burnout"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For secondary trauma symptoms, problem-focused coping (planning, positive reinterpretation, growth-based focus) is helpful; avoidant coping is less helpful.",
@@ -87030,7 +87934,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "healthcare providers with secondary trauma",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4558"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4558",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:secondary trauma"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Resilience, defined as increased resources or increased knowledge, is the most protective factor against secondary trauma symptoms.",
@@ -87043,7 +87963,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "healthcare providers at risk of secondary trauma",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4586"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4586",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:secondary trauma"
+          ],
+          "rarity": 7.51
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For first-trimester pregnancy loss, some studies suggest patients can start trying again as early as 1, 2 weeks later, but data are conflicting.",
@@ -87056,7 +87992,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after first-trimester loss",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4658"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4658",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 weeks"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.26
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For losses at 13+ weeks (induction, D&E), follow standard pregnancy interval guidelines, typically waiting one year.",
@@ -87069,7 +88024,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after second-trimester loss",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4677"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4677",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pregnancy"
+          ],
+          "rarity": 6.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After a pregnancy loss, review maternal chronic conditions; check thyroid and A1c, and address prediabetes or diabetes to optimize health.",
@@ -87082,7 +88053,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after pregnancy loss",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4726"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4726",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:A1c"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected fetal demise with reliable dates, check HCG on the day of concern and repeat 48 hours later.",
@@ -87095,7 +88085,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected fetal demise and reliable dates",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4784"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4784",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:48 hours"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Without reliable dates, ACOG recommends against using quantitative HCG because HCG declines after 10 weeks, making interpretation unreliable.",
@@ -87108,7 +88117,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected fetal demise without reliable dates",
-      "pearl_id": "dr-anne-hogan-on-vertigo-4795"
+      "pearl_id": "dr-anne-hogan-on-vertigo-4795",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 weeks"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For recurrent first-trimester loss (more than three), refer to MFM or OBGYN for workup including antiphospholipid syndrome and other causes; evaluation can be done between pregnancies.",
@@ -87121,7 +88146,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with recurrent first-trimester loss",
-      "pearl_id": "dr-anne-hogan-on-vertigo-5155"
+      "pearl_id": "dr-anne-hogan-on-vertigo-5155",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:antiphospholipid syndr"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

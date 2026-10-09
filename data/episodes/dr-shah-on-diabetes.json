@@ -75994,7 +75994,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected type 1 diabetes",
-      "pearl_id": "dr-shah-on-diabetes-461"
+      "pearl_id": "dr-shah-on-diabetes-461",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:type 1 diabetes"
+          ],
+          "actionable": [
+            "Order"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Adult-onset type 1 diabetes often presents with a smoldering course over months to years, leading to misdiagnosis as type 2; maintain a high index of suspicion.",
@@ -76007,7 +76026,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with new-onset diabetes",
-      "pearl_id": "dr-shah-on-diabetes-508"
+      "pearl_id": "dr-shah-on-diabetes-508",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:adult-onset type 1 dia"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a euglycemic state (glucose ~80), the pancreas should not be secreting insulin; a C-peptide should be low (near zero).",
@@ -76020,7 +76055,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with normal glucose",
-      "pearl_id": "dr-shah-on-diabetes-575"
+      "pearl_id": "dr-shah-on-diabetes-575",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:c-peptide"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "C-peptide must be interpreted with a simultaneous glucose level; a low C-peptide (e.g., 0.3) when glucose is 80 indicates type 1 diabetes.",
@@ -76033,7 +76084,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being evaluated for pancreatic function",
-      "pearl_id": "dr-shah-on-diabetes-644"
+      "pearl_id": "dr-shah-on-diabetes-644",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:type 1 diabetes"
+          ],
+          "rarity": 7.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients with type 1 diabetes have a 30% higher likelihood of having thyroid disease and increased risk of celiac; screen for other autoimmune conditions.",
@@ -76046,7 +76113,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with type 1 diabetes",
-      "pearl_id": "dr-shah-on-diabetes-673"
+      "pearl_id": "dr-shah-on-diabetes-673",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:type 1 diabetes"
+          ],
+          "actionable": [
+            "screen"
+          ],
+          "rarity": 6.72
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use C-peptide to classify diabetes type during DKA or severe hyperglycemia because glucotoxicity suppresses insulin secretion, giving a falsely low result.",
@@ -76059,7 +76145,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with uncontrolled hyperglycemia or DKA",
-      "pearl_id": "dr-shah-on-diabetes-857"
+      "pearl_id": "dr-shah-on-diabetes-857",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hyperglycemia"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Insulin autoantibodies are only helpful before significant exogenous insulin exposure; after 2-3 years of insulin therapy, they may be positive due to recombinant insulin, not autoimmunity.",
@@ -76072,7 +76177,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being evaluated for type 1 diabetes",
-      "pearl_id": "dr-shah-on-diabetes-907"
+      "pearl_id": "dr-shah-on-diabetes-907",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 years"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Withholding basal insulin in a type 1 diabetes patient can rapidly lead to DKA; always ensure long-acting insulin is continued during hospitalization.",
@@ -76085,7 +76206,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with type 1 diabetes",
-      "pearl_id": "dr-shah-on-diabetes-1030"
+      "pearl_id": "dr-shah-on-diabetes-1030",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:type 1 diabetes"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When in doubt about diabetes type, start basal insulin to control glucose and figure out the classification later; you will not be faulted for using insulin.",
@@ -76098,7 +76238,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with unclear diabetes type",
-      "pearl_id": "dr-shah-on-diabetes-1069"
+      "pearl_id": "dr-shah-on-diabetes-1069",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:basal insulin"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Teplizumab can delay onset of type 1 diabetes by 2-3 years in at-risk individuals; screen children over age 2 with family history or personal autoimmune disease.",
@@ -76111,7 +76270,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children over age 2 with family history of type 1 diabetes or personal autoimmune disease",
-      "pearl_id": "dr-shah-on-diabetes-1142"
+      "pearl_id": "dr-shah-on-diabetes-1142",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 years",
+            "drug:Teplizumab"
+          ],
+          "actionable": [
+            "screen"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cost of teplizumab antibody screening to the patient should be no more than $25.",
@@ -76124,7 +76303,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing type 1 diabetes antibody screening",
-      "pearl_id": "dr-shah-on-diabetes-1166"
+      "pearl_id": "dr-shah-on-diabetes-1166",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:teplizumab"
+          ],
+          "rarity": 5.76
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stage 2 presymptomatic type 1 diabetes carries a 100% risk of progressing to clinical type 1 diabetes within 5 years.",
@@ -76137,7 +76332,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with stage 2 presymptomatic type 1 diabetes",
-      "pearl_id": "dr-shah-on-diabetes-1281"
+      "pearl_id": "dr-shah-on-diabetes-1281",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 years"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To qualify for teplizumab, a patient must have two or more positive antibodies and dysglycemia (fasting glucose less than 126 mg/dL) without symptoms, this is stage 2 presymptomatic type 1 diabetes.",
@@ -76150,7 +76361,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "presymptomatic individuals with two or more positive type 1 diabetes antibodies",
-      "pearl_id": "dr-shah-on-diabetes-1297"
+      "pearl_id": "dr-shah-on-diabetes-1297",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:126 mg",
+            "threshold:less than 1",
+            "drug:teplizumab"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Teplizumab can delay onset of type 1 diabetes by 2-3 years on average; some patients have no benefit, while others remain diabetes-free 5-6 years later.",
@@ -76163,7 +76392,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with presymptomatic type 1 diabetes receiving teplizumab",
-      "pearl_id": "dr-shah-on-diabetes-1365"
+      "pearl_id": "dr-shah-on-diabetes-1365",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 years",
+            "drug:Teplizumab"
+          ],
+          "rarity": 7.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Screen for type 1 diabetes antibodies in anyone with a family history of type 1 diabetes, any thyroid disorder (hypo or hyperthyroidism), or celiac disease.",
@@ -76176,7 +76422,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with family history of type 1 diabetes or personal history of autoimmune thyroid disease or celiac disease",
-      "pearl_id": "dr-shah-on-diabetes-1404"
+      "pearl_id": "dr-shah-on-diabetes-1404",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:type 1 diabetes"
+          ],
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient tests positive for only one antibody, they are not a candidate for teplizumab, but guidelines exist for repeat antibody testing based on age.",
@@ -76189,7 +76454,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with a single positive type 1 diabetes antibody",
-      "pearl_id": "dr-shah-on-diabetes-1524"
+      "pearl_id": "dr-shah-on-diabetes-1524",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:teplizumab"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Teplizumab is given as a 14-day course of 30-minute infusions; the most common side effects are lymphopenia around day 5 and rash, and lymphopenia may indicate a better response.",
@@ -76202,7 +76486,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving teplizumab for presymptomatic type 1 diabetes",
-      "pearl_id": "dr-shah-on-diabetes-1573"
+      "pearl_id": "dr-shah-on-diabetes-1573",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Teplizumab"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In type 2 diabetes, lipotoxicity from fat in muscle, liver, and pancreas prevents cells from responding to insulin, causing the pancreas to overproduce insulin (high C-peptide).",
@@ -76215,7 +76515,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with type 2 diabetes",
-      "pearl_id": "dr-shah-on-diabetes-1775"
+      "pearl_id": "dr-shah-on-diabetes-1775",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:type 2 diabetes"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For Asian patients, the BMI threshold for type 2 diabetes screening is 23, not 25, because Asians have higher visceral adiposity at lower BMIs.",
@@ -76228,7 +76544,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Asian patients being screened for type 2 diabetes",
-      "pearl_id": "dr-shah-on-diabetes-1962"
+      "pearl_id": "dr-shah-on-diabetes-1962",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:diabetes screening"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Thin diabetes in nonobese, nonwhite individuals involves a deficiency of insulin secretion rather than classic insulin resistance, but treatment with metformin and pioglitazone is still appropriate.",
@@ -76241,7 +76573,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "nonobese, nonwhite patients with diabetes (especially Asian and African descent)",
-      "pearl_id": "dr-shah-on-diabetes-1994"
+      "pearl_id": "dr-shah-on-diabetes-1994",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:insulin resistance"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The most critical initial step when seeing a new diabetes patient is to assess for insulin deficiency (via C-peptide) to determine if insulin therapy is needed to prevent DKA.",
@@ -76254,7 +76602,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with new diagnosis of diabetes",
-      "pearl_id": "dr-shah-on-diabetes-2076"
+      "pearl_id": "dr-shah-on-diabetes-2076",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:insulin therapy"
+          ],
+          "rarity": 6.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Serial C-peptide and antibody testing may be needed to distinguish type 1 from type 2 diabetes in atypical presentations, such as thin African American adults.",
@@ -76267,7 +76631,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with unclear diabetes type",
-      "pearl_id": "dr-shah-on-diabetes-2231"
+      "pearl_id": "dr-shah-on-diabetes-2231",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:type 2 diabetes"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Serial monitoring of C-peptide and antibodies may be needed when diabetes type is unclear, as glucotoxicity can transiently lower C-peptide.",
@@ -76280,7 +76660,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with unclear diabetes type or suspected glucotoxicity",
-      "pearl_id": "dr-shah-on-diabetes-2231-2"
+      "pearl_id": "dr-shah-on-diabetes-2231-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:c-peptide"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A glucose of 1000 with beta-hydroxybutyrate of 0.5 suggests HHS rather than DKA, challenging the assumption of type 1 diabetes based on thin body habitus alone.",
@@ -76293,7 +76689,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients presenting with severe hyperglycemia",
-      "pearl_id": "dr-shah-on-diabetes-2270"
+      "pearl_id": "dr-shah-on-diabetes-2270",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:beta-hydroxybutyrate"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Prescribe modern glucagon preparations (Gvoke injectable or Baqsimi intranasal spray) for patients on insulin MDI, as the old red-box kit is too difficult for families to use in emergencies.",
@@ -76306,7 +76718,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with type 1 diabetes on multiple daily insulin injections",
-      "pearl_id": "dr-shah-on-diabetes-2386"
+      "pearl_id": "dr-shah-on-diabetes-2386",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:glucagon"
+          ],
+          "actionable": [
+            "Prescribe"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For hospitalized type 2 diabetes patients on insulin, reduce home insulin doses by at least 20%.",
@@ -76319,7 +76750,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized type 2 diabetes patients on insulin",
-      "pearl_id": "dr-shah-on-diabetes-2439"
+      "pearl_id": "dr-shah-on-diabetes-2439",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:at least 2"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 5.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advise patients using CGM to wait 20 minutes after treating hypoglycemia before rechecking sensor glucose, or use a fingerstick for immediate confirmation.",
@@ -76332,7 +76782,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diabetes using CGM",
-      "pearl_id": "dr-shah-on-diabetes-2874"
+      "pearl_id": "dr-shah-on-diabetes-2874",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:20 minutes"
+          ],
+          "actionable": [
+            "wait"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CGM sensors measure interstitial fluid glucose, which lags 5-10 minutes behind fingerstick blood glucose during rapid changes.",
@@ -76345,7 +76814,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using continuous glucose monitors",
-      "pearl_id": "dr-shah-on-diabetes-2899"
+      "pearl_id": "dr-shah-on-diabetes-2899",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 minutes"
+          ],
+          "actionable": [
+            "measure"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Overnight low alarms on CGM are often false positives due to compression of interstitial fluid when lying on the sensor; always verify with a fingerstick before treating.",
@@ -76358,7 +76846,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diabetes using CGM",
-      "pearl_id": "dr-shah-on-diabetes-2912"
+      "pearl_id": "dr-shah-on-diabetes-2912",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:false positive"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The ADA 2025 guidelines recommend offering a CGM to all patients with diabetes to identify glycemic patterns and reduce glucose variability.",
@@ -76371,7 +76878,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with diabetes",
-      "pearl_id": "dr-shah-on-diabetes-2999"
+      "pearl_id": "dr-shah-on-diabetes-2999",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:glucose variability"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Automated insulin delivery pumps (since 2018) communicate with CGM to suspend insulin for predicted lows and increase delivery for highs, improving glycemic control with less patient effort.",
@@ -76384,7 +76910,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diabetes using insulin pumps",
-      "pearl_id": "dr-shah-on-diabetes-3093"
+      "pearl_id": "dr-shah-on-diabetes-3093",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:automated insulin deli"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CGM data interpretation is a billable office procedure; providers should obtain access to patient CGM data and review the AGP report.",
@@ -76397,7 +76942,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "primary care providers managing diabetes",
-      "pearl_id": "dr-shah-on-diabetes-3131"
+      "pearl_id": "dr-shah-on-diabetes-3131",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The GMI (glucose management indicator) estimates A1c from 2 weeks of CGM data, whereas a standard A1c reflects 3 months.",
@@ -76410,7 +76971,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on CGM",
-      "pearl_id": "dr-shah-on-diabetes-3169"
+      "pearl_id": "dr-shah-on-diabetes-3169",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 weeks",
+            "test:A1c"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When interpreting a CGM report, first check how long the sensor was active; you need at least 70% of the 14 days for the data to be reliable.",
@@ -76423,7 +77001,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using CGM",
-      "pearl_id": "dr-shah-on-diabetes-3237"
+      "pearl_id": "dr-shah-on-diabetes-3237",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:14 days",
+            "threshold:at least 7"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Target time in range is 70%, time below range less than 4%, and very low glucose (<54 mg/dL) should be 0%.",
@@ -76436,7 +77034,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "most patients with diabetes on CGM",
-      "pearl_id": "dr-shah-on-diabetes-3262"
+      "pearl_id": "dr-shah-on-diabetes-3262",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:54 mg",
+            "threshold:less than 4"
+          ],
+          "rarity": 5.4
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The AGP requires 15 minutes in a glucose zone to register; if a patient has a brief hypoglycemic dip that pops back up, it may show as zero on the AGP, so always scroll through daily graphs.",
@@ -76449,7 +77064,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on CGM",
-      "pearl_id": "dr-shah-on-diabetes-3321"
+      "pearl_id": "dr-shah-on-diabetes-3321",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:15 minutes",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Coefficient of variation (CV) reflects glucose variability; target is in the upper 20s; a CV of 38 indicates significant peaks and troughs.",
@@ -76462,7 +77097,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on CGM",
-      "pearl_id": "dr-shah-on-diabetes-3424"
+      "pearl_id": "dr-shah-on-diabetes-3424",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:glucose variability"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always correct hypoglycemia first before targeting hyperglycemia; one hypo can lead to another within 24 hours.",
@@ -76475,7 +77126,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with diabetes and hypoglycemia",
-      "pearl_id": "dr-shah-on-diabetes-3604"
+      "pearl_id": "dr-shah-on-diabetes-3604",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.26
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient cannot afford newer diabetes medications, cash-pay options include approximately $75/month for some agents and around $100 for others like Stello and Lingo.",
@@ -76488,7 +77158,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients without insurance coverage for diabetes medications",
-      "pearl_id": "dr-shah-on-diabetes-3781"
+      "pearl_id": "dr-shah-on-diabetes-3781",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:diabetes"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not start an SGLT2 inhibitor (e.g., Jardiance) when A1c is very high (e.g., 15%); wait until glucose has come down to avoid precipitating UTIs or genital infections.",
@@ -76501,7 +77187,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with A1c ≥15%",
-      "pearl_id": "dr-shah-on-diabetes-4074"
+      "pearl_id": "dr-shah-on-diabetes-4074",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:A1c"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "precipitating"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When documenting CGM interpretation for billing, describe patterns such as 'mealtime hyperglycemia with overnight limited glucose variability' and note significant variability.",
@@ -76514,7 +77222,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians billing for CGM interpretation",
-      "pearl_id": "dr-shah-on-diabetes-4217"
+      "pearl_id": "dr-shah-on-diabetes-4217",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:glucose variability"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Document 'mealtime hyperglycemia with overnight limited glucose variability' in the chart when billing for complex diabetes management.",
@@ -76527,7 +77251,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "All patients; documentation for billing",
-      "pearl_id": "dr-shah-on-diabetes-4224"
+      "pearl_id": "dr-shah-on-diabetes-4224",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:glucose variability"
+          ],
+          "actionable": [
+            "Document"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with type 2 diabetes diagnosis, if A1c and glucose continue to bounce despite weight-loss agents and oral meds, reconsider the diagnosis.",
@@ -76540,7 +77283,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Adults with type 2 diabetes failing therapy",
-      "pearl_id": "dr-shah-on-diabetes-4243"
+      "pearl_id": "dr-shah-on-diabetes-4243",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:A1c"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not stop basal insulin when switching to a GLP-1 agonist if the patient has mealtime hyperglycemia and a possible autoimmune component.",
@@ -76554,7 +77313,26 @@
       "prompt_version": "v1",
       "applies_to": "Patients on insulin and GLP-1 therapy",
       "by_presenter": false,
-      "pearl_id": "dr-shah-on-diabetes-4288"
+      "pearl_id": "dr-shah-on-diabetes-4288",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:basal insulin"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient's glycemic control remains poor despite escalating therapy, reconsider the diagnosis, adult-onset type 1 diabetes (LADA) is possible even in adults.",
@@ -76567,7 +77345,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes and poor control",
-      "pearl_id": "dr-shah-on-diabetes-4371"
+      "pearl_id": "dr-shah-on-diabetes-4371",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:adult-onset type 1 dia"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient with diabetes has good overnight glucose but mealtime spikes despite medication, consider that the diagnosis may be type 1, not type 2.",
@@ -76580,7 +77374,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Adults with unexplained glucose variability",
-      "pearl_id": "dr-shah-on-diabetes-4371-2"
+      "pearl_id": "dr-shah-on-diabetes-4371-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:diabetes"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the patient's glucose profile shows mealtime spikes with normal overnight values, this pattern should prompt reconsideration of the diagnosis.",
@@ -76593,7 +77406,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Patients with diabetes and poor glycemic control",
-      "pearl_id": "dr-shah-on-diabetes-4381"
+      "pearl_id": "dr-shah-on-diabetes-4381",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Look for a 'smoldering' presentation of type 1 diabetes in adults: they have enough pancreatic function to avoid DKA but cannot be controlled with non-insulin agents.",
@@ -76606,7 +77432,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Adults with type 1 diabetes being misdiagnosed as type 2",
-      "pearl_id": "dr-shah-on-diabetes-4450"
+      "pearl_id": "dr-shah-on-diabetes-4450",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:type 1 diabetes"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Order islet autoantibodies (zinc transporter 8, GAD) in adults with poor glycemic control that does not improve with standard type 2 therapies.",
@@ -76622,7 +77467,29 @@
       "numbers_unheard": [
         "8"
       ],
-      "pearl_id": "dr-shah-on-diabetes-4481"
+      "pearl_id": "dr-shah-on-diabetes-4481",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:glycemic control"
+          ],
+          "actionable": [
+            "Order"
+          ],
+          "rarity": 7.79,
+          "capped": [
+            "number not heard: 8"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Even a modest elevation of islet antibodies confirms autoimmune diabetes, and low but detectable C-peptide prevents DKA but does not negate the need for insulin.",
@@ -76635,7 +77502,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Adults with positive autoantibodies",
-      "pearl_id": "dr-shah-on-diabetes-4488"
+      "pearl_id": "dr-shah-on-diabetes-4488",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:autoimmune diabetes"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For adult-onset type 1 diabetes, the definitive treatment is insulin, both mealtime and long-acting; non-insulin therapies may be ineffective.",
@@ -76648,7 +77531,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Adults with newly diagnosed type 1 diabetes",
-      "pearl_id": "dr-shah-on-diabetes-4499"
+      "pearl_id": "dr-shah-on-diabetes-4499",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:adult-onset type 1 dia"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

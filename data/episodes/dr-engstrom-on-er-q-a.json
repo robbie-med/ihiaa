@@ -58721,7 +58721,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with epilepsy who seize due to medication non-adherence",
-      "pearl_id": "dr-engstrom-on-er-q-a-445"
+      "pearl_id": "dr-engstrom-on-er-q-a-445",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:keppra"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "missed"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is taking their seizure meds and has one breakthrough seizure, they may still go home, but if they have 2-4 seizures in a few days, they usually need admission.",
@@ -58734,7 +58756,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with epilepsy on medication",
-      "pearl_id": "dr-engstrom-on-er-q-a-551"
+      "pearl_id": "dr-engstrom-on-er-q-a-551",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 6.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a TIA, use the ABCD2 score to decide admission; if the score is high, encourage admission or start aspirin and a statin if they refuse.",
@@ -58747,7 +58785,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with TIA",
-      "pearl_id": "dr-engstrom-on-er-q-a-602"
+      "pearl_id": "dr-engstrom-on-er-q-a-602",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:abcd2 score"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A new type of neurologic deficit in a patient with known hemiplegic migraines requires a stroke workup; the same deficit as before does not.",
@@ -58760,7 +58817,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hemiplegic migraines",
-      "pearl_id": "dr-engstrom-on-er-q-a-669"
+      "pearl_id": "dr-engstrom-on-er-q-a-669",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hemiplegic migraine"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stable angina (same chest pain as before) can be discharged; unstable angina (new, severe, with EKG changes) requires admission.",
@@ -58773,7 +58849,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chest pain",
-      "pearl_id": "dr-engstrom-on-er-q-a-721"
+      "pearl_id": "dr-engstrom-on-er-q-a-721",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the HEART score to stratify chest pain; if the risk of a cardiac event in 30 days is >2%, admit for rule-out.",
@@ -58786,7 +58878,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with undifferentiated chest pain",
-      "pearl_id": "dr-engstrom-on-er-q-a-755"
+      "pearl_id": "dr-engstrom-on-er-q-a-755",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:30 days",
+            "threshold:>2"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When no clear diagnosis is found after workup, give the patient a plan (e.g., next step like endoscopy) to improve satisfaction.",
@@ -58799,7 +58911,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with unexplained symptoms after negative workup",
-      "pearl_id": "dr-engstrom-on-er-q-a-910"
+      "pearl_id": "dr-engstrom-on-er-q-a-910",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "give"
+          ],
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Carnett's test: if abdominal pain worsens when the patient flexes their abs, it suggests abdominal wall pathology (e.g., nerve entrapment or strain).",
@@ -58812,7 +58940,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with abdominal pain and negative workup",
-      "pearl_id": "dr-engstrom-on-er-q-a-967"
+      "pearl_id": "dr-engstrom-on-er-q-a-967",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:abdominal pain"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients with mystery abdominal pain, ask them to flex their abs; if pain worsens with flexion (positive Carnett's sign), it suggests the pain is from the abdominal wall, not internal organs.",
@@ -58825,7 +58969,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with unexplained abdominal pain after workup",
-      "pearl_id": "dr-engstrom-on-er-q-a-1003"
+      "pearl_id": "dr-engstrom-on-er-q-a-1003",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:abdominal pain"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IT band syndrome is a common cause of lateral hip/leg pain; palpating along the IT band from hip to knee reproduces pain.",
@@ -58838,7 +58998,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with lateral hip or leg pain",
-      "pearl_id": "dr-engstrom-on-er-q-a-1077"
+      "pearl_id": "dr-engstrom-on-er-q-a-1077",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:it band syndrome"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For hip pain radiating down the leg, palpate the IT band from hip to knee; if it's tender, it's likely IT band syndrome, which is fixable with a foam roller or PT.",
@@ -58851,7 +59027,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with lateral hip/leg pain",
-      "pearl_id": "dr-engstrom-on-er-q-a-1077-2"
+      "pearl_id": "dr-engstrom-on-er-q-a-1077-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:PT"
+          ],
+          "actionable": [
+            "palpate"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If back pain is more lateral, think piriformis syndrome; if it's right over the SI joint, think sacroiliitis. Piriformis can be treated with stretching, while sacroiliitis may need steroids, NSAIDs, or COX-2 inhibitors.",
@@ -58864,7 +59059,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with back pain of unclear etiology",
-      "pearl_id": "dr-engstrom-on-er-q-a-1150"
+      "pearl_id": "dr-engstrom-on-er-q-a-1150",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:piriformis syndrome"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient says 'dizzy,' don't fixate on their first description of vertigo vs lightheadedness; 50% change their mind when asked an hour later, so assume the worst and work up for central causes.",
@@ -58877,7 +59088,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients presenting with dizziness",
-      "pearl_id": "dr-engstrom-on-er-q-a-1266"
+      "pearl_id": "dr-engstrom-on-er-q-a-1266",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:vertigo"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For any patient with dizziness, ask brainstem questions (swallowing, facial sensation, double vision) and document a negative NIH stroke scale to protect yourself legally, even if you don't suspect a stroke.",
@@ -58890,7 +59120,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dizziness in the ER",
-      "pearl_id": "dr-engstrom-on-er-q-a-1347"
+      "pearl_id": "dr-engstrom-on-er-q-a-1347",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:nih stroke scale"
+          ],
+          "actionable": [
+            "document"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Any degree of vertical nystagmus (up or down) in a vertigo workup is never normal and indicates central vertigo; stop and initiate a stroke workup.",
@@ -58903,7 +59155,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with vertigo",
-      "pearl_id": "dr-engstrom-on-er-q-a-1420"
+      "pearl_id": "dr-engstrom-on-er-q-a-1420",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:central vertigo"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 6.9
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient with vertical nystagmus has been symptomatic for 12 days and you can't get a timely workup (stat MRI, echo, holter) through clinic, send them to the hospital to interrupt the trajectory.",
@@ -58916,7 +59190,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected central vertigo in clinic",
-      "pearl_id": "dr-engstrom-on-er-q-a-1459"
+      "pearl_id": "dr-engstrom-on-er-q-a-1459",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:12 days",
+            "test:MRI"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A negative Dix-Hallpike does not rule out BPPV because it only tests one of three semicircular canals; consider referral to a vestibular therapist for complex cases.",
@@ -58929,7 +59220,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected BPPV",
-      "pearl_id": "dr-engstrom-on-er-q-a-1599"
+      "pearl_id": "dr-engstrom-on-er-q-a-1599",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:semicircular canals"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For Meniere's disease, first-line treatment is salt restriction; if symptoms persist, consider starting a diuretic like HCTZ or acetazolamide.",
@@ -58942,7 +59252,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with Meniere's disease",
-      "pearl_id": "dr-engstrom-on-er-q-a-1708"
+      "pearl_id": "dr-engstrom-on-er-q-a-1708",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:meniere's disease"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has dizziness about 10 days after a viral illness with no ringing or positional triggers, consider vestibular neuritis and give a short course of steroids.",
@@ -58955,7 +59284,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with post-viral dizziness",
-      "pearl_id": "dr-engstrom-on-er-q-a-1749"
+      "pearl_id": "dr-engstrom-on-er-q-a-1749",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 days"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start pressors (usually Levophed) early when MAP is low, even before knowing the cause, to prevent organ damage; then treat the underlying issue once identified.",
@@ -58968,7 +59316,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hypotension in the ER",
-      "pearl_id": "dr-engstrom-on-er-q-a-1888"
+      "pearl_id": "dr-engstrom-on-er-q-a-1888",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pressors"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Create a personal reference card with critical medications (sedation, status epilepticus, hypoglycemia, RSI) to have an 'external brain' in emergencies, rather than scrolling on your phone.",
@@ -58981,7 +59348,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents in critical care settings",
-      "pearl_id": "dr-engstrom-on-er-q-a-2089"
+      "pearl_id": "dr-engstrom-on-er-q-a-2089",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:status epilepticus"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Create a folded paper reference card with sedation drugs, status epilepticus drugs, hypoglycemia agents, and RSI meds to cognitively offload during critical moments.",
@@ -58994,7 +59377,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any clinician in critical care settings",
-      "pearl_id": "dr-engstrom-on-er-q-a-2089-2"
+      "pearl_id": "dr-engstrom-on-er-q-a-2089-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:status epilepticus"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "You typically fall to the level of your training, not rise to the occasion; cognitively offload as much as possible.",
@@ -59007,7 +59406,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinicians",
-      "pearl_id": "dr-engstrom-on-er-q-a-2119"
+      "pearl_id": "dr-engstrom-on-er-q-a-2119",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For RSI, use ketamine 1 mg/kg and rocuronium 1 mg/kg as a go-to; write the dose on your reference card.",
@@ -59020,7 +59432,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pediatric and adult emergency intubation",
-      "pearl_id": "dr-engstrom-on-er-q-a-2139"
+      "pearl_id": "dr-engstrom-on-er-q-a-2139",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1 mg"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pay $4 for the Pedi-Stat app; it calculates pediatric doses, equipment sizes, and algorithms based on birth date, weight, or length.",
@@ -59033,7 +59464,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pediatric emergencies",
-      "pearl_id": "dr-engstrom-on-er-q-a-2164"
+      "pearl_id": "dr-engstrom-on-er-q-a-2164",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pedi-stat"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Perform mental reps on critical scenarios so that when it happens, it is your 19th time, not your first.",
@@ -59046,7 +59493,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinicians",
-      "pearl_id": "dr-engstrom-on-er-q-a-2237"
+      "pearl_id": "dr-engstrom-on-er-q-a-2237",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When you don't know what to do in a critical scenario, cycle through ABCs over and over until the patient is semi-stable.",
@@ -59059,7 +59519,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any unstable patient",
-      "pearl_id": "dr-engstrom-on-er-q-a-2270"
+      "pearl_id": "dr-engstrom-on-er-q-a-2270",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Be the calmest person in the room; 'don't just do something, stand there' and assess before acting.",
@@ -59072,7 +59548,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinicians in critical scenarios",
-      "pearl_id": "dr-engstrom-on-er-q-a-2332"
+      "pearl_id": "dr-engstrom-on-er-q-a-2332",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 7.26
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For disability assessment, a trap squeeze is more painful than a sternal rub or toe pinch; if the patient does not budge, they are deeply unconscious.",
@@ -59085,7 +59577,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "assessment of unconscious patients",
-      "pearl_id": "dr-engstrom-on-er-q-a-2418"
+      "pearl_id": "dr-engstrom-on-er-q-a-2418",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The decision to intubate is about trajectory, not just GCS; a post-ictal GCS of 3 does not require intubation if improvement is expected.",
@@ -59098,7 +59603,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with altered mental status",
-      "pearl_id": "dr-engstrom-on-er-q-a-2479"
+      "pearl_id": "dr-engstrom-on-er-q-a-2479",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:intubation"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not intubate wheezing asthmatics or COPD patients unless they are failing despite maximal therapy; a ventilator cannot match their native exhalation and will worsen acidosis.",
@@ -59111,7 +59632,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "asthma or COPD exacerbation",
-      "pearl_id": "dr-engstrom-on-er-q-a-2606"
+      "pearl_id": "dr-engstrom-on-er-q-a-2606",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:therapy"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not intubate DKA patients; their compensatory tachypnea (often 35/min) cannot be matched by a ventilator, leading to worsening acidosis.",
@@ -59124,7 +59664,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DKA with Kussmaul breathing",
-      "pearl_id": "dr-engstrom-on-er-q-a-2738"
+      "pearl_id": "dr-engstrom-on-er-q-a-2738",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:tachypnea"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pressors can run through a peripheral IV for 24 hours; central line placement is not urgent for vasopressor administration.",
@@ -59137,7 +59696,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring vasopressors",
-      "pearl_id": "dr-engstrom-on-er-q-a-2853"
+      "pearl_id": "dr-engstrom-on-er-q-a-2853",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 6.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Learn ultrasound-guided IV placement by practicing on intubated, sedated ICU patients; expect to miss 10 times before becoming proficient.",
@@ -59150,7 +59728,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents learning procedures",
-      "pearl_id": "dr-engstrom-on-er-q-a-2902"
+      "pearl_id": "dr-engstrom-on-er-q-a-2902",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In critical scenarios, if you haven't practiced a procedure, use MRAP videos on YouTube, write down the steps, and tape the paper to the wall so you don't have to remember it.",
@@ -59163,7 +59757,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents performing unfamiliar procedures in critical scenarios",
-      "pearl_id": "dr-engstrom-on-er-q-a-3051"
+      "pearl_id": "dr-engstrom-on-er-q-a-3051",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For procedures you have not done before, watch a brief MRAP video on YouTube, then tape written steps to the wall or tray in the room.",
@@ -59176,7 +59786,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any clinician performing an unfamiliar procedure",
-      "pearl_id": "dr-engstrom-on-er-q-a-3052"
+      "pearl_id": "dr-engstrom-on-er-q-a-3052",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a brain bleed with high blood pressure, use Cleviprex over Cardene because Cleviprex has a 90-second half-life allowing instant adjustment, while Cardene has a 2-hour half-life and can cause rebound tachycardia.",
@@ -59189,7 +59812,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with brain bleed and elevated blood pressure",
-      "pearl_id": "dr-engstrom-on-er-q-a-3177"
+      "pearl_id": "dr-engstrom-on-er-q-a-3177",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:tachycardia"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "bleed"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sublingual nitro tablets are 0.4 mg (400 micrograms) and are typically given every 5 minutes, which averages out to 80 mcg/min.",
@@ -59202,7 +59847,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving sublingual nitro",
-      "pearl_id": "dr-engstrom-on-er-q-a-3237"
+      "pearl_id": "dr-engstrom-on-er-q-a-3237",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:0.4 mg",
+            "frequency:every 5"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Starting a nitro drip at less than 80 mcg/min is less effective than giving sublingual nitro for flash pulmonary edema.",
@@ -59215,7 +59877,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with flash pulmonary edema",
-      "pearl_id": "dr-engstrom-on-er-q-a-3270"
+      "pearl_id": "dr-engstrom-on-er-q-a-3270",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:80 mcg",
+            "threshold:less than 8"
+          ],
+          "actionable": [
+            "Starting"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For flash pulmonary edema with a blood pressure of 240 and tripoding, start BiPAP and a nitro drip at 200-400 mcg/min; the patient will improve in about 8 minutes.",
@@ -59228,7 +59910,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with flash pulmonary edema and severe hypertension",
-      "pearl_id": "dr-engstrom-on-er-q-a-3284"
+      "pearl_id": "dr-engstrom-on-er-q-a-3284",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:400 mcg"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a nurse is hesitant about high-dose nitro, reassure them by noting the half-life is about 90 seconds, so if blood pressure drops, you can cut the drip quickly.",
@@ -59241,7 +59942,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "when starting high-dose nitro in a small ER",
-      "pearl_id": "dr-engstrom-on-er-q-a-3313"
+      "pearl_id": "dr-engstrom-on-er-q-a-3313",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nitro works by vasodilating the periphery, reducing preload, and with BiPAP's positive pressure, it pushes the patient back onto the Starling curve, leading to improvement within 8 minutes.",
@@ -59254,7 +59968,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with flash pulmonary edema",
-      "pearl_id": "dr-engstrom-on-er-q-a-3333"
+      "pearl_id": "dr-engstrom-on-er-q-a-3333",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:8 minutes"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

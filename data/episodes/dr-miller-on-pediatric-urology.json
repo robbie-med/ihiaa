@@ -52522,7 +52522,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pediatric patients",
-      "pearl_id": "dr-miller-on-pediatric-urology-160"
+      "pearl_id": "dr-miller-on-pediatric-urology-160",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:posterior urethral val"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For testicular torsion, get an ultrasound with Doppler; if you see flow, torsion is probably not present.",
@@ -52535,7 +52551,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "boys with acute scrotal pain/swelling",
-      "pearl_id": "dr-miller-on-pediatric-urology-250"
+      "pearl_id": "dr-miller-on-pediatric-urology-250",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a boy with antenatal hydronephrosis, consider posterior urethral valves even if only one side is dilated.",
@@ -52548,7 +52580,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "boys with antenatal hydronephrosis",
-      "pearl_id": "dr-miller-on-pediatric-urology-329"
+      "pearl_id": "dr-miller-on-pediatric-urology-329",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:posterior urethral val"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Posterior urethral valves can kill a child quickly from hyponatremia and kidney issues.",
@@ -52561,7 +52612,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "boys with posterior urethral valves",
-      "pearl_id": "dr-miller-on-pediatric-urology-353"
+      "pearl_id": "dr-miller-on-pediatric-urology-353",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:posterior urethral val"
+          ],
+          "harm": [
+            "kill"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a child has testicular torsion and the testicle is nonviable, anchor the opposite testicle to prevent future torsion.",
@@ -52574,7 +52644,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "boys with testicular torsion",
-      "pearl_id": "dr-miller-on-pediatric-urology-428"
+      "pearl_id": "dr-miller-on-pediatric-urology-428",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:testicular torsion"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Posterior urethral valves: boys with this condition will pee normally, so do not rely on voiding history to rule it out.",
@@ -52587,7 +52673,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "boys with antenatal hydronephrosis",
-      "pearl_id": "dr-miller-on-pediatric-urology-525"
+      "pearl_id": "dr-miller-on-pediatric-urology-525",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:posterior urethral val"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pressure is everything in urology; men are at higher risk for kidney damage from obstruction because they do not leak urine like women.",
@@ -52600,7 +52705,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "male patients with urinary obstruction",
-      "pearl_id": "dr-miller-on-pediatric-urology-590"
+      "pearl_id": "dr-miller-on-pediatric-urology-590",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For testicular cancer, remove the testicle through an inguinal incision, not scrotal, to avoid scrotal lymphatics.",
@@ -52613,7 +52734,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with testicular cancer",
-      "pearl_id": "dr-miller-on-pediatric-urology-927"
+      "pearl_id": "dr-miller-on-pediatric-urology-927",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:testicular cancer"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a testicle has not descended by one year of age, it will not drop on its own; longitudinal studies show no further descent after that point.",
@@ -52626,7 +52766,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with undescended testicle",
-      "pearl_id": "dr-miller-on-pediatric-urology-998"
+      "pearl_id": "dr-miller-on-pediatric-urology-998",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a testicle has not descended by one year of age, it will not descend spontaneously; refer for surgical evaluation.",
@@ -52639,7 +52792,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "boys with undescended testicle",
-      "pearl_id": "dr-miller-on-pediatric-urology-1003"
+      "pearl_id": "dr-miller-on-pediatric-urology-1003",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Surgery to bring down an undescended testicle by age one may have better results for fertility.",
@@ -52652,7 +52821,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "boys with undescended testicle",
-      "pearl_id": "dr-miller-on-pediatric-urology-1031"
+      "pearl_id": "dr-miller-on-pediatric-urology-1031",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:undescended testicle"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A retractile testicle that is more up than down should be referred; if it is more down than up, observation is acceptable.",
@@ -52665,7 +52850,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with retractile testicle",
-      "pearl_id": "dr-miller-on-pediatric-urology-1126"
+      "pearl_id": "dr-miller-on-pediatric-urology-1126",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:retractile testicle"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not ask parents to perform testicular self-exams on their children; it is difficult even for adults to do properly, so referral to a pediatric urologist is preferred.",
@@ -52678,7 +52879,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all children needing testicular evaluation",
-      "pearl_id": "dr-miller-on-pediatric-urology-1143"
+      "pearl_id": "dr-miller-on-pediatric-urology-1143",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:referral"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Imaging (ultrasound) is not needed for the evaluation of undescended or retractile testicles; the USPSTF and pediatricians do not recommend routine imaging.",
@@ -52691,7 +52911,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all children with undescended/retractile testicles",
-      "pearl_id": "dr-miller-on-pediatric-urology-1264"
+      "pearl_id": "dr-miller-on-pediatric-urology-1264",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you see a dorsal hood (absent skin on the ventral penis), suspect hypospadias unless the urethral opening is within 5 mm of the glans tip.",
@@ -52704,7 +52943,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "newborn males undergoing circumcision evaluation",
-      "pearl_id": "dr-miller-on-pediatric-urology-1507"
+      "pearl_id": "dr-miller-on-pediatric-urology-1507",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 mm"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the urethral opening (megameatus) appears wide after retracting a normal foreskin, you have megameatus intact prepuce (MIP), which is a variant of hypospadias; do not proceed with circumcision.",
@@ -52717,7 +52972,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "newborn males being circumcised",
-      "pearl_id": "dr-miller-on-pediatric-urology-1560"
+      "pearl_id": "dr-miller-on-pediatric-urology-1560",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:megameatus intact prep"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For pediatric kidney stones, the only two interventions needed are adequate fluid intake (water and citrus) and avoiding salt; the kidney cannot distinguish sodium from calcium, so high sodium increases calcium in the urine and stone risk.",
@@ -52730,7 +53004,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with kidney stones",
-      "pearl_id": "dr-miller-on-pediatric-urology-1676"
+      "pearl_id": "dr-miller-on-pediatric-urology-1676",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pediatric kidney stone"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A top-down approach to vesicoureteral reflux means: if the kidney looks good on ultrasound, you can be less concerned about treating the reflux itself.",
@@ -52743,7 +53033,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with reflux on imaging",
-      "pearl_id": "dr-miller-on-pediatric-urology-1811"
+      "pearl_id": "dr-miller-on-pediatric-urology-1811",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For febrile UTI in infants under 2-3 months of age, perform a full septic workup including VCUG to evaluate for reflux.",
@@ -52756,7 +53062,30 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants under 2-3 months with febrile UTI",
-      "pearl_id": "dr-miller-on-pediatric-urology-1897"
+      "pearl_id": "dr-miller-on-pediatric-urology-1897",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:3 months",
+            "threshold:under 2"
+          ],
+          "actionable": [
+            "evaluate"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 6.67
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After two years of age, the chance of finding reflux after a UTI is low; VCUG is 'dealer's choice' and not routinely indicated.",
@@ -52769,7 +53098,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children over 2 years with febrile UTI",
-      "pearl_id": "dr-miller-on-pediatric-urology-1920"
+      "pearl_id": "dr-miller-on-pediatric-urology-1920",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For febrile UTI in children between 2 months and 2 years of age: after one UTI, consider an ultrasound; after two UTIs, get an ultrasound and a VCUG.",
@@ -52782,7 +53124,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children 2 months to 2 years with febrile UTI",
-      "pearl_id": "dr-miller-on-pediatric-urology-1925"
+      "pearl_id": "dr-miller-on-pediatric-urology-1925",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 months",
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.72
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

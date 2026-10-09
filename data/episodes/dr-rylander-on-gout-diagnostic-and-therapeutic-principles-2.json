@@ -35390,7 +35390,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with gout",
-      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-47"
+      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-47",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The three most important dietary interventions in order are: stop beer, avoid other alcohols, and avoid high-fructose corn syrup; high-purine animal foods are fourth.",
@@ -35403,7 +35419,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with gout",
-      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-133"
+      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-133",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:high-fructose corn syr"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Plant purines (from vegetables) are not concentrated enough to matter in gout; the focus should be on animal proteins.",
@@ -35416,7 +35451,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with gout",
-      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-151"
+      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-151",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Uric acid treatment goal is less than 6 mg/dL; above 6 crystals form, below 6 crystals dissolve.",
@@ -35429,7 +35477,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with gout",
-      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-320"
+      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-320",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 mg",
+            "threshold:less than 6"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The most common chart review error is giving wrong dietary advice (focusing on animal protein) and not following up to ensure the uric acid goal is met.",
@@ -35442,7 +35507,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians managing gout",
-      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-360"
+      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-360",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:uric acid"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The fundamental defect in gout is underexcretion of uric acid (90% of cases), not overproduction; treatment must enhance excretion.",
@@ -35455,7 +35539,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with gout",
-      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-607"
+      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-607",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:uric acid"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gold standard for diagnosis is joint aspiration with crystal identification under polarized light microscopy to distinguish gout from pseudogout.",
@@ -35468,7 +35568,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected gout",
-      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-710"
+      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-710",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:joint aspiration"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Point-of-care ultrasound can show the 'double contour sign' (crystal deposition on cartilage) and 'snowstorm' crystals in joint fluid to aid diagnosis.",
@@ -35481,7 +35597,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected gout",
-      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-860"
+      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-860",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "First MTP joint is most commonly affected due to its distance from the heart (cooler temperature) promoting crystallization; in peripheral vascular disease, gout can affect knees, ankles, or hands.",
@@ -35494,7 +35626,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with gout",
-      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-937"
+      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-937",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:peripheral vascular di"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Acute gout flare treatment should be started within 24 hours for best outcomes.",
@@ -35507,7 +35655,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute gout flare",
-      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-1100"
+      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-1100",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "rarity": 5.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Colchicine should be used at low dose; hold statins during a flare when giving colchicine.",
@@ -35520,7 +35684,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute gout flare on colchicine",
-      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-1187"
+      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-1187",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:colchicine"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "rarity": 6.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "NSAIDs are now a secondary choice for acute gout due to risks of GI ulceration, kidney dysfunction, heart failure, and cardiovascular disease.",
@@ -35533,7 +35716,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute gout flare",
-      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-1245"
+      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-1245",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cardiovascular disease"
+          ],
+          "rarity": 6.34
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Corticosteroids (e.g., Medrol dose pack) are an emerging first-line option for acute gout; a 6-day taper is typical but some patients may need extended therapy due to rebound.",
@@ -35546,7 +35745,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute gout flare",
-      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-1306"
+      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-1306",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:corticosteroids"
+          ],
+          "actionable": [
+            "taper"
+          ],
+          "rarity": 7.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IL-1 inhibition (e.g., anakinra) is a next-line therapy for refractory gout, blocking the inflammasome pathway that drives inflammation.",
@@ -35559,7 +35777,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with refractory gout",
-      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-1358"
+      "pearl_id": "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-1358",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:il-1 inhibition"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

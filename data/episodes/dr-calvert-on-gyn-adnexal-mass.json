@@ -24090,7 +24090,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "premenopausal women with ultrasound showing multiple cysts",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-351"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-351",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 6.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a postmenopausal woman, you should never feel an ovary on bimanual exam. If you feel any adnexal mass, it is concerning and requires further evaluation.",
@@ -24103,7 +24119,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "postmenopausal women",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-424"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-424",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bimanual exam"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Normal ovarian volume is 20 cc or less in reproductive age and 10 cc or less in postmenopausal women. A postmenopausal ovary volume of 25 cc is concerning.",
@@ -24116,7 +24151,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all women",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-479"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-479",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ovarian volume"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The uterus should move freely on bimanual exam; if it does not move, there may be pathology such as adhesions or endometriosis.",
@@ -24129,7 +24180,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "bimanual exam",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-575"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-575",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bimanual exam"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On bimanual exam, do not press down to find the uterus; instead, push the cervix up with your fingers to bring the uterus toward you, then press on the abdomen to feel the fundus.",
@@ -24142,7 +24209,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all bimanual exams",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-654"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-654",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bimanual exam"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you cannot feel the top of the uterine body on bimanual exam, the uterus is likely retroverted or retroflexed.",
@@ -24155,7 +24241,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "bimanual exam",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-682"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-682",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bimanual exam"
+          ],
+          "rarity": 7.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When feeling for ovaries, slide your fingertip along the lateral aspect of the cervix up toward the fundus; the ovary may feel like a marble slipping between your fingers.",
@@ -24168,7 +24270,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "bimanual exam",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-740"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-740",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you feel fullness in the adnexa on bimanual exam, that is abnormal and requires imaging to determine the cause.",
@@ -24181,7 +24296,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "bimanual exam",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-824"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-824",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bimanual exam"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "You will often miss feeling the ovary on bimanual exam, especially in obese patients; it is acceptable to say you cannot feel it.",
@@ -24194,7 +24325,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "bimanual exam",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-859"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-859",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bimanual exam"
+          ],
+          "rarity": 6.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a retroverted uterus, a rectovaginal exam can help feel the uterine body, especially when evaluating for endometriosis.",
@@ -24207,7 +24354,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "when uterus is retroverted or suspect endometriosis",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-913"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-913",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:endometriosis"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If an ultrasound report says the cyst is complex, it is abnormal and most likely could be cancer; if it says simple, it is likely benign.",
@@ -24220,7 +24383,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with pelvic mass",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-1056"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-1056",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 5.8
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To diagnose PCOS, you need 10 to 15 follicles less than one centimeter in an ovary on a specialized ultrasound; a simple cyst does not equal PCOS.",
@@ -24233,7 +24412,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women suspected of PCOS",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-1336"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-1336",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On bimanual exam, if a mass is fixed and tender, consider scar tissue or infection; if not fixed and not tender, it is less concerning.",
@@ -24246,7 +24441,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with adnexal mass on exam",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-1519"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-1519",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bimanual exam"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.34
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hemorrhagic cyst presents with sudden onset of severe pain that often drives patients to the hospital.",
@@ -24259,7 +24473,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with acute pelvic pain",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-1657"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-1657",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hemorrhagic cyst"
+          ],
+          "harm": [
+            "Hemorrhagic"
+          ],
+          "rarity": 6.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On bimanual exam, if the uterus does not move properly and moving it to the right causes pain, consider abscess or ectopic pregnancy.",
@@ -24272,7 +24505,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with adnexal mass and pain",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-2003"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-2003",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ectopic pregnancy"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.3
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A hemorrhagic cyst appears complex on ultrasound but is a benign condition; it often resolves spontaneously, though rupture can cause severe pain.",
@@ -24285,7 +24537,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with hemorrhagic cyst",
-      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-2113"
+      "pearl_id": "dr-calvert-on-gyn-adnexal-mass-2113",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "harm": [
+            "hemorrhagic"
+          ],
+          "rarity": 6.16
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

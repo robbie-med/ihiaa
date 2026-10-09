@@ -39266,7 +39266,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with conjugated hyperbilirubinemia",
-      "pearl_id": "dr-liening-on-pediatric-gi-396"
+      "pearl_id": "dr-liening-on-pediatric-gi-396",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The bilirubin threshold for kernicterus is greater than 20 mg/dL.",
@@ -39279,7 +39298,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates",
-      "pearl_id": "dr-liening-on-pediatric-gi-437"
+      "pearl_id": "dr-liening-on-pediatric-gi-437",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:20 mg",
+            "threshold:greater than 2"
+          ],
+          "rarity": 6.99
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The highest risk time frame for jaundice is the first 24 hours of life.",
@@ -39292,7 +39328,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates",
-      "pearl_id": "dr-liening-on-pediatric-gi-443"
+      "pearl_id": "dr-liening-on-pediatric-gi-443",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "rarity": 6.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A rate of rise of bilirubin greater than 0.2 mg/dL per hour at any point is dangerous and requires evaluation.",
@@ -39305,7 +39357,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates with jaundice",
-      "pearl_id": "dr-liening-on-pediatric-gi-549"
+      "pearl_id": "dr-liening-on-pediatric-gi-549",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:0.2 mg",
+            "threshold:greater than 0"
+          ],
+          "harm": [
+            "dangerous"
+          ],
+          "rarity": 6.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a sick infant with feeding issues in the first month of life, always double-check the newborn screen.",
@@ -39318,7 +39390,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants under 1 month with feeding problems",
-      "pearl_id": "dr-liening-on-pediatric-gi-666"
+      "pearl_id": "dr-liening-on-pediatric-gi-666",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:newborn screen"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 6.84
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Infant reflux is normal in about 50% of 2-month-olds and resolves by 9-12 months; do not treat with medications unless the infant is ill.",
@@ -39331,7 +39422,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with reflux",
-      "pearl_id": "dr-liening-on-pediatric-gi-857"
+      "pearl_id": "dr-liening-on-pediatric-gi-857",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:12 months"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Poor feeding habits are the number one problem that makes reflux worse; counsel on smaller feeds, burping, and holding upright for 20-30 minutes after feeds.",
@@ -39344,7 +39454,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with reflux",
-      "pearl_id": "dr-liening-on-pediatric-gi-870"
+      "pearl_id": "dr-liening-on-pediatric-gi-870",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:30 minutes"
+          ],
+          "actionable": [
+            "counsel"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Wedge pillows placed under the sheet are effective for reflux at bedtime.",
@@ -39357,7 +39486,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with reflux",
-      "pearl_id": "dr-liening-on-pediatric-gi-945"
+      "pearl_id": "dr-liening-on-pediatric-gi-945",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pyloric stenosis presents with projectile non-bilious vomiting, weight loss, and the infant is eager to feed again after vomiting.",
@@ -39370,7 +39512,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants 4 weeks to 1 year",
-      "pearl_id": "dr-liening-on-pediatric-gi-1149"
+      "pearl_id": "dr-liening-on-pediatric-gi-1149",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bilious vomiting"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pyloric stenosis, after vomiting, the infant is eager to feed again because the food is not getting through the pylorus.",
@@ -39383,7 +39541,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with suspected pyloric stenosis",
-      "pearl_id": "dr-liening-on-pediatric-gi-1149-2"
+      "pearl_id": "dr-liening-on-pediatric-gi-1149-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pyloric stenosis"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a 5-week-old with increasing vomiting and weight loss, the next best step is an abdominal ultrasound.",
@@ -39399,7 +39573,23 @@
       "numbers_unheard": [
         "5"
       ],
-      "pearl_id": "dr-liening-on-pediatric-gi-1174"
+      "pearl_id": "dr-liening-on-pediatric-gi-1174",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 6.47
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected pyloric stenosis in an infant with progressive vomiting and weight loss, the next best step is an abdominal ultrasound.",
@@ -39412,7 +39602,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants 4 weeks to 1 year with progressive vomiting and weight loss",
-      "pearl_id": "dr-liening-on-pediatric-gi-1175"
+      "pearl_id": "dr-liening-on-pediatric-gi-1175",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 6.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "FPIES is not IgE mediated; it is a non-allergic reaction where the GI tract is too naive to handle cow milk protein.",
@@ -39425,7 +39631,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants under 1 year with rectal bleeding",
-      "pearl_id": "dr-liening-on-pediatric-gi-1223"
+      "pearl_id": "dr-liening-on-pediatric-gi-1223",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not give cow milk products to any child less than a year because their GI tract isn't ready for it.",
@@ -39438,7 +39657,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants under 1 year",
-      "pearl_id": "dr-liening-on-pediatric-gi-1263"
+      "pearl_id": "dr-liening-on-pediatric-gi-1263",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "Do not give"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "FPIES presents with thick, goopy, mucusy blood in the diaper, not bright red streaks, because it comes from inside the GI tract.",
@@ -39451,7 +39689,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with rectal bleeding",
-      "pearl_id": "dr-liening-on-pediatric-gi-1337"
+      "pearl_id": "dr-liening-on-pediatric-gi-1337",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "True IgE-mediated food allergies are highly unlikely before 6 months of age because infants have maternal antibodies until then.",
@@ -39464,7 +39715,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants under 6 months",
-      "pearl_id": "dr-liening-on-pediatric-gi-1523"
+      "pearl_id": "dr-liening-on-pediatric-gi-1523",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For constipation in children, clean out with Miralax for a week, then continue nightly dosing for at least a few months because the colon is distended and needs time to adjust.",
@@ -39477,7 +39744,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with constipation",
-      "pearl_id": "dr-liening-on-pediatric-gi-1895"
+      "pearl_id": "dr-liening-on-pediatric-gi-1895",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:constipation"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anti-nausea medications like Zofran are not tested under 60 days of life.",
@@ -39490,7 +39773,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants under 60 days old",
-      "pearl_id": "dr-liening-on-pediatric-gi-1929"
+      "pearl_id": "dr-liening-on-pediatric-gi-1929",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:60 days",
+            "threshold:under 6"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "High-volume watery diarrhea without blood or bilious emesis is almost always viral; norovirus causes more severe illness than enterovirus.",
@@ -39503,7 +39803,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with acute diarrhea",
-      "pearl_id": "dr-liening-on-pediatric-gi-2065"
+      "pearl_id": "dr-liening-on-pediatric-gi-2065",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:diarrhea"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the pediatric appendicitis score every time you have concern for appendicitis, especially in younger children who cannot give a clear history.",
@@ -39516,7 +39835,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with suspected appendicitis",
-      "pearl_id": "dr-liening-on-pediatric-gi-2191"
+      "pearl_id": "dr-liening-on-pediatric-gi-2191",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pediatric appendicitis"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 6.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the Pediatric Appendicitis Score every time you have concern for appendicitis in a child, because younger children are more likely to be missed.",
@@ -39529,7 +39867,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with suspected appendicitis",
-      "pearl_id": "dr-liening-on-pediatric-gi-2191-2"
+      "pearl_id": "dr-liening-on-pediatric-gi-2191-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:pediatric appendicitis"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "harm": [
+            "missed"
+          ],
+          "rarity": 6.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Key elements of the Pediatric Appendicitis Score include anorexia, fever, nausea/vomiting, right lower quadrant pain, cough/percussion/hopping tenderness, tenderness over the right iliac fossa, migration of pain, and leukocytosis with neutrophilia.",
@@ -39542,7 +39902,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with suspected appendicitis",
-      "pearl_id": "dr-liening-on-pediatric-gi-2220"
+      "pearl_id": "dr-liening-on-pediatric-gi-2220",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pediatric appendicitis"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In younger children, appendicitis is harder to diagnose because they cannot give you a story; rely on objective findings like leukocytosis and neutrophilia.",
@@ -39555,7 +39931,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "young children with suspected appendicitis",
-      "pearl_id": "dr-liening-on-pediatric-gi-2261"
+      "pearl_id": "dr-liening-on-pediatric-gi-2261",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:appendicitis"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A missed appendicitis in a 4-5 year old led to perforation; the Pediatric Appendicitis Score would have caught it because of high leukocytosis and neutrophilia.",
@@ -39568,7 +39963,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "young children with suspected appendicitis",
-      "pearl_id": "dr-liening-on-pediatric-gi-2266"
+      "pearl_id": "dr-liening-on-pediatric-gi-2266",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:5 year"
+          ],
+          "harm": [
+            "missed"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When the Pediatric Appendicitis Score is high, call pediatric surgery and let them decide; do not hesitate to involve them early.",
@@ -39581,7 +39995,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with high Pediatric Appendicitis Score",
-      "pearl_id": "dr-liening-on-pediatric-gi-2289"
+      "pearl_id": "dr-liening-on-pediatric-gi-2289",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pediatric appendicitis"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a child in clinic has suspected appendicitis, do not draw labs locally; send them directly to the emergency department because local lab hours are limited and pediatric phlebotomy is only available for older children (around age 11).",
@@ -39594,7 +40027,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with suspected appendicitis seen in clinic",
-      "pearl_id": "dr-liening-on-pediatric-gi-2312"
+      "pearl_id": "dr-liening-on-pediatric-gi-2312",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:appendicitis"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

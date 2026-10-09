@@ -41736,7 +41736,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dizziness",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-112"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-112",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vertigo"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "At end gaze, two to three beats of nystagmus that goes away with refocusing is physiologic, not pathologic.",
@@ -41749,7 +41765,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient during eye exam",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-218"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-218",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nystagmus"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Roving eye movements in a hospitalized patient indicate severe metabolic encephalopathy, not seizure.",
@@ -41762,7 +41794,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with altered mental status",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-330"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-330",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:metabolic encephalopat"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 6.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Primary gaze nystagmus (present when looking straight ahead) indicates something is wrong with the vestibular system.",
@@ -41775,7 +41826,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with nystagmus",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-409"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-409",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nystagmus"
+          ],
+          "rarity": 6.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Direction-changing nystagmus is a central finding, but can also be caused by intoxication, medications (especially AEDs), or seizures.",
@@ -41788,7 +41855,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with nystagmus",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-497"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-497",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nystagmus"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Phenytoin has zero-order kinetics; doubling the dose can cause levels to jump from 6 to 30, so increase slowly and in small increments.",
@@ -41801,7 +41884,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on phenytoin",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-830"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-830",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:phenytoin"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patient symptom descriptions have almost no correlation with final diagnosis; timing and triggers are more reliable than symptom quality.",
@@ -41814,7 +41916,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dizziness",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-882"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-882",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Abrupt onset of dizziness while walking with imbalance suggests stroke.",
@@ -41827,7 +41942,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute dizziness",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-947"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-947",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:dizziness"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Episodic vertigo differential is BPPV, Meniere's disease, and vestibular migraine; constant vertigo suggests stroke or vestibular neuritis.",
@@ -41840,7 +41974,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with vertigo",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-973"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-973",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:vestibular migraine"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Duration of vertigo: less than 1 minute suggests BPPV; 2-15 minutes suggests TIA; hours suggests vestibular migraine or Meniere's.",
@@ -41853,7 +42006,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with vertigo",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1003"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1003",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1 minute",
+            "threshold:less than 1"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gentamicin vestibular toxicity presents with imbalance but no nystagmus because both sides are equally affected.",
@@ -41866,7 +42036,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients exposed to gentamicin",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1087"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1087",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:Gentamicin"
+          ],
+          "harm": [
+            "toxicity"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When performing the Epley maneuver, always tell the patient to keep their eyes open.",
@@ -41879,7 +42068,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing Epley maneuver for BPPV",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1240"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1240",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:epley maneuver"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 6.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Failure to extend the patient's head back during the Dix-Hallpike test will result in a falsely negative test because the otoliths will not fall.",
@@ -41892,7 +42100,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing Dix-Hallpike test",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1253"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1253",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dix-hallpike test"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A positive Dix-Hallpike test requires a slight delay followed by upward torsional nystagmus that abates after 15-30 seconds; reproducing dizziness alone is not a positive test.",
@@ -41909,7 +42133,23 @@
         "15",
         "30"
       ],
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1278"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1278",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dix-hallpike test"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Isolated horizontal nystagmus on Dix-Hallpike may indicate horizontal canal BPPV, which requires a different treatment than posterior canal BPPV.",
@@ -41922,7 +42162,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with positional nystagmus",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1302"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1302",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nystagmus"
+          ],
+          "rarity": 6.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Large cerebellar strokes can present with minimal symptoms like mild dizziness and headache, and may later require craniotomy.",
@@ -41935,7 +42191,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute dizziness",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1628"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1628",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dizziness"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The HINTS exam, when properly performed and interpreted, has higher sensitivity than MRI in the first 48 hours for posterior circulation strokes.",
@@ -41948,7 +42220,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute vertigo and suspected central cause",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1817"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1817",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:48 hours",
+            "test:MRI"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A clean MRI within 48 hours of symptom onset does not rule out a posterior circulation stroke.",
@@ -41961,7 +42250,30 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute vertigo",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1853"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1853",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:48 hours",
+            "test:MRI"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 6.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Direction-changing nystagmus (e.g., left-beating then right-beating) indicates a central cause, likely stroke.",
@@ -41974,7 +42286,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute vertigo and nystagmus",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1987"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-1987",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:nystagmus"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Vertical skew on cover-uncover testing is a central sign and should raise concern for stroke.",
@@ -41987,7 +42318,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute vertigo",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-2123"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-2123",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:stroke"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A positive head impulse test (catch-up saccade) indicates a peripheral vestibular lesion on the side the head is turned.",
@@ -42000,7 +42350,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute vertigo",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-2271"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-2271",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:head impulse test"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A normal head impulse test (no catch-up saccade) in acute vertigo suggests a central lesion until proven otherwise.",
@@ -42013,7 +42379,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute vertigo",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-2337"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-2337",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:head impulse test"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the Dix-Hallpike test is normal, the cause is central until proven otherwise.",
@@ -42026,7 +42408,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected BPPV",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-2343"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-2343",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dix-hallpike test"
+          ],
+          "rarity": 6.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A positive Dix-Hallpike with typical nystagmus is diagnostic for BPPV.",
@@ -42039,7 +42437,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with positional vertigo",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-2958"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-2958",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nystagmus"
+          ],
+          "rarity": 6.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When performing the Dix-Hallpike, extend the neck at least 20 degrees and drop the patient quickly to achieve high sensitivity (high 90s).",
@@ -42052,7 +42466,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians performing Dix-Hallpike",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-2972"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-2972",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:at least 2"
+          ],
+          "rarity": 6.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient does not improve after an Epley maneuver, either the maneuver was performed incorrectly or the patient does not have posterior canal BPPV.",
@@ -42065,7 +42495,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients treated with Epley maneuver",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-2996"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-2996",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:epley maneuver"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The head must be extended at least 20 degrees back off the edge of the bed for the Dix-Hallpike test to be effective.",
@@ -42078,7 +42524,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing Dix-Hallpike test",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-3032"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-3032",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:at least 2"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For elderly patients who cannot tolerate the Dix-Hallpike, use the Semont maneuver as a gentler alternative.",
@@ -42091,7 +42553,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients with BPPV",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-3064"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-3064",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:semont maneuver"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Teach patients with BPPV to watch YouTube videos on how to perform the Epley maneuver themselves if symptoms recur.",
@@ -42104,7 +42585,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with BPPV in outpatient setting",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-3086"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-3086",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:epley maneuver"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Visual fixation attenuates nystagmus, making it appear less pronounced.",
@@ -42117,7 +42614,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with nystagmus",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-3129"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-3129",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nystagmus"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Abrupt maximal onset of dizziness suggests stroke, even if MRI is negative; treat as stroke in patients with vascular risk factors.",
@@ -42130,7 +42643,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute dizziness and vascular risk factors",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-3187"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-3187",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Migraine-associated vertigo typically does not reach maximal intensity at onset.",
@@ -42143,7 +42678,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected migraine vertigo",
-      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-3211"
+      "pearl_id": "dr-abdo-on-common-acute-vestibular-syndromes-3211",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:migraine"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

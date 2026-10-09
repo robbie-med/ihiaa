@@ -99657,7 +99657,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all hospitalized patients with wounds",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-818"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-818",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "never"
+          ],
+          "harm": [
+            "missed"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is too heavy to examine alone, ask the nurse for help; make time to look under every dressing at least once.",
@@ -99670,7 +99689,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with limited mobility or obesity",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-851"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-851",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "examine"
+          ],
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In immunosuppressed patients with osteomyelitis, cover for Bacteroides fragilis.",
@@ -99683,7 +99718,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "immunosuppressed patients with osteomyelitis",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-1062"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-1062",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:osteomyelitis"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bone biopsy is the gold standard for diagnosing osteomyelitis; MRI can infer but not confirm.",
@@ -99696,7 +99747,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected osteomyelitis",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-1104"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-1104",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ESR greater than 100 is suggestive of osteomyelitis or malignancy.",
@@ -99709,7 +99779,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected osteomyelitis",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-1160"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-1160",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:greater than 1",
+            "test:ESR"
+          ],
+          "rarity": 6.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Empiric antibiotics for osteomyelitis should include vancomycin (for MRSA) plus a third-generation cephalosporin.",
@@ -99722,7 +99809,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected osteomyelitis before culture results",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-1240"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-1240",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:vancomycin"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For MSSA osteomyelitis, IV cefazolin is extremely effective and commonly stocked.",
@@ -99735,7 +99838,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with MSSA osteomyelitis",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-1292"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-1292",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:osteomyelitis"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For gram-negative rods in osteomyelitis, levofloxacin or ciprofloxacin are first choices; IV beta-lactams or carbapenems are alternatives.",
@@ -99748,7 +99867,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with gram-negative osteomyelitis",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-1314"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-1314",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:levofloxacin"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Antibiotics should ideally be held for an optimal antibiotic-free period before bone biopsy, but ED quality metrics often force early antibiotics.",
@@ -99761,7 +99896,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing bone biopsy for osteomyelitis",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-1332"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-1332",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Emergency department quality metrics requiring antibiotics within four hours of arrival can compromise the ability to get an antibiotic-free bone biopsy.",
@@ -99774,7 +99925,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing bone biopsy or paracentesis in the ED",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-1419"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-1419",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "harm": [
+            "Emergency"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A sequestrum is an island of infected bone that blood cannot reach, making it untreatable with IV antibiotics alone.",
@@ -99788,7 +99958,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with chronic osteomyelitis",
       "by_presenter": false,
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-1506"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-1506",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:iv antibiotics"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A sequestrum is an island of dead bone that blood cannot reach, so IV antibiotics alone will not treat the infection.",
@@ -99802,7 +99988,26 @@
       "prompt_version": "v1",
       "applies_to": "patients with chronic osteomyelitis",
       "by_presenter": false,
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-1506-2"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-1506-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:iv antibiotics"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In chronic osteomyelitis, obtain a bone biopsy before starting antibiotics to identify resistant or polymicrobial organisms.",
@@ -99815,7 +100020,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected chronic osteomyelitis",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-1601"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-1601",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hypocalcemia in a hospitalized patient should be confirmed with a redraw before acting, as it may be spurious.",
@@ -99828,7 +100052,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients with incidentally noted hypocalcemia",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-1831"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-1831",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hypocalcemia"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient on vancomycin develops diarrhea, consider C. difficile infection and obtain a guaiac test before giving loperamide.",
@@ -99841,7 +100081,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients on antibiotics with new diarrhea",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-1870"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-1870",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:vancomycin"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with atrial fibrillation and rapid ventricular response, first verify the rhythm with an EKG and assess the patient before deciding on rate or rhythm control.",
@@ -99855,7 +100114,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with tachycardia and known or suspected atrial fibrillation",
       "by_presenter": false,
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2208"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2208",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a nurse calls about trending blood pressures, the first thing to do is get a fresh set of vitals, a stat EKG, and assess the patient.",
@@ -99868,7 +100143,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any inpatient setting when notified of vital sign changes",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2244"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2244",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always generate a differential diagnosis first; the differential drives the actions, not the actions driving the differential.",
@@ -99881,7 +100172,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinical decision-making",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2312"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2312",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:differential diagnosis"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 6.78
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nurses may report findings in order of detection rather than severity; the clinician must prioritize the most serious findings, such as possible stroke over mild hypotension.",
@@ -99894,7 +100204,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "when receiving nursing reports",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2575"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2575",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hypotension"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 6.8
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Glasgow Coma Scale is only for patients who are unresponsive or unconscious; do not use it for patients who can be aroused.",
@@ -99907,7 +100239,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "unresponsive or unconscious patients",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2909"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2909",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:glasgow coma scale"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pathologic Q waves must appear in contiguous leads; however, a Q wave in lead aVF alone is considered pathologic.",
@@ -99920,7 +100271,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "EKG interpretation",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-3330"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-3330",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pathologic q waves"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A delta wave does not look like a wide QRS from right bundle branch block; delta waves are present in all leads and have a scooped appearance.",
@@ -99933,7 +100300,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "EKG interpretation when a slurred upstroke is seen",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-3360"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-3360",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:right bundle branch bl"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "With any bundle branch block, ST elevations and depressions are part of the criteria and do not automatically indicate STEMI.",
@@ -99946,7 +100329,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with bundle branch block on EKG",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-3501"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-3501",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bundle branch block"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sgarbossa criteria for detecting MI are only validated for left bundle branch block, not right bundle branch block.",
@@ -99959,7 +100361,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "EKG interpretation of possible MI in bundle branch block",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-3523"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-3523",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:right bundle branch bl"
+          ],
+          "rarity": 7.41
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Left bundle branch block criteria: QRS >120 ms, large S wave in V1, ST elevation in V1-V3, and ST depression in V5-V6.",
@@ -99972,7 +100390,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "EKG interpretation of left bundle branch block",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-3582"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-3582",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>1"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients with bundle branch block, diagnose ACS using symptoms and troponins rather than relying on the EKG.",
@@ -99985,7 +100419,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with bundle branch block and suspected acute coronary syndrome",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-3669"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-3669",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A new left bundle branch block with chest pain is a STEMI equivalent and requires cardiology activation; an old left bundle does not warrant a call.",
@@ -99998,7 +100448,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with left bundle branch block and chest pain",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-3682"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-3682",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:left bundle branch blo"
+          ],
+          "rarity": 6.78
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When using amiodarone for A fib with RVR, start the drip immediately after the bolus to prevent the heart rate from accelerating again.",
@@ -100012,7 +100478,32 @@
       "prompt_version": "v1",
       "applies_to": "patients with A fib with RVR receiving amiodarone",
       "by_presenter": false,
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-3955"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-3955",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:amiodarone"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 7.6,
+          "capped": [
+            "said by another participant"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In A fib with RVR and borderline hypotension, give IV amiodarone 150 mg bolus followed by 1 mg/min drip rather than beta blockers or calcium channel blockers, which can drop blood pressure further.",
@@ -100025,7 +100516,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with atrial fibrillation with rapid ventricular response and borderline hypotension (e.g., systolic BP 94-118)",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-4006"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-4006",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:150 mg"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient has multiple simultaneous problems, do not open a differential; instead, step back and create a new problem list to organize your thinking.",
@@ -100038,7 +100548,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with multiple active problems",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-5753"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-5753",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:problem list"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A patient with metabolic acidosis who was compensating with Kussmaul breathing may tire out; when the pCO2 rises and pH drops, compensation has failed and the patient needs intubation.",
@@ -100051,7 +100580,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with metabolic acidosis and respiratory compensation",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-6031"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-6031",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:kussmaul breathing"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Emergency intubation has higher morbidity and mortality than a planned intubation, so intubate before the patient crashes.",
@@ -100064,7 +100609,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring intubation",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-6073"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-6073",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:intubation"
+          ],
+          "harm": [
+            "Emergency"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When family is not present and the patient cannot consent, you may proceed with life-saving treatment based on the patient's best interest, but you must document thoroughly.",
@@ -100078,7 +100642,23 @@
       "prompt_version": "v1",
       "applies_to": "patients unable to consent in emergency",
       "by_presenter": false,
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-6192"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-6192",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "document"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A dropping hemoglobin in a septic patient should raise suspicion for GI bleeding, especially if on anticoagulants.",
@@ -100091,7 +100671,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "septic patients with falling hemoglobin",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-6328"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-6328",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "septic"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The iSTAT ABG provides a hemoglobin value, but it can be inaccurate; do not delay care waiting for a confirmatory lab.",
@@ -100104,7 +100700,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with an iSTAT ABG",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-6538"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-6538",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:istat abg"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An iSTAT ABG gives a rapid hemoglobin level, but it can be way off; do not delay care waiting for a formal lab if the patient is unstable.",
@@ -100117,7 +100732,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in acute care settings",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-6538-2"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-6538-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:istat abg"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before activating massive transfusion protocol, always run through the NACHOS differential for shock (Neurogenic, Anaphylactic, Cardiogenic, Hypovolemic, Obstructive, Septic) to ensure the cause is truly hemorrhagic.",
@@ -100130,7 +100764,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with suspected shock",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-6678"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-6678",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:massive transfusion pr"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Massive transfusion protocol for hemorrhagic shock consists of 4 units of packed red blood cells, 4 units of fresh frozen plasma, and 1 unit of platelets.",
@@ -100143,7 +100799,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hemorrhagic shock requiring MTP",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-6774"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-6774",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4 units"
+          ],
+          "harm": [
+            "hemorrhagic"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If fibrinogen is low during massive transfusion, add cryoprecipitate.",
@@ -100156,7 +100831,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on MTP with low fibrinogen",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-6795"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-6795",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:massive transfusion"
+          ],
+          "actionable": [
+            "add"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a non-trauma patient with active bleeding, consider giving tranexamic acid (TXA) as it wouldn't hurt.",
@@ -100169,7 +100863,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "non-trauma patients with active bleeding",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-6810"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-6810",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:tranexamic acid"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stress ulcer bleeding should be considered in hospitalized patients, especially those on pressors or ventilators, as a cause of GI bleeding.",
@@ -100182,7 +100898,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients, especially on pressors or ventilators",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-6865"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-6865",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:stress ulcer"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient is in atrial fibrillation with rapid ventricular response, always ask why they are in that rhythm rather than just treating it.",
@@ -100196,7 +100931,26 @@
       "prompt_version": "v1",
       "applies_to": "patients with atrial fibrillation with RVR",
       "by_presenter": false,
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-6963"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-6963",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:atrial fibrillation wi"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 6.16
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Creating a problem list helps organize complex cases and prevents getting overwhelmed; jot down everything and then figure out how it fits together.",
@@ -100210,7 +100964,23 @@
       "prompt_version": "v1",
       "applies_to": "clinicians managing complex patients",
       "by_presenter": false,
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-6991"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-6991",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:problem list"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Even if the white count is normal, look at the differential (bands, left shift) as it can indicate infection, as seen in this case.",
@@ -100223,7 +100993,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected infection",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-7025"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-7025",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with shock and dropping hemoglobin, consider both hemorrhagic causes (like stress ulcer) and non-hemorrhagic causes (like mesenteric ischemia) in the differential.",
@@ -100237,7 +101020,32 @@
       "prompt_version": "v1",
       "applies_to": "patients with shock and dropping hemoglobin",
       "by_presenter": false,
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-7083"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-7083",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:mesenteric ischemia"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.85,
+          "capped": [
+            "said by another participant"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

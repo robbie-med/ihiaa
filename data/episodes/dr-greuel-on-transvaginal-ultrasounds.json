@@ -33229,7 +33229,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "family physicians performing point-of-care ultrasound",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-106"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-106",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "Document"
+          ],
+          "rarity": 6.76
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For transvaginal ultrasound, advance the probe very slowly along the posterior aspect of the vagina and look for the uterus as a homogeneous appearing structure with a bright endometrial stripe.",
@@ -33242,7 +33261,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing transvaginal ultrasound",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-274"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-274",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stabilize your pinky on the patient's thigh and scan with your dominant hand to make smaller, controlled movements because you are very close to the target.",
@@ -33255,7 +33290,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians performing transvaginal ultrasound",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-416"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-416",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Scan across the entire pelvis from one adnexa to the other to avoid missing twins, heterotopic pregnancy, or a giant ovarian cyst.",
@@ -33268,7 +33316,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in early pregnancy",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-555"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-555",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:heterotopic pregnancy"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Free fluid in the posterior cul-de-sac may indicate a ruptured ectopic or infection; trace fluid can be seen with dysmenorrhea.",
@@ -33281,7 +33348,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pelvic pain and positive hCG",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-668"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-668",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:posterior cul-de-sac"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A pregnancy of undetermined location should be treated as an ectopic pregnancy until one is found in the uterus.",
@@ -33294,7 +33377,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with positive hCG and no intrauterine pregnancy",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-706"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-706",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ectopic pregnancy"
+          ],
+          "rarity": 6.99
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A true gestational sac is rounded or elliptical in two planes, eccentric to the endometrial stripe, shows a double decidual sign, and is greater than 4 mm, growing by 1 mm per day.",
@@ -33307,7 +33406,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-746"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-746",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4 mm",
+            "threshold:greater than 4",
+            "frequency:per day"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you see a yolk sac, that helps confirm it is a true gestational sac.",
@@ -33320,7 +33437,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-758"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-758",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:gestational sac"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "rarity": 6.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you have a good crown-rump length and cardiac activity, you do not need to obtain a mean sac diameter.",
@@ -33333,7 +33469,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy with visible fetal pole",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1102"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1102",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:crown-rump length"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.78
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Crown-rump length is the average of three measurements from the top of the head to the bottom of the buttocks; the knees are usually flexed.",
@@ -33346,7 +33501,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "first-trimester pregnancy",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1162"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1162",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:crown-rump length"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Switch to Hadlock fetal biometry at 14 weeks (second trimester).",
@@ -33359,7 +33530,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnancy after 14 weeks",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1195"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1195",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:14 weeks"
+          ],
+          "actionable": [
+            "Switch"
+          ],
+          "rarity": 7.67
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "By 6 weeks, you should be able to see a fetal pole with a heartbeat on transvaginal ultrasound; if not, consider anembryonic gestation and repeat in one week with a formal ultrasound.",
@@ -33372,7 +33562,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients at 5-6 weeks gestation with no fetal pole",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1265"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1265",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 weeks",
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "By 6 weeks on transabdominal ultrasound you should be able to see a fetal pole with a heartbeat.",
@@ -33385,7 +33595,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1267"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1267",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 weeks",
+            "test:ultrasound"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If no fetal pole seen at 6 weeks, do not rush to D&C; counsel about possible miscarriage or anembryonic gestation, give ectopic precautions, and repeat ultrasound in one week.",
@@ -33398,7 +33625,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnancy at 6 weeks with no fetal pole",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1273"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1273",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 weeks",
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To measure crown-rump length, rotate the probe 180 degrees keeping the baby in the middle of the screen to find the longest axis.",
@@ -33411,7 +33658,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "transvaginal ultrasound",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1408"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1408",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:crown-rump length"
+          ],
+          "actionable": [
+            "measure"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Obtain three separate crown-rump length measurements, not one continuous frozen image.",
@@ -33424,7 +33690,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "transvaginal ultrasound",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1443"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1443",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:crown-rump length"
+          ],
+          "actionable": [
+            "Obtain"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "No yolk sac by the end of 6 weeks is abnormal.",
@@ -33437,7 +33722,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1567"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1567",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 weeks"
+          ],
+          "rarity": 6.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "No embryonic pole by 49 days is abnormal.",
@@ -33450,7 +33751,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1589"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1589",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:49 days"
+          ],
+          "rarity": 6.4
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Mean sac diameter greater than 25 mm with no fetal pole is a criterion for pregnancy failure.",
@@ -33463,7 +33780,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1619"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1619",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:25 mm",
+            "threshold:greater than 2"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a patient with vaginal bleeding at 6 weeks with a gestational sac and yolk sac but no heartbeat, the appropriate ICD-10 diagnosis is threatened abortion, not embryonic demise.",
@@ -33476,7 +33810,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnancy at 6 weeks with bleeding",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1743"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1743",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 weeks"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the same findings are present at 8 weeks, it is an embryonic demise.",
@@ -33489,7 +33842,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnancy at 8 weeks with no heartbeat",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1751"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1751",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:8 weeks"
+          ],
+          "rarity": 6.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "At 6 weeks, beta-hCG should double in 72 hours (1.15x in 48 hours); after 9 weeks it plateaus and trending is not useful.",
@@ -33502,7 +33871,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy, before 9 weeks",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1795"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-1795",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 weeks"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IUDs appear as very echogenic bright white lines on transvaginal ultrasound, much brighter than the endometrium.",
@@ -33515,7 +33900,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "transvaginal ultrasound for IUD localization",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-2025"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-2025",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Practice transvaginal ultrasound whenever possible in clinic, even if it makes you run 10 minutes late, because the skill will be needed in urgent settings.",
@@ -33528,7 +33929,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents learning ultrasound",
-      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-2163"
+      "pearl_id": "dr-greuel-on-transvaginal-ultrasounds-2163",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 minutes",
+            "test:ultrasound"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

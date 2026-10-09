@@ -47986,7 +47986,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with murine typhus",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-370"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-370",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:doxycycline"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For high tick exposure, prophylaxis with doxycycline can be given, though the speaker gives confusing dosing: 'once a week on a hundred milligrams daily'.",
@@ -47999,7 +48015,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "individuals with high tick exposure in endemic areas",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-408"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-408",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily",
+            "drug:doxycycline"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In Rocky Mountain spotted fever, the rash begins at the ankles and can spread to other parts of the body; it is typically petechial.",
@@ -48012,7 +48045,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with suspected RMSF",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-471"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-471",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rocky mountain spotted"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Doxycycline is the treatment for Rocky Mountain spotted fever in adults, children (including one year old or older), and pregnant women.",
@@ -48025,7 +48074,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with suspected RMSF",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-576"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-576",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Doxycycline"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For Rocky Mountain spotted fever, there is no alternative to doxycycline; if not used, the patient may die.",
@@ -48038,7 +48103,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with suspected RMSF",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-592"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-592",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:doxycycline"
+          ],
+          "harm": [
+            "die"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Older tetracyclines have more side effects in pregnant women and children under 8 years, but doxycycline has very little risk of those problems.",
@@ -48051,7 +48135,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnancy and children under 8",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-599"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-599",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:8 years",
+            "threshold:under 8",
+            "drug:doxycycline"
+          ],
+          "rarity": 6.68
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For Lyme disease with a classic erythema chronicum migrans rash, you do not need a blood test; the rash alone is diagnostic.",
@@ -48064,7 +48166,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with classic expanding rash in endemic area",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-874"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-874",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:erythema chronicum mig"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When testing for Lyme disease, start with an ELISA; if negative, Lyme is unlikely.",
@@ -48077,7 +48198,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected early disseminated or late Lyme disease",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-886"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-886",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:lyme disease"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Treatment for early Lyme disease is doxycycline for five to seven days.",
@@ -48090,7 +48230,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with early Lyme disease",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-958"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-958",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:doxycycline"
+          ],
+          "rarity": 6.41
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For Lyme disease with heart block or neurological involvement, ceftriaxone (Rocephin) is preferable to doxycycline.",
@@ -48103,7 +48259,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Lyme disease with cardiac or neurologic manifestations",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-967"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-967",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:doxycycline"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "STARI syndrome (southern tick-associated rash illness) presents with the same rash as Lyme but usually does not cause heart block or arthritis.",
@@ -48116,7 +48288,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with tick bite and rash in southeastern United States",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-1005"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-1005",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:stari syndrome"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tick paralysis causes ascending paralysis in young children, whereas botulism causes descending paralysis starting from cranial nerves.",
@@ -48129,7 +48317,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "child with acute paralysis",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-1330"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-1330",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:tick paralysis"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When fast-acting antimalarials are unavailable for severe malaria, total exchange transfusion (removing all blood and replacing it) can be life-saving; one exchange may not be sufficient if parasitemia remains over 10%.",
@@ -48142,7 +48349,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe malaria and no access to artesunate",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-2395"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-2395",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 1"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hookworm larvae travel up to 20 meters away from a fecal deposit, so barefoot walking near open defecation sites risks infection through the feet.",
@@ -48155,7 +48378,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "populations practicing open defecation and walking barefoot",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-2458"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-2458",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:open defecation"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After a tick bite in Lyme-endemic areas, prophylactic doxycycline is typically given; in areas where Lyme is not common, it is sometimes done and sometimes not.",
@@ -48168,7 +48407,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with tick bites in Lyme-endemic areas",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-2719"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-2719",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:doxycycline"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Most tick-borne diseases (including Lyme disease) are not transmitted unless the tick is attached for over 24 hours.",
@@ -48181,7 +48436,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population with tick bites",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-2740"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-2740",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours",
+            "threshold:over 2"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ehrlichiosis can be transmitted more quickly than 24 hours of tick attachment, unlike most other tick-borne diseases.",
@@ -48195,7 +48467,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with tick bites in ehrlichiosis-endemic areas",
       "by_presenter": false,
-      "pearl_id": "dr-price-on-vector-transmitted-disease-2784"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-2784",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tick paralysis persists until the tick is removed; if the tick detaches on its own, paralysis resolves unless the patient has died by that time.",
@@ -48208,7 +48496,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with tick paralysis",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-2802"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-2802",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tick paralysis"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In onchocerciasis (river blindness) endemic areas, annual ivermectin distribution is done by health workers who visit huts, watch the patient take the pill, and record it in a log.",
@@ -48221,7 +48525,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "populations in onchocerciasis-endemic regions",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-2843"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-2843",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:onchocerciasis (river "
+          ],
+          "harm": [
+            "blindness"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In areas where Loa loa is also endemic, mass ivermectin administration cannot be done because it can increase the filariae burden and cause major complications.",
@@ -48234,7 +48557,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "populations in Loa loa-endemic areas",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-2867"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-2867",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ivermectin"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Jigger fleas burrow into skin around fingernails and toenails, causing swelling, ulcers, and growing larvae; treatment involves manually digging out the larvae.",
@@ -48247,7 +48589,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "people in areas with mud floors and flea infestations",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-2950"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-2950",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Jigger flea infestation is very painful and can lead to major infections, sepsis, and death; it is debilitating and requires regular removal (e.g., every Friday) in affected individuals.",
@@ -48260,7 +48615,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with jigger flea infestation",
-      "pearl_id": "dr-price-on-vector-transmitted-disease-2964"
+      "pearl_id": "dr-price-on-vector-transmitted-disease-2964",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:sepsis"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

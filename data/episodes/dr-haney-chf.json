@@ -38452,7 +38452,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with new heart failure",
-      "pearl_id": "dr-haney-chf-271"
+      "pearl_id": "dr-haney-chf-271",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:peripartum cardiomyopa"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "NYHA functional classification can change (e.g., a stage C patient can become class I with treatment), but ACC/AHA stage does not change once assigned.",
@@ -38465,7 +38484,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with heart failure",
-      "pearl_id": "dr-haney-chf-473"
+      "pearl_id": "dr-haney-chf-473",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nyha functional classi"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "BNP >400 is pretty consistent with CHF; BNP <100 makes CHF unlikely, but cannot completely exclude it. Only order BNP when you have a clinical suspicion (dyspnea, fatigue, swelling).",
@@ -38478,7 +38513,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected CHF",
-      "pearl_id": "dr-haney-chf-540"
+      "pearl_id": "dr-haney-chf-540",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>4",
+            "test:BNP"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A predischarge BNP that has not decreased significantly can be a strong predictor of readmission, but should not alone delay discharge; it should prompt reassessment of congestion.",
@@ -38491,7 +38546,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with CHF being considered for discharge",
-      "pearl_id": "dr-haney-chf-585"
+      "pearl_id": "dr-haney-chf-585",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:BNP"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "High-sensitivity symptoms of CHF: dyspnea on exertion, fatigue, and weight gain. Specific signs: PND, orthopnea, and JVD.",
@@ -38504,7 +38575,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected CHF",
-      "pearl_id": "dr-haney-chf-663"
+      "pearl_id": "dr-haney-chf-663",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:weight gain"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "JVD is highly specific for CHF but not sensitive; if you see it, it strongly suggests CHF, but absence does not rule it out, especially in obese patients.",
@@ -38517,7 +38604,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected CHF",
-      "pearl_id": "dr-haney-chf-904"
+      "pearl_id": "dr-haney-chf-904",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On ultrasound, IVC >2.1 cm with <50% collapse is pretty specific for CHF.",
@@ -38530,7 +38630,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected CHF",
-      "pearl_id": "dr-haney-chf-918"
+      "pearl_id": "dr-haney-chf-918",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2.1 cm",
+            "threshold:>2",
+            "test:ultrasound"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Initial workup for suspected CHF includes echo, labs (CBC, CMP, TSH, iron panel, urinalysis), EKG, and chest X-ray. Echo is essential to assess structure and function.",
@@ -38543,7 +38661,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected CHF",
-      "pearl_id": "dr-haney-chf-936"
+      "pearl_id": "dr-haney-chf-936",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CBC"
+          ],
+          "rarity": 6.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HFrEF is EF ≤40%; HFmrEF is 41-49%; HFpEF is ≥50%. These are treated somewhat differently.",
@@ -38556,7 +38690,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with heart failure",
-      "pearl_id": "dr-haney-chf-1170"
+      "pearl_id": "dr-haney-chf-1170",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hfmref"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "GDMT for HFrEF starts with sacubitril/valsartan (an ARNI). This can elevate BNP due to neprilysin inhibition, so BNP is not a reliable marker of worsening in patients on this drug.",
@@ -38569,7 +38719,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HFrEF starting sacubitril/valsartan",
-      "pearl_id": "dr-haney-chf-1309"
+      "pearl_id": "dr-haney-chf-1309",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:valsartan",
+            "test:BNP"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Only three beta-blockers have mortality benefit in HFrEF: bisoprolol, carvedilol, and metoprolol succinate. Switch patients on metoprolol tartrate to one of these.",
@@ -38582,7 +38749,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "HFrEF patients on beta-blockers",
-      "pearl_id": "dr-haney-chf-1396"
+      "pearl_id": "dr-haney-chf-1396",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:bisoprolol"
+          ],
+          "actionable": [
+            "Switch"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For HFrEF, start an ARNI (or ACE/ARB) and a beta-blocker first in all patients; add spironolactone if still symptomatic, then SGLT2 inhibitor.",
@@ -38595,7 +38781,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all HFrEF patients",
-      "pearl_id": "dr-haney-chf-1461"
+      "pearl_id": "dr-haney-chf-1461",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:spironolactone"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SGLT2 inhibitors (Jardiance, Farxiga) are heart failure medicines; you do not need diabetes to start them.",
@@ -38608,7 +38813,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "HFrEF patients",
-      "pearl_id": "dr-haney-chf-1507"
+      "pearl_id": "dr-haney-chf-1507",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:sglt2 inhibitors"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Titrate beta-blocker to target dose as tolerated by heart rate and blood pressure; do not be afraid to increase metoprolol succinate from 25 mg to 200 mg daily if tolerated.",
@@ -38621,7 +38845,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "HFrEF patients on metoprolol succinate",
-      "pearl_id": "dr-haney-chf-1563"
+      "pearl_id": "dr-haney-chf-1563",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:25 mg",
+            "frequency:daily",
+            "drug:metoprolol"
+          ],
+          "actionable": [
+            "Titrate"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diuretics improve symptoms but do not reduce mortality in chronic HF.",
@@ -38634,7 +38879,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "chronic HF patients",
-      "pearl_id": "dr-haney-chf-1712"
+      "pearl_id": "dr-haney-chf-1712",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:diuretics"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 5.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with recurrent volume overload, use torsemide instead of furosemide because torsemide is better absorbed.",
@@ -38647,7 +38911,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "HF patients with recurrent volume overload",
-      "pearl_id": "dr-haney-chf-1725"
+      "pearl_id": "dr-haney-chf-1725",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:volume overload"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sodium restriction to <3 g/day is reasonable; fluid restriction is not helpful except in advanced (stage D) HF.",
@@ -38660,7 +38943,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "HF patients",
-      "pearl_id": "dr-haney-chf-1852"
+      "pearl_id": "dr-haney-chf-1852",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 g",
+            "threshold:<3"
+          ],
+          "rarity": 6.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Don't forget palliative care for advanced HF (stage D); it improves quality of life and may prolong survival.",
@@ -38673,7 +38973,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with advanced (stage D) HF",
-      "pearl_id": "dr-haney-chf-1884"
+      "pearl_id": "dr-haney-chf-1884",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:palliative care"
+          ],
+          "actionable": [
+            "Don't"
+          ],
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ICD is indicated for EF ≤35% with NYHA class II-III symptoms after optimal GDMT, or EF ≤30% with class I.",
@@ -38686,7 +39005,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "HF patients on GDMT",
-      "pearl_id": "dr-haney-chf-1925"
+      "pearl_id": "dr-haney-chf-1925",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In HF with improved ejection fraction (HFimpEF), continue GDMT indefinitely even if the patient becomes asymptomatic.",
@@ -38699,7 +39031,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HFimpEF",
-      "pearl_id": "dr-haney-chf-2035"
+      "pearl_id": "dr-haney-chf-2035",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ejection fraction"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Refer to cardiology early for EF <40% or concern for ischemic cardiomyopathy.",
@@ -38712,7 +39060,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with EF <40% or suspected ischemic cardiomyopathy",
-      "pearl_id": "dr-haney-chf-2148"
+      "pearl_id": "dr-haney-chf-2148",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:<4"
+          ],
+          "actionable": [
+            "Refer"
+          ],
+          "rarity": 6.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Repeat echocardiography only with a change in clinical status, not routinely every year.",
@@ -38725,7 +39092,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "HF patients",
-      "pearl_id": "dr-haney-chf-2203"
+      "pearl_id": "dr-haney-chf-2203",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:echocardiography"
+          ],
+          "actionable": [
+            "Repeat"
+          ],
+          "rarity": 6.28
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Echocardiography is not needed annually in stable heart failure; repeat only if there is a change in clinical status or concern that ejection fraction may change.",
@@ -38738,7 +39124,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with stable heart failure",
-      "pearl_id": "dr-haney-chf-2204"
+      "pearl_id": "dr-haney-chf-2204",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ejection fraction"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 6.98
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Entresto is preferred for heart failure with reduced ejection fraction, but if cost is prohibitive, lisinopril or losartan are acceptable alternatives.",
@@ -38751,7 +39156,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HFrEF",
-      "pearl_id": "dr-haney-chf-2243"
+      "pearl_id": "dr-haney-chf-2243",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:lisinopril"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Titrate guideline-directed medical therapy to target doses even if the patient is doing well, but stop if adverse symptoms such as low blood pressure or low heart rate develop.",
@@ -38764,7 +39185,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on GDMT for heart failure",
-      "pearl_id": "dr-haney-chf-2276"
+      "pearl_id": "dr-haney-chf-2276",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:guideline-directed med"
+          ],
+          "actionable": [
+            "Titrate"
+          ],
+          "rarity": 6.68
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cardiologists may increase beta blocker dose even if heart rate is as low as 50 beats per minute.",
@@ -38777,7 +39217,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on beta blockers for heart failure",
-      "pearl_id": "dr-haney-chf-2304"
+      "pearl_id": "dr-haney-chf-2304",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When adjusting ACE inhibitors, ARBs, or Entresto, check potassium and renal function.",
@@ -38790,7 +39246,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting or adjusting ACE/ARB for heart failure",
-      "pearl_id": "dr-haney-chf-2334"
+      "pearl_id": "dr-haney-chf-2334",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ace inhibitors"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During medication titration, follow up every two to four weeks, not every three months, depending on patient compliance and willingness.",
@@ -38803,7 +39278,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing medication titration for heart failure",
-      "pearl_id": "dr-haney-chf-2343"
+      "pearl_id": "dr-haney-chf-2343",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:medication titration"
+          ],
+          "actionable": [
+            "follow up"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

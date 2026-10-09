@@ -57777,7 +57777,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dermatomyositis",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-140"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-140",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:systemic steroids"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In an immunosuppressed patient with recurrent cellulitis, empiric broad-spectrum antibiotics like vancomycin and Zosyn are appropriate.",
@@ -57790,7 +57806,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "immunocompromised patients with recurrent cellulitis",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-198"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-198",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:vancomycin"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dystrophic calcinosis cutis is associated with autoimmune diseases like dermatomyositis and occurs with normal calcium and phosphate levels.",
@@ -57803,7 +57835,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with calcinosis cutis",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-566"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-566",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:calcinosis cutis"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Metastatic calcinosis cutis is due to abnormal calcium or phosphate levels, often from hyperparathyroidism or kidney disease.",
@@ -57816,7 +57864,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with calcinosis cutis",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-676"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-676",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:calcinosis cutis"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When documenting, avoid language that blames other providers; instead, state recommendations neutrally.",
@@ -57829,7 +57893,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinicians writing notes",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-757"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-757",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A normal white count and absence of fever despite purulent drainage can be signs of adrenal suppression in a patient recently on steroids.",
@@ -57842,7 +57922,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with infection and recent steroid use",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-1143"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-1143",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fever"
+          ],
+          "rarity": 6.98
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Adrenal suppression from chronic steroid use can persist up to a year after weaning, so even if a patient has been off steroids, they may still have residual suppression.",
@@ -57856,7 +57952,23 @@
       "prompt_version": "v1",
       "applies_to": "patients recently weaned from chronic steroids",
       "by_presenter": false,
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-1268"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-1268",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with chronic pain on long-acting opioids, use scheduled oral medications first and reserve IV opioids for breakthrough pain.",
@@ -57869,7 +57981,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients with chronic pain on opioids",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-1413"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-1413",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:iv opioids"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with dermatomyositis on prednisone who develops infection, restarting 10 mg of prednisone may prevent HPA axis disruption but is insufficient for treating the underlying disease flare.",
@@ -57882,7 +58013,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dermatomyositis on chronic steroids with infection",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-1672"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-1672",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 mg",
+            "drug:prednisone"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When you call a COPD exacerbation, give both albuterol and steroids, don't leave off one component.",
@@ -57895,7 +58043,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD exacerbation",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-1769"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-1769",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:albuterol"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 6.17
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When you call sepsis due to pneumonia, give both antibiotics and fluids, don't leave off the fluids.",
@@ -57908,7 +58075,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with sepsis from pneumonia",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-1784"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-1784",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 5.41
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When weaning IV opioids, have a scheduled oral analgesic plan and ask the patient to set an alarm to take it, to prevent breakthrough pain.",
@@ -57921,7 +58110,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being transitioned from IV to oral opioids",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2132"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2132",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:iv opioids"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An overnight physician should honor the attending's documented weaning plan for opioids unless there is a clear change in condition; giving a single extra dose without reassessment may undermine the taper.",
@@ -57934,7 +58139,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "overnight cross-cover physicians",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2182"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2182",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:opioids"
+          ],
+          "actionable": [
+            "taper"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient with chronic pain reports that Tylenol, gabapentin, and Flexeril did not work, those claims should be documented but should not preclude multimodal analgesia trials.",
@@ -57947,7 +58171,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "chronic pain patients with history of failed adjuncts",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2352"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2352",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:gabapentin"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When escalating pain is accompanied by new symptoms like headache, hypertension, and back spasms, consider a new central nervous system or spinal cause, not just inadequate analgesia.",
@@ -57960,7 +58200,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic pain and new neurologic symptoms",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2371"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2371",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypertension"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient with chronic pain develops new or worsening pain patterns, open the differential, do not assume it is only medication-seeking behavior.",
@@ -57974,7 +58233,23 @@
       "prompt_version": "v1",
       "applies_to": "chronic pain patients with change in pain",
       "by_presenter": false,
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2499"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2499",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Chronic pain patients can be dismissed as manipulative, leading clinicians to miss new diagnoses such as malignancy or spinal pathology.",
@@ -57988,7 +58263,20 @@
       "prompt_version": "v1",
       "applies_to": "chronic pain patients",
       "by_presenter": false,
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2512"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2512",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a chronic pain patient who has been up and moving daily suddenly develops intractable pain and new neurologic symptoms, reopen the differential immediately rather than attributing it to drug-seeking behavior.",
@@ -58001,7 +58289,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "chronic pain patients",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2574"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2574",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A patient who is up, moving, and eating is unlikely to have 10/10 pain; this incongruence should raise suspicion for either exaggeration or a new process.",
@@ -58017,7 +58324,23 @@
       "numbers_unheard": [
         "10"
       ],
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2574-2"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2574-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:10/10"
+          ],
+          "rarity": 7.9
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient's pain pattern changes from chronic manageable to intractable, expand the differential to include vascular catastrophes like aortic dissection, spinal epidural hematoma, and pulmonary embolism.",
@@ -58030,7 +58353,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute severe back pain and new symptoms",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2743"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2743",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:spinal epidural hemato"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bradycardia does not preclude the need to rule out pulmonary embolism if the patient is hemodynamically stable.",
@@ -58043,7 +58382,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hemodynamically stable patients with bradycardia",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2761"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-2761",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pulmonary embolism"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a catastrophic diagnosis is discovered, being present and communicating with the patient and family is essential.",
@@ -58056,7 +58414,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians after a critical diagnosis",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3066"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3066",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "New loss of sensation or movement after a medication like Flexeril should not be attributed to the drug without a full neurologic workup.",
@@ -58069,7 +58440,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with new neurologic deficits after medication",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3348"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3348",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:flexeril"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Spontaneous spinal artery dissection is a rare cause of acute paraplegia that can present with severe back pain, radicular symptoms, and neurologic deficits.",
@@ -58082,7 +58469,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute back pain and neurologic symptoms",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3438"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3438",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:spinal artery dissecti"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not let preconceived notions about a patient being a 'drug seeker' cloud your judgment when the clinical picture changes.",
@@ -58095,7 +58498,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3548"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3548",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:judgment"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Being busy with many patients is not an excuse to skip reopening the differential when things change.",
@@ -58108,7 +58530,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians in busy practice",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3661"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3661",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The main point of morning report is to learn how to think, not just to memorize rare diagnoses.",
@@ -58121,7 +58556,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "trainees",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3729"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3729",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When unexpected complications occur, physicians must be present and support the family emotionally.",
@@ -58134,7 +58582,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians when patients experience unexpected adverse events",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3760"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3760",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In dermatomyositis, small blood vessels are weakened by the disease; physical strain like bending over can cause vessel rupture and subsequent hematoma.",
@@ -58147,7 +58608,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dermatomyositis",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3779"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3779",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dermatomyositis"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The spinal cord has a meager blood supply; a small hematoma can tamponade it and cause spinal ischemia.",
@@ -58160,7 +58637,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general understanding of spinal cord anatomy",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3831"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3831",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient presents with new or unexpected symptoms, expand the differential rather than attributing them solely to the underlying disease.",
@@ -58173,7 +58663,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with new or unexpected symptoms",
-      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3888"
+      "pearl_id": "dr-lawrence-lee-on-morning-reports-2-3888",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

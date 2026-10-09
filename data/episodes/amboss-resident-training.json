@@ -31331,7 +31331,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected acute pancreatitis, especially young patients",
-      "pearl_id": "amboss-resident-training-756"
+      "pearl_id": "amboss-resident-training-756",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In acute pancreatitis, diagnostic criteria include lipase and amylase >3 times the upper limit of normal.",
@@ -31344,7 +31360,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected acute pancreatitis",
-      "pearl_id": "amboss-resident-training-785"
+      "pearl_id": "amboss-resident-training-785",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>3"
+          ],
+          "rarity": 7.3
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In acute pancreatitis, always check hematocrit because volume contraction is the biggest problem.",
@@ -31357,7 +31389,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
-      "pearl_id": "amboss-resident-training-788"
+      "pearl_id": "amboss-resident-training-788",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acute pancreatitis"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 6.63
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For acute pancreatitis, start goal-directed IV fluid therapy with lactated ringers.",
@@ -31370,7 +31421,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
-      "pearl_id": "amboss-resident-training-932"
+      "pearl_id": "amboss-resident-training-932",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acute pancreatitis"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For acute pancreatitis, hang lactated Ringer's as the initial fluid because that is what the American College of Gastroenterology recommends.",
@@ -31383,7 +31453,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
-      "pearl_id": "amboss-resident-training-932-2"
+      "pearl_id": "amboss-resident-training-932-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:acute pancreatitis"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In unstable patients, give 500 to 1000 mL of lactated Ringer's over 10 to 30 minutes, bolusing if necessary, and stop when the fluid therapy goal is reached.",
@@ -31396,7 +31482,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "unstable patients",
-      "pearl_id": "amboss-resident-training-940"
+      "pearl_id": "amboss-resident-training-940",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1000 mL",
+            "threshold:over 1"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the acute management checklist to track evidence-based steps; you can check off items as you go, skip items if labs aren't back, and resume later if interrupted.",
@@ -31409,7 +31515,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with the disease",
-      "pearl_id": "amboss-resident-training-986"
+      "pearl_id": "amboss-resident-training-986",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When handing off to another resident, use the checklist to communicate what has been done and what still needs to be done.",
@@ -31422,7 +31544,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "during shift handoffs",
-      "pearl_id": "amboss-resident-training-1016"
+      "pearl_id": "amboss-resident-training-1016",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before performing a paracentesis, review the procedure article for contraindications, landmarks, positioning, and the step-by-step technique, including the Z-track method.",
@@ -31435,7 +31573,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "before performing paracentesis",
-      "pearl_id": "amboss-resident-training-1064"
+      "pearl_id": "amboss-resident-training-1064",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:paracentesis"
+          ],
+          "harm": [
+            "contraindications"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The one-minute telegram reviews three high-impact articles from high-impact journals every two weeks, delivered to your inbox, with optional deeper analysis and journal club questions.",
@@ -31448,7 +31605,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents wanting journal club or literature updates",
-      "pearl_id": "amboss-resident-training-1124"
+      "pearl_id": "amboss-resident-training-1124",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The Amboss Anki add-on makes all hyperlinks from Amboss work on your Anki cards and pulls related questions from the Anki deck for reinforcement.",
@@ -31461,7 +31631,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents using Anki for study",
-      "pearl_id": "amboss-resident-training-1307"
+      "pearl_id": "amboss-resident-training-1307",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "add"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Declare your board goal (e.g., family medicine) in the platform so the computer tracks your question performance toward that specific exam.",
@@ -31474,7 +31660,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents preparing for board exams",
-      "pearl_id": "amboss-resident-training-1351"
+      "pearl_id": "amboss-resident-training-1351",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:family medicine"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the performance analytics to identify weak areas; for example, if you have answered all infective endocarditis questions and got none right, click the topic to read the article and do the associated questions.",
@@ -31487,7 +31689,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents preparing for ITE or boards",
-      "pearl_id": "amboss-resident-training-1401"
+      "pearl_id": "amboss-resident-training-1401",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:infective endocarditis"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "You can create custom question banks by topic (e.g., abdominal pain) to review specific clinical scenarios you encountered.",
@@ -31500,7 +31721,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any resident wanting focused review",
-      "pearl_id": "amboss-resident-training-1512"
+      "pearl_id": "amboss-resident-training-1512",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:abdominal pain"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

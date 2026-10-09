@@ -45725,7 +45725,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with skin lesions suspicious for hives",
-      "pearl_id": "dr-purser-on-anaphylaxis-31"
+      "pearl_id": "dr-purser-on-anaphylaxis-31",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:urticaria"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Acute versus chronic urticaria is defined by the six-week cutoff: if hives have been present for less than six weeks, it is acute; six weeks or more, it is chronic.",
@@ -45738,7 +45754,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hives",
-      "pearl_id": "dr-purser-on-anaphylaxis-46"
+      "pearl_id": "dr-purser-on-anaphylaxis-46",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chronic urticaria"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Chronic urticaria can last 5 to 15 years; patients are miserable, can't sleep, and may have intermittent symptoms that keep coming back.",
@@ -45754,7 +45786,23 @@
       "numbers_unheard": [
         "5"
       ],
-      "pearl_id": "dr-purser-on-anaphylaxis-77"
+      "pearl_id": "dr-purser-on-anaphylaxis-77",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:15 years"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A common acute trigger for hives is NSAIDs, especially when taken intermittently (start and stop), which 'baits' the immune system.",
@@ -45767,7 +45815,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute hives",
-      "pearl_id": "dr-purser-on-anaphylaxis-288"
+      "pearl_id": "dr-purser-on-anaphylaxis-288",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:nsaids"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Histaminergic hives are pink, blanch, itch (not burn or hurt), come and go within 24 hours, and do not scar; these features distinguish them from vasculitic lesions.",
@@ -45780,7 +45847,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hives",
-      "pearl_id": "dr-purser-on-anaphylaxis-397"
+      "pearl_id": "dr-purser-on-anaphylaxis-397",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always rule out anaphylaxis at the very beginning when evaluating a patient with hives.",
@@ -45793,7 +45879,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients presenting with hives",
-      "pearl_id": "dr-purser-on-anaphylaxis-421"
+      "pearl_id": "dr-purser-on-anaphylaxis-421",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:anaphylaxis"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 6.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Angioedema typically tingles first, can affect half a lip, half a tongue, or one or both eyelids, and lasts 1-2 days.",
@@ -45806,7 +45914,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with angioedema",
-      "pearl_id": "dr-purser-on-anaphylaxis-687"
+      "pearl_id": "dr-purser-on-anaphylaxis-687",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 days"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always ask patients with hives if they have ever had lip or eyelid swelling; angioedema often accompanies hives and may require steroids to resolve.",
@@ -45819,7 +45943,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients presenting with hives",
-      "pearl_id": "dr-purser-on-anaphylaxis-750"
+      "pearl_id": "dr-purser-on-anaphylaxis-750",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:angioedema"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Chronic spontaneous urticaria is often triggered by viral illnesses, especially Epstein-Barr virus, which causes lymphatic changes and autoantibody formation.",
@@ -45832,7 +45975,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic spontaneous urticaria",
-      "pearl_id": "dr-purser-on-anaphylaxis-980"
+      "pearl_id": "dr-purser-on-anaphylaxis-980",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chronic spontaneous ur"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dermatographism commonly coexists with chronic spontaneous urticaria; you can have both diagnoses on the chart.",
@@ -45845,7 +46004,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic urticaria",
-      "pearl_id": "dr-purser-on-anaphylaxis-1041"
+      "pearl_id": "dr-purser-on-anaphylaxis-1041",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chronic spontaneous ur"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Delayed pressure urticaria appears as large hives under areas of sustained pressure (e.g., from heavy backpacks) and comes up after the pressure is removed.",
@@ -45858,7 +46033,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with inducible urticaria",
-      "pearl_id": "dr-purser-on-anaphylaxis-1071"
+      "pearl_id": "dr-purser-on-anaphylaxis-1071",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:delayed pressure urtic"
+          ],
+          "rarity": 7.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cholinergic urticaria (tiny bumps from exercise or heat) is common in 10- to 30-year-olds; cold urticaria can cause anaphylaxis, as seen in a child who went into anaphylaxis after entering a cold swimming pool.",
@@ -45871,7 +46062,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with inducible urticaria",
-      "pearl_id": "dr-purser-on-anaphylaxis-1113"
+      "pearl_id": "dr-purser-on-anaphylaxis-1113",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cholinergic urticaria"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In cold urticaria, an ice cube test can reproduce the lesion in the shape of the ice cube, confirming the diagnosis.",
@@ -45884,7 +46094,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients suspected of cold urticaria",
-      "pearl_id": "dr-purser-on-anaphylaxis-1134"
+      "pearl_id": "dr-purser-on-anaphylaxis-1134",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cold urticaria"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For chronic urticaria, use a longer course of steroids like prednisone IV with a two-week taper, not a Medrol Dose Pack, to get antibody levels down.",
@@ -45897,7 +46123,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic urticaria who are miserable",
-      "pearl_id": "dr-purser-on-anaphylaxis-1323"
+      "pearl_id": "dr-purser-on-anaphylaxis-1323",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:prednisone"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Encourage patients with chronic urticaria to undergo routine cancer screening, as there is an association with underlying malignancies.",
@@ -45910,7 +46155,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic urticaria",
-      "pearl_id": "dr-purser-on-anaphylaxis-1446"
+      "pearl_id": "dr-purser-on-anaphylaxis-1446",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chronic urticaria"
+          ],
+          "rarity": 6.98
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Omalizumab (Xolair) blocks IgE receptors, stopping mast cell degranulation and reducing receptor numbers on mast cells, offering long-term relief that can be weaned off.",
@@ -45923,7 +46184,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic urticaria refractory to antihistamines",
-      "pearl_id": "dr-purser-on-anaphylaxis-1527"
+      "pearl_id": "dr-purser-on-anaphylaxis-1527",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Omalizumab"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Draw a tryptase level during acute symptoms to help diagnose mast cell activation; a baseline tryptase can identify patients who overproduce histamine and are harder to manage.",
@@ -45936,7 +46213,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients presenting with acute urticaria or suspected mast cell activation",
-      "pearl_id": "dr-purser-on-anaphylaxis-1598"
+      "pearl_id": "dr-purser-on-anaphylaxis-1598",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:histamine"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Second-generation antihistamines can be used up to four times the recommended dose for chronic urticaria because the skin is much larger than the nose or eyes.",
@@ -45949,7 +46242,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic urticaria",
-      "pearl_id": "dr-purser-on-anaphylaxis-1682"
+      "pearl_id": "dr-purser-on-anaphylaxis-1682",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chronic urticaria"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Loratadine (Claritin) is excellent at not causing side effects but very unlikely to work for chronic urticaria.",
@@ -45962,7 +46271,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic urticaria",
-      "pearl_id": "dr-purser-on-anaphylaxis-1716"
+      "pearl_id": "dr-purser-on-anaphylaxis-1716",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chronic urticaria"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fexofenadine (Allegra) 180 mg can last up to three weeks in the body; Dr. Purser personally does not exceed two per day.",
@@ -45975,7 +46300,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic urticaria",
-      "pearl_id": "dr-purser-on-anaphylaxis-1777"
+      "pearl_id": "dr-purser-on-anaphylaxis-1777",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:180 mg",
+            "frequency:per day"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hereditary angioedema (HAE) swelling lasts at least five days, is painful, and often involves the jowls, unlike histaminergic angioedema which resolves in one to two days.",
@@ -45988,7 +46330,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with angioedema",
-      "pearl_id": "dr-purser-on-anaphylaxis-2014"
+      "pearl_id": "dr-purser-on-anaphylaxis-2014",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hereditary angioedema"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HAE is triggered by estrogen; patients with HAE or family history must never be given birth control pills.",
@@ -46001,7 +46359,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HAE or family history of HAE",
-      "pearl_id": "dr-purser-on-anaphylaxis-2042"
+      "pearl_id": "dr-purser-on-anaphylaxis-2042",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:estrogen"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 6.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Screen children with a family history of HAE to prevent their first event from being a laryngeal attack.",
@@ -46014,7 +46391,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with family history of HAE",
-      "pearl_id": "dr-purser-on-anaphylaxis-2071"
+      "pearl_id": "dr-purser-on-anaphylaxis-2071",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 6.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Abdominal pain with a family history of swelling episodes may be HAE; ask about 'swellings' in family members and check a complement level.",
@@ -46027,7 +46420,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with unexplained abdominal pain",
-      "pearl_id": "dr-purser-on-anaphylaxis-2150"
+      "pearl_id": "dr-purser-on-anaphylaxis-2150",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:abdominal pain"
+          ],
+          "actionable": [
+            "ask about"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected HAE, draw a C4 complement level as a cheap screening test; during an attack, also draw C1 esterase inhibitor level and function.",
@@ -46040,7 +46452,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected HAE",
-      "pearl_id": "dr-purser-on-anaphylaxis-2220"
+      "pearl_id": "dr-purser-on-anaphylaxis-2220",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:c1 esterase inhibitor "
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected hereditary angioedema, draw a C4 level as a screening test; it is cheap and readily available.",
@@ -46053,7 +46481,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected hereditary angioedema",
-      "pearl_id": "dr-purser-on-anaphylaxis-2220-2"
+      "pearl_id": "dr-purser-on-anaphylaxis-2220-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hereditary angioedema"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HAE attacks do not respond to epinephrine, steroids, or antihistamines; treat with C1 esterase inhibitor replacement or other specific agents.",
@@ -46066,7 +46510,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HAE presenting with an attack",
-      "pearl_id": "dr-purser-on-anaphylaxis-2263"
+      "pearl_id": "dr-purser-on-anaphylaxis-2263",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:c1 esterase inhibitor"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients with hereditary angioedema will not respond to epinephrine, antihistamines, or steroids; they need their specific HAE rescue medication.",
@@ -46079,7 +46542,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hereditary angioedema during an attack",
-      "pearl_id": "dr-purser-on-anaphylaxis-2263-2"
+      "pearl_id": "dr-purser-on-anaphylaxis-2263-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hereditary angioedema"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient with known HAE presents with an attack, treat them for HAE with C1 esterase inhibitor or other specific therapy, not with standard allergy medications.",
@@ -46092,7 +46571,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with known hereditary angioedema",
-      "pearl_id": "dr-purser-on-anaphylaxis-2268"
+      "pearl_id": "dr-purser-on-anaphylaxis-2268",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:c1 esterase inhibitor"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 6.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For severe laryngeal HAE attacks, use IV Berinert (C1 esterase inhibitor); it is the form needed in pregnancy and children.",
@@ -46105,7 +46603,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe laryngeal HAE attacks, including pregnant women and children",
-      "pearl_id": "dr-purser-on-anaphylaxis-2358"
+      "pearl_id": "dr-purser-on-anaphylaxis-2358",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:berinert (c1 esterase "
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Untreated HAE laryngeal attacks can take up to five days to resolve and can be fatal; intubation may be necessary.",
@@ -46118,7 +46635,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HAE laryngeal attacks",
-      "pearl_id": "dr-purser-on-anaphylaxis-2383"
+      "pearl_id": "dr-purser-on-anaphylaxis-2383",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:intubation"
+          ],
+          "harm": [
+            "fatal"
+          ],
+          "rarity": 7.1
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ACE inhibitor-induced angioedema is bradykinin-mediated and may respond to kallikrein inhibitors like icatibant, not to standard allergy treatments.",
@@ -46131,7 +46667,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ACE inhibitor-induced angioedema",
-      "pearl_id": "dr-purser-on-anaphylaxis-2425"
+      "pearl_id": "dr-purser-on-anaphylaxis-2425",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ace inhibitor-induced "
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fresh frozen plasma is sometimes recommended for ACE inhibitor angioedema but is a poor substitute when specific therapies are available.",
@@ -46144,7 +46696,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ACE inhibitor-induced angioedema",
-      "pearl_id": "dr-purser-on-anaphylaxis-2454"
+      "pearl_id": "dr-purser-on-anaphylaxis-2454",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fresh frozen plasma"
+          ],
+          "rarity": 7.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "All patients with hereditary angioedema should be referred to an allergy/immunology specialist for management and access to expensive medications.",
@@ -46157,7 +46725,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hereditary angioedema",
-      "pearl_id": "dr-purser-on-anaphylaxis-2482"
+      "pearl_id": "dr-purser-on-anaphylaxis-2482",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hereditary angioedema"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Angioedema with hives is histamine-driven and responds to epinephrine and steroids; angioedema without hives suggests bradykinin-mediated HAE.",
@@ -46170,7 +46754,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients presenting with angioedema",
-      "pearl_id": "dr-purser-on-anaphylaxis-2615"
+      "pearl_id": "dr-purser-on-anaphylaxis-2615",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:epinephrine"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When tongue and lip are both swollen, suspect HAE or ACE inhibitor-induced angioedema rather than histamine-driven angioedema.",
@@ -46183,7 +46783,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with tongue and lip swelling",
-      "pearl_id": "dr-purser-on-anaphylaxis-2649"
+      "pearl_id": "dr-purser-on-anaphylaxis-2649",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ace inhibitor-induced "
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

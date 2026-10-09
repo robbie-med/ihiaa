@@ -19999,7 +19999,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women starting low-dose estrogen pills",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2-398"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2-398",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:15 mcg"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 6.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IUDs are effective immediately upon insertion because they work primarily via local inflammation, not hormonal changes.",
@@ -20012,7 +20031,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women receiving IUDs",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1007"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1007",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In nulliparous women, use the shortest IUD length because the endometrial cavity is smaller; longer IUDs are more likely to be extruded.",
@@ -20025,7 +20060,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "nulliparous women receiving IUDs",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1039"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1039",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patches are less effective in patients with BMI above 30; they should not use this method.",
@@ -20038,7 +20089,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with BMI >30",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1261"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1261",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:above 3"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is over two days late applying a new patch, they should use backup protection for seven days and then start over with a new patch.",
@@ -20051,7 +20121,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women using contraceptive patches",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1362"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1362",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "NuvaRing avoids first-pass liver metabolism, allowing lower estrogen doses and fewer side effects like nausea and headaches compared to pills.",
@@ -20064,7 +20150,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women using NuvaRing",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1407"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1407",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:estrogen"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient says all the pills in their pack are the same color, they are on a progestin-only pill.",
@@ -20077,7 +20179,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients describing their pill pack",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1591"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1591",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:progestin-only pill"
+          ],
+          "rarity": 6.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient misses two combination pills, they should take the next pill (double dose) and continue; if three are missed, start over.",
@@ -20090,7 +20208,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women on combination estrogen-progestin pills",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1695"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1695",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "start"
+          ],
+          "harm": [
+            "missed"
+          ],
+          "rarity": 6.67
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For progestin-only pills, missing even one pill can lead to pregnancy; they must be taken at the same time every day within a couple of hours.",
@@ -20103,7 +20240,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women on progestin-only pills",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1727"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2-1727",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:progestin-only pill"
+          ],
+          "rarity": 6.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For breakthrough bleeding on monophasic pills: spotting in the first half of the cycle is managed by increasing estrogen and decreasing progestin; spotting in the second half is managed by the opposite.",
@@ -20116,7 +20269,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women on monophasic combination pills",
-      "pearl_id": "dr-calvert-on-hormonal-contraception-2-2164"
+      "pearl_id": "dr-calvert-on-hormonal-contraception-2-2164",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:breakthrough bleeding"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

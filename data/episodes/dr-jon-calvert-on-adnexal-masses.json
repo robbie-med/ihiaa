@@ -13434,7 +13434,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "postmenopausal women",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-109"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-109",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1.5 cm"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In reproductive-age women, you should feel ovaries 80% of the time. With obesity, it drops to 50-60% due to 3-4 cm of fat between you and the ovary.",
@@ -13447,7 +13463,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "reproductive-age women",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-177"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-177",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4 cm"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On ultrasound, a simple cyst is just a bag, empty and black in the middle. Anything that varies from that is complex and suspected to be cancer until proven otherwise.",
@@ -13460,7 +13492,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with adnexal mass on ultrasound",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-238"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-238",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a hemorrhagic cyst, if the ultrasound appearance is uncertain, repeat the ultrasound in two weeks; the clot will be resorbed and the cyst will be smaller.",
@@ -13473,7 +13521,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected hemorrhagic cyst",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-449"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-449",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "harm": [
+            "hemorrhagic"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A tubo-ovarian abscess on ultrasound has 'garbage in it', hyperechoic and hypoechoic areas with irregular margins, and on laparoscopy shows inflammation (red, hyperemic, dilated blood vessels).",
@@ -13486,7 +13556,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected pelvic infection",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-499"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-499",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An endometrioma on ultrasound has a classic 'frosted glass' appearance.",
@@ -13499,7 +13585,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected endometrioma",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-652"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-652",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sixty percent of women with STDs have no symptoms, but they may still have scarring. On bimanual exam, check mobility of the uterus, a fixed uterus suggests prior infection.",
@@ -13512,7 +13614,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with history of STDs",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-1247"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-1247",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bimanual exam"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A hydrosalpinx appears as an elongated structure (not shaped like an ovary) on ultrasound, a fallopian tube distended with fluid. It is usually an incidental, painless finding.",
@@ -13525,7 +13646,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with incidental adnexal finding",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-1364"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-1364",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you find left adnexal fullness on a well-woman exam, get an ultrasound. A complex cyst (with septation or solid echoes) requires referral to a gynecologic oncologist.",
@@ -13538,7 +13675,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with complex adnexal mass on ultrasound",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-1549"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-1549",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Submucosal fibroids are associated with menorrhagia (heavy bleeding); intramural fibroids are also associated with bleeding; subserosal fibroids are felt as lumps on exam.",
@@ -13551,7 +13704,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with uterine fibroids",
-      "pearl_id": "dr-jon-calvert-on-adnexal-masses-1922"
+      "pearl_id": "dr-jon-calvert-on-adnexal-masses-1922",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:menorrhagia"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

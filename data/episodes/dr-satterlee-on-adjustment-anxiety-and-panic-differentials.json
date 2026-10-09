@@ -63160,7 +63160,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anxiety (general)",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-472"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-472",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use F41.9 (anxiety unspecified) instead of GAD if diagnostic criteria are not fully met, because once GAD is in the record it is hard to remove from the patient’s mind.",
@@ -63173,7 +63186,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general primary care",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-579"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-579",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Screen for anxiety and depression every year in all adults and in children age 8 and older.",
@@ -63186,7 +63215,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults and children 8+",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-612"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-612",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:depression"
+          ],
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 4.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Social anxiety is distinguished from GAD by anxiety that occurs only in social situations and centers on a perceived fear of being judged negatively.",
@@ -63199,7 +63247,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anxiety in social contexts",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-714"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-714",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Panic disorder is defined not just by panic attacks but by a preoccupation and fear of future attacks that leads to avoidance or changes in life choices.",
@@ -63212,7 +63273,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with recurrent panic attacks",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-806"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-806",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:panic disorder"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use adjustment disorder with anxiety when a clear stressor is present and the patient had no prior anxiety disorder meeting clinical criteria; if symptoms persist more than 6 months after the stressor ends, reconsider the diagnosis.",
@@ -63225,7 +63302,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anxiety following a specific stressor",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-913"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-913",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 months",
+            "threshold:more than 6"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When differentiating ADHD from anxiety in primary care, consider that an SSRI takes 5, 6 weeks to work while a stimulant works in 30 minutes, allowing a faster trial.",
@@ -63238,7 +63335,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "primary care, patients with possible ADHD and anxiety",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-981"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-981",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 weeks"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient with possible ADHD reports improved sleep on a stimulant (instead of worsened sleep), it supports the ADHD diagnosis over primary anxiety.",
@@ -63251,7 +63367,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting stimulant for possible ADHD",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-1058"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-1058",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Acute stress disorder lasts up to one month, begins within 3 days of a life-threatening event, and must persist at least 3 days; symptoms beyond one month indicate PTSD.",
@@ -63264,7 +63393,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after a life-threatening event",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-1339"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-1339",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 days",
+            "threshold:at least 3"
+          ],
+          "harm": [
+            "life-threatening"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The key marker distinguishing OCD from anxiety disorders is the presence of compulsions (repetitive, narrow behaviors to reduce anxiety) rather than generalized worry.",
@@ -63277,7 +63426,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with repetitive behaviors",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-1440"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-1440",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anxiety disorders"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A key clinical marker for OCD is asking how much time in a day the patient loses to rituals or needing things a certain way; losing hours (e.g., four hours to redo makeup) suggests OCD.",
@@ -63290,7 +63458,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients presenting with anxiety",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-1465"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-1465",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In the first appointment for anxiety, essential steps are: assess safety (suicide, environmental threats), rule out medical causes (e.g., cardiac), and gather duration, onset, frequency, and intensity.",
@@ -63303,7 +63484,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "initial encounter with anxiety complaint",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-1565"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-1565",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:suicide"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ask patients what the first physical symptom they notice when anxiety starts (e.g., GI distress, palpitations, tension); this helps build a symptom profile that is clinically diagnostic and guides intervention.",
@@ -63316,7 +63516,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anxiety",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-1773"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-1773",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A precise DSM/ICD diagnosis is not critical in the first visit because treatments for most anxiety disorders overlap; focus on broad symptom categories.",
@@ -63329,7 +63542,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "initial evaluation of anxiety",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-1907"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-1907",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:anxiety disorders"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with diffuse, broadly described anxiety, consider exploring childhood adverse experiences (ACEs), as this may indicate a more resistant underlying cause.",
@@ -63342,7 +63571,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with broadly described anxiety",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2004"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2004",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the PC-PTSD-5 screener (five items) early in differential, especially if an SSRI is not working; a score of 3 is positive for women, 4 for men in VA primary care samples.",
@@ -63355,7 +63600,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anxiety not responding to SSRI",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2084"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2084",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pc-ptsd-5 screener"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cerner's behavioral health screeners are split between the ambulatory and behavioral medicine folders; clinicians should check both to find all available tools.",
@@ -63368,7 +63632,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians using Cerner EHR",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2172"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2172",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:behavioral health"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Clonidine is not first-line for panic; propranolol is safer and addresses physical symptoms without blocking trauma processing.",
@@ -63381,7 +63664,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with panic symptoms",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2393"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2393",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:propranolol"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Benzodiazepines (e.g., Xanax) and clonidine can interfere with trauma processing in the brain, requiring therapy to be redone; propranolol controls physiological symptoms without blocking processing.",
@@ -63394,7 +63693,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PTSD or trauma history",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2506"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2506",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:propranolol"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Benzodiazepines like Xanax and clonidine interfere with trauma processing in therapy; work done while on them must be redone.",
@@ -63407,7 +63722,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PTSD or trauma undergoing therapy",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2512"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2512",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:trauma processing"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Propranolol controls the physiological response to anxiety but does not block cognitive processing of trauma, unlike benzodiazepines and clonidine.",
@@ -63420,7 +63751,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anxiety or trauma",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2540"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2540",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Propranolol"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anxiety does not have a slow roll-up; it rises and then spikes once a threshold is crossed, similar to pain.",
@@ -63433,7 +63780,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2634"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2634",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SSRIs are frontline for panic disorder because they lower baseline arousal, reducing the likelihood of crossing the panic threshold.",
@@ -63446,7 +63806,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with panic disorder",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2662"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-2662",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:panic disorder"
+          ],
+          "rarity": 7.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The hallmark of anxiety at its root is avoidance.",
@@ -63459,7 +63835,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3025"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3025",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient has a strong narrative (e.g., attributing symptoms to low testosterone), clinicians can choose to join that story to build trust and maximize treatment engagement.",
@@ -63472,7 +63861,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anxiety who avoid standard treatments",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3043"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3043",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:testosterone"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Irritability is a symptom of generalized anxiety disorder (GAD).",
@@ -63485,7 +63890,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3405"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3405",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:generalized anxiety di"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Model acceptance and curiosity when a patient is panicking; ask detailed questions about their experience rather than rushing to solve it.",
@@ -63498,7 +63919,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians managing a patient in panic",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3418"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3418",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The main physical risk of a panic attack is head injury from fainting, not cardiac arrest (if cardiac causes are ruled out).",
@@ -63511,7 +63945,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with panic attacks after cardiac workup is negative",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3465"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3465",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cardiac arrest"
+          ],
+          "harm": [
+            "arrest"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Coach patients to lean into panic like riding a tidal wave or not fighting quicksand; paradoxically, this can reduce intensity.",
@@ -63524,7 +63977,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with panic attacks",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3662"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3662",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Encourage patients to lean into panic rather than fight it; use the metaphor of floating in quicksand or riding out a tidal wave.",
@@ -63537,7 +64006,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with panic attacks",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3662-2"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3662-2",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Deliver the 'lean in' message with genuine sympathy and empathy; never treat the patient's panic lightly.",
@@ -63550,7 +64035,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3742"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3742",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:empathy"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use relaxation techniques solely to make panic stop, as that creates a monitoring loop ('Is it stopping?') that worsens anxiety.",
@@ -63563,7 +64067,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with panic",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3763"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3763",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Have the patient name the feeling aloud ('I'm feeling panicky right now') to disengage the panic loop by 'poking a hole in the balloon'.",
@@ -63576,7 +64096,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in early stages of panic",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3910"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3910",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "At the first sign of palpitations, have the patient set a 15-minute timer and engage in something meaningful, then reassess whether symptoms persist.",
@@ -63589,7 +64122,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in early stages of panic",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3948"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3948",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "reassess"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Give the body an explanation for panic symptoms by doing burpees, ball push-ups, or jumping jacks for two minutes (like HIIT training) so the mind attributes the fast heart rate to exercise rather than panic.",
@@ -63602,7 +64151,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who cannot use the 'lean in' approach",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3974"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-3974",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:exercise"
+          ],
+          "actionable": [
+            "Give"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The best outcomes come from first understanding what terrifies the patient about their panic, not from immediately prescribing a fix.",
@@ -63615,7 +64183,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians treating patients with panic",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-4096"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-4096",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Grounding techniques are helpful in early stages of panic but less effective once the patient is in the throes of a full attack; at that point, it is something to move through, like a seizure.",
@@ -63628,7 +64212,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with panic",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-4120"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-4120",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:grounding techniques"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "True panic attacks are self-limited; the body will not allow one to last more than 15, 20 minutes.",
@@ -63641,7 +64244,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with true panic attacks",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-4135"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-4135",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:20 minutes",
+            "threshold:more than 1"
+          ],
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During panic, ensure the exhale is longer than the inhale to prevent hyperventilation and the sensation of not catching one's breath.",
@@ -63654,7 +64274,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients during a panic attack",
-      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-4150"
+      "pearl_id": "dr-satterlee-on-adjustment-anxiety-and-panic-differentials-4150",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hyperventilation"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

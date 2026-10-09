@@ -21883,7 +21883,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "postpartum patients",
-      "pearl_id": "dr-hershberger-on-post-partum-care-1268"
+      "pearl_id": "dr-hershberger-on-post-partum-care-1268",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:postpartum follow-up"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Women with a history of gestational hypertension or preeclampsia should have yearly blood pressure checks regardless of other chronic medical problems.",
@@ -21897,7 +21913,23 @@
       "prompt_version": "v1",
       "applies_to": "women with history of gestational hypertension or preeclampsia",
       "by_presenter": false,
-      "pearl_id": "dr-hershberger-on-post-partum-care-1331"
+      "pearl_id": "dr-hershberger-on-post-partum-care-1331",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:gestational hypertensi"
+          ],
+          "rarity": 6.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ask about pregnancy complications at well woman visits because they are not included in ASCVD risk scores but increase risk for HFpEF, MI, and stroke, and may change management such as starting a statin.",
@@ -21911,7 +21943,32 @@
       "prompt_version": "v1",
       "applies_to": "women with history of adverse pregnancy outcomes",
       "by_presenter": false,
-      "pearl_id": "dr-hershberger-on-post-partum-care-1359"
+      "pearl_id": "dr-hershberger-on-post-partum-care-1359",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ASCVD"
+          ],
+          "actionable": [
+            "Ask about"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.27,
+          "capped": [
+            "said by another participant"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Add gestational hypertension to the problem list as a chronic condition so it remains visible in the chart.",
@@ -21924,7 +21981,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with history",
-      "pearl_id": "dr-hershberger-on-post-partum-care-1416"
+      "pearl_id": "dr-hershberger-on-post-partum-care-1416",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:gestational hypertensi"
+          ],
+          "actionable": [
+            "Add"
+          ],
+          "rarity": 5.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After an emergent Cesarean section or other traumatic delivery, ask the patient about PTSD and connect them with mental health resources.",
@@ -21938,7 +22014,26 @@
       "prompt_version": "v1",
       "applies_to": "women after emergent Cesarean or traumatic delivery",
       "by_presenter": false,
-      "pearl_id": "dr-hershberger-on-post-partum-care-1458"
+      "pearl_id": "dr-hershberger-on-post-partum-care-1458",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cesarean section"
+          ],
+          "harm": [
+            "emergent"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

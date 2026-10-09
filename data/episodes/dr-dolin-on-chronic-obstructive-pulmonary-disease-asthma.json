@@ -59694,7 +59694,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic cough",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-143"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-143",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:8 weeks"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lung volume reduction surgery may improve FEV1 by a few hundred cc's but is not a cure; consider for upper lobe predominant emphysema.",
@@ -59707,7 +59723,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with upper lobe predominant emphysema being considered for surgery",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-443"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-443",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:lung volume reduction "
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Annual low-dose CT for lung cancer screening starts at a 30 pack-year smoking history.",
@@ -59720,7 +59755,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ≥30 pack-year smoking history",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-501"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-501",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "rarity": 6.84
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CT protocol choice depends on indication: low-dose for nodule screening, interstitial lung disease protocol (thinner cuts) for fibrotic patterns on chest X-ray, and PE protocol for low DLCO on spirometry.",
@@ -59733,7 +59784,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing CT chest for pulmonary evaluation",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-534"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-534",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Vaccinations recommended for COPD include yearly flu, COVID, Pneumovax, Prevnar, RSV, and DTaP; Dr. Dolin provides information if asked but does not actively push all vaccines in pulmonary clinic.",
@@ -59746,7 +59813,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-634"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-634",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vaccination"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For mild COPD (FEV1 >80% predicted, no exacerbations, symptoms about once a month, no hospitalizations), a rescue inhaler alone is sufficient.",
@@ -59759,7 +59842,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with mild COPD (GOLD stage 1)",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-691"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-691",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>8"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For moderate COPD (FEV1 50-80%), start a LAMA/LABA combination; Dr. Dolin usually starts both agents at the same time.",
@@ -59772,7 +59871,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with moderate COPD (GOLD stage 2)",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-710"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-710",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For severe COPD (FEV1 30-50%) or recurrent exacerbations, add an inhaled corticosteroid (triple therapy) to keep patients out of the hospital.",
@@ -59785,7 +59900,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe COPD (GOLD stage 3) or recurrent exacerbations",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-753"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-753",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:triple therapy"
+          ],
+          "actionable": [
+            "add"
+          ],
+          "rarity": 6.73
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For home use, prescribe albuterol inhaler (2 puffs q4h PRN) when away from home, and albuterol/ipratropium nebulized treatments (q4h PRN) when at home; use one or the other, not both at the same time.",
@@ -59798,7 +59932,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients with moderate to severe disease",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-874"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-874",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:q4h",
+            "drug:albuterol"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nebulized albuterol and ipratropium every 4 hours is safe even in patients on long-acting beta agonists, unless they have tachycardia or difficult-to-control atrial fibrillation.",
@@ -59811,7 +59965,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients on LABA therapy, excluding those with tachycardia or difficult-to-control atrial fibrillation",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-922"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-922",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4 hours",
+            "frequency:every 4",
+            "drug:albuterol"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Peripheral eosinophilia is not routinely used to guide inhaled steroid therapy in COPD; Dr. Dolin bases it on airflow limitation (FEV1 30-50%) and exacerbation history.",
@@ -59824,7 +59996,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-967"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-967",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:peripheral eosinophili"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Inhaled corticosteroids increase pneumonia risk; if a patient on triple therapy develops recurrent lower respiratory tract infections or pneumonia, stop the inhaled steroid.",
@@ -59837,7 +60025,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients on inhaled corticosteroids who develop recurrent LRTIs or pneumonia",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1022"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1022",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:inhaled corticosteroid"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 6.55
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with dexterity issues (e.g., rheumatoid arthritis with ulnar deviation, trach patients), prescribe nebulized treatments instead of inhalers.",
@@ -59850,7 +60057,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dexterity limitations or tracheostomy",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1054"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1054",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:rheumatoid arthritis"
+          ],
+          "actionable": [
+            "prescribe"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with rheumatoid arthritis and ulnar deviation who cannot turn and push an inhaler, a spacer may help, but most patients will not carry a spacer; observe their technique with samples if available.",
@@ -59863,7 +60089,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dexterity limitations (e.g., rheumatoid arthritis, trach)",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1084"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1084",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rheumatoid arthritis"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always watch patients use their inhaler; poor technique (e.g., inability to coordinate actuation) is a common reason for treatment failure, and a spacer may help but patients rarely carry one.",
@@ -59876,7 +60118,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients prescribed inhalers",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1125"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1125",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:spacer"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pulmonary rehabilitation improves FEV1 and lung function as much as starting another pharmaceutical, and it addresses the deconditioning spiral.",
@@ -59889,7 +60150,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients, especially those hospitalized with exacerbation",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1393"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1393",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pulmonary rehabilitati"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Oxygen therapy criteria: ambulatory pulse ox showing desaturation below 88% on room air with ambulation, and recovery above 88%.",
@@ -59902,7 +60182,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients being evaluated for oxygen",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1498"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1498",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:below 8"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A DLCO of 30% or less is a good rule of thumb that the patient will likely need supplemental oxygen.",
@@ -59915,7 +60211,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients with low DLCO",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1532"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1532",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with DLCO ≤30%, do an overnight pulse ox to capture nocturnal hypoxemia and qualify them for home oxygen equipment.",
@@ -59928,7 +60237,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients with DLCO ≤30%",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1555"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1555",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hypoxemia"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Roflumilast (Daliresp) is reasonable for patients with frequent exacerbations, but GI side effects (nausea, abdominal discomfort, diarrhea) are common; start at half dose for 1-2 weeks then increase to full dose.",
@@ -59941,7 +60266,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients with frequent exacerbations",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1767"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1767",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 weeks"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Regular treatment with ICS increases the risk of pneumonia (evidence level A); consider discontinuing ICS when a COPD patient is hospitalized with pneumonia.",
@@ -59954,7 +60298,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients on ICS hospitalized with pneumonia",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1831"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1831",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pneumonia"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.8
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Initiate ICS therapy for COPD patients with: >2 moderate exacerbations per year, eosinophilia >300 cells/μL, history of asthma, or FEV1 between 30-50% predicted.",
@@ -59967,7 +60330,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients meeting criteria",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1863"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1863",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>2"
+          ],
+          "actionable": [
+            "Initiate"
+          ],
+          "rarity": 7.1
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "All new COPD patients should be tested for alpha-1 antitrypsin deficiency because treatment differs (enzyme replacement therapy like Zemaira or Prolastin).",
@@ -59980,7 +60362,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "new COPD patients in pulmonary clinic",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1885"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1885",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:alpha-1 antitrypsin de"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Refer for lung transplant evaluation when FEV1 is ≤30% or DLCO <30%, before the patient becomes ineligible; the official criteria say 20% but earlier referral is better.",
@@ -59993,7 +60391,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients with severe disease",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2130"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2130",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:<3"
+          ],
+          "actionable": [
+            "Refer"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During hospitalization for COPD exacerbation, arrange for CT scan and spirometry if not already done, to identify structural lung disease and guide future options.",
@@ -60006,7 +60423,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients hospitalized with exacerbation",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2250"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2250",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "rarity": 6.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Adequate spirometry requires a sustained exhalation of at least 6-8 seconds; otherwise the data is invalid.",
@@ -60019,7 +60452,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing spirometry",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2289"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2289",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:at least 6",
+            "test:spirometry"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a valid spirometry test, the patient must sustain a prolonged exhalation for at least six to eight seconds; otherwise the data is invalid.",
@@ -60032,7 +60482,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing spirometry",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2293"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2293",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:spirometry"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a COPD exacerbation shows peripheral eosinophilia >2% (e.g., 4% or 6%), IV steroids are particularly helpful.",
@@ -60045,7 +60511,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD exacerbation with eosinophilia",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2374"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2374",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>2"
+          ],
+          "rarity": 6.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a COPD action plan, use a prolonged prednisone taper: 40 mg for three days, then 30 for three, 20 for three, and 10 for three days, then stop.",
@@ -60058,7 +60540,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients not on chronic steroid therapy",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2403"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2403",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:40 mg",
+            "drug:prednisone"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Methylxanthines (theophylline, aminophylline) have fallen out of favor due to risk of arrhythmia and lowering seizure threshold; avoid prescribing them.",
@@ -60071,7 +60573,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD or asthma patients",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2469"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2469",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:seizure threshold"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For stable COPD, obtain a yearly PFT; if the patient has no exacerbations, no increase in rescue inhaler use, and FEV1 matches their bronchodilator therapy, no change is needed.",
@@ -60084,7 +60608,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "stable COPD patients",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2618"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2618",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:exacerbation"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For asthma, follow patients every three months until they have no exacerbations and use rescue inhaler no more than once or twice a month; the goal is to minimize inhaled corticosteroid therapy.",
@@ -60097,7 +60640,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "asthma patients",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2664"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2664",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:steroid therapy"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lung cancer screening with low-dose CT is indicated for smokers with >30 pack-years, age >55, presence of emphysema/COPD, low BMI, or family history of lung cancer.",
@@ -60110,7 +60672,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "smokers with risk factors",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2855"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-2855",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>3",
+            "test:CT"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For COPD exacerbation failing outpatient therapy, if purulent phlegm is present, get a sputum culture; if an infiltrate is seen, broaden antibiotics with vancomycin and Zosyn or cefepime.",
@@ -60123,7 +60702,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD exacerbation in hospital with infiltrate",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3049"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3049",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:vancomycin",
+            "test:culture"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IV steroid taper can be done by decreasing the dose by 50% per day; 20 mg of Solu-Medrol every 8 hours is roughly equivalent to 60 mg of prednisone, allowing easy transition to an oral taper.",
@@ -60136,7 +60732,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD exacerbation in hospital",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3143"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3143",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:20 mg",
+            "frequency:per day",
+            "drug:prednisone"
+          ],
+          "actionable": [
+            "taper"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For COPD patients, follow radiographic infiltrates with a CT scan at 6, 8 weeks to ensure no underlying nodule is present; do not schedule it sooner.",
@@ -60149,7 +60766,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "COPD patients with infiltrate after hospitalization",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3220"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3220",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:8 weeks",
+            "test:CT"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use IV magnesium more often in asthma exacerbations than COPD exacerbations for smooth muscle relaxation; in the ICU, give 4-6 grams to induce muscle relaxation.",
@@ -60162,7 +60799,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with asthma exacerbation in the ICU",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3293"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3293",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:asthma exacerbation"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In severe asthma exacerbations, use higher-dose IV steroids (125 mg every 8 hours) and consider IV magnesium (4, 6 grams) for smooth muscle relaxation.",
@@ -60175,7 +60831,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "severe asthma exacerbation in ICU",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3307"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3307",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:125 mg",
+            "frequency:every 8"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In asthma exacerbations, use higher dose steroids such as methylprednisolone 125 mg every 8 hours.",
@@ -60188,7 +60864,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with asthma exacerbation",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3315"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3315",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:125 mg",
+            "frequency:every 8",
+            "drug:methylprednisolone"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pregnant patients in the third trimester with an asthma exacerbation are high-risk; use IV magnesium and high-dose steroids.",
@@ -60201,7 +60898,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients in third trimester with asthma exacerbation",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3326"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3326",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:asthma exacerbation"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 5.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pregnant patients in the third trimester with asthma exacerbations are the most dangerous calls in the hospital; they can deteriorate rapidly.",
@@ -60214,7 +60930,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients in third trimester with asthma exacerbation",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3326-2"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3326-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:asthma exacerbation"
+          ],
+          "harm": [
+            "dangerous"
+          ],
+          "rarity": 6.84
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Asthma exacerbations can blow up quickly even in patients who are stable at baseline, so you must be careful.",
@@ -60227,7 +60962,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with asthma",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3354"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3354",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:asthma exacerbation"
+          ],
+          "rarity": 6.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a super wheezy patient with audible wheezing who has been on high-dose IV steroids for 48 hours and frequent breathing treatments without improvement, consider giving IV magnesium, especially if there is a history of asthma or peripheral eosinophilia.",
@@ -60240,7 +60991,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe wheezing not responding to standard therapy",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3378"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3378",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:48 hours"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use peak expiratory flow monitoring with personal best, yellow zone, and red zone to help asthma patients recognize exacerbations early and call for prescriptions.",
@@ -60253,7 +61023,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "asthma patients in outpatient clinic",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3473"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3473",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:peak expiratory flow"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If IgE level is greater than 30, start montelukast (Singulair) for asthma.",
@@ -60266,7 +61055,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "asthma patients with IgE >30",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3541"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3541",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:greater than 3"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Obtain RAST allergy testing before starting montelukast (Singulair), because the drug must be held for weeks before allergy testing.",
@@ -60279,7 +61087,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "asthma patients being considered for montelukast",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3555"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3555",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:allergy testing"
+          ],
+          "actionable": [
+            "Obtain"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Refer patients with multiple positive allergy panel results to allergy/immunology for further management and biologics like Xolair.",
@@ -60292,7 +61119,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with multiple positive allergy tests",
-      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3601"
+      "pearl_id": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3601",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Refer"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

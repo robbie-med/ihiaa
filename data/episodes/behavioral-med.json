@@ -80820,7 +80820,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "providers using IHI referral list",
-      "pearl_id": "behavioral-med-251"
+      "pearl_id": "behavioral-med-251",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:referral"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SoonerCare offers some of the best mental health benefits for children and those under 21, but finding adult providers who accept it is more difficult.",
@@ -80833,7 +80849,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with SoonerCare",
-      "pearl_id": "behavioral-med-345"
+      "pearl_id": "behavioral-med-345",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:under 2"
+          ],
+          "rarity": 6.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with insurance, start with their insurance list to find in-network mental health providers, then cross-reference with other sources.",
@@ -80846,7 +80878,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with insurance",
-      "pearl_id": "behavioral-med-386"
+      "pearl_id": "behavioral-med-386",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:insurance"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The IHI referral list is available on SharePoint under Clinical > Counseling Services and can be bookmarked for updates.",
@@ -80859,7 +80910,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "IHI providers",
-      "pearl_id": "behavioral-med-423"
+      "pearl_id": "behavioral-med-423",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:counseling"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "St. John mental health providers typically offer 30-minute appointments for 6-8 sessions, with some allowed to see patients for 60 minutes or extend to 10-12 sessions.",
@@ -80872,7 +80939,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients referred to St. John mental health providers",
-      "pearl_id": "behavioral-med-1031"
+      "pearl_id": "behavioral-med-1031",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:60 minutes"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Referral notes placed in the St. John system are not passed to the counseling office; they only receive a list of names and ID numbers.",
@@ -80885,7 +80968,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "providers using St. John referral system",
-      "pearl_id": "behavioral-med-1142"
+      "pearl_id": "behavioral-med-1142",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:counseling"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To expedite a behavioral health referral, walk the demographic sheet, face sheet, and completed referral sheet to the behavioral health team; they will put it at the top of the pile and may start working with the patient 2-3 weeks before receiving their name on the email list.",
@@ -80898,7 +80997,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents referring patients to behavioral health",
-      "pearl_id": "behavioral-med-1234"
+      "pearl_id": "behavioral-med-1234",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 weeks"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Walking a printed demographic sheet and referral sheet back to the counseling office can expedite scheduling by 2-3 weeks compared to the standard email list.",
@@ -80911,7 +81029,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "providers at IHI",
-      "pearl_id": "behavioral-med-1259"
+      "pearl_id": "behavioral-med-1259",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": true,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "D",
+        "fired": {
+          "specific": [
+            "dose:3 weeks"
+          ],
+          "local": [
+            "scheduling"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The IHI counseling office does not accept SoonerCare for patients over 21, which is a significant barrier for adult referrals.",
@@ -80925,7 +81062,23 @@
       "prompt_version": "v1",
       "applies_to": "patients over 21 with SoonerCare at IHI",
       "by_presenter": false,
-      "pearl_id": "behavioral-med-1268"
+      "pearl_id": "behavioral-med-1268",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 2"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The behavioral health service does not accept adult SoonerCare (patients over 21) and does not have translation services.",
@@ -80939,7 +81092,23 @@
       "prompt_version": "v1",
       "applies_to": "patients over 21 with SoonerCare",
       "by_presenter": false,
-      "pearl_id": "behavioral-med-1271"
+      "pearl_id": "behavioral-med-1271",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 2"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Initial therapy appointments cost approximately $300; follow-up hourly appointments cost approximately $155.",
@@ -80952,7 +81121,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients at this behavioral health service",
-      "pearl_id": "behavioral-med-1349"
+      "pearl_id": "behavioral-med-1349",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:therapy"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Co-counseling appointments are available for underinsured patients at a flat $20 per session, with a resident observing; these are reserved for patients with limited access or good teaching cases, not for physicians with high deductibles.",
@@ -80965,7 +81150,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "underinsured patients",
-      "pearl_id": "behavioral-med-1382"
+      "pearl_id": "behavioral-med-1382",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:co-counseling"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Therapy models vary: nondirective models (client-centered, insight-driven) rely on the patient's realization leading to change; directive models are more structured and behavioral.",
@@ -80978,7 +81179,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "behavioral-med-1894"
+      "pearl_id": "behavioral-med-1894",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:therapy models"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient says 'I went to therapy and it didn't help,' ask what type of therapy it was, how they found the therapist, how many sessions they attended, and whether they were given homework.",
@@ -80991,7 +81208,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who report prior unhelpful therapy",
-      "pearl_id": "behavioral-med-2023"
+      "pearl_id": "behavioral-med-2023",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:therapy"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "988 is the national suicide crisis line; it routes callers to a local answering service based on area code (COPE in Tulsa).",
@@ -81004,7 +81237,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "behavioral-med-2213"
+      "pearl_id": "behavioral-med-2213",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:suicide crisis line"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before sending a patient to the emergency room for a suicide assessment, try calling COPE for a phone assessment while the patient is in the clinic; they may be able to avoid the ER visit.",
@@ -81017,7 +81266,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suicidal ideation in clinic",
-      "pearl_id": "behavioral-med-2258"
+      "pearl_id": "behavioral-med-2258",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:suicide"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 7.1
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The Sapulpa adult day center provides psychiatric day services with up to 23 hours of observation and medication regulation, avoiding the cost of inpatient hospitalization.",
@@ -81030,7 +81301,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults who are destabilized but not requiring inpatient admission",
-      "pearl_id": "behavioral-med-2297"
+      "pearl_id": "behavioral-med-2297",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": true,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "D",
+        "fired": {
+          "specific": [
+            "dose:23 hours"
+          ],
+          "local": [
+            "day center"
+          ],
+          "rarity": 7.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Family & Children's Services offers same-day walk-in psychiatric appointments and can often see patients sooner than other providers, especially for SoonerCare patients.",
@@ -81043,7 +81333,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing psychiatric evaluation, especially SoonerCare",
-      "pearl_id": "behavioral-med-2333"
+      "pearl_id": "behavioral-med-2333",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:family & children's se"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Psychologists are the only ones typically trained to administer and interpret standardized cognitive and personality tests (e.g., MMPI, PAI, Rorschach); mid-level providers may administer but cannot interpret them.",
@@ -81056,7 +81362,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "referral for psychological testing",
-      "pearl_id": "behavioral-med-3509"
+      "pearl_id": "behavioral-med-3509",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:psychologist"
+          ],
+          "actionable": [
+            "administer"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For ADHD or learning disorders, the key finding is a mismatch between aptitude (IQ) and achievement (knowledge on tests like Woodcock Johnson).",
@@ -81069,7 +81394,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "evaluation for ADHD or learning disorders",
-      "pearl_id": "behavioral-med-3822"
+      "pearl_id": "behavioral-med-3822",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Neuropsychologists are typically called upon when there is a deficit, change, or injury (e.g., TBI, dementia, chronic illness) to measure specific cognitive functions for life adaptation or prognosis.",
@@ -81082,7 +81420,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cognitive changes from injury or illness",
-      "pearl_id": "behavioral-med-3999"
+      "pearl_id": "behavioral-med-3999",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:psychologist"
+          ],
+          "actionable": [
+            "measure"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Psychoeducational evaluation is a less extensive and less expensive subset of neuropsych, used specifically for educational accommodations (IEP, 504 plans).",
@@ -81098,7 +81455,23 @@
       "numbers_unheard": [
         "504"
       ],
-      "pearl_id": "behavioral-med-4076"
+      "pearl_id": "behavioral-med-4076",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:psychoeducational eval"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Autism-specific assessment is a separate subset requiring certification and assessment tools not part of general psychoeducational testing.",
@@ -81111,7 +81484,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing autism evaluation",
-      "pearl_id": "behavioral-med-4161"
+      "pearl_id": "behavioral-med-4161",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:autism"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When referring for assessment, specify what you are seeing (e.g., 'apparent changes in memory, cognitive reasoning, executive functioning associated with recent head injury') and what the information will be used for, so the referral gets to the right type of evaluator.",
@@ -81124,7 +81513,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any referral for psychological assessment",
-      "pearl_id": "behavioral-med-4212"
+      "pearl_id": "behavioral-med-4212",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:executive function"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a patient with memory deficits and focus problems after a traumatic event, start with a regular psych referral rather than neuropsych, because neuropsych is the most expensive and extensive option.",
@@ -81137,7 +81542,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with memory/focus deficits after trauma, where PTSD or depression is suspected",
-      "pearl_id": "behavioral-med-4294"
+      "pearl_id": "behavioral-med-4294",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:referral"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A doctor's diagnosis alone will not get a student accommodations at college; they need formal assessment results (e.g., psychoeducational evaluation) for a 504 plan or IEP.",
@@ -81153,7 +81577,23 @@
       "numbers_unheard": [
         "504"
       ],
-      "pearl_id": "behavioral-med-4406"
+      "pearl_id": "behavioral-med-4406",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:psychoeducational eval"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The $1,200 cost of a psychoeducational assessment is still cheaper than failing a semester of college.",
@@ -81166,7 +81606,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "students needing accommodations for college",
-      "pearl_id": "behavioral-med-4413"
+      "pearl_id": "behavioral-med-4413",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:psychoeducational asse"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A doctor's note is not sufficient for college accommodations; patients need a documented 504 plan or IEP with formal assessment results.",
@@ -81182,7 +81638,23 @@
       "numbers_unheard": [
         "504"
       ],
-      "pearl_id": "behavioral-med-4420"
+      "pearl_id": "behavioral-med-4420",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:504 plan"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient on Adderall for ADHD might need accommodations in the future, plan ahead because the current Adderall shortage may force medication changes, and formal assessment documentation takes time.",
@@ -81195,7 +81667,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ADHD on stimulants who may need future school accommodations",
-      "pearl_id": "behavioral-med-4472"
+      "pearl_id": "behavioral-med-4472",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:adderall"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients stable on ADHD medication, advise them to plan ahead for possible future school accommodations because the wait for a comprehensive assessment is 9, 12 months.",
@@ -81208,7 +81696,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ADHD on medication who may need accommodations later",
-      "pearl_id": "behavioral-med-4488"
+      "pearl_id": "behavioral-med-4488",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:12 months"
+          ],
+          "actionable": [
+            "wait"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In Tulsa, wait times for comprehensive assessments (neuropsych or psychoeducational) required for schools are 9 to 12 months, so refer early.",
@@ -81221,7 +81728,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing school-related assessments in Tulsa",
-      "pearl_id": "behavioral-med-4493"
+      "pearl_id": "behavioral-med-4493",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:12 months"
+          ],
+          "actionable": [
+            "wait"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Primary care can perform an abbreviated ADHD assessment but cannot do a full assessment; refer patients who need comprehensive evaluation.",
@@ -81234,7 +81760,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "primary care setting",
-      "pearl_id": "behavioral-med-4525"
+      "pearl_id": "behavioral-med-4525",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:primary care"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 7.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For deterioration, change, or autism concerns, refer directly to neuropsychology; specific clinics like the Griffin Clinic in Broken Arrow offer ADHD/autism screening services.",
@@ -81247,7 +81792,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing specific assessments",
-      "pearl_id": "behavioral-med-4716"
+      "pearl_id": "behavioral-med-4716",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:autism screening"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Coach parents to call assessment centers and say they need an assessment for school accommodations or suspect autism/ADHD/learning disabilities; this helps tailor the battery.",
@@ -81260,7 +81824,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "parents seeking assessment for their child",
-      "pearl_id": "behavioral-med-4770"
+      "pearl_id": "behavioral-med-4770",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:learning disabilities"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not send patients to a psychiatrist for cognitive functioning assessment; they do not perform that. Refer to neuropsychology instead.",
@@ -81273,7 +81853,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing cognitive assessment",
-      "pearl_id": "behavioral-med-4814"
+      "pearl_id": "behavioral-med-4814",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:psychiatrist"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Physicians can be trained to perform autism assessments using a standardized battery; it takes about 1.5 hours, is booked like a procedure, and can count for an IEP.",
@@ -81289,7 +81888,23 @@
       "numbers_unheard": [
         "1.5"
       ],
-      "pearl_id": "behavioral-med-4823"
+      "pearl_id": "behavioral-med-4823",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1.5 hours"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

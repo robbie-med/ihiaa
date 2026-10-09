@@ -39796,7 +39796,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians interpreting historical data on opioid addiction risk",
-      "pearl_id": "dr-amell-on-opioid-stewardship-420"
+      "pearl_id": "dr-amell-on-opioid-stewardship-420",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:opioids"
+          ],
+          "actionable": [
+            "measure"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The big difference between CPOD and OUD is that in CPOD, doctors are the drug dealers; in OUD, there tend to be illicit substances.",
@@ -39809,7 +39828,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians differentiating CPOD from OUD",
-      "pearl_id": "dr-amell-on-opioid-stewardship-473"
+      "pearl_id": "dr-amell-on-opioid-stewardship-473",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Chronically exposed to OxyContin leads to hyperalgesia and hyperkatifia, where the brain cannot adapt and ignore non-dangerous pain signals; risks of continuing full agonist opioids outweigh benefits in this group.",
@@ -39822,7 +39854,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on chronic full agonist opioids",
-      "pearl_id": "dr-amell-on-opioid-stewardship-530"
+      "pearl_id": "dr-amell-on-opioid-stewardship-530",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hyperalgesia"
+          ],
+          "harm": [
+            "dangerous"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Buprenorphine is the treatment for complex prescription opioid dependence (CPOD) even if you are not sure whether the patient has true addiction or is diverting meds.",
@@ -39835,7 +39886,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CPOD or complex pain syndrome",
-      "pearl_id": "dr-amell-on-opioid-stewardship-559"
+      "pearl_id": "dr-amell-on-opioid-stewardship-559",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:complex prescription o"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "About 10% of people exposed to inpatient opioid medicine after 2015 became stuck on opioids afterwards, regardless of the cause of pain.",
@@ -39848,7 +39915,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients exposed to opioids",
-      "pearl_id": "dr-amell-on-opioid-stewardship-599"
+      "pearl_id": "dr-amell-on-opioid-stewardship-599",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:opioids"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Full agonist opioids (oxycodone, dilaudid, morphine) are supported for acute nociceptive pain and chronic progressive nociceptive pain (e.g., cancer pain), but not for chronic nonprogressive pain, nociplastic pain, or neuropathic pain.",
@@ -39861,7 +39944,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pain being considered for full agonist opioids",
-      "pearl_id": "dr-amell-on-opioid-stewardship-678"
+      "pearl_id": "dr-amell-on-opioid-stewardship-678",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:oxycodone"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use PO Dilaudid if the patient can take by mouth; if NPO, try sub q injections of the same dose instead of IV. IV Dilaudid is twice as strong as IV heroin and carries higher risks.",
@@ -39874,7 +39973,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients with acute pain who are not nearing end of life",
-      "pearl_id": "dr-amell-on-opioid-stewardship-733"
+      "pearl_id": "dr-amell-on-opioid-stewardship-733",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:dilaudid"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IV opioid administration is associated with 4.2 times more nausea and vomiting compared to PO, based on a large observational study of 30,000 patients in a tertiary ED.",
@@ -39887,7 +40005,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving IV vs PO opioids in the ED",
-      "pearl_id": "dr-amell-on-opioid-stewardship-828"
+      "pearl_id": "dr-amell-on-opioid-stewardship-828",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nausea and vomiting"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An 81% reduction in IV opioid usage by MME was achieved over 8,000 patient days with no change in pain scores, by making providers more aware of their prescribing (Hawthorne effect).",
@@ -39900,7 +40034,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient settings implementing opioid stewardship",
-      "pearl_id": "dr-amell-on-opioid-stewardship-984"
+      "pearl_id": "dr-amell-on-opioid-stewardship-984",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 8"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When risks of an intervention greatly outweigh benefits, physicians should guide the decision and not offer it as a shared decision; controlled substances should be controlled when not going well.",
@@ -39913,7 +40063,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians managing controlled substances",
-      "pearl_id": "dr-amell-on-opioid-stewardship-1118"
+      "pearl_id": "dr-amell-on-opioid-stewardship-1118",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:controlled substances"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Buprenorphine has a ceiling effect due to being a partial agonist, so taking higher doses produces diminishing returns and does not reinforce bad behavior.",
@@ -39926,7 +40092,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on buprenorphine",
-      "pearl_id": "dr-amell-on-opioid-stewardship-1306"
+      "pearl_id": "dr-amell-on-opioid-stewardship-1306",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:partial agonist"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Buprenorphine has high affinity for mu-opioid receptors and can displace full agonists like OxyContin, potentially precipitating withdrawal if started too early.",
@@ -39939,7 +40121,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients transitioning from full agonists to buprenorphine",
-      "pearl_id": "dr-amell-on-opioid-stewardship-1336"
+      "pearl_id": "dr-amell-on-opioid-stewardship-1336",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:buprenorphine"
+          ],
+          "harm": [
+            "precipitating"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "One milligram of buprenorphine is approximately equivalent to 30 milligrams of morphine in potency.",
@@ -39952,7 +40153,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-amell-on-opioid-stewardship-1388"
+      "pearl_id": "dr-amell-on-opioid-stewardship-1388",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:buprenorphine"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Buprenorphine is not renally cleared, so it does not accumulate in dehydration or renal impairment, unlike Dilaudid.",
@@ -39965,7 +40182,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with renal impairment or dehydration",
-      "pearl_id": "dr-amell-on-opioid-stewardship-1424"
+      "pearl_id": "dr-amell-on-opioid-stewardship-1424",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:buprenorphine"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sublingual buprenorphine can be taken even if the patient is vomiting or NPO, making it safer than oral full agonists.",
@@ -39978,7 +40211,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who are vomiting or NPO",
-      "pearl_id": "dr-amell-on-opioid-stewardship-1446"
+      "pearl_id": "dr-amell-on-opioid-stewardship-1446",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:buprenorphine"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Buprenorphine causes less hyperalgesia and hyperkatifia (emotional hyperactivity) than full agonists because it antagonizes kappa-opioid receptors.",
@@ -39991,7 +40240,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic pain",
-      "pearl_id": "dr-amell-on-opioid-stewardship-1493"
+      "pearl_id": "dr-amell-on-opioid-stewardship-1493",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:buprenorphine"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients on high doses of full agonists (e.g., over 1000 MME per day), starting high-dose buprenorphine (e.g., 8 mg BID) can precipitate severe withdrawal.",
@@ -40004,7 +40269,31 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on high MME full agonists",
-      "pearl_id": "dr-amell-on-opioid-stewardship-1629"
+      "pearl_id": "dr-amell-on-opioid-stewardship-1629",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:8 mg",
+            "threshold:over 1",
+            "frequency:per day"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "harm": [
+            "precipitate"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To avoid precipitated withdrawal, start buprenorphine induction at 0.5 mg twice daily while maintaining the full agonist, then double the buprenorphine dose daily over 4 days.",
@@ -40017,7 +40306,31 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients transitioning from full agonists to buprenorphine",
-      "pearl_id": "dr-amell-on-opioid-stewardship-1747"
+      "pearl_id": "dr-amell-on-opioid-stewardship-1747",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:0.5 mg",
+            "threshold:over 4",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "precipitated"
+          ],
+          "rarity": 6.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If precipitated withdrawal occurs (COWS increase by 10 points in one hour), give higher doses of buprenorphine to quickly stabilize the patient.",
@@ -40030,7 +40343,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with precipitated withdrawal",
-      "pearl_id": "dr-amell-on-opioid-stewardship-1852"
+      "pearl_id": "dr-amell-on-opioid-stewardship-1852",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:precipitated withdrawa"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "harm": [
+            "precipitated"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient says buprenorphine doesn't work, empathize with their pain, explain it is a powerful opioid, and reassure them you can avoid precipitated withdrawal.",
@@ -40043,7 +40378,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients resistant to buprenorphine",
-      "pearl_id": "dr-amell-on-opioid-stewardship-1895"
+      "pearl_id": "dr-amell-on-opioid-stewardship-1895",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:precipitated withdrawa"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "precipitated"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PCPs often feel comfortable continuing buprenorphine if you initiate and titrate it in the hospital; no X-waiver is needed.",
@@ -40056,7 +40413,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalists initiating buprenorphine",
-      "pearl_id": "dr-amell-on-opioid-stewardship-1946"
+      "pearl_id": "dr-amell-on-opioid-stewardship-1946",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:buprenorphine"
+          ],
+          "actionable": [
+            "initiate"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients at high risk of leaving AMA, consider a slower cross-taper and use higher oral Dilaudid doses during the transition if needed.",
@@ -40069,7 +40445,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients at high risk of leaving AMA",
-      "pearl_id": "dr-amell-on-opioid-stewardship-2026"
+      "pearl_id": "dr-amell-on-opioid-stewardship-2026",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:dilaudid"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Belbuca and Butrans can be started in opioid-naive patients without first trialing full agonists like oxycodone.",
@@ -40082,7 +40477,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "opioid-naive patients with chronic pain",
-      "pearl_id": "dr-amell-on-opioid-stewardship-2161"
+      "pearl_id": "dr-amell-on-opioid-stewardship-2161",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:oxycodone"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Active coping strategies like CBT, exercise, and pain reprocessing therapy are more important than passive chemical coping for chronic pain.",
@@ -40095,7 +40506,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic pain",
-      "pearl_id": "dr-amell-on-opioid-stewardship-2190"
+      "pearl_id": "dr-amell-on-opioid-stewardship-2190",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pain reprocessing ther"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Low-dose buprenorphine formulations like Belbuca (buccal) or Butrans (patch) can be started in opioid-naive patients without trialing other opioids first.",
@@ -40108,7 +40535,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "opioid-naive patients with chronic pain",
-      "pearl_id": "dr-amell-on-opioid-stewardship-2219"
+      "pearl_id": "dr-amell-on-opioid-stewardship-2219",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:buprenorphine"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Most patients on long-term full agonist opioids never adapt to chronic pain and continue to perseverate on it.",
@@ -40121,7 +40564,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on long-term full agonist opioids",
-      "pearl_id": "dr-amell-on-opioid-stewardship-2274"
+      "pearl_id": "dr-amell-on-opioid-stewardship-2274",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:opioids"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When transitioning from a full agonist like Norco 10 q6 to buprenorphine, use a personalized cross-titration with a 5-day to 2-week overlap, starting low-dose buprenorphine while continuing the full agonist.",
@@ -40134,7 +40596,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients transitioning from full agonist opioids to buprenorphine",
-      "pearl_id": "dr-amell-on-opioid-stewardship-2288"
+      "pearl_id": "dr-amell-on-opioid-stewardship-2288",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cross-titration"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a patient on Norco 10 q6, a typical buprenorphine starting dose might be 1 mg BID, beginning with a quarter of that dose initially.",
@@ -40147,7 +40628,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on low-dose hydrocodone (e.g., Norco 10 q6)",
-      "pearl_id": "dr-amell-on-opioid-stewardship-2326"
+      "pearl_id": "dr-amell-on-opioid-stewardship-2326",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1 mg",
+            "frequency:BID"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Having a peer champion familiar with buprenorphine can help solve logistic barriers and disseminate best practices.",
@@ -40160,7 +40661,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "institutions or practices implementing buprenorphine therapy",
-      "pearl_id": "dr-amell-on-opioid-stewardship-2348"
+      "pearl_id": "dr-amell-on-opioid-stewardship-2348",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:buprenorphine"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Subutex (buprenorphine) is often cheap without insurance coverage, which can help when formulary barriers exist.",
@@ -40173,7 +40690,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing buprenorphine with insurance coverage issues",
-      "pearl_id": "dr-amell-on-opioid-stewardship-2360"
+      "pearl_id": "dr-amell-on-opioid-stewardship-2360",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:insurance coverage"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

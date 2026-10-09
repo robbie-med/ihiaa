@@ -18332,7 +18332,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients undergoing lung ultrasound",
-      "pearl_id": "dr-ledbetter-on-pocus-pna-257"
+      "pearl_id": "dr-ledbetter-on-pocus-pna-257",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To visualize A-lines, ensure the probe is perpendicular to the pleural line by rocking until the pleural line is straight across, then fan medially to account for lung curvature.",
@@ -18345,7 +18361,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient during lung ultrasound",
-      "pearl_id": "dr-ledbetter-on-pocus-pna-352"
+      "pearl_id": "dr-ledbetter-on-pocus-pna-352",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:a-lines"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The curtain sign (absence of spine above the diaphragm) is normal; if you see spine extending above the diaphragm, it indicates loss of aeration (consolidation or effusion) allowing sound waves to pass.",
@@ -18358,7 +18393,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients, zone 4 or 6 views",
-      "pearl_id": "dr-ledbetter-on-pocus-pna-424"
+      "pearl_id": "dr-ledbetter-on-pocus-pna-424",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:curtain sign"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dynamic air bronchograms (hyperechoic dots moving with respiration) are super highly specific for pneumonia.",
@@ -18371,7 +18422,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected pneumonia",
-      "pearl_id": "dr-ledbetter-on-pocus-pna-499"
+      "pearl_id": "dr-ledbetter-on-pocus-pna-499",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dynamic air bronchogra"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Focal B-lines (three or more in a single zone) are 96% specific for pneumonia.",
@@ -18384,7 +18451,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected pneumonia",
-      "pearl_id": "dr-ledbetter-on-pocus-pna-564"
+      "pearl_id": "dr-ledbetter-on-pocus-pna-564",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pneumonia"
+          ],
+          "rarity": 6.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lung consolidation (hepatization) appears as tissue-like echotexture where normally only artifact is seen; this is highly specific for pneumonia.",
@@ -18397,7 +18480,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected pneumonia",
-      "pearl_id": "dr-ledbetter-on-pocus-pna-602"
+      "pearl_id": "dr-ledbetter-on-pocus-pna-602",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:lung consolidation"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The shred sign (irregular hyperechoic interface between consolidated and aerated lung) is very highly specific for pneumonia.",
@@ -18410,7 +18509,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected pneumonia",
-      "pearl_id": "dr-ledbetter-on-pocus-pna-663"
+      "pearl_id": "dr-ledbetter-on-pocus-pna-663",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:shred sign"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Thicker pleural lining can be indicative of infection (pneumonia), whereas a thin/crisp pleural line favors pulmonary edema.",
@@ -18423,7 +18538,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected pneumonia vs. pulmonary edema",
-      "pearl_id": "dr-ledbetter-on-pocus-pna-954"
+      "pearl_id": "dr-ledbetter-on-pocus-pna-954",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pulmonary edema"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ultrasound is more sensitive than chest X-ray for pneumonia and pleural effusion and avoids radiation; can safely diagnose pneumonia and initiate antibiotics without X-ray confirmation when clinical context supports it.",
@@ -18436,7 +18567,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with clinical suspicion of pneumonia",
-      "pearl_id": "dr-ledbetter-on-pocus-pna-1118"
+      "pearl_id": "dr-ledbetter-on-pocus-pna-1118",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:Ultrasound"
+          ],
+          "actionable": [
+            "initiate"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Symmetrical bilateral B-lines are more likely pulmonary edema; asymmetrical focal B-lines suggest pneumonia. In multifocal pneumonia, look for tiny subpleural consolidations beneath the pleural line.",
@@ -18449,7 +18599,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with B-lines to differentiate cause",
-      "pearl_id": "dr-ledbetter-on-pocus-pna-1238"
+      "pearl_id": "dr-ledbetter-on-pocus-pna-1238",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:subpleural consolidati"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When scanning for B-lines, set depth deep initially to avoid being tricked by short comet-tail artifacts; adjust depth dynamically and look closely beneath the pleural line for small consolidations.",
@@ -18462,7 +18628,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients undergoing lung ultrasound for B-lines",
-      "pearl_id": "dr-ledbetter-on-pocus-pna-1282"
+      "pearl_id": "dr-ledbetter-on-pocus-pna-1282",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:b-lines"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

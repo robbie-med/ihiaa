@@ -21122,7 +21122,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients undergoing Pap smear",
-      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-115"
+      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-115",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:Pap smear"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In prepubertal and menopausal women, the squamocolumnar junction is often up inside the os and not visible, so you must sample blindly into the os.",
@@ -21135,7 +21151,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "prepubertal and menopausal women",
-      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-220"
+      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-220",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:squamocolumnar junctio"
+          ],
+          "harm": [
+            "blindly"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "With a large ectropion (common in pregnancy or on birth control pills), the squamocolumnar junction is out on the ectocervix; use the broom like a paintbrush to sample the edge, not just the os.",
@@ -21148,7 +21183,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women or those on birth control pills",
-      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-256"
+      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-256",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:squamocolumnar junctio"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The transformation zone, between the old and new squamocolumnar junctions, is the high-risk area for cervical cancer because cells are actively dividing during metaplasia.",
@@ -21161,7 +21215,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-353"
+      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-353",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:squamocolumnar junctio"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a woman who has had a hysterectomy with no cervix, use the rounded end of the spatula to scrape cells from the vaginal cuff scar, located between the two 'dog ears'.",
@@ -21174,7 +21244,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women after hysterectomy with no cervix",
-      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-493"
+      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-493",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hysterectomy"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When using a Cytobrush, insert it all the way so no brush is visible, then turn it at least more than once before pulling out.",
@@ -21187,7 +21276,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients undergoing Pap smear with Cytobrush",
-      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-517"
+      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-517",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cytobrush"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "With liquid-based cytology, you can take a Pap smear in a woman who is lightly on her period because red cells are removed during processing.",
@@ -21200,7 +21305,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with light menstrual bleeding",
-      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-637"
+      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-637",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:Pap smear"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a girl has irregular periods starting at menarche, give her two years to regulate before assuming a pathologic cause.",
@@ -21213,7 +21334,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adolescents within 2 years of menarche",
-      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-1686"
+      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-1686",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:menarche"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In chronic anovulation, the two primary causes are polycystic ovary syndrome and insulin resistance.",
@@ -21226,7 +21366,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with chronic anovulation",
-      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-1733"
+      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-1733",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:polycystic ovary syndr"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Normal menstrual interval is 21 to 35 days; less than 21 or more than 35 days is abnormal. Duration is usually 5 to 7 days.",
@@ -21239,7 +21395,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all menstruating women",
-      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-1921"
+      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-1921",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:35 days",
+            "threshold:less than 2"
+          ],
+          "rarity": 5.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To assess menstrual flow amount, ask 'How many pads or tampons do you use on your heaviest day?' or 'How many per cycle?'",
@@ -21252,7 +21425,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with abnormal uterine bleeding",
-      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-1971"
+      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-1971",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A rapid rise in estrogen triggers the LH surge, which triggers ovulation. A fall in progesterone triggers menstruation.",
@@ -21265,7 +21454,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all menstruating women",
-      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-2237"
+      "pearl_id": "dr-calvert-on-pap-smears-colposcopy-2237",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:progesterone"
+          ],
+          "rarity": 6.67
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

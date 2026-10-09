@@ -20853,7 +20853,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women being evaluated for PCOS",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--173"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--173",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1 cm",
+            "threshold:less than 1",
+            "test:ultrasound"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To diagnose PCOS, you need two of three: irregular menstrual periods, polycystic ovaries on ultrasound, and elevated free testosterone.",
@@ -20866,7 +20884,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with irregular menses",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--226"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--226",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Progesterone stops endometrial cell division; cells cannot divide and function at the same time, so progesterone allows the endometrium to become secretory.",
@@ -20879,7 +20913,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "normal menstrual cycle",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--545"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--545",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:progesterone"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In PCOS, there is a block in the ovary: LH stimulates androgen production, but very little androgen is converted to estrogen, leading to low FSH, no follicle maturation, and no LH surge.",
@@ -20892,7 +20942,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with PCOS",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--965"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--965",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:estrogen"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Women with PCOS who do not have periods must evacuate the uterus at least 2 to 3 times per year to prevent endometrial cancer, using progestin withdrawal or birth control pills.",
@@ -20905,7 +20971,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with PCOS and amenorrhea",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--1572"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--1572",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "threshold:at least 2"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Spironolactone prevents vellus hairs from converting to terminal hairs, but once a vellus hair becomes terminal it cannot go back; removal requires laser or electrolysis.",
@@ -20918,7 +21006,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with hirsutism",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--1735"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--1735",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:spironolactone"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Oral contraceptives provide estrogen at 3 to 5 times higher than physiologic levels, boosting sex hormone binding globulin and decreasing free testosterone.",
@@ -20931,7 +21035,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with PCOS",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--1854"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--1854",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sex hormone binding gl"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fasting glucose-to-insulin ratio: normal is about 5 (glucose 100, insulin 20); a ratio below 5 indicates insulin resistance.",
@@ -20944,7 +21064,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--2063"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--2063",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:below 5"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In severe insulin resistance, the fasting glucose-to-insulin ratio is below 5 and worsens after a glucose load; this patient had a fasting ratio of 2 and a 2-hour ratio of 8.",
@@ -20957,7 +21093,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--2097"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--2097",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:below 5"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Metformin can normalize insulin and restore ovulation within 2 to 3 months.",
@@ -20970,7 +21122,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with PCOS and insulin resistance",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--2222"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--2222",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 months"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For mild insulin resistance, start metformin 500 mg once daily; for more severe cases, give 500 mg twice daily (morning and evening).",
@@ -20983,7 +21151,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with insulin resistance",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--2279"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--2279",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:500 mg",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "You can give continuous birth control pills for 4 months to lower testosterone, then stop; the patient may ovulate and get pregnant in the next 2 to 3 months.",
@@ -20996,7 +21184,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with PCOS desiring pregnancy",
-      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--2364"
+      "pearl_id": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--2364",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4 months"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 6.66
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

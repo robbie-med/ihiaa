@@ -42428,7 +42428,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "snake bite first aid",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1072"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1072",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:tourniquet"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To assess swelling from a snake bite on an extremity, palpate along the lateral borders (not the top/bottom) because swelling tracks along the venous system distal to proximal. Mark the level of induration circumferentially with a time and remeasure hourly.",
@@ -42441,7 +42460,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with snake bite on extremity",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1090"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1090",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "palpate"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Indications for antivenom in pit viper envenomation are progressive local tissue injury, systemic toxicity, or significant coagulopathy. Minor envenomations may be observed without antivenom.",
@@ -42454,7 +42489,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pit viper envenomation",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1145"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1145",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:coagulopathy"
+          ],
+          "harm": [
+            "toxicity"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected snake bites (including dry bites), obtain serial labs every 4 hours for at least 8 hours to determine if antivenom is needed.",
@@ -42467,7 +42521,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected snake bite",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1182"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1182",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4 hours",
+            "threshold:at least 8",
+            "frequency:every 4"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "With CroFab antivenom, give an initial bolus, then maintenance every 6 hours for 3 doses. The patient must be hospitalized for at least 18 hours and may develop rebound coagulopathy 1, 2 weeks later. Pediatric dosing is the same as adult dosing.",
@@ -42480,7 +42555,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pit viper envenomation treated with CroFab",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1225"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1225",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 hours",
+            "threshold:at least 1",
+            "frequency:every 6"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A brown recluse bite classically has a pale center (due to microvascular thrombosis) with surrounding erythema, often described as a red-white-and-blue wound. An eschar may form after 72 hours.",
@@ -42493,7 +42589,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "suspected brown recluse bite",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1370"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1370",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:72 hours"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For brown recluse bite, do not give antibiotics unless the wound appears infected; the reaction is not an infection but a localized inflammatory response.",
@@ -42506,7 +42618,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "brown recluse bite",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1470"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1470",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "do not give"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Systemic loxoscelism from a brown recluse bite can cause rapid intravascular hemolysis with labs showing anemia, thrombocytopenia, high LDH, low haptoglobin, and elevated bilirubin. It can present within 2 days or as late as 7 days after the bite. Treat with supportive care, steroids, transfusion, and plasmapheresis in severe cases.",
@@ -42519,7 +42653,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children/adolescents with brown recluse bite (higher risk of severe envenomation)",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1560"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1560",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 days"
+          ],
+          "actionable": [
+            "Treat"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Black widow envenomation produces severe cramping pain starting 30 minutes to 2 hours after the bite, peaking at 6, 12 hours. Treat with IV benzodiazepines (diazepam or Ativan) and analgesics; antivenom is rarely needed.",
@@ -42532,7 +42685,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "black widow envenomation",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1677"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1677",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:30 minutes"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the NOT RECLUSE mnemonic to distinguish spider bite from staph abscess: multiple lesions, occurrence not single, red center, elevated lesion, chronic wound, size >10 cm, ulcer, swelling, exudative pus all favor staph over spider bite.",
@@ -42545,7 +42717,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with suspected spider bite versus staphylococcal abscess",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1965"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-1965",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 cm",
+            "threshold:>1"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If epinephrine is given for anaphylaxis, the patient must go to the emergency department and be observed for at least 4 hours to monitor for rebound or biphasic anaphylaxis.",
@@ -42558,7 +42750,30 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who receive epinephrine for anaphylaxis",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-2175"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-2175",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:4 hours",
+            "threshold:at least 4"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After epinephrine is given for anaphylaxis, observe the patient for four hours to monitor for biphasic reaction, which can occur within 8-12 hours but usually happens soon after epinephrine.",
@@ -42571,7 +42786,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who received epinephrine for anaphylaxis from a sting",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-2193"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-2193",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:12 hours"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Scorpion sting pain from striped bark scorpions can last for a week or even up to several weeks; counsel patients about this prolonged duration.",
@@ -42584,7 +42821,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with striped bark scorpion stings",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-2262"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-2262",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:striped bark scorpion"
+          ],
+          "actionable": [
+            "counsel"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A classic sign of scorpion envenomation in children is rotary nystagmus, an oculomotor abnormality.",
@@ -42597,7 +42853,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with scorpion envenomation",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-2298"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-2298",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:scorpion envenomation"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Severe scorpion envenomation can present with thrashing movements resembling seizures and excessive oral secretions causing difficulty breathing due to cholinergic toxicity.",
@@ -42610,7 +42882,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with severe scorpion envenomation",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-2324"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-2324",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:scorpion envenomation"
+          ],
+          "harm": [
+            "toxicity"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For severe scorpion envenomation, there is a specific antivenom called Anascorp.",
@@ -42623,7 +42914,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe scorpion envenomation",
-      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-2341"
+      "pearl_id": "dr-landreth-on-bites-and-stings-in-the-pediatric-er-2341",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:scorpion envenomation"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

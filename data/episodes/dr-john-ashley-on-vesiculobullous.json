@@ -35651,7 +35651,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe poison ivy",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-244"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-244",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For severe poison ivy, start with 20 mg prednisone in the afternoon, then 60 mg the next morning.",
@@ -35664,7 +35680,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe poison ivy",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-255"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-255",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:20 mg",
+            "drug:prednisone"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For localized poison ivy, clobetasol (class 1 steroid) works faster than triamcinolone.",
@@ -35677,7 +35713,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with localized poison ivy",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-333"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-333",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:triamcinolone"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Adjust prednisone dose for poison ivy by patient size and sensitivity; a 90-pound woman should not get 60 mg unless she has cutaneous vasculitis, but a 200-pound woman can get 60 mg daily.",
@@ -35690,7 +35742,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe poison ivy",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-374"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-374",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:60 mg",
+            "frequency:daily",
+            "drug:prednisone"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For varicella, acyclovir five times daily is impractical; four times daily is acceptable.",
@@ -35703,7 +35773,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with varicella",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-538"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-538",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For herpes simplex suppression, use valacyclovir 500 mg once daily if the patient has more than 3-4 outbreaks per year, typically for one year.",
@@ -35716,7 +35802,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with frequent herpes simplex outbreaks",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-558"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-558",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:500 mg",
+            "threshold:more than 3",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a rash is confusing, examine the whole patient; a review of systems, including genital exam, can reveal syphilis or other systemic causes.",
@@ -35729,7 +35836,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with confusing rashes",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-706"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-706",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:review of systems"
+          ],
+          "actionable": [
+            "examine"
+          ],
+          "rarity": 6.84
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Antivirals are renally excreted; ensure patients drink plenty of water to prevent crystalluria.",
@@ -35742,7 +35868,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on antiviral therapy",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-933"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-933",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For zoster, give a low dose of gabapentin early for pain, especially in older patients, as it may reduce postherpetic neuralgia.",
@@ -35755,7 +35897,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older patients with zoster",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-937"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-937",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:gabapentin"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you suspect monkeypox, call the CDC because special culture media and antiviral may be needed.",
@@ -35768,7 +35929,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "suspected monkeypox cases",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-999"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-999",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For bullous impetigo in children, avoid tetracyclines due to teeth staining; use a cephalosporin instead and follow up in 1, 2 days.",
@@ -35781,7 +35958,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with bullous impetigo",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1094"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1094",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 days"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For blistering dactylitis in a child, use a cephalosporin and follow closely; if high fever or inability to move the finger, refer to a hand surgeon.",
@@ -35794,7 +35990,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with blistering dactylitis",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1104"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1104",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:blistering dactylitis"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a child with bullous impetigo and high fever with inability to move a finger, consider deeper infection and refer to pediatric hand surgery.",
@@ -35807,7 +36022,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with bullous impetigo and high fever/finger immobility",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1113"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1113",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bullous impetigo"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Unilateral foot blisters in a young child are likely bullous impetigo; tinea pedis is rare before the teenage years.",
@@ -35820,7 +36054,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "young children with unilateral foot blisters",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1151"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1151",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bullous impetigo"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For scabies, permethrin requires full-body application and repeat in 10 days; oral ivermectin is convenient but may have insurance barriers.",
@@ -35833,7 +36083,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with scabies",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1255"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1255",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 days"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dermatitis herpetiformis presents with intensely pruritic 1, 3 mm blisters on extensor surfaces; it is one of the itchiest rashes, similar to poison ivy.",
@@ -35846,7 +36115,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected dermatitis herpetiformis",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1341"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1341",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 mm"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "All patients with dermatitis herpetiformis have gluten sensitivity; confirm with perilesional biopsy for direct immunofluorescence.",
@@ -35859,7 +36144,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dermatitis herpetiformis",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1382"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1382",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dapsone can cause rapid hemolytic anemia and bone marrow toxicity; monitor hemoglobin closely, especially in the first few weeks.",
@@ -35872,7 +36176,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting dapsone",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1408"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1408",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "drug:Dapsone"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "harm": [
+            "toxicity"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For pemphigus vulgaris with severe oral involvement, start prednisone even before biopsy results if the patient has trouble swallowing.",
@@ -35885,7 +36211,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pemphigus vulgaris and dysphagia",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1686"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1686",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:prednisone",
+            "test:biopsy"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Rituximab is effective for pemphigus vulgaris; consider consulting hematology/oncology for administration.",
@@ -35898,7 +36244,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pemphigus vulgaris starting rituximab",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1702"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1702",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:Rituximab"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For biopsy of blistering disorders, use a 4 mm punch including half normal skin and half blister; for direct immunofluorescence, send in Michel's media (not formalin).",
@@ -35911,7 +36276,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected autoimmune blistering disease",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1713"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1713",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4 mm",
+            "test:biopsy"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bullous pemphigoid presents with large tense blisters and severe pruritus; direct immunofluorescence shows linear IgG and C3 along the basement membrane.",
@@ -35924,7 +36309,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected bullous pemphigoid",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1811"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1811",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:direct immunofluoresce"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bullous pemphigoid may begin with urticarial plaques; early perilesional biopsy for direct immunofluorescence can confirm diagnosis before blisters appear.",
@@ -35937,7 +36338,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with urticarial plaques suspicious for bullous pemphigoid",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1894"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1894",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dupilumab is effective for bullous pemphigoid, improving symptoms by about 90%, and is preferable to long-term high-dose prednisone.",
@@ -35950,7 +36370,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with bullous pemphigoid",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1931"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1931",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Dupilumab"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stevens-Johnson syndrome presents as diffuse sunburn-like erythema with skin pain, not discrete lesions; always check drug history, especially for lamotrigine.",
@@ -35963,7 +36399,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected Stevens-Johnson syndrome",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-1981"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-1981",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:stevens-johnson syndro"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lamotrigine is a common cause of Stevens-Johnson syndrome; any new drug causing a generalized rash should be stopped immediately.",
@@ -35976,7 +36431,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on lamotrigine or any new drug with generalized rash",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-2080"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-2080",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:stevens-johnson syndro"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For direct immunofluorescence, biopsy perilesional normal skin (next to the lesion), not the lesion itself, as the epidermis may be lost.",
@@ -35989,7 +36463,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing biopsy for suspected autoimmune blistering disease",
-      "pearl_id": "dr-john-ashley-on-vesiculobullous-2202"
+      "pearl_id": "dr-john-ashley-on-vesiculobullous-2202",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

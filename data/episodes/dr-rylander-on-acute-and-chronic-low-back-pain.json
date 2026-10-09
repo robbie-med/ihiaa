@@ -46933,7 +46933,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected disc lesion",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-154"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-154",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:radicular pain"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On physical exam for disc pain, look for isolated paraspinal spasms at the level of the pain, which indicates the disc level to target on MRI.",
@@ -46946,7 +46962,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute back pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-187"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-187",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Acute disc rupture is typically associated with a bending or bending-and-lifting motion; patients describe it as 'like somebody shot me in the back'.",
@@ -46959,7 +46991,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute low back pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-273"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-273",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Facet joint pain is worse with extension, lateralized to one side of the spine, and significantly better when lying down; it does not produce radicular leg pain.",
@@ -46972,7 +47017,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic low back pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-406"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-406",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:facet joint pain"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Spinal stenosis presents as neurogenic claudication: pain in the legs that comes on with walking and is immediately relieved by bending forward or sitting.",
@@ -46985,7 +47046,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "older adults with back and leg pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-621"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-621",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:neurogenic claudicatio"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Neurogenic claudication pain is typically symmetrical and affects the upper legs first, then moves down to the lower legs and feet.",
@@ -46998,7 +47078,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with spinal stenosis",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-711"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-711",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:neurogenic claudicatio"
+          ],
+          "rarity": 6.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To differentiate neurogenic from vascular claudication: neurogenic is relieved immediately by bending forward; vascular is not relieved by bending forward and requires several minutes of rest to fade.",
@@ -47011,7 +47107,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with exertional leg pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-811"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-811",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:vascular claudication"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start with plain X-rays for back pain; MRI is reserved for those who fail conservative therapy or have persistent specific patterns consistent with structural pathology.",
@@ -47024,7 +47139,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with low back pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-952"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-952",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Muscle strains are most common in young active people; disc and facet problems are more common in middle-aged and older adults.",
@@ -47037,7 +47171,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population with back pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1027"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1027",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:older adults"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Radicular pain from nerve root compression is almost always unilateral; bilateral acute radicular pain is rare.",
@@ -47050,7 +47200,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with radiating leg pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1232"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1232",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:radicular pain"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 6.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Acute radicular pain from disc herniation is almost always unilateral; bilateral radicular symptoms suggest a different cause.",
@@ -47063,7 +47232,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with radicular pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1235"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1235",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:disc herniation"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not prescribe bed rest for acute back pain; it increases DVT risk. Advise decreased activity but staying upright and walking.",
@@ -47076,7 +47264,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute back pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1427"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1427",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:back pain"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For back pain, cyclic ice/heat therapy is different from extremity injuries: for the back, you cannot influence swelling, so use cyclic therapy rather than ice-only for the first few days.",
@@ -47089,7 +47296,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with back pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1532"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1532",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:back pain"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For back pain, use cyclic ice/heat therapy: start with ice for 10 minutes, then heat for 10 minutes, 2-3 times daily. The effect lasts about 3-4 hours.",
@@ -47102,7 +47328,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute or chronic back pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1601"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1601",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 minutes",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.16
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Acetaminophen is effective for back pain when taken routinely; advise 1000 mg (two 500 mg tablets) 3-4 times daily for one week, but limit total daily dose to 3500 mg to avoid hepatic toxicity.",
@@ -47118,7 +47364,33 @@
       "numbers_unheard": [
         "1000"
       ],
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1743"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1743",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1000 mg",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "toxicity"
+          ],
+          "rarity": 6.78,
+          "capped": [
+            "number not heard: 1000"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Omega-3 supplements (vegan-based, 2 capsules three times daily, targeting ~1500 mg total) have a significant anti-inflammatory effect and are very safe for back pain, rheumatoid arthritis, and osteoarthritis.",
@@ -47131,7 +47403,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with inflammatory pain conditions",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1792"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1792",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1500 mg",
+            "frequency:daily"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "NSAIDs increase baseline heart attack risk by a factor of 3 and also raise stroke and kidney injury risk; reserve them for patients who fail safer options like acetaminophen and omega-3.",
@@ -47144,7 +47433,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with back pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1901"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-1901",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:acetaminophen"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Turmeric is less well-tolerated than omega-3 due to gastric irritation and staining; omega-3 has better evidence for anti-inflammatory effect.",
@@ -47157,7 +47468,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients considering anti-inflammatory supplements",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2004"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2004",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:turmeric"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "MRI is indicated when patients fail conservative therapy and interventional treatments are being considered.",
@@ -47170,7 +47497,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with persistent back pain failing conservative management",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2121"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2121",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "rarity": 6.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Chronic pain along the iliac crest may be due to cluneal nerve entrapment, identified by tender trigger points along the crest.",
@@ -47183,7 +47526,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic low back pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2270"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2270",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cluneal nerve entrapme"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For cluneal nerve entrapment, palpate tender points along the iliac crest and inject 1 cc of lidocaine with steroid; if the patient reports 50-75% improvement after 5-10 minutes, the diagnosis is confirmed.",
@@ -47199,7 +47558,30 @@
       "numbers_unheard": [
         "1"
       ],
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2394"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2394",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 minutes",
+            "drug:lidocaine"
+          ],
+          "actionable": [
+            "palpate"
+          ],
+          "rarity": 7.71,
+          "capped": [
+            "number not heard: 1"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Suprascapular nerve pain is greatly exacerbated by overhead activity; if the pain is lateral near the middle of the scapula and not in the shoulder, consider suprascapular nerve entrapment.",
@@ -47212,7 +47594,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with lateral back pain worsened by overhead activity",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2457"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2457",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:suprascapular nerve en"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suprascapular nerve block, the medial approach has slightly better outcomes than the lateral approach.",
@@ -47225,7 +47626,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving suprascapular nerve block",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2481"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2481",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:suprascapular nerve bl"
+          ],
+          "rarity": 6.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dorsal scapular nerve entrapment causes pain in the paraspinal muscles and shoulder, with winging of the scapula; block it by injecting 1 cc at the tip of the scapula.",
@@ -47238,7 +47655,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dorsal scapular nerve entrapment",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2531"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2531",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dorsal scapular nerve "
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The hallmark of a spinal compression fracture is excruciating pain with rotation of the upper body relative to the lower body, not just spinous process tenderness.",
@@ -47251,7 +47684,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected spinal compression fracture",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2643"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2643",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:spinal compression fra"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For compression fracture pain, advise patients to keep their upper and lower body in line to avoid rotational pain.",
@@ -47264,7 +47713,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with spinal compression fracture",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2667"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2667",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Kyphoplasty by interventional radiology can provide dramatic pain relief for compression fractures; patients often express great gratitude.",
@@ -47277,7 +47742,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with painful compression fractures",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2715"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2715",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:kyphoplasty"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Any fracture in a middle-aged or older patient should prompt evaluation for osteoporosis or low bone density, even if the mechanism seems traumatic.",
@@ -47290,7 +47771,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "middle-aged and older patients with fractures",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2728"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2728",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:osteoporosis"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Perform intercostal nerve blocks for compression fracture pain as close to the spinous process as possible, skimming just under the rib at a 90-degree angle to avoid the neurovascular bundle.",
@@ -47303,7 +47800,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with compression fracture and radiating pain",
-      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2786"
+      "pearl_id": "dr-rylander-on-acute-and-chronic-low-back-pain-2786",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:intercostal nerve bloc"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

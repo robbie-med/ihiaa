@@ -42702,7 +42702,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected pneumonia",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-60"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-60",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.64
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For adult outpatient lobar pneumonia without allergies, treat with amoxicillin 1000 mg three times daily (two 500 mg tablets) to cover Streptococcus pneumoniae.",
@@ -42718,7 +42737,31 @@
       "numbers_unheard": [
         "1000"
       ],
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-170"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-170",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1000 mg",
+            "frequency:daily",
+            "drug:amoxicillin"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 8.85,
+          "capped": [
+            "number not heard: 1000"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Azithromycin total dose should be 1500 mg, given as 500 mg daily for 3 days or 500 mg on day 1 then 250 mg on days 2, 4.",
@@ -42734,7 +42777,25 @@
       "numbers_unheard": [
         "1"
       ],
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-217"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-217",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1500 mg",
+            "frequency:daily",
+            "drug:Azithromycin"
+          ],
+          "rarity": 5.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Outpatient antibiotic duration for pneumonia should be 3, 5 days, no more than 7 days; if not improving, consider other diagnoses or hospitalization.",
@@ -42747,7 +42808,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with outpatient pneumonia",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-326"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-326",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:5 days",
+            "threshold:no more than 7"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 5.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Baseline labs are not needed for outpatient pneumonia unless there is a reason to suspect increased risk.",
@@ -42760,7 +42841,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with outpatient pneumonia",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-367"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-367",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pneumonia"
+          ],
+          "rarity": 5.67
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For lung ultrasound, use a phased array or curvilinear probe; with the Butterfly, use the lung preset for most areas but switch to the abdominal preset for the bases (above the diaphragm).",
@@ -42773,7 +42870,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound examination",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-878"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-878",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patient positioning: for pneumothorax, lay the patient flat and scan anteriorly; for pleural effusion, elevate the patient to pull fluid to the diaphragm; for pneumonia, position does not matter, but elevate if parapneumonic effusion is suspected.",
@@ -42786,7 +42902,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound for specific pathologies",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-964"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-964",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:patient positioning"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you suspect pneumonia and find nothing in the anterior zones, scan posteriorly (zones 5 and 6) to complete the exam.",
@@ -42799,7 +42931,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound for pneumonia",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1145"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1145",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pneumonia"
+          ],
+          "rarity": 7.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Keep the probe marker toward the patient's head and maintain the probe perpendicular to the lung to see A-lines; angle medially as the lung curves.",
@@ -42812,7 +42960,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound technique",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1304"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1304",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:a-lines"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pneumonia, the pleural line is often thick or muddled (not crisp), and B-lines indicate a mixture of fluid and air (mild pneumonia or pulmonary edema).",
@@ -42825,7 +42989,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound interpretation for pneumonia",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1619"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1619",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pulmonary edema"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pneumonia, the pleural line is frequently thick or 'muddled up,' not a nice clear line; in heart failure, the pleural line remains crisp.",
@@ -42838,7 +43018,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound in suspected pneumonia vs heart failure",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1619-2"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1619-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:heart failure"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hepatization of the lung (lung looking like liver tissue) indicates consolidation, but it does not tell you it's infected; it could be atelectasis.",
@@ -42851,7 +43047,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound interpretation",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1686"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1686",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hepatization"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A dynamic air bronchogram, seeing fluid moving back and forth in the bronchioles, is essentially pathognomonic for pneumonia on ultrasound.",
@@ -42864,7 +43076,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound in suspected pneumonia",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1709"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1709",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "B-lines always start at the parietal pleural line; if they start below that, they are something else, not B-lines.",
@@ -42877,7 +43105,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound interpretation",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1904"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1904",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:b-lines"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To evaluate for B-lines, set the ultrasound depth to 12-15 centimeters; otherwise, Z-lines (which are normal and only go a few centimeters deep) can be mistaken for B-lines.",
@@ -42890,7 +43137,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "when performing lung ultrasound",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1937"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-1937",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "evaluate"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "B-lines are not specific; bilateral B-lines in multiple areas could be multifocal pneumonia, pulmonary edema, interstitial lung disease, ARDS, or atelectasis. Focal B-lines could be pneumonia, pulmonary infarction, contusion, or mass.",
@@ -42903,7 +43169,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound interpretation",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2021"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2021",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pulmonary edema"
+          ],
+          "harm": [
+            "infarction"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Point-of-care ultrasound is meant to answer a specific clinical question; always take into account the clinical presentation, history, and other findings when interpreting the ultrasound.",
@@ -42916,7 +43201,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all POCUS use",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2052"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2052",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To be considered pathologic, you need three or more B-lines in a single zone; one or two B-lines, especially in the bases, are not uncommon and not pathological.",
@@ -42929,7 +43233,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound interpretation",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2090"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2090",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:b-lines"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A subpleural consolidation appears as a 'divot' or discontinuity in the normally smooth, straight pleural line; that is not normal and could be pneumonia, pulmonary infarction, or other causes.",
@@ -42942,7 +43262,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound interpretation",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2301"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2301",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:subpleural consolidati"
+          ],
+          "harm": [
+            "infarction"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you see the spine (vertebrae) continuing beyond the diaphragm, that indicates something is in the pleural space, such as fluid or consolidation; normally the spine should stop at the diaphragm.",
@@ -42955,7 +43294,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound interpretation",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2467"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2467",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ultrasound is better than chest X-ray for assessing complications of a pleural effusion.",
@@ -42968,7 +43323,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pleural effusion evaluation",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2513"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2513",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:Ultrasound"
+          ],
+          "rarity": 6.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The curtain sign, seeing the lung slide down over the diaphragm during inspiration, is a good indication that the lung is full of air.",
@@ -42981,7 +43352,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound interpretation",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2553"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2553",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:curtain sign"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The shred sign is the hyperechoic area below a consolidation, caused by the interaction of consolidated tissue with aerated tissue.",
@@ -42994,7 +43381,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound interpretation",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2798"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-2798",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:shred sign"
+          ],
+          "harm": [
+            "interaction"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the spine stops at the diaphragm when an echogenic area is seen above it, suspect a mirror artifact of the liver or spleen rather than consolidation.",
@@ -43007,7 +43413,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound interpretation",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3107"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3107",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:mirror artifact"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Mirror artifact can mimic consolidation; if the spine stops at the diaphragm, it's likely mirror artifact, not lung pathology.",
@@ -43020,7 +43442,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound interpretation",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3130"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3130",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:mirror artifact"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the tissue above the diaphragm were actual lung tissue (consolidation or effusion), the spine would be visible extending beyond the diaphragm.",
@@ -43033,7 +43471,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound interpretation",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3142"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3142",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a child with focal crackles, lung ultrasound can confirm pneumonia and guide antibiotic initiation without waiting for chest X-ray.",
@@ -43046,7 +43497,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with suspected pneumonia",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3261"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3261",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On the left chest, seeing the heart indicates you are in the correct anterior zone; go lateral to the heart to image the lung.",
@@ -43059,7 +43529,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "left lung scanning",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3328"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3328",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When scanning the lung, use the spine above the diaphragm to determine if a finding is artifact or pathology: if the spine extends beyond the diaphragm, suspect consolidation or effusion; if it stops at the diaphragm, suspect mirror artifact.",
@@ -43072,7 +43555,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lung ultrasound interpretation",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3355"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3355",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:mirror artifact"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Maintain probe marker oriented to the patient's head, rotate the probe to fit between ribs, and keep the probe perpendicular to the tissue for optimal imaging.",
@@ -43085,7 +43587,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians performing lung ultrasound",
-      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3367"
+      "pearl_id": "dr-ledbetter-on-pneumonia-pocus-3367",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

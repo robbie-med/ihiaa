@@ -31331,7 +31331,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "first-trimester pregnancy with no visible fetal pole",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-565"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-565",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:25 mm",
+            "threshold:>2",
+            "test:ultrasound"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Expectant management success: about 25% of patients pass tissue within 1 week of diagnosis, and another 27% in the second week.",
@@ -31344,7 +31362,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with first-trimester miscarriage choosing expectant management",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-580"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-580",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1 week"
+          ],
+          "rarity": 6.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Rhogam should be given to Rh-negative patients with miscarriage; evidence is weak but risk is low and alloimmunization can prevent future pregnancies.",
@@ -31357,7 +31391,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Rh-negative patients with first-trimester pregnancy loss",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-767"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-767",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:alloimmunization"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Obtain a baseline CBC before medical or surgical management of miscarriage.",
@@ -31370,7 +31420,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients undergoing miscarriage management",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-800"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-800",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CBC"
+          ],
+          "actionable": [
+            "Obtain"
+          ],
+          "rarity": 5.9
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When prescribing misoprostol in Oklahoma, specify 'medical management of miscarriage' on the prescription.",
@@ -31383,7 +31452,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "prescribing in Oklahoma",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-820"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-820",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:medical management"
+          ],
+          "rarity": 6.63
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Misoprostol alone is 84% effective by day 8; adding mifepristone increases efficacy to 88%.",
@@ -31396,7 +31481,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "medical management of early pregnancy loss",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-871"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-871",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:mifepristone"
+          ],
+          "rarity": 6.78
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Give four 200 mcg misoprostol tablets vaginally; patient should lie down for 30 minutes. Bleeding/cramping usually starts within 2-4 hours and lasts 3-5 hours.",
@@ -31409,7 +31510,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using misoprostol for miscarriage management",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-915"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-915",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:200 mcg"
+          ],
+          "actionable": [
+            "Give"
+          ],
+          "harm": [
+            "Bleeding"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ER precautions for patients: bleeding >2 pads per hour for 2 hours, fever >101°F, uncontrolled pain, or signs of anemia (shortness of breath, palpitations, feeling faint).",
@@ -31425,7 +31548,30 @@
       "numbers_unheard": [
         "101"
       ],
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-969"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-969",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 hours",
+            "threshold:>2"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 7.19,
+          "capped": [
+            "number not heard: 101"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The discriminatory zone for HCG is 1500-3000 IU/L; below this, an intrauterine pregnancy may not be visible on ultrasound.",
@@ -31438,7 +31584,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected early pregnancy loss",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1082"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1082",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3000 IU",
+            "test:ultrasound"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Systematic ultrasound scanning: use at least two orthogonal views (sagittal and transverse) to fully evaluate the uterus.",
@@ -31451,7 +31614,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all pelvic ultrasounds",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1295"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1295",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For transvaginal ultrasound, always have the patient empty her bladder first to avoid discomfort and improve image quality.",
@@ -31464,7 +31646,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing transvaginal ultrasound",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1392"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1392",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A pseudogestational sac can mimic early pregnancy; careful measurement and correlation with HCG are needed to avoid missing ectopic pregnancy.",
@@ -31477,7 +31678,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy with uncertain viability",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1440"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1440",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pseudogestational sac"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "By the end of 6 weeks on transvaginal ultrasound, you should see a yolk sac; describe it to patients as 'maybe first Cheerio'.",
@@ -31490,7 +31710,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy, transvaginal ultrasound",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1499"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1499",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 weeks",
+            "test:ultrasound"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "At 7 weeks transvaginal, you should see a fetus with a heartbeat.",
@@ -31503,7 +31740,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy, transvaginal ultrasound",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1544"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1544",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:7 weeks"
+          ],
+          "rarity": 6.76
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is bleeding, repeat ultrasound in one week; if not bleeding, two weeks is acceptable.",
@@ -31516,7 +31769,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy with small gestational sac",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1594"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1594",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 5.03
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For serial HCG, expect 1.5× rise at 48 hours and doubling at 72 hours, but only reliable up to about 9 weeks gestation.",
@@ -31529,7 +31804,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "early pregnancy, <9 weeks",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1629"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1629",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:48 hours"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Positive pregnancy test with no intrauterine pregnancy and free fluid in posterior cul-de-sac is a ruptured ectopic pregnancy.",
@@ -31542,7 +31833,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patient with abdominal pain",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1747"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1747",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:posterior cul-de-sac"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Measure crown-rump length as the longest view of the fetus without limbs or yolk sac, and average three measurements.",
@@ -31555,7 +31862,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "fetal ultrasound dating",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1844"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-1844",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:crown-rump length"
+          ],
+          "actionable": [
+            "Measure"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before giving misoprostol or doing D&C for pregnancy failure, confirm with two points of evidence (e.g., no cardiac activity at ≥25 mm sac).",
@@ -31568,7 +31894,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "management of early pregnancy failure",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-2110"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-2110",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:25 mm"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "rarity": 5.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Don't let the sun set on an ectopic pregnancy: send patients with significant pain for same-day ultrasound or to the ER.",
@@ -31581,7 +31926,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patient with significant pain",
-      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-2196"
+      "pearl_id": "dr-greuel-on-1st-tm-pregnancy-2196",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "Don't"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

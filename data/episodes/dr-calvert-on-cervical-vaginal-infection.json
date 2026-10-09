@@ -23108,7 +23108,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with candida glabrata infection",
-      "pearl_id": "dr-calvert-on-cervical-vaginal-infection-2143"
+      "pearl_id": "dr-calvert-on-cervical-vaginal-infection-2143",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:fluconazole"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Candida glabrata occurs about 12% of the time; keep this in mind when treating vaginal candidiasis.",
@@ -23121,7 +23140,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with vaginal candidiasis",
-      "pearl_id": "dr-calvert-on-cervical-vaginal-infection-2153"
+      "pearl_id": "dr-calvert-on-cervical-vaginal-infection-2153",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vaginal candidiasis"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The only way to definitively determine candida species is to get a NAAT test.",
@@ -23134,7 +23169,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "when species identification is needed (e.g., suspected glabrata)",
-      "pearl_id": "dr-calvert-on-cervical-vaginal-infection-2166"
+      "pearl_id": "dr-calvert-on-cervical-vaginal-infection-2166",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For candida glabrata, do not treat with azoles (topical or oral); use ibrexafungerp (Brexafemme).",
@@ -23147,7 +23195,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with candida glabrata",
-      "pearl_id": "dr-calvert-on-cervical-vaginal-infection-2181"
+      "pearl_id": "dr-calvert-on-cervical-vaginal-infection-2181",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:candida glabrata"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Most clinicians are unaware of ibrexafungerp; using it for glabrata makes you an up-to-date practitioner.",
@@ -23160,7 +23227,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians treating glabrata",
-      "pearl_id": "dr-calvert-on-cervical-vaginal-infection-2209"
+      "pearl_id": "dr-calvert-on-cervical-vaginal-infection-2209",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ibrexafungerp"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ibrexafungerp dosing: two 150 mg tablets taken as one in the morning and one in the evening (total 300 mg in one day).",
@@ -23176,7 +23259,23 @@
       "numbers_unheard": [
         "300"
       ],
-      "pearl_id": "dr-calvert-on-cervical-vaginal-infection-2269"
+      "pearl_id": "dr-calvert-on-cervical-vaginal-infection-2269",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:150 mg"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For chronic recurrent candida (non-glabrata), initial treatment one dose every three days, then one dose a week for six months.",
@@ -23189,7 +23288,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with chronic recurrent candida (non-glabrata)",
-      "pearl_id": "dr-calvert-on-cervical-vaginal-infection-2325"
+      "pearl_id": "dr-calvert-on-cervical-vaginal-infection-2325",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.12
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

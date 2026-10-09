@@ -41430,7 +41430,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-431"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-431",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>9"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When performing a speculum exam to diagnose PROM, use no lubricant because lubricant can cause a false positive on AmniSure testing.",
@@ -41443,7 +41459,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing speculum exam for suspected PROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-570"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-570",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:false positive"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ACOG recommends AmniSure as a second-line test after speculum exam with pooling, nitrazine, and ferning; it is also expensive at about $100 per test.",
@@ -41456,7 +41491,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-606"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-606",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:speculum exam"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not perform a digital cervical exam in PPROM unless preterm labor is suspected, because of high risk of introducing bacteria.",
@@ -41469,7 +41520,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PPROM without signs of labor",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-703"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-703",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:preterm labor"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Amniocentesis with dye instillation is a rarely used confirmatory test for PROM: dye placed into the amniotic fluid that appears on a pad confirms rupture.",
@@ -41482,7 +41552,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with equivocal PROM diagnosis",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-730"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-730",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:amniocentesis with dye"
+          ],
+          "actionable": [
+            "test for"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The risk crossover for maternal versus fetal complications in PROM occurs around 34 weeks gestation; the goal is to reach 34 weeks to minimize risk for both.",
@@ -41495,7 +41584,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PROM or PPROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-883"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-883",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:34 weeks"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In PPROM, 40, 50% of women deliver within one week, and 70, 80% deliver within 2, 5 weeks; only about 20% deliver after 5 weeks.",
@@ -41508,7 +41613,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with PPROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-921"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-921",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 weeks"
+          ],
+          "rarity": 5.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Indications for delivery in PPROM after 23, 24 weeks include infection (maternal fever, fetal tachycardia, rising white count), spontaneous labor, and fetal intolerance (abruption, cord compression).",
@@ -41521,7 +41642,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PPROM after 23–24 weeks",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1123"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1123",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 weeks"
+          ],
+          "rarity": 6.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tocolytics do not buy much time in PPROM; if labor starts after 23, 24 weeks, proceed with delivery and call the NICU.",
@@ -41534,7 +41671,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PPROM after 23–24 weeks who go into labor",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1186"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1186",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:24 weeks"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "At 20-22 weeks with PPROM, you can consider oral antibiotics (azithromycin and amoxicillin) but do not screen for GBS, give steroids, magnesium, or tocolytics.",
@@ -41547,7 +41703,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PPROM at 20-22 weeks",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1554"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1554",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:22 weeks",
+            "drug:azithromycin"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In PPROM, avoid amoxicillin-clavulanate (Augmentin) because the clavulanate component increases the risk of neonatal necrotizing enterocolitis.",
@@ -41560,7 +41736,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PPROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1647"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1647",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:amoxicillin"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Antibiotics for PPROM should be given for exactly 7 days; extending beyond 7 days shows no benefit.",
@@ -41573,7 +41768,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PPROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1712"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1712",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:7 days"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In PPROM, steroids (betamethasone) are considered only if delivery is expected within 7 days; they promote fetal lung development.",
@@ -41586,7 +41797,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PPROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1789"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1789",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:7 days",
+            "drug:betamethasone"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tocolytics in PPROM only delay delivery by about 48 hours and increase infection risk; use them only for transport or to allow steroid administration.",
@@ -41599,7 +41827,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PPROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1869"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1869",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:48 hours"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Magnesium sulfate for fetal neuroprotection in PPROM is given from 24 weeks up to about 32-33 weeks; it reduces the relative risk of cerebral palsy.",
@@ -41612,7 +41859,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PPROM at 24-33 weeks",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1916"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-1916",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 weeks"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After PROM, expect pulmonary hypoplasia in 10-20% of cases because amniotic fluid is critical for lung development; also watch for limb contractures from restricted movement.",
@@ -41625,7 +41888,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates after PROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2015"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2015",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pulmonary hypoplasia"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The AmniSure test has a high false-positive rate; do not rely on it alone, use pooling, nitrazine, and ferning for confirmation.",
@@ -41638,7 +41917,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "suspected PROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2190"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2190",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:amnisure test"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The amnitrip test is convenient but may have false positives; guidelines may be outdated.",
@@ -41651,7 +41949,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "suspected PROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2234"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2234",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:false positive"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "At term (≥37 weeks) with PROM, expectant management for 12-24 hours is reasonable; after that, infection risk outweighs induction risk, so recommend induction.",
@@ -41664,7 +41978,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "term PROM (≥37 weeks)",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2285"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2285",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:37 weeks"
+          ],
+          "rarity": 7.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Immediate induction for term PROM is not unreasonable and should be discussed with the patient.",
@@ -41677,7 +42007,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "term PROM (≥37 weeks)",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2308"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2308",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:term prom"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Microscopy for ferning requires a microscope; if unavailable, the amnitrip test may be used instead.",
@@ -41690,7 +42036,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "suspected PROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2343"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2343",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:amnitrip test"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "There is no standard recommendation for how often to perform ultrasound during watchful waiting for PPROM; practices vary.",
@@ -41703,7 +42065,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PPROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2394"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2394",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During watchful waiting for PPROM, patients do not need complete bed rest; they can walk around but should avoid anything in the vagina (pelvic rest).",
@@ -41716,7 +42094,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PPROM",
-      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2479"
+      "pearl_id": "dr-seeley-hacker-on-pre-labor-rupture-of-membranes-prom-2479",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pelvic rest"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -33870,7 +33870,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with implanted cardiac devices",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1525"
+      "pearl_id": "dr-bhakta-on-distress-in-adults-1525",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Indications for a defibrillator are CHF with EF under 35% after three months of goal-directed therapy, or history of VFib/VTach.",
@@ -33883,7 +33899,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with heart failure or arrhythmia",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1581"
+      "pearl_id": "dr-bhakta-on-distress-in-adults-1581",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:under 3"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Absolute contraindications to BiPAP include GCS less than 7, vomiting, facial trauma, cardiac arrest, and airway obstruction.",
@@ -33896,7 +33928,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being considered for noninvasive ventilation",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1638"
+      "pearl_id": "dr-bhakta-on-distress-in-adults-1638",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:less than 7"
+          ],
+          "harm": [
+            "contraindications"
+          ],
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On BiPAP, oxygenation is improved by increasing FiO2 or EPAP (which acts like PEEP); CO2 clearance is improved by increasing tidal volume via IPAP/EPAP adjustments.",
@@ -33909,7 +33960,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on BiPAP",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1740"
+      "pearl_id": "dr-bhakta-on-distress-in-adults-1740",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bipap"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient on BiPAP does not improve after two adjustments and repeat blood gas, escalate care by calling ICU.",
@@ -33922,7 +33989,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on BiPAP not improving",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1835"
+      "pearl_id": "dr-bhakta-on-distress-in-adults-1835",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bipap"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 6.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ventilator orders are written in the sequence: rate, tidal volume, PEEP, FiO2.",
@@ -33935,7 +34021,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "intubated patients",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1964"
+      "pearl_id": "dr-bhakta-on-distress-in-adults-1964",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On a ventilator, FiO2 and PEEP primarily affect oxygenation; rate and tidal volume primarily affect CO2 clearance.",
@@ -33948,7 +34047,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "intubated patients",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1999"
+      "pearl_id": "dr-bhakta-on-distress-in-adults-1999",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If ET tube is in the right mainstem bronchus on chest X-ray, retract it 1-2 cm.",
@@ -33961,7 +34073,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "intubated patients with malpositioned ET tube",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-2098"
+      "pearl_id": "dr-bhakta-on-distress-in-adults-2098",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 cm",
+            "test:X-ray"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "DNR and DNI are separate orders in the hospital; it is the resident's responsibility to ensure both are entered and that the patient wears a DNR bracelet.",
@@ -33974,7 +34103,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with advance directives",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-2252"
+      "pearl_id": "dr-bhakta-on-distress-in-adults-2252",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Advance care planning conversations should start in clinic, ideally early in adulthood, to avoid difficult decisions at 2 AM.",
@@ -33987,7 +34132,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all adult patients in outpatient setting",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-2294"
+      "pearl_id": "dr-bhakta-on-distress-in-adults-2294",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:advance care planning"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has DNR/DNI orders in the chart but no bracelet, the patient may be coded against their wishes, leading to harm and family distress.",
@@ -34000,7 +34164,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with DNR/DNI orders",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-2340"
+      "pearl_id": "dr-bhakta-on-distress-in-adults-2340",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dni order"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

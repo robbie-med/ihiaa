@@ -67464,7 +67464,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-137"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-137",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.99
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is hypomanic, do not start an SSRI or SNRI alone (monopolar therapy); they need a mood stabilizer first.",
@@ -67477,7 +67490,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hypomania or bipolar disorder",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-240"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-240",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:therapy"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Screen for mania before treating depression because most bipolar patients present in a depressed state; giving an SSRI to undiagnosed bipolar can make them very sick.",
@@ -67490,7 +67522,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with depression",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-262"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-262",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:depression"
+          ],
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Prazosin is effective for mid-sleep awakening due to hyperarousal and nightmares in PTSD.",
@@ -67503,7 +67554,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "PTSD patients with nightmares",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-450"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-450",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Prazosin"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Prazosin can be dosed high; start low and titrate up (e.g., 1 mg, then 2 mg, then 3 mg) as long as blood pressure and pulse allow. PTSD studies have used doses up to 15 mg.",
@@ -67519,7 +67586,30 @@
       "numbers_unheard": [
         "15"
       ],
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-461"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-461",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1 mg",
+            "drug:Prazosin"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.18,
+          "capped": [
+            "number not heard: 15"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Obtain a baseline EKG before starting methadone due to risk of QTc prolongation; keep QTc under 500 ms and review other QTc-prolonging medications.",
@@ -67532,7 +67622,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on methadone",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-621"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-621",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:under 5",
+            "test:EKG"
+          ],
+          "actionable": [
+            "Obtain"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Family-based therapy is first-line for adolescents with anorexia nervosa and results in higher remission rates and weight gain than individual therapies.",
@@ -67545,7 +67655,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adolescents with anorexia nervosa",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-702"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-702",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:family-based therapy"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In family-based therapy for anorexia, parents initially take the lead in promoting healthy eating behaviors as the patient slowly gains autonomy.",
@@ -67558,7 +67684,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "family-based therapy for anorexia nervosa",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-724"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-724",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:family-based therapy"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The most important risk factor for speech and language impairment in children is male sex.",
@@ -67571,7 +67713,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with speech delay",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-836"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-836",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Children growing up in bilingual households should reach language milestones at the same rate as those in monolingual households.",
@@ -67584,7 +67739,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "bilingual children",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-856"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-856",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Varenicline (Chantix) is the most effective and safe medication for smoking cessation; adding nicotine replacement therapy improves cessation rates.",
@@ -67597,7 +67765,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "smoking cessation",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-938"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-938",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nicotine replacement t"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When starting varenicline, set a quit date one week after initiation; the medication is not meant for indefinite use (typically a 12-week course).",
@@ -67610,7 +67794,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting varenicline",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-996"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-996",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:varenicline"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Benzodiazepines are never the best choice for insomnia unless the patient has an active seizure or alcohol withdrawal.",
@@ -67623,7 +67826,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "insomnia treatment",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1127"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1127",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:benzodiazepines"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 5.57
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Antipsychotics like quetiapine are not first-line for insomnia due to side effects.",
@@ -67636,7 +67861,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "insomnia treatment",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1146"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1146",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:antipsychotics"
+          ],
+          "rarity": 6.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid antipsychotics like quetiapine for insomnia unless there is another indication, due to metabolic disturbances and side effects.",
@@ -67649,7 +67890,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with insomnia without another antipsychotic indication",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1168"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1168",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:antipsychotics"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For chronic insomnia with sleep maintenance difficulty, doxepin (Silenor) is FDA-approved and preferred over trazodone, which lacks FDA indication and is not in AASM algorithms.",
@@ -67662,7 +67922,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with chronic insomnia",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1238"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1238",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chronic insomnia"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Doxepin for insomnia is studied at 3-6 mg, but generic is available at 10 mg, which is more cost-effective for patients.",
@@ -67675,7 +67951,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with chronic insomnia",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1254"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1254",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 mg"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diphenhydramine is not first-line for insomnia because it is a strong antihistamine with anticholinergic side effects and is less precise pharmacologically.",
@@ -67688,7 +67980,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with chronic insomnia",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1288"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1288",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:anticholinergic side e"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Benzodiazepine overdose alone rarely causes significant respiratory depression; it becomes dangerous when mixed with other drugs.",
@@ -67701,7 +68009,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected benzodiazepine overdose",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1427"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1427",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:benzodiazepine overdos"
+          ],
+          "harm": [
+            "overdose"
+          ],
+          "rarity": 6.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SSRIs are first-line for panic disorder; benzodiazepines are not first-line and should be avoided for chronic use.",
@@ -67714,7 +68041,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with panic disorder",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1616"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1616",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:benzodiazepines"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 5.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For panic disorder, hydroxyzine can be used as a PRN adjunct with an SSRI for psychological benefit, even if not highly effective.",
@@ -67727,7 +68073,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with panic disorder on SSRI",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1635"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1635",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:PRN"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Benzodiazepines take 20-30 minutes to work, but panic attacks last minutes, so PRN benzos do not actually treat the attack and create psychological dependence.",
@@ -67740,7 +68102,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with panic disorder",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1680"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1680",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:30 minutes",
+            "frequency:PRN"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Prophylactic benzodiazepines may be appropriate for predictable, specific anxiety-provoking situations (e.g., flying, medical procedures) but not for chronic use.",
@@ -67753,7 +68135,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with situational panic triggers",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1754"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1754",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:benzodiazepines"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For highly anxious patients starting an SSRI, start at half the normal dose (e.g., Zoloft 25 mg instead of 50 mg) to minimize initial activation from serotonin dumping.",
@@ -67766,7 +68167,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with panic disorder or high anxiety starting SSRI",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1807"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1807",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:25 mg"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SSRIs cause side effects immediately due to serotonin dumping, but efficacy takes weeks because receptor changes take time.",
@@ -67779,7 +68199,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting SSRIs",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1823"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1823",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ssris"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 6.98
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bruising on the torso, ears, and neck in children less than four is predictive of child abuse (TEN-4 mnemonic).",
@@ -67792,7 +68231,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children under 4 years",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1906"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1906",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:child abuse"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Any bruises in a nonambulatory infant require careful medical evaluation for possible abuse.",
@@ -67805,7 +68260,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "nonambulatory infants",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1928"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-1928",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cannabis hyperemesis syndrome presents with intractable nausea and vomiting, hot shower relief, and weight loss; antiemetics often fail.",
@@ -67818,7 +68286,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with recurrent nausea/vomiting and cannabis use",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2097"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2097",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cannabis hyperemesis s"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cannabis hyperemesis syndrome presents with intractable nausea and vomiting that is not relieved by antiemetics; symptomatic relief with hot showers or baths is a key distinguishing feature.",
@@ -67831,7 +68315,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with intractable nausea and vomiting",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2126"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2126",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cannabis hyperemesis s"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When counseling patients about cannabis use, use motivational enhancement therapy and offer harm reduction strategies such as using lower potency products, avoiding dabbing and extracts, and taking breaks from use.",
@@ -67844,7 +68344,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using cannabis",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2184"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2184",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:harm reduction"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Methylphenidate is the safest ADHD medication during breastfeeding, with about 0.2% of the adult dose transferred to breast milk, but it can reduce prolactin levels.",
@@ -67857,7 +68376,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "breastfeeding women with ADHD",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2441"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2441",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:methylphenidate"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Amphetamine levels in breast milk and infant serum are significantly higher than with methylphenidate, making it less preferred during breastfeeding.",
@@ -67870,7 +68408,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "breastfeeding women with ADHD",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2482"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2482",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:methylphenidate"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For benzodiazepine tapering, the most recent guidelines recommend switching to a long-acting benzodiazepine (e.g., diazepam) before tapering, rather than tapering a short-acting agent directly.",
@@ -67883,7 +68437,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients tapering benzodiazepines",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2615"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2615",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:benzodiazepine taperin"
+          ],
+          "rarity": 6.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When tapering alprazolam (Xanax), it may be helpful to reduce the dose slightly before converting to a long-acting benzodiazepine, as patients often have strong attachment to Xanax.",
@@ -67896,7 +68466,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients tapering alprazolam",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2634"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2634",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:alprazolam"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Clonazepam is available as a 0.25 mg oral dissolving tablet; once tapering to that low dose, any amount of reduction is acceptable, and it is not necessary to stay within the 10-25% range.",
@@ -67909,7 +68498,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients tapering clonazepam",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2752"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2752",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:0.25 mg",
+            "drug:Clonazepam"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Serotonin syndrome is characterized by clonus, jitteriness, and serotonergic drug exposure; rigidity in the presence of antipsychotics suggests neuroleptic malignant syndrome instead.",
@@ -67922,7 +68528,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected serotonin syndrome",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2904"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-2904",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:neuroleptic malignant "
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Multiple serotonergic drugs can contribute to serotonin syndrome, including SSRIs, dextromethorphan, methylphenidate, triptans, buspirone, opioids, linezolid, ondansetron, and St. John's wort.",
@@ -67935,7 +68557,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on multiple serotonergic medications",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3018"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3018",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:ondansetron"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For eating disorders in adolescents, family-based interventions such as eating meals together are first-line; implementing a diet or focusing on weight control is not recommended.",
@@ -67948,7 +68586,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adolescents with eating disorders",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3086"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3086",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:eating disorders"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Light therapy for depression uses 10,000 lux for 30 minutes, preferably in the morning, and works through the optic chiasm (eyes must be open).",
@@ -67961,7 +68615,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with depression (including non-seasonal)",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3330"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3330",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:30 minutes"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Asking about suicide does not increase risk; most patients who complete suicide saw a primary care physician within 90 days of their attempt. Safety planning is effective, but no-suicide contracts are not.",
@@ -67974,7 +68644,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients in primary care",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3536"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3536",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:90 days"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Safety contracts are ineffective; use crisis/safety plans with multi-step escalation instead.",
@@ -67987,7 +68676,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suicidal ideation",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3556"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3556",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Crisis plans include: early warning signs, internal coping, environmental supports, supportive people, trusted confidants, healthcare professionals, and emergency services (988).",
@@ -68000,7 +68705,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suicidal ideation",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3576"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3576",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:trust"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always include lethal means restriction in crisis planning: lock up pill stashes and weapons to prevent impulsive access.",
@@ -68013,7 +68737,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suicidal ideation",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3675"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3675",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "Always"
+          ],
+          "harm": [
+            "lethal"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Naltrexone for alcohol use disorder: start at 25 mg/week, increase to 50 mg; can start even if patient is still drinking if LFTs are less than 3x upper limit of normal.",
@@ -68026,7 +68769,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with alcohol use disorder",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3890"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3890",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:25 mg",
+            "threshold:less than 3",
+            "test:LFTs"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For insomnia, tolerance develops quickly to sedative-hypnotics; drug holidays or cycling may help, but there is no standardized protocol.",
@@ -68039,7 +68803,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with insomnia on sedative-hypnotics",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3997"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-3997",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:drug holidays"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CBT-I is first-line treatment for insomnia.",
@@ -68052,7 +68832,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with insomnia",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-4087"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-4087",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:insomnia"
+          ],
+          "rarity": 6.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For partial response to SSRI in depression, maximize the SSRI dose first, then consider adding bupropion (Wellbutrin) or buspirone.",
@@ -68065,7 +68861,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with depression partial response to SSRI",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-4139"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-4139",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:depression"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bupropion does not affect serotonin and does not contribute to serotonin syndrome.",
@@ -68078,7 +68893,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on bupropion",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-4175"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-4175",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:serotonin syndrome"
+          ],
+          "rarity": 6.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In children, Vanderbilt scale plus DSM criteria can diagnose ADHD without neuropsych testing; treat anxiety/depression first before ADHD.",
@@ -68091,7 +68922,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with suspected ADHD",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-4235"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-4235",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:depression"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stimulant treatment for ADHD should be long-term; stopping stimulants may increase risk of substance use.",
@@ -68104,7 +68954,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ADHD on stimulants",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-4269"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-4269",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 6.8
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stabilize mood and anxiety before treating ADHD, because attention problems are hallmark of untreated anxiety and depression.",
@@ -68117,7 +68983,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with comorbid anxiety/depression and ADHD",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-4317"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2-4317",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:depression"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

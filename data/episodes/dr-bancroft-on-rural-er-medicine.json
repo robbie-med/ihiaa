@@ -71032,7 +71032,29 @@
         "1099",
         "1040"
       ],
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-170"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-170",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 8.85,
+          "capped": [
+            "number not heard: 1099, 1040"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Track mileage at $0.65/mile for all work-related driving; keep a logbook with dates and miles for each shift.",
@@ -71048,7 +71070,20 @@
       "numbers_unheard": [
         "0.65"
       ],
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-319"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-319",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use standard per diem meal deduction: $50 for first and last travel days, $60 for full days; no receipts needed.",
@@ -71061,7 +71096,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians with 1099 work",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-357"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-357",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Educational supplies, scrubs, stethoscopes, shears, and CME expenses (including travel and hotel) are tax-deductible for 1099 workers.",
@@ -71077,7 +71128,23 @@
       "numbers_unheard": [
         "1099"
       ],
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-429"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-429",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:deductible"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A PLLC provides tax benefits but does not protect personal assets from malpractice lawsuits.",
@@ -71090,7 +71157,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians considering a PLLC",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-473"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-473",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use QuickBooks to track expenses and mileage automatically by linking bank accounts and swiping transactions as business or personal.",
@@ -71104,7 +71184,23 @@
       "prompt_version": "v1",
       "applies_to": "physicians with 1099 income",
       "by_presenter": false,
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-589"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-589",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Initial BiPAP settings: IPAP 12, EPAP 5, FiO2 100%, inspiratory time 1 second.",
@@ -71117,7 +71213,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with acute respiratory failure needing BiPAP",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-738"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-738",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:inspiratory time"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the patient is tachypneic, reduce inspiratory time to 0.5 seconds to avoid delivering IPAP during exhalation.",
@@ -71130,7 +71242,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "tachypneic patients on BiPAP",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-801"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-801",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:inspiratory time"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the patient is tachypneic on BiPAP, consider adjusting the inspiratory time rather than just the pressures.",
@@ -71143,7 +71274,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on BiPAP",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-829"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-829",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:inspiratory time"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For volume overload, increase EPAP to keep alveoli open; you can bump IPAP to 16 for pulmonary edema.",
@@ -71156,7 +71306,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "volume overloaded patients on BiPAP",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-848"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-848",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pulmonary edema"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For pulmonary edema, increase EPAP to 8 and IPAP to 16; for COPD, use EPAP 5 and IPAP 12.",
@@ -71169,7 +71338,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with acute respiratory failure on BiPAP",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-868"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-868",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pulmonary edema"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 6.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For pulmonary edema on BiPAP, set EPAP to 8 and IPAP to 16; for COPD, start with EPAP 4-5 and IPAP 12.",
@@ -71182,7 +71370,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with respiratory failure on BiPAP",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-868-2"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-868-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pulmonary edema"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recheck ABG or VBG at 60 minutes to assess BiPAP response; discontinue or intubate if worsening.",
@@ -71195,7 +71402,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults on BiPAP for acute respiratory failure",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-907"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-907",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:60 minutes"
+          ],
+          "actionable": [
+            "Recheck"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the minute ventilation (RR x tidal volume) calculated by BiPAP to help set initial vent settings; it is roughly one-to-one.",
@@ -71208,7 +71434,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients transitioning from BiPAP to ventilator",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-974"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-974",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:minute ventilation"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Have a backup person (e.g., a colleague or intensivist) to review your intubation plan before you proceed.",
@@ -71221,7 +71466,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any intubation, especially in rural setting",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-1022"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-1022",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:intubation"
+          ],
+          "rarity": 8.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always have a bougie ready when intubating; you can feel the vibration of tracheal rings through it, which confirms placement.",
@@ -71234,7 +71495,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any intubation",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-1046"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-1046",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bougie"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During RSI, keep the patient on BiPAP while pushing meds; once they start to fade, remove BiPAP, bag until unresponsive, then intubate.",
@@ -71247,7 +71527,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on BiPAP undergoing RSI",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-1190"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-1190",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bipap"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In rural ER, physical exam is critical because imaging and lab results can be delayed by hours; for tension pneumothorax, listen for breath sounds and check for tracheal deviation, do not wait for X-ray.",
@@ -71260,7 +71559,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "rural ER setting",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-1724"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-1724",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A history of PE or anticoagulation may be buried in old notes and not listed in the problem list; always search thoroughly.",
@@ -71273,7 +71591,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with unexplained respiratory distress",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-1792"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-1792",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anticoagulation"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient on BiPAP has a rising pCO2 on VBG despite clinical improvement, they are worsening and may need intubation.",
@@ -71286,7 +71623,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on BiPAP with repeat VBG",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-1919"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-1919",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:intubation"
+          ],
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with hypercapnic respiratory failure on BiPAP, the only setting you need to change to improve CO2 clearance is the I-time (inspiratory time); do not decrease EPAP or increase IPAP.",
@@ -71299,7 +71652,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hypercapnic respiratory failure on BiPAP",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2006"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2006",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:inspiratory time"
+          ],
+          "actionable": [
+            "change to"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A prominent aortic knob on chest X-ray in a tachypneic patient may be due to rotation or volume loss, not necessarily dissection or aneurysm.",
@@ -71313,7 +71685,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with tachypnea and rotated chest X-ray",
       "by_presenter": false,
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2131"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2131",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On CT pulmonary angiography, filling defects from PE appear as dark areas within the white contrast-filled pulmonary arteries; scrolling through images helps identify them.",
@@ -71326,7 +71714,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing CT for suspected PE",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2284"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2284",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Heparin dosing depends more on liver function than kidney function.",
@@ -71339,7 +71743,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2427"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2427",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:heparin dosing"
+          ],
+          "rarity": 6.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Weight-based heparin for PE: 80 units/kg bolus (max 10,000 units) followed by 18 units/kg/hour infusion; this achieves therapeutic levels faster than a fixed 5,000 unit bolus.",
@@ -71352,7 +71772,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with acute PE",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2472"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2472",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:80 units"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When the radiology report says 'no PE' but the patient is highly suspicious, call the radiologist and provide clinical history; artifact from rapid breathing can obscure the study.",
@@ -71365,7 +71801,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE and tachypnea",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2579"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2579",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sepsis criteria include: tachycardia >90, tachypnea >20, temperature >38.3 or <36, WBC >12 or <4, and bands >10%.",
@@ -71383,7 +71832,29 @@
         "36",
         "10"
       ],
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2698"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2698",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>9"
+          ],
+          "harm": [
+            "Sepsis"
+          ],
+          "rarity": 7.71,
+          "capped": [
+            "number not heard: 38.3, 36, 10"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with suspected PE and sepsis, avoid aggressive fluid resuscitation if there are signs of right heart strain or pulmonary edema (rales), as it may worsen pulmonary edema.",
@@ -71396,7 +71867,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE and signs of right heart strain",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2970"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2970",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:fluid resuscitation"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Family updates should occur after the patient is stabilized, not during active resuscitation.",
@@ -71409,7 +71902,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients in active resuscitation",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3040"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3040",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Early, honest communication with family about prognosis (e.g., '40% mortality risk in the next 24 hours') is critical to set expectations and avoid blame.",
@@ -71422,7 +71928,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "critically ill patients in the ER",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3091"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3091",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Intubating a patient with a massive PE is dangerous because positive pressure increases intrathoracic pressure, worsening right ventricular strain and precipitating arrhythmia or death.",
@@ -71435,7 +71960,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with massive PE requiring intubation",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3234"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3234",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:right ventricular stra"
+          ],
+          "harm": [
+            "dangerous"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When intubating a PE patient, use the lowest possible PEEP (≤10 cm H2O) and maximize FiO2 to avoid increasing intrathoracic pressure.",
@@ -71448,7 +71992,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with PE being intubated",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3295"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3295",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:10 cm"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a rural ER with limited resources, push-dose epinephrine (e.g., 1 cc of 1:10,000) can be used as a temporizing vasopressor while a Levophed drip is being set up.",
@@ -71464,7 +72027,23 @@
       "numbers_unheard": [
         "10000"
       ],
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3316"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3316",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:push-dose epinephrine"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a rural setting, nurses may act as key assistants, drawing up push-dose medications and helping with algorithms when pharmacy support is delayed.",
@@ -71477,7 +72056,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "rural ER with limited pharmacy support",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3342"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3342",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected pulmonary hemorrhage on a ventilator, inhaled TXA (1 gram) can be given via the endotracheal tube, clamped for a few minutes, to tamponade bleeding while continuing to treat the underlying PE.",
@@ -71490,7 +72082,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pulmonary hemorrhage on mechanical ventilation",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3554"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3554",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:pulmonary hemorrhage"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A simple pause after a death to acknowledge the patient as a person (e.g., reading a statement) can be powerful for team morale and closure.",
@@ -71504,7 +72118,23 @@
       "prompt_version": "v1",
       "applies_to": "ER team after a patient death",
       "by_presenter": false,
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3709"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3709",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "death"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After a patient death, debrief the team by acknowledging what went well, what could be improved, and validating emotions to prevent self-blame and burnout.",
@@ -71517,7 +72147,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "ER team after a patient death",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3767"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3767",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:burnout"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Massive PE can cause pulmonary hemorrhage due to increased pulmonary pressures, especially if there is underlying pneumonia or anticoagulation.",
@@ -71530,7 +72179,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with massive PE and pulmonary hemorrhage",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3903"
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3903",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pulmonary hemorrhage"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 6.43
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

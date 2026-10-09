@@ -42133,7 +42133,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with suspected UTI",
-      "pearl_id": "dr-richard-on-utis-240"
+      "pearl_id": "dr-richard-on-utis-240",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pregnancy"
+          ],
+          "rarity": 6.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Burning after urination suggests vaginal yeast infection because urine falls on raw areas.",
@@ -42146,7 +42162,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with burning during urination",
-      "pearl_id": "dr-richard-on-utis-712"
+      "pearl_id": "dr-richard-on-utis-712",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:yeast infection"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When evaluating UTI, ask about chills, flank pain, CVA tenderness, nausea/vomiting, diabetes, and any procedures to rule out complicated infection.",
@@ -42159,7 +42191,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with UTI symptoms",
-      "pearl_id": "dr-richard-on-utis-903"
+      "pearl_id": "dr-richard-on-utis-903",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:diabetes"
+          ],
+          "actionable": [
+            "ask about"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Differential for UTI includes STI, interstitial cystitis, pyelonephritis, and atrophic vaginitis.",
@@ -42172,7 +42223,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with UTI-like symptoms",
-      "pearl_id": "dr-richard-on-utis-935"
+      "pearl_id": "dr-richard-on-utis-935",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:interstitial cystitis"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For clean-catch midstream: wipe the anatomy, start urinating, then collect midstream; do not wipe the bottle.",
@@ -42185,7 +42252,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients providing a urine sample",
-      "pearl_id": "dr-richard-on-utis-1295"
+      "pearl_id": "dr-richard-on-utis-1295",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Urine samples should be processed within 1, 2 hours; E. coli multiplies at room temperature and can alter culture results.",
@@ -42198,7 +42281,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "urine samples for culture",
-      "pearl_id": "dr-richard-on-utis-1317"
+      "pearl_id": "dr-richard-on-utis-1317",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 hours",
+            "test:culture"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bacteria that can cause UTI with negative nitrite include Enterococcus, Staph saprophyticus, Group B Strep, and Proteus.",
@@ -42211,7 +42311,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with UTI symptoms and negative nitrite",
-      "pearl_id": "dr-richard-on-utis-1435"
+      "pearl_id": "dr-richard-on-utis-1435",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:enterococcus"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "False-negative nitrite can occur with frequent urination (short bladder incubation), acidic urine (cranberry), or incontinence in older women.",
@@ -42224,7 +42340,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with UTI symptoms and negative dipstick",
-      "pearl_id": "dr-richard-on-utis-1470"
+      "pearl_id": "dr-richard-on-utis-1470",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sterile pyuria can be due to partially treated UTI (patient taking leftover antibiotics) or STI.",
@@ -42237,7 +42366,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pyuria but negative culture",
-      "pearl_id": "dr-richard-on-utis-1570"
+      "pearl_id": "dr-richard-on-utis-1570",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sterile pyuria"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hematuria combined with positive nitrites has the highest predictive value for UTI diagnosis.",
@@ -42250,7 +42395,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with UTI symptoms",
-      "pearl_id": "dr-richard-on-utis-1749"
+      "pearl_id": "dr-richard-on-utis-1749",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hematuria"
+          ],
+          "rarity": 7.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Virtual visit for UTI is acceptable for women with uncomplicated symptoms; men require an in-person sample.",
@@ -42263,7 +42424,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with uncomplicated UTI",
-      "pearl_id": "dr-richard-on-utis-1812"
+      "pearl_id": "dr-richard-on-utis-1812",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:virtual visit for uti"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Self-diagnosis of a UTI by a female patient is a stronger predictor of UTI than clinician diagnosis or lab tests.",
@@ -42276,7 +42453,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with UTI symptoms",
-      "pearl_id": "dr-richard-on-utis-1843"
+      "pearl_id": "dr-richard-on-utis-1843",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Self-diagnosis of UTI is a stronger predictor than clinician diagnosis or dipstick.",
@@ -42289,7 +42479,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with UTI symptoms",
-      "pearl_id": "dr-richard-on-utis-1844"
+      "pearl_id": "dr-richard-on-utis-1844",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recurrent UTI (third in one year) is a red flag requiring in-person evaluation to investigate resistance or other issues.",
@@ -42302,7 +42505,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with recurrent UTIs",
-      "pearl_id": "dr-richard-on-utis-1866"
+      "pearl_id": "dr-richard-on-utis-1866",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For E. coli and Staph, a colony count of 1,000 CFU can be diagnostic if the patient is symptomatic, not the traditional 100,000 CFU.",
@@ -42318,7 +42534,20 @@
       "numbers_unheard": [
         "1000"
       ],
-      "pearl_id": "dr-richard-on-utis-1973"
+      "pearl_id": "dr-richard-on-utis-1973",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a healthy woman with no risk factors and mild symptoms, you can wait and prescribe antibiotics only if symptoms do not improve with increased water intake and cranberry juice.",
@@ -42331,7 +42560,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "healthy women with uncomplicated UTI and no risk factors",
-      "pearl_id": "dr-richard-on-utis-2106"
+      "pearl_id": "dr-richard-on-utis-2106",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "actionable": [
+            "wait"
+          ],
+          "rarity": 6.9
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bactrim resistance is greater than 20% in most of the United States, so it should not be used as first-line for UTIs.",
@@ -42344,7 +42592,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with uncomplicated UTI in the US",
-      "pearl_id": "dr-richard-on-utis-2235"
+      "pearl_id": "dr-richard-on-utis-2235",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:greater than 2"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use fluoroquinolones as first-line for uncomplicated UTIs; reserve them for complicated cases or when other oral options are resistant.",
@@ -42357,7 +42621,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "nonpregnant patients with uncomplicated UTI",
-      "pearl_id": "dr-richard-on-utis-2248"
+      "pearl_id": "dr-richard-on-utis-2248",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fluoroquinolones"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.95
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For uncomplicated UTI in nonpregnant patients, use nitrofurantoin first; only switch to Keflex if there is resistance to nitrofurantoin.",
@@ -42370,7 +42653,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "nonpregnant patients with uncomplicated UTI",
-      "pearl_id": "dr-richard-on-utis-2276"
+      "pearl_id": "dr-richard-on-utis-2276",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:nitrofurantoin"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pregnancy, avoid nitrofurantoin in the first and third trimesters due to fetal risks (hemolytic issues and hyperbilirubinemia/jaundice).",
@@ -42383,7 +42685,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women",
-      "pearl_id": "dr-richard-on-utis-2385"
+      "pearl_id": "dr-richard-on-utis-2385",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hyperbilirubinemia"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pregnancy, safer antibiotic options for UTI include Keflex (cephalexin) and fosfomycin; avoid Bactrim and nitrofurantoin.",
@@ -42396,7 +42717,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women with UTI",
-      "pearl_id": "dr-richard-on-utis-2428"
+      "pearl_id": "dr-richard-on-utis-2428",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:fosfomycin"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Methenamine hippurate is a non-antibiotic option for UTI prevention, broken down into formaldehyde in the bladder; it is not yet widely available in the US (expected FDA approval 2025).",
@@ -42412,7 +42752,23 @@
       "numbers_unheard": [
         "2025"
       ],
-      "pearl_id": "dr-richard-on-utis-2655"
+      "pearl_id": "dr-richard-on-utis-2655",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:methenamine hippurate"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For recurrent UTIs in postmenopausal women, vaginal estrogen can help reduce recurrence without long-term antibiotic prophylaxis.",
@@ -42425,7 +42781,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "postmenopausal women with recurrent UTIs",
-      "pearl_id": "dr-richard-on-utis-2705"
+      "pearl_id": "dr-richard-on-utis-2705",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:vaginal estrogen"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 6.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Men with UTI symptoms always require a urine culture because their infection is considered complicated.",
@@ -42438,7 +42813,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with UTI symptoms",
-      "pearl_id": "dr-richard-on-utis-2971"
+      "pearl_id": "dr-richard-on-utis-2971",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 5.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For prostatitis, switch to fluoroquinolones because nitrofurantoin does not penetrate the prostate well.",
@@ -42451,7 +42845,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "men with prostatitis",
-      "pearl_id": "dr-richard-on-utis-3032"
+      "pearl_id": "dr-richard-on-utis-3032",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fluoroquinolones"
+          ],
+          "actionable": [
+            "switch"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Complicated UTI with systemic symptoms (e.g., flank pain) can be managed outpatient if the patient is stable, has no fever, and labs show no sepsis; do not automatically send to the ER.",
@@ -42464,7 +42877,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with complicated UTI and systemic symptoms but stable vitals",
-      "pearl_id": "dr-richard-on-utis-3134"
+      "pearl_id": "dr-richard-on-utis-3134",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:sepsis"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For catheter-associated UTI, collect urine from a newly placed catheter; routine catheter changes are not needed unless symptoms or blockage occur.",
@@ -42477,7 +42912,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with indwelling catheter and suspected UTI",
-      "pearl_id": "dr-richard-on-utis-3265"
+      "pearl_id": "dr-richard-on-utis-3265",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In asymptomatic bacteriuria in pregnancy, treat after a single positive culture; a confirmatory second sample is ideal but often not feasible in practice.",
@@ -42490,7 +42938,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women with asymptomatic bacteriuria",
-      "pearl_id": "dr-richard-on-utis-3415"
+      "pearl_id": "dr-richard-on-utis-3415",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For asymptomatic bacteriuria in pregnancy, ideally obtain a second confirmatory urine culture, but in practice treat on the first positive sample.",
@@ -42503,7 +42970,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women with asymptomatic bacteriuria",
-      "pearl_id": "dr-richard-on-utis-3415-2"
+      "pearl_id": "dr-richard-on-utis-3415-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For symptomatic UTI in pregnancy, obtain a test of cure (repeat culture) to ensure clearance, especially given poor adherence.",
@@ -42516,7 +43002,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women treated for symptomatic UTI",
-      "pearl_id": "dr-richard-on-utis-3513"
+      "pearl_id": "dr-richard-on-utis-3513",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 6.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a pregnant patient has UTI symptoms but a clean UA and negative culture, do not repeat the culture, but ask her to finish the antibiotic course.",
@@ -42529,7 +43034,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women with UTI symptoms, negative UA and culture",
-      "pearl_id": "dr-richard-on-utis-3590"
+      "pearl_id": "dr-richard-on-utis-3590",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Yeast can cause UTIs, including complicated UTIs; keep this in the differential.",
@@ -42542,7 +43066,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with UTI, especially complicated",
-      "pearl_id": "dr-richard-on-utis-3604"
+      "pearl_id": "dr-richard-on-utis-3604",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pre-antibiotics for UTI are not supported by evidence and are not helpful for treatment or prophylaxis.",
@@ -42555,7 +43092,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with recurrent UTI",
-      "pearl_id": "dr-richard-on-utis-3652"
+      "pearl_id": "dr-richard-on-utis-3652",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "rarity": 7.3
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cranberry for UTI prophylaxis has limited evidence; it is not harmful but may be expensive, and the presenter does not recommend it as effective.",
@@ -42568,7 +43121,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients considering cranberry for UTI prevention",
-      "pearl_id": "dr-richard-on-utis-3683"
+      "pearl_id": "dr-richard-on-utis-3683",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.53
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -80229,7 +80229,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with neuropathy",
-      "pearl_id": "beasley-pearls-891"
+      "pearl_id": "beasley-pearls-891",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you see bone fragmentation or shifting on foot X-ray in a diabetic patient, get them off the foot immediately (strict non-weight-bearing) and refer to podiatry or orthopedics.",
@@ -80242,7 +80258,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected Charcot arthropathy",
-      "pearl_id": "beasley-pearls-942"
+      "pearl_id": "beasley-pearls-942",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not rely on an elevated white count or left shift to rule out infection in diabetics; they do not mount the same cellular response due to high blood sugar.",
@@ -80255,7 +80293,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with suspected infection",
-      "pearl_id": "beasley-pearls-1066"
+      "pearl_id": "beasley-pearls-1066",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a diabetic patient has a wound that probes to bone, consider osteomyelitis; MRI can help differentiate Charcot from infection.",
@@ -80268,7 +80322,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with foot wounds",
-      "pearl_id": "beasley-pearls-1088"
+      "pearl_id": "beasley-pearls-1088",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "D-dimer is not helpful for ruling out DVT in Charcot because the inflammation from Charcot will elevate it anyway.",
@@ -80281,7 +80354,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected Charcot arthropathy",
-      "pearl_id": "beasley-pearls-1102"
+      "pearl_id": "beasley-pearls-1102",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:d-dimer"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a diabetic patient presents with a change in foot shape and no wound, it is likely Charcot, not infection; get them off the foot and refer.",
@@ -80294,7 +80383,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with foot deformity",
-      "pearl_id": "beasley-pearls-1116"
+      "pearl_id": "beasley-pearls-1116",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Charcot arthropathy requires strict non-weight-bearing for at least 3 months, sometimes 6, to allow the bone to coalesce and repair.",
@@ -80307,7 +80412,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with Charcot arthropathy",
-      "pearl_id": "beasley-pearls-1122"
+      "pearl_id": "beasley-pearls-1122",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 months",
+            "threshold:at least 3"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Over 90% of adults wear the wrong size shoe; checking shoe fit is a simple, modifiable intervention to prevent diabetic foot ulcers.",
@@ -80320,7 +80442,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all adults, especially diabetics",
-      "pearl_id": "beasley-pearls-1224"
+      "pearl_id": "beasley-pearls-1224",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:Over 9"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "You should have about half an inch of distance between the end of your toe and the end of the shoe.",
@@ -80333,7 +80471,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults wearing shoes",
-      "pearl_id": "beasley-pearls-1288"
+      "pearl_id": "beasley-pearls-1288",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.8
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For any diabetic patient, even if coming for an A1c check, have them take their shoes and socks off to inspect their feet.",
@@ -80346,7 +80497,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients in any clinical setting",
-      "pearl_id": "beasley-pearls-1383"
+      "pearl_id": "beasley-pearls-1383",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:A1c"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An A1c of 8 seems to be the threshold where many bad things start happening, especially in the lower extremity.",
@@ -80359,7 +80529,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients",
-      "pearl_id": "beasley-pearls-1416"
+      "pearl_id": "beasley-pearls-1416",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:A1c"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a diabetic has an open foot wound, tell them to put a bag over the foot in the shower to prevent dirty water from entering the wound.",
@@ -80372,7 +80561,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with open foot wounds",
-      "pearl_id": "beasley-pearls-1510"
+      "pearl_id": "beasley-pearls-1510",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Culture a diabetic foot wound with a deep swab on first visit if the patient is not already on an antibiotic.",
@@ -80385,7 +80587,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with a new foot wound not on antibiotics",
-      "pearl_id": "beasley-pearls-1535"
+      "pearl_id": "beasley-pearls-1535",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:Culture"
+          ],
+          "rarity": 6.13
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Obtain a wound culture before starting broad-spectrum antibiotics (e.g., Zosyn) because culture results will be unreliable after antibiotics have been given.",
@@ -80398,7 +80616,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic foot infections in the ED or inpatient setting",
-      "pearl_id": "beasley-pearls-1653"
+      "pearl_id": "beasley-pearls-1653",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "Obtain"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Never mix bleach (a stronger Dakin's) with dish soap (e.g., Dawn); it creates toxic chlorine gas that can cause respiratory distress.",
@@ -80411,7 +80648,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anyone cleaning wounds or using household cleaners",
-      "pearl_id": "beasley-pearls-1948"
+      "pearl_id": "beasley-pearls-1948",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "Never"
+          ],
+          "harm": [
+            "toxic"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For ongoing wound care with Betadine, dilute it well with saline or sterile water to avoid killing new fibroblast tissue.",
@@ -80424,7 +80680,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "chronic wounds requiring repeated cleaning",
-      "pearl_id": "beasley-pearls-2023"
+      "pearl_id": "beasley-pearls-2023",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:wound care"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use hypochlorous acid at 200 ppm for wound cleaning on skin; 400 ppm is for surface disinfection. Apply via sponge, spray, or moistened dressing, do not have patients soak their feet due to expense.",
@@ -80437,7 +80712,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "wounds in any patient",
-      "pearl_id": "beasley-pearls-2214"
+      "pearl_id": "beasley-pearls-2214",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypochlorous acid"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For skin use, hypochlorous acid should be at 200 parts per million concentration; it is safe and effective against bacteria.",
@@ -80450,7 +80744,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "wound care in diabetic patients",
-      "pearl_id": "beasley-pearls-2216"
+      "pearl_id": "beasley-pearls-2216",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypochlorous acid"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hypochlorous acid can be applied by putting it on a sponge and wiping the wound, or moistening the dressing with it.",
@@ -80463,7 +80776,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic foot wound care",
-      "pearl_id": "beasley-pearls-2251"
+      "pearl_id": "beasley-pearls-2251",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hypochlorous acid"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The diabetic shoe program requires a prescription from a podiatrist or physician, a certifying statement from the diabetes treating provider, and seven pieces of paperwork, any error in address or phone number leads to denial.",
@@ -80476,7 +80805,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients seeking therapeutic shoes",
-      "pearl_id": "beasley-pearls-2373"
+      "pearl_id": "beasley-pearls-2373",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:diabetic shoe program"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Arterial wounds are usually well demarcated, have a very defined margin, and are painful.",
@@ -80489,7 +80834,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with lower extremity wounds",
-      "pearl_id": "beasley-pearls-2794"
+      "pearl_id": "beasley-pearls-2794",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:arterial wound"
+          ],
+          "rarity": 7.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Neuropathic wounds are painless and typically surrounded by a lot of callus.",
@@ -80502,7 +80863,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with foot ulcers",
-      "pearl_id": "beasley-pearls-2801"
+      "pearl_id": "beasley-pearls-2801",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:neuropathic wound"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Venous insufficiency wounds occur on the shin or ankle and show brown hemosiderin staining from blood congestion.",
@@ -80515,7 +80892,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with lower extremity wounds",
-      "pearl_id": "beasley-pearls-2806"
+      "pearl_id": "beasley-pearls-2806",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:venous insufficiency w"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Smoking causes vasoconstriction within four seconds and lasts the entire time they smoke; a pack‑a‑day smoker has essentially no blood flow to the skin and legs, so wounds will not heal until they stop.",
@@ -80528,7 +80921,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who smoke and have lower extremity wounds",
-      "pearl_id": "beasley-pearls-2879"
+      "pearl_id": "beasley-pearls-2879",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:smoking"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For most pressure wounds, if you offload the wound, you don't need expensive grafts, just keep it clean and prevent infection, and it will heal.",
@@ -80541,7 +80953,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with a pressure‑related wound",
-      "pearl_id": "beasley-pearls-2986"
+      "pearl_id": "beasley-pearls-2986",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Every time a patient steps on an open wound, it adds a day or two to healing because the pressure (100, 400 lbs) crushes fibroblasts.",
@@ -80554,7 +80982,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with a foot wound",
-      "pearl_id": "beasley-pearls-3018"
+      "pearl_id": "beasley-pearls-3018",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A CAM boot only removes about 25% of the pressure; for complete offloading use a knee walker ($100 on Amazon) or crutches with heel ambulation.",
@@ -80567,7 +81008,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with forefoot or midfoot wounds",
-      "pearl_id": "beasley-pearls-3051"
+      "pearl_id": "beasley-pearls-3051",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:offloading"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Grafts are often used as a practice management tool because they bring in thousands of dollars per application; only consider a graft if the patient is compliant with offloading, nutrition, and glucose control and still not healing, or if they have a condition like steroid use.",
@@ -80580,7 +81040,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic wounds",
-      "pearl_id": "beasley-pearls-3158"
+      "pearl_id": "beasley-pearls-3158",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:practice management"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For plantar fasciitis, the number one thing to think about is a stiff shank shoe that does not flex in the middle.",
@@ -80593,7 +81072,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with plantar fasciitis",
-      "pearl_id": "beasley-pearls-4175"
+      "pearl_id": "beasley-pearls-4175",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:plantar fasciitis"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Custom insoles are rarely needed; over-the-counter PowerStep insoles are effective and cost $45-55.",
@@ -80606,7 +81101,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing arch support",
-      "pearl_id": "beasley-pearls-4191"
+      "pearl_id": "beasley-pearls-4191",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:powerstep insoles"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anatomical shoes with a squared-off toe box are more comfortable and better for foot health than traditional tapered shoes.",
@@ -80619,7 +81130,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "beasley-pearls-4261"
+      "pearl_id": "beasley-pearls-4261",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:anatomical shoes"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cellulitis in an edematous leg without a wound is often non-infectious inflammation; antibiotics are not needed, and compression and elevation are the treatment.",
@@ -80632,7 +81159,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with leg swelling and no wound",
-      "pearl_id": "beasley-pearls-4331"
+      "pearl_id": "beasley-pearls-4331",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pneumatic pumps for lymphedema are now available on Amazon for a couple hundred dollars, allowing home treatment.",
@@ -80645,7 +81188,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with lymphedema",
-      "pearl_id": "beasley-pearls-4365"
+      "pearl_id": "beasley-pearls-4365",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pneumatic pump"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Oral terbinafine for fungal toenails has a 70-80% cure rate but a 90% recurrence rate, and carries a risk of liver damage.",
@@ -80658,7 +81217,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fungal toenails",
-      "pearl_id": "beasley-pearls-4447"
+      "pearl_id": "beasley-pearls-4447",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fungal toenail"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Check shoe fit in patients with fungal toenails; shoes that are too small cause nail trauma and worsen the condition.",
@@ -80671,7 +81246,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fungal toenails",
-      "pearl_id": "beasley-pearls-4470"
+      "pearl_id": "beasley-pearls-4470",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fungal toenail"
+          ],
+          "actionable": [
+            "Check"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For fungal toenails, have patients file nails weekly with a disposable emery board after a shower and apply an over-the-counter antifungal like Tinactin daily.",
@@ -80684,7 +81278,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fungal toenails",
-      "pearl_id": "beasley-pearls-4477"
+      "pearl_id": "beasley-pearls-4477",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:weekly"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Prescription topical antifungals Kerydin and Jublia cost about $800 per bottle and are often not covered by insurance, with limited efficacy.",
@@ -80697,7 +81307,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fungal toenails",
-      "pearl_id": "beasley-pearls-4520"
+      "pearl_id": "beasley-pearls-4520",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:insurance"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Disinfect the inside of shoes with a Lysol wipe to reduce fungal recurrence.",
@@ -80710,7 +81336,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fungal toenails",
-      "pearl_id": "beasley-pearls-4596"
+      "pearl_id": "beasley-pearls-4596",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In diabetics, thick fungal toenails can cause pressure on the nail bed, leading to wounds, cellulitis, and osteomyelitis of the distal phalanx.",
@@ -80723,7 +81365,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "diabetic patients with thick fungal toenails",
-      "pearl_id": "beasley-pearls-4624"
+      "pearl_id": "beasley-pearls-4624",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fungal toenail"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "chunks": [

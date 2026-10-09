@@ -56383,7 +56383,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Ohio primary care clinicians",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-175"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-175",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Mania lasts for a week; anything less than that is not mania. Hospitalization or treatment can interrupt the week.",
@@ -56396,7 +56409,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Diagnosing bipolar disorder",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-447"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-447",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:mania"
+          ],
+          "rarity": 6.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Rapid cycling bipolar disorder is four or more episodes a year. Daily or every-other-day mood swings are not bipolar.",
@@ -56409,7 +56438,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Patients with suspected bipolar disorder",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-602"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-602",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:Daily"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SSRIs are contraindicated in bipolar disorder; they can flip someone into mania.",
@@ -56422,7 +56467,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Patients with bipolar disorder or history of mania",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-688"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-688",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bipolar disorder"
+          ],
+          "harm": [
+            "contraindicated"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient had a manic-like reaction to an SSRI, it doesn't mean they are bipolar, but it makes me suspicious they might be on the bipolar spectrum.",
@@ -56435,7 +56499,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Patients who develop manic symptoms on SSRI",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-710"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-710",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Screen any depressed patient for mania before starting an antidepressant.",
@@ -56449,7 +56526,26 @@
       "prompt_version": "v1",
       "applies_to": "All depressed patients",
       "by_presenter": false,
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-864"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-864",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:mania"
+          ],
+          "actionable": [
+            "Screen"
+          ],
+          "rarity": 6.17
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lamotrigine titration for bipolar: 25 mg for two weeks, then 50 for two weeks, then 100 for two weeks, then 200. 200 is usually the goal.",
@@ -56462,7 +56558,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Adults with bipolar disorder",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1034"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1034",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:25 mg"
+          ],
+          "rarity": 6.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For bipolar depression, if they've never been on anything and are not acutely psychotic, I tend to lean to lamotrigine because it's the best tolerated.",
@@ -56475,7 +56587,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Bipolar depression without psychosis, treatment-naïve",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1076"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1076",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bipolar depression"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For bipolar depression without psychosis, lamotrigine is preferred due to tolerability. If stopped for five days, the titration must be restarted. Inform patients about Stevens-Johnson syndrome and to stop immediately if rash occurs.",
@@ -56488,7 +56619,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "bipolar depression without psychosis",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1076-2"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1076-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:stevens-johnson syndro"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lamotrigine can cause Stevens-Johnson syndrome (rare); stop immediately and send to ER if a rash develops.",
@@ -56501,7 +56654,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Patients starting lamotrigine",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1135"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1135",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:stevens-johnson syndro"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 6.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For acute mania, use a mood stabilizer such as lithium or Depakote. Avoid Depakote in women of childbearing age due to teratogenicity; prefer lithium when possible.",
@@ -56514,7 +56689,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acute mania",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1192"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1192",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:teratogenicity"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Olanzapine is effective short-term for acute mania; for long-term maintenance, consider risperidone or paliperidone, which can be converted to long-acting injectable formulations.",
@@ -56527,7 +56721,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acute mania",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1219"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1219",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acute mania"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For nightmares or mid-sleep awakening due to hyperarousal, prazosin is effective. Start at 1 mg at bedtime; studies have pushed the dose to 8-9 mg if tolerated.",
@@ -56540,7 +56753,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with nightmares or mid-sleep awakening",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1306"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1306",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1 mg",
+            "drug:prazosin"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients on methadone for opioid use disorder should have baseline and periodic EKG to monitor QTc prolongation. If a patient says the methadone clinic told them to get an EKG, it is likely true.",
@@ -56553,7 +56786,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on methadone for OUD",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1460"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1460",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For anorexia in adolescents, family-based therapy (parents leading refeeding) results in higher remission rates than individual therapy. Anorexia has the highest mortality of any psychiatric disorder.",
@@ -56566,7 +56818,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adolescents with anorexia",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1557"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1557",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:family-based therapy"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Children with speech/language delay are at risk for reading difficulties. Strongest risk factor is male sex; other risks include hearing problems and birth weight under 2.5 kg. Bilingual households do not delay milestones.",
@@ -56579,7 +56847,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1680"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1680",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2.5 kg",
+            "threshold:under 2"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Varenicline is the most effective medication for smoking cessation and is safe in patients with mental health conditions. It must be started one week before the quit date and is typically used for 12 weeks; courses can be repeated if needed.",
@@ -56592,7 +56880,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who smoke and are ready to quit",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1778"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1778",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:12 weeks"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pregnancy, the first-line treatment for smoking cessation is psychosocial interventions; varenicline is not recommended.",
@@ -56605,7 +56909,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1813"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-1813",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:psychosocial intervent"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Transcranial magnetic stimulation (TMS) is an option for treatment-resistant depression after at least two failed medication trials. It is FDA-approved for depression, OCD, and smoking cessation, and is widely covered by private insurers.",
@@ -56618,7 +56938,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "treatment-resistant depression",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2166"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2166",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:transcranial magnetic "
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Doxepin at 3-6 mg is FDA-approved for sleep maintenance insomnia; generic doxepin can be used. Trazodone is commonly used but not recommended by sleep medicine guidelines due to side effect profile.",
@@ -56634,7 +56970,23 @@
       "numbers_unheard": [
         "3"
       ],
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2308"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2308",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:6 mg"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Quetiapine should not be used as first-line for insomnia due to metabolic risks. If used, keep dose low (25-50 mg) and only after other options have failed or when there is a psychiatric comorbidity.",
@@ -56647,7 +56999,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "insomnia",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2381"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2381",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:50 mg"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you are taking more than 2 mg of melatonin, there is no point; doses above 2 mg provide no additional benefit.",
@@ -56660,7 +57028,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with insomnia",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2513"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2513",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 mg",
+            "threshold:more than 2"
+          ],
+          "rarity": 6.17
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cannabis hyperemesis syndrome generally occurs with daily use; withdrawal symptoms peak around day 12, so patients need at least two weeks of sobriety before you can determine if symptoms are due to cannabis or another cause.",
@@ -56673,7 +57058,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected cannabis hyperemesis syndrome",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2906"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-2906",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Methylphenidate is preferred over amphetamines (Adderall) in breastfeeding because milk and infant serum levels are significantly lower with methylphenidate.",
@@ -56686,7 +57093,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "breastfeeding women requiring ADHD treatment",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3000"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3000",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:methylphenidate"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Atomoxetine and guanfacine have no reliable data in breastfeeding and should be avoided.",
@@ -56699,7 +57122,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "breastfeeding women",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3019"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3019",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:breastfeeding"
+          ],
+          "rarity": 7.9
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Clonidine is present in significant amounts in breast milk and infant serum; experts recommend against its use during breastfeeding.",
@@ -56712,7 +57151,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "breastfeeding women",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3031"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3031",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:breastfeeding"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When deprescribing benzodiazepines, use clonazepam or diazepam (longer-acting agents) and refer to the ASAM deprescribing guide.",
@@ -56725,7 +57183,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on chronic benzodiazepines",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3164"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3164",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:clonazepam"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Clonus is pathognomonic for serotonin syndrome and differentiates it from neuroleptic malignant syndrome, where you get more rigidity instead of clonus.",
@@ -56738,7 +57215,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on serotonergic drugs with fever, sweating, agitation",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3527"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3527",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:neuroleptic malignant "
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid prescribing two SSRIs or SNRIs at the same time; that is clearly bad prescribing and could lead to medical-legal trouble.",
@@ -56751,7 +57244,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all prescribers",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3675"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3675",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:snris"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Polypharmacy is acceptable if it is indicated, justified, and involves informed consent discussion.",
@@ -56764,7 +57276,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3704"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3704",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:informed consent"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Check for herbal supplements that may increase serotonergic activity when patients are on SSRIs or SNRIs.",
@@ -56777,7 +57305,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on SSRIs or SNRIs",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3716"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3716",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:snris"
+          ],
+          "actionable": [
+            "Check"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients on multiple serotonergic drugs, use Phenergan over Zofran to avoid increasing serotonergic load.",
@@ -56790,7 +57337,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on multiple serotonergic medications",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3718"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3718",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:serotonergic drugs"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.28
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient is on multiple serotonergic drugs, consider using Phenergan instead of Zofran for nausea to avoid loading them up with more serotonergic activity.",
@@ -56803,7 +57369,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on multiple serotonergic medications",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3719"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3719",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:serotonergic drugs"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Early signs of serotonin syndrome include anxiety and GI symptoms, which can precede severe cases and allow for early intervention.",
@@ -56816,7 +57401,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on serotonergic medications",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3745"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3745",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:early intervention"
+          ],
+          "rarity": 6.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Serotonin syndrome often presents with fever, sweating, and diarrhea, which can be mistaken for an infectious cause initially.",
@@ -56829,7 +57430,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on serotonergic medications",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3761"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3761",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:serotonin syndrome"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not prescribe multiple new serotonergic agents in a single visit; layer them one at a time to monitor for adverse effects.",
@@ -56842,7 +57459,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting serotonergic therapy",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3787"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3787",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.72
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not prescribe four new serotonergic agents at the same visit; layer them one at a time so you can identify which drug is causing problems.",
@@ -56855,7 +57488,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all prescribers",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3788"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3788",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.51
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In vulnerable populations like adolescents, use behavioral interventions before starting medications.",
@@ -56868,7 +57517,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "vulnerable populations, especially adolescents",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3893"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3893",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In addiction treatment, medication should be used first, unlike general psychiatry where behavioral therapy is prioritized.",
@@ -56881,7 +57546,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with addiction",
-      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3901"
+      "pearl_id": "dr-kelly-dunn-on-ihi-fm-board-review-3901",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:addiction treatment"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

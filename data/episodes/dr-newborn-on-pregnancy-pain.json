@@ -42235,7 +42235,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-233"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-233",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:20 weeks"
+          ],
+          "rarity": 6.47
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Warning signs that pain is not pregnancy-related include localized or abrupt onset, constant or severe pain, pain with nausea/vomiting, fever, or vaginal bleeding.",
@@ -42248,7 +42264,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women in first or second trimester",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-264"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-264",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pregnancy"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Appendicitis occurs in 1 in 1500 pregnancies; cholecystitis and nephrolithiasis occur in about 1 in 3000.",
@@ -42261,7 +42296,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-368"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-368",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nephrolithiasis"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A CT abdomen/pelvis delivers about 10 rads; the threshold for fetal harm is about 50 rads, so a single CT is safe if clinically indicated.",
@@ -42274,7 +42325,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-536"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-536",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Appendicitis symptoms in early pregnancy are identical to the non-pregnant state; right lower quadrant pain remains consistent throughout pregnancy.",
@@ -42287,7 +42354,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-665"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-665",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:right lower quadrant p"
+          ],
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ultrasound is the best test for appendicitis in pregnancy; MRI is second best. If ultrasound is nondiagnostic and MRI unavailable, get the CT scan.",
@@ -42300,7 +42383,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women with suspected appendicitis",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-687"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-687",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:Ultrasound"
+          ],
+          "actionable": [
+            "test for"
+          ],
+          "rarity": 6.84
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Round ligament pain typically occurs at the end of the second trimester/beginning of the third; it is a dull ache or sharp pulling sensation in the lower abdomen and groin.",
@@ -42313,7 +42415,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-912"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-912",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:round ligament pain"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lightning crotch is a sudden, sharp, nerve-type pain in the groin radiating down the inner thigh or vagina, typically in the third trimester; its physiology is unknown.",
@@ -42326,7 +42444,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women in third trimester",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-973"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-973",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:lightning crotch"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Placental abruption is the most dangerous cause of abdominal pain in pregnancy; it can be concealed (no vaginal bleeding) and typically presents with intense, unrelenting pain.",
@@ -42339,7 +42473,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant women in third trimester",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-1038"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-1038",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:placental abruption"
+          ],
+          "harm": [
+            "dangerous"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Placental abruption can present with concealed bleeding (no vaginal bleeding) if the abruption is not near the cervix; it should always be on the differential for labor-like pain.",
@@ -42352,7 +42505,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with abdominal pain or contractions",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-1054"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-1054",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:placental abruption"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ACOG states that in the absence of medical contraindication, maternal request alone is sufficient indication for pain relief during labor.",
@@ -42365,7 +42540,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women in labor",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-1102"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-1102",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "contraindication"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Neuraxial anesthesia should be offered for pain relief during any stage of labor, including early labor.",
@@ -42378,7 +42569,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "laboring patients",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-1179"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-1179",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:neuraxial anesthesia"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The idea that early epidural prolongs labor is false; it only prolongs labor by about seven minutes.",
@@ -42391,7 +42598,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "laboring patients receiving epidural",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-1240"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-1240",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IV opioids (e.g., fentanyl) have little effect on maternal pain scores, provide unreliable analgesia, and cross the placenta with adverse neonatal effects including respiratory depression.",
@@ -42404,7 +42624,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "laboring patients",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-1376"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-1376",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:depression"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use IV opioids with caution at the time of delivery because they can lead to a baby with increased opioid concentration and depressed respiratory drive.",
@@ -42417,7 +42653,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "laboring patients near delivery",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-1395"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-1395",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:iv opioids"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 6.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Single-injection spinal anesthesia (opioid with local anesthetic in subarachnoid space) is an option for patients about to deliver within the next hour or so, and may be within family medicine scope of practice.",
@@ -42430,7 +42685,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in active labor with imminent delivery",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-1499"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-1499",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:spinal anesthesia"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pudendal nerve block is useful primarily in the second stage of labor and for perineal repair; it is less effective than spinal but equivalent for episiotomy repair.",
@@ -42443,7 +42714,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "laboring patients in second stage or needing perineal repair",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-1758"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-1758",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pudendal nerve block"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nitrous oxide (50% oxygen/50% nitric oxide) is less effective than epidural but allows patient control, rapid offset, and does not require additional monitoring.",
@@ -42456,7 +42743,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "laboring patients, especially those who cannot get epidural",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-1966"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-1966",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nitrous oxide"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nitrous oxide crosses the placenta but is eliminated rapidly by the baby after the first breath, with no long-term effects.",
@@ -42469,7 +42772,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "laboring patients using nitrous oxide",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-1998"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-1998",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nitrous oxide"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start with a multimodal pain plan using NSAIDs and acetaminophen; only use low-dose opioids if needed due to addiction risk.",
@@ -42482,7 +42801,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "postpartum women",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-2132"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-2132",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acetaminophen"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 6.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Postpartum pain should be managed with a multimodal approach starting with NSAIDs and acetaminophen, reserving opioids for low-dose use only when needed.",
@@ -42495,7 +42833,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "postpartum patients",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-2133"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-2133",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acetaminophen"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "About 10-15% of women who received opioids during birth ended up addicted, though recent practice changes may have reduced this.",
@@ -42508,7 +42865,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women receiving opioids during birth",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-2158"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-2158",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:opioids"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sterile water injections (intradermal or subcutaneous) can be used for natural birth pain relief, targeting somatic distribution of sacral nerves; give 0.1 mL per spot.",
@@ -42521,7 +42894,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "laboring patients desiring natural birth",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-2207"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-2207",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:0.1 mL"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For sterile water injections, draw up 0.5 mL but give 0.1 mL intradermally at each site, using a fine needle like a TB test.",
@@ -42534,7 +42926,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with back labor wanting natural birth",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-2209"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-2209",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:0.5 mL"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.4
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sterile water injections are given at the PSIS and then 3 cm below and 1 cm medial, with two providers injecting simultaneously.",
@@ -42547,7 +42958,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with back labor",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-2236"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-2236",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 cm"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sterile water injections work by causing a burning sensation that distracts the body from recognizing uterine contraction pain.",
@@ -42560,7 +42987,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with back labor",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-2252"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-2252",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sterile water injectio"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "TENS units can be used during labor; they cause muscle contraction and help confuse the brain's pain perception.",
@@ -42573,7 +43016,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women in labor",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-2268"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-2268",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tens unit"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hydrotherapy during the first stage of labor may be associated with shorter labor and decreased use of spinal/epidural anesthesia in healthy women, with no adverse maternal, fetal, or neonatal outcomes.",
@@ -42586,7 +43045,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "healthy women in first stage of labor",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-2344"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-2344",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:epidural anesthesia"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Continuous one-on-one emotional support (doula) during labor has improving evidence for benefit.",
@@ -42599,7 +43077,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women in labor",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-2393"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-2393",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "OMT for pregnant patients can include soft tissue techniques and sacral rocking, performed with the patient on their side or back.",
@@ -42612,7 +43103,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with lower back pain",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-2451"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-2451",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:soft tissue technique"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Paracervical nerve blocks are not recommended for labor pain; they are more commonly used for IUD insertion.",
@@ -42625,7 +43132,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "labor pain management",
-      "pearl_id": "dr-newborn-on-pregnancy-pain-2503"
+      "pearl_id": "dr-newborn-on-pregnancy-pain-2503",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:paracervical nerve blo"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

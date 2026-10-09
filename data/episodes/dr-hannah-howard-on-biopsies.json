@@ -50479,7 +50479,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "suspected melanoma",
-      "pearl_id": "dr-hannah-howard-on-biopsies-74"
+      "pearl_id": "dr-hannah-howard-on-biopsies-74",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For rashes, use a punch biopsy to capture deeper skin layers needed for histologic evaluation.",
@@ -50492,7 +50511,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "rashes",
-      "pearl_id": "dr-hannah-howard-on-biopsies-123"
+      "pearl_id": "dr-hannah-howard-on-biopsies-123",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Mark the biopsy area before numbing with lidocaine and epinephrine to avoid blanching that obscures the lesion.",
@@ -50505,7 +50543,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any skin biopsy",
-      "pearl_id": "dr-hannah-howard-on-biopsies-150"
+      "pearl_id": "dr-hannah-howard-on-biopsies-150",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:lidocaine",
+            "test:biopsy"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Send all excised tissue to pathology; the only common exception is an obvious skin tag.",
@@ -50518,7 +50576,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any skin biopsy",
-      "pearl_id": "dr-hannah-howard-on-biopsies-159"
+      "pearl_id": "dr-hannah-howard-on-biopsies-159",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Provide the pathologist with a differential diagnosis and as much clinical information as possible on the requisition form.",
@@ -50531,7 +50602,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any skin biopsy",
-      "pearl_id": "dr-hannah-howard-on-biopsies-167"
+      "pearl_id": "dr-hannah-howard-on-biopsies-167",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:differential diagnosis"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Take photos of the biopsy site, at least on the patient's phone, and upload to the medical record if possible.",
@@ -50544,7 +50631,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any skin biopsy",
-      "pearl_id": "dr-hannah-howard-on-biopsies-182"
+      "pearl_id": "dr-hannah-howard-on-biopsies-182",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a pathology report seems inconsistent, check whether a dermatopathologist read the specimen.",
@@ -50557,7 +50660,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any skin biopsy with unexpected pathology",
-      "pearl_id": "dr-hannah-howard-on-biopsies-189"
+      "pearl_id": "dr-hannah-howard-on-biopsies-189",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Keratoacanthoma is a form of squamous cell carcinoma; it is firm, rapidly growing, does not respond to antibiotics, and should be treated as SCC.",
@@ -50570,7 +50689,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with firm, rapidly growing skin lesion",
-      "pearl_id": "dr-hannah-howard-on-biopsies-265"
+      "pearl_id": "dr-hannah-howard-on-biopsies-265",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:squamous cell carcinom"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Squamous cell carcinoma causes more deaths annually in the U.S. than melanoma due to its higher prevalence.",
@@ -50583,7 +50718,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "dr-hannah-howard-on-biopsies-291"
+      "pearl_id": "dr-hannah-howard-on-biopsies-291",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:squamous cell carcinom"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the free Mohs AUC app to determine if a skin cancer meets criteria for Mohs surgery referral; features include high-risk areas (face, ears, hands), cancer type, size, and aggressive pathology features.",
@@ -50596,7 +50747,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "skin cancers being considered for Mohs referral",
-      "pearl_id": "dr-hannah-howard-on-biopsies-384"
+      "pearl_id": "dr-hannah-howard-on-biopsies-384",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:mohs surgery"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Idiopathic guttate hypomelanosis (IGH) presents as small white spots on arms and legs, is not flaky or scaly (unlike tinea versicolor, which is scaly and more common on the torso).",
@@ -50609,7 +50779,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with small white spots on arms/legs",
-      "pearl_id": "dr-hannah-howard-on-biopsies-597"
+      "pearl_id": "dr-hannah-howard-on-biopsies-597",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:idiopathic guttate hyp"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Insurance typically does not cover skin tag removal; do not promise patients that a dermatologist will remove them for free.",
@@ -50622,7 +50808,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requesting skin tag removal",
-      "pearl_id": "dr-hannah-howard-on-biopsies-631"
+      "pearl_id": "dr-hannah-howard-on-biopsies-631",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:insurance"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Liquid nitrogen for warts takes at least three in-office treatments on average; do not promise a one-time cure.",
@@ -50635,7 +50840,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "warts treated with liquid nitrogen",
-      "pearl_id": "dr-hannah-howard-on-biopsies-667"
+      "pearl_id": "dr-hannah-howard-on-biopsies-667",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:warts"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Molluscum contagiosum typically resolves on its own within one to two years; encourage patients not to share towels or bathe with others.",
@@ -50648,7 +50872,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with molluscum contagiosum",
-      "pearl_id": "dr-hannah-howard-on-biopsies-787"
+      "pearl_id": "dr-hannah-howard-on-biopsies-787",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:molluscum contagiosum"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The 'BOTE sign' (beginning of the end) in molluscum indicates the immune system is responding and the lesions will soon resolve; it is not a sign of infection.",
@@ -50661,7 +50901,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "molluscum lesions that appear inflamed",
-      "pearl_id": "dr-hannah-howard-on-biopsies-841"
+      "pearl_id": "dr-hannah-howard-on-biopsies-841",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recurrent shingles in the lower back/buttock region is almost always HSV, not recurrent VZV.",
@@ -50674,7 +50927,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with recurrent vesicular rash in lower back/buttock",
-      "pearl_id": "dr-hannah-howard-on-biopsies-860"
+      "pearl_id": "dr-hannah-howard-on-biopsies-860",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with >6 episodes of HSV per year, consider daily suppressive antiviral therapy.",
@@ -50687,7 +50956,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with frequent HSV recurrences",
-      "pearl_id": "dr-hannah-howard-on-biopsies-869"
+      "pearl_id": "dr-hannah-howard-on-biopsies-869",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>6",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Infantile hemangiomas that are >4 cm, on midline lumbosacral area, or if there are ≥5 hemangiomas, warrant referral for possible systemic treatment or liver ultrasound.",
@@ -50700,7 +50989,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with hemangiomas",
-      "pearl_id": "dr-hannah-howard-on-biopsies-938"
+      "pearl_id": "dr-hannah-howard-on-biopsies-938",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4 cm",
+            "threshold:>4",
+            "test:ultrasound"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For superficial infantile hemangiomas not in cosmetically sensitive areas, topical timolol one drop twice a day can be used; oral propranolol is reserved for larger or complicated cases.",
@@ -50713,7 +51020,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with superficial hemangiomas",
-      "pearl_id": "dr-hannah-howard-on-biopsies-962"
+      "pearl_id": "dr-hannah-howard-on-biopsies-962",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:twice a day",
+            "drug:timolol"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For infantile hemangiomas that are superficial and not on a highly cosmetically sensitive area, prescribe topical timolol one drop twice daily; the gel-forming solution is thicker and stays in place better.",
@@ -50726,7 +51050,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with superficial hemangioma",
-      "pearl_id": "dr-hannah-howard-on-biopsies-962-2"
+      "pearl_id": "dr-hannah-howard-on-biopsies-962-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:daily",
+            "drug:timolol"
+          ],
+          "actionable": [
+            "prescribe"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a hemangioma might need systemic treatment, refer urgently because they can rapidly grow at 5-7 weeks; medicines are better at preventing growth than shrinking established lesions.",
@@ -50739,7 +51083,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with hemangioma needing systemic therapy",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1007"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1007",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:7 weeks"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For ulcerated hemangiomas, use good wound care with mupirocin ointment or zinc oxide-based ointment; ulceration is also a reason to consider oral propranolol.",
@@ -50752,7 +51115,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with ulcerated hemangioma",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1071"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1071",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:propranolol"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start tretinoin at 0.025% cream, instruct patients to use no more than a pea-sized amount for the entire face, apply to dry skin before bed, and moisturize on top; if sensitive, use the sandwich method (moisturizer, tretinoin, moisturizer).",
@@ -50768,7 +51150,29 @@
       "numbers_unheard": [
         "0.025"
       ],
-      "pearl_id": "dr-hannah-howard-on-biopsies-1106"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1106",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tretinoin"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 8.85,
+          "capped": [
+            "number not heard: 0.025"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start tretinoin two times a week and work up to nightly as skin tolerates; do not use in pregnancy.",
@@ -50781,7 +51185,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting tretinoin",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1120"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1120",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pregnancy"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient uses too much tretinoin and develops retinoid dermatitis, tell them to take a break and stop tretinoin until skin returns to normal, then restart more slowly.",
@@ -50794,7 +51217,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with retinoid dermatitis from tretinoin",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1130"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1130",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:tretinoin"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Differin gel (adapalene) is a great over-the-counter option for acne, about $13, and was previously prescription strength.",
@@ -50807,7 +51249,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acne",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1143"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1143",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For benzoyl peroxide, recommend PanOxyl or CeraVe; use 4% for the face and 10% for truncal breakouts.",
@@ -50820,7 +51275,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acne",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1156"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1156",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:benzoyl peroxide"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use antibiotics for acne for more than three months; the typical oral antibiotic is doxycycline 100 mg daily or BID, with counseling on photosensitivity, heartburn, nausea, and avoidance in pregnancy.",
@@ -50833,7 +51307,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acne on oral antibiotics",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1168"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1168",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:100 mg",
+            "frequency:daily",
+            "drug:doxycycline"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Isotretinoin (Accutane) is for moderate to severe, scarring, or recalcitrant acne; requires monthly visits and monthly pregnancy tests for females; main side effects are dry lips, dry skin, nosebleeds, and joint pain.",
@@ -50846,7 +51341,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on isotretinoin",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1189"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1189",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:monthly"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Spironolactone is a favorite acne medicine for women; start at 100 mg daily, can be divided 50 mg BID, but once daily is easier; take with food, preferably at dinner time.",
@@ -50859,7 +51370,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with acne",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1247"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1247",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:100 mg",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For spironolactone, potassium monitoring is not needed in young healthy women; start checking potassium in early to mid-40s or if on other antihypertensives.",
@@ -50872,7 +51403,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women on spironolactone for acne",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1303"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1303",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:spironolactone"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Spironolactone takes at least 2-3 months to kick in, up to 6 months for full benefit; after months to a year of clear skin, consider a trial off or dose reduction to 50 mg daily.",
@@ -50885,7 +51435,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women on spironolactone for acne",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1316"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1316",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 months",
+            "threshold:at least 2",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For perioral dermatitis, never use topical steroids; treat with antibiotics, Protopic (tacrolimus), or Elidel (pimecrolimus).",
@@ -50898,7 +51469,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with perioral dermatitis",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1384"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1384",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:perioral dermatitis"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Triggers for perioral dermatitis include removing wipes, whitening toothpaste, oils on the skin, inhaled steroids, other steroids, and hormonal factors.",
@@ -50911,7 +51501,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with perioral dermatitis",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1418"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1418",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:perioral dermatitis"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For rosacea, topicals include metronidazole, ivermectin, and azelaic acid; oral antibiotics and sometimes isotretinoin are options; lasers are especially good for the broken blood vessel type.",
@@ -50924,7 +51530,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with rosacea",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1453"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1453",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:metronidazole"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Folliculitis is commonly seen in men on testosterone supplements or people taking whey protein; encourage loose-fitting clothing; treat with benzoyl peroxide wash, clindamycin lotion, or oral antibiotics.",
@@ -50937,7 +51559,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with folliculitis",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1503"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1503",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:clindamycin"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pityrosporum folliculitis is monomorphic tiny red bumps and pustules due to yeast Malassezia, more common with humidity, high oil, or prior antibiotic use; it has no comedones.",
@@ -50950,7 +51591,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected pityrosporum folliculitis",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1530"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1530",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:folliculitis"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For keratosis pilaris, tell patients it is a normal skin type, often autosomal dominant, and improves with age; over-the-counter products with urea, salicylic acid, lactic acid, or retinoids help; steroids are rarely needed.",
@@ -50963,7 +51623,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with keratosis pilaris",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1585"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1585",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:keratosis pilaris"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For an abscess, do a ring block with lidocaine, use an 11 blade to pierce, apply gentle pressure from the sides, and always culture to know what you are dealing with.",
@@ -50976,7 +51652,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with skin abscess",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1618"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1618",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:lidocaine",
+            "test:culture"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hidradenitis suppurativa is an inflammatory disorder of the hair follicle, not an infection and not from poor hygiene; open comedones (blackheads) in the armpits or groin are a characteristic clue.",
@@ -50989,7 +51685,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hidradenitis suppurativa",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1650"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1650",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hidradenitis suppurati"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For hidradenitis suppurativa, never pack abscesses because it can be painful and introduces a foreign body to an inflammatory wound; intralesional Kenalog (triamcinolone) injection can be used for inflammatory lesions.",
@@ -51002,7 +51714,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hidradenitis suppurativa abscesses",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1782"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1782",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hidradenitis suppurati"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For eczema, avoid long hot showers, baths, and hot tubs; use a gentle soap like Dove; pat dry after showering; apply steroid or nonsteroid topical to active areas, then moisturizer all over.",
@@ -51015,7 +51746,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with eczema",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1822"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1822",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:eczema"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The three main topical steroids for eczema are clobetasol (most potent), triamcinolone (mid-strength), and hydrocortisone 2.5% (mild).",
@@ -51028,7 +51778,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with eczema",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1851"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1851",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:hydrocortisone"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Wet wraps for eczema: apply medicine to the area, then moisturizer, then a damp cloth or sock, then a dry layer on top; this increases penetration of the steroid and moisturizer.",
@@ -51041,7 +51807,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with eczema",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1871"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1871",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:eczema"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nonsteroid options for eczema include pimecrolimus (Elidel) cream, comparable to hydrocortisone 2.5%, and tacrolimus (Protopic) ointment, comparable to triamcinolone 1%; they may burn at first but that improves.",
@@ -51057,7 +51839,23 @@
       "numbers_unheard": [
         "2.5"
       ],
-      "pearl_id": "dr-hannah-howard-on-biopsies-1906"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1906",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:hydrocortisone"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pimecrolimus cream is comparable in strength to hydrocortisone 2.5%, and tacrolimus ointment to triamcinolone 0.1%; advise patients that initial burning improves.",
@@ -51074,7 +51872,23 @@
         "2.5",
         "0.1"
       ],
-      "pearl_id": "dr-hannah-howard-on-biopsies-1907"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1907",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:hydrocortisone"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The topical JAK inhibitor Opzelura is approved for eczema but costs about $1,000 per tube without insurance.",
@@ -51090,7 +51904,23 @@
       "numbers_unheard": [
         "1000"
       ],
-      "pearl_id": "dr-hannah-howard-on-biopsies-1921"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1921",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:insurance"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To determine how much topical medication to prescribe, use the fingertip unit method; you can Google it to find the chart.",
@@ -51103,7 +51933,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "prescribing topical medications",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1950"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1950",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "prescribe"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For applying to hands twice a day for one month, prescribe a 30-gram tube (1 gram per day).",
@@ -51116,7 +51962,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient topical steroid prescription for hands",
-      "pearl_id": "dr-hannah-howard-on-biopsies-1977"
+      "pearl_id": "dr-hannah-howard-on-biopsies-1977",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:twice a day"
+          ],
+          "actionable": [
+            "prescribe"
+          ],
+          "rarity": 6.49
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For eyelid dermatitis, recommend CeraVe Hydrating Cleanser as the last step in the shower to remove any excess shampoo that might have accumulated there.",
@@ -51129,7 +51994,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with eyelid dermatitis",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2036"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2036",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:eyelid dermatitis"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Calm eyelid dermatitis with a short round of topical steroids for a week or two, then switch to a calcineurin inhibitor like Elidel or Protopic.",
@@ -51142,7 +52023,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with eyelid dermatitis",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2045"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2045",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:eyelid dermatitis"
+          ],
+          "actionable": [
+            "switch"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nicotinamide 500 mg twice daily has some evidence in reducing actinic keratoses.",
@@ -51155,7 +52055,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with actinic keratoses",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2096"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2096",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:500 mg",
+            "frequency:daily"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Drug rashes can appear months or years after starting a medication and may take up to three months to resolve after discontinuation.",
@@ -51168,7 +52085,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected drug rash",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2163"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2163",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:drug rash"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 6.68
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For hand dermatitis, advise using hand sanitizer instead of water when possible, and if washing hands, use cold water and apply moisturizer after.",
@@ -51181,7 +52117,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hand dermatitis",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2196"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2196",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hand dermatitis"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Look for small fissures or opening lines on the hands as a clue for eczema rather than psoriasis.",
@@ -51194,7 +52149,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hand rash for differential",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2223"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2223",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:psoriasis"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For painful fissures on hands, consider applying super glue to glue them together, or wear Vaseline and gloves at bedtime; topical timolol can also promote wound healing.",
@@ -51207,7 +52178,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hand fissures",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2296"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2296",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:timolol"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Differentiate stasis dermatitis (bilateral, with background venous disease) from cellulitis (unilateral); manage stasis dermatitis with leg elevation, compression, emollients, and triamcinolone for inflammation.",
@@ -51220,7 +52210,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with leg rash",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2345"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2345",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:stasis dermatitis"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For asteototic eczema (dry skin eczema with cracked riverbed appearance), advise avoiding hot water, rubbing, and scratching; treat with moisturizer and triamcinolone for itch.",
@@ -51233,7 +52239,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients with dry, cracked skin",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2375"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2375",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:triamcinolone"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For thick skin on heels or thick toenails, recommend urea 40% cream, available over the counter for about $15.",
@@ -51246,7 +52271,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with keratoderma or thick toenails",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2419"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2419",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The 'two foot one hand' pattern (both feet and one hand involved) is a classic sign of tinea; if suspected, obtain fungal culture and avoid topical steroids.",
@@ -51259,7 +52297,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected tinea",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2433"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2433",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For tinea capitis, check for occipital lymphadenopathy; culture to identify species: terbinafine is better for Trichophyton; treat for 8 weeks.",
@@ -51272,7 +52329,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with scaling scalp and hair loss",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2457"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2457",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:8 weeks",
+            "test:culture"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid systemic steroids in psoriasis; they can cause flare or pustular psoriasis.",
@@ -51285,7 +52362,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "psoriasis patients",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2530"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2530",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:systemic steroids"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Guttate psoriasis can be triggered by a streptococcal infection even without symptoms; about one-third of cases progress to chronic plaque psoriasis.",
@@ -51298,7 +52394,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute onset of small psoriatic plaques",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2541"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2541",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:guttate psoriasis"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For intertrigo, look for satellite pustules as a clue that it is yeast; be very careful with topical steroids, prolonged use on the thighs can cause severe steroid atrophy.",
@@ -51311,7 +52423,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with rash in body folds",
-      "pearl_id": "dr-hannah-howard-on-biopsies-2572"
+      "pearl_id": "dr-hannah-howard-on-biopsies-2572",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:topical steroids"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

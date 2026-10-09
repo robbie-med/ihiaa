@@ -99965,7 +99965,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with thrombocytopenia",
-      "pearl_id": "dr-lee-on-morning-reports-2-319"
+      "pearl_id": "dr-lee-on-morning-reports-2-319",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:differential diagnosis"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 5.99
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected ITP, workup includes a CBC and peripheral blood smear.",
@@ -99978,7 +99997,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected ITP",
-      "pearl_id": "dr-lee-on-morning-reports-2-371"
+      "pearl_id": "dr-lee-on-morning-reports-2-371",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CBC"
+          ],
+          "rarity": 6.47
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected DIC, order coagulation profile including PT, PTT, fibrinogen, and D-dimer.",
@@ -99991,7 +100026,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected DIC",
-      "pearl_id": "dr-lee-on-morning-reports-2-388"
+      "pearl_id": "dr-lee-on-morning-reports-2-388",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:PT"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Infection can cause thrombocytopenia via bone marrow suppression in severe sepsis.",
@@ -100004,7 +100058,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe sepsis",
-      "pearl_id": "dr-lee-on-morning-reports-2-513"
+      "pearl_id": "dr-lee-on-morning-reports-2-513",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bone marrow suppressio"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 6.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected malignancy causing thrombocytopenia, start with a peripheral blood smear and possibly bone marrow aspiration.",
@@ -100017,7 +100090,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected malignancy-related thrombocytopenia",
-      "pearl_id": "dr-lee-on-morning-reports-2-563"
+      "pearl_id": "dr-lee-on-morning-reports-2-563",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:peripheral blood smear"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Thrombotic thrombocytopenias include TTP, HIT, antiphospholipid syndrome, and vasculitides; DIC is a mixed disorder.",
@@ -100030,7 +100122,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thrombocytopenia",
-      "pearl_id": "dr-lee-on-morning-reports-2-831"
+      "pearl_id": "dr-lee-on-morning-reports-2-831",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:antiphospholipid syndr"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Wet purpura refers to mucosal bleeding; dry purpura is petechiae on skin.",
@@ -100043,7 +100151,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thrombocytopenia",
-      "pearl_id": "dr-lee-on-morning-reports-2-921"
+      "pearl_id": "dr-lee-on-morning-reports-2-921",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To interpret an arterial blood gas, first check pH, then bicarbonate, then calculate expected pCO2 using Winter's formula: 1.5 x bicarbonate + 8 ± 2.",
@@ -100056,7 +100180,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with metabolic acidosis",
-      "pearl_id": "dr-lee-on-morning-reports-2-1263"
+      "pearl_id": "dr-lee-on-morning-reports-2-1263",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:winter's formula"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 6.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After calculating the expected pCO2, compare it to the actual pCO2 to determine if there is a superimposed respiratory acidosis or alkalosis.",
@@ -100069,7 +100212,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with metabolic acidosis",
-      "pearl_id": "dr-lee-on-morning-reports-2-1314"
+      "pearl_id": "dr-lee-on-morning-reports-2-1314",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:respiratory acidosis"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anion gap is calculated as sodium minus chloride minus bicarbonate.",
@@ -100082,7 +100241,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "when calculating anion gap",
-      "pearl_id": "dr-lee-on-morning-reports-2-1390"
+      "pearl_id": "dr-lee-on-morning-reports-2-1390",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:anion gap"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After anion gap, calculate the delta-delta: (anion gap - 12) + bicarbonate; if less than 22, there is a superimposed non-anion gap metabolic acidosis.",
@@ -100095,7 +100270,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with metabolic acidosis",
-      "pearl_id": "dr-lee-on-morning-reports-2-1432"
+      "pearl_id": "dr-lee-on-morning-reports-2-1432",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:less than 2"
+          ],
+          "actionable": [
+            "calculate"
+          ],
+          "rarity": 7.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A patient with normal oxygen saturation can still have respiratory acidosis due to hypoventilation.",
@@ -100108,7 +100302,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with respiratory acidosis",
-      "pearl_id": "dr-lee-on-morning-reports-2-1480"
+      "pearl_id": "dr-lee-on-morning-reports-2-1480",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:respiratory acidosis"
+          ],
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always go through the steps of ABG interpretation (including Winter's formula) to avoid missing a superimposed respiratory acidosis.",
@@ -100121,7 +100331,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "when interpreting ABG",
-      "pearl_id": "dr-lee-on-morning-reports-2-1511"
+      "pearl_id": "dr-lee-on-morning-reports-2-1511",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:respiratory acidosis"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use FNA for lymphadenopathy; it is a misdemeanor.",
@@ -100134,7 +100363,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "for lymphadenopathy",
-      "pearl_id": "dr-lee-on-morning-reports-2-1870"
+      "pearl_id": "dr-lee-on-morning-reports-2-1870",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:lymphadenopathy"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Prefer excisional biopsy for suspected lymphoma to avoid nondiagnostic results and repeat procedures.",
@@ -100147,7 +100395,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "for suspected lymphoma",
-      "pearl_id": "dr-lee-on-morning-reports-2-2018"
+      "pearl_id": "dr-lee-on-morning-reports-2-2018",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before writing assessment and plan, always make a problem list.",
@@ -100160,7 +100427,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "before writing assessment and plan",
-      "pearl_id": "dr-lee-on-morning-reports-2-2110"
+      "pearl_id": "dr-lee-on-morning-reports-2-2110",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:problem list"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 5.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Transfuse platelets if count less than 10, or less than 20 with bleeding.",
@@ -100173,7 +100459,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "in thrombocytopenic patients",
-      "pearl_id": "dr-lee-on-morning-reports-2-2163"
+      "pearl_id": "dr-lee-on-morning-reports-2-2163",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:less than 1"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 6.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a complex case, prioritize problems, give a differential diagnosis, and provide a plan for that differential.",
@@ -100186,7 +100491,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "in complex cases",
-      "pearl_id": "dr-lee-on-morning-reports-2-2255"
+      "pearl_id": "dr-lee-on-morning-reports-2-2255",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:differential diagnosis"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 5.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A D-dimer greater than 128,000 is severely elevated and should prompt immediate concern for a serious condition.",
@@ -100199,7 +100523,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "when evaluating elevated D-dimer",
-      "pearl_id": "dr-lee-on-morning-reports-2-2530"
+      "pearl_id": "dr-lee-on-morning-reports-2-2530",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:greater than 1"
+          ],
+          "rarity": 6.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In chronic liver disease, vitamin K is unlikely to correct coagulopathy because the problem is not vitamin K deficiency but impaired hepatic synthesis of clotting factors.",
@@ -100212,7 +100552,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic liver disease and coagulopathy",
-      "pearl_id": "dr-lee-on-morning-reports-2-2736"
+      "pearl_id": "dr-lee-on-morning-reports-2-2736",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chronic liver disease"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In chronic liver disease, vitamin K is unlikely to make a big difference because the coagulopathy is not due to deficiency.",
@@ -100225,7 +100581,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "in chronic liver disease",
-      "pearl_id": "dr-lee-on-morning-reports-2-2739"
+      "pearl_id": "dr-lee-on-morning-reports-2-2739",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:chronic liver disease"
+          ],
+          "rarity": 6.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "DIC is a disease process of a widespread hypercoagulable state leading to micro- and macrovascular thrombosis, compromised organs, and consumption of clotting factors causing excessive bleeding.",
@@ -100238,7 +100610,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-lee-on-morning-reports-2-3145"
+      "pearl_id": "dr-lee-on-morning-reports-2-3145",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "No single lab test diagnoses DIC; look for elevated D-dimer, elevated INR, low fibrinogen, low platelets, and plus/minus schistocytes.",
@@ -100251,7 +100639,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients suspected of having DIC",
-      "pearl_id": "dr-lee-on-morning-reports-2-3468"
+      "pearl_id": "dr-lee-on-morning-reports-2-3468",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:INR"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An elevated D-dimer, especially if very high (e.g., >150,000), should raise suspicion for DIC.",
@@ -100267,7 +100671,23 @@
       "numbers_unheard": [
         "150000"
       ],
-      "pearl_id": "dr-lee-on-morning-reports-2-3493"
+      "pearl_id": "dr-lee-on-morning-reports-2-3493",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>1"
+          ],
+          "rarity": 5.84
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DIC with active hemorrhage, transfuse platelets to keep them above 50,000; if not actively hemorrhaging, keep above 20,000.",
@@ -100284,7 +100704,29 @@
         "50000",
         "20000"
       ],
-      "pearl_id": "dr-lee-on-morning-reports-2-3657"
+      "pearl_id": "dr-lee-on-morning-reports-2-3657",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:above 5"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 7.37,
+          "capped": [
+            "number not heard: 50000, 20000"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DIC, you give coagulation factors (FFP, cryoprecipitate) and platelets because exsanguination will kill the patient now, whereas the clotting may kill them slower.",
@@ -100298,7 +100740,32 @@
       "prompt_version": "v1",
       "applies_to": "patients with DIC and active hemorrhage",
       "by_presenter": false,
-      "pearl_id": "dr-lee-on-morning-reports-2-3728"
+      "pearl_id": "dr-lee-on-morning-reports-2-3728",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cryoprecipitate"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "kill"
+          ],
+          "rarity": 7.54,
+          "capped": [
+            "said by another participant"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For DIC with extensive clotting (e.g., causing AKI, ACS, encephalopathy), heparin may be considered, but this decision is made by hematology-oncology, not the primary team.",
@@ -100311,7 +100778,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DIC and extensive thrombosis",
-      "pearl_id": "dr-lee-on-morning-reports-2-3757"
+      "pearl_id": "dr-lee-on-morning-reports-2-3757",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:encephalopathy"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DIC with active bleeding, never give TPA (tissue plasminogen activator); heparin stabilizes clots and does not break them up.",
@@ -100324,7 +100807,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DIC and active bleeding",
-      "pearl_id": "dr-lee-on-morning-reports-2-3809"
+      "pearl_id": "dr-lee-on-morning-reports-2-3809",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:tissue plasminogen act"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A MELD score of 36 corresponds to approximately 90% 90-day mortality without liver transplant.",
@@ -100337,7 +100842,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with decompensated cirrhosis",
-      "pearl_id": "dr-lee-on-morning-reports-2-3933"
+      "pearl_id": "dr-lee-on-morning-reports-2-3933",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:meld score"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A MELD score of 36 carries an approximate 90-day mortality risk of 90% without liver transplant.",
@@ -100350,7 +100871,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with decompensated cirrhosis",
-      "pearl_id": "dr-lee-on-morning-reports-2-3935"
+      "pearl_id": "dr-lee-on-morning-reports-2-3935",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:mortality risk"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with decompensated cirrhosis and suspected DIC, treat coagulation aggressively with IV vitamin K, cryoprecipitate, and FFP.",
@@ -100363,7 +100900,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with decompensated liver cirrhosis and DIC",
-      "pearl_id": "dr-lee-on-morning-reports-2-3999"
+      "pearl_id": "dr-lee-on-morning-reports-2-3999",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:decompensated cirrhosi"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 7.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a patient with decompensated cirrhosis and bleeding, excisional biopsy has increased risk of bleeding; core biopsy is a good alternative, and FNA is not recommended.",
@@ -100376,7 +100932,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with decompensated liver cirrhosis and bleeding",
-      "pearl_id": "dr-lee-on-morning-reports-2-4016"
+      "pearl_id": "dr-lee-on-morning-reports-2-4016",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with decompensated cirrhosis and possible lymphoma, the decompensated cirrhosis is a more urgent problem to treat than the possible cancer; hold off on biopsy until the patient stabilizes.",
@@ -100389,7 +100964,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with decompensated cirrhosis and suspected lymphoma",
-      "pearl_id": "dr-lee-on-morning-reports-2-4023"
+      "pearl_id": "dr-lee-on-morning-reports-2-4023",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A sudden opacified hemithorax on chest X-ray in a bleeding patient may be due to a mucus plug or blood plug, not necessarily hemothorax; bronchoscopy can be diagnostic and therapeutic.",
@@ -100402,7 +100999,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute hemithorax opacification and bleeding",
-      "pearl_id": "dr-lee-on-morning-reports-2-4433"
+      "pearl_id": "dr-lee-on-morning-reports-2-4433",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "DIC-related hematuria can be distinguished from traumatic hematuria by the presence of other bleeding sites and lab evidence of consumptive coagulopathy.",
@@ -100415,7 +101031,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DIC and hematuria",
-      "pearl_id": "dr-lee-on-morning-reports-2-4557"
+      "pearl_id": "dr-lee-on-morning-reports-2-4557",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:coagulopathy"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient is hemodynamically unstable, use the mnemonic 'NACHOS' to systematically consider Neurogenic, Anaphylactic, Cardiogenic, Hemorrhagic, Obstructive, and Septic shock.",
@@ -100428,7 +101063,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hemodynamically unstable patients",
-      "pearl_id": "dr-lee-on-morning-reports-2-4836"
+      "pearl_id": "dr-lee-on-morning-reports-2-4836",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:septic shock"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "Anaphylactic"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a tachycardic patient requiring vasopressors, choose phenylephrine because it is a pure alpha-agonist with no beta activity, so it will not further increase heart rate.",
@@ -100441,7 +101098,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "tachycardic patients needing vasopressors",
-      "pearl_id": "dr-lee-on-morning-reports-2-4969"
+      "pearl_id": "dr-lee-on-morning-reports-2-4969",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:phenylephrine"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Persistent lactic acidosis despite transfusions indicates ongoing hypoperfusion and end-organ damage, portending a very poor prognosis.",
@@ -100454,7 +101130,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DIC and cirrhosis not improving with transfusions",
-      "pearl_id": "dr-lee-on-morning-reports-2-5067"
+      "pearl_id": "dr-lee-on-morning-reports-2-5067",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:end-organ damage"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with DIC and cirrhosis who is not improving despite massive transfusions, the underlying liver failure and ongoing consumption are driving the deterioration.",
@@ -100467,7 +101159,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DIC and cirrhosis not responding to transfusions",
-      "pearl_id": "dr-lee-on-morning-reports-2-5156"
+      "pearl_id": "dr-lee-on-morning-reports-2-5156",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:massive transfusion"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In chronic liver disease, you cannot have classic DIC because the patient does not make enough clotting factors to be consumed; the coagulopathy is AICF (accelerated intravascular coagulation and fibrinolysis).",
@@ -100480,7 +101188,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic liver disease and coagulopathy",
-      "pearl_id": "dr-lee-on-morning-reports-2-5453"
+      "pearl_id": "dr-lee-on-morning-reports-2-5453",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:accelerated intravascu"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "AICF is treated with antifibrinolytics like tranexamic acid, not with factor replacement alone.",
@@ -100493,7 +101217,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with AICF and active hemorrhage",
-      "pearl_id": "dr-lee-on-morning-reports-2-5592"
+      "pearl_id": "dr-lee-on-morning-reports-2-5592",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tranexamic acid"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In AICF, thresholds for transfusing platelets and cryoprecipitate are higher because clots are being actively broken down.",
@@ -100506,7 +101246,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with AICF and active severe hemorrhage or CNS bleeding",
-      "pearl_id": "dr-lee-on-morning-reports-2-5638"
+      "pearl_id": "dr-lee-on-morning-reports-2-5638",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cryoprecipitate"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In goals-of-care conversations with religious families, joining in prayer can build trust before gently redirecting to the medical reality.",
@@ -100519,7 +101275,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "families who express strong religious faith",
-      "pearl_id": "dr-lee-on-morning-reports-2-5842"
+      "pearl_id": "dr-lee-on-morning-reports-2-5842",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:goals-of-care conversa"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a family says 'I can't' or 'don't tell me the odds,' it is appropriate to return on a subsequent day to continue the goals-of-care conversation.",
@@ -100532,7 +101304,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "families who refuse to discuss prognosis",
-      "pearl_id": "dr-lee-on-morning-reports-2-6024"
+      "pearl_id": "dr-lee-on-morning-reports-2-6024",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:goals-of-care conversa"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Asking 'What would he want?' can help shift the focus from the family's hope for a miracle to the patient's values.",
@@ -100545,7 +101336,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "families struggling to accept poor prognosis",
-      "pearl_id": "dr-lee-on-morning-reports-2-6215"
+      "pearl_id": "dr-lee-on-morning-reports-2-6215",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a family points to small improvements (e.g., hemoglobin bump, creatinine drop) as evidence of recovery, acknowledge the improvement but reframe it as temporary and not changing the overall trajectory.",
@@ -100558,7 +101362,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "families of critically ill patients with poor prognosis",
-      "pearl_id": "dr-lee-on-morning-reports-2-6360"
+      "pearl_id": "dr-lee-on-morning-reports-2-6360",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:creatinine"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hospice does not preclude faith; it provides comfort while the family continues to pray for a miracle.",
@@ -100572,7 +101392,23 @@
       "prompt_version": "v1",
       "applies_to": "families with strong religious beliefs about healing",
       "by_presenter": false,
-      "pearl_id": "dr-lee-on-morning-reports-2-6480"
+      "pearl_id": "dr-lee-on-morning-reports-2-6480",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hospice"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ask the family: 'What would it take for you to be ready to let go?' This opens the conversation even if they don't have an answer.",
@@ -100586,7 +101422,23 @@
       "prompt_version": "v1",
       "applies_to": "families of critically ill patients who are not ready for hospice",
       "by_presenter": false,
-      "pearl_id": "dr-lee-on-morning-reports-2-6596"
+      "pearl_id": "dr-lee-on-morning-reports-2-6596",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 6.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In the United States, patients can receive up to 100 units of packed red blood cells, FFP, and cryoprecipitate, so running out of blood products is not a realistic limit for goals-of-care discussions.",
@@ -100599,7 +101451,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "critically ill patients in the U.S.",
-      "pearl_id": "dr-lee-on-morning-reports-2-6639"
+      "pearl_id": "dr-lee-on-morning-reports-2-6639",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:100 units"
+          ],
+          "rarity": 7.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a family member offers to donate their own blood to keep the patient alive, that is a powerful emotional response that the clinician must acknowledge and work with, not dismiss.",
@@ -100612,7 +101480,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "families of patients with massive transfusion needs",
-      "pearl_id": "dr-lee-on-morning-reports-2-6656"
+      "pearl_id": "dr-lee-on-morning-reports-2-6656",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the family's own words to frame honesty: 'Ma'am, you told me I should be honest with you. I'm loving you. This is what's going on.'",
@@ -100625,7 +101506,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "families who request honesty",
-      "pearl_id": "dr-lee-on-morning-reports-2-6791"
+      "pearl_id": "dr-lee-on-morning-reports-2-6791",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Frame the DNR discussion by linking organ failure to the patient's overall decline: 'This disorder is killing his kidneys now. Next will be his brain. Is this really what you want?'",
@@ -100638,7 +101535,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "families of patients with progressive organ failure",
-      "pearl_id": "dr-lee-on-morning-reports-2-6811"
+      "pearl_id": "dr-lee-on-morning-reports-2-6811",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Even after obtaining a DNR, the family may still decline hospice; the clinician should continue to support them and revisit the conversation daily.",
@@ -100651,7 +101561,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "families who accept DNR but not hospice",
-      "pearl_id": "dr-lee-on-morning-reports-2-6821"
+      "pearl_id": "dr-lee-on-morning-reports-2-6821",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A patient who appears to be actively dying (bleeding out, multi-organ failure) can sometimes recover enough to sit up, have conversations, and be discharged to an LTAC.",
@@ -100664,7 +101590,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "critically ill patients with massive transfusion needs",
-      "pearl_id": "dr-lee-on-morning-reports-2-6832"
+      "pearl_id": "dr-lee-on-morning-reports-2-6832",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "dying"
+          ],
+          "rarity": 8.08
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

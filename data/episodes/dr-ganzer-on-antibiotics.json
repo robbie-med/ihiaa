@@ -34498,7 +34498,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with C. diff infection",
-      "pearl_id": "dr-ganzer-on-antibiotics-294"
+      "pearl_id": "dr-ganzer-on-antibiotics-294",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:vancomycin"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nitrofurantoin (Macrobid) can be used for cystitis but not for pyelonephritis because it does not achieve adequate renal tissue concentration.",
@@ -34511,7 +34527,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with urinary tract infection",
-      "pearl_id": "dr-ganzer-on-antibiotics-313"
+      "pearl_id": "dr-ganzer-on-antibiotics-313",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nitrofurantoin"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The lab arranges antibiotics alphabetically on the susceptibility report, not by spectrum or generation; clinicians must reorder them mentally by class.",
@@ -34524,7 +34556,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinicians reading susceptibility reports",
-      "pearl_id": "dr-ganzer-on-antibiotics-579"
+      "pearl_id": "dr-ganzer-on-antibiotics-579",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Susceptibility to cefazolin means susceptibility to all first-generation cephalosporins; you can switch from IV cefazolin to oral cephalexin (Keflex) even though Keflex was not tested.",
@@ -34537,7 +34585,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with susceptible organism",
-      "pearl_id": "dr-ganzer-on-antibiotics-717"
+      "pearl_id": "dr-ganzer-on-antibiotics-717",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cephalosporins"
+          ],
+          "actionable": [
+            "switch"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a penicillin is susceptible, it may be more effective than a cephalosporin against certain resistant patterns; do not automatically escalate to broader agents.",
@@ -34550,7 +34617,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with susceptible organism on culture",
-      "pearl_id": "dr-ganzer-on-antibiotics-980"
+      "pearl_id": "dr-ganzer-on-antibiotics-980",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:penicillin"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Enterobacter cloacae is inherently resistant to penicillins and second/third-generation cephalosporins; ceftriaxone is the wrong drug even before susceptibilities return.",
@@ -34563,7 +34649,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with Enterobacter cloacae infection",
-      "pearl_id": "dr-ganzer-on-antibiotics-1098"
+      "pearl_id": "dr-ganzer-on-antibiotics-1098",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:enterobacter cloacae"
+          ],
+          "rarity": 8.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fluoroquinolones are often avoided due to safety warnings; reserve carbapenems (e.g., meropenem) for highly resistant organisms.",
@@ -34576,7 +34678,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring broad-spectrum coverage",
-      "pearl_id": "dr-ganzer-on-antibiotics-1247"
+      "pearl_id": "dr-ganzer-on-antibiotics-1247",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fluoroquinolones"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a desired antibiotic is not on the susceptibility panel, call the lab; they may have already tested it and can provide the result quickly.",
@@ -34590,7 +34708,23 @@
       "prompt_version": "v1",
       "applies_to": "inpatients with complex infections",
       "by_presenter": false,
-      "pearl_id": "dr-ganzer-on-antibiotics-1286"
+      "pearl_id": "dr-ganzer-on-antibiotics-1286",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:desire"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The lab only tests antibiotics known to have efficacy against the identified organism; you will never see amoxicillin or ceftriaxone tested against Pseudomonas.",
@@ -34603,7 +34737,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinicians interpreting susceptibility reports",
-      "pearl_id": "dr-ganzer-on-antibiotics-1352"
+      "pearl_id": "dr-ganzer-on-antibiotics-1352",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:amoxicillin"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Memorize the short list of antibiotics effective against Pseudomonas: ceftazidime, cefepime, ciprofloxacin, levofloxacin, piperacillin-tazobactam, and meropenem.",
@@ -34616,7 +34769,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with Pseudomonas risk factors (e.g., healthcare-associated pneumonia)",
-      "pearl_id": "dr-ganzer-on-antibiotics-1457"
+      "pearl_id": "dr-ganzer-on-antibiotics-1457",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:ciprofloxacin"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For Pseudomonas, remember fluoroquinolones (ciprofloxacin, levofloxacin), piperacillin-tazobactam, and meropenem.",
@@ -34629,7 +34798,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing Pseudomonas coverage",
-      "pearl_id": "dr-ganzer-on-antibiotics-1493"
+      "pearl_id": "dr-ganzer-on-antibiotics-1493",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:ciprofloxacin"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Enterococcus has zero susceptibility to cephalosporins; never use a cephalosporin for Enterococcus.",
@@ -34642,7 +34827,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any infection with Enterococcus",
-      "pearl_id": "dr-ganzer-on-antibiotics-1740"
+      "pearl_id": "dr-ganzer-on-antibiotics-1740",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cephalosporins"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Laboratories do not test cephalosporins against Enterococcus because they know it is always resistant.",
@@ -34655,7 +34859,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Enterococcus",
-      "pearl_id": "dr-ganzer-on-antibiotics-1775"
+      "pearl_id": "dr-ganzer-on-antibiotics-1775",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cephalosporins"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is on a cephalosporin and culture grows Enterococcus, switch to amoxicillin, ampicillin, or vancomycin immediately.",
@@ -34668,7 +34891,30 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with Enterococcus infection on a cephalosporin",
-      "pearl_id": "dr-ganzer-on-antibiotics-1846"
+      "pearl_id": "dr-ganzer-on-antibiotics-1846",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "drug:amoxicillin",
+            "test:culture"
+          ],
+          "actionable": [
+            "switch"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consult infectious disease for endocarditis and osteomyelitis.",
@@ -34681,7 +34927,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with endocarditis or osteomyelitis",
-      "pearl_id": "dr-ganzer-on-antibiotics-1951"
+      "pearl_id": "dr-ganzer-on-antibiotics-1951",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:osteomyelitis"
+          ],
+          "actionable": [
+            "Consult"
+          ],
+          "rarity": 6.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use Sanford Guide or Hopkins Guide as reliable antibiotic resources.",
@@ -34694,7 +34959,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-ganzer-on-antibiotics-1990"
+      "pearl_id": "dr-ganzer-on-antibiotics-1990",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hopkins guide"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consult infectious disease for Staphylococcus aureus bacteremia, staph empyema, and staph pneumonia.",
@@ -34707,7 +34991,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with these staph infections",
-      "pearl_id": "dr-ganzer-on-antibiotics-2050"
+      "pearl_id": "dr-ganzer-on-antibiotics-2050",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:staphylococcus aureus "
+          ],
+          "actionable": [
+            "Consult"
+          ],
+          "rarity": 8.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For unresponsive infections, MIC values become relevant; check updated breakpoints.",
@@ -34720,7 +35023,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with infections not responding to therapy",
-      "pearl_id": "dr-ganzer-on-antibiotics-2330"
+      "pearl_id": "dr-ganzer-on-antibiotics-2330",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Susceptibility testing represents the drug class, not just the specific antibiotic tested.",
@@ -34733,7 +35052,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "when interpreting susceptibility reports",
-      "pearl_id": "dr-ganzer-on-antibiotics-2519"
+      "pearl_id": "dr-ganzer-on-antibiotics-2519",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

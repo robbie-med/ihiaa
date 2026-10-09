@@ -26342,7 +26342,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with upper GI bleeding undergoing procedure",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-592"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-592",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:PT"
+          ],
+          "actionable": [
+            "screen"
+          ],
+          "harm": [
+            "bleed"
+          ],
+          "rarity": 6.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always ask patients with suspected hematemesis if they drank red Gatorade; several patients have been admitted to ICU for what was actually red Gatorade emesis.",
@@ -26355,7 +26377,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected hematemesis",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-624"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-624",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hematemesis"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For upper GI bleed in cirrhotic patients, always call ICU first even if the patient seems stable.",
@@ -26368,7 +26409,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "cirrhotic patients with upper GI bleed",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-746"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-746",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "always"
+          ],
+          "harm": [
+            "bleed"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In upper GI bleed without cirrhosis or varices, patients often have more time for workup and can stay on the floor.",
@@ -26381,7 +26441,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "upper GI bleed without cirrhosis or varices",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-755"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-755",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cirrhosis"
+          ],
+          "harm": [
+            "bleed"
+          ],
+          "rarity": 7.16
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For first-time pancreatitis, check a lipid panel to rule out hypertriglyceridemia; if positive, high-dose insulin drip can help resolve pancreatitis faster.",
@@ -26394,7 +26473,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "first episode of pancreatitis",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1117"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1117",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypertriglyceridemia"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pancreatitis with very high triglycerides (thousands) and AKI or other end-organ damage, consider dialysis catheter and plasmapheresis.",
@@ -26407,7 +26505,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pancreatitis with severe hypertriglyceridemia and end-organ damage",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1158"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1158",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:end-organ damage"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Early enteral feeding in pancreatitis protects the mucosal barrier and reduces bacterial translocation; do not withhold oral intake.",
@@ -26420,7 +26537,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pancreatitis",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1235"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1235",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bacterial translocatio"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If pancreatitis is not improving after 48-72 hours and the patient is becoming more bloated, call surgery to evaluate for abdominal compartment syndrome.",
@@ -26433,7 +26569,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pancreatitis not improving",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1246"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1246",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:72 hours"
+          ],
+          "actionable": [
+            "evaluate"
+          ],
+          "rarity": 7.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For ureteral stone with hydronephrosis and sepsis, call urology and admit to ICU; opening the obstruction can release endotoxin and cause rapid deterioration.",
@@ -26446,7 +26601,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "sepsis with obstructive ureteral stone and hydronephrosis",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1365"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1365",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hydronephrosis"
+          ],
+          "actionable": [
+            "admit"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 8.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A ureteral stone >1 cm requires urgent urology consultation regardless of obstruction.",
@@ -26459,7 +26636,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "ureteral stone",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1385"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1385",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1 cm",
+            "threshold:>1"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 6.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pneumatosis intestinalis (gas in bowel wall) on CT indicates mesenteric ischemia; start heparin drip and call surgery immediately.",
@@ -26472,7 +26669,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "abdominal pain with pneumatosis on CT",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1644"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1644",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When you see a bad CT finding like pneumatosis or tumor, don't leave it for the surgeon to break the news; be honest with the patient and prep them.",
@@ -26485,7 +26704,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents communicating bad results",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1699"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1699",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When you see a bad CT, start preparing the patient early by saying something like 'I don't think the CT is looking good' rather than waiting for the surgeon to deliver the news.",
@@ -26498,7 +26736,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents delivering bad news to patients",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1774"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1774",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always examine the abdomen for prior surgical scars; a patient who says they've never had surgery may have a midline scar from adhesions causing obstruction.",
@@ -26511,7 +26768,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected small bowel obstruction",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1900"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1900",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In small bowel obstruction with distension, positive bowel sounds, and non-tender abdomen, the patient needs a surgeon and possibly an NG tube, not ICU admission.",
@@ -26524,7 +26797,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with small bowel obstruction and non-tender abdomen",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1937"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1937",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:small bowel obstructio"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a DNR/DNI patient with obstruction who is deteriorating, consider a goals-of-care discussion focused on comfort rather than surgery or ICU, as ICU medications are no different from floor medications.",
@@ -26537,7 +26826,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DNR/DNI patients with obstruction and deterioration",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1955"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-1955",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with recurrent ascites and recent paracentesis who presents with abdominal pain, suspect spontaneous bacterial peritonitis (SBP).",
@@ -26550,7 +26855,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cirrhosis and recent paracentesis",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-2060"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-2060",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:spontaneous bacterial "
+          ],
+          "rarity": 7.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient with hepatocellular carcinoma presents with abdominal pain and scrotal swelling/induration, order a CT; if gas is seen in the scrotum, it is Fournier's gangrene, start broad-spectrum antibiotics and call surgery urgently.",
@@ -26563,7 +26884,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with HCC and scrotal findings",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-2131"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-2131",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "harm": [
+            "gangrene"
+          ],
+          "rarity": 8.38
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HCC has a five-year survival of 21%; patients may have been turned down for transplant, so know their goals and hospice status before pursuing aggressive surgery.",
@@ -26576,7 +26919,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hepatocellular carcinoma",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-2150"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-2150",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hospice"
+          ],
+          "rarity": 8.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When risks of surgery outweigh benefits (e.g., poor wound healing, multiple repeat operations), prioritize quality of time and have honest discussions about comfort care.",
@@ -26589,7 +26948,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with poor prognosis and high surgical risk",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-2191"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-2191",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:comfort care"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 7.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Primary care providers are on the front lines; know your patients and what they want to guide decisions in acute GI crises.",
@@ -26602,7 +26980,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "primary care residents",
-      "pearl_id": "dr-bhakta-on-acute-gi-concerns-2203"
+      "pearl_id": "dr-bhakta-on-acute-gi-concerns-2203",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:primary care"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
