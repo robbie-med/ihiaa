@@ -34,12 +34,33 @@
 "verdict": "depends",
 "why": "Guidance differs based on the acuity and immediacy of the patient's suicidal risk."
 },
+"08acf14cbffe9813|4b35787f6f6334a8": {
+"condition": "Specific ultrasound findings (e.g., blood clot vs solid tumor)",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Complex ovarian cyst interpretation",
+"verdict": "depends",
+"why": "One emphasizes cancer risk, the other benign cause; depends on ultrasound features."
+},
 "090a3c24e8c8bf3e|0ca4967994d1e185": {
 "condition": "presence of obstructing stone on imaging",
 "model": "deepseek/deepseek-v3.2",
 "topic": "UTI with stone or systemic symptoms",
 "verdict": "depends",
 "why": "A says ER for UTI with positive stone imaging; B says outpatient if stable without sepsis."
+},
+"0942b4a26dee7654|8d4a1734c805df0b": {
+"condition": "Whether patient has established PAD (secondary prevention)",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Statin intensity for ASCVD prevention",
+"verdict": "depends",
+"why": "A is for primary prevention in general adults; B is for secondary prevention in patients with PAD."
+},
+"09dd9f065c1ccaa2|e7dbc93131e2703b": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Intubation timing and risks",
+"verdict": "compatible",
+"why": "A warns about a specific risk in massive PE, B is a general principle about planned vs emergency intubation."
 },
 "0ad7c9783fe6734b|54808c2724373cd9": {
 "condition": "",
@@ -97,12 +118,40 @@
 "verdict": "compatible",
 "why": "A is about initial assessment of multiple problems; B is about reassessment after poor response."
 },
+"178ca80e3f2aa501|2edda8394cd4bc12": {
+"condition": "Level of consciousness and ability to protect airway.",
+"model": "deepseek/deepseek-v3.2",
+"topic": "BiPAP in obtunded patients",
+"verdict": "depends",
+"why": "A states GCS<7 is absolute contraindication; B discusses trial in obtunded but arousable patients with caution."
+},
 "18e1ed72737aa2e5|c74fab9585b772b9": {
 "condition": "",
 "model": "deepseek/deepseek-v3.2",
 "topic": "Naltrexone induction opioid-free period",
 "verdict": "compatible",
 "why": "Both stress need for opioid-free period; one gives 7-10 days, the other 14 days as a safe rule."
+},
+"1b8e028e6c67e87a|8ac6f3ee01f10baf": {
+"condition": "Whether eosinophil count is used to guide ICS therapy.",
+"model": "deepseek/deepseek-v3.2",
+"topic": "ICS use in COPD",
+"verdict": "depends",
+"why": "One uses eosinophil count for ICS choice; the other uses FEV1 and exacerbations."
+},
+"1dfdd2fa4e2d4e2f|535a1cc50f169776": {
+"condition": "presence of comorbid depression",
+"model": "deepseek/deepseek-v3.2",
+"topic": "treating subclinical hypothyroidism",
+"verdict": "depends",
+"why": "Dr. Dunn suggests treatment for depression; Dr. Lucashu says most don't need treatment."
+},
+"1dfdd2fa4e2d4e2f|713b8c56b92d3b57": {
+"condition": "presence of depression vs. other risk factors",
+"model": "deepseek/deepseek-v3.2",
+"topic": "treating subclinical hypothyroidism",
+"verdict": "depends",
+"why": "A focuses on improving depression; B focuses on preventing overt hypothyroidism."
 },
 "1dfdd2fa4e2d4e2f|bed3220a41c74ae3": {
 "condition": "whether the patient has comorbid depression",
@@ -111,12 +160,33 @@
 "verdict": "depends",
 "why": "A focuses on improving depression response, B on general management without depression."
 },
+"1ee30520a0132efb|42fd9090282d2b7a": {
+"condition": "Whether reading is considered a stimulating activity.",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Insomnia: get up or not?",
+"verdict": "depends",
+"why": "Both agree to get up after 30 minutes awake, but differ on whether reading is allowed."
+},
 "1fc0882b54f8c059|dea80498138bbf9f": {
 "condition": "Patient age (elderly vs general adult)",
 "model": "deepseek/deepseek-v3.2",
 "topic": "First-line insomnia drug choice",
 "verdict": "depends",
 "why": "One is about general FDA approval and guidelines; the other is about elderly-specific preference."
+},
+"203db3f4bd23d6c6|c9f6118795cb12a9": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Corticosteroid injection frequency limits",
+"verdict": "compatible",
+"why": "Both advise limiting injections to avoid cartilage damage; one specifies knee and spacing, the other is per joint."
+},
+"203db3f4bd23d6c6|e0912f702ce8cd97": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Corticosteroid injection frequency limits",
+"verdict": "compatible",
+"why": "Both advise limiting frequency; one specifies knee, the other any site."
 },
 "220f62ff4ccf75d3|fb9dd7eb9036159f": {
 "condition": "",
@@ -138,6 +208,13 @@
 "topic": "insulin resistance ratio timing",
 "verdict": "depends",
 "why": "A uses fasting ratio; B uses post-glucose load ratio."
+},
+"22fab7e5e151b4d6|7825b4869c9f2c1f": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Cervical prolapse grading",
+"verdict": "compatible",
+"why": "A describes full grading scale; B states a diagnostic threshold."
 },
 "230e5a94452e0178|7a215e594bc299c6": {
 "condition": "severity of reaction and number of epinephrine doses needed",
@@ -181,6 +258,13 @@
 "verdict": "compatible",
 "why": "A is about initial testing and monitoring, B is about a treatment goal once therapy is started."
 },
+"27a86a81ed1ea8dc|f1d748d22f65c89a": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Thyroid testing in pregnancy",
+"verdict": "compatible",
+"why": "First statement is about initial testing; second is about treatment targets."
+},
 "28328693d19172c4|bf1ffd3eaed930a6": {
 "condition": "",
 "model": "deepseek/deepseek-v3.2",
@@ -194,6 +278,13 @@
 "topic": "Benzodiazepine taper strategy",
 "verdict": "compatible",
 "why": "A describes the taper schedule after switching; B describes the conversion step itself."
+},
+"2874de69f382be88|afb2babf6dc78d5a": {
+"condition": "Whether the goal is immediate switch or a combined switch/taper.",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Benzodiazepine cross-taper strategy",
+"verdict": "depends",
+"why": "Ledbetter advises a combined dose reduction and switch; Dunn advises a direct switch without simultaneous reduction."
 },
 "294acc784c52574c|7ff54121cb9fb576": {
 "condition": "Whether using ultrasound guidance or targeting suprapatellar pouch",
@@ -293,12 +384,26 @@
 "verdict": "compatible",
 "why": "B states standard referral threshold; A discusses expanded criteria for severe cases."
 },
+"3c93deb6fab03bdc|f47751a060122dd9": {
+"condition": "patient age and shock etiology",
+"model": "deepseek/deepseek-v3.2",
+"topic": "first-line vasopressor in shock",
+"verdict": "depends",
+"why": "Teaching A is for general adult shock, B is for pediatric septic shock."
+},
 "3d725330b248864e|e0912f702ce8cd97": {
 "condition": "",
 "model": "deepseek/deepseek-v3.2",
 "topic": "Corticosteroid injection frequency limits",
 "verdict": "compatible",
 "why": "A limits per site, B limits total systemic exposure."
+},
+"405052eb17f4cc15|a0e0c7b79140c533": {
+"condition": "patient's clinical urgency and respiratory status",
+"model": "deepseek/deepseek-v3.2",
+"topic": "initial ventilator rate setting",
+"verdict": "depends",
+"why": "One suggests a high rate (60) for specific urgent situations, the other a normal rate (16) for routine intubation."
 },
 "40b27c95a84ff083|9832fb6ed39a58ac": {
 "condition": "stage of treatment: induction vs. maintenance",
@@ -313,6 +418,20 @@
 "topic": "TSH monitoring in pregnancy",
 "verdict": "compatible",
 "why": "Both recommend monthly checks; A adds specific timing details for later pregnancy."
+},
+"42cbef16399ffe88|889e361afcb0c155": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Antithyroid drugs in subacute thyroiditis",
+"verdict": "conflict",
+"why": "One says to stop them after 3-6 months; the other says they are not indicated at all."
+},
+"42ed3e5ea88bc53d|b34c74a00ec4ecea": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "PCOS endometrial protection frequency",
+"verdict": "compatible",
+"why": "Both stress need for periodic shedding; 'empties uterus' could mean induced withdrawal bleed, not necessarily menses."
 },
 "4389f46f7d15c9b1|7d2bdc9771ae8f4c": {
 "condition": "Clinician's priority: speed or patient comfort",
@@ -363,12 +482,47 @@
 "verdict": "depends",
 "why": "One uses eosinophils to consider adding ICS; the other uses FEV1 and exacerbation history."
 },
+"4b802001c6b5ff85|c90e7777523317b8": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "BiPAP pressure support settings",
+"verdict": "conflict",
+"why": "A recommends PS of 8 for pulmonary edema, B says PS should not exceed 4."
+},
+"4cec0d94c7a2de58|dfe092ed51769efc": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "causes of dyspareunia",
+"verdict": "compatible",
+"why": "One is about cyclic pain specifically, the other about dyspareunia in general."
+},
+"5027f9495ff7c18b|e55c5dc235b0a6b4": {
+"condition": "Whether the patient is an older adult with impaired metabolism.",
+"model": "deepseek/deepseek-v3.2",
+"topic": "benzodiazepine taper strategy",
+"verdict": "depends",
+"why": "Teaching A is about managing psychological attachment to alprazolam. Teaching B is about pharmacokinetics in older adults."
+},
 "5027f9495ff7c18b|f5c1c66fe0c97f67": {
 "condition": "Patient's attachment to specific benzodiazepine",
 "model": "deepseek/deepseek-v3.2",
 "topic": "Benzodiazepine taper strategy",
 "verdict": "depends",
 "why": "One approach is for patients with strong psychological attachment to alprazolam."
+},
+"580c0a1662e7fc21|582c7a7d5816d64e": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "lidocaine concentration for joint injection",
+"verdict": "compatible",
+"why": "Both are acceptable; one uses 1% with a specific steroid mix, the other prefers 2% for general advantages."
+},
+"580c0a1662e7fc21|e4893e63716d93df": {
+"condition": "clinician's preference for injection volume vs. concentration",
+"model": "deepseek/deepseek-v3.2",
+"topic": "lidocaine concentration for joint injection",
+"verdict": "depends",
+"why": "Both are valid preferences; choice depends on desired volume and concentration."
 },
 "582c7a7d5816d64e|81675e3a41e3aa3c": {
 "condition": "Specific joint (knee) vs general blocks",
@@ -404,6 +558,13 @@
 "topic": "Benzodiazepine management approach",
 "verdict": "depends",
 "why": "One addresses refusal to taper, the other outlines a taper schedule."
+},
+"5dd34e621fb9cb9e|77691600d1499a81": {
+"condition": "patient age (adult vs pediatric)",
+"model": "deepseek/deepseek-v3.2",
+"topic": "first-line sinusitis antibiotic choice",
+"verdict": "depends",
+"why": "One is for adults, one is for children; guidelines differ by age group."
 },
 "5de75b1d81b5398c|8c1ac6e1f9edc6fa": {
 "condition": "",
@@ -474,6 +635,13 @@
 "topic": "Benzodiazepine tapering agent choice",
 "verdict": "depends",
 "why": "One recommends diazepam for easier dose adjustments; the other recommends short-acting for older adults due to metabolism."
+},
+"6cbdc34e406a591c|f5c1c66fe0c97f67": {
+"condition": "whether the goal is immediate conversion or subsequent tapering",
+"model": "deepseek/deepseek-v3.2",
+"topic": "benzodiazepine tapering strategy",
+"verdict": "depends",
+"why": "One focuses on tapering after conversion, the other on conversion itself without tapering."
 },
 "6da81391a3fe7942|eb4ba9062280bc93": {
 "condition": "Severity of exacerbation and patient's initial response to muscarinics",
@@ -566,6 +734,20 @@
 "verdict": "depends",
 "why": "One is for hyperthyroidism treatment, the other for hypothyroidism management."
 },
+"8822da37489dc0bb|d3a47f66cae5f381": {
+"condition": "whether ectopic pregnancy is confirmed and stable",
+"model": "deepseek/deepseek-v3.2",
+"topic": "ectopic pregnancy management",
+"verdict": "depends",
+"why": "A is about initial diagnosis, B is about management after diagnosis."
+},
+"88e101c41848fe20|ace598bc4112ca7e": {
+"condition": "severity of diabetes (A1c level)",
+"model": "deepseek/deepseek-v3.2",
+"topic": "pre-op glycemic control for bariatric surgery",
+"verdict": "depends",
+"why": "One is general advice for routine referrals; the other is for severe hyperglycemia (A1c >12)."
+},
 "88f0ea9faa00a226|ca20c7a82e73732a": {
 "condition": "",
 "model": "deepseek/deepseek-v3.2",
@@ -636,12 +818,26 @@
 "verdict": "compatible",
 "why": "A is about central cause if reflex is absent; B is about BPPV in other canals."
 },
+"9905ecd69e9c8f26|b2a412441601cc2b": {
+"condition": "Whether patient has significant aortic stenosis",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Hypertension targets in aortic stenosis",
+"verdict": "depends",
+"why": "General high-risk target may not apply if aortic stenosis is the dominant risk."
+},
 "9bd7b82b99353fa8|a1a1e919d4d1c936": {
 "condition": "trimester of pregnancy",
 "model": "deepseek/deepseek-v3.2",
 "topic": "antithyroid drug in pregnancy",
 "verdict": "depends",
 "why": "Guidance differs by trimester: PTU preferred in first trimester, methimazole later."
+},
+"9bd7b82b99353fa8|a75d2141b1453016": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Hyperthyroidism in pregnancy",
+"verdict": "compatible",
+"why": "Both agree PTU is for pregnancy; A specifies timing within pregnancy."
 },
 "9cbd96921546b1e7|f5c0ba1dbf024830": {
 "condition": "Whether the emergency is a general hypertensive emergency or a specific acute ischemic stroke",
@@ -670,6 +866,13 @@
 "topic": "PEEP in intubated patients",
 "verdict": "depends",
 "why": "Teaching A is for PE patients to avoid hemodynamic compromise. Teaching B is for general initial ventilation."
+},
+"a135aaed6264ad1c|b1f467fcf30cfe9e": {
+"condition": "Whether the patient's respiratory compensation is still effective or has fatigued.",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Intubation in DKA compensation",
+"verdict": "depends",
+"why": "One advises against routine intubation; the other says to intubate when compensation fails from fatigue."
 },
 "a2043a005b52d2af|c89a0335f941e0a0": {
 "condition": "whether patient has symptoms of another sleep disorder",
@@ -720,6 +923,20 @@
 "verdict": "depends",
 "why": "A shows benefit in a specific high-risk group; B says no benefit in non-deficient general population."
 },
+"afb2babf6dc78d5a|e55c5dc235b0a6b4": {
+"condition": "Patient age and metabolic function",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Benzo taper agent choice",
+"verdict": "depends",
+"why": "Diazepam is long-acting; advice differs based on patient age and metabolism."
+},
+"afb2babf6dc78d5a|f5c1c66fe0c97f67": {
+"condition": "whether the goal is tapering off or stable maintenance",
+"model": "deepseek/deepseek-v3.2",
+"topic": "benzodiazepine switching method",
+"verdict": "depends",
+"why": "Ledbetter describes a gradual cross-taper for tapering, while Dunn advises a direct conversion for switching without tapering."
+},
 "b1f467fcf30cfe9e|c7df03056f6ff082": {
 "condition": "patient's respiratory muscle fatigue or impending failure",
 "model": "deepseek/deepseek-v3.2",
@@ -748,6 +965,20 @@
 "verdict": "depends",
 "why": "Different guidelines: one is broader with risk factors, the other is USPSTF criteria."
 },
+"c74fab9585b772b9|f5d509dfbebc0b3b": {
+"condition": "Specific protocol or patient's opioid type/half-life",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Vivitrol opioid-free period",
+"verdict": "depends",
+"why": "Different recommended washout durations: 7-10 days vs 14 days."
+},
+"c90e7777523317b8|e3538d08286efd8d": {
+"condition": "Acute cardiogenic pulmonary edema vs. chronic obstructive sleep apnea",
+"model": "deepseek/deepseek-v3.2",
+"topic": "BiPAP settings for different conditions",
+"verdict": "depends",
+"why": "One targets acute pulmonary edema, the other targets stable OSA management."
+},
 "d691c0842c813c9e|ebe1b54480ab03c3": {
 "condition": "whether melanoma is suspected",
 "model": "deepseek/deepseek-v3.2",
@@ -761,6 +992,13 @@
 "topic": "Reducing lateral patellar dislocation",
 "verdict": "compatible",
 "why": "Both emphasize extending the knee fully before guiding the patella back."
+},
+"dccee96480030db1|e55c5dc235b0a6b4": {
+"condition": "Patient age and presence of impaired metabolism",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Benzodiazepine taper agent choice",
+"verdict": "depends",
+"why": "General recommendation for long-acting agents, but specific guidance for older adults with impaired metabolism."
 },
 "dcf8806ba2cb59de|f2d1780fa102e260": {
 "condition": "Acute vs. chronic RV strain or imaging view used",
@@ -782,6 +1020,13 @@
 "topic": "delta-delta calculation interpretation",
 "verdict": "conflict",
 "why": "Both formulas differ: one uses (AG-12)+HCO3 <22, the other uses (AG-12)-HCO3 >1 for the same conclusion."
+},
+"ebe1b54480ab03c3|fbadd309c9dd8df1": {
+"condition": "whether lesion is suspected melanoma",
+"model": "deepseek/deepseek-v3.2",
+"topic": "biopsy technique for melanoma",
+"verdict": "depends",
+"why": "General vulvar biopsy vs specific melanoma biopsy guidance."
 },
 "ef6a8a162ef56710|f6e302ab017dfb0a": {
 "condition": "",
