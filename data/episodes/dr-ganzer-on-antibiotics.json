@@ -34187,44 +34187,32 @@
   ],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "Dr. Ganzer provides a practical, clinically oriented review of antibiotic selection for common infections, emphasizing a three-question framework: spectrum (does the antibiotic cover the likely organism?), pharmacology (does it reach the infection site?), and patient factors (renal function, drug interactions). He teaches residents to interpret susceptibility reports by antibiotic class rather than individual drugs, enabling lateral switches or de-escalation. Key bacterial exceptions, Enterococcus (cephalosporins have zero activity), Pseudomonas (limited drug options), and Enterobacter (resistant to early-generation cephalosporins), are highlighted as critical knowledge gaps that can lead to treatment failure. The talk stresses using resources like the Sanford Guide and calling the lab for additional susceptibilities when standard panels are incomplete.",
+  "abstract": "Dr. Ganzer provides a practical, clinically oriented review of antibiotic selection for family medicine residents. He emphasizes a three-question framework: microbiology (does the antibiotic cover the likely organism?), pharmacology (does it reach the infection site?), and patient factors (renal function, drug interactions). He teaches how to read susceptibility reports by antibiotic class rather than individual drugs, enabling lateral switches (e.g., IV cefazolin to oral cephalexin) and appropriate de-escalation. He also highlights organisms with predictable resistance patterns (e.g., Enterobacter cloacae is not covered by ceftriaxone) and stresses memorizing the short list of antibiotics effective against Pseudomonas and MRSA.",
   "key_points": [
-    "Ask three questions before choosing an antibiotic: does it cover the organism (spectrum), does it reach the infection site (pharmacology), and are there patient factors (renal dosing, interactions)?",
-    "Susceptibility reports list antibiotic classes, not individual drugs; susceptibility to one drug in a class (e.g., cefazolin) implies susceptibility to others in that class (e.g., cephalexin).",
-    "Lab panels are alphabetical, not arranged by spectrum or generation; clinicians must mentally reorder by class to avoid confusion.",
-    "Enterococcus faecalis is universally resistant to cephalosporins; never use a cephalosporin for enterococcal infections even if the report appears susceptible.",
-    "Pseudomonas has a limited set of effective antibiotics (ceftazidime, cefepime, ciprofloxacin, levofloxacin, piperacillin-tazobactam, meropenem); memorize these for empiric coverage when risk factors exist.",
-    "Enterobacter cloacae and Serratia are typically resistant to penicillins and first- through third-generation cephalosporins; cefepime or a carbapenem is often needed.",
-    "The lab only tests antibiotics known to have activity against the isolated organism; if a drug is not listed, it is almost certainly ineffective (e.g., amoxicillin not tested for Pseudomonas).",
-    "When a culture shows an unexpected organism (e.g., Enterobacter), consult a reference like the Sanford Guide before susceptibilities return to avoid continuing a wrong empiric antibiotic.",
-    "For pyelonephritis, nitrofurantoin (Macrobid) is ineffective because it does not achieve adequate renal parenchymal concentration; use it only for cystitis.",
-    "Oral vancomycin has no systemic absorption; use it only for C. difficile colitis, not for skin or soft tissue infections.",
-    "When culture results show enterococcus, immediately switch from cephalosporin to amoxicillin, ampicillin, or vancomycin because cephalosporins are ineffective against enterococcus.",
-    "Automatic ID consults are indicated for endocarditis, osteomyelitis, Staphylococcus aureus bacteremia, staph empyema, and staph pneumonia."
+    "When selecting an antibiotic, ask three questions: Does it cover the organism? Does it reach the infection site? Are there patient factors (CKD, drug interactions) to consider?",
+    "Susceptibility reports test antibiotic classes, not individual drugs; susceptibility to cefazolin means susceptibility to all first-generation cephalosporins (e.g., cephalexin).",
+    "The lab arranges antibiotics alphabetically, not by spectrum; clinicians must reorder them mentally by class and generation.",
+    "Oral vancomycin has no GI absorption and cannot treat skin infections; it is only for C. diff. Nitrofurantoin (Macrobid) works for cystitis but not pyelonephritis due to inadequate renal tissue concentration.",
+    "Enterobacter cloacae is inherently resistant to penicillins and second/third-generation cephalosporins; ceftriaxone is the wrong drug even before susceptibilities return.",
+    "Pseudomonas and MRSA have a limited number of effective antibiotics; clinicians should memorize the list (e.g., ceftazidime, cefepime, ciprofloxacin, levofloxacin, piperacillin-tazobactam, meropenem for Pseudomonas).",
+    "The lab only tests antibiotics known to have efficacy against the identified organism; you will never see amoxicillin or ceftriaxone tested against Pseudomonas.",
+    "If a susceptibility panel does not include a desired antibiotic (e.g., cefepime), call the lab; they may have already tested it and can provide the result.",
+    "When a penicillin is susceptible, it may be more effective than a cephalosporin against certain resistant patterns; do not automatically escalate to broader agents.",
+    "Fluoroquinolones are often avoided due to safety warnings; reserve carbapenems (e.g., meropenem) for highly resistant organisms.",
+    "Enterococcus is intrinsically resistant to all cephalosporins; never use a cephalosporin for Enterococcus.",
+    "Effective antibiotics for Pseudomonas include ceftazidime, cefepime, ciprofloxacin, levofloxacin, piperacillin-tazobactam, and meropenem."
   ],
   "topics_raw": [
     {
       "label": "Antibiotic Susceptibility Testing",
-      "kind": "concept"
-    },
-    {
-      "label": "Antibiotic Spectrum of Activity",
-      "kind": "concept"
-    },
-    {
-      "label": "Enterococcus faecalis",
-      "kind": "condition"
-    },
-    {
-      "label": "Pseudomonas aeruginosa",
-      "kind": "condition"
-    },
-    {
-      "label": "Enterobacter cloacae",
-      "kind": "condition"
+      "kind": "procedure"
     },
     {
       "label": "Cephalosporins",
+      "kind": "drug"
+    },
+    {
+      "label": "Penicillins",
       "kind": "drug"
     },
     {
@@ -34236,6 +34224,38 @@
       "kind": "drug"
     },
     {
+      "label": "Enterobacter cloacae",
+      "kind": "condition"
+    },
+    {
+      "label": "Pseudomonas aeruginosa",
+      "kind": "condition"
+    },
+    {
+      "label": "MRSA",
+      "kind": "condition"
+    },
+    {
+      "label": "Fluoroquinolones",
+      "kind": "drug"
+    },
+    {
+      "label": "Carbapenems",
+      "kind": "drug"
+    },
+    {
+      "label": "Piperacillin-tazobactam",
+      "kind": "drug"
+    },
+    {
+      "label": "Ceftazidime",
+      "kind": "drug"
+    },
+    {
+      "label": "Cefepime",
+      "kind": "drug"
+    },
+    {
       "label": "Pyelonephritis",
       "kind": "condition"
     },
@@ -34244,11 +34264,43 @@
       "kind": "condition"
     },
     {
+      "label": "C. diff Infection",
+      "kind": "condition"
+    },
+    {
       "label": "Enterococcus",
       "kind": "condition"
     },
     {
-      "label": "Cephalosporin",
+      "label": "Cephalosporins",
+      "kind": "drug"
+    },
+    {
+      "label": "Pseudomonas",
+      "kind": "condition"
+    },
+    {
+      "label": "Ceftazidime",
+      "kind": "drug"
+    },
+    {
+      "label": "Cefepime",
+      "kind": "drug"
+    },
+    {
+      "label": "Ciprofloxacin",
+      "kind": "drug"
+    },
+    {
+      "label": "Levofloxacin",
+      "kind": "drug"
+    },
+    {
+      "label": "Piperacillin-tazobactam",
+      "kind": "drug"
+    },
+    {
+      "label": "Meropenem",
       "kind": "drug"
     },
     {
@@ -34264,7 +34316,7 @@
       "kind": "drug"
     },
     {
-      "label": "Infective Endocarditis",
+      "label": "Infectious endocarditis",
       "kind": "condition"
     },
     {
@@ -34272,178 +34324,185 @@
       "kind": "condition"
     },
     {
-      "label": "Staphylococcus aureus Bacteremia",
+      "label": "Staphylococcus aureus bacteremia",
       "kind": "condition"
     },
     {
-      "label": "Methicillin-resistant Staphylococcus aureus",
-      "kind": "condition"
+      "label": "Sanford Guide",
+      "kind": "concept"
     },
     {
-      "label": "Pseudomonas aeruginosa",
-      "kind": "condition"
+      "label": "Hopkins Guide",
+      "kind": "concept"
     },
     {
       "label": "EUCAST",
       "kind": "concept"
     },
     {
-      "label": "Stanford Guide",
+      "label": "Minimum inhibitory concentration",
       "kind": "concept"
-    },
-    {
-      "label": "Johns Hopkins ABX Guide",
-      "kind": "concept"
-    },
-    {
-      "label": "Minocycline",
-      "kind": "drug"
-    },
-    {
-      "label": "Minimum Inhibitory Concentration",
-      "kind": "concept"
-    },
-    {
-      "label": "Antimicrobial Susceptibility Testing",
-      "kind": "procedure"
-    },
-    {
-      "label": "Infectious Disease Consultation",
-      "kind": "procedure"
     }
   ],
   "pearls_raw": [
     {
-      "text": "Enterococcus faecalis is universally resistant to cephalosporins; never use a cephalosporin for enterococcal infections even if the susceptibility report appears to show susceptibility.",
-      "verbatim": "enterococcus does not have any susceptibility to cephalosporins across the board",
+      "text": "Oral vancomycin has no GI absorption, so it cannot be used for skin infections; it is only appropriate for C. diff.",
+      "seg": 99,
+      "verbatim": "No GI absorption of oral vancomycin, so I have the wrong antibiotic there. Right? If I had C. Diff, great choice.",
+      "applies_to": "patients with C. diff infection",
       "type": "pitfall"
     },
     {
-      "text": "Nitrofurantoin (Macrobid) should not be used for pyelonephritis because it does not achieve adequate renal parenchymal concentration; it is only effective for cystitis.",
-      "verbatim": "I'm not gonna use Macrobid for hyalinephritis because it doesn't have enough renal concentration in the kidneys to really kill or treat a hyalinephritis",
+      "text": "Nitrofurantoin (Macrobid) can be used for cystitis but not for pyelonephritis because it does not achieve adequate renal tissue concentration.",
+      "seg": 105,
+      "verbatim": "I'm not gonna use Macrobid for hyalinephritis because it doesn't have enough renal concentration in the kidneys to really kill or treat a hyalinephritis. Now I can use it for cystitis, but it just goes through the kidneys in a way that it does not actually treat your pyelonephritis.",
+      "applies_to": "patients with urinary tract infection",
       "type": "pitfall"
     },
     {
-      "text": "Oral vancomycin has no systemic absorption; use it only for C. difficile colitis, not for skin or soft tissue infections.",
-      "verbatim": "oral vancomycin. Would I use that for a skin infection? No. No GI absorption of oral vancomycin",
-      "type": "pitfall"
+      "text": "Susceptibility to cefazolin means susceptibility to all first-generation cephalosporins; you can switch from IV cefazolin to oral cephalexin (Keflex) even though Keflex was not tested.",
+      "seg": 239,
+      "verbatim": "you then know that every first generation cephalosporin is susceptible. That's why if it's susceptible to cefazolin... Well, cefazolin's an IV drug. If I wanna use a PO first generation cephalosporin, like Keflex? Would I use that? Yeah. Even though they didn't test Keflex, is in the same class. I can use it.",
+      "applies_to": "patients with susceptible organism",
+      "type": "practice"
     },
     {
-      "text": "Susceptibility to cefazolin (a first-generation cephalosporin) means you can use oral cephalexin (Keflex) because they are in the same class.",
-      "verbatim": "if it's susceptible to cefazolin... Well, cefazolin's an IV drug. If I wanna use a PO first generation cephalosporin, like Keflex? Would I use that? Yeah. Even though they didn't test Keflex, is in the same class. I can use it.",
-      "type": "guideline"
+      "text": "The lab arranges antibiotics alphabetically on the susceptibility report, not by spectrum or generation; clinicians must reorder them mentally by class.",
+      "seg": 196,
+      "verbatim": "It's the it's the lab. They arrange it by alphabetical, which is totally for us clinical people. Okay? So don't get confused by the order of these drugs.",
+      "applies_to": "all clinicians reading susceptibility reports",
+      "type": "practice"
     },
     {
-      "text": "Enterobacter cloacae is typically resistant to penicillins and first- through third-generation cephalosporins; cefepime or a carbapenem is often needed.",
-      "verbatim": "Enterobacter are sometimes those weird bugs that don't have a straight across the board sort of susceptibility pattern, it's kind of splotchy",
+      "text": "Enterobacter cloacae is inherently resistant to penicillins and second/third-generation cephalosporins; ceftriaxone is the wrong drug even before susceptibilities return.",
+      "seg": 377,
+      "verbatim": "I go down to Enterobacter cloacae. Bam. There's not even a penicillin it's typically susceptible to. It's good on mirarum. Oh my goodness. She's on the Rocephin. Right? It grows. Okay. So there are situations where you don't even have the susceptibility yet, but you know right off the bat that this bacteria never is sensitive to that bug and, excuse me, to that body.",
+      "applies_to": "patients with Enterobacter cloacae infection",
       "type": "red_flag"
     },
     {
-      "text": "Pseudomonas has a limited set of effective antibiotics: ceftazidime, cefepime, ciprofloxacin, levofloxacin, piperacillin-tazobactam, and meropenem; memorize these for empiric coverage when risk factors exist.",
-      "verbatim": "pseudomonas. That's one of those that you should have, like, a group of antibiotics memorized as far as what can I use?",
-      "type": "guideline"
-    },
-    {
-      "text": "The lab only tests antibiotics known to have activity against the isolated organism; if a drug is not listed, it is almost certainly ineffective.",
-      "verbatim": "the lab only bothered testing antibiotics that can be susceptible to the moment",
-      "type": "exam_technique"
-    },
-    {
-      "text": "When a culture shows an unexpected organism like Enterobacter, consult a reference (e.g., Sanford Guide) before susceptibilities return to avoid continuing a wrong empiric antibiotic.",
-      "verbatim": "I use the sandbird guide, and it's got this beautiful tape",
-      "type": "judgment"
-    },
-    {
-      "text": "Susceptibility reports list antibiotic classes, not individual drugs; susceptibility to one drug in a class implies susceptibility to others in that class.",
-      "verbatim": "recalibrate your your antibiotic susceptibility glasses, not to look at specific drugs, but classes of drugs",
-      "type": "exam_technique"
-    },
-    {
-      "text": "Lab panels are alphabetical, not arranged by spectrum or generation; clinicians must mentally reorder by class to avoid confusion.",
-      "verbatim": "lab does not set you up for success here, but you being the smarter clinician know that they just did this because it's alphabetical",
-      "type": "pitfall"
-    },
-    {
-      "text": "For enterococcus, switch from cephalosporin to amoxicillin, ampicillin, or vancomycin immediately because the cephalosporin is ineffective.",
-      "verbatim": "the patient is at least on amoxicillin or ampicillin or vancomycin and not leave them on that cephalosporin because you know right off the bat that the cephalosporin is doing nothing.",
-      "type": "pitfall"
-    },
-    {
-      "text": "Automatically consult ID for endocarditis and osteomyelitis as they require prolonged antibiotic courses and specialist management.",
-      "verbatim": "infectious endocarditis, osteomyelitis, those are definitely two clinical scenarios where we're almost always, I would say, always consulting infectious disease",
-      "type": "red_flag"
-    },
-    {
-      "text": "Staphylococcus aureus bacteremia, empyema, and pneumonia are aggressive infections that mandate automatic ID consultation.",
-      "verbatim": "if you have, like, a scaph aureus bacteremia, that also would be a automatic ID consult, staph empyema, even a staph pneumonia.",
-      "type": "red_flag"
-    },
-    {
-      "text": "When an infection fails to respond despite using appropriate antibiotics per susceptibility, verify MIC breakpoints on the EUCAST website because EHR values may be outdated.",
-      "verbatim": "going to the source of where our MIC value should be coming from and looking at these updated values was really helpful.",
-      "type": "pitfall"
-    },
-    {
-      "text": "If MIC values are not updated, you can look up the current breakpoint on EUCAST to determine if the reported susceptibility is accurate.",
-      "verbatim": "Or maybe try to look up the MYC value, the updated value on the EUCAST website, and you'll know if this is accurate or not.",
-      "type": "guideline"
-    },
-    {
-      "text": "A rising MIC across serial cultures from the same patient indicates developing resistance; seek ID consult before repeating the same antibiotic.",
-      "verbatim": "She came in with a value that said less than less than two. And then her next admission, it was, like, less than four. And her third admission, it said less than eight.",
-      "type": "red_flag"
-    },
-    {
-      "text": "When a patient with recurrent infections keeps returning despite correct antibiotics per the susceptibility report, stop and question whether the MIC data is reliable or if resistance has emerged.",
-      "verbatim": "if something's just not going way it should be going, stop and ask yourself. Yep. You know, maybe I should call an IV consult and see what I need to do differently.",
-      "type": "judgment"
-    },
-    {
-      "text": "Susceptibility tables test antibiotic classes, not the specific drug listed; knowing the class spectrum allows you to choose appropriate therapy even from a single reported drug.",
-      "verbatim": "you're learning the class, not the specific antibiotic.",
+      "text": "The lab only tests antibiotics known to have efficacy against the identified organism; you will never see amoxicillin or ceftriaxone tested against Pseudomonas.",
+      "seg": 463,
+      "verbatim": "So know that lab is not also gonna waste their time with antibiotic testing. So you'll never see amoxicillin tested against pseudomonas. You'll never see ceftriaxone tested against pseudomonas.",
+      "applies_to": "all clinicians interpreting susceptibility reports",
       "type": "concept"
     },
     {
-      "text": "Use Sanford or Hopkins guides as primary antibiotic resources instead of UpToDate for more actionable microbiology recommendations.",
-      "verbatim": "I use Sanford. I use... There we go. Hopkins. Those two. I bounce between those two and kind of try to merge whichever might seem to give me better information.",
-      "type": "guideline"
+      "text": "Memorize the short list of antibiotics effective against Pseudomonas: ceftazidime, cefepime, ciprofloxacin, levofloxacin, piperacillin-tazobactam, and meropenem.",
+      "seg": 493,
+      "verbatim": "who knows the third generation cephalosporin that treats Pseudomonas? So that is Good. You have that memorized. Good. And then above that, like, cefepime covers. Right? That's important because the... That's that's... You just need to know which are which are okay to use.",
+      "applies_to": "patients with Pseudomonas risk factors (e.g., healthcare-associated pneumonia)",
+      "type": "concept"
+    },
+    {
+      "text": "If a desired antibiotic is not on the susceptibility panel, call the lab; they may have already tested it and can provide the result quickly.",
+      "seg": 443,
+      "verbatim": "something important about this case too was that the lab did not include cefepime first. Like, we got susceptibilities back, but cefepime wasn't on there. So we had to call them, and they had already tested it and knew it was susceptible. They just didn't include it.",
+      "applies_to": "inpatients with complex infections",
+      "type": "practice"
+    },
+    {
+      "text": "When a penicillin is susceptible, it may be more effective than a cephalosporin against certain resistant patterns; do not automatically escalate to broader agents.",
+      "seg": 340,
+      "verbatim": "penicillins sometimes are stronger than their... Stronger... Have more efficacy than their, like, cephalosporin counterpart. And if if you've got a penicillin that is susceptible, go for it.",
+      "applies_to": "patients with susceptible organism on culture",
+      "type": "judgment"
+    },
+    {
+      "text": "Fluoroquinolones are often avoided due to safety warnings; reserve carbapenems (e.g., meropenem) for highly resistant organisms.",
+      "seg": 430,
+      "verbatim": "But beyond your cefepime, you're... Maybe you should switch to cipro or merum. But because of cipro's warnings, we tend to avoid fluoroquinolones. Merum tends to be reserved for more resistant organisms.",
+      "applies_to": "patients requiring broad-spectrum coverage",
+      "type": "judgment"
+    },
+    {
+      "text": "Enterococcus has zero susceptibility to cephalosporins; never use a cephalosporin for Enterococcus.",
+      "seg": 585,
+      "verbatim": "enterococcus does not have any susceptibility to cephalosporins across the board.",
+      "applies_to": "any infection with Enterococcus",
+      "type": "pitfall"
+    },
+    {
+      "text": "If a patient is on a cephalosporin and culture grows Enterococcus, switch to amoxicillin, ampicillin, or vancomycin immediately.",
+      "seg": 624,
+      "verbatim": "and not leave them on that cephalosporin because you know right off the bat that the cephalosporin is doing nothing.",
+      "applies_to": "patients with Enterococcus infection on a cephalosporin",
+      "type": "dosing"
+    },
+    {
+      "text": "Cefepime covers Pseudomonas.",
+      "seg": 496,
+      "verbatim": "above that, like, cefepime covers.",
+      "applies_to": "patients needing Pseudomonas coverage",
+      "type": "concept"
+    },
+    {
+      "text": "For Pseudomonas, remember fluoroquinolones (ciprofloxacin, levofloxacin), piperacillin-tazobactam, and meropenem.",
+      "seg": 501,
+      "verbatim": "the fluoroquinolones. Right? The cipro, levofloxacin, zosyn, merim.",
+      "applies_to": "patients needing Pseudomonas coverage",
+      "type": "concept"
+    },
+    {
+      "text": "Consult infectious disease for endocarditis and osteomyelitis.",
+      "seg": 660,
+      "verbatim": "infectious endocarditis, osteomyelitis, those are definitely two clinical scenarios where we're almost always, I would say, always consulting infectious disease.",
+      "applies_to": "patients with endocarditis or osteomyelitis",
+      "type": "practice"
+    },
+    {
+      "text": "Consult infectious disease for Staphylococcus aureus bacteremia, staph empyema, and staph pneumonia.",
+      "seg": 692,
+      "verbatim": "staph aureus bacteremia, that also would be a automatic ID consult, staph empyema, even a staph pneumonia.",
+      "applies_to": "patients with these staph infections",
+      "type": "practice"
+    },
+    {
+      "text": "Use Sanford Guide or Hopkins Guide as reliable antibiotic resources.",
+      "seg": 674,
+      "verbatim": "I use Sanford. I use... Hopkins. Those two.",
+      "applies_to": "general",
+      "type": "practice"
+    },
+    {
+      "text": "Susceptibility testing represents the drug class, not just the specific antibiotic tested.",
+      "seg": 822,
+      "verbatim": "You're learning the class, not the specific antibiotic.",
+      "applies_to": "when interpreting susceptibility reports",
+      "type": "concept"
+    },
+    {
+      "text": "For unresponsive infections, MIC values become relevant; check updated breakpoints.",
+      "seg": 755,
+      "verbatim": "when you start getting into, like, nonrespond... Like, infections that are unresponsive, then that becomes more relevant.",
+      "applies_to": "patients with infections not responding to therapy",
+      "type": "concept"
+    },
+    {
+      "text": "Laboratories do not test cephalosporins against Enterococcus because they know it is always resistant.",
+      "seg": 600,
+      "verbatim": "lab didn't even bother testing it. Because they knew cephalosporins and enterococcus is waste of antibiotic.",
+      "applies_to": "Enterococcus",
+      "type": "pitfall"
     }
   ],
   "pearls": [
     {
-      "text": "Oral vancomycin has no systemic absorption; use it only for C. difficile colitis, not for skin or soft tissue infections.",
-      "verbatim": "oral vancomycin. Would I use that for a skin infection? No. No GI absorption of oral vancomycin",
+      "text": "Oral vancomycin has no GI absorption, so it cannot be used for skin infections; it is only appropriate for C. diff.",
+      "verbatim": "No GI absorption of oral vancomycin, so I have the wrong antibiotic there. Right? If I had C. Diff, great choice.",
       "type": "pitfall",
-      "t": 288.8,
+      "t": 294.8,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-288",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "drug:vancomycin"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 7.97
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with C. diff infection",
+      "pearl_id": "dr-ganzer-on-antibiotics-294"
     },
     {
-      "text": "Nitrofurantoin (Macrobid) should not be used for pyelonephritis because it does not achieve adequate renal parenchymal concentration; it is only effective for cystitis.",
-      "verbatim": "I'm not gonna use Macrobid for hyalinephritis because it doesn't have enough renal concentration in the kidneys to really kill or treat a hyalinephritis",
+      "text": "Nitrofurantoin (Macrobid) can be used for cystitis but not for pyelonephritis because it does not achieve adequate renal tissue concentration.",
+      "verbatim": "I'm not gonna use Macrobid for hyalinephritis because it doesn't have enough renal concentration in the kidneys to really kill or treat a hyalinephritis. Now I can use it for cystitis, but it just goes through the kidneys in a way that it does not actually treat your pyelonephritis.",
       "type": "pitfall",
       "t": 313.5,
       "match": "exact",
@@ -34451,226 +34510,130 @@
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-313",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:nitrofurantoin"
-          ],
-          "rarity": 7.97
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with urinary tract infection",
+      "pearl_id": "dr-ganzer-on-antibiotics-313"
     },
     {
-      "text": "Lab panels are alphabetical, not arranged by spectrum or generation; clinicians must mentally reorder by class to avoid confusion.",
-      "verbatim": "lab does not set you up for success here, but you being the smarter clinician know that they just did this because it's alphabetical",
-      "type": "pitfall",
-      "t": 617.9,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Dr. Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-617",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "avoid"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Susceptibility reports list antibiotic classes, not individual drugs; susceptibility to one drug in a class implies susceptibility to others in that class.",
-      "verbatim": "recalibrate your your antibiotic susceptibility glasses, not to look at specific drugs, but classes of drugs",
-      "type": "exam_technique",
-      "t": 683.8,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Dr. Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-683",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.0
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Susceptibility to cefazolin (a first-generation cephalosporin) means you can use oral cephalexin (Keflex) because they are in the same class.",
-      "verbatim": "if it's susceptible to cefazolin... Well, cefazolin's an IV drug. If I wanna use a PO first generation cephalosporin, like Keflex? Would I use that? Yeah. Even though they didn't test Keflex, is in the same class. I can use it.",
+      "text": "The lab arranges antibiotics alphabetically on the susceptibility report, not by spectrum or generation; clinicians must reorder them mentally by class.",
+      "verbatim": "It's the it's the lab. They arrange it by alphabetical, which is totally for us clinical people. Okay? So don't get confused by the order of these drugs.",
       "type": "practice",
-      "t": 722.5,
+      "t": 579.8,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-722",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:cephalexin"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 8.2
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "all clinicians reading susceptibility reports",
+      "pearl_id": "dr-ganzer-on-antibiotics-579"
     },
     {
-      "text": "Enterobacter cloacae is typically resistant to penicillins and first- through third-generation cephalosporins; cefepime or a carbapenem is often needed.",
-      "verbatim": "Enterobacter are sometimes those weird bugs that don't have a straight across the board sort of susceptibility pattern, it's kind of splotchy",
-      "type": "red_flag",
-      "t": 1064.6,
+      "text": "Susceptibility to cefazolin means susceptibility to all first-generation cephalosporins; you can switch from IV cefazolin to oral cephalexin (Keflex) even though Keflex was not tested.",
+      "verbatim": "you then know that every first generation cephalosporin is susceptible. That's why if it's susceptible to cefazolin... Well, cefazolin's an IV drug. If I wanna use a PO first generation cephalosporin, like Keflex? Would I use that? Yeah. Even though they didn't test Keflex, is in the same class. I can use it.",
+      "type": "practice",
+      "t": 717.5,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-1064",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:enterobacter cloacae"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with susceptible organism",
+      "pearl_id": "dr-ganzer-on-antibiotics-717"
     },
     {
-      "text": "When a culture shows an unexpected organism like Enterobacter, consult a reference (e.g., Sanford Guide) before susceptibilities return to avoid continuing a wrong empiric antibiotic.",
-      "verbatim": "I use the sandbird guide, and it's got this beautiful tape",
+      "text": "When a penicillin is susceptible, it may be more effective than a cephalosporin against certain resistant patterns; do not automatically escalate to broader agents.",
+      "verbatim": "penicillins sometimes are stronger than their... Stronger... Have more efficacy than their, like, cephalosporin counterpart. And if if you've got a penicillin that is susceptible, go for it.",
       "type": "judgment",
-      "t": 1085.1,
+      "t": 980.8,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-1085",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:culture"
-          ],
-          "actionable": [
-            "consult"
-          ],
-          "rarity": 8.2
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with susceptible organism on culture",
+      "pearl_id": "dr-ganzer-on-antibiotics-980"
     },
     {
-      "text": "The lab only tests antibiotics known to have activity against the isolated organism; if a drug is not listed, it is almost certainly ineffective.",
-      "verbatim": "the lab only bothered testing antibiotics that can be susceptible to the moment",
-      "type": "exam_technique",
-      "t": 1343.0,
+      "text": "Enterobacter cloacae is inherently resistant to penicillins and second/third-generation cephalosporins; ceftriaxone is the wrong drug even before susceptibilities return.",
+      "verbatim": "I go down to Enterobacter cloacae. Bam. There's not even a penicillin it's typically susceptible to. It's good on mirarum. Oh my goodness. She's on the Rocephin. Right? It grows. Okay. So there are situations where you don't even have the susceptibility yet, but you know right off the bat that this bacteria never is sensitive to that bug and, excuse me, to that body.",
+      "type": "red_flag",
+      "t": 1098.9,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-1343",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:antibiotics"
-          ],
-          "rarity": 7.59
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with Enterobacter cloacae infection",
+      "pearl_id": "dr-ganzer-on-antibiotics-1098"
     },
     {
-      "text": "Pseudomonas has a limited set of effective antibiotics: ceftazidime, cefepime, ciprofloxacin, levofloxacin, piperacillin-tazobactam, and meropenem; memorize these for empiric coverage when risk factors exist.",
-      "verbatim": "pseudomonas. That's one of those that you should have, like, a group of antibiotics memorized as far as what can I use?",
+      "text": "Fluoroquinolones are often avoided due to safety warnings; reserve carbapenems (e.g., meropenem) for highly resistant organisms.",
+      "verbatim": "But beyond your cefepime, you're... Maybe you should switch to cipro or merum. But because of cipro's warnings, we tend to avoid fluoroquinolones. Merum tends to be reserved for more resistant organisms.",
+      "type": "judgment",
+      "t": 1247.8,
+      "match": "exact",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients requiring broad-spectrum coverage",
+      "pearl_id": "dr-ganzer-on-antibiotics-1247"
+    },
+    {
+      "text": "If a desired antibiotic is not on the susceptibility panel, call the lab; they may have already tested it and can provide the result quickly.",
+      "verbatim": "something important about this case too was that the lab did not include cefepime first. Like, we got susceptibilities back, but cefepime wasn't on there. So we had to call them, and they had already tested it and knew it was susceptible. They just didn't include it.",
       "type": "practice",
-      "t": 1386.8,
+      "t": 1286.3,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-1386",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "drug:ciprofloxacin"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "inpatients with complex infections",
+      "by_presenter": false,
+      "pearl_id": "dr-ganzer-on-antibiotics-1286"
     },
     {
-      "text": "Enterococcus faecalis is universally resistant to cephalosporins; never use a cephalosporin for enterococcal infections even if the susceptibility report appears to show susceptibility.",
-      "verbatim": "enterococcus does not have any susceptibility to cephalosporins across the board",
+      "text": "The lab only tests antibiotics known to have efficacy against the identified organism; you will never see amoxicillin or ceftriaxone tested against Pseudomonas.",
+      "verbatim": "So know that lab is not also gonna waste their time with antibiotic testing. So you'll never see amoxicillin tested against pseudomonas. You'll never see ceftriaxone tested against pseudomonas.",
+      "type": "concept",
+      "t": 1352.0,
+      "match": "exact",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "all clinicians interpreting susceptibility reports",
+      "pearl_id": "dr-ganzer-on-antibiotics-1352"
+    },
+    {
+      "text": "Memorize the short list of antibiotics effective against Pseudomonas: ceftazidime, cefepime, ciprofloxacin, levofloxacin, piperacillin-tazobactam, and meropenem.",
+      "verbatim": "who knows the third generation cephalosporin that treats Pseudomonas? So that is Good. You have that memorized. Good. And then above that, like, cefepime covers. Right? That's important because the... That's that's... You just need to know which are which are okay to use.",
+      "type": "concept",
+      "t": 1457.7,
+      "match": "exact",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with Pseudomonas risk factors (e.g., healthcare-associated pneumonia)",
+      "pearl_id": "dr-ganzer-on-antibiotics-1457"
+    },
+    {
+      "text": "For Pseudomonas, remember fluoroquinolones (ciprofloxacin, levofloxacin), piperacillin-tazobactam, and meropenem.",
+      "verbatim": "the fluoroquinolones. Right? The cipro, levofloxacin, zosyn, merim.",
+      "type": "concept",
+      "t": 1493.8,
+      "match": "fuzzy",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients needing Pseudomonas coverage",
+      "pearl_id": "dr-ganzer-on-antibiotics-1493"
+    },
+    {
+      "text": "Enterococcus has zero susceptibility to cephalosporins; never use a cephalosporin for Enterococcus.",
+      "verbatim": "enterococcus does not have any susceptibility to cephalosporins across the board.",
       "type": "pitfall",
       "t": 1740.7,
       "match": "exact",
@@ -34678,95 +34641,51 @@
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-1740",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:enterococcus faecalis"
-          ],
-          "actionable": [
-            "never"
-          ],
-          "rarity": 8.29
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "any infection with Enterococcus",
+      "pearl_id": "dr-ganzer-on-antibiotics-1740"
     },
     {
-      "text": "For enterococcus, switch from cephalosporin to amoxicillin, ampicillin, or vancomycin immediately because the cephalosporin is ineffective.",
-      "verbatim": "the patient is at least on amoxicillin or ampicillin or vancomycin and not leave them on that cephalosporin because you know right off the bat that the cephalosporin is doing nothing.",
+      "text": "Laboratories do not test cephalosporins against Enterococcus because they know it is always resistant.",
+      "verbatim": "lab didn't even bother testing it. Because they knew cephalosporins and enterococcus is waste of antibiotic.",
       "type": "pitfall",
-      "t": 1835.8,
+      "t": 1775.6,
+      "match": "segment",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "Enterococcus",
+      "pearl_id": "dr-ganzer-on-antibiotics-1775"
+    },
+    {
+      "text": "If a patient is on a cephalosporin and culture grows Enterococcus, switch to amoxicillin, ampicillin, or vancomycin immediately.",
+      "verbatim": "and not leave them on that cephalosporin because you know right off the bat that the cephalosporin is doing nothing.",
+      "type": "dosing",
+      "t": 1846.4,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-1835",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 4,
-        "grade": "A",
-        "fired": {
-          "specific": [
-            "drug:amoxicillin"
-          ],
-          "actionable": [
-            "switch"
-          ],
-          "harm": [
-            "immediately"
-          ],
-          "rarity": 7.6
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with Enterococcus infection on a cephalosporin",
+      "pearl_id": "dr-ganzer-on-antibiotics-1846"
     },
     {
-      "text": "Automatically consult ID for endocarditis and osteomyelitis as they require prolonged antibiotic courses and specialist management.",
-      "verbatim": "infectious endocarditis, osteomyelitis, those are definitely two clinical scenarios where we're almost always, I would say, always consulting infectious disease",
-      "type": "red_flag",
+      "text": "Consult infectious disease for endocarditis and osteomyelitis.",
+      "verbatim": "infectious endocarditis, osteomyelitis, those are definitely two clinical scenarios where we're almost always, I would say, always consulting infectious disease.",
+      "type": "practice",
       "t": 1951.3,
       "match": "exact",
       "episode": "dr-ganzer-on-antibiotics",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-1951",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:osteomyelitis"
-          ],
-          "actionable": [
-            "consult"
-          ],
-          "rarity": 7.2
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with endocarditis or osteomyelitis",
+      "pearl_id": "dr-ganzer-on-antibiotics-1951"
     },
     {
-      "text": "Use Sanford or Hopkins guides as primary antibiotic resources instead of UpToDate for more actionable microbiology recommendations.",
-      "verbatim": "I use Sanford. I use... There we go. Hopkins. Those two. I bounce between those two and kind of try to merge whichever might seem to give me better information.",
+      "text": "Use Sanford Guide or Hopkins Guide as reliable antibiotic resources.",
+      "verbatim": "I use Sanford. I use... Hopkins. Those two.",
       "type": "practice",
       "t": 1990.9,
       "match": "exact",
@@ -34774,174 +34693,38 @@
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-1990",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "general",
+      "pearl_id": "dr-ganzer-on-antibiotics-1990"
     },
     {
-      "text": "Staphylococcus aureus bacteremia, empyema, and pneumonia are aggressive infections that mandate automatic ID consultation.",
-      "verbatim": "if you have, like, a scaph aureus bacteremia, that also would be a automatic ID consult, staph empyema, even a staph pneumonia.",
-      "type": "red_flag",
-      "t": 2049.3,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Dr. Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-2049",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:staphylococcus aureus "
-          ],
-          "rarity": 8.43
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "When an infection fails to respond despite using appropriate antibiotics per susceptibility, verify MIC breakpoints on the EUCAST website because EHR values may be outdated.",
-      "verbatim": "going to the source of where our MIC value should be coming from and looking at these updated values was really helpful.",
-      "type": "pitfall",
-      "t": 2230.5,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Dr. Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "dr-ganzer-on-antibiotics-2230",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:antibiotics"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "A rising MIC across serial cultures from the same patient indicates developing resistance; seek ID consult before repeating the same antibiotic.",
-      "verbatim": "She came in with a value that said less than less than two. And then her next admission, it was, like, less than four. And her third admission, it said less than eight.",
-      "type": "red_flag",
-      "t": 2266.7,
-      "match": "exact",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Dr. Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "dr-ganzer-on-antibiotics-2266",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "consult"
-          ],
-          "rarity": 7.3
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "When a patient with recurrent infections keeps returning despite correct antibiotics per the susceptibility report, stop and question whether the MIC data is reliable or if resistance has emerged.",
-      "verbatim": "if something's just not going way it should be going, stop and ask yourself. Yep. You know, maybe I should call an IV consult and see what I need to do differently.",
-      "type": "judgment",
-      "t": 2301.8,
-      "match": "fuzzy",
-      "episode": "dr-ganzer-on-antibiotics",
-      "speaker": "Dr. Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "dr-ganzer-on-antibiotics-2301",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:antibiotics"
-          ],
-          "actionable": [
-            "stop"
-          ],
-          "rarity": 7.5
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "If MIC values are not updated, you can look up the current breakpoint on EUCAST to determine if the reported susceptibility is accurate.",
-      "verbatim": "Or maybe try to look up the MYC value, the updated value on the EUCAST website, and you'll know if this is accurate or not.",
+      "text": "Consult infectious disease for Staphylococcus aureus bacteremia, staph empyema, and staph pneumonia.",
+      "verbatim": "staph aureus bacteremia, that also would be a automatic ID consult, staph empyema, even a staph pneumonia.",
       "type": "practice",
-      "t": 2311.1,
+      "t": 2050.7,
       "match": "fuzzy",
       "episode": "dr-ganzer-on-antibiotics",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "dr-ganzer-on-antibiotics-2311",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:eucast"
-          ],
-          "rarity": 7.74
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with these staph infections",
+      "pearl_id": "dr-ganzer-on-antibiotics-2050"
     },
     {
-      "text": "Susceptibility tables test antibiotic classes, not the specific drug listed; knowing the class spectrum allows you to choose appropriate therapy even from a single reported drug.",
-      "verbatim": "you're learning the class, not the specific antibiotic.",
+      "text": "For unresponsive infections, MIC values become relevant; check updated breakpoints.",
+      "verbatim": "when you start getting into, like, nonrespond... Like, infections that are unresponsive, then that becomes more relevant.",
+      "type": "concept",
+      "t": 2330.8,
+      "match": "exact",
+      "episode": "dr-ganzer-on-antibiotics",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with infections not responding to therapy",
+      "pearl_id": "dr-ganzer-on-antibiotics-2330"
+    },
+    {
+      "text": "Susceptibility testing represents the drug class, not just the specific antibiotic tested.",
+      "verbatim": "You're learning the class, not the specific antibiotic.",
       "type": "concept",
       "t": 2519.8,
       "match": "exact",
@@ -34949,23 +34732,8 @@
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-antibiotics-2519",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:therapy"
-          ],
-          "rarity": 7.76
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "when interpreting susceptibility reports",
+      "pearl_id": "dr-ganzer-on-antibiotics-2519"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -50001,5 +49769,6 @@
       "name": "Dr. Ganzer"
     }
   ],
-  "pearls_fingerprint": "b3579a79c189d80a"
+  "pearls_fingerprint": "7553d6c59532fa3e",
+  "enrich_version": "v2"
 }

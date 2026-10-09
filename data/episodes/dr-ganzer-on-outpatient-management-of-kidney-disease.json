@@ -36303,40 +36303,104 @@
   ],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "",
+  "abstract": "Dr. Ganzer presents an outpatient-focused approach to kidney disease, distinguishing acute, subacute, and chronic presentations. The lecture emphasizes a practical algorithm for evaluating a subacute creatinine rise, starting with volume assessment and medication review, then proceeding to urinalysis and renal ultrasound. Key teaching points include the definition of CKD (abnormal kidney function for >3 months), screening recommendations for at-risk populations, and the importance of urine albumin-to-creatinine ratio over 24-hour urine protein. The talk uses case-based learning to illustrate workup for intrinsic renal disease, including glomerulonephritis and interstitial nephritis, and highlights when to involve nephrology.",
   "key_points": [
-    "CKD staging uses both GFR and albuminuria; high albuminuria with normal GFR still indicates high risk of progression to ESRD.",
-    "Initial evaluation includes A1c, urine albumin-creatinine ratio, lipid panel, renal ultrasound, serum electrolytes, urinalysis, and urine microscopy.",
-    "For CKD with hypertension or diabetes, use ACE/ARB and titrate to maximally tolerated dose for renal protection, monitoring potassium (hold if >5.5) and GFR (discontinue if drop >30%).",
-    "Finerenone (a nonsteroidal mineralocorticoid receptor antagonist) reduces sustained GFR decline and risk of ESRD in stage 3-4 CKD.",
-    "Lifestyle interventions: plant-based diet, protein 0.6-0.8 g/kg/day for stage 3-4, 150 min/week moderate exercise, resistance training to prevent sarcopenia, and tobacco cessation.",
-    "Statins are recommended for cardiovascular risk reduction in CKD regardless of kidney protection.",
-    "In CKD with diabetes, target A1c 6.5-8% depending on life situation and use SGLT2 inhibitors and metformin.",
-    "Refer to nephrology for hematuria, hereditary kidney disease, approaching ESRD, nephrotic syndrome, rapidly progressive disease, severe electrolyte abnormalities, structural abnormalities, or uncontrolled hypertension."
+    "Subacute kidney injury is defined as renal dysfunction presumed less than 3 months but not meeting AKI criteria; it is the typical outpatient presentation.",
+    "AKI is defined by a rise in creatinine of 0.3 mg/dL within 48 hours, or a 1.5-fold increase over 7 days, or urine output <0.5 mL/kg/h for 6 hours.",
+    "CKD is defined by abnormal kidney structure or function lasting more than 3 months, with health implications including cardiovascular events and progression to ESRD.",
+    "For a subacute creatinine rise, first assess volume status and review medications (NSAIDs, ACEi, ARBs, diuretics); if mild (<0.5 mg/dL rise), advise holding NSAIDs, increasing fluids, and rechecking in 2 weeks.",
+    "For moderate-to-severe subacute injury (creatinine rise >0.5 mg/dL), obtain UA, renal ultrasound, and repeat chemistry; if ultrasound shows hydronephrosis, refer to urology.",
+    "If ultrasound shows no obstruction, urinalysis guides further workup: RBC casts/dysmorphic RBCs/proteinuria suggest glomerulonephritis; pyuria suggests interstitial nephritis; normal UA suggests prerenal or ATN causes.",
+    "Screening for CKD is recommended annually for patients with diabetes or hypertension; consider screening for those with CVD, older age, obesity, history of preeclampsia, low birth weight, or family history of CKD.",
+    "Urine albumin-to-creatinine ratio (UACR) has replaced 24-hour urine protein due to better convenience and accuracy; urine dipstick alone may miss clinically significant proteinuria in the 30-300 mg/g range.",
+    "CKD is more common in women, but men are more likely to progress to ESRD.",
+    "In patients with known CKD and new symptoms (joint pain, rash), consider serologic workup (e.g., ANA for lupus) along with other tests like SPEP, hepatitis C, and HIV.",
+    "Screen for CKD with serum creatinine, eGFR, and urine albumin-to-creatinine ratio (UACR); 24-hour urine protein is no longer recommended.",
+    "UACR should be obtained on a morning or early afternoon sample; dipstick urinalysis alone misses clinically significant proteinuria (30, 300 mg/g)."
   ],
   "topics_raw": [
+    {
+      "label": "Acute Kidney Injury",
+      "kind": "condition"
+    },
+    {
+      "label": "Subacute Kidney Injury",
+      "kind": "condition"
+    },
     {
       "label": "Chronic Kidney Disease",
       "kind": "condition"
     },
     {
-      "label": "Albuminuria",
+      "label": "Glomerulonephritis",
       "kind": "condition"
     },
     {
-      "label": "Hypertension",
+      "label": "Interstitial Nephritis",
       "kind": "condition"
     },
     {
-      "label": "Diabetes Mellitus",
+      "label": "Acute Tubular Necrosis",
       "kind": "condition"
+    },
+    {
+      "label": "Hydronephrosis",
+      "kind": "condition"
+    },
+    {
+      "label": "Urinalysis",
+      "kind": "procedure"
+    },
+    {
+      "label": "Renal Ultrasound",
+      "kind": "procedure"
+    },
+    {
+      "label": "Urine Albumin-to-Creatinine Ratio",
+      "kind": "procedure"
+    },
+    {
+      "label": "NSAIDs",
+      "kind": "drug"
     },
     {
       "label": "ACE Inhibitors",
       "kind": "drug"
     },
     {
-      "label": "Angiotensin Receptor Blockers",
+      "label": "ARBs",
+      "kind": "drug"
+    },
+    {
+      "label": "Diuretics",
+      "kind": "drug"
+    },
+    {
+      "label": "Cystatin C",
+      "kind": "concept"
+    },
+    {
+      "label": "Screening for CKD",
+      "kind": "concept"
+    },
+    {
+      "label": "Chronic Kidney Disease",
+      "kind": "condition"
+    },
+    {
+      "label": "Urine Albumin-to-Creatinine Ratio",
+      "kind": "procedure"
+    },
+    {
+      "label": "Cystatin C",
+      "kind": "procedure"
+    },
+    {
+      "label": "ACE Inhibitor",
+      "kind": "drug"
+    },
+    {
+      "label": "Angiotensin Receptor Blocker",
       "kind": "drug"
     },
     {
@@ -36344,7 +36408,7 @@
       "kind": "drug"
     },
     {
-      "label": "SGLT2 Inhibitors",
+      "label": "SGLT2 Inhibitor",
       "kind": "drug"
     },
     {
@@ -36352,224 +36416,339 @@
       "kind": "drug"
     },
     {
-      "label": "Statins",
-      "kind": "drug"
+      "label": "Protein Restriction",
+      "kind": "concept"
     },
     {
       "label": "Plant-Based Diet",
       "kind": "concept"
     },
     {
-      "label": "Protein Restriction",
-      "kind": "concept"
-    },
-    {
-      "label": "Exercise Therapy",
-      "kind": "concept"
-    },
-    {
-      "label": "Glomerular Filtration Rate",
-      "kind": "concept"
-    },
-    {
-      "label": "Urine Albumin-Creatinine Ratio",
-      "kind": "concept"
-    },
-    {
       "label": "Nephrology Referral",
-      "kind": "procedure"
+      "kind": "concept"
     }
   ],
   "pearls_raw": [
     {
-      "text": "Titrate ACE/ARB to maximally tolerated dose to achieve renal protection, not just blood pressure control.",
-      "verbatim": "to titrate up to the maximally tolerated dose",
-      "type": "guideline"
+      "text": "For a mild subacute creatinine rise (<0.5 mg/dL), advise holding NSAIDs, increasing oral fluids, and rechecking creatinine in 2 weeks; if it improves, no further workup is needed.",
+      "seg": 196,
+      "verbatim": "define mild as a less than point five milligrams per deciliter change in your creatinine. Right? And did... What was his change? More than that. No more than that. Right. It's, like, 1.4. So if if this was a mild bump, you maybe could have picked a. But the reason why a is not correct is because this is... This represents a significant bump in that creatinine. So let's just say he went from, like, 0.8 to 1.1. He might be like, let's let's, like, hold off on the NSAIDs a bit, drink lots of water, recheck that creatinine in two weeks.",
+      "applies_to": "outpatient with subacute creatinine rise",
+      "type": "practice"
     },
     {
-      "text": "Hold ACE/ARB if serum potassium exceeds 5.5 mEq/L.",
-      "verbatim": "You can want to hold off if your potassium's over 5.5.",
-      "type": "red_flag"
+      "text": "When evaluating a moderate-to-severe subacute creatinine rise, first assess for prerenal causes: check for volume depletion (diarrhea, vomiting) and review medications including NSAIDs, ACE inhibitors, ARBs, and diuretics.",
+      "seg": 175,
+      "verbatim": "First thing you wanna do on this day you're seeing him is assess for volume... Like, assess for acute reasons. Right? Assess that... If there's a... Like, they're prerenal, dehydrated, they've been having diarrhea, they've been vomiting. Assess for medications that cause a prerenal state. Right? Yeah. So are they on NSAIDs, ACE, ARB, any diuretics?",
+      "applies_to": "outpatient with subacute creatinine rise",
+      "type": "practice"
     },
     {
-      "text": "If GFR drops by more than 30% after starting an ACE/ARB, consider changing or stopping the medication.",
-      "verbatim": "If your GFR drops by more than 30% when you start that ACE or ARB, you you would wanna consider changing it, stopping it.",
-      "type": "pitfall"
+      "text": "If renal ultrasound shows hydronephrosis, refer to urology to relieve obstruction.",
+      "seg": 240,
+      "verbatim": "And if the ultrasound shows signs of obstruction, like hydronephrosis, bam. I know what to do. Urology.",
+      "applies_to": "outpatient with subacute kidney injury and hydronephrosis on ultrasound",
+      "type": "practice"
     },
     {
-      "text": "Limit protein intake to 0.6-0.8 g/kg/day for CKD stage 3 or 4 to slow progression.",
-      "verbatim": "protein should only be point six to point eight gram per kilogram per day with patients with CKD stage three or four to reduce progressions.",
-      "type": "dosing"
-    },
-    {
-      "text": "Advise 150 minutes per week of structured moderate-intensity exercise for all CKD patients.",
-      "verbatim": "structured moderate intensity exercise program of a hundred fifty minutes per week.",
-      "type": "guideline"
-    },
-    {
-      "text": "Encourage a plant-based diet to prevent and manage CKD.",
-      "verbatim": "plant based diets have benefits in the prevention and management of CKD.",
-      "type": "guideline"
-    },
-    {
-      "text": "Check urine albumin-creatinine ratio (ACR) in all CKD patients with diabetes to assess risk of progression.",
-      "verbatim": "all the guideline recommendations for CKD, especially those with diabetes, are gonna have you be checking your ACR, basically, your urine albumin creatinine ratio so that you can see the risk of progression",
+      "text": "If urinalysis shows RBC casts, dysmorphic RBCs, or proteinuria, work up for glomerulonephritis.",
+      "seg": 266,
+      "verbatim": "Because if your urinalysis shows some RBC casts, dysmorphic RBCs, proteinuria, you're heading off onto this arm of the algorithm that is working up glomerulonephritis.",
+      "applies_to": "outpatient with subacute kidney injury and abnormal UA",
       "type": "dx_criteria"
     },
     {
-      "text": "In CKD with diabetes, start an SGLT2 inhibitor and metformin.",
-      "verbatim": "Get them on a SGLT2. Metformin is also indicated and recommended for these patients.",
-      "type": "guideline"
+      "text": "If urinalysis shows pyuria, suspect interstitial nephritis and consider nephrology referral for autoimmune/serology workup.",
+      "seg": 302,
+      "verbatim": "Pyuria, that's interesting. Interstitial nephritis. So you're you're gonna have to probably get nephrology involved at that point. Gonna be considering some potentially some autoimmune or other serology workup.",
+      "applies_to": "outpatient with subacute kidney injury and pyuria on UA",
+      "type": "practice"
     },
     {
-      "text": "Consider finerenone (nonsteroidal mineralocorticoid receptor antagonist) for stage 3-4 CKD to reduce GFR decline and ESRD risk.",
-      "verbatim": "This is a selective nonsteroidal mineralocorticoid receptor antagonist. This is a newer agent, but it does have benefits for reducing the risk of sustained GFR decline. This is a big game changer for stage three, stage four CKD patients because it is halting the progression.",
-      "type": "guideline"
+      "text": "If urinalysis is normal, the workup focuses on prerenal causes or acute tubular necrosis; ATN often results from prolonged prerenal state (ischemic) or nephrotoxins.",
+      "seg": 307,
+      "verbatim": "If your urinalysis is normal, so the kidneys aren't really spilling any any unusual blood or casts or things like that, then we're then we're working more of the middle line, and we're gonna get into some of these.",
+      "applies_to": "outpatient with subacute kidney injury and normal UA",
+      "type": "concept"
     },
     {
-      "text": "Counsel tobacco cessation as a key intervention in CKD management.",
-      "verbatim": "Tobacco cessation, that's a huge one.",
-      "type": "guideline"
+      "text": "Screen for CKD annually in patients with diabetes or hypertension using serum creatinine, eGFR, and urine albumin-to-creatinine ratio.",
+      "seg": 465,
+      "verbatim": "So when it comes to screening for CKD, it's essentially those with risk factors. So people who have diabetes, hypertension, they should be screened every year.",
+      "applies_to": "adults with diabetes or hypertension",
+      "type": "practice"
     },
     {
-      "text": "Renally dose all medications for CKD patients to avoid toxicity.",
-      "verbatim": "We are gonna renally dose our medications.",
+      "text": "Urine albumin-to-creatinine ratio (UACR) has replaced 24-hour urine protein due to inadequate collections, inconvenience, and lack of diagnostic advantage; obtain it on a morning sample for accuracy.",
+      "seg": 497,
+      "verbatim": "Previously, there would be... It was recommended twenty four hour urine protein. They don't recommend that anymore because of the potential for inadequate collections, inconvenience to the patients, and lack of diagnostic advantage over the urine albumin-fatting ratio. So this has really replaced your twenty four hour urine protein. And you do wanna get this on a morning...",
+      "applies_to": "outpatient with CKD or suspected proteinuria",
+      "type": "practice"
+    },
+    {
+      "text": "Urine dipstick has high sensitivity for heavy proteinuria (>300 mg/g) but may miss clinically significant lower levels (30-300 mg/g); do not rely on dipstick alone, order UACR.",
+      "seg": 511,
+      "verbatim": "Urinalysis, it has a high sensitivity for heavy proteinuria, meaning over 300, but may not detect clinically significant lower levels, that 30 to 300 range. Okay? So don't rely on your urine out... The... Your, like, urine dip urinalysis by itself, but get your urine albumin creatinine ratio.",
+      "applies_to": "outpatient with CKD or suspected proteinuria",
       "type": "pitfall"
     },
     {
-      "text": "Target blood pressure less than 120 mmH systolic in CKD, regardless of albuminuria or diabetes.",
-      "verbatim": "blood pressure goal of less than one twenty systolic.",
-      "type": "guideline"
+      "text": "CKD is more common in women, but men are more likely to progress to ESRD.",
+      "seg": 408,
+      "verbatim": "What's interesting is CKD is more common in women, but men are more likely to progress to ESRD.",
+      "applies_to": "general population",
+      "type": "concept"
     },
     {
-      "text": "Individuaze A1c target between 6.5% and 8% depending on life circumstances in CKD with diabetes.",
-      "verbatim": "target your A1c to 6.5 up to eight depending on their life situation",
-      "type": "guideline"
+      "text": "Do not rely on urine dipstick urinalysis alone to screen for proteinuria; it has high sensitivity for heavy proteinuria (>300 mg/g) but may miss clinically significant lower levels (30–300 mg/g). Obtain a urine albumin-to-creatinine ratio instead.",
+      "seg": 510,
+      "verbatim": "Urinalysis, it has a high sensitivity for heavy proteinuria, meaning over 300, but may not detect clinically significant lower levels, that 30 to 300 range. Okay? So don't rely on your urine out... The... Your, like, urine dip urinalysis by itself, but get your urine albumin creatinine ratio.",
+      "applies_to": "patients being screened for CKD",
+      "type": "pitfall"
     },
     {
-      "text": "Check SPP if light chain deposition disease (multiple myeloma, amyloidosis) is suspected as cause of CKD.",
-      "verbatim": "your SPEP, if you're looking for light chain deposition disease",
-      "type": "dx_criteri"
+      "text": "Cystatin C is a better screening tool than creatinine alone for renal function, especially in obese patients with CKD.",
+      "seg": 539,
+      "verbatim": "it's a good marker, endogenous marker of renal function and is especially useful for obese patients with CKD and obese women.",
+      "applies_to": "obese patients with CKD",
+      "type": "concept"
+    },
+    {
+      "text": "For patients with CKD stage 3 or 4, recommend protein intake of 0.6 to 0.8 grams per kilogram per day to reduce progression.",
+      "seg": 804,
+      "verbatim": "Low sodium diets or protein should only be point six to point eight gram per kilogram per day with patients with CKD stage three or four to reduce progressions.",
+      "applies_to": "patients with CKD stage 3 or 4",
+      "type": "dosing"
+    },
+    {
+      "text": "Prescribe a structured moderate-intensity exercise program of at least 150 minutes per week for patients with CKD.",
+      "seg": 812,
+      "verbatim": "structured moderate intensity exercise program of a hundred fifty minutes per week.",
+      "applies_to": "patients with CKD",
+      "type": "practice"
+    },
+    {
+      "text": "Include resistance exercise to prevent sarcopenia, as patients with CKD suffer from a higher degree of sarcopenia and also tend to have osteoporosis/osteopenia.",
+      "seg": 821,
+      "verbatim": "Resistance exercise to prevent sarcopenia. K? These patients do suffer from a higher degree of sarcopenia.",
+      "applies_to": "patients with CKD",
+      "type": "practice"
+    },
+    {
+      "text": "For CKD with hypertension, diabetes, or albuminuria, the blood pressure goal is less than 120 mmHg systolic per 2021 Kidney Disease: Improving Global Outcomes (KDIGO) guidelines.",
+      "seg": 852,
+      "verbatim": "the Kidney Go guidelines for 2021 recommend for CKD that you have a blood pressure goal of less than one twenty systolic.",
+      "applies_to": "patients with CKD and hypertension, diabetes, or albuminuria",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "When using an ACE inhibitor or ARB for renal protection, titrate to the maximally tolerated dose; the goal is renal protection, not just blood pressure control.",
+      "seg": 860,
+      "verbatim": "They recommend ACE ARB. And your goal with using the ACE ARB is to titrate up to the maximally tolerated dose. You're not really going for that, okay. I'm... Got my blood pressure down under one twenty. It's like, can I max out this ACE ARB, and they tolerate it? Okay? Because the effect you're going, you're going for the renal protection benefit in that setting, not necessarily hypertension.",
+      "applies_to": "patients with CKD and hypertension, diabetes, or albuminuria",
+      "type": "dosing"
+    },
+    {
+      "text": "Hold ACE inhibitors or ARBs if potassium is over 5.5. If GFR declines by more than 30% after starting, consider stopping or changing therapy.",
+      "seg": 876,
+      "verbatim": "You can want to hold off if your potassium's over 5.5. May continue if the GFR declines. If it's a slow decline, but even if you expect a decrease in your GFR, it should be less than 30%. Okay? So remember 30%. If your GFR drops by more than 30% when you start that ACE or ARB, you you would wanna consider changing it, stopping it.",
+      "applies_to": "patients with CKD starting ACE/ARB",
+      "type": "pitfall"
+    },
+    {
+      "text": "Finerenone, a selective nonsteroidal mineralocorticoid receptor antagonist, is a game changer for stage 3–4 CKD as it reduces the risk of sustained GFR decline, ESRD, and cardiovascular death.",
+      "seg": 888,
+      "verbatim": "Benarone. This is a selective nonsteroidal mineralocorticoid receptor antagonist. This is a newer agent, but it does have benefits for reducing the risk of sustained GFR decline. This is a big game changer for stage three, stage four CKD patients because it is halting the progression. Okay? And it it decreases the risk of ESRD, cardiovascular death, lots of benefits.",
+      "applies_to": "patients with stage 3–4 CKD",
+      "type": "drug"
+    },
+    {
+      "text": "For diabetic CKD, target A1c to 6.5% up to 8% depending on life situation; use SGLT2 inhibitors and metformin.",
+      "seg": 910,
+      "verbatim": "diabetes, when you have comorbidities, including diabetes, you wanna target your A1c to 6.5 up to eight depending on their life situation if if that's... But 6.5 would be kind of your goal. Get them on a SGLT2. Metformin is also indicated and recommended for these patients.",
+      "applies_to": "patients with diabetic CKD",
+      "type": "practice"
+    },
+    {
+      "text": "Refer to nephrology for hematuria, hereditary kidney disease, approaching ESRD, nephrotic syndrome, rapidly progressive disease, severe electrolyte abnormalities, structural abnormalities, or uncontrolled hypertension.",
+      "seg": 946,
+      "verbatim": "If you've got hematuria, consider that. Hereditary kidney disease. They're close to ESRD. Nephrotic syndrome. It's very... It's rapidly progressive disease. Severe electrolyte abnormalities, structural abnormalities, and uncontrolled hypertension.",
+      "applies_to": "patients with CKD",
+      "type": "judgment"
     }
   ],
   "pearls": [
     {
-      "text": "Check urine albumin-creatinine ratio (ACR) in all CKD patients with diabetes to assess risk of progression.",
-      "verbatim": "all the guideline recommendations for CKD, especially those with diabetes, are gonna have you be checking your ACR, basically, your urine albumin creatinine ratio so that you can see the risk of progression",
-      "type": "dx_criteria",
-      "t": 1996.5,
-      "match": "exact",
-      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
-      "speaker": "Dr. Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1996",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:urine albumin-creatini"
-          ],
-          "actionable": [
-            "Check"
-          ],
-          "rarity": 7.3
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Check SPP if light chain deposition disease (multiple myeloma, amyloidosis) is suspected as cause of CKD.",
-      "verbatim": "your SPEP, if you're looking for light chain deposition disease",
-      "type": "dx_criteria",
-      "t": 2222.6,
-      "match": "exact",
-      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
-      "speaker": "Dr. Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2222",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Check"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Limit protein intake to 0.6-0.8 g/kg/day for CKD stage 3 or 4 to slow progression.",
-      "verbatim": "protein should only be point six to point eight gram per kilogram per day with patients with CKD stage three or four to reduce progressions.",
-      "type": "dosing",
-      "t": 2320.1,
-      "match": "exact",
-      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
-      "speaker": "Dr. Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2320",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:0.8 g"
-          ],
-          "rarity": 6.03
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Encourage a plant-based diet to prevent and manage CKD.",
-      "verbatim": "plant based diets have benefits in the prevention and management of CKD.",
+      "text": "When evaluating a moderate-to-severe subacute creatinine rise, first assess for prerenal causes: check for volume depletion (diarrhea, vomiting) and review medications including NSAIDs, ACE inhibitors, ARBs, and diuretics.",
+      "verbatim": "First thing you wanna do on this day you're seeing him is assess for volume... Like, assess for acute reasons. Right? Assess that... If there's a... Like, they're prerenal, dehydrated, they've been having diarrhea, they've been vomiting. Assess for medications that cause a prerenal state. Right? Yeah. So are they on NSAIDs, ACE, ARB, any diuretics?",
       "type": "practice",
-      "t": 2339.9,
+      "t": 539.4,
       "match": "exact",
       "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2339",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:plant-based diet"
-          ],
-          "rarity": 6.78
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "outpatient with subacute creatinine rise",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-539"
     },
     {
-      "text": "Advise 150 minutes per week of structured moderate-intensity exercise for all CKD patients.",
+      "text": "For a mild subacute creatinine rise (<0.5 mg/dL), advise holding NSAIDs, increasing oral fluids, and rechecking creatinine in 2 weeks; if it improves, no further workup is needed.",
+      "verbatim": "define mild as a less than point five milligrams per deciliter change in your creatinine. Right? And did... What was his change? More than that. No more than that. Right. It's, like, 1.4. So if if this was a mild bump, you maybe could have picked a. But the reason why a is not correct is because this is... This represents a significant bump in that creatinine. So let's just say he went from, like, 0.8 to 1.1. He might be like, let's let's, like, hold off on the NSAIDs a bit, drink lots of water, recheck that creatinine in two weeks.",
+      "type": "practice",
+      "t": 603.6,
+      "match": "exact",
+      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "outpatient with subacute creatinine rise",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-603"
+    },
+    {
+      "text": "If renal ultrasound shows hydronephrosis, refer to urology to relieve obstruction.",
+      "verbatim": "And if the ultrasound shows signs of obstruction, like hydronephrosis, bam. I know what to do. Urology.",
+      "type": "practice",
+      "t": 741.6,
+      "match": "exact",
+      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "outpatient with subacute kidney injury and hydronephrosis on ultrasound",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-741"
+    },
+    {
+      "text": "If urinalysis shows RBC casts, dysmorphic RBCs, or proteinuria, work up for glomerulonephritis.",
+      "verbatim": "Because if your urinalysis shows some RBC casts, dysmorphic RBCs, proteinuria, you're heading off onto this arm of the algorithm that is working up glomerulonephritis.",
+      "type": "dx_criteria",
+      "t": 814.1,
+      "match": "exact",
+      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "outpatient with subacute kidney injury and abnormal UA",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-814"
+    },
+    {
+      "text": "If urinalysis shows pyuria, suspect interstitial nephritis and consider nephrology referral for autoimmune/serology workup.",
+      "verbatim": "Pyuria, that's interesting. Interstitial nephritis. So you're you're gonna have to probably get nephrology involved at that point. Gonna be considering some potentially some autoimmune or other serology workup.",
+      "type": "practice",
+      "t": 903.6,
+      "match": "exact",
+      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "outpatient with subacute kidney injury and pyuria on UA",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-903"
+    },
+    {
+      "text": "If urinalysis is normal, the workup focuses on prerenal causes or acute tubular necrosis; ATN often results from prolonged prerenal state (ischemic) or nephrotoxins.",
+      "verbatim": "If your urinalysis is normal, so the kidneys aren't really spilling any any unusual blood or casts or things like that, then we're then we're working more of the middle line, and we're gonna get into some of these.",
+      "type": "concept",
+      "t": 920.5,
+      "match": "exact",
+      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "outpatient with subacute kidney injury and normal UA",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-920"
+    },
+    {
+      "text": "CKD is more common in women, but men are more likely to progress to ESRD.",
+      "verbatim": "What's interesting is CKD is more common in women, but men are more likely to progress to ESRD.",
+      "type": "concept",
+      "t": 1251.3,
+      "match": "exact",
+      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "general population",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1251"
+    },
+    {
+      "text": "Screen for CKD annually in patients with diabetes or hypertension using serum creatinine, eGFR, and urine albumin-to-creatinine ratio.",
+      "verbatim": "So when it comes to screening for CKD, it's essentially those with risk factors. So people who have diabetes, hypertension, they should be screened every year.",
+      "type": "practice",
+      "t": 1420.6,
+      "match": "exact",
+      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "adults with diabetes or hypertension",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1420"
+    },
+    {
+      "text": "Urine albumin-to-creatinine ratio (UACR) has replaced 24-hour urine protein due to inadequate collections, inconvenience, and lack of diagnostic advantage; obtain it on a morning sample for accuracy.",
+      "verbatim": "Previously, there would be... It was recommended twenty four hour urine protein. They don't recommend that anymore because of the potential for inadequate collections, inconvenience to the patients, and lack of diagnostic advantage over the urine albumin-fatting ratio. So this has really replaced your twenty four hour urine protein. And you do wanna get this on a morning...",
+      "type": "practice",
+      "t": 1512.6,
+      "match": "exact",
+      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "outpatient with CKD or suspected proteinuria",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1512"
+    },
+    {
+      "text": "Urine dipstick has high sensitivity for heavy proteinuria (>300 mg/g) but may miss clinically significant lower levels (30-300 mg/g); do not rely on dipstick alone, order UACR.",
+      "verbatim": "Urinalysis, it has a high sensitivity for heavy proteinuria, meaning over 300, but may not detect clinically significant lower levels, that 30 to 300 range. Okay? So don't rely on your urine out... The... Your, like, urine dip urinalysis by itself, but get your urine albumin creatinine ratio.",
+      "type": "pitfall",
+      "t": 1548.4,
+      "match": "exact",
+      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "outpatient with CKD or suspected proteinuria",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1548"
+    },
+    {
+      "text": "Do not rely on urine dipstick urinalysis alone to screen for proteinuria; it has high sensitivity for heavy proteinuria (>300 mg/g) but may miss clinically significant lower levels (30, 300 mg/g). Obtain a urine albumin-to-creatinine ratio instead.",
+      "verbatim": "Urinalysis, it has a high sensitivity for heavy proteinuria, meaning over 300, but may not detect clinically significant lower levels, that 30 to 300 range. Okay? So don't rely on your urine out... The... Your, like, urine dip urinalysis by itself, but get your urine albumin creatinine ratio.",
+      "type": "pitfall",
+      "t": 1548.4,
+      "match": "exact",
+      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients being screened for CKD",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1548-2"
+    },
+    {
+      "text": "Cystatin C is a better screening tool than creatinine alone for renal function, especially in obese patients with CKD.",
+      "verbatim": "it's a good marker, endogenous marker of renal function and is especially useful for obese patients with CKD and obese women.",
+      "type": "concept",
+      "t": 1622.6,
+      "match": "exact",
+      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "obese patients with CKD",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-1622"
+    },
+    {
+      "text": "For patients with CKD stage 3 or 4, recommend protein intake of 0.6 to 0.8 grams per kilogram per day to reduce progression.",
+      "verbatim": "Low sodium diets or protein should only be point six to point eight gram per kilogram per day with patients with CKD stage three or four to reduce progressions.",
+      "type": "dosing",
+      "t": 2317.8,
+      "match": "exact",
+      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with CKD stage 3 or 4",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2317"
+    },
+    {
+      "text": "Prescribe a structured moderate-intensity exercise program of at least 150 minutes per week for patients with CKD.",
       "verbatim": "structured moderate intensity exercise program of a hundred fifty minutes per week.",
       "type": "practice",
       "t": 2348.7,
@@ -36578,292 +36757,99 @@
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2348",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:150 minutes",
-            "frequency:per week"
-          ],
-          "rarity": 6.62
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with CKD",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2348"
     },
     {
-      "text": "Counsel tobacco cessation as a key intervention in CKD management.",
-      "verbatim": "Tobacco cessation, that's a huge one.",
+      "text": "Include resistance exercise to prevent sarcopenia, as patients with CKD suffer from a higher degree of sarcopenia and also tend to have osteoporosis/osteopenia.",
+      "verbatim": "Resistance exercise to prevent sarcopenia. K? These patients do suffer from a higher degree of sarcopenia.",
       "type": "practice",
-      "t": 2395.2,
+      "t": 2379.7,
       "match": "exact",
       "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2395",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Counsel"
-          ],
-          "rarity": 6.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with CKD",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2379"
     },
     {
-      "text": "Renally dose all medications for CKD patients to avoid toxicity.",
-      "verbatim": "We are gonna renally dose our medications.",
+      "text": "For CKD with hypertension, diabetes, or albuminuria, the blood pressure goal is less than 120 mmHg systolic per 2021 Kidney Disease: Improving Global Outcomes (KDIGO) guidelines.",
+      "verbatim": "the Kidney Go guidelines for 2021 recommend for CKD that you have a blood pressure goal of less than one twenty systolic.",
+      "type": "dx_criteria",
+      "t": 2464.7,
+      "match": "exact",
+      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with CKD and hypertension, diabetes, or albuminuria",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2464"
+    },
+    {
+      "text": "When using an ACE inhibitor or ARB for renal protection, titrate to the maximally tolerated dose; the goal is renal protection, not just blood pressure control.",
+      "verbatim": "They recommend ACE ARB. And your goal with using the ACE ARB is to titrate up to the maximally tolerated dose. You're not really going for that, okay. I'm... Got my blood pressure down under one twenty. It's like, can I max out this ACE ARB, and they tolerate it? Okay? Because the effect you're going, you're going for the renal protection benefit in that setting, not necessarily hypertension.",
+      "type": "dosing",
+      "t": 2491.8,
+      "match": "exact",
+      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
+      "speaker": "Dr. Ganzer",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with CKD and hypertension, diabetes, or albuminuria",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2491"
+    },
+    {
+      "text": "Hold ACE inhibitors or ARBs if potassium is over 5.5. If GFR declines by more than 30% after starting, consider stopping or changing therapy.",
+      "verbatim": "You can want to hold off if your potassium's over 5.5. May continue if the GFR declines. If it's a slow decline, but even if you expect a decrease in your GFR, it should be less than 30%. Okay? So remember 30%. If your GFR drops by more than 30% when you start that ACE or ARB, you you would wanna consider changing it, stopping it.",
       "type": "pitfall",
-      "t": 2402.0,
-      "match": "exact",
-      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
-      "speaker": "Dr. Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2402",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "actionable": [
-            "avoid"
-          ],
-          "harm": [
-            "toxicity"
-          ],
-          "rarity": 6.13
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Target blood pressure less than 120 mmH systolic in CKD, regardless of albuminuria or diabetes.",
-      "verbatim": "blood pressure goal of less than one twenty systolic.",
-      "type": "practice",
-      "t": 2471.9,
-      "match": "exact",
-      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
-      "speaker": "Dr. Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2471",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "threshold:less than 1"
-          ],
-          "rarity": 7.8
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Titrate ACE/ARB to maximally tolerated dose to achieve renal protection, not just blood pressure control.",
-      "verbatim": "to titrate up to the maximally tolerated dose",
-      "type": "practice",
-      "t": 2496.8,
-      "match": "exact",
-      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
-      "speaker": "Dr. Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2496",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Titrate"
-          ],
-          "rarity": 7.03
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Hold ACE/ARB if serum potassium exceeds 5.5 mEq/L.",
-      "verbatim": "You can want to hold off if your potassium's over 5.5.",
-      "type": "red_flag",
       "t": 2540.8,
       "match": "exact",
       "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2540",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:5.5 mEq"
-          ],
-          "actionable": [
-            "Hold"
-          ],
-          "rarity": 6.62
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with CKD starting ACE/ARB",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2540"
     },
     {
-      "text": "If GFR drops by more than 30% after starting an ACE/ARB, consider changing or stopping the medication.",
-      "verbatim": "If your GFR drops by more than 30% when you start that ACE or ARB, you you would wanna consider changing it, stopping it.",
-      "type": "pitfall",
-      "t": 2565.9,
+      "text": "Finerenone, a selective nonsteroidal mineralocorticoid receptor antagonist, is a game changer for stage 3, 4 CKD as it reduces the risk of sustained GFR decline, ESRD, and cardiovascular death.",
+      "verbatim": "Benarone. This is a selective nonsteroidal mineralocorticoid receptor antagonist. This is a newer agent, but it does have benefits for reducing the risk of sustained GFR decline. This is a big game changer for stage three, stage four CKD patients because it is halting the progression. Okay? And it it decreases the risk of ESRD, cardiovascular death, lots of benefits.",
+      "type": "dosing",
+      "t": 2579.3,
       "match": "exact",
       "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2565",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "threshold:more than 3",
-            "test:GFR"
-          ],
-          "actionable": [
-            "starting"
-          ],
-          "rarity": 6.51
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with stage 3–4 CKD",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2579"
     },
     {
-      "text": "Consider finerenone (nonsteroidal mineralocorticoid receptor antagonist) for stage 3-4 CKD to reduce GFR decline and ESRD risk.",
-      "verbatim": "This is a selective nonsteroidal mineralocorticoid receptor antagonist. This is a newer agent, but it does have benefits for reducing the risk of sustained GFR decline. This is a big game changer for stage three, stage four CKD patients because it is halting the progression.",
+      "text": "For diabetic CKD, target A1c to 6.5% up to 8% depending on life situation; use SGLT2 inhibitors and metformin.",
+      "verbatim": "diabetes, when you have comorbidities, including diabetes, you wanna target your A1c to 6.5 up to eight depending on their life situation if if that's... But 6.5 would be kind of your goal. Get them on a SGLT2. Metformin is also indicated and recommended for these patients.",
       "type": "practice",
-      "t": 2581.3,
+      "t": 2636.1,
       "match": "exact",
       "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2581",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:GFR"
-          ],
-          "actionable": [
-            "Consider"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with diabetic CKD",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2636"
     },
     {
-      "text": "Individuaze A1c target between 6.5% and 8% depending on life circumstances in CKD with diabetes.",
-      "verbatim": "target your A1c to 6.5 up to eight depending on their life situation",
-      "type": "practice",
-      "t": 2639.1,
+      "text": "Refer to nephrology for hematuria, hereditary kidney disease, approaching ESRD, nephrotic syndrome, rapidly progressive disease, severe electrolyte abnormalities, structural abnormalities, or uncontrolled hypertension.",
+      "verbatim": "If you've got hematuria, consider that. Hereditary kidney disease. They're close to ESRD. Nephrotic syndrome. It's very... It's rapidly progressive disease. Severe electrolyte abnormalities, structural abnormalities, and uncontrolled hypertension.",
+      "type": "judgment",
+      "t": 2752.1,
       "match": "exact",
       "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
       "speaker": "Dr. Ganzer",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2639",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:A1c"
-          ],
-          "rarity": 7.33
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "In CKD with diabetes, start an SGLT2 inhibitor and metformin.",
-      "verbatim": "Get them on a SGLT2. Metformin is also indicated and recommended for these patients.",
-      "type": "practice",
-      "t": 2651.6,
-      "match": "exact",
-      "episode": "dr-ganzer-on-outpatient-management-of-kidney-disease",
-      "speaker": "Dr. Ganzer",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2651",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:metformin"
-          ],
-          "actionable": [
-            "start"
-          ],
-          "rarity": 6.43
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with CKD",
+      "pearl_id": "dr-ganzer-on-outpatient-management-of-kidney-disease-2752"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -52417,5 +52403,6 @@
       "name": "Dr. Ganzer"
     }
   ],
-  "pearls_fingerprint": "9971b413087661ed"
+  "pearls_fingerprint": "30cce4a6428c1f9e",
+  "enrich_version": "v2"
 }
