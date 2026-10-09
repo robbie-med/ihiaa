@@ -40274,20 +40274,20 @@
   "fixes_rejected": [],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "Dr. Amanda Lucashu introduces herself as new faculty and reviews thyroid disorders. She presents a case of a 38-year-old female with fatigue and constipation, leading to a diagnosis of primary hypothyroidism (TSH 22.3, low free T4). Management includes starting levothyroxine 25-50 mcg, titrating to a goal TSH in the upper normal range, and monitoring every 4-6 weeks after dose changes. Pregnancy requires a 30-50% dose increase with monthly TSH checks, and asymptomatic screening is debated (ATA recommends every 5 years starting at 35; USPSTF recommends against).",
+  "abstract": "Dr. Amanda Lucashu presents a case-based lecture on hypothyroidism for family medicine residents. She reviews the differential diagnosis for fatigue, highlights key review of systems and physical exam findings, and discusses the diagnostic approach using TSH and free T4. The lecture covers initial levothyroxine dosing, titration, follow-up intervals, and special considerations in pregnancy, including dose adjustments and trimester-specific TSH targets. She also addresses common pitfalls such as medication interactions, overcorrection risks, and when to consider alternative diagnoses.",
   "key_points": [
-    "Hypothyroidism presents with fatigue, weight gain, cold intolerance, dry skin, constipation, and increased menstrual flow; delayed deep tendon reflex relaxation is a classic exam finding.",
-    "Initial labs for suspected hypothyroidism should include TSH and free T4; antibody testing (e.g., anti-TPO) is not routinely needed for primary hypothyroidism.",
-    "Levothyroxine starting dose is 25-50 mcg daily, with lower doses for elderly patients; titrate based on TSH every 4-6 weeks.",
-    "Levothyroxine should be taken on an empty stomach in the morning, consistently, and separated from medications like omeprazole, calcium, and iron that impair absorption.",
-    "Goal TSH in non-pregnant adults is the upper half of the normal range (e.g., 0.5-4.0 mIU/L) to avoid overcorrection, which can cause angina, atrial fibrillation, and osteoporosis.",
-    "T3 (liothyronine) is not recommended over T4 monotherapy due to rapid absorption and short half-life leading to inconsistent levels.",
-    "Once stable on levothyroxine, TSH should be rechecked every 6-12 months; dose adjustments require recheck in 4-6 weeks.",
-    "In pregnancy, levothyroxine dose must be increased by 30-50% immediately upon confirmation; TSH should be checked monthly and kept in trimester-specific lower normal range to prevent congenital hypothyroidism.",
-    "Drugs that can elevate TSH include metoclopramide, lithium, amiodarone, and antipsychotics; these should be considered in patients requiring unexpectedly high levothyroxine doses.",
-    "Asymptomatic screening for thyroid disease is recommended by the American Thyroid Association (every 5 years starting at age 35) but not by the USPSTF; a low threshold for TSH testing in symptomatic patients is appropriate.",
-    "Subclinical hypothyroidism usually requires no treatment; exceptions include symptoms, TSH >10, family history, pregnancy plans, or positive antibodies.",
-    "TSH is the first-line screening test for thyroid dysfunction; if abnormal, add free T4 and T3."
+    "Hypothyroidism review of systems includes fatigue, cold intolerance, dry skin, constipation, weight gain, hair loss, and increased menstrual flow.",
+    "Physical exam may show delayed relaxation of deep tendon reflexes, bradycardia, thyroid enlargement, and myxedema.",
+    "Drugs that can elevate TSH include metoclopramide, lithium, amiodarone, and antipsychotics.",
+    "Hypothyroidism can cause secondary lab abnormalities like hypercholesterolemia, hyponatremia, and anemia, but these are not routinely checked.",
+    "For routine hypothyroidism, treat based on TSH and free T4 without ordering thyroid antibodies.",
+    "Start levothyroxine at 25-50 mcg daily; elderly start low, healthy patients can start higher.",
+    "Repeat TSH in 4-6 weeks after dose changes; once stable, follow every 6-12 months.",
+    "Goal TSH is toward the higher end of the normal range to avoid overcorrection, which can cause angina, atrial fibrillation, and osteoporosis.",
+    "T3 is not recommended due to rapid absorption and short half-life; T4 allows physiologic conversion.",
+    "In pregnancy, increase levothyroxine by 30-50% and target a lower TSH to prevent congenital hypothyroidism; use trimester-specific reference ranges.",
+    "If levothyroxine dose reaches 200 mcg with persistent symptoms, check for medication interactions, adherence, and consider other diagnoses.",
+    "In pregnancy, increase levothyroxine dose by 30-50% and target the lower end of the trimester-specific TSH range to prevent congenital hypothyroidism."
   ],
   "topics_raw": [
     {
@@ -40295,7 +40295,15 @@
       "kind": "condition"
     },
     {
-      "label": "Hashimoto Thyroiditis",
+      "label": "Hashimoto's Thyroiditis",
+      "kind": "condition"
+    },
+    {
+      "label": "Hyperthyroidism",
+      "kind": "condition"
+    },
+    {
+      "label": "Pregnancy",
       "kind": "condition"
     },
     {
@@ -40303,27 +40311,11 @@
       "kind": "drug"
     },
     {
-      "label": "Thyroid Stimulating Hormone",
-      "kind": "concept"
+      "label": "T3 (Liothyronine)",
+      "kind": "drug"
     },
     {
-      "label": "Free Thyroxine",
-      "kind": "concept"
-    },
-    {
-      "label": "Pregnancy and Thyroid Disease",
-      "kind": "condition"
-    },
-    {
-      "label": "Congenital Hypothyroidism",
-      "kind": "condition"
-    },
-    {
-      "label": "Thyroid Exam",
-      "kind": "procedure"
-    },
-    {
-      "label": "Amiodarone",
+      "label": "Metoclopramide",
       "kind": "drug"
     },
     {
@@ -40331,12 +40323,52 @@
       "kind": "drug"
     },
     {
-      "label": "Subclinical Hypothyroidism",
+      "label": "Amiodarone",
+      "kind": "drug"
+    },
+    {
+      "label": "Antipsychotics",
+      "kind": "drug"
+    },
+    {
+      "label": "Thyroid Exam",
+      "kind": "procedure"
+    },
+    {
+      "label": "TSH Testing",
+      "kind": "procedure"
+    },
+    {
+      "label": "Thyroid Antibodies",
+      "kind": "procedure"
+    },
+    {
+      "label": "TSH Goal",
+      "kind": "concept"
+    },
+    {
+      "label": "Levothyroxine Dosing",
+      "kind": "concept"
+    },
+    {
+      "label": "Drug Absorption",
+      "kind": "concept"
+    },
+    {
+      "label": "Overcorrection",
+      "kind": "concept"
+    },
+    {
+      "label": "Hypothyroidism in Pregnancy",
       "kind": "condition"
     },
     {
       "label": "Levothyroxine",
       "kind": "drug"
+    },
+    {
+      "label": "Subclinical Hypothyroidism",
+      "kind": "condition"
     },
     {
       "label": "Graves Disease",
@@ -40359,12 +40391,16 @@
       "kind": "condition"
     },
     {
+      "label": "Thyroid Ultrasound",
+      "kind": "procedure"
+    },
+    {
       "label": "Subacute Thyroiditis",
       "kind": "condition"
     },
     {
-      "label": "Anti-thyrotropin Receptor Antibody",
-      "kind": "concept"
+      "label": "Anti-Thyrotropin Receptor Antibody",
+      "kind": "procedure"
     },
     {
       "label": "Agranulocytosis",
@@ -40377,582 +40413,571 @@
     {
       "label": "Thyroid Ultrasound",
       "kind": "procedure"
+    },
+    {
+      "label": "Subacute Thyroiditis",
+      "kind": "condition"
+    },
+    {
+      "label": "Hypothyroidism",
+      "kind": "condition"
+    },
+    {
+      "label": "Hyperthyroidism",
+      "kind": "condition"
+    },
+    {
+      "label": "Autoimmune Hypothyroidism",
+      "kind": "condition"
+    },
+    {
+      "label": "Pregnancy-Induced Hypothyroidism",
+      "kind": "condition"
+    },
+    {
+      "label": "Levothyroxine",
+      "kind": "drug"
+    },
+    {
+      "label": "Propranolol",
+      "kind": "drug"
+    },
+    {
+      "label": "Corticosteroids",
+      "kind": "drug"
+    },
+    {
+      "label": "TSH Monitoring",
+      "kind": "concept"
     }
   ],
   "pearls_raw": [
     {
-      "text": "In hypothyroidism, review of systems includes weight gain, cold intolerance, dry skin, hair loss, constipation, and increased menstrual flow (the only increase; everything else is decreased).",
-      "verbatim": "thyroid system, we've got weight gain, insomnia, fatigue, cold intolerance, dry skin, hair loss or brittle hair, thyroid enlargement, constipation, increased menstrual flow. That's the only one that's an increase. Everything else is the lower.",
-      "type": "dx_criteria"
-    },
-    {
-      "text": "For suspected hypothyroidism, start levothyroxine at 25-50 mcg daily; use lower doses in elderly patients and higher in healthy patients, then recheck TSH in 4-6 weeks.",
-      "verbatim": "twenty five to fifty, if you have an elderly patient, you're gonna start on the lower end of that spectrum. If you have a healthy patient, you can start on the higher end of that spectrum, and you can also gauge it a little bit by both where their TSH and their T4 are at the beginning. And then you're gonna repeat your testing in four to six weeks.",
-      "type": "dosing"
-    },
-    {
-      "text": "Levothyroxine should be taken in the morning on an empty stomach, consistently at the same time each day, and separated from medications like omeprazole, calcium, and iron that impair absorption.",
-      "verbatim": "it's better to take in the morning because food can affect that absorption. But if she can't or if it's a patient that doesn't eat breakfast or things like that, it's good to just be consistent every day because then her levels will be affect... You know, will affect that. And you you just don't want them taking it at different times throughout the day.",
-      "type": "pitfall"
-    },
-    {
-      "text": "Overcorrection of hypothyroidism (even within normal TSH range) can cause angina, atrial fibrillation, and osteoporosis; aim for the upper half of the normal TSH range.",
-      "verbatim": "even just overcorrecting our hypothyroidism, you know, even if we're still within a normal level, it can cause angina, A fib, and osteoporosis. So just really important to to try to stay within the upper limits of that normal.",
-      "type": "red_flag"
-    },
-    {
-      "text": "T3 (liothyronine) is not recommended over T4 monotherapy because T3 is rapidly absorbed with a short half-life, leading to inconsistent levels; the body converts T4 to T3 as needed.",
-      "verbatim": "T3 is really rapidly absorbed, and it has a short half life, which leads to inconsistent levels as opposed to when we give T4 and then the body is able to convert it as it needs to.",
-      "type": "guideline"
-    },
-    {
-      "text": "In pregnancy, levothyroxine dose must be increased by 30-50% immediately; TSH should be checked monthly and kept in the trimester-specific lower normal range to prevent congenital hypothyroidism.",
-      "verbatim": "in pregnancy, you're gonna increase the level of thyroxine by 30 to 50%... you're gonna wanna keep the TSH at the lower end of the normal range to prevent congenital hypothyroidism.",
-      "type": "dosing"
-    },
-    {
-      "text": "In pregnancy, use TSH (not free T4) to guide levothyroxine dosing; do not check T4 as it can confuse management.",
-      "verbatim": "for hypothyroidism in pregnancy, the goal is based on the TSH, not the T4. And so I recommend not even checking the T4 because that can only confuse you.",
-      "type": "guideline"
-    },
-    {
-      "text": "Drugs that can elevate TSH include metoclopramide, lithium, amiodarone, and antipsychotics; consider these in patients requiring unexpectedly high levothyroxine doses.",
-      "verbatim": "There's also a couple drugs that can also elevate the TSH. Metoclopramide, lithium, amiodarone, and antipsychotics. So antipsychotics probably being the most common of those that we see.",
-      "type": "pitfall"
-    },
-    {
-      "text": "If a patient requires levothyroxine up to 200 mcg and still has symptoms, check for medication interactions, adherence, and consider alternative diagnoses before further dose increases.",
-      "verbatim": "two hundred is the max of levothyroxine, and we don't wanna just keep increasing for the sake of symptom control. So this is when we start kinda doing what what John was talking about. Let's look at our medications and make sure that medications are not having interactions, making sure that she's actually taking the medication, taking it appropriately. And then if they're still having symptoms, that's the time to start looking at other differentials because there's the potential that there's something else going on.",
-      "type": "judgment"
-    },
-    {
-      "text": "The American Thyroid Association recommends screening for thyroid disease every 5 years starting at age 35, but the USPSTF recommends against it; have a low threshold to check TSH in symptomatic patients.",
-      "verbatim": "The American Thyroid Association actually says yes... they recommend doing it every five years starting at the age of 35. However, the USPSTF does not recommend it. They actually recommend against it.",
-      "type": "guideline"
-    },
-    {
-      "text": "For subclinical hypothyroidism, most patients need only observation ('prayer and a pat on the back'); treatment exceptions include symptoms, TSH >10, family history, pregnancy plans, or positive antibodies.",
-      "verbatim": "prayer and a pat on the back is all that is needed. There are some exceptions. One, sometimes patients are symptomatic despite having a subclinical hypothyroidism. And so if the patient is symptomatic, you know, we just talked about what the symptoms are with the review of systems and things, then you might consider starting a low dose of levothyroxine. The other thing is if they have a high risk for overt hypothyroidism. So some of those risks are if the TSH is above 10, if they have a family history of hypothyroidism, goiter, pregnancy, or plans to become pregnant because of the risk of congenital hypothyroidism. Or if for whatever reason, this is not an indication to check for antibodies, but if you, for whatever reason, have antibodies in the chart, you can't ignore them, and that would be a time to treat as well.",
-      "type": "guideline"
-    },
-    {
-      "text": "Subclinical hypothyroidism carries higher risks for atrial fibrillation and osteoporosis; periodic TSH monitoring (every 1-2 years) is recommended.",
-      "verbatim": "they also have that higher risk for AFib and osteoporosis. And so we wanna be following up with these subclinical hypothyroidism and making sure that they don't convert into overt hypothyroidism at some point later on. So, again, there's not specific guidelines of how often you should be checking a TSH on these patients, But, you know, periodically, every year, couple years, I would just throw it on there.",
-      "type": "pitfall"
-    },
-    {
-      "text": "Use methimazole for all patients requiring antithyroid therapy except in pregnancy, where PTU is indicated.",
-      "verbatim": "the acronym or the mnemonic that I use is m for majority, methimazole. So you're gonna use methimazole for everybody, and then PTU is for pregnancy.",
-      "type": "guideline"
-    },
-    {
-      "text": "Propranolol provides symptom relief in hyperthyroidism by blocking T4-to-T3 conversion; methimazole blocks iodine oxidation and synthesis of T3/T4.",
-      "verbatim": "propranolol is what often offers the most symptom relief for the patient. And it does that by blocking the conversion of T4 to the active T3. And methimazole blocks the oxidation of iodine, which blocks the synthesis of T3 and T4.",
-      "type": "pharmacology"
-    },
-    {
-      "text": "Sore throat and fever in a patient on methimazole or PTU should raise concern for agranulocytosis; check CBC to rule out this serious side effect.",
-      "verbatim": "Both [methimazole] and [PTU] can cause granulocytopenia... This isn't for us. This is oh oh. A medication side effect I'm hearing... So you're gonna wanna check and see...",
-      "type": "red_flag"
-    },
-    {
-      "text": "Mild transaminitis from methimazole or PTU does not require discontinuation unless levels exceed three times the upper limit of normal.",
-      "verbatim": "transaminitis is another side effect of both methimazole and PTU, but you... It's kind of like statins where you're not supposed to stop it unless it's three times the upper limit of normal. Yeah. We just keep on going.",
-      "type": "judgment"
-    },
-    {
-      "text": "First-line treatment for exophthalmos in Graves disease is optimal thyroid disease control; steroids can be tried, and if no improvement, refer for cosmetic eye surgery.",
-      "verbatim": "the main treatment for the exophthalmos is optimal management of the thyroid disease itself, but you've kind of done that. You can also try steroids. So that would be the one thing that I would try. But she returns in two months and states that she hasn't noticed any improvement with the steroids. Oh, no. No. So now is when I would refer her for that cosmetic eye surgery.",
-      "type": "guideline"
-    },
-    {
-      "text": "Thyroid storm management includes IV fluids, cooling, IV propranolol, methimazole, corticosteroids, and iodine (given 1 hour after methimazole to avoid increasing synthesis).",
-      "verbatim": "the management is gonna be IV fluid, cold measures, IV propranolol, methimazole, and then corticosteroids followed by iodine an hour later.",
-      "type": "dosing"
-    },
-    {
-      "text": "In pregnancy, the free T4 goal for hyperthyroidism is the upper third of the normal reference range (approximately 1.4-1.7 depending on lab).",
-      "verbatim": "the upper third of the normal reference So in this case, 1.4 to 1.7. But that one, you would look at whatever it says in Cerner and just make sure that it's on the upper third of that lab's reference.",
-      "type": "dx_criteria"
-    },
-    {
-      "text": "For subacute thyroiditis with painful gland and hyperthyroid labs, do not use antithyroid agents; treat symptomatically with propranolol or steroids and it self-resolves in weeks.",
-      "verbatim": "subacute thyroiditis, in which case the patient's thyroid was actually painful to palpation. And what you do for that is even though you have lab abnormalities that look like hyperthyroidism, you don't treat it. It self resolves within a couple of weeks... antithyroid agents are not indicated.",
-      "type": "judgment"
-    },
-    {
-      "text": "Thyroid ultrasound is indicated only when thyroid exam is abnormal or alternative etiology is suspected; not needed for routine monitoring of hypo/hyperthyroidism with normal exam.",
-      "verbatim": "if your thyroid exam is normal, and even if you're like, I'm not really sure if I do a great thyroid exam, if your labs and everything is... Like, your management is kind of, like, trending how it should be with either hypo or hyper, you don't need an ultrasound. You are concerned that you have another etiology going on or if you have an abnormal thyroid exam, that's when you're gonna get a thyroid ultrasound.",
+      "text": "In suspected hypothyroidism, check for delayed relaxation of deep tendon reflexes on physical exam.",
+      "seg": 132,
+      "verbatim": "You mentioned the reflexes often. You can have deep... Delayed relaxation of those reflexes,",
+      "applies_to": "patients with suspected hypothyroidism",
       "type": "exam_technique"
     },
     {
-      "text": "Hypothyroidism is typically a lifelong autoimmune condition; do not stop levothyroxine to re-evaluate—adjust dose by monitoring TSH, except in pregnancy-induced cases that may resolve postpartum.",
-      "verbatim": "you're always gonna test them while on the medication, you know, doing that annual TSH check. But, you know, it's going to be a condition that if they are not... Usually, like, if it's hypothyroidism, which is what we most commonly see, you know, that's an autoimmune, and their body is not going to start tolerating their thyroid hormones later on. You know, it's not going to improve. It's going to be a lifetime condition... It is sometimes in pregnancy. People will have, like, hypothyroidism of pregnancy. And if the levothyroxine was started in pregnancy and they weren't on it before, oftentimes, they can come back back off of it when they're no longer pregnant.",
+      "text": "For routine hypothyroidism, do not order thyroid antibodies; treat based on TSH and free T4. Antibodies are not clinically useful in this setting.",
+      "seg": 203,
+      "verbatim": "Hypothyroidism is so common run of the mill. If it's following this pattern, I just would treat without getting any antibodies. I think that the antibodies are just gonna be another test that is not really gonna be that clinically useful.",
+      "applies_to": "patients with suspected primary hypothyroidism",
+      "type": "practice"
+    },
+    {
+      "text": "Start levothyroxine at 25-50 mcg daily; in elderly patients start on the lower end, in healthy patients start on the higher end. Gauge by initial TSH and free T4.",
+      "seg": 212,
+      "verbatim": "It's gonna work out to be similar to that. But twenty five to fifty, if you have an elderly patient, you're gonna start on the lower end of that spectrum. If you have a healthy patient, you can start on the higher end of that spectrum, and you can also gauge it a little bit by both where their TSH and their T4 are at the beginning.",
+      "applies_to": "adults starting levothyroxine",
+      "type": "dosing"
+    },
+    {
+      "text": "Repeat TSH testing 4-6 weeks after starting or adjusting levothyroxine dose.",
+      "seg": 215,
+      "verbatim": "And then you're gonna repeat your testing in four to six weeks.",
+      "applies_to": "patients on levothyroxine after dose change",
+      "type": "practice"
+    },
+    {
+      "text": "Take levothyroxine in the morning on an empty stomach; food affects absorption. Consistency is key—take it the same way every day.",
+      "seg": 219,
+      "verbatim": "So it's better to take in the morning because food can affect that absorption. But if she can't or if it's a patient that doesn't eat breakfast or things like that, it's good to just be consistent every day because then her levels will be affect... You know, will affect that.",
+      "applies_to": "patients on levothyroxine",
+      "type": "practice"
+    },
+    {
+      "text": "Goal TSH in hypothyroidism should be toward the higher end of the normal range, especially in the elderly, to avoid overcorrection.",
+      "seg": 241,
+      "verbatim": "with it, you wanna be in the normal range, but you do wanna be towards the higher end of the normal range. Especially in the elderly to avoid overcorrection.",
+      "applies_to": "adults with hypothyroidism, especially elderly",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "Overcorrecting TSH can cause angina, atrial fibrillation, and osteoporosis.",
+      "seg": 255,
+      "verbatim": "it can cause angina, A fib, and osteoporosis.",
+      "applies_to": "patients on levothyroxine",
       "type": "pitfall"
+    },
+    {
+      "text": "Do not switch to T3; it is rapidly absorbed with a short half-life leading to inconsistent levels. T4 allows the body to convert as needed.",
+      "seg": 263,
+      "verbatim": "Yes. And the reason is is that T3 is really rapidly absorbed, and it has a short half life, which leads to inconsistent levels as opposed to when we give T4 and then the body is able to convert it as it needs to.",
+      "applies_to": "patients with hypothyroidism",
+      "type": "judgment"
+    },
+    {
+      "text": "Once stable on levothyroxine, follow TSH every 6-12 months.",
+      "seg": 272,
+      "verbatim": "advice ranges from six to twelve months and when TSH should be followed in somebody who has, you know, symptoms controlled and no recent dose adjustment.",
+      "applies_to": "patients with stable hypothyroidism",
+      "type": "practice"
+    },
+    {
+      "text": "If levothyroxine dose reaches 200 mcg (max) and symptoms persist, check for medication interactions, adherence, and consider other differentials.",
+      "seg": 281,
+      "verbatim": "two hundred is the max of levothyroxine, and we don't wanna just keep increasing for the sake of symptom control. So this is when we start kinda doing what what John was talking about. Let's look at our medications and make sure that medications are not having interactions, making sure that she's actually taking the medication, taking it appropriately. And then if they're still having symptoms, that's the time to start looking at other differentials",
+      "applies_to": "patients requiring high-dose levothyroxine with ongoing symptoms",
+      "type": "practice"
+    },
+    {
+      "text": "In pregnancy, increase levothyroxine dose by 30-50% based on total weekly dose. You can use different doses on different days to achieve the increase.",
+      "seg": 304,
+      "verbatim": "you're gonna increase the level of thyroxine by 30 to 50%. And so this is based on a total weekly dose. And so you can kind of get into some warfarin like dosing in this kind of situation where you can have your patients being on different doses of levothyroxine on different days of the week in order to achieve that.",
+      "applies_to": "pregnant patients with hypothyroidism",
+      "type": "dosing"
+    },
+    {
+      "text": "In pregnancy, keep TSH at the lower end of the normal range to prevent congenital hypothyroidism. Use trimester-specific reference ranges; do not rely on Cerner's normal ranges.",
+      "seg": 315,
+      "verbatim": "And in pregnancy, you're gonna wanna keep the TSH at the lower end of the normal range to prevent congenital hypothyroidism. So the other important thing is that in pregnancy, there is a different value, a different normal range for each trimester. And so don't memorize. Just look it up. But also know that what is in Cerner as normal reference ranges do not apply for pregnancy.",
+      "applies_to": "pregnant patients with hypothyroidism",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "In pregnancy, increase levothyroxine dose by 30-50% based on total weekly dose; you can use different doses on different days of the week to achieve this.",
+      "seg": 304,
+      "verbatim": "you're gonna increase the level of thyroxine by 30 to 50%.",
+      "applies_to": "pregnant patients with hypothyroidism",
+      "type": "dosing"
+    },
+    {
+      "text": "In pregnancy, target the lower end of the trimester-specific TSH range to prevent congenital hypothyroidism; do not rely on Cerner's normal reference ranges as they do not apply.",
+      "seg": 315,
+      "verbatim": "you're gonna wanna keep the TSH at the lower end of the normal range to prevent congenital hypothyroidism.",
+      "applies_to": "pregnant patients with hypothyroidism",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "Recheck TSH monthly during pregnancy, whether or not there is a dose adjustment.",
+      "seg": 323,
+      "verbatim": "you're gonna wanna recheck the TSH monthly, whether there's dose adjustment or not.",
+      "applies_to": "pregnant patients with hypothyroidism",
+      "type": "practice"
+    },
+    {
+      "text": "For hypothyroidism in pregnancy, manage based on TSH, not T4; do not check T4 because it can confuse management.",
+      "seg": 330,
+      "verbatim": "the goal is based on the TSH, not the T4. And so I recommend not even checking the T4 because that can only confuse you.",
+      "applies_to": "pregnant patients with hypothyroidism",
+      "type": "practice"
+    },
+    {
+      "text": "Most patients with subclinical hypothyroidism (elevated TSH, normal T4) do not need treatment; monitor TSH every 1-2 years.",
+      "seg": 375,
+      "verbatim": "most of the time, yes, prayer and a pat on the back is all that is needed.",
+      "applies_to": "patients with subclinical hypothyroidism",
+      "type": "practice"
+    },
+    {
+      "text": "Consider treating subclinical hypothyroidism if the patient is symptomatic, TSH >10, has family history, goiter, plans pregnancy, or has positive antibodies.",
+      "seg": 383,
+      "verbatim": "if they have a high risk for overt hypothyroidism. So some of those risks are if the TSH is above 10, if they have a family history of hypothyroidism, goiter, pregnancy, or plans to become pregnant because of the risk of congenital hypothyroidism.",
+      "applies_to": "patients with subclinical hypothyroidism",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "Subclinical hypothyroidism carries increased risk of atrial fibrillation and osteoporosis, so follow up periodically.",
+      "seg": 391,
+      "verbatim": "they also have that higher risk for AFib and osteoporosis.",
+      "applies_to": "patients with subclinical hypothyroidism",
+      "type": "concept"
+    },
+    {
+      "text": "For hyperthyroidism, confirm Graves' disease with anti-thyrotropin receptor antibody, which is the most specific test.",
+      "seg": 474,
+      "verbatim": "the anti thyrotropin receptor antibody is the most specific trigger.",
+      "applies_to": "patients with suspected Graves' disease",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "Use methimazole for most patients with hyperthyroidism; reserve PTU for pregnancy. Propranolol provides symptom relief by blocking T4-to-T3 conversion.",
+      "seg": 494,
+      "verbatim": "methimazole. So you're gonna use methimazole for everybody, and then PTU is for pregnancy.",
+      "applies_to": "patients with hyperthyroidism",
+      "type": "dosing"
+    },
+    {
+      "text": "Both methimazole and PTU can cause agranulocytosis; if a patient on these develops sore throat and fever, check a CBC.",
+      "seg": 527,
+      "verbatim": "both imisol and can cause granulocyte... PDS.",
+      "applies_to": "patients on methimazole or PTU",
+      "type": "red_flag"
+    },
+    {
+      "text": "Transaminitis from methimazole or PTU does not require stopping the drug unless it is three times the upper limit of normal.",
+      "seg": 544,
+      "verbatim": "transaminitis is another side effect of both methimazole and PTU, but you... It's kind of like statins where you're not supposed to stop it unless it's three times the upper limit of normal.",
+      "applies_to": "patients on methimazole or PTU with elevated LFTs",
+      "type": "practice"
+    },
+    {
+      "text": "For exophthalmos in Graves' disease, first optimize thyroid control; if no improvement, try steroids; if still no improvement, refer for cosmetic eye surgery.",
+      "seg": 555,
+      "verbatim": "the main treatment for the exophthalmos is optimal management of the thyroid disease itself",
+      "applies_to": "patients with Graves' ophthalmopathy",
+      "type": "practice"
+    },
+    {
+      "text": "Thyroid storm management: IV fluids, cooling measures, IV propranolol, methimazole, corticosteroids, then iodine one hour later.",
+      "seg": 571,
+      "verbatim": "the management is gonna be IV fluid, cold measures, IV propranolol, methimazole, and then corticosteroids followed by iodine an hour later.",
+      "applies_to": "patients with thyroid storm",
+      "type": "dosing"
+    },
+    {
+      "text": "In pregnancy, switch from methimazole to PTU at standard dosing of 100 mg PO TID.",
+      "seg": 598,
+      "verbatim": "we're gonna switch her to the PTU, and so the standard dosing for that is a hundred milligrams PO TID.",
+      "applies_to": "pregnant patients with hyperthyroidism",
+      "type": "dosing"
+    },
+    {
+      "text": "For hyperthyroidism in pregnancy, target free T4 in the upper third of the normal reference range.",
+      "seg": 614,
+      "verbatim": "The upper third of the normal reference So in this case, 1.4 to 1.7.",
+      "applies_to": "pregnant patients with hyperthyroidism",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "Thyroid ultrasound is not needed if thyroid exam is normal and labs are trending appropriately; order it only if exam is abnormal or another etiology is suspected.",
+      "seg": 628,
+      "verbatim": "if your thyroid exam is normal, and even if you're like, I'm not really sure if I do a great thyroid exam, if your labs and everything is... Like, your management is kind of, like, trending how it should be with either hypo or hyper, you don't need an ultrasound.",
+      "applies_to": "patients with thyroid dysfunction",
+      "type": "practice"
+    },
+    {
+      "text": "Subacute thyroiditis presents with a painful thyroid and hyperthyroid labs but is self-limiting; do not treat with antithyroid drugs, and consider ultrasound to rule out nodule or cancer.",
+      "seg": 649,
+      "verbatim": "subacute thyroiditis, in which case the patient's thyroid was actually painful to palpation. And what you do for that is even though you have lab abnormalities that look like hyperthyroidism, you don't treat it. It self resolves within a couple of weeks.",
+      "applies_to": "patients with subacute thyroiditis",
+      "type": "practice"
+    },
+    {
+      "text": "If the thyroid exam is normal and labs are trending appropriately for hypo- or hyperthyroidism, a thyroid ultrasound is not needed.",
+      "seg": 628,
+      "verbatim": "and even if you're like, I'm not really sure if I do a great thyroid exam, if your labs and everything is... Like, your management is kind of, like, trending how it should be with either hypo or hyper, you don't need an ultrasound.",
+      "applies_to": "patients with suspected thyroid dysfunction",
+      "type": "judgment"
+    },
+    {
+      "text": "Subacute thyroiditis presents with a painful thyroid and lab abnormalities that look like hyperthyroidism, but it self-resolves within a couple of weeks and should not be treated with antithyroid agents.",
+      "seg": 648,
+      "verbatim": "my case four was actually a case of subacute thyroiditis, in which case the patient's thyroid was actually painful to palpation. And what you do for that is even though you have lab abnormalities that look like hyperthyroidism, you don't treat it. It self resolves within a couple of weeks.",
+      "applies_to": "patients with painful thyroid and hyperthyroid labs",
+      "type": "judgment"
+    },
+    {
+      "text": "For subacute thyroiditis, propranolol or steroids can be used for symptom control, but antithyroid agents are not indicated.",
+      "seg": 660,
+      "verbatim": "But you can be using propranolol or steroids, but you don't really need to. And then antithyroid agents are not indicated.",
+      "applies_to": "patients with subacute thyroiditis",
+      "type": "pitfall"
+    },
+    {
+      "text": "Always test TSH while the patient is on levothyroxine; there is no need to stop the medication for testing.",
+      "seg": 668,
+      "verbatim": "So you're always gonna test them while on the medication, you know, doing that annual TSH check.",
+      "applies_to": "patients on levothyroxine therapy",
+      "type": "practice"
+    },
+    {
+      "text": "Autoimmune hypothyroidism is a lifelong condition; the body will not start tolerating its own thyroid hormones, similar to type 1 diabetes, so levothyroxine is expected to be taken for life.",
+      "seg": 673,
+      "verbatim": "if it's hypothyroidism, which is what we most commonly see, you know, that's an autoimmune, and their body is not going to start tolerating their thyroid hormones later on. You know, it's not going to improve. It's going to be a lifetime condition in the same way that our, you know, type one diabetics aren't gonna get over being a type one diabetic.",
+      "applies_to": "patients with autoimmune hypothyroidism",
+      "type": "concept"
+    },
+    {
+      "text": "Pregnancy-induced hypothyroidism often resolves after delivery; if levothyroxine was started only during pregnancy, it can usually be stopped or reduced postpartum.",
+      "seg": 684,
+      "verbatim": "It is sometimes in pregnancy. People will have, like, hypothyroidism of pregnancy. And if the levothyroxine was started in pregnancy and they weren't on it before, oftentimes, they can come back back off of it when they're no longer pregnant, or their dose will be, you know, re... Reduced back to their pre pregnancy state. But that's really the only time is in pregnancy that we see people being able to no longer take levothyroxine.",
+      "applies_to": "pregnant patients with new-onset hypothyroidism",
+      "type": "practice"
     }
   ],
   "pearls": [
     {
-      "text": "In hypothyroidism, review of systems includes weight gain, cold intolerance, dry skin, hair loss, constipation, and increased menstrual flow (the only increase; everything else is decreased).",
-      "verbatim": "thyroid system, we've got weight gain, insomnia, fatigue, cold intolerance, dry skin, hair loss or brittle hair, thyroid enlargement, constipation, increased menstrual flow. That's the only one that's an increase. Everything else is the lower.",
+      "text": "In suspected hypothyroidism, check for delayed relaxation of deep tendon reflexes on physical exam.",
+      "verbatim": "You mentioned the reflexes often. You can have deep... Delayed relaxation of those reflexes,",
+      "type": "exam_technique",
+      "t": 529.1,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with suspected hypothyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-529"
+    },
+    {
+      "text": "For routine hypothyroidism, do not order thyroid antibodies; treat based on TSH and free T4. Antibodies are not clinically useful in this setting.",
+      "verbatim": "Hypothyroidism is so common run of the mill. If it's following this pattern, I just would treat without getting any antibodies. I think that the antibodies are just gonna be another test that is not really gonna be that clinically useful.",
+      "type": "practice",
+      "t": 784.6,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with suspected primary hypothyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-784"
+    },
+    {
+      "text": "Start levothyroxine at 25-50 mcg daily; in elderly patients start on the lower end, in healthy patients start on the higher end. Gauge by initial TSH and free T4.",
+      "verbatim": "It's gonna work out to be similar to that. But twenty five to fifty, if you have an elderly patient, you're gonna start on the lower end of that spectrum. If you have a healthy patient, you can start on the higher end of that spectrum, and you can also gauge it a little bit by both where their TSH and their T4 are at the beginning.",
+      "type": "dosing",
+      "t": 820.5,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "adults starting levothyroxine",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-820"
+    },
+    {
+      "text": "Repeat TSH testing 4-6 weeks after starting or adjusting levothyroxine dose.",
+      "verbatim": "And then you're gonna repeat your testing in four to six weeks.",
+      "type": "practice",
+      "t": 840.2,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients on levothyroxine after dose change",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-840"
+    },
+    {
+      "text": "Take levothyroxine in the morning on an empty stomach; food affects absorption. Consistency is key, take it the same way every day.",
+      "verbatim": "So it's better to take in the morning because food can affect that absorption. But if she can't or if it's a patient that doesn't eat breakfast or things like that, it's good to just be consistent every day because then her levels will be affect... You know, will affect that.",
+      "type": "practice",
+      "t": 854.0,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients on levothyroxine",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-854"
+    },
+    {
+      "text": "Goal TSH in hypothyroidism should be toward the higher end of the normal range, especially in the elderly, to avoid overcorrection.",
+      "verbatim": "with it, you wanna be in the normal range, but you do wanna be towards the higher end of the normal range. Especially in the elderly to avoid overcorrection.",
       "type": "dx_criteria",
-      "t": 392.3,
+      "t": 967.0,
       "match": "fuzzy",
       "episode": "thyroid-disorders-dr-amanda-lucashu-do",
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-392",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:review of systems"
-          ],
-          "actionable": [
-            "increase"
-          ],
-          "rarity": 6.61
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "adults with hypothyroidism, especially elderly",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-967"
     },
     {
-      "text": "Drugs that can elevate TSH include metoclopramide, lithium, amiodarone, and antipsychotics; consider these in patients requiring unexpectedly high levothyroxine doses.",
-      "verbatim": "There's also a couple drugs that can also elevate the TSH. Metoclopramide, lithium, amiodarone, and antipsychotics. So antipsychotics probably being the most common of those that we see.",
+      "text": "Overcorrecting TSH can cause angina, atrial fibrillation, and osteoporosis.",
+      "verbatim": "it can cause angina, A fib, and osteoporosis.",
       "type": "pitfall",
-      "t": 660.0,
+      "t": 1003.7,
       "match": "exact",
       "episode": "thyroid-disorders-dr-amanda-lucashu-do",
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-660",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:TSH"
-          ],
-          "actionable": [
-            "consider"
-          ],
-          "rarity": 7.79
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients on levothyroxine",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1003"
     },
     {
-      "text": "For suspected hypothyroidism, start levothyroxine at 25-50 mcg daily; use lower doses in elderly patients and higher in healthy patients, then recheck TSH in 4-6 weeks.",
-      "verbatim": "twenty five to fifty, if you have an elderly patient, you're gonna start on the lower end of that spectrum. If you have a healthy patient, you can start on the higher end of that spectrum, and you can also gauge it a little bit by both where their TSH and their T4 are at the beginning. And then you're gonna repeat your testing in four to six weeks.",
-      "type": "dosing",
-      "t": 823.8,
-      "match": "exact",
-      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
-      "speaker": "Dr. Amanda Lucashu",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-823",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:50 mcg",
-            "frequency:daily",
-            "test:TSH"
-          ],
-          "actionable": [
-            "start"
-          ],
-          "rarity": 6.16
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Levothyroxine should be taken in the morning on an empty stomach, consistently at the same time each day, and separated from medications like omeprazole, calcium, and iron that impair absorption.",
-      "verbatim": "it's better to take in the morning because food can affect that absorption. But if she can't or if it's a patient that doesn't eat breakfast or things like that, it's good to just be consistent every day because then her levels will be affect... You know, will affect that. And you you just don't want them taking it at different times throughout the day.",
-      "type": "pitfall",
-      "t": 854.3,
-      "match": "exact",
-      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
-      "speaker": "Dr. Amanda Lucashu",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-854",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "drug:omeprazole"
-          ],
-          "rarity": 7.88
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Overcorrection of hypothyroidism (even within normal TSH range) can cause angina, atrial fibrillation, and osteoporosis; aim for the upper half of the normal TSH range.",
-      "verbatim": "even just overcorrecting our hypothyroidism, you know, even if we're still within a normal level, it can cause angina, A fib, and osteoporosis. So just really important to to try to stay within the upper limits of that normal.",
-      "type": "red_flag",
-      "t": 995.5,
-      "match": "exact",
-      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
-      "speaker": "Dr. Amanda Lucashu",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-995",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:TSH"
-          ],
-          "rarity": 7.4
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "T3 (liothyronine) is not recommended over T4 monotherapy because T3 is rapidly absorbed with a short half-life, leading to inconsistent levels; the body converts T4 to T3 as needed.",
-      "verbatim": "T3 is really rapidly absorbed, and it has a short half life, which leads to inconsistent levels as opposed to when we give T4 and then the body is able to convert it as it needs to.",
-      "type": "practice",
-      "t": 1048.0,
-      "match": "exact",
-      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
-      "speaker": "Dr. Amanda Lucashu",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1048",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:therapy"
-          ],
-          "rarity": 8.38
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "If a patient requires levothyroxine up to 200 mcg and still has symptoms, check for medication interactions, adherence, and consider alternative diagnoses before further dose increases.",
-      "verbatim": "two hundred is the max of levothyroxine, and we don't wanna just keep increasing for the sake of symptom control. So this is when we start kinda doing what what John was talking about. Let's look at our medications and make sure that medications are not having interactions, making sure that she's actually taking the medication, taking it appropriately. And then if they're still having symptoms, that's the time to start looking at other differentials because there's the potential that there's something else going on.",
+      "text": "Do not switch to T3; it is rapidly absorbed with a short half-life leading to inconsistent levels. T4 allows the body to convert as needed.",
+      "verbatim": "Yes. And the reason is is that T3 is really rapidly absorbed, and it has a short half life, which leads to inconsistent levels as opposed to when we give T4 and then the body is able to convert it as it needs to.",
       "type": "judgment",
+      "t": 1045.7,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with hypothyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1045"
+    },
+    {
+      "text": "Once stable on levothyroxine, follow TSH every 6-12 months.",
+      "verbatim": "advice ranges from six to twelve months and when TSH should be followed in somebody who has, you know, symptoms controlled and no recent dose adjustment.",
+      "type": "practice",
+      "t": 1085.3,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with stable hypothyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1085"
+    },
+    {
+      "text": "If levothyroxine dose reaches 200 mcg (max) and symptoms persist, check for medication interactions, adherence, and consider other differentials.",
+      "verbatim": "two hundred is the max of levothyroxine, and we don't wanna just keep increasing for the sake of symptom control. So this is when we start kinda doing what what John was talking about. Let's look at our medications and make sure that medications are not having interactions, making sure that she's actually taking the medication, taking it appropriately. And then if they're still having symptoms, that's the time to start looking at other differentials",
+      "type": "practice",
       "t": 1125.6,
       "match": "exact",
       "episode": "thyroid-disorders-dr-amanda-lucashu-do",
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1125",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:200 mcg"
-          ],
-          "actionable": [
-            "check"
-          ],
-          "rarity": 6.47
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients requiring high-dose levothyroxine with ongoing symptoms",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1125"
     },
     {
-      "text": "In pregnancy, levothyroxine dose must be increased by 30-50% immediately; TSH should be checked monthly and kept in the trimester-specific lower normal range to prevent congenital hypothyroidism.",
-      "verbatim": "in pregnancy, you're gonna increase the level of thyroxine by 30 to 50%... you're gonna wanna keep the TSH at the lower end of the normal range to prevent congenital hypothyroidism.",
+      "text": "In pregnancy, increase levothyroxine dose by 30-50% based on total weekly dose. You can use different doses on different days to achieve the increase.",
+      "verbatim": "you're gonna increase the level of thyroxine by 30 to 50%. And so this is based on a total weekly dose. And so you can kind of get into some warfarin like dosing in this kind of situation where you can have your patients being on different doses of levothyroxine on different days of the week in order to achieve that.",
       "type": "dosing",
-      "t": 1214.6,
+      "t": 1216.9,
       "match": "exact",
       "episode": "thyroid-disorders-dr-amanda-lucashu-do",
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1214",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": true,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "D",
-        "fired": {
-          "specific": [
-            "frequency:monthly",
-            "test:TSH"
-          ],
-          "local": [
-            "kept in"
-          ],
-          "harm": [
-            "immediately"
-          ],
-          "rarity": 8.02
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "pregnant patients with hypothyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1216"
     },
     {
-      "text": "In pregnancy, use TSH (not free T4) to guide levothyroxine dosing; do not check T4 as it can confuse management.",
-      "verbatim": "for hypothyroidism in pregnancy, the goal is based on the TSH, not the T4. And so I recommend not even checking the T4 because that can only confuse you.",
+      "text": "In pregnancy, keep TSH at the lower end of the normal range to prevent congenital hypothyroidism. Use trimester-specific reference ranges; do not rely on Cerner's normal ranges.",
+      "verbatim": "And in pregnancy, you're gonna wanna keep the TSH at the lower end of the normal range to prevent congenital hypothyroidism. So the other important thing is that in pregnancy, there is a different value, a different normal range for each trimester. And so don't memorize. Just look it up. But also know that what is in Cerner as normal reference ranges do not apply for pregnancy.",
+      "type": "dx_criteria",
+      "t": 1254.5,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "pregnant patients with hypothyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1254"
+    },
+    {
+      "text": "Recheck TSH monthly during pregnancy, whether or not there is a dose adjustment.",
+      "verbatim": "you're gonna wanna recheck the TSH monthly, whether there's dose adjustment or not.",
       "type": "practice",
-      "t": 1304.1,
+      "t": 1287.9,
       "match": "exact",
       "episode": "thyroid-disorders-dr-amanda-lucashu-do",
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1304",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:TSH"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 6.61
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "pregnant patients with hypothyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1287"
     },
     {
-      "text": "The American Thyroid Association recommends screening for thyroid disease every 5 years starting at age 35, but the USPSTF recommends against it; have a low threshold to check TSH in symptomatic patients.",
-      "verbatim": "The American Thyroid Association actually says yes... they recommend doing it every five years starting at the age of 35. However, the USPSTF does not recommend it. They actually recommend against it.",
+      "text": "For hypothyroidism in pregnancy, manage based on TSH, not T4; do not check T4 because it can confuse management.",
+      "verbatim": "the goal is based on the TSH, not the T4. And so I recommend not even checking the T4 because that can only confuse you.",
       "type": "practice",
-      "t": 1406.6,
+      "t": 1307.3,
       "match": "exact",
       "episode": "thyroid-disorders-dr-amanda-lucashu-do",
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1406",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:5 years",
-            "frequency:every 5",
-            "test:TSH"
-          ],
-          "actionable": [
-            "starting"
-          ],
-          "rarity": 6.82
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "pregnant patients with hypothyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1307"
     },
     {
-      "text": "For subclinical hypothyroidism, most patients need only observation ('prayer and a pat on the back'); treatment exceptions include symptoms, TSH >10, family history, pregnancy plans, or positive antibodies.",
-      "verbatim": "prayer and a pat on the back is all that is needed. There are some exceptions. One, sometimes patients are symptomatic despite having a subclinical hypothyroidism. And so if the patient is symptomatic, you know, we just talked about what the symptoms are with the review of systems and things, then you might consider starting a low dose of levothyroxine. The other thing is if they have a high risk for overt hypothyroidism. So some of those risks are if the TSH is above 10, if they have a family history of hypothyroidism, goiter, pregnancy, or plans to become pregnant because of the risk of congenital hypothyroidism. Or if for whatever reason, this is not an indication to check for antibodies, but if you, for whatever reason, have antibodies in the chart, you can't ignore them, and that would be a time to treat as well.",
+      "text": "Most patients with subclinical hypothyroidism (elevated TSH, normal T4) do not need treatment; monitor TSH every 1-2 years.",
+      "verbatim": "most of the time, yes, prayer and a pat on the back is all that is needed.",
       "type": "practice",
-      "t": 1513.5,
+      "t": 1512.2,
       "match": "exact",
       "episode": "thyroid-disorders-dr-amanda-lucashu-do",
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1513",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "threshold:>1",
-            "test:TSH"
-          ],
-          "rarity": 7.71
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with subclinical hypothyroidism",
+      "numbers_unheard": [
+        "2"
+      ],
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1512"
     },
     {
-      "text": "Subclinical hypothyroidism carries higher risks for atrial fibrillation and osteoporosis; periodic TSH monitoring (every 1-2 years) is recommended.",
-      "verbatim": "they also have that higher risk for AFib and osteoporosis. And so we wanna be following up with these subclinical hypothyroidism and making sure that they don't convert into overt hypothyroidism at some point later on. So, again, there's not specific guidelines of how often you should be checking a TSH on these patients, But, you know, periodically, every year, couple years, I would just throw it on there.",
-      "type": "pitfall",
+      "text": "Consider treating subclinical hypothyroidism if the patient is symptomatic, TSH >10, has family history, goiter, plans pregnancy, or has positive antibodies.",
+      "verbatim": "if they have a high risk for overt hypothyroidism. So some of those risks are if the TSH is above 10, if they have a family history of hypothyroidism, goiter, pregnancy, or plans to become pregnant because of the risk of congenital hypothyroidism.",
+      "type": "dx_criteria",
+      "t": 1537.9,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with subclinical hypothyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1537"
+    },
+    {
+      "text": "Subclinical hypothyroidism carries increased risk of atrial fibrillation and osteoporosis, so follow up periodically.",
+      "verbatim": "they also have that higher risk for AFib and osteoporosis.",
+      "type": "concept",
       "t": 1578.8,
       "match": "exact",
       "episode": "thyroid-disorders-dr-amanda-lucashu-do",
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "numbers_unheard": [
-        "2"
-      ],
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1578",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:2 years",
-            "frequency:every 1",
-            "test:TSH"
-          ],
-          "rarity": 6.68
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with subclinical hypothyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1578"
     },
     {
-      "text": "Use methimazole for all patients requiring antithyroid therapy except in pregnancy, where PTU is indicated.",
-      "verbatim": "the acronym or the mnemonic that I use is m for majority, methimazole. So you're gonna use methimazole for everybody, and then PTU is for pregnancy.",
-      "type": "practice",
-      "t": 1915.2,
+      "text": "For hyperthyroidism, confirm Graves' disease with anti-thyrotropin receptor antibody, which is the most specific test.",
+      "verbatim": "the anti thyrotropin receptor antibody is the most specific trigger.",
+      "type": "dx_criteria",
+      "t": 1861.6,
       "match": "exact",
       "episode": "thyroid-disorders-dr-amanda-lucashu-do",
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1915",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "drug:methimazole"
-          ],
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 7.06
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with suspected Graves' disease",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1861"
     },
     {
-      "text": "Propranolol provides symptom relief in hyperthyroidism by blocking T4-to-T3 conversion; methimazole blocks iodine oxidation and synthesis of T3/T4.",
-      "verbatim": "propranolol is what often offers the most symptom relief for the patient. And it does that by blocking the conversion of T4 to the active T3. And methimazole blocks the oxidation of iodine, which blocks the synthesis of T3 and T4.",
+      "text": "Use methimazole for most patients with hyperthyroidism; reserve PTU for pregnancy. Propranolol provides symptom relief by blocking T4-to-T3 conversion.",
+      "verbatim": "methimazole. So you're gonna use methimazole for everybody, and then PTU is for pregnancy.",
       "type": "dosing",
-      "t": 1939.1,
+      "t": 1920.1,
       "match": "exact",
       "episode": "thyroid-disorders-dr-amanda-lucashu-do",
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1939",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "drug:Propranolol"
-          ],
-          "rarity": 8.25
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with hyperthyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1920"
     },
     {
-      "text": "Mild transaminitis from methimazole or PTU does not require discontinuation unless levels exceed three times the upper limit of normal.",
-      "verbatim": "transaminitis is another side effect of both methimazole and PTU, but you... It's kind of like statins where you're not supposed to stop it unless it's three times the upper limit of normal. Yeah. We just keep on going.",
-      "type": "judgment",
+      "text": "Both methimazole and PTU can cause agranulocytosis; if a patient on these develops sore throat and fever, check a CBC.",
+      "verbatim": "both imisol and can cause granulocyte... PDS.",
+      "type": "red_flag",
+      "t": 2038.8,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients on methimazole or PTU",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2038"
+    },
+    {
+      "text": "Transaminitis from methimazole or PTU does not require stopping the drug unless it is three times the upper limit of normal.",
+      "verbatim": "transaminitis is another side effect of both methimazole and PTU, but you... It's kind of like statins where you're not supposed to stop it unless it's three times the upper limit of normal.",
+      "type": "practice",
       "t": 2110.9,
       "match": "exact",
       "episode": "thyroid-disorders-dr-amanda-lucashu-do",
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2110",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "drug:methimazole"
-          ],
-          "rarity": 7.5
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients on methimazole or PTU with elevated LFTs",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2110"
     },
     {
-      "text": "First-line treatment for exophthalmos in Graves disease is optimal thyroid disease control; steroids can be tried, and if no improvement, refer for cosmetic eye surgery.",
-      "verbatim": "the main treatment for the exophthalmos is optimal management of the thyroid disease itself, but you've kind of done that. You can also try steroids. So that would be the one thing that I would try. But she returns in two months and states that she hasn't noticed any improvement with the steroids. Oh, no. No. So now is when I would refer her for that cosmetic eye surgery.",
+      "text": "For exophthalmos in Graves' disease, first optimize thyroid control; if no improvement, try steroids; if still no improvement, refer for cosmetic eye surgery.",
+      "verbatim": "the main treatment for the exophthalmos is optimal management of the thyroid disease itself",
       "type": "practice",
       "t": 2157.5,
       "match": "exact",
@@ -40960,29 +40985,11 @@
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2157",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:graves disease"
-          ],
-          "actionable": [
-            "refer"
-          ],
-          "rarity": 8.02
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with Graves' ophthalmopathy",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2157"
     },
     {
-      "text": "Thyroid storm management includes IV fluids, cooling, IV propranolol, methimazole, corticosteroids, and iodine (given 1 hour after methimazole to avoid increasing synthesis).",
+      "text": "Thyroid storm management: IV fluids, cooling measures, IV propranolol, methimazole, corticosteroids, then iodine one hour later.",
       "verbatim": "the management is gonna be IV fluid, cold measures, IV propranolol, methimazole, and then corticosteroids followed by iodine an hour later.",
       "type": "dosing",
       "t": 2210.5,
@@ -40991,31 +40998,25 @@
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2210",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:1 hour",
-            "drug:propranolol"
-          ],
-          "actionable": [
-            "avoid"
-          ],
-          "rarity": 6.97
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with thyroid storm",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2210"
     },
     {
-      "text": "In pregnancy, the free T4 goal for hyperthyroidism is the upper third of the normal reference range (approximately 1.4-1.7 depending on lab).",
-      "verbatim": "the upper third of the normal reference So in this case, 1.4 to 1.7. But that one, you would look at whatever it says in Cerner and just make sure that it's on the upper third of that lab's reference.",
+      "text": "In pregnancy, switch from methimazole to PTU at standard dosing of 100 mg PO TID.",
+      "verbatim": "we're gonna switch her to the PTU, and so the standard dosing for that is a hundred milligrams PO TID.",
+      "type": "dosing",
+      "t": 2301.4,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "pregnant patients with hyperthyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2301"
+    },
+    {
+      "text": "For hyperthyroidism in pregnancy, target free T4 in the upper third of the normal reference range.",
+      "verbatim": "The upper third of the normal reference So in this case, 1.4 to 1.7.",
       "type": "dx_criteria",
       "t": 2374.1,
       "match": "exact",
@@ -41023,113 +41024,112 @@
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2374",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:pregnancy"
-          ],
-          "rarity": 6.53
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "pregnant patients with hyperthyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2374"
     },
     {
-      "text": "Thyroid ultrasound is indicated only when thyroid exam is abnormal or alternative etiology is suspected; not needed for routine monitoring of hypo/hyperthyroidism with normal exam.",
-      "verbatim": "if your thyroid exam is normal, and even if you're like, I'm not really sure if I do a great thyroid exam, if your labs and everything is... Like, your management is kind of, like, trending how it should be with either hypo or hyper, you don't need an ultrasound. You are concerned that you have another etiology going on or if you have an abnormal thyroid exam, that's when you're gonna get a thyroid ultrasound.",
-      "type": "exam_technique",
+      "text": "Thyroid ultrasound is not needed if thyroid exam is normal and labs are trending appropriately; order it only if exam is abnormal or another etiology is suspected.",
+      "verbatim": "if your thyroid exam is normal, and even if you're like, I'm not really sure if I do a great thyroid exam, if your labs and everything is... Like, your management is kind of, like, trending how it should be with either hypo or hyper, you don't need an ultrasound.",
+      "type": "practice",
       "t": 2439.3,
       "match": "exact",
       "episode": "thyroid-disorders-dr-amanda-lucashu-do",
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2439",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:ultrasound"
-          ],
-          "rarity": 7.42
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with thyroid dysfunction",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2439"
     },
     {
-      "text": "For subacute thyroiditis with painful gland and hyperthyroid labs, do not use antithyroid agents; treat symptomatically with propranolol or steroids and it self-resolves in weeks.",
-      "verbatim": "subacute thyroiditis, in which case the patient's thyroid was actually painful to palpation. And what you do for that is even though you have lab abnormalities that look like hyperthyroidism, you don't treat it. It self resolves within a couple of weeks... antithyroid agents are not indicated.",
+      "text": "If the thyroid exam is normal and labs are trending appropriately for hypo- or hyperthyroidism, a thyroid ultrasound is not needed.",
+      "verbatim": "and even if you're like, I'm not really sure if I do a great thyroid exam, if your labs and everything is... Like, your management is kind of, like, trending how it should be with either hypo or hyper, you don't need an ultrasound.",
       "type": "judgment",
+      "t": 2442.8,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with suspected thyroid dysfunction",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2442"
+    },
+    {
+      "text": "Subacute thyroiditis presents with a painful thyroid and lab abnormalities that look like hyperthyroidism, but it self-resolves within a couple of weeks and should not be treated with antithyroid agents.",
+      "verbatim": "my case four was actually a case of subacute thyroiditis, in which case the patient's thyroid was actually painful to palpation. And what you do for that is even though you have lab abnormalities that look like hyperthyroidism, you don't treat it. It self resolves within a couple of weeks.",
+      "type": "judgment",
+      "t": 2502.4,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with painful thyroid and hyperthyroid labs",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2502"
+    },
+    {
+      "text": "Subacute thyroiditis presents with a painful thyroid and hyperthyroid labs but is self-limiting; do not treat with antithyroid drugs, and consider ultrasound to rule out nodule or cancer.",
+      "verbatim": "subacute thyroiditis, in which case the patient's thyroid was actually painful to palpation. And what you do for that is even though you have lab abnormalities that look like hyperthyroidism, you don't treat it. It self resolves within a couple of weeks.",
+      "type": "practice",
       "t": 2504.2,
       "match": "exact",
       "episode": "thyroid-disorders-dr-amanda-lucashu-do",
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2504",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "drug:propranolol"
-          ],
-          "actionable": [
-            "do not"
-          ],
-          "rarity": 8.48
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with subacute thyroiditis",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2504"
     },
     {
-      "text": "Hypothyroidism is typically a lifelong autoimmune condition; do not stop levothyroxine to re-evaluate, adjust dose by monitoring TSH, except in pregnancy-induced cases that may resolve postpartum.",
-      "verbatim": "you're always gonna test them while on the medication, you know, doing that annual TSH check. But, you know, it's going to be a condition that if they are not... Usually, like, if it's hypothyroidism, which is what we most commonly see, you know, that's an autoimmune, and their body is not going to start tolerating their thyroid hormones later on. You know, it's not going to improve. It's going to be a lifetime condition... It is sometimes in pregnancy. People will have, like, hypothyroidism of pregnancy. And if the levothyroxine was started in pregnancy and they weren't on it before, oftentimes, they can come back back off of it when they're no longer pregnant.",
+      "text": "For subacute thyroiditis, propranolol or steroids can be used for symptom control, but antithyroid agents are not indicated.",
+      "verbatim": "But you can be using propranolol or steroids, but you don't really need to. And then antithyroid agents are not indicated.",
       "type": "pitfall",
-      "t": 2586.9,
+      "t": 2552.1,
       "match": "exact",
       "episode": "thyroid-disorders-dr-amanda-lucashu-do",
       "speaker": "Dr. Amanda Lucashu",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2586",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:TSH"
-          ],
-          "actionable": [
-            "do not"
-          ],
-          "rarity": 7.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with subacute thyroiditis",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2552"
+    },
+    {
+      "text": "Always test TSH while the patient is on levothyroxine; there is no need to stop the medication for testing.",
+      "verbatim": "So you're always gonna test them while on the medication, you know, doing that annual TSH check.",
+      "type": "practice",
+      "t": 2586.7,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients on levothyroxine therapy",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2586"
+    },
+    {
+      "text": "Autoimmune hypothyroidism is a lifelong condition; the body will not start tolerating its own thyroid hormones, similar to type 1 diabetes, so levothyroxine is expected to be taken for life.",
+      "verbatim": "if it's hypothyroidism, which is what we most commonly see, you know, that's an autoimmune, and their body is not going to start tolerating their thyroid hormones later on. You know, it's not going to improve. It's going to be a lifetime condition in the same way that our, you know, type one diabetics aren't gonna get over being a type one diabetic.",
+      "type": "concept",
+      "t": 2600.9,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with autoimmune hypothyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2600"
+    },
+    {
+      "text": "Pregnancy-induced hypothyroidism often resolves after delivery; if levothyroxine was started only during pregnancy, it can usually be stopped or reduced postpartum.",
+      "verbatim": "It is sometimes in pregnancy. People will have, like, hypothyroidism of pregnancy. And if the levothyroxine was started in pregnancy and they weren't on it before, oftentimes, they can come back back off of it when they're no longer pregnant, or their dose will be, you know, re... Reduced back to their pre pregnancy state. But that's really the only time is in pregnancy that we see people being able to no longer take levothyroxine.",
+      "type": "practice",
+      "t": 2647.7,
+      "match": "exact",
+      "episode": "thyroid-disorders-dr-amanda-lucashu-do",
+      "speaker": "Dr. Amanda Lucashu",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "pregnant patients with new-onset hypothyroidism",
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2647"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -59791,5 +59791,6 @@
       "name": "Dr. Amanda Lucashu"
     }
   ],
-  "pearls_fingerprint": "7bae8aba322af5d3"
+  "pearls_fingerprint": "e369ef8aeee1b907",
+  "enrich_version": "v2"
 }
