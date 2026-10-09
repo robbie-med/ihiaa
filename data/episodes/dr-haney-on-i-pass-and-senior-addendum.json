@@ -20682,26 +20682,26 @@
   "fixes_rejected": [],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "Dr. Haney presents a lecture on I-PASS structured patient handoffs and the senior addendum, emphasizing the importance of accurate and efficient sign-outs to reduce medical errors and adverse events. She reviews common pitfalls such as excessive information, copy-pasted assessments, and mismatched handoff content for day versus night coverage. The lecture also covers the I-PASS framework, illness severity, patient summary, action list, situational awareness and contingency planning, and synthesis by the receiver, and evidence that standardized handoffs decrease error rates by 23%.",
+  "abstract": "Dr. Haney leads a discussion on improving handoffs using the I-PASS framework, emphasizing that handoffs should be tailored to the recipient (e.g., night vs. day team) and focus on active problems rather than chronic details. He highlights that too much information can be harmful, citing a 2014 NEJM study showing a 23% reduction in medical errors and 30% reduction in adverse events with standardized handoffs. The I-PASS components, Illness severity, Patient summary, Action list, Situational awareness, and Synthesis, are reviewed, with emphasis on the action list and if-then contingency planning.",
   "key_points": [
-    "Omission of critical information occurs in 2 out of 3 handoff errors, per Johns Hopkins data.",
-    "Inefficient handoffs contribute to duty-hour violations and delays in patient care.",
-    "Standardized handoff programs (e.g., I-PASS) reduced medical errors by 23% and adverse events by 30% (NEJM 2014).",
-    "Handoff content should differ based on audience: overnight coverage needs contingency plans, not daytime updates.",
-    "Too much information can be as harmful as too little; chronic problems not being actively managed should be omitted.",
-    "The I-PASS framework includes: illness severity (stable/watcher/unstable), patient summary, action list, situational awareness/if-then plans, and synthesis by the receiver.",
-    "Copy-pasted assessment plans often obscure relevant active problems and are not helpful for the covering team.",
-    "Active problem management details (e.g., IV vs PO diuretics for heart failure) are critical for rapid-response preparation.",
-    "Handoffs should be written for the covering person, not as a future reminder for oneself.",
-    "Synthesis/repeat-back should be very brief to avoid wasting time."
+    "Handoffs should be tailored to the recipient: overnight coverage needs different information than the day team.",
+    "More handoffs lead to more errors; minimizing unnecessary transitions improves safety.",
+    "Handoffs should focus on active problems and what the covering person needs to know, not chronic issues or the writer's own to-do list.",
+    "A 2014 NEJM study found standardized handoff programs reduced medical errors by 23% and adverse events by 30%.",
+    "I-PASS stands for Illness severity, Patient summary, Action list, Situational awareness, and Synthesis.",
+    "Illness severity categories: stable, watcher (potential to decompensate), unstable.",
+    "The action list is the to-do list for the covering person; it should be where they take notes.",
+    "Situational awareness includes if-then contingency plans (e.g., 'If potassium is 2.5, replace and adjust diuretic').",
+    "Handoffs should not be written as a reminder for the writer; they are for the covering clinician.",
+    "Too much information in a handoff is a negative; brevity and pertinence are key."
   ],
   "topics_raw": [
     {
-      "label": "Patient Handoff",
+      "label": "I-PASS Handoff Framework",
       "kind": "concept"
     },
     {
-      "label": "I-PASS Framework",
+      "label": "Handoff Communication",
       "kind": "concept"
     },
     {
@@ -20709,228 +20709,230 @@
       "kind": "concept"
     },
     {
+      "label": "Adverse Events",
+      "kind": "concept"
+    },
+    {
       "label": "Situational Awareness",
       "kind": "concept"
     },
     {
-      "label": "Contingency Planning",
+      "label": "Patient Summary",
       "kind": "concept"
     },
     {
-      "label": "Sign-out Efficiency",
+      "label": "Action List",
       "kind": "concept"
     },
     {
-      "label": "Adverse Event Prevention",
+      "label": "Illness Severity Assessment",
       "kind": "concept"
     }
   ],
   "pearls_raw": [
     {
-      "text": "Think about the context of the handoff: what the night person needs to know (contingencies) is different from what the day team needs. Avoid passing daytime updates to the night team.",
-      "verbatim": "And you do have to think about the context of what you're explaining to.",
-      "type": "guideline"
+      "text": "Handoffs should be tailored to the recipient: what the night person needs is different from what the day team needs.",
+      "seg": 86,
+      "verbatim": "So if you're giving it to a night person or a covering person, that's different than the person who's gonna be there all day. Okay. So overnight to day team is different from day team to night team.",
+      "applies_to": "all clinicians doing handoffs",
+      "type": "practice"
     },
     {
-      "text": "If a patient is on IV vs PO Lasix for heart failure, that distinction is critical for covering staff responding to a rapid response; dosing details are less urgent in that scenario.",
-      "verbatim": "Just like... like, I feel like even just saying IV versus PO Lasix is enough. Because, realistically, if you're talking about call to the ICU or a code, like, dosing doesn't matter.",
-      "type": "red_flag"
+      "text": "More handoffs lead to more errors; minimize unnecessary transitions.",
+      "seg": 91,
+      "verbatim": "And that's why we got rid of it because more handoffs lead to more errors too.",
+      "applies_to": "handoff design",
+      "type": "practice"
     },
     {
-      "text": "Handoffs should contain active problems being managed, not chronic conditions that are not being addressed. Chronic problems can be omitted.",
-      "verbatim": "I think in general, most of our handoffs have too much and too much chronic.",
-      "type": "pitfall"
+      "text": "Handoffs should focus on active problems and what the covering person needs to know, not chronic issues or the writer's own to-do list.",
+      "seg": 117,
+      "verbatim": "But that information, like, the pertinent stuff should still remain the same no matter the situation. So I don't think I would add anything different, like some of the chronic problems that we're not addressing.",
+      "applies_to": "all handoffs",
+      "type": "practice"
     },
     {
-      "text": "The action list (to-do list) and situational awareness (if-then plans) are often underemphasized. Without them, the handoff is incomplete.",
-      "verbatim": "I don't think that we stress enough the to do list and the if then sometimes. And we're... Like, our body of the statement is, like, this long, and then there's not anything for a to do list or a contingency plan.",
-      "type": "pitfall"
+      "text": "Handoffs should not be written as a reminder for the writer; they are for the covering clinician.",
+      "seg": 140,
+      "verbatim": "We're not preparing it for the night person. We're preparing it for ourselves to not miss things for the next day. And that's not the point of handoffs.",
+      "applies_to": "all handoffs",
+      "type": "practice"
     },
     {
-      "text": "The synthesis/repeat-back by the receiver should be very short to avoid wasting time.",
-      "verbatim": "I'm gonna say that, like, this... Sometimes this... The synthesis should be very short.",
-      "type": "guideline"
+      "text": "Too much information in a handoff is a negative; brevity and pertinence are key.",
+      "seg": 150,
+      "verbatim": "there is a point where too much information is actually a negative.",
+      "applies_to": "all handoffs",
+      "type": "practice"
     },
     {
-      "text": "A structured handoff program like I-PASS can reduce medical errors by 23% and adverse events by 30%.",
-      "verbatim": "the medical error rate decreased by twenty three percent just using a standardized handoff. And the adverse events decreased thirty percent.",
-      "type": "guideline"
+      "text": "Standardized handoff programs reduce medical errors by 23% and adverse events by 30%, based on a 2014 NEJM study using I-PASS.",
+      "seg": 151,
+      "verbatim": "In 2014, New England Journal of Medicine, there's an article. It's talking about changes in medication errors after they implemented a standardized handoff program. ...the medical error rate decreased by twenty three percent just using a standardized handoff. And the adverse events decreased thirty percent.",
+      "applies_to": "hospitals implementing handoff programs",
+      "type": "concept"
+    },
+    {
+      "text": "I-PASS stands for Illness severity, Patient summary, Action list, Situational awareness, and Synthesis.",
+      "seg": 156,
+      "verbatim": "IPass. So let's just get into the the nuts and bolts of this. Alright? Eye is the illness severity. So are they stable? Are they unstable? Are they a watcher? Kind of the in between, the potential to crump. Right?",
+      "applies_to": "all clinicians using I-PASS",
+      "type": "concept"
+    },
+    {
+      "text": "Illness severity categories: stable, watcher (potential to decompensate), unstable.",
+      "seg": 156,
+      "verbatim": "Eye is the illness severity. So are they stable? Are they unstable? Are they a watcher? Kind of the in between, the potential to crump.",
+      "applies_to": "all handoffs using I-PASS",
+      "type": "concept"
+    },
+    {
+      "text": "The action list is the to-do list for the covering person; it should be where they take notes.",
+      "seg": 162,
+      "verbatim": "And then you got the action list. I need you to do a post op on him after his cath tonight, or I need you to follow up on his lab that he's going to get at 5PM today. It's your to do list. This is where people should be taking notes.",
+      "applies_to": "all handoffs",
+      "type": "practice"
+    },
+    {
+      "text": "Situational awareness includes if-then contingency plans (e.g., 'If potassium is 2.5, replace and adjust diuretic').",
+      "seg": 165,
+      "verbatim": "Situational awareness that you're talking about, Jeremiah, this is the if then stuff. If you get his potassium back and it's 2.5, please replace and adjust his diuretic dose or something to that effect.",
+      "applies_to": "all handoffs",
+      "type": "practice"
     }
   ],
   "pearls": [
     {
-      "text": "Think about the context of the handoff: what the night person needs to know (contingencies) is different from what the day team needs. Avoid passing daytime updates to the night team.",
-      "verbatim": "And you do have to think about the context of what you're explaining to.",
+      "text": "Handoffs should be tailored to the recipient: what the night person needs is different from what the day team needs.",
+      "verbatim": "So if you're giving it to a night person or a covering person, that's different than the person who's gonna be there all day. Okay. So overnight to day team is different from day team to night team.",
       "type": "practice",
-      "t": 464.4,
+      "t": 437.4,
       "match": "exact",
       "episode": "dr-haney-on-i-pass-and-senior-addendum",
       "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-464",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:context"
-          ],
-          "actionable": [
-            "Avoid"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Handoffs should contain active problems being managed, not chronic conditions that are not being addressed. Chronic problems can be omitted.",
-      "verbatim": "I think in general, most of our handoffs have too much and too much chronic.",
-      "type": "pitfall",
-      "t": 626.5,
-      "match": "exact",
-      "episode": "dr-haney-on-i-pass-and-senior-addendum",
-      "speaker": "Dr. Matt Haney",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
+      "applies_to": "all clinicians doing handoffs",
       "by_presenter": false,
-      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-626",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.7
-        },
-        "rubric": "rules-v2"
-      }
+      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-437"
     },
     {
-      "text": "If a patient is on IV vs PO Lasix for heart failure, that distinction is critical for covering staff responding to a rapid response; dosing details are less urgent in that scenario.",
-      "verbatim": "Just like... like, I feel like even just saying IV versus PO Lasix is enough. Because, realistically, if you're talking about call to the ICU or a code, like, dosing doesn't matter.",
-      "type": "red_flag",
-      "t": 705.2,
-      "match": "fuzzy",
-      "episode": "dr-haney-on-i-pass-and-senior-addendum",
-      "speaker": "Dr. Matt Haney",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-705",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:rapid response"
-          ],
-          "harm": [
-            "urgent"
-          ],
-          "rarity": 7.93
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "A structured handoff program like I-PASS can reduce medical errors by 23% and adverse events by 30%.",
-      "verbatim": "the medical error rate decreased by twenty three percent just using a standardized handoff. And the adverse events decreased thirty percent.",
+      "text": "More handoffs lead to more errors; minimize unnecessary transitions.",
+      "verbatim": "And that's why we got rid of it because more handoffs lead to more errors too.",
       "type": "practice",
-      "t": 832.4,
+      "t": 486.2,
       "match": "exact",
       "episode": "dr-haney-on-i-pass-and-senior-addendum",
       "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-832",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "reduce"
-          ],
-          "rarity": 8.29
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "handoff design",
+      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-486"
     },
     {
-      "text": "The action list (to-do list) and situational awareness (if-then plans) are often underemphasized. Without them, the handoff is incomplete.",
-      "verbatim": "I don't think that we stress enough the to do list and the if then sometimes. And we're... Like, our body of the statement is, like, this long, and then there's not anything for a to do list or a contingency plan.",
-      "type": "pitfall",
-      "t": 990.7,
-      "match": "exact",
-      "episode": "dr-haney-on-i-pass-and-senior-addendum",
-      "speaker": "Dr. Matt Haney",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-990",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:situational awareness"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "The synthesis/repeat-back by the receiver should be very short to avoid wasting time.",
-      "verbatim": "I'm gonna say that, like, this... Sometimes this... The synthesis should be very short.",
+      "text": "Handoffs should focus on active problems and what the covering person needs to know, not chronic issues or the writer's own to-do list.",
+      "verbatim": "But that information, like, the pertinent stuff should still remain the same no matter the situation. So I don't think I would add anything different, like some of the chronic problems that we're not addressing.",
       "type": "practice",
-      "t": 1010.5,
+      "t": 605.6,
       "match": "exact",
       "episode": "dr-haney-on-i-pass-and-senior-addendum",
       "speaker": "Dr. Matt Haney",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "applies_to": "all handoffs",
+      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-605"
+    },
+    {
+      "text": "Handoffs should not be written as a reminder for the writer; they are for the covering clinician.",
+      "verbatim": "We're not preparing it for the night person. We're preparing it for ourselves to not miss things for the next day. And that's not the point of handoffs.",
+      "type": "practice",
+      "t": 743.5,
+      "match": "exact",
+      "episode": "dr-haney-on-i-pass-and-senior-addendum",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "all handoffs",
       "by_presenter": false,
-      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-1010",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "repeat"
-          ],
-          "rarity": 8.29
-        },
-        "rubric": "rules-v2"
-      }
+      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-743"
+    },
+    {
+      "text": "Too much information in a handoff is a negative; brevity and pertinence are key.",
+      "verbatim": "there is a point where too much information is actually a negative.",
+      "type": "practice",
+      "t": 812.0,
+      "match": "exact",
+      "episode": "dr-haney-on-i-pass-and-senior-addendum",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "all handoffs",
+      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-812"
+    },
+    {
+      "text": "Standardized handoff programs reduce medical errors by 23% and adverse events by 30%, based on a 2014 NEJM study using I-PASS.",
+      "verbatim": "In 2014, New England Journal of Medicine, there's an article. It's talking about changes in medication errors after they implemented a standardized handoff program. ...the medical error rate decreased by twenty three percent just using a standardized handoff. And the adverse events decreased thirty percent.",
+      "type": "concept",
+      "t": 817.3,
+      "match": "exact",
+      "episode": "dr-haney-on-i-pass-and-senior-addendum",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "hospitals implementing handoff programs",
+      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-817"
+    },
+    {
+      "text": "I-PASS stands for Illness severity, Patient summary, Action list, Situational awareness, and Synthesis.",
+      "verbatim": "IPass. So let's just get into the the nuts and bolts of this. Alright? Eye is the illness severity. So are they stable? Are they unstable? Are they a watcher? Kind of the in between, the potential to crump. Right?",
+      "type": "concept",
+      "t": 857.8,
+      "match": "exact",
+      "episode": "dr-haney-on-i-pass-and-senior-addendum",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "all clinicians using I-PASS",
+      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-857"
+    },
+    {
+      "text": "Illness severity categories: stable, watcher (potential to decompensate), unstable.",
+      "verbatim": "Eye is the illness severity. So are they stable? Are they unstable? Are they a watcher? Kind of the in between, the potential to crump.",
+      "type": "concept",
+      "t": 862.5,
+      "match": "exact",
+      "episode": "dr-haney-on-i-pass-and-senior-addendum",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "all handoffs using I-PASS",
+      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-862"
+    },
+    {
+      "text": "The action list is the to-do list for the covering person; it should be where they take notes.",
+      "verbatim": "And then you got the action list. I need you to do a post op on him after his cath tonight, or I need you to follow up on his lab that he's going to get at 5PM today. It's your to do list. This is where people should be taking notes.",
+      "type": "practice",
+      "t": 903.9,
+      "match": "exact",
+      "episode": "dr-haney-on-i-pass-and-senior-addendum",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "all handoffs",
+      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-903"
+    },
+    {
+      "text": "Situational awareness includes if-then contingency plans (e.g., 'If potassium is 2.5, replace and adjust diuretic').",
+      "verbatim": "Situational awareness that you're talking about, Jeremiah, this is the if then stuff. If you get his potassium back and it's 2.5, please replace and adjust his diuretic dose or something to that effect.",
+      "type": "practice",
+      "t": 920.9,
+      "match": "exact",
+      "episode": "dr-haney-on-i-pass-and-senior-addendum",
+      "speaker": "Dr. Matt Haney",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "all handoffs",
+      "pearl_id": "dr-haney-on-i-pass-and-senior-addendum-920"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -31822,5 +31824,6 @@
       "name": "Dr. Matt Haney"
     }
   ],
-  "pearls_fingerprint": "40949cce37cb2176"
+  "pearls_fingerprint": "c5461807d6c99303",
+  "enrich_version": "v2"
 }
