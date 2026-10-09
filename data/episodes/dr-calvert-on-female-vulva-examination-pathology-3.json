@@ -20354,18 +20354,20 @@
   ],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "Dr. Calvert reviews female vulva anatomy and common pathologies using case-based images. Key conditions include herpes simplex virus with its classic vesicular stages, benign cysts (Skene's, Gartner, Bartholin), urethral caruncle and diverticulum, and vulvar neoplasia. Emphasis on physical exam techniques such as palpation for urethral diverticulum and the painless chancre test for syphilis. Management pearls include leaving asymptomatic cysts alone, using word catheter for first Bartholin abscess, and performing biopsy for any suspicious discolored or indurated lesion.",
+  "abstract": "Dr. Jon Calvert leads an interactive teaching session on female vulvar examination and pathology using clinical images. He reviews normal anatomy including the clitoral hood, labia minora, urethral opening, and fourchette, then walks through cases of herpes simplex virus, urethral caruncles, Skene's gland cysts, Gartner duct cysts, Bartholin gland cysts/abscesses, urethral diverticulum, vulvar neoplasia (VIN), and syphilitic chancres. He emphasizes the importance of careful inspection for discoloration (red, white, black), palpation for underlying induration, and low-threshold for punch biopsy of suspicious lesions. The session highlights common pitfalls such as misidentifying the location of Bartholin glands and the danger of surgically exploring Gartner duct cysts.",
   "key_points": [
-    "Herpes simplex virus presents with painful vesicles in different stages (clear to purulent) over several days.",
-    "Urethral caruncle is common in older women and should be left alone unless symptomatic.",
-    "Skene's gland cysts are benign blocked glands; only intervene if problematic, using incision and drainage or catheter placement.",
-    "Gartner duct cysts are embryologic remnants along the vagina; avoid surgery due to risk of extending to the kidney.",
-    "Urethral diverticulum can be detected by palpating the anterior vaginal wall and milking the urethra.",
-    "Bartholin gland abscess: first episode managed with word catheter; recurrent may require marsupialization.",
-    "Vulvar neoplasia: look for red, white, or black discoloration and palpate for underlying induration; biopsy any suspicious lesion.",
-    "Syphilis chancre is painless; test by touching the center with a wooden Q-tip, no pain indicates chancre.",
-    "Always perform a thorough vulvar exam; failure to examine can miss serious pathology like advanced cancer.",
-    "Biopsy of vulvar lesions can be done with punch or colposcopy forceps; a small sample is sufficient as dysplasia is superficial."
+    "Herpes simplex virus classically presents with pain before visible lesions, then clear vesicles that become purulent over days, often in different stages simultaneously.",
+    "Urethral caruncles are common in older women and are benign; leave alone unless symptomatic.",
+    "Skene's gland cysts are blocked normal glands, not pathologic; only incise and drain if problematic.",
+    "Gartner duct cysts are embryologic remnants along the vaginal wall; do not remove or drain because they may extend to the kidney.",
+    "Bartholin glands are located near the inferior part of the labia minora at the fourchette, not in the upper labia.",
+    "First-time Bartholin abscess is managed with a Word catheter; recurrent abscess may require marsupialization.",
+    "Urethral diverticulum can be detected by palpating a bulge along the anterior vaginal wall while stripping the urethra.",
+    "Vulvar cancer may present as subtle discoloration (red, white, or black) with underlying induration on palpation.",
+    "When you don't know what a vulvar lesion is, perform a punch biopsy; a small sample of the discolored or misshapen tissue is sufficient.",
+    "Syphilitic chancres are painless; touching the center with a Q-tip wooden end does not cause pain.",
+    "Condyloma lata is a secondary syphilis lesion.",
+    "Rhabdomyosarcoma is a rare but deadly vulvar tumor seen primarily in children."
   ],
   "topics_raw": [
     {
@@ -20385,10 +20387,6 @@
       "kind": "condition"
     },
     {
-      "label": "Urethral Diverticulum",
-      "kind": "condition"
-    },
-    {
       "label": "Bartholin Gland Cyst",
       "kind": "condition"
     },
@@ -20397,15 +20395,19 @@
       "kind": "condition"
     },
     {
+      "label": "Urethral Diverticulum",
+      "kind": "condition"
+    },
+    {
       "label": "Vulvar Intraepithelial Neoplasia",
       "kind": "condition"
     },
     {
-      "label": "Vulvar Carcinoma",
+      "label": "Vulvar Cancer",
       "kind": "condition"
     },
     {
-      "label": "Syphilis",
+      "label": "Syphilis Chancre",
       "kind": "condition"
     },
     {
@@ -20417,83 +20419,118 @@
       "kind": "condition"
     },
     {
-      "label": "Word Catheter",
-      "kind": "procedure"
-    },
-    {
       "label": "Punch Biopsy",
       "kind": "procedure"
     },
     {
-      "label": "Colposcopy Biopsy",
+      "label": "Word Catheter",
+      "kind": "procedure"
+    },
+    {
+      "label": "Marsupialization",
+      "kind": "procedure"
+    },
+    {
+      "label": "Vulvar Examination",
       "kind": "procedure"
     }
   ],
   "pearls_raw": [
     {
-      "text": "Herpes simplex virus presents with painful vesicles in different stages: first pain with no lesions, then clear vesicles, then purulent vesicles, then crusting. Seeing different stages simultaneously is diagnostic.",
+      "text": "Herpes simplex virus classically starts with pain before any visible lesions; clear vesicles appear the next day, become purulent, and are seen in different stages simultaneously.",
+      "seg": 70,
       "verbatim": "Starts out with pain. Nothing there but the skin. Next day, there's clear vesicles. Next day, there are purulent vesicles. Next day, some of the vesicles, pops off some of the vesicles. Some of them are still covered. So, typically, when you look at this lesion, you're gonna see different stages of the vesicles, which is unique to herpes simplex virus.",
+      "applies_to": "patients with suspected genital herpes",
       "type": "dx_criteria"
     },
     {
-      "text": "Urethral caruncle is common in older women; leave it alone unless it causes problems, then you can remove it.",
-      "verbatim": "That's a polyp in the urethral opening. Oh, the caruncle is common in people, women as they get older. You leave alone. Unless they cause problems, then you can fuss with them.",
-      "type": "judgment"
+      "text": "Urethral caruncles are common in older women; leave them alone unless they cause problems.",
+      "seg": 128,
+      "verbatim": "the caruncle is common in people, women as they get older. You leave alone. Unless they cause problems, then you can fuss with them.",
+      "applies_to": "older women",
+      "type": "practice"
     },
     {
-      "text": "Skene's gland cysts are benign blocked glands; only incise and drain if needed, and consider placing a catheter to keep the duct open.",
-      "verbatim": "The only incise and kind of operate As if you may have in my incise and drain. Yeah. Only when, like, only needed. Sometimes you can put a catheter in there and keep them open for a while.",
-      "type": "judgment"
+      "text": "Skene's gland cysts are just blocked normal gland openings, not pathologic; only incise and drain if problematic.",
+      "seg": 198,
+      "verbatim": "Well, they're not pathologic. They're just blocked openings.",
+      "applies_to": "patients with Skene's gland cyst",
+      "type": "concept"
     },
     {
-      "text": "Gartner duct cysts are embryologic remnants that can extend deep into the abdomen; do not operate or drain because you may end up near the kidney.",
+      "text": "Gartner duct cysts are embryologic remnants along the vaginal wall; do not remove or drain because they may extend up to the kidney.",
+      "seg": 254,
       "verbatim": "The problem if you fuss with them is you don't know how far that cyst goes up into the abdomen. If you start to do surgery on it or drain it, you don't know where you'll end up. You end up next to the kidney. So it's best to leave it alone.",
+      "applies_to": "patients with Gartner duct cyst",
       "type": "pitfall"
-    },
-    {
-      "text": "To examine for urethral diverticulum, place your finger against the anterior vaginal wall and milk the urethra downward; you will feel a bump.",
-      "verbatim": "How can you examine for diverticulum? It's a maneuver. It's a simple maneuver. You just tip your finger against the roof. I'm caught. And then empty. You... All the urethra down, you feel a bump.",
-      "type": "exam_technique"
-    },
-    {
-      "text": "For a first-time Bartholin gland abscess, use a Word catheter for drainage.",
-      "verbatim": "First time you do what? Word catheter.",
-      "type": "guideline"
     },
     {
       "text": "Bartholin glands are located near the inferior part of the labia minora at the fourchette, not in the upper labia.",
-      "verbatim": "You have to remember, please, they're down near the inferior part of the labia minora near the fourchette, not up in the upper area.",
+      "seg": 347,
+      "verbatim": "You have to remember, please, they're down near the inferior part of the labia minora near the fourchette, not up in the upper area. I've had patients referred to me with Bartholin gland cyst, and the cyst is way up here in the labia minora.",
+      "applies_to": "all patients",
       "type": "exam_technique"
     },
     {
-      "text": "Look for red, white, or black discoloration on the vulva; that is a sign of cancer.",
+      "text": "First-time Bartholin abscess is managed with a Word catheter; recurrent abscess may require marsupialization.",
+      "seg": 362,
+      "verbatim": "First time you do what? Word catheter. Word catheter There's a board exam questions on the boards on air service exams.",
+      "applies_to": "patients with first-time Bartholin abscess",
+      "type": "dosing"
+    },
+    {
+      "text": "Urethral diverticulum can be detected by palpating a bulge along the anterior vaginal wall while stripping the urethra.",
+      "seg": 289,
+      "verbatim": "It's a simple maneuver. You just tip your finger against the roof. I'm caught. And then empty. You... All the urethra down, you feel a bump.",
+      "applies_to": "patients with suspected urethral diverticulum",
+      "type": "exam_technique"
+    },
+    {
+      "text": "Vulvar cancer may present as subtle discoloration (red, white, or black) with underlying induration on palpation.",
+      "seg": 448,
       "verbatim": "What you wanna look for is discoloration. Red, white, or black. That's exactly it. That's it. And that's cancer.",
+      "applies_to": "patients undergoing vulvar examination",
       "type": "red_flag"
     },
     {
-      "text": "If a vulvar lesion feels full or has a mass underneath, it is not a skin tag; biopsy it.",
-      "verbatim": "If you feel this, if you had felt this, which you can't do, if you felt this, you would feel a mass of fullness down at the base, which means it's invaded the skin. That's not normal. That's not a skin tag.",
-      "type": "red_flag"
+      "text": "When you don't know what a vulvar lesion is, perform a punch biopsy; a small sample of the discolored or misshapen tissue is sufficient.",
+      "seg": 377,
+      "verbatim": "You don't know what it is? Biopsy. Punch biopsy.",
+      "applies_to": "patients with suspicious vulvar lesions",
+      "type": "practice"
     },
     {
-      "text": "Biopsy vulvar lesions with a punch or colposcopy forceps; a small piece is sufficient because dysplasia is superficial.",
-      "verbatim": "Use a punch biopsy or just a colposcopy biopsy. Need a little piece. Dysplasia and precancer doesn't go very deep. It's epithelium and the dermis underneath the opposite. We don't have to get a great big core.",
-      "type": "procedure"
-    },
-    {
-      "text": "Test a suspected syphilis chancre by touching the center with the wooden end of a Q-tip; if it is painless, it is a chancre.",
+      "text": "Syphilitic chancres are painless; touching the center with a Q-tip wooden end does not cause pain.",
+      "seg": 541,
       "verbatim": "Take a Q tip, the wooden part of a Q tip, and touch the center of that chancre. Will it hurt? No. And that's one of the ways of telling if it's a chancre or not.",
+      "applies_to": "patients with suspected primary syphilis",
       "type": "exam_technique"
     },
     {
-      "text": "Always perform a vulvar exam; patients with vaginal discharge may have serious pathology missed if not examined.",
-      "verbatim": "She's been to two emergency rooms for vaginal discharge. She was treated vaginal discharge in both emergency rooms. They never examined her.",
-      "type": "pitfall"
+      "text": "A skin tag that has a palpable mass at its base suggests invasion and is not benign.",
+      "seg": 420,
+      "verbatim": "If you felt this, which you can't do, if you felt this, you would feel a mass of fullness down at the base, which means it's invaded the skin. You feel that fullness. That's not normal. That's not a skin tag.",
+      "applies_to": "patients with vulvar skin lesions",
+      "type": "red_flag"
+    },
+    {
+      "text": "Rhabdomyosarcoma is a rare but deadly vulvar tumor seen primarily in children.",
+      "seg": 547,
+      "verbatim": "Primary rhabdomyosarcoma, very rare but deadly. Seen in children mostly.",
+      "applies_to": "children with vulvar masses",
+      "type": "red_flag"
+    },
+    {
+      "text": "Always examine the vulva in newborn girls.",
+      "seg": 550,
+      "verbatim": "When you examine a newborn girl, do you examine the vulva? Okay. Got it.",
+      "applies_to": "newborn girls",
+      "type": "practice"
     }
   ],
   "pearls": [
     {
-      "text": "Herpes simplex virus presents with painful vesicles in different stages: first pain with no lesions, then clear vesicles, then purulent vesicles, then crusting. Seeing different stages simultaneously is diagnostic.",
+      "text": "Herpes simplex virus classically starts with pain before any visible lesions; clear vesicles appear the next day, become purulent, and are seen in different stages simultaneously.",
       "verbatim": "Starts out with pain. Nothing there but the skin. Next day, there's clear vesicles. Next day, there are purulent vesicles. Next day, some of the vesicles, pops off some of the vesicles. Some of them are still covered. So, typically, when you look at this lesion, you're gonna see different stages of the vesicles, which is unique to herpes simplex virus.",
       "type": "dx_criteria",
       "t": 228.8,
@@ -20502,85 +20539,38 @@
       "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-228",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:herpes simplex virus"
-          ],
-          "rarity": 7.83
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with suspected genital herpes",
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-228"
     },
     {
-      "text": "Urethral caruncle is common in older women; leave it alone unless it causes problems, then you can remove it.",
-      "verbatim": "That's a polyp in the urethral opening. Oh, the caruncle is common in people, women as they get older. You leave alone. Unless they cause problems, then you can fuss with them.",
-      "type": "judgment",
-      "t": 427.5,
+      "text": "Urethral caruncles are common in older women; leave them alone unless they cause problems.",
+      "verbatim": "the caruncle is common in people, women as they get older. You leave alone. Unless they cause problems, then you can fuss with them.",
+      "type": "practice",
+      "t": 434.3,
       "match": "exact",
       "episode": "dr-calvert-on-female-vulva-examination-pathology-3",
       "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-427",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:urethral caruncle"
-          ],
-          "rarity": 6.67
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "older women",
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-434"
     },
     {
-      "text": "Skene's gland cysts are benign blocked glands; only incise and drain if needed, and consider placing a catheter to keep the duct open.",
-      "verbatim": "The only incise and kind of operate As if you may have in my incise and drain. Yeah. Only when, like, only needed. Sometimes you can put a catheter in there and keep them open for a while.",
-      "type": "judgment",
-      "t": 761.5,
-      "match": "fuzzy",
+      "text": "Skene's gland cysts are just blocked normal gland openings, not pathologic; only incise and drain if problematic.",
+      "verbatim": "Well, they're not pathologic. They're just blocked openings.",
+      "type": "concept",
+      "t": 743.3,
+      "match": "exact",
       "episode": "dr-calvert-on-female-vulva-examination-pathology-3",
       "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-761",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:skene's gland cyst"
-          ],
-          "actionable": [
-            "consider"
-          ],
-          "rarity": 8.43
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with Skene's gland cyst",
+      "by_presenter": false,
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-743"
     },
     {
-      "text": "Gartner duct cysts are embryologic remnants that can extend deep into the abdomen; do not operate or drain because you may end up near the kidney.",
+      "text": "Gartner duct cysts are embryologic remnants along the vaginal wall; do not remove or drain because they may extend up to the kidney.",
       "verbatim": "The problem if you fuss with them is you don't know how far that cyst goes up into the abdomen. If you start to do surgery on it or drain it, you don't know where you'll end up. You end up next to the kidney. So it's best to leave it alone.",
       "type": "pitfall",
       "t": 998.1,
@@ -20589,61 +20579,25 @@
       "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-998",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:gartner duct cyst"
-          ],
-          "actionable": [
-            "do not"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with Gartner duct cyst",
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-998"
     },
     {
-      "text": "To examine for urethral diverticulum, place your finger against the anterior vaginal wall and milk the urethra downward; you will feel a bump.",
-      "verbatim": "How can you examine for diverticulum? It's a maneuver. It's a simple maneuver. You just tip your finger against the roof. I'm caught. And then empty. You... All the urethra down, you feel a bump.",
+      "text": "Urethral diverticulum can be detected by palpating a bulge along the anterior vaginal wall while stripping the urethra.",
+      "verbatim": "It's a simple maneuver. You just tip your finger against the roof. I'm caught. And then empty. You... All the urethra down, you feel a bump.",
       "type": "exam_technique",
-      "t": 1140.8,
+      "t": 1149.7,
       "match": "exact",
       "episode": "dr-calvert-on-female-vulva-examination-pathology-3",
       "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1140",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:urethral diverticulum"
-          ],
-          "actionable": [
-            "examine"
-          ],
-          "rarity": 7.43
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with suspected urethral diverticulum",
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1149"
     },
     {
       "text": "Bartholin glands are located near the inferior part of the labia minora at the fourchette, not in the upper labia.",
-      "verbatim": "You have to remember, please, they're down near the inferior part of the labia minora near the fourchette, not up in the upper area.",
+      "verbatim": "You have to remember, please, they're down near the inferior part of the labia minora near the fourchette, not up in the upper area. I've had patients referred to me with Bartholin gland cyst, and the cyst is way up here in the labia minora.",
       "type": "exam_technique",
       "t": 1374.7,
       "match": "fuzzy",
@@ -20651,85 +20605,37 @@
       "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1374",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:bartholin gland"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "all patients",
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1374"
     },
     {
-      "text": "For a first-time Bartholin gland abscess, use a Word catheter for drainage.",
-      "verbatim": "First time you do what? Word catheter.",
+      "text": "When you don't know what a vulvar lesion is, perform a punch biopsy; a small sample of the discolored or misshapen tissue is sufficient.",
+      "verbatim": "You don't know what it is? Biopsy. Punch biopsy.",
       "type": "practice",
-      "t": 1435.9,
-      "match": "fuzzy",
-      "episode": "dr-calvert-on-female-vulva-examination-pathology-3",
-      "speaker": "Dr. Jon Calvert",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1435",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:bartholin gland absces"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 6.76
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "If a vulvar lesion feels full or has a mass underneath, it is not a skin tag; biopsy it.",
-      "verbatim": "If you feel this, if you had felt this, which you can't do, if you felt this, you would feel a mass of fullness down at the base, which means it's invaded the skin. That's not normal. That's not a skin tag.",
-      "type": "red_flag",
-      "t": 1651.4,
+      "t": 1507.9,
       "match": "exact",
       "episode": "dr-calvert-on-female-vulva-examination-pathology-3",
       "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1651",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:biopsy"
-          ],
-          "rarity": 7.2
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with suspicious vulvar lesions",
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1507"
     },
     {
-      "text": "Look for red, white, or black discoloration on the vulva; that is a sign of cancer.",
+      "text": "A skin tag that has a palpable mass at its base suggests invasion and is not benign.",
+      "verbatim": "If you felt this, which you can't do, if you felt this, you would feel a mass of fullness down at the base, which means it's invaded the skin. You feel that fullness. That's not normal. That's not a skin tag.",
+      "type": "red_flag",
+      "t": 1652.2,
+      "match": "fuzzy",
+      "episode": "dr-calvert-on-female-vulva-examination-pathology-3",
+      "speaker": "Dr. Jon Calvert",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with vulvar skin lesions",
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1652"
+    },
+    {
+      "text": "Vulvar cancer may present as subtle discoloration (red, white, or black) with underlying induration on palpation.",
       "verbatim": "What you wanna look for is discoloration. Red, white, or black. That's exactly it. That's it. And that's cancer.",
       "type": "red_flag",
       "t": 1752.6,
@@ -20738,85 +20644,11 @@
       "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1752",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:cancer"
-          ],
-          "rarity": 7.39
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients undergoing vulvar examination",
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1752"
     },
     {
-      "text": "Biopsy vulvar lesions with a punch or colposcopy forceps; a small piece is sufficient because dysplasia is superficial.",
-      "verbatim": "Use a punch biopsy or just a colposcopy biopsy. Need a little piece. Dysplasia and precancer doesn't go very deep. It's epithelium and the dermis underneath the opposite. We don't have to get a great big core.",
-      "type": "procedure",
-      "t": 1808.2,
-      "match": "fuzzy",
-      "episode": "dr-calvert-on-female-vulva-examination-pathology-3",
-      "speaker": "Dr. Jon Calvert",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1808",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:Biopsy"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Always perform a vulvar exam; patients with vaginal discharge may have serious pathology missed if not examined.",
-      "verbatim": "She's been to two emergency rooms for vaginal discharge. She was treated vaginal discharge in both emergency rooms. They never examined her.",
-      "type": "pitfall",
-      "t": 1929.5,
-      "match": "exact",
-      "episode": "dr-calvert-on-female-vulva-examination-pathology-3",
-      "speaker": "Dr. Jon Calvert",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-1929",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "actionable": [
-            "Always"
-          ],
-          "harm": [
-            "missed"
-          ],
-          "rarity": 6.95
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Test a suspected syphilis chancre by touching the center with the wooden end of a Q-tip; if it is painless, it is a chancre.",
+      "text": "Syphilitic chancres are painless; touching the center with a Q-tip wooden end does not cause pain.",
       "verbatim": "Take a Q tip, the wooden part of a Q tip, and touch the center of that chancre. Will it hurt? No. And that's one of the ways of telling if it's a chancre or not.",
       "type": "exam_technique",
       "t": 2185.1,
@@ -20825,23 +20657,34 @@
       "speaker": "Dr. Jon Calvert",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-2185",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:syphilis"
-          ],
-          "rarity": 8.43
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with suspected primary syphilis",
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-2185"
+    },
+    {
+      "text": "Rhabdomyosarcoma is a rare but deadly vulvar tumor seen primarily in children.",
+      "verbatim": "Primary rhabdomyosarcoma, very rare but deadly. Seen in children mostly.",
+      "type": "red_flag",
+      "t": 2218.6,
+      "match": "fuzzy",
+      "episode": "dr-calvert-on-female-vulva-examination-pathology-3",
+      "speaker": "Dr. Jon Calvert",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "children with vulvar masses",
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-2218"
+    },
+    {
+      "text": "Always examine the vulva in newborn girls.",
+      "verbatim": "When you examine a newborn girl, do you examine the vulva? Okay. Got it.",
+      "type": "practice",
+      "t": 2226.4,
+      "match": "exact",
+      "episode": "dr-calvert-on-female-vulva-examination-pathology-3",
+      "speaker": "Dr. Jon Calvert",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "newborn girls",
+      "pearl_id": "dr-calvert-on-female-vulva-examination-pathology-3-2226"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -29661,5 +29504,6 @@
       "name": "Dr. Jon Calvert"
     }
   ],
-  "pearls_fingerprint": "2f1710fa896fece3"
+  "pearls_fingerprint": "15ab9f4bbde31737",
+  "enrich_version": "v2"
 }

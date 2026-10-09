@@ -33715,76 +33715,24 @@
   ],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "This lecture covers the recognition and management of respiratory distress in adults, emphasizing clinical assessment over isolated numbers. Key cases include asthma exacerbation, DKA with compensatory tachypnea, CHF with pulmonary edema, and tension pneumothorax. The speaker reviews oxygen delivery devices, ABG interpretation, and contraindications to BiPAP. Practical pearls include not suppressing compensatory tachypnea, using accessory muscle use as a key sign, and recognizing that a patient's report of being tired of breathing is an indication for ventilation.",
+  "abstract": "Dr. Bhakta reviews the management of respiratory distress in adults, covering interpretation of blood gases, use of noninvasive ventilation (BiPAP), ventilator settings, and the importance of advance care planning. He emphasizes practical adjustments for oxygenation and ventilation, contraindications to BiPAP, and the critical need to ensure DNR/DNI orders are correctly entered in the electronic medical record.",
   "key_points": [
-    "Respiratory rate >30 is concerning; accessory muscle use is a key indicator of distress.",
-    "In DKA, tachypnea is compensatory; do not slow it down.",
-    "For asthma exacerbation, start with albuterol and reassess before escalating.",
-    "In CHF with fluid overload, step up Lasix dose; expect a creatinine bump.",
-    "Tension pneumothorax is diagnosed by midline shift, widened rib spaces, and depressed diaphragm; treat with needle decompression.",
-    "ABG interpretation: first determine acidotic or alkalotic, then check CO2 and bicarb; use chemistry bicarb not calculated ABG bicarb.",
-    "Oxygen delivery: nasal cannula max 6 L/min (~40%), simple mask 5-10 L/min (35-55%), non-rebreather up to 15 L/min (60-95%).",
-    "BiPAP contraindications: GCS <7, vomiting, facial trauma, cardiac arrest (absolute); anxiety and inability to protect airway (relative).",
-    "Defibrillators can be identified by a coil on the lead; all defibrillators can pace.",
-    "A patient saying they are tired of breathing is a strong indication for intubation regardless of numbers.",
-    "On BiPAP, FiO2 and EPAP improve oxygenation; the IPAP-EPAP difference determines tidal volume and CO2 clearance.",
-    "For a patient with pH 7.2, pCO2 80, O2 50, increase FiO2 and respiratory rate first."
+    "A defibrillator can be identified on chest X-ray by the presence of a coil on one or both leads; all defibrillators can pace.",
+    "Indications for a defibrillator include CHF with EF under 35% after three months of goal-directed therapy or history of VFib/VTach.",
+    "Absolute contraindications to BiPAP include GCS less than 7, vomiting, facial trauma, cardiac arrest, and airway obstruction.",
+    "On BiPAP, oxygenation is improved by increasing FiO2 or EPAP (which acts like PEEP); CO2 clearance is improved by increasing tidal volume via IPAP/EPAP adjustments.",
+    "If a patient on BiPAP does not improve after two adjustments and repeat blood gas, escalate care (call ICU).",
+    "For a nonresponsive patient with suspected opioid overdose, give naloxone 0.4 mg IV; if no improvement after first dose, consider other causes.",
+    "Ventilator orders are written in the sequence: rate, tidal volume, PEEP, FiO2.",
+    "On a ventilator, FiO2 and PEEP primarily affect oxygenation; rate and tidal volume primarily affect CO2 clearance.",
+    "ET tube position should be confirmed on chest X-ray; if in the right mainstem bronchus, retract 1-2 cm.",
+    "DNR and DNI are separate orders in the hospital; it is the resident's responsibility to ensure both are entered and that the patient wears a DNR bracelet.",
+    "Advance care planning conversations should start in clinic, ideally early in adulthood, to avoid difficult decisions at 2 AM.",
+    "If a patient has DNR/DNI orders in the chart but no bracelet, the patient may be coded against their wishes, leading to harm and family distress."
   ],
   "topics_raw": [
     {
-      "label": "Asthma",
-      "kind": "condition"
-    },
-    {
-      "label": "Diabetic Ketoacidosis",
-      "kind": "condition"
-    },
-    {
-      "label": "Congestive Heart Failure",
-      "kind": "condition"
-    },
-    {
-      "label": "Tension Pneumothorax",
-      "kind": "condition"
-    },
-    {
-      "label": "COPD",
-      "kind": "condition"
-    },
-    {
-      "label": "COVID-19",
-      "kind": "condition"
-    },
-    {
-      "label": "PJP Pneumonia",
-      "kind": "condition"
-    },
-    {
-      "label": "ARDS",
-      "kind": "condition"
-    },
-    {
-      "label": "Panic Attack",
-      "kind": "condition"
-    },
-    {
-      "label": "Metabolic Alkalosis",
-      "kind": "condition"
-    },
-    {
-      "label": "Albuterol",
-      "kind": "drug"
-    },
-    {
-      "label": "Furosemide",
-      "kind": "drug"
-    },
-    {
-      "label": "Lorazepam",
-      "kind": "drug"
-    },
-    {
-      "label": "Needle Decompression",
+      "label": "Noninvasive Positive Pressure Ventilation",
       "kind": "procedure"
     },
     {
@@ -33792,502 +33740,193 @@
       "kind": "procedure"
     },
     {
-      "label": "Arterial Blood Gas",
+      "label": "Mechanical Ventilation",
       "kind": "procedure"
     },
     {
-      "label": "Chest X-ray",
+      "label": "Arterial Blood Gas Interpretation",
       "kind": "procedure"
     },
     {
-      "label": "Respiratory Distress",
-      "kind": "concept"
-    },
-    {
-      "label": "Accessory Muscle Use",
-      "kind": "concept"
-    },
-    {
-      "label": "Tachypnea",
-      "kind": "concept"
-    },
-    {
-      "label": "Hypoxia",
-      "kind": "concept"
-    },
-    {
-      "label": "Hypercapnia",
-      "kind": "concept"
-    },
-    {
-      "label": "Oxygen Delivery Devices",
-      "kind": "concept"
-    },
-    {
-      "label": "Defibrillator",
-      "kind": "concept"
-    },
-    {
-      "label": "Glasgow Coma Scale",
-      "kind": "concept"
-    },
-    {
-      "label": "Noninvasive ventilation",
+      "label": "Defibrillator Identification on Chest X-ray",
       "kind": "procedure"
-    },
-    {
-      "label": "BiPAP",
-      "kind": "procedure"
-    },
-    {
-      "label": "Mechanical ventilation",
-      "kind": "procedure"
-    },
-    {
-      "label": "Ventilator settings",
-      "kind": "concept"
-    },
-    {
-      "label": "Opioid overdose",
-      "kind": "condition"
     },
     {
       "label": "Naloxone",
       "kind": "drug"
     },
     {
-      "label": "Endotracheal intubation",
+      "label": "Do Not Resuscitate Order",
+      "kind": "concept"
+    },
+    {
+      "label": "Do Not Intubate Order",
+      "kind": "concept"
+    },
+    {
+      "label": "Advance Care Planning",
+      "kind": "concept"
+    },
+    {
+      "label": "Endotracheal Tube Placement",
       "kind": "procedure"
-    },
-    {
-      "label": "Right mainstem intubation",
-      "kind": "condition"
-    },
-    {
-      "label": "Code status",
-      "kind": "concept"
-    },
-    {
-      "label": "DNR/DNI orders",
-      "kind": "concept"
     }
   ],
   "pearls_raw": [
     {
-      "text": "When a patient says they are tired of breathing or need a break, that is an indication for intubation regardless of other numbers.",
-      "verbatim": "When patients tell me I'm tired or I ask them, do you need a break? And they say yes. I don't care what any of these other numbers are. That means they need to go on the vent.",
-      "type": "judgment"
-    },
-    {
-      "text": "Do not slow down compensatory tachypnea in DKA; it is the body's attempt to correct acidosis.",
-      "verbatim": "You do not wanna slow that down. Okay? And then you're gonna have more problems on your hand. You're breathing fast because the problem is, in my mind, is when I was thinking of this case is somebody who's in DKA.",
-      "type": "pitfall"
-    },
-    {
-      "text": "Tension pneumothorax on X-ray shows midline shift, widened rib spaces on the affected side, and a depressed diaphragm.",
-      "verbatim": "So you see midline shift. Anything else that tells us that it's tension? These rib spaces over here. They're a lot bigger than the rib space. Oh, yeah. The diaphragm is also lower than the other side. So those three things tells us that it's a tension pneumothorax.",
-      "type": "dx_criteria"
-    },
-    {
-      "text": "Use the serum bicarbonate from the chemistry panel, not the calculated value from the ABG, for accurate assessment.",
-      "verbatim": "You really shouldn't take the bicarb from the ABG It should be from the chemistry. It's mainly more of how it's measured. From a ABG, it's a it's a calculated number, whereas the chemistry is the actual.",
-      "type": "pitfall"
-    },
-    {
-      "text": "A defibrillator can be distinguished from a pacemaker by the presence of a coil on the lead; all defibrillators can pace.",
-      "verbatim": "All defibrillators can pace. Most pacer that they place in can defibrillate, or they'll step it up if they need to. Way you tell is if there's a coil on one of the wires or both the wires. That tells you it's a defibrillator.",
+      "text": "On chest X-ray, a defibrillator is identified by a coil on one or both leads; the coil is thicker than the wire and holds the charge.",
+      "seg": 417,
+      "verbatim": "Way you tell is if there's a coil on one of the wires or both the wires. That tells you it's a defibrillator.",
+      "applies_to": "patients with implanted cardiac devices",
       "type": "exam_technique"
     },
     {
-      "text": "In a patient with chronic CO2 retention, a normal pH with low oxygen and high CO2 is their baseline; do not treat the hypoxia.",
-      "verbatim": "If you see somebody like this, is that normal? No. What do think that is? Right? But their pH is normal. So this is... This is normal for them. I wouldn't treat this at all. I wouldn't give them oxygen. Well, maybe... Yeah. I wouldn't even give them oxygen. 85 is probably normal for them.",
+      "text": "Indications for a defibrillator are CHF with EF under 35% after three months of goal-directed therapy, or history of VFib/VTach.",
+      "seg": 429,
+      "verbatim": "if they have a defibrillator, there's only two reasons why you put a defibrillator in. There's CHF under 35% after three months of goal directed therapy, or they're in kind of a preload position to go into VFib, VTAC.",
+      "applies_to": "patients with heart failure or arrhythmia",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "Absolute contraindications to BiPAP include GCS less than 7, vomiting, facial trauma, cardiac arrest, and airway obstruction.",
+      "seg": 445,
+      "verbatim": "Those are absolute ones. Facial trauma, vomiting, cardiac arrest. Obviously, you're not gonna put a vitamin and for airway obstruction. Those are your absolute, absolute contraindications.",
+      "applies_to": "patients being considered for noninvasive ventilation",
+      "type": "practice"
+    },
+    {
+      "text": "On BiPAP, oxygenation is improved by increasing FiO2 or EPAP (which acts like PEEP); CO2 clearance is improved by increasing tidal volume via IPAP/EPAP adjustments.",
+      "seg": 470,
+      "verbatim": "What numbers improve the oxygen? I o two. Anything else? The EPAP. The EPAP is like a PEEP. Okay? So it's a... That's the minimum pressure.",
+      "applies_to": "patients on BiPAP",
+      "type": "practice"
+    },
+    {
+      "text": "If a patient on BiPAP does not improve after two adjustments and repeat blood gas, escalate care by calling ICU.",
+      "seg": 495,
+      "verbatim": "I usually give it two chances. Adjust it. Get a gas, adjust it again. If I fail that, then we need to step up therapy.",
+      "applies_to": "patients on BiPAP not improving",
       "type": "judgment"
     },
     {
-      "text": "Absolute contraindications to BiPAP include GCS less than 7, vomiting, facial trauma, and cardiac arrest.",
-      "verbatim": "GCS less than seven. Perfect. Anxious to get a mask on? That is a relative contraindication. Vomiting. Vomiting. K. Those are absolute ones. Facial trauma, vomiting, cardiac arrest.",
-      "type": "guideline"
-    },
-    {
-      "text": "For suspected asthma exacerbation, give albuterol first and reassess; if no improvement, step up therapy.",
-      "verbatim": "It looks like asthma, seems like asthma, give them albuterol, and then reassess. It's not gonna be that hard. That's all it is. Just do the basic thing. And then if that doesn't work, step up.",
-      "type": "guideline"
-    },
-    {
-      "text": "Nasal cannula maxes out at about 6 L/min; if more oxygen is needed, step up to a simple mask.",
-      "verbatim": "Start off with nasal cannula, max out about six, and you gotta step up to simple mask.",
-      "type": "guideline"
-    },
-    {
-      "text": "For a patient with pH 7.2, pCO2 80, and O2 50, increase FiO2 and respiratory rate first.",
-      "verbatim": "Let's say that you get a patient that has a pH of 7.2, 82 of 80, and oxygen of 50. What are you guys gonna do? Increase that f I o two and increase their rate.",
-      "type": "judgment"
-    },
-    {
-      "text": "Give 0.4 mg naloxone IV as initial dose for nonresponsive patient with suspected opioid overdose.",
-      "verbatim": "How much? 0.4 mg. 0.4 mg. Good start. Give give them Narcan in the IV.",
+      "text": "For a nonresponsive patient with suspected opioid overdose, give naloxone 0.4 mg IV; if no improvement after first dose, consider other causes.",
+      "seg": 514,
+      "verbatim": "0.4 mg. 0.4 mg. Good start. Give give them Narcan",
+      "applies_to": "patients with suspected opioid overdose",
       "type": "dosing"
     },
     {
-      "text": "Ventilator orders should be written in sequence: rate, tidal volume, PEEP, FiO2.",
-      "verbatim": "The normal way we write these vent orders down is your rate is first, tidal volume is next, keep is after that, and then finally, your oxygen.",
-      "type": "guideline"
+      "text": "Ventilator orders are written in the sequence: rate, tidal volume, PEEP, FiO2.",
+      "seg": 526,
+      "verbatim": "the normal way we write these vent orders down is your rate is first, tidal volume is next, keep is after that, and then finally, your oxygen.",
+      "applies_to": "intubated patients",
+      "type": "practice"
     },
     {
-      "text": "If right mainstem intubation is seen on X-ray, retract the ET tube 1-2 cm.",
-      "verbatim": "Retract the ET tube, and now magically everything gets better.",
+      "text": "On a ventilator, FiO2 and PEEP primarily affect oxygenation; rate and tidal volume primarily affect CO2 clearance.",
+      "seg": 534,
+      "verbatim": "Which of those numbers affect the... Oh, two? FiO2.",
+      "applies_to": "intubated patients",
+      "type": "concept"
+    },
+    {
+      "text": "If ET tube is in the right mainstem bronchus on chest X-ray, retract it 1-2 cm.",
+      "seg": 564,
+      "verbatim": "you can do one to two centimeters perfectly fine. But this is clearly in the right main stem, and this is all atelectasis.",
+      "applies_to": "intubated patients with malpositioned ET tube",
+      "type": "procedure"
+    },
+    {
+      "text": "DNR and DNI are separate orders in the hospital; it is the resident's responsibility to ensure both are entered and that the patient wears a DNR bracelet.",
+      "seg": 600,
+      "verbatim": "we are used to having both orders, and there's two orders in the place in Cerner as well. There's a DNR order and DNI order. It is your responsibility, even though you're a resident, still your patient, still your responsibility to make sure if there are DNR and DNI that both orders are in.",
+      "applies_to": "hospitalized patients with advance directives",
+      "type": "practice"
+    },
+    {
+      "text": "Advance care planning conversations should start in clinic, ideally early in adulthood, to avoid difficult decisions at 2 AM.",
+      "seg": 609,
+      "verbatim": "as directed, this starts in clinic. It can start 20 years old, 30 years old. It doesn't matter. Have that conversation. It's a difficult hard to have it. Much easier to have it in clinic.",
+      "applies_to": "all adult patients in outpatient setting",
+      "type": "practice"
+    },
+    {
+      "text": "If a patient has DNR/DNI orders in the chart but no bracelet, the patient may be coded against their wishes, leading to harm and family distress.",
+      "seg": 626,
+      "verbatim": "have DNR and DNI listed in the chart, and it's not on there. The nurses don't know. I code the patient. Sometimes get them back. Sometimes I don't, and I have to tell the family, you know, what happened. They said he's not supposed... He or she wasn't supposed to get any of that.",
+      "applies_to": "hospitalized patients with DNR/DNI orders",
       "type": "pitfall"
-    },
-    {
-      "text": "DNR and DNI are separate orders; both must be entered in the EMR.",
-      "verbatim": "Make sure if there are DNR and DNI that both orders are in.",
-      "type": "guideline"
-    },
-    {
-      "text": "Residents are responsible for ensuring DNR/DNI documentation, even if they cannot place the DNI order themselves.",
-      "verbatim": "It is your responsibility, even though you're a resident, still your patient, still your responsibility to make sure if there are DNR and DNI that both orders are in.",
-      "type": "judgment"
-    },
-    {
-      "text": "Have code status conversations in clinic because it is much easier than doing so at 2 AM during an acute event.",
-      "verbatim": "Have that conversation. It's a difficult hard to have it. Much easier to have it in clinic.",
-      "type": "judgment"
-    },
-    {
-      "text": "If a patient appears distressed or you have a bad feeling, that is the time to call for help.",
-      "verbatim": "If patient doesn't look good, if you have a bad feeling, patient feels like they are having trouble, that's that's the time when you need help.",
-      "type": "red_flag"
-    },
-    {
-      "text": "After two adjustments of BiPAP without improvement, escalate to ICU for step-up therapy.",
-      "verbatim": "I I usually give it two chances. Adjust it. Get a gas, adjust it again. If I fail that, then we need to step up therapy.",
-      "type": "guideline"
     }
   ],
   "pearls": [
     {
-      "text": "For suspected asthma exacerbation, give albuterol first and reassess; if no improvement, step up therapy.",
-      "verbatim": "It looks like asthma, seems like asthma, give them albuterol, and then reassess. It's not gonna be that hard. That's all it is. Just do the basic thing. And then if that doesn't work, step up.",
-      "type": "practice",
-      "t": 186.9,
-      "match": "exact",
-      "episode": "dr-bhakta-on-distress-in-adults",
-      "speaker": "Dr. Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-186",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "drug:albuterol"
-          ],
-          "actionable": [
-            "give"
-          ],
-          "rarity": 6.3
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "When a patient says they are tired of breathing or need a break, that is an indication for intubation regardless of other numbers.",
-      "verbatim": "When patients tell me I'm tired or I ask them, do you need a break? And they say yes. I don't care what any of these other numbers are. That means they need to go on the vent.",
-      "type": "judgment",
-      "t": 289.5,
-      "match": "exact",
-      "episode": "dr-bhakta-on-distress-in-adults",
-      "speaker": "Dr. Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-289",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:intubation"
-          ],
-          "rarity": 7.23
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Do not slow down compensatory tachypnea in DKA; it is the body's attempt to correct acidosis.",
-      "verbatim": "You do not wanna slow that down. Okay? And then you're gonna have more problems on your hand. You're breathing fast because the problem is, in my mind, is when I was thinking of this case is somebody who's in DKA.",
-      "type": "pitfall",
-      "t": 364.2,
-      "match": "exact",
-      "episode": "dr-bhakta-on-distress-in-adults",
-      "speaker": "Dr. Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-364",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:tachypnea"
-          ],
-          "actionable": [
-            "Do not"
-          ],
-          "rarity": 7.23
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Nasal cannula maxes out at about 6 L/min; if more oxygen is needed, step up to a simple mask.",
-      "verbatim": "Start off with nasal cannula, max out about six, and you gotta step up to simple mask.",
-      "type": "practice",
-      "t": 907.9,
-      "match": "exact",
-      "episode": "dr-bhakta-on-distress-in-adults",
-      "speaker": "Dr. Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-907",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:6 L"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Tension pneumothorax on X-ray shows midline shift, widened rib spaces on the affected side, and a depressed diaphragm.",
-      "verbatim": "So you see midline shift. Anything else that tells us that it's tension? These rib spaces over here. They're a lot bigger than the rib space. Oh, yeah. The diaphragm is also lower than the other side. So those three things tells us that it's a tension pneumothorax.",
-      "type": "dx_criteria",
-      "t": 1038.6,
-      "match": "exact",
-      "episode": "dr-bhakta-on-distress-in-adults",
-      "speaker": "Dr. Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1038",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:X-ray"
-          ],
-          "rarity": 7.89
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Use the serum bicarbonate from the chemistry panel, not the calculated value from the ABG, for accurate assessment.",
-      "verbatim": "You really shouldn't take the bicarb from the ABG It should be from the chemistry. It's mainly more of how it's measured. From a ABG, it's a it's a calculated number, whereas the chemistry is the actual.",
-      "type": "pitfall",
-      "t": 1090.3,
-      "match": "exact",
-      "episode": "dr-bhakta-on-distress-in-adults",
-      "speaker": "Dr. Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1090",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 7.83
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "In a patient with chronic CO2 retention, a normal pH with low oxygen and high CO2 is their baseline; do not treat the hypoxia.",
-      "verbatim": "If you see somebody like this, is that normal? No. What do think that is? Right? But their pH is normal. So this is... This is normal for them. I wouldn't treat this at all. I wouldn't give them oxygen. Well, maybe... Yeah. I wouldn't even give them oxygen. 85 is probably normal for them.",
-      "type": "judgment",
-      "t": 1107.6,
-      "match": "exact",
-      "episode": "dr-bhakta-on-distress-in-adults",
-      "speaker": "Dr. Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1107",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:hypoxia"
-          ],
-          "actionable": [
-            "do not"
-          ],
-          "rarity": 7.47
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "A defibrillator can be distinguished from a pacemaker by the presence of a coil on the lead; all defibrillators can pace.",
-      "verbatim": "All defibrillators can pace. Most pacer that they place in can defibrillate, or they'll step it up if they need to. Way you tell is if there's a coil on one of the wires or both the wires. That tells you it's a defibrillator.",
+      "text": "On chest X-ray, a defibrillator is identified by a coil on one or both leads; the coil is thicker than the wire and holds the charge.",
+      "verbatim": "Way you tell is if there's a coil on one of the wires or both the wires. That tells you it's a defibrillator.",
       "type": "exam_technique",
-      "t": 1517.5,
+      "t": 1525.7,
       "match": "exact",
       "episode": "dr-bhakta-on-distress-in-adults",
       "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1517",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:defibrillator"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with implanted cardiac devices",
+      "pearl_id": "dr-bhakta-on-distress-in-adults-1525"
     },
     {
-      "text": "Absolute contraindications to BiPAP include GCS less than 7, vomiting, facial trauma, and cardiac arrest.",
-      "verbatim": "GCS less than seven. Perfect. Anxious to get a mask on? That is a relative contraindication. Vomiting. Vomiting. K. Those are absolute ones. Facial trauma, vomiting, cardiac arrest.",
-      "type": "practice",
-      "t": 1628.6,
-      "match": "fuzzy",
+      "text": "Indications for a defibrillator are CHF with EF under 35% after three months of goal-directed therapy, or history of VFib/VTach.",
+      "verbatim": "if they have a defibrillator, there's only two reasons why you put a defibrillator in. There's CHF under 35% after three months of goal directed therapy, or they're in kind of a preload position to go into VFib, VTAC.",
+      "type": "dx_criteria",
+      "t": 1581.7,
+      "match": "exact",
       "episode": "dr-bhakta-on-distress-in-adults",
       "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1628",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "threshold:less than 7"
-          ],
-          "harm": [
-            "contraindications"
-          ],
-          "rarity": 7.18
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with heart failure or arrhythmia",
+      "pearl_id": "dr-bhakta-on-distress-in-adults-1581"
     },
     {
-      "text": "For a patient with pH 7.2, pCO2 80, and O2 50, increase FiO2 and respiratory rate first.",
-      "verbatim": "Let's say that you get a patient that has a pH of 7.2, 82 of 80, and oxygen of 50. What are you guys gonna do? Increase that f I o two and increase their rate.",
+      "text": "Absolute contraindications to BiPAP include GCS less than 7, vomiting, facial trauma, cardiac arrest, and airway obstruction.",
+      "verbatim": "Those are absolute ones. Facial trauma, vomiting, cardiac arrest. Obviously, you're not gonna put a vitamin and for airway obstruction. Those are your absolute, absolute contraindications.",
+      "type": "practice",
+      "t": 1638.0,
+      "match": "exact",
+      "episode": "dr-bhakta-on-distress-in-adults",
+      "speaker": "Dr. Bhakta",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients being considered for noninvasive ventilation",
+      "pearl_id": "dr-bhakta-on-distress-in-adults-1638"
+    },
+    {
+      "text": "On BiPAP, oxygenation is improved by increasing FiO2 or EPAP (which acts like PEEP); CO2 clearance is improved by increasing tidal volume via IPAP/EPAP adjustments.",
+      "verbatim": "What numbers improve the oxygen? I o two. Anything else? The EPAP. The EPAP is like a PEEP. Okay? So it's a... That's the minimum pressure.",
+      "type": "practice",
+      "t": 1740.5,
+      "match": "segment",
+      "episode": "dr-bhakta-on-distress-in-adults",
+      "speaker": "Dr. Bhakta",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients on BiPAP",
+      "pearl_id": "dr-bhakta-on-distress-in-adults-1740"
+    },
+    {
+      "text": "If a patient on BiPAP does not improve after two adjustments and repeat blood gas, escalate care by calling ICU.",
+      "verbatim": "I usually give it two chances. Adjust it. Get a gas, adjust it again. If I fail that, then we need to step up therapy.",
       "type": "judgment",
-      "t": 1764.6,
-      "match": "fuzzy",
-      "episode": "dr-bhakta-on-distress-in-adults",
-      "speaker": "Dr. Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1764",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "increase"
-          ],
-          "rarity": 6.21
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "After two adjustments of BiPAP without improvement, escalate to ICU for step-up therapy.",
-      "verbatim": "I I usually give it two chances. Adjust it. Get a gas, adjust it again. If I fail that, then we need to step up therapy.",
-      "type": "practice",
-      "t": 1834.7,
+      "t": 1835.0,
       "match": "exact",
       "episode": "dr-bhakta-on-distress-in-adults",
       "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1834",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:therapy"
-          ],
-          "rarity": 7.53
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients on BiPAP not improving",
+      "pearl_id": "dr-bhakta-on-distress-in-adults-1835"
     },
     {
-      "text": "Ventilator orders should be written in sequence: rate, tidal volume, PEEP, FiO2.",
-      "verbatim": "The normal way we write these vent orders down is your rate is first, tidal volume is next, keep is after that, and then finally, your oxygen.",
+      "text": "Ventilator orders are written in the sequence: rate, tidal volume, PEEP, FiO2.",
+      "verbatim": "the normal way we write these vent orders down is your rate is first, tidal volume is next, keep is after that, and then finally, your oxygen.",
       "type": "practice",
       "t": 1964.0,
       "match": "exact",
@@ -34295,158 +33934,73 @@
       "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-1964",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.56
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "intubated patients",
+      "pearl_id": "dr-bhakta-on-distress-in-adults-1964"
     },
     {
-      "text": "If right mainstem intubation is seen on X-ray, retract the ET tube 1-2 cm.",
-      "verbatim": "Retract the ET tube, and now magically everything gets better.",
-      "type": "pitfall",
-      "t": 2108.9,
+      "text": "On a ventilator, FiO2 and PEEP primarily affect oxygenation; rate and tidal volume primarily affect CO2 clearance.",
+      "verbatim": "Which of those numbers affect the... Oh, two? FiO2.",
+      "type": "concept",
+      "t": 1999.3,
       "match": "exact",
       "episode": "dr-bhakta-on-distress-in-adults",
       "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-2108",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:2 cm",
-            "test:X-ray"
-          ],
-          "rarity": 7.74
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "intubated patients",
+      "pearl_id": "dr-bhakta-on-distress-in-adults-1999"
     },
     {
-      "text": "If a patient appears distressed or you have a bad feeling, that is the time to call for help.",
-      "verbatim": "If patient doesn't look good, if you have a bad feeling, patient feels like they are having trouble, that's that's the time when you need help.",
-      "type": "red_flag",
-      "t": 2214.8,
+      "text": "If ET tube is in the right mainstem bronchus on chest X-ray, retract it 1-2 cm.",
+      "verbatim": "you can do one to two centimeters perfectly fine. But this is clearly in the right main stem, and this is all atelectasis.",
+      "type": "procedure",
+      "t": 2098.4,
       "match": "exact",
       "episode": "dr-bhakta-on-distress-in-adults",
       "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-2214",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 6.45
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "intubated patients with malpositioned ET tube",
+      "pearl_id": "dr-bhakta-on-distress-in-adults-2098"
     },
     {
-      "text": "Residents are responsible for ensuring DNR/DNI documentation, even if they cannot place the DNI order themselves.",
-      "verbatim": "It is your responsibility, even though you're a resident, still your patient, still your responsibility to make sure if there are DNR and DNI that both orders are in.",
-      "type": "judgment",
-      "t": 2262.1,
-      "match": "exact",
-      "episode": "dr-bhakta-on-distress-in-adults",
-      "speaker": "Dr. Bhakta",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-2262",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:dnr/dni"
-          ],
-          "actionable": [
-            "order"
-          ],
-          "rarity": 7.06
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "DNR and DNI are separate orders; both must be entered in the EMR.",
-      "verbatim": "Make sure if there are DNR and DNI that both orders are in.",
+      "text": "DNR and DNI are separate orders in the hospital; it is the resident's responsibility to ensure both are entered and that the patient wears a DNR bracelet.",
+      "verbatim": "we are used to having both orders, and there's two orders in the place in Cerner as well. There's a DNR order and DNI order. It is your responsibility, even though you're a resident, still your patient, still your responsibility to make sure if there are DNR and DNI that both orders are in.",
       "type": "practice",
-      "t": 2267.6,
+      "t": 2252.9,
       "match": "exact",
       "episode": "dr-bhakta-on-distress-in-adults",
       "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-2267",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.36
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "hospitalized patients with advance directives",
+      "pearl_id": "dr-bhakta-on-distress-in-adults-2252"
     },
     {
-      "text": "Have code status conversations in clinic because it is much easier than doing so at 2 AM during an acute event.",
-      "verbatim": "Have that conversation. It's a difficult hard to have it. Much easier to have it in clinic.",
-      "type": "judgment",
-      "t": 2301.0,
+      "text": "Advance care planning conversations should start in clinic, ideally early in adulthood, to avoid difficult decisions at 2 AM.",
+      "verbatim": "as directed, this starts in clinic. It can start 20 years old, 30 years old. It doesn't matter. Have that conversation. It's a difficult hard to have it. Much easier to have it in clinic.",
+      "type": "practice",
+      "t": 2294.0,
       "match": "exact",
       "episode": "dr-bhakta-on-distress-in-adults",
       "speaker": "Dr. Bhakta",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bhakta-on-distress-in-adults-2301",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:code status"
-          ],
-          "rarity": 6.31
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "all adult patients in outpatient setting",
+      "pearl_id": "dr-bhakta-on-distress-in-adults-2294"
+    },
+    {
+      "text": "If a patient has DNR/DNI orders in the chart but no bracelet, the patient may be coded against their wishes, leading to harm and family distress.",
+      "verbatim": "have DNR and DNI listed in the chart, and it's not on there. The nurses don't know. I code the patient. Sometimes get them back. Sometimes I don't, and I have to tell the family, you know, what happened. They said he's not supposed... He or she wasn't supposed to get any of that.",
+      "type": "pitfall",
+      "t": 2340.4,
+      "match": "exact",
+      "episode": "dr-bhakta-on-distress-in-adults",
+      "speaker": "Dr. Bhakta",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "hospitalized patients with DNR/DNI orders",
+      "pearl_id": "dr-bhakta-on-distress-in-adults-2340"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -50000,5 +49554,6 @@
       "name": "Dr. Bhakta"
     }
   ],
-  "pearls_fingerprint": "c73f96fadf253952"
+  "pearls_fingerprint": "b34f7f6b57edb38b",
+  "enrich_version": "v2"
 }

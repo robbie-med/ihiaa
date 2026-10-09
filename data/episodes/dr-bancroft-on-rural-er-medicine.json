@@ -70528,20 +70528,20 @@
   ],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "Dr. Bancroft provides a practical overview for family medicine residents preparing to work in rural ER settings, emphasizing both administrative know-how and clinical preparedness. He covers the financial realities of 1099 independent contractor work, including quarterly tax payments, deductions for mileage, meals, and educational supplies, and the value of forming a PLLC or working with a CPA. Clinically, he discusses bilevel positive airway pressure (BiPAP) settings, rapid sequence intubation (RSI) using ketamine and succinylcholine, and the importance of having procedure checklists, a bougie, and a consultant on speed dial. Throughout, he encourages residents to embrace hard work as part of professional growth and to keep a log of all expenses and miles.",
+  "abstract": "Dr. Bancroft gives a practical talk on rural ER medicine, covering financial aspects of 1099 moonlighting work, tax strategies, and deductions. He also reviews BiPAP settings for acute respiratory failure, distinguishing management for COPD versus pulmonary edema. The talk emphasizes the importance of having reliable clinical resources and maintaining a strong work ethic.",
   "key_points": [
-    "1099 contractors must pay self-employment tax (additional 15% for Medicare/Social Security) and may owe quarterly estimated taxes or face IRS fines and interest. Setting aside 20% (5% state, 15% federal) of each 1099 paycheck is a simple strategy.",
-    "Mileage can be deducted at a fixed IRS rate (e.g., 65¢/mile), and per diem meal deductions for travel shifts: ~$50 first/last day, ~$60 full days.",
-    "Educational supplies (books, UpToDate subscriptions, CME travel/hotel, scrubs, stethoscopes, shears) are deductible business expenses.",
-    "Creating a Professional Limited Liability Company (PLLC) can provide tax benefits (home office, computer, car) but does NOT shield personal assets from malpractice liability.",
-    "For BiPAP initiation in acute respiratory failure: start IPAP 12, EPAP 5, FiO2 100%, inspiratory time 1 second. Adjust EPAP upward for pulmonary edema (e.g., EPAP 8) and watch for mask seal at IPAP >16.",
-    "If a BiPAP patient is tachypneic, consider reducing inspiratory time (e.g., to 0.5 sec) to avoid stacking breaths and dyssynchrony.",
-    "Minute ventilation (respiratory rate × tidal volume) from BiPAP can be used to guide initial ventilator settings after intubation.",
-    "Rapid sequence intubation (RSI): ketamine 1-2 mg/kg plus succinylcholine 1.5 mg/kg is a common and effective combination; always have a bougie and glidescope ready as backup.",
-    "Maintain a personal 'crash' algorithm for difficult airway; reach out to a trusted colleague by phone/text to review your intubation plan before proceeding when possible.",
-    "Document all shifts, miles, and expenses in a logbook or app (like QuickBooks) to streamline deductions and CPA handoff.",
-    "Bougie use for difficult airway: feel vibration over tracheal rings to confirm placement.",
-    "RSI technique: minimize bag-masking; use BiPAP until patient fades, then remove and intubate."
+    "1099 independent contractors must set aside ~20% of income for taxes (5% state, 15% federal) and pay quarterly via IRS 1040-ES.",
+    "Self-employment tax adds ~15% for Medicare and Social Security, totaling roughly 35% marginal tax rate for 1099 workers.",
+    "Mileage deduction is $0.65/mile; log all work-related driving with dates and miles.",
+    "Per diem meal deductions: $50 for first and last travel days, $60 for full days; no receipts needed if using standard rate.",
+    "Educational supplies, scrubs, stethoscopes, and CME expenses (including travel and hotel) are tax-deductible.",
+    "A Professional Limited Liability Company (PLLC) offers tax benefits but does not protect personal assets from malpractice lawsuits.",
+    "Initial BiPAP settings: IPAP 12 cm H2O, EPAP 5 cm H2O, FiO2 100%, inspiratory time 1 second.",
+    "For tachypneic patients, reduce inspiratory time to 0.5 seconds to avoid delivering IPAP during exhalation.",
+    "In pulmonary edema, increase EPAP to 8 cm H2O and IPAP to 16 cm H2O; in COPD, use lower EPAP (5) and IPAP (12).",
+    "Recheck ABG or VBG at 60 minutes to assess BiPAP response; discontinue or intubate if worsening.",
+    "BiPAP settings differ for pulmonary edema (EPAP 8, IPAP 16) vs COPD (EPAP 4-5, IPAP 12).",
+    "For tachypneic patients on BiPAP, consider adjusting inspiratory time rather than just pressures."
   ],
   "topics_raw": [
     {
@@ -70557,7 +70557,15 @@
       "kind": "concept"
     },
     {
-      "label": "Tax Deductions",
+      "label": "Tax Deduction",
+      "kind": "concept"
+    },
+    {
+      "label": "Mileage Reimbursement",
+      "kind": "concept"
+    },
+    {
+      "label": "Per Diem Allowance",
       "kind": "concept"
     },
     {
@@ -70565,11 +70573,51 @@
       "kind": "concept"
     },
     {
-      "label": "Bilevel Positive Airway Pressure",
+      "label": "BiPAP",
       "kind": "procedure"
     },
     {
-      "label": "Rapid Sequence Intubation",
+      "label": "IPAP",
+      "kind": "concept"
+    },
+    {
+      "label": "EPAP",
+      "kind": "concept"
+    },
+    {
+      "label": "PEEP",
+      "kind": "concept"
+    },
+    {
+      "label": "Pulmonary Edema",
+      "kind": "condition"
+    },
+    {
+      "label": "COPD",
+      "kind": "condition"
+    },
+    {
+      "label": "Acute Respiratory Failure",
+      "kind": "condition"
+    },
+    {
+      "label": "Inspiratory Time",
+      "kind": "concept"
+    },
+    {
+      "label": "BiPAP settings",
+      "kind": "procedure"
+    },
+    {
+      "label": "Pulmonary edema",
+      "kind": "condition"
+    },
+    {
+      "label": "COPD exacerbation",
+      "kind": "condition"
+    },
+    {
+      "label": "Rapid sequence intubation",
       "kind": "procedure"
     },
     {
@@ -70581,63 +70629,39 @@
       "kind": "drug"
     },
     {
-      "label": "Succinylcholine",
-      "kind": "drug"
-    },
-    {
-      "label": "Acute Respiratory Failure",
-      "kind": "condition"
-    },
-    {
-      "label": "Pulmonary Edema",
-      "kind": "condition"
-    },
-    {
-      "label": "Chronic Obstructive Pulmonary Disease",
-      "kind": "condition"
-    },
-    {
-      "label": "Difficult Airway",
-      "kind": "condition"
-    },
-    {
-      "label": "Minute Ventilation",
+      "label": "Minute ventilation",
       "kind": "concept"
     },
     {
-      "label": "Bougie",
-      "kind": "procedure"
-    },
-    {
-      "label": "Rapid Sequence Intubation",
-      "kind": "procedure"
-    },
-    {
-      "label": "Bilevel Positive Airway Pressure",
-      "kind": "procedure"
-    },
-    {
-      "label": "Tension Pneumothorax",
+      "label": "Tension pneumothorax",
       "kind": "condition"
+    },
+    {
+      "label": "Pulmonary embolism",
+      "kind": "condition"
+    },
+    {
+      "label": "Rural emergency medicine",
+      "kind": "concept"
     },
     {
       "label": "Pulmonary Embolism",
       "kind": "condition"
     },
     {
-      "label": "Hypercapnia",
-      "kind": "condition"
-    },
-    {
-      "label": "Heparin",
-      "kind": "drug"
-    },
-    {
-      "label": "Ventilator Management",
+      "label": "BiPAP Settings",
       "kind": "procedure"
     },
     {
-      "label": "Chest X-Ray Interpretation",
+      "label": "Heparin Dosing",
+      "kind": "drug"
+    },
+    {
+      "label": "Sepsis Criteria",
+      "kind": "concept"
+    },
+    {
+      "label": "Fluid Resuscitation",
       "kind": "procedure"
     },
     {
@@ -70645,7 +70669,11 @@
       "kind": "procedure"
     },
     {
-      "label": "Patient Transfer",
+      "label": "Right Heart Strain",
+      "kind": "condition"
+    },
+    {
+      "label": "Radiology Communication",
       "kind": "concept"
     },
     {
@@ -70653,19 +70681,27 @@
       "kind": "condition"
     },
     {
-      "label": "Sepsis",
+      "label": "Right Ventricular Strain",
       "kind": "condition"
     },
     {
-      "label": "Heparin",
-      "kind": "drug"
+      "label": "Pulmonary Edema",
+      "kind": "condition"
     },
     {
-      "label": "Tranexamic Acid",
-      "kind": "drug"
+      "label": "Pulmonary Hemorrhage",
+      "kind": "condition"
     },
     {
-      "label": "Epinephrine",
+      "label": "Intubation",
+      "kind": "procedure"
+    },
+    {
+      "label": "Positive End-Expiratory Pressure",
+      "kind": "concept"
+    },
+    {
+      "label": "Push-Dose Epinephrine",
       "kind": "drug"
     },
     {
@@ -70673,27 +70709,23 @@
       "kind": "drug"
     },
     {
+      "label": "Tranexamic Acid",
+      "kind": "drug"
+    },
+    {
+      "label": "Heparin",
+      "kind": "drug"
+    },
+    {
+      "label": "Protamine",
+      "kind": "drug"
+    },
+    {
       "label": "Vasopressin",
       "kind": "drug"
     },
     {
-      "label": "Mechanical Ventilation",
-      "kind": "procedure"
-    },
-    {
-      "label": "Intubation",
-      "kind": "procedure"
-    },
-    {
-      "label": "Pulmonary Hemorrhage",
-      "kind": "condition"
-    },
-    {
-      "label": "Right Heart Strain",
-      "kind": "condition"
-    },
-    {
-      "label": "Cardiopulmonary Resuscitation",
+      "label": "Fluid Resuscitation",
       "kind": "procedure"
     },
     {
@@ -70711,258 +70743,463 @@
   ],
   "pearls_raw": [
     {
-      "text": "For 1099 work, immediately set aside 20% of each paycheck (5% for state, 15% for federal) to cover taxes, then pay quarterly via IRS Form 1040-ES and the Oklahoma Tax Commission.",
-      "verbatim": "What we... Maggie and I do is we pull out 20%. So 5% for state, 15 for the Fed just immediately. Pull that out.",
-      "type": "dosing"
+      "text": "For 1099 moonlighting income, immediately set aside 20% (5% state, 15% federal) and pay quarterly via IRS 1040-ES to avoid fines.",
+      "seg": 37,
+      "verbatim": "you go to the IRS government payments. You go to the 1040-ES section, and you put in 20 of your income",
+      "applies_to": "physicians with 1099 moonlighting income",
+      "type": "practice"
     },
     {
-      "text": "Track mileage at the current IRS rate (65¢/mile) for travel to remote ER shifts and claim per diem meals: about $50 on first/last travel days and $60 on full days worked.",
-      "verbatim": "he is 65¢ to the mile. So when I drive out to Shattuck, which is where I work, it's got four hours. So it's about $300 a drive. I can tell the government I already paid this myself.",
-      "type": "dosing"
+      "text": "Track mileage at $0.65/mile for all work-related driving; keep a logbook with dates and miles for each shift.",
+      "seg": 73,
+      "verbatim": "mileage. So he is 65¢ to the mile. So when I drive out to Shattuck, which is where I work, it's got four hours. So it's about $300 a drive.",
+      "applies_to": "physicians with 1099 work",
+      "type": "practice"
     },
     {
-      "text": "BiPAP initial settings: IPAP 12, EPAP 5, FiO2 100%, inspiratory time 1 second. Do not exceed IPAP of 16 because mask seal is typically lost above that.",
+      "text": "Use standard per diem meal deduction: $50 for first and last travel days, $60 for full days; no receipts needed.",
+      "seg": 78,
+      "verbatim": "every start day and end day, you get $50 from the government for food. And then every full day, you get about $60.",
+      "applies_to": "physicians with 1099 work",
+      "type": "practice"
+    },
+    {
+      "text": "Initial BiPAP settings: IPAP 12, EPAP 5, FiO2 100%, inspiratory time 1 second.",
+      "seg": 144,
       "verbatim": "His initial settings, he does inspiratory positive airway pressure of 12. So that's inspiratory pressure that's forcing it in. And your expiratory positive airway pressure, so it's the pressure that's kinda, like, always there to... So that's that's five. And your fraction of inspired oxygen, you just always set it straight to a 100.",
+      "applies_to": "adults with acute respiratory failure needing BiPAP",
       "type": "dosing"
     },
     {
-      "text": "For pulmonary edema on BiPAP, raise EPAP to 8; for COPD, keep EPAP at 5 and IPAP at 12–16.",
-      "verbatim": "So for him, it... In his book, he has a whole algorithm that you do, but pulmonary edema versus COPD. So you do five half of 16, you have a four. So his expiratory positive airway pressure's a little lower for pulmonary... Or COPD. For pulmonary edema, he would go to expiratory positive airway pressure to eight.",
-      "type": "dx_criteria"
-    },
-    {
-      "text": "If a BiPAP patient is tachypneic, shorten the inspiratory time to 0.5 seconds to prevent breath-stacking and patient-ventilator dyssynchrony.",
-      "verbatim": "if somebody's, like, breathing really fast and stuff like that, you're gonna wanna set it for half a second just because then if not, you're gonna have the inspiratory positive airway pressure. While they're breathing out.",
-      "type": "pitfall"
-    },
-    {
-      "text": "Use minute ventilation from BiPAP to set initial ventilator rate and volume post-intubation, as the two values are essentially one-to-one.",
-      "verbatim": "ventilation is gonna be breath per minute times volume, and the BiPAP will usually calculate this for you. So that's really helpful. Now on the vent, it's just respiratory rate times minute ventilation. And so it's kind of one on one.",
-      "type": "guideline"
-    },
-    {
-      "text": "Before intubating in a solo rural ER, text or call a trusted colleague to review your plan; always have a bougie and glidescope ready as a backup airway.",
-      "verbatim": "When I tube somebody, I usually, like, text instrument to say, hey. Here's my plan. Like, what do you think? Or or I'll text with him or something like that. So just have somebody in the... Your back pocket you can reach out to because, usually, you want somebody else to check your plan before you're gonna keep somebody.",
-      "type": "judgment"
-    },
-    {
-      "text": "When using a bougie for difficult airway, feel the vibration as it passes over tracheal rings to confirm tracheal placement.",
-      "verbatim": "You can feel the vibration through the bougie more than you can the tube.",
-      "type": "exam_technique"
-    },
-    {
-      "text": "During RSI, avoid prolonged bag-masking; push medications and then intubate quickly to reduce aspiration risk.",
-      "verbatim": "when you are RSI, you don't need to do the, like, the breathing. You're not, like, sitting here bag masking them for very long. You're just, like, pushing the meds and then too bad for it.",
-      "type": "judgment"
-    },
-    {
-      "text": "For RSI on BiPAP, keep the patient on BiPAP while giving medications, then remove it as they fade and bag until unresponsive before intubating.",
-      "verbatim": "I just let them sit there while I'm giving all the meds, and I just keep them on the bilevel positive airway pressure until I push. Once they push and they start to fade, I just rip it off, and I'll bag them until, like, they're not responding to me in their eyes, and I just go for it.",
-      "type": "exam_technique"
-    },
-    {
-      "text": "If you suspect tension pneumothorax, do not wait for chest X-ray; physical exam findings (tracheal deviation, absent breath sounds) are sufficient to act.",
-      "verbatim": "For tension pneumothorax, just listen to their lungs. You'll hear something and you notice, like, their trachea's deviated, you don't want that chest X-ray. That's considered a... If you get an X-ray on tension pneumothorax, it's a mess.",
-      "type": "red_flag"
-    },
-    {
-      "text": "In rural ER, physical exam is paramount because imaging and lab results are delayed.",
-      "verbatim": "physical exam is super important.",
-      "type": "judgment"
-    },
-    {
-      "text": "Always review all prior notes; a critical history (e.g., recent PE, anticoagulant use) may be buried and never added to the problem list.",
-      "verbatim": "So, like, I went through, like, five or six notes. It wasn't added to her past medical history ever.",
-      "type": "pitfall"
-    },
-    {
-      "text": "For hypercapnic respiratory failure on BiPAP, the only ventilator adjustment that improves CO2 clearance is increasing inspiratory time (I-time).",
-      "verbatim": "All we're gonna do is change the I-time. That's all you're gonna have. I don't have something you can do. The I-time. All you're gonna change.",
-      "type": "guideline"
-    },
-    {
-      "text": "When reading CT for PE, look for filling defects—dark areas within the white contrast of pulmonary arteries.",
-      "verbatim": "When you're scrolling through, you can see areas of the pulmonary vasculature that were blocked off like POTS.",
-      "type": "dx_criteria"
-    },
-    {
-      "text": "Heparin dosing for PE is weight-based and depends more on liver function than renal function.",
-      "verbatim": "heparin doesn't depend so much on kidney function as much as liver function.",
+      "text": "If the patient is tachypneic, reduce inspiratory time to 0.5 seconds to avoid delivering IPAP during exhalation.",
+      "seg": 157,
+      "verbatim": "If somebody's, like, breathing really fast and stuff like that, you're gonna wanna set it for half a second just because then if not, you're gonna have the inspiratory positive airway pressure. While they're breathing out.",
+      "applies_to": "tachypneic patients on BiPAP",
       "type": "dosing"
     },
     {
-      "text": "Before calling for transfer, you need a definitive diagnosis and a bed acceptance; the ambulance cannot come without a destination.",
-      "verbatim": "you need a diagnosis. And then you need a bed before you can call.",
-      "type": "guideline"
-    },
-    {
-      "text": "Ambulances typically cannot provide BiPAP, so consider intubation before transfer if the patient requires noninvasive ventilation.",
-      "verbatim": "Because the can do bilevel positive airway pressure, but the ambulance can't.",
-      "type": "pitfall"
-    },
-    {
-      "text": "Weight-based heparin dosing (80 units/kg bolus, max 10,000 units, then 18 units/kg/hr) achieves faster therapeutic levels than fixed-dose regimens.",
-      "verbatim": "the weight based is eighty eighty units per kg as the loading dose, no more than ten thousand units, and then eighteen units per kg an hour.",
+      "text": "For pulmonary edema, increase EPAP to 8 and IPAP to 16; for COPD, use EPAP 5 and IPAP 12.",
+      "seg": 174,
+      "verbatim": "So you do five half of 16, you have a four. So his expiratory positive airway pressure's a little lower for pulmonary... Or COPD. For pulmonary edema, he would go to expiratory positive airway pressure to eight.",
+      "applies_to": "adults with acute respiratory failure on BiPAP",
       "type": "dosing"
     },
     {
-      "text": "When CT is equivocal for PE due to artifact, document the limitation and clinically correlate; 'likely PE' is very different from 'no PE'.",
-      "verbatim": "It's likely PE. Just clinically correlate. I'll just say that in the read.",
-      "type": "pitfall"
+      "text": "Recheck ABG or VBG at 60 minutes to assess BiPAP response; discontinue or intubate if worsening.",
+      "seg": 179,
+      "verbatim": "in sixty minutes, you're gonna recheck that UVG or UVG. You can have it where you're at. And then, obviously, better monitor and then discontinue when you can or adjust it. And if they worsen, you're just gonna need to tube them.",
+      "applies_to": "adults on BiPAP for acute respiratory failure",
+      "type": "practice"
     },
     {
-      "text": "In sepsis with suspected PE, avoid aggressive fluid resuscitation if there are signs of right heart strain (rales, elevated JVP) because it can worsen pulmonary edema.",
-      "verbatim": "So the rule is don't give it unless obvious low filling pressures. It's like a small IVC because you already put... There's already so much pressure on the heart that if you increase it, it just worsens pulmonary edema.",
-      "type": "judgment"
+      "text": "A PLLC provides tax benefits but does not protect personal assets from malpractice lawsuits.",
+      "seg": 95,
+      "verbatim": "This is different from an LLC in that you still get sued through this. So it doesn't protect you from getting sued. It just protects you from taxes.",
+      "applies_to": "physicians considering a PLLC",
+      "type": "concept"
     },
     {
-      "text": "Intubating a patient with PE is dangerous because positive pressure increases intrathoracic pressure, worsening right ventricular strain and precipitating arrhythmia or death.",
-      "verbatim": "Because you increase the intrathoracic pressure, creates more heart strain, makes them go into, like, arrhythmia, they die. Super dangerous.",
-      "type": "red_flag"
+      "text": "Educational supplies, scrubs, stethoscopes, shears, and CME expenses (including travel and hotel) are tax-deductible for 1099 workers.",
+      "seg": 89,
+      "verbatim": "books and stuff, I... That's all write off. So I keep a log of all that, all my receipts. And then scrubs. If you're wearing scrubs, you work in the ER, and you bought some, you can turn that into the government, and that counts it right off too. Any part of your uniform. I thought you were stethoscope, you wanna do, like, shears, all that stuff, you keep your seats, you're at it all off.",
+      "applies_to": "physicians with 1099 income",
+      "type": "practice"
     },
     {
-      "text": "Use low PEEP (≤10 cm H2O) and high FiO2 when ventilating a patient with known or suspected PE to minimize hemodynamic compromise.",
-      "verbatim": "you really get that FIO2 as high as you can and get that positive end-expiratory pressure as low as you can because you don't wanna increase the extra pressure. So 10 or less is kind of the the goal.",
-      "type": "guideline"
+      "text": "Use QuickBooks to track expenses and mileage automatically by linking bank accounts and swiping transactions as business or personal.",
+      "seg": 120,
+      "verbatim": "Quickbooks is one that you have to pay for, but you can... Literally, it'll take every expense if you link your cards in your bank accounts, and you can just swipe whether it's a business expense or personal expense, and then it'll create a spreadsheet for you at the end of the year that you just send to your CPA. And it can track your miles and everything too.",
+      "applies_to": "physicians with 1099 income",
+      "type": "practice"
     },
     {
-      "text": "In a crashing patient, push-dose epinephrine (e.g., 1 cc of 1:10,000) can be used as a temporizing vasopressor while a Levophed drip is being set up.",
-      "verbatim": "Levophed's gonna take twenty minutes to get set up. So push to use prior respite. So we push to. Times one. I got her pressure up beautifully.",
+      "text": "For pulmonary edema on BiPAP, set EPAP to 8 and IPAP to 16; for COPD, start with EPAP 4-5 and IPAP 12.",
+      "seg": 174,
+      "verbatim": "So you do five half of 16, you have a four. So his expiratory positive airway pressure's a little lower for pulmonary... Or COPD. For pulmonary edema, he would go to expiratory positive airway pressure to eight.",
+      "applies_to": "adults with respiratory failure on BiPAP",
       "type": "dosing"
     },
     {
-      "text": "For suspected pulmonary hemorrhage on heparin, consider nebulized TXA (1 gram) via the ventilator circuit to tamponade bleeding while continuing anticoagulation for PE.",
-      "verbatim": "do TXA, one gram. You just pour it in the vents like you're giving albuterol, clamp it on, and have it breathe it in so I can, like, tamponade off the the alveolar hemorrhage while still treating the PD.",
+      "text": "If the patient is tachypneic on BiPAP, consider adjusting the inspiratory time rather than just the pressures.",
+      "seg": 164,
+      "verbatim": "So, yeah, so if you're tachypneic, consider your inspiratory time.",
+      "applies_to": "patients on BiPAP",
+      "type": "practice"
+    },
+    {
+      "text": "For volume overload, increase EPAP to keep alveoli open; you can bump IPAP to 16 for pulmonary edema.",
+      "seg": 170,
+      "verbatim": "If they're really volume overload, that's when you would bump the inspiratory positive airway pressure up to, like, 16.",
+      "applies_to": "volume overloaded patients on BiPAP",
+      "type": "dosing"
+    },
+    {
+      "text": "Always have a bougie ready when intubating; you can feel the vibration of tracheal rings through it, which confirms placement.",
+      "seg": 206,
+      "verbatim": "So I always have the bougie out.",
+      "applies_to": "any intubation",
       "type": "procedure"
     },
     {
-      "text": "Early, honest family communication about mortality risk (e.g., '40% chance of dying in 24 hours') sets expectations and shares decision-making for major interventions.",
-      "verbatim": "Tell him that she is probably is a forty percent mortality risk in the next twenty four hours because they need to realize that if she dies, it's not your fault.",
+      "text": "During RSI, keep the patient on BiPAP while pushing meds; once they start to fade, remove BiPAP, bag until unresponsive, then intubate.",
+      "seg": 236,
+      "verbatim": "I just let them sit there while I'm giving all the meds, and I just keep them on the bilevel positive airway pressure until I push. Once they push and they start to fade, I just rip it off, and I'll bag them until, like, they're not responding to me in their eyes, and I just go for it.",
+      "applies_to": "patients on BiPAP undergoing RSI",
+      "type": "procedure"
+    },
+    {
+      "text": "Use the minute ventilation (RR x tidal volume) calculated by BiPAP to help set initial vent settings; it is roughly one-to-one.",
+      "seg": 192,
+      "verbatim": "ventilation is gonna be breath per minute times volume, and the BiPAP will usually calculate this for you. So that's really helpful.",
+      "applies_to": "patients transitioning from BiPAP to ventilator",
+      "type": "practice"
+    },
+    {
+      "text": "In rural ER, physical exam is critical because imaging and lab results can be delayed by hours; for tension pneumothorax, listen for breath sounds and check for tracheal deviation—do not wait for X-ray.",
+      "seg": 354,
+      "verbatim": "physical exam is super important. So for tension pneumothorax, just listen to their lungs. Yeah. You'll hear something and you notice, like, their trachea's deviated, you don't want that chest X-ray.",
+      "applies_to": "rural ER setting",
       "type": "judgment"
     },
     {
-      "text": "After a patient death, conduct a team debrief to validate emotions, identify system improvements, and prevent self-blame among staff.",
-      "verbatim": "So how do you leave the debrief? You're the doctor there. And there's all these people who don't know what that looks like. So what are you gonna do?",
+      "text": "A history of PE or anticoagulation may be buried in old notes and not listed in the problem list; always search thoroughly.",
+      "seg": 369,
+      "verbatim": "It wasn't added to her past medical history ever. So there there was a note on it that... I mean, she was, like, really sick. So, like, as you're working through stuff, you just missed the one note where, like, they talked about it.",
+      "applies_to": "any patient with unexplained respiratory distress",
+      "type": "pitfall"
+    },
+    {
+      "text": "If a patient on BiPAP has a rising pCO2 on VBG despite clinical improvement, they are worsening and may need intubation.",
+      "seg": 397,
+      "verbatim": "So, yeah, repeat PBG, and it's So what does this make you think? Entertaining. That's right. It's been worse. Yeah. She's getting.",
+      "applies_to": "patients on BiPAP with repeat VBG",
+      "type": "red_flag"
+    },
+    {
+      "text": "Have a backup person (e.g., a colleague or intensivist) to review your intubation plan before you proceed.",
+      "seg": 202,
+      "verbatim": "When I tube somebody, I usually, like, text instrument to say, hey. Here's my plan. Like, what do you think?",
+      "applies_to": "any intubation, especially in rural setting",
+      "type": "practice"
+    },
+    {
+      "text": "In a patient with hypercapnic respiratory failure on BiPAP, the only setting you need to change to improve CO2 clearance is the I-time (inspiratory time); do not decrease EPAP or increase IPAP.",
+      "seg": 421,
+      "verbatim": "All we're gonna do is change the I-time. That's all you're gonna have. I don't have something you can do. The I-time. All you're gonna change. That's all you can do",
+      "applies_to": "patients with hypercapnic respiratory failure on BiPAP",
+      "type": "practice"
+    },
+    {
+      "text": "Weight-based heparin for PE: 80 units/kg bolus (max 10,000 units) followed by 18 units/kg/hour infusion; this achieves therapeutic levels faster than a fixed 5,000 unit bolus.",
+      "seg": 527,
+      "verbatim": "the weight based is eighty eighty units per kg as the loading dose, no more than ten thousand units, and then eighteen units per kg an hour",
+      "applies_to": "adults with acute PE",
+      "type": "dosing"
+    },
+    {
+      "text": "Heparin dosing depends more on liver function than kidney function.",
+      "seg": 518,
+      "verbatim": "heparin doesn't depend so much on kidney function as much as liver function",
+      "applies_to": "all patients",
+      "type": "concept"
+    },
+    {
+      "text": "When the radiology report says 'no PE' but the patient is highly suspicious, call the radiologist and provide clinical history; artifact from rapid breathing can obscure the study.",
+      "seg": 556,
+      "verbatim": "I would call the radiologist back. I would call the radiologist. Great. That's what I did too",
+      "applies_to": "patients with suspected PE and tachypnea",
+      "type": "practice"
+    },
+    {
+      "text": "In a patient with suspected PE and sepsis, avoid aggressive fluid resuscitation if there are signs of right heart strain or pulmonary edema (rales), as it may worsen pulmonary edema.",
+      "seg": 660,
+      "verbatim": "the rule is don't give it unless obvious low filling pressures. It's like a small IVC because you already put... There's already so much pressure on the heart that if you increase it, it just worsens pulmonary edema",
+      "applies_to": "patients with suspected PE and signs of right heart strain",
+      "type": "pitfall"
+    },
+    {
+      "text": "Sepsis criteria include: tachycardia >90, tachypnea >20, temperature >38.3 or <36, WBC >12 or <4, and bands >10%.",
+      "seg": 585,
+      "verbatim": "What's that's 30? Sorry. Over 20. Okay. Perfect. Tachypneic over a 100. And compared compared to the 90. 90. Yeah. So tachycardia is 100, but for sure, it's 90. We count above 12 and below four. Yeah. Mhmm. A third of four and then below. Yeah. So it's greater than, like, 3.4 and then less than... Oh, I should get to less than one. Six six. Okay",
+      "applies_to": "all patients",
+      "type": "dx_criteria"
+    },
+    {
+      "text": "On CT pulmonary angiography, filling defects from PE appear as dark areas within the white contrast-filled pulmonary arteries; scrolling through images helps identify them.",
+      "seg": 486,
+      "verbatim": "you see the white contrast, and there's, this dark area. It looks like it stops right here. It come out of the artery right here. It even looks like there's a little darker. It's white and then, like, white. So it's like... It looks like little things like this. Like And that looks like a blockage right there",
+      "applies_to": "patients undergoing CT for suspected PE",
+      "type": "exam_technique"
+    },
+    {
+      "text": "A prominent aortic knob on chest X-ray in a tachypneic patient may be due to rotation or volume loss, not necessarily dissection or aneurysm.",
+      "seg": 454,
+      "verbatim": "Arch can be prominent if there's significant volume or two. Right? So we don't have to take it It's not necessarily",
+      "applies_to": "patients with tachypnea and rotated chest X-ray",
+      "type": "concept"
+    },
+    {
+      "text": "Family updates should occur after the patient is stabilized, not during active resuscitation.",
+      "seg": 682,
+      "verbatim": "We gotta make sure she's stable first right before you have time to stay with the family",
+      "applies_to": "all patients in active resuscitation",
+      "type": "practice"
+    },
+    {
+      "text": "In suspected PE with signs of right heart strain (e.g., rales, elevated JVP), avoid aggressive fluid resuscitation as it can worsen pulmonary edema.",
+      "seg": 662,
+      "verbatim": "because you already put... There's already so much pressure on the heart that if you increase it, it just worsens pulmonary edema.",
+      "applies_to": "patients with suspected PE and signs of right heart strain",
+      "type": "pitfall"
+    },
+    {
+      "text": "Intubating a patient with a massive PE is dangerous because positive pressure increases intrathoracic pressure, worsening right ventricular strain and precipitating arrhythmia or death.",
+      "seg": 703,
+      "verbatim": "Because you increase the intrathoracic pressure, creates more heart strain, makes them go into, like, arrhythmia, they die.",
+      "applies_to": "patients with massive PE requiring intubation",
+      "type": "red_flag"
+    },
+    {
+      "text": "When intubating a PE patient, use the lowest possible PEEP (≤10 cm H2O) and maximize FiO2 to avoid increasing intrathoracic pressure.",
+      "seg": 719,
+      "verbatim": "you really get that FIO2 as high as you can and get that positive end-expiratory pressure as low as you can because you don't wanna increase the extra pressure.",
+      "applies_to": "patients with PE being intubated",
+      "type": "dosing"
+    },
+    {
+      "text": "In a rural ER with limited resources, push-dose epinephrine (e.g., 1 cc of 1:10,000) can be used as a temporizing vasopressor while a Levophed drip is being set up.",
+      "seg": 724,
+      "verbatim": "Levophed's gonna take twenty minutes to get set up. So push to use prior respite. So we push to.",
+      "applies_to": "rural ER setting with delayed IV pump setup",
+      "type": "practice"
+    },
+    {
+      "text": "For suspected pulmonary hemorrhage on a ventilator, inhaled TXA (1 gram) can be given via the endotracheal tube, clamped for a few minutes, to tamponade bleeding while continuing to treat the underlying PE.",
+      "seg": 781,
+      "verbatim": "Or do TXA, one gram. You just pour it in the vents like you're giving albuterol, clamp it on, and have it breathe it in so I can, like, tamponade off the the alveolar hemorrhage while still treating the PD.",
+      "applies_to": "patients with pulmonary hemorrhage on mechanical ventilation",
+      "type": "procedure"
+    },
+    {
+      "text": "Early, honest communication with family about prognosis (e.g., '40% mortality risk in the next 24 hours') is critical to set expectations and avoid blame.",
+      "seg": 687,
+      "verbatim": "hello, family. She's gonna die. Mhmm. Give... Tell him that she is probably is a forty percent mortality risk in the next twenty four hours",
+      "applies_to": "critically ill patients in the ER",
+      "type": "practice"
+    },
+    {
+      "text": "After a patient death, debrief the team by acknowledging what went well, what could be improved, and validating emotions to prevent self-blame and burnout.",
+      "seg": 830,
+      "verbatim": "Yeah. So just did, like, our vaginal deliveries. Like, hey. Well, really well here. Yeah. Like, what could I have done better? What do think you guys could have done better? Because, like, I don't... I didn't want them to question themselves. Like, it's my fault.",
+      "applies_to": "ER team after a patient death",
+      "type": "practice"
+    },
+    {
+      "text": "A simple pause after a death to acknowledge the patient as a person (e.g., reading a statement) can be powerful for team morale and closure.",
+      "seg": 818,
+      "verbatim": "They pause, and they acknowledge that before everyone gets out of the room. And then oftentimes, the doctors and a lot of people already left or whatever, but that has been very powerful.",
+      "applies_to": "ER team after a patient death",
+      "type": "practice"
+    },
+    {
+      "text": "In a rural setting, nurses may act as key assistants, drawing up push-dose medications and helping with algorithms when pharmacy support is delayed.",
+      "seg": 728,
+      "verbatim": "So we have... I have, like, the algorithms, but they calculate. It was taking forever. So they already vaccinated my butt. They came in, and they they just acted as my nurses pretty much. And so I would say give this, and they would draw... They had all the algorithms in their little book, and they would just draw it up and start giving all the push doses.",
+      "applies_to": "rural ER with limited pharmacy support",
+      "type": "practice"
+    },
+    {
+      "text": "Massive PE can cause pulmonary hemorrhage due to increased pulmonary pressures, especially if there is underlying pneumonia or anticoagulation.",
+      "seg": 860,
+      "verbatim": "I think part of it was just like... Because you had the PE and then, like, the pressure just increased so much that it was, like, the pressure of it.",
+      "applies_to": "patients with massive PE and pulmonary hemorrhage",
       "type": "concept"
     }
   ],
   "pearls": [
     {
-      "text": "For 1099 work, immediately set aside 20% of each paycheck (5% for state, 15% for federal) to cover taxes, then pay quarterly via IRS Form 1040-ES and the Oklahoma Tax Commission.",
-      "verbatim": "What we... Maggie and I do is we pull out 20%. So 5% for state, 15 for the Fed just immediately. Pull that out.",
-      "type": "dosing",
-      "t": 153.8,
-      "match": "exact",
+      "text": "For 1099 moonlighting income, immediately set aside 20% (5% state, 15% federal) and pay quarterly via IRS 1040-ES to avoid fines.",
+      "verbatim": "you go to the IRS government payments. You go to the 1040-ES section, and you put in 20 of your income",
+      "type": "practice",
+      "t": 170.7,
+      "match": "fuzzy",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "applies_to": "physicians with 1099 moonlighting income",
       "numbers_unheard": [
         "1099",
         "1040"
       ],
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-153",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "harm": [
-            "immediately"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-170"
     },
     {
-      "text": "Track mileage at the current IRS rate (65¢/mile) for travel to remote ER shifts and claim per diem meals: about $50 on first/last travel days and $60 on full days worked.",
-      "verbatim": "he is 65¢ to the mile. So when I drive out to Shattuck, which is where I work, it's got four hours. So it's about $300 a drive. I can tell the government I already paid this myself.",
-      "type": "dosing",
-      "t": 320.9,
+      "text": "Track mileage at $0.65/mile for all work-related driving; keep a logbook with dates and miles for each shift.",
+      "verbatim": "mileage. So he is 65¢ to the mile. So when I drive out to Shattuck, which is where I work, it's got four hours. So it's about $300 a drive.",
+      "type": "practice",
+      "t": 319.3,
       "match": "exact",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-320",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "physicians with 1099 work",
+      "numbers_unheard": [
+        "0.65"
+      ],
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-319"
     },
     {
-      "text": "If a BiPAP patient is tachypneic, shorten the inspiratory time to 0.5 seconds to prevent breath-stacking and patient-ventilator dyssynchrony.",
-      "verbatim": "if somebody's, like, breathing really fast and stuff like that, you're gonna wanna set it for half a second just because then if not, you're gonna have the inspiratory positive airway pressure. While they're breathing out.",
-      "type": "pitfall",
+      "text": "Use standard per diem meal deduction: $50 for first and last travel days, $60 for full days; no receipts needed.",
+      "verbatim": "every start day and end day, you get $50 from the government for food. And then every full day, you get about $60.",
+      "type": "practice",
+      "t": 357.1,
+      "match": "exact",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "physicians with 1099 work",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-357"
+    },
+    {
+      "text": "Educational supplies, scrubs, stethoscopes, shears, and CME expenses (including travel and hotel) are tax-deductible for 1099 workers.",
+      "verbatim": "books and stuff, I... That's all write off. So I keep a log of all that, all my receipts. And then scrubs. If you're wearing scrubs, you work in the ER, and you bought some, you can turn that into the government, and that counts it right off too. Any part of your uniform. I thought you were stethoscope, you wanna do, like, shears, all that stuff, you keep your seats, you're at it all off.",
+      "type": "practice",
+      "t": 429.1,
+      "match": "exact",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "physicians with 1099 income",
+      "numbers_unheard": [
+        "1099"
+      ],
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-429"
+    },
+    {
+      "text": "A PLLC provides tax benefits but does not protect personal assets from malpractice lawsuits.",
+      "verbatim": "This is different from an LLC in that you still get sued through this. So it doesn't protect you from getting sued. It just protects you from taxes.",
+      "type": "concept",
+      "t": 473.8,
+      "match": "exact",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "physicians considering a PLLC",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-473"
+    },
+    {
+      "text": "Use QuickBooks to track expenses and mileage automatically by linking bank accounts and swiping transactions as business or personal.",
+      "verbatim": "Quickbooks is one that you have to pay for, but you can... Literally, it'll take every expense if you link your cards in your bank accounts, and you can just swipe whether it's a business expense or personal expense, and then it'll create a spreadsheet for you at the end of the year that you just send to your CPA. And it can track your miles and everything too.",
+      "type": "practice",
+      "t": 589.8,
+      "match": "exact",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "physicians with 1099 income",
+      "by_presenter": false,
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-589"
+    },
+    {
+      "text": "Initial BiPAP settings: IPAP 12, EPAP 5, FiO2 100%, inspiratory time 1 second.",
+      "verbatim": "His initial settings, he does inspiratory positive airway pressure of 12. So that's inspiratory pressure that's forcing it in. And your expiratory positive airway pressure, so it's the pressure that's kinda, like, always there to... So that's that's five. And your fraction of inspired oxygen, you just always set it straight to a 100.",
+      "type": "dosing",
+      "t": 738.9,
+      "match": "segment",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "adults with acute respiratory failure needing BiPAP",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-738"
+    },
+    {
+      "text": "If the patient is tachypneic, reduce inspiratory time to 0.5 seconds to avoid delivering IPAP during exhalation.",
+      "verbatim": "If somebody's, like, breathing really fast and stuff like that, you're gonna wanna set it for half a second just because then if not, you're gonna have the inspiratory positive airway pressure. While they're breathing out.",
+      "type": "dosing",
       "t": 801.5,
       "match": "exact",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-801",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:bipap"
-          ],
-          "rarity": 8.66
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "tachypneic patients on BiPAP",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-801"
     },
     {
-      "text": "For pulmonary edema on BiPAP, raise EPAP to 8; for COPD, keep EPAP at 5 and IPAP at 12, 16.",
-      "verbatim": "So for him, it... In his book, he has a whole algorithm that you do, but pulmonary edema versus COPD. So you do five half of 16, you have a four. So his expiratory positive airway pressure's a little lower for pulmonary... Or COPD. For pulmonary edema, he would go to expiratory positive airway pressure to eight.",
-      "type": "dx_criteria",
-      "t": 862.8,
+      "text": "If the patient is tachypneic on BiPAP, consider adjusting the inspiratory time rather than just the pressures.",
+      "verbatim": "So, yeah, so if you're tachypneic, consider your inspiratory time.",
+      "type": "practice",
+      "t": 829.8,
+      "match": "segment",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients on BiPAP",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-829"
+    },
+    {
+      "text": "For volume overload, increase EPAP to keep alveoli open; you can bump IPAP to 16 for pulmonary edema.",
+      "verbatim": "If they're really volume overload, that's when you would bump the inspiratory positive airway pressure up to, like, 16.",
+      "type": "dosing",
+      "t": 848.5,
+      "match": "segment",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "volume overloaded patients on BiPAP",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-848"
+    },
+    {
+      "text": "For pulmonary edema, increase EPAP to 8 and IPAP to 16; for COPD, use EPAP 5 and IPAP 12.",
+      "verbatim": "So you do five half of 16, you have a four. So his expiratory positive airway pressure's a little lower for pulmonary... Or COPD. For pulmonary edema, he would go to expiratory positive airway pressure to eight.",
+      "type": "dosing",
+      "t": 868.4,
+      "match": "fuzzy",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "adults with acute respiratory failure on BiPAP",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-868"
+    },
+    {
+      "text": "For pulmonary edema on BiPAP, set EPAP to 8 and IPAP to 16; for COPD, start with EPAP 4-5 and IPAP 12.",
+      "verbatim": "So you do five half of 16, you have a four. So his expiratory positive airway pressure's a little lower for pulmonary... Or COPD. For pulmonary edema, he would go to expiratory positive airway pressure to eight.",
+      "type": "dosing",
+      "t": 868.4,
+      "match": "fuzzy",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "adults with respiratory failure on BiPAP",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-868-2"
+    },
+    {
+      "text": "Recheck ABG or VBG at 60 minutes to assess BiPAP response; discontinue or intubate if worsening.",
+      "verbatim": "in sixty minutes, you're gonna recheck that UVG or UVG. You can have it where you're at. And then, obviously, better monitor and then discontinue when you can or adjust it. And if they worsen, you're just gonna need to tube them.",
+      "type": "practice",
+      "t": 907.9,
       "match": "exact",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-862",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:pulmonary edema"
-          ],
-          "rarity": 7.34
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "adults on BiPAP for acute respiratory failure",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-907"
     },
     {
-      "text": "Use minute ventilation from BiPAP to set initial ventilator rate and volume post-intubation, as the two values are essentially one-to-one.",
-      "verbatim": "ventilation is gonna be breath per minute times volume, and the BiPAP will usually calculate this for you. So that's really helpful. Now on the vent, it's just respiratory rate times minute ventilation. And so it's kind of one on one.",
+      "text": "Use the minute ventilation (RR x tidal volume) calculated by BiPAP to help set initial vent settings; it is roughly one-to-one.",
+      "verbatim": "ventilation is gonna be breath per minute times volume, and the BiPAP will usually calculate this for you. So that's really helpful.",
       "type": "practice",
       "t": 974.7,
       "match": "fuzzy",
@@ -70970,239 +71207,90 @@
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-974",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:minute ventilation"
-          ],
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients transitioning from BiPAP to ventilator",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-974"
     },
     {
-      "text": "Before intubating in a solo rural ER, text or call a trusted colleague to review your plan; always have a bougie and glidescope ready as a backup airway.",
-      "verbatim": "When I tube somebody, I usually, like, text instrument to say, hey. Here's my plan. Like, what do you think? Or or I'll text with him or something like that. So just have somebody in the... Your back pocket you can reach out to because, usually, you want somebody else to check your plan before you're gonna keep somebody.",
-      "type": "judgment",
+      "text": "Have a backup person (e.g., a colleague or intensivist) to review your intubation plan before you proceed.",
+      "verbatim": "When I tube somebody, I usually, like, text instrument to say, hey. Here's my plan. Like, what do you think?",
+      "type": "practice",
       "t": 1022.0,
       "match": "exact",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-1022",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:bougie"
-          ],
-          "actionable": [
-            "always"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "any intubation, especially in rural setting",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-1022"
     },
     {
-      "text": "When using a bougie for difficult airway, feel the vibration as it passes over tracheal rings to confirm tracheal placement.",
-      "verbatim": "You can feel the vibration through the bougie more than you can the tube.",
-      "type": "exam_technique",
-      "t": 1089.1,
+      "text": "Always have a bougie ready when intubating; you can feel the vibration of tracheal rings through it, which confirms placement.",
+      "verbatim": "So I always have the bougie out.",
+      "type": "procedure",
+      "t": 1046.3,
       "match": "exact",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-1089",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:difficult airway"
-          ],
-          "actionable": [
-            "confirm"
-          ],
-          "rarity": 8.2
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "any intubation",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-1046"
     },
     {
-      "text": "During RSI, avoid prolonged bag-masking; push medications and then intubate quickly to reduce aspiration risk.",
-      "verbatim": "when you are RSI, you don't need to do the, like, the breathing. You're not, like, sitting here bag masking them for very long. You're just, like, pushing the meds and then too bad for it.",
-      "type": "judgment",
-      "t": 1167.0,
-      "match": "exact",
-      "episode": "dr-bancroft-on-rural-er-medicine",
-      "speaker": "Dr. Bancroft",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-1167",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:aspiration"
-          ],
-          "actionable": [
-            "avoid"
-          ],
-          "rarity": 7.7
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "For RSI on BiPAP, keep the patient on BiPAP while giving medications, then remove it as they fade and bag until unresponsive before intubating.",
+      "text": "During RSI, keep the patient on BiPAP while pushing meds; once they start to fade, remove BiPAP, bag until unresponsive, then intubate.",
       "verbatim": "I just let them sit there while I'm giving all the meds, and I just keep them on the bilevel positive airway pressure until I push. Once they push and they start to fade, I just rip it off, and I'll bag them until, like, they're not responding to me in their eyes, and I just go for it.",
-      "type": "exam_technique",
+      "type": "procedure",
       "t": 1190.9,
       "match": "fuzzy",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-1190",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:bipap"
-          ],
-          "rarity": 7.83
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients on BiPAP undergoing RSI",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-1190"
     },
     {
-      "text": "In rural ER, physical exam is paramount because imaging and lab results are delayed.",
-      "verbatim": "physical exam is super important.",
+      "text": "In rural ER, physical exam is critical because imaging and lab results can be delayed by hours; for tension pneumothorax, listen for breath sounds and check for tracheal deviation, do not wait for X-ray.",
+      "verbatim": "physical exam is super important. So for tension pneumothorax, just listen to their lungs. Yeah. You'll hear something and you notice, like, their trachea's deviated, you don't want that chest X-ray.",
       "type": "judgment",
-      "t": 1723.8,
-      "match": "exact",
-      "episode": "dr-bancroft-on-rural-er-medicine",
-      "speaker": "Dr. Bancroft",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-1723",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.32
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "If you suspect tension pneumothorax, do not wait for chest X-ray; physical exam findings (tracheal deviation, absent breath sounds) are sufficient to act.",
-      "verbatim": "For tension pneumothorax, just listen to their lungs. You'll hear something and you notice, like, their trachea's deviated, you don't want that chest X-ray. That's considered a... If you get an X-ray on tension pneumothorax, it's a mess.",
-      "type": "red_flag",
-      "t": 1725.0,
+      "t": 1724.2,
       "match": "fuzzy",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-1725",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:X-ray"
-          ],
-          "actionable": [
-            "do not"
-          ],
-          "rarity": 7.47
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "rural ER setting",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-1724"
     },
     {
-      "text": "Always review all prior notes; a critical history (e.g., recent PE, anticoagulant use) may be buried and never added to the problem list.",
-      "verbatim": "So, like, I went through, like, five or six notes. It wasn't added to her past medical history ever.",
+      "text": "A history of PE or anticoagulation may be buried in old notes and not listed in the problem list; always search thoroughly.",
+      "verbatim": "It wasn't added to her past medical history ever. So there there was a note on it that... I mean, she was, like, really sick. So, like, as you're working through stuff, you just missed the one note where, like, they talked about it.",
       "type": "pitfall",
-      "t": 1788.9,
+      "t": 1792.4,
       "match": "exact",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-1788",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:problem list"
-          ],
-          "actionable": [
-            "Always"
-          ],
-          "rarity": 7.7
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "any patient with unexplained respiratory distress",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-1792"
     },
     {
-      "text": "For hypercapnic respiratory failure on BiPAP, the only ventilator adjustment that improves CO2 clearance is increasing inspiratory time (I-time).",
-      "verbatim": "All we're gonna do is change the I-time. That's all you're gonna have. I don't have something you can do. The I-time. All you're gonna change.",
+      "text": "If a patient on BiPAP has a rising pCO2 on VBG despite clinical improvement, they are worsening and may need intubation.",
+      "verbatim": "So, yeah, repeat PBG, and it's So what does this make you think? Entertaining. That's right. It's been worse. Yeah. She's getting.",
+      "type": "red_flag",
+      "t": 1919.5,
+      "match": "exact",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients on BiPAP with repeat VBG",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-1919"
+    },
+    {
+      "text": "In a patient with hypercapnic respiratory failure on BiPAP, the only setting you need to change to improve CO2 clearance is the I-time (inspiratory time); do not decrease EPAP or increase IPAP.",
+      "verbatim": "All we're gonna do is change the I-time. That's all you're gonna have. I don't have something you can do. The I-time. All you're gonna change. That's all you can do",
       "type": "practice",
       "t": 2006.0,
       "match": "exact",
@@ -71210,108 +71298,52 @@
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2006",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:respiratory failure"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with hypercapnic respiratory failure on BiPAP",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2006"
     },
     {
-      "text": "When reading CT for PE, look for filling defects, dark areas within the white contrast of pulmonary arteries.",
-      "verbatim": "When you're scrolling through, you can see areas of the pulmonary vasculature that were blocked off like POTS.",
-      "type": "dx_criteria",
-      "t": 2229.1,
+      "text": "A prominent aortic knob on chest X-ray in a tachypneic patient may be due to rotation or volume loss, not necessarily dissection or aneurysm.",
+      "verbatim": "Arch can be prominent if there's significant volume or two. Right? So we don't have to take it It's not necessarily",
+      "type": "concept",
+      "t": 2131.5,
       "match": "exact",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2229",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "test:CT"
-          ],
-          "rarity": 7.39
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with tachypnea and rotated chest X-ray",
+      "by_presenter": false,
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2131"
     },
     {
-      "text": "Heparin dosing for PE is weight-based and depends more on liver function than renal function.",
-      "verbatim": "heparin doesn't depend so much on kidney function as much as liver function.",
-      "type": "dosing",
+      "text": "On CT pulmonary angiography, filling defects from PE appear as dark areas within the white contrast-filled pulmonary arteries; scrolling through images helps identify them.",
+      "verbatim": "you see the white contrast, and there's, this dark area. It looks like it stops right here. It come out of the artery right here. It even looks like there's a little darker. It's white and then, like, white. So it's like... It looks like little things like this. Like And that looks like a blockage right there",
+      "type": "exam_technique",
+      "t": 2284.8,
+      "match": "exact",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients undergoing CT for suspected PE",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2284"
+    },
+    {
+      "text": "Heparin dosing depends more on liver function than kidney function.",
+      "verbatim": "heparin doesn't depend so much on kidney function as much as liver function",
+      "type": "concept",
       "t": 2427.6,
       "match": "exact",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2427",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:heparin"
-          ],
-          "rarity": 6.53
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "all patients",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2427"
     },
     {
-      "text": "Before calling for transfer, you need a definitive diagnosis and a bed acceptance; the ambulance cannot come without a destination.",
-      "verbatim": "you need a diagnosis. And then you need a bed before you can call.",
-      "type": "practice",
-      "t": 2445.8,
-      "match": "fuzzy",
-      "episode": "dr-bancroft-on-rural-er-medicine",
-      "speaker": "Dr. Bancroft",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2445",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.89
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Weight-based heparin dosing (80 units/kg bolus, max 10,000 units, then 18 units/kg/hr) achieves faster therapeutic levels than fixed-dose regimens.",
-      "verbatim": "the weight based is eighty eighty units per kg as the loading dose, no more than ten thousand units, and then eighteen units per kg an hour.",
+      "text": "Weight-based heparin for PE: 80 units/kg bolus (max 10,000 units) followed by 18 units/kg/hour infusion; this achieves therapeutic levels faster than a fixed 5,000 unit bolus.",
+      "verbatim": "the weight based is eighty eighty units per kg as the loading dose, no more than ten thousand units, and then eighteen units per kg an hour",
       "type": "dosing",
       "t": 2472.9,
       "match": "exact",
@@ -71319,123 +71351,82 @@
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2472",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:80 units"
-          ],
-          "rarity": 7.74
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "adults with acute PE",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2472"
     },
     {
-      "text": "When CT is equivocal for PE due to artifact, document the limitation and clinically correlate; 'likely PE' is very different from 'no PE'.",
-      "verbatim": "It's likely PE. Just clinically correlate. I'll just say that in the read.",
+      "text": "When the radiology report says 'no PE' but the patient is highly suspicious, call the radiologist and provide clinical history; artifact from rapid breathing can obscure the study.",
+      "verbatim": "I would call the radiologist back. I would call the radiologist. Great. That's what I did too",
+      "type": "practice",
+      "t": 2579.4,
+      "match": "exact",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with suspected PE and tachypnea",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2579"
+    },
+    {
+      "text": "Sepsis criteria include: tachycardia >90, tachypnea >20, temperature >38.3 or <36, WBC >12 or <4, and bands >10%.",
+      "verbatim": "What's that's 30? Sorry. Over 20. Okay. Perfect. Tachypneic over a 100. And compared compared to the 90. 90. Yeah. So tachycardia is 100, but for sure, it's 90. We count above 12 and below four. Yeah. Mhmm. A third of four and then below. Yeah. So it's greater than, like, 3.4 and then less than... Oh, I should get to less than one. Six six. Okay",
+      "type": "dx_criteria",
+      "t": 2698.7,
+      "match": "exact",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "all patients",
+      "numbers_unheard": [
+        "38.3",
+        "36",
+        "10"
+      ],
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2698"
+    },
+    {
+      "text": "In a patient with suspected PE and sepsis, avoid aggressive fluid resuscitation if there are signs of right heart strain or pulmonary edema (rales), as it may worsen pulmonary edema.",
+      "verbatim": "the rule is don't give it unless obvious low filling pressures. It's like a small IVC because you already put... There's already so much pressure on the heart that if you increase it, it just worsens pulmonary edema",
       "type": "pitfall",
-      "t": 2656.9,
+      "t": 2970.4,
       "match": "exact",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2656",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "test:CT"
-          ],
-          "actionable": [
-            "document"
-          ],
-          "rarity": 7.6
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with suspected PE and signs of right heart strain",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-2970"
     },
     {
-      "text": "In sepsis with suspected PE, avoid aggressive fluid resuscitation if there are signs of right heart strain (rales, elevated JVP) because it can worsen pulmonary edema.",
-      "verbatim": "So the rule is don't give it unless obvious low filling pressures. It's like a small IVC because you already put... There's already so much pressure on the heart that if you increase it, it just worsens pulmonary edema.",
-      "type": "judgment",
-      "t": 2970.2,
+      "text": "Family updates should occur after the patient is stabilized, not during active resuscitation.",
+      "verbatim": "We gotta make sure she's stable first right before you have time to stay with the family",
+      "type": "practice",
+      "t": 3040.8,
       "match": "exact",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-2970",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 4,
-        "grade": "A",
-        "fired": {
-          "specific": [
-            "concept:fluid resuscitation"
-          ],
-          "actionable": [
-            "avoid"
-          ],
-          "harm": [
-            "sepsis"
-          ],
-          "rarity": 8.01
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "all patients in active resuscitation",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3040"
     },
     {
-      "text": "Early, honest family communication about mortality risk (e.g., '40% chance of dying in 24 hours') sets expectations and shares decision-making for major interventions.",
-      "verbatim": "Tell him that she is probably is a forty percent mortality risk in the next twenty four hours because they need to realize that if she dies, it's not your fault.",
-      "type": "judgment",
-      "t": 3093.4,
+      "text": "Early, honest communication with family about prognosis (e.g., '40% mortality risk in the next 24 hours') is critical to set expectations and avoid blame.",
+      "verbatim": "hello, family. She's gonna die. Mhmm. Give... Tell him that she is probably is a forty percent mortality risk in the next twenty four hours",
+      "type": "practice",
+      "t": 3091.0,
       "match": "exact",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3093",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:24 hours"
-          ],
-          "harm": [
-            "dying"
-          ],
-          "rarity": 7.37
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "critically ill patients in the ER",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3091"
     },
     {
-      "text": "Intubating a patient with PE is dangerous because positive pressure increases intrathoracic pressure, worsening right ventricular strain and precipitating arrhythmia or death.",
-      "verbatim": "Because you increase the intrathoracic pressure, creates more heart strain, makes them go into, like, arrhythmia, they die. Super dangerous.",
+      "text": "Intubating a patient with a massive PE is dangerous because positive pressure increases intrathoracic pressure, worsening right ventricular strain and precipitating arrhythmia or death.",
+      "verbatim": "Because you increase the intrathoracic pressure, creates more heart strain, makes them go into, like, arrhythmia, they die.",
       "type": "red_flag",
       "t": 3234.3,
       "match": "exact",
@@ -71443,150 +71434,103 @@
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3234",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:right ventricular stra"
-          ],
-          "harm": [
-            "dangerous"
-          ],
-          "rarity": 7.83
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with massive PE requiring intubation",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3234"
     },
     {
-      "text": "Use low PEEP (≤10 cm H2O) and high FiO2 when ventilating a patient with known or suspected PE to minimize hemodynamic compromise.",
-      "verbatim": "you really get that FIO2 as high as you can and get that positive end-expiratory pressure as low as you can because you don't wanna increase the extra pressure. So 10 or less is kind of the the goal.",
-      "type": "practice",
+      "text": "When intubating a PE patient, use the lowest possible PEEP (≤10 cm H2O) and maximize FiO2 to avoid increasing intrathoracic pressure.",
+      "verbatim": "you really get that FIO2 as high as you can and get that positive end-expiratory pressure as low as you can because you don't wanna increase the extra pressure.",
+      "type": "dosing",
       "t": 3295.0,
       "match": "fuzzy",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3295",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:10 cm"
-          ],
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 8.06
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with PE being intubated",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3295"
     },
     {
-      "text": "In a crashing patient, push-dose epinephrine (e.g., 1 cc of 1:10,000) can be used as a temporizing vasopressor while a Levophed drip is being set up.",
-      "verbatim": "Levophed's gonna take twenty minutes to get set up. So push to use prior respite. So we push to. Times one. I got her pressure up beautifully.",
-      "type": "dosing",
+      "text": "In a rural ER with limited resources, push-dose epinephrine (e.g., 1 cc of 1:10,000) can be used as a temporizing vasopressor while a Levophed drip is being set up.",
+      "verbatim": "Levophed's gonna take twenty minutes to get set up. So push to use prior respite. So we push to.",
+      "type": "practice",
       "t": 3316.0,
       "match": "fuzzy",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "applies_to": "rural ER setting with delayed IV pump setup",
       "numbers_unheard": [
         "10000"
       ],
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3316",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:epinephrine"
-          ],
-          "rarity": 8.43
-        },
-        "rubric": "rules-v2"
-      }
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3316"
     },
     {
-      "text": "For suspected pulmonary hemorrhage on heparin, consider nebulized TXA (1 gram) via the ventilator circuit to tamponade bleeding while continuing anticoagulation for PE.",
-      "verbatim": "do TXA, one gram. You just pour it in the vents like you're giving albuterol, clamp it on, and have it breathe it in so I can, like, tamponade off the the alveolar hemorrhage while still treating the PD.",
+      "text": "In a rural setting, nurses may act as key assistants, drawing up push-dose medications and helping with algorithms when pharmacy support is delayed.",
+      "verbatim": "So we have... I have, like, the algorithms, but they calculate. It was taking forever. So they already vaccinated my butt. They came in, and they they just acted as my nurses pretty much. And so I would say give this, and they would draw... They had all the algorithms in their little book, and they would just draw it up and start giving all the push doses.",
+      "type": "practice",
+      "t": 3342.1,
+      "match": "exact",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "rural ER with limited pharmacy support",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3342"
+    },
+    {
+      "text": "For suspected pulmonary hemorrhage on a ventilator, inhaled TXA (1 gram) can be given via the endotracheal tube, clamped for a few minutes, to tamponade bleeding while continuing to treat the underlying PE.",
+      "verbatim": "Or do TXA, one gram. You just pour it in the vents like you're giving albuterol, clamp it on, and have it breathe it in so I can, like, tamponade off the the alveolar hemorrhage while still treating the PD.",
       "type": "procedure",
-      "t": 3554.4,
+      "t": 3554.2,
       "match": "exact",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3554",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 4,
-        "grade": "A",
-        "fired": {
-          "specific": [
-            "concept:pulmonary hemorrhage"
-          ],
-          "actionable": [
-            "consider"
-          ],
-          "harm": [
-            "hemorrhage"
-          ],
-          "rarity": 8.2
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with pulmonary hemorrhage on mechanical ventilation",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3554"
     },
     {
-      "text": "After a patient death, conduct a team debrief to validate emotions, identify system improvements, and prevent self-blame among staff.",
-      "verbatim": "So how do you leave the debrief? You're the doctor there. And there's all these people who don't know what that looks like. So what are you gonna do?",
-      "type": "concept",
-      "t": 3680.8,
+      "text": "A simple pause after a death to acknowledge the patient as a person (e.g., reading a statement) can be powerful for team morale and closure.",
+      "verbatim": "They pause, and they acknowledge that before everyone gets out of the room. And then oftentimes, the doctors and a lot of people already left or whatever, but that has been very powerful.",
+      "type": "practice",
+      "t": 3709.0,
       "match": "exact",
       "episode": "dr-bancroft-on-rural-er-medicine",
       "speaker": "Dr. Bancroft",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-bancroft-on-rural-er-medicine-3680",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "harm": [
-            "death"
-          ],
-          "rarity": 8.43
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "ER team after a patient death",
+      "by_presenter": false,
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3709"
+    },
+    {
+      "text": "After a patient death, debrief the team by acknowledging what went well, what could be improved, and validating emotions to prevent self-blame and burnout.",
+      "verbatim": "Yeah. So just did, like, our vaginal deliveries. Like, hey. Well, really well here. Yeah. Like, what could I have done better? What do think you guys could have done better? Because, like, I don't... I didn't want them to question themselves. Like, it's my fault.",
+      "type": "practice",
+      "t": 3767.2,
+      "match": "exact",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "ER team after a patient death",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3767"
+    },
+    {
+      "text": "Massive PE can cause pulmonary hemorrhage due to increased pulmonary pressures, especially if there is underlying pneumonia or anticoagulation.",
+      "verbatim": "I think part of it was just like... Because you had the PE and then, like, the pressure just increased so much that it was, like, the pressure of it.",
+      "type": "concept",
+      "t": 3903.3,
+      "match": "exact",
+      "episode": "dr-bancroft-on-rural-er-medicine",
+      "speaker": "Dr. Bancroft",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with massive PE and pulmonary hemorrhage",
+      "pearl_id": "dr-bancroft-on-rural-er-medicine-3903"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -105788,5 +105732,6 @@
       "name": "Dr. Bancroft"
     }
   ],
-  "pearls_fingerprint": "4b3c1bfdfc6d79ac"
+  "pearls_fingerprint": "f6733bac8273790f",
+  "enrich_version": "v2"
 }
