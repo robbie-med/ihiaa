@@ -78735,7 +78735,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "depressed patients with 'shutdown' symptoms",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1179"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1179",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:psychomotor retardatio"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with primary anhedonia, decreased cognition, attention, concentration, and motivation, consider a dopaminergic agent like Wellbutrin.",
@@ -78748,7 +78764,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "depressed patients with prominent anhedonia/cognitive symptoms",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1214"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1214",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:wellbutrin"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In elderly patients or anyone with any kind of dementia, avoid anticholinergic agents, do not use Paxil, Remeron, or TCAs.",
@@ -78761,7 +78796,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients or those with dementia",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1319"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1319",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anticholinergic"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For the very anxious/agitated patient, do not start Wellbutrin initially; choose a more serotonergic agent instead.",
@@ -78774,7 +78828,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "depressed patients with prominent anxiety/agitation",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1358"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1358",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:wellbutrin"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To get an antidepressant effect from trazodone you need 300-400 mg, but that dose is too sedating for most people; use trazodone mainly for sleep augmentation, not as a first-line antidepressant.",
@@ -78790,7 +78863,29 @@
       "numbers_unheard": [
         "300"
       ],
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1463"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1463",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:400 mg"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.24,
+          "capped": [
+            "number not heard: 300"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lower doses of mirtazapine are more sedating; higher doses are more activating and less sedating. Weight gain can occur at any dose.",
@@ -78803,7 +78898,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults starting mirtazapine",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1515"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1515",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:mirtazapine"
+          ],
+          "rarity": 6.57
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient's anxiety is rooted in feeling unable to make themselves do things and having tasks pile up, Wellbutrin can be great because it is activating and helps the motivation pathway. If the anxiety is a primary standalone symptom, do not use Wellbutrin.",
@@ -78816,7 +78927,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "depressed patients with anxiety",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1596"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1596",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:wellbutrin"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Antidepressant-related GI side effects usually improve after the first week or so because the medication is dumping serotonin in the GI system, but efficacy takes weeks due to time needed for receptor and protein synthesis changes.",
@@ -78829,7 +78959,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting serotonergic antidepressants",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1786"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1786",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For very agitated patients starting an SSRI, start at a lower-than-normal dose, for Zoloft start at 25 mg instead of 50 mg.",
@@ -78845,7 +78988,29 @@
       "numbers_unheard": [
         "50"
       ],
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2024"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2024",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:25 mg"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 8.29,
+          "capped": [
+            "number not heard: 50"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When insomnia persists 4-6 weeks on an SSRI but other depression symptoms have responded, augment with trazodone. If the depression has not responded and sleep is poor, abort the SSRI and switch to a different agent.",
@@ -78858,7 +79023,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with SSRI-induced insomnia",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2066"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2066",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 weeks"
+          ],
+          "actionable": [
+            "switch"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has a family history of good response to a specific antidepressant, that can guide your agent selection.",
@@ -78871,7 +79055,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with family history of antidepressant response",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2089"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2089",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.57
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always optimize a single antidepressant to a therapeutic dose before adding additional medications; patients tend to 'collect psych drugs' which is bad medicine.",
@@ -78884,7 +79081,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients being treated for depression",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2202"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2202",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use no-suicide contracts; they do not work. Instead, create a collaborative safety plan that acknowledges suicidal thoughts as an option but lists steps to take before considering that option.",
@@ -78897,7 +79110,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suicidal ideation",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-3523"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-3523",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:suicide"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A safety plan includes: warning signs, places that help the patient feel good, coping skills, people to call for support, professional resources (clinic hours, COPES, 988, 911), and securing the environment by locking up firearms and removing pill stashes.",
@@ -78910,7 +79142,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suicidal ideation who have no plan or intent and have protective factors",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-3567"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-3567",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has suicidal ideation with plan and intent and refuses voluntary hospitalization, call security and 911 to initiate involuntary commitment.",
@@ -78923,7 +79168,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with active suicidal ideation, plan, and intent who refuse inpatient treatment",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-3831"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-3831",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:involuntary commitment"
+          ],
+          "actionable": [
+            "initiate"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has no history of depression before starting heavy daily cannabis use, you cannot diagnose major depressive disorder; the depressive symptoms may be substance-induced.",
@@ -78936,7 +79200,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with heavy daily cannabis use and no prior depression history",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-3990"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-3990",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "You cannot 'outmedicate' heavy cannabis use with antidepressants; the primary solution is cannabis cessation, not adding more medications.",
@@ -78949,7 +79232,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with heavy daily cannabis use and depressive symptoms",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4050"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4050",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cannabis"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Mirtazapine (Remeron) can be helpful for cannabis withdrawal symptoms.",
@@ -78962,7 +79264,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing cannabis withdrawal",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4137"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4137",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cannabis withdrawal"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When switching from an SSRI to an SNRI, a direct switch is usually smooth; when switching from an SNRI (especially venlafaxine) to another agent, cross-taper over at least a week to avoid discontinuation syndrome.",
@@ -78975,7 +79296,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients switching antidepressants",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4165"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4165",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:venlafaxine"
+          ],
+          "actionable": [
+            "switch"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To ease discontinuation from venlafaxine, you can switch to a short course of fluoxetine (Prozac) because its long half-life allows a self-taper.",
@@ -78988,7 +79328,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients discontinuing venlafaxine",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4236"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4236",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:venlafaxine"
+          ],
+          "actionable": [
+            "switch"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Buspirone (BuSpar) is an augmentation strategy, not a standalone agent for anxiety; it is a scheduled medication (not PRN) and should not be used as monotherapy.",
@@ -79001,7 +79360,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anxiety disorders",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4305"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4305",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:PRN"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For anxiety, use a serotonergic agent (SSRI/SNRI) with PRN hydroxyzine or propranolol, plus a sleep medication.",
@@ -79014,7 +79389,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anxiety",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4401"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4401",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:PRN",
+            "drug:propranolol"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid benzodiazepines in patients with trauma or PTSD.",
@@ -79027,7 +79422,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with trauma or PTSD",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4427"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4427",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:benzodiazepines"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 5.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid benzodiazepines in trauma and PTSD patients; use serotonergic agents like SSRIs or SNRIs instead.",
@@ -79040,7 +79454,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with trauma or PTSD",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4427-2"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4427-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:benzodiazepines"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 6.28
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For fibromyalgia or chronic pain, start with Cymbalta (duloxetine) because it has better evidence for pain; if that fails, try TCAs for their analgesic properties.",
@@ -79053,7 +79486,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fibromyalgia or chronic pain",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4455"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4455",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fibromyalgia"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ECT is the most effective depression treatment available; it is still performed at OSU, Laurier, and St. Francis.",
@@ -79066,7 +79518,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with treatment-resistant depression",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4482"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4482",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:depression"
+          ],
+          "rarity": 8.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "TMS is FDA-approved for adolescents as first-line treatment; adults must have treatment-resistant depression to qualify.",
@@ -79079,7 +79547,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adolescents with depression; adults with treatment-resistant depression",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4501"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4501",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:treatment-resistant de"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When stopping long-term SSRIs in geriatric patients, taper very slowly and monitor for symptom recurrence.",
@@ -79092,7 +79576,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "geriatric patients on long-term SSRIs",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4579"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4579",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ssris"
+          ],
+          "actionable": [
+            "taper"
+          ],
+          "rarity": 6.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Viibryd and Trintellix have fewer sexual side effects but are not more effective than older antidepressants and are often costly; consider cost before prescribing.",
@@ -79105,7 +79608,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with depression",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4616"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4616",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:trintellix"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Viibryd (vilazodone) has a mechanism like an SSRI plus buspirone, so you don't need to add buspirone separately; it is useful for anxious patients.",
@@ -79118,7 +79640,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anxiety",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4678"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4678",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:vilazodone"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use OKSpark for consultation during clinic or lunch; they provide verbal support and written summaries of recommendations.",
@@ -79131,7 +79672,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians needing psychiatric consultation",
-      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4718"
+      "pearl_id": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4718",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:okspark"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

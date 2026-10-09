@@ -84224,7 +84224,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient in clinical assessment",
-      "pearl_id": "rev-leitch-on-suicide-intervention-1277"
+      "pearl_id": "rev-leitch-on-suicide-intervention-1277",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hopelessness"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 6.95
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Active suicidal thinking usually lasts only seconds or minutes, so if you can help the patient get even a little bit of hope in that window, you may keep them alive long enough to get help.",
@@ -84237,7 +84256,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with active suicidal ideation",
-      "pearl_id": "rev-leitch-on-suicide-intervention-1309"
+      "pearl_id": "rev-leitch-on-suicide-intervention-1309",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ask about suicidal thoughts stepwise: start with passive thoughts (I hope I don't wake up), then actively ask if they have a plan, having a plan indicates higher danger.",
@@ -84250,7 +84282,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient expressing passive death wishes",
-      "pearl_id": "rev-leitch-on-suicide-intervention-1360"
+      "pearl_id": "rev-leitch-on-suicide-intervention-1360",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Ask about"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Institutionalizing the hardcore suicidal patient will not stop them and can make things worse, jails and psychiatric facilities have 20-30 times the national suicide rate.",
@@ -84263,7 +84311,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hardcore suicidal patients",
-      "pearl_id": "rev-leitch-on-suicide-intervention-1643"
+      "pearl_id": "rev-leitch-on-suicide-intervention-1643",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:suicide"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The truly determined ('hardcore') suicidal individuals, about 5% of the suicidal population, are unlikely to give warning signs because they are invested in not being rescued; they use very lethal means like guns.",
@@ -84279,7 +84346,29 @@
       "numbers_unheard": [
         "5"
       ],
-      "pearl_id": "rev-leitch-on-suicide-intervention-1693"
+      "pearl_id": "rev-leitch-on-suicide-intervention-1693",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "lethal"
+          ],
+          "rarity": 8.42,
+          "capped": [
+            "number not heard: 5"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Suicide is rarely spontaneous; it is a gradual wearing-away process (suicidal erosion) that can take 10-20 years as the person's ability to cope erodes and they run out of energy.",
@@ -84292,7 +84381,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "rev-leitch-on-suicide-intervention-1945"
+      "pearl_id": "rev-leitch-on-suicide-intervention-1945",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:20 years"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Adolescent suicide can be copycat behavior; after one suicide in a school, others may follow.",
@@ -84305,7 +84410,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adolescents in school settings after a suicide",
-      "pearl_id": "rev-leitch-on-suicide-intervention-2134"
+      "pearl_id": "rev-leitch-on-suicide-intervention-2134",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:adolescent suicide"
+          ],
+          "rarity": 7.64
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When assessing suicide, the immediate precipitating event (the 'straw that broke the camel's back') is usually not the root cause, look for the longer-term erosion.",
@@ -84318,7 +84439,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suicidal ideation or attempts",
-      "pearl_id": "rev-leitch-on-suicide-intervention-2198"
+      "pearl_id": "rev-leitch-on-suicide-intervention-2198",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:suicide"
+          ],
+          "harm": [
+            "precipitating"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A surviving child under 5 years old whose parent committed suicide is 9 times more likely to die by suicide themselves, always ask about family suicide history.",
@@ -84331,7 +84471,30 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children under 5 whose parent died by suicide",
-      "pearl_id": "rev-leitch-on-suicide-intervention-2257"
+      "pearl_id": "rev-leitch-on-suicide-intervention-2257",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:5 years",
+            "threshold:under 5"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "harm": [
+            "die"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ask about family or extended family suicide history, it is a strong sign of risk for the patient and other relatives.",
@@ -84344,7 +84507,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient",
-      "pearl_id": "rev-leitch-on-suicide-intervention-2263"
+      "pearl_id": "rev-leitch-on-suicide-intervention-2263",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:suicide"
+          ],
+          "actionable": [
+            "Ask about"
+          ],
+          "rarity": 6.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Common themes from suicide notes include: nobody heard me, chronically sick, rejection, feeling that others deserve better, looking for happiness and not finding it, wanting to be with a deceased loved one, and revenge.",
@@ -84357,7 +84539,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "rev-leitch-on-suicide-intervention-2519"
+      "pearl_id": "rev-leitch-on-suicide-intervention-2519",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rejection"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When patients express helplessness, haplessness, and hopelessness, train yourself to listen for clues that suicidal erosion is becoming a strong factor.",
@@ -84370,7 +84568,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians evaluating patients",
-      "pearl_id": "rev-leitch-on-suicide-intervention-2727"
+      "pearl_id": "rev-leitch-on-suicide-intervention-2727",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:suicidal erosion"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Never be afraid to ask patients if they have thoughts of hurting themselves or even killing themselves.",
@@ -84383,7 +84597,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with possible suicidal ideation",
-      "pearl_id": "rev-leitch-on-suicide-intervention-2754"
+      "pearl_id": "rev-leitch-on-suicide-intervention-2754",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Never"
+          ],
+          "rarity": 7.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Suicide is a form of communication; people who have consistently failed to communicate through normal channels may engage in last-ditch efforts to communicate with the outside world.",
@@ -84396,7 +84626,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suicidal behavior",
-      "pearl_id": "rev-leitch-on-suicide-intervention-2834"
+      "pearl_id": "rev-leitch-on-suicide-intervention-2834",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:suicide"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Many suicidal gestures are not necessarily intended to die, but are done in the hopes that somebody will grab a clue.",
@@ -84409,7 +84655,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients making suicidal gestures",
-      "pearl_id": "rev-leitch-on-suicide-intervention-2867"
+      "pearl_id": "rev-leitch-on-suicide-intervention-2867",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "die"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Treating a suicidal patient poorly, for example, a nurse roughly shoving a suction tube down a repeat overdose patient's throat, may make the person feel worse, and next time they won't come in; they'll just die.",
@@ -84422,7 +84684,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "healthcare providers treating suicidal patients",
-      "pearl_id": "rev-leitch-on-suicide-intervention-2948"
+      "pearl_id": "rev-leitch-on-suicide-intervention-2948",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "repeat"
+          ],
+          "harm": [
+            "overdose"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If suicide is a communication technique, ask yourself: what is the person trying to say about his unsatisfied needs?",
@@ -84435,7 +84716,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians assessing suicidal patients",
-      "pearl_id": "rev-leitch-on-suicide-intervention-3020"
+      "pearl_id": "rev-leitch-on-suicide-intervention-3020",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:suicide"
+          ],
+          "rarity": 6.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Suicide automatically means there are unsatisfied needs.",
@@ -84448,7 +84745,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any suicidal patient",
-      "pearl_id": "rev-leitch-on-suicide-intervention-3032"
+      "pearl_id": "rev-leitch-on-suicide-intervention-3032",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:suicide"
+          ],
+          "rarity": 6.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Help the patient explore how he can express his feelings in a more constructive way and accomplish getting his needs and goals met without hurting himself.",
@@ -84461,7 +84774,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suicidal ideation",
-      "pearl_id": "rev-leitch-on-suicide-intervention-3037"
+      "pearl_id": "rev-leitch-on-suicide-intervention-3037",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If suicidal erosion has taken place, the person has probably tried a lot of different things, and none have worked to their satisfaction.",
@@ -84474,7 +84800,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic suicidal ideation",
-      "pearl_id": "rev-leitch-on-suicide-intervention-3054"
+      "pearl_id": "rev-leitch-on-suicide-intervention-3054",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:suicidal erosion"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A suicidal crisis typically lasts only a few minutes; use that window to help the person regain equilibrium and emotional strength before problem-solving.",
@@ -84487,7 +84829,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anyone intervening with a suicidal person",
-      "pearl_id": "rev-leitch-on-suicide-intervention-3098"
+      "pearl_id": "rev-leitch-on-suicide-intervention-3098",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ambivalence, holding opposite feelings about living and dying at the same time, is the emotional state most associated with suicidal behavior; small positive actions can tip the scale toward life.",
@@ -84500,7 +84858,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anyone intervening with a suicidal person",
-      "pearl_id": "rev-leitch-on-suicide-intervention-3164"
+      "pearl_id": "rev-leitch-on-suicide-intervention-3164",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:suicidal behavior"
+          ],
+          "harm": [
+            "dying"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a suicidal person says they want to die, they are actually saying they want to be rescued from an intolerable situation.",
@@ -84513,7 +84890,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians assessing suicidal ideation",
-      "pearl_id": "rev-leitch-on-suicide-intervention-3263"
+      "pearl_id": "rev-leitch-on-suicide-intervention-3263",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "die"
+          ],
+          "rarity": 7.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To identify the significant other in a suicidal patient's life, ask: 'If you were going to write a suicide note, who would you write it to?' or 'Who would be most affected by your suicide?'",
@@ -84526,7 +84919,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians evaluating suicidal patients",
-      "pearl_id": "rev-leitch-on-suicide-intervention-3412"
+      "pearl_id": "rev-leitch-on-suicide-intervention-3412",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:significant other"
+          ],
+          "rarity": 6.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The relationship between a suicidal person and their significant other is one of dependency; the person believes the other is the only one who can make them happy.",
@@ -84539,7 +84948,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians understanding suicide dynamics",
-      "pearl_id": "rev-leitch-on-suicide-intervention-3445"
+      "pearl_id": "rev-leitch-on-suicide-intervention-3445",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:significant other"
+          ],
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Suicidal individuals often do not have friendships; they 'take hostages' by becoming totally dependent on one person to meet all their needs.",
@@ -84552,7 +84977,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians assessing social support in suicidal patients",
-      "pearl_id": "rev-leitch-on-suicide-intervention-3471"
+      "pearl_id": "rev-leitch-on-suicide-intervention-3471",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A statement like 'You're the only person who understands me' is not a compliment but a confession of poor interpersonal skills and dangerous dependency.",
@@ -84565,7 +85006,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians and anyone receiving such statements",
-      "pearl_id": "rev-leitch-on-suicide-intervention-3511"
+      "pearl_id": "rev-leitch-on-suicide-intervention-3511",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "dangerous"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid using the term 'hostage' with patients or even in professional discussions about suicidal patients, as it has negative connotations and perpetuates stigma; instead frame the pattern as codependency or dependency.",
@@ -84578,7 +85035,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians communicating about suicidal patients",
-      "pearl_id": "rev-leitch-on-suicide-intervention-3716"
+      "pearl_id": "rev-leitch-on-suicide-intervention-3716",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:codependency"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Frustrating or manipulative-seeming behaviors in suicidal patients are manifestations of mental illness, not intentional manipulation; remember this to avoid anger and maintain therapeutic rapport.",
@@ -84592,7 +85068,23 @@
       "prompt_version": "v1",
       "applies_to": "all clinicians encountering suicidal patients",
       "by_presenter": false,
-      "pearl_id": "rev-leitch-on-suicide-intervention-3745"
+      "pearl_id": "rev-leitch-on-suicide-intervention-3745",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid using labels like 'hostage' about a patient; instead describe that the patient feels that way, because the clinician's language shapes their own thinking and can perpetuate negative feelings toward patients with suicidal ideation.",
@@ -84606,7 +85098,26 @@
       "prompt_version": "v1",
       "applies_to": "healthcare professionals interacting with suicidal patients",
       "by_presenter": false,
-      "pearl_id": "rev-leitch-on-suicide-intervention-3770"
+      "pearl_id": "rev-leitch-on-suicide-intervention-3770",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:suicidal ideation"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recognize that acute suicidality differs from chronic suicidal thoughts; many people have passive 'I wish I were dead' thoughts without an emotional charge, and this does not necessarily indicate immediate danger.",
@@ -84620,7 +85131,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with chronic suicidal ideation",
       "by_presenter": false,
-      "pearl_id": "rev-leitch-on-suicide-intervention-4239"
+      "pearl_id": "rev-leitch-on-suicide-intervention-4239",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:suicidality"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "About 75% of suicidal people will give notice of their intentions in the form of early warning signals; some do so purposely, others inadvertently, with the hope someone will ask them the question and rescue them.",
@@ -84633,7 +85160,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population at risk for suicide",
-      "pearl_id": "rev-leitch-on-suicide-intervention-4548"
+      "pearl_id": "rev-leitch-on-suicide-intervention-4548",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Treat early warning signs of suicide as a very serious form of communication; they are often easy to ignore, but ignoring them can be fatal.",
@@ -84646,7 +85189,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians and anyone in contact with potentially suicidal individuals",
-      "pearl_id": "rev-leitch-on-suicide-intervention-4588"
+      "pearl_id": "rev-leitch-on-suicide-intervention-4588",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:early warning signs of"
+          ],
+          "actionable": [
+            "Treat"
+          ],
+          "harm": [
+            "fatal"
+          ],
+          "rarity": 7.41
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A single isolated warning sign does not mean suicide; look for a cluster of several warning signs piling up together, especially in the context of a dramatic life event such as loss, grief, or depression.",
@@ -84659,7 +85224,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians assessing suicide risk",
-      "pearl_id": "rev-leitch-on-suicide-intervention-4682"
+      "pearl_id": "rev-leitch-on-suicide-intervention-4682",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:depression"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Suicide is not always due to mental illness; other drivers include loss, frustration, grief, physical pain, loneliness, and alienation.",
@@ -84672,7 +85253,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anyone assessing suicide risk",
-      "pearl_id": "rev-leitch-on-suicide-intervention-4682-2"
+      "pearl_id": "rev-leitch-on-suicide-intervention-4682-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:suicide"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Suicidogenic situations, contexts so conducive to suicidal thoughts that the situation itself constitutes a warning signal, include sudden loss of physical function, disfigurement, job loss tied to self-image, divorce, destruction of reputation, or a disfiguring operation.",
@@ -84685,7 +85285,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients experiencing these specific life events",
-      "pearl_id": "rev-leitch-on-suicide-intervention-4747"
+      "pearl_id": "rev-leitch-on-suicide-intervention-4747",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:self-image"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "It is a dangerous myth that people who talk about killing themselves do not actually do so; blatant verbal warnings are often dismissed precisely because they seem too obvious, but this is a mistake.",
@@ -84698,7 +85314,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anyone hearing a verbal threat of suicide",
-      "pearl_id": "rev-leitch-on-suicide-intervention-4813"
+      "pearl_id": "rev-leitch-on-suicide-intervention-4813",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:verbal warnings"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "dangerous"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Behavioral warning signs of suicide include giving away a cherished object in a casual manner; the strongest behavioral warning is a previous suicide attempt.",
@@ -84711,7 +85349,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "rev-leitch-on-suicide-intervention-4935"
+      "pearl_id": "rev-leitch-on-suicide-intervention-4935",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:behavioral warning sig"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "40-50% of completed suicides have made a previous attempt; this history is a critical risk factor.",
@@ -84724,7 +85378,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with a history of suicide attempt",
-      "pearl_id": "rev-leitch-on-suicide-intervention-4952"
+      "pearl_id": "rev-leitch-on-suicide-intervention-4952",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:suicide"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "40-50% of completed suicides have tried before.",
@@ -84737,7 +85407,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "rev-leitch-on-suicide-intervention-4952-2"
+      "pearl_id": "rev-leitch-on-suicide-intervention-4952-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:suicide"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "There is a notable increased risk of a fatal second attempt around two years after a previous suicide attempt; do not assume someone is safe just because they seem to be doing well.",
@@ -84750,7 +85436,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who have attempted suicide",
-      "pearl_id": "rev-leitch-on-suicide-intervention-4960"
+      "pearl_id": "rev-leitch-on-suicide-intervention-4960",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:suicide attempt"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "fatal"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Two years after a suicide gesture is a high-risk period for reattempt.",
@@ -84763,7 +85471,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with prior suicide gesture",
-      "pearl_id": "rev-leitch-on-suicide-intervention-4976"
+      "pearl_id": "rev-leitch-on-suicide-intervention-4976",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:suicide gesture"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When assessing a prior suicide attempt, consider both the dangerousness of the method and the person's belief about its lethality (e.g., someone who took five aspirins may genuinely have believed it would kill them).",
@@ -84776,7 +85500,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient clinical assessment of a patient with prior suicide attempt",
-      "pearl_id": "rev-leitch-on-suicide-intervention-5040"
+      "pearl_id": "rev-leitch-on-suicide-intervention-5040",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:suicide attempt"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "kill"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Assess dangerousness of prior attempt by method, perceived lethality, rescue chance, and recency.",
@@ -84789,7 +85535,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with prior suicide attempt",
-      "pearl_id": "rev-leitch-on-suicide-intervention-5049"
+      "pearl_id": "rev-leitch-on-suicide-intervention-5049",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Evaluate the chance of rescue in a prior suicide attempt: an overdose taken at home where someone might find them differs from one taken in a distant hotel room.",
@@ -84802,7 +85561,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "assessment of prior suicide attempt",
-      "pearl_id": "rev-leitch-on-suicide-intervention-5075"
+      "pearl_id": "rev-leitch-on-suicide-intervention-5075",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:suicide attempt"
+          ],
+          "actionable": [
+            "Evaluate"
+          ],
+          "harm": [
+            "overdose"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sudden unexplained recovery from severe depression may indicate final problem-solving and increased suicide risk.",
@@ -84815,7 +85596,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe depression",
-      "pearl_id": "rev-leitch-on-suicide-intervention-5110"
+      "pearl_id": "rev-leitch-on-suicide-intervention-5110",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:depression"
+          ],
+          "rarity": 7.13
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The greatest suicide risk is during the first 90 days after depression begins to lift.",
@@ -84828,7 +85625,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients recovering from depression",
-      "pearl_id": "rev-leitch-on-suicide-intervention-5183"
+      "pearl_id": "rev-leitch-on-suicide-intervention-5183",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:90 days"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ask directly about suicidal thoughts; asking does not plant the idea.",
@@ -84841,7 +85654,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with suspected suicidal ideation",
-      "pearl_id": "rev-leitch-on-suicide-intervention-5206"
+      "pearl_id": "rev-leitch-on-suicide-intervention-5206",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.07
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the SLAP assessment: Specificity, Lethality, Availability, Proximity.",
@@ -84854,7 +85680,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients endorsing suicidal ideation",
-      "pearl_id": "rev-leitch-on-suicide-intervention-5257"
+      "pearl_id": "rev-leitch-on-suicide-intervention-5257",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:slap assessment"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Call 988 (Suicide Prevention Lifeline) before 911 when possible.",
@@ -84867,7 +85712,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anyone intervening in a suicide crisis",
-      "pearl_id": "rev-leitch-on-suicide-intervention-5295"
+      "pearl_id": "rev-leitch-on-suicide-intervention-5295",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:suicide prevention lif"
+          ],
+          "rarity": 6.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Never physically restrain a suicidal person who is armed with a gun or knife.",
@@ -84880,7 +85741,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "in-person intervention",
-      "pearl_id": "rev-leitch-on-suicide-intervention-5443"
+      "pearl_id": "rev-leitch-on-suicide-intervention-5443",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Never"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Never leave a suicidal person alone until help arrives.",
@@ -84893,7 +85770,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "in-person intervention",
-      "pearl_id": "rev-leitch-on-suicide-intervention-5450"
+      "pearl_id": "rev-leitch-on-suicide-intervention-5450",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Never"
+          ],
+          "rarity": 6.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not debate a suicidal person; you may lose both the debate and the person.",
@@ -84906,7 +85799,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anyone intervening",
-      "pearl_id": "rev-leitch-on-suicide-intervention-5569"
+      "pearl_id": "rev-leitch-on-suicide-intervention-5569",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -37745,7 +37745,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults in primary care",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-298"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-298",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:alcohol"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.55
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Naltrexone should be started only after screening for concurrent opioid use, as it can precipitate opioid withdrawal in patients using opioids.",
@@ -37758,7 +37777,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with alcohol use disorder",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-418"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-418",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:opioid withdrawal"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "precipitate"
+          ],
+          "rarity": 6.63
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Acamprosate is dosed as two 333 mg tablets three times daily, and must be avoided with severe renal dysfunction (creatinine clearance below threshold for renal dosing).",
@@ -37774,7 +37815,24 @@
       "numbers_unheard": [
         "333"
       ],
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-471"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-471",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:333 mg",
+            "frequency:daily"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gabapentin is safe for patients still drinking and can reduce heavy drinking days; dosing is flexible and must be renally adjusted.",
@@ -37787,7 +37845,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with alcohol use disorder, regardless of abstinence status",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-512"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-512",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:gabapentin"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Topiramate can be started at 25 mg daily and titrated up; it reduces heavy drinking days.",
@@ -37800,7 +37877,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with alcohol use disorder",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-532"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-532",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:25 mg",
+            "frequency:daily"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For motivated patients with reliable supervision, disulfiram may still be considered, but real-world effectiveness is poor without observed dosing.",
@@ -37813,7 +37907,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients considering disulfiram for alcohol use disorder",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-619"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-619",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:disulfiram"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Varenicline (Chantix) reduces cravings for both alcohol and tobacco, and is helpful for co-users.",
@@ -37826,7 +37936,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who use both alcohol and tobacco",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-663"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-663",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:varenicline"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Naltrexone is safe for patients with compensated cirrhosis; do not start it during decompensation, but benefit outweighs risk once stabilized.",
@@ -37839,7 +37965,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with alcohol use disorder and liver disease",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-751"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-751",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:naltrexone"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Buprenorphine has a ceiling effect, making overdose very rare; median maintenance dose is 16 mg, up to 24 mg daily.",
@@ -37852,7 +37997,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with opioid use disorder",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-899"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-899",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:16 mg",
+            "frequency:daily"
+          ],
+          "harm": [
+            "overdose"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "There is no longer an X-waiver to prescribe buprenorphine; any DEA-registered prescriber with 8 hours of training can prescribe Suboxone.",
@@ -37865,7 +38030,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all DEA-registered prescribers",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1016"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1016",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:8 hours"
+          ],
+          "actionable": [
+            "prescribe"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For Medicaid patients, buprenorphine/naloxone tablets are often covered while strips are not; check insurance before prescribing.",
@@ -37878,7 +38062,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicaid patients with opioid use disorder",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1066"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1066",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:buprenorphine"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.72
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sublocade injection forms a palpable depot that may require surgical removal if an allergic reaction occurs; Brixadi is newer, does not require refrigeration, and is given like a typical IM injection.",
@@ -37891,7 +38094,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving long-acting buprenorphine",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1162"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1162",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sublocade"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When injecting Sublocade, give a subcutaneous lidocaine injection over the site first to make it more comfortable.",
@@ -37904,7 +38123,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving Sublocade injection",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1193"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1193",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:lidocaine"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 6.91
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has a reaction to Sublocade, you have to surgically remove the depot to resolve the reaction.",
@@ -37917,7 +38155,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with reaction to Sublocade",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1210"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1210",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sublocade"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Brixadi can be given more like a typical IM injection in the shoulder, unlike Sublocade which must go in the stomach.",
@@ -37930,7 +38184,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving Brixadi",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1245"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1245",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sublocade"
+          ],
+          "rarity": 6.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For buprenorphine induction, the patient must be in mild to moderate withdrawal before initiating to avoid precipitated withdrawal.",
@@ -37943,7 +38213,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting buprenorphine",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1313"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1313",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:buprenorphine inductio"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 6.67
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Methadone can only be prescribed for opioid use disorder in the outpatient setting from a federally certified opioid treatment program.",
@@ -37956,7 +38248,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient treatment of opioid use disorder",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1406"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1406",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:opioid use disorder"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Vivitrol (naltrexone) requires 14 days between last opioid use and starting the injection to avoid precipitated withdrawal.",
@@ -37969,7 +38280,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting Vivitrol for opioid use disorder",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1503"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1503",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:14 days"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "precipitated"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For benzodiazepine taper, switch from short-acting to long-acting benzodiazepines, start with 25% reduction, then reduce by 10% every 2-4 weeks.",
@@ -37982,7 +38315,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients tapering benzodiazepines",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1767"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1767",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4 weeks",
+            "frequency:every 2"
+          ],
+          "actionable": [
+            "taper"
+          ],
+          "rarity": 6.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For methamphetamine use disorder, mirtazapine (Remeron) has the best evidence; bupropion with naltrexone also shows benefit per the ADAPT-2 study.",
@@ -37995,7 +38348,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with methamphetamine use disorder",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1893"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-1893",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:methamphetamine"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For marijuana use disorder, brief counseling can help non-regular users; gabapentin may reduce cravings in adults, N-acetylcysteine in adolescents.",
@@ -38008,7 +38380,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with marijuana use disorder",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-2023"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-2023",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:marijuana use disorder"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Harm reduction for marijuana: recommend edibles over smoking to remove the respiratory irritant and inflammatory process.",
@@ -38021,7 +38412,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who use marijuana",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-2111"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-2111",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:harm reduction"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gabapentin has a number needed to treat of about 5 for alcohol use disorder, lower than naltrexone at 12.",
@@ -38034,7 +38441,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with alcohol use disorder",
-      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-2308"
+      "pearl_id": "drs-jones-shannon-on-addiction-med-part-2-2308",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:number needed to treat"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 6.13
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

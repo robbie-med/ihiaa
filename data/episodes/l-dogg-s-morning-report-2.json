@@ -82255,7 +82255,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DKA",
-      "pearl_id": "l-dogg-s-morning-report-2-320"
+      "pearl_id": "l-dogg-s-morning-report-2-320",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hemoconcentration"
+          ],
+          "rarity": 7.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DKA, a high beta-hydroxybutyrate (BHB) level favors DKA over starvation ketosis.",
@@ -82268,7 +82284,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ketosis",
-      "pearl_id": "l-dogg-s-morning-report-2-355"
+      "pearl_id": "l-dogg-s-morning-report-2-355",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:beta-hydroxybutyrate"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use Winter's formula to calculate the expected pCO2 in metabolic acidosis: expected pCO2 = 1.5 x [HCO3] + 8 ± 2. If the actual pCO2 is higher, there is a superimposed respiratory acidosis.",
@@ -82284,7 +82316,29 @@
       "numbers_unheard": [
         "1.5"
       ],
-      "pearl_id": "l-dogg-s-morning-report-2-569"
+      "pearl_id": "l-dogg-s-morning-report-2-569",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:respiratory acidosis"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.15,
+          "capped": [
+            "number not heard: 1.5"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Calculate the anion gap as sodium minus chloride minus bicarbonate. A normal anion gap is 12.",
@@ -82297,7 +82351,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with metabolic acidosis",
-      "pearl_id": "l-dogg-s-morning-report-2-745"
+      "pearl_id": "l-dogg-s-morning-report-2-745",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anion gap"
+          ],
+          "actionable": [
+            "Calculate"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the delta-delta to check for a concurrent non-anion gap metabolic acidosis: excess anion gap = measured AG - 12; add this to the measured bicarbonate. If the sum is normal (22-26), there is no additional disorder.",
@@ -82313,7 +82386,29 @@
       "numbers_unheard": [
         "26"
       ],
-      "pearl_id": "l-dogg-s-morning-report-2-796"
+      "pearl_id": "l-dogg-s-morning-report-2-796",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:non-anion gap metaboli"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.96,
+          "capped": [
+            "number not heard: 26"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When interpreting an EKG, start with step zero: check the standardization mark (should be 10 small boxes tall).",
@@ -82326,7 +82421,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any EKG interpretation",
-      "pearl_id": "l-dogg-s-morning-report-2-889"
+      "pearl_id": "l-dogg-s-morning-report-2-889",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To calculate heart rate on a 10-second strip, count the number of QRS complexes and multiply by 6.",
@@ -82339,7 +82453,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any EKG interpretation",
-      "pearl_id": "l-dogg-s-morning-report-2-939"
+      "pearl_id": "l-dogg-s-morning-report-2-939",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "calculate"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A prolonged QT interval (QTc > 450 ms in men, > 460 ms in women) increases the risk of torsades de pointes and requires monitoring.",
@@ -82356,7 +82486,23 @@
         "450",
         "460"
       ],
-      "pearl_id": "l-dogg-s-morning-report-2-1146"
+      "pearl_id": "l-dogg-s-morning-report-2-1146",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:> 4"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DKA, the diagnosis is often straightforward; the challenge is management, particularly fluid resuscitation and electrolyte replacement.",
@@ -82369,7 +82515,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DKA",
-      "pearl_id": "l-dogg-s-morning-report-2-1423"
+      "pearl_id": "l-dogg-s-morning-report-2-1423",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fluid resuscitation"
+          ],
+          "rarity": 7.64
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When ordering IV fluids, specify the type, dose (e.g., 1 L bolus), and frequency (e.g., once, then maintenance) rather than relying on order sets.",
@@ -82382,7 +82544,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "interns ordering IV fluids",
-      "pearl_id": "l-dogg-s-morning-report-2-1509"
+      "pearl_id": "l-dogg-s-morning-report-2-1509",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1 L"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lactated Ringer's contains potassium and sodium lactate, which is metabolized to bicarbonate; normal saline can cause hyperchloremic acidosis if given in excess.",
@@ -82395,7 +82576,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DKA and acidosis",
-      "pearl_id": "l-dogg-s-morning-report-2-1683"
+      "pearl_id": "l-dogg-s-morning-report-2-1683",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hyperchloremic acidosi"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DKA with severe hypokalemia (K 2.2), hold insulin until potassium is replete because insulin drives potassium into cells, risking fatal arrhythmias.",
@@ -82408,7 +82605,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DKA and severe hypokalemia",
-      "pearl_id": "l-dogg-s-morning-report-2-1851"
+      "pearl_id": "l-dogg-s-morning-report-2-1851",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hypokalemia"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "harm": [
+            "fatal"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Potassium replacement rate depends on setting: ICU can give 40 mEq/hr, but regular floor limits to 40 mEq over 4 hours.",
@@ -82422,7 +82641,27 @@
       "prompt_version": "v1",
       "applies_to": "patients requiring IV potassium replacement",
       "by_presenter": false,
-      "pearl_id": "l-dogg-s-morning-report-2-2204"
+      "pearl_id": "l-dogg-s-morning-report-2-2204",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:40 mEq",
+            "threshold:over 4"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 6.64
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "BiPAP may help avoid intubation in respiratory acidosis if the patient is not altered, but patients may fight the mask.",
@@ -82435,7 +82674,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with respiratory acidosis and Kussmaul breathing",
-      "pearl_id": "l-dogg-s-morning-report-2-2457"
+      "pearl_id": "l-dogg-s-morning-report-2-2457",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:respiratory acidosis"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 6.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DKA, the standard protocol may not apply if potassium is severely low; you must individualize management.",
@@ -82448,7 +82706,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DKA and atypical presentations",
-      "pearl_id": "l-dogg-s-morning-report-2-2529"
+      "pearl_id": "l-dogg-s-morning-report-2-2529",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "QTc prolongation is delayed ventricular repolarization, increasing risk of early afterdepolarizations and torsades de pointes.",
@@ -82461,7 +82732,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with prolonged QTc",
-      "pearl_id": "l-dogg-s-morning-report-2-2676"
+      "pearl_id": "l-dogg-s-morning-report-2-2676",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:torsades de pointes"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hypokalemia is the primary driver of QTc prolongation in this DKA patient.",
@@ -82474,7 +82761,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DKA and QTc prolongation",
-      "pearl_id": "l-dogg-s-morning-report-2-2703"
+      "pearl_id": "l-dogg-s-morning-report-2-2703",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:qtc prolongation"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Among fluoroquinolones, ciprofloxacin is the least likely to prolong QTc, so it is preferred if a quinolone is needed.",
@@ -82487,7 +82790,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing a fluoroquinolone with QTc concerns",
-      "pearl_id": "l-dogg-s-morning-report-2-2750"
+      "pearl_id": "l-dogg-s-morning-report-2-2750",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:ciprofloxacin"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ciprofloxacin is the least QTc-prolonging fluoroquinolone; if you must use a quinolone in a patient at risk, choose cipro.",
@@ -82500,7 +82819,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients at risk for QTc prolongation",
-      "pearl_id": "l-dogg-s-morning-report-2-2750-2"
+      "pearl_id": "l-dogg-s-morning-report-2-2750-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:Ciprofloxacin"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Amiodarone is a QTc-prolonging agent; remember this when prescribing it.",
@@ -82513,7 +82851,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "l-dogg-s-morning-report-2-2907"
+      "pearl_id": "l-dogg-s-morning-report-2-2907",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:amiodarone"
+          ],
+          "rarity": 6.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DKA with severe hypokalemia, hold the insulin drip until potassium is above 4 mEq/L to avoid precipitating arrhythmias from rapid potassium shifts.",
@@ -82526,7 +82880,30 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DKA and hypokalemia",
-      "pearl_id": "l-dogg-s-morning-report-2-3051"
+      "pearl_id": "l-dogg-s-morning-report-2-3051",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:4 mEq",
+            "threshold:above 4"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "harm": [
+            "precipitating"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DKA, if you cannot start insulin due to hypokalemia, the severe acidemia (pH 6.82) is dangerous for the brain, but giving insulin without potassium repletion risks cardiac arrest from hypokalemia.",
@@ -82542,7 +82919,32 @@
       "numbers_unheard": [
         "6.82"
       ],
-      "pearl_id": "l-dogg-s-morning-report-2-3333"
+      "pearl_id": "l-dogg-s-morning-report-2-3333",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cardiac arrest"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "harm": [
+            "dangerous"
+          ],
+          "rarity": 7.42,
+          "capped": [
+            "number not heard: 6.82"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When calculating the anion gap, a delta-delta (change in anion gap minus change in bicarbonate) greater than 1 suggests a superimposed non-anion gap metabolic acidosis, often from chloride-rich fluids.",
@@ -82555,7 +82957,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with metabolic acidosis",
-      "pearl_id": "l-dogg-s-morning-report-2-3462"
+      "pearl_id": "l-dogg-s-morning-report-2-3462",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:greater than 1"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a DKA patient becomes lethargic and confused, check for worsening acidemia and consider that they may be tiring out and need intubation.",
@@ -82568,7 +82986,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with DKA and altered mental status",
-      "pearl_id": "l-dogg-s-morning-report-2-3787"
+      "pearl_id": "l-dogg-s-morning-report-2-3787",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:intubation"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bicarbonate drips can drive potassium into cells, worsening hypokalemia; consider stopping the bicarb drip if potassium is dropping.",
@@ -82581,7 +83018,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on bicarbonate drip with hypokalemia",
-      "pearl_id": "l-dogg-s-morning-report-2-3810"
+      "pearl_id": "l-dogg-s-morning-report-2-3810",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypokalemia"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.41
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For severe potassium depletion, a repletion regimen of 40 mEq IV every 2 hours via central line can be used, with close cardiac monitoring and pharmacy consultation.",
@@ -82594,7 +83050,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe hypokalemia in ICU setting",
-      "pearl_id": "l-dogg-s-morning-report-2-3877"
+      "pearl_id": "l-dogg-s-morning-report-2-3877",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:40 mEq",
+            "frequency:every 2"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In intubated patients, liquid potassium can be given via OG tube as part of a repletion regimen.",
@@ -82607,7 +83080,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "intubated patients needing potassium replacement",
-      "pearl_id": "l-dogg-s-morning-report-2-3890"
+      "pearl_id": "l-dogg-s-morning-report-2-3890",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DKA with hypokalemia, hold the insulin drip and replete potassium aggressively before starting insulin, because insulin drives potassium into cells and can worsen hypokalemia.",
@@ -82620,7 +83106,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DKA patients with hypokalemia",
-      "pearl_id": "l-dogg-s-morning-report-2-3930"
+      "pearl_id": "l-dogg-s-morning-report-2-3930",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypokalemia"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When giving concentrated potassium boluses (e.g., 40 mEq), give them through a central line, not a peripheral IV.",
@@ -82633,7 +83138,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving concentrated potassium boluses",
-      "pearl_id": "l-dogg-s-morning-report-2-3956"
+      "pearl_id": "l-dogg-s-morning-report-2-3956",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:40 mEq"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always consult with a pharmacist when designing a potassium replacement regimen; do not do it alone.",
@@ -82646,7 +83170,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinicians",
-      "pearl_id": "l-dogg-s-morning-report-2-3982"
+      "pearl_id": "l-dogg-s-morning-report-2-3982",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:potassium replacement"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The maximum potassium replacement rate is 40 mEq every two hours, but this should only be done with consultant involvement and close monitoring, not on your own.",
@@ -82659,7 +83202,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe hypokalemia in ICU setting",
-      "pearl_id": "l-dogg-s-morning-report-2-4028"
+      "pearl_id": "l-dogg-s-morning-report-2-4028",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:40 mEq"
+          ],
+          "rarity": 6.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Monitor magnesium levels when repleting potassium, as hypomagnesemia can complicate repletion.",
@@ -82672,7 +83231,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving aggressive potassium replacement",
-      "pearl_id": "l-dogg-s-morning-report-2-4066"
+      "pearl_id": "l-dogg-s-morning-report-2-4066",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypomagnesemia"
+          ],
+          "actionable": [
+            "Monitor"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Respiratory acidosis in DKA can be offloaded with BiPAP or intubation, which helps improve pH while the metabolic acidosis is being corrected.",
@@ -82685,7 +83263,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DKA patients with respiratory acidosis",
-      "pearl_id": "l-dogg-s-morning-report-2-4107"
+      "pearl_id": "l-dogg-s-morning-report-2-4107",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:respiratory acidosis"
+          ],
+          "rarity": 7.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DKA, total body potassium depletion can be massive because potassium has been shifting from intracellular to extracellular space over time; replacement may need to be sustained as potassium re-enters cells.",
@@ -82698,7 +83292,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DKA patients with hypokalemia",
-      "pearl_id": "l-dogg-s-morning-report-2-4279"
+      "pearl_id": "l-dogg-s-morning-report-2-4279",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients with chronic acidosis can remain awake and conversant at pH as low as 6.9 because their brain has adapted over time.",
@@ -82711,7 +83318,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic metabolic acidosis",
-      "pearl_id": "l-dogg-s-morning-report-2-4328"
+      "pearl_id": "l-dogg-s-morning-report-2-4328",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Involve nephrology and pharmacy when giving aggressive potassium replacement to share liability and ensure safe monitoring.",
@@ -82724,7 +83344,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving aggressive potassium repletion",
-      "pearl_id": "l-dogg-s-morning-report-2-4465"
+      "pearl_id": "l-dogg-s-morning-report-2-4465",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:potassium replacement"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bicarbonate administration can worsen hypokalemia by driving potassium intracellularly; use it cautiously and only when pH is very low (e.g., less than 7.0) and potassium is normal.",
@@ -82737,7 +83376,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe acidosis and hypokalemia",
-      "pearl_id": "l-dogg-s-morning-report-2-4620"
+      "pearl_id": "l-dogg-s-morning-report-2-4620",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:less than 7"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always check the QTc interval on EKG in DKA patients, especially when giving QT-prolonging medications like levetiracetam (Keppra).",
@@ -82751,7 +83409,26 @@
       "prompt_version": "v1",
       "applies_to": "DKA patients on QT-prolonging medications",
       "by_presenter": false,
-      "pearl_id": "l-dogg-s-morning-report-2-5124"
+      "pearl_id": "l-dogg-s-morning-report-2-5124",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

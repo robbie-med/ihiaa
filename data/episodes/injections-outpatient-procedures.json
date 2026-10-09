@@ -45178,7 +45178,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with joint pain",
-      "pearl_id": "injections-outpatient-procedures-140"
+      "pearl_id": "injections-outpatient-procedures-140",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 days",
+            "frequency:BID"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always ask about GI history (peptic ulcer, PPI use) and tell patients to take NSAIDs with food, not on an empty stomach.",
@@ -45191,7 +45208,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients prescribed NSAIDs",
-      "pearl_id": "injections-outpatient-procedures-229"
+      "pearl_id": "injections-outpatient-procedures-229",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:nsaids"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Limit corticosteroid injections to four per year per joint to avoid articular cartilage damage.",
@@ -45204,7 +45240,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving joint injections",
-      "pearl_id": "injections-outpatient-procedures-248"
+      "pearl_id": "injections-outpatient-procedures-248",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:corticosteroid injecti"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.26
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Never use multidose vials of local anesthetic for joint injections; they can easily become contaminated and cause septic arthritis.",
@@ -45217,7 +45272,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any joint or tendon injection",
-      "pearl_id": "injections-outpatient-procedures-361"
+      "pearl_id": "injections-outpatient-procedures-361",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:septic arthritis"
+          ],
+          "actionable": [
+            "Never"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Maximum lidocaine dose for adults is 300 mg; that equals 15 mL of 2% or 30 mL of 1% lidocaine.",
@@ -45230,7 +45307,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults receiving lidocaine",
-      "pearl_id": "injections-outpatient-procedures-518"
+      "pearl_id": "injections-outpatient-procedures-518",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:300 mg",
+            "drug:lidocaine"
+          ],
+          "rarity": 6.51
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lidocaine toxicity first causes CNS symptoms (sweating, heart racing) then cardiovascular collapse; exceeding 300 mg requires intubation and life support until the drug clears.",
@@ -45246,7 +45340,30 @@
       "numbers_unheard": [
         "300"
       ],
-      "pearl_id": "injections-outpatient-procedures-590"
+      "pearl_id": "injections-outpatient-procedures-590",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:300 mg",
+            "drug:Lidocaine"
+          ],
+          "harm": [
+            "toxicity"
+          ],
+          "rarity": 8.29,
+          "capped": [
+            "number not heard: 300"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Absolute contraindications to joint injection include bacteremia, osteomyelitis, hemarthrosis, impending joint replacement surgery, and prosthetic joint.",
@@ -45259,7 +45376,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients considered for joint injection",
-      "pearl_id": "injections-outpatient-procedures-740"
+      "pearl_id": "injections-outpatient-procedures-740",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:joint injection"
+          ],
+          "harm": [
+            "contraindications"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Never inject into a prosthetic joint; if it gets infected, it is a nightmare.",
@@ -45272,7 +45408,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with joint prosthesis",
-      "pearl_id": "injections-outpatient-procedures-798"
+      "pearl_id": "injections-outpatient-procedures-798",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Never"
+          ],
+          "rarity": 7.72
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients on warfarin, an INR less than 3.6 is safe for joint injection.",
@@ -45288,7 +45440,24 @@
       "numbers_unheard": [
         "3.6"
       ],
-      "pearl_id": "injections-outpatient-procedures-839"
+      "pearl_id": "injections-outpatient-procedures-839",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 3",
+            "test:INR"
+          ],
+          "rarity": 6.4
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Never inject into the substance of a tendon; if the syringe plunger is not moving, do not push against resistance or the tendon may snap.",
@@ -45301,7 +45470,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any injection near a tendon",
-      "pearl_id": "injections-outpatient-procedures-880"
+      "pearl_id": "injections-outpatient-procedures-880",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Never"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After cleaning the injection site, do not touch it again; if you do, you must reclean it.",
@@ -45314,7 +45499,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any injection procedure",
-      "pearl_id": "injections-outpatient-procedures-985"
+      "pearl_id": "injections-outpatient-procedures-985",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Post-injection flare occurs in 2, 5% of cases and is often due to poor technique, too large a dose, too frequent dosing, or failure to mix medication properly.",
@@ -45327,7 +45528,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving corticosteroid injection",
-      "pearl_id": "injections-outpatient-procedures-1087"
+      "pearl_id": "injections-outpatient-procedures-1087",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:post-injection flare"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Mixing a long-acting steroid (Kenalog 40 mg) with a short-acting one (Decadron 4 mg) can provide both rapid and sustained effect.",
@@ -45340,7 +45557,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing joint injection",
-      "pearl_id": "injections-outpatient-procedures-1260"
+      "pearl_id": "injections-outpatient-procedures-1260",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:40 mg"
+          ],
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For knee injections, use 1 mL Kenalog 40 mg, optionally 1 mL dexamethasone, and 4 mL of 2% lidocaine without epinephrine; total volume 5, 6 mL is fine for a large joint.",
@@ -45353,7 +45586,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "knee injection",
-      "pearl_id": "injections-outpatient-procedures-1360"
+      "pearl_id": "injections-outpatient-procedures-1360",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1 mL",
+            "drug:dexamethasone"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For knee injection, use the lateral superior patellar approach with the patient supine and knee slightly bent on a towel; avoid the inferior approach in severe arthritis (bone-on-bone) as it is difficult to find the space.",
@@ -45366,7 +45619,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "knee injection",
-      "pearl_id": "injections-outpatient-procedures-1398"
+      "pearl_id": "injections-outpatient-procedures-1398",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:knee injection"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Plantar fasciitis hallmark is first-step pain in the morning that improves as the day progresses; the diagnosis is often clear from history alone.",
@@ -45379,7 +45651,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with heel pain",
-      "pearl_id": "injections-outpatient-procedures-1567"
+      "pearl_id": "injections-outpatient-procedures-1567",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:plantar fasciitis"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For plantar fascia injection, use 1 mL Kenalog 40 mg and 2 mL of 2% lidocaine without epinephrine; approach from the tender spot posterolaterally, avoid injecting into the heel to prevent fat pad atrophy.",
@@ -45392,7 +45680,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "plantar fascia injection",
-      "pearl_id": "injections-outpatient-procedures-1712"
+      "pearl_id": "injections-outpatient-procedures-1712",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1 mL",
+            "drug:lidocaine"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Limit corticosteroid injections to no more than twice a year in the same site to avoid long-term sequelae such as tissue atrophy or tendon rupture.",
@@ -45405,7 +45713,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any corticosteroid injection",
-      "pearl_id": "injections-outpatient-procedures-1763"
+      "pearl_id": "injections-outpatient-procedures-1763",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:corticosteroid injecti"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For plantar fascia injection, use a 21- or 22-gauge 1.5-inch needle; 27-gauge is too small because the skin is thick and it is hard to push medication through a thin needle.",
@@ -45418,7 +45745,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "plantar fascia injection",
-      "pearl_id": "injections-outpatient-procedures-1791"
+      "pearl_id": "injections-outpatient-procedures-1791",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Choose a syringe volume close to the injection volume; using a large syringe (e.g., 10 mL) to inject a small volume (e.g., 2 mL) creates excessive physical pressure and makes injection difficult.",
@@ -45431,7 +45774,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any injection with small volume",
-      "pearl_id": "injections-outpatient-procedures-1845"
+      "pearl_id": "injections-outpatient-procedures-1845",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 mL"
+          ],
+          "rarity": 6.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For AC joint injection, use a very fine 27-gauge 1-inch needle; only inject 1.5 mL total (0.5 mL Kenalog + 0.5 mL 2% lidocaine) because the space is very tight.",
@@ -45444,7 +45803,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "AC joint injection",
-      "pearl_id": "injections-outpatient-procedures-1906"
+      "pearl_id": "injections-outpatient-procedures-1906",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1.5 mL",
+            "drug:lidocaine"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For subacromial shoulder injection, use a 22-gauge 1.5-inch needle inserted posteriorly (patient not watching), advancing the entire needle into the space; volume is 5, 6 mL (1 mL Kenalog + 4 mL 2% lidocaine, ± dexamethasone).",
@@ -45457,7 +45836,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "subacromial injection",
-      "pearl_id": "injections-outpatient-procedures-2049"
+      "pearl_id": "injections-outpatient-procedures-2049",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 mL",
+            "drug:lidocaine"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For lateral epicondylitis (tennis elbow) injection, find the point of maximal tenderness by having the patient extend the wrist against resistance; inject straight down almost to periosteum.",
@@ -45470,7 +45869,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lateral epicondylitis injection",
-      "pearl_id": "injections-outpatient-procedures-2163"
+      "pearl_id": "injections-outpatient-procedures-2163",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:lateral epicondylitis"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For greater trochanteric bursitis injection, use a 22-gauge spinal needle; advance to touch the bone then retract slightly; ensure the pelvis is at 90 degrees to the exam table (not tilted) to avoid missing the target.",
@@ -45483,7 +45898,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "greater trochanteric bursitis injection",
-      "pearl_id": "injections-outpatient-procedures-2315"
+      "pearl_id": "injections-outpatient-procedures-2315",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:greater trochanteric b"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use a 22-gauge spinal needle for trochanteric bursa injection, not a smaller needle.",
@@ -45496,7 +45930,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "trochanteric bursa injection",
-      "pearl_id": "injections-outpatient-procedures-2363"
+      "pearl_id": "injections-outpatient-procedures-2363",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:trochanteric bursa inj"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 6.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The pelvis must be positioned straight (not tilted) for a trochanteric bursa injection; the needle should enter at 90 degrees to the skin.",
@@ -45509,7 +45962,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients receiving trochanteric bursa injection",
-      "pearl_id": "injections-outpatient-procedures-2375"
+      "pearl_id": "injections-outpatient-procedures-2375",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:trochanteric bursa inj"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stabilize the needle hub with the side of the non-dominant hand resting on the patient's skin to prevent downward pressure from advancing the needle too deep.",
@@ -45522,7 +45991,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "when using a large syringe (e.g., 10 cc) for trochanteric bursa injection",
-      "pearl_id": "injections-outpatient-procedures-2424"
+      "pearl_id": "injections-outpatient-procedures-2424",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:essure"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When using a large syringe (e.g., 10 mL) for hip injection, stabilize the needle hub with the non-dominant hand resting on the patient's skin to prevent the needle from being pushed deeper during injection.",
@@ -45535,7 +46020,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hip injection with large syringe",
-      "pearl_id": "injections-outpatient-procedures-2433"
+      "pearl_id": "injections-outpatient-procedures-2433",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 mL"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When the needle contacts bone, withdraw slightly before injecting; if resistance is felt while injecting, withdraw a little more and continue injecting until the full dose is delivered.",
@@ -45548,7 +46049,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "trochanteric bursa injection",
-      "pearl_id": "injections-outpatient-procedures-2475"
+      "pearl_id": "injections-outpatient-procedures-2475",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not recap the needle after use; do not hand the syringe to anyone else; dispose of the entire assembly directly into the sharps container.",
@@ -45561,7 +46075,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all injections",
-      "pearl_id": "injections-outpatient-procedures-2501"
+      "pearl_id": "injections-outpatient-procedures-2501",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Trochanteric bursa injection is a soft-tissue procedure; the corticosteroid deposited there is fully absorbed systemically and can still benefit concurrent hip osteoarthritis.",
@@ -45574,7 +46104,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with trochanteric bursitis and coexisting hip osteoarthritis",
-      "pearl_id": "injections-outpatient-procedures-2565"
+      "pearl_id": "injections-outpatient-procedures-2565",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:trochanteric bursa inj"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diagnose sacroiliitis with the Faber (Patrick) test: flex, abduct, and externally rotate the hip, then push the knee downward while stabilizing the contralateral pelvis; pain indicates SI joint pathology.",
@@ -45588,7 +46134,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with suspected SI joint pain",
       "by_presenter": false,
-      "pearl_id": "injections-outpatient-procedures-2655"
+      "pearl_id": "injections-outpatient-procedures-2655",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:sacroiliitis"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SI joint injections should be performed under fluoroscopic guidance; blind injection is difficult and often inaccurate.",
@@ -45601,7 +46163,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "sacroiliac joint injection",
-      "pearl_id": "injections-outpatient-procedures-2696"
+      "pearl_id": "injections-outpatient-procedures-2696",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fluoroscopic guidance"
+          ],
+          "harm": [
+            "blind"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When drawing medication from a vial, tilt the vial 45 degrees and keep the needle tip within the liquid; follow the liquid column as it moves to avoid pulling air.",
@@ -45614,7 +46195,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any injection preparation",
-      "pearl_id": "injections-outpatient-procedures-2876"
+      "pearl_id": "injections-outpatient-procedures-2876",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

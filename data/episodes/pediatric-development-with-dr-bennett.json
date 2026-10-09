@@ -36266,7 +36266,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all well-child checks",
-      "pearl_id": "pediatric-development-with-dr-bennett-232"
+      "pearl_id": "pediatric-development-with-dr-bennett-232",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always consider child abuse when an infant has unexplained pain with movement, even if no other signs of trauma are present.",
@@ -36279,7 +36295,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with pain on movement",
-      "pearl_id": "pediatric-development-with-dr-bennett-467"
+      "pearl_id": "pediatric-development-with-dr-bennett-467",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:child abuse"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 6.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Palpate the fontanelle in every infant; a full or bulging fontanelle may indicate increased intracranial pressure and requires further evaluation.",
@@ -36292,7 +36327,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants at well-child checks",
-      "pearl_id": "pediatric-development-with-dr-bennett-743"
+      "pearl_id": "pediatric-development-with-dr-bennett-743",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:increased intracranial"
+          ],
+          "actionable": [
+            "Palpate"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Spinal muscular atrophy is included in Oklahoma's newborn screening; gene therapy is incredibly effective but must be given before irreversible damage occurs.",
@@ -36305,7 +36359,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "newborns in Oklahoma",
-      "pearl_id": "pediatric-development-with-dr-bennett-834"
+      "pearl_id": "pediatric-development-with-dr-bennett-834",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:spinal muscular atroph"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a parent reports a change in a child's motor skill, such as slower crawling, ask the parent to demonstrate the behavior in the office rather than relying solely on the checklist.",
@@ -36318,7 +36388,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with reported motor regression",
-      "pearl_id": "pediatric-development-with-dr-bennett-987"
+      "pearl_id": "pediatric-development-with-dr-bennett-987",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "By 9 months, a child should be able to sit independently and get into a sitting position by themselves; if they fall over, they should protect themselves with their hands.",
@@ -36331,7 +36414,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants at 9-month well-child check",
-      "pearl_id": "pediatric-development-with-dr-bennett-1065"
+      "pearl_id": "pediatric-development-with-dr-bennett-1065",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:9 months"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Truncal ataxia in an infant who previously crawled well is a red flag for a cerebellar mass and warrants urgent neuroimaging.",
@@ -36344,7 +36443,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants with regression of motor skills",
-      "pearl_id": "pediatric-development-with-dr-bennett-1114"
+      "pearl_id": "pediatric-development-with-dr-bennett-1114",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:truncal ataxia"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the free CDC 'Learn the Signs, Act Early' milestone booklets as a cheat sheet for yourself while learning milestones; they are also written for parents.",
@@ -36357,7 +36475,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians learning milestones",
-      "pearl_id": "pediatric-development-with-dr-bennett-1272"
+      "pearl_id": "pediatric-development-with-dr-bennett-1272",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:milestones"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Surveillance occurs at every well-child check: 2, 4, 6, 9, 12, 15, 18, 24, 30, and 36 months, and annually thereafter.",
@@ -36370,7 +36507,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pediatric well-child care",
-      "pearl_id": "pediatric-development-with-dr-bennett-1379"
+      "pearl_id": "pediatric-development-with-dr-bennett-1379",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:36 months"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Developmental milestone checklists are not standardized or validated; you must observe the child directly to avoid missing subtle delays or regressions.",
@@ -36383,7 +36539,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all well-child checks",
-      "pearl_id": "pediatric-development-with-dr-bennett-1388"
+      "pearl_id": "pediatric-development-with-dr-bennett-1388",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

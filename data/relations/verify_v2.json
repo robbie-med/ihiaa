@@ -6,6 +6,13 @@
 "verdict": "depends",
 "why": "One speaker uses eosinophils as a biomarker for exacerbation risk, the other relies on airflow limitation and exacerbation history."
 },
+"05e8b83ae528248e|5aef36da931dcda6": {
+"condition": "Whether the patient is willing to taper or refuses.",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Managing chronic benzodiazepine refusal",
+"verdict": "depends",
+"why": "A addresses refusal to taper; B addresses a taper schedule for willing patients."
+},
 "05fc4f46cd9da4af|15b50c9d6d254544": {
 "condition": "",
 "model": "deepseek/deepseek-v3.2",
@@ -41,6 +48,20 @@
 "verdict": "compatible",
 "why": "One addresses AKI classification; the other cautions against premature labeling."
 },
+"11960fd737c731bf|272bfc9e5a724519": {
+"condition": "whether the drug is for symptom control or mortality reduction",
+"model": "deepseek/deepseek-v3.2",
+"topic": "titration strategy for symptom response",
+"verdict": "depends",
+"why": "Different medications and goals: antidepressants for symptom relief vs GDMT for mortality benefit."
+},
+"135c5773e90c6bbb|e55c5dc235b0a6b4": {
+"condition": "Patient age and metabolic function",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Benzodiazepine tapering agent choice",
+"verdict": "depends",
+"why": "General guideline favors long-acting agents, but older adults may require short-acting due to metabolism."
+},
 "136c038ce42e9456|d0db1592e2d0df95": {
 "condition": "underlying diagnosis (SLE vs. pericardial TB)",
 "model": "deepseek/deepseek-v3.2",
@@ -62,6 +83,13 @@
 "verdict": "conflict",
 "why": "A says only submucosal cause bleeding; B says intramural also cause bleeding."
 },
+"171e9a060ae57415|6539646e9a0b6571": {
+"condition": "",
+"model": "deepseek/deepseek-v4-flash",
+"topic": "SCC vs melanoma mortality",
+"verdict": "compatible",
+"why": "Both claim SCC causes at least as many deaths as melanoma, consistent."
+},
 "1774b7975a06509c|a20f97da3defe604": {
 "condition": "",
 "model": "deepseek/deepseek-v3.2",
@@ -75,6 +103,13 @@
 "topic": "Naltrexone induction opioid-free period",
 "verdict": "compatible",
 "why": "Both stress need for opioid-free period; one gives 7-10 days, the other 14 days as a safe rule."
+},
+"1dfdd2fa4e2d4e2f|bed3220a41c74ae3": {
+"condition": "whether the patient has comorbid depression",
+"model": "deepseek/deepseek-v3.2",
+"topic": "treating subclinical hypothyroidism",
+"verdict": "depends",
+"why": "A focuses on improving depression response, B on general management without depression."
 },
 "1fc0882b54f8c059|dea80498138bbf9f": {
 "condition": "Patient age (elderly vs general adult)",
@@ -90,6 +125,20 @@
 "verdict": "compatible",
 "why": "Both advise against PRN antihypertives; A lists rare exceptions, B states a strict rule."
 },
+"220f62ff4ccf75d3|fd80138dec8721c6": {
+"condition": "",
+"model": "deepseek/deepseek-v4-flash",
+"topic": "PRN antihypertensives",
+"verdict": "compatible",
+"why": "Dr. Ledbetter allows exceptions; Dr. Place's absolute statement is a stronger version of the same caution."
+},
+"22a83b79476b6e81|6798210af1491e44": {
+"condition": "fasting vs. 2-hour post-glucose load",
+"model": "deepseek/deepseek-v3.2",
+"topic": "insulin resistance ratio timing",
+"verdict": "depends",
+"why": "A uses fasting ratio; B uses post-glucose load ratio."
+},
 "230e5a94452e0178|7a215e594bc299c6": {
 "condition": "severity of reaction and number of epinephrine doses needed",
 "model": "deepseek/deepseek-v3.2",
@@ -104,6 +153,20 @@
 "verdict": "depends",
 "why": "One requires additional criteria for cath lab activation; the other says new LBBB with chest pain alone is enough."
 },
+"243b35ddc524338f|3bf8d2f79e7b259e": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "chronic insomnia treatment hierarchy",
+"verdict": "compatible",
+"why": "A is about drug choice if using drugs; B is about preferring CBT over drugs."
+},
+"268da592ce19510b|a2043a005b52d2af": {
+"condition": "presence of specific symptoms of a sleep disorder",
+"model": "deepseek/deepseek-v3.2",
+"topic": "sleep study for chronic insomnia",
+"verdict": "depends",
+"why": "Disagreement is on when to order a sleep study for unexplained insomnia."
+},
 "27a86a81ed1ea8dc|860ba6b602b59e66": {
 "condition": "whether the patient has hyperthyroidism requiring medication titration",
 "model": "deepseek/deepseek-v3.2",
@@ -117,6 +180,34 @@
 "topic": "Thyroid management in pregnancy",
 "verdict": "compatible",
 "why": "A is about initial testing and monitoring, B is about a treatment goal once therapy is started."
+},
+"28328693d19172c4|bf1ffd3eaed930a6": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "peripheral pressor duration",
+"verdict": "compatible",
+"why": "Both state pressors can run peripherally; one says 24h, the other 12h, but both agree central lines are for access, not pressors."
+},
+"2874de69f382be88|33897c911990182c": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Benzodiazepine taper strategy",
+"verdict": "compatible",
+"why": "A describes the taper schedule after switching; B describes the conversion step itself."
+},
+"294acc784c52574c|7ff54121cb9fb576": {
+"condition": "Whether using ultrasound guidance or targeting suprapatellar pouch",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Knee injection positioning",
+"verdict": "depends",
+"why": "Different goals: one optimizes joint space visualization, the other targets suprapatellar pouch."
+},
+"2b511ac238c1f198|f8d7a6ade94e6ecd": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Autoantibodies for IBS diagnosis",
+"verdict": "compatible",
+"why": "A states they can be used; B notes their limitations and ongoing controversy."
 },
 "2bd0d1363c07810a|3196bfb486b4e2ac": {
 "condition": "",
@@ -160,6 +251,13 @@
 "verdict": "depends",
 "why": "KDIGO 2021 recommends <120 for CKD with specific risks; other guidelines may use <130/80 for broader high-risk groups."
 },
+"33897c911990182c|e55c5dc235b0a6b4": {
+"condition": "Patient age and metabolic function",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Benzodiazepine taper choice",
+"verdict": "depends",
+"why": "General taper favors long-acting for stability; older adults may need short-acting due to metabolism."
+},
 "33b0158a190670bd|9c8a2a759e7693bb": {
 "condition": "",
 "model": "deepseek/deepseek-v3.2",
@@ -195,6 +293,13 @@
 "verdict": "compatible",
 "why": "B states standard referral threshold; A discusses expanded criteria for severe cases."
 },
+"3d725330b248864e|e0912f702ce8cd97": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Corticosteroid injection frequency limits",
+"verdict": "compatible",
+"why": "A limits per site, B limits total systemic exposure."
+},
 "40b27c95a84ff083|9832fb6ed39a58ac": {
 "condition": "stage of treatment: induction vs. maintenance",
 "model": "deepseek/deepseek-v3.2",
@@ -202,12 +307,26 @@
 "verdict": "depends",
 "why": "A is about initial dose during transition to avoid withdrawal; B is about target dose for overdose protection."
 },
+"41c216b869bd9bef|b28f37e0400fe285": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "TSH monitoring in pregnancy",
+"verdict": "compatible",
+"why": "Both recommend monthly checks; A adds specific timing details for later pregnancy."
+},
 "4389f46f7d15c9b1|7d2bdc9771ae8f4c": {
 "condition": "Clinician's priority: speed or patient comfort",
 "model": "deepseek/deepseek-v3.2",
 "topic": "Needle gauge for knee injection",
 "verdict": "depends",
 "why": "Different preferences for pain vs. injection speed; 22g faster, 25g less painful."
+},
+"45426c478d4bc8f8|59dd19d5f674f6d1": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "needle gauge for injections",
+"verdict": "compatible",
+"why": "Different injection sites have different tissue characteristics requiring different needle sizes."
 },
 "46d5edcd844a13fe|e118f5680cb06353": {
 "condition": "",
@@ -223,6 +342,13 @@
 "verdict": "compatible",
 "why": "A says avoid steroids for perioral dermatitis; B says if steroids are needed, use ointment."
 },
+"49d7f404b46b4455|52b59ac284bb6459": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Fibromyalgia diagnostic criteria",
+"verdict": "conflict",
+"why": "They specify different symptom severity score cutoffs (\u22655 vs >9)."
+},
 "49d7f404b46b4455|7cd80dd740055f90": {
 "condition": "Which specific set of criteria (e.g., 2010 vs. 2016) is being applied.",
 "model": "deepseek/deepseek-v3.2",
@@ -236,6 +362,13 @@
 "topic": "Eosinophils in COPD treatment",
 "verdict": "depends",
 "why": "One uses eosinophils to consider adding ICS; the other uses FEV1 and exacerbation history."
+},
+"5027f9495ff7c18b|f5c1c66fe0c97f67": {
+"condition": "Patient's attachment to specific benzodiazepine",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Benzodiazepine taper strategy",
+"verdict": "depends",
+"why": "One approach is for patients with strong psychological attachment to alprazolam."
 },
 "582c7a7d5816d64e|81675e3a41e3aa3c": {
 "condition": "Specific joint (knee) vs general blocks",
@@ -265,6 +398,20 @@
 "verdict": "compatible",
 "why": "Both describe the same formula but differ in threshold wording; both identify NAGMA when result is outside normal range."
 },
+"5aef36da931dcda6|b2767724c790cec6": {
+"condition": "Patient's willingness to engage in a taper plan",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Benzodiazepine management approach",
+"verdict": "depends",
+"why": "One addresses refusal to taper, the other outlines a taper schedule."
+},
+"5de75b1d81b5398c|8c1ac6e1f9edc6fa": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Bartholin cyst treatment",
+"verdict": "compatible",
+"why": "Both agree Word catheter is first-line; second quote clarifies marsupialization is for recurrence."
+},
 "5e569681b2653212|b34523677ac7f3c7": {
 "condition": "whether the patient is tachycardic and has preserved cardiac function",
 "model": "deepseek/deepseek-v3.2",
@@ -285,6 +432,13 @@
 "topic": "Clonazepam tapering reduction size",
 "verdict": "depends",
 "why": "One focuses on acceptability of any reduction at a very low dose; the other recommends smaller cuts generally due to drug properties."
+},
+"64b9af640217efc1|b4e1634dc649321a": {
+"condition": "Availability and wait time for rheumatology care",
+"model": "deepseek/deepseek-v3.2",
+"topic": "PCP starting methotrexate for RA",
+"verdict": "depends",
+"why": "One supports it in access-limited settings; the other discourages it generally."
 },
 "64cd7a6ca7d29b0e|a8023f9f5dc5f287": {
 "condition": "patient adherence to home monitoring",
@@ -307,12 +461,33 @@
 "verdict": "compatible",
 "why": "One details the medication and needle, the other warns about anatomical placement."
 },
+"6798210af1491e44|bbf7133a5360477e": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Insulin resistance ratio interpretation",
+"verdict": "conflict",
+"why": "A says ratio below 5 is abnormal; B says ratio above 4.5 indicates insulin resistance."
+},
+"6cbdc34e406a591c|e55c5dc235b0a6b4": {
+"condition": "Patient age and metabolic considerations",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Benzodiazepine tapering agent choice",
+"verdict": "depends",
+"why": "One recommends diazepam for easier dose adjustments; the other recommends short-acting for older adults due to metabolism."
+},
 "6da81391a3fe7942|eb4ba9062280bc93": {
 "condition": "Severity of exacerbation and patient's initial response to muscarinics",
 "model": "deepseek/deepseek-v3.2",
 "topic": "COPD exacerbation initial therapy",
 "verdict": "depends",
 "why": "One emphasizes full treatment including both bronchodilators and steroids; the other suggests a stepwise approach with beta-agonists second-line."
+},
+"6ea99f676db6f78d|b1f467fcf30cfe9e": {
+"condition": "Presence of respiratory acidosis vs. pure metabolic compensation",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Intubation in DKA",
+"verdict": "depends",
+"why": "One warns against intubation due to inability to match compensatory tachypnea; the other supports it for respiratory acidosis."
 },
 "7246d287fba20d18|9bd7b82b99353fa8": {
 "condition": "trimester of pregnancy",
@@ -328,12 +503,40 @@
 "verdict": "compatible",
 "why": "Both endorse amoxicillin first; A adds amoxicillin-clavulanate as alternative first-line, B calls it second-line."
 },
+"7b3c74e6f0216154|fdddb8766391cbad": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "MELD score mortality estimates",
+"verdict": "compatible",
+"why": "Different MELD scores (36 vs 35) have different mortality risks."
+},
+"7de4d84acc1d26af|81675e3a41e3aa3c": {
+"condition": "whether the injection is for plantar fascia or other sites",
+"model": "deepseek/deepseek-v3.2",
+"topic": "steroid injection volume and dose",
+"verdict": "depends",
+"why": "Dr. Rylander's standard mix is for general blocks; Dr. Sakirgil's is specific to plantar fascia."
+},
+"81675e3a41e3aa3c|967b7595e264324d": {
+"condition": "Whether injection is for AC joint or other sites",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Kenalog dose for joint injection",
+"verdict": "depends",
+"why": "Standard mix for general blocks vs small volume for tight AC joint space."
+},
 "81675e3a41e3aa3c|e4893e63716d93df": {
 "condition": "Whether injection is for knee joint or nerve block",
 "model": "deepseek/deepseek-v3.2",
 "topic": "Knee injection mixture volume",
 "verdict": "depends",
 "why": "Different total volumes and steroid doses for different injection types."
+},
+"81675e3a41e3aa3c|ff342c713de3987d": {
+"condition": "whether the injection is for a knee or other site",
+"model": "deepseek/deepseek-v3.2",
+"topic": "steroid injection formulation",
+"verdict": "depends",
+"why": "A gives a general mix for all blocks/joints; B specifies a knee injection recipe."
 },
 "81ca9fd44b100af0|f10e89fb0eb4458b": {
 "condition": "",
@@ -363,12 +566,33 @@
 "verdict": "depends",
 "why": "One is for hyperthyroidism treatment, the other for hypothyroidism management."
 },
+"88f0ea9faa00a226|ca20c7a82e73732a": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Massive transfusion protocol ratios",
+"verdict": "compatible",
+"why": "Both describe similar MTP ratios; 4:4:1 approximates 1:1:1 when scaled."
+},
+"89057a95ba5fe687|93d2c6c01c375dcd": {
+"condition": "Whether the patient is in cardiac arrest",
+"model": "deepseek/deepseek-v3.2",
+"topic": "IV epinephrine dose safety",
+"verdict": "depends",
+"why": "One is for cardiac arrest (1 mg IV push), the other is for living patients (0.5 mg IV is dangerous)."
+},
 "897b09bf13ef8fe0|b7fe4b98511ba9ad": {
 "condition": "",
 "model": "deepseek/deepseek-v3.2",
 "topic": "HCG doubling time in early pregnancy",
 "verdict": "compatible",
 "why": "Both describe similar doubling expectations, just with slightly different numerical examples."
+},
+"89ab4b4e26591a71|fdddb8766391cbad": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "MELD score mortality estimates",
+"verdict": "compatible",
+"why": "Different scores (36 vs 35) and different patient contexts (decompensated vs general cirrhosis)."
 },
 "8b939cae1df94b93|9655e6f13371bbc6": {
 "condition": "",
@@ -398,12 +622,33 @@
 "verdict": "depends",
 "why": "A advises against tablets for chronic management; B uses them for acute severe elevation in a specific high-risk scenario."
 },
+"967b7595e264324d|dd922498d58d59b8": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "AC joint injection volume",
+"verdict": "compatible",
+"why": "Both state the space is tight and limit volume; 1.5 mL total includes 1 mL of medication plus possible flush."
+},
 "9830086c58c2d45d|e3322d9bd9dbffec": {
 "condition": "",
 "model": "deepseek/deepseek-v3.2",
 "topic": "Dix-Hallpike test interpretation",
 "verdict": "compatible",
 "why": "A is about central cause if reflex is absent; B is about BPPV in other canals."
+},
+"9bd7b82b99353fa8|a1a1e919d4d1c936": {
+"condition": "trimester of pregnancy",
+"model": "deepseek/deepseek-v3.2",
+"topic": "antithyroid drug in pregnancy",
+"verdict": "depends",
+"why": "Guidance differs by trimester: PTU preferred in first trimester, methimazole later."
+},
+"9cbd96921546b1e7|f5c0ba1dbf024830": {
+"condition": "Whether the emergency is a general hypertensive emergency or a specific acute ischemic stroke",
+"model": "deepseek/deepseek-v3.2",
+"topic": "Hypertension management in emergencies",
+"verdict": "depends",
+"why": "Different conditions: hypertensive emergency vs acute ischemic stroke without tPA."
 },
 "9cdefdfd7d8f3ab6|c53250b66cf3e9b5": {
 "condition": "patient has treatment-resistant melancholic depression",
@@ -418,6 +663,20 @@
 "topic": "Managing benzodiazepine prescriptions",
 "verdict": "compatible",
 "why": "A addresses ending a doctor-patient relationship; B addresses avoiding co-prescribing within a relationship."
+},
+"9f2d4d517bd92bc9|a0e0c7b79140c533": {
+"condition": "Whether the patient has a pulmonary embolism",
+"model": "deepseek/deepseek-v3.2",
+"topic": "PEEP in intubated patients",
+"verdict": "depends",
+"why": "Teaching A is for PE patients to avoid hemodynamic compromise. Teaching B is for general initial ventilation."
+},
+"a2043a005b52d2af|c89a0335f941e0a0": {
+"condition": "whether patient has symptoms of another sleep disorder",
+"model": "deepseek/deepseek-v3.2",
+"topic": "sleep study for insomnia",
+"verdict": "depends",
+"why": "Both agree sleep studies are not for insomnia alone; disagreement is on what triggers one."
 },
 "a20f97da3defe604|d157f5e7d1791748": {
 "condition": "Stage of clinical reasoning: initial vs. unclear management",
@@ -489,6 +748,13 @@
 "verdict": "depends",
 "why": "Different guidelines: one is broader with risk factors, the other is USPSTF criteria."
 },
+"d691c0842c813c9e|ebe1b54480ab03c3": {
+"condition": "whether melanoma is suspected",
+"model": "deepseek/deepseek-v3.2",
+"topic": "biopsy type for skin lesions",
+"verdict": "depends",
+"why": "Teaching A is for general vulvar lesions, B is specifically for suspected melanoma."
+},
 "d8225df9cc72f531|f99083def094aafc": {
 "condition": "",
 "model": "deepseek/deepseek-v3.2",
@@ -502,6 +768,20 @@
 "topic": "RV size in right heart strain",
 "verdict": "depends",
 "why": "Different criteria for different types of RV strain or different imaging views."
+},
+"e55c5dc235b0a6b4|f6e302ab017dfb0a": {
+"condition": "patient age and whether starting or tapering",
+"model": "deepseek/deepseek-v3.2",
+"topic": "benzodiazepine selection",
+"verdict": "depends",
+"why": "A is a general rule for new prescriptions; B is for tapers in older adults."
+},
+"e98f0a4341784923|f26ebb56189e912f": {
+"condition": "",
+"model": "deepseek/deepseek-v3.2",
+"topic": "delta-delta calculation interpretation",
+"verdict": "conflict",
+"why": "Both formulas differ: one uses (AG-12)+HCO3 <22, the other uses (AG-12)-HCO3 >1 for the same conclusion."
 },
 "ef6a8a162ef56710|f6e302ab017dfb0a": {
 "condition": "",

@@ -133784,7 +133784,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-194"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-194",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After the patient finishes, ask 'Is there anything else?' to ensure you have the full story.",
@@ -133797,7 +133813,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-201"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-201",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use OPQRST to systematically gather details of the pain.",
@@ -133810,7 +133842,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-277"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-277",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:opqrst"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "While taking OPQRST, think about your differential diagnosis and ask about pertinent associated symptoms to rule conditions in or out.",
@@ -133823,7 +133874,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-286"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-286",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:differential diagnosis"
+          ],
+          "actionable": [
+            "ask about"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected gallstone pancreatitis, order a right upper quadrant ultrasound.",
@@ -133836,7 +133906,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-1027"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-1027",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always ask about trauma history as a potential cause of pancreatitis.",
@@ -133849,7 +133938,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-1148"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-1148",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pancreatitis"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 5.64
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If malignancy is suspected as cause of pancreatitis, consider endoscopic ultrasound (EUS).",
@@ -133862,7 +133970,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected malignant cause of pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-1183"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-1183",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In acute pancreatitis, leukocytosis and fever are often reactive to inflammation; do not diagnose sepsis without meeting full SIRS criteria and evidence of infection.",
@@ -133875,7 +134002,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-1944"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-1944",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:acute pancreatitis"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In acute pancreatitis, antibiotics are indicated only when there is necrotizing pancreatitis involving greater than 30% of the pancreas or a pancreatic abscess.",
@@ -133888,7 +134037,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-2035"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-2035",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:greater than 3"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If there is no necrotizing pancreatitis or abscess, antibiotics are unindicated in acute pancreatitis; no benefit and risks outweigh benefits.",
@@ -133901,7 +134066,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis without necrosis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-2094"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-2094",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:necrotizing pancreatit"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid using 'voting plans' (problem lists) in documentation; seniors should ensure interns write proper assessments and plans.",
@@ -133914,7 +134095,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient documentation",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-2273"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-2273",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:documentation"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The indication for MRCP in acute pancreatitis is to rule in or out the presence of choledocholithiasis.",
@@ -133927,7 +134127,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis and concern for common bile duct stone",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-2310"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-2310",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:choledocholithiasis"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Concern for choledocholithiasis is raised by a dilated common bile duct on ultrasound and elevated bilirubin and alkaline phosphatase.",
@@ -133940,7 +134156,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with gallstone pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-2330"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-2330",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not go straight to ERCP in acute pancreatitis; instrumentation can exacerbate the pancreatic inflammation.",
@@ -133953,7 +134185,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-2651"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-2651",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acute pancreatitis"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A HIDA scan is used to detect an obstructing stone in the neck of the gallbladder, not just for bile leak.",
@@ -133966,7 +134217,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected gallbladder neck obstruction",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-2797"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-2797",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hida scan"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HIDA scan evaluates gallbladder function by giving CCK and measuring ejection fraction; if function is poor, cholecystectomy is indicated.",
@@ -133979,7 +134246,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected gallbladder disease",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-2835"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-2835",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ejection fraction"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Surgeons use HIDA scan to determine need for cholecystectomy when gallbladder disease is suspected but no stones are seen on imaging.",
@@ -133992,7 +134275,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected gallbladder disease but no stones on imaging",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-2849"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-2849",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cholecystectomy"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Remember and practice the basics because they are what you will see most commonly in daily practice.",
@@ -134005,7 +134307,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general clinical practice",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-3544"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-3544",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "rarity": 6.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When you are stuck on management, stop and reopen the differential instead of just acting.",
@@ -134018,7 +134336,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any clinical situation when management plan is unclear",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-3583"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-3583",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid floating plans; they allow you to list ideas without thinking, which is not practicing medicine.",
@@ -134031,7 +134365,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any clinical plan",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-3653"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-3653",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:floating plan"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For ileus, order Reglan 5 mg IV every 6 hours routine in addition to Zofran.",
@@ -134044,7 +134397,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ileus",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-4330"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-4330",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:5 mg",
+            "frequency:every 6"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pancreatitis shows inflammatory changes but is not necessarily infectious; antibiotics are not automatically indicated.",
@@ -134057,7 +134430,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-4375"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-4375",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pancreatitis"
+          ],
+          "rarity": 6.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Acute pancreatitis itself can produce leukocytosis, hypotension, and CT changes without infected necrosis, don't label the patient as having sepsis just from the pancreatitis.",
@@ -134070,7 +134459,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acute pancreatitis meeting SIRS criteria",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-4375-2"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-4375-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "harm": [
+            "necrosis"
+          ],
+          "rarity": 7.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When writing a plan for sepsis, specify the source and rationale for antibiotics; 'sepsis' alone is a finding, not a plan.",
@@ -134084,7 +134495,26 @@
       "prompt_version": "v1",
       "applies_to": "when writing assessment and plan for sepsis",
       "by_presenter": false,
-      "pearl_id": "two-cases-with-dr-lawrence-lee-4429"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-4429",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not write 'sepsis' without naming the source in the problem list, e.g., 'sepsis due to acute pancreatitis.' It must have a source.",
@@ -134097,7 +134527,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians writing problem lists",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-4514"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-4514",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:acute pancreatitis"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 6.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "On night call with an unclear infection source, don't reflexively 'give a dose and sort it out in the morning', that dose carries anaphylaxis/death risk.",
@@ -134110,7 +134562,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "night call, unclear infection source",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-4585"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-4585",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:anaphylaxis"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 6.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the ED already gave a dose of antibiotics, you don't need to continue them just to defer the decision to the day team, the patient already has some coverage.",
@@ -134124,7 +134598,26 @@
       "prompt_version": "v1",
       "applies_to": "hospitalized patients already given one antibiotic dose in the ED",
       "by_presenter": false,
-      "pearl_id": "two-cases-with-dr-lawrence-lee-4833"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-4833",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In hospitalized patients, ~90% of 'UTIs' are actually asymptomatic bacteriuria; only call it UTI (and treat) in pregnancy or in males.",
@@ -134137,7 +134630,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with positive urine tests (exceptions: pregnancy, male)",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-4852"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-4852",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:asymptomatic bacteriur"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In acute pancreatitis, atelectasis is often from splinting due to pain with deep breaths (diaphragm movement), not pneumonia, don't reflexively give antibiotics.",
@@ -134150,7 +134662,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acute pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-4917"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-4917",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acute pancreatitis"
+          ],
+          "actionable": [
+            "don't"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Judge hypotension for sepsis by the trend in blood pressures, not a single reading.",
@@ -134163,7 +134694,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "evaluating sepsis criteria/vitals",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-5036"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-5036",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypotension"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 6.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When you write 'severe sepsis,' expect a CDI query asking you to document the specific criteria (e.g., leukocytosis plus hypotension); indicate them on your dictation to satisfy the query.",
@@ -134176,7 +134726,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospital documentation (US)",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-5054"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-5054",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:leukocytosis"
+          ],
+          "actionable": [
+            "document"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you stop antibiotics started by a previous provider, write in the chart why you are not giving them, the validation protects you and explains the decision.",
@@ -134189,7 +134761,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "when discontinuing antibiotics started by another provider",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-5203"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-5203",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In acute pancreatitis, hyperglycemia worsens because the inflamed pancreas can't keep up insulin production; rising sugars track with worse prognosis.",
@@ -134203,7 +134794,23 @@
       "prompt_version": "v1",
       "applies_to": "acute pancreatitis with hyperglycemia",
       "by_presenter": false,
-      "pearl_id": "two-cases-with-dr-lawrence-lee-5382"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-5382",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:acute pancreatitis"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In acute pancreatitis, a falling calcium (to 6.8) is a red flag for worsening severity, track it along with albumin.",
@@ -134219,7 +134826,23 @@
       "numbers_unheard": [
         "6.8"
       ],
-      "pearl_id": "two-cases-with-dr-lawrence-lee-5634"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-5634",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:acute pancreatitis"
+          ],
+          "rarity": 6.76
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hypocalcemia in acute pancreatitis is a marker of severity, not a driver of disease; it is a bystander and does not need routine replacement.",
@@ -134232,7 +134855,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-5870"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-5870",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:acute pancreatitis"
+          ],
+          "rarity": 7.98
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Administration of IV calcium in pancreatitis was associated with increased risk of death and worsening organ failure, though patients who received it had higher APACHE scores.",
@@ -134245,7 +134884,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis and hypocalcemia",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-5915"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-5915",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:apache score"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 7.49
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Persistent tachycardia, hypotension, rising WBC/bands, falling bicarbonate, and rising BUN/creatinine despite IVF signal worsening pancreatitis or complications.",
@@ -134258,7 +134916,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-6053"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-6053",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pancreatitis"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ARDS is a known complication of severe pancreatitis due to systemic inflammatory response; consider it when oxygen requirement rises.",
@@ -134271,7 +134945,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe acute pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-6214"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-6214",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pancreatitis"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always frame orders by stating your clinical concern first: 'I am concerned about X, therefore I will do Y' rather than just ordering a test.",
@@ -134284,7 +134977,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinical settings",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-6227"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-6227",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Each patient is an n-of-1; having 20 other patients is never an excuse for missing deterioration in a critically ill patient.",
@@ -134297,7 +135006,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinical settings",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-6297"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-6297",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "never"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A patient may appear well on exam despite alarming vital signs and labs; this can create a dangerous cognitive bias that delays recognition of deterioration.",
@@ -134310,7 +135035,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-6411"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-6411",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cognitive bias"
+          ],
+          "harm": [
+            "dangerous"
+          ],
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a consultant expresses concern, ask for their reasoning: 'Why do you think he's not doing well? What is your concern?' rather than deferring decision-making.",
@@ -134324,7 +135068,20 @@
       "prompt_version": "v1",
       "applies_to": "when receiving consultant calls",
       "by_presenter": false,
-      "pearl_id": "two-cases-with-dr-lawrence-lee-6519"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-6519",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Serial assessment of mental status, respiratory rate, oxygen requirement, and volume status is critical in pancreatitis; encephalopathy is a definite change that warrants immediate attention.",
@@ -134337,7 +135094,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-6554"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-6554",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:encephalopathy"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lipase improvement does not rule out worsening pancreatitis; clinical status and organ failure markers are more important.",
@@ -134351,7 +135124,26 @@
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
       "by_presenter": false,
-      "pearl_id": "two-cases-with-dr-lawrence-lee-6721"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-6721",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pancreatitis"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 7.13
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When clinical data are limited and the patient is unstable, make a decision with the information available rather than waiting for additional tests.",
@@ -134364,7 +135156,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "unstable patients with limited information",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-7144"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-7144",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 5.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Never give BiPAP to an encephalopathic patient because they cannot protect their airway.",
@@ -134377,7 +135182,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with encephalopathy",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-7297"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-7297",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:bipap"
+          ],
+          "actionable": [
+            "Never"
+          ],
+          "harm": [
+            "Never give"
+          ],
+          "rarity": 7.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a critically ill patient with septic shock and no clear source of infection, presumptively cover with empiric antibiotics for the possibility of bacterial superinfection.",
@@ -134390,7 +135217,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "critically ill patients with septic shock and no clear source of infection",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-7692"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-7692",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:empiric antibiotics"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient becomes hemodynamically unstable after intubation, do not reflexively give fluids and pressors; first reassess the patient to determine the cause.",
@@ -134403,7 +135249,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with new hemodynamic instability after intubation",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-7801"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-7801",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:intubation"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In acute pancreatitis, shock is often hypovolemic due to third spacing rather than septic, so fluid and pressor management should target volume depletion.",
@@ -134416,7 +135281,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis and shock",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-7950"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-7950",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:acute pancreatitis"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with waxing and waning encephalopathy and hemodynamic instability, elective intubation is preferable to emergent intubation to safely secure the airway.",
@@ -134429,7 +135313,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "critically ill patients with encephalopathy and hemodynamic instability",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-8007"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-8007",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hemodynamic instabilit"
+          ],
+          "harm": [
+            "emergent"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In distributive shock from pancreatitis, the cause is third spacing, not sepsis; this leads to decreased effective arterial blood volume and renal hypoperfusion.",
@@ -134442,7 +135345,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute pancreatitis",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-8045"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-8045",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:effective arterial blo"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use Winter's formula to find expected PCO2: (1.5 x bicarb) + 8 ± 2. If actual PCO2 is higher, there is a superimposed respiratory acidosis.",
@@ -134458,7 +135380,29 @@
       "numbers_unheard": [
         "1.5"
       ],
-      "pearl_id": "two-cases-with-dr-lawrence-lee-8192"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-8192",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:respiratory acidosis"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 6.74,
+          "capped": [
+            "number not heard: 1.5"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Calculate the delta-delta gap: (actual anion gap - 12) + bicarb. If the result is <22, there is a concurrent non-anion gap metabolic acidosis.",
@@ -134474,7 +135418,29 @@
       "numbers_unheard": [
         "22"
       ],
-      "pearl_id": "two-cases-with-dr-lawrence-lee-8267"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-8267",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:<2"
+          ],
+          "actionable": [
+            "Calculate"
+          ],
+          "rarity": 7.31,
+          "capped": [
+            "number not heard: 22"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient on a ventilator with worsening renal function and third spacing, consider ATN from hypoperfusion rather than contrast nephropathy from gadolinium.",
@@ -134487,7 +135453,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pancreatitis and acute kidney injury",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-8390"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-8390",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:third spacing"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gadolinium contrast does not cause renal failure like CT contrast does; it is more harmful if you already have renal failure, especially when GFR is 30 and below.",
@@ -134500,7 +135485,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with renal failure",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-8419"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-8419",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When the pH is normal but bicarb is low (e.g., 19), use Winter's formula; if the actual PCO2 is lower than expected, the patient has a respiratory alkalosis superimposed on the metabolic acidosis.",
@@ -134513,7 +135514,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with normal pH and low bicarb",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-8559"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-8559",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:respiratory alkalosis"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a ventilated patient, the target CVP is 12-15, not 8-12 which is for non-ventilated patients.",
@@ -134526,7 +135546,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "ventilated patients",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-8716"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-8716",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When consultants disagree on fluid management, reassess the patient yourself and facilitate a conference call between services.",
@@ -134539,7 +135572,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "attending caught between conflicting specialist recommendations",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-8967"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-8967",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "reassess"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When pulmonary wants fluids and renal wants diuresis, gather information to reassess volume status and discuss with both specialists to align goals.",
@@ -134552,7 +135601,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "attending managing conflicting consultant recommendations",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-9051"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-9051",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "reassess"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient who is hypervolemic but intravascularly depleted, doing nothing is an action; no immediate change to fluids may be correct.",
@@ -134565,7 +135630,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with third spacing and hypoperfusion",
-      "pearl_id": "two-cases-with-dr-lawrence-lee-9316"
+      "pearl_id": "two-cases-with-dr-lawrence-lee-9316",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "change to"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

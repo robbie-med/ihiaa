@@ -25056,7 +25056,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "jurisdictions considering legalization",
-      "pearl_id": "physician-assisted-suicide-ledbetter-867"
+      "pearl_id": "physician-assisted-suicide-ledbetter-867",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:slippery slope"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "There is a morally significant difference between actively killing a patient (e.g., injecting a lethal drug) and passively allowing them to die (e.g., withdrawing life support).",
@@ -25070,7 +25086,23 @@
       "prompt_version": "v1",
       "applies_to": "end-of-life decision-making",
       "by_presenter": false,
-      "pearl_id": "physician-assisted-suicide-ledbetter-970"
+      "pearl_id": "physician-assisted-suicide-ledbetter-970",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "lethal"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "From a biblical worldview, view patients requesting assisted suicide with love and compassion, recognizing they are created by God and have purpose, even when suffering.",
@@ -25084,7 +25116,23 @@
       "prompt_version": "v1",
       "applies_to": "Christian physicians caring for suffering patients",
       "by_presenter": false,
-      "pearl_id": "physician-assisted-suicide-ledbetter-1036"
+      "pearl_id": "physician-assisted-suicide-ledbetter-1036",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:assisted suicide"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When managing pain at the end of life, give opioids to relieve suffering, but avoid giving a dose you know will kill the patient with the purpose of killing them.",
@@ -25097,7 +25145,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients at end of life with suffering",
-      "pearl_id": "physician-assisted-suicide-ledbetter-1081"
+      "pearl_id": "physician-assisted-suicide-ledbetter-1081",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:suffering"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "kill"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Legalizing euthanasia can lead to insurance companies covering death but not life-saving treatment, as seen in a case where a woman with cancer was denied chemo but offered coverage for her death.",
@@ -25110,7 +25180,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in jurisdictions with legalized euthanasia",
-      "pearl_id": "physician-assisted-suicide-ledbetter-1264"
+      "pearl_id": "physician-assisted-suicide-ledbetter-1264",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:euthanasia"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The slippery slope from a right to die can progress to an obligation to die and eventually to involuntary killing by physicians.",
@@ -25123,7 +25212,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "physician-assisted-suicide-ledbetter-1391"
+      "pearl_id": "physician-assisted-suicide-ledbetter-1391",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:slippery slope"
+          ],
+          "harm": [
+            "die"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If killing is objectively wrong, the fact that a patient wants to kill themselves does not change the morality of the act.",
@@ -25136,7 +25244,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "physician-assisted-suicide-ledbetter-1459"
+      "pearl_id": "physician-assisted-suicide-ledbetter-1459",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "kill"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Relieving pain and suffering by killing someone does not make killing a moral good if killing is objectively wrong.",
@@ -25149,7 +25273,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "physician-assisted-suicide-ledbetter-1479"
+      "pearl_id": "physician-assisted-suicide-ledbetter-1479",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:suffering"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Physicians should learn better palliative care to alleviate suffering within moral boundaries rather than resorting to killing.",
@@ -25162,7 +25302,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians caring for suffering patients",
-      "pearl_id": "physician-assisted-suicide-ledbetter-1507"
+      "pearl_id": "physician-assisted-suicide-ledbetter-1507",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:palliative care"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Using limited resources as a justification for killing patients is morally problematic.",
@@ -25175,7 +25331,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "physician-assisted-suicide-ledbetter-1541"
+      "pearl_id": "physician-assisted-suicide-ledbetter-1541",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "It is important for physicians to know where they stand on assisted suicide and why, so they can thoughtfully engage with patients who ask about it.",
@@ -25188,7 +25357,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians",
-      "pearl_id": "physician-assisted-suicide-ledbetter-1614"
+      "pearl_id": "physician-assisted-suicide-ledbetter-1614",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:assisted suicide"
+          ],
+          "actionable": [
+            "ask about"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient asks for help with assisted suicide, it is acceptable to say it is illegal, but they may cross state lines to access it where legal.",
@@ -25201,7 +25389,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians in states where assisted suicide is illegal",
-      "pearl_id": "physician-assisted-suicide-ledbetter-1626"
+      "pearl_id": "physician-assisted-suicide-ledbetter-1626",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:assisted suicide"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -31975,7 +31975,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute facial weakness",
-      "pearl_id": "dr-whitaker-on-cva-management-884"
+      "pearl_id": "dr-whitaker-on-cva-management-884",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:stroke"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In the initial assessment of suspected stroke, check a fingerstick glucose immediately because hypoglycemia is a common stroke mimic.",
@@ -31988,7 +32007,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected acute stroke",
-      "pearl_id": "dr-whitaker-on-cva-management-1109"
+      "pearl_id": "dr-whitaker-on-cva-management-1109",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hypoglycemia"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 6.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Perform a non-contrast CT head immediately in suspected stroke to rule out hemorrhage before considering thrombolytics.",
@@ -32001,7 +32042,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected acute stroke",
-      "pearl_id": "dr-whitaker-on-cva-management-1150"
+      "pearl_id": "dr-whitaker-on-cva-management-1150",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:CT"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "tPA inclusion criteria: age >18, clinical diagnosis of ischemic stroke with a significant ongoing deficit, and onset within 4.5 hours (with additional cautions for the 3-4.5 hour window).",
@@ -32014,7 +32077,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected acute ischemic stroke",
-      "pearl_id": "dr-whitaker-on-cva-management-1374"
+      "pearl_id": "dr-whitaker-on-cva-management-1374",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4.5 hours",
+            "threshold:>1"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not give tPA if the patient has had a stroke or intracranial/spinal surgery within the past 3 months, or a GI hemorrhage within the past 3 weeks.",
@@ -32027,7 +32110,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being considered for tPA",
-      "pearl_id": "dr-whitaker-on-cva-management-1442"
+      "pearl_id": "dr-whitaker-on-cva-management-1442",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:3 months"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "Do not give"
+          ],
+          "rarity": 6.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not give tPA if blood pressure is persistently >185/110 despite intervention, as this is an exclusion criterion.",
@@ -32040,7 +32145,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being considered for tPA",
-      "pearl_id": "dr-whitaker-on-cva-management-1470"
+      "pearl_id": "dr-whitaker-on-cva-management-1470",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "threshold:>1"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "Do not give"
+          ],
+          "rarity": 7.47
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not give tPA if platelets are <100,000 or if the patient is on therapeutic LMWH within the past 24 hours or currently on a DOAC.",
@@ -32053,7 +32180,30 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being considered for tPA",
-      "pearl_id": "dr-whitaker-on-cva-management-1497"
+      "pearl_id": "dr-whitaker-on-cva-management-1497",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:24 hours",
+            "threshold:<1"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "Do not give"
+          ],
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For the 3-4.5 hour window, additional cautions for tPA include age >80, severe stroke (NIHSS >25), or combination of prior stroke and diabetes.",
@@ -32069,7 +32219,30 @@
       "numbers_unheard": [
         "80"
       ],
-      "pearl_id": "dr-whitaker-on-cva-management-1543"
+      "pearl_id": "dr-whitaker-on-cva-management-1543",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4.5 hour",
+            "threshold:>8"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.2,
+          "capped": [
+            "number not heard: 80"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use CTA for rapid vascular imaging in acute stroke; reserve MRA for patients with contraindications to contrast (e.g., renal failure) since it takes longer.",
@@ -32082,7 +32255,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected acute stroke",
-      "pearl_id": "dr-whitaker-on-cva-management-1833"
+      "pearl_id": "dr-whitaker-on-cva-management-1833",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:stroke"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Residents must be signed off by speech therapy to legally perform the bedside swallow screen; it is recommended to arrange a group session with speech therapy to get everyone signed off.",
@@ -32095,7 +32290,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents in hospital setting",
-      "pearl_id": "dr-whitaker-on-cva-management-1912"
+      "pearl_id": "dr-whitaker-on-cva-management-1912",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bedside swallow screen"
+          ],
+          "actionable": [
+            "screen"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Get signed off by speech therapy to perform bedside swallow screens; this allows you to clear patients for diet without waiting for speech therapy to come in the next morning.",
@@ -32108,7 +32322,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents managing stroke patients in the hospital",
-      "pearl_id": "dr-whitaker-on-cva-management-1925"
+      "pearl_id": "dr-whitaker-on-cva-management-1925",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bedside swallow screen"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To perform a bedside swallow screen, first check for posterior circulation stroke, alertness, ability to sit up, and facial/palatal asymmetry; if all clear, proceed with a 3-ounce water swallow test.",
@@ -32121,7 +32351,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients with suspected stroke",
-      "pearl_id": "dr-whitaker-on-cva-management-1950"
+      "pearl_id": "dr-whitaker-on-cva-management-1950",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:posterior circulation "
+          ],
+          "actionable": [
+            "screen"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.73
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For the bedside swallow screen, first check for posterior stroke suspicion, alertness, ability to sit up, oral secretions, facial asymmetry, and palatal asymmetry; if any are abnormal, stop and wait for speech therapy.",
@@ -32134,7 +32386,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected stroke",
-      "pearl_id": "dr-whitaker-on-cva-management-1950-2"
+      "pearl_id": "dr-whitaker-on-cva-management-1950-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:bedside swallow screen"
+          ],
+          "actionable": [
+            "screen"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During the swallow screen, have the patient take a small sip, hold it, swallow, then repeat 'a b c one two three' to check for voice quality changes; coughing or voice changes indicate failure.",
@@ -32147,7 +32421,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing bedside swallow screen",
-      "pearl_id": "dr-whitaker-on-cva-management-2015"
+      "pearl_id": "dr-whitaker-on-cva-management-2015",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cough"
+          ],
+          "actionable": [
+            "screen"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the first sip is tolerated, have the patient drink three ounces continuously; observe for another minute for coughing or aspiration signs before clearing them for diet.",
@@ -32160,7 +32453,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients passing initial sip test",
-      "pearl_id": "dr-whitaker-on-cva-management-2030"
+      "pearl_id": "dr-whitaker-on-cva-management-2030",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:aspiration"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For thrombectomy candidacy, the time window is 4.5 to 24 hours; order CTA stat to evaluate for large artery occlusion, especially anterior circulation (ICA, ACA, MCA).",
@@ -32173,7 +32482,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute ischemic stroke within 4.5–24 hours",
-      "pearl_id": "dr-whitaker-on-cva-management-2072"
+      "pearl_id": "dr-whitaker-on-cva-management-2072",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If CTA shows a large artery occlusion, call neurosurgery to determine if the patient is a candidate for thrombectomy; the sweet spot is around 16 hours.",
@@ -32186,7 +32514,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with large artery occlusion on CTA",
-      "pearl_id": "dr-whitaker-on-cva-management-2149"
+      "pearl_id": "dr-whitaker-on-cva-management-2149",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:16 hours"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For DVT prophylaxis, start enoxaparin within 24 hours if no tPA; if tPA given, wait 24 hours. Standard of care is to start something within 48 hours if no contraindication.",
@@ -32199,7 +32543,30 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acute ischemic stroke patients",
-      "pearl_id": "dr-whitaker-on-cva-management-2408"
+      "pearl_id": "dr-whitaker-on-cva-management-2408",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:24 hours",
+            "drug:enoxaparin"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "harm": [
+            "contraindication"
+          ],
+          "rarity": 6.9
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After tPA, keep blood pressure below 180/105; before tPA, must be below 185/110 to administer.",
@@ -32215,7 +32582,29 @@
       "numbers_unheard": [
         "105"
       ],
-      "pearl_id": "dr-whitaker-on-cva-management-2600"
+      "pearl_id": "dr-whitaker-on-cva-management-2600",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:below 1"
+          ],
+          "actionable": [
+            "administer"
+          ],
+          "rarity": 6.18,
+          "capped": [
+            "number not heard: 105"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For blood pressure in acute ischemic stroke without tPA, allow permissive hypertension up to 220/120 in the first 24 hours; if treating, aim for only a 15% reduction.",
@@ -32228,7 +32617,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acute ischemic stroke patients without tPA",
-      "pearl_id": "dr-whitaker-on-cva-management-2611"
+      "pearl_id": "dr-whitaker-on-cva-management-2611",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:24 hours",
+            "threshold:220/120"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For cryptogenic strokes with no clear cause, consider a 30-day event monitor or MCOT to screen for atrial fibrillation.",
@@ -32241,7 +32650,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cryptogenic stroke",
-      "pearl_id": "dr-whitaker-on-cva-management-2674"
+      "pearl_id": "dr-whitaker-on-cva-management-2674",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:atrial fibrillation"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

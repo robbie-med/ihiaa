@@ -52272,7 +52272,29 @@
       "numbers_unheard": [
         "24"
       ],
-      "pearl_id": "the-condies-on-surgery-240"
+      "pearl_id": "the-condies-on-surgery-240",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 8.52,
+          "capped": [
+            "number not heard: 24"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In children with dengue, avoid aspirin and NSAIDs because of the risk of Reye syndrome.",
@@ -52285,7 +52307,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with dengue",
-      "pearl_id": "the-condies-on-surgery-296"
+      "pearl_id": "the-condies-on-surgery-296",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:reye syndrome"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.34
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For malaria diagnosis, rapid antigen test can be used but may be negative due to mutations; if positive it's helpful, if negative it's not so helpful.",
@@ -52298,7 +52339,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected malaria",
-      "pearl_id": "the-condies-on-surgery-369"
+      "pearl_id": "the-condies-on-surgery-369",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:malaria"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Uncomplicated malaria can progress to severe illness in nonimmune individuals within hours, so do not delay treatment.",
@@ -52311,7 +52368,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "nonimmune individuals with malaria",
-      "pearl_id": "the-condies-on-surgery-395"
+      "pearl_id": "the-condies-on-surgery-395",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:malaria"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In endemic areas, presumptive antimalarial treatment for fever is the standard of care; artemether-lumefantrine is very cheap in Pakistan.",
@@ -52324,7 +52400,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fever in malaria-endemic areas",
-      "pearl_id": "the-condies-on-surgery-409"
+      "pearl_id": "the-condies-on-surgery-409",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:artemether-lumefantrin"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Measles is diagnosed by the triad of cough, coryza, and conjunctivitis, plus Koplik spots (white lacy spots on a red base) before the rash appears.",
@@ -52337,7 +52429,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected measles",
-      "pearl_id": "the-condies-on-surgery-529"
+      "pearl_id": "the-condies-on-surgery-529",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:conjunctivitis"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a 6-month-old traveling to Pakistan, give MMR vaccine (can be given down to 6 months) and then continue the regular schedule at 12, 15 months and 4, 6 years.",
@@ -52350,7 +52458,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "infants 6 months and older traveling to measles-endemic areas",
-      "pearl_id": "the-condies-on-surgery-659"
+      "pearl_id": "the-condies-on-surgery-659",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Measles causes increased infection-related mortality for three years after infection due to T-cell lymphopenia and decreased antibody production.",
@@ -52363,7 +52490,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who have had measles",
-      "pearl_id": "the-condies-on-surgery-705"
+      "pearl_id": "the-condies-on-surgery-705",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:measles"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SSPE (subacute sclerosing panencephalitis) occurs 5, 10 years after natural measles infection, has a very poor prognosis, and is more likely in children who had measles under 1 year of age.",
@@ -52376,7 +52519,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with history of measles under 1 year of age",
-      "pearl_id": "the-condies-on-surgery-793"
+      "pearl_id": "the-condies-on-surgery-793",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 years",
+            "threshold:under 1"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Neonatal tetanus presents with poor feeding, increased tone, and a characteristic unusual smile (risus sardonicus); risk factors include unclean cord cutting and incomplete maternal vaccination.",
@@ -52389,7 +52549,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates with poor feeding and hypertonia",
-      "pearl_id": "the-condies-on-surgery-863"
+      "pearl_id": "the-condies-on-surgery-863",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:neonatal tetanus"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a child with acute flaccid paralysis, distinguish polio from Guillain-Barré: polio is asymmetric, proximal > distal, with normal sensation; Guillain-Barré is symmetric, distal > proximal, and painful.",
@@ -52402,7 +52578,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with acute flaccid paralysis",
-      "pearl_id": "the-condies-on-surgery-1017"
+      "pearl_id": "the-condies-on-surgery-1017",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:polio"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Oral polio vaccine (OPV) induces mucosal immunity that prevents transmission, while inactivated polio vaccine (IPV) does not; OPV is preferred in endemic areas but can lead to circulating vaccine-derived poliovirus.",
@@ -52415,7 +52607,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "population in polio-endemic areas",
-      "pearl_id": "the-condies-on-surgery-1127"
+      "pearl_id": "the-condies-on-surgery-1127",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:polio"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For rabies post-exposure prophylaxis in an unvaccinated person, give vaccine on days 0, 3, 7, and 14 plus rabies immune globulin. If previously vaccinated, only need vaccine on days 0 and 3.",
@@ -52428,7 +52636,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "unvaccinated individuals with rabies exposure",
-      "pearl_id": "the-condies-on-surgery-1410"
+      "pearl_id": "the-condies-on-surgery-1410",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:rabies post-exposure p"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Herpes encephalitis should be suspected in a child with focal seizures, personality changes, and temporal lobe involvement on MRI; treat with 14 days of acyclovir.",
@@ -52441,7 +52668,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with suspected herpes encephalitis",
-      "pearl_id": "the-condies-on-surgery-1537"
+      "pearl_id": "the-condies-on-surgery-1537",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:14 days",
+            "test:MRI"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In neonates, the CBC is often inaccurate for diagnosing sepsis; a normal CRP (<1) that stays low makes bacterial infection less likely.",
@@ -52454,7 +52701,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates with suspected infection",
-      "pearl_id": "the-condies-on-surgery-1699"
+      "pearl_id": "the-condies-on-surgery-1699",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:<1",
+            "test:CBC"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For early-onset neonatal sepsis, use the Kaiser sepsis calculator for risk assessment; it is more reliable than CBC.",
@@ -52467,7 +52734,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates with suspected early-onset sepsis",
-      "pearl_id": "the-condies-on-surgery-1713"
+      "pearl_id": "the-condies-on-surgery-1713",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:CBC"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For neonates with spontaneous rupture of membranes, observe in the hospital for at least two days. Teach mothers to take the temperature and return immediately if it exceeds 38°C.",
@@ -52480,7 +52769,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "neonates with spontaneous rupture of membranes",
-      "pearl_id": "the-condies-on-surgery-1734"
+      "pearl_id": "the-condies-on-surgery-1734",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In hepatitis A, follow the INR; if it stays below 1.5 and bilirubin is not rising, the patient is likely recovering and not progressing to permanent hepatitis.",
@@ -52493,7 +52798,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hepatitis A",
-      "pearl_id": "the-condies-on-surgery-1863"
+      "pearl_id": "the-condies-on-surgery-1863",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:below 1",
+            "test:INR"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Visceral leishmaniasis is diagnosed by bone marrow biopsy showing Leishman-Donovan bodies; bone marrow is often required to rule out lymphoma or leukemia.",
@@ -52506,7 +52828,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected visceral leishmaniasis",
-      "pearl_id": "the-condies-on-surgery-2081"
+      "pearl_id": "the-condies-on-surgery-2081",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:biopsy"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 7.98
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For echinococcus (hydatid) cysts in the liver, interventional radiologists can inject hypertonic saline into the cyst, then reaspirate; if multiple cysts, surgery is needed. Give oral albendazole afterward.",
@@ -52519,7 +52860,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hepatic echinococcus cysts",
-      "pearl_id": "the-condies-on-surgery-2221"
+      "pearl_id": "the-condies-on-surgery-2221",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:albendazole"
+          ],
+          "actionable": [
+            "Give"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In psoas abscess, approximately 50% are due to Staphylococcus aureus and 50% due to tuberculosis.",
@@ -52533,7 +52893,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with psoas abscess",
       "by_presenter": false,
-      "pearl_id": "the-condies-on-surgery-2382"
+      "pearl_id": "the-condies-on-surgery-2382",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:staphylococcus aureus"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pott's disease (TB of the spine) presents with midline back pain, lower extremity weakness, and increased DTRs; obtain a spinal MRI for diagnosis.",
@@ -52546,7 +52922,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected Pott's disease",
-      "pearl_id": "the-condies-on-surgery-2414"
+      "pearl_id": "the-condies-on-surgery-2414",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For miliary TB in children, gastric aspirate AFB smears are often negative; use IGRA (interferon gamma release assay) as it is positive in TB but not with BCG vaccination.",
@@ -52559,7 +52954,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "BCG-vaccinated children with suspected TB",
-      "pearl_id": "the-condies-on-surgery-2579"
+      "pearl_id": "the-condies-on-surgery-2579",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:vaccination"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In BCG-vaccinated children, use IGRA instead of TB skin test because IGRA is positive in TB but not with BCG.",
@@ -52572,7 +52986,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "BCG-vaccinated children",
-      "pearl_id": "the-condies-on-surgery-2579-2"
+      "pearl_id": "the-condies-on-surgery-2579-2",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Xpert MTB/RIF can detect Mycobacterium tuberculosis and rifampin resistance; in the US it is only approved for sputum, but in some settings it is used on other specimens like stool or gastric aspirates.",
@@ -52585,7 +53015,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected TB",
-      "pearl_id": "the-condies-on-surgery-2608"
+      "pearl_id": "the-condies-on-surgery-2608",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:mycobacterium tubercul"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For pediatric TB diagnosis, use a points system based on close contact, positive skin test, chronic cough for three weeks, fever for two weeks, and weight loss.",
@@ -52598,7 +53044,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with suspected TB",
-      "pearl_id": "the-condies-on-surgery-2640"
+      "pearl_id": "the-condies-on-surgery-2640",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:chronic cough"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 5.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In severe acute malnutrition, check temperature every two hours; if it drops below 36.8°C, check blood sugar immediately because the child can become hypoglycemic and die.",
@@ -52614,7 +53079,32 @@
       "numbers_unheard": [
         "36.8"
       ],
-      "pearl_id": "the-condies-on-surgery-2892"
+      "pearl_id": "the-condies-on-surgery-2892",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:below 3"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 6.84,
+          "capped": [
+            "number not heard: 36.8"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For XDR typhoid in Pakistan, use azithromycin at 20 mg/kg/day (double the usual dose) for seven days, or meropenem.",
@@ -52627,7 +53117,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with XDR typhoid in Pakistan",
-      "pearl_id": "the-condies-on-surgery-3079"
+      "pearl_id": "the-condies-on-surgery-3079",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:20 mg",
+            "drug:azithromycin"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Typhoid perforation occurs in the terminal ileum at the Peyer's patches.",
@@ -52641,7 +53151,26 @@
       "prompt_version": "v1",
       "applies_to": "patients with typhoid fever",
       "by_presenter": false,
-      "pearl_id": "the-condies-on-surgery-3159"
+      "pearl_id": "the-condies-on-surgery-3159",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:typhoid"
+          ],
+          "harm": [
+            "perforation"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In South Asia, bowel obstruction in children is commonly caused by roundworm (Ascaris) impaction or ingestion of fruit seeds like loquat or pomegranate.",
@@ -52654,7 +53183,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children in South Asia",
-      "pearl_id": "the-condies-on-surgery-3263"
+      "pearl_id": "the-condies-on-surgery-3263",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bowel obstruction"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Roundworm (Ascaris) is a common cause of small bowel obstruction in Pakistan; treatment is albendazole.",
@@ -52667,7 +53212,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children in Pakistan with bowel obstruction",
-      "pearl_id": "the-condies-on-surgery-3308"
+      "pearl_id": "the-condies-on-surgery-3308",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:albendazole"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Post-kala-azar dermal leishmaniasis presents as hypopigmented macules after inadequate treatment of visceral leishmaniasis and requires retreatment.",
@@ -52680,7 +53241,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients treated for visceral leishmaniasis",
-      "pearl_id": "the-condies-on-surgery-3401"
+      "pearl_id": "the-condies-on-surgery-3401",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:post-kala-azar dermal "
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In cutaneous leishmaniasis, always examine the mouth for mucosal lesions as well.",
@@ -52693,7 +53270,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cutaneous leishmaniasis",
-      "pearl_id": "the-condies-on-surgery-3453"
+      "pearl_id": "the-condies-on-surgery-3453",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cutaneous leishmaniasi"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To differentiate cutaneous leishmaniasis from leprosy, test sensation: leishmaniasis lesions are painless but sensation is intact, while leprosy causes loss of sensation.",
@@ -52706,7 +53302,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with skin lesions suspicious for leishmaniasis or leprosy",
-      "pearl_id": "the-condies-on-surgery-3538"
+      "pearl_id": "the-condies-on-surgery-3538",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cutaneous leishmaniasi"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

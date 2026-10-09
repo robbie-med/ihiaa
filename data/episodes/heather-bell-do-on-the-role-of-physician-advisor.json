@@ -78164,7 +78164,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians documenting kidney disease",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-210"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-210",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:icd-10"
+          ],
+          "actionable": [
+            "Don't"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A CDI query is not a critique of your patient care, it is asking for the language insurance companies require, so respond to it professionally rather than defensively.",
@@ -78177,7 +78196,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians receiving CDI queries",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-258"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-258",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cdi query"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Peer-to-peer review with insurance company medical directors overturns about 92% of denials, so fighting denials is usually worth the effort.",
@@ -78190,7 +78225,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitals and physicians facing insurance denials",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-447"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-447",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:peer-to-peer review"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When you order an alcohol withdrawal (SWA) protocol, SWA scores must be in the chart, insurance peer reviewers ask about SWA scores first for detoxing patients.",
@@ -78203,7 +78254,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians ordering SWA protocols for alcohol detox",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-580"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-580",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:withdrawal"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dietitian notes no longer count for a malnutrition diagnosis even if the physician signs them; the physician must document the diagnosis themselves in their own note.",
@@ -78216,7 +78289,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians documenting malnutrition in hospitalized patients",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-631"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-631",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:malnutrition"
+          ],
+          "actionable": [
+            "document"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cellulitis alone has an expected length of stay of about 2 days, but cellulitis with bacteremia and an abscess is a complicated skin infection with an expected stay of 5.7 days, so document those findings.",
@@ -78229,7 +78321,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cellulitis",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-743"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-743",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 days"
+          ],
+          "actionable": [
+            "document"
+          ],
+          "rarity": 6.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gram-positive bacteremia means the patient is genuinely sick and almost always warrants an infectious disease consult.",
@@ -78242,7 +78353,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with gram-positive bacteremia",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-771"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-771",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bacteremia"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Per CMS, if expected observation care is less than two midnights, the intensity of services really wasn't there and the patient did not need to be admitted as inpatient.",
@@ -78255,7 +78385,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospital admissions",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-970"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-970",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a very sick patient improves much faster than expected, document 'dramatic improvement overnight with fluids, got better much quicker than expected' in the discharge summary, this supports arguing that the inpatient admission was justified by intent.",
@@ -78268,7 +78411,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients admitted as inpatient who recover much faster than expected",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1031"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1031",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:discharge summary"
+          ],
+          "actionable": [
+            "document"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient in observation is converted to inpatient, the inpatient clock restarts, the observation hours do not count toward the inpatient two-midnight rule.",
@@ -78281,7 +78443,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients transitioning from observation to inpatient status",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1071"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1071",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:two-midnight rule"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient improves quickly after switching from observation to inpatient, the insurance company may deny the inpatient stay. If you think they might improve quickly, consider leaving them in observation.",
@@ -78294,7 +78475,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being considered for inpatient admission after observation",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1071-2"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1071-2",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a utilization review nurse says a patient doesn't meet inpatient criteria but you believe they do, it is a documentation issue. The physician advisor can help you describe the severity on paper to justify the inpatient status.",
@@ -78307,7 +78504,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient physicians",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1106"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1106",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:utilization review"
+          ],
+          "rarity": 7.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a utilization review nurse says the patient doesn't meet inpatient criteria but you believe they do, it's a documentation issue, you need to describe on paper how sick the patient really looks.",
@@ -78320,7 +78533,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians told their patient does not meet inpatient criteria",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1117"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1117",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:utilization review"
+          ],
+          "rarity": 6.95
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Readmissions for post-op complications are bundled with the original surgical stay, making the combined length of stay appear longer.",
@@ -78333,7 +78562,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients readmitted for post-op complications",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1190"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1190",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:readmission"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Medical readmissions, such as for CHF exacerbation, are attributed to the hospital's discharge planning. CMS and insurance companies view a second admission as a patient problem.",
@@ -78346,7 +78591,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with medical readmissions",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1214"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1214",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:discharge planning"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you change a Medicare patient's status from inpatient to observation, a MOON letter must be issued before discharge informing them their copay will increase.",
@@ -78359,7 +78620,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare patients whose status is changed from inpatient to observation",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1314"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1314",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:moon letter"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For Medicare patients to qualify for SNF, they need three inpatient midnights. If you know a patient will need SNF placement, admit them as inpatient with proper documentation.",
@@ -78372,7 +78652,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare patients needing SNF placement",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1370"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1370",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:documentation"
+          ],
+          "actionable": [
+            "admit"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a trauma patient's surgical issues are resolved but they have ongoing medical complications, the surgical team signs off and transfers care to medicine. This allows the medical team to obtain a length of stay extension for the medical issues.",
@@ -78385,7 +78684,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "trauma patients with post-surgical medical complications",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1426"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1426",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "obtain"
+          ],
+          "rarity": 7.11
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Long-term acute care (LTAC) qualification requires a prior ICU stay.",
@@ -78398,7 +78713,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being considered for LTAC",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1506"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1506",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Case managers perform an InterQual review every three days to justify continued inpatient stay. The hospital must provide clinicals to the insurance company every 72 hours and a discharge summary upon discharge.",
@@ -78411,7 +78739,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all inpatients",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1523"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1523",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:72 hours",
+            "frequency:every 72"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "UnitedHealthcare allows only 3 days to set up a peer-to-peer review after a denial letter, while most other insurers allow 2 to 4 weeks.",
@@ -78424,7 +78769,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians dealing with insurance denials",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1569"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1569",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 days"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you forget to mark an order as 'pending discharge,' the utilization nurse can call the scheduler to get it prioritized.",
@@ -78437,7 +78798,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient setting when awaiting discharge-necessary tests or consults",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1694"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1694",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "order"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use InterQual criteria for most insurances; MCG (Milliman) is used for private insurers like Blue Cross Blue Shield, Aetna Better Health, Humana, and is harder to meet.",
@@ -78450,7 +78827,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with private insurance",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1725"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1725",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:interqual criteria"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient does not meet acute criteria, ask the utilization nurse what is missing, often abnormal electrolytes like hypomagnesemia requiring IV magnesium can satisfy invasive criteria.",
@@ -78463,7 +78859,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients whose condition does not meet InterQual acute criteria",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1874"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1874",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hypomagnesemia"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Chronic renal failure patients with stable hyperkalemia (e.g., K+ 5.6) and no EKG changes or symptoms will not meet criteria for acute care.",
@@ -78476,7 +78888,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "chronic renal failure patients with asymptomatic hyperkalemia",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1911"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1911",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "rarity": 6.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Utilization nurses reassess acute status every 3 days; if a patient remains in the hospital, continued stay criteria must still be met.",
@@ -78489,7 +78917,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all inpatients",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1928"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1928",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 days",
+            "frequency:every 3"
+          ],
+          "actionable": [
+            "reassess"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The utilization nurse can pull up the InterQual criteria screen and show you exactly which items are not met, so ask them to help find what is missing.",
@@ -78502,7 +78950,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians with patients not meeting criteria",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1940"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-1940",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:interqual criteria"
+          ],
+          "actionable": [
+            "screen"
+          ],
+          "rarity": 7.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not use creatinine elevation above baseline in a dialysis patient to meet acute kidney criteria, chronic CKD does not count.",
@@ -78515,7 +78982,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "dialysis patients",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2017"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2017",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:creatinine"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.2
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a UTI under MCG criteria, the patient must have at least one of: hemodynamic instability, changes, obstruction, or pregnancy (though pregnancy is usually easier).",
@@ -78528,7 +79014,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with UTI under private insurance (MCG)",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2044"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2044",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hemodynamic instabilit"
+          ],
+          "rarity": 6.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Elderly men with UTI due to BPH often fail to meet acute criteria because they must be hemodynamically unstable or have obstruction; pregnancy patients usually meet criteria more easily.",
@@ -78541,7 +79043,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly men with UTI and BPH",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2084"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2084",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pregnancy"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you admit a patient for a procedure, ensure the prior authorization and admission status (inpatient vs. outpatient) match; a mismatch can result in full denial even if the procedure was authorized.",
@@ -78554,7 +79072,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients admitted for elective procedures",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2134"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2134",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:prior authorization"
+          ],
+          "actionable": [
+            "admit"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ensure prior authorization matches admission status; if a surgeon gets an outpatient prior auth for a knee replacement but admits the patient as inpatient, the entire stay will be denied.",
@@ -78567,7 +79104,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients admitted for elective procedures (e.g., joint replacements)",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2139"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2139",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:prior authorization"
+          ],
+          "actionable": [
+            "Ensure"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "You can be wrong about the initial diagnosis as long as you document intent and illness severity; the diagnosis can change and be updated on the discharge summary.",
@@ -78580,7 +79136,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all hospitalized patients",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2264"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2264",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:discharge summary"
+          ],
+          "actionable": [
+            "document"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CDI nurses cannot tell you that a query will result in a denial or affect patient safety; they are not part of the care team and must give multiple-choice answers to avoid leading you.",
@@ -78593,7 +79168,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians receiving CDI queries",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2439"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2439",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:patient safety"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The attending physician's note is the final word for coding and insurance; consultant notes are not used unless the attending incorporates them into their own documentation.",
@@ -78606,7 +79200,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "attending physicians",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2489"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2489",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:documentation"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "List up to 46 diagnoses on the discharge summary; including all relevant conditions (e.g., hypokalemia, lymphocytopenia) increases complexity and reduces the insurance company's reason to deny the claim.",
@@ -78619,7 +79229,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "discharge summaries for hospitalized patients",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2800"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2800",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:discharge summary"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Queries are part of the medical record and are discoverable; do not write snarky responses.",
@@ -78632,7 +79258,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians responding to CDI queries",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2957"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-2957",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For sepsis mortality metrics, poor documentation can make observed mortality appear worse than expected; document severity and present-on-admission status to align expected and observed rates.",
@@ -78645,7 +79287,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "sepsis patients",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3186"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3186",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:admission status"
+          ],
+          "actionable": [
+            "document"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Document present on admission (POA) for conditions like malnutrition or hypertensive urgency; otherwise, complications may be counted as unexpected and worsen your expected vs. observed mortality metrics.",
@@ -78658,7 +79322,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all hospitalized patients",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3208"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3208",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:present on admission ("
+          ],
+          "actionable": [
+            "Document"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you receive a query from a second-level reviewer or mortality reviewer (e.g., Deborah Attalier or Michelle Voss), answer it immediately; these are critical for hospital metrics.",
@@ -78671,7 +79354,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians receiving CDI queries",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3214"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3214",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is cachectic or malnourished on admission, explicitly state 'present on admission' in your note; it is not assumed even if the condition is chronic.",
@@ -78684,7 +79383,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic conditions like cachexia or malnutrition",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3333"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3333",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:present on admission"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Document 'present on admission' explicitly for chronic conditions like cachexia or malnutrition; do not use 'likely' or 'presumed', state it directly.",
@@ -78697,7 +79412,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients with chronic conditions",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3338"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3338",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:present on admission"
+          ],
+          "actionable": [
+            "Document"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For sepsis, insurance companies like UnitedHealthcare require Sepsis-3 criteria (SOFA score, end-organ damage), even though Medicare still uses Sepsis-2.",
@@ -78710,7 +79444,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients with suspected sepsis, especially those with managed Medicare (e.g., UnitedHealthcare)",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3409"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3409",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:sepsis-3 criteria"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Document lymphocytopenia because it shows immunologic compromise and can help classify a complication as unavoidable, avoiding a PSI.",
@@ -78723,7 +79476,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients with low lymphocyte counts",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3688"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3688",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:lymphocytopenia"
+          ],
+          "actionable": [
+            "Document"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Radiologist and pathologist notes cannot be used to support a diagnosis for coding because those clinicians did not have direct contact with the patient.",
@@ -78736,7 +79508,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient documentation",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3808"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3808",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a nurse documents a wound, get a wound care consult and copy the findings into your own note, otherwise the pressure ulcer may be coded as hospital-acquired.",
@@ -78749,7 +79534,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients with wounds",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3844"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3844",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pressure ulcer"
+          ],
+          "actionable": [
+            "consult"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bacteremia is not a codable diagnosis, it is a lab value and must be linked to a condition such as 'sepsis due to gram-negative UTI with bacteremia.'",
@@ -78762,7 +79566,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients with positive blood cultures",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3897"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3897",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bacteremia"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you order tube feeds for a patient but do not document a diagnosis of malnutrition, the therapy lacks justification for coding purposes.",
@@ -78775,7 +79598,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients receiving tube feeds",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3928"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-3928",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:malnutrition"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CDI queries can be answered by replying in the Cerner message (which becomes part of the medical record) or by updating your progress note or discharge summary.",
@@ -78788,7 +79630,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "providers who receive a CDI query",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4017"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4017",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:discharge summary"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has a DVT documented as present on admission, answering the query with the location and POA status can avoid a PSI for a preventable post-op complication.",
@@ -78801,7 +79659,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "post-op patients with DVT present on admission",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4227"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4227",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:present on admission"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Once a CDI query is issued, the physician advisor cannot tell you how to answer for that specific patient, that would be 'guiding' and is not compliant.",
@@ -78814,7 +79691,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "providers who receive a CDI query",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4255"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4255",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:physician advisor"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When responding to CDI queries about depression, if you cannot specify more than just 'depression,' remove it from the problem list because an unspecified depression is not clean documentation.",
@@ -78827,7 +79720,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient documentation",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4435"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4435",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:documentation"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Check your Cerner inbox at least every other day, and definitely before going off shift for a week or on vacation, to ensure all queries are handled.",
@@ -78840,7 +79749,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents and attendings",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4454"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4454",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cerner inbox"
+          ],
+          "actionable": [
+            "Check"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The first diagnosis on the discharge summary should be the reason the patient was admitted; if the working diagnosis changes (e.g., from colon mass to disseminated histoplasmosis), the primary diagnosis should reflect the final cause of admission.",
@@ -78853,7 +79781,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "discharge summary documentation",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4555"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4555",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:discharge summary"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When documenting sepsis, list the specific type (e.g., sepsis, severe sepsis, septic shock) and link it to the cause, such as 'sepsis due to urinary tract infection' or 'bacteremia secondary to UTI.'",
@@ -78866,7 +79810,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient documentation",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4576"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4576",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:urinary tract infectio"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 6.95
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For diabetes documentation, do not use 'not controlled'; instead, use specific terms like 'with hyperglycemia' or 'with hypoglycemia' to indicate labile disease.",
@@ -78879,7 +79842,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient documentation",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4602"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4602",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:documentation"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diagnosis sequences on discharge summary should be: 1) reason for admission, 2) diagnoses that complicated the admission (e.g., diabetes with hyperglycemia, CKD), and 3) ancillary issues like hypokalemia.",
@@ -78896,7 +79878,23 @@
         "1",
         "3"
       ],
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4634"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4634",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:discharge summary"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Complex pneumonia is a distinct diagnosis defined by bilateral disease, gram-negative organism on sputum culture, or other specified criteria; if unsure, call CDI for definition clarification.",
@@ -78909,7 +79907,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient documentation",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4678"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4678",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "'Fever of unknown origin' is a distinct diagnosis requiring persistent fever for at least two weeks with a negative workup; do not use it for a patient with fever for only two days.",
@@ -78922,7 +79936,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient documentation",
-      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4720"
+      "pearl_id": "heather-bell-do-on-the-role-of-physician-advisor-4720",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fever of unknown origi"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

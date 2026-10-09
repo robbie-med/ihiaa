@@ -36546,7 +36546,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "regulatory classification of industrial sources",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-510"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-510",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hazardous air pollutan"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The ACGIH threshold limit value-ceiling (TLV-C) for acrolein is 0.1 parts per million, which should never be exceeded; adverse effects include upper respiratory throat irritation, pulmonary edema, and pulmonary emphysema.",
@@ -36559,7 +36575,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "occupational exposure",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-715"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-715",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pulmonary edema"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The ACGIH time-weighted average (TWA) for ammonia is 25 ppm over 8 hours, and the short-term exposure limit (STEL) is 35 ppm over 15 minutes; adverse effects include eye damage and upper respiratory throat irritation.",
@@ -36572,7 +36607,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "occupational exposure",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-734"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-734",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:8 hours",
+            "threshold:over 8"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Benzene exposure can cause leukemia, upper respiratory tract irritation, kidney damage (nephropathy), and cochlear impairment.",
@@ -36585,7 +36637,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population exposed to benzene",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-781"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-781",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:leukemia"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cadmium exposure can cause kidney damage, specifically nephropathy.",
@@ -36598,7 +36666,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population exposed to cadmium",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-788"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-788",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cadmium"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Carbon disulfide exposure can cause peripheral nervous system impairment.",
@@ -36611,7 +36695,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population exposed to carbon disulfide",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-792"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-792",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Toluene exposure can cause visual impairment, female reproductive effects, and pregnancy loss.",
@@ -36624,7 +36721,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population exposed to toluene",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-805"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-805",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pregnancy loss"
+          ],
+          "rarity": 7.57
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Xylene exposure can cause upper respiratory tract and eye irritation, and CNS impairment.",
@@ -36637,7 +36750,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population exposed to xylene",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-810"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-810",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.3
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Simple asphyxiants like propylene and ethylene reduce fractional inspiratory oxygen concentration; they are hazardous in confined spaces but not in ambient air due to sufficient oxygen dilution.",
@@ -36650,7 +36776,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "confined space workers",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1087"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1087",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:simple asphyxiants"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The refinery's flare burned off 99% of propylene in 2010, but flare efficiency degrades over time.",
@@ -36663,7 +36808,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "refinery operations",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1137"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1137",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Water-insoluble irritants like nitrogen dioxide, phosgene, and ozone affect the lower respiratory tract and can cause noncardiogenic pulmonary edema.",
@@ -36676,7 +36834,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1176"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1176",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:noncardiogenic pulmona"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hydrogen sulfide has a rotten egg smell detectable at about 0.2 parts per million, but do not rely on smell because some people have anosmia or hyposmia.",
@@ -36689,7 +36863,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1201"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1201",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hydrogen sulfide"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For high exposures to hydrogen sulfide, you can have rapid loss of consciousness that can lead to death.",
@@ -36702,7 +36895,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1221"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1221",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hydrogen sulfide"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients with unexplained respiratory or irritant symptoms, ask about new chemical exposures at work or hobbies to broaden the differential.",
@@ -36715,7 +36927,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1247"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1247",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "ask about"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A Texas study found that living within 0-10 miles of a refinery was associated with increased risk of lymphoma, breast, prostate, colon, and bladder cancer, with a relative risk of 1.3 (95% CI 1.07-1.9).",
@@ -36728,7 +36956,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare recipients in Texas",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1345"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1345",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bladder cancer"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If there is an explosion at the refinery, check wind direction using AirNow.gov to assess potential exposure.",
@@ -36741,7 +36985,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Tulsa area",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1602"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1602",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:airnow.gov"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Some people can be hypersensitive to certain petrochemical compounds and feel effects even at low levels that are below regulatory limits.",
@@ -36754,7 +37017,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1645"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1645",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Leukemia is more often associated with children living near refineries because they spend more time playing closer to the ground where heavier pollutants settle.",
@@ -36767,7 +37043,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children near refineries",
-      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1838"
+      "pearl_id": "petrochemical-exposures-and-health-impacts-dr-ella-kuchmiy-1838",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:leukemia"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

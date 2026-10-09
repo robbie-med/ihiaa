@@ -42247,7 +42247,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hypertension",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-381"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-381",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:endothelial dysfunctio"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Secondary causes of dyslipidemia (diabetes, hypothyroidism, CKD, medications like thiazides and antipsychotics) are more common than primary genetic causes.",
@@ -42260,7 +42276,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with elevated cholesterol",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-588"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-588",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:antipsychotics"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Family history of premature ASCVD in a first-degree relative (e.g., aunt dying of heart attack at 53) increases risk and warrants earlier lipid screening.",
@@ -42273,7 +42305,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with first-degree relative with premature ASCVD",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-702"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-702",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ASCVD"
+          ],
+          "harm": [
+            "dying"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Preeclampsia and other pregnancy-related hypertensive disorders increase a woman's future risk of ASCVD.",
@@ -42286,7 +42337,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with history of preeclampsia or gestational hypertension",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-732"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-732",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ASCVD"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The PCE (Pooled Cohort Equations) calculator underestimates risk in patients with chronic inflammatory disease or socioeconomic disadvantage.",
@@ -42299,7 +42369,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic inflammatory disease or socioeconomic disadvantage",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-841"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-841",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pooled cohort equation"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The PREVENT calculator (2023) includes renal function and A1C as variables, but cannot calculate risk for BMI over 40.",
@@ -42312,7 +42398,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults aged 30-79",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-888"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-888",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:over 4",
+            "test:A1C"
+          ],
+          "actionable": [
+            "calculate"
+          ],
+          "rarity": 7.41
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "USPSTF recommends statin initiation for adults aged 40-75 with an estimated 10-year ASCVD risk of 10% or more, especially if they have any risk factors.",
@@ -42325,7 +42431,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults aged 40-75",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1017"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1017",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ASCVD"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "AHA/ACC recommends screening for ASCVD risk starting at age 20 with a baseline LDL, while USPSTF recommends starting at age 40.",
@@ -42338,7 +42460,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults not on lipid-lowering medication",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1042"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1042",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ASCVD"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If triglycerides are 400 or higher, repeat the lipid panel because hypertriglyceridemia will confound the LDL calculation.",
@@ -42351,7 +42492,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with triglycerides ≥400 mg/dL",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1061"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1061",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:LDL"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For borderline patients where an accurate number is needed, advise fasting for lipid panel to avoid a repeat draw due to falsely elevated triglycerides.",
@@ -42364,7 +42524,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with borderline ASCVD risk where accurate triglycerides are needed",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1083"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1083",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:triglycerides"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 6.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fasting for lipids is not officially required, but if you need an accurate number for a borderline decision, tell the patient to fast so the triglyceride level is accurate and you avoid needing a repeat draw.",
@@ -42377,7 +42556,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults undergoing lipid screening",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1083-2"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1083-2",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Apolipoprotein B is the major apolipoprotein in LDL; it can be checked when triglycerides are high and fasting to get more information on ASCVD risk.",
@@ -42390,7 +42585,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with high fasting triglycerides",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1205"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1205",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:LDL"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lipoprotein(a) is a modified form of LDL with atherogenic potential; consider checking it in patients with unexplained premature ASCVD or a family history of premature ASCVD.",
@@ -42403,7 +42614,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with unexplained premature ASCVD or family history of premature ASCVD",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1251"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1251",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:LDL"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Coronary artery calcium score is a low-dose cardiac CT; a score of zero means you're in good shape, over 100 is helpful for risk stratification in intermediate-risk patients.",
@@ -42416,7 +42646,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "intermediate-risk adults being considered for statin therapy",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1357"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1357",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 1",
+            "test:CT"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "All diabetic patients need a statin; the threshold for high-intensity statin in diabetes is low because most have at least one other risk factor like hypertension, smoking, or obesity.",
@@ -42429,7 +42676,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with diabetes mellitus",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1632"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1632",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:high-intensity statin"
+          ],
+          "rarity": 6.51
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "High-intensity statins are atorvastatin 40-80 mg and rosuvastatin 20-40 mg; these four doses lower LDL by at least 50%. Everything else is moderate intensity.",
@@ -42445,7 +42708,25 @@
       "numbers_unheard": [
         "50"
       ],
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1851"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1851",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:80 mg",
+            "threshold:at least 5",
+            "drug:atorvastatin"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For statin-induced myalgia, if symptoms are mild, challenge with another statin or lower dose, or try alternate-day dosing. If moderate or severe, check a CK level; if normal, try another statin.",
@@ -42458,7 +42739,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with statin-induced myalgia",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1957"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-1957",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:statin-induced myalgia"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A 2025 meta-analysis of 6.3 million patients found statins reduced dementia risk by about 20%, with more pronounced effects in those younger than 70.",
@@ -42471,7 +42771,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults considering statin therapy",
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-2025"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-2025",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:meta-analysis"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A 2023 analysis of 35 RCTs found no increase in cancer incidence or cancer death with statins; the odds ratio is essentially 1.",
@@ -42487,7 +42803,32 @@
       "numbers_unheard": [
         "2023"
       ],
-      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-2049"
+      "pearl_id": "dr-zachary-youmans-on-lipids-in-primary-care-2049",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:statins"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 7.52,
+          "capped": [
+            "number not heard: 2023"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -85723,7 +85723,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "post-cardiac arrest patients",
-      "pearl_id": "morning-report-with-dr-lee-447"
+      "pearl_id": "morning-report-with-dr-lee-447",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:differential diagnosis"
+          ],
+          "harm": [
+            "arrest"
+          ],
+          "rarity": 7.98
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Intubate if GCS is less than 8 and the patient cannot protect their airway.",
@@ -85736,7 +85755,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "unresponsive patients",
-      "pearl_id": "morning-report-with-dr-lee-618"
+      "pearl_id": "morning-report-with-dr-lee-618",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 8"
+          ],
+          "rarity": 6.98
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Initial ventilator settings: rate 16 (midpoint of normal 12-20), tidal volume 500-600 mL based on height, FiO2 100% titrated down, PEEP 5, then check ABG in 30 minutes.",
@@ -85749,7 +85784,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "intubated patients",
-      "pearl_id": "morning-report-with-dr-lee-803"
+      "pearl_id": "morning-report-with-dr-lee-803",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:600 mL"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the straight leg raise test to assess fluid responsiveness: raise one leg 45 degrees for 30 seconds, which delivers a 10-20% fluid bolus to the heart; if it raises MAP by 20 mmHg, the patient is volume-responsive.",
@@ -85762,7 +85816,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hypotensive patients",
-      "pearl_id": "morning-report-with-dr-lee-968"
+      "pearl_id": "morning-report-with-dr-lee-968",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:20 mmHg"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Heart rate may not be elevated in hypovolemic shock due to medications or beta-blocker use, so do not rely on tachycardia alone to rule out hypovolemia.",
@@ -85775,7 +85848,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hypotensive patients",
-      "pearl_id": "morning-report-with-dr-lee-1084"
+      "pearl_id": "morning-report-with-dr-lee-1084",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:hypovolemic shock"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For adult hypovolemic shock, give 30 mL/kg of lactated Ringer's or normal saline as the initial bolus, not 20 mL/kg which is pediatric.",
@@ -85788,7 +85883,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with hypovolemic shock",
-      "pearl_id": "morning-report-with-dr-lee-1155"
+      "pearl_id": "morning-report-with-dr-lee-1155",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:30 mL"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If MAP remains below 65 after adequate fluid resuscitation, the patient is fluid-refractory and pressors are indicated; continue fluids while starting pressors.",
@@ -85801,7 +85918,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hypotensive patients after fluid bolus",
-      "pearl_id": "morning-report-with-dr-lee-1186"
+      "pearl_id": "morning-report-with-dr-lee-1186",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:below 6"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.3
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always communicate a 'status plan' (e.g., 'patient is hypotensive, refractory to adequate fluid resuscitation, therefore we are starting pressors') rather than just stating the plan.",
@@ -85814,7 +85950,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinical communication",
-      "pearl_id": "morning-report-with-dr-lee-1209"
+      "pearl_id": "morning-report-with-dr-lee-1209",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fluid resuscitation"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient fails a 30 mL/kg bolus, a second bolus may be reasonable if the first moved the needle even slightly (e.g., to 85/30), but if no response, start pressors.",
@@ -85827,7 +85982,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hypotensive patients after initial fluid bolus",
-      "pearl_id": "morning-report-with-dr-lee-1340"
+      "pearl_id": "morning-report-with-dr-lee-1340",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:30 mL",
+            "threshold:85/30"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "First-line vasopressor for most shock states is norepinephrine (alpha and mild beta effects).",
@@ -85840,7 +86015,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "shock states",
-      "pearl_id": "morning-report-with-dr-lee-1425"
+      "pearl_id": "morning-report-with-dr-lee-1425",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:norepinephrine"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 6.55
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Second-line vasopressor is vasopressin, which works by squeezing the splanchnic vessels.",
@@ -85853,7 +86047,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "shock states",
-      "pearl_id": "morning-report-with-dr-lee-1444"
+      "pearl_id": "morning-report-with-dr-lee-1444",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vasopressin"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Third- and fourth-line vasopressors are dopamine (strong beta then alpha) and phenylephrine (pure alpha); epinephrine (strong alpha and beta) is a last resort.",
@@ -85866,7 +86076,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "shock states",
-      "pearl_id": "morning-report-with-dr-lee-1458"
+      "pearl_id": "morning-report-with-dr-lee-1458",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:phenylephrine"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Check rhythm regularity by looking at the QRS complexes to see if they are at consistent distances from one another.",
@@ -85879,7 +86105,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "ECG interpretation, general",
-      "pearl_id": "morning-report-with-dr-lee-3429"
+      "pearl_id": "morning-report-with-dr-lee-3429",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Check"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When the QT is prolonged (here it measured just over half the RR interval), be cautious about using QT-prolonging drugs.",
@@ -85892,7 +86134,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with prolonged QT on ECG",
-      "pearl_id": "morning-report-with-dr-lee-3598"
+      "pearl_id": "morning-report-with-dr-lee-3598",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not label a patient 'acute renal failure' from a single creatinine; use 'elevated creatinine' because it may be CKD or AKI.",
@@ -85905,7 +86160,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "problem list construction in hospitalized patients",
-      "pearl_id": "morning-report-with-dr-lee-3836"
+      "pearl_id": "morning-report-with-dr-lee-3836",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:creatinine"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.17
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a UA with >100 red cells and only 3 white cells, the hematuria can explain the white cells; do not conclude there is a UTI.",
@@ -85918,7 +86192,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "urinalysis interpretation",
-      "pearl_id": "morning-report-with-dr-lee-4000"
+      "pearl_id": "morning-report-with-dr-lee-4000",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>1"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.78
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For cardiac arrest, think systematically through the H's and T's rather than jumping to a single cause.",
@@ -85931,7 +86224,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "out-of-hospital cardiac arrest differential",
-      "pearl_id": "morning-report-with-dr-lee-5002"
+      "pearl_id": "morning-report-with-dr-lee-5002",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cardiac arrest"
+          ],
+          "harm": [
+            "arrest"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hypothermia, one of the H's, requires warming the patient with a Bair Hugger.",
@@ -85944,7 +86256,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hypothermic post-arrest patients",
-      "pearl_id": "morning-report-with-dr-lee-5018"
+      "pearl_id": "morning-report-with-dr-lee-5018",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hypothermia"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If one vasopressor is maxed out and you have to add a second one, give stress-dose steroids: hydrocortisone 100 mg IV, because the patient may have relative adrenal insufficiency.",
@@ -85957,7 +86285,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "critically ill patients requiring a second vasopressor",
-      "pearl_id": "morning-report-with-dr-lee-5312"
+      "pearl_id": "morning-report-with-dr-lee-5312",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:100 mg",
+            "drug:hydrocortisone"
+          ],
+          "actionable": [
+            "add"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When the first vasopressor is maxed, add vasopressin next, then dopamine or phenylephrine.",
@@ -85970,7 +86318,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on maxed vasopressor needing additional pressor support",
-      "pearl_id": "morning-report-with-dr-lee-5374"
+      "pearl_id": "morning-report-with-dr-lee-5374",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:phenylephrine"
+          ],
+          "actionable": [
+            "add"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If AKI is suspected but the baseline creatinine is unknown, call it 'presumed AKI'; clinically this patient is hypovolemic ('dry as a raisin'), suggesting a prerenal cause, so give fluids and monitor urine output.",
@@ -85983,7 +86350,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected AKI and unknown baseline creatinine",
-      "pearl_id": "morning-report-with-dr-lee-5555"
+      "pearl_id": "morning-report-with-dr-lee-5555",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:creatinine"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Elevated AST/ALT after cardiac arrest is most likely shock liver; the plan is to treat the underlying problem.",
@@ -85996,7 +86382,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "post-cardiac arrest patients with elevated transaminases",
-      "pearl_id": "morning-report-with-dr-lee-5600"
+      "pearl_id": "morning-report-with-dr-lee-5600",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:cardiac arrest"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "harm": [
+            "arrest"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ventilated patients are at higher risk of stress ulcers, so place them on PPI prophylaxis with pantoprazole.",
@@ -86009,7 +86417,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "intubated/ventilated patients",
-      "pearl_id": "morning-report-with-dr-lee-5704"
+      "pearl_id": "morning-report-with-dr-lee-5704",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:pantoprazole"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When deciding to hold or give heparin prophylaxis in a patient with severe anemia and elevated INR, either choice is defensible if you document your reasoning; failure to document is indefensible.",
@@ -86022,7 +86446,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with anemia and elevated INR",
-      "pearl_id": "morning-report-with-dr-lee-6173"
+      "pearl_id": "morning-report-with-dr-lee-6173",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:INR"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "rarity": 8.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In acute blood loss with coagulopathy, use massive transfusion protocol with a 1:1:1 ratio of packed red cells, plasma, and platelets to reduce mortality.",
@@ -86035,7 +86478,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute blood loss and coagulopathy",
-      "pearl_id": "morning-report-with-dr-lee-6482"
+      "pearl_id": "morning-report-with-dr-lee-6482",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:massive transfusion pr"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Transfusion complications include hemolytic reactions, anaphylaxis, infection, TRALI, TACO (fluid overload), graft-versus-host disease, and immune suppression.",
@@ -86048,7 +86510,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving blood transfusions",
-      "pearl_id": "morning-report-with-dr-lee-6546"
+      "pearl_id": "morning-report-with-dr-lee-6546",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:graft-versus-host dise"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Heparin can be reversed with protamine; enoxaparin and antiplatelet agents cannot be reversed as easily, so in a patient at high bleeding risk, heparin is the safer choice.",
@@ -86061,7 +86542,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients at high bleeding risk needing anticoagulation",
-      "pearl_id": "morning-report-with-dr-lee-6665"
+      "pearl_id": "morning-report-with-dr-lee-6665",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:enoxaparin"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When an unresponsive post-arrest patient develops teeth chattering and eye deviation, form a differential including seizure, shivering, pseudoseizure, conversion disorder, and drug effect; do not automatically give a sedative.",
@@ -86074,7 +86574,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "unresponsive post-arrest patients with new abnormal movements",
-      "pearl_id": "morning-report-with-dr-lee-6996"
+      "pearl_id": "morning-report-with-dr-lee-6996",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:conversion disorder"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "arrest"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected seizure in a post-arrest patient, give Ativan and obtain an EEG; the wrong answer is to give a sedative without first forming a differential.",
@@ -86087,7 +86609,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "post-arrest patients with possible seizure",
-      "pearl_id": "morning-report-with-dr-lee-7089"
+      "pearl_id": "morning-report-with-dr-lee-7089",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:seizure"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anoxic brain injury occurs after more than 4 minutes of cerebral hypoxia; causes include cardiac arrest, vascular catastrophe, poisoning, and head trauma.",
@@ -86100,7 +86644,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hypoxic-ischemic encephalopathy",
-      "pearl_id": "morning-report-with-dr-lee-7131"
+      "pearl_id": "morning-report-with-dr-lee-7131",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4 minutes",
+            "threshold:more than 4"
+          ],
+          "harm": [
+            "arrest"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Anoxic brain injury is brain tissue damage due to lack of oxygen for greater than four minutes.",
@@ -86113,7 +86677,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "morning-report-with-dr-lee-7131-2"
+      "pearl_id": "morning-report-with-dr-lee-7131-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:anoxic brain injury"
+          ],
+          "rarity": 6.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Brain death is defined as reversible cessation of cerebral and brainstem function, with no respiratory drive and no brain level reflexes.",
@@ -86126,7 +86706,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "morning-report-with-dr-lee-7154"
+      "pearl_id": "morning-report-with-dr-lee-7154",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:brain death"
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Persistent vegetative state (PVS) shows wakefulness and sleep-wake cycles but no awareness, purposeful movement, or language comprehension; brain death has no brainstem reflexes or respiratory drive.",
@@ -86139,7 +86738,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe brain injury",
-      "pearl_id": "morning-report-with-dr-lee-7165"
+      "pearl_id": "morning-report-with-dr-lee-7165",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:persistent vegetative "
+          ],
+          "harm": [
+            "death"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Persistent vegetative state (PVS) involves wakefulness but no awareness; patients have no interaction with environment, no purposeful movement, and no language comprehension or expression.",
@@ -86152,7 +86770,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "morning-report-with-dr-lee-7175"
+      "pearl_id": "morning-report-with-dr-lee-7175",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:persistent vegetative "
+          ],
+          "harm": [
+            "interaction"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Minimally conscious state: severe alteration in consciousness but patients can track, follow simple commands, or signal yes/no.",
@@ -86165,7 +86802,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "morning-report-with-dr-lee-7208"
+      "pearl_id": "morning-report-with-dr-lee-7208",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:minimally conscious st"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Myoclonic status epilepticus after anoxia, persistent bilateral synchronous myoclonus of face, limbs, and axial muscles, portends a poor prognosis.",
@@ -86178,7 +86831,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "post-anoxic patients",
-      "pearl_id": "morning-report-with-dr-lee-7229"
+      "pearl_id": "morning-report-with-dr-lee-7229",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:myoclonic status epile"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Management of anoxic brain injury sequelae includes supportive care, preventive care, seizure management, and counseling the family.",
@@ -86191,7 +86860,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anoxic brain injury",
-      "pearl_id": "morning-report-with-dr-lee-7242"
+      "pearl_id": "morning-report-with-dr-lee-7242",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anoxic brain injury"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 7.64
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient on heparin develops bright red blood per rectum, stop the heparin, think, and form a differential with a corresponding plan.",
@@ -86204,7 +86892,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on heparin with new GI bleeding",
-      "pearl_id": "morning-report-with-dr-lee-7272"
+      "pearl_id": "morning-report-with-dr-lee-7272",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:heparin"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During slow-onset anemia, the heart maintains sufficient coronary perfusion even with poor systemic perfusion and does not need much pressure to keep going.",
@@ -86217,7 +86924,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with gradual blood loss or compensated shock",
-      "pearl_id": "morning-report-with-dr-lee-7369"
+      "pearl_id": "morning-report-with-dr-lee-7369",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:coronary perfusion"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Septic shock from gut translocation: the body preserves the heart and brain at the expense of the gut; the gut breaks down, bacteria from stool cross into the bloodstream (gram-negative rods).",
@@ -86230,7 +86953,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with prolonged splanchnic hypoperfusion (e.g., compensated shock)",
-      "pearl_id": "morning-report-with-dr-lee-7420"
+      "pearl_id": "morning-report-with-dr-lee-7420",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:gut translocation"
+          ],
+          "harm": [
+            "Septic"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Giving bicarbonate to an acidotic patient can drive potassium into cells, causing hypokalemia; use bicarbonate cautiously.",
@@ -86243,7 +86985,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acidotic patients receiving bicarbonate",
-      "pearl_id": "morning-report-with-dr-lee-7500"
+      "pearl_id": "morning-report-with-dr-lee-7500",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypokalemia"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "High CK after resuscitation comes from muscle breakdown (prolonged lying on ground and seizures) with stagnant blood; after resuscitation, CK mobilizes and shoots up.",
@@ -86256,7 +87017,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after cardiac arrest with prolonged immobilization and seizures",
-      "pearl_id": "morning-report-with-dr-lee-7542"
+      "pearl_id": "morning-report-with-dr-lee-7542",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:seizure"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Form a differential with an associated plan anytime there is a new problem or a status change.",
@@ -86269,7 +87046,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinical settings",
-      "pearl_id": "morning-report-with-dr-lee-7668"
+      "pearl_id": "morning-report-with-dr-lee-7668",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Document your reasoning in the medical record.",
@@ -86282,7 +87072,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "morning-report-with-dr-lee-7685"
+      "pearl_id": "morning-report-with-dr-lee-7685",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Document"
+          ],
+          "rarity": 6.31
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

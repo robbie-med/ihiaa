@@ -40694,7 +40694,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving corticosteroid injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-240"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-240",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 weeks"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Limit corticosteroid injections to 4 per year to prevent systemic complications like osteoporosis and articular damage.",
@@ -40707,7 +40723,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving corticosteroid injections",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-292"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-292",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:corticosteroid injecti"
+          ],
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Never use a multidose vial for joint injections; prep your own mix from single-use vials to ensure sterility and avoid septic arthritis.",
@@ -40720,7 +40752,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any joint or soft-tissue injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-398"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-398",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:septic arthritis"
+          ],
+          "actionable": [
+            "Never"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Maximum lidocaine dose is 300 mg for adults or 5 mg/kg; know the milligram dose, not milliliters, because 1% = 10 mg/mL and 2% = 20 mg/mL.",
@@ -40736,7 +40790,24 @@
       "numbers_unheard": [
         "10"
       ],
-      "pearl_id": "joint-injections-dr-enis-sakirgil-603"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-603",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:300 mg",
+            "drug:lidocaine"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use 2% lidocaine for joint injections because it is more concentrated, lasts longer, and allows smaller volume.",
@@ -40749,7 +40820,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "joint injections",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-817"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-817",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:lidocaine"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 6.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For trigger points, use a 25-27 gauge 1-inch needle with a mix of 1 mL triamcinolone and 4 mL 2% lidocaine, injecting 1 mL per point.",
@@ -40762,7 +40852,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with trigger points in the shoulder/back",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1033"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1033",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1 mL",
+            "drug:lidocaine"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid injecting into a joint that has a replacement (metal) or if there is an overlying skin infection.",
@@ -40775,7 +40885,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with joint replacement or overlying infection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1221"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1221",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Joint and soft tissue injection appears safe in patients on warfarin if INR is less than 3.",
@@ -40788,7 +40914,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on warfarin with INR <3",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1259"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1259",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 3",
+            "test:INR"
+          ],
+          "rarity": 6.76
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For medial epicondylitis, be aware of the ulnar nerve; avoid injecting near major nerves or arterial landmarks.",
@@ -40801,7 +40944,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving elbow injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1368"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1368",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:medial epicondylitis"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the plunger meets resistance during injection, do not force it; the needle may be in a tendon or other structure, risking damage.",
@@ -40814,7 +40976,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any joint or soft-tissue injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1381"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1381",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the plunger is not moving freely, do not push against resistance because the needle may be in a tendon or other structure, which could cause damage.",
@@ -40827,7 +41005,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1381-2"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1381-2",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always pull back on the plunger before injecting to check for blood, ensuring the needle is not in a blood vessel.",
@@ -40840,7 +41034,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1453"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1453",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 7.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Post-injection flare occurs in 2-5% of cases; advise patients to take ibuprofen and apply ice for 24 hours.",
@@ -40853,7 +41063,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any steroid injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1460"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1460",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "rarity": 7.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Corticosteroid equivalency: 40 mg triamcinolone equals 4 mg dexamethasone or 6 mg Celestone.",
@@ -40866,7 +41092,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1508"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1508",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:40 mg",
+            "drug:dexamethasone"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Relative anti-inflammatory potency: triamcinolone is 5, dexamethasone is 20.",
@@ -40879,7 +41122,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1533"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1533",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:dexamethasone"
+          ],
+          "rarity": 7.16
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For knee injection, use a superolateral approach: patient supine with a towel under the knee, find the top and lateral aspect of the patella, and enter at a 45-degree angle under the patella.",
@@ -40892,7 +41151,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "knee injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1603"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1603",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:knee injection"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you hit bone during knee injection, do not scrape the needle against it because you can scrape cartilage.",
@@ -40905,7 +41183,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "knee injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1635"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1635",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:knee injection"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.07
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For plantar fasciitis injection, approach from the medial side, not through the heel, to avoid fat pad atrophy and fascia rupture.",
@@ -40918,7 +41215,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "plantar fasciitis injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1709"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1709",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:plantar fasciitis inje"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.1
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not inject into the plantar fascia itself; if the plunger is not moving, you are in the tendon and should not inject.",
@@ -40931,7 +41247,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "plantar fasciitis injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1724"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1724",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use no more than 3 mL of injectate for plantar fasciitis to avoid complications.",
@@ -40944,7 +41276,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "plantar fasciitis injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-1737"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-1737",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 mL",
+            "threshold:no more than 3"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For acromioclavicular joint injection, the space is very tight; maximum volume is 1 mL, typically 20 mg triamcinolone with 0.5 mL of 2% lidocaine.",
@@ -40957,7 +41309,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "acromioclavicular joint injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2046"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2046",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1 mL",
+            "drug:lidocaine"
+          ],
+          "rarity": 7.3
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For lateral epicondylitis, diagnose by having the patient push down against your resistance (resisted wrist extension); if it hurts, it's usually the right diagnosis.",
@@ -40970,7 +41339,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected lateral epicondylitis",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2087"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2087",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:lateral epicondylitis"
+          ],
+          "rarity": 7.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not inject medial epicondylitis because it is too close to the nerve.",
@@ -40983,7 +41368,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "medial epicondylitis",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2110"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2110",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:medial epicondylitis"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For lateral epicondylitis injection, use 40 mg Kenalog and the rest 2% lidocaine, total 3-4 mL; go in, hit the bone, come back, and infiltrate the area, sometimes fanning 1 mL in different spots.",
@@ -40996,7 +41400,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "lateral epicondylitis injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2120"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2120",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:40 mg",
+            "drug:lidocaine"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Greater trochanteric bursitis pain will never pass the knee; same with SI joint pain.",
@@ -41009,7 +41433,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hip or SI joint pain",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2194"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2194",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:greater trochanteric b"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 6.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For trochanteric bursitis injection, position the patient on their side with pelvis exactly 90 degrees to the table, not tilted.",
@@ -41022,7 +41465,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "trochanteric bursitis injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2212"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2212",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:trochanteric bursitis"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use a 22-gauge spinal needle for trochanteric bursitis injection; advance to bone, then hold the needle hub with your non-dominant hand to stabilize it so pressure from the syringe does not push the needle deeper.",
@@ -41035,7 +41494,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "trochanteric bursitis injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2236"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2236",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:trochanteric bursitis"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During trochanteric bursitis injection, if fluid stops flowing because the space is tight, withdraw the needle 1 cm at a time to find more space and continue injecting.",
@@ -41048,7 +41526,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "trochanteric bursitis injection",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2278"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2278",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1 cm"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For SI joint pain, try a Medrol Dose Pack first; do not attempt injection because it is difficult and usually requires fluoroscopy.",
@@ -41061,7 +41555,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "sacroiliac joint pain",
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2356"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2356",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:medrol dose pack"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SI joint provocation tests include the Patrick (figure-four) test, thigh thrust test, pelvic compression test, and sacral thrust test; the more tests positive, the more likely it is SI joint pain.",
@@ -41075,7 +41588,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with suspected SI joint pain",
       "by_presenter": false,
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2594"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2594",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pelvic compression tes"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The gold standard for diagnosing SI joint problems is a physician-performed anesthetic injection into the SI joint that significantly relieves pain.",
@@ -41089,7 +41618,20 @@
       "prompt_version": "v1",
       "applies_to": "patients with suspected SI joint dysfunction",
       "by_presenter": false,
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2740"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2740",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If three or four of the SI provocative tests are positive, there is a good chance the patient has an SI problem.",
@@ -41103,7 +41645,20 @@
       "prompt_version": "v1",
       "applies_to": "patients with suspected SI joint dysfunction",
       "by_presenter": false,
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2759"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2759",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SI pain can refer down the leg but almost never past the knee; if pain goes all the way to the foot, it's probably not SI.",
@@ -41117,7 +41672,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with suspected SI joint dysfunction",
       "by_presenter": false,
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2767"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2767",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 5.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SI pain can also present in the groin or the front of the thigh.",
@@ -41131,7 +41702,20 @@
       "prompt_version": "v1",
       "applies_to": "patients with suspected SI joint dysfunction",
       "by_presenter": false,
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2780"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2780",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An SI belt can be used as a diagnostic test: if wearing it relieves pain during weight-bearing activities like walking, it supports SI joint involvement.",
@@ -41145,7 +41729,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with suspected SI joint dysfunction",
       "by_presenter": false,
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2806"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2806",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:si belt"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SI pain is typically worse with weight-bearing activities, stairs, and running, and may not be felt when sitting.",
@@ -41159,7 +41759,20 @@
       "prompt_version": "v1",
       "applies_to": "patients with suspected SI joint dysfunction",
       "by_presenter": false,
-      "pearl_id": "joint-injections-dr-enis-sakirgil-2819"
+      "pearl_id": "joint-injections-dr-enis-sakirgil-2819",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

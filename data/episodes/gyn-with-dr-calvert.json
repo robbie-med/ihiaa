@@ -29723,7 +29723,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with suspected PCOS",
-      "pearl_id": "gyn-with-dr-calvert-2474"
+      "pearl_id": "gyn-with-dr-calvert-2474",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To test for insulin resistance, get fasting glucose and insulin, give glucose load, then repeat glucose and insulin at 2 hours; a ratio greater than 4.5 indicates insulin resistance.",
@@ -29736,7 +29752,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with chronic anovulation or PCOS",
-      "pearl_id": "gyn-with-dr-calvert-2913"
+      "pearl_id": "gyn-with-dr-calvert-2913",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 hours",
+            "threshold:greater than 4"
+          ],
+          "actionable": [
+            "test for"
+          ],
+          "rarity": 6.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When insulin resistance is dominant, treat the insulin resistance, not the PCOS directly.",
@@ -29749,7 +29785,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with PCOS and insulin resistance",
-      "pearl_id": "gyn-with-dr-calvert-2974"
+      "pearl_id": "gyn-with-dr-calvert-2974",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:insulin resistance"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 6.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Primary treatment for PCOS is weight loss.",
@@ -29762,7 +29817,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with PCOS",
-      "pearl_id": "gyn-with-dr-calvert-3016"
+      "pearl_id": "gyn-with-dr-calvert-3016",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:weight loss"
+          ],
+          "rarity": 4.95
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The primary risk of PCOS is endometrial hyperplasia from chronic anovulation; patients need at least two menstrual cycles per year to protect the endometrium.",
@@ -29775,7 +29846,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with PCOS",
-      "pearl_id": "gyn-with-dr-calvert-3053"
+      "pearl_id": "gyn-with-dr-calvert-3053",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:endometrial hyperplasi"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The trend is moving toward treating all patients with insulin resistance with metformin, not just those trying to get pregnant.",
@@ -29788,7 +29875,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with insulin resistance",
-      "pearl_id": "gyn-with-dr-calvert-3093"
+      "pearl_id": "gyn-with-dr-calvert-3093",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:insulin resistance"
+          ],
+          "rarity": 6.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Metformin can lead to pregnancy within 3-4 months in women with PCOS and insulin resistance.",
@@ -29801,7 +29904,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with PCOS and insulin resistance",
-      "pearl_id": "gyn-with-dr-calvert-3127"
+      "pearl_id": "gyn-with-dr-calvert-3127",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:4 months"
+          ],
+          "rarity": 5.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For PCOS patients wanting pregnancy, give 4-6 months of continuous birth control pills to suppress testosterone, then stop; they will often ovulate and conceive within 3 months.",
@@ -29814,7 +29933,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with PCOS desiring pregnancy",
-      "pearl_id": "gyn-with-dr-calvert-3181"
+      "pearl_id": "gyn-with-dr-calvert-3181",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 months"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -17626,7 +17626,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pelvic pain",
-      "pearl_id": "pelvic-pain-cases-dr-calvert-150"
+      "pearl_id": "pelvic-pain-cases-dr-calvert-150",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pelvic pain"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cyclic pain is associated with menstruation or ovulation; random pain suggests a non-gynecologic cause.",
@@ -17639,7 +17655,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with pelvic pain",
-      "pearl_id": "pelvic-pain-cases-dr-calvert-193"
+      "pearl_id": "pelvic-pain-cases-dr-calvert-193",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ovulation"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Primary dysmenorrhea does not change over time; secondary dysmenorrhea worsens over time and suggests endometriosis or adenomyosis.",
@@ -17652,7 +17684,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with dysmenorrhea",
-      "pearl_id": "pelvic-pain-cases-dr-calvert-729"
+      "pearl_id": "pelvic-pain-cases-dr-calvert-729",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:endometriosis"
+          ],
+          "rarity": 6.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Endometriosis often improves during pregnancy because progesterone dominance suppresses endometrial proliferation.",
@@ -17665,7 +17713,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with endometriosis",
-      "pearl_id": "pelvic-pain-cases-dr-calvert-857"
+      "pearl_id": "pelvic-pain-cases-dr-calvert-857",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:endometriosis"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For endometriosis that responds to progesterone, start birth control pills to suppress the endometrium and reduce pain.",
@@ -17678,7 +17742,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with progesterone-responsive endometriosis",
-      "pearl_id": "pelvic-pain-cases-dr-calvert-938"
+      "pearl_id": "pelvic-pain-cases-dr-calvert-938",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:endometriosis"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Decreased uterine mobility on bimanual exam suggests scar tissue from endometriosis or PID.",
@@ -17691,7 +17774,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with pelvic pain",
-      "pearl_id": "pelvic-pain-cases-dr-calvert-1051"
+      "pearl_id": "pelvic-pain-cases-dr-calvert-1051",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bimanual exam"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dyspareunia has two types: entrance and deep; deep dyspareunia suggests endometriosis or adenomyosis.",
@@ -17704,7 +17803,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with dyspareunia",
-      "pearl_id": "pelvic-pain-cases-dr-calvert-1339"
+      "pearl_id": "pelvic-pain-cases-dr-calvert-1339",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:endometriosis"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Adenomyosis is diagnosed by history: cyclic midline pain, heavy/longer periods, and pain referred to rectum (with bowel movements) and bladder (urinary frequency before menses).",
@@ -17717,7 +17832,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with cyclic pelvic pain",
-      "pearl_id": "pelvic-pain-cases-dr-calvert-1514"
+      "pearl_id": "pelvic-pain-cases-dr-calvert-1514",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:adenomyosis"
+          ],
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Adenomyosis can be diagnosed by history alone; MRI or ultrasound is not necessary.",
@@ -17730,7 +17861,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with suspected adenomyosis",
-      "pearl_id": "pelvic-pain-cases-dr-calvert-1632"
+      "pearl_id": "pelvic-pain-cases-dr-calvert-1632",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:MRI"
+          ],
+          "rarity": 6.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For Bartholin gland cyst, first-line treatment is Word catheter; marsupialization is for recurrence.",
@@ -17743,7 +17890,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with Bartholin gland cyst",
-      "pearl_id": "pelvic-pain-cases-dr-calvert-2054"
+      "pearl_id": "pelvic-pain-cases-dr-calvert-2054",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bartholin gland cyst"
+          ],
+          "rarity": 7.1
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

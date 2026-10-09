@@ -74731,7 +74731,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-tischler-on-counterstrain-329"
+      "pearl_id": "dr-tischler-on-counterstrain-329",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:tender points"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Aim for a two-thirds reduction in tenderness (e.g., from 7/10 to 2-3/10) during the hold.",
@@ -74747,7 +74766,29 @@
       "numbers_unheard": [
         "10"
       ],
-      "pearl_id": "dr-tischler-on-counterstrain-392"
+      "pearl_id": "dr-tischler-on-counterstrain-392",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:7/10"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "rarity": 6.39,
+          "capped": [
+            "number not heard: 10"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hold the counterstrain position for 90 seconds.",
@@ -74760,7 +74801,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general",
-      "pearl_id": "dr-tischler-on-counterstrain-401"
+      "pearl_id": "dr-tischler-on-counterstrain-401",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:counterstrain"
+          ],
+          "actionable": [
+            "Hold"
+          ],
+          "rarity": 6.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Return the patient to neutral very slowly, especially the first 15 degrees, to avoid re-triggering the muscle spasm.",
@@ -74776,7 +74836,29 @@
       "numbers_unheard": [
         "15"
       ],
-      "pearl_id": "dr-tischler-on-counterstrain-480"
+      "pearl_id": "dr-tischler-on-counterstrain-480",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:muscle spasm"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.15,
+          "capped": [
+            "number not heard: 15"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For an anterior cervical tender point: flex the neck, side bend away from the tender spot, and rotate away.",
@@ -74789,7 +74871,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anterior cervical tender points",
-      "pearl_id": "dr-tischler-on-counterstrain-513"
+      "pearl_id": "dr-tischler-on-counterstrain-513",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.9
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a posterior cervical tender point: extend the neck (shorten the muscles) rather than flex.",
@@ -74802,7 +74897,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with posterior cervical tender points",
-      "pearl_id": "dr-tischler-on-counterstrain-1064"
+      "pearl_id": "dr-tischler-on-counterstrain-1064",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.9
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "You can treat yourself for neck tightness by standing back, letting the muscle relax, and holding for 90 seconds.",
@@ -74815,7 +74923,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "self-treatment for neck tightness",
-      "pearl_id": "dr-tischler-on-counterstrain-1072"
+      "pearl_id": "dr-tischler-on-counterstrain-1072",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For upper back tender points at T1-T3: have the patient 'hug a tree' (arms crossed, grab the table) and extend the neck.",
@@ -74828,7 +74952,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with upper back tender points at T1-T3",
-      "pearl_id": "dr-tischler-on-counterstrain-1100"
+      "pearl_id": "dr-tischler-on-counterstrain-1100",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tender points"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Teach patients with upper back tightness to place a pillow under their arms while lying face down and relax for a few minutes.",
@@ -74841,7 +74981,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with upper back tightness",
-      "pearl_id": "dr-tischler-on-counterstrain-1130"
+      "pearl_id": "dr-tischler-on-counterstrain-1130",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For upper back tender points at T4-T6: have the patient put arms up like 'sticks' (Superman position) and extend the neck.",
@@ -74854,7 +75007,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with upper back tender points at T4-T6",
-      "pearl_id": "dr-tischler-on-counterstrain-1145"
+      "pearl_id": "dr-tischler-on-counterstrain-1145",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tender points"
+          ],
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For upper back counterstrain (T1, T6), have the patient lie supine with arms raised (like Superman), then apply gentle pressure on either side of the spinous process (not on the transverse process) and hold for about 90 seconds.",
@@ -74870,7 +75039,29 @@
       "numbers_unheard": [
         "90"
       ],
-      "pearl_id": "dr-tischler-on-counterstrain-1154"
+      "pearl_id": "dr-tischler-on-counterstrain-1154",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:counterstrain"
+          ],
+          "actionable": [
+            "hold"
+          ],
+          "rarity": 7.83,
+          "capped": [
+            "number not heard: 90"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients can self-treat upper back tension by lying on a basketball or tennis ball placed on the paraspinal muscles and relaxing for a few minutes.",
@@ -74883,7 +75074,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with upper back tension",
-      "pearl_id": "dr-tischler-on-counterstrain-1465"
+      "pearl_id": "dr-tischler-on-counterstrain-1465",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:paraspinal muscles"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Syncope can be a presenting symptom of PE and is frequently missed; keep PE in the differential for unexplained syncope.",
@@ -74896,7 +75106,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with syncope",
-      "pearl_id": "dr-tischler-on-counterstrain-2486"
+      "pearl_id": "dr-tischler-on-counterstrain-2486",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:syncope"
+          ],
+          "harm": [
+            "missed"
+          ],
+          "rarity": 6.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fever is a much less common symptom of PE than often assumed.",
@@ -74909,7 +75138,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE",
-      "pearl_id": "dr-tischler-on-counterstrain-2498"
+      "pearl_id": "dr-tischler-on-counterstrain-2498",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fever"
+          ],
+          "rarity": 5.72
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "PE chest pain is most often pleuritic, but not always; cough occurs in about 37%, hemoptysis in 13%, and wheezing in 21% of cases.",
@@ -74922,7 +75167,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE",
-      "pearl_id": "dr-tischler-on-counterstrain-2536"
+      "pearl_id": "dr-tischler-on-counterstrain-2536",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:chest pain"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The most sensitive symptom for DVT is unilateral leg swelling; the vast majority of DVT patients will have some level of swelling.",
@@ -74935,7 +75199,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected DVT",
-      "pearl_id": "dr-tischler-on-counterstrain-2611"
+      "pearl_id": "dr-tischler-on-counterstrain-2611",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The most sensitive symptom for PE is shortness of breath; the vast majority of PE patients will have dyspnea.",
@@ -74948,7 +75225,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE",
-      "pearl_id": "dr-tischler-on-counterstrain-2639"
+      "pearl_id": "dr-tischler-on-counterstrain-2639",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dyspnea"
+          ],
+          "rarity": 7.14
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Key risk factors for DVT/PE include immobilization for ≥2 days, recent surgery or hospitalization within 3 months, prior VTE, pregnancy, estrogen/testosterone use, age >65, obesity, heart failure, IBD, and autoimmune disorders.",
@@ -74961,7 +75254,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected DVT/PE",
-      "pearl_id": "dr-tischler-on-counterstrain-2781"
+      "pearl_id": "dr-tischler-on-counterstrain-2781",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 days",
+            "threshold:>6"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.26
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "You cannot definitively diagnose DVT or PE by history and physical exam alone; use clinical gestalt and risk stratification to guide testing.",
@@ -74974,7 +75287,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with suspected VTE",
-      "pearl_id": "dr-tischler-on-counterstrain-2823"
+      "pearl_id": "dr-tischler-on-counterstrain-2823",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:risk stratification"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Homan's sign has only 10-13% sensitivity; a negative Homan's sign does not rule out DVT, but a positive sign should raise concern.",
@@ -74987,7 +75319,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected DVT",
-      "pearl_id": "dr-tischler-on-counterstrain-2985"
+      "pearl_id": "dr-tischler-on-counterstrain-2985",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:homan's sign"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Increased calf circumference of 3 cm or more, measured 10 cm below the tibial tuberosity, is the most useful physical exam finding for DVT.",
@@ -75000,7 +75351,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected DVT",
-      "pearl_id": "dr-tischler-on-counterstrain-3023"
+      "pearl_id": "dr-tischler-on-counterstrain-3023",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 cm"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Tachypnea is the most common exam finding in PE, occurring in 54% of patients; tachycardia occurs in only 24% and fever in 3%.",
@@ -75013,7 +75380,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE",
-      "pearl_id": "dr-tischler-on-counterstrain-3101"
+      "pearl_id": "dr-tischler-on-counterstrain-3101",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fever"
+          ],
+          "rarity": 6.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hypoxemia (SpO2 less than 95%) is very common in PE, as common as or more common than tachypnea.",
@@ -75026,7 +75409,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE",
-      "pearl_id": "dr-tischler-on-counterstrain-3125"
+      "pearl_id": "dr-tischler-on-counterstrain-3125",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 9"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For DVT with low or moderate Wells score, order a D-dimer; consider age-adjusting by multiplying the patient's age by 10.",
@@ -75039,7 +75438,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected DVT and low/moderate Wells score",
-      "pearl_id": "dr-tischler-on-counterstrain-3402"
+      "pearl_id": "dr-tischler-on-counterstrain-3402",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:Wells"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For DVT with high Wells score (≥3), skip the D-dimer and proceed directly to duplex ultrasound; you may start empiric anticoagulation if ultrasound is delayed.",
@@ -75052,7 +75470,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected DVT and high Wells score",
-      "pearl_id": "dr-tischler-on-counterstrain-3429"
+      "pearl_id": "dr-tischler-on-counterstrain-3429",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:Wells"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For PE with low Wells score (0-1), use the PERC rule; if PERC is 0, PE is effectively ruled out and no further testing is needed.",
@@ -75065,7 +75502,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE and low Wells score",
-      "pearl_id": "dr-tischler-on-counterstrain-3646"
+      "pearl_id": "dr-tischler-on-counterstrain-3646",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:Wells"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For low-risk patients with suspected PE, use PERC rule; if negative, no further testing; if positive, order D-dimer.",
@@ -75078,7 +75534,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE and low risk",
-      "pearl_id": "dr-tischler-on-counterstrain-3718"
+      "pearl_id": "dr-tischler-on-counterstrain-3718",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:perc rule"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For PE with low Wells score and positive PERC, proceed to D-dimer testing.",
@@ -75091,7 +75566,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE, low Wells score, and positive PERC",
-      "pearl_id": "dr-tischler-on-counterstrain-3719"
+      "pearl_id": "dr-tischler-on-counterstrain-3719",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:Wells"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In moderate-risk patients by Wells score, D-dimer is appropriate; high-risk patients go directly to CTA.",
@@ -75104,7 +75595,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE",
-      "pearl_id": "dr-tischler-on-counterstrain-3744"
+      "pearl_id": "dr-tischler-on-counterstrain-3744",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:Wells"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Clinical gestalt always overrides scoring tools; if your clinical suspicion is high despite a moderate score, proceed to imaging rather than D-dimer.",
@@ -75117,7 +75624,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with suspected VTE",
-      "pearl_id": "dr-tischler-on-counterstrain-3757"
+      "pearl_id": "dr-tischler-on-counterstrain-3757",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:d-dimer"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For PE with moderate Wells score, D-dimer is appropriate unless clinical suspicion is high; for high Wells score, go directly to CTPA.",
@@ -75130,7 +75656,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE",
-      "pearl_id": "dr-tischler-on-counterstrain-3764"
+      "pearl_id": "dr-tischler-on-counterstrain-3764",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:Wells"
+          ],
+          "rarity": 7.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The most common EKG finding in PE is sinus tachycardia; S1Q3T3 is classic but seen in less than 10%.",
@@ -75143,7 +75685,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE",
-      "pearl_id": "dr-tischler-on-counterstrain-3903"
+      "pearl_id": "dr-tischler-on-counterstrain-3903",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 1",
+            "test:EKG"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CTA is the preferred imaging for PE; GFR cutoff is 30 (or 45 in some contexts); check for contrast allergy.",
@@ -75156,7 +75715,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE",
-      "pearl_id": "dr-tischler-on-counterstrain-3967"
+      "pearl_id": "dr-tischler-on-counterstrain-3967",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:GFR"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "V/Q scan requires a normal chest X-ray; results are probabilistic and often indeterminate.",
@@ -75169,7 +75747,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE who cannot have CTA",
-      "pearl_id": "dr-tischler-on-counterstrain-4062"
+      "pearl_id": "dr-tischler-on-counterstrain-4062",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "rarity": 7.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If CTA and V/Q cannot be done, consider venous duplex; if DVT found, treat as PE.",
@@ -75182,7 +75776,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected PE who cannot have CTA or V/Q",
-      "pearl_id": "dr-tischler-on-counterstrain-4148"
+      "pearl_id": "dr-tischler-on-counterstrain-4148",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:venous duplex"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For moderate/high-risk patients requiring admission, start heparin or LMWH; for outpatient, DOACs are preferred.",
@@ -75195,7 +75808,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with VTE requiring admission",
-      "pearl_id": "dr-tischler-on-counterstrain-4366"
+      "pearl_id": "dr-tischler-on-counterstrain-4366",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:heparin"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Apixaban (Eliquis) is preferred over rivaroxaban due to lower bleeding risk and steady-state levels; dosing is 10 mg BID for 7 days, then 5 mg BID.",
@@ -75211,7 +75843,30 @@
       "numbers_unheard": [
         "10"
       ],
-      "pearl_id": "dr-tischler-on-counterstrain-4414"
+      "pearl_id": "dr-tischler-on-counterstrain-4414",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 mg",
+            "frequency:BID"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 8.89,
+          "capped": [
+            "number not heard: 10"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "First episode of VTE: minimum 3 months of anticoagulation; unprovoked VTE: indefinite anticoagulation.",
@@ -75224,7 +75879,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with first episode of VTE",
-      "pearl_id": "dr-tischler-on-counterstrain-4532"
+      "pearl_id": "dr-tischler-on-counterstrain-4532",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 months"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For women with unprovoked VTE, consider HERDOO2 score after 6 months to assess stopping risk; low risk (<3% recurrence) may stop.",
@@ -75237,7 +75908,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "women with unprovoked VTE after 6 months of anticoagulation",
-      "pearl_id": "dr-tischler-on-counterstrain-4703"
+      "pearl_id": "dr-tischler-on-counterstrain-4703",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 months",
+            "threshold:<3"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Thrombophilia workup is not routine for all unprovoked VTE; consider if young, family history, pregnancy losses, or atypical presentation.",
@@ -75250,7 +75941,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with unprovoked VTE",
-      "pearl_id": "dr-tischler-on-counterstrain-4786"
+      "pearl_id": "dr-tischler-on-counterstrain-4786",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pregnancy loss"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

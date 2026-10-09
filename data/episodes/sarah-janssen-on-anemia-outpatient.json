@@ -42590,7 +42590,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with iron deficiency",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-1047"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-1047",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:above 3"
+          ],
+          "rarity": 7.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Oral iron should not be dosed BID or TID; once daily or every other day is sufficient and causes fewer GI side effects.",
@@ -42603,7 +42619,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults on oral iron",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-1207"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-1207",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:BID"
+          ],
+          "rarity": 6.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Take oral iron with a meal containing meat (chicken, fish, or lamb) to maximize absorption.",
@@ -42616,7 +42648,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults on oral iron",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-1269"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-1269",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid tea or coffee within one hour before or after taking iron, as tannins inhibit absorption.",
@@ -42629,7 +42674,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults on oral iron",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-1348"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-1348",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recheck hemoglobin 2-4 weeks after starting oral iron; expect a rise of at least 1 g/dL.",
@@ -42642,7 +42703,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults starting oral iron",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-1465"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-1465",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:4 weeks",
+            "threshold:at least 1"
+          ],
+          "actionable": [
+            "Recheck"
+          ],
+          "rarity": 6.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A two-week trial of oral iron can serve as a therapeutic trial to confirm iron deficiency when diagnosis is unclear.",
@@ -42655,7 +42736,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with possible iron deficiency",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-1493"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-1493",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:iron deficiency"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "rarity": 7.07
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IV iron is indicated for patients with CHF, CKD, IBD, cancer, or those who cannot tolerate or do not respond to oral iron.",
@@ -42668,7 +42768,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with iron deficiency",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-1667"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-1667",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:iv iron"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The Fishbane reaction (non-allergic infusion reaction) is common with IV iron; stop infusion, symptoms resolve, then restart at slower rate, do not give Benadryl.",
@@ -42681,7 +42800,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving IV iron",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-1795"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-1795",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:fishbane reaction"
+          ],
+          "actionable": [
+            "stop"
+          ],
+          "harm": [
+            "do not give"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For microcytic anemia with MCV <70 and elevated RBC count, consider thalassemia trait; Mentzer index <13 suggests thalassemia.",
@@ -42694,7 +42835,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with microcytic anemia",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-1871"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-1871",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:<7"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In macrocytic anemia, MCV 100-105 suggests alcohol; MCV >110-115 suggests B12 or folate deficiency.",
@@ -42711,7 +42871,23 @@
         "100",
         "105"
       ],
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-2040"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-2040",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>1"
+          ],
+          "rarity": 7.73
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Normocytic anemia is the broadest category of anemia and requires the most work to diagnose.",
@@ -42724,7 +42900,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "normocytic anemia",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-2201"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-2201",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:normocytic anemia"
+          ],
+          "rarity": 7.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For normocytic anemia, obtaining a full iron panel is more helpful than in other anemias because the differential is broader.",
@@ -42737,7 +42929,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "normocytic anemia",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-2229"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-2229",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:normocytic anemia"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For normocytic anemia, a complete metabolic panel should be obtained early as it is more helpful.",
@@ -42750,7 +42958,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "normocytic anemia",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-2234"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-2234",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:complete metabolic pan"
+          ],
+          "rarity": 6.82
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Refer to hematology if you have completed the basic labs and still have no diagnosis.",
@@ -42763,7 +42987,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anemia after basic workup",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-2262"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-2262",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Refer"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Perform basic labs (CBC, reticulocyte count, LDH, peripheral smear) before referring a patient with anemia to make the workup easier for the specialist.",
@@ -42776,7 +43016,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient anemia",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-2271"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-2271",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CBC"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you have made a diagnosis and initiated management but the patient is not responding, it is appropriate to refer to a specialist.",
@@ -42789,7 +43045,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient anemia",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-2279"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-2279",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hemoglobinopathies are a severe cause of anemia that should prompt referral.",
@@ -42802,7 +43074,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anemia",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-2283"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-2283",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hemoglobinopathies"
+          ],
+          "rarity": 6.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with anemia, a high reticulocyte count and high LDH suggest hemolysis, which warrants referral.",
@@ -42815,7 +43103,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anemia",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-2289"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-2289",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:reticulocyte count"
+          ],
+          "rarity": 6.9
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If two or more cell lines (e.g., anemia plus thrombocytopenia or leukopenia) are decreased, refer immediately.",
@@ -42828,7 +43132,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anemia",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-2296"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-2296",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:thrombocytopenia"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 6.76
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "An abnormal peripheral smear showing any blast cells is an indication for immediate referral.",
@@ -42841,7 +43167,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anemia",
-      "pearl_id": "sarah-janssen-on-anemia-outpatient-2296-2"
+      "pearl_id": "sarah-janssen-on-anemia-outpatient-2296-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:peripheral smear"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

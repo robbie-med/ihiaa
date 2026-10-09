@@ -47460,7 +47460,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare AWV documentation",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-175"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-175",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Family history cannot be left blank or documented as 'noncontributory'; at minimum, record 'mom deceased at age 80, unknown cause'.",
@@ -47473,7 +47486,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare AWV documentation",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-206"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-206",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the patient has no surgical or procedural history, document 'none' rather than leaving it blank.",
@@ -47486,7 +47512,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare AWV documentation",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-233"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-233",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "document"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The written screening schedule for the next five years is generated using the smart phrase 'skilled PPP dash f' for female patients or 'G0439-M' for male patients in the patient instructions section.",
@@ -47499,7 +47541,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare AWV documentation",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-359"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-359",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:g0439"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients on opioids, document a pain scale and discuss nonopioid treatment options as part of the opioid prescription review.",
@@ -47512,7 +47570,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare AWV with opioid prescription",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-447"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-447",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:opioid prescription"
+          ],
+          "actionable": [
+            "document"
+          ],
+          "rarity": 7.31
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Social determinants of health risk assessment is separately billable only if the teaching physician documents their time; the MA's time does not count.",
@@ -47525,7 +47602,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare AWV",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-480"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-480",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:social determinants of"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Depression screening (PHQ-2/9) is bundled with the initial AWV (G0438) and cannot be billed separately; it is separately billable only with the subsequent AWV (G0439) if the teaching physician documents time.",
@@ -47541,7 +47634,23 @@
       "numbers_unheard": [
         "9"
       ],
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-573"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-573",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:2/9"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Even if the teaching physician does not spend 16 minutes on advanced care planning, MA documentation in the ad hoc form can satisfy quality metric codes (1123 and 1124) for having an advance care plan in the chart.",
@@ -47554,7 +47663,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare AWV",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-613"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-613",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:16 minutes"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Missing any single required element (e.g., sexual history) makes the entire AWV unbillable; it is an 'all or nothing' code.",
@@ -47567,7 +47692,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare AWV",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-770"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-770",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When billing an E&M service with an AWV, document a separate chief complaint (e.g., 'patient presents for six-month follow-up on hypertension and diabetes') and append modifier 25 to the E&M code.",
@@ -47580,7 +47718,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare AWV with concurrent E&M",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-926"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-926",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hypertension"
+          ],
+          "actionable": [
+            "document"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Notify patients when both an AWV and an E&M are billed, because they may receive a bill for the Medicare deductible (around $180) early in the year.",
@@ -47593,7 +47750,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare patients",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-985"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-985",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:medicare"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The Welcome to Medicare visit (G0402) requires a visual acuity screening; do not offer it as optional, perform it unless the patient flatly refuses.",
@@ -47606,7 +47779,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Welcome to Medicare visit (G0402)",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1091"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1091",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:welcome to medicare vi"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For the Welcome to Medicare visit (G0402), a visual acuity screening is required and is the most commonly missed element.",
@@ -47619,7 +47811,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving Welcome to Medicare visit (IPPE)",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1091-2"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1091-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:welcome to medicare vi"
+          ],
+          "harm": [
+            "missed"
+          ],
+          "rarity": 7.73
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Eligibility for G0402 (Welcome to Medicare) vs G0439 (Annual Wellness Visit) depends on whether the patient is within the first 12 months of Part B coverage, not their age.",
@@ -47632,7 +47843,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare patients",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1296"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1296",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:12 months"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you perform a G0439 but did not do the visual acuity screening (because the patient was actually eligible for G0402), the service is done for free and cannot be billed.",
@@ -47645,7 +47872,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare wellness visits",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1335"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1335",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:visual acuity screenin"
+          ],
+          "rarity": 7.73
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To avoid missing elements, instruct MAs to perform all components of the ad hoc form every time, so the code can be flipped if eligibility is different than assumed.",
@@ -47658,7 +47901,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "MAs and providers doing Medicare wellness visits",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1343"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1343",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ad hoc form"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the 4Ms (Mobility, Mind, Medications, What Matters Most) in the HPI section to capture the required patient self-assessment of health.",
@@ -47671,7 +47933,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "providers documenting Medicare wellness visits",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1353"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1353",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:patient self-assessmen"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Mark histories as 'reviewed' in the EHR to bulletproof documentation against auditors who might challenge outdated entries.",
@@ -47684,7 +47965,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "providers doing Medicare wellness visits",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1385"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1385",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:documentation"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Care team member information must be included in the note; using the correct template is essential or the visit cannot be billed.",
@@ -47697,7 +47994,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "providers doing Medicare wellness visits",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1417"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1417",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.41
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The National Compliance checklist breaks down every requirement for the wellness visit, including specific elements like sexual history and nutrition history.",
@@ -47710,7 +48020,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "providers and MAs doing Medicare wellness visits",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1446"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1446",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:wellness visit"
+          ],
+          "rarity": 7.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient expects a free wellness visit but chronic issues are also addressed, they may be surprised by a deductible charge; manage expectations by framing the visit around the chronic problems first.",
@@ -47723,7 +48049,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic conditions also due for wellness visit",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1894"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1894",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:wellness visit"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Billing audits are triggered only if a claim holds for reasons like modifier 25, incorrect diagnosis, or insurance issues; otherwise, claims process without review.",
@@ -47736,7 +48078,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "All Medicare wellness visit claims",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2087"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2087",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:billing audit"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When billing a wellness visit and a separate E/M for chronic issues, link the Z00.00 or Z00.01 diagnosis to the wellness code and the chronic condition diagnoses to the E/M code.",
@@ -47750,7 +48108,23 @@
       "prompt_version": "v1",
       "applies_to": "providers billing both wellness and chronic problem visits on same day",
       "by_presenter": false,
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2139"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2139",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:wellness visit"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The first diagnosis must be linked to the Medicare wellness code G0439 using Z00.00 or Z00.01; chronic conditions link to separate E&M codes like 99214.",
@@ -47764,7 +48138,23 @@
       "prompt_version": "v1",
       "applies_to": "Medicare wellness visits with concurrent chronic problem management",
       "by_presenter": false,
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2139-2"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2139-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:medicare"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The order of items in the plan does not matter as long as each diagnosis is correctly linked to its corresponding code.",
@@ -47778,7 +48168,23 @@
       "prompt_version": "v1",
       "applies_to": "Medicare wellness visits with concurrent chronic problem management",
       "by_presenter": false,
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2165"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2165",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Charges cannot be entered in the EMR before the visit is completed; doing so constitutes fraud.",
@@ -47792,7 +48198,23 @@
       "prompt_version": "v1",
       "applies_to": "All visits",
       "by_presenter": false,
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2314"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2314",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fraud"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient cannot finish the wellness form in the office, send it home with them and schedule another visit to bill the wellness visit when the form is returned.",
@@ -47806,7 +48228,23 @@
       "prompt_version": "v1",
       "applies_to": "Patients unable to complete the wellness form during the visit",
       "by_presenter": false,
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2331"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2331",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:wellness visit"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "All four M (4Ms) lines must be filled; leaving any blank is considered missing data, even if the answer is zero or 'no'.",
@@ -47820,7 +48258,20 @@
       "prompt_version": "v1",
       "applies_to": "All Medicare wellness visits",
       "by_presenter": false,
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2414"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2414",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The patient self-assessment (first question of the 4Ms) is a billing requirement; other 4M sections may be optional per National guidance.",
@@ -47833,7 +48284,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Medicare wellness visits",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2471"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2471",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:patient self-assessmen"
+          ],
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient is on an opioid prescription, fill out the medication section of the 4Ms, including discussion of non-opioid treatment options.",
@@ -47846,7 +48313,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Patients on opioid prescriptions during Medicare wellness visits",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2549"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2549",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:opioid prescription"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Providers can request individual billing feedback by emailing Dr. Warman, who typically responds same day.",
@@ -47859,7 +48342,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "Providers seeking billing feedback",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2694"
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2694",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -40710,7 +40710,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected hypothyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-529"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-529",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:deep tendon reflexes"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 6.49
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For routine hypothyroidism, do not order thyroid antibodies; treat based on TSH and free T4. Antibodies are not clinically useful in this setting.",
@@ -40723,7 +40742,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected primary hypothyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-784"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-784",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:TSH"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 5.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start levothyroxine at 25-50 mcg daily; in elderly patients start on the lower end, in healthy patients start on the higher end. Gauge by initial TSH and free T4.",
@@ -40736,7 +40774,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults starting levothyroxine",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-820"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-820",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:50 mcg",
+            "frequency:daily",
+            "test:TSH"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 5.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Repeat TSH testing 4-6 weeks after starting or adjusting levothyroxine dose.",
@@ -40749,7 +40808,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on levothyroxine after dose change",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-840"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-840",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:6 weeks",
+            "test:TSH"
+          ],
+          "actionable": [
+            "Repeat"
+          ],
+          "rarity": 6.28
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Take levothyroxine in the morning on an empty stomach; food affects absorption. Consistency is key, take it the same way every day.",
@@ -40762,7 +40841,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on levothyroxine",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-854"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-854",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:levothyroxine"
+          ],
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Goal TSH in hypothyroidism should be toward the higher end of the normal range, especially in the elderly, to avoid overcorrection.",
@@ -40775,7 +40870,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with hypothyroidism, especially elderly",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-967"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-967",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:TSH"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 6.8
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Overcorrecting TSH can cause angina, atrial fibrillation, and osteoporosis.",
@@ -40788,7 +40902,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on levothyroxine",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1003"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1003",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:TSH"
+          ],
+          "rarity": 7.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not switch to T3; it is rapidly absorbed with a short half-life leading to inconsistent levels. T4 allows the body to convert as needed.",
@@ -40801,7 +40931,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hypothyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1045"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1045",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.99
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Once stable on levothyroxine, follow TSH every 6-12 months.",
@@ -40814,7 +40960,25 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with stable hypothyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1085"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1085",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:12 months",
+            "frequency:every 6",
+            "test:TSH"
+          ],
+          "rarity": 5.71
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If levothyroxine dose reaches 200 mcg (max) and symptoms persist, check for medication interactions, adherence, and consider other differentials.",
@@ -40827,7 +40991,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring high-dose levothyroxine with ongoing symptoms",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1125"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1125",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:200 mcg"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pregnancy, increase levothyroxine dose by 30-50% based on total weekly dose. You can use different doses on different days to achieve the increase.",
@@ -40840,7 +41023,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with hypothyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1216"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1216",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:weekly"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 6.28
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pregnancy, keep TSH at the lower end of the normal range to prevent congenital hypothyroidism. Use trimester-specific reference ranges; do not rely on Cerner's normal ranges.",
@@ -40853,7 +41055,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with hypothyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1254"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1254",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:TSH"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Recheck TSH monthly during pregnancy, whether or not there is a dose adjustment.",
@@ -40866,7 +41087,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with hypothyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1287"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1287",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:monthly",
+            "test:TSH"
+          ],
+          "actionable": [
+            "Recheck"
+          ],
+          "rarity": 6.03
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For hypothyroidism in pregnancy, manage based on TSH, not T4; do not check T4 because it can confuse management.",
@@ -40879,7 +41120,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with hypothyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1307"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1307",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:TSH"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Most patients with subclinical hypothyroidism (elevated TSH, normal T4) do not need treatment; monitor TSH every 1-2 years.",
@@ -40895,7 +41155,31 @@
       "numbers_unheard": [
         "2"
       ],
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1512"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1512",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 years",
+            "frequency:every 1",
+            "test:TSH"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.16,
+          "capped": [
+            "number not heard: 2"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consider treating subclinical hypothyroidism if the patient is symptomatic, TSH >10, has family history, goiter, plans pregnancy, or has positive antibodies.",
@@ -40908,7 +41192,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with subclinical hypothyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1537"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1537",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>1",
+            "test:TSH"
+          ],
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 7.23
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Subclinical hypothyroidism carries increased risk of atrial fibrillation and osteoporosis, so follow up periodically.",
@@ -40921,7 +41225,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with subclinical hypothyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1578"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1578",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:subclinical hypothyroi"
+          ],
+          "actionable": [
+            "follow up"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For hyperthyroidism, confirm Graves' disease with anti-thyrotropin receptor antibody, which is the most specific test.",
@@ -40934,7 +41257,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected Graves' disease",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1861"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1861",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anti-thyrotropin recep"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use methimazole for most patients with hyperthyroidism; reserve PTU for pregnancy. Propranolol provides symptom relief by blocking T4-to-T3 conversion.",
@@ -40947,7 +41289,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hyperthyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1920"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-1920",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:methimazole"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Both methimazole and PTU can cause agranulocytosis; if a patient on these develops sore throat and fever, check a CBC.",
@@ -40960,7 +41321,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on methimazole or PTU",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2038"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2038",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:methimazole",
+            "test:CBC"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Transaminitis from methimazole or PTU does not require stopping the drug unless it is three times the upper limit of normal.",
@@ -40973,7 +41354,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on methimazole or PTU with elevated LFTs",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2110"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2110",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:methimazole"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For exophthalmos in Graves' disease, first optimize thyroid control; if no improvement, try steroids; if still no improvement, refer for cosmetic eye surgery.",
@@ -40986,7 +41383,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with Graves' ophthalmopathy",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2157"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2157",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 7.98
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Thyroid storm management: IV fluids, cooling measures, IV propranolol, methimazole, corticosteroids, then iodine one hour later.",
@@ -40999,7 +41412,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thyroid storm",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2210"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2210",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:propranolol"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In pregnancy, switch from methimazole to PTU at standard dosing of 100 mg PO TID.",
@@ -41012,7 +41441,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with hyperthyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2301"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2301",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:100 mg",
+            "frequency:TID",
+            "drug:methimazole"
+          ],
+          "actionable": [
+            "switch"
+          ],
+          "rarity": 6.73
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For hyperthyroidism in pregnancy, target free T4 in the upper third of the normal reference range.",
@@ -41025,7 +41475,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with hyperthyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2374"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2374",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hyperthyroidism in pre"
+          ],
+          "rarity": 6.25
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Thyroid ultrasound is not needed if thyroid exam is normal and labs are trending appropriately; order it only if exam is abnormal or another etiology is suspected.",
@@ -41038,7 +41504,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thyroid dysfunction",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2439"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2439",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the thyroid exam is normal and labs are trending appropriately for hypo- or hyperthyroidism, a thyroid ultrasound is not needed.",
@@ -41051,7 +41536,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected thyroid dysfunction",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2442"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2442",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Subacute thyroiditis presents with a painful thyroid and lab abnormalities that look like hyperthyroidism, but it self-resolves within a couple of weeks and should not be treated with antithyroid agents.",
@@ -41064,7 +41565,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with painful thyroid and hyperthyroid labs",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2502"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2502",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:subacute thyroiditis"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Subacute thyroiditis presents with a painful thyroid and hyperthyroid labs but is self-limiting; do not treat with antithyroid drugs, and consider ultrasound to rule out nodule or cancer.",
@@ -41077,7 +41594,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with subacute thyroiditis",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2504"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2504",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For subacute thyroiditis, propranolol or steroids can be used for symptom control, but antithyroid agents are not indicated.",
@@ -41090,7 +41626,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with subacute thyroiditis",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2552"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2552",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:propranolol"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always test TSH while the patient is on levothyroxine; there is no need to stop the medication for testing.",
@@ -41103,7 +41655,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on levothyroxine therapy",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2586"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2586",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:TSH"
+          ],
+          "actionable": [
+            "Always"
+          ],
+          "rarity": 5.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Autoimmune hypothyroidism is a lifelong condition; the body will not start tolerating its own thyroid hormones, similar to type 1 diabetes, so levothyroxine is expected to be taken for life.",
@@ -41116,7 +41687,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with autoimmune hypothyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2600"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2600",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:autoimmune hypothyroid"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pregnancy-induced hypothyroidism often resolves after delivery; if levothyroxine was started only during pregnancy, it can usually be stopped or reduced postpartum.",
@@ -41129,7 +41719,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pregnant patients with new-onset hypothyroidism",
-      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2647"
+      "pearl_id": "thyroid-disorders-dr-amanda-lucashu-do-2647",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pregnancy-induced hypo"
+          ],
+          "rarity": 6.76
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

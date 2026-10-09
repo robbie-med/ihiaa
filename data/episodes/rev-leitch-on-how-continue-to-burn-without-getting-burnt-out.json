@@ -59653,7 +59653,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "healthcare organizations",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-3013"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-3013",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:burnout"
+          ],
+          "rarity": 7.49
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Major warning signs of compassion fatigue include silencing response, withdrawal from engaging life, diminished capacity to listen and communicate, loss of confidence, and sense of dread for no obvious reason.",
@@ -59666,7 +59682,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "healthcare workers",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-3051"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-3051",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:compassion fatigue"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "High levels of anxiety impede cognitive and motor skills, including language, information processing, motor coordination, and judgment.",
@@ -59679,7 +59714,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "healthcare workers in high-stress environments",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-3507"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-3507",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A nonanxious presence means staying genuinely calm in circumstances that could potentially lead to anxiety, not just appearing calm while anxiety rages inside.",
@@ -59692,7 +59740,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "healthcare workers",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-3601"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-3601",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nonanxious presence"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To maintain a nonanxious presence, you must regain control of the thoughts and self-talk that lead to anxiety.",
@@ -59705,7 +59769,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "healthcare workers",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-3611"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-3611",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nonanxious presence"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Be proactive: before a challenging patient encounter, plan your response ahead of time, choose to remain calm and professional regardless of the patient's behavior.",
@@ -59718,7 +59798,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "healthcare workers with difficult patients",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-3826"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-3826",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Identify automatic negative thoughts (ANTs) such as 'I'm worthless' or 'I'll never amount to anything,' and replace them with intentional, positive thinking.",
@@ -59731,7 +59824,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anyone experiencing negative self-talk",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4004"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4004",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:automatic negative tho"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The principle of isomorphism: affecting positive change in one area of life can have a generative effect across other areas.",
@@ -59744,7 +59856,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "anyone working on personal growth",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4150"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4150",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:isomorphism"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Even while appearing calm, if your anxiety has crossed the optimal level, your cognitive and motor performance will still decrease.",
@@ -59757,7 +59885,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any helper or clinician",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4169"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4169",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "decrease"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Self-soothing involves using cognitive, affective, and behavioral skills to create relaxation and lowered reactivity.",
@@ -59770,7 +59914,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "healthcare workers",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4185"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4185",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:self-soothing"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient is distressed, do not tell them you know how they feel. Instead say 'that must really be awful' and 'I feel your pain with you.'",
@@ -59783,7 +59943,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians interacting with distressed patients",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4245"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4245",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you let a patient's anger control you (e.g., you start getting really mad), the patient is in control, not you.",
@@ -59796,7 +59972,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians in emotionally charged encounters",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4296"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4296",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A non-anxious presence does not deny feelings; it means realizing your position is to minister to and help the patient.",
@@ -59809,7 +60001,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4326"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4326",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:non-anxious presence"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When you stay calm and focus on what can be done, you train the patient that there is something they can do, thereby empowering them.",
@@ -59822,7 +60030,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians with patients who feel helpless",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4351"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4351",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Reacting to patients is less effective than responding; responding is a powerful position.",
@@ -59835,7 +60056,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians in any patient interaction",
-      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4382"
+      "pearl_id": "rev-leitch-on-how-continue-to-burn-without-getting-burnt-out-4382",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

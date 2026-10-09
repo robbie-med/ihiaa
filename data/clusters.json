@@ -3,21 +3,37 @@
   "judge": "j2",
   "verify": "v2",
   "stats": {
-    "pearls": 6070,
-    "candidates": 3313,
-    "judged": 1660,
+    "pearls": 6357,
+    "candidates": 3415,
+    "judged": 1947,
     "relations": {
-      "agree": 500,
-      "complement": 625,
-      "contradict": 73,
-      "same": 238,
-      "unrelated": 224
+      "agree": 592,
+      "complement": 740,
+      "contradict": 91,
+      "same": 247,
+      "unrelated": 277
     },
-    "verified_conflicts": 2,
-    "depends": 38,
-    "refuted": 33
+    "verified_conflicts": 5,
+    "depends": 49,
+    "refuted": 36
   },
   "conflicts": [
+    {
+      "a": "dr-b-howard-on-ra-lupus-1590",
+      "b": "rheumatology-with-dr-lucashu-1611",
+      "sim": 0.8863,
+      "same_speaker": false,
+      "topic": "Fibromyalgia diagnostic criteria",
+      "why": "They specify different symptom severity score cutoffs (≥5 vs >9)."
+    },
+    {
+      "a": "dr-lee-on-morning-reports-2-1432",
+      "b": "l-dogg-s-morning-report-2-3462",
+      "sim": 0.8624,
+      "same_speaker": true,
+      "topic": "delta-delta calculation interpretation",
+      "why": "Both formulas differ: one uses (AG-12)+HCO3 <22, the other uses (AG-12)-HCO3 >1 for the same conclusion."
+    },
     {
       "a": "dr-calvert-on-female-vulva-exam-pathology-2-1941",
       "b": "dr-calvert-on-female-vulva-exam-pathology-2148",
@@ -33,6 +49,14 @@
       "same_speaker": true,
       "topic": "fibroid location and bleeding",
       "why": "A says only submucosal cause bleeding; B says intramural also cause bleeding."
+    },
+    {
+      "a": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--2097",
+      "b": "gyn-with-dr-calvert-2913",
+      "sim": 0.768,
+      "same_speaker": true,
+      "topic": "Insulin resistance ratio interpretation",
+      "why": "A says ratio below 5 is abnormal; B says ratio above 4.5 indicates insulin resistance."
     }
   ],
   "depends": [
@@ -55,24 +79,6 @@
       "condition": "Which screening guideline is being followed"
     },
     {
-      "a": "dr-b-howard-on-ra-lupus-1590",
-      "b": "rheumatology-with-dr-lucashu-1577",
-      "sim": 0.8675,
-      "same_speaker": false,
-      "topic": "Fibromyalgia diagnostic criteria thresholds",
-      "why": "They are describing different versions or interpretations of the diagnostic criteria.",
-      "condition": "Which specific set of criteria (e.g., 2010 vs. 2016) is being applied."
-    },
-    {
-      "a": "dr-amell-on-opioid-stewardship-1747",
-      "b": "drs-jones-shannon-on-addiction-med-part-2-1309",
-      "sim": 0.8538,
-      "same_speaker": false,
-      "topic": "Buprenorphine induction timing",
-      "why": "One starts while still on full agonist, the other only after withdrawal begins.",
-      "condition": "Whether patient is still taking full agonist opioids"
-    },
-    {
       "a": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-501",
       "b": "dr-hermann-on-adult-wellness-1288",
       "sim": 0.8406,
@@ -89,6 +95,24 @@
       "topic": "Kenalog-lidocaine injection mix",
       "why": "Different volumes and Kenalog doses for knee vs general joint/nerve blocks.",
       "condition": "Specific joint (knee) vs general blocks"
+    },
+    {
+      "a": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1421",
+      "b": "thyroid-disorders-dr-amanda-lucashu-do-2301",
+      "sim": 0.7991,
+      "same_speaker": false,
+      "topic": "antithyroid drug in pregnancy",
+      "why": "Guidance differs by trimester: PTU preferred in first trimester, methimazole later.",
+      "condition": "trimester of pregnancy"
+    },
+    {
+      "a": "dr-rylander-on-nerve-blocks-168",
+      "b": "injections-outpatient-procedures-1360",
+      "sim": 0.7928,
+      "same_speaker": false,
+      "topic": "steroid injection formulation",
+      "why": "A gives a general mix for all blocks/joints; B specifies a knee injection recipe.",
+      "condition": "whether the injection is for a knee or other site"
     },
     {
       "a": "dr-ledbetter-on-pocus-of-the-knee-4422",
@@ -118,31 +142,40 @@
       "condition": "severity of reaction and number of epinephrine doses needed"
     },
     {
-      "a": "dr-bothwell-on-breastfeeding-1187",
-      "b": "inflammatory-breast-cancer-dr-jon-calvert-2278",
-      "sim": 0.7704,
+      "a": "drs-jones-shannon-on-addiction-med-part-2-1767",
+      "b": "kelly-dunn-md-on-benzodiazepines-2415",
+      "sim": 0.7694,
       "same_speaker": false,
-      "topic": "mastitis treatment approach",
-      "why": "One emphasizes supportive care first; the other adds antibiotics immediately.",
-      "condition": "severity of infection or presence of systemic symptoms"
+      "topic": "Benzodiazepine taper choice",
+      "why": "General taper favors long-acting for stability; older adults may need short-acting due to metabolism.",
+      "condition": "Patient age and metabolic function"
     },
     {
-      "a": "dr-ledbetter-on-cardiac-pocus-2461",
-      "b": "pocus-with-dr-ledbetter-4350",
-      "sim": 0.7643,
+      "a": "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--2063",
+      "b": "gyn-with-dr-calvert-2913",
+      "sim": 0.7675,
       "same_speaker": true,
-      "topic": "RV size in right heart strain",
-      "why": "Different criteria for different types of RV strain or different imaging views.",
-      "condition": "Acute vs. chronic RV strain or imaging view used"
+      "topic": "insulin resistance ratio timing",
+      "why": "A uses fasting ratio; B uses post-glucose load ratio.",
+      "condition": "fasting vs. 2-hour post-glucose load"
     },
     {
-      "a": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1454",
-      "b": "thyroid-disorders-dr-amanda-lucashu-do-1304",
-      "sim": 0.7515,
+      "a": "dr-kelly-dunn-on-ihi-fm-board-review-2-2615",
+      "b": "kelly-dunn-md-on-benzodiazepines-2415",
+      "sim": 0.7674,
+      "same_speaker": true,
+      "topic": "Benzodiazepine tapering agent choice",
+      "why": "General guideline favors long-acting agents, but older adults may require short-acting due to metabolism.",
+      "condition": "Patient age and metabolic function"
+    },
+    {
+      "a": "dr-rylander-on-nerve-blocks-168",
+      "b": "injections-outpatient-procedures-1906",
+      "sim": 0.7565,
       "same_speaker": false,
-      "topic": "thyroid monitoring in pregnancy",
-      "why": "One is for hyperthyroidism treatment, the other for hypothyroidism management.",
-      "condition": "whether the patient has hyperthyroidism or hypothyroidism"
+      "topic": "Kenalog dose for joint injection",
+      "why": "Standard mix for general blocks vs small volume for tight AC joint space.",
+      "condition": "Whether injection is for AC joint or other sites"
     },
     {
       "a": "dr-amell-on-opioid-stewardship-1747",
@@ -154,31 +187,31 @@
       "condition": "stage of treatment: induction vs. maintenance"
     },
     {
-      "a": "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1421",
-      "b": "thyroid-disorders-dr-amanda-lucashu-do-1915",
-      "sim": 0.7311,
+      "a": "dr-cunningham-on-osteoarthritis-of-the-knee-1250",
+      "b": "dr-ganzer-on-knee-injuries-689",
+      "sim": 0.7302,
       "same_speaker": false,
-      "topic": "antithyroid drug in pregnancy",
-      "why": "Guidance differs by trimester: PTU in first trimester, methimazole later.",
-      "condition": "trimester of pregnancy"
+      "topic": "Knee injection positioning",
+      "why": "Different goals: one optimizes joint space visualization, the other targets suprapatellar pouch.",
+      "condition": "Whether using ultrasound guidance or targeting suprapatellar pouch"
     },
     {
-      "a": "dr-lawrence-lee-on-morning-reports-5753",
-      "b": "two-cases-with-dr-lawrence-lee-3575",
-      "sim": 0.7147,
-      "same_speaker": true,
-      "topic": "Approach to multiple problems",
-      "why": "A is for organizing initial assessment, B is for reassessing when stuck.",
-      "condition": "Stage of clinical reasoning: initial vs. unclear management"
+      "a": "dr-ledbetter-on-benzo-tapering-271",
+      "b": "kelly-dunn-md-on-benzodiazepines-2415",
+      "sim": 0.7279,
+      "same_speaker": false,
+      "topic": "Benzodiazepine tapering agent choice",
+      "why": "One recommends diazepam for easier dose adjustments; the other recommends short-acting for older adults due to metabolism.",
+      "condition": "Patient age and metabolic considerations"
     },
     {
-      "a": "dr-lee-on-morning-reports-2-4969",
-      "b": "pressors-engstrom-344",
-      "sim": 0.714,
+      "a": "dr-rylander-on-nerve-blocks-168",
+      "b": "injections-outpatient-procedures-1712",
+      "sim": 0.7229,
       "same_speaker": false,
-      "topic": "phenylephrine use in shock",
-      "why": "One is for tachycardic patients to avoid increasing HR; the other says sick patients usually need beta support.",
-      "condition": "whether the patient is tachycardic and has preserved cardiac function"
+      "topic": "steroid injection volume and dose",
+      "why": "Dr. Rylander's standard mix is for general blocks; Dr. Sakirgil's is specific to plantar fascia.",
+      "condition": "whether the injection is for plantar fascia or other sites"
     },
     {
       "a": "dr-lucashu-speaks-on-thyroid-disease-1302",
@@ -226,6 +259,15 @@
       "condition": "Whether using strict ECG criteria or clinical gestalt for activation."
     },
     {
+      "a": "dr-engstrom-on-er-q-a-2738",
+      "b": "l-dogg-s-morning-report-2-4107",
+      "sim": 0.6885,
+      "same_speaker": false,
+      "topic": "Intubation in DKA",
+      "why": "One warns against intubation due to inability to match compensatory tachypnea; the other supports it for respiratory acidosis.",
+      "condition": "Presence of respiratory acidosis vs. pure metabolic compensation"
+    },
+    {
       "a": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-3315",
       "b": "dr-rylander-on-copd-and-asthma-2516",
       "sim": 0.6882,
@@ -235,6 +277,15 @@
       "condition": "whether addressing steroids or bronchodilators first"
     },
     {
+      "a": "dr-hadwen-on-neuro-ite-prep-2169",
+      "b": "dr-whitaker-on-cva-management-2611",
+      "sim": 0.685,
+      "same_speaker": false,
+      "topic": "Hypertension management in emergencies",
+      "why": "Different conditions: hypertensive emergency vs acute ischemic stroke without tPA.",
+      "condition": "Whether the emergency is a general hypertensive emergency or a specific acute ischemic stroke"
+    },
+    {
       "a": "dr-kelly-dunn-on-ihi-fm-board-review-2308",
       "b": "dr-kelly-dunn-on-sleep-disorders-1763",
       "sim": 0.6846,
@@ -242,6 +293,15 @@
       "topic": "First-line insomnia drug choice",
       "why": "One is about general FDA approval and guidelines; the other is about elderly-specific preference.",
       "condition": "Patient age (elderly vs general adult)"
+    },
+    {
+      "a": "dr-ledbetter-on-benzo-tapering-1287",
+      "b": "kelly-dunn-md-on-benzodiazepines-4397",
+      "sim": 0.6802,
+      "same_speaker": false,
+      "topic": "Benzodiazepine management approach",
+      "why": "One addresses refusal to taper, the other outlines a taper schedule.",
+      "condition": "Patient's willingness to engage in a taper plan"
     },
     {
       "a": "dr-bancroft-on-rural-er-medicine-2006",
@@ -271,6 +331,33 @@
       "condition": "Which guideline set is being followed"
     },
     {
+      "a": "dr-bancroft-on-rural-er-medicine-3295",
+      "b": "l-dogg-s-morning-report-4549",
+      "sim": 0.6739,
+      "same_speaker": false,
+      "topic": "PEEP in intubated patients",
+      "why": "Teaching A is for PE patients to avoid hemodynamic compromise. Teaching B is for general initial ventilation.",
+      "condition": "Whether the patient has a pulmonary embolism"
+    },
+    {
+      "a": "dr-dunn-on-addiction-medicine-antidepressants-1532",
+      "b": "dr-haney-on-epidemiology-1631",
+      "sim": 0.6697,
+      "same_speaker": false,
+      "topic": "titration strategy for symptom response",
+      "why": "Different medications and goals: antidepressants for symptom relief vs GDMT for mortality benefit.",
+      "condition": "whether the drug is for symptom control or mortality reduction"
+    },
+    {
+      "a": "dr-ledbetter-on-benzo-tapering-1288",
+      "b": "kelly-dunn-md-on-benzodiazepines-4397",
+      "sim": 0.6664,
+      "same_speaker": false,
+      "topic": "Managing chronic benzodiazepine refusal",
+      "why": "A addresses refusal to taper; B addresses a taper schedule for willing patients.",
+      "condition": "Whether the patient is willing to taper or refuses."
+    },
+    {
       "a": "copd-dr-matt-haney-1216",
       "b": "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-967",
       "sim": 0.666,
@@ -278,15 +365,6 @@
       "topic": "Eosinophils in COPD treatment",
       "why": "One uses eosinophils to consider adding ICS; the other uses FEV1 and exacerbation history.",
       "condition": "Whether eosinophil level is used as a decision factor"
-    },
-    {
-      "a": "dr-engstrom-on-er-q-a-2738",
-      "b": "l-dogg-s-morning-report-2-4113",
-      "sim": 0.6645,
-      "same_speaker": false,
-      "topic": "intubation in DKA",
-      "why": "One advises against routine intubation; the other supports it if respiratory fatigue develops.",
-      "condition": "patient's respiratory muscle fatigue or impending failure"
     },
     {
       "a": "dr-b-howard-on-ra-lupus-4709",
@@ -298,13 +376,22 @@
       "condition": "underlying diagnosis (SLE vs. pericardial TB)"
     },
     {
-      "a": "dr-kelly-dunn-on-sleep-disorders-2023-2",
-      "b": "dr-williston-on-sleep-disorders-1544",
-      "sim": 0.6628,
+      "a": "dr-kelly-dunn-on-ihi-fm-board-review-2-2634",
+      "b": "kelly-dunn-md-on-benzodiazepines-4330-2",
+      "sim": 0.6634,
+      "same_speaker": true,
+      "topic": "Benzodiazepine taper strategy",
+      "why": "One approach is for patients with strong psychological attachment to alprazolam.",
+      "condition": "Patient's attachment to specific benzodiazepine"
+    },
+    {
+      "a": "dr-hildebrand-on-arthritis-1489",
+      "b": "rheumatology-with-dr-lucashu-1172",
+      "sim": 0.6617,
       "same_speaker": false,
-      "topic": "Sleep study for insomnia",
-      "why": "Disagreement hinges on whether 'persistent insomnia' itself qualifies as a symptom of a sleep disorder.",
-      "condition": "Presence of specific symptoms beyond insomnia itself"
+      "topic": "PCP starting methotrexate for RA",
+      "why": "One supports it in access-limited settings; the other discourages it generally.",
+      "condition": "Availability and wait time for rheumatology care"
     },
     {
       "a": "dr-ganzer-overviews-gestational-diabetes-600",
@@ -323,6 +410,42 @@
       "topic": "dizziness history taking",
       "why": "One emphasizes detailed symptom description for anatomic localization; the other prioritizes worst-case assumption due to unreliable history.",
       "condition": "clinical setting and reliability of patient history"
+    },
+    {
+      "a": "dr-dunn-speaks-on-depression-2832",
+      "b": "dr-lucashu-speaks-on-thyroid-disease-1471",
+      "sim": 0.6543,
+      "same_speaker": false,
+      "topic": "treating subclinical hypothyroidism",
+      "why": "A focuses on improving depression response, B on general management without depression.",
+      "condition": "whether the patient has comorbid depression"
+    },
+    {
+      "a": "dr-kelly-dunn-on-sleep-disorders-2023-2",
+      "b": "dr-williston-on-sleep-disorders-1544",
+      "sim": 0.6536,
+      "same_speaker": false,
+      "topic": "sleep study for insomnia",
+      "why": "Both agree sleep studies are not for insomnia alone; disagreement is on what triggers one.",
+      "condition": "whether patient has symptoms of another sleep disorder"
+    },
+    {
+      "a": "dr-engstrom-on-approach-to-undifferentiated-shock-2130",
+      "b": "pressors-engstrom-1471",
+      "sim": 0.6472,
+      "same_speaker": true,
+      "topic": "IV epinephrine dose safety",
+      "why": "One is for cardiac arrest (1 mg IV push), the other is for living patients (0.5 mg IV is dangerous).",
+      "condition": "Whether the patient is in cardiac arrest"
+    },
+    {
+      "a": "dr-calvert-on-female-vulva-examination-pathology-607",
+      "b": "dr-williams-on-skin-cancer-basics-1649",
+      "sim": 0.647,
+      "same_speaker": false,
+      "topic": "biopsy type for skin lesions",
+      "why": "Teaching A is for general vulvar lesions, B is specifically for suspected melanoma.",
+      "condition": "whether melanoma is suspected"
     },
     {
       "a": "dr-lawrence-lee-on-morning-reports-2-1769",
@@ -361,40 +484,41 @@
       "condition": "chronic vs acute severe hypertension in aortic dissection"
     },
     {
-      "a": "behavioral-med-2258",
-      "b": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-3819",
-      "sim": 0.6263,
-      "same_speaker": false,
-      "topic": "suicidal ideation clinic response",
-      "why": "Guidance differs based on the acuity and immediacy of the patient's suicidal risk.",
-      "condition": "presence of active plan and intent vs. lower-risk ideation"
+      "a": "dr-dunn-speaks-on-depression-4491",
+      "b": "kelly-dunn-md-on-benzodiazepines-2415",
+      "sim": 0.6223,
+      "same_speaker": true,
+      "topic": "benzodiazepine selection",
+      "why": "A is a general rule for new prescriptions; B is for tapers in older adults.",
+      "condition": "patient age and whether starting or tapering"
     },
     {
-      "a": "dr-dunn-on-addiction-medicine-antidepressants-5017",
-      "b": "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1021",
-      "sim": 0.6217,
-      "same_speaker": true,
-      "topic": "ketamine for depression",
-      "why": "A warns about practical barriers and addiction; B suggests faster use for severe cases.",
-      "condition": "patient has treatment-resistant melancholic depression"
+      "a": "dr-kelly-dunn-on-sleep-disorders-2023",
+      "b": "dr-williston-on-sleep-disorders-1544",
+      "sim": 0.622,
+      "same_speaker": false,
+      "topic": "sleep study for chronic insomnia",
+      "why": "Disagreement is on when to order a sleep study for unexplained insomnia.",
+      "condition": "presence of specific symptoms of a sleep disorder"
     }
   ],
   "groups": [
     {
       "pearl_ids": [
         "dr-kelly-dunn-on-ihi-fm-board-review-2-2615",
-        "dr-kelly-dunn-on-ihi-fm-board-review-2-2634",
         "dr-ledbetter-on-benzo-tapering-271",
-        "drs-jones-shannon-on-addiction-med-part-2-1767"
+        "dr-ledbetter-on-benzo-tapering-310",
+        "drs-jones-shannon-on-addiction-med-part-2-1767",
+        "kelly-dunn-md-on-benzodiazepines-3758"
       ],
-      "topic": "benzodiazepine taper strategy",
+      "topic": "benzodiazepine taper method",
       "speakers": [
         "Dr. Jones & Dr. Shannon",
         "Dr. Kelly Dunn",
         "Dr. Ledbetter"
       ],
       "n_speakers": 4,
-      "n_lectures": 3,
+      "n_lectures": 4,
       "kind": "consensus"
     },
     {
@@ -415,6 +539,34 @@
     },
     {
       "pearl_ids": [
+        "dr-lee-on-morning-report-4782",
+        "fmis-august-mm-2313"
+      ],
+      "topic": "severe neutropenia definition",
+      "speakers": [
+        "Dr. Lawrence Lee",
+        "Dr. Youmans & Dr. Wheeler & Dr. Jones"
+      ],
+      "n_speakers": 4,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-hadwen-on-neuro-ite-prep-1915",
+        "fmis-august-mm-733"
+      ],
+      "topic": "tia antiplatelet therapy",
+      "speakers": [
+        "Dr. Hadwen",
+        "Dr. Youmans & Dr. Wheeler & Dr. Jones"
+      ],
+      "n_speakers": 4,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
         "copd-dr-matt-haney-3138",
         "dr-dolin-on-chronic-obstructive-pulmonary-disease-asthma-1885",
         "dr-tischler-on-copd-2234"
@@ -431,11 +583,27 @@
     },
     {
       "pearl_ids": [
-        "dr-kaleigh-winters-on-png-tuberculosis-910",
-        "the-condies-on-surgery-2579",
-        "tuberculosis-kyle-jones-do-1379"
+        "dr-b-howard-on-ra-lupus-3375",
+        "dr-hildebrand-on-arthritis-469",
+        "rheumatology-with-dr-lucashu-465"
       ],
-      "topic": "bcg and tb testing",
+      "topic": "ana testing for pain",
+      "speakers": [
+        "Dr. Amanda Lucashu",
+        "Dr. B. Howard",
+        "Dr. Hildebrand"
+      ],
+      "n_speakers": 3,
+      "n_lectures": 3,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-kaleigh-winters-on-png-tuberculosis-910",
+        "the-condies-on-surgery-2579-2",
+        "tuberculosis-kyle-jones-do-1377"
+      ],
+      "topic": "bcg vaccine and tb testing",
       "speakers": [
         "Dr. Kaleigh Winters",
         "Dr. Kyle Jones",
@@ -449,15 +617,46 @@
       "pearl_ids": [
         "dr-dunn-on-addiction-med-2155",
         "dr-dunn-on-addiction-med-2169",
-        "drs-jones-shannon-on-addiction-med-part-2-1309"
+        "drs-jones-shannon-on-addiction-med-part-2-1313"
       ],
-      "topic": "buprenorphine induction",
+      "topic": "buprenorphine induction prerequisites",
       "speakers": [
         "Dr. Jones & Dr. Shannon",
         "Dr. Kelly Dunn"
       ],
       "n_speakers": 3,
       "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-dunn-on-addiction-med-4068",
+        "dr-dunn-speaks-on-depression-5131",
+        "drs-jones-shannon-on-addiction-med-part-2-2308"
+      ],
+      "topic": "gabapentin for alcohol recovery",
+      "speakers": [
+        "Dr. Jones & Dr. Shannon",
+        "Dr. Kelly Dunn"
+      ],
+      "n_speakers": 3,
+      "n_lectures": 3,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-kaleigh-winters-on-png-tuberculosis-1056",
+        "dr-shields-on-shortness-of-breath-in-tuberculosis-endemic-ne-1158",
+        "tuberculosis-kyle-jones-do-1697"
+      ],
+      "topic": "genexpert for tb",
+      "speakers": [
+        "Dr. Kaleigh Winters",
+        "Dr. Kyle Jones",
+        "Dr. Shields"
+      ],
+      "n_speakers": 3,
+      "n_lectures": 3,
       "kind": "consensus"
     },
     {
@@ -478,78 +677,60 @@
     },
     {
       "pearl_ids": [
-        "dr-dunn-speaks-on-depression-1358",
-        "dr-dunn-speaks-on-depression-1361",
-        "dr-greer-on-anxiety-depression-1001",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1587"
+        "dr-dunn-on-addiction-med-2386",
+        "drs-jones-shannon-on-addiction-med-part-2-418"
       ],
-      "topic": "bupropion and anxiety",
+      "topic": "naltrexone opioid screening",
       "speakers": [
-        "Dr. Greer",
+        "Dr. Jones & Dr. Shannon",
         "Dr. Kelly Dunn"
       ],
-      "n_speakers": 2,
-      "n_lectures": 3,
+      "n_speakers": 3,
+      "n_lectures": 2,
       "kind": "consensus"
     },
     {
       "pearl_ids": [
-        "dr-engstrom-on-approach-to-undifferentiated-shock-1868",
-        "morning-report-with-dr-lee-1646",
-        "pressors-engstrom-616",
-        "pressors-engstrom-3825"
+        "dr-kaleigh-winters-on-png-tuberculosis-1520",
+        "dr-kaleigh-winters-on-png-tuberculosis-1987",
+        "tuberculosis-kyle-jones-do-936",
+        "tuberculosis-kyle-jones-do-1917"
       ],
-      "topic": "dobutamine in cardiogenic shock",
+      "topic": "active tb treatment",
       "speakers": [
-        "Dr. Engstrom",
-        "Dr. Lawrence Lee"
+        "Dr. Kaleigh Winters",
+        "Dr. Kyle Jones"
       ],
       "n_speakers": 2,
-      "n_lectures": 3,
+      "n_lectures": 2,
       "kind": "consensus"
     },
     {
       "pearl_ids": [
-        "dr-dunn-on-addiction-medicine-antidepressants-3347",
-        "dr-dunn-on-addiction-medicine-antidepressants-3508",
-        "dr-williston-on-sleep-disorders-845",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1495"
+        "dr-acker-on-shoulder-disorders-examination-2464",
+        "dr-liening-on-shoulder-exam-727",
+        "dr-liening-on-shoulder-exam-2656",
+        "dr-liening-on-shoulder-exam-2661"
       ],
-      "topic": "mirtazapine dose effects",
+      "topic": "cross-body test for ac joint",
       "speakers": [
-        "Dr. Kelly Dunn",
-        "Dr. Williston"
+        "Dr. Acker",
+        "Dr. Liening"
       ],
       "n_speakers": 2,
-      "n_lectures": 3,
+      "n_lectures": 2,
       "kind": "consensus"
     },
     {
       "pearl_ids": [
         "dr-dunn-speaks-on-depression-2655",
         "dr-dunn-speaks-on-depression-3690",
-        "dr-greer-on-anxiety-depression-907",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2705"
+        "dr-greer-on-anxiety-depression-907"
       ],
-      "topic": "ssri/snri combination",
+      "topic": "avoid ssri+snri combination",
       "speakers": [
         "Dr. Greer",
         "Dr. Kelly Dunn"
-      ],
-      "n_speakers": 2,
-      "n_lectures": 3,
-      "kind": "consensus"
-    },
-    {
-      "pearl_ids": [
-        "dr-bancroft-on-head-neck-in-urgent-care-setting-1396",
-        "dr-bancroft-on-head-neck-in-urgent-care-setting-1397",
-        "pressors-engstrom-4387"
-      ],
-      "topic": "anaphylaxis criteria",
-      "speakers": [
-        "Dr. Bancroft",
-        "Dr. Engstrom"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -647,36 +828,6 @@
     },
     {
       "pearl_ids": [
-        "dr-acker-on-shoulder-disorders-examination-2464",
-        "dr-liening-on-shoulder-exam-2656",
-        "dr-liening-on-shoulder-exam-2661"
-      ],
-      "topic": "cross-body test for ac joint",
-      "speakers": [
-        "Dr. Acker",
-        "Dr. Liening"
-      ],
-      "n_speakers": 2,
-      "n_lectures": 2,
-      "kind": "consensus"
-    },
-    {
-      "pearl_ids": [
-        "dr-dunn-speaks-on-depression-1653",
-        "dr-greer-on-anxiety-depression-2349",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-843"
-      ],
-      "topic": "genetic testing efficacy",
-      "speakers": [
-        "Dr. Greer",
-        "Dr. Kelly Dunn"
-      ],
-      "n_speakers": 2,
-      "n_lectures": 3,
-      "kind": "consensus"
-    },
-    {
-      "pearl_ids": [
         "dr-bancroft-on-hematuria-evaluation-1708",
         "dr-sean-doyle-on-common-urologic-problems-489",
         "dr-sean-doyle-on-common-urologic-problems-597-2"
@@ -696,7 +847,7 @@
         "dr-ledbetter-on-pocus-of-the-knee-4422",
         "injections-outpatient-procedures-1360"
       ],
-      "topic": "knee injection mixture",
+      "topic": "knee injection components",
       "speakers": [
         "Dr. Enis Sakirgil",
         "Dr. Ledbetter"
@@ -709,12 +860,27 @@
       "pearl_ids": [
         "dr-john-ashley-on-vesiculobullous-2080",
         "dr-kelly-dunn-on-ihi-fm-board-review-1135",
-        "kelly-dunn-md-on-antipsychotics-mood-stabilizers-1895"
+        "kelly-dunn-md-on-antipsychotics-mood-stabilizers-1880"
       ],
-      "topic": "lamotrigine and stevens-johnson",
+      "topic": "lamotrigine rash management",
       "speakers": [
         "Dr. John Ashley",
         "Dr. Kelly Dunn"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 3,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-lucashu-speaks-on-thyroid-disease-1160",
+        "dr-nakashima-on-updates-in-pregnancy-care-from-aafp-fcpc-1495",
+        "thyroid-disorders-dr-amanda-lucashu-do-1216"
+      ],
+      "topic": "levothyroxine dose in pregnancy",
+      "speakers": [
+        "Dr. Amanda Lucashu",
+        "Dr. Nakashima"
       ],
       "n_speakers": 2,
       "n_lectures": 3,
@@ -752,14 +918,14 @@
     },
     {
       "pearl_ids": [
-        "dr-bancroft-on-foot-ankle-basics-727",
-        "injections-outpatient-procedures-1708",
-        "joint-injections-dr-enis-sakirgil-1891"
+        "dr-greer-on-anxiety-depression-1070",
+        "dr-kelly-dunn-on-ihi-fm-board-review-864",
+        "dr-kelly-dunn-on-ihi-fm-board-review-2-262"
       ],
-      "topic": "plantar fascia injection",
+      "topic": "screen for bipolar before antidepressants",
       "speakers": [
-        "Dr. Bancroft",
-        "Dr. Enis Sakirgil"
+        "Dr. Greer",
+        "Dr. Kelly Dunn"
       ],
       "n_speakers": 2,
       "n_lectures": 3,
@@ -767,17 +933,17 @@
     },
     {
       "pearl_ids": [
-        "dr-amell-on-opioid-stewardship-1336",
-        "dr-amell-on-opioid-stewardship-1629",
-        "dr-dunn-on-addiction-med-2224"
+        "dr-herrmann-on-outpatient-management-977",
+        "dr-place-on-hyperextension-2102",
+        "dr-place-on-hypertension-2765"
       ],
-      "topic": "precipitated withdrawal from buprenorphine",
+      "topic": "weight loss and bp",
       "speakers": [
-        "Dr. Amell",
-        "Dr. Kelly Dunn"
+        "Dr. Herrmann",
+        "Dr. Place"
       ],
       "n_speakers": 2,
-      "n_lectures": 2,
+      "n_lectures": 3,
       "kind": "consensus"
     },
     {
@@ -796,13 +962,27 @@
     },
     {
       "pearl_ids": [
-        "dr-kaleigh-winters-on-png-tuberculosis-1520",
-        "tuberculosis-kyle-jones-do-928"
+        "dr-engstrom-on-approach-to-undifferentiated-shock-4119",
+        "morning-report-with-dr-lee-5374"
       ],
-      "topic": "active tb treatment duration",
+      "topic": "adding second vasopressor",
       "speakers": [
-        "Dr. Kaleigh Winters",
-        "Dr. Kyle Jones"
+        "Dr. Engstrom",
+        "Dr. Lawrence Lee"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-ledbetter-on-benzo-tapering-542",
+        "kelly-dunn-md-on-benzodiazepines-4795"
+      ],
+      "topic": "alprazolam to diazepam conversion",
+      "speakers": [
+        "Dr. Kelly Dunn",
+        "Dr. Ledbetter"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -824,13 +1004,13 @@
     },
     {
       "pearl_ids": [
-        "dr-b-howard-on-ra-lupus-3375",
-        "rheumatology-with-dr-lucashu-465"
+        "dr-bancroft-on-head-neck-in-urgent-care-setting-1397",
+        "pressors-engstrom-4389"
       ],
-      "topic": "ana testing appropriateness",
+      "topic": "anaphylaxis diagnostic criteria",
       "speakers": [
-        "Dr. Amanda Lucashu",
-        "Dr. B. Howard"
+        "Dr. Bancroft",
+        "Dr. Engstrom"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -852,13 +1032,27 @@
     },
     {
       "pearl_ids": [
-        "dr-sean-doyle-on-common-urologic-problems-3051",
-        "two-cases-with-dr-lawrence-lee-4852"
+        "antenatal-testing-dr-bea-abraham-683",
+        "dr-hershberger-on-antepartum-fetal-surveillance-1588"
       ],
-      "topic": "asymptomatic bacteriuria treatment",
+      "topic": "antenatal testing timing for chronic htn",
       "speakers": [
-        "Dr. Lawrence Lee",
-        "Dr. Sean Doyle"
+        "Dr. Bea Abraham",
+        "Dr. Hershberger"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "heather-bell-do-on-the-role-of-physician-advisor-2017",
+        "morning-report-with-dr-lee-3836"
+      ],
+      "topic": "avoid labeling aki from single cr",
+      "speakers": [
+        "Dr. Heather Bell",
+        "Dr. Lawrence Lee"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -880,13 +1074,13 @@
     },
     {
       "pearl_ids": [
-        "dr-ledbetter-on-benzo-tapering-310",
-        "kelly-dunn-md-on-benzodiazepines-3758"
+        "dr-shields-on-shortness-of-breath-in-tuberculosis-endemic-ne-4320",
+        "tuberculosis-kyle-jones-do-2012"
       ],
-      "topic": "benzodiazepine cross-taper method",
+      "topic": "bcg vaccine efficacy",
       "speakers": [
-        "Dr. Kelly Dunn",
-        "Dr. Ledbetter"
+        "Dr. Kyle Jones",
+        "Dr. Shields"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -908,13 +1102,55 @@
     },
     {
       "pearl_ids": [
-        "dr-bhakta-on-rapids-icu-criteria-1041",
-        "pressors-engstrom-1919"
+        "dr-amell-on-opioid-stewardship-1336",
+        "dr-dunn-on-addiction-med-1440"
       ],
-      "topic": "cardioversion in unstable patients",
+      "topic": "buprenorphine withdrawal risk",
       "speakers": [
-        "Dr. Bhakta",
-        "Dr. Engstrom"
+        "Dr. Amell",
+        "Dr. Kelly Dunn"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-dunn-speaks-on-depression-3399",
+        "dr-greer-on-anxiety-depression-1001"
+      ],
+      "topic": "bupropion depression indication",
+      "speakers": [
+        "Dr. Greer",
+        "Dr. Kelly Dunn"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-greer-on-anxiety-depression-1137",
+        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4305"
+      ],
+      "topic": "buspirone dosing",
+      "speakers": [
+        "Dr. Greer",
+        "Dr. Kelly Dunn"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-ganzer-on-prenatal-screening-for-chromosomal-abnormalitie-1804",
+        "jina-hagen-ms-on-cfdna-carrier-screening-1742"
+      ],
+      "topic": "cell-free dna timing",
+      "speakers": [
+        "Dr. Ganzer",
+        "Jina Hagen"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -950,6 +1186,20 @@
     },
     {
       "pearl_ids": [
+        "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-1187",
+        "dr-tischler-on-gout-1686"
+      ],
+      "topic": "colchicine dosing in acute gout",
+      "speakers": [
+        "Dr. Rylander",
+        "Dr. Tischler"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
         "dr-bancroft-on-hematuria-evaluation-259",
         "dr-sean-doyle-on-common-urologic-problems-297"
       ],
@@ -964,13 +1214,13 @@
     },
     {
       "pearl_ids": [
-        "dr-b-howard-on-ra-lupus-4709",
-        "dr-tischler-on-gout-1596"
+        "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-396",
+        "joint-injections-dr-enis-sakirgil-2087"
       ],
-      "topic": "corticosteroid tapering",
+      "topic": "cozen test for lateral epicondylitis",
       "speakers": [
-        "Dr. B. Howard",
-        "Dr. Tischler"
+        "Dr. Enis Sakirgil",
+        "Dr. Zachary Youmans"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1034,20 +1284,6 @@
     },
     {
       "pearl_ids": [
-        "dr-hadwen-on-neuro-ite-prep-1915",
-        "dr-whitaker-on-cva-management-2547"
-      ],
-      "topic": "dual antiplatelet after tia/stroke",
-      "speakers": [
-        "Dr. Hadwen",
-        "Dr. Whitaker"
-      ],
-      "n_speakers": 2,
-      "n_lectures": 2,
-      "kind": "consensus"
-    },
-    {
-      "pearl_ids": [
         "dr-hadwen-on-neuro-ite-prep-1329",
         "dr-hannah-youmans-on-hypertensive-disorders-in-pregnancy-1021"
       ],
@@ -1055,6 +1291,20 @@
       "speakers": [
         "Dr. Hadwen",
         "Dr. Hannah Youmans"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-bothwell-on-breastfeeding-1611",
+        "gina-blevins-on-healthy-start-1052"
+      ],
+      "topic": "engorgement management",
+      "speakers": [
+        "Dr. Bothwell",
+        "Gina Blevins"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1076,13 +1326,13 @@
     },
     {
       "pearl_ids": [
-        "dr-b-howard-on-ra-lupus-2852",
-        "rheumatology-with-dr-lucashu-848"
+        "dr-greer-on-anxiety-depression-660",
+        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4236"
       ],
-      "topic": "esr severity stratification",
+      "topic": "fluoxetine for snri discontinuation",
       "speakers": [
-        "Dr. Amanda Lucashu",
-        "Dr. B. Howard"
+        "Dr. Greer",
+        "Dr. Kelly Dunn"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1104,13 +1354,27 @@
     },
     {
       "pearl_ids": [
-        "dr-kaleigh-winters-on-png-tuberculosis-1056",
-        "dr-shields-on-shortness-of-breath-in-tuberculosis-endemic-ne-1158"
+        "dr-dunn-speaks-on-depression-1653",
+        "dr-greer-on-anxiety-depression-2349"
       ],
-      "topic": "genexpert for tb",
+      "topic": "genetic testing efficacy",
       "speakers": [
-        "Dr. Kaleigh Winters",
-        "Dr. Shields"
+        "Dr. Greer",
+        "Dr. Kelly Dunn"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-1100",
+        "dr-tischler-on-gout-1796"
+      ],
+      "topic": "gout flare timing",
+      "speakers": [
+        "Dr. Rylander",
+        "Dr. Tischler"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1160,27 +1424,13 @@
     },
     {
       "pearl_ids": [
-        "dr-glaser-on-medical-advocacy-1783",
-        "the-ethics-of-contraception-dr-lisa-gilbert-263"
+        "dr-hannah-howard-on-biopsies-869",
+        "dr-john-ashley-on-vesiculobullous-558"
       ],
-      "topic": "hippocratic oath on abortion",
+      "topic": "hsv suppressive therapy",
       "speakers": [
-        "Dr. Glaser",
-        "Dr. Lisa Gilbert"
-      ],
-      "n_speakers": 2,
-      "n_lectures": 2,
-      "kind": "consensus"
-    },
-    {
-      "pearl_ids": [
-        "dr-price-on-vector-transmitted-disease-2458",
-        "dr-winters-on-malawi-parasites-1765"
-      ],
-      "topic": "hookworm transmission",
-      "speakers": [
-        "Dr. Kaleigh Winters",
-        "Dr. Price"
+        "Dr. Hannah Howard",
+        "Dr. John Ashley"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1216,34 +1466,6 @@
     },
     {
       "pearl_ids": [
-        "dr-kelly-dunn-on-ihi-fm-board-review-2-4087",
-        "dr-williston-on-sleep-disorders-161"
-      ],
-      "topic": "insomnia first‑line treatment",
-      "speakers": [
-        "Dr. Kelly Dunn",
-        "Dr. Williston"
-      ],
-      "n_speakers": 2,
-      "n_lectures": 2,
-      "kind": "consensus"
-    },
-    {
-      "pearl_ids": [
-        "dr-herrmann-on-liver-disease-for-primary-care-830",
-        "sarah-janssen-on-anemia-outpatient-535"
-      ],
-      "topic": "iron panel for elevated ferritin",
-      "speakers": [
-        "Dr. Herrmann",
-        "Sarah Janssen"
-      ],
-      "n_speakers": 2,
-      "n_lectures": 2,
-      "kind": "consensus"
-    },
-    {
-      "pearl_ids": [
         "dr-mcintosh-on-peds-respiratory-care-2278",
         "dr-richard-on-outpatient-peds-common-respiratory-disorders-1797"
       ],
@@ -1251,20 +1473,6 @@
       "speakers": [
         "Dr. McIntosh",
         "Dr. Richard"
-      ],
-      "n_speakers": 2,
-      "n_lectures": 2,
-      "kind": "consensus"
-    },
-    {
-      "pearl_ids": [
-        "dr-ledbetter-on-musculoskeletal-ultrasound-knee-specific-941",
-        "injections-outpatient-procedures-1467"
-      ],
-      "topic": "knee injection approach",
-      "speakers": [
-        "Dr. Enis Sakirgil",
-        "Dr. Ledbetter"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1286,6 +1494,20 @@
     },
     {
       "pearl_ids": [
+        "dr-hildebrand-on-osteoporosis-800",
+        "thyroid-disorders-dr-amanda-lucashu-do-854"
+      ],
+      "topic": "levothyroxine administration",
+      "speakers": [
+        "Dr. Amanda Lucashu",
+        "Dr. Hildebrand"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
         "dr-acker-on-shoulder-disorders-examination-2346",
         "dr-liening-on-shoulder-exam-1744"
       ],
@@ -1293,6 +1515,20 @@
       "speakers": [
         "Dr. Acker",
         "Dr. Liening"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "cardiovascular-risk-reduction-393",
+        "dr-zachary-youmans-on-lipids-in-primary-care-1061"
+      ],
+      "topic": "lipid panel fasting",
+      "speakers": [
+        "Dr. Herrmann",
+        "Dr. Zachary Youmans"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1345,10 +1581,24 @@
         "dr-hannah-howard-on-biopsies-74",
         "dr-williams-on-skin-cancer-basics-1649"
       ],
-      "topic": "melanoma biopsy method",
+      "topic": "melanoma biopsy technique",
       "speakers": [
         "Dr. Hannah Howard",
         "Dr. Williams"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-bhakta-on-rapids-icu-criteria-754",
+        "dr-tischler-on-syncope-3284"
+      ],
+      "topic": "midodrine for orthostatic hypotension",
+      "speakers": [
+        "Dr. Bhakta",
+        "Dr. Tischler"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1384,27 +1634,13 @@
     },
     {
       "pearl_ids": [
-        "dr-bancroft-on-foot-ankle-basics-556",
-        "injections-outpatient-procedures-1567"
+        "dr-place-on-obesity-2867",
+        "dr-travis-eden-on-nutrition-and-lifestyle-for-obesity-treatm-170"
       ],
-      "topic": "morning heel pain causes",
+      "topic": "muscle loss on glp-1",
       "speakers": [
-        "Dr. Bancroft",
-        "Dr. Enis Sakirgil"
-      ],
-      "n_speakers": 2,
-      "n_lectures": 2,
-      "kind": "consensus"
-    },
-    {
-      "pearl_ids": [
-        "dr-slaughter-do-on-extrahepatic-cholestasis-1137",
-        "two-cases-with-dr-lawrence-lee-2285"
-      ],
-      "topic": "mrcp for choledocholithiasis",
-      "speakers": [
-        "Dr. Lawrence Lee",
-        "Dr. Slaughter"
+        "Dr. Place",
+        "Dr. Travis Eden"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1454,27 +1690,13 @@
     },
     {
       "pearl_ids": [
-        "cardiovascular-risk-reduction-393",
-        "dr-zachary-youmans-on-lipids-in-primary-care-1085"
+        "dr-rylander-on-gout-diagnostic-and-therapeutic-principles-2-1245",
+        "dr-tischler-on-gout-1814"
       ],
-      "topic": "non-fasting lipid panels",
+      "topic": "nsaids in acute gout",
       "speakers": [
-        "Dr. Herrmann",
-        "Dr. Zachary Youmans"
-      ],
-      "n_speakers": 2,
-      "n_lectures": 2,
-      "kind": "consensus"
-    },
-    {
-      "pearl_ids": [
-        "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-1895",
-        "morning-report-with-dr-lee-1425"
-      ],
-      "topic": "norepinephrine first-line vasopressor",
-      "speakers": [
-        "Dr. Jordan Dever",
-        "Dr. Lawrence Lee"
+        "Dr. Rylander",
+        "Dr. Tischler"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1483,7 +1705,7 @@
     {
       "pearl_ids": [
         "dr-bothwell-on-anemia-of-pregnancy-1122",
-        "sarah-janssen-on-anemia-outpatient-1205"
+        "sarah-janssen-on-anemia-outpatient-1207"
       ],
       "topic": "oral iron dosing frequency",
       "speakers": [
@@ -1510,6 +1732,34 @@
     },
     {
       "pearl_ids": [
+        "dr-ganzer-on-knee-injuries-3445",
+        "dr-rylander-on-knee-pain-and-problems-1606"
+      ],
+      "topic": "patellar apprehension test",
+      "speakers": [
+        "Dr. Ganzer",
+        "Dr. Rylander"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-bancroft-on-foot-ankle-basics-556",
+        "injections-outpatient-procedures-1567"
+      ],
+      "topic": "plantar fasciitis morning pain",
+      "speakers": [
+        "Dr. Bancroft",
+        "Dr. Enis Sakirgil"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
         "dr-rylander-on-chronic-abdominal-pain-889",
         "dr-slaughter-do-on-extrahepatic-cholestasis-4407"
       ],
@@ -1517,6 +1767,20 @@
       "speakers": [
         "Dr. Rylander",
         "Dr. Slaughter"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-acker-on-shoulder-disorders-examination-1640",
+        "injections-outpatient-procedures-2049"
+      ],
+      "topic": "posterior subacromial injection",
+      "speakers": [
+        "Dr. Acker",
+        "Dr. Enis Sakirgil"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1538,13 +1802,27 @@
     },
     {
       "pearl_ids": [
-        "dr-hildebrand-on-dka-hhs-2457",
-        "l-dogg-s-morning-report-2-2159"
+        "dr-amell-on-opioid-stewardship-1629",
+        "dr-dunn-on-addiction-med-2224"
       ],
-      "topic": "potassium management in dka",
+      "topic": "precipitated withdrawal risk",
       "speakers": [
-        "Dr. Hildebrand",
-        "Dr. Lawrence Lee"
+        "Dr. Amell",
+        "Dr. Kelly Dunn"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-hannah-youmans-on-hypertensive-disorders-in-pregnancy-2423",
+        "dr-zachary-youmans-on-lipids-in-primary-care-732"
+      ],
+      "topic": "pregnancy hypertension and cvd risk",
+      "speakers": [
+        "Dr. Hannah Youmans",
+        "Dr. Zachary Youmans"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1559,6 +1837,20 @@
       "speakers": [
         "Dr. Jon Calvert",
         "Dr. Lisa Gilbert"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-b-howard-on-ra-lupus-2988",
+        "dr-hildebrand-on-arthritis-1285"
+      ],
+      "topic": "ra classification criteria",
+      "speakers": [
+        "Dr. B. Howard",
+        "Dr. Hildebrand"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1622,13 +1914,13 @@
     },
     {
       "pearl_ids": [
-        "dr-greer-on-anxiety-depression-660",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4245"
+        "dr-ledbetter-on-musculoskeletal-ultrasound-knee-specific-2702",
+        "joint-injections-dr-enis-sakirgil-1381"
       ],
-      "topic": "snri discontinuation using fluoxetine",
+      "topic": "resistance during injection",
       "speakers": [
-        "Dr. Greer",
-        "Dr. Kelly Dunn"
+        "Dr. Enis Sakirgil",
+        "Dr. Ledbetter"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1664,24 +1956,10 @@
     },
     {
       "pearl_ids": [
-        "dr-lucashu-on-outpatient-management-478",
-        "dr-zachary-youmans-on-lipids-in-primary-care-1679"
-      ],
-      "topic": "statin in diabetes",
-      "speakers": [
-        "Dr. Amanda Lucashu",
-        "Dr. Zachary Youmans"
-      ],
-      "n_speakers": 2,
-      "n_lectures": 2,
-      "kind": "consensus"
-    },
-    {
-      "pearl_ids": [
         "dr-engstrom-on-approach-to-undifferentiated-shock-4175",
         "morning-report-with-dr-lee-5312"
       ],
-      "topic": "stress-dose hydrocortisone in shock",
+      "topic": "stress-dose steroids in shock",
       "speakers": [
         "Dr. Engstrom",
         "Dr. Lawrence Lee"
@@ -1692,13 +1970,27 @@
     },
     {
       "pearl_ids": [
-        "dr-acker-on-shoulder-disorders-examination-1640",
-        "injections-outpatient-procedures-2049"
+        "dr-dunn-on-addiction-medicine-antidepressants-744",
+        "rev-leitch-on-suicide-intervention-4952"
       ],
-      "topic": "subacromial injection approach",
+      "topic": "suicide attempt risk factor",
       "speakers": [
-        "Dr. Acker",
-        "Dr. Enis Sakirgil"
+        "Dr. Kelly Dunn",
+        "Rev. Joel S. Leitch"
+      ],
+      "n_speakers": 2,
+      "n_lectures": 2,
+      "kind": "consensus"
+    },
+    {
+      "pearl_ids": [
+        "dr-megaly-on-intro-to-peripheral-arterial-venous-disease-2657",
+        "dr-tischler-on-counterstrain-3429"
+      ],
+      "topic": "suspected dvt management",
+      "speakers": [
+        "Dr. Megaly",
+        "Dr. Tischler"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1720,27 +2012,13 @@
     },
     {
       "pearl_ids": [
-        "dr-kaleigh-winters-on-png-tuberculosis-1987",
-        "tuberculosis-kyle-jones-do-1922"
+        "dr-cunningham-on-osteoarthritis-of-the-knee-1631",
+        "dr-ledbetter-on-musculoskeletal-ultrasound-knee-specific-941"
       ],
-      "topic": "tb treatment duration",
+      "topic": "ultrasound-guided knee injection",
       "speakers": [
-        "Dr. Kaleigh Winters",
-        "Dr. Kyle Jones"
-      ],
-      "n_speakers": 2,
-      "n_lectures": 2,
-      "kind": "consensus"
-    },
-    {
-      "pearl_ids": [
-        "dr-dunn-on-addiction-medicine-antidepressants-5181",
-        "dr-williston-on-sleep-disorders-807"
-      ],
-      "topic": "trazodone and priapism",
-      "speakers": [
-        "Dr. Kelly Dunn",
-        "Dr. Williston"
+        "Dr. Cunningham",
+        "Dr. Ledbetter"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1762,13 +2040,13 @@
     },
     {
       "pearl_ids": [
-        "dr-hermann-on-adult-wellness-393",
-        "dr-warman-on-medicare-wellness-visits-1012"
+        "dr-jordan-dever-on-pregnancy-and-respiratory-diseases-2313",
+        "dr-tischler-on-counterstrain-4532"
       ],
-      "topic": "wellness visit billing",
+      "topic": "vte anticoagulation duration",
       "speakers": [
-        "Dr. Herrmann",
-        "Dr. Warman"
+        "Dr. Jordan Dever",
+        "Dr. Tischler"
       ],
       "n_speakers": 2,
       "n_lectures": 2,
@@ -1792,21 +2070,6 @@
     },
     {
       "pearl_ids": [
-        "dr-lee-on-morning-reports-2-1432",
-        "l-dogg-s-morning-report-2-796",
-        "morning-report-with-dr-lee-2285",
-        "morning-report-with-dr-lee-2423"
-      ],
-      "topic": "delta gap calculation",
-      "speakers": [
-        "Dr. Lawrence Lee"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 3,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
         "dr-calvert-on-female-vulva-exam-pathology-2-2820",
         "dr-calvert-on-female-vulva-examination-pathology-1833",
         "dr-calvert-on-female-vulva-examination-pathology-2-2187",
@@ -1818,21 +2081,6 @@
       ],
       "n_speakers": 1,
       "n_lectures": 4,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "l-dogg-s-morning-report-2-569",
-        "l-dogg-s-morning-report-2-3433",
-        "morning-report-with-dr-lee-1974",
-        "morning-report-with-dr-lee-2760"
-      ],
-      "topic": "metabolic acidosis compensation",
-      "speakers": [
-        "Dr. Lawrence Lee"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
       "kind": "repeated"
     },
     {
@@ -1852,21 +2100,6 @@
     },
     {
       "pearl_ids": [
-        "dr-calvert-on-gyn-adnexal-mass-575",
-        "dr-calvert-on-pelvic-pain-556",
-        "dr-jon-calvert-on-pelvic-pain-cases-3194",
-        "pelvic-pain-cases-dr-calvert-1055"
-      ],
-      "topic": "uterine mobility on exam",
-      "speakers": [
-        "Dr. Jon Calvert"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 4,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
         "beasley-pearls-1416",
         "dr-beasley-on-diabetic-foot-disease-970",
         "dr-beasley-on-diabetic-foot-disease-1005"
@@ -1881,16 +2114,16 @@
     },
     {
       "pearl_ids": [
-        "dr-calvert-on-pelvic-pain-1058",
-        "pelvic-pain-cases-dr-calvert-1523",
-        "pelvic-pain-cases-dr-calvert-1576"
+        "dr-dunn-speaks-on-depression-4835",
+        "dr-kelly-dunn-on-ihi-fm-board-review-2-1680",
+        "kelly-dunn-md-on-benzodiazepines-834"
       ],
-      "topic": "adenomyosis diagnosis",
+      "topic": "acute panic attack treatment",
       "speakers": [
-        "Dr. Jon Calvert"
+        "Dr. Kelly Dunn"
       ],
       "n_speakers": 1,
-      "n_lectures": 2,
+      "n_lectures": 3,
       "kind": "repeated"
     },
     {
@@ -1923,16 +2156,58 @@
     },
     {
       "pearl_ids": [
-        "dr-calvert-on-pelvic-pain-1923",
-        "dr-calvert-on-pelvic-pain-cases-2029",
-        "pelvic-pain-cases-dr-calvert-2042"
+        "dr-kelly-dunn-on-ihi-fm-board-review-2381",
+        "dr-kelly-dunn-on-ihi-fm-board-review-2-1146",
+        "dr-kelly-dunn-on-ihi-fm-board-review-2-1168"
       ],
-      "topic": "bartholin cyst drainage",
+      "topic": "antipsychotics for insomnia",
+      "speakers": [
+        "Dr. Kelly Dunn"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "l-dogg-s-morning-report-2-3810",
+        "l-dogg-s-morning-report-2-4620",
+        "morning-report-with-dr-lee-7500"
+      ],
+      "topic": "bicarbonate and hypokalemia",
+      "speakers": [
+        "Dr. Lawrence Lee"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-calvert-on-pelvic-pain-556",
+        "dr-jon-calvert-on-pelvic-pain-cases-3194",
+        "pelvic-pain-cases-dr-calvert-1051"
+      ],
+      "topic": "bimanual exam for adhesions",
       "speakers": [
         "Dr. Jon Calvert"
       ],
       "n_speakers": 1,
       "n_lectures": 3,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-place-on-hyperextension-1325",
+        "dr-place-on-hyperextension-2615",
+        "dr-place-on-hypertension-2468"
+      ],
+      "topic": "blood pressure monitoring",
+      "speakers": [
+        "Dr. Place"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
       "kind": "repeated"
     },
     {
@@ -1951,11 +2226,25 @@
     },
     {
       "pearl_ids": [
+        "dr-place-on-hyperextension-437",
+        "dr-place-on-hypertension-580",
+        "dr-place-on-obesity-560"
+      ],
+      "topic": "cvd mortality vs cancer",
+      "speakers": [
+        "Dr. Place"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 3,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
         "dr-ledbetter-on-cardiac-pocus-2509",
         "dr-ledbetter-on-cardiac-pocus-2509-2",
-        "pocus-with-dr-ledbetter-2252"
+        "pocus-with-dr-ledbetter-2233"
       ],
-      "topic": "d-sign meaning",
+      "topic": "d-sign on pocus",
       "speakers": [
         "Dr. Ledbetter"
       ],
@@ -1965,30 +2254,16 @@
     },
     {
       "pearl_ids": [
-        "rev-joel-s-leitch-on-suicide-prevention-534",
-        "rev-leitch-on-suicide-intervention-917",
-        "rev-leitch-on-suicide-intervention-921"
+        "dr-lee-on-morning-reports-2-1432",
+        "l-dogg-s-morning-report-2-796",
+        "two-cases-with-dr-lawrence-lee-8267"
       ],
-      "topic": "directive communication with patients",
+      "topic": "delta-delta calculation",
       "speakers": [
-        "Rev. Joel S. Leitch"
+        "Dr. Lawrence Lee"
       ],
       "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-calvert-on-female-vulva-examination-pathology-1473",
-        "dr-calvert-on-female-vulva-examination-pathology-1547",
-        "dr-calvert-on-female-vulva-examination-pathology-2-1790"
-      ],
-      "topic": "distinguishing lichen planus from sclerosus",
-      "speakers": [
-        "Dr. Jon Calvert"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
+      "n_lectures": 3,
       "kind": "repeated"
     },
     {
@@ -2021,16 +2296,16 @@
     },
     {
       "pearl_ids": [
-        "dr-dunn-on-addiction-med-4068",
-        "dr-dunn-speaks-on-depression-5131",
-        "kelly-dunn-md-on-benzodiazepines-4520"
+        "dr-engstrom-on-approach-to-undifferentiated-shock-3478",
+        "dr-engstrom-on-approach-to-undifferentiated-shock-3478-2",
+        "pressors-engstrom-2257"
       ],
-      "topic": "gabapentin for alcohol recovery",
+      "topic": "first-line vasopressor shock",
       "speakers": [
-        "Dr. Kelly Dunn"
+        "Dr. Engstrom"
       ],
       "n_speakers": 1,
-      "n_lectures": 3,
+      "n_lectures": 2,
       "kind": "repeated"
     },
     {
@@ -2049,27 +2324,27 @@
     },
     {
       "pearl_ids": [
-        "dr-dunn-speaks-on-depression-2562",
-        "dr-kelly-dunn-on-ihi-fm-board-review-2-3330",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2790"
+        "dr-engstrom-on-er-q-a-2902",
+        "pressors-engstrom-3385",
+        "pressors-engstrom-3385-2"
       ],
-      "topic": "light therapy for depression",
+      "topic": "learning ultrasound iv access",
       "speakers": [
-        "Dr. Kelly Dunn"
+        "Dr. Engstrom"
       ],
       "n_speakers": 1,
-      "n_lectures": 3,
+      "n_lectures": 2,
       "kind": "repeated"
     },
     {
       "pearl_ids": [
-        "dr-dunn-speaks-on-depression-2800",
-        "kelly-dunn-md-on-antipsychotics-mood-stabilizers-2143",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2878"
+        "dr-calvert-on-female-vulva-exam-pathology-2-2147",
+        "dr-calvert-on-female-vulva-examination-pathology-1228",
+        "dr-calvert-on-female-vulva-examination-pathology-2-1572"
       ],
-      "topic": "lithium and suicide risk",
+      "topic": "lichen sclerosus features",
       "speakers": [
-        "Dr. Kelly Dunn"
+        "Dr. Jon Calvert"
       ],
       "n_speakers": 1,
       "n_lectures": 3,
@@ -2091,27 +2366,13 @@
     },
     {
       "pearl_ids": [
-        "dr-dunn-speaks-on-depression-707",
-        "dr-kelly-dunn-on-ihi-fm-board-review-864",
-        "dr-kelly-dunn-on-ihi-fm-board-review-2-262"
+        "dr-dunn-on-addiction-medicine-antidepressants-3508",
+        "dr-dunn-speaks-on-depression-2097",
+        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1515"
       ],
-      "topic": "mania screening before antidepressants",
+      "topic": "mirtazapine dose and sedation",
       "speakers": [
         "Dr. Kelly Dunn"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 3,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-ledbetter-on-cardiac-pocus-1803",
-        "dr-ledbetter-on-cardiac-ultrasound-1906",
-        "pocus-with-dr-ledbetter-3105"
-      ],
-      "topic": "mitral leaflet ef assessment",
-      "speakers": [
-        "Dr. Ledbetter"
       ],
       "n_speakers": 1,
       "n_lectures": 3,
@@ -2129,20 +2390,6 @@
       ],
       "n_speakers": 1,
       "n_lectures": 3,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-engstrom-on-approach-to-undifferentiated-shock-3478",
-        "dr-engstrom-on-approach-to-undifferentiated-shock-3478-2",
-        "pressors-engstrom-2149"
-      ],
-      "topic": "norepinephrine for shock",
-      "speakers": [
-        "Dr. Engstrom"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
       "kind": "repeated"
     },
     {
@@ -2189,30 +2436,16 @@
     },
     {
       "pearl_ids": [
-        "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--226",
-        "dr-calvert-on-gyn-inservice-review-1770",
-        "gyn-with-dr-calvert-2474"
+        "dr-ledbetter-on-pneumonia-pocus-1619",
+        "dr-ledbetter-on-pneumonia-pocus-1619-2",
+        "dr-ledbetter-on-pocus-pna-954"
       ],
-      "topic": "pcos diagnostic criteria",
+      "topic": "pleural line in pneumonia vs edema",
       "speakers": [
-        "Dr. Jon Calvert"
+        "Dr. Ledbetter"
       ],
       "n_speakers": 1,
-      "n_lectures": 3,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-dunn-on-addiction-medicine-antidepressants-3719",
-        "dr-dunn-speaks-on-depression-2340",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2587"
-      ],
-      "topic": "phq-9 remission definition",
-      "speakers": [
-        "Dr. Kelly Dunn"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 3,
+      "n_lectures": 2,
       "kind": "repeated"
     },
     {
@@ -2245,72 +2478,44 @@
     },
     {
       "pearl_ids": [
-        "dr-lee-on-morning-reports-2-4836",
-        "morning-report-with-dr-lee-5382",
-        "two-cases-with-dr-lawrence-lee-7828"
+        "dr-lucashu-speaks-on-thyroid-disease-2791",
+        "thyroid-disorders-dr-amanda-lucashu-do-2502",
+        "thyroid-disorders-dr-amanda-lucashu-do-2504"
       ],
-      "topic": "shock differential",
+      "topic": "subacute thyroiditis management",
       "speakers": [
-        "Dr. Lawrence Lee"
+        "Dr. Amanda Lucashu"
       ],
       "n_speakers": 1,
-      "n_lectures": 3,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-dunn-on-addiction-medicine-antidepressants-1421",
-        "dr-dunn-speaks-on-depression-1203",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-764"
-      ],
-      "topic": "ssri as first-line antidepressant",
-      "speakers": [
-        "Dr. Kelly Dunn"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 3,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-calvert-on-hormonal-contraception-349",
-        "dr-calvert-on-hormonal-contraception-2-398",
-        "gyn-with-dr-calvert-418"
-      ],
-      "topic": "starting low-dose birth control pills",
-      "speakers": [
-        "Dr. Jon Calvert"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 3,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-dunn-on-addiction-medicine-antidepressants-812",
-        "dr-kelly-dunn-on-ihi-fm-board-review-2-3576",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-3533"
-      ],
-      "topic": "suicide safety plan components",
-      "speakers": [
-        "Dr. Kelly Dunn"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 3,
+      "n_lectures": 2,
       "kind": "repeated"
     },
     {
       "pearl_ids": [
         "dr-dunn-on-addiction-medicine-antidepressants-3526",
         "dr-dunn-speaks-on-depression-2273",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1461"
+        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1463"
       ],
-      "topic": "trazodone dosing for depression",
+      "topic": "trazodone antidepressant use",
       "speakers": [
         "Dr. Kelly Dunn"
       ],
       "n_speakers": 1,
       "n_lectures": 3,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "injections-outpatient-procedures-2315",
+        "joint-injections-dr-enis-sakirgil-2236",
+        "joint-injections-dr-enis-sakirgil-2278"
+      ],
+      "topic": "trochanteric bursitis injection technique",
+      "speakers": [
+        "Dr. Enis Sakirgil"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
       "kind": "repeated"
     },
     {
@@ -2329,6 +2534,20 @@
     },
     {
       "pearl_ids": [
+        "dr-lee-on-morning-reports-2-1263",
+        "l-dogg-s-morning-report-2-569",
+        "two-cases-with-dr-lawrence-lee-8192"
+      ],
+      "topic": "winter's formula",
+      "speakers": [
+        "Dr. Lawrence Lee"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 3,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
         "dr-calvert-on-pelvic-pain-1641",
         "dr-calvert-on-pelvic-pain-cases-1738"
       ],
@@ -2342,12 +2561,12 @@
     },
     {
       "pearl_ids": [
-        "dr-lee-on-morning-reports-2-1314",
-        "two-cases-with-dr-lawrence-lee-8191"
+        "dr-calvert-on-pelvic-pain-1216",
+        "pelvic-pain-cases-dr-calvert-1632"
       ],
-      "topic": "abg metabolic acidosis interpretation",
+      "topic": "adenomyosis diagnosis",
       "speakers": [
-        "Dr. Lawrence Lee"
+        "Dr. Jon Calvert"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -2381,6 +2600,32 @@
     },
     {
       "pearl_ids": [
+        "dr-engstrom-on-approach-to-undifferentiated-shock-4344",
+        "pressors-engstrom-1548"
+      ],
+      "topic": "aggressive management of coding patient",
+      "speakers": [
+        "Dr. Engstrom"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-lucashu-speaks-on-thyroid-disease-2244",
+        "thyroid-disorders-dr-amanda-lucashu-do-2038"
+      ],
+      "topic": "agranulocytosis workup",
+      "speakers": [
+        "Dr. Amanda Lucashu"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
         "dr-greuel-on-1st-tm-pregnancy-565",
         "dr-greuel-on-miscarriage-treatment-670"
       ],
@@ -2400,19 +2645,6 @@
       "topic": "angiotensin ii effects",
       "speakers": [
         "Dr. Place"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-lee-on-morning-reports-2-1390",
-        "l-dogg-s-morning-report-2-745"
-      ],
-      "topic": "anion gap calculation",
-      "speakers": [
-        "Dr. Lawrence Lee"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -2446,12 +2678,25 @@
     },
     {
       "pearl_ids": [
-        "dr-lucashu-speaks-on-thyroid-disease-2581",
-        "thyroid-disorders-dr-amanda-lucashu-do-1915"
+        "dr-dunn-speaks-on-depression-707",
+        "kelly-dunn-md-on-antipsychotics-mood-stabilizers-2251"
       ],
-      "topic": "antithyroid drug in pregnancy",
+      "topic": "antidepressants in bipolar depression",
       "speakers": [
-        "Dr. Amanda Lucashu"
+        "Dr. Kelly Dunn"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-kelly-dunn-on-ihi-fm-board-review-2-1635",
+        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-4401"
+      ],
+      "topic": "anxiety treatment with ssri and prn",
+      "speakers": [
+        "Dr. Kelly Dunn"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -2472,6 +2717,19 @@
     },
     {
       "pearl_ids": [
+        "rev-joel-s-leitch-on-suicide-prevention-277",
+        "rev-leitch-on-suicide-intervention-2754"
+      ],
+      "topic": "asking about suicidal thoughts",
+      "speakers": [
+        "Rev. Joel S. Leitch"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
         "dr-calvert-on-abnormal-uterine-bleeding-243",
         "dr-calvert-on-pap-smears-colposcopy-1971"
       ],
@@ -2485,25 +2743,12 @@
     },
     {
       "pearl_ids": [
-        "dr-dunn-speaks-on-depression-1235",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-932"
+        "injections-outpatient-procedures-880",
+        "joint-injections-dr-enis-sakirgil-1724"
       ],
-      "topic": "atypical depression criteria",
+      "topic": "avoid injecting tendon",
       "speakers": [
-        "Dr. Kelly Dunn"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-place-on-hyperextension-2615",
-        "dr-place-on-hypertension-2574"
-      ],
-      "topic": "avoid single bp reading decisions",
-      "speakers": [
-        "Dr. Place"
+        "Dr. Enis Sakirgil"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -2537,51 +2782,12 @@
     },
     {
       "pearl_ids": [
-        "dr-ledbetter-on-cardiac-pocus-376",
-        "pocus-with-dr-ledbetter-3365"
-      ],
-      "topic": "b-lines in pulmonary edema",
-      "speakers": [
-        "Dr. Ledbetter"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-dunn-speaks-on-depression-4835",
-        "dr-kelly-dunn-on-ihi-fm-board-review-2-1680"
-      ],
-      "topic": "benzodiazepines for panic attacks",
-      "speakers": [
-        "Dr. Kelly Dunn"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
         "dr-haney-chf-1396",
         "dr-haney-on-epidemiology-1198"
       ],
       "topic": "beta-blockers in hfref",
       "speakers": [
         "Dr. Matt Haney"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-engstrom-on-approach-to-undifferentiated-shock-2773",
-        "pressors-engstrom-2543"
-      ],
-      "topic": "bradycardia shock treatment",
-      "speakers": [
-        "Dr. Engstrom"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -2602,12 +2808,25 @@
     },
     {
       "pearl_ids": [
-        "dr-dunn-speaks-on-depression-2673",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2854"
+        "beasley-pearls-891",
+        "dr-beasley-on-diabetic-foot-disease-696"
       ],
-      "topic": "bupropion for ssri sexual side effects",
+      "topic": "charcot foot in diabetics",
       "speakers": [
-        "Dr. Kelly Dunn"
+        "Dr. Brad Beasley"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-haney-chf-936",
+        "dr-haney-on-epidemiology-631"
+      ],
+      "topic": "chf initial workup",
+      "speakers": [
+        "Dr. Matt Haney"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -2667,32 +2886,6 @@
     },
     {
       "pearl_ids": [
-        "dr-place-on-hyperextension-437",
-        "dr-place-on-hypertension-580"
-      ],
-      "topic": "cvd mortality vs cancer",
-      "speakers": [
-        "Dr. Place"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-dunn-speaks-on-depression-3003",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-3076"
-      ],
-      "topic": "depression recurrence risk",
-      "speakers": [
-        "Dr. Kelly Dunn"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
         "dr-rylander-on-acute-and-chronic-low-back-pain-811",
         "dr-rylander-on-pvd-pad-1581"
       ],
@@ -2706,10 +2899,36 @@
     },
     {
       "pearl_ids": [
-        "dr-engstrom-on-approach-to-undifferentiated-shock-3691",
-        "pressors-engstrom-2328"
+        "dr-haney-chf-1712",
+        "dr-haney-on-epidemiology-1814"
       ],
-      "topic": "dopamine unreliability",
+      "topic": "diuretics in heart failure",
+      "speakers": [
+        "Dr. Matt Haney"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-bhakta-on-distress-in-adults-2252",
+        "dr-bhakta-on-rapids-icu-criteria-1290"
+      ],
+      "topic": "dnr and dni orders",
+      "speakers": [
+        "Dr. Bhakta"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-engstrom-on-approach-to-undifferentiated-shock-3691",
+        "pressors-engstrom-2328-2"
+      ],
+      "topic": "dopamine vs epinephrine in shock",
       "speakers": [
         "Dr. Engstrom"
       ],
@@ -2745,19 +2964,6 @@
     },
     {
       "pearl_ids": [
-        "dr-calvert-on-chronic-anovulation-pcos-2115-2",
-        "gyn-with-dr-calvert-1374"
-      ],
-      "topic": "dvt and hormonal therapy",
-      "speakers": [
-        "Dr. Jon Calvert"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
         "dr-ledbetter-on-pneumonia-pocus-1709",
         "dr-ledbetter-on-pocus-pna-499"
       ],
@@ -2784,8 +2990,21 @@
     },
     {
       "pearl_ids": [
+        "dr-calvert-on-female-vulva-examination-pathology-244",
+        "dr-calvert-on-female-vulva-examination-pathology-2-729"
+      ],
+      "topic": "epidermal cyst management",
+      "speakers": [
+        "Dr. Jon Calvert"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
         "dr-engstrom-on-approach-to-undifferentiated-shock-2519",
-        "pressors-engstrom-1481"
+        "pressors-engstrom-1175"
       ],
       "topic": "epinephrine dose anaphylaxis",
       "speakers": [
@@ -2798,9 +3017,9 @@
     {
       "pearl_ids": [
         "dr-engstrom-on-approach-to-undifferentiated-shock-2130",
-        "pressors-engstrom-1286"
+        "pressors-engstrom-1232"
       ],
-      "topic": "epinephrine dose in cardiac arrest",
+      "topic": "epinephrine dose in arrest",
       "speakers": [
         "Dr. Engstrom"
       ],
@@ -2810,12 +3029,12 @@
     },
     {
       "pearl_ids": [
-        "dr-dunn-speaks-on-depression-1194",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-777"
+        "dr-greuel-on-miscarriage-treatment-720",
+        "dr-greuel-on-transvaginal-ultrasounds-1265"
       ],
-      "topic": "faster antidepressants",
+      "topic": "fetal pole at 6 weeks",
       "speakers": [
-        "Dr. Kelly Dunn"
+        "Dr. Jacob Greuel"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -2829,6 +3048,45 @@
       "topic": "first-line ras blockade",
       "speakers": [
         "Dr. Place"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-calvert-on-female-vulva-examination-pathology-2-689",
+        "dr-jon-calvert-on-infections-genitalia-2540"
+      ],
+      "topic": "fordyce spots identification",
+      "speakers": [
+        "Dr. Jon Calvert"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "beasley-pearls-4477",
+        "dr-beasley-on-diabetic-foot-disease-3184"
+      ],
+      "topic": "fungal toenail treatment",
+      "speakers": [
+        "Dr. Brad Beasley"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-lucashu-speaks-on-thyroid-disease-1926",
+        "thyroid-disorders-dr-amanda-lucashu-do-1861"
+      ],
+      "topic": "graves' disease testing",
+      "speakers": [
+        "Dr. Amanda Lucashu"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -2862,10 +3120,10 @@
     },
     {
       "pearl_ids": [
-        "rev-joel-s-leitch-on-suicide-prevention-717",
-        "rev-leitch-on-suicide-intervention-1293"
+        "rev-joel-s-leitch-on-suicide-prevention-680",
+        "rev-leitch-on-suicide-intervention-1277"
       ],
-      "topic": "hopelessness and hope building",
+      "topic": "hopelessness and suicide risk",
       "speakers": [
         "Rev. Joel S. Leitch"
       ],
@@ -2881,6 +3139,19 @@
       "topic": "hypertension as risk factor",
       "speakers": [
         "Dr. Place"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "injections-outpatient-procedures-839",
+        "joint-injections-dr-enis-sakirgil-1259"
+      ],
+      "topic": "inr safety for joint injection",
+      "speakers": [
+        "Dr. Enis Sakirgil"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -2927,12 +3198,90 @@
     },
     {
       "pearl_ids": [
+        "injections-outpatient-procedures-1398",
+        "joint-injections-dr-enis-sakirgil-1603"
+      ],
+      "topic": "knee injection approach",
+      "speakers": [
+        "Dr. Enis Sakirgil"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-kelly-dunn-on-ihi-fm-board-review-1034",
+        "kelly-dunn-md-on-antipsychotics-mood-stabilizers-1671"
+      ],
+      "topic": "lamotrigine titration",
+      "speakers": [
+        "Dr. Kelly Dunn"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
         "dr-calvert-on-abnormal-uterine-bleeding-712",
         "dr-calvert-on-pap-smears-colposcopy-2237"
       ],
       "topic": "lh surge and ovulation",
       "speakers": [
         "Dr. Jon Calvert"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-calvert-on-female-vulva-exam-pathology-2-2647",
+        "dr-calvert-on-female-vulva-examination-pathology-1547"
+      ],
+      "topic": "lichen planus diagnosis",
+      "speakers": [
+        "Dr. Jon Calvert"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-calvert-on-female-vulva-examination-pathology-1473",
+        "dr-calvert-on-female-vulva-examination-pathology-2-1790"
+      ],
+      "topic": "lichen planus vs sclerosus",
+      "speakers": [
+        "Dr. Jon Calvert"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "injections-outpatient-procedures-518",
+        "joint-injections-dr-enis-sakirgil-603"
+      ],
+      "topic": "lidocaine max dose",
+      "speakers": [
+        "Dr. Enis Sakirgil"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-dunn-speaks-on-depression-2562",
+        "dr-kelly-dunn-on-ihi-fm-board-review-2-3330"
+      ],
+      "topic": "light therapy for depression",
+      "speakers": [
+        "Dr. Kelly Dunn"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -2959,6 +3308,19 @@
       "topic": "long-term ppi monitoring",
       "speakers": [
         "Dr. Keller"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-engstrom-on-approach-to-undifferentiated-shock-3798",
+        "pressors-engstrom-2452"
+      ],
+      "topic": "low-dose dopamine",
+      "speakers": [
+        "Dr. Engstrom"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -3031,6 +3393,19 @@
     },
     {
       "pearl_ids": [
+        "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--2222",
+        "gyn-with-dr-calvert-3127"
+      ],
+      "topic": "metformin in pcos",
+      "speakers": [
+        "Dr. Jon Calvert"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
         "dr-kelly-dunn-on-ihi-fm-board-review-1460",
         "dr-kelly-dunn-on-ihi-fm-board-review-2-621"
       ],
@@ -3057,6 +3432,19 @@
     },
     {
       "pearl_ids": [
+        "dr-dunn-on-addiction-medicine-antidepressants-3347",
+        "dr-dunn-speaks-on-depression-2119"
+      ],
+      "topic": "mirtazapine effects",
+      "speakers": [
+        "Dr. Kelly Dunn"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
         "dr-greuel-on-1st-tm-pregnancy-871",
         "dr-greuel-on-miscarriage-treatment-2032"
       ],
@@ -3070,7 +3458,20 @@
     },
     {
       "pearl_ids": [
-        "injections-outpatient-procedures-353",
+        "dr-ledbetter-on-cardiac-pocus-1803",
+        "dr-ledbetter-on-cardiac-ultrasound-1906"
+      ],
+      "topic": "mitral-septal distance in echo",
+      "speakers": [
+        "Dr. Ledbetter"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "injections-outpatient-procedures-361",
         "joint-injections-dr-enis-sakirgil-398"
       ],
       "topic": "multidose vial safety",
@@ -3109,10 +3510,75 @@
     },
     {
       "pearl_ids": [
+        "dr-engstrom-on-approach-to-undifferentiated-shock-3589",
+        "pressors-engstrom-2682"
+      ],
+      "topic": "norepinephrine starting dose",
+      "speakers": [
+        "Dr. Engstrom"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
         "dr-calvert-on-pelvic-pain-cases-561",
-        "pelvic-pain-cases-dr-calvert-919"
+        "pelvic-pain-cases-dr-calvert-938"
       ],
       "topic": "ocp for endometriosis",
+      "speakers": [
+        "Dr. Jon Calvert"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-lawrence-lee-on-morning-reports-3330",
+        "morning-report-sbp-and-hrs-management-dr-lee-3833"
+      ],
+      "topic": "pathologic q wave criteria",
+      "speakers": [
+        "Dr. Lawrence Lee"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--226",
+        "dr-calvert-on-gyn-inservice-review-1770"
+      ],
+      "topic": "pcos diagnostic criteria",
+      "speakers": [
+        "Dr. Jon Calvert"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--1572",
+        "gyn-with-dr-calvert-3053"
+      ],
+      "topic": "pcos endometrial protection",
+      "speakers": [
+        "Dr. Jon Calvert"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-calvert-on-abnormal-uterine-bleeding-chronic-anovulation--2364",
+        "gyn-with-dr-calvert-3181"
+      ],
+      "topic": "pcos fertility treatment",
       "speakers": [
         "Dr. Jon Calvert"
       ],
@@ -3135,10 +3601,10 @@
     },
     {
       "pearl_ids": [
-        "dr-tischler-on-counterstrain-2473",
-        "dr-tischler-on-syncope-1218"
+        "dr-tischler-on-counterstrain-2486",
+        "dr-tischler-on-syncope-1222"
       ],
-      "topic": "pe presenting as syncope",
+      "topic": "pe as cause of syncope",
       "speakers": [
         "Dr. Tischler"
       ],
@@ -3148,12 +3614,12 @@
     },
     {
       "pearl_ids": [
-        "dr-engstrom-on-er-q-a-2164",
-        "pressors-engstrom-4184"
+        "dr-dunn-on-addiction-medicine-antidepressants-3719",
+        "dr-dunn-speaks-on-depression-2340"
       ],
-      "topic": "pedistat app use",
+      "topic": "phq-9 response and remission",
       "speakers": [
-        "Dr. Engstrom"
+        "Dr. Kelly Dunn"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -3161,51 +3627,12 @@
     },
     {
       "pearl_ids": [
-        "dr-calvert-on-abnormal-uterine-bleeding-1519",
-        "gyn-with-dr-calvert-761"
+        "injections-outpatient-procedures-1087",
+        "joint-injections-dr-enis-sakirgil-1460"
       ],
-      "topic": "perimenopause definition",
+      "topic": "post-injection flare management",
       "speakers": [
-        "Dr. Jon Calvert"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-engstrom-on-er-q-a-2853",
-        "pressors-engstrom-3321"
-      ],
-      "topic": "peripheral pressor duration",
-      "speakers": [
-        "Dr. Engstrom"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-ledbetter-on-pneumonia-pocus-1619",
-        "dr-ledbetter-on-pocus-pna-954"
-      ],
-      "topic": "pleural line in pneumonia vs edema",
-      "speakers": [
-        "Dr. Ledbetter"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-calvert-on-chronic-anovulation-pcos-1705",
-        "gyn-with-dr-calvert-946"
-      ],
-      "topic": "postmenopausal bleeding workup",
-      "speakers": [
-        "Dr. Jon Calvert"
+        "Dr. Enis Sakirgil"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -3252,25 +3679,12 @@
     },
     {
       "pearl_ids": [
-        "l-dogg-s-morning-report-2-3017",
-        "morning-report-with-dr-lee-3598"
+        "injections-outpatient-procedures-798",
+        "joint-injections-dr-enis-sakirgil-1221"
       ],
-      "topic": "qt-prolonging medication precautions",
+      "topic": "prosthetic joint injection contraindication",
       "speakers": [
-        "Dr. Lawrence Lee"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-kelly-dunn-on-ihi-fm-board-review-2381",
-        "dr-kelly-dunn-on-ihi-fm-board-review-2-1168"
-      ],
-      "topic": "quetiapine for insomnia",
-      "speakers": [
-        "Dr. Kelly Dunn"
+        "Dr. Enis Sakirgil"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -3318,9 +3732,9 @@
     {
       "pearl_ids": [
         "dr-engstrom-on-approach-to-undifferentiated-shock-4152",
-        "pressors-engstrom-3184"
+        "pressors-engstrom-3169"
       ],
-      "topic": "second vasopressor choice",
+      "topic": "second vasopressor selection",
       "speakers": [
         "Dr. Engstrom"
       ],
@@ -3330,25 +3744,12 @@
     },
     {
       "pearl_ids": [
-        "dr-kelly-dunn-on-ihi-fm-board-review-3761",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-1867"
+        "dr-lee-on-morning-reports-2-4836",
+        "l-dogg-s-morning-report-5653"
       ],
-      "topic": "serotonin syndrome presentation",
+      "topic": "shock differential mnemonic",
       "speakers": [
-        "Dr. Kelly Dunn"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-dunn-speaks-on-depression-3100",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-3210"
-      ],
-      "topic": "severe depression treatment",
-      "speakers": [
-        "Dr. Kelly Dunn"
+        "Dr. Lawrence Lee"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -3369,10 +3770,49 @@
     },
     {
       "pearl_ids": [
+        "dr-calvert-on-female-vulva-examination-pathology-2217-2",
+        "dr-calvert-on-female-vulva-examination-pathology-3-743"
+      ],
+      "topic": "skene's gland cyst management",
+      "speakers": [
+        "Dr. Jon Calvert"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
         "dr-dunn-on-addiction-medicine-antidepressants-3049",
         "dr-dunn-speaks-on-depression-1917"
       ],
       "topic": "ssri dose reduction for activation",
+      "speakers": [
+        "Dr. Kelly Dunn"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-kelly-dunn-on-ihi-fm-board-review-2-1807",
+        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2024"
+      ],
+      "topic": "ssri dosing for anxious patients",
+      "speakers": [
+        "Dr. Kelly Dunn"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-dunn-on-addiction-medicine-antidepressants-1421",
+        "dr-dunn-speaks-on-depression-1203"
+      ],
+      "topic": "ssri first-line rationale",
       "speakers": [
         "Dr. Kelly Dunn"
       ],
@@ -3395,19 +3835,6 @@
     },
     {
       "pearl_ids": [
-        "dr-kelly-dunn-on-ihi-fm-board-review-2-1807",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-2024"
-      ],
-      "topic": "ssri starting dose for anxiety",
-      "speakers": [
-        "Dr. Kelly Dunn"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
         "dr-place-on-hyperextension-1676",
         "dr-place-on-hypertension-1809"
       ],
@@ -3421,12 +3848,12 @@
     },
     {
       "pearl_ids": [
-        "dr-lucashu-speaks-on-thyroid-disease-2791",
-        "thyroid-disorders-dr-amanda-lucashu-do-2504"
+        "dr-calvert-on-hormonal-contraception-349",
+        "dr-calvert-on-hormonal-contraception-2-398"
       ],
-      "topic": "subacute thyroiditis treatment",
+      "topic": "starting low-dose ocps",
       "speakers": [
-        "Dr. Amanda Lucashu"
+        "Dr. Jon Calvert"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -3435,9 +3862,9 @@
     {
       "pearl_ids": [
         "dr-lucashu-speaks-on-thyroid-disease-1471",
-        "thyroid-disorders-dr-amanda-lucashu-do-1513"
+        "thyroid-disorders-dr-amanda-lucashu-do-1537"
       ],
-      "topic": "subclinical hypothyroidism management",
+      "topic": "subclinical hypothyroidism treatment",
       "speakers": [
         "Dr. Amanda Lucashu"
       ],
@@ -3447,10 +3874,10 @@
     },
     {
       "pearl_ids": [
-        "rev-joel-s-leitch-on-suicide-prevention-562",
-        "rev-leitch-on-suicide-intervention-996"
+        "rev-joel-s-leitch-on-suicide-prevention-884",
+        "rev-leitch-on-suicide-intervention-1643"
       ],
-      "topic": "suicidal episode recurrence",
+      "topic": "suicidal patient institutionalization risk",
       "speakers": [
         "Rev. Joel S. Leitch"
       ],
@@ -3460,10 +3887,10 @@
     },
     {
       "pearl_ids": [
-        "rev-joel-s-leitch-on-suicide-prevention-525",
-        "rev-leitch-on-suicide-intervention-894"
+        "rev-joel-s-leitch-on-suicide-prevention-819",
+        "rev-leitch-on-suicide-intervention-2263"
       ],
-      "topic": "suicidal patient communication",
+      "topic": "suicide risk assessment",
       "speakers": [
         "Rev. Joel S. Leitch"
       ],
@@ -3473,10 +3900,10 @@
     },
     {
       "pearl_ids": [
-        "dr-dunn-on-addiction-medicine-antidepressants-744",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-606"
+        "dr-dunn-on-addiction-medicine-antidepressants-812",
+        "dr-kelly-dunn-on-ihi-fm-board-review-2-3576"
       ],
-      "topic": "suicide attempt as predictor",
+      "topic": "suicide safety plan components",
       "speakers": [
         "Dr. Kelly Dunn"
       ],
@@ -3502,7 +3929,7 @@
         "dr-lucashu-speaks-on-thyroid-disease-2660",
         "thyroid-disorders-dr-amanda-lucashu-do-2374"
       ],
-      "topic": "t4 goal in pregnancy hyperthyroidism",
+      "topic": "t4 goal in pregnancy",
       "speakers": [
         "Dr. Amanda Lucashu"
       ],
@@ -3526,9 +3953,22 @@
     {
       "pearl_ids": [
         "dr-lucashu-speaks-on-thyroid-disease-1302",
-        "thyroid-disorders-dr-amanda-lucashu-do-1304"
+        "thyroid-disorders-dr-amanda-lucashu-do-1307"
       ],
-      "topic": "thyroid labs in pregnancy",
+      "topic": "thyroid management in pregnancy",
+      "speakers": [
+        "Dr. Amanda Lucashu"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-lucashu-speaks-on-thyroid-disease-2581",
+        "thyroid-disorders-dr-amanda-lucashu-do-2301"
+      ],
+      "topic": "thyroid medication in pregnancy",
       "speakers": [
         "Dr. Amanda Lucashu"
       ],
@@ -3541,7 +3981,7 @@
         "dr-lucashu-speaks-on-thyroid-disease-2440",
         "thyroid-disorders-dr-amanda-lucashu-do-2210"
       ],
-      "topic": "thyroid storm treatment",
+      "topic": "thyroid storm management",
       "speakers": [
         "Dr. Amanda Lucashu"
       ],
@@ -3551,12 +3991,12 @@
     },
     {
       "pearl_ids": [
-        "dr-dunn-speaks-on-depression-3191",
-        "kelly-dunn-md-on-pharmacotherapy-for-depressive-disorders-3245"
+        "dr-lee-on-morning-report-4525",
+        "morning-report-with-dr-lee-6546"
       ],
-      "topic": "treatment-resistant depression definition",
+      "topic": "transfusion reaction types",
       "speakers": [
-        "Dr. Kelly Dunn"
+        "Dr. Lawrence Lee"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -3564,10 +4004,10 @@
     },
     {
       "pearl_ids": [
-        "injections-outpatient-procedures-2342",
+        "injections-outpatient-procedures-2375",
         "joint-injections-dr-enis-sakirgil-2212"
       ],
-      "topic": "trochanteric bursitis injection positioning",
+      "topic": "trochanteric bursa injection",
       "speakers": [
         "Dr. Enis Sakirgil"
       ],
@@ -3596,6 +4036,32 @@
       "topic": "trusting god brings peace",
       "speakers": [
         "Dr. Lewis Sutton"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-lucashu-speaks-on-thyroid-disease-1358",
+        "thyroid-disorders-dr-amanda-lucashu-do-1287"
+      ],
+      "topic": "tsh monitoring in pregnancy",
+      "speakers": [
+        "Dr. Amanda Lucashu"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 2,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
+        "dr-jon-calvert-on-adnexal-masses-499",
+        "dr-jon-calvert-on-adnexal-masses-2-2346"
+      ],
+      "topic": "tubo-ovarian abscess ultrasound",
+      "speakers": [
+        "Dr. Jon Calvert"
       ],
       "n_speakers": 1,
       "n_lectures": 2,
@@ -3643,7 +4109,7 @@
     {
       "pearl_ids": [
         "dr-engstrom-on-approach-to-undifferentiated-shock-3930",
-        "pressors-engstrom-2959"
+        "pressors-engstrom-2960"
       ],
       "topic": "vasopressin dosing",
       "speakers": [
@@ -3655,38 +4121,12 @@
     },
     {
       "pearl_ids": [
-        "dr-lee-on-morning-reports-2-4969",
-        "morning-report-with-dr-lee-1630"
+        "dr-calvert-on-female-vulva-exam-pathology-2148",
+        "dr-calvert-on-female-vulva-examination-pathology-2-1447"
       ],
-      "topic": "vasopressor choice in tachycardia",
+      "topic": "wart palpation characteristics",
       "speakers": [
-        "Dr. Lawrence Lee"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-place-on-hyperextension-2102",
-        "dr-place-on-hypertension-2765"
-      ],
-      "topic": "weight loss and bp",
-      "speakers": [
-        "Dr. Place"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "l-dogg-s-morning-report-503",
-        "two-cases-with-dr-lawrence-lee-9912"
-      ],
-      "topic": "winters' formula use",
-      "speakers": [
-        "Dr. Lawrence Lee"
+        "Dr. Jon Calvert"
       ],
       "n_speakers": 1,
       "n_lectures": 2,

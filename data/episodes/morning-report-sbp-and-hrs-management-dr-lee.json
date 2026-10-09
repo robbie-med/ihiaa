@@ -89421,7 +89421,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinicians taking a history",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-443"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-443",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When generating a differential for back pain in a cirrhotic patient, include compression fracture, epidural abscess, discitis, AAA, MI, and cancer.",
@@ -89434,7 +89450,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "cirrhotic patients with back pain",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-693"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-693",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:compression fracture"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For abdominal distension in a cirrhotic patient, consider SBP, pancreatitis, bowel obstruction, constipation, and anasarca from missed paracentesis.",
@@ -89447,7 +89479,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "cirrhotic patients with abdominal distension",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-824"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-824",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:bowel obstruction"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "missed"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When generating a differential diagnosis at the bedside, think systematically by organ system to avoid missing diagnoses.",
@@ -89460,7 +89514,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinicians",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-934"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-934",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:differential diagnosis"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.16
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A MELD score of 35 indicates approximately 50% mortality within 3 months from liver disease alone, without comorbidities.",
@@ -89473,7 +89546,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cirrhosis",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-1162"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-1162",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 months"
+          ],
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bilirubin in the urine is expected in jaundiced cirrhotic patients and is not a new or unexpected finding.",
@@ -89486,7 +89575,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "jaundiced cirrhotic patients",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-1282"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-1282",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bilirubin"
+          ],
+          "rarity": 7.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Urine sodium <10 mEq/L in a cirrhotic patient with ascites indicates effective arterial blood volume depletion and intact renal sodium retention, not kidney failure.",
@@ -89502,7 +89607,24 @@
       "numbers_unheard": [
         "10"
       ],
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-1370"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-1370",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 mEq",
+            "threshold:<1"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The icto test (ictotest) is used to confirm that dark urine pigment is bilirubin, not myoglobin or other substances.",
@@ -89515,7 +89637,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with dark urine and jaundice",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-1416"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-1416",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bilirubin"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Portal hypertension is a key problem in cirrhotic patients with ascites and should be explicitly listed on the problem list.",
@@ -89528,7 +89669,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "cirrhotic patients with ascites",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-1485"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-1485",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:portal hypertension"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Severe hyponatremia is defined as serum sodium ≤120 mEq/L and should be explicitly labeled as such.",
@@ -89541,7 +89698,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-1539"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-1539",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:120 mEq"
+          ],
+          "rarity": 7.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In liver disease patients, the BUN ratio may be skewed and less accurate for distinguishing prerenal AKI because they tend to have high BUN.",
@@ -89555,7 +89728,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with liver disease",
       "by_presenter": false,
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3275"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3275",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:prerenal aki"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "HRS is a diagnosis of exclusion; always consider and rule out other causes of AKI before diagnosing HRS.",
@@ -89568,7 +89757,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cirrhosis and AKI",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3410"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3410",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "always"
+          ],
+          "rarity": 6.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "EKG interpretation should follow a systematic stepwise approach: rate, rhythm, axis, intervals, waves, ST segment, T waves.",
@@ -89581,7 +89786,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3564"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3564",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:EKG"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Normal PR interval is less than 5 small boxes; normal QRS interval is less than 10 small boxes.",
@@ -89597,7 +89818,23 @@
       "numbers_unheard": [
         "10"
       ],
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3684"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3684",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 5"
+          ],
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pathologic Q waves must be at least 2 small boxes deep and 1 small box wide, or present in aVF.",
@@ -89610,7 +89847,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3833"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-3833",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:at least 2"
+          ],
+          "rarity": 7.64
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "First treatment of metabolic acidosis is to find and treat the cause, not to give sodium bicarbonate.",
@@ -89623,7 +89876,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with metabolic acidosis",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-4534"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-4534",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:metabolic acidosis"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 5.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Sodium bicarbonate drips can increase mortality by artificially changing acidosis status without treating the underlying cause and altering compensatory mechanisms.",
@@ -89637,7 +89909,26 @@
       "prompt_version": "v1",
       "applies_to": "patients with metabolic acidosis",
       "by_presenter": false,
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-4672"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-4672",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:compensatory mechanism"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Documentation must specify whether a consultant was actually called, not just that a consult was ordered.",
@@ -89650,7 +89941,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient documentation",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-4737"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-4737",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:documentation"
+          ],
+          "actionable": [
+            "consult"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In hyponatremia management, avoid overaggressive rapid correction and monitor serum sodium closely.",
@@ -89663,7 +89973,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hyponatremia",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-4797"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-4797",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hyponatremia"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In cirrhosis, splanchnic vasodilation decreases effective arterial blood volume, activating RAAS and ADH, which causes free water retention and dilutional hyponatremia.",
@@ -89676,7 +90005,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cirrhosis and hyponatremia",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-4906"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-4906",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:effective arterial blo"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Calculate ascitic fluid PMN count by multiplying total nucleated cell count by the percentage of neutrophils; a PMN count >250 cells/µL diagnoses SBP.",
@@ -89689,7 +90034,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ascites undergoing paracentesis",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5117"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5117",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>2"
+          ],
+          "actionable": [
+            "Calculate"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In cirrhosis with hyponatremia, the serum osmolality is typically hypotonic; if it is normal, consider other causes or laboratory artifact.",
@@ -89702,7 +90066,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cirrhosis and hyponatremia",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5177"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5177",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hyponatremia"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hepatorenal syndrome is a complication of cirrhosis defined by kidney injury without other identifiable cause; the kidneys will only improve if the liver is fixed.",
@@ -89716,7 +90099,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with cirrhosis and acute kidney injury",
       "by_presenter": false,
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5458"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5458",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hepatorenal syndrome"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Treatment of HRS includes albumin and vasoconstrictors: midodrine and octreotide for non-ICU patients, or vasopressin in the ICU; definitive treatment is liver transplantation.",
@@ -89729,7 +90128,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hepatorenal syndrome",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5647"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5647",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:vasopressin"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Type 1 HRS has rapid progression and grim prognosis; type 2 HRS has slower, more stable impairment and is often diuretic-responsive.",
@@ -89742,7 +90157,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hepatorenal syndrome",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5693"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5693",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1 HRS"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "SBP can precipitate HRS, but treating SBP with antibiotics alone will not reverse established HRS.",
@@ -89755,7 +90186,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cirrhosis, SBP, and HRS",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5725"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5725",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:antibiotics"
+          ],
+          "harm": [
+            "precipitate"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not jump to the diagnosis of HRS immediately; you must first rule out and treat other causes of renal failure such as volume depletion, sepsis, and nephrotoxic agents.",
@@ -89768,7 +90218,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cirrhosis and acute kidney injury",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5775"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5775",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:sepsis"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid removing more than 5 liters of ascitic fluid at a time during paracentesis due to risk of hemodynamic instability from large fluid shifts.",
@@ -89781,7 +90253,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cirrhosis undergoing large-volume paracentesis",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5808"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-5808",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:more than 5"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In cirrhosis with AKI, if creatinine does not significantly improve after fluid resuscitation for severe sepsis, suspect HRS rather than prerenal azotemia alone.",
@@ -89794,7 +90285,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cirrhosis, sepsis, and acute kidney injury",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6044"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6044",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fluid resuscitation"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In severe sepsis, creatinine typically comes down significantly with fluid resuscitation; a minimal drop (e.g., from 2.17 to 2.07) suggests something else like hepatorenal syndrome.",
@@ -89810,7 +90320,29 @@
       "numbers_unheard": [
         "2.07"
       ],
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6058"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6058",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hepatorenal syndrome"
+          ],
+          "harm": [
+            "sepsis"
+          ],
+          "rarity": 6.92,
+          "capped": [
+            "number not heard: 2.07"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient's condition acutely worsens (e.g., leukocytosis spikes, encephalopathy, metabolic acidosis), open up the differential and consider new infections, hemorrhage, MDR organisms, fungal infections, DVT/PE, and drug effects.",
@@ -89823,7 +90355,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospitalized patients with acute deterioration",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6256"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6256",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:metabolic acidosis"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In select cases, giving IV fluids and IV Lasix together can help mobilize ascites by expanding intravascular volume and then diuresing free water, but this is a narrow indication typically managed by renal.",
@@ -89836,7 +90390,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with ascites and volume overload, often in renal failure",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6510"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6510",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ascites"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dialysis (renal replacement therapy) can dramatically improve labs and clinical status in HRS.",
@@ -89849,7 +90419,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hepatorenal syndrome and renal failure",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6607"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6607",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:renal replacement ther"
+          ],
+          "rarity": 6.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ammonia levels and lactulose are important in managing hepatic encephalopathy.",
@@ -89862,7 +90448,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cirrhosis and altered mental status",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6679"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6679",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hepatic encephalopathy"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Acute worsening of INR and bilirubin in a cirrhotic patient suggests worsening hepatic failure or biliary obstruction.",
@@ -89875,7 +90477,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cirrhosis and acute decompensation",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6770"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6770",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:INR"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Terlipressin is not available in the United States; midodrine and octreotide are used for HRS instead.",
@@ -89888,7 +90506,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hepatorenal syndrome in the US",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6998"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-6998",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:terlipressin"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient's MELD score is high (e.g., 35 or above) and they are on a transplant list, contact the transplant center early.",
@@ -89901,7 +90535,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cirrhosis and high MELD score on transplant list",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-7038"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-7038",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:meld score"
+          ],
+          "rarity": 6.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hepatorenal syndrome is a diagnosis of exclusion; rule out other causes of renal failure first.",
@@ -89914,7 +90564,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cirrhosis and acute kidney injury",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-7103"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-7103",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hepatorenal syndrome"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 6.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In metabolic acidosis, bicarbonate should not be given routinely; it is only for specific situations in renal failure.",
@@ -89927,7 +90596,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with metabolic acidosis, especially in renal failure",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-7114"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-7114",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:metabolic acidosis"
+          ],
+          "rarity": 6.16
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A white blood cell count >250 PMNs in ascitic fluid is diagnostic for SBP.",
@@ -89941,7 +90626,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with ascites and suspected SBP",
       "by_presenter": false,
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-7124"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-7124",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>2"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid PPIs in SBP patients unless there is a clear indication like bleeding.",
@@ -89955,7 +90656,26 @@
       "prompt_version": "v1",
       "applies_to": "patients with spontaneous bacterial peritonitis",
       "by_presenter": false,
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-7168"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-7168",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "Avoid"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 6.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For suspected SBP, the antibiotic of choice is cefotaxime, and albumin should be given.",
@@ -89968,7 +90688,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with spontaneous bacterial peritonitis",
-      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-7183"
+      "pearl_id": "morning-report-sbp-and-hrs-management-dr-lee-7183",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cefotaxime"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

@@ -42868,7 +42868,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with active pulmonary TB",
-      "pearl_id": "tuberculosis-kyle-jones-do-936"
+      "pearl_id": "tuberculosis-kyle-jones-do-936",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 months"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ethambutol can cause decreased visual acuity; monitor and stop if this occurs.",
@@ -42881,7 +42897,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on ethambutol",
-      "pearl_id": "tuberculosis-kyle-jones-do-995"
+      "pearl_id": "tuberculosis-kyle-jones-do-995",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:ethambutol"
+          ],
+          "actionable": [
+            "monitor"
+          ],
+          "rarity": 7.13
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For latent TB, treatment is typically 9 months of isoniazid.",
@@ -42894,7 +42929,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with latent TB",
-      "pearl_id": "tuberculosis-kyle-jones-do-1182"
+      "pearl_id": "tuberculosis-kyle-jones-do-1182",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:9 months"
+          ],
+          "rarity": 5.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients on TNF-alpha antagonists (e.g., Humira) should be screened for latent TB before starting therapy because these drugs increase risk of reactivation.",
@@ -42907,7 +42958,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients starting TNF-alpha antagonist therapy",
-      "pearl_id": "tuberculosis-kyle-jones-do-1188"
+      "pearl_id": "tuberculosis-kyle-jones-do-1188",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:tnf-alpha antagonists"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "False negative results on TST or IGRA occur in 20-25% of patients with active TB; do not use these tests alone to exclude active disease.",
@@ -42920,7 +42990,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected active TB",
-      "pearl_id": "tuberculosis-kyle-jones-do-1361"
+      "pearl_id": "tuberculosis-kyle-jones-do-1361",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:false negative"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "TST interpretation: 15 mm induration is positive for all patients; reduce to 5 mm for immunocompromised (e.g., HIV) and 10 mm for other high-risk groups.",
@@ -42933,7 +43022,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "tuberculosis-kyle-jones-do-1373"
+      "pearl_id": "tuberculosis-kyle-jones-do-1373",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:15 mm"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 7.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with a BCG vaccination history, use IGRA (blood test) instead of TST (skin test) because BCG causes false-positive TST.",
@@ -42946,7 +43054,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with BCG vaccination",
-      "pearl_id": "tuberculosis-kyle-jones-do-1377"
+      "pearl_id": "tuberculosis-kyle-jones-do-1377",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:vaccination"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Only 10% of individuals with latent TB will progress to active disease over their lifetime, with highest risk in the first two years after infection.",
@@ -42959,7 +43086,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with latent TB",
-      "pearl_id": "tuberculosis-kyle-jones-do-1531"
+      "pearl_id": "tuberculosis-kyle-jones-do-1531",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In HIV-positive patients, the annual risk of developing active TB is 8-10%.",
@@ -42972,7 +43112,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "HIV-positive patients",
-      "pearl_id": "tuberculosis-kyle-jones-do-1551"
+      "pearl_id": "tuberculosis-kyle-jones-do-1551",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.03
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Isolate patients with suspected active TB for a minimum of 5 days to 2 weeks until therapy is established and sputum cultures convert to negative.",
@@ -42985,7 +43138,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected active TB",
-      "pearl_id": "tuberculosis-kyle-jones-do-1585"
+      "pearl_id": "tuberculosis-kyle-jones-do-1585",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 days"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "GeneXpert testing is done on sputum samples and can provide drug susceptibility information, including rifampin resistance.",
@@ -42998,7 +43167,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected pulmonary TB",
-      "pearl_id": "tuberculosis-kyle-jones-do-1697"
+      "pearl_id": "tuberculosis-kyle-jones-do-1697",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rifampin resistance"
+          ],
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Directly observed therapy for TB is done five days per week initially; after the first eight weeks, the frequency may be reduced.",
@@ -43011,7 +43196,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with active TB on directly observed therapy",
-      "pearl_id": "tuberculosis-kyle-jones-do-1882"
+      "pearl_id": "tuberculosis-kyle-jones-do-1882",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:per week"
+          ],
+          "rarity": 6.43
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nonsupervised TB therapy, if used, requires seven days a week dosing: initial phase of all four drugs for at least eight weeks, then continuation phase of rifampin and isoniazid for another four to seven months.",
@@ -43024,7 +43225,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with active TB on nonsupervised therapy",
-      "pearl_id": "tuberculosis-kyle-jones-do-1917"
+      "pearl_id": "tuberculosis-kyle-jones-do-1917",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:isoniazid"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Extended nine-month TB treatment is indicated for cavitary disease, recurrent TB, and in active smokers.",
@@ -43037,7 +43254,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cavitary TB, recurrent TB, or who are active smokers",
-      "pearl_id": "tuberculosis-kyle-jones-do-1936"
+      "pearl_id": "tuberculosis-kyle-jones-do-1936",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tb treatment"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For MDR TB, the health department provides special drugs and performs directly observed therapy; the clinician's role is to make the diagnosis and refer to the health department.",
@@ -43050,7 +43283,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with multidrug-resistant TB",
-      "pearl_id": "tuberculosis-kyle-jones-do-1979"
+      "pearl_id": "tuberculosis-kyle-jones-do-1979",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:directly observed ther"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "BCG vaccine is not used in the US because incidence is low and it does not prevent pulmonary TB, but it reduces TB meningitis and disseminated TB.",
@@ -43063,7 +43315,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population in high-incidence areas",
-      "pearl_id": "tuberculosis-kyle-jones-do-2012"
+      "pearl_id": "tuberculosis-kyle-jones-do-2012",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bcg vaccine"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In HIV patients with TB, ART should be started only after two weeks of TB therapy have been completed.",
@@ -43076,7 +43344,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "HIV patients with active TB",
-      "pearl_id": "tuberculosis-kyle-jones-do-2066"
+      "pearl_id": "tuberculosis-kyle-jones-do-2066",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:therapy"
+          ],
+          "rarity": 6.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "TB organisms are engulfed by macrophages and walled off in granulomas called tubercles, where they can reside indefinitely in a latent stage.",
@@ -43089,7 +43373,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "general population",
-      "pearl_id": "tuberculosis-kyle-jones-do-2098"
+      "pearl_id": "tuberculosis-kyle-jones-do-2098",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Nucleic acid amplification tests can differentiate between different species of mycobacteria and detect resistance.",
@@ -43102,7 +43399,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being evaluated for TB",
-      "pearl_id": "tuberculosis-kyle-jones-do-2178"
+      "pearl_id": "tuberculosis-kyle-jones-do-2178",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:nucleic acid amplifica"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Isoniazid can cause hepatotoxicity and peripheral neuropathy; pyridoxine (vitamin B6) is given to prevent neuropathy.",
@@ -43115,7 +43428,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on isoniazid therapy",
-      "pearl_id": "tuberculosis-kyle-jones-do-2248"
+      "pearl_id": "tuberculosis-kyle-jones-do-2248",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:peripheral neuropathy"
+          ],
+          "rarity": 8.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Rifampin causes orange-red discoloration of urine; patients should be warned about this.",
@@ -43128,7 +43457,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on rifampin therapy",
-      "pearl_id": "tuberculosis-kyle-jones-do-2285"
+      "pearl_id": "tuberculosis-kyle-jones-do-2285",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rifampin"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

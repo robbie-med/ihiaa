@@ -23344,7 +23344,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anemia of chronic disease",
-      "pearl_id": "lifestyle-anemia-1608"
+      "pearl_id": "lifestyle-anemia-1608",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:anemia of chronic dise"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "Do not give"
+          ],
+          "rarity": 6.55
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In anemia of chronic disease, hemoglobin usually does not drop below 9 g/dL. If it is less than 9, look for another cause such as concomitant iron deficiency.",
@@ -23357,7 +23379,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected anemia of chronic disease",
-      "pearl_id": "lifestyle-anemia-1627"
+      "pearl_id": "lifestyle-anemia-1627",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:9 g",
+            "threshold:below 9"
+          ],
+          "rarity": 6.37
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For thalassemia major, the pre-transfusion hemoglobin threshold is approximately 5.5 to 10 g/dL.",
@@ -23370,7 +23409,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thalassemia major",
-      "pearl_id": "lifestyle-anemia-1789"
+      "pearl_id": "lifestyle-anemia-1789",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:10 g"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In thalassemia, iron supplementation is harmful because it can cause iron overload; do not give iron empirically.",
@@ -23384,7 +23439,32 @@
       "prompt_version": "v1",
       "applies_to": "patients with thalassemia",
       "by_presenter": false,
-      "pearl_id": "lifestyle-anemia-1829"
+      "pearl_id": "lifestyle-anemia-1829",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:iron supplementation"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "do not give"
+          ],
+          "rarity": 6.96,
+          "capped": [
+            "said by another participant"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Myelodysplastic syndrome can transform into acute myeloid leukemia.",
@@ -23397,7 +23477,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with myelodysplastic syndrome",
-      "pearl_id": "lifestyle-anemia-1949"
+      "pearl_id": "lifestyle-anemia-1949",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:myelodysplastic syndro"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When macrocytic anemia workup (B12, folate, TSH) is normal, do not stop; obtain a peripheral blood smear to evaluate for myelodysplastic syndrome.",
@@ -23410,7 +23506,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with macrocytic anemia and normal B12, folate, TSH",
-      "pearl_id": "lifestyle-anemia-1987"
+      "pearl_id": "lifestyle-anemia-1987",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:TSH"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The classic triad of multiple myeloma is hypercalcemia, anemia, and elevated creatinine.",
@@ -23423,7 +23538,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected multiple myeloma",
-      "pearl_id": "lifestyle-anemia-2140"
+      "pearl_id": "lifestyle-anemia-2140",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:multiple myeloma"
+          ],
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In chronic kidney disease with hemoglobin less than 10, consider erythropoietin therapy, which should be managed with nephrology.",
@@ -23436,7 +23567,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CKD and hemoglobin <10",
-      "pearl_id": "lifestyle-anemia-2177"
+      "pearl_id": "lifestyle-anemia-2177",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:less than 1"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.02
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When giving erythropoietin, also supplement iron because EPO stimulates the bone marrow and depletes iron stores rapidly.",
@@ -23449,7 +23599,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving erythropoietin",
-      "pearl_id": "lifestyle-anemia-2227"
+      "pearl_id": "lifestyle-anemia-2227",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:erythropoietin"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Elevated BUN in CKD shortens RBC lifespan, which can confound the interpretation of BUN in GI bleeding.",
@@ -23462,7 +23628,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CKD and anemia",
-      "pearl_id": "lifestyle-anemia-2292"
+      "pearl_id": "lifestyle-anemia-2292",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Initial workup of new anemia should include a careful history, repeat CBC, reticulocyte count, and direct Coombs test to guide further evaluation cost-effectively.",
@@ -23475,7 +23657,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with newly discovered anemia",
-      "pearl_id": "lifestyle-anemia-2351"
+      "pearl_id": "lifestyle-anemia-2351",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:CBC"
+          ],
+          "actionable": [
+            "repeat"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

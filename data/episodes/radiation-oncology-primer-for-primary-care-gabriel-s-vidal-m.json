@@ -47257,7 +47257,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with superficial skin cancers",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-300"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-300",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:squamous cell carcinom"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Higher-energy X-rays (photons) have a skin-sparing effect, meaning they deposit less energy at the surface and peak deeper, which is advantageous for treating deeper tumors while reducing skin toxicity.",
@@ -47270,7 +47289,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring treatment of deeper tumors",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-333"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-333",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "toxicity"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Proton therapy delivers a low entrance dose, deposits all energy in a Bragg peak that can be targeted to the tumor, and has no exit dose, minimizing radiation to tissues beyond the target.",
@@ -47283,7 +47318,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with tumors near critical structures where sparing beyond the target is crucial",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-353"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-353",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:proton therapy"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For urgent palliative cases requiring same-day or next-day treatment, use a simple 3D conformal plan with 2-4 beam angles, as it is quick to set up and QA.",
@@ -47296,7 +47347,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatients or outpatients needing urgent palliative radiation",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-399"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-399",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IMRT (intensity-modulated radiation therapy) is a complex technique that takes several days to plan and uses many beam angles and shapes to deliver a very conformal dose to the target.",
@@ -47309,7 +47379,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring highly conformal radiation, typically in curative settings",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-413"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-413",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:radiation therapy"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Stereotactic techniques (SBRT/SRS) deliver high-dose radiation in a radiosurgery-like manner to ablate tumors over a relatively short time period.",
@@ -47322,7 +47408,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with small, well-defined tumors, often in lung, liver, spine, or brain",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-437"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-437",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After a lumpectomy or brain tumor resection, radiation is almost always given adjuvantly to reduce local recurrence.",
@@ -47335,7 +47434,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after lumpectomy for breast cancer or after brain tumor resection",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-502"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-502",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "always"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In lymphoma, after several cycles of chemotherapy, radiation can be used for consolidation if there are areas not responding to chemotherapy.",
@@ -47348,7 +47463,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with lymphoma with residual disease after chemotherapy",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-510"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-510",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:lymphoma"
+          ],
+          "rarity": 6.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "About 40% of advanced cancer patients receive palliative radiation therapy, and about 40% of a radiation oncologist's daily practice is palliative, focusing on symptom control or prevention with the shortest possible course and least side effects.",
@@ -47361,7 +47492,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "advanced cancer patients with symptoms from metastases (e.g., pain, bleeding, obstruction)",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-531"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-531",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Reproducibility of patient positioning is critical in radiation therapy; the tolerance is 2-3 millimeters maximum to ensure the radiation hits the target accurately every day.",
@@ -47374,7 +47521,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients undergoing fractionated radiation therapy",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-683"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-683",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:radiation therapy"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For head and neck cancer, a custom mask immobilizes the head, neck, and shoulders to prevent movement during treatment; if the patient moves, the beam may hit unintended structures.",
@@ -47387,7 +47553,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving radiation for head and neck cancers",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-700"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-700",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cancer"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Multi-leaf collimators (MLCs) made of tungsten shape the radiation beam to conform to the tumor, allowing sparing of organs at risk and reducing toxicity compared to older blocking techniques.",
@@ -47400,7 +47582,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients receiving conformal radiation therapy",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-812"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-812",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "toxicity"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gamma knife radiosurgery uses a titanium frame fixed to the skull (placed with neurosurgery assistance) to achieve sub-millimeter precision for treating brain lesions, typically in 1-5 fractions.",
@@ -47413,7 +47611,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with brain tumors or arteriovenous malformations requiring stereotactic radiosurgery",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-873"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-873",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:gamma knife"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When planning pelvic radiation (e.g., for endometrial cancer), critical organs at risk include the bladder, rectum, and small bowel; dose-volume histograms (DVHs) are used to ensure these organs stay within safe dose limits.",
@@ -47426,7 +47640,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving pelvic radiation for gynecologic or other pelvic malignancies",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-961"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-961",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:endometrial cancer"
+          ],
+          "actionable": [
+            "ensure"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Protons deliver most of their dose at the target with very little dose beyond it, making them especially useful for pediatric patients.",
@@ -47439,7 +47672,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pediatric patients and others where minimizing exit dose is critical",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1047"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1047",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a tumor requires radiation from both sides, the unilateral advantage of protons is lost, and photons may be equally effective.",
@@ -47452,7 +47698,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being considered for proton therapy",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1084"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1084",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Radiation dose is measured in gray (Gy) or centigray (cGy); common doses include 45 Gy, 50 Gy, or 70 Gy.",
@@ -47465,7 +47724,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients receiving radiation therapy",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1112"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1112",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Always obtain tissue diagnosis before treating an oncologic emergency; 'no meat, no treat' applies.",
@@ -47478,7 +47750,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected cancer in emergency settings",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1443"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1443",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "Always"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the NOMS framework (Neurologic, Oncologic, Mechanical, Systemic) to evaluate the need for radiation versus surgery in spinal metastases.",
@@ -47491,7 +47782,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with spinal metastases",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1491"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1491",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:noms framework"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Assess mechanical stability of spinal lesions using the Spinal Instability Neoplastic Score (SINS), a six-question tool.",
@@ -47504,7 +47814,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with spinal metastases",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1599"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1599",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:spinal instability neo"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "One in five cancer patients will develop a vertebral metastasis at some point.",
@@ -47517,7 +47843,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all cancer patients",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1741"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1741",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cancer"
+          ],
+          "rarity": 7.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For spinal cord compression, start high-dose dexamethasone early in the ED or on the floor; it can provide symptom resolution or improvement by reducing spinal cord edema.",
@@ -47530,7 +47872,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with spinal cord compression from metastatic cancer",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1772"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-1772",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:dexamethasone"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 6.48
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In superior vena cava syndrome, intraluminal stenting provides the fastest symptom relief because radiation works slowly via DNA damage.",
@@ -47543,7 +47904,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with superior vena cava syndrome",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2012"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2012",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:superior vena cava syn"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For SVC syndrome, if the patient presents with severe symptoms, intraluminal stenting may be the fastest way to relieve obstruction.",
@@ -47556,7 +47933,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with SVC syndrome",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2018"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2018",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:intraluminal stenting"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For SVC syndrome, if tissue diagnosis is not yet available, complete workup with bronchoscopy and sampling before deciding treatment.",
@@ -47569,7 +47962,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with SVC syndrome without known histology",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2025"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2025",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:bronchoscopy"
+          ],
+          "rarity": 7.73
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For radiosensitive tumors like lymphoma, small cell lung cancer, and germ cell tumors, systemic chemotherapy may work faster than radiation.",
@@ -47582,7 +47991,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with lymphoma, small cell lung cancer, or germ cell tumors",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2038"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2038",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:small cell lung cancer"
+          ],
+          "rarity": 7.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lymphomas, small cell lung cancer, and germ cell tumors in SVC syndrome respond better and faster to chemotherapy; start chemotherapy first, then add radiation.",
@@ -47595,7 +48020,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with SVC syndrome and these tumor types",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2041"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2041",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:small cell lung cancer"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In SVC syndrome from non-small cell lung cancer, start with about three to four sessions of radiation before moving to concurrent chemoradiation.",
@@ -47608,7 +48052,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with SVC syndrome from non-small cell lung cancer",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2056"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2056",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:non-small cell lung ca"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Grade 1 radiation dermatitis: faint erythema, possibly dry itchiness. Grade 2: more intense reaction, moist desquamation. Grade 3: borderline with more confluent moist desquamation.",
@@ -47621,7 +48084,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with radiation dermatitis",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2201"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2201",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:radiation dermatitis"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For all grades of radiation dermatitis: advise loose clothing and good skin hygiene with mild soap and lukewarm water daily; patients who wash heal faster with less itching.",
@@ -47634,7 +48113,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with radiation dermatitis",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2236"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2236",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For grade 1-2 radiation dermatitis, use Aquaphor or similar emollient applied at least three times daily: when you get up, when you go to bed, and at least one other time in between.",
@@ -47647,7 +48142,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with grade 1-2 radiation dermatitis",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2273"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2273",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:daily"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For grade 2-3 radiation dermatitis with moist desquamation, use dressings like Mepilex or Medihoney to keep the area dry and prevent infection.",
@@ -47660,7 +48174,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with grade 2-3 radiation dermatitis",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2301"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2301",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:radiation dermatitis"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cellulitis over a radiation field is treated just like normal cellulitis; no special coverage is needed.",
@@ -47673,7 +48206,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cellulitis in a previously irradiated area",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2330"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2330",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cellulitis"
+          ],
+          "rarity": 6.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Radiation side effects are location-specific: pelvis causes bladder and rectal toxicity; breast causes skin toxicity and fatigue; head/neck causes mucositis, dysphagia, and weight loss.",
@@ -47686,7 +48235,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing radiation",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2417"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2417",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:weight loss"
+          ],
+          "harm": [
+            "toxicity"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After radiation, wait two to three months for a PET scan because early inflammation causes false-positive uptake from recovering tissues.",
@@ -47699,7 +48267,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after radiation for solid tumors",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2565"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2565",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:pet scan"
+          ],
+          "actionable": [
+            "wait"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After radiation for prostate cancer, wait about two months to check PSA; an early bump may occur from dying cells releasing PSA.",
@@ -47712,7 +48299,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients after radiation for prostate cancer",
-      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2586"
+      "pearl_id": "radiation-oncology-primer-for-primary-care-gabriel-s-vidal-m-2586",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:prostate cancer"
+          ],
+          "actionable": [
+            "wait"
+          ],
+          "harm": [
+            "dying"
+          ],
+          "rarity": 6.99
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

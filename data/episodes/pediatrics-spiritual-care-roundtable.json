@@ -48647,7 +48647,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients expressing emotional pain",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-1152"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-1152",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient says something like 'I know I messed up,' ask 'tell me more about that' instead of saying 'it's okay', your assumption about what they mean is often wrong.",
@@ -48660,7 +48673,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients expressing guilt or self-blame",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-1197"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-1197",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Look for community resources (e.g., churches, grandparent groups) to connect the patient to, since your clinical time with them is brief.",
@@ -48673,7 +48699,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with limited support systems",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-1297"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-1297",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:community resources"
+          ],
+          "rarity": 8.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a vulnerable adolescent opens up and latches onto you as a safe person, acknowledge the time-limited nature of the relationship to avoid causing harm when it ends.",
@@ -48686,7 +48728,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adolescents with unstable relationships",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-1356"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-1356",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In the hospital setting where you have no prior relationship with the family, get permission from the parents before proceeding with spiritual interventions.",
@@ -48699,7 +48757,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hospital setting, first encounter with family",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-1682"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-1682",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When offering prayer to a pediatric patient, ask both the child and the parent for permission before proceeding.",
@@ -48712,7 +48783,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pediatric patients in clinic or hospital",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-1717"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-1717",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:prayer"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a child says no to prayer, do not force it; revisit on future visits as trust builds and comfort increases.",
@@ -48725,7 +48812,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pediatric patients in clinic",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-1752"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-1752",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:prayer"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a parent says 'it's fine' and walks away while the child agrees to prayer, take that as permission, the parent is letting the child decide.",
@@ -48738,7 +48844,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adolescent patients when parent defers",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-1821"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-1821",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:prayer"
+          ],
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Spiritual care can be directed at the parent or caregiver, not just the patient, sometimes the parent needs prayer and support more than the child does.",
@@ -48751,7 +48873,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "parents of children with chronic conditions or difficult behaviors",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-1990"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-1990",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:spiritual care"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not push for a verbal 'come to Jesus moment'; the patient may be experiencing change in their heart without articulating it, especially if their understanding is limited.",
@@ -48764,7 +48902,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cognitive or developmental limitations",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-2068"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-2068",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not assume autistic children cannot understand emotions or God; they are 'wonderfully and fearfully made' and deserve intentional spiritual care.",
@@ -48777,7 +48931,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with autism",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-2152"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-2152",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:spiritual care"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient says the Bible is made up, do not defend the Bible; instead, explore the pain and worthlessness driving that statement.",
@@ -48790,7 +48963,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients who express doubt about the Bible",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-2463"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-2463",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:worthlessness"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 8.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient feels worthless due to abandonment, address that feeling directly rather than arguing about religious beliefs.",
@@ -48803,7 +48995,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with feelings of worthlessness",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-2543"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-2543",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:belief"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Give a Bible with the patient's name printed on the front; it becomes a treasure and helps them take ownership.",
@@ -48816,7 +49024,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pediatric patients",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-2587"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-2587",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Give"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Seeds of spiritual care may not be seen immediately, but they can have a lasting harvest; trust that God is working through your actions.",
@@ -48829,7 +49053,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all providers offering spiritual care",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-2710"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-2710",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:spiritual care"
+          ],
+          "harm": [
+            "immediately"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Include a note in the chart about spiritual concerns (e.g., 'patient feels abandoned by God') to help chaplains provide targeted care.",
@@ -48842,7 +49085,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "inpatient pediatric patients with spiritual distress",
-      "pearl_id": "pediatrics-spiritual-care-roundtable-2742"
+      "pearl_id": "pediatrics-spiritual-care-roundtable-2742",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.35
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

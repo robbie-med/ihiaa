@@ -46413,7 +46413,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected lateral epicondylitis",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-396"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-396",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:lateral epicondylitis"
+          ],
+          "actionable": [
+            "palpate"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Lateral epicondylitis (tennis elbow) typically resolves with conservative management (rest, ice, NSAIDs) within 6 to 12 weeks; orthopedic referral is rarely needed.",
@@ -46426,7 +46445,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with lateral epicondylitis",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-455"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-455",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:12 weeks"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Septic bursitis is caused by Staphylococcus aureus in about one third of cases; always consider it in acute olecranon bursitis with fever, erythema, or point tenderness.",
@@ -46439,7 +46474,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute olecranon bursitis",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-583"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-583",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:staphylococcus aureus"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "harm": [
+            "Septic"
+          ],
+          "rarity": 7.5
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In olecranon bursitis, aspirate the bursa only if you suspect septic bursitis or crystalline arthropathy; otherwise, conservative management is appropriate.",
@@ -46452,7 +46509,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with olecranon bursitis",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-649"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-649",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:olecranon bursitis"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid intra-bursal steroid injections for superficial bursae like olecranon bursitis; they are not indicated as first-line management.",
@@ -46465,7 +46541,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with olecranon bursitis",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-749"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-749",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:olecranon bursitis"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For chronic olecranon bursitis that fails conservative measures, referral for bursectomy may be considered.",
@@ -46478,7 +46573,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic olecranon bursitis refractory to conservative treatment",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-776"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-776",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:olecranon bursitis"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cubital tunnel syndrome is caused by ulnar nerve compression at the elbow; prolonged elbow flexion tightens the surrounding structures and stretches the nerve across the medial epicondyle, reproducing symptoms.",
@@ -46491,7 +46602,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cubital tunnel syndrome",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-890"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-890",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cubital tunnel syndrom"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In cubital tunnel syndrome, sensory disturbance (paresthesias over the ulnar aspect of the 4th and 5th digits) is the most common feature; motor symptoms like hand weakness or claw hand deformity are less common but can occur.",
@@ -46504,7 +46631,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cubital tunnel syndrome",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-934"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-934",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cubital tunnel syndrom"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In cubital tunnel syndrome, the Tinel test at the elbow and the elbow flexion test (reproducing paresthesias) are key physical exam maneuvers.",
@@ -46517,7 +46660,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected cubital tunnel syndrome",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-986"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-986",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cubital tunnel syndrom"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For cubital tunnel syndrome, nerve conduction studies (EMG) are a standard part of the evaluation even in straightforward cases to confirm the diagnosis.",
@@ -46530,7 +46689,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected cubital tunnel syndrome",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1005"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1005",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cubital tunnel syndrom"
+          ],
+          "actionable": [
+            "confirm"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For cubital tunnel syndrome, avoid leaning on the elbow and use soft pads; NSAIDs or APAP can be tried but don't seem to help much.",
@@ -46543,7 +46721,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with cubital tunnel syndrome",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1061"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1061",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cubital tunnel syndrom"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For De Quervain's tenosynovitis, the Finkelstein test is performed by having the patient tuck their thumb in their palm, curl fingers over, and ulnarly deviate the wrist; pain reproduction is a positive test with high specificity.",
@@ -46556,7 +46753,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected De Quervain's tenosynovitis",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1279"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1279",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:de quervain's tenosyno"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For De Quervain's tenosynovitis, diclofenac gel is a frequently recommended topical analgesic.",
@@ -46569,7 +46782,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with De Quervain's tenosynovitis",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1312"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1312",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:de quervain's tenosyno"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For carpal tunnel syndrome, if conservative management fails, the next step on board exams is a steroid injection; in practice, you can do it yourself or refer to hand surgery.",
@@ -46582,7 +46811,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with carpal tunnel syndrome failing conservative management",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1423"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1423",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:carpal tunnel syndrome"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 7.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In severe carpal tunnel syndrome (constant symptoms, thenar wasting), refer directly to orthopedics rather than trying steroid injections first.",
@@ -46595,7 +46843,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with severe carpal tunnel syndrome",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1525"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1525",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:carpal tunnel syndrome"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 8.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For carpal tunnel syndrome, the Flick sign (patient shaking their hand to wake it up) is 93% sensitive and 96% specific.",
@@ -46608,7 +46875,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected carpal tunnel syndrome",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1709"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1709",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:carpal tunnel syndrome"
+          ],
+          "rarity": 8.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For carpal tunnel syndrome, the Durkan test (direct compression over the carpal tunnel for one minute while taking history) is an easy alternative to Phalen's test.",
@@ -46621,7 +46904,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected carpal tunnel syndrome",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1848"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1848",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:carpal tunnel syndrome"
+          ],
+          "rarity": 8.24
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For carpal tunnel syndrome, first-line treatment is wrist splinting to keep the wrist straight; any brace that prevents curling is fine.",
@@ -46634,7 +46933,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with carpal tunnel syndrome",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1915"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1915",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:carpal tunnel syndrome"
+          ],
+          "rarity": 7.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For carpal tunnel syndrome, the first treatment is wrist splinting to keep the wrist straight, especially while driving.",
@@ -46647,7 +46962,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with carpal tunnel syndrome",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1916"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1916",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:carpal tunnel syndrome"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For carpal tunnel syndrome, oral prednisone for two weeks is an option per UpToDate, but use caution in diabetics or those already on steroids.",
@@ -46660,7 +46991,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with carpal tunnel syndrome, excluding diabetics and those on chronic steroids",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1935"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-1935",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "drug:prednisone"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a nondisplaced distal radius compression fracture in a child, initial management is a short arm splint.",
@@ -46673,7 +47023,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "pediatric patients with nondisplaced distal radius compression fracture",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2092"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2092",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:compression fracture"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a distal radius fracture is displaced and you cannot perform closed reduction, immobilize and refer to orthopedics.",
@@ -46686,7 +47052,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with displaced distal radius fracture",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2272"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2272",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:distal radius fracture"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ganglion cysts transilluminate; solid tumors do not. Ultrasound can also be used for diagnosis.",
@@ -46699,7 +47084,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected ganglion cyst",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2361"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2361",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:Ultrasound"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Ganglion cysts that are asymptomatic and not bothersome can be observed, as >50% will spontaneously resolve.",
@@ -46712,7 +47116,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with asymptomatic ganglion cysts",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2391"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2391",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:>5"
+          ],
+          "rarity": 7.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Aspiration of a ganglion cyst has a >50% recurrence rate; counsel patients that it may come back within the next year.",
@@ -46725,7 +47145,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing ganglion cyst aspiration",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2404"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2404",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:>5"
+          ],
+          "actionable": [
+            "counsel"
+          ],
+          "rarity": 6.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Refer to orthopedics for open fractures, circulatory compromise, acute neuropathy, or compartment syndrome.",
@@ -46738,7 +47177,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with open fracture, circulatory compromise, acute neuropathy, or compartment syndrome",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2424"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2424",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Refer"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Refer to orthopedics for any unstable displaced fracture with a step-off greater than 2 millimeters.",
@@ -46751,7 +47206,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fracture and palpable step-off >2 mm",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2438"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2438",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:greater than 2"
+          ],
+          "actionable": [
+            "Refer"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Suspect septic arthritis or osteomyelitis and refer to orthopedics.",
@@ -46764,7 +47238,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected septic arthritis or osteomyelitis",
-      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2461"
+      "pearl_id": "dr-zachary-youmans-on-common-orthopedic-injuries-for-elbow-w-2461",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:septic arthritis"
+          ],
+          "actionable": [
+            "refer"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 6.12
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

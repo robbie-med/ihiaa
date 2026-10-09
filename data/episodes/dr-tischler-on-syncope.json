@@ -38079,7 +38079,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with syncope",
-      "pearl_id": "dr-tischler-on-syncope-561"
+      "pearl_id": "dr-tischler-on-syncope-561",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cardiac syncope"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Syncope is defined as transient loss of consciousness due to global cerebral hypoperfusion, brief duration (5-10 seconds), with loss of postural tone and complete spontaneous recovery.",
@@ -38092,7 +38108,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients with loss of consciousness",
-      "pearl_id": "dr-tischler-on-syncope-792"
+      "pearl_id": "dr-tischler-on-syncope-792",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:consciousness"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has altered mental status or focal deficit after the event, it is not simple syncope, consider seizure, stroke, or other cause.",
@@ -38106,7 +38138,32 @@
       "prompt_version": "v1",
       "applies_to": "patients with loss of consciousness",
       "by_presenter": false,
-      "pearl_id": "dr-tischler-on-syncope-819"
+      "pearl_id": "dr-tischler-on-syncope-819",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:seizure"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "seizure"
+          ],
+          "rarity": 6.38,
+          "capped": [
+            "said by another participant"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pulmonary embolism is an underrecognized cause of syncope; studies suggest 10-20% of admitted syncope patients with no other diagnosis may have PE.",
@@ -38119,7 +38176,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with syncope of unclear etiology",
-      "pearl_id": "dr-tischler-on-syncope-1222"
+      "pearl_id": "dr-tischler-on-syncope-1222",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pulmonary embolism"
+          ],
+          "rarity": 7.64
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A long history of recurrent syncope over years almost always points toward vasovagal syncope, not new-onset cardiac cause.",
@@ -38132,7 +38205,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with recurrent syncope over years",
-      "pearl_id": "dr-tischler-on-syncope-1897"
+      "pearl_id": "dr-tischler-on-syncope-1897",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:vasovagal syncope"
+          ],
+          "actionable": [
+            "always"
+          ],
+          "rarity": 7.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Syncope during exertion is a red flag for cardiac cause; syncope after exertion (post-exertional) is more consistent with reflex or orthostatic causes.",
@@ -38145,7 +38237,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with exertional symptoms",
-      "pearl_id": "dr-tischler-on-syncope-1925"
+      "pearl_id": "dr-tischler-on-syncope-1925",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:syncope"
+          ],
+          "rarity": 7.58
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Syncope while lying in bed points away from vasovagal or orthostatic causes and should raise concern for cardiac arrhythmia.",
@@ -38158,7 +38266,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with syncope at rest",
-      "pearl_id": "dr-tischler-on-syncope-2087"
+      "pearl_id": "dr-tischler-on-syncope-2087",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:syncope"
+          ],
+          "rarity": 7.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A focal neurologic deficit on exam means the event is not simple syncope, consider stroke or other structural cause.",
@@ -38171,7 +38295,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with loss of consciousness",
-      "pearl_id": "dr-tischler-on-syncope-2128"
+      "pearl_id": "dr-tischler-on-syncope-2128",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:syncope"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "stroke"
+          ],
+          "rarity": 6.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Carotid sinus massage can drop blood pressure by 40 points and is not routinely recommended in the office setting.",
@@ -38184,7 +38330,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "outpatient evaluation of syncope",
-      "pearl_id": "dr-tischler-on-syncope-2151"
+      "pearl_id": "dr-tischler-on-syncope-2151",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:essure"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Orthostatic vital signs can be falsely negative; delayed orthostatic hypotension (occurring after 5+ minutes) is common in the elderly, so a negative check does not rule out orthostatic syncope.",
@@ -38197,7 +38359,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients with suspected orthostatic hypotension",
-      "pearl_id": "dr-tischler-on-syncope-2205"
+      "pearl_id": "dr-tischler-on-syncope-2205",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:orthostatic hypotensio"
+          ],
+          "actionable": [
+            "check"
+          ],
+          "rarity": 7.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with syncope, use an external loop recorder rather than a monitor; it continuously records and captures events when they pass out.",
@@ -38210,7 +38391,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with syncope",
-      "pearl_id": "dr-tischler-on-syncope-3203"
+      "pearl_id": "dr-tischler-on-syncope-3203",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:external loop recorder"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For vasovagal prodrome, teach patients to avoid precipitating causes and use hand grip or abdominal tensing to reduce blood flow to the peripheries.",
@@ -38223,7 +38423,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with vasovagal syncope",
-      "pearl_id": "dr-tischler-on-syncope-3223"
+      "pearl_id": "dr-tischler-on-syncope-3223",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:prodrome"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "harm": [
+            "precipitating"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Acute water ingestion of one glass of water can bump up blood pressure and help manage vasovagal symptoms.",
@@ -38236,7 +38458,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with vasovagal syncope",
-      "pearl_id": "dr-tischler-on-syncope-3244"
+      "pearl_id": "dr-tischler-on-syncope-3244",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ingestion"
+          ],
+          "rarity": 7.13
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For orthostatic hypotension, increase water and salt intake, but avoid this in patients with CHF or end-stage renal disease.",
@@ -38249,7 +38487,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with orthostatic hypotension, except those with CHF or ESRD",
-      "pearl_id": "dr-tischler-on-syncope-3250"
+      "pearl_id": "dr-tischler-on-syncope-3250",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:end-stage renal diseas"
+          ],
+          "actionable": [
+            "increase"
+          ],
+          "rarity": 6.95
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Common medications that can contribute to orthostatic hypotension include antihypertensives, diuretics, alpha-beta blockers, SSRIs, and antibiotics.",
@@ -38262,7 +38519,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with orthostatic hypotension",
-      "pearl_id": "dr-tischler-on-syncope-3261"
+      "pearl_id": "dr-tischler-on-syncope-3261",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:orthostatic hypotensio"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Compression stockings for orthostatic hypotension must be thigh-high, but patient adherence is often poor.",
@@ -38275,7 +38548,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with orthostatic hypotension",
-      "pearl_id": "dr-tischler-on-syncope-3267"
+      "pearl_id": "dr-tischler-on-syncope-3267",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:orthostatic hypotensio"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consider midodrine for orthostatic hypotension only after nonpharmacologic measures like increased water/salt and medication review have failed.",
@@ -38288,7 +38577,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with orthostatic hypotension refractory to nonpharmacologic measures",
-      "pearl_id": "dr-tischler-on-syncope-3284"
+      "pearl_id": "dr-tischler-on-syncope-3284",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:orthostatic hypotensio"
+          ],
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fludrocortisone is not FDA-approved for orthostatic hypotension but may be considered off-label.",
@@ -38301,7 +38609,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with orthostatic hypotension",
-      "pearl_id": "dr-tischler-on-syncope-3285"
+      "pearl_id": "dr-tischler-on-syncope-3285",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:Fludrocortisone"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Workup for adrenal insufficiency or renal causes may be reasonable if history suggests them, especially with abnormal sodium or potassium levels.",
@@ -38314,7 +38638,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with syncope and suggestive history or electrolyte abnormalities",
-      "pearl_id": "dr-tischler-on-syncope-3304"
+      "pearl_id": "dr-tischler-on-syncope-3304",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:adrenal insufficiency"
+          ],
+          "rarity": 6.55
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

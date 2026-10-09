@@ -73213,7 +73213,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians buying a practice",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-284"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-284",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:private practice"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you are tired of taking unattached adult call, you can negotiate to cover only pediatrics call, even if you haven't done inpatient pediatrics in years.",
@@ -73226,7 +73242,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "family physicians in small towns",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-332"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-332",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "You can do an OB fellowship later in your career, even after years in practice, to enable a different practice focus or teaching role.",
@@ -73239,7 +73268,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "family physicians considering OB",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-395"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-395",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ob fellowship"
+          ],
+          "rarity": 7.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A full DPC practice is about 500-600 patients; you can start with a target of 300 and adjust based on your desired workload and other commitments like OB.",
@@ -73255,7 +73300,29 @@
       "numbers_unheard": [
         "500"
       ],
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-624"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-624",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:target of 3"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.29,
+          "capped": [
+            "number not heard: 500"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Find therapeutic side projects outside of medicine, such as writing a book, to help prevent burnout and provide a creative outlet.",
@@ -73268,7 +73335,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all physicians",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-811"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-811",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:burnout"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Starting a telemedicine service on your own website before the pandemic can provide income while you build a DPC practice.",
@@ -73281,7 +73364,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians starting a DPC practice",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-826"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-826",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:telemedicine"
+          ],
+          "actionable": [
+            "Starting"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When starting a DPC practice, you can work as a hospitalist for six months to generate income while growing your patient panel.",
@@ -73294,7 +73396,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians starting a DPC practice",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-915"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-915",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hospitalist"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.49
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Moonlighting and urgent care work can supplement income during residency or early career, especially when taking a pay cut for fellowship or starting a practice.",
@@ -73307,7 +73428,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents and early-career physicians",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-947"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-947",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:moonlighting"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If your student loan interest rate is 3% and you can earn 7-8% in the stock market, it may be better to invest rather than pay off loans aggressively.",
@@ -73320,7 +73463,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians with low-interest student loans",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1013"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1013",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Refinance student loans with a service like SoFi to a 10-year term; as you near payoff, more of the payment goes to principal and interest becomes almost zero.",
@@ -73333,7 +73489,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "residents or early-career physicians",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1117"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1117",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "After residency, rent a home for a while instead of buying an expensive house; this allows you to save more for retirement and children's education, especially if your practice income is lower than expected.",
@@ -73346,7 +73515,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians finishing residency",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1257"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1257",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Watch out for people who see 'MD' or 'DO' after your name and try to sell you expensive things, like overpriced real estate.",
@@ -73359,7 +73541,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1298"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1298",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To pay off student loans quickly, keep living off your residency budget after graduation.",
@@ -73372,7 +73567,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians finishing residency",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1310"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1310",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A typical DPC physician manages about 500, 600 patients, compared to 1,000, 3,000 in corporate medicine.",
@@ -73388,7 +73596,20 @@
       "numbers_unheard": [
         "500"
       ],
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1547"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1547",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.73
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DPC, you get paid whether the patient comes through the door or not, because of the monthly membership model.",
@@ -73401,7 +73622,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians in direct primary care",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1570"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1570",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "frequency:monthly"
+          ],
+          "rarity": 7.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start a DPC practice with monthly memberships from the beginning; pay-as-you-go visits are not recommended for building a stable patient panel.",
@@ -73414,7 +73651,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians starting a DPC practice",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1731"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1731",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "frequency:monthly"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a fee-for-service model, you only make money when people come through the door, which disincentivizes prevention.",
@@ -73427,7 +73683,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians in fee-for-service",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1833"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1833",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fee-for-service model"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DPC, prevention is incentivized because patients pay you when they are well, removing the financial barrier to preventive services like Pap smears and mammograms.",
@@ -73440,7 +73712,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians in direct primary care",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1846"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1846",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pap smear"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Concierge medicine typically charges $3,000, $5,000 per year on top of insurance, limiting care to wealthy patients, while DPC is more affordable and can serve a third uninsured patients.",
@@ -73453,7 +73741,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians comparing practice models",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1916"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1916",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:concierge medicine"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DPC, about one-third of patients are uninsured, one-third have traditional insurance, and one-third have a health share or high-deductible health plan.",
@@ -73466,7 +73770,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians in direct primary care",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1938"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-1938",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Schedule one hour for new patient visits and 30 minutes for established patients to build relationships and provide thorough care.",
@@ -73479,7 +73796,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DPC practices",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2217"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2217",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:30 minutes"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Allow patients to text or email the physician directly, which reduces the need for office visits and phone calls.",
@@ -73492,7 +73825,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DPC practices",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2252"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2252",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Offer an intensive weight loss program for an extra $25/month, providing medications like semaglutide or tirzepatide.",
@@ -73505,7 +73851,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DPC practices offering weight loss",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2314"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2314",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:semaglutide"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Charge $80/month for adults and $35/month for children in a DPC practice; if a child enrolls without an adult, charge $55/month.",
@@ -73518,7 +73880,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DPC practices",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2482"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2482",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Encourage adults to enroll by offering a lower pediatric rate ($35 vs. $55) only when an adult is also enrolled.",
@@ -73531,7 +73906,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DPC practices",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2486"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2486",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Keep overhead low by employing only one staff person who answers phones, rooms patients, and handles multiple tasks.",
@@ -73544,7 +73932,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DPC practices",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2540"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2540",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid dealing with insurance companies entirely to keep operations simple and avoid claim rejections and payment delays of 1-2 months.",
@@ -73557,7 +73958,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DPC practices",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2653"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2653",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:2 months"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A DPC panel of 500 patients can generate gross revenue comparable to a traditional panel of 2,500 patients, because most traditional revenue goes to overhead and insurance companies.",
@@ -73570,7 +73990,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians considering DPC",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2688"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-2688",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Collect membership fees automatically on the first of the month via bank draft; funds arrive in the practice account within 3-5 days.",
@@ -73583,7 +74016,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DPC practices",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3027"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3027",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 days"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use cash-pay imaging centers like Envision Imaging where an ultrasound costs $150, compared to $2,000 billed through insurance.",
@@ -73596,7 +74045,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients needing imaging",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3080"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3080",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Envision Imaging offers cash-pay X-rays for $70 and MRIs for $450, which is much cheaper than typical insurance copays.",
@@ -73609,7 +74077,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients paying cash for imaging",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3168"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3168",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "GoodRx can reduce medication costs significantly; tizanidine was $100 with insurance but $20 with GoodRx cash price.",
@@ -73622,7 +74103,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients paying cash for medications",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3301"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3301",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:goodrx"
+          ],
+          "actionable": [
+            "reduce"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Labcorp cash-pay prices through client billing can be 50-90% discounted; a $57 CBC costs $5.",
@@ -73635,7 +74135,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients paying cash for labs",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3404"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3404",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CBC"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Medicare and Medicaid patients can be seen in DPC only if the physician is opted out of those programs; otherwise, charging cash is not allowed.",
@@ -73648,7 +74164,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DPC physicians considering Medicare/Medicaid patients",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3476"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3476",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:medicaid"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In DPC, patient contact is manageable: one physician reported 5 patient contacts in 2 days, with rare after-hours calls.",
@@ -73661,7 +74193,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DPC physicians",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3579"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3579",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:2 days"
+          ],
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Setting boundaries with patients, such as asking them to call during office hours for non-urgent issues, helps protect family time.",
@@ -73674,7 +74222,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DPC physicians",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3671"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3671",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:boundaries"
+          ],
+          "harm": [
+            "urgent"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A full DPC panel of 400-500 patients generates income comparable to a traditional private practice panel of 2,000-2,500 patients.",
@@ -73687,7 +74254,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians considering DPC",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3896"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-3896",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:private practice"
+          ],
+          "rarity": 7.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "DPC physicians do not bill insurance; referrals to specialists are the patient's responsibility to arrange payment.",
@@ -73700,7 +74283,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DPC physicians",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-4035"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-4035",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "OB care in DPC is feasible: $2,500 for full pregnancy care (or $1,200 for members), plus $600 for a C-section, excluding hospitalization.",
@@ -73713,7 +74312,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DPC physicians offering OB care",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-4063"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-4063",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:ob care in dpc"
+          ],
+          "rarity": 7.73
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For OB care, charge $2,500 for a full pregnancy, with a $1,200 rate for members, and an extra $600 for a C-section; this covers all physician services but not hospitalization.",
@@ -73726,7 +74341,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients seeking cash-pay obstetrical care",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-4063-2"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-4063-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pregnancy"
+          ],
+          "rarity": 6.74
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use your EMR as a consult service; you can pay $30 for a focused question to a pediatric rheumatologist or other specialist.",
@@ -73739,7 +74370,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "physicians in direct primary care",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-4158"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-4158",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The EMR can be used for low-cost specialist consults, e.g., $30 for a pediatric neurology consult.",
@@ -73752,7 +74399,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "DPC physicians",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-4162"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-4162",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "consult"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The largest direct surgery center in the United States is in Oklahoma City, with prices lower than Blue Cross insurance.",
@@ -73765,7 +74428,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients seeking surgery without insurance",
-      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-4190"
+      "pearl_id": "drs-greuel-and-white-on-business-of-medicine-4190",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:direct surgery center"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

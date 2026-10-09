@@ -58950,7 +58950,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "elderly patients with knee pain",
-      "pearl_id": "dr-tischler-on-gout-258"
+      "pearl_id": "dr-tischler-on-gout-258",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pseudogout"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Post-trauma and post-surgery are common triggers for gout flare.",
@@ -58963,7 +58979,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with recent trauma or surgery",
-      "pearl_id": "dr-tischler-on-gout-588"
+      "pearl_id": "dr-tischler-on-gout-588",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Thiazide and loop diuretics are common drugs that can precipitate gout.",
@@ -58976,7 +59005,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on thiazide or loop diuretics",
-      "pearl_id": "dr-tischler-on-gout-627"
+      "pearl_id": "dr-tischler-on-gout-627",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:loop diuretics"
+          ],
+          "harm": [
+            "precipitate"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Gout flare typically reaches maximum pain within 12-24 hours; 50% of attacks occur between midnight and 8 AM.",
@@ -58989,7 +59037,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute joint pain",
-      "pearl_id": "dr-tischler-on-gout-704"
+      "pearl_id": "dr-tischler-on-gout-704",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours"
+          ],
+          "rarity": 7.35
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "First gout flare is monoarticular in 80% of cases.",
@@ -59002,7 +59066,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with first suspected gout flare",
-      "pearl_id": "dr-tischler-on-gout-758"
+      "pearl_id": "dr-tischler-on-gout-758",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.53
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Erythema in gout is typically limited to the joint area, unlike cellulitis which spreads more broadly.",
@@ -59015,7 +59092,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute red, swollen joint",
-      "pearl_id": "dr-tischler-on-gout-795"
+      "pearl_id": "dr-tischler-on-gout-795",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cellulitis"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Patients often report extreme pain with touch, like 'I can't stand the sheet touching my toe'.",
@@ -59028,7 +59121,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute joint pain",
-      "pearl_id": "dr-tischler-on-gout-815"
+      "pearl_id": "dr-tischler-on-gout-815",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During a gout flare, serum uric acid can be normal in up to 40% of cases, so a normal level does not rule out gout.",
@@ -59041,7 +59147,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected acute gout flare",
-      "pearl_id": "dr-tischler-on-gout-887"
+      "pearl_id": "dr-tischler-on-gout-887",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:uric acid"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 5.72
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Septic arthritis risk factors include diabetes, hardware in the joint, and IV drug use.",
@@ -59054,7 +59179,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute monoarticular arthritis",
-      "pearl_id": "dr-tischler-on-gout-918"
+      "pearl_id": "dr-tischler-on-gout-918",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:septic arthritis"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "harm": [
+            "Septic"
+          ],
+          "rarity": 6.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Septic arthritis often has a slower developing course (2-3 days) and systemic symptoms like fever and chills.",
@@ -59067,7 +59214,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute monoarticular arthritis",
-      "pearl_id": "dr-tischler-on-gout-945"
+      "pearl_id": "dr-tischler-on-gout-945",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:3 days"
+          ],
+          "harm": [
+            "Septic"
+          ],
+          "rarity": 6.85
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Arthrocentesis is the key diagnostic procedure for gout when you can tap the joint.",
@@ -59080,7 +59246,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected gout flare and accessible joint",
-      "pearl_id": "dr-tischler-on-gout-966"
+      "pearl_id": "dr-tischler-on-gout-966",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:arthrocentesis"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Serum urate levels are often normal during an acute gout flare; do not rely on a normal level to rule out gout.",
@@ -59093,7 +59275,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected acute gout flare",
-      "pearl_id": "dr-tischler-on-gout-1054"
+      "pearl_id": "dr-tischler-on-gout-1054",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.26
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Finding urate crystals on arthrocentesis does not rule out septic arthritis; you must still wait for gram stain and culture.",
@@ -59106,7 +59304,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute monoarthritis undergoing arthrocentesis",
-      "pearl_id": "dr-tischler-on-gout-1243"
+      "pearl_id": "dr-tischler-on-gout-1243",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "test:culture"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 7.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A WBC count greater than 100,000 in synovial fluid generally indicates infection rather than gout.",
@@ -59122,7 +59342,23 @@
       "numbers_unheard": [
         "100000"
       ],
-      "pearl_id": "dr-tischler-on-gout-1276"
+      "pearl_id": "dr-tischler-on-gout-1276",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:greater than 1"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If the acute gout diagnosis rule score is 4 to 8 (intermediate probability), you must perform arthrocentesis to rule out septic arthritis.",
@@ -59135,7 +59371,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected acute gout where arthrocentesis is feasible",
-      "pearl_id": "dr-tischler-on-gout-1401"
+      "pearl_id": "dr-tischler-on-gout-1401",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:acute gout diagnosis r"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A score greater than 8 on the acute gout diagnosis rule has a 95% positive predictive value for gout.",
@@ -59148,7 +59406,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected acute gout",
-      "pearl_id": "dr-tischler-on-gout-1483"
+      "pearl_id": "dr-tischler-on-gout-1483",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:greater than 8"
+          ],
+          "rarity": 5.88
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Prednisone for acute gout should be given as 30-40 mg daily for a 10-14 day course including taper; a 5-7 day course will cause rebound.",
@@ -59161,7 +59435,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute gout flare",
-      "pearl_id": "dr-tischler-on-gout-1593"
+      "pearl_id": "dr-tischler-on-gout-1593",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:40 mg",
+            "frequency:daily",
+            "drug:Prednisone"
+          ],
+          "actionable": [
+            "taper"
+          ],
+          "rarity": 5.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Intraarticular steroid injection is an option for acute gout, supported by expert opinion but not formal guidelines.",
@@ -59174,7 +59469,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute gout in an accessible joint",
-      "pearl_id": "dr-tischler-on-gout-1662"
+      "pearl_id": "dr-tischler-on-gout-1662",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:steroid injection"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Colchicine is most effective if started within 24 hours of flare onset; dosing is 1.2 mg followed by 0.6 mg one hour later, then 0.6 mg twice daily.",
@@ -59187,7 +59498,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute gout flare within 24 hours of onset",
-      "pearl_id": "dr-tischler-on-gout-1686"
+      "pearl_id": "dr-tischler-on-gout-1686",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:24 hours",
+            "frequency:daily"
+          ],
+          "rarity": 6.3
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid colchicine if eGFR is less than 30; also check for drug interactions via CYP3A4 (e.g., diltiazem, fluconazole, azithromycin).",
@@ -59200,7 +59528,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with CKD or on interacting medications",
-      "pearl_id": "dr-tischler-on-gout-1745"
+      "pearl_id": "dr-tischler-on-gout-1745",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:less than 3",
+            "drug:fluconazole",
+            "test:eGFR"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For acute gout flares, initiate treatment within 24 hours for best benefit; after 24 hours, prednisone or NSAIDs may be more appropriate than colchicine.",
@@ -59213,7 +59562,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with acute gout flare",
-      "pearl_id": "dr-tischler-on-gout-1796"
+      "pearl_id": "dr-tischler-on-gout-1796",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:24 hours",
+            "drug:prednisone"
+          ],
+          "actionable": [
+            "initiate"
+          ],
+          "rarity": 6.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Reserve NSAIDs for acute gout in patients younger than 60 with no kidney disease, no cardiac disease, and no active GI disease; consider GI prophylaxis.",
@@ -59226,7 +59595,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute gout flare",
-      "pearl_id": "dr-tischler-on-gout-1814"
+      "pearl_id": "dr-tischler-on-gout-1814",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:nsaids"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Continue acute gout treatment for 10, 14 days, and at least 2, 3 days after symptom resolution to prevent a rebound flare.",
@@ -59239,7 +59627,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with acute gout flare",
-      "pearl_id": "dr-tischler-on-gout-1877"
+      "pearl_id": "dr-tischler-on-gout-1877",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:14 days",
+            "threshold:at least 2"
+          ],
+          "rarity": 5.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a diabetic patient on dialysis with a gout flare, prednisone is the preferred option despite concerns about infection and diabetes; it may be the only feasible choice.",
@@ -59252,7 +59657,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with gout and multiple comorbidities (e.g., diabetes, dialysis)",
-      "pearl_id": "dr-tischler-on-gout-1930"
+      "pearl_id": "dr-tischler-on-gout-1930",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "drug:prednisone"
+          ],
+          "rarity": 6.73
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The DASH or Mediterranean diet is more effective than a low-purine diet for reducing gout flares.",
@@ -59265,7 +59686,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with gout",
-      "pearl_id": "dr-tischler-on-gout-1996"
+      "pearl_id": "dr-tischler-on-gout-1996",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:mediterranean diet"
+          ],
+          "rarity": 7.7
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cherry consumption was associated with a 30% reduction in gout flares in a retrospective study; whole cherries worked, but a supplement (concentrate) did not.",
@@ -59278,7 +59715,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with gout",
-      "pearl_id": "dr-tischler-on-gout-2093"
+      "pearl_id": "dr-tischler-on-gout-2093",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cherry consumption"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In patients with gout who require a diuretic for edema, consider adding losartan (an ARB) to mitigate diuretic-induced hyperuricemia.",
@@ -59291,7 +59744,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with gout and edema on diuretics",
-      "pearl_id": "dr-tischler-on-gout-2256"
+      "pearl_id": "dr-tischler-on-gout-2256",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hyperuricemia"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start urate-lowering therapy at least two weeks after an acute flare has resolved; obtain a baseline uric acid level at that follow-up visit.",
@@ -59304,7 +59776,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with gout being considered for urate-lowering therapy",
-      "pearl_id": "dr-tischler-on-gout-2368"
+      "pearl_id": "dr-tischler-on-gout-2368",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:uric acid"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 6.61
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with tophi, target uric acid <5 mg/dL; for all others on urate-lowering therapy, target <6 mg/dL.",
@@ -59317,7 +59808,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with gout on urate-lowering therapy",
-      "pearl_id": "dr-tischler-on-gout-2456"
+      "pearl_id": "dr-tischler-on-gout-2456",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 mg",
+            "threshold:<5"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start allopurinol at 100 mg daily; increase by 100 mg every 2, 4 weeks, checking uric acid with each dose adjustment until target is reached.",
@@ -59330,7 +59838,27 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with gout initiating allopurinol",
-      "pearl_id": "dr-tischler-on-gout-2504"
+      "pearl_id": "dr-tischler-on-gout-2504",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:100 mg",
+            "frequency:daily"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "rarity": 6.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For patients with CKD, adjust the starting dose of allopurinol and escalate more slowly; check for HLA-B*5801 risk in Han Chinese, Korean, and African American populations.",
@@ -59346,7 +59874,29 @@
       "numbers_unheard": [
         "5801"
       ],
-      "pearl_id": "dr-tischler-on-gout-2520"
+      "pearl_id": "dr-tischler-on-gout-2520",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:allopurinol"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 8.65,
+          "capped": [
+            "number not heard: 5801"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When starting or adjusting any urate-lowering therapy, initiate prophylaxis with colchicine or an NSAID to prevent a flare caused by the change in uric acid concentration.",
@@ -59359,7 +59909,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with gout initiating or adjusting urate-lowering therapy",
-      "pearl_id": "dr-tischler-on-gout-2644"
+      "pearl_id": "dr-tischler-on-gout-2644",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:colchicine"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Continue prophylaxis for 3 months after achieving target uric acid; if tophi were present, continue for at least 6 months after achieving uric acid <5 mg/dL.",
@@ -59372,7 +59941,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with gout on urate-lowering therapy with prophylaxis",
-      "pearl_id": "dr-tischler-on-gout-2664"
+      "pearl_id": "dr-tischler-on-gout-2664",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:3 months",
+            "threshold:at least 6"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

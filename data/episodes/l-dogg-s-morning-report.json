@@ -102061,7 +102061,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "ABG interpretation when bicarb >20",
-      "pearl_id": "l-dogg-s-morning-report-503"
+      "pearl_id": "l-dogg-s-morning-report-503",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:greater than 2"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 7.07
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In ABG interpretation, a normal pH with elevated bicarb and elevated PCO2 indicates a chronic compensated respiratory acidosis.",
@@ -102074,7 +102093,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with COPD and chronic CO2 retention",
-      "pearl_id": "l-dogg-s-morning-report-672"
+      "pearl_id": "l-dogg-s-morning-report-672",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:respiratory acidosis"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Hemoccult-negative stool does not automatically rule out GI bleed; it only suggests no active upper GI bleed at that moment.",
@@ -102087,7 +102122,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected GI bleeding",
-      "pearl_id": "l-dogg-s-morning-report-870"
+      "pearl_id": "l-dogg-s-morning-report-870",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "actionable": [
+            "rule out"
+          ],
+          "harm": [
+            "bleed"
+          ],
+          "rarity": 7.26
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When writing an assessment and plan, call out the problem, state 'as evidenced by' with supporting data, and then list the differential diagnosis before ordering labs.",
@@ -102100,7 +102154,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinical documentation",
-      "pearl_id": "l-dogg-s-morning-report-1184"
+      "pearl_id": "l-dogg-s-morning-report-1184",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:differential diagnosis"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Schistocytes on peripheral smear are usually a sign of microangiopathic hemolytic anemia, not cold agglutinin disease.",
@@ -102113,7 +102183,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hemolytic anemia and schistocytes",
-      "pearl_id": "l-dogg-s-morning-report-1366"
+      "pearl_id": "l-dogg-s-morning-report-1366",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:microangiopathic hemol"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Pancytopenia with hemolysis should raise consideration for bone marrow production problems, though hemolysis is less common with marrow disorders.",
@@ -102126,7 +102212,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pancytopenia and hemolysis",
-      "pearl_id": "l-dogg-s-morning-report-1398"
+      "pearl_id": "l-dogg-s-morning-report-1398",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pancytopenia"
+          ],
+          "rarity": 7.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Transfuse for hemolytic anemia if the patient is symptomatic, even while investigating the cause.",
@@ -102139,7 +102241,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with symptomatic anemia from hemolysis",
-      "pearl_id": "l-dogg-s-morning-report-1532"
+      "pearl_id": "l-dogg-s-morning-report-1532",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hemolytic anemia"
+          ],
+          "rarity": 7.26
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A 'floating plan' is a list of interventions not connected to a specific diagnosis or contingency; each order should be linked to a clinical concern.",
@@ -102152,7 +102270,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinical documentation",
-      "pearl_id": "l-dogg-s-morning-report-1656"
+      "pearl_id": "l-dogg-s-morning-report-1656",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:floating plan"
+          ],
+          "actionable": [
+            "order"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To avoid a floating plan, write 'concern for X, therefore Y' to connect each intervention to a specific diagnosis.",
@@ -102165,7 +102302,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinical documentation",
-      "pearl_id": "l-dogg-s-morning-report-1683"
+      "pearl_id": "l-dogg-s-morning-report-1683",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:floating plan"
+          ],
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Haptoglobin grabs broken red blood cells; a low haptoglobin indicates hemolysis.",
@@ -102178,7 +102334,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with suspected hemolysis",
-      "pearl_id": "l-dogg-s-morning-report-1763"
+      "pearl_id": "l-dogg-s-morning-report-1763",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:haptoglobin"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In TTP, platelets aggregate into white clots (platelet-rich thrombi) in small vessels, causing thrombocytopenia and microangiopathic hemolytic anemia.",
@@ -102191,7 +102363,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with TTP",
-      "pearl_id": "l-dogg-s-morning-report-2135"
+      "pearl_id": "l-dogg-s-morning-report-2135",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:microangiopathic hemol"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The mechanism of hemolysis in TTP: platelet thrombi narrow small vessel lumens, causing red cells to shear and lyse as they pass through.",
@@ -102205,7 +102393,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with TTP",
       "by_presenter": false,
-      "pearl_id": "l-dogg-s-morning-report-2187"
+      "pearl_id": "l-dogg-s-morning-report-2187",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hemolysis"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "TTP is rare: about 1,000 cases per year in the US, more common in females and African Americans.",
@@ -102221,7 +102425,20 @@
       "numbers_unheard": [
         "1000"
       ],
-      "pearl_id": "l-dogg-s-morning-report-2290"
+      "pearl_id": "l-dogg-s-morning-report-2290",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.22
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "TTP is a medical emergency; it is one of the few times you will wake a hematologist in the middle of the night.",
@@ -102234,7 +102451,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with suspected TTP",
-      "pearl_id": "l-dogg-s-morning-report-2388"
+      "pearl_id": "l-dogg-s-morning-report-2388",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ADAMTS13 testing can be indeterminate or negative even in clinically definite TTP; treat based on clinical suspicion.",
@@ -102247,7 +102480,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with clinical features of TTP",
-      "pearl_id": "l-dogg-s-morning-report-2451"
+      "pearl_id": "l-dogg-s-morning-report-2451",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:adamts13"
+          ],
+          "actionable": [
+            "treat"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you have thrombocytopenia, microangiopathic hemolytic anemia, and end-organ damage, you must consider TTP.",
@@ -102260,7 +102512,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thrombocytopenia, hemolytic anemia, and end-organ damage",
-      "pearl_id": "l-dogg-s-morning-report-2517"
+      "pearl_id": "l-dogg-s-morning-report-2517",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:microangiopathic hemol"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has thrombocytopenia, hemolytic anemia, and end-organ damage (e.g., AKI), you must consider TTP as a medical emergency.",
@@ -102273,7 +102544,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thrombocytopenia, hemolytic anemia, and end-organ damage",
-      "pearl_id": "l-dogg-s-morning-report-2517-2"
+      "pearl_id": "l-dogg-s-morning-report-2517-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:end-organ damage"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 6.36
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In TTP, thrombocytopenia is usually severe, with platelets less than 50 (often 20-30).",
@@ -102289,7 +102582,23 @@
       "numbers_unheard": [
         "30"
       ],
-      "pearl_id": "l-dogg-s-morning-report-2609"
+      "pearl_id": "l-dogg-s-morning-report-2609",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 5"
+          ],
+          "rarity": 5.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "TTP is an emergency because it happens quickly; hemoglobin drops fast, not indolently.",
@@ -102302,7 +102611,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected TTP",
-      "pearl_id": "l-dogg-s-morning-report-2633"
+      "pearl_id": "l-dogg-s-morning-report-2633",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 7.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ADAMTS13 activity less than 10% is strongly suggestive of TTP and has good sensitivity.",
@@ -102315,7 +102640,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected TTP",
-      "pearl_id": "l-dogg-s-morning-report-2753"
+      "pearl_id": "l-dogg-s-morning-report-2753",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:less than 1"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In TTP, PT/INR is normal or near-normal, whereas in DIC, INR is definitely elevated.",
@@ -102328,7 +102669,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with thrombocytopenia and microangiopathic hemolytic anemia",
-      "pearl_id": "l-dogg-s-morning-report-2852"
+      "pearl_id": "l-dogg-s-morning-report-2852",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:PT"
+          ],
+          "rarity": 7.44
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Definitive treatment for TTP is plasmapheresis (plasma exchange); consult hematology-oncology urgently.",
@@ -102341,7 +102698,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected or confirmed TTP",
-      "pearl_id": "l-dogg-s-morning-report-2857"
+      "pearl_id": "l-dogg-s-morning-report-2857",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:plasma exchange"
+          ],
+          "actionable": [
+            "consult"
+          ],
+          "rarity": 7.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The endpoint of therapy for TTP is platelet count greater than 150.",
@@ -102354,7 +102730,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing plasmapheresis for TTP",
-      "pearl_id": "l-dogg-s-morning-report-2886"
+      "pearl_id": "l-dogg-s-morning-report-2886",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:greater than 1"
+          ],
+          "rarity": 6.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the MINDS mnemonic (Metabolic, Infectious, Neurologic, Drugs/meds, Structural) to systematically generate a differential for altered mental status.",
@@ -102367,7 +102759,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute encephalopathy",
-      "pearl_id": "l-dogg-s-morning-report-3446"
+      "pearl_id": "l-dogg-s-morning-report-3446",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:minds mnemonic"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 7.18
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with altered mental status, consider giving Narcan empirically; the harms are low (opioid withdrawal) and it can save a life.",
@@ -102380,7 +102791,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute altered mental status",
-      "pearl_id": "l-dogg-s-morning-report-3497"
+      "pearl_id": "l-dogg-s-morning-report-3497",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:opioid withdrawal"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "harm": [
+            "withdrawal"
+          ],
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with known esophageal varices or chronic liver disease, NG tube placement carries a high risk of bleeding and should be avoided if possible.",
@@ -102393,7 +102826,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with known or suspected esophageal varices or chronic liver disease",
-      "pearl_id": "l-dogg-s-morning-report-3894"
+      "pearl_id": "l-dogg-s-morning-report-3894",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:chronic liver disease"
+          ],
+          "harm": [
+            "bleeding"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient on a non-rebreather mask has worsening respiratory distress, consider aerophagia as a contributing factor that may be relieved by gastric decompression.",
@@ -102406,7 +102858,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on non-rebreather masks with respiratory distress",
-      "pearl_id": "l-dogg-s-morning-report-4009"
+      "pearl_id": "l-dogg-s-morning-report-4009",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:non-rebreather mask"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Documenting your clinical reasoning and why you chose a particular intervention is key to meeting the standard of care, even if the outcome is poor.",
@@ -102419,7 +102890,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinical encounters",
-      "pearl_id": "l-dogg-s-morning-report-4218"
+      "pearl_id": "l-dogg-s-morning-report-4218",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:clinical reasoning"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with pulmonary edema and hypoxemia, BiPAP may be trialed but is often poorly tolerated in obtunded patients who cannot maintain their airway.",
@@ -102433,7 +102920,23 @@
       "prompt_version": "v1",
       "applies_to": "obtunded patients with respiratory failure",
       "by_presenter": false,
-      "pearl_id": "l-dogg-s-morning-report-4350"
+      "pearl_id": "l-dogg-s-morning-report-4350",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:pulmonary edema"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Even a non-rebreather mask can cause aerophagia, which distends the stomach and pushes up on the diaphragm, worsening respiratory mechanics.",
@@ -102446,7 +102949,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on non-rebreather masks",
-      "pearl_id": "l-dogg-s-morning-report-4505"
+      "pearl_id": "l-dogg-s-morning-report-4505",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:non-rebreather mask"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Initial ventilator settings should include a rate (e.g., 60), tidal volume based on height (500-600 mL), FiO2 at 100%, and high PEEP.",
@@ -102459,7 +102978,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults being placed on mechanical ventilation",
-      "pearl_id": "l-dogg-s-morning-report-4549"
+      "pearl_id": "l-dogg-s-morning-report-4549",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:600 mL"
+          ],
+          "rarity": 7.0
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When a patient on a ventilator develops acute hypotension and loss of breath sounds, generate a broad differential including tension pneumothorax, hemothorax, cardiac tamponade, pulmonary hemorrhage, massive PE, ACS, and esophageal perforation.",
@@ -102472,7 +103007,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "intubated patients with acute decompensation",
-      "pearl_id": "l-dogg-s-morning-report-4649"
+      "pearl_id": "l-dogg-s-morning-report-4649",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:esophageal perforation"
+          ],
+          "harm": [
+            "hemorrhage"
+          ],
+          "rarity": 7.54
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In an unstable patient with suspected tension pneumothorax, you may proceed with needle decompression without waiting for a chest X-ray.",
@@ -102485,7 +103039,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "unstable patients with suspected tension pneumothorax",
-      "pearl_id": "l-dogg-s-morning-report-4682"
+      "pearl_id": "l-dogg-s-morning-report-4682",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "rarity": 6.45
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bedside ultrasound can be used to evaluate for cardiac tamponade before performing needle decompression for suspected tension pneumothorax.",
@@ -102498,7 +103068,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with acute hemodynamic collapse",
-      "pearl_id": "l-dogg-s-morning-report-4716"
+      "pearl_id": "l-dogg-s-morning-report-4716",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "evaluate"
+          ],
+          "rarity": 6.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Bronchial placement of an NG tube can cause severe bronchial plexus injury, leading to loss of breath sounds, decreased venous return, and shock.",
@@ -102511,7 +103100,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients undergoing NG tube placement",
-      "pearl_id": "l-dogg-s-morning-report-5019"
+      "pearl_id": "l-dogg-s-morning-report-5019",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:bronchial plexus injur"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Before decompressing a suspected tension pneumothorax, look for lung markings on the chest X-ray; if present, it is atelectasis, not pneumothorax, and needle decompression would cause harm.",
@@ -102524,7 +103132,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with absent breath sounds and tracheal deviation on chest X-ray",
-      "pearl_id": "l-dogg-s-morning-report-5042"
+      "pearl_id": "l-dogg-s-morning-report-5042",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:X-ray"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In actively hemolyzing TTP patients, transfuse packed red blood cells even if hemoglobin is above 7, because ongoing hemolysis will drop it further and failure to transfuse risks end-organ damage.",
@@ -102540,7 +103164,23 @@
       "numbers_unheard": [
         "7"
       ],
-      "pearl_id": "l-dogg-s-morning-report-5353"
+      "pearl_id": "l-dogg-s-morning-report-5353",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:above 7"
+          ],
+          "rarity": 7.75
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not transfuse platelets in TTP; they will be consumed by microthrombi and may worsen the condition.",
@@ -102553,7 +103193,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with TTP and thrombocytopenia",
-      "pearl_id": "l-dogg-s-morning-report-5398"
+      "pearl_id": "l-dogg-s-morning-report-5398",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In critically ill patients, start trophic tube feedings at 30 mL/hr to prevent gut bacterial translocation.",
@@ -102566,7 +103222,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "critically ill patients on mechanical ventilation",
-      "pearl_id": "l-dogg-s-morning-report-5528"
+      "pearl_id": "l-dogg-s-morning-report-5528",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:30 mL"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 8.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the mnemonic 'NACHOS' for shock differential: Neurogenic, Anaphylactic, Cardiogenic, Hemorrhagic/Hypovolemic, Obstructive, Septic.",
@@ -102579,7 +103254,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with hypotension",
-      "pearl_id": "l-dogg-s-morning-report-5653"
+      "pearl_id": "l-dogg-s-morning-report-5653",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:shock differential"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In PEA arrest, do not shock; give epinephrine 1 mg and follow ACLS protocols.",
@@ -102592,7 +103289,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in PEA arrest",
-      "pearl_id": "l-dogg-s-morning-report-5786"
+      "pearl_id": "l-dogg-s-morning-report-5786",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:1 mg"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "harm": [
+            "arrest"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When hypotension persists despite maximal vasopressors, consider adding stress-dose steroids (e.g., hydrocortisone 100 mg IV TID).",
@@ -102605,7 +103324,28 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with refractory shock on maximal vasopressors",
-      "pearl_id": "l-dogg-s-morning-report-5845"
+      "pearl_id": "l-dogg-s-morning-report-5845",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:100 mg",
+            "frequency:TID",
+            "drug:hydrocortisone"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Even when the intervention is correct, complications can still occur, learn from simulated cases to avoid harming real patients.",
@@ -102618,7 +103358,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all clinical practice",
-      "pearl_id": "l-dogg-s-morning-report-6039"
+      "pearl_id": "l-dogg-s-morning-report-6039",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "avoid"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Avoid anchoring bias; do not assume COPD exacerbation without considering other causes like mucus plugging or TTP.",
@@ -102631,7 +103387,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient with respiratory distress",
-      "pearl_id": "l-dogg-s-morning-report-6127"
+      "pearl_id": "l-dogg-s-morning-report-6127",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:copd exacerbation"
+          ],
+          "actionable": [
+            "Avoid"
+          ],
+          "rarity": 7.47
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not anchor on a single diagnosis like COPD exacerbation; always consider other possibilities.",
@@ -102644,7 +103419,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "l-dogg-s-morning-report-6127-2"
+      "pearl_id": "l-dogg-s-morning-report-6127-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:copd exacerbation"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 7.39
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In TTP, continue blood transfusions even if hemoglobin is over 7 if active hemolysis is ongoing.",
@@ -102657,7 +103451,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with TTP and active hemolysis",
-      "pearl_id": "l-dogg-s-morning-report-6161"
+      "pearl_id": "l-dogg-s-morning-report-6161",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 7"
+          ],
+          "rarity": 6.77
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a ventilated patient with sudden loss of breath sounds and tracheal deviation, consider mucus plug causing atelectasis before assuming tension pneumothorax.",
@@ -102670,7 +103480,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "mechanically ventilated patients with acute respiratory deterioration",
-      "pearl_id": "l-dogg-s-morning-report-6192"
+      "pearl_id": "l-dogg-s-morning-report-6192",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:tension pneumothorax"
+          ],
+          "actionable": [
+            "consider"
+          ],
+          "rarity": 7.6
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A mucus plug can cause sudden hemodynamic instability in a ventilated patient; include it in the differential.",
@@ -102683,7 +103512,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "ventilated patients with sudden instability",
-      "pearl_id": "l-dogg-s-morning-report-6207"
+      "pearl_id": "l-dogg-s-morning-report-6207",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:hemodynamic instabilit"
+          ],
+          "rarity": 7.27
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In a patient with absent breath sounds and hemodynamic instability, needle decompression is appropriate; but if breath sounds are present, get an ultrasound or chest X-ray first.",
@@ -102696,7 +103541,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected tension pneumothorax",
-      "pearl_id": "l-dogg-s-morning-report-6600"
+      "pearl_id": "l-dogg-s-morning-report-6600",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Prioritize the most life-threatening condition (e.g., TTP) even when multiple other issues are present.",
@@ -102709,7 +103570,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with multiple active problems",
-      "pearl_id": "l-dogg-s-morning-report-6723"
+      "pearl_id": "l-dogg-s-morning-report-6723",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "harm": [
+            "life-threatening"
+          ],
+          "rarity": 6.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Revisit the differential every time something unexpected or new happens in a case.",
@@ -102722,7 +103599,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "all patients",
-      "pearl_id": "l-dogg-s-morning-report-6750"
+      "pearl_id": "l-dogg-s-morning-report-6750",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.05
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "TTP can be diagnosed in the clinic from labs showing thrombocytopenia and hemolysis; it is a medical emergency requiring immediate hospital transfer.",
@@ -102736,7 +103626,26 @@
       "prompt_version": "v1",
       "applies_to": "outpatient clinic patients with thrombocytopenia and hemolysis",
       "by_presenter": false,
-      "pearl_id": "l-dogg-s-morning-report-6798"
+      "pearl_id": "l-dogg-s-morning-report-6798",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:thrombocytopenia"
+          ],
+          "harm": [
+            "emergency"
+          ],
+          "rarity": 6.46
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ADAMTS13 deficiency in TTP can be triggered by estrogen-containing birth control, neoplasms, and other factors.",
@@ -102749,7 +103658,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with TTP",
-      "pearl_id": "l-dogg-s-morning-report-6843"
+      "pearl_id": "l-dogg-s-morning-report-6843",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:adamts13"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

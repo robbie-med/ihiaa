@@ -72053,7 +72053,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anaphylaxis",
-      "pearl_id": "pressors-engstrom-1175"
+      "pearl_id": "pressors-engstrom-1175",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:0.5 mg"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In cardiac arrest, give 1 mg epinephrine IV every 3, 4 minutes. A maxed-out epinephrine drip (200 mcg/min) delivers only 0.2 mg over 60 seconds, which is one-fifth of a code dose.",
@@ -72070,7 +72092,34 @@
         "3",
         "4"
       ],
-      "pearl_id": "pressors-engstrom-1232"
+      "pearl_id": "pressors-engstrom-1232",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1 mg",
+            "threshold:over 6",
+            "frequency:every 3"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "arrest"
+          ],
+          "rarity": 8.42,
+          "capped": [
+            "number not heard: 3, 4"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "More than five doses of epinephrine in a cardiac arrest is associated with worse neurological outcomes.",
@@ -72083,7 +72132,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "cardiac arrest",
-      "pearl_id": "pressors-engstrom-1335"
+      "pearl_id": "pressors-engstrom-1335",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cardiac arrest"
+          ],
+          "harm": [
+            "arrest"
+          ],
+          "rarity": 5.87
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Never inject 0.5 mg of epinephrine IV into a living patient; it carries a strong risk of causing ventricular fibrillation.",
@@ -72096,7 +72164,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any living patient",
-      "pearl_id": "pressors-engstrom-1471"
+      "pearl_id": "pressors-engstrom-1471",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:0.5 mg"
+          ],
+          "actionable": [
+            "Never"
+          ],
+          "rarity": 6.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For a patient circling the drain (about to code), give 50, 100 mcg epinephrine IV push every minute as a bridge until an epinephrine drip is started.",
@@ -72109,7 +72196,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients circling the drain (about to code)",
-      "pearl_id": "pressors-engstrom-1548"
+      "pearl_id": "pressors-engstrom-1548",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:100 mcg"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.32
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use synchronized cardioversion if the patient is alive; use unsynchronized defibrillation if the patient is dead.",
@@ -72122,7 +72228,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient requiring electrical therapy",
-      "pearl_id": "pressors-engstrom-1910"
+      "pearl_id": "pressors-engstrom-1910",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:synchronized cardiover"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To dilute code cart epinephrine for small doses, draw 1 mg (1 cc) into 9 cc of saline to create a 100 mcg/cc solution; then give 0.5 cc = 50 mcg.",
@@ -72138,7 +72263,29 @@
       "numbers_unheard": [
         "100"
       ],
-      "pearl_id": "pressors-engstrom-2017"
+      "pearl_id": "pressors-engstrom-2017",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:1 mg"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.29,
+          "capped": [
+            "number not heard: 100"
+          ]
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Norepinephrine (Levophed) is the first-line pressor for septic shock; you are never wrong to start it.",
@@ -72151,7 +72298,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hypotension, especially septic shock",
-      "pearl_id": "pressors-engstrom-2149"
+      "pearl_id": "pressors-engstrom-2149",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:norepinephrine (levoph"
+          ],
+          "actionable": [
+            "never"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 6.79
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In cardiogenic shock, start Levophed first to improve MAP and coronary perfusion; if EF remains poor after blood pressure improves, add a beta agent.",
@@ -72164,7 +72333,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "cardiogenic shock",
-      "pearl_id": "pressors-engstrom-2199"
+      "pearl_id": "pressors-engstrom-2199",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:coronary perfusion"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 6.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Start norepinephrine (levophed) as the first-line vasopressor in almost all shock scenarios; you are never wrong to start with it.",
@@ -72177,7 +72368,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in shock",
-      "pearl_id": "pressors-engstrom-2257"
+      "pearl_id": "pressors-engstrom-2257",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:norepinephrine (levoph"
+          ],
+          "actionable": [
+            "Start"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dopamine is a prodrug that requires functional adrenal glands to convert it into norepinephrine and epinephrine; it is better to give norepinephrine directly.",
@@ -72190,7 +72403,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with hypotension",
-      "pearl_id": "pressors-engstrom-2328"
+      "pearl_id": "pressors-engstrom-2328",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:norepinephrine"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Choose epinephrine over dopamine because dopamine is a prodrug that requires working adrenal glands to convert it into norepinephrine and epinephrine; give the active drug directly.",
@@ -72203,7 +72435,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring beta-adrenergic support",
-      "pearl_id": "pressors-engstrom-2328-2"
+      "pearl_id": "pressors-engstrom-2328-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:norepinephrine"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Low-dose dopamine for renal protection ('renally dosed dopamine') is not effective and is no longer recommended.",
@@ -72216,7 +72467,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients on multiple vasopressors",
-      "pearl_id": "pressors-engstrom-2452"
+      "pearl_id": "pressors-engstrom-2452",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:dopamine"
+          ],
+          "rarity": 6.81
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When using epinephrine for bradycardia with shock, start at 2 mcg/min and titrate to heart rate and blood pressure, not aiming for a specific heart rate target.",
@@ -72229,7 +72496,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with bradycardia and shock",
-      "pearl_id": "pressors-engstrom-2540"
+      "pearl_id": "pressors-engstrom-2540",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:2 mcg"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A MAP of 65 is the standard perfusion target because all major organs are perfused at that level, though individual patients may tolerate lower MAPs if they show no signs of end-organ dysfunction.",
@@ -72242,7 +72531,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in shock",
-      "pearl_id": "pressors-engstrom-2632"
+      "pearl_id": "pressors-engstrom-2632",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 8.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Choose the starting dose of norepinephrine based on how many MAP points need to be gained to reach 65; if MAP is 45, start at 20 mcg/min to rapidly perfuse organs.",
@@ -72255,7 +72557,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients in shock with low MAP",
-      "pearl_id": "pressors-engstrom-2682"
+      "pearl_id": "pressors-engstrom-2682",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:20 mcg"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In septic shock, favor early vasopressors over aggressive fluid resuscitation if the patient is not clearly hypovolemic; a single liter challenge can guide decision-making.",
@@ -72268,7 +72589,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with septic shock",
-      "pearl_id": "pressors-engstrom-2788"
+      "pearl_id": "pressors-engstrom-2788",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fluid resuscitation"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 7.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Vasopressin is given as a fixed dose of 0.04 units per minute; it is not titrated.",
@@ -72284,7 +72624,23 @@
       "numbers_unheard": [
         "0.04"
       ],
-      "pearl_id": "pressors-engstrom-2960"
+      "pearl_id": "pressors-engstrom-2960",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:0.04 units"
+          ],
+          "rarity": 6.93
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When norepinephrine reaches 30-40 mcg/min, add vasopressin for warm/vasodilated shock or epinephrine for cold shock; the third pressor is the other one, then phenylephrine as last resort.",
@@ -72297,7 +72653,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with refractory shock on high-dose norepinephrine",
-      "pearl_id": "pressors-engstrom-3169"
+      "pearl_id": "pressors-engstrom-3169",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:40 mcg"
+          ],
+          "actionable": [
+            "add"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Peripheral vasopressors are safe for up to 12 hours; central lines are needed for lack of IV access, not because the patient is on vasopressors.",
@@ -72310,7 +72688,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients requiring vasopressors",
-      "pearl_id": "pressors-engstrom-3313"
+      "pearl_id": "pressors-engstrom-3313",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:12 hours"
+          ],
+          "rarity": 6.33
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To become proficient at ultrasound-guided IV placement, practice on patients who do not need it; the rule is you have to miss 10 times, then you will rarely miss again.",
@@ -72323,7 +72717,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians learning ultrasound-guided IV access",
-      "pearl_id": "pressors-engstrom-3385"
+      "pearl_id": "pressors-engstrom-3385",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "actionable": [
+            "do not"
+          ],
+          "rarity": 6.97
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To master ultrasound IV placement, practice on 10 patients (deliberate misses), after 10 misses you will be able to get a line on almost anyone.",
@@ -72336,7 +72749,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians learning ultrasound-guided IV",
-      "pearl_id": "pressors-engstrom-3385-2"
+      "pearl_id": "pressors-engstrom-3385-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:ultrasound"
+          ],
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient has a distal IV, you can tourniquet above it and inject 30 cc of saline to distend proximal veins, making it easier to place a larger IV.",
@@ -72349,7 +72778,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with difficult IV access who have a distal line",
-      "pearl_id": "pressors-engstrom-3471"
+      "pearl_id": "pressors-engstrom-3471",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tourniquet"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "To augment a small vein for IV access, place a tourniquet above an existing distal IV and inject 30 cc of saline to distend the proximal veins.",
@@ -72362,7 +72807,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with a distal IV who need a larger bore line",
-      "pearl_id": "pressors-engstrom-3471-2"
+      "pearl_id": "pressors-engstrom-3471-2",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:tourniquet"
+          ],
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not give full 1 mg (1000 mcg) of epinephrine IV, it will likely cause ventricular tachycardia or fibrillation.",
@@ -72375,7 +72836,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient receiving epinephrine IV",
-      "pearl_id": "pressors-engstrom-3719"
+      "pearl_id": "pressors-engstrom-3719",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:1 mg"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "Do not give"
+          ],
+          "rarity": 5.95
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "When starting norepinephrine, a reasonable starting dose for a MAP of 64 is 1 mcg/min; a more typical starting dose is 5 mcg/min.",
@@ -72388,7 +72871,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with septic shock requiring vasopressors",
-      "pearl_id": "pressors-engstrom-3785"
+      "pearl_id": "pressors-engstrom-3785",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "dose:1 mcg"
+          ],
+          "actionable": [
+            "starting"
+          ],
+          "rarity": 6.21
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Dobutamine is indicated for cardiogenic shock or as a stress test agent, not for septic shock.",
@@ -72401,7 +72903,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with shock",
-      "pearl_id": "pressors-engstrom-3828"
+      "pearl_id": "pressors-engstrom-3828",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:cardiogenic shock"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 6.59
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In hypotensive septic children, epinephrine is the first-line vasopressor.",
@@ -72414,7 +72935,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "hypotensive children with septic shock",
-      "pearl_id": "pressors-engstrom-3900"
+      "pearl_id": "pressors-engstrom-3900",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:epinephrine"
+          ],
+          "harm": [
+            "septic"
+          ],
+          "rarity": 6.68
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For children on vasopressors, it is common to give an IV bolus of calcium for additional inotropic support.",
@@ -72427,7 +72967,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children on vasopressors",
-      "pearl_id": "pressors-engstrom-3948"
+      "pearl_id": "pressors-engstrom-3948",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:vasopressors"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.26
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For extravasation of an alpha-agonist vasopressor (e.g., phenylephrine, norepinephrine), inject phentolamine locally into the affected tissue.",
@@ -72440,7 +72999,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with extravasation of pressors such as phenylephrine or levophed",
-      "pearl_id": "pressors-engstrom-4036"
+      "pearl_id": "pressors-engstrom-4036",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:norepinephrine"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "During pediatric codes, use an external cognitive aid such as the Braslow tape or the PediStat app ($4, lifetime license) for immediate access to tube sizes, drug doses, and other critical information.",
@@ -72453,7 +73028,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "clinicians managing pediatric emergencies",
-      "pearl_id": "pressors-engstrom-4184"
+      "pearl_id": "pressors-engstrom-4184",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "use"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In anaphylaxis, give epinephrine intramuscularly (not IV) because it is absorbed consistently over several minutes. After three IM doses, start an epinephrine drip at 5 mcg/min and titrate to effect.",
@@ -72466,7 +73057,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with anaphylaxis",
-      "pearl_id": "pressors-engstrom-4316"
+      "pearl_id": "pressors-engstrom-4316",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "dose:5 mcg"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 7.47
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "IV epinephrine is far more potent than IM: 5 mcg IV produces an effect equivalent to approximately 500 mcg IM.",
@@ -72479,7 +73092,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "any patient receiving epinephrine IV vs IM",
-      "pearl_id": "pressors-engstrom-4356"
+      "pearl_id": "pressors-engstrom-4356",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "dose:5 mcg"
+          ],
+          "rarity": 7.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Diagnose anaphylaxis when there is an allergic exposure plus a rash and any two systemic symptoms (e.g., GI symptoms, respiratory difficulty, hypotension, tachycardia).",
@@ -72492,7 +73121,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected acute allergic reaction",
-      "pearl_id": "pressors-engstrom-4389"
+      "pearl_id": "pressors-engstrom-4389",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:anaphylaxis"
+          ],
+          "harm": [
+            "anaphylaxis"
+          ],
+          "rarity": 6.56
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "In children, tachycardia is often the earliest sign of shock, they maintain blood pressure until very late. Do not wait for hypotension to treat anaphylaxis.",
@@ -72505,7 +73153,29 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "children with anaphylaxis or shock",
-      "pearl_id": "pressors-engstrom-4468"
+      "pearl_id": "pressors-engstrom-4468",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": true,
+        "nonobvious": true,
+        "points": 4,
+        "grade": "A",
+        "fired": {
+          "specific": [
+            "concept:anaphylaxis"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "harm": [
+            "shock"
+          ],
+          "rarity": 7.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For ESRD patients with refractory bradycardia and a wide QRS, give calcium empirically for hyperkalemia, it can narrow the QRS and increase heart rate within 60 seconds.",
@@ -72518,7 +73188,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "ESRD patients with refractory bradycardia and wide QRS",
-      "pearl_id": "pressors-engstrom-4752"
+      "pearl_id": "pressors-engstrom-4752",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:hyperkalemia"
+          ],
+          "actionable": [
+            "give"
+          ],
+          "rarity": 7.1
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",

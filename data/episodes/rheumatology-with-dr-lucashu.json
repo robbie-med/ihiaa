@@ -46160,7 +46160,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with widespread pain",
-      "pearl_id": "rheumatology-with-dr-lucashu-338"
+      "pearl_id": "rheumatology-with-dr-lucashu-338",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.66
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not order an ANA to evaluate for pain alone; 30% of normal individuals can have a false positive. Only order it if there are other symptoms like malar rash or photosensitivity.",
@@ -46173,7 +46186,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with pain without other lupus symptoms",
-      "pearl_id": "rheumatology-with-dr-lucashu-465"
+      "pearl_id": "rheumatology-with-dr-lucashu-465",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:false positive"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.06
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If you do order an ANA, order it as the ANA analyzer, which will automatically order double-stranded DNA and other individual antibodies based on the pattern if it comes positive.",
@@ -46186,7 +46218,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "when ANA is indicated",
-      "pearl_id": "rheumatology-with-dr-lucashu-483"
+      "pearl_id": "rheumatology-with-dr-lucashu-483",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "order"
+          ],
+          "rarity": 8.29
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Rheumatoid factor is helpful if positive, especially in younger patients, but not helpful if negative, you cannot rule out RA with a negative RF.",
@@ -46199,7 +46247,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients suspected of RA",
-      "pearl_id": "rheumatology-with-dr-lucashu-562"
+      "pearl_id": "rheumatology-with-dr-lucashu-562",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:rheumatoid factor"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 6.04
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A single uric acid level is not sufficient to make or break a gout diagnosis; you need to trend values over multiple tests.",
@@ -46212,7 +46279,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients suspected of gout",
-      "pearl_id": "rheumatology-with-dr-lucashu-615"
+      "pearl_id": "rheumatology-with-dr-lucashu-615",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:uric acid"
+          ],
+          "rarity": 6.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "ESR can be stratified: 30-50 is low-grade inflammation, 50-100 is moderate, and over 100 is severe inflammation. This helps gauge urgency for rheumatology referral.",
@@ -46225,7 +46308,24 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with elevated ESR",
-      "pearl_id": "rheumatology-with-dr-lucashu-840"
+      "pearl_id": "rheumatology-with-dr-lucashu-840",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "threshold:over 1",
+            "test:ESR"
+          ],
+          "rarity": 7.96
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "CRP has no stratification; a CRP just slightly above reference range is not clinically different from one double the upper limit of normal in terms of patient presentation.",
@@ -46238,7 +46338,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with elevated CRP",
-      "pearl_id": "rheumatology-with-dr-lucashu-868"
+      "pearl_id": "rheumatology-with-dr-lucashu-868",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "test:CRP"
+          ],
+          "rarity": 7.09
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fibromyalgia and inflammatory conditions can coexist; an elevated ESR points toward inflammation but does not rule out fibromyalgia.",
@@ -46251,7 +46367,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with widespread pain and elevated ESR",
-      "pearl_id": "rheumatology-with-dr-lucashu-1002"
+      "pearl_id": "rheumatology-with-dr-lucashu-1002",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ESR"
+          ],
+          "actionable": [
+            "rule out"
+          ],
+          "rarity": 7.19
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Consider a rheumatology referral for any patient with widespread pain involving more than one joint and chronic pain lasting three months or more, especially with elevated ESR or CRP.",
@@ -46264,7 +46399,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "adults with widespread chronic pain",
-      "pearl_id": "rheumatology-with-dr-lucashu-1036"
+      "pearl_id": "rheumatology-with-dr-lucashu-1036",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "test:ESR"
+          ],
+          "actionable": [
+            "Consider"
+          ],
+          "rarity": 6.86
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not start methotrexate as primary care for suspected rheumatoid arthritis; Dr. Howard was negative against PCPs initiating disease-modifying antirheumatic drugs.",
@@ -46277,7 +46431,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "primary care physicians",
-      "pearl_id": "rheumatology-with-dr-lucashu-1172"
+      "pearl_id": "rheumatology-with-dr-lucashu-1172",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:disease-modifying anti"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 8.89
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Primary care providers should not typically start DMARDs or biologics for inflammatory arthritis; referral to rheumatology is recommended.",
@@ -46290,7 +46463,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "primary care providers",
-      "pearl_id": "rheumatology-with-dr-lucashu-1172-2"
+      "pearl_id": "rheumatology-with-dr-lucashu-1172-2",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:primary care"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.69
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Providing lab results (e.g., rheumatoid factor, CCP) with a rheumatology referral may help move the patient up on the list for an earlier appointment.",
@@ -46303,7 +46495,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients being referred to rheumatology for suspected inflammatory arthritis",
-      "pearl_id": "rheumatology-with-dr-lucashu-1237"
+      "pearl_id": "rheumatology-with-dr-lucashu-1237",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:rheumatology referral"
+          ],
+          "rarity": 7.62
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "A fibromyalgia screening tool with six yes/no questions; five or more 'yes' answers is indicative of potential fibromyalgia, but it is only a screening tool, not diagnostic.",
@@ -46316,7 +46524,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic widespread pain",
-      "pearl_id": "rheumatology-with-dr-lucashu-1524"
+      "pearl_id": "rheumatology-with-dr-lucashu-1524",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fibromyalgia"
+          ],
+          "rarity": 7.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "The newer fibromyalgia diagnostic criteria use a widespread pain index of at least 7 out of 19 pain areas and a symptom severity score greater than 9.",
@@ -46329,7 +46553,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients suspected of having fibromyalgia",
-      "pearl_id": "rheumatology-with-dr-lucashu-1611"
+      "pearl_id": "rheumatology-with-dr-lucashu-1611",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "threshold:at least 7"
+          ],
+          "actionable": [
+            "use"
+          ],
+          "rarity": 6.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "If a patient meets the diagnostic criteria for fibromyalgia, go ahead and make the diagnosis rather than treating it as a diagnosis of exclusion, so you can start education and set expectations.",
@@ -46342,7 +46585,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with chronic widespread pain meeting fibromyalgia criteria",
-      "pearl_id": "rheumatology-with-dr-lucashu-1713"
+      "pearl_id": "rheumatology-with-dr-lucashu-1713",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fibromyalgia"
+          ],
+          "actionable": [
+            "start"
+          ],
+          "rarity": 7.12
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Low-dose amitriptyline combined with duloxetine may be more effective than either alone for fibromyalgia, using smaller doses than for depression or anxiety.",
@@ -46355,7 +46617,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fibromyalgia",
-      "pearl_id": "rheumatology-with-dr-lucashu-1784"
+      "pearl_id": "rheumatology-with-dr-lucashu-1784",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:amitriptyline"
+          ],
+          "rarity": 6.94
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Cyclobenzaprine is chemically almost identical to amitriptyline and can be used as an alternative for fibromyalgia, with a potentially more favorable side effect profile.",
@@ -46369,7 +46647,23 @@
       "prompt_version": "v1",
       "applies_to": "patients with fibromyalgia",
       "by_presenter": false,
-      "pearl_id": "rheumatology-with-dr-lucashu-1802"
+      "pearl_id": "rheumatology-with-dr-lucashu-1802",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:cyclobenzaprine"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Family physicians should be comfortable diagnosing and managing fibromyalgia, which can offload rheumatology and allow faster access for patients with inflammatory conditions.",
@@ -46382,7 +46676,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "family physicians",
-      "pearl_id": "rheumatology-with-dr-lucashu-1992"
+      "pearl_id": "rheumatology-with-dr-lucashu-1992",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fibromyalgia"
+          ],
+          "rarity": 7.13
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "For fibromyalgia, NSAIDs and anti-inflammatories are not thought to be useful and are thought detrimental because of kidney, cardiac, and gastric risks.",
@@ -46395,7 +46705,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fibromyalgia",
-      "pearl_id": "rheumatology-with-dr-lucashu-2017"
+      "pearl_id": "rheumatology-with-dr-lucashu-2017",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fibromyalgia"
+          ],
+          "rarity": 8.01
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Fibromyalgia overlaps with other centralized pain syndromes such as interstitial cystitis, tension headaches, and IBS.",
@@ -46408,7 +46734,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fibromyalgia",
-      "pearl_id": "rheumatology-with-dr-lucashu-2146"
+      "pearl_id": "rheumatology-with-dr-lucashu-2146",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:centralized pain syndr"
+          ],
+          "rarity": 8.52
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Treat fibromyalgia with a multimodal approach similar to IBS: use medications, dietary changes, and referrals for symptom management.",
@@ -46421,7 +46763,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fibromyalgia",
-      "pearl_id": "rheumatology-with-dr-lucashu-2194"
+      "pearl_id": "rheumatology-with-dr-lucashu-2194",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fibromyalgia"
+          ],
+          "actionable": [
+            "Treat"
+          ],
+          "rarity": 6.67
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Use the five pillars of mental health: biological (neurotransmitters and chronic diseases), situational, personal (self-care), relational (counseling), and spiritual.",
@@ -46434,7 +46795,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with mental health concerns",
-      "pearl_id": "rheumatology-with-dr-lucashu-2255"
+      "pearl_id": "rheumatology-with-dr-lucashu-2255",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:five pillars of mental"
+          ],
+          "actionable": [
+            "Use"
+          ],
+          "rarity": 8.42
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Minimize shame around fibromyalgia and journey with patients through the diagnosis and management.",
@@ -46447,7 +46827,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with fibromyalgia",
-      "pearl_id": "rheumatology-with-dr-lucashu-2307"
+      "pearl_id": "rheumatology-with-dr-lucashu-2307",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:fibromyalgia"
+          ],
+          "rarity": 7.15
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Distinguish between the four types of pain; this is more important than getting a specific diagnosis initially.",
@@ -46460,7 +46856,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "initial evaluation of musculoskeletal pain",
-      "pearl_id": "rheumatology-with-dr-lucashu-2378"
+      "pearl_id": "rheumatology-with-dr-lucashu-2378",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 6.28
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Refer to rheumatology for any widespread chronic pain, whether suspected inflammatory or fibromyalgia, but know that the diagnosis may not be as accepted with that referral.",
@@ -46473,7 +46882,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with widespread chronic pain",
-      "pearl_id": "rheumatology-with-dr-lucashu-2389"
+      "pearl_id": "rheumatology-with-dr-lucashu-2389",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:fibromyalgia"
+          ],
+          "actionable": [
+            "Refer"
+          ],
+          "rarity": 6.92
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not check an ANA as part of the workup.",
@@ -46486,7 +46914,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "workup for suspected rheumatologic conditions",
-      "pearl_id": "rheumatology-with-dr-lucashu-2401"
+      "pearl_id": "rheumatology-with-dr-lucashu-2401",
+      "score": {
+        "specific": false,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 5.8
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Remember that these are lifelong conditions and often not a black-and-white diagnosis; it takes a journey to make the diagnosis.",
@@ -46499,7 +46943,20 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients with suspected rheumatologic conditions",
-      "pearl_id": "rheumatology-with-dr-lucashu-2407"
+      "pearl_id": "rheumatology-with-dr-lucashu-2407",
+      "score": {
+        "specific": false,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 1,
+        "grade": "D",
+        "fired": {
+          "rarity": 7.83
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Do not prescribe any controlled medications to a patient who is using marijuana.",
@@ -46512,7 +46969,26 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients using marijuana who need controlled medications",
-      "pearl_id": "rheumatology-with-dr-lucashu-2502"
+      "pearl_id": "rheumatology-with-dr-lucashu-2502",
+      "score": {
+        "specific": true,
+        "actionable": true,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 3,
+        "grade": "B",
+        "fired": {
+          "specific": [
+            "concept:marijuana"
+          ],
+          "actionable": [
+            "Do not"
+          ],
+          "rarity": 6.08
+        },
+        "rubric": "rules-v2"
+      }
     },
     {
       "text": "Marijuana is not regulated; spot checks show it often contains more THC than labeled, and current marijuana is significantly more potent than in the past.",
@@ -46525,7 +47001,23 @@
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
       "applies_to": "patients considering or using marijuana",
-      "pearl_id": "rheumatology-with-dr-lucashu-2594"
+      "pearl_id": "rheumatology-with-dr-lucashu-2594",
+      "score": {
+        "specific": true,
+        "actionable": false,
+        "local": false,
+        "harm": false,
+        "nonobvious": true,
+        "points": 2,
+        "grade": "C",
+        "fired": {
+          "specific": [
+            "concept:marijuana"
+          ],
+          "rarity": 8.65
+        },
+        "rubric": "rules-v2"
+      }
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
