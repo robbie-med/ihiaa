@@ -47076,48 +47076,56 @@
   ],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "This lecture by Dr. Warman covers Medicare Wellness Visits, focusing on the Initial Annual Wellness Visit (G0438), Subsequent Annual Wellness Visit (G0439), and Welcome to Medicare Visit (G0402). It details the required components of each visit, including the health risk assessment, list of providers, history updates, vitals, cognitive screening, written screening schedule, and health advice. The talk emphasizes common billing pitfalls, such as the all-or-nothing rule for wellness visits, the importance of accurately documenting family history, and the correct use of modifier 25 when billing an E&M service concurrently. Residents are encouraged to leverage MA support, use the ad hoc form for compliance, and perform all elements routinely to avoid unbillable visits.",
+  "abstract": "Dr. Warman presents a practical guide to Medicare Annual Wellness Visits (AWV), covering the initial (G0438) and subsequent (G0439) visits, as well as the Welcome to Medicare visit (G0402). She details required components, health risk assessment, provider list, histories, depression screening, functional assessment, cognitive screening, written screening schedule, and more, and highlights common documentation gaps. The lecture emphasizes billing nuances: when services are bundled versus separately billable, the role of the teaching physician’s time, and the critical use of modifier 25 when an E&M service is performed alongside the AWV. Practical tips include leveraging MA workflows, using paper backups, and notifying patients about potential deductibles.",
   "key_points": [
-    "Welcome to Medicare (G0402) requires a visual acuity screening, which is often missed; the other annual wellness visits (G0438, G0439) do not.",
-    "Annual wellness visits are all-or-nothing billing: missing one required element makes the entire visit unbillable.",
-    "Family history cannot be left blank; at minimum document parents' status, and do not use 'noncontributory', it does not qualify.",
-    "The written screening schedule (for next 5 years) must be generated in patient instructions; it is the provider's responsibility.",
-    "When billing an E&M with a wellness visit, append modifier 25 to the E&M code; the Medicare code takes precedence in visit hierarchy.",
-    "Advanced care planning (ACP) is separately billable only if the teaching physician documents >15 minutes; modifier 33 can waive patient cost-sharing.",
-    "Depression screening (PHQ-2/9) is bundled with initial AWV (G0438) but can be billed separately with subsequent AWV (G0439).",
-    "Social determinants of health (SDOH) risk assessment is a new separate billable code; only teaching physician time counts for time-based codes.",
-    "Use the national ad hoc form at every visit; performing all elements routinely avoids confusion over which wellness code to apply.",
-    "If patients also need chronic disease management, document separate chief complaint and plan to justify the E&M service.",
-    "The 4Ms (Mobility, Medications, Mind, and what Matters) must be documented in the HPI section, including the patient self-assessment of health (excellent, fair, poor, good).",
-    "Mark histories as reviewed in the EMR to ensure bulletproof documentation for audits."
+    "The initial AWV (G0438) and subsequent AWV (G0439) require a health risk assessment, provider list, updated histories, vitals, depression screening, functional/safety assessment, cognitive impairment screen, and a written 5-year screening schedule.",
+    "Family history cannot be left blank or documented as 'noncontributory'; at minimum, record 'mom deceased at age 80, unknown cause'.",
+    "Procedural history must be documented; if none, write 'none'.",
+    "The written screening schedule is generated using a specific smart phrase: 'skilled PPP dash f' for females or 'G0439-M' for males.",
+    "Depression screening (PHQ-2/9) is bundled with the initial AWV (G0438) but is separately billable with the subsequent AWV (G0439) if the teaching physician documents time.",
+    "Advanced care planning is separately billable only if the teaching physician spends at least 16 minutes and documents it; however, MA documentation in the ad hoc form can satisfy quality metric codes (1123/1124).",
+    "When billing an E&M service with an AWV, a separate chief complaint must be documented, and modifier 25 must be appended to the E&M code.",
+    "Patients should be notified when both an AWV and an E&M are billed, as they may face a deductible charge.",
+    "The Welcome to Medicare visit (G0402) requires a visual acuity screening; it cannot be offered as optional, only a patient refusal is acceptable.",
+    "Missing any single required element (e.g., sexual history) makes the entire AWV unbillable ('all or nothing').",
+    "The list of providers and suppliers should include only those seen annually, not one-time consultations.",
+    "Social determinants of health risk assessment is separately billable only if the teaching physician documents their time."
   ],
   "topics_raw": [
     {
-      "label": "Medicare Wellness Visit",
-      "kind": "concept"
-    },
-    {
-      "label": "Welcome to Medicare Visit",
-      "kind": "concept"
-    },
-    {
       "label": "Annual Wellness Visit",
-      "kind": "concept"
+      "kind": "procedure"
+    },
+    {
+      "label": "G0438",
+      "kind": "procedure"
+    },
+    {
+      "label": "G0439",
+      "kind": "procedure"
+    },
+    {
+      "label": "G0402",
+      "kind": "procedure"
     },
     {
       "label": "Health Risk Assessment",
-      "kind": "concept"
+      "kind": "procedure"
     },
     {
-      "label": "Depression Screening",
-      "kind": "concept"
+      "label": "PHQ-9",
+      "kind": "procedure"
+    },
+    {
+      "label": "Mini-Cog",
+      "kind": "procedure"
     },
     {
       "label": "Advanced Care Planning",
-      "kind": "concept"
+      "kind": "procedure"
     },
     {
-      "label": "Cognitive Impairment Screening",
+      "label": "Modifier 25",
       "kind": "concept"
     },
     {
@@ -47125,27 +47133,35 @@
       "kind": "concept"
     },
     {
-      "label": "Substance Use Screening",
+      "label": "Visual Acuity Screening",
+      "kind": "procedure"
+    },
+    {
+      "label": "Depression Screening",
+      "kind": "procedure"
+    },
+    {
+      "label": "Opioid Review",
+      "kind": "procedure"
+    },
+    {
+      "label": "Primary Care Exception",
       "kind": "concept"
     },
     {
-      "label": "Opioid Prescription Review",
-      "kind": "concept"
+      "label": "Welcome to Medicare Visit",
+      "kind": "procedure"
     },
     {
-      "label": "Modifier 25",
-      "kind": "concept"
+      "label": "Annual Wellness Visit",
+      "kind": "procedure"
     },
     {
       "label": "Visual Acuity Screening",
       "kind": "procedure"
     },
     {
-      "label": "Medicare Annual Wellness Visit",
-      "kind": "procedure"
-    },
-    {
-      "label": "4Ms Framework",
+      "label": "Medicare Part B Coverage",
       "kind": "concept"
     },
     {
@@ -47153,7 +47169,19 @@
       "kind": "procedure"
     },
     {
-      "label": "Patient Self-Assessment",
+      "label": "4Ms Framework",
+      "kind": "concept"
+    },
+    {
+      "label": "Patient Self-Assessment of Health",
+      "kind": "concept"
+    },
+    {
+      "label": "Ad Hoc Form",
+      "kind": "concept"
+    },
+    {
+      "label": "Modifier 25",
       "kind": "concept"
     },
     {
@@ -47161,19 +47189,31 @@
       "kind": "procedure"
     },
     {
-      "label": "Documentation Audit",
-      "kind": "concept"
+      "label": "Medicare Wellness Visit",
+      "kind": "procedure"
     },
     {
-      "label": "Billing and Coding",
-      "kind": "concept"
+      "label": "G0439",
+      "kind": "procedure"
     },
     {
-      "label": "Chronic Disease Management",
+      "label": "Z00.00",
       "kind": "condition"
     },
     {
-      "label": "Deductible",
+      "label": "Z00.01",
+      "kind": "condition"
+    },
+    {
+      "label": "4Ms",
+      "kind": "concept"
+    },
+    {
+      "label": "Patient Self-Assessment",
+      "kind": "concept"
+    },
+    {
+      "label": "Modifier 25",
       "kind": "concept"
     },
     {
@@ -47181,749 +47221,645 @@
       "kind": "drug"
     },
     {
-      "label": "Medicare Wellness Visit",
-      "kind": "procedure"
-    },
-    {
-      "label": "Preventive Care",
+      "label": "Fraud",
       "kind": "concept"
     },
     {
-      "label": "Medical Coding",
+      "label": "Billing Audit",
       "kind": "concept"
     }
   ],
   "pearls_raw": [
     {
-      "text": "If you have a strong MA or nurse, they make your life a whole lot easier, because they do gather a lot of this information for you ahead of time.",
-      "verbatim": "if you have a strong MA or nurse, they make your life a whole lot easier, because they do gather a lot of this information for you ahead of time.",
-      "type": "judgment"
+      "text": "Family history cannot be left blank or documented as 'noncontributory'; at minimum, record 'mom deceased at age 80, unknown cause'.",
+      "seg": 42,
+      "verbatim": "family history cannot just be blank, or it can't say. Right? Like, it has to say something. So maybe everybody doesn't have brothers and sisters, but everybody has parents. So at minimum, you could put, you know, mom deceased at age 80, unknown cause.",
+      "applies_to": "Medicare AWV documentation",
+      "type": "practice"
     },
     {
-      "text": "Family history cannot be left blank; at minimum put 'mom deceased at age 80, unknown cause' – but never use 'noncontributory' as it does not count.",
-      "verbatim": "family history cannot just be blank, or it can't say. Right? Like, it has to say something. So maybe everybody doesn't have brothers and sisters, but everybody has parents. So at minimum, you could put, you know, mom deceased at age 80, unknown cause. Something like that.",
+      "text": "If the patient has no surgical or procedural history, document 'none' rather than leaving it blank.",
+      "seg": 48,
+      "verbatim": "Don't leave that blank. If they have no procedural or surgical procedure whatsoever, put none in there.",
+      "applies_to": "Medicare AWV documentation",
+      "type": "practice"
+    },
+    {
+      "text": "The written screening schedule for the next five years is generated using the smart phrase 'skilled PPP dash f' for female patients or 'G0439-M' for male patients in the patient instructions section.",
+      "seg": 85,
+      "verbatim": "the skilled PPP dash f for female or G0439-M for male.",
+      "applies_to": "Medicare AWV documentation",
+      "type": "practice"
+    },
+    {
+      "text": "Even if the teaching physician does not spend 16 minutes on advanced care planning, MA documentation in the ad hoc form can satisfy quality metric codes (1123 and 1124) for having an advance care plan in the chart.",
+      "seg": 145,
+      "verbatim": "your MA is likely filling out the little advanced care planning piece in the ad hoc form. And with that, that is enough to documenting. Hey, Doctor. Raymond. You're documenting that advanced care planning discussion. And so then those quality metric codes are basically just saying there's an advanced care plan in the chart or no. There's not.",
+      "applies_to": "Medicare AWV",
+      "type": "practice"
+    },
+    {
+      "text": "When billing an E&M service with an AWV, document a separate chief complaint (e.g., 'patient presents for six-month follow-up on hypertension and diabetes') and append modifier 25 to the E&M code.",
+      "seg": 211,
+      "verbatim": "patient presents today for an annual wellness visit. Patient's also here today for a six month follow-up on their hypertension and diabetes. So that sets that medical necessity for that separate visit. We would have to append that modifier 25 to that 992 xx code, whatever it is that you're billing.",
+      "applies_to": "Medicare AWV with concurrent E&M",
+      "type": "practice"
+    },
+    {
+      "text": "Notify patients when both an AWV and an E&M are billed, because they may receive a bill for the Medicare deductible (around $180) early in the year.",
+      "seg": 225,
+      "verbatim": "please notify the patient if you're billing both because we get patients that are mad, January, February, March. They haven't met their deductible, and now they get a bill, $180 or whatever the Medicare deductible is.",
+      "applies_to": "Medicare patients",
+      "type": "practice"
+    },
+    {
+      "text": "The Welcome to Medicare visit (G0402) requires a visual acuity screening; do not offer it as optional—perform it unless the patient flatly refuses.",
+      "seg": 246,
+      "verbatim": "the main difference between this one and the other two is that this one does require a visual acuity screening. That is probably the biggest missed thing on this one.",
+      "applies_to": "Welcome to Medicare visit (G0402)",
+      "type": "practice"
+    },
+    {
+      "text": "Missing any single required element (e.g., sexual history) makes the entire AWV unbillable; it is an 'all or nothing' code.",
+      "seg": 180,
+      "verbatim": "The thing with these is they are an all or nothing. If you miss one thing, we can't bill it. So it's a lot of work to just miss sexual history that missed all the time, and we can't bill it.",
+      "applies_to": "Medicare AWV",
       "type": "pitfall"
     },
     {
-      "text": "For family history, 'noncontributory' should not be used; it does not get credit for the requirement.",
-      "verbatim": "Noncontributory. That's exactly what I hear... See sometimes. So don't put that either. We don't get credit for that.",
+      "text": "Depression screening (PHQ-2/9) is bundled with the initial AWV (G0438) and cannot be billed separately; it is separately billable only with the subsequent AWV (G0439) if the teaching physician documents time.",
+      "seg": 131,
+      "verbatim": "The depression screening is not separately billable. It is actually included in that G0438, so we don't get it billed separately for that. But for the annual wellness visit subsequent, we can bill separately. Again, it's time based code. Only TP's time counts.",
+      "applies_to": "Medicare AWV",
+      "type": "practice"
+    },
+    {
+      "text": "The list of providers and suppliers should include only those the patient sees annually; a one-time dermatology consultation years ago does not need to be listed.",
+      "seg": 35,
+      "verbatim": "if they saw a dermatologist years ago, and they don't see him every year or something like that, they would not be expected to be in there.",
+      "applies_to": "Medicare AWV documentation",
+      "type": "practice"
+    },
+    {
+      "text": "For patients on opioids, document a pain scale and discuss nonopioid treatment options as part of the opioid prescription review.",
+      "seg": 106,
+      "verbatim": "if they are taking an opioid. Honestly, I don't see that that much. But if they are, then we would need that pain scale that you talk to them about nonopioid treatment options.",
+      "applies_to": "Medicare AWV with opioid prescription",
+      "type": "practice"
+    },
+    {
+      "text": "Social determinants of health risk assessment is separately billable only if the teaching physician documents their time; the MA's time does not count.",
+      "seg": 112,
+      "verbatim": "If you do the social determinants of health risk assessment, A caveat here. Only the teaching physician's time counts.",
+      "applies_to": "Medicare AWV",
+      "type": "practice"
+    },
+    {
+      "text": "For the Welcome to Medicare visit (G0402), a visual acuity screening is required and is the most commonly missed element.",
+      "seg": 246,
+      "verbatim": "The main difference between this one and the other two is that this one does require a visual acuity screening.",
+      "applies_to": "patients receiving Welcome to Medicare visit (IPPE)",
+      "type": "practice"
+    },
+    {
+      "text": "Eligibility for G0402 (Welcome to Medicare) vs G0439 (Annual Wellness Visit) depends on whether the patient is within the first 12 months of Part B coverage, not their age.",
+      "seg": 290,
+      "verbatim": "What a lot of providers think is, okay. Patient's here today, and they are 65, so they must be here for their welcome to Medicare visit. I'm gonna bill a G0402. Well, no. They've had Medicare since they were 38. So they're not eligible for a G0402.",
+      "applies_to": "Medicare patients",
       "type": "pitfall"
     },
     {
-      "text": "The annual wellness visit is all-or-nothing billing: if you miss one required element, you cannot bill it.",
-      "verbatim": "The thing with these is they are an all or nothing. If you miss one thing, we can't bill it.",
-      "type": "guideline"
+      "text": "If you perform a G0439 but did not do the visual acuity screening (because the patient was actually eligible for G0402), the service is done for free and cannot be billed.",
+      "seg": 302,
+      "verbatim": "If we thought we were doing a G0439 and we did not do the visual acuity screening, we just did that service for free because now we can't bill for it.",
+      "applies_to": "Medicare wellness visits",
+      "type": "pitfall"
     },
     {
-      "text": "When billing an E&M alongside a wellness visit, append modifier 25 to the E&M code; the Medicare code takes precedence.",
-      "verbatim": "The Medicare code takes precedence, and the e and m becomes the 25 modifier.",
-      "type": "guideline"
+      "text": "To avoid missing elements, instruct MAs to perform all components of the ad hoc form every time, so the code can be flipped if eligibility is different than assumed.",
+      "seg": 303,
+      "verbatim": "I just tell tell the MAs, please just do everything every single time. That way there's no question. We are... That way we can just flip that code if need be.",
+      "applies_to": "MAs and providers doing Medicare wellness visits",
+      "type": "practice"
     },
     {
-      "text": "The 25 modifier tells insurance that the E&M is separate and significant from the other service; it always goes on the E&M code.",
-      "verbatim": "25 modifier is actually telling insurance that the e and m is separate and significant from whatever else it is that you're billing. So that's why it always goes on that e and m.",
+      "text": "Use the 4Ms (Mobility, Mind, Medications, What Matters Most) in the HPI section to capture the required patient self-assessment of health.",
+      "seg": 305,
+      "verbatim": "In your HPI section, so this is another piece for you, is to utilize that TEAL four m in the HPI section. And what that captures for us is that patient self assessment, which is required.",
+      "applies_to": "providers documenting Medicare wellness visits",
+      "type": "practice"
+    },
+    {
+      "text": "Mark histories as 'reviewed' in the EHR to bulletproof documentation against auditors who might challenge outdated entries.",
+      "seg": 314,
+      "verbatim": "go ahead and just click mark as reviewed on those histories as you're going through it. That way your documentation is bulletproof.",
+      "applies_to": "providers doing Medicare wellness visits",
+      "type": "practice"
+    },
+    {
+      "text": "Care team member information must be included in the note; using the correct template is essential or the visit cannot be billed.",
+      "seg": 319,
+      "verbatim": "that care team member information has to be included in your note, which it should pull over. I've only known, like, two providers that did not use the correct template, so it didn't pull over. So that never got to bill for an annual wellness visit.",
+      "applies_to": "providers doing Medicare wellness visits",
+      "type": "pitfall"
+    },
+    {
+      "text": "When billing a wellness visit and a separate E/M for chronic issues, link the Z00.00 or Z00.01 diagnosis to the wellness code and the chronic condition diagnoses to the E/M code.",
+      "seg": 479,
+      "verbatim": "Even if you are addressing other things like chronic problems, the first diagnosis has to be Medicare wellness. Is that true? You're gonna link the first diagnosis to that charge. Right? So if you've got a G0439, you're gonna link that Z00Point00 or 01 to that. And then your chronic condition, so your 992, 13, or 4, you're gonna link your hypertension and whatever to that.",
+      "applies_to": "providers billing both wellness and chronic problem visits on same day",
+      "type": "practice"
+    },
+    {
+      "text": "If a patient expects a free wellness visit but chronic issues are also addressed, they may be surprised by a deductible charge; manage expectations by framing the visit around the chronic problems first.",
+      "seg": 431,
+      "verbatim": "most offices have gotten into a really good habit of not telling patients, hey. You're here for a wellness visit. And then while you're here, then they address their hypertension diabetes. So at that point, they're not expecting the free visit. They're expecting to be seen for their hypertension and diabetes.",
+      "applies_to": "patients with chronic conditions also due for wellness visit",
+      "type": "practice"
+    },
+    {
+      "text": "The National Compliance checklist breaks down every requirement for the wellness visit, including specific elements like sexual history and nutrition history.",
+      "seg": 327,
+      "verbatim": "This very bottom resource here is a nice checklist that National Compliance has put together for us. So you can can see every single thing that's required. So, like, mine was kind of a high level saying, hey. We need a health risk assessment, but theirs breaks it down into, you know, we have to have the sexual history, nutritional history...",
+      "applies_to": "providers and MAs doing Medicare wellness visits",
       "type": "concept"
     },
     {
-      "text": "For the Welcome to Medicare visit, visual acuity screening is required; the ad hoc form should not give the patient an option to skip unless they refuse.",
-      "verbatim": "The main difference between this one and the other two is that this one does require a visual acuity screening. That is probably the biggest missed thing on this one.",
-      "type": "dx_criteria"
+      "text": "The first diagnosis must be linked to the Medicare wellness code G0439 using Z00.00 or Z00.01; chronic conditions link to separate E&M codes like 99214.",
+      "seg": 479,
+      "verbatim": "Even if you are addressing other things like chronic problems, the first diagnosis has to be Medicare wellness. Is that true? You're gonna link the first diagnosis to that charge. Right? So if you've got a G0439, you're gonna link that Z00Point00 or 01 to that. And then your chronic condition, so your 992, 13, or 4, you're gonna link your hypertension and whatever to that.",
+      "applies_to": "Medicare wellness visits with concurrent chronic problem management",
+      "type": "practice"
     },
     {
-      "text": "If information is in the paper packet, it must be entered into the EHR for billing – having the paper provides a backup if entry is missed.",
-      "verbatim": "If it's in that packet, it has to be entered into the EHR somewhere.",
-      "type": "pitfall"
+      "text": "If a patient cannot finish the wellness form in the office, send it home with them and schedule another visit to bill the wellness visit when the form is returned.",
+      "seg": 518,
+      "verbatim": "I would just say, well, I'm gonna schedule you out for another visit. You bring that form back with you to the next visit, and we can charge your... We can bill you for a Medicare wellness at that time.",
+      "applies_to": "Patients unable to complete the wellness form during the visit",
+      "type": "practice"
     },
     {
-      "text": "Perform all elements in the ad hoc form at each visit regardless of which wellness code you expect, so you can flex the code without rework.",
-      "verbatim": "please just do everything every single time. That way there's no question. We are... That way we can just flip that code if need be.",
-      "type": "judgment"
+      "text": "All four M (4Ms) lines must be filled; leaving any blank is considered missing data, even if the answer is zero or 'no'.",
+      "seg": 533,
+      "verbatim": "Even if they're not, like, you know, it says 10 medications, you have to put yes or no. If if they're not on 10 medications and you don't put no, it's like missing a question. Yeah. And if it's a zero on a scale, you still have to say that is... That means it's unremarkable or that means it's... No. You have to interpret it even if it's a zero. You can't leave any of the four m lines blank.",
+      "applies_to": "All Medicare wellness visits",
+      "type": "practice"
     },
     {
-      "text": "Advanced care planning (ACP) can be billed separately only if the teaching physician documents >15 minutes; adding modifier 33 waives patient cost-sharing.",
-      "verbatim": "if the TP is spending at least sixteen minutes on advanced care planning and documenting it, if we add a modifier 33 to that, then there is no out of pocket expenses to the patient.",
-      "type": "billing"
+      "text": "The patient self-assessment (first question of the 4Ms) is a billing requirement; other 4M sections may be optional per National guidance.",
+      "seg": 542,
+      "verbatim": "the piece of the 4Ms that we were always missing when people weren't putting the 4Ms in there is that patient self assessment. That's the first question on there. So if you have that, meaning what I need from a billing perspective.",
+      "applies_to": "Medicare wellness visits",
+      "type": "practice"
     },
     {
-      "text": "Mark histories as reviewed in the EMR to make documentation bulletproof for audits; even if an auditor is tough, having it marked as reviewed provides credit.",
-      "verbatim": "I tell MAs or providers, go ahead and just click mark as reviewed on those histories as you're going through it. That way your documentation is bulletproof.",
-      "type": "guideline"
+      "text": "If a patient is on an opioid prescription, fill out the medication section of the 4Ms, including discussion of non-opioid treatment options.",
+      "seg": 555,
+      "verbatim": "if they're on a opioid prescription, and correct me if I'm wrong, I think maybe in that medication section, it touches on that, like, discuss nonopioid treatment options and things like that within that medication.",
+      "applies_to": "Patients on opioid prescriptions during Medicare wellness visits",
+      "type": "practice"
     },
     {
-      "text": "The first diagnosis linked to the Medicare wellness charge must be a Z code (e.g., Z00.00 or Z01), while chronic conditions link to the E/M code.",
-      "verbatim": "If you've got a G0439, you're gonna link that Z00Point00 or 01 to that. And then your chronic condition, so your 992, 13, or 4, you're gonna link your hypertension and whatever to that.",
-      "type": "dx_criteria"
+      "text": "Billing audits are triggered only if a claim holds for reasons like modifier 25, incorrect diagnosis, or insurance issues; otherwise, claims process without review.",
+      "seg": 470,
+      "verbatim": "we don't review each and every one of Okay? We review them if there... It's holding in our system to review it for some other reason. So if it required a modifier 25, if you... The the diagnosis was incorrect. There's lots of different reasons it could hold.",
+      "applies_to": "All Medicare wellness visit claims",
+      "type": "practice"
     },
     {
-      "text": "If a patient cannot complete the health risk assessment in the office, send it home with them and schedule another visit; do not submit charges until all components are done.",
-      "verbatim": "I would just say, well, I'm gonna schedule you out for another visit. You bring that form back with you to the next visit, and we can bill you for a Medicare wellness at that time.",
-      "type": "pitfall"
-    },
-    {
-      "text": "All 4Ms lines must be filled in; even if a value is zero, it must be documented as unremarkable or interpreted.",
-      "verbatim": "If it's a zero on a scale, you still have to say that is... That means it's unremarkable or that means it's... No. You have to interpret it even if it's a zero. You can't leave any of the four m lines blank.",
-      "type": "pitfall"
-    },
-    {
-      "text": "The patient self-assessment (first question of the 4Ms) is a required element for billing; it captures the patient's perception of their health.",
-      "verbatim": "The piece of the 4Ms that we were always missing when people weren't putting the 4Ms in there is that patient self assessment. That's the first question on there. So if you have that, meaning what I need from a billing perspective.",
-      "type": "dx_criteria"
-    },
-    {
-      "text": "If a patient is on an opioid prescription, the medication section of the 4Ms should be filled out, including discussion of non-opioid treatment options.",
-      "verbatim": "If they're on a opioid prescription, then I would suggest you fill out that medication section too.",
-      "type": "guideline"
-    },
-    {
-      "text": "The after-visit summary (AVS) must be generated and given to the patient; it includes patient instructions and is required for billing.",
-      "verbatim": "You have to generate an after visit summary or your MASJ.",
-      "type": "guideline"
-    },
-    {
-      "text": "Chronic issues can be addressed during the same visit as the wellness visit, but patients should be informed they may be responsible for their deductible.",
-      "verbatim": "If you see them today and you take care of their chronic issues and an annual wellness visit, they're gonna still be responsible for their deductible if they haven't met it.",
-      "type": "judgment"
-    },
-    {
-      "text": "Using the correct template is essential; if the template is wrong, the care team member information may not pull over, and the visit cannot be billed.",
-      "verbatim": "I've only known, like, two providers that did not use the correct template, so it didn't pull over. So that never got to bill for an annual wellness visit.",
-      "type": "pitfall"
-    },
-    {
-      "text": "The National Compliance checklist provides a detailed breakdown of all required elements, including sexual history, nutrition, and physical activity.",
-      "verbatim": "This very bottom resource here is a nice checklist that National Compliance has put together for us. So you can can see every single thing that's required.",
-      "type": "guideline"
-    },
-    {
-      "text": "When uncertain about whether a code is time-based, consult a coder to avoid using an inappropriate code.",
-      "verbatim": "There was one where I was using it, and it was actually a time based code. I had no idea. Until I mentioned it to a coder.",
-      "type": "pitfall"
-    },
-    {
-      "text": "If you want feedback on your documentation, email the speaker for a same-day review of your coding.",
+      "text": "Providers can request individual billing feedback by emailing Dr. Warman, who typically responds same day.",
+      "seg": 580,
       "verbatim": "if you do want and you want me to look at it, shoot me an email. I can get back to you typically same day.",
-      "type": "judgment"
+      "applies_to": "Providers seeking billing feedback",
+      "type": "practice"
     },
     {
-      "text": "Send a message to billing to request a change to your billing codes so you can learn from the correction and code effectively in the future.",
-      "verbatim": "Send us a message or something to say, hey. Can you change this on your billing? Yeah. Just so that we know what we're doing, and we can do it effectively later on.",
-      "type": "guideline"
+      "text": "Charges cannot be entered in the EMR before the visit is completed; doing so constitutes fraud.",
+      "seg": 515,
+      "verbatim": "You can't... Because that's fraud. If you Right. Put that charge, say it is... I got it all done. Okay. So as long as the physician has not inputted a char... Input a charge, then it would be okay.",
+      "applies_to": "All visits",
+      "type": "pitfall"
+    },
+    {
+      "text": "The order of items in the plan does not matter as long as each diagnosis is correctly linked to its corresponding code.",
+      "seg": 487,
+      "verbatim": "Is the, like, order in the plan, like, 123 in your plan, does that matter? Because I think I've heard that you have to have the first plan item be the Medicare visit. Me. As long as it's linked. Yep.",
+      "applies_to": "Medicare wellness visits with concurrent chronic problem management",
+      "type": "practice"
     }
   ],
   "pearls": [
     {
-      "text": "If you have a strong MA or nurse, they make your life a whole lot easier, because they do gather a lot of this information for you ahead of time.",
-      "verbatim": "if you have a strong MA or nurse, they make your life a whole lot easier, because they do gather a lot of this information for you ahead of time.",
-      "type": "judgment",
-      "t": 65.9,
-      "match": "exact",
+      "text": "The list of providers and suppliers should include only those the patient sees annually; a one-time dermatology consultation years ago does not need to be listed.",
+      "verbatim": "if they saw a dermatologist years ago, and they don't see him every year or something like that, they would not be expected to be in there.",
+      "type": "practice",
+      "t": 175.8,
+      "match": "fuzzy",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-65",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 6.86
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "Medicare AWV documentation",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-175"
     },
     {
-      "text": "Family history cannot be left blank; at minimum put 'mom deceased at age 80, unknown cause', but never use 'noncontributory' as it does not count.",
-      "verbatim": "family history cannot just be blank, or it can't say. Right? Like, it has to say something. So maybe everybody doesn't have brothers and sisters, but everybody has parents. So at minimum, you could put, you know, mom deceased at age 80, unknown cause. Something like that.",
-      "type": "pitfall",
+      "text": "Family history cannot be left blank or documented as 'noncontributory'; at minimum, record 'mom deceased at age 80, unknown cause'.",
+      "verbatim": "family history cannot just be blank, or it can't say. Right? Like, it has to say something. So maybe everybody doesn't have brothers and sisters, but everybody has parents. So at minimum, you could put, you know, mom deceased at age 80, unknown cause.",
+      "type": "practice",
       "t": 206.3,
       "match": "exact",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-206",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "never"
-          ],
-          "rarity": 8.02
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "Medicare AWV documentation",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-206"
     },
     {
-      "text": "For family history, 'noncontributory' should not be used; it does not get credit for the requirement.",
-      "verbatim": "Noncontributory. That's exactly what I hear... See sometimes. So don't put that either. We don't get credit for that.",
-      "type": "pitfall",
-      "t": 277.0,
-      "match": "exact",
-      "episode": "dr-warman-on-medicare-wellness-visits",
-      "speaker": "Dr. Warman",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-277",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 8.15
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "If information is in the paper packet, it must be entered into the EHR for billing, having the paper provides a backup if entry is missed.",
-      "verbatim": "If it's in that packet, it has to be entered into the EHR somewhere.",
-      "type": "pitfall",
-      "t": 758.9,
-      "match": "exact",
-      "episode": "dr-warman-on-medicare-wellness-visits",
-      "speaker": "Dr. Warman",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-758",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "harm": [
-            "missed"
-          ],
-          "rarity": 8.11
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "The annual wellness visit is all-or-nothing billing: if you miss one required element, you cannot bill it.",
-      "verbatim": "The thing with these is they are an all or nothing. If you miss one thing, we can't bill it.",
+      "text": "If the patient has no surgical or procedural history, document 'none' rather than leaving it blank.",
+      "verbatim": "Don't leave that blank. If they have no procedural or surgical procedure whatsoever, put none in there.",
       "type": "practice",
+      "t": 233.3,
+      "match": "exact",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "Medicare AWV documentation",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-233"
+    },
+    {
+      "text": "The written screening schedule for the next five years is generated using the smart phrase 'skilled PPP dash f' for female patients or 'G0439-M' for male patients in the patient instructions section.",
+      "verbatim": "the skilled PPP dash f for female or G0439-M for male.",
+      "type": "practice",
+      "t": 359.6,
+      "match": "fuzzy",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "Medicare AWV documentation",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-359"
+    },
+    {
+      "text": "For patients on opioids, document a pain scale and discuss nonopioid treatment options as part of the opioid prescription review.",
+      "verbatim": "if they are taking an opioid. Honestly, I don't see that that much. But if they are, then we would need that pain scale that you talk to them about nonopioid treatment options.",
+      "type": "practice",
+      "t": 447.9,
+      "match": "exact",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "Medicare AWV with opioid prescription",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-447"
+    },
+    {
+      "text": "Social determinants of health risk assessment is separately billable only if the teaching physician documents their time; the MA's time does not count.",
+      "verbatim": "If you do the social determinants of health risk assessment, A caveat here. Only the teaching physician's time counts.",
+      "type": "practice",
+      "t": 480.0,
+      "match": "exact",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "Medicare AWV",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-480"
+    },
+    {
+      "text": "Depression screening (PHQ-2/9) is bundled with the initial AWV (G0438) and cannot be billed separately; it is separately billable only with the subsequent AWV (G0439) if the teaching physician documents time.",
+      "verbatim": "The depression screening is not separately billable. It is actually included in that G0438, so we don't get it billed separately for that. But for the annual wellness visit subsequent, we can bill separately. Again, it's time based code. Only TP's time counts.",
+      "type": "practice",
+      "t": 573.1,
+      "match": "exact",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "Medicare AWV",
+      "numbers_unheard": [
+        "9"
+      ],
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-573"
+    },
+    {
+      "text": "Even if the teaching physician does not spend 16 minutes on advanced care planning, MA documentation in the ad hoc form can satisfy quality metric codes (1123 and 1124) for having an advance care plan in the chart.",
+      "verbatim": "your MA is likely filling out the little advanced care planning piece in the ad hoc form. And with that, that is enough to documenting. Hey, Doctor. Raymond. You're documenting that advanced care planning discussion. And so then those quality metric codes are basically just saying there's an advanced care plan in the chart or no. There's not.",
+      "type": "practice",
+      "t": 613.9,
+      "match": "exact",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "Medicare AWV",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-613"
+    },
+    {
+      "text": "Missing any single required element (e.g., sexual history) makes the entire AWV unbillable; it is an 'all or nothing' code.",
+      "verbatim": "The thing with these is they are an all or nothing. If you miss one thing, we can't bill it. So it's a lot of work to just miss sexual history that missed all the time, and we can't bill it.",
+      "type": "pitfall",
       "t": 770.6,
       "match": "exact",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-770",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:annual wellness visit"
-          ],
-          "rarity": 7.79
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "Medicare AWV",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-770"
     },
     {
-      "text": "Advanced care planning (ACP) can be billed separately only if the teaching physician documents >15 minutes; adding modifier 33 waives patient cost-sharing.",
-      "verbatim": "if the TP is spending at least sixteen minutes on advanced care planning and documenting it, if we add a modifier 33 to that, then there is no out of pocket expenses to the patient.",
+      "text": "When billing an E&M service with an AWV, document a separate chief complaint (e.g., 'patient presents for six-month follow-up on hypertension and diabetes') and append modifier 25 to the E&M code.",
+      "verbatim": "patient presents today for an annual wellness visit. Patient's also here today for a six month follow-up on their hypertension and diabetes. So that sets that medical necessity for that separate visit. We would have to append that modifier 25 to that 992 xx code, whatever it is that you're billing.",
       "type": "practice",
-      "t": 839.4,
+      "t": 926.4,
       "match": "exact",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "numbers_unheard": [
-        "15"
-      ],
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-839",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:15 minutes",
-            "threshold:>1"
-          ],
-          "rarity": 8.85
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "Medicare AWV with concurrent E&M",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-926"
     },
     {
-      "text": "When billing an E&M alongside a wellness visit, append modifier 25 to the E&M code; the Medicare code takes precedence.",
-      "verbatim": "The Medicare code takes precedence, and the e and m becomes the 25 modifier.",
+      "text": "Notify patients when both an AWV and an E&M are billed, because they may receive a bill for the Medicare deductible (around $180) early in the year.",
+      "verbatim": "please notify the patient if you're billing both because we get patients that are mad, January, February, March. They haven't met their deductible, and now they get a bill, $180 or whatever the Medicare deductible is.",
       "type": "practice",
-      "t": 1012.5,
+      "t": 985.3,
       "match": "exact",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1012",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:wellness visit"
-          ],
-          "rarity": 8.61
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "Medicare patients",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-985"
     },
     {
-      "text": "The 25 modifier tells insurance that the E&M is separate and significant from the other service; it always goes on the E&M code.",
-      "verbatim": "25 modifier is actually telling insurance that the e and m is separate and significant from whatever else it is that you're billing. So that's why it always goes on that e and m.",
-      "type": "concept",
-      "t": 1027.1,
-      "match": "exact",
-      "episode": "dr-warman-on-medicare-wellness-visits",
-      "speaker": "Dr. Warman",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1027",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:insurance"
-          ],
-          "actionable": [
-            "always"
-          ],
-          "rarity": 7.0
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "For the Welcome to Medicare visit, visual acuity screening is required; the ad hoc form should not give the patient an option to skip unless they refuse.",
-      "verbatim": "The main difference between this one and the other two is that this one does require a visual acuity screening. That is probably the biggest missed thing on this one.",
-      "type": "dx_criteria",
+      "text": "The Welcome to Medicare visit (G0402) requires a visual acuity screening; do not offer it as optional, perform it unless the patient flatly refuses.",
+      "verbatim": "the main difference between this one and the other two is that this one does require a visual acuity screening. That is probably the biggest missed thing on this one.",
+      "type": "practice",
       "t": 1091.7,
       "match": "exact",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1091",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:welcome to medicare vi"
-          ],
-          "actionable": [
-            "give"
-          ],
-          "rarity": 8.38
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "Welcome to Medicare visit (G0402)",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1091"
     },
     {
-      "text": "Perform all elements in the ad hoc form at each visit regardless of which wellness code you expect, so you can flex the code without rework.",
-      "verbatim": "please just do everything every single time. That way there's no question. We are... That way we can just flip that code if need be.",
-      "type": "judgment",
-      "t": 1345.2,
-      "match": "exact",
-      "episode": "dr-warman-on-medicare-wellness-visits",
-      "speaker": "Dr. Warman",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1345",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 8.08
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Mark histories as reviewed in the EMR to make documentation bulletproof for audits; even if an auditor is tough, having it marked as reviewed provides credit.",
-      "verbatim": "I tell MAs or providers, go ahead and just click mark as reviewed on those histories as you're going through it. That way your documentation is bulletproof.",
+      "text": "For the Welcome to Medicare visit (G0402), a visual acuity screening is required and is the most commonly missed element.",
+      "verbatim": "The main difference between this one and the other two is that this one does require a visual acuity screening.",
       "type": "practice",
-      "t": 1382.1,
+      "t": 1091.7,
       "match": "exact",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1382",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 8.85
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients receiving Welcome to Medicare visit (IPPE)",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1091-2"
     },
     {
-      "text": "Using the correct template is essential; if the template is wrong, the care team member information may not pull over, and the visit cannot be billed.",
-      "verbatim": "I've only known, like, two providers that did not use the correct template, so it didn't pull over. So that never got to bill for an annual wellness visit.",
+      "text": "Eligibility for G0402 (Welcome to Medicare) vs G0439 (Annual Wellness Visit) depends on whether the patient is within the first 12 months of Part B coverage, not their age.",
+      "verbatim": "What a lot of providers think is, okay. Patient's here today, and they are 65, so they must be here for their welcome to Medicare visit. I'm gonna bill a G0402. Well, no. They've had Medicare since they were 38. So they're not eligible for a G0402.",
       "type": "pitfall",
-      "t": 1423.4,
+      "t": 1296.5,
       "match": "exact",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1423",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.65
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "Medicare patients",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1296"
     },
     {
-      "text": "The National Compliance checklist provides a detailed breakdown of all required elements, including sexual history, nutrition, and physical activity.",
-      "verbatim": "This very bottom resource here is a nice checklist that National Compliance has put together for us. So you can can see every single thing that's required.",
+      "text": "If you perform a G0439 but did not do the visual acuity screening (because the patient was actually eligible for G0402), the service is done for free and cannot be billed.",
+      "verbatim": "If we thought we were doing a G0439 and we did not do the visual acuity screening, we just did that service for free because now we can't bill for it.",
+      "type": "pitfall",
+      "t": 1335.0,
+      "match": "fuzzy",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "Medicare wellness visits",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1335"
+    },
+    {
+      "text": "To avoid missing elements, instruct MAs to perform all components of the ad hoc form every time, so the code can be flipped if eligibility is different than assumed.",
+      "verbatim": "I just tell tell the MAs, please just do everything every single time. That way there's no question. We are... That way we can just flip that code if need be.",
       "type": "practice",
+      "t": 1343.4,
+      "match": "exact",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "MAs and providers doing Medicare wellness visits",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1343"
+    },
+    {
+      "text": "Use the 4Ms (Mobility, Mind, Medications, What Matters Most) in the HPI section to capture the required patient self-assessment of health.",
+      "verbatim": "In your HPI section, so this is another piece for you, is to utilize that TEAL four m in the HPI section. And what that captures for us is that patient self assessment, which is required.",
+      "type": "practice",
+      "t": 1353.5,
+      "match": "exact",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "providers documenting Medicare wellness visits",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1353"
+    },
+    {
+      "text": "Mark histories as 'reviewed' in the EHR to bulletproof documentation against auditors who might challenge outdated entries.",
+      "verbatim": "go ahead and just click mark as reviewed on those histories as you're going through it. That way your documentation is bulletproof.",
+      "type": "practice",
+      "t": 1385.8,
+      "match": "exact",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "providers doing Medicare wellness visits",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1385"
+    },
+    {
+      "text": "Care team member information must be included in the note; using the correct template is essential or the visit cannot be billed.",
+      "verbatim": "that care team member information has to be included in your note, which it should pull over. I've only known, like, two providers that did not use the correct template, so it didn't pull over. So that never got to bill for an annual wellness visit.",
+      "type": "pitfall",
+      "t": 1417.6,
+      "match": "exact",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "providers doing Medicare wellness visits",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1417"
+    },
+    {
+      "text": "The National Compliance checklist breaks down every requirement for the wellness visit, including specific elements like sexual history and nutrition history.",
+      "verbatim": "This very bottom resource here is a nice checklist that National Compliance has put together for us. So you can can see every single thing that's required. So, like, mine was kind of a high level saying, hey. We need a health risk assessment, but theirs breaks it down into, you know, we have to have the sexual history, nutritional history...",
+      "type": "concept",
       "t": 1446.1,
       "match": "exact",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1446",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:physical activity"
-          ],
-          "rarity": 7.62
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "providers and MAs doing Medicare wellness visits",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1446"
     },
     {
-      "text": "The after-visit summary (AVS) must be generated and given to the patient; it includes patient instructions and is required for billing.",
-      "verbatim": "You have to generate an after visit summary or your MASJ.",
+      "text": "If a patient expects a free wellness visit but chronic issues are also addressed, they may be surprised by a deductible charge; manage expectations by framing the visit around the chronic problems first.",
+      "verbatim": "most offices have gotten into a really good habit of not telling patients, hey. You're here for a wellness visit. And then while you're here, then they address their hypertension diabetes. So at that point, they're not expecting the free visit. They're expecting to be seen for their hypertension and diabetes.",
       "type": "practice",
-      "t": 1788.2,
+      "t": 1894.1,
       "match": "exact",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "applies_to": "patients with chronic conditions also due for wellness visit",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-1894"
+    },
+    {
+      "text": "Billing audits are triggered only if a claim holds for reasons like modifier 25, incorrect diagnosis, or insurance issues; otherwise, claims process without review.",
+      "verbatim": "we don't review each and every one of Okay? We review them if there... It's holding in our system to review it for some other reason. So if it required a modifier 25, if you... The the diagnosis was incorrect. There's lots of different reasons it could hold.",
+      "type": "practice",
+      "t": 2087.9,
+      "match": "exact",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "All Medicare wellness visit claims",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2087"
+    },
+    {
+      "text": "When billing a wellness visit and a separate E/M for chronic issues, link the Z00.00 or Z00.01 diagnosis to the wellness code and the chronic condition diagnoses to the E/M code.",
+      "verbatim": "Even if you are addressing other things like chronic problems, the first diagnosis has to be Medicare wellness. Is that true? You're gonna link the first diagnosis to that charge. Right? So if you've got a G0439, you're gonna link that Z00Point00 or 01 to that. And then your chronic condition, so your 992, 13, or 4, you're gonna link your hypertension and whatever to that.",
+      "type": "practice",
+      "t": 2139.0,
+      "match": "exact",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "providers billing both wellness and chronic problem visits on same day",
       "by_presenter": false,
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1788",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:after-visit summary"
-          ],
-          "rarity": 8.48
-        },
-        "rubric": "rules-v2"
-      }
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2139"
     },
     {
-      "text": "Chronic issues can be addressed during the same visit as the wellness visit, but patients should be informed they may be responsible for their deductible.",
-      "verbatim": "If you see them today and you take care of their chronic issues and an annual wellness visit, they're gonna still be responsible for their deductible if they haven't met it.",
-      "type": "judgment",
-      "t": 1876.4,
+      "text": "The first diagnosis must be linked to the Medicare wellness code G0439 using Z00.00 or Z00.01; chronic conditions link to separate E&M codes like 99214.",
+      "verbatim": "Even if you are addressing other things like chronic problems, the first diagnosis has to be Medicare wellness. Is that true? You're gonna link the first diagnosis to that charge. Right? So if you've got a G0439, you're gonna link that Z00Point00 or 01 to that. And then your chronic condition, so your 992, 13, or 4, you're gonna link your hypertension and whatever to that.",
+      "type": "practice",
+      "t": 2139.0,
       "match": "exact",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-1876",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:wellness visit"
-          ],
-          "rarity": 7.54
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "Medicare wellness visits with concurrent chronic problem management",
+      "by_presenter": false,
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2139-2"
     },
     {
-      "text": "If a patient cannot complete the health risk assessment in the office, send it home with them and schedule another visit; do not submit charges until all components are done.",
-      "verbatim": "I would just say, well, I'm gonna schedule you out for another visit. You bring that form back with you to the next visit, and we can bill you for a Medicare wellness at that time.",
+      "text": "The order of items in the plan does not matter as long as each diagnosis is correctly linked to its corresponding code.",
+      "verbatim": "Is the, like, order in the plan, like, 123 in your plan, does that matter? Because I think I've heard that you have to have the first plan item be the Medicare visit. Me. As long as it's linked. Yep.",
+      "type": "practice",
+      "t": 2165.5,
+      "match": "fuzzy",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "Medicare wellness visits with concurrent chronic problem management",
+      "by_presenter": false,
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2165"
+    },
+    {
+      "text": "Charges cannot be entered in the EMR before the visit is completed; doing so constitutes fraud.",
+      "verbatim": "You can't... Because that's fraud. If you Right. Put that charge, say it is... I got it all done. Okay. So as long as the physician has not inputted a char... Input a charge, then it would be okay.",
       "type": "pitfall",
+      "t": 2314.2,
+      "match": "exact",
+      "episode": "dr-warman-on-medicare-wellness-visits",
+      "speaker": "Dr. Warman",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "All visits",
+      "by_presenter": false,
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2314"
+    },
+    {
+      "text": "If a patient cannot finish the wellness form in the office, send it home with them and schedule another visit to bill the wellness visit when the form is returned.",
+      "verbatim": "I would just say, well, I'm gonna schedule you out for another visit. You bring that form back with you to the next visit, and we can charge your... We can bill you for a Medicare wellness at that time.",
+      "type": "practice",
       "t": 2331.3,
       "match": "exact",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "applies_to": "Patients unable to complete the wellness form during the visit",
       "by_presenter": false,
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2331",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:health risk assessment"
-          ],
-          "actionable": [
-            "do not"
-          ],
-          "rarity": 7.79
-        },
-        "rubric": "rules-v2"
-      }
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2331"
     },
     {
-      "text": "All 4Ms lines must be filled in; even if a value is zero, it must be documented as unremarkable or interpreted.",
-      "verbatim": "If it's a zero on a scale, you still have to say that is... That means it's unremarkable or that means it's... No. You have to interpret it even if it's a zero. You can't leave any of the four m lines blank.",
-      "type": "pitfall",
-      "t": 2428.7,
+      "text": "All four M (4Ms) lines must be filled; leaving any blank is considered missing data, even if the answer is zero or 'no'.",
+      "verbatim": "Even if they're not, like, you know, it says 10 medications, you have to put yes or no. If if they're not on 10 medications and you don't put no, it's like missing a question. Yeah. And if it's a zero on a scale, you still have to say that is... That means it's unremarkable or that means it's... No. You have to interpret it even if it's a zero. You can't leave any of the four m lines blank.",
+      "type": "practice",
+      "t": 2414.9,
       "match": "exact",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
+      "applies_to": "All Medicare wellness visits",
       "by_presenter": false,
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2428",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.66
-        },
-        "rubric": "rules-v2"
-      }
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2414"
     },
     {
-      "text": "The patient self-assessment (first question of the 4Ms) is a required element for billing; it captures the patient's perception of their health.",
-      "verbatim": "The piece of the 4Ms that we were always missing when people weren't putting the 4Ms in there is that patient self assessment. That's the first question on there. So if you have that, meaning what I need from a billing perspective.",
-      "type": "dx_criteria",
+      "text": "The patient self-assessment (first question of the 4Ms) is a billing requirement; other 4M sections may be optional per National guidance.",
+      "verbatim": "the piece of the 4Ms that we were always missing when people weren't putting the 4Ms in there is that patient self assessment. That's the first question on there. So if you have that, meaning what I need from a billing perspective.",
+      "type": "practice",
       "t": 2471.6,
       "match": "fuzzy",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2471",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:patient self-assessmen"
-          ],
-          "rarity": 8.25
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "Medicare wellness visits",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2471"
     },
     {
-      "text": "If a patient is on an opioid prescription, the medication section of the 4Ms should be filled out, including discussion of non-opioid treatment options.",
-      "verbatim": "If they're on a opioid prescription, then I would suggest you fill out that medication section too.",
+      "text": "If a patient is on an opioid prescription, fill out the medication section of the 4Ms, including discussion of non-opioid treatment options.",
+      "verbatim": "if they're on a opioid prescription, and correct me if I'm wrong, I think maybe in that medication section, it touches on that, like, discuss nonopioid treatment options and things like that within that medication.",
       "type": "practice",
-      "t": 2584.3,
+      "t": 2549.2,
       "match": "exact",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2584",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:opioid prescription"
-          ],
-          "rarity": 7.32
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "Patients on opioid prescriptions during Medicare wellness visits",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2549"
     },
     {
-      "text": "When uncertain about whether a code is time-based, consult a coder to avoid using an inappropriate code.",
-      "verbatim": "There was one where I was using it, and it was actually a time based code. I had no idea. Until I mentioned it to a coder.",
-      "type": "pitfall",
-      "t": 2619.1,
-      "match": "fuzzy",
-      "episode": "dr-warman-on-medicare-wellness-visits",
-      "speaker": "Dr. Warman",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2619",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "consult"
-          ],
-          "rarity": 8.61
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Send a message to billing to request a change to your billing codes so you can learn from the correction and code effectively in the future.",
-      "verbatim": "Send us a message or something to say, hey. Can you change this on your billing? Yeah. Just so that we know what we're doing, and we can do it effectively later on.",
-      "type": "practice",
-      "t": 2650.1,
-      "match": "exact",
-      "episode": "dr-warman-on-medicare-wellness-visits",
-      "speaker": "Dr. Warman",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2650",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "change to"
-          ],
-          "rarity": 7.41
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "If you want feedback on your documentation, email the speaker for a same-day review of your coding.",
+      "text": "Providers can request individual billing feedback by emailing Dr. Warman, who typically responds same day.",
       "verbatim": "if you do want and you want me to look at it, shoot me an email. I can get back to you typically same day.",
-      "type": "judgment",
+      "type": "practice",
       "t": 2694.8,
       "match": "exact",
       "episode": "dr-warman-on-medicare-wellness-visits",
       "speaker": "Dr. Warman",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-warman-on-medicare-wellness-visits-2694",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.56
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "Providers seeking billing feedback",
+      "pearl_id": "dr-warman-on-medicare-wellness-visits-2694"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -70729,5 +70665,6 @@
       "name": "Dr. Warman"
     }
   ],
-  "pearls_fingerprint": "b9f6c289f6a86413"
+  "pearls_fingerprint": "ab0340ceb7f0959e",
+  "enrich_version": "v2"
 }

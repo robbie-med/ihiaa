@@ -39263,20 +39263,20 @@
   "fixes_rejected": [],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "This FMIS Morbidity and Mortality conference discusses two cases highlighting diagnostic and management pitfalls. The first case involves a patient with ESRD and a TIA who received IVF from an ischemic stroke order set, risking volume overload. The second case describes a patient with atypical heart failure presentation (dyspnea without chest pain) who had a delayed diagnosis of NSTEMI and cardiomyopathy. Key lessons include the importance of verifying all active orders, including IVF, when assuming patient care, and recognizing that dyspnea can be an anginal equivalent for MI, especially in patients with risk factors. The conference emphasizes the need for careful clinical decision-making, thorough handoffs, and appropriate use of order sets tailored to the patient's specific condition.",
+  "abstract": "This M&M conference reviews two cases from August FMIS. The first case involves a 50-year-old woman with ESRD on hemodialysis who presented with right-sided weakness, was diagnosed with a TIA, but received IVF from an ischemic stroke order set, risking volume overload. The second case involves a man with shortness of breath and atypical anginal symptoms who was sent home from clinic but later admitted with heart failure and an EF of 20%, highlighting delays in care. Key lessons include checking the MAR at every care transition, tailoring order sets to the patient's diagnosis and comorbidities, and recognizing atypical presentations of acute coronary syndrome and heart failure.",
   "key_points": [
-    "Always check the MAR and all running IV fluids when assuming care of a patient, especially those with ESRD or heart failure.",
-    "TIA and ischemic stroke are treated differently; TIA does not require IVF, while ischemic stroke may if volume depleted.",
-    "Volume overload is a major risk in ESRD patients, especially after missed HD, and can worsen CHF.",
-    "Dyspnea on exertion can be an anginal equivalent for MI; one-third of patients with confirmed MI have no chest pain.",
-    "If suspicion is high enough to order a troponin in clinic, the patient should be sent to the ER for evaluation.",
-    "Acute heart failure requires urgent evaluation and intervention, including possible same-day cardiac catheterization.",
-    "Order sets should be reviewed critically; each order must be appropriate for the patient's current diagnosis and comorbidities.",
-    "Document all treatments, especially IVF, in the H&P and progress notes under the specific problem being treated.",
-    "Consult specialists early for ESRD patients to arrange HD and avoid volume overload.",
-    "Atypical presentations of MI (e.g., dyspnea alone) require a high index of suspicion, especially in patients with diabetes or prior heart disease.",
-    "Shortness of breath should be nuanced like pain; always consider cardiac causes.",
-    "Up to one-third of myocardial infarctions present without chest pain."
+    "TIA and ischemic stroke are treated differently: TIA does not receive IVF, while ischemic stroke may receive IVF without dextrose if volume depleted.",
+    "For TIA, baseline treatment is aspirin 81-325 mg daily; if ABCD2 score >4, add clopidogrel 300-600 mg loading dose then 75 mg daily.",
+    "In ESRD patients on HD, cardiac morbidity and mortality risk is 25-40% higher on the first day after HD due to volume overload and hyponatremia.",
+    "Volume overload in ESRD is primarily treated by dialysis; longer and more frequent HD sessions (e.g., q4 vs q3) can help prevent it.",
+    "Always check the MAR when assuming care of a patient to identify running IV fluids and other medications that may not be documented in notes.",
+    "When using admission order sets, verify each order is appropriate for the patient's current diagnosis and comorbidities.",
+    "Atypical presentations of ACS (e.g., dyspnea without chest pain) are common and can lead to delays in care; maintain a high index of suspicion.",
+    "Diagnosing CHF is a clinical assessment; an echo is confirmatory but should not delay initial treatment.",
+    "Document all treatments, especially IVF, in the H&P and progress notes under the specific problem or in the FEN section.",
+    "Consult nephrology early for ESRD patients who have missed HD to get them back on schedule and manage volume status.",
+    "Diagnosing CHF requires at least two major clinical criteria: pulmonary edema, cardiomegaly, jugular venous distension, PAN D, and third heart sound.",
+    "One third of patients with confirmed MI have no chest pain; dyspnea alone can be an anginal equivalent."
   ],
   "topics_raw": [
     {
@@ -39300,19 +39300,19 @@
       "kind": "condition"
     },
     {
-      "label": "Non-ST Elevation Myocardial Infarction",
+      "label": "Acute Coronary Syndrome",
       "kind": "condition"
     },
     {
-      "label": "Cardiomyopathy",
-      "kind": "condition"
+      "label": "ABCD2 Score",
+      "kind": "procedure"
+    },
+    {
+      "label": "Hemodialysis",
+      "kind": "procedure"
     },
     {
       "label": "Intravenous Fluids",
-      "kind": "drug"
-    },
-    {
-      "label": "Furosemide",
       "kind": "drug"
     },
     {
@@ -39324,11 +39324,35 @@
       "kind": "drug"
     },
     {
-      "label": "Hemodialysis",
-      "kind": "procedure"
+      "label": "Furosemide",
+      "kind": "drug"
     },
     {
-      "label": "Cardiac Catheterization",
+      "label": "Medication Administration Record",
+      "kind": "concept"
+    },
+    {
+      "label": "Order Set",
+      "kind": "concept"
+    },
+    {
+      "label": "Heart Failure",
+      "kind": "condition"
+    },
+    {
+      "label": "Myocardial Infarction",
+      "kind": "condition"
+    },
+    {
+      "label": "Dyspnea",
+      "kind": "condition"
+    },
+    {
+      "label": "Troponin",
+      "kind": "drug"
+    },
+    {
+      "label": "Electrocardiography",
       "kind": "procedure"
     },
     {
@@ -39336,40 +39360,8 @@
       "kind": "procedure"
     },
     {
-      "label": "Electrocardiography",
+      "label": "Coronary Angiography",
       "kind": "procedure"
-    },
-    {
-      "label": "Chest X-Ray",
-      "kind": "procedure"
-    },
-    {
-      "label": "Order Set",
-      "kind": "concept"
-    },
-    {
-      "label": "Handoff Communication",
-      "kind": "concept"
-    },
-    {
-      "label": "Anginal Equivalent",
-      "kind": "concept"
-    },
-    {
-      "label": "ABCD2 Score",
-      "kind": "concept"
-    },
-    {
-      "label": "Acute Myocardial Infarction",
-      "kind": "condition"
-    },
-    {
-      "label": "Heart Failure",
-      "kind": "condition"
-    },
-    {
-      "label": "Ischemic Heart Disease",
-      "kind": "condition"
     },
     {
       "label": "Febrile Neutropenia",
@@ -39380,392 +39372,387 @@
       "kind": "condition"
     },
     {
-      "label": "Chemotherapy",
-      "kind": "procedure"
+      "label": "Antibiotic Timing",
+      "kind": "concept"
     },
     {
       "label": "Direct Admission",
-      "kind": "procedure"
-    },
-    {
-      "label": "Troponin",
-      "kind": "procedure"
-    },
-    {
-      "label": "Antibiotic Therapy",
-      "kind": "procedure"
-    },
-    {
-      "label": "Risk Stratification",
       "kind": "concept"
+    },
+    {
+      "label": "Variance Reporting",
+      "kind": "concept"
+    },
+    {
+      "label": "Risk Assessment",
+      "kind": "concept"
+    },
+    {
+      "label": "Hospital admission workflow",
+      "kind": "procedure"
+    },
+    {
+      "label": "Transfer center communication",
+      "kind": "concept"
+    },
+    {
+      "label": "Variance reporting",
+      "kind": "concept"
+    },
+    {
+      "label": "Acetaminophen",
+      "kind": "drug"
+    },
+    {
+      "label": "Fever",
+      "kind": "condition"
     }
   ],
   "pearls_raw": [
     {
-      "text": "When assuming care of a patient, always check the MAR to see if any IV fluids are running, as they may not be documented in the H&P or progress notes.",
-      "verbatim": "Whenever I take four patients to the hospital that first day, like, one of one of the things I look through is the MAR to see what meds they're on, and you will be shocked. It's not documented, but it's running.",
-      "type": "pitfall"
-    },
-    {
-      "text": "TIA does not require IVF; ischemic stroke may require IVF without dextrose if the patient is volume depleted.",
-      "verbatim": "The difference between treatments is that TIA doesn't receive IVF. The baseline recommendation, usually, all baseline treatments for TIA include aspirin.",
-      "type": "guideline"
-    },
-    {
-      "text": "One-third of patients with confirmed MI have no chest pain; dyspnea alone can be an anginal equivalent.",
-      "verbatim": "Of the one third of patients with confirmed MI had no chest pain. So really You know, dyspnea on exertion is kinda androgenic. Dyspnea alone can be simply a cause.",
-      "type": "red_flag"
-    },
-    {
-      "text": "If suspicion is high enough to order a troponin in the clinic, the patient should be sent to the ER for evaluation rather than having the lab drawn in clinic.",
-      "verbatim": "If you have a high enough suspicion to order troponin, you probably need to get that done at the ER.",
-      "type": "judgment"
-    },
-    {
-      "text": "Volume overload is the number one cause of poor outcomes in patients with cardiac and ESRD diagnoses; main treatment is to dialyze them.",
-      "verbatim": "Volume overload is also the number one cause of which can be an independent cause for poor outcomes with our patients with cardiac as well as ESRD diagnoses. So main treatment for volume overload in ESRD is to dialyze them.",
-      "type": "guideline"
-    },
-    {
-      "text": "For ESRD patients, longer and more frequent HD sessions (e.g., q4 rather than q3) and a sodium-restricted diet can help prevent volume and sodium overload.",
-      "verbatim": "More specific looks at how to dialyze patients to prevent volume overload and sodium overload over the course of the weekend is to have longer sessions and more frequent HD schedules during the week, so doing q four rather than q three, and then using or programming the dialyzing machine to allow less sodium to be returned into the patient's body, and then also including a sodium restricted diet.",
+      "text": "For TIA, baseline treatment is aspirin 81-325 mg daily; if ABCD2 score >4, add clopidogrel 300-600 mg loading dose then 75 mg daily.",
+      "seg": 179,
+      "verbatim": "all baseline treatments for TIA include aspirin. It's either two daily doses up to three twenty five daily. And if a patient has a higher ABCD score that is greater than four, then they'll receive dual therapy, including Plavix three hundred to six three hundred to six hundred as a loading dose and then moving to seventy five milligrams for a period of time.",
+      "applies_to": "patients with TIA",
       "type": "dosing"
     },
     {
-      "text": "When using an admission order set, ensure each item fits the provisional diagnosis and comorbidities; do not blindly accept defaults.",
-      "verbatim": "Looking at potential protocol issues when patients are admitted, especially when we're using a preset given by Cerner, going through and and ensuring each item that's being ordered fits with the provisional diagnosis and comorbidities of the patient.",
-      "type": "pitfall"
+      "text": "Ischemic strokes receive IVF without dextrose if the patient is volume depleted, which most patients tend to be.",
+      "seg": 188,
+      "verbatim": "Ischemic strokes, on the other hand, do receive IVF without dextrose specifically if a patient is volume depleted, which most patients tend to be.",
+      "applies_to": "patients with ischemic stroke",
+      "type": "dosing"
     },
     {
-      "text": "In patients with acute heart failure, urgent evaluation including IV therapy and possible same-day cardiac catheterization is recommended.",
-      "verbatim": "Patients with acute heart failure do require urgent evaluation. So that means even getting IV therapy, which in the allow that to, like recommendations.",
-      "type": "guideline"
-    },
-    {
-      "text": "Check all lines and their rates when seeing a patient in the morning, as fluids may be running at a rate not ordered.",
-      "verbatim": "When we check our patients in the morning, we should always check all the lines that are... To see, like, where... What's running and, like, what rate is it running? Because half the time, it's running at a rate that we didn't even order.",
-      "type": "exam_technique"
-    },
-    {
-      "text": "Document all treatments, especially IVF, in the H&P and progress notes under the specific problem being treated or in an FEN section.",
-      "verbatim": "Documenting all treatments, especially IVF, a drug that's being added to the patient in our HNPs and in our progress notes under either the specific problem that it's treating or in an FEN section.",
+      "text": "In ESRD patients on HD, cardiac morbidity and mortality risk is 25-40% higher on the first day after HD compared to any other day, due to volume overload and hyponatremia.",
+      "seg": 200,
+      "verbatim": "Twenty five to forty percent higher risk of cardiac MIs or A-fib exacerbations or acute volume overload that worsens CHF on the first day of HD compared to any other day.",
+      "applies_to": "ESRD patients on hemodialysis",
       "type": "concept"
     },
     {
-      "text": "Up to one-third of myocardial infarctions present without chest pain; maintain a high index of suspicion in atypical presentations.",
-      "verbatim": "But up to a third of them that have MIs do not present.",
+      "text": "Volume overload in ESRD is primarily treated by dialysis; longer and more frequent HD sessions (e.g., q4 rather than q3) can help prevent it.",
+      "seg": 219,
+      "verbatim": "main treatment for volume overload in ESRD is to dialyze them. More specific looks at how to dialyze patients to prevent volume overload and sodium overload over the course of the weekend is to have longer sessions and more frequent HD schedules during the week, so doing q four rather than q three",
+      "applies_to": "ESRD patients on hemodialysis",
+      "type": "dosing"
+    },
+    {
+      "text": "Always check the MAR when assuming care of a patient from the night team to identify running IV fluids and other medications that may not be documented in notes.",
+      "seg": 229,
+      "verbatim": "check the MAR every time that we are assuming care of a patient from the night team or we're coming on to FMIS onto a new month, making sure we know exactly what the patient's getting, what they're getting at, looking at RN meds, making sure we have fluids",
+      "applies_to": "residents assuming care of a patient",
+      "type": "practice"
+    },
+    {
+      "text": "When using admission order sets, verify each order is appropriate for the patient's current diagnosis and comorbidities; do not assume all defaults are correct.",
+      "seg": 238,
+      "verbatim": "Checking and making sure each part of an order set is necessary based on what the patient may need.",
+      "applies_to": "all patients",
+      "type": "practice"
+    },
+    {
+      "text": "Document all treatments, especially IVF, in the H&P and progress notes under the specific problem it is treating or in the FEN section.",
+      "seg": 245,
+      "verbatim": "documenting all treatments, especially IVF, a drug that's being added to the patient in our HNPs and in our progress notes under either the specific problem that it's treating or in an FEN section.",
+      "applies_to": "all patients",
+      "type": "practice"
+    },
+    {
+      "text": "When consulting specialists, check the MAR to see if they changed any orders, such as when nephrology discontinues IVF.",
+      "seg": 236,
+      "verbatim": "when we're consulting specialists, so checking them are to make sure that any of our specialists changing things that we had ordered, like when nephro, DC, V, IVF have it on.",
+      "applies_to": "all patients with specialist consults",
+      "type": "practice"
+    },
+    {
+      "text": "Atypical presentations of ACS, such as dyspnea without chest pain, are common and can lead to delays in care; maintain a high index of suspicion.",
+      "seg": 405,
+      "verbatim": "the biggest thing is really the atypical presentation of this, and we'll go into, like, we'll go into that in a little bit of detail.",
+      "applies_to": "patients with cardiac risk factors",
       "type": "red_flag"
     },
     {
-      "text": "The most important cause of new-onset heart failure is ischemic cardiac disease; always consider underlying CAD.",
-      "verbatim": "the most important cause of heart failure is ischemic cardiac disease, and so having a higher suspicion of that.",
+      "text": "Diagnosing CHF is a clinical assessment; an echo is confirmatory but should not delay initial treatment.",
+      "seg": 405,
+      "verbatim": "diagnosing CHF is really, like, a clinical thing. And so for an echo is something that was done in this case to diagnose it and to treat it, which may not be appropriate.",
+      "applies_to": "patients with suspected CHF",
       "type": "judgment"
     },
     {
-      "text": "If you order a troponin, complete your note explaining the result to avoid confusion for the night team.",
-      "verbatim": "Not to be judicious if you do order a troponin. Like, finish your note, please, by next... So the night call person's not like, hey. This person's got troponin elevated for no so that you, like, explain it to them.",
-      "type": "pitfall"
-    },
-    {
-      "text": "Severe neutropenia is defined as an absolute neutrophil count (ANC) less than 500 cells/μL.",
-      "verbatim": "ANC was point two, so that's 200, and severe neutropenia is anything that's less than 500.",
+      "text": "To diagnose CHF, you need at least two major criteria: pulmonary edema, cardiomegaly, jugular reflex, PAN D, and third heart sound.",
+      "seg": 412,
+      "verbatim": "You need at least two major criteria. So pulmonary edema, which actually has that as well. Cardioomegaly, jugular reflex.",
+      "applies_to": "patients with suspected heart failure",
       "type": "dx_criteria"
     },
     {
-      "text": "In febrile neutropenia, antibiotics should be administered within 30 minutes to reduce mortality.",
-      "verbatim": "timing to antibiotics less than thirty minutes to lower mortality than those greater than thirty minutes.",
-      "type": "guideline"
+      "text": "One third of patients with confirmed MI have no chest pain; dyspnea alone can be a presentation.",
+      "seg": 434,
+      "verbatim": "Of the one third of patients with confirmed MI had no chest pain.",
+      "applies_to": "patients with suspected MI",
+      "type": "concept"
     },
     {
-      "text": "A delay of greater than 4 hours from antibiotic order to administration is a significant quality gap.",
-      "verbatim": "the order for IV antibiotics was placed almost two hours later, right before 06:30. Then the antibiotics were given later at twenty fifty eight. So this was a delay in greater than four hours from IV antibiotic administration.",
-      "type": "pitfall"
+      "text": "In the ER, any patient over 50 with shortness of breath should get an EKG because of concern for MI.",
+      "seg": 438,
+      "verbatim": "In the ER, anyone coming in with shortness of breath who's 50 years old, like, they're... That's why they get the EKG on almost everybody.",
+      "applies_to": "patients over 50 with dyspnea in the ER",
+      "type": "practice"
     },
     {
-      "text": "File a variance for direct admission delays to drive systemic change; it is the mechanism for quality improvement.",
-      "verbatim": "we got to file a variance to make any type of systemic change.",
+      "text": "If you have high enough suspicion to order a troponin in clinic, you probably need to send the patient to the ER for that test.",
+      "seg": 449,
+      "verbatim": "If you have a high enough suspicion to order troponin, you probably need to get that done at the ER.",
+      "applies_to": "outpatient clinic",
       "type": "judgment"
     },
     {
-      "text": "Use the MASC risk score on MD Calc to risk-stratify patients with febrile neutropenia.",
-      "verbatim": "This goes through some risk calculations for febrile neutropenia. They're all on MD calc, MASC, and the others you can plug in again and then these scores to kind of restratify them.",
-      "type": "guideline"
+      "text": "The most important cause of new heart failure is ischemic cardiac disease; maintain high suspicion even without chest pain.",
+      "seg": 511,
+      "verbatim": "the most important cause of heart failure is ischemic cardiac disease, and so having a higher suspicion of that.",
+      "applies_to": "patients with new-onset heart failure",
+      "type": "concept"
     },
     {
-      "text": "Direct admissions to the floor often result in delayed notification of the treating team; proactively check for new patients.",
-      "verbatim": "I think it is a near miss and something that this is a systemic problem of direct admissions coming to the floor and then treating teams not being notified.",
+      "text": "Shortness of breath should be nuanced like pain; don't forget it can be an anginal equivalent.",
+      "seg": 500,
+      "verbatim": "my takeaway was shortness of breath, nuance it, view it like just pain. Like, don't forget that.",
+      "applies_to": "any patient with dyspnea",
+      "type": "concept"
+    },
+    {
+      "text": "Severe neutropenia is defined as an ANC less than 500; this patient had an ANC of 200.",
+      "seg": 558,
+      "verbatim": "ANC was point two, so that's 200, and severe neutropenia is anything that's less than 500.",
+      "applies_to": "patients with neutropenia",
+      "type": "concept"
+    },
+    {
+      "text": "In febrile neutropenia, antibiotic administration within 30 minutes lowers mortality compared to longer delays.",
+      "seg": 627,
+      "verbatim": "timing to antibiotics less than thirty minutes to lower mortality than those greater than thirty minutes.",
+      "applies_to": "febrile neutropenic patients",
+      "type": "practice"
+    },
+    {
+      "text": "Direct admissions to the floor often result in delayed notification of the treating team; this is a systemic safety problem.",
+      "seg": 636,
+      "verbatim": "direct admissions coming to the floor and then treating teams not being notified.",
+      "applies_to": "hospitalized patients admitted directly",
       "type": "pitfall"
     },
     {
-      "text": "Consider atypical MI in older women with worsening GERD symptoms despite therapy.",
-      "verbatim": "older white ladies who've been on therapy for GERD, and it's worsening, acutely worsening. Yeah. They've been on it. That's another suspicion for.",
-      "type": "red_flag"
+      "text": "Filing variances leads to review at quality improvement meetings and can change hospital policy.",
+      "seg": 660,
+      "verbatim": "they do review those variances at the quality improvement meetings with Doctor. Boris. So it does make a difference.",
+      "applies_to": "any clinical setting",
+      "type": "practice"
+    },
+    {
+      "text": "Risk stratification tools for febrile neutropenia (e.g., MASC index) are available on MD Calc to help guide management.",
+      "seg": 622,
+      "verbatim": "This goes through some risk calculations for febrile neutropenia. They're all on MD calc, MASC, and the others you can plug in again and then these scores to kind of restratify them.",
+      "applies_to": "patients with febrile neutropenia",
+      "type": "practice"
+    },
+    {
+      "text": "File a variance for any issue that needs systemic change; verbal reports alone won't lead to policy changes—documentation is required.",
+      "seg": 660,
+      "verbatim": "we got to file a variance to make any type of systemic change. Like, we can tell people all we want, but without it being documented.",
+      "applies_to": "hospital staff",
+      "type": "practice"
+    },
+    {
+      "text": "When the transfer center calls, you must approve the transfer first before proceeding.",
+      "seg": 667,
+      "verbatim": "When they when they call you, you don't have to... Unless you have the. You have to approve first.",
+      "applies_to": "physicians receiving transfers",
+      "type": "procedure"
+    },
+    {
+      "text": "If you are busy with other admissions, ask the transfer center to call you back once a better option is available; they will page you back.",
+      "seg": 668,
+      "verbatim": "What you can do is you can tell them to call me back once get a better option",
+      "applies_to": "physicians receiving transfers",
+      "type": "practice"
     }
   ],
   "pearls": [
     {
-      "text": "When using an admission order set, ensure each item fits the provisional diagnosis and comorbidities; do not blindly accept defaults.",
-      "verbatim": "Looking at potential protocol issues when patients are admitted, especially when we're using a preset given by Cerner, going through and and ensuring each item that's being ordered fits with the provisional diagnosis and comorbidities of the patient.",
-      "type": "pitfall",
-      "t": 624.3,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-624",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 4,
-        "grade": "A",
-        "fired": {
-          "specific": [
-            "concept:order set"
-          ],
-          "actionable": [
-            "order"
-          ],
-          "harm": [
-            "blindly"
-          ],
-          "rarity": 8.48
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "TIA does not require IVF; ischemic stroke may require IVF without dextrose if the patient is volume depleted.",
-      "verbatim": "The difference between treatments is that TIA doesn't receive IVF. The baseline recommendation, usually, all baseline treatments for TIA include aspirin.",
-      "type": "practice",
-      "t": 724.8,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-724",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:ischemic stroke"
-          ],
-          "harm": [
-            "stroke"
-          ],
-          "rarity": 8.02
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Volume overload is the number one cause of poor outcomes in patients with cardiac and ESRD diagnoses; main treatment is to dialyze them.",
-      "verbatim": "Volume overload is also the number one cause of which can be an independent cause for poor outcomes with our patients with cardiac as well as ESRD diagnoses. So main treatment for volume overload in ESRD is to dialyze them.",
-      "type": "practice",
-      "t": 866.1,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-866",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:volume overload"
-          ],
-          "rarity": 7.3
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "For ESRD patients, longer and more frequent HD sessions (e.g., q4 rather than q3) and a sodium-restricted diet can help prevent volume and sodium overload.",
-      "verbatim": "More specific looks at how to dialyze patients to prevent volume overload and sodium overload over the course of the weekend is to have longer sessions and more frequent HD schedules during the week, so doing q four rather than q three, and then using or programming the dialyzing machine to allow less sodium to be returned into the patient's body, and then also including a sodium restricted diet.",
+      "text": "For TIA, baseline treatment is aspirin 81-325 mg daily; if ABCD2 score >4, add clopidogrel 300-600 mg loading dose then 75 mg daily.",
+      "verbatim": "all baseline treatments for TIA include aspirin. It's either two daily doses up to three twenty five daily. And if a patient has a higher ABCD score that is greater than four, then they'll receive dual therapy, including Plavix three hundred to six three hundred to six hundred as a loading dose and then moving to seventy five milligrams for a period of time.",
       "type": "dosing",
-      "t": 885.3,
+      "t": 733.4,
       "match": "exact",
       "episode": "fmis-august-mm",
       "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-885",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.46
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with TIA",
+      "numbers_unheard": [
+        "81"
+      ],
+      "pearl_id": "fmis-august-mm-733"
     },
     {
-      "text": "Document all treatments, especially IVF, in the H&P and progress notes under the specific problem being treated or in an FEN section.",
-      "verbatim": "Documenting all treatments, especially IVF, a drug that's being added to the patient in our HNPs and in our progress notes under either the specific problem that it's treating or in an FEN section.",
+      "text": "Ischemic strokes receive IVF without dextrose if the patient is volume depleted, which most patients tend to be.",
+      "verbatim": "Ischemic strokes, on the other hand, do receive IVF without dextrose specifically if a patient is volume depleted, which most patients tend to be.",
+      "type": "dosing",
+      "t": 765.9,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with ischemic stroke",
+      "pearl_id": "fmis-august-mm-765"
+    },
+    {
+      "text": "In ESRD patients on HD, cardiac morbidity and mortality risk is 25-40% higher on the first day after HD compared to any other day, due to volume overload and hyponatremia.",
+      "verbatim": "Twenty five to forty percent higher risk of cardiac MIs or A-fib exacerbations or acute volume overload that worsens CHF on the first day of HD compared to any other day.",
       "type": "concept",
+      "t": 812.0,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "ESRD patients on hemodialysis",
+      "pearl_id": "fmis-august-mm-812"
+    },
+    {
+      "text": "Volume overload in ESRD is primarily treated by dialysis; longer and more frequent HD sessions (e.g., q4 rather than q3) can help prevent it.",
+      "verbatim": "main treatment for volume overload in ESRD is to dialyze them. More specific looks at how to dialyze patients to prevent volume overload and sodium overload over the course of the weekend is to have longer sessions and more frequent HD schedules during the week, so doing q four rather than q three",
+      "type": "dosing",
+      "t": 879.0,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "ESRD patients on hemodialysis",
+      "pearl_id": "fmis-august-mm-879"
+    },
+    {
+      "text": "Always check the MAR when assuming care of a patient from the night team to identify running IV fluids and other medications that may not be documented in notes.",
+      "verbatim": "check the MAR every time that we are assuming care of a patient from the night team or we're coming on to FMIS onto a new month, making sure we know exactly what the patient's getting, what they're getting at, looking at RN meds, making sure we have fluids",
+      "type": "practice",
+      "t": 920.9,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "residents assuming care of a patient",
+      "pearl_id": "fmis-august-mm-920"
+    },
+    {
+      "text": "When consulting specialists, check the MAR to see if they changed any orders, such as when nephrology discontinues IVF.",
+      "verbatim": "when we're consulting specialists, so checking them are to make sure that any of our specialists changing things that we had ordered, like when nephro, DC, V, IVF have it on.",
+      "type": "practice",
+      "t": 943.6,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "all patients with specialist consults",
+      "pearl_id": "fmis-august-mm-943"
+    },
+    {
+      "text": "When using admission order sets, verify each order is appropriate for the patient's current diagnosis and comorbidities; do not assume all defaults are correct.",
+      "verbatim": "Checking and making sure each part of an order set is necessary based on what the patient may need.",
+      "type": "practice",
+      "t": 955.0,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "all patients",
+      "pearl_id": "fmis-august-mm-955"
+    },
+    {
+      "text": "Document all treatments, especially IVF, in the H&P and progress notes under the specific problem it is treating or in the FEN section.",
+      "verbatim": "documenting all treatments, especially IVF, a drug that's being added to the patient in our HNPs and in our progress notes under either the specific problem that it's treating or in an FEN section.",
+      "type": "practice",
       "t": 964.6,
       "match": "exact",
       "episode": "fmis-august-mm",
       "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-964",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Document"
-          ],
-          "rarity": 7.97
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "all patients",
+      "pearl_id": "fmis-august-mm-964"
     },
     {
-      "text": "When assuming care of a patient, always check the MAR to see if any IV fluids are running, as they may not be documented in the H&P or progress notes.",
-      "verbatim": "Whenever I take four patients to the hospital that first day, like, one of one of the things I look through is the MAR to see what meds they're on, and you will be shocked. It's not documented, but it's running.",
-      "type": "pitfall",
-      "t": 1164.0,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-1164",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "always"
-          ],
-          "rarity": 7.54
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Check all lines and their rates when seeing a patient in the morning, as fluids may be running at a rate not ordered.",
-      "verbatim": "When we check our patients in the morning, we should always check all the lines that are... To see, like, where... What's running and, like, what rate is it running? Because half the time, it's running at a rate that we didn't even order.",
-      "type": "exam_technique",
-      "t": 1244.7,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-1244",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "Check"
-          ],
-          "rarity": 6.69
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "One-third of patients with confirmed MI have no chest pain; dyspnea alone can be an anginal equivalent.",
-      "verbatim": "Of the one third of patients with confirmed MI had no chest pain. So really You know, dyspnea on exertion is kinda androgenic. Dyspnea alone can be simply a cause.",
+      "text": "Atypical presentations of ACS, such as dyspnea without chest pain, are common and can lead to delays in care; maintain a high index of suspicion.",
+      "verbatim": "the biggest thing is really the atypical presentation of this, and we'll go into, like, we'll go into that in a little bit of detail.",
       "type": "red_flag",
+      "t": 1637.5,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with cardiac risk factors",
+      "pearl_id": "fmis-august-mm-1637"
+    },
+    {
+      "text": "Diagnosing CHF is a clinical assessment; an echo is confirmatory but should not delay initial treatment.",
+      "verbatim": "diagnosing CHF is really, like, a clinical thing. And so for an echo is something that was done in this case to diagnose it and to treat it, which may not be appropriate.",
+      "type": "judgment",
+      "t": 1645.8,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with suspected CHF",
+      "pearl_id": "fmis-august-mm-1645"
+    },
+    {
+      "text": "To diagnose CHF, you need at least two major criteria: pulmonary edema, cardiomegaly, jugular reflex, PAN D, and third heart sound.",
+      "verbatim": "You need at least two major criteria. So pulmonary edema, which actually has that as well. Cardioomegaly, jugular reflex.",
+      "type": "dx_criteria",
+      "t": 1682.6,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "patients with suspected heart failure",
+      "pearl_id": "fmis-august-mm-1682"
+    },
+    {
+      "text": "One third of patients with confirmed MI have no chest pain; dyspnea alone can be a presentation.",
+      "verbatim": "Of the one third of patients with confirmed MI had no chest pain.",
+      "type": "concept",
       "t": 1758.7,
       "match": "exact",
       "episode": "fmis-august-mm",
       "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-1758",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:anginal equivalent"
-          ],
-          "rarity": 7.34
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with suspected MI",
+      "pearl_id": "fmis-august-mm-1758"
     },
     {
-      "text": "In patients with acute heart failure, urgent evaluation including IV therapy and possible same-day cardiac catheterization is recommended.",
-      "verbatim": "Patients with acute heart failure do require urgent evaluation. So that means even getting IV therapy, which in the allow that to, like recommendations.",
+      "text": "In the ER, any patient over 50 with shortness of breath should get an EKG because of concern for MI.",
+      "verbatim": "In the ER, anyone coming in with shortness of breath who's 50 years old, like, they're... That's why they get the EKG on almost everybody.",
       "type": "practice",
-      "t": 1794.7,
+      "t": 1776.7,
       "match": "exact",
       "episode": "fmis-august-mm",
       "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-1794",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:cardiac catheterizatio"
-          ],
-          "harm": [
-            "urgent"
-          ],
-          "rarity": 7.04
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients over 50 with dyspnea in the ER",
+      "pearl_id": "fmis-august-mm-1776"
     },
     {
-      "text": "If suspicion is high enough to order a troponin in the clinic, the patient should be sent to the ER for evaluation rather than having the lab drawn in clinic.",
+      "text": "If you have high enough suspicion to order a troponin in clinic, you probably need to send the patient to the ER for that test.",
       "verbatim": "If you have a high enough suspicion to order troponin, you probably need to get that done at the ER.",
       "type": "judgment",
       "t": 1812.6,
@@ -39774,213 +39761,50 @@
       "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-1812",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:troponin"
-          ],
-          "actionable": [
-            "order"
-          ],
-          "rarity": 7.23
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "outpatient clinic",
+      "pearl_id": "fmis-august-mm-1812"
     },
     {
-      "text": "If you order a troponin, complete your note explaining the result to avoid confusion for the night team.",
-      "verbatim": "Not to be judicious if you do order a troponin. Like, finish your note, please, by next... So the night call person's not like, hey. This person's got troponin elevated for no so that you, like, explain it to them.",
-      "type": "pitfall",
-      "t": 1993.7,
+      "text": "Shortness of breath should be nuanced like pain; don't forget it can be an anginal equivalent.",
+      "verbatim": "my takeaway was shortness of breath, nuance it, view it like just pain. Like, don't forget that.",
+      "type": "concept",
+      "t": 2063.0,
       "match": "exact",
       "episode": "fmis-august-mm",
       "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-1993",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:troponin"
-          ],
-          "actionable": [
-            "order"
-          ],
-          "rarity": 6.95
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "any patient with dyspnea",
+      "pearl_id": "fmis-august-mm-2063"
     },
     {
-      "text": "Consider atypical MI in older women with worsening GERD symptoms despite therapy.",
-      "verbatim": "older white ladies who've been on therapy for GERD, and it's worsening, acutely worsening. Yeah. They've been on it. That's another suspicion for.",
-      "type": "red_flag",
-      "t": 2076.8,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-2076",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:therapy"
-          ],
-          "actionable": [
-            "Consider"
-          ],
-          "rarity": 6.54
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "The most important cause of new-onset heart failure is ischemic cardiac disease; always consider underlying CAD.",
+      "text": "The most important cause of new heart failure is ischemic cardiac disease; maintain high suspicion even without chest pain.",
       "verbatim": "the most important cause of heart failure is ischemic cardiac disease, and so having a higher suspicion of that.",
-      "type": "judgment",
+      "type": "concept",
       "t": 2123.1,
       "match": "exact",
       "episode": "fmis-august-mm",
       "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-2123",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:heart failure"
-          ],
-          "actionable": [
-            "always"
-          ],
-          "rarity": 6.68
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with new-onset heart failure",
+      "pearl_id": "fmis-august-mm-2123"
     },
     {
-      "text": "Up to one-third of myocardial infarctions present without chest pain; maintain a high index of suspicion in atypical presentations.",
-      "verbatim": "But up to a third of them that have MIs do not present.",
-      "type": "red_flag",
-      "t": 2132.3,
-      "match": "exact",
-      "episode": "fmis-august-mm",
-      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-2132",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:myocardial infarction"
-          ],
-          "harm": [
-            "infarctions"
-          ],
-          "rarity": 7.43
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Severe neutropenia is defined as an absolute neutrophil count (ANC) less than 500 cells/μL.",
+      "text": "Severe neutropenia is defined as an ANC less than 500; this patient had an ANC of 200.",
       "verbatim": "ANC was point two, so that's 200, and severe neutropenia is anything that's less than 500.",
-      "type": "dx_criteria",
+      "type": "concept",
       "t": 2313.6,
       "match": "exact",
       "episode": "fmis-august-mm",
       "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-2313",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "threshold:less than 5"
-          ],
-          "rarity": 8.02
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with neutropenia",
+      "pearl_id": "fmis-august-mm-2313"
     },
     {
-      "text": "A delay of greater than 4 hours from antibiotic order to administration is a significant quality gap.",
-      "verbatim": "the order for IV antibiotics was placed almost two hours later, right before 06:30. Then the antibiotics were given later at twenty fifty eight. So this was a delay in greater than four hours from IV antibiotic administration.",
-      "type": "pitfall",
-      "t": 2370.1,
-      "match": "fuzzy",
-      "episode": "fmis-august-mm",
-      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-2370",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:4 hours",
-            "threshold:greater than 4"
-          ],
-          "actionable": [
-            "order"
-          ],
-          "rarity": 6.19
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Use the MASC risk score on MD Calc to risk-stratify patients with febrile neutropenia.",
+      "text": "Risk stratification tools for febrile neutropenia (e.g., MASC index) are available on MD Calc to help guide management.",
       "verbatim": "This goes through some risk calculations for febrile neutropenia. They're all on MD calc, MASC, and the others you can plug in again and then these scores to kind of restratify them.",
       "type": "practice",
       "t": 2540.7,
@@ -39989,29 +39813,11 @@
       "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-2540",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:febrile neutropenia"
-          ],
-          "actionable": [
-            "Use"
-          ],
-          "rarity": 8.61
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with febrile neutropenia",
+      "pearl_id": "fmis-august-mm-2540"
     },
     {
-      "text": "In febrile neutropenia, antibiotics should be administered within 30 minutes to reduce mortality.",
+      "text": "In febrile neutropenia, antibiotic administration within 30 minutes lowers mortality compared to longer delays.",
       "verbatim": "timing to antibiotics less than thirty minutes to lower mortality than those greater than thirty minutes.",
       "type": "practice",
       "t": 2561.5,
@@ -40020,85 +39826,73 @@
       "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-2561",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:30 minutes"
-          ],
-          "actionable": [
-            "reduce"
-          ],
-          "rarity": 7.08
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "febrile neutropenic patients",
+      "pearl_id": "fmis-august-mm-2561"
     },
     {
-      "text": "Direct admissions to the floor often result in delayed notification of the treating team; proactively check for new patients.",
-      "verbatim": "I think it is a near miss and something that this is a systemic problem of direct admissions coming to the floor and then treating teams not being notified.",
+      "text": "Direct admissions to the floor often result in delayed notification of the treating team; this is a systemic safety problem.",
+      "verbatim": "direct admissions coming to the floor and then treating teams not being notified.",
       "type": "pitfall",
-      "t": 2588.9,
+      "t": 2594.5,
       "match": "exact",
       "episode": "fmis-august-mm",
       "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-2588",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:direct admission"
-          ],
-          "actionable": [
-            "check"
-          ],
-          "rarity": 8.25
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "hospitalized patients admitted directly",
+      "pearl_id": "fmis-august-mm-2594"
     },
     {
-      "text": "File a variance for direct admission delays to drive systemic change; it is the mechanism for quality improvement.",
-      "verbatim": "we got to file a variance to make any type of systemic change.",
-      "type": "judgment",
+      "text": "Filing variances leads to review at quality improvement meetings and can change hospital policy.",
+      "verbatim": "they do review those variances at the quality improvement meetings with Doctor. Boris. So it does make a difference.",
+      "type": "practice",
+      "t": 2742.5,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "any clinical setting",
+      "pearl_id": "fmis-august-mm-2742"
+    },
+    {
+      "text": "File a variance for any issue that needs systemic change; verbal reports alone won't lead to policy changes, documentation is required.",
+      "verbatim": "we got to file a variance to make any type of systemic change. Like, we can tell people all we want, but without it being documented.",
+      "type": "practice",
       "t": 2756.6,
       "match": "exact",
       "episode": "fmis-august-mm",
       "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "fmis-august-mm-2756",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:direct admission"
-          ],
-          "rarity": 7.79
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "hospital staff",
+      "pearl_id": "fmis-august-mm-2756"
+    },
+    {
+      "text": "When the transfer center calls, you must approve the transfer first before proceeding.",
+      "verbatim": "When they when they call you, you don't have to... Unless you have the. You have to approve first.",
+      "type": "procedure",
+      "t": 2796.9,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "physicians receiving transfers",
+      "pearl_id": "fmis-august-mm-2796"
+    },
+    {
+      "text": "If you are busy with other admissions, ask the transfer center to call you back once a better option is available; they will page you back.",
+      "verbatim": "What you can do is you can tell them to call me back once get a better option",
+      "type": "practice",
+      "t": 2806.3,
+      "match": "exact",
+      "episode": "fmis-august-mm",
+      "speaker": "Dr. Youmans & Dr. Wheeler & Dr. Jones",
+      "model": "deepseek/deepseek-v4-flash",
+      "prompt_version": "v1",
+      "applies_to": "physicians receiving transfers",
+      "pearl_id": "fmis-august-mm-2806"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -58250,5 +58044,6 @@
       "name": "Dr. Jones"
     }
   ],
-  "pearls_fingerprint": "fddf1e661bf24470"
+  "pearls_fingerprint": "aa0bd1226823c258",
+  "enrich_version": "v2"
 }

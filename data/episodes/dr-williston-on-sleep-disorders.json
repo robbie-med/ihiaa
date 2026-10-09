@@ -32816,22 +32816,36 @@
   ],
   "correct_model": "deepseek/deepseek-v4-flash",
   "prompt_version": "v1",
-  "abstract": "Dr. Williston provides a practical overview of sleep disorders for family medicine, separating them into dyssomnias (insomnia, sleep apnea, narcolepsy) and parasomnias (sleepwalking, night terrors, REM behavior disorder). Cognitive behavioral therapy for insomnia (CBT-I) is emphasized as the first-line gold standard for chronic insomnia, though access remains a major barrier. Pharmacologic options, including Z-drugs, trazodone, and low-dose mirtazapine, are discussed with caveats about their risks and limitations. Sleep apnea diagnosis, CPAP therapy, and surgical alternatives like the Inspire device are reviewed, along with practical sleep hygiene recommendations.",
+  "abstract": "Dr. Williston covers parasomnias (sleepwalking, sleep terrors, nightmare disorder, REM sleep behavior disorder) and their management, emphasizing safety and reassurance. He then reviews evidence-based treatments for chronic insomnia (CBT-I as first-line), delayed sleep phase syndrome, restless legs syndrome, and obstructive sleep apnea. He highlights Choosing Wisely recommendations to avoid unnecessary sleep studies and hypnotics, and provides practical sleep hygiene advice including the 30-minute rule, differentiating causes of insomnia, and managing sleep after disruptions.",
   "key_points": [
-    "Distinguish acute insomnia (<1 month, often stressor-related) from chronic insomnia (≥1 month) to guide treatment.",
-    "CBT-I is first-line gold standard for chronic insomnia (A evidence) but difficult to access; primary care delivery is possible (B evidence).",
-    "Sedatives (benzodiazepines and Z-drugs) induce unconsciousness, not restorative sleep; avoid as primary therapy for chronic insomnia.",
-    "Z-drugs like zolpidem can cause complex sleep-related behaviors (e.g., eating, driving, burns) and long-term memory loss.",
-    "Low-dose mirtazapine (≤7.5-15 mg) improves sleep; higher doses lose hypnotic effect but retain appetite stimulation.",
-    "Trazodone use for insomnia requires warning male patients about priapism.",
-    "Obstructive sleep apnea leads to hypertension, atrial fibrillation, morning headaches, and decreased libido; treatment includes CPAP, weight loss, alcohol avoidance, and ENT referral.",
-    "Home sleep studies are an option; if patients struggle to sleep, Ambien may be prescribed to facilitate the study.",
-    "The Inspire device (hypoglossal nerve stimulator) is an effective alternative for patients who cannot tolerate CPAP.",
-    "Restless leg syndrome: nonpharmacologic interventions first line, then alpha-2-delta ligands, then dopaminergic agents.",
-    "Nightmare disorder (REM) responds to imagery rehearsal therapy; non-REM parasomnias (sleepwalking, night terrors) require a safe environment and parental reassurance.",
-    "Avoid sleep studies for chronic insomnia unless other sleep disorder symptoms are present (Choosing Wisely)."
+    "Sleepwalking and sleep terrors occur in non-REM sleep; patients do not remember them.",
+    "Treatment for sleep terrors is parental reassurance; for sleepwalking, ensure safe environment.",
+    "REM sleep behavior disorder is managed with safe environment, melatonin, and clonazepam if severe.",
+    "Cognitive behavioral therapy for insomnia (CBT-I) is first-line for chronic insomnia (A evidence) and can be delivered in primary care (B evidence).",
+    "Delayed sleep phase syndrome is treated with sleep-wake scheduling, melatonin, and bright light therapy (B evidence).",
+    "Restless legs syndrome: nonpharmacologic interventions first, then alpha-2-delta ligands, then dopaminergic agents.",
+    "CPAP plus weight loss is the most effective treatment for obstructive sleep apnea.",
+    "Avoid sleep studies for chronic insomnia unless other sleep disorder symptoms are present; avoid for restless legs unless suspect other condition.",
+    "Avoid hypnotics as primary therapy for chronic insomnia; offer CBT-I instead.",
+    "If not asleep after 30 minutes, get out of bed to prevent associating bed with wakefulness."
   ],
   "topics_raw": [
+    {
+      "label": "Sleepwalking",
+      "kind": "condition"
+    },
+    {
+      "label": "Sleep Terrors",
+      "kind": "condition"
+    },
+    {
+      "label": "Nightmare Disorder",
+      "kind": "condition"
+    },
+    {
+      "label": "REM Sleep Behavior Disorder",
+      "kind": "condition"
+    },
     {
       "label": "Chronic Insomnia",
       "kind": "condition"
@@ -32841,421 +32855,232 @@
       "kind": "procedure"
     },
     {
-      "label": "Obstructive Sleep Apnea",
-      "kind": "condition"
-    },
-    {
-      "label": "Continuous Positive Airway Pressure",
-      "kind": "procedure"
-    },
-    {
-      "label": "Zolpidem",
-      "kind": "drug"
-    },
-    {
-      "label": "Trazodone",
-      "kind": "drug"
-    },
-    {
-      "label": "Mirtazapine",
-      "kind": "drug"
-    },
-    {
-      "label": "Narcolepsy",
-      "kind": "condition"
-    },
-    {
-      "label": "Parasomnias",
-      "kind": "condition"
-    },
-    {
-      "label": "Restless Leg Syndrome",
-      "kind": "condition"
-    },
-    {
-      "label": "Inspire Device",
-      "kind": "procedure"
-    },
-    {
-      "label": "Sleep Hygiene",
-      "kind": "concept"
-    },
-    {
-      "label": "Melatonin",
-      "kind": "drug"
-    },
-    {
       "label": "Delayed Sleep Phase Syndrome",
       "kind": "condition"
     },
     {
-      "label": "Nightmare Disorder",
+      "label": "Melatonin",
+      "kind": "drug"
+    },
+    {
+      "label": "Bright Light Therapy",
+      "kind": "procedure"
+    },
+    {
+      "label": "Restless Legs Syndrome",
       "kind": "condition"
+    },
+    {
+      "label": "Alpha-2-delta Ligands",
+      "kind": "drug"
+    },
+    {
+      "label": "Dopaminergic Agents",
+      "kind": "drug"
+    },
+    {
+      "label": "Obstructive Sleep Apnea",
+      "kind": "condition"
+    },
+    {
+      "label": "CPAP",
+      "kind": "procedure"
+    },
+    {
+      "label": "Sleep Study",
+      "kind": "procedure"
+    },
+    {
+      "label": "Hypnotics",
+      "kind": "drug"
     },
     {
       "label": "Sleep Hygiene",
       "kind": "concept"
     },
     {
-      "label": "Insomnia",
-      "kind": "condition"
-    },
-    {
-      "label": "Melatonin",
-      "kind": "drug"
-    },
-    {
-      "label": "Bipolar Disorder",
-      "kind": "condition"
-    },
-    {
-      "label": "Sleep Tracking Devices",
-      "kind": "procedure"
-    },
-    {
-      "label": "Shift Work Sleep Disorder",
-      "kind": "condition"
-    },
-    {
-      "label": "Drowsy Driving",
+      "label": "Sleep Stories",
       "kind": "concept"
     },
     {
-      "label": "Cognitive Behavioral Therapy for Insomnia",
-      "kind": "procedure"
-    },
-    {
-      "label": "Hypomania",
-      "kind": "condition"
-    },
-    {
-      "label": "Circadian Rhythm",
+      "label": "Driving Drowsy",
       "kind": "concept"
     }
   ],
   "pearls_raw": [
     {
-      "text": "CBT-I is the first-line gold standard for chronic insomnia (A evidence); it can be delivered in primary care (B evidence), though access remains limited.",
-      "verbatim": "What is the first line gold standard for chronic insomnia? I just Cognitive behavioral therapy for insomnia.",
-      "type": "guideline"
+      "text": "For sleepwalking, ensure a safe environment where the patient cannot harm themselves while sleepwalking.",
+      "seg": 374,
+      "verbatim": "Sleepwalking, you just wanna make sure they have a safe environment where they can't harm themselves while they're sleepwalking.",
+      "applies_to": "patients with sleepwalking",
+      "type": "practice"
     },
     {
-      "text": "Sedatives like benzodiazepines and Z-drugs induce unconsciousness, not restorative sleep — similar to alcohol — and are not indicated for chronic insomnia.",
-      "verbatim": "all the sedatives, the benzos and the nonbenzos, they make you unconscious. They do not put you to sleep.",
-      "type": "pitfall"
+      "text": "For REM sleep behavior disorder, provide a safe sleep environment, try melatonin, and if severe, consider clonazepam.",
+      "seg": 389,
+      "verbatim": "And that is same as sleepwalking. It's really just a safe sleep environment. You could try melatonin. If it was really bad, you could try, like, clonazepam.",
+      "applies_to": "patients with REM sleep behavior disorder",
+      "type": "treatment"
     },
     {
-      "text": "Zolpidem and other Z-drugs can cause serious complex sleep-related behaviors, including sleep-eating, sleep-driving, and burns; warn patients and have someone observe the first doses.",
-      "verbatim": "I had a patient who took an Ambien and went to bed and woke up because she straight hot water on in the bathtub and put her foot in the bathtub and gave herself second degree burns.",
-      "type": "red_flag"
+      "text": "Cognitive behavioral therapy for insomnia (CBT-I) is first-line treatment for chronic insomnia with an A evidence rating.",
+      "seg": 400,
+      "verbatim": "cognitive behavior therapy for insomnia as first line treatment for chronic insomnia, and that's an a evidence rating.",
+      "applies_to": "chronic insomnia",
+      "type": "practice"
     },
     {
-      "text": "Z-drugs can lead to long-term memory loss, possibly because they prevent restorative sleep needed for memory consolidation.",
-      "verbatim": "it can lead to long term memory loss. And one hypothesis is that it's not actually a side effect of the medicine. It's the fact that it's not getting you the good restorative sleep that's causing the memory loss.",
-      "type": "pitfall"
+      "text": "CBT-I can be delivered in a primary care setting (B evidence rating).",
+      "seg": 402,
+      "verbatim": "Cognitive behavior therapy for insomnia can be done in a primary care setting. That's a b rating.",
+      "applies_to": "primary care setting",
+      "type": "practice"
     },
     {
-      "text": "Low-dose mirtazapine (≤7.5-15 mg) improves sleep; higher doses lose the hypnotic effect. The appetite-stimulating effect persists at low doses — useful for patients needing weight gain.",
-      "verbatim": "Lower doses work better for sleep. Higher doses don't work as well for sleep.",
-      "type": "dosing"
+      "text": "For delayed sleep phase syndrome, use a sleep-wake schedule, melatonin, or bright light therapy (B evidence).",
+      "seg": 406,
+      "verbatim": "A sleep wake schedule and melatonin or a bright light therapy regimen is recommended for treatment of delayed sleep phase syndrome. That's a B rating.",
+      "applies_to": "delayed sleep phase syndrome",
+      "type": "treatment"
     },
     {
-      "text": "Always warn male patients about priapism when prescribing trazodone for insomnia.",
-      "verbatim": "What's a very unfortunate side effect of trazodone? Priapism. So I always warn my male patients about that.",
-      "type": "red_flag"
+      "text": "For restless legs syndrome, start with nonpharmacologic interventions, then alpha-2-delta ligands, then dopaminergic agents.",
+      "seg": 409,
+      "verbatim": "Nonpharmacologic interventions are first line for restless leg syndrome, then the alpha two delta ligands, and then dopaminergic agents.",
+      "applies_to": "restless legs syndrome",
+      "type": "treatment"
     },
     {
-      "text": "Obstructive sleep apnea increases risk of hypertension, atrial fibrillation, morning headaches, and decreased libido — probe for these in patients with snoring and daytime sleepiness.",
-      "verbatim": "it increases your risk of blood pressure. ... Atrial fibrillation, high risk. ... Polycythemia is one. ... Morning headaches. ... Decreased libido.",
-      "type": "red_flag"
-    },
-    {
-      "text": "CPAP is the most effective treatment for OSA, recommended in conjunction with weight loss and alcohol avoidance. For CPAP-intolerant patients, refer to ENT and consider the Inspire hypoglossal nerve stimulator.",
+      "text": "CPAP is the most effective treatment for obstructive sleep apnea and should be used with weight loss.",
+      "seg": 415,
       "verbatim": "CPAP is the most effective treatment for obstructive sleep apnea, and it's recommended in conjunction with weight loss.",
-      "type": "guideline"
+      "applies_to": "obstructive sleep apnea",
+      "type": "treatment"
     },
     {
-      "text": "Sleep terrors occur in non-REM sleep; children do not remember them. Treatment is reassurance for parents and ensuring a safe sleep environment — no harm to the child.",
-      "verbatim": "The treatment is really reassuring the parents harming the kids. It can be very disruptive to the whole family.",
-      "type": "judgment"
-    },
-    {
-      "text": "For patients with chronic insomnia who fail nonpharmacologic measures, limit hypnotic use to no more than twice weekly to reduce dependence risk.",
-      "verbatim": "I will give them hypnotics and tell them don't take it any more often than twice a week.",
-      "type": "judgment"
-    },
-    {
-      "text": "Avoid sleep studies in patients with chronic insomnia unless there are symptoms of an actual sleep disorder (Choosing Wisely).",
+      "text": "Avoid sleep studies in patients with chronic insomnia unless they have symptoms of an actual sleep disorder.",
+      "seg": 421,
       "verbatim": "avoid sleep studies in patients with chronic insomnia unless they have actually symptoms of an actual sleep disorder.",
-      "type": "guideline"
+      "applies_to": "chronic insomnia",
+      "type": "practice"
     },
     {
-      "text": "If you lie in bed for 30 minutes and are not asleep, get out of bed to avoid conditioning the bed as a place for wakefulness.",
-      "verbatim": "if you lay in bed for thirty minutes and you're not asleep, get out of your bed.",
-      "type": "behavioral_intervention"
+      "text": "Avoid using hypnotics as primary therapy for chronic insomnia; instead offer cognitive behavioral therapy.",
+      "seg": 425,
+      "verbatim": "avoid use of hypnotics, so that's the these, primary therapy for chronic insomnia. Instead, offer cognitive behavioral therapy.",
+      "applies_to": "chronic insomnia",
+      "type": "practice"
     },
     {
-      "text": "Driving drowsy is as dangerous as driving drunk; if nodding off, do not drive.",
-      "verbatim": "driving drowsy is just as dangerous as driving drunk.",
-      "type": "red_flag"
+      "text": "If you lie in bed for 30 minutes and are not asleep, get out of bed; do not stay there or read, to avoid associating bed with wakefulness.",
+      "seg": 481,
+      "verbatim": "if you lay in bed for thirty minutes and you're not asleep, get out of your bed. Don't stay there. Don't read a book. Don't do anything in your bed. Get out of your bed.",
+      "applies_to": "general insomnia",
+      "type": "practice"
     },
     {
-      "text": "After a disrupted night, go to bed early to repay sleep debt but still wake up at the same time the next morning.",
-      "verbatim": "if you really have a sleep deficit, if you've really been awake for twenty four hours, then go to bed early the next day. Don't take a nap in the middle of the day. Go to bed early to make up that sleep deficit, and then get up at the same time the following morning.",
-      "type": "guideline"
-    },
-    {
-      "text": "Differentiate whether the patient is not sleepy (circadian issue) or has racing thoughts (anxiety) to guide treatment.",
-      "verbatim": "Differentiating, are you really just not sleepy? So we need to work on your sleep cycle, or do you have racing thoughts? And the racing thoughts are what keep you awake.",
-      "type": "dx_criteria"
-    },
-    {
-      "text": "For patients with racing thoughts, recommend sleep stories that are engaging enough to prevent rumination but not so engaging to keep them awake.",
+      "text": "For patients with racing thoughts at bedtime, recommend sleep stories: apps that read a story engaging enough to stop racing thoughts but not so engaging to keep you awake.",
+      "seg": 543,
       "verbatim": "There's something called sleep stories, and there's apps that will read you a sleep story. And it's a story that's engaging enough keep you from having racing thoughts, but not so engaging to keep you awake.",
-      "type": "behavioral_intervention"
+      "applies_to": "patients with racing thoughts at bedtime",
+      "type": "concept"
     },
     {
-      "text": "In patients with bipolar disorder, sleep disruption from hospitalization may trigger hypomania; treating the bipolar disorder is the primary intervention.",
-      "verbatim": "treating her bipolar is probably the answer.",
-      "type": "judgment"
+      "text": "After a night of disrupted sleep (e.g., call), go to bed at the same time the next day and get up at the same time the following morning to maintain schedule.",
+      "seg": 590,
+      "verbatim": "the next day, you go to bed same time, and then you get up at the same time the next morning.",
+      "applies_to": "after sleep disruption (e.g., call)",
+      "type": "practice"
     },
     {
-      "text": "Morning sunlight exposure helps regulate the sleep-wake cycle by influencing cortisol and melatonin levels.",
-      "verbatim": "right as soon as you get up, get some sunlight, be active, let your body know. Because our sleep cycle is impacted. Like, it starts as soon as we wake up.",
-      "type": "guideline"
+      "text": "If you are nodding off while driving, do not drive; call an Uber, get a friend, or take a nap at the hospital before driving home.",
+      "seg": 614,
+      "verbatim": "if you're nodding off, don't drive. Call an Uber. Get a friend drive you. Stay at the hospital and take a nap before you drive home.",
+      "applies_to": "anyone drowsy",
+      "type": "red_flag"
     }
   ],
   "pearls": [
     {
-      "text": "CBT-I is the first-line gold standard for chronic insomnia (A evidence); it can be delivered in primary care (B evidence), though access remains limited.",
-      "verbatim": "What is the first line gold standard for chronic insomnia? I just Cognitive behavioral therapy for insomnia.",
+      "text": "For sleepwalking, ensure a safe environment where the patient cannot harm themselves while sleepwalking.",
+      "verbatim": "Sleepwalking, you just wanna make sure they have a safe environment where they can't harm themselves while they're sleepwalking.",
       "type": "practice",
-      "t": 161.9,
+      "t": 1401.3,
       "match": "exact",
       "episode": "dr-williston-on-sleep-disorders",
       "speaker": "Dr. Williston",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-161",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:chronic insomnia"
-          ],
-          "rarity": 7.32
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with sleepwalking",
+      "pearl_id": "dr-williston-on-sleep-disorders-1401"
     },
     {
-      "text": "Sedatives like benzodiazepines and Z-drugs induce unconsciousness, not restorative sleep, similar to alcohol, and are not indicated for chronic insomnia.",
-      "verbatim": "all the sedatives, the benzos and the nonbenzos, they make you unconscious. They do not put you to sleep.",
-      "type": "pitfall",
-      "t": 580.5,
+      "text": "For REM sleep behavior disorder, provide a safe sleep environment, try melatonin, and if severe, consider clonazepam.",
+      "verbatim": "And that is same as sleepwalking. It's really just a safe sleep environment. You could try melatonin. If it was really bad, you could try, like, clonazepam.",
+      "type": "practice",
+      "t": 1443.2,
       "match": "exact",
       "episode": "dr-williston-on-sleep-disorders",
       "speaker": "Dr. Williston",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-580",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:chronic insomnia"
-          ],
-          "rarity": 8.38
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with REM sleep behavior disorder",
+      "pearl_id": "dr-williston-on-sleep-disorders-1443"
     },
     {
-      "text": "Zolpidem and other Z-drugs can cause serious complex sleep-related behaviors, including sleep-eating, sleep-driving, and burns; warn patients and have someone observe the first doses.",
-      "verbatim": "I had a patient who took an Ambien and went to bed and woke up because she straight hot water on in the bathtub and put her foot in the bathtub and gave herself second degree burns.",
-      "type": "red_flag",
-      "t": 633.2,
+      "text": "Cognitive behavioral therapy for insomnia (CBT-I) is first-line treatment for chronic insomnia with an A evidence rating.",
+      "verbatim": "cognitive behavior therapy for insomnia as first line treatment for chronic insomnia, and that's an a evidence rating.",
+      "type": "practice",
+      "t": 1479.3,
       "match": "exact",
       "episode": "dr-williston-on-sleep-disorders",
       "speaker": "Dr. Williston",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-633",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:zolpidem"
-          ],
-          "rarity": 8.85
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "chronic insomnia",
+      "pearl_id": "dr-williston-on-sleep-disorders-1479"
     },
     {
-      "text": "Z-drugs can lead to long-term memory loss, possibly because they prevent restorative sleep needed for memory consolidation.",
-      "verbatim": "it can lead to long term memory loss. And one hypothesis is that it's not actually a side effect of the medicine. It's the fact that it's not getting you the good restorative sleep that's causing the memory loss.",
-      "type": "pitfall",
-      "t": 724.9,
+      "text": "CBT-I can be delivered in a primary care setting (B evidence rating).",
+      "verbatim": "Cognitive behavior therapy for insomnia can be done in a primary care setting. That's a b rating.",
+      "type": "practice",
+      "t": 1487.7,
       "match": "fuzzy",
       "episode": "dr-williston-on-sleep-disorders",
       "speaker": "Dr. Williston",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-724",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.35
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "primary care setting",
+      "pearl_id": "dr-williston-on-sleep-disorders-1487"
     },
     {
-      "text": "Always warn male patients about priapism when prescribing trazodone for insomnia.",
-      "verbatim": "What's a very unfortunate side effect of trazodone? Priapism. So I always warn my male patients about that.",
-      "type": "red_flag",
-      "t": 807.9,
+      "text": "For delayed sleep phase syndrome, use a sleep-wake schedule, melatonin, or bright light therapy (B evidence).",
+      "verbatim": "A sleep wake schedule and melatonin or a bright light therapy regimen is recommended for treatment of delayed sleep phase syndrome. That's a B rating.",
+      "type": "practice",
+      "t": 1503.5,
       "match": "exact",
       "episode": "dr-williston-on-sleep-disorders",
       "speaker": "Dr. Williston",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-807",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:trazodone"
-          ],
-          "actionable": [
-            "Always"
-          ],
-          "rarity": 7.09
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "delayed sleep phase syndrome",
+      "pearl_id": "dr-williston-on-sleep-disorders-1503"
     },
     {
-      "text": "Low-dose mirtazapine (≤7.5-15 mg) improves sleep; higher doses lose the hypnotic effect. The appetite-stimulating effect persists at low doses, useful for patients needing weight gain.",
-      "verbatim": "Lower doses work better for sleep. Higher doses don't work as well for sleep.",
-      "type": "dosing",
-      "t": 845.6,
+      "text": "For restless legs syndrome, start with nonpharmacologic interventions, then alpha-2-delta ligands, then dopaminergic agents.",
+      "verbatim": "Nonpharmacologic interventions are first line for restless leg syndrome, then the alpha two delta ligands, and then dopaminergic agents.",
+      "type": "practice",
+      "t": 1514.2,
       "match": "exact",
       "episode": "dr-williston-on-sleep-disorders",
       "speaker": "Dr. Williston",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "numbers_unheard": [
-        "7.5",
-        "15"
-      ],
-      "pearl_id": "dr-williston-on-sleep-disorders-845",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "dose:15 mg"
-          ],
-          "rarity": 7.62
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "restless legs syndrome",
+      "pearl_id": "dr-williston-on-sleep-disorders-1514"
     },
     {
-      "text": "Obstructive sleep apnea increases risk of hypertension, atrial fibrillation, morning headaches, and decreased libido, probe for these in patients with snoring and daytime sleepiness.",
-      "verbatim": "it increases your risk of blood pressure. ... Atrial fibrillation, high risk. ... Polycythemia is one. ... Morning headaches. ... Decreased libido.",
-      "type": "red_flag",
-      "t": 905.7,
-      "match": "fuzzy",
-      "episode": "dr-williston-on-sleep-disorders",
-      "speaker": "Dr. Williston",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-905",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:obstructive sleep apne"
-          ],
-          "rarity": 7.12
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Sleep terrors occur in non-REM sleep; children do not remember them. Treatment is reassurance for parents and ensuring a safe sleep environment, no harm to the child.",
-      "verbatim": "The treatment is really reassuring the parents harming the kids. It can be very disruptive to the whole family.",
-      "type": "judgment",
-      "t": 1389.4,
-      "match": "exact",
-      "episode": "dr-williston-on-sleep-disorders",
-      "speaker": "Dr. Williston",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-1389",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "actionable": [
-            "do not"
-          ],
-          "rarity": 8.38
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "CPAP is the most effective treatment for OSA, recommended in conjunction with weight loss and alcohol avoidance. For CPAP-intolerant patients, refer to ENT and consider the Inspire hypoglossal nerve stimulator.",
+      "text": "CPAP is the most effective treatment for obstructive sleep apnea and should be used with weight loss.",
       "verbatim": "CPAP is the most effective treatment for obstructive sleep apnea, and it's recommended in conjunction with weight loss.",
       "type": "practice",
       "t": 1530.2,
@@ -33264,29 +33089,11 @@
       "speaker": "Dr. Williston",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-1530",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:weight loss"
-          ],
-          "actionable": [
-            "refer"
-          ],
-          "rarity": 8.85
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "obstructive sleep apnea",
+      "pearl_id": "dr-williston-on-sleep-disorders-1530"
     },
     {
-      "text": "Avoid sleep studies in patients with chronic insomnia unless there are symptoms of an actual sleep disorder (Choosing Wisely).",
+      "text": "Avoid sleep studies in patients with chronic insomnia unless they have symptoms of an actual sleep disorder.",
       "verbatim": "avoid sleep studies in patients with chronic insomnia unless they have actually symptoms of an actual sleep disorder.",
       "type": "practice",
       "t": 1544.3,
@@ -33295,61 +33102,25 @@
       "speaker": "Dr. Williston",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-1544",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "concept:chronic insomnia"
-          ],
-          "actionable": [
-            "Avoid"
-          ],
-          "rarity": 7.3
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "chronic insomnia",
+      "pearl_id": "dr-williston-on-sleep-disorders-1544"
     },
     {
-      "text": "For patients with chronic insomnia who fail nonpharmacologic measures, limit hypnotic use to no more than twice weekly to reduce dependence risk.",
-      "verbatim": "I will give them hypnotics and tell them don't take it any more often than twice a week.",
-      "type": "judgment",
-      "t": 1665.3,
+      "text": "Avoid using hypnotics as primary therapy for chronic insomnia; instead offer cognitive behavioral therapy.",
+      "verbatim": "avoid use of hypnotics, so that's the these, primary therapy for chronic insomnia. Instead, offer cognitive behavioral therapy.",
+      "type": "practice",
+      "t": 1562.9,
       "match": "exact",
       "episode": "dr-williston-on-sleep-disorders",
       "speaker": "Dr. Williston",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-1665",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "frequency:weekly"
-          ],
-          "actionable": [
-            "use"
-          ],
-          "rarity": 7.74
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "chronic insomnia",
+      "pearl_id": "dr-williston-on-sleep-disorders-1562"
     },
     {
-      "text": "If you lie in bed for 30 minutes and are not asleep, get out of bed to avoid conditioning the bed as a place for wakefulness.",
-      "verbatim": "if you lay in bed for thirty minutes and you're not asleep, get out of your bed.",
+      "text": "If you lie in bed for 30 minutes and are not asleep, get out of bed; do not stay there or read, to avoid associating bed with wakefulness.",
+      "verbatim": "if you lay in bed for thirty minutes and you're not asleep, get out of your bed. Don't stay there. Don't read a book. Don't do anything in your bed. Get out of your bed.",
       "type": "practice",
       "t": 1785.6,
       "match": "exact",
@@ -33357,189 +33128,47 @@
       "speaker": "Dr. Williston",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-1785",
-      "score": {
-        "specific": true,
-        "actionable": true,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "specific": [
-            "dose:30 minutes"
-          ],
-          "actionable": [
-            "avoid"
-          ],
-          "rarity": 7.75
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "general insomnia",
+      "pearl_id": "dr-williston-on-sleep-disorders-1785"
     },
     {
-      "text": "For patients with racing thoughts, recommend sleep stories that are engaging enough to prevent rumination but not so engaging to keep them awake.",
+      "text": "For patients with racing thoughts at bedtime, recommend sleep stories: apps that read a story engaging enough to stop racing thoughts but not so engaging to keep you awake.",
       "verbatim": "There's something called sleep stories, and there's apps that will read you a sleep story. And it's a story that's engaging enough keep you from having racing thoughts, but not so engaging to keep you awake.",
-      "type": "practice",
+      "type": "concept",
       "t": 2061.3,
       "match": "exact",
       "episode": "dr-williston-on-sleep-disorders",
       "speaker": "Dr. Williston",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-2061",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 8.11
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "patients with racing thoughts at bedtime",
+      "pearl_id": "dr-williston-on-sleep-disorders-2061"
     },
     {
-      "text": "Morning sunlight exposure helps regulate the sleep-wake cycle by influencing cortisol and melatonin levels.",
-      "verbatim": "right as soon as you get up, get some sunlight, be active, let your body know. Because our sleep cycle is impacted. Like, it starts as soon as we wake up.",
+      "text": "After a night of disrupted sleep (e.g., call), go to bed at the same time the next day and get up at the same time the following morning to maintain schedule.",
+      "verbatim": "the next day, you go to bed same time, and then you get up at the same time the next morning.",
       "type": "practice",
-      "t": 2101.5,
+      "t": 2252.4,
       "match": "exact",
       "episode": "dr-williston-on-sleep-disorders",
       "speaker": "Dr. Williston",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-2101",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:melatonin"
-          ],
-          "rarity": 8.61
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "after sleep disruption (e.g., call)",
+      "pearl_id": "dr-williston-on-sleep-disorders-2252"
     },
     {
-      "text": "Differentiate whether the patient is not sleepy (circadian issue) or has racing thoughts (anxiety) to guide treatment.",
-      "verbatim": "Differentiating, are you really just not sleepy? So we need to work on your sleep cycle, or do you have racing thoughts? And the racing thoughts are what keep you awake.",
-      "type": "dx_criteria",
-      "t": 2148.1,
-      "match": "exact",
-      "episode": "dr-williston-on-sleep-disorders",
-      "speaker": "Dr. Williston",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-2148",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 7.94
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "In patients with bipolar disorder, sleep disruption from hospitalization may trigger hypomania; treating the bipolar disorder is the primary intervention.",
-      "verbatim": "treating her bipolar is probably the answer.",
-      "type": "judgment",
-      "t": 2200.2,
-      "match": "exact",
-      "episode": "dr-williston-on-sleep-disorders",
-      "speaker": "Dr. Williston",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "by_presenter": false,
-      "pearl_id": "dr-williston-on-sleep-disorders-2200",
-      "score": {
-        "specific": true,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 2,
-        "grade": "C",
-        "fired": {
-          "specific": [
-            "concept:bipolar disorder"
-          ],
-          "rarity": 6.97
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "After a disrupted night, go to bed early to repay sleep debt but still wake up at the same time the next morning.",
-      "verbatim": "if you really have a sleep deficit, if you've really been awake for twenty four hours, then go to bed early the next day. Don't take a nap in the middle of the day. Go to bed early to make up that sleep deficit, and then get up at the same time the following morning.",
-      "type": "practice",
-      "t": 2291.1,
-      "match": "exact",
-      "episode": "dr-williston-on-sleep-disorders",
-      "speaker": "Dr. Williston",
-      "model": "deepseek/deepseek-v4-flash",
-      "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-2291",
-      "score": {
-        "specific": false,
-        "actionable": false,
-        "local": false,
-        "harm": false,
-        "nonobvious": true,
-        "points": 1,
-        "grade": "D",
-        "fired": {
-          "rarity": 8.15
-        },
-        "rubric": "rules-v2"
-      }
-    },
-    {
-      "text": "Driving drowsy is as dangerous as driving drunk; if nodding off, do not drive.",
-      "verbatim": "driving drowsy is just as dangerous as driving drunk.",
+      "text": "If you are nodding off while driving, do not drive; call an Uber, get a friend, or take a nap at the hospital before driving home.",
+      "verbatim": "if you're nodding off, don't drive. Call an Uber. Get a friend drive you. Stay at the hospital and take a nap before you drive home.",
       "type": "red_flag",
-      "t": 2319.0,
+      "t": 2351.2,
       "match": "exact",
       "episode": "dr-williston-on-sleep-disorders",
       "speaker": "Dr. Williston",
       "model": "deepseek/deepseek-v4-flash",
       "prompt_version": "v1",
-      "pearl_id": "dr-williston-on-sleep-disorders-2319",
-      "score": {
-        "specific": false,
-        "actionable": true,
-        "local": false,
-        "harm": true,
-        "nonobvious": true,
-        "points": 3,
-        "grade": "B",
-        "fired": {
-          "actionable": [
-            "do not"
-          ],
-          "harm": [
-            "dangerous"
-          ],
-          "rarity": 8.61
-        },
-        "rubric": "rules-v2"
-      }
+      "applies_to": "anyone drowsy",
+      "pearl_id": "dr-williston-on-sleep-disorders-2351"
     }
   ],
   "enrich_model": "deepseek/deepseek-v4-flash",
@@ -48575,5 +48204,6 @@
       "name": "Dr. Williston"
     }
   ],
-  "pearls_fingerprint": "42e89aeaabc17ba9"
+  "pearls_fingerprint": "f8ee8d300ce64a1f",
+  "enrich_version": "v2"
 }
