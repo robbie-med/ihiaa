@@ -9,6 +9,7 @@ and prints the dollar amounts only, never the key.
 Exit status 2 when the balance is below --warn-below, so CI can flag it.
 """
 import argparse
+import datetime
 import json
 import os
 import sys
@@ -25,6 +26,20 @@ def get(path: str, key: str) -> dict:
     req = urllib.request.Request(API + path, headers={"Authorization": f"Token {key}"})
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.load(r)
+
+
+def usage_line(pid: str, name: str, key: str) -> str:
+    """Fallback when the balance is off-limits: what has been transcribed so far."""
+    end = datetime.date.today() + datetime.timedelta(days=1)
+    start = end - datetime.timedelta(days=365)
+    try:
+        u = get(f"/projects/{pid}/usage?start={start}&end={end}", key)
+    except urllib.error.HTTPError as e:
+        return f"- {name}: usage not readable either (HTTP {e.code})"
+    hrs = sum(float(r.get("total_hours", r.get("hours", 0)) or 0) for r in u.get("results", []))
+    reqs = sum(int(r.get("requests", 0) or 0) for r in u.get("results", []))
+    return (f"- {name}: used {hrs:.1f} hours of audio in {reqs} requests over the last year, "
+            f"about ${hrs * 60 * PRICE_PER_MIN:.2f} at list price")
 
 
 def main() -> int:
@@ -45,13 +60,17 @@ def main() -> int:
         print(f"Deepgram rejected the key listing projects: HTTP {e.code} {e.read()[:200]!r}")
         return 1
 
-    total, lines = 0.0, []
+    total, lines, readable = 0.0, [], False
     for p in projects:
+        name = p.get("name", "project")
         try:
             bal = get(f"/projects/{p['project_id']}/balances", key).get("balances", [])
+            readable = True
         except urllib.error.HTTPError as e:
-            lines.append(f"- {p.get('name', 'project')}: balance not readable with this key "
-                         f"(HTTP {e.code}; the key may lack billing access)")
+            lines.append(f"- {name}: balance not readable with this key (HTTP {e.code}). "
+                         f"Keys need the billing (Owner/Admin) role for that; see the "
+                         f"Deepgram console, Billing.")
+            lines.append(usage_line(p["project_id"], name, key))
             continue
         for b in bal:
             amt = float(b.get("amount", 0))
@@ -60,6 +79,12 @@ def main() -> int:
         if not bal:
             lines.append(f"- {p.get('name', 'project')}: no prepaid balance on record")
 
+    if not readable:
+        print("\n".join(["### Deepgram credit", *lines]))
+        if os.environ.get("GITHUB_STEP_SUMMARY"):
+            with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as fh:
+                fh.write("\n".join(["### Deepgram credit", *lines]) + "\n")
+        return 1
     hours = total / PRICE_PER_MIN / 60 if total else 0
     summary = ["### Deepgram credit", *lines,
                "", f"**Total: ${total:.2f}**, about {hours:.0f} hours of audio "
