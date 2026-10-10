@@ -5,17 +5,17 @@
   "stats": {
     "pearls": 6470,
     "candidates": 3457,
-    "judged": 3157,
+    "judged": 3367,
     "relations": {
-      "agree": 925,
-      "complement": 1296,
-      "contradict": 125,
-      "same": 322,
-      "unrelated": 489
+      "agree": 980,
+      "complement": 1385,
+      "contradict": 135,
+      "same": 325,
+      "unrelated": 542
     },
     "verified_conflicts": 7,
-    "depends": 73,
-    "refuted": 45
+    "depends": 81,
+    "refuted": 47
   },
   "conflicts": [
     {
@@ -320,6 +320,15 @@
       "condition": "presence of depression vs. other risk factors"
     },
     {
+      "a": "dr-hildebrand-on-arthritis-71",
+      "b": "rheumatology-with-dr-lucashu-1172",
+      "sim": 0.6913,
+      "same_speaker": false,
+      "topic": "PCP initiation of RA DMARDs",
+      "why": "One supports it in resource-limited settings; the other discourages it generally.",
+      "condition": "Availability of rheumatology referral or resources"
+    },
+    {
       "a": "dr-engstrom-on-acs-3308",
       "b": "dr-lawrence-lee-on-morning-reports-3682",
       "sim": 0.6889,
@@ -383,6 +392,15 @@
       "condition": "Patient age and presence of impaired metabolism"
     },
     {
+      "a": "dr-ledbetter-on-pneumonia-pocus-2021",
+      "b": "dr-ledbetter-on-pocus-pna-564",
+      "sim": 0.681,
+      "same_speaker": true,
+      "topic": "B-line specificity for pneumonia",
+      "why": "First statement is about general differential for B-lines; second cites a specific study finding in a particular clinical context.",
+      "condition": "Whether evaluating a patient with suspected pneumonia"
+    },
+    {
       "a": "dr-ledbetter-on-benzo-tapering-1287",
       "b": "kelly-dunn-md-on-benzodiazepines-4397",
       "sim": 0.6802,
@@ -444,6 +462,15 @@
       "topic": "titration strategy for symptom response",
       "why": "Different medications and goals: antidepressants for symptom relief vs GDMT for mortality benefit.",
       "condition": "whether the drug is for symptom control or mortality reduction"
+    },
+    {
+      "a": "dr-b-howard-on-ra-lupus-4479",
+      "b": "dr-hildebrand-on-arthritis-1417",
+      "sim": 0.6677,
+      "same_speaker": false,
+      "topic": "Methotrexate use in women",
+      "why": "One advises avoiding it in women of childbearing age; the other advises starting it with counseling.",
+      "condition": "Whether the patient is of childbearing age and pregnancy risk is managed."
     },
     {
       "a": "dr-ledbetter-on-benzo-tapering-1288",
@@ -662,6 +689,15 @@
       "condition": "Whether eosinophil count is used to guide ICS therapy."
     },
     {
+      "a": "dr-kelly-dunn-on-ihi-fm-board-review-2-2634",
+      "b": "kelly-dunn-md-on-benzodiazepines-4330",
+      "sim": 0.6328,
+      "same_speaker": true,
+      "topic": "Benzodiazepine taper conversion strategy",
+      "why": "One approach adjusts dose before conversion for psychological attachment; the other uses direct conversion for physiological equivalence.",
+      "condition": "Patient's psychological attachment to alprazolam (Xanax)"
+    },
+    {
       "a": "dr-calvert-on-female-vulva-exam-pathology-2177",
       "b": "dr-williams-on-skin-cancer-basics-1649",
       "sim": 0.6324,
@@ -689,6 +725,15 @@
       "condition": "severity of diabetes (A1c level)"
     },
     {
+      "a": "dr-dunn-on-addiction-medicine-antidepressants-2222",
+      "b": "dr-dunn-speaks-on-depression-3812",
+      "sim": 0.6295,
+      "same_speaker": true,
+      "topic": "Bupropion seizure risk history",
+      "why": "One statement downplays risk relative to other antidepressants; the other states a formal contraindication.",
+      "condition": "Whether applying clinical judgment vs. formal prescribing guidelines."
+    },
+    {
       "a": "morning-report-with-dr-lee-1458",
       "b": "pressors-engstrom-3900",
       "sim": 0.6293,
@@ -714,6 +759,33 @@
       "topic": "clonidine use in hypertension",
       "why": "A advises against tablets for chronic management; B uses them for acute severe elevation in a specific high-risk scenario.",
       "condition": "chronic vs acute severe hypertension in aortic dissection"
+    },
+    {
+      "a": "dr-kelly-dunn-on-ihi-fm-board-review-2-1238",
+      "b": "dr-kelly-dunn-on-sleep-disorders-1598",
+      "sim": 0.6263,
+      "same_speaker": true,
+      "topic": "First-line insomnia medication choice",
+      "why": "One is guideline-based, the other is personal practice preference.",
+      "condition": "Whether following guidelines or personal clinical judgment"
+    },
+    {
+      "a": "dr-lee-on-morning-reports-2-4969",
+      "b": "morning-report-with-dr-lee-1425",
+      "sim": 0.6247,
+      "same_speaker": true,
+      "topic": "vasopressor choice in shock",
+      "why": "A addresses tachycardic patients specifically, while B is a general first-line rule for shock.",
+      "condition": "presence of significant tachycardia"
+    },
+    {
+      "a": "dr-herrmann-on-liver-disease-for-primary-care-2001",
+      "b": "dr-place-outpatient-lecture-2275",
+      "sim": 0.6231,
+      "same_speaker": false,
+      "topic": "HCV treatment monitoring",
+      "why": "One recommends specific lab tests, the other focuses on side effects and adherence.",
+      "condition": "Different treatment protocols or patient risk profiles"
     },
     {
       "a": "dr-dunn-speaks-on-depression-4491",
@@ -2516,6 +2588,21 @@
     },
     {
       "pearl_ids": [
+        "dr-lee-on-morning-reports-2-1432",
+        "l-dogg-s-morning-report-2-796",
+        "l-dogg-s-morning-report-2-3462",
+        "two-cases-with-dr-lawrence-lee-8267"
+      ],
+      "topic": "delta-delta calculation",
+      "speakers": [
+        "Dr. Lawrence Lee"
+      ],
+      "n_speakers": 1,
+      "n_lectures": 3,
+      "kind": "repeated"
+    },
+    {
+      "pearl_ids": [
         "dr-engstrom-on-approach-to-undifferentiated-shock-3478",
         "dr-engstrom-on-approach-to-undifferentiated-shock-3478-2",
         "pressors-engstrom-2149",
@@ -2725,20 +2812,6 @@
       ],
       "n_speakers": 1,
       "n_lectures": 2,
-      "kind": "repeated"
-    },
-    {
-      "pearl_ids": [
-        "dr-lee-on-morning-reports-2-1432",
-        "l-dogg-s-morning-report-2-796",
-        "two-cases-with-dr-lawrence-lee-8267"
-      ],
-      "topic": "delta-delta calculation",
-      "speakers": [
-        "Dr. Lawrence Lee"
-      ],
-      "n_speakers": 1,
-      "n_lectures": 3,
       "kind": "repeated"
     },
     {
