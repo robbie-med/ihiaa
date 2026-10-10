@@ -1,0 +1,29 @@
+name: Check API credits
+
+# Reports the Deepgram balance (transcription stops when it runs out). Runs
+# weekly, from the Actions tab, or when .github/maintenance/check-credits is
+# committed (for tools that can push but cannot press "Run workflow").
+on:
+  schedule:
+    - cron: "41 8 * * 1"          # Mondays 08:41 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/maintenance/check-credits"]
+
+permissions:
+  contents: read
+
+jobs:
+  credits:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Deepgram balance
+        env:
+          DEEPGRAM_API_KEY: ${{ secrets.DEEPGRAM_API_KEY }}
+        run: python3 scripts/check_credits.py --warn-below 5
